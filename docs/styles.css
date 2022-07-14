@@ -1,3 +1,9 @@
+html {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
     font-family: sans-serif;
     padding:1.4em;
@@ -22,16 +28,21 @@ a {
   }
 }
 
-.store_button
-{  
-    margin: 5px 0px 5px 0px;
+.store_button {  
+    margin: 8px;
     width: 139px;
-    max-width: 139px;
     height: 41px;
-    max-height: 41px;
 }
 
-.centered
-{
+.center-text {
     text-align:center;
+}
+
+.center-margins {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+  padding: 18px;
 }
