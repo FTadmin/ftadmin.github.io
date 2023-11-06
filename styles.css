@@ -1,0 +1,65 @@
+html {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: sans-serif;
+    padding:1.4em;
+}
+
+a {
+    color: var(--link-color);
+}
+
+:root {
+  color-scheme: light dark;
+  --font-color: #000000;
+  --background-color: #FFFFFF;
+  --link-color: MediumBlue;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --font-color: #FFFFFF;
+    --background-color: #000000;
+    --link-color: LightBlue;
+  }
+}
+
+.store_button {  
+    margin: 8px;
+    width: 139px;
+    height: 41px;
+}
+
+.center-text {
+    text-align:center;
+}
+
+.center-margins {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+  padding: 18px;
+}
+
+.screenshot {
+    border-radius: 20.75pt;
+    width:  320; 
+}
+.screenshot-small {
+    border-radius: 20.75pt;
+    width:  256; 
+}
+
+.padded10 {
+    padding: 10;
+}
+
+.app-icon {
+    border-radius: 24pt;
+}
