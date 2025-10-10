@@ -1,13 +1,13 @@
 /* Navigation Bar */
 .navbar {
     background: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 15px 30px;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 18px 30px;
     margin: -20px -20px 40px -20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .nav-container {
@@ -16,36 +16,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
-.nav-brand {
-    font-size: 1.3em;
-    font-weight: 700;
+.breadcrumb {
+    font-size: 1.05em;
+    color: #666;
+}
+
+.breadcrumb a {
     color: #007AFF;
-    text-decoration: none;
-}
-
-.nav-brand:hover {
-    color: #0051D5;
-    text-decoration: none;
-}
-
-.nav-links {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-}
-
-.nav-links a {
-    color: #333;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
-    color: #007AFF;
-    text-decoration: none;
+.breadcrumb a:hover {
+    color: #0051D5;
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 10px;
+    color: #999;
+}
+
+.breadcrumb-current {
+    color: #333;
+    font-weight: 500;
 }
 
 /* Base styles */
@@ -634,17 +631,15 @@ th, td {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar {
-        padding: 12px 20px;
+        padding: 15px 15px;
     }
 
-    .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+    .breadcrumb {
+        font-size: 0.95em;
     }
 
-    .nav-links a {
-        font-size: 0.9em;
+    .breadcrumb-separator {
+        margin: 0 6px;
     }
 
     h1 {
@@ -712,6 +707,18 @@ th, td {
         padding: 0.5em;
     }
 
+    .navbar {
+        padding: 12px 10px;
+    }
+
+    .breadcrumb {
+        font-size: 0.85em;
+    }
+
+    .breadcrumb-separator {
+        margin: 0 5px;
+    }
+
     h1 {
         font-size: 1.6em;
     }
@@ -733,20 +740,24 @@ th, td {
         border-bottom-color: #404040;
     }
 
-    .nav-brand {
+    .breadcrumb {
+        color: #b0b0b0;
+    }
+
+    .breadcrumb a {
         color: #5BA4FF;
     }
 
-    .nav-brand:hover {
+    .breadcrumb a:hover {
         color: #7CB9FF;
     }
 
-    .nav-links a {
-        color: #e0e0e0;
+    .breadcrumb-separator {
+        color: #666;
     }
 
-    .nav-links a:hover {
-        color: #5BA4FF;
+    .breadcrumb-current {
+        color: #e0e0e0;
     }
 
     html {
