@@ -1,3 +1,53 @@
+/* Navigation Bar */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 30px;
+    margin: -20px -20px 40px -20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #007AFF;
+    text-decoration: none;
+}
+
+.nav-brand:hover {
+    color: #0051D5;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #007AFF;
+    text-decoration: none;
+}
+
 /* Base styles */
 html {
     max-width: 1200px;
@@ -242,15 +292,6 @@ a:hover {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    display: none; /* Hidden by default, shown when image exists */
-}
-
-.screenshot-img[src]:not([src=""]) {
-    display: block; /* Show when src is set */
-}
-
-.screenshot-img + .screenshot-placeholder {
-    display: none; /* Hide placeholder when image exists */
 }
 
 /* Features Section */
@@ -592,6 +633,20 @@ th, td {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+    }
+
     h1 {
         font-size: 2em;
     }
@@ -673,6 +728,27 @@ th, td {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
+    .navbar {
+        background: #1a1a1a;
+        border-bottom-color: #404040;
+    }
+
+    .nav-brand {
+        color: #5BA4FF;
+    }
+
+    .nav-brand:hover {
+        color: #7CB9FF;
+    }
+
+    .nav-links a {
+        color: #e0e0e0;
+    }
+
+    .nav-links a:hover {
+        color: #5BA4FF;
+    }
+
     html {
         background-color: #1a1a1a;
         color: #e0e0e0;
