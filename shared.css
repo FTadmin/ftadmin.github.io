@@ -8,6 +8,7 @@
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    min-height: 70px;
 }
 
 .nav-container {
@@ -17,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    min-height: 44px;
 }
 
 .breadcrumb {
@@ -962,4 +964,9 @@ th, td {
     .reviews-grid {
         gap: 20px;
     }
+}
+
+/* App navigation links styling */
+.breadcrumb a + a {
+    margin-left: 20px;
 }
