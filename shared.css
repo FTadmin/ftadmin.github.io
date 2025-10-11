@@ -586,14 +586,22 @@ th, td {
 }
 
 /* Review Cards */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
 .review-card {
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 25px;
-    margin-bottom: 20px;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
 }
 
 .review-card:hover {
@@ -914,5 +922,9 @@ th, td {
     .screenshot-placeholder {
         background: #2d2d2d;
         color: #999999;
+    }
+
+    .reviews-grid {
+        gap: 20px;
     }
 }
