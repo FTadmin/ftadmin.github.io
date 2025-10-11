@@ -703,10 +703,14 @@ th, td {
         align-items: flex-start;
     }
 
-    .breadcrumb,
+    .breadcrumb {
+        font-size: 0.9em;
+    }
+
     .breadcrumb a,
+    .breadcrumb span,
     .breadcrumb-current {
-        font-size: 0.85em;
+        font-size: 1em;
     }
 
     .breadcrumb a {
@@ -714,12 +718,13 @@ th, td {
         display: inline-block;
     }
 
-    .nav-container > .breadcrumb:first-child a:first-child {
+    .nav-container > .breadcrumb:first-child a:first-child,
+    .nav-container > .breadcrumb:first-child > span {
         padding-left: 0;
     }
 
     .breadcrumb-separator {
-        font-size: 0.85em;
+        font-size: 1em;
         margin: 0 3px;
     }
 
@@ -810,22 +815,27 @@ th, td {
         min-height: auto;
     }
 
-    .breadcrumb,
+    .breadcrumb {
+        font-size: 0.85em;
+    }
+
     .breadcrumb a,
+    .breadcrumb span,
     .breadcrumb-current {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .breadcrumb a {
         padding: 3px 5px;
     }
 
-    .nav-container > .breadcrumb:first-child a:first-child {
+    .nav-container > .breadcrumb:first-child a:first-child,
+    .nav-container > .breadcrumb:first-child > span {
         padding-left: 0;
     }
 
     .breadcrumb-separator {
-        font-size: 0.8em;
+        font-size: 1em;
         margin: 0 2px;
     }
 
