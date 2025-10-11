@@ -474,6 +474,22 @@ a:hover {
     margin-bottom: 15px;
 }
 
+.platforms-section .app-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.platforms-section .app-card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.platforms-section .app-card-content p {
+    margin: 0;
+}
+
 /* CTA Section */
 .cta-section {
     margin: 60px 0;
@@ -758,6 +774,10 @@ th, td {
     .ai-features-grid,
     .stats-grid,
     .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platforms-section .app-card-content {
         grid-template-columns: 1fr;
     }
 
