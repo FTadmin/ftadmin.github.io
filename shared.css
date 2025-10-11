@@ -33,7 +33,7 @@
     color: #2B7BD3;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.15em;
+    font-size: 1.15em !important;
     font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -703,6 +703,13 @@ th, td {
         align-items: flex-start;
     }
 
+    .nav-container > .breadcrumb {
+        line-height: 1.2;
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+    }
+
     .breadcrumb {
         font-size: 0.9em;
     }
@@ -710,7 +717,7 @@ th, td {
     .breadcrumb a,
     .breadcrumb span,
     .breadcrumb-current {
-        font-size: 1em;
+        font-size: 1em !important;
     }
 
     .breadcrumb a {
@@ -720,6 +727,10 @@ th, td {
 
     .nav-container > .breadcrumb:first-child a:first-child,
     .nav-container > .breadcrumb:first-child > span {
+        padding-left: 0;
+    }
+
+    .nav-container > .breadcrumb:last-child a:first-child {
         padding-left: 0;
     }
 
@@ -815,6 +826,13 @@ th, td {
         min-height: auto;
     }
 
+    .nav-container > .breadcrumb {
+        line-height: 1.2;
+        min-height: 22px;
+        display: flex;
+        align-items: center;
+    }
+
     .breadcrumb {
         font-size: 0.85em;
     }
@@ -822,7 +840,7 @@ th, td {
     .breadcrumb a,
     .breadcrumb span,
     .breadcrumb-current {
-        font-size: 1em;
+        font-size: 1em !important;
     }
 
     .breadcrumb a {
@@ -831,6 +849,10 @@ th, td {
 
     .nav-container > .breadcrumb:first-child a:first-child,
     .nav-container > .breadcrumb:first-child > span {
+        padding-left: 0;
+    }
+
+    .nav-container > .breadcrumb:last-child a:first-child {
         padding-left: 0;
     }
 
