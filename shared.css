@@ -232,8 +232,9 @@ a:hover {
 }
 
 .cta-button {
-    display: inline-block;
-    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    height: 41px;
 }
 
 .app-card-buttons {
@@ -247,7 +248,8 @@ a:hover {
 .learn-more-button {
     display: inline-flex;
     align-items: center;
-    padding: 12px 30px;
+    justify-content: center;
+    padding: 0 30px;
     background: #007AFF;
     color: #ffffff;
     border-radius: 8px;
@@ -551,7 +553,7 @@ th, td {
 
 /* Images and buttons */
 .store_button {
-    margin: 0 8px;
+    display: block;
     width: 139px;
     height: 41px;
     transition: transform 0.2s ease;
