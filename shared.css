@@ -147,6 +147,13 @@ a:hover {
     line-height: 1.8;
 }
 
+.hero-platform-info {
+    margin-top: 20px;
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
 .hero-features {
     display: flex;
     flex-wrap: wrap;
@@ -676,12 +683,17 @@ th, td {
     .breadcrumb,
     .breadcrumb a,
     .breadcrumb-current {
-        font-size: 0.95em;
+        font-size: 1.1em;
+    }
+
+    .breadcrumb a {
+        padding: 8px 12px;
+        display: inline-block;
     }
 
     .breadcrumb-separator {
-        font-size: 0.95em;
-        margin: 0 6px;
+        font-size: 1.1em;
+        margin: 0 8px;
     }
 
     h1 {
@@ -837,6 +849,10 @@ th, td {
 
     .hero-subtitle {
         color: #d0d0d0;
+    }
+
+    .hero-platform-info {
+        color: #b0b0b0;
     }
 
     .feature-badge {
