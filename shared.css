@@ -677,23 +677,24 @@ th, td {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar {
-        padding: 15px 15px;
+        padding: 12px 15px;
+        min-height: 50px;
     }
 
     .breadcrumb,
     .breadcrumb a,
     .breadcrumb-current {
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 
     .breadcrumb a {
-        padding: 8px 12px;
+        padding: 6px 8px;
         display: inline-block;
     }
 
     .breadcrumb-separator {
-        font-size: 1.1em;
-        margin: 0 8px;
+        font-size: 0.9em;
+        margin: 0 4px;
     }
 
     h1 {
@@ -767,18 +768,23 @@ th, td {
     }
 
     .navbar {
-        padding: 12px 10px;
+        padding: 10px 8px;
+        min-height: 44px;
     }
 
     .breadcrumb,
     .breadcrumb a,
     .breadcrumb-current {
-        font-size: 0.85em;
+        font-size: 0.75em;
+    }
+
+    .breadcrumb a {
+        padding: 4px 6px;
     }
 
     .breadcrumb-separator {
-        font-size: 0.85em;
-        margin: 0 5px;
+        font-size: 0.75em;
+        margin: 0 2px;
     }
 
     h1 {
