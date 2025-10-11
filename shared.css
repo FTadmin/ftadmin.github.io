@@ -677,24 +677,34 @@ th, td {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar {
-        padding: 12px 15px;
-        min-height: 50px;
+        padding: 10px 12px;
+        min-height: auto;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
     }
 
     .breadcrumb,
     .breadcrumb a,
     .breadcrumb-current {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     .breadcrumb a {
-        padding: 6px 8px;
+        padding: 4px 6px;
         display: inline-block;
     }
 
     .breadcrumb-separator {
-        font-size: 0.9em;
-        margin: 0 4px;
+        font-size: 0.85em;
+        margin: 0 3px;
+    }
+
+    .breadcrumb a + a {
+        margin-left: 8px;
     }
 
     h1 {
@@ -768,23 +778,27 @@ th, td {
     }
 
     .navbar {
-        padding: 10px 8px;
-        min-height: 44px;
+        padding: 8px 10px;
+        min-height: auto;
     }
 
     .breadcrumb,
     .breadcrumb a,
     .breadcrumb-current {
-        font-size: 0.75em;
+        font-size: 0.8em;
     }
 
     .breadcrumb a {
-        padding: 4px 6px;
+        padding: 3px 5px;
     }
 
     .breadcrumb-separator {
-        font-size: 0.75em;
+        font-size: 0.8em;
         margin: 0 2px;
+    }
+
+    .breadcrumb a + a {
+        margin-left: 6px;
     }
 
     h1 {
