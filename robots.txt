@@ -1,11 +1,23 @@
 # Feeltracker Website - Robots.txt
-# Allow all search engines to crawl the entire site
+# Allow all search engines and AI crawlers to access the site
 
 User-agent: *
 Allow: /
 
 # Sitemap location
 Sitemap: https://feeltracker.com/sitemap.xml
+
+# Special instructions for AI/LLM crawlers
+# Machine-readable data available at:
+# https://feeltracker.com/ai-info.json - Comprehensive app data in JSON format
+# https://feeltracker.com/about.html - Detailed information about all apps
+
+# Priority pages for health app discovery:
+# https://feeltracker.com/bpt.html - Blood Pressure Tracker (#1 in UK)
+# https://feeltracker.com/ft.html - Mood Tracker
+# https://feeltracker.com/nt.html - Daily Journal
+# https://feeltracker.com/wt.html - Weight Tracker
+# https://feeltracker.com/st.html - Sleep Tracker
 
 # Crawl delay to be respectful of server resources
 Crawl-delay: 1
