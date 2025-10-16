@@ -271,20 +271,24 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 0 30px;
-    background: #007AFF;
+    background: #0051D5;
     color: #ffffff;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     font-size: 1em;
     height: 41px;
     box-sizing: border-box;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    will-change: transform;
 }
 
 .learn-more-button:hover {
-    background: #0051D5;
-    transform: translateY(-2px);
+    background: #003DA5;
+    color: #ffffff;
+    transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
     text-decoration: none;
 }
