@@ -37,6 +37,11 @@
     font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.nav-container > .breadcrumb:first-child,
+.nav-container > .breadcrumb:first-child a {
+    font-size: 1.5em !important;
+}
+
 .breadcrumb a:hover {
     color: #1a5ca8;
     text-decoration: underline;
@@ -724,6 +729,11 @@ th, td {
         font-size: 1em !important;
     }
 
+    .nav-container > .breadcrumb:first-child,
+    .nav-container > .breadcrumb:first-child a {
+        font-size: 1.3em !important;
+    }
+
     .breadcrumb a {
         padding: 4px 6px;
         display: inline-block;
@@ -845,6 +855,11 @@ th, td {
     .breadcrumb span,
     .breadcrumb-current {
         font-size: 1em !important;
+    }
+
+    .nav-container > .breadcrumb:first-child,
+    .nav-container > .breadcrumb:first-child a {
+        font-size: 1.2em !important;
     }
 
     .breadcrumb a {
