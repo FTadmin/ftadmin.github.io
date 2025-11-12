@@ -201,11 +201,17 @@
     "aiFeatures": [
       "Chat assistant for data queries",
       "Automatic insight generation",
+      "Daily insights banner (premium)",
       "Pattern detection and correlation analysis",
       "Sentiment analysis",
       "Text-to-speech for insights",
-      "Camera Scan AI (OCR) for BP and Weight apps"
+      "Camera Scan AI (OCR for readings, face analysis for mood, object identification, text capture)",
+      "Contextual AI chat with full health history understanding",
+      "Deep research reports with professional summaries",
+      "Goal assistant for personalized health goals",
+      "Doctor summaries for healthcare visits"
     ],
+    "aiDisclaimer": "AI-generated insights, reports, and recommendations are for general information only and are not a substitute for medical advice, diagnosis, or treatment. AI-identified patterns show correlations, but correlation does not imply causation. Always consult a physician or qualified healthcare provider with any medical questions or concerns.",
     "appleHealthIntegration": {
       "enabled": true,
       "bidirectional": true,
@@ -251,7 +257,26 @@
     },
     "widgets": true,
     "darkMode": true,
-    "accessibility": true
+    "darkModeVariants": ["True Black (OLED-optimized)", "Dark Gray"],
+    "accessibility": true,
+    "weatherIntegration": {
+      "enabled": true,
+      "source": "Apple Weather Service",
+      "cached": true
+    },
+    "calendarSystems": ["Gregorian", "Islamic (Hijri)", "Hebrew", "Chinese", "Japanese"],
+    "timeZoneSupport": true,
+    "milestoneTracking": true,
+    "iPadFeatures": {
+      "splitView": true,
+      "multiColumnLayout": true,
+      "multitasking": true
+    },
+    "automaticBackups": {
+      "enabled": true,
+      "frequency": "Weekly",
+      "format": "JSON"
+    }
   },
   "statistics": {
     "totalDownloads": "500,000+",
