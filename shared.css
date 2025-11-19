@@ -1147,3 +1147,120 @@ th, td {
 .nav-container > .breadcrumb:last-child a:last-child {
     margin-right: 0;
 }
+
+/* Cookie Consent Banner */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2d2d2d;
+    color: #ffffff;
+    padding: 20px 30px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+    z-index: 10000;
+    display: none;
+}
+
+.cookie-consent.show {
+    display: block;
+}
+
+.cookie-consent-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cookie-consent-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.cookie-consent-text p {
+    margin: 0 0 8px 0;
+    color: #e0e0e0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.cookie-consent-text a {
+    color: #5BA4FF;
+}
+
+.cookie-consent-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cookie-btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.cookie-btn-accept {
+    background: #007AFF;
+    color: #ffffff;
+}
+
+.cookie-btn-accept:hover {
+    background: #0051D5;
+    transform: translateY(-1px);
+}
+
+.cookie-btn-reject {
+    background: #404040;
+    color: #ffffff;
+}
+
+.cookie-btn-reject:hover {
+    background: #555555;
+    transform: translateY(-1px);
+}
+
+.cookie-btn-settings {
+    background: transparent;
+    color: #5BA4FF;
+    border: 1px solid #5BA4FF;
+}
+
+.cookie-btn-settings:hover {
+    background: rgba(91, 164, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .cookie-consent {
+        padding: 15px 20px;
+    }
+
+    .cookie-consent-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cookie-consent-text {
+        min-width: auto;
+    }
+
+    .cookie-consent-buttons {
+        justify-content: center;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .cookie-consent {
+        background: #1a1a1a;
+        border-top: 1px solid #404040;
+    }
+}

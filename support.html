@@ -4,23 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WV9HJBSD');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN"></script>
+    <!-- Cookie Consent & Conditional Analytics Loading -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
 
-      gtag('config', 'G-L718GV41LN');
-      gtag('config', 'AW-1066893004');
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
     </script>
 
     <title>Feeltracker Support</title>
@@ -124,5 +135,34 @@
         <p class="footer-copyright">© 2025 Custom Arts. All rights reserved.</p>
         <p class="footer-tagline">Part of the Feeltracker family of health tracking apps</p>
     </footer>
+
+<!-- Cookie Consent Banner -->
+<div id="cookieConsent" class="cookie-consent">
+    <div class="cookie-consent-content">
+        <div class="cookie-consent-text">
+            <p><strong>We value your privacy</strong></p>
+            <p>We use cookies for analytics to improve our website and app. No advertising cookies are used. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </div>
+        <div class="cookie-consent-buttons">
+            <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Reject</button>
+            <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accept</button>
+        </div>
+    </div>
+</div>
+
+<script>
+function handleCookieConsent(choice) {
+    localStorage.setItem('cookie_consent', choice);
+    document.getElementById('cookieConsent').classList.remove('show');
+    if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+        window.loadGTM();
+    }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    if (!localStorage.getItem('cookie_consent')) {
+        document.getElementById('cookieConsent').classList.add('show');
+    }
+});
+</script>
 </body>
 </html>
