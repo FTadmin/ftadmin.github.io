@@ -13,11 +13,11 @@
 .snowflake {
     position: fixed;
     top: -10%;
-    color: #fff;
+    color: #a8d4ff;
     font-size: 1.5em;
-    text-shadow: 0 0 5px rgba(255,255,255,0.8);
+    text-shadow: 0 0 3px #fff, 0 0 8px rgba(100,180,255,0.8), 0 2px 4px rgba(0,0,0,0.3);
     animation: snowfall linear infinite;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .snowflake:nth-child(1) { left: 5%; animation-duration: 10s; animation-delay: 0s; font-size: 1.2em; }
