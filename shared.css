@@ -1,3 +1,66 @@
+/* Christmas Welcome Banner */
+.christmas-banner {
+    background: linear-gradient(135deg, #c41e3a 0%, #1a472a 50%, #c41e3a 100%);
+    padding: 16px 20px;
+    text-align: center;
+    margin: -20px -20px 20px -20px;
+}
+
+.christmas-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.christmas-icon {
+    font-size: 1.8em;
+    animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.christmas-text {
+    color: #ffffff;
+    font-size: 1.15em;
+    font-weight: 700;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 0.02em;
+}
+
+@keyframes sparkle {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.15); opacity: 0.9; }
+}
+
+@media (max-width: 768px) {
+    .christmas-banner {
+        padding: 12px 15px;
+    }
+
+    .christmas-text {
+        font-size: 1em;
+    }
+
+    .christmas-icon {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .christmas-content {
+        gap: 10px;
+    }
+
+    .christmas-text {
+        font-size: 0.9em;
+    }
+
+    .christmas-icon {
+        font-size: 1.3em;
+    }
+}
+
 /* Navigation Bar */
 .navbar {
     background: #ffffff;
