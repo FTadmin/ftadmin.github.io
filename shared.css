@@ -63,66 +63,129 @@
     }
 }
 
-/* Christmas Welcome Banner */
+/* Holiday Welcome Banner */
 .christmas-banner {
-    background: linear-gradient(135deg, #c41e3a 0%, #1a472a 50%, #c41e3a 100%);
-    padding: 16px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%);
+    padding: 18px 24px;
     text-align: center;
     margin: -20px -20px 20px -20px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.christmas-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(212, 175, 55, 0.1) 25%,
+        rgba(212, 175, 55, 0.15) 50%,
+        rgba(212, 175, 55, 0.1) 75%,
+        transparent 100%);
+    pointer-events: none;
 }
 
 .christmas-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.christmas-stars {
+    color: #d4af37;
+    font-size: 1em;
+    animation: twinkle 2s ease-in-out infinite;
+    opacity: 0.9;
 }
 
 .christmas-icon {
-    font-size: 1.8em;
-    animation: sparkle 1.5s ease-in-out infinite;
+    font-size: 1.5em;
+    animation: gentleBounce 3s ease-in-out infinite;
 }
 
 .christmas-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.holiday-greeting {
     color: #ffffff;
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: 700;
     font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 0.03em;
+    background: linear-gradient(90deg, #ffffff 0%, #d4af37 50%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.holiday-subtext {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85em;
+    font-weight: 500;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: 0.02em;
 }
 
-@keyframes sparkle {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.15); opacity: 0.9; }
+@keyframes twinkle {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes gentleBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
 }
 
 @media (max-width: 768px) {
     .christmas-banner {
-        padding: 12px 15px;
+        padding: 14px 16px;
     }
 
-    .christmas-text {
+    .holiday-greeting {
         font-size: 1em;
     }
 
+    .holiday-subtext {
+        font-size: 0.8em;
+    }
+
     .christmas-icon {
-        font-size: 1.5em;
+        font-size: 1.3em;
+    }
+
+    .christmas-stars {
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
     .christmas-content {
-        gap: 10px;
+        gap: 8px;
     }
 
-    .christmas-text {
+    .holiday-greeting {
         font-size: 0.9em;
     }
 
+    .holiday-subtext {
+        font-size: 0.75em;
+    }
+
     .christmas-icon {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 }
 
