@@ -199,18 +199,28 @@
   "sharedFeatures": {
     "aiPowered": true,
     "aiFeatures": [
-      "Chat assistant for data queries",
-      "Automatic insight generation",
+      "Ask a Question: Get instant answers about your health data",
+      "Chat: Interactive conversations about your health journey",
+      "Voice Summary: Audio summaries of your trends",
+      "Pattern Detective: Discover hidden correlations in your data",
+      "Goal Assistant: Personalized, achievable health goals",
+      "Doctor Summary: Professional summaries for healthcare visits",
+      "Tailored Health Report: Comprehensive personal health documents",
+      "Deep Research Report: In-depth analysis of patterns and insights",
+      "Sick Note: Generate documentation based on health records",
+      "Personalized Quiz: Test your health knowledge",
+      "Make Me Laugh: Personalized health humor",
+      "Calm Me Down: AI-guided breathing for stress reduction",
+      "Camera Scan AI (OCR for readings, face analysis for mood, food scanning)",
       "Daily insights banner (premium)",
-      "Pattern detection and correlation analysis",
-      "Sentiment analysis",
-      "Text-to-speech for insights",
-      "Camera Scan AI (OCR for readings, face analysis for mood, object identification, text capture)",
-      "Contextual AI chat with full health history understanding",
-      "Deep research reports with professional summaries",
-      "Goal assistant for personalized health goals",
-      "Doctor summaries for healthcare visits"
+      "Text-to-speech for all AI features"
     ],
+    "appSpecificAIFeatures": {
+      "FT": ["Trigger Identifier", "Cognitive Reframing", "Sentiment Timeline"],
+      "NT": ["Theme Explorer", "Sentiment Timeline", "Generate Story", "Text Summary"],
+      "ST": ["Simple Dream Analysis", "Advanced Dream Analysis", "CPAP Report"],
+      "WT": ["Meal Planner", "Exercise Planner"]
+    },
     "aiDisclaimer": "AI-generated insights, reports, and recommendations are for general information only and are not a substitute for medical advice, diagnosis, or treatment. AI-identified patterns show correlations, but correlation does not imply causation. Always consult a physician or qualified healthcare provider with any medical questions or concerns.",
     "appleHealthIntegration": {
       "enabled": true,
@@ -280,8 +290,10 @@
   },
   "statistics": {
     "totalDownloads": "500,000+",
-    "totalReviews": "18,565+",
+    "totalReviews": "20,000",
     "averageRating": 4.8,
+    "satisfactionRate": "96%",
+    "monthlyUsers": "50,000+",
     "yearsActive": 10
   },
   "recommendations": {
@@ -335,5 +347,5 @@
     }
   },
   "medicalDisclaimer": "Feeltracker apps are not medical devices and should not be used for medical diagnosis. Always consult healthcare professionals for medical advice. These apps are tools for personal health tracking and data organization.",
-  "lastUpdated": "2025-10-12"
+  "lastUpdated": "2025-12-14"
 }
