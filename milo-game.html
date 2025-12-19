@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Milo's Snowball Fight! | Feeltracker Christmas Game</title>
+    <meta name="description" content="Help Milo the cocker spaniel in an epic snowball fight! A fun Christmas game from Feeltracker.">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+            min-height: 100vh;
+            overflow: hidden;
+            touch-action: manipulation;
+        }
+
+        /* Snowfall Background */
+        .snow-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .snow-particle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10px) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+
+        /* Game Container */
+        .game-wrapper {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .game-header {
+            background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .game-title {
+            color: white;
+            font-size: 1.3em;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .game-title span {
+            font-size: 1.2em;
+        }
+
+        .game-stats {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            background: rgba(255,255,255,0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            color: white;
+            font-weight: 700;
+            font-size: 0.95em;
+            backdrop-filter: blur(5px);
+        }
+
+        .stat-value {
+            color: #ffeb3b;
+        }
+
+        .back-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .back-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        /* Game Arena */
+        .game-arena {
+            flex: 1;
+            position: relative;
+            background: linear-gradient(180deg,
+                #87CEEB 0%,
+                #B3E5FC 25%,
+                #E1F5FE 50%,
+                #FFFFFF 75%,
+                #E8EAF6 100%);
+            overflow: hidden;
+            cursor: crosshair;
+        }
+
+        /* Snow Ground */
+        .snow-ground {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: linear-gradient(180deg, #E3F2FD 0%, #FFFFFF 100%);
+            border-radius: 100% 100% 0 0 / 50px 50px 0 0;
+        }
+
+        .snow-mound {
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+            border-radius: 50% 50% 0 0;
+        }
+
+        .snow-mound:nth-child(1) { left: 10%; width: 120px; height: 40px; }
+        .snow-mound:nth-child(2) { left: 40%; width: 150px; height: 50px; }
+        .snow-mound:nth-child(3) { right: 15%; width: 100px; height: 35px; }
+
+        /* Trees */
+        .tree {
+            position: absolute;
+            bottom: 60px;
+        }
+
+        .tree-trunk {
+            width: 20px;
+            height: 40px;
+            background: #5D4037;
+            margin: 0 auto;
+        }
+
+        .tree-top {
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 60px solid #2E7D32;
+            position: relative;
+        }
+
+        .tree-top::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -35px;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            border-bottom: 50px solid #388E3C;
+        }
+
+        .tree-snow {
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 15px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .tree:nth-child(1) { left: 5%; }
+        .tree:nth-child(2) { right: 8%; transform: scale(0.8); }
+        .tree:nth-child(3) { left: 85%; transform: scale(0.6); bottom: 65px; }
+
+        /* Milo Character */
+        .milo {
+            position: absolute;
+            bottom: 60px;
+            left: 30px;
+            width: 120px;
+            height: 100px;
+            z-index: 50;
+            transition: transform 0.1s;
+        }
+
+        .milo.throwing {
+            animation: miloThrow 0.3s ease-out;
+        }
+
+        @keyframes miloThrow {
+            0% { transform: translateX(0) rotate(0); }
+            30% { transform: translateX(-15px) rotate(-15deg); }
+            60% { transform: translateX(20px) rotate(8deg); }
+            100% { transform: translateX(0) rotate(0); }
+        }
+
+        /* Milo Body Parts */
+        .milo-body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .milo-torso {
+            position: absolute;
+            bottom: 25px;
+            left: 20px;
+            width: 70px;
+            height: 40px;
+            background: linear-gradient(135deg, #D4A574 0%, #C4956A 50%, #B8845A 100%);
+            border-radius: 50% 50% 45% 45%;
+            box-shadow: inset -5px -5px 15px rgba(0,0,0,0.15);
+        }
+
+        .milo-head {
+            position: absolute;
+            bottom: 50px;
+            left: 60px;
+            width: 50px;
+            height: 45px;
+            background: linear-gradient(135deg, #D4A574 0%, #C08050 100%);
+            border-radius: 50% 50% 45% 45%;
+            z-index: 2;
+        }
+
+        .milo-eye {
+            position: absolute;
+            width: 10px;
+            height: 12px;
+            background: #2D1B0E;
+            border-radius: 50%;
+            top: 14px;
+        }
+
+        .milo-eye.left { left: 12px; }
+        .milo-eye.right { right: 12px; }
+
+        .milo-eye::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .milo-nose {
+            position: absolute;
+            top: 26px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 14px;
+            height: 10px;
+            background: #1A0F0A;
+            border-radius: 50% 50% 40% 40%;
+        }
+
+        .milo-tongue {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 12px;
+            height: 10px;
+            background: #FF6B9D;
+            border-radius: 0 0 50% 50%;
+            animation: pant 0.4s ease-in-out infinite;
+        }
+
+        @keyframes pant {
+            0%, 100% { height: 10px; }
+            50% { height: 16px; }
+        }
+
+        .milo-ear {
+            position: absolute;
+            width: 22px;
+            height: 50px;
+            background: linear-gradient(180deg, #8B6914 0%, #6B4E0A 100%);
+            border-radius: 0 0 50% 50%;
+            z-index: 1;
+        }
+
+        .milo-ear.left {
+            bottom: 45px;
+            left: 42px;
+            transform: rotate(-20deg);
+            animation: earWag 1.5s ease-in-out infinite;
+        }
+
+        .milo-ear.right {
+            bottom: 45px;
+            left: 82px;
+            transform: rotate(20deg);
+            animation: earWag 1.5s ease-in-out infinite 0.3s;
+        }
+
+        @keyframes earWag {
+            0%, 100% { transform: rotate(-20deg) translateY(0); }
+            50% { transform: rotate(-10deg) translateY(3px); }
+        }
+
+        .milo-ear.right {
+            animation-name: earWagRight;
+        }
+
+        @keyframes earWagRight {
+            0%, 100% { transform: rotate(20deg) translateY(0); }
+            50% { transform: rotate(10deg) translateY(3px); }
+        }
+
+        .milo-legs {
+            position: absolute;
+            bottom: 0;
+            left: 25px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .milo-leg {
+            width: 14px;
+            height: 28px;
+            background: linear-gradient(180deg, #C4956A 0%, #A67B5B 100%);
+            border-radius: 6px 6px 10px 10px;
+        }
+
+        .milo-tail {
+            position: absolute;
+            bottom: 45px;
+            left: 8px;
+            width: 10px;
+            height: 30px;
+            background: linear-gradient(180deg, #D4A574 0%, #8B6914 100%);
+            border-radius: 50%;
+            transform-origin: bottom center;
+            animation: wagTail 0.25s ease-in-out infinite;
+        }
+
+        @keyframes wagTail {
+            0%, 100% { transform: rotate(-25deg); }
+            50% { transform: rotate(25deg); }
+        }
+
+        /* Milo's Accessories */
+        .milo-hat {
+            position: absolute;
+            bottom: 90px;
+            left: 65px;
+            z-index: 10;
+        }
+
+        .milo-hat-base {
+            width: 35px;
+            height: 22px;
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            border-radius: 50% 50% 0 0;
+            transform: rotate(-15deg);
+        }
+
+        .milo-hat-base::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: -4px;
+            width: 43px;
+            height: 10px;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .milo-hat-pom {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            animation: pomBob 0.5s ease-in-out infinite;
+        }
+
+        @keyframes pomBob {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(4px, -4px); }
+        }
+
+        .milo-scarf {
+            position: absolute;
+            bottom: 60px;
+            left: 55px;
+            width: 60px;
+            height: 12px;
+            background: linear-gradient(90deg, #4CAF50, #2E7D32, #4CAF50);
+            border-radius: 6px;
+            z-index: 3;
+        }
+
+        .milo-scarf::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 8px;
+            width: 18px;
+            height: 25px;
+            background: linear-gradient(180deg, #4CAF50 0%, #2E7D32 100%);
+            border-radius: 0 0 8px 8px;
+        }
+
+        /* Snowman Target */
+        .snowman {
+            position: absolute;
+            width: 60px;
+            height: 85px;
+            cursor: pointer;
+            z-index: 20;
+            transition: transform 0.2s;
+        }
+
+        .snowman:hover {
+            transform: scale(1.08);
+        }
+
+        .snowman.hit {
+            animation: snowmanHit 0.5s ease-out forwards;
+            pointer-events: none;
+        }
+
+        @keyframes snowmanHit {
+            0% { transform: scale(1) rotate(0); opacity: 1; }
+            25% { transform: scale(1.3) rotate(-15deg); }
+            50% { transform: scale(0.9) rotate(15deg); opacity: 0.6; }
+            100% { transform: scale(0) rotate(0); opacity: 0; }
+        }
+
+        .snowman-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 55px;
+            height: 40px;
+            background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E0E0E0 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .snowman-middle {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 42px;
+            height: 35px;
+            background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E0E0E0 100%);
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .snowman-head {
+            position: absolute;
+            bottom: 58px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 28px;
+            background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E0E0E0 100%);
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .snowman-hat {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 18px;
+            background: #1A1A1A;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .snowman-hat::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: -6px;
+            width: 36px;
+            height: 6px;
+            background: #1A1A1A;
+            border-radius: 3px;
+        }
+
+        .snowman-eye {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: #1A1A1A;
+            border-radius: 50%;
+            bottom: 68px;
+        }
+
+        .snowman-eye.left { left: 18px; }
+        .snowman-eye.right { right: 18px; }
+
+        .snowman-nose {
+            position: absolute;
+            bottom: 63px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-left: 12px solid #FF6B00;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        .snowman-button {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #1A1A1A;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .snowman-button:nth-of-type(1) { bottom: 42px; }
+        .snowman-button:nth-of-type(2) { bottom: 34px; }
+
+        /* Snowball */
+        .snowball {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #D0D0D0 100%);
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        /* Splash Effect */
+        .splash {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            pointer-events: none;
+            z-index: 90;
+        }
+
+        .splash-particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            animation: splashAnim 0.4s ease-out forwards;
+        }
+
+        @keyframes splashAnim {
+            0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+            100% { transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(0); opacity: 0; }
+        }
+
+        /* Score Popup */
+        .score-popup {
+            position: absolute;
+            font-size: 2em;
+            font-weight: 800;
+            color: #4CAF50;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3), -1px -1px 0 white;
+            pointer-events: none;
+            z-index: 200;
+            animation: scoreAnim 0.8s ease-out forwards;
+        }
+
+        @keyframes scoreAnim {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            100% { transform: translateY(-60px) scale(1.5); opacity: 0; }
+        }
+
+        /* Game Controls */
+        .game-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 60;
+        }
+
+        .start-btn, .restart-btn {
+            padding: 15px 40px;
+            font-size: 1.3em;
+            font-weight: 800;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'Nunito', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .start-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            color: white;
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+        }
+
+        .restart-btn {
+            background: linear-gradient(135deg, #2196F3 0%, #1565C0 100%);
+            color: white;
+            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.5);
+        }
+
+        .start-btn:hover, .restart-btn:hover {
+            transform: scale(1.08);
+        }
+
+        .start-btn:active, .restart-btn:active {
+            transform: scale(0.98);
+        }
+
+        .instructions {
+            color: #1565C0;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+
+        /* Game Over */
+        .game-over {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255,255,255,0.95);
+            padding: 40px 60px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+            z-index: 500;
+        }
+
+        .game-over.active {
+            display: block;
+            animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes popIn {
+            0% { transform: translate(-50%, -50%) scale(0.3); opacity: 0; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        }
+
+        .game-over h2 {
+            color: #1565C0;
+            font-size: 2.5em;
+            margin: 0 0 20px 0;
+        }
+
+        .game-over .final-score {
+            font-size: 3em;
+            font-weight: 800;
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+
+        .game-over .message {
+            font-size: 1.3em;
+            color: #666;
+            margin: 15px 0 25px 0;
+            font-style: italic;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .game-header {
+                padding: 10px 15px;
+            }
+
+            .game-title {
+                font-size: 1em;
+            }
+
+            .stat {
+                padding: 5px 10px;
+                font-size: 0.85em;
+            }
+
+            .milo {
+                transform: scale(0.75);
+                left: 10px;
+                bottom: 50px;
+            }
+
+            .snowman {
+                transform: scale(0.85);
+            }
+
+            .game-over {
+                padding: 25px 35px;
+            }
+
+            .game-over h2 {
+                font-size: 1.8em;
+            }
+
+            .game-over .final-score {
+                font-size: 2.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Snow Background -->
+    <div class="snow-bg" id="snowBg"></div>
+
+    <!-- Game Wrapper -->
+    <div class="game-wrapper">
+        <!-- Header -->
+        <div class="game-header">
+            <div class="game-title">
+                <span>🐕</span> Milo's Snowball Fight!
+            </div>
+            <div class="game-stats">
+                <div class="stat">Score: <span class="stat-value" id="score">0</span></div>
+                <div class="stat">Time: <span class="stat-value" id="timer">30</span>s</div>
+                <div class="stat">Snowballs: <span class="stat-value" id="ammo">10</span></div>
+            </div>
+            <a href="/" class="back-btn">← Back</a>
+        </div>
+
+        <!-- Game Arena -->
+        <div class="game-arena" id="arena">
+            <!-- Background Elements -->
+            <div class="tree">
+                <div class="tree-top"><div class="tree-snow"></div></div>
+                <div class="tree-trunk"></div>
+            </div>
+            <div class="tree">
+                <div class="tree-top"><div class="tree-snow"></div></div>
+                <div class="tree-trunk"></div>
+            </div>
+
+            <!-- Snow Ground -->
+            <div class="snow-ground">
+                <div class="snow-mound"></div>
+                <div class="snow-mound"></div>
+                <div class="snow-mound"></div>
+            </div>
+
+            <!-- Milo -->
+            <div class="milo" id="milo">
+                <div class="milo-body">
+                    <div class="milo-ear left"></div>
+                    <div class="milo-ear right"></div>
+                    <div class="milo-tail"></div>
+                    <div class="milo-torso"></div>
+                    <div class="milo-head">
+                        <div class="milo-eye left"></div>
+                        <div class="milo-eye right"></div>
+                        <div class="milo-nose"></div>
+                        <div class="milo-tongue"></div>
+                    </div>
+                    <div class="milo-legs">
+                        <div class="milo-leg"></div>
+                        <div class="milo-leg"></div>
+                        <div class="milo-leg"></div>
+                        <div class="milo-leg"></div>
+                    </div>
+                </div>
+                <div class="milo-hat">
+                    <div class="milo-hat-base"></div>
+                    <div class="milo-hat-pom"></div>
+                </div>
+                <div class="milo-scarf"></div>
+            </div>
+
+            <!-- Targets Container -->
+            <div id="targets"></div>
+
+            <!-- Controls -->
+            <div class="game-controls" id="controls">
+                <p class="instructions">Tap anywhere to throw snowballs at the snowmen!</p>
+                <button class="start-btn" id="startBtn">Start Game!</button>
+                <button class="restart-btn" id="restartBtn" style="display:none;">Play Again!</button>
+            </div>
+
+            <!-- Game Over -->
+            <div class="game-over" id="gameOver">
+                <h2>Game Over!</h2>
+                <div class="final-score" id="finalScore">0</div>
+                <div class="message" id="message"></div>
+                <button class="restart-btn" onclick="restartGame()">Play Again!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create snow background
+        const snowBg = document.getElementById('snowBg');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'snow-particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.width = (Math.random() * 4 + 2) + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
+            particle.style.animationDelay = (Math.random() * 5) + 's';
+            snowBg.appendChild(particle);
+        }
+
+        // Game State
+        let game = {
+            isPlaying: false,
+            score: 0,
+            time: 30,
+            ammo: 10,
+            maxAmmo: 15,
+            targets: [],
+            timer: null,
+            spawnTimer: null
+        };
+
+        const arena = document.getElementById('arena');
+        const milo = document.getElementById('milo');
+        const targetsEl = document.getElementById('targets');
+        const startBtn = document.getElementById('startBtn');
+        const restartBtn = document.getElementById('restartBtn');
+        const controls = document.getElementById('controls');
+        const gameOverEl = document.getElementById('gameOver');
+
+        // Start Game
+        startBtn.addEventListener('click', startGame);
+
+        function startGame() {
+            game.isPlaying = true;
+            game.score = 0;
+            game.time = 30;
+            game.ammo = 10;
+            game.targets = [];
+
+            updateUI();
+            startBtn.style.display = 'none';
+            restartBtn.style.display = 'none';
+            gameOverEl.classList.remove('active');
+            targetsEl.innerHTML = '';
+
+            arena.addEventListener('click', handleClick);
+            arena.addEventListener('touchstart', handleTouch, { passive: false });
+
+            // Timer
+            game.timer = setInterval(() => {
+                game.time--;
+                document.getElementById('timer').textContent = game.time;
+                if (game.time <= 0) endGame();
+            }, 1000);
+
+            // Spawn targets
+            spawnTarget();
+            game.spawnTimer = setInterval(spawnTarget, 1200);
+        }
+
+        function restartGame() {
+            startGame();
+        }
+
+        function handleTouch(e) {
+            e.preventDefault();
+            const touch = e.touches[0];
+            throwAt(touch.clientX, touch.clientY);
+        }
+
+        function handleClick(e) {
+            if (e.target.closest('.start-btn, .restart-btn, .game-over, .back-btn')) return;
+            throwAt(e.clientX, e.clientY);
+        }
+
+        function throwAt(clientX, clientY) {
+            if (!game.isPlaying || game.ammo <= 0) return;
+
+            const rect = arena.getBoundingClientRect();
+            const x = clientX - rect.left;
+            const y = clientY - rect.top;
+
+            game.ammo--;
+            updateUI();
+
+            // Animate Milo
+            milo.classList.add('throwing');
+            setTimeout(() => milo.classList.remove('throwing'), 300);
+
+            // Throw snowball
+            throwSnowball(x, y);
+
+            // Check hits
+            checkHit(x, y);
+
+            // Replenish ammo
+            setTimeout(() => {
+                if (game.isPlaying && game.ammo < game.maxAmmo) {
+                    game.ammo++;
+                    updateUI();
+                }
+            }, 1500);
+        }
+
+        function throwSnowball(targetX, targetY) {
+            const miloRect = milo.getBoundingClientRect();
+            const arenaRect = arena.getBoundingClientRect();
+
+            const startX = miloRect.right - arenaRect.left + 10;
+            const startY = miloRect.top - arenaRect.top + 30;
+
+            const snowball = document.createElement('div');
+            snowball.className = 'snowball';
+            snowball.style.left = startX + 'px';
+            snowball.style.top = startY + 'px';
+            arena.appendChild(snowball);
+
+            const duration = 280;
+            const startTime = performance.now();
+
+            function animate(time) {
+                const progress = Math.min((time - startTime) / duration, 1);
+                const arcHeight = 60;
+
+                const curX = startX + (targetX - startX) * progress;
+                const curY = startY + (targetY - startY) * progress - Math.sin(progress * Math.PI) * arcHeight;
+
+                snowball.style.left = curX + 'px';
+                snowball.style.top = curY + 'px';
+
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                } else {
+                    createSplash(targetX, targetY);
+                    snowball.remove();
+                }
+            }
+
+            requestAnimationFrame(animate);
+            playSound(200, 150, 0.08);
+        }
+
+        function createSplash(x, y) {
+            const splash = document.createElement('div');
+            splash.className = 'splash';
+            splash.style.left = (x - 30) + 'px';
+            splash.style.top = (y - 30) + 'px';
+
+            for (let i = 0; i < 8; i++) {
+                const p = document.createElement('div');
+                p.className = 'splash-particle';
+                const angle = (i / 8) * Math.PI * 2;
+                const dist = 25 + Math.random() * 20;
+                p.style.setProperty('--x', Math.cos(angle) * dist + 'px');
+                p.style.setProperty('--y', Math.sin(angle) * dist + 'px');
+                splash.appendChild(p);
+            }
+
+            arena.appendChild(splash);
+            setTimeout(() => splash.remove(), 400);
+        }
+
+        function spawnTarget() {
+            if (!game.isPlaying) return;
+
+            const x = 180 + Math.random() * (arena.offsetWidth - 260);
+            const y = 80 + Math.random() * (arena.offsetHeight - 250);
+
+            const snowman = document.createElement('div');
+            snowman.className = 'snowman';
+            snowman.style.left = x + 'px';
+            snowman.style.top = y + 'px';
+            snowman.innerHTML = `
+                <div class="snowman-hat"></div>
+                <div class="snowman-head"></div>
+                <div class="snowman-eye left"></div>
+                <div class="snowman-eye right"></div>
+                <div class="snowman-nose"></div>
+                <div class="snowman-middle"></div>
+                <div class="snowman-button"></div>
+                <div class="snowman-button"></div>
+                <div class="snowman-bottom"></div>
+            `;
+
+            targetsEl.appendChild(snowman);
+
+            const target = { element: snowman, x, y, width: 60, height: 85, id: Date.now() };
+            game.targets.push(target);
+
+            setTimeout(() => {
+                if (snowman.parentNode && !snowman.classList.contains('hit')) {
+                    snowman.remove();
+                    game.targets = game.targets.filter(t => t.id !== target.id);
+                }
+            }, 3500);
+        }
+
+        function checkHit(clickX, clickY) {
+            const hitRadius = 50;
+
+            game.targets.forEach(target => {
+                const cx = target.x + target.width / 2;
+                const cy = target.y + target.height / 2;
+                const dist = Math.sqrt((clickX - cx) ** 2 + (clickY - cy) ** 2);
+
+                if (dist < hitRadius) {
+                    target.element.classList.add('hit');
+                    game.targets = game.targets.filter(t => t.id !== target.id);
+
+                    game.score += 10;
+                    updateUI();
+
+                    showScorePopup(target.x + 30, target.y);
+                    playSound(800, 400, 0.12);
+
+                    setTimeout(() => target.element.remove(), 500);
+                }
+            });
+        }
+
+        function showScorePopup(x, y) {
+            const popup = document.createElement('div');
+            popup.className = 'score-popup';
+            popup.textContent = '+10';
+            popup.style.left = x + 'px';
+            popup.style.top = y + 'px';
+            arena.appendChild(popup);
+            setTimeout(() => popup.remove(), 800);
+        }
+
+        function playSound(startFreq, endFreq, volume) {
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(startFreq, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(endFreq, ctx.currentTime + 0.1);
+                gain.gain.setValueAtTime(volume, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start();
+                osc.stop(ctx.currentTime + 0.1);
+            } catch(e) {}
+        }
+
+        function updateUI() {
+            document.getElementById('score').textContent = game.score;
+            document.getElementById('timer').textContent = game.time;
+            document.getElementById('ammo').textContent = game.ammo;
+        }
+
+        function endGame() {
+            game.isPlaying = false;
+            clearInterval(game.timer);
+            clearInterval(game.spawnTimer);
+
+            arena.removeEventListener('click', handleClick);
+            arena.removeEventListener('touchstart', handleTouch);
+
+            document.getElementById('finalScore').textContent = game.score;
+
+            let msg = '';
+            if (game.score >= 100) msg = 'Milo is SO proud of you! 🏆';
+            else if (game.score >= 70) msg = 'Great job! Milo wags his tail! 🐕';
+            else if (game.score >= 40) msg = 'Not bad! Milo gives you a lick! 👅';
+            else if (game.score >= 20) msg = 'Keep practicing with Milo! 🎯';
+            else msg = 'Milo believes in you! Try again! ❄️';
+
+            document.getElementById('message').textContent = msg;
+            gameOverEl.classList.add('active');
+        }
+    </script>
+</body>
+</html>
