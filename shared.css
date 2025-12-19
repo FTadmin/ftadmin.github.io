@@ -1,3 +1,730 @@
+/* ==========================================
+   MILO'S SNOWBALL FIGHT GAME
+   ========================================== */
+
+/* Play Game Button */
+.play-game-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 0.95em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+    font-family: 'Nunito', sans-serif;
+}
+
+.play-game-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+}
+
+.play-game-btn:active {
+    transform: scale(0.98);
+}
+
+.game-btn-icon {
+    font-size: 1.2em;
+}
+
+.game-btn-snowflake {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Game Overlay */
+.game-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10001;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-overlay.active {
+    display: flex;
+}
+
+/* Game Container */
+.game-container {
+    width: 95%;
+    max-width: 800px;
+    height: 90vh;
+    max-height: 600px;
+    background: linear-gradient(180deg, #87CEEB 0%, #E0F7FA 50%, #FFFFFF 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Header */
+.game-header {
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.game-header h2 {
+    color: white;
+    margin: 0;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.game-stats {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.game-stats span {
+    background: rgba(255,255,255,0.2);
+    padding: 5px 12px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.game-close-btn {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.game-close-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.1);
+}
+
+/* Game Arena */
+.game-arena {
+    position: relative;
+    height: calc(100% - 140px);
+    background: linear-gradient(180deg,
+        #87CEEB 0%,
+        #B3E5FC 30%,
+        #E1F5FE 50%,
+        #FFFFFF 70%,
+        #F5F5F5 100%);
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+/* Snow ground */
+.game-arena::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(180deg, #E3F2FD 0%, #FFFFFF 100%);
+    border-radius: 100% 100% 0 0;
+}
+
+/* Milo Character - Cocker Spaniel */
+.milo-character {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    width: 100px;
+    height: 90px;
+    z-index: 10;
+    transition: transform 0.1s;
+}
+
+.milo-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Milo's Torso */
+.milo-torso {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    width: 60px;
+    height: 35px;
+    background: linear-gradient(135deg, #D4A574 0%, #C4956A 50%, #B8845A 100%);
+    border-radius: 50% 50% 45% 45%;
+    box-shadow: inset -5px -5px 10px rgba(0,0,0,0.1);
+}
+
+/* Milo's Head */
+.milo-head {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    width: 45px;
+    height: 40px;
+    background: linear-gradient(135deg, #D4A574 0%, #C08050 100%);
+    border-radius: 50% 50% 45% 45%;
+    z-index: 2;
+}
+
+.milo-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.milo-eyes {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.milo-eye {
+    width: 8px;
+    height: 10px;
+    background: #2D1B0E;
+    border-radius: 50%;
+    position: relative;
+}
+
+.milo-eye::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+}
+
+.milo-nose {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 8px;
+    background: #1A0F0A;
+    border-radius: 50% 50% 40% 40%;
+}
+
+.milo-tongue {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 8px;
+    background: #FF6B9D;
+    border-radius: 0 0 50% 50%;
+    animation: pant 0.5s ease-in-out infinite;
+}
+
+@keyframes pant {
+    0%, 100% { height: 8px; }
+    50% { height: 12px; }
+}
+
+/* Milo's Ears - Cocker Spaniel Style */
+.milo-ear {
+    position: absolute;
+    width: 20px;
+    height: 45px;
+    background: linear-gradient(180deg, #8B6914 0%, #6B4E0A 100%);
+    border-radius: 0 0 50% 50%;
+    z-index: 1;
+}
+
+.milo-ear.left {
+    bottom: 35px;
+    left: 35px;
+    transform: rotate(-15deg);
+    animation: earFlop 2s ease-in-out infinite;
+}
+
+.milo-ear.right {
+    bottom: 35px;
+    left: 70px;
+    transform: rotate(15deg);
+    animation: earFlop 2s ease-in-out infinite 0.5s;
+}
+
+@keyframes earFlop {
+    0%, 100% { transform: rotate(-15deg) translateY(0); }
+    50% { transform: rotate(-10deg) translateY(2px); }
+}
+
+.milo-ear.right {
+    animation-name: earFlopRight;
+}
+
+@keyframes earFlopRight {
+    0%, 100% { transform: rotate(15deg) translateY(0); }
+    50% { transform: rotate(10deg) translateY(2px); }
+}
+
+/* Milo's Legs */
+.milo-legs {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 55px;
+    height: 25px;
+}
+
+.milo-leg {
+    position: absolute;
+    width: 12px;
+    height: 22px;
+    background: linear-gradient(180deg, #C4956A 0%, #A67B5B 100%);
+    border-radius: 5px 5px 8px 8px;
+}
+
+.milo-leg.front-left { left: 0; }
+.milo-leg.front-right { left: 15px; }
+.milo-leg.back-left { left: 30px; }
+.milo-leg.back-right { left: 45px; }
+
+/* Milo's Tail */
+.milo-tail {
+    position: absolute;
+    bottom: 35px;
+    left: 5px;
+    width: 8px;
+    height: 25px;
+    background: linear-gradient(180deg, #D4A574 0%, #8B6914 100%);
+    border-radius: 50%;
+    transform-origin: bottom center;
+    animation: wagTail 0.3s ease-in-out infinite;
+}
+
+@keyframes wagTail {
+    0%, 100% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+}
+
+/* Milo's Santa Hat */
+.milo-santa-hat {
+    position: absolute;
+    bottom: 75px;
+    left: 55px;
+    z-index: 5;
+}
+
+.milo-hat-base {
+    width: 30px;
+    height: 20px;
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    transform: rotate(-10deg);
+}
+
+.milo-hat-base::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -3px;
+    width: 36px;
+    height: 8px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.milo-hat-pom {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    animation: pomBounce 0.6s ease-in-out infinite;
+}
+
+/* Milo's Scarf */
+.milo-scarf {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 10px;
+    background: linear-gradient(90deg, #4CAF50 0%, #2E7D32 50%, #4CAF50 100%);
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.milo-scarf::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 5px;
+    width: 15px;
+    height: 20px;
+    background: linear-gradient(180deg, #4CAF50 0%, #2E7D32 100%);
+    border-radius: 0 0 5px 5px;
+}
+
+/* Milo Throw Animation */
+.milo-character.throwing {
+    animation: miloThrow 0.3s ease-out;
+}
+
+@keyframes miloThrow {
+    0% { transform: translateX(0) rotate(0); }
+    30% { transform: translateX(-10px) rotate(-10deg); }
+    60% { transform: translateX(15px) rotate(5deg); }
+    100% { transform: translateX(0) rotate(0); }
+}
+
+/* Snowman Target */
+.snowman-target {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 5;
+}
+
+.snowman-target:hover {
+    transform: scale(1.05);
+}
+
+.snowman-body-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 35px;
+    background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E8E8E8 100%);
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.snowman-body-top {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 30px;
+    background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E8E8E8 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.snowman-head {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 22px;
+    background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E8E8E8 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.snowman-hat {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 15px;
+    background: #1A1A1A;
+    border-radius: 3px 3px 0 0;
+}
+
+.snowman-hat::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: -5px;
+    width: 30px;
+    height: 5px;
+    background: #1A1A1A;
+    border-radius: 2px;
+}
+
+.snowman-eyes {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.snowman-eye {
+    width: 4px;
+    height: 4px;
+    background: #1A1A1A;
+    border-radius: 50%;
+}
+
+.snowman-nose {
+    position: absolute;
+    bottom: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid #FF6B00;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.snowman-buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.snowman-button {
+    width: 5px;
+    height: 5px;
+    background: #1A1A1A;
+    border-radius: 50%;
+}
+
+/* Snowman Hit Animation */
+.snowman-target.hit {
+    animation: snowmanHit 0.5s ease-out forwards;
+}
+
+@keyframes snowmanHit {
+    0% { transform: scale(1) rotate(0); opacity: 1; }
+    30% { transform: scale(1.2) rotate(-10deg); }
+    60% { transform: scale(0.8) rotate(10deg); opacity: 0.5; }
+    100% { transform: scale(0) rotate(0); opacity: 0; }
+}
+
+/* Snowball Projectile */
+.snowball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E0E0E0 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 20;
+    pointer-events: none;
+}
+
+.snowball.flying {
+    animation: snowballFly 0.4s ease-out forwards;
+}
+
+@keyframes snowballFly {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(0.8); }
+}
+
+/* Snowball Splash */
+.snowball-splash {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+    z-index: 25;
+}
+
+.splash-particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    animation: splashOut 0.4s ease-out forwards;
+}
+
+@keyframes splashOut {
+    0% { transform: translate(0, 0) scale(1); opacity: 1; }
+    100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
+}
+
+/* Game Controls */
+.game-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(180deg, transparent 0%, rgba(255,255,255,0.9) 100%);
+    text-align: center;
+}
+
+.game-instructions {
+    margin: 0 0 10px 0;
+    color: #1565C0;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.game-start-btn, .game-restart-btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Nunito', sans-serif;
+}
+
+.game-start-btn {
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+
+.game-restart-btn {
+    background: linear-gradient(135deg, #2196F3 0%, #1565C0 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+}
+
+.game-start-btn:hover, .game-restart-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Game Over Screen */
+.game-over-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    z-index: 30;
+}
+
+.game-over-screen.active {
+    display: block;
+    animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+    0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+.game-over-screen h3 {
+    color: #1565C0;
+    margin: 0 0 15px 0;
+    font-size: 2em;
+}
+
+.game-over-screen p {
+    color: #333;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.game-message {
+    font-style: italic;
+    color: #666 !important;
+}
+
+/* Score Popup */
+.score-popup {
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    pointer-events: none;
+    animation: scoreFloat 0.8s ease-out forwards;
+    z-index: 30;
+}
+
+@keyframes scoreFloat {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-40px) scale(1.5); opacity: 0; }
+}
+
+/* Mobile adjustments for game */
+@media (max-width: 600px) {
+    .game-container {
+        height: 95vh;
+        max-height: none;
+        border-radius: 10px;
+    }
+
+    .game-header {
+        padding: 10px 15px;
+    }
+
+    .game-header h2 {
+        font-size: 1.1em;
+    }
+
+    .game-stats {
+        gap: 8px;
+    }
+
+    .game-stats span {
+        padding: 4px 8px;
+        font-size: 0.8em;
+    }
+
+    .milo-character {
+        transform: scale(0.8);
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .snowman-target {
+        transform: scale(0.8);
+    }
+
+    .play-game-btn {
+        padding: 8px 16px;
+        font-size: 0.85em;
+    }
+}
+
 /* Dancing Santa */
 .dancing-santa {
     position: fixed;
