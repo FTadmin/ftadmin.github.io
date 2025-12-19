@@ -159,17 +159,19 @@
         .snow-mound:nth-child(2) { left: 40%; width: 150px; height: 50px; }
         .snow-mound:nth-child(3) { right: 15%; width: 100px; height: 35px; }
 
-        /* Trees */
+        /* Christmas Trees */
         .tree {
             position: absolute;
             bottom: 60px;
+            pointer-events: none;
         }
 
         .tree-trunk {
             width: 20px;
             height: 40px;
-            background: #5D4037;
+            background: linear-gradient(90deg, #5D4037 0%, #4E342E 50%, #5D4037 100%);
             margin: 0 auto;
+            border-radius: 2px;
         }
 
         .tree-top {
@@ -191,6 +193,16 @@
             border-bottom: 50px solid #388E3C;
         }
 
+        .tree-top::after {
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: -30px;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 40px solid #43A047;
+        }
+
         .tree-snow {
             position: absolute;
             top: -5px;
@@ -200,11 +212,267 @@
             height: 15px;
             background: white;
             border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        .tree:nth-child(1) { left: 5%; }
-        .tree:nth-child(2) { right: 8%; transform: scale(0.8); }
-        .tree:nth-child(3) { left: 85%; transform: scale(0.6); bottom: 65px; }
+        .tree-star {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            animation: twinkle 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes twinkle {
+            from { opacity: 0.7; transform: translateX(-50%) scale(0.9); }
+            to { opacity: 1; transform: translateX(-50%) scale(1.1); }
+        }
+
+        .tree-lights {
+            position: absolute;
+            top: 15px;
+            left: -25px;
+            width: 50px;
+            height: 40px;
+        }
+
+        .tree-light {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            animation: lightBlink 1.5s ease-in-out infinite;
+        }
+
+        .tree-light:nth-child(1) { background: #ff5722; left: 5px; top: 5px; animation-delay: 0s; }
+        .tree-light:nth-child(2) { background: #ffeb3b; left: 25px; top: 8px; animation-delay: 0.3s; }
+        .tree-light:nth-child(3) { background: #2196f3; left: 40px; top: 5px; animation-delay: 0.6s; }
+        .tree-light:nth-child(4) { background: #4caf50; left: 10px; top: 25px; animation-delay: 0.9s; }
+        .tree-light:nth-child(5) { background: #e91e63; left: 35px; top: 28px; animation-delay: 1.2s; }
+
+        @keyframes lightBlink {
+            0%, 100% { opacity: 1; box-shadow: 0 0 8px currentColor; }
+            50% { opacity: 0.4; box-shadow: none; }
+        }
+
+        .tree:nth-child(1) { left: 3%; z-index: 5; }
+        .tree:nth-child(2) { right: 5%; transform: scale(0.9); z-index: 5; }
+        .tree:nth-child(3) { left: 92%; transform: scale(0.6); bottom: 65px; z-index: 5; }
+        .tree:nth-child(4) { left: 15%; transform: scale(0.5); bottom: 65px; z-index: 4; }
+
+        /* Decorative Animals */
+        .penguin {
+            position: absolute;
+            bottom: 65px;
+            width: 35px;
+            height: 45px;
+            z-index: 6;
+            pointer-events: none;
+            animation: penguinWaddle 2s ease-in-out infinite;
+        }
+
+        @keyframes penguinWaddle {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+
+        .penguin-body {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 28px;
+            height: 35px;
+            background: linear-gradient(90deg, #1a1a1a 0%, #333 50%, #1a1a1a 100%);
+            border-radius: 50% 50% 45% 45%;
+        }
+
+        .penguin-belly {
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 25px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .penguin-eye {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #fff;
+            border-radius: 50%;
+            top: 8px;
+        }
+
+        .penguin-eye.left { left: 6px; }
+        .penguin-eye.right { right: 6px; }
+
+        .penguin-eye::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            width: 4px;
+            height: 4px;
+            background: #000;
+            border-radius: 50%;
+        }
+
+        .penguin-beak {
+            position: absolute;
+            top: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 8px solid #ff9800;
+        }
+
+        .penguin-feet {
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 4px;
+        }
+
+        .penguin-foot {
+            width: 10px;
+            height: 5px;
+            background: #ff9800;
+            border-radius: 50%;
+        }
+
+        .penguin-hat {
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 12px;
+            background: #d32f2f;
+            border-radius: 50% 50% 0 0;
+        }
+
+        .penguin-hat::after {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        /* Robin bird */
+        .robin {
+            position: absolute;
+            width: 25px;
+            height: 20px;
+            z-index: 6;
+            pointer-events: none;
+            animation: robinHop 1.5s ease-in-out infinite;
+        }
+
+        @keyframes robinHop {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .robin-body {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 20px;
+            height: 14px;
+            background: linear-gradient(135deg, #6d4c41 0%, #5d4037 100%);
+            border-radius: 50%;
+        }
+
+        .robin-breast {
+            position: absolute;
+            bottom: 5px;
+            left: 3px;
+            width: 10px;
+            height: 10px;
+            background: #e53935;
+            border-radius: 50%;
+        }
+
+        .robin-head {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            width: 12px;
+            height: 10px;
+            background: #5d4037;
+            border-radius: 50%;
+        }
+
+        .robin-eye {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            width: 4px;
+            height: 4px;
+            background: #000;
+            border-radius: 50%;
+        }
+
+        .robin-eye::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 1px;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .robin-beak {
+            position: absolute;
+            top: 4px;
+            right: -5px;
+            width: 0;
+            height: 0;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            border-left: 6px solid #ff9800;
+        }
+
+        .robin-tail {
+            position: absolute;
+            bottom: 8px;
+            left: -8px;
+            width: 12px;
+            height: 6px;
+            background: #5d4037;
+            border-radius: 50% 0 0 50%;
+        }
+
+        .robin-legs {
+            position: absolute;
+            bottom: 0;
+            left: 8px;
+            display: flex;
+            gap: 3px;
+        }
+
+        .robin-leg {
+            width: 2px;
+            height: 6px;
+            background: #5d4037;
+        }
 
         /* Milo Character */
         .milo {
@@ -259,24 +527,37 @@
 
         .milo-eye {
             position: absolute;
-            width: 10px;
-            height: 12px;
-            background: #2D1B0E;
+            width: 14px;
+            height: 14px;
+            background: radial-gradient(circle at 35% 35%, #4a3728 0%, #2D1B0E 60%, #1a0f08 100%);
             border-radius: 50%;
-            top: 14px;
+            top: 12px;
+            box-shadow: inset 0 -2px 4px rgba(0,0,0,0.3);
         }
 
-        .milo-eye.left { left: 12px; }
-        .milo-eye.right { right: 12px; }
+        .milo-eye.left { left: 10px; }
+        .milo-eye.right { right: 10px; }
+
+        .milo-eye::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 3px;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.9;
+        }
 
         .milo-eye::after {
             content: '';
             position: absolute;
-            top: 3px;
-            left: 3px;
-            width: 4px;
-            height: 4px;
-            background: white;
+            top: 6px;
+            left: 7px;
+            width: 3px;
+            height: 3px;
+            background: rgba(255,255,255,0.5);
             border-radius: 50%;
         }
 
@@ -500,23 +781,39 @@
             pointer-events: none;
         }
 
-        /* Golden Snowman - worth more points! */
-        .snowman.golden .snowman-bottom,
-        .snowman.golden .snowman-middle,
-        .snowman.golden .snowman-head {
-            background: radial-gradient(circle at 30% 30%, #FFD700 0%, #FFA000 100%);
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        /* Fancy Snowman - worth more points! Has colorful outfit */
+        .snowman.fancy .snowman-hat {
+            background: linear-gradient(135deg, #9c27b0 0%, #6a1b9a 100%);
         }
 
-        .snowman.golden .snowman-hat {
-            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+        .snowman.fancy .snowman-hat::after {
+            background: linear-gradient(135deg, #9c27b0 0%, #6a1b9a 100%);
         }
 
-        .snowman.golden .snowman-hat::after {
-            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+        .snowman.fancy .snowman-scarf {
+            position: absolute;
+            bottom: 52px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 38px;
+            height: 8px;
+            background: repeating-linear-gradient(90deg, #e91e63 0px, #e91e63 6px, #fff 6px, #fff 12px);
+            border-radius: 4px;
+            z-index: 5;
         }
 
-        .snowman.golden::before {
+        .snowman.fancy .snowman-scarf::after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            top: 5px;
+            width: 10px;
+            height: 18px;
+            background: repeating-linear-gradient(180deg, #e91e63 0px, #e91e63 5px, #fff 5px, #fff 10px);
+            border-radius: 0 0 4px 4px;
+        }
+
+        .snowman.fancy::before {
             content: '⭐';
             position: absolute;
             top: -20px;
@@ -529,6 +826,26 @@
         @keyframes starBounce {
             from { transform: translateX(-50%) translateY(0); }
             to { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Dancing Snowman - moves side to side! */
+        .snowman.dancer {
+            animation: snowmanDance 0.6s ease-in-out infinite;
+        }
+
+        @keyframes snowmanDance {
+            0%, 100% { transform: translateX(0) rotate(-5deg); }
+            25% { transform: translateX(-8px) rotate(0deg); }
+            50% { transform: translateX(0) rotate(5deg); }
+            75% { transform: translateX(8px) rotate(0deg); }
+        }
+
+        .snowman.dancer .snowman-hat {
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+        }
+
+        .snowman.dancer .snowman-hat::after {
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
         }
 
         /* Mini Snowman - smaller, harder to hit! */
@@ -977,7 +1294,35 @@
 
         <!-- Game Arena -->
         <div class="game-arena" id="arena">
-            <!-- Background Elements -->
+            <!-- Christmas Trees -->
+            <div class="tree">
+                <div class="tree-top">
+                    <div class="tree-snow"></div>
+                    <div class="tree-star">⭐</div>
+                    <div class="tree-lights">
+                        <div class="tree-light"></div>
+                        <div class="tree-light"></div>
+                        <div class="tree-light"></div>
+                        <div class="tree-light"></div>
+                        <div class="tree-light"></div>
+                    </div>
+                </div>
+                <div class="tree-trunk"></div>
+            </div>
+            <div class="tree">
+                <div class="tree-top">
+                    <div class="tree-snow"></div>
+                    <div class="tree-star">⭐</div>
+                    <div class="tree-lights">
+                        <div class="tree-light"></div>
+                        <div class="tree-light"></div>
+                        <div class="tree-light"></div>
+                        <div class="tree-light"></div>
+                        <div class="tree-light"></div>
+                    </div>
+                </div>
+                <div class="tree-trunk"></div>
+            </div>
             <div class="tree">
                 <div class="tree-top"><div class="tree-snow"></div></div>
                 <div class="tree-trunk"></div>
@@ -985,6 +1330,35 @@
             <div class="tree">
                 <div class="tree-top"><div class="tree-snow"></div></div>
                 <div class="tree-trunk"></div>
+            </div>
+
+            <!-- Decorative Animals -->
+            <div class="penguin" style="right: 12%;">
+                <div class="penguin-body">
+                    <div class="penguin-belly"></div>
+                    <div class="penguin-eye left"></div>
+                    <div class="penguin-eye right"></div>
+                    <div class="penguin-beak"></div>
+                </div>
+                <div class="penguin-hat"></div>
+                <div class="penguin-feet">
+                    <div class="penguin-foot"></div>
+                    <div class="penguin-foot"></div>
+                </div>
+            </div>
+
+            <div class="robin" style="left: 25%; bottom: 120px;">
+                <div class="robin-tail"></div>
+                <div class="robin-body"></div>
+                <div class="robin-breast"></div>
+                <div class="robin-head">
+                    <div class="robin-eye"></div>
+                    <div class="robin-beak"></div>
+                </div>
+                <div class="robin-legs">
+                    <div class="robin-leg"></div>
+                    <div class="robin-leg"></div>
+                </div>
             </div>
 
             <!-- Snow Ground -->
@@ -1026,7 +1400,7 @@
 
             <!-- Controls -->
             <div class="game-controls" id="controls">
-                <p class="instructions">Tap to throw! Chain hits for combo multipliers! ⭐ = 25pts, Mini = 15pts</p>
+                <p class="instructions">Tap to throw! Chain combos! Fancy ⭐ = 25pts, Dancers = 20pts, Mini = 15pts</p>
                 <button class="start-btn" id="startBtn">Start Game!</button>
                 <button class="restart-btn" id="restartBtn" style="display:none;">Play Again!</button>
             </div>
@@ -1234,7 +1608,7 @@
         }
 
         function restartGame() {
-            stopChristmasMusic();
+            // Music keeps playing - no need to restart it
             startGame();
         }
 
@@ -1374,24 +1748,32 @@
             const x = 180 + Math.random() * (arena.offsetWidth - 260);
             const y = 80 + Math.random() * (arena.offsetHeight - 250);
 
-            // Determine type: 15% golden, 25% mini, 60% regular
+            // Determine type: 12% fancy, 18% dancer, 20% mini, 50% regular
             const rand = Math.random();
             let type = 'regular';
             let points = 10;
             let hitRadius = 50;
             let className = 'snowman';
             let lifetime = 3500;
+            let extraHTML = '';
 
-            if (rand < 0.15) {
-                type = 'golden';
+            if (rand < 0.12) {
+                type = 'fancy';
                 points = 25;
                 hitRadius = 50;
-                className = 'snowman golden';
-                lifetime = 2500; // Golden disappears faster!
-            } else if (rand < 0.40) {
+                className = 'snowman fancy';
+                lifetime = 2500;
+                extraHTML = '<div class="snowman-scarf"></div>';
+            } else if (rand < 0.30) {
+                type = 'dancer';
+                points = 20;
+                hitRadius = 45;
+                className = 'snowman dancer';
+                lifetime = 3000;
+            } else if (rand < 0.50) {
                 type = 'mini';
                 points = 15;
-                hitRadius = 30; // Smaller hit area
+                hitRadius = 30;
                 className = 'snowman mini';
                 lifetime = 3000;
             }
@@ -1407,7 +1789,7 @@
                 <div class="snowman-eye right"></div>
                 <div class="snowman-nose"></div>
                 <div class="snowman-middle"></div>
-                <div class="snowman-button"></div>
+                ${extraHTML}
                 <div class="snowman-button"></div>
                 <div class="snowman-bottom"></div>
             `;
@@ -1458,8 +1840,10 @@
                     showScorePopup(target.x + 30, target.y, `+${points}${comboText}`);
 
                     // Different sounds for different targets
-                    if (target.type === 'golden') {
+                    if (target.type === 'fancy') {
                         playSound(1000, 600, 0.15);
+                    } else if (target.type === 'dancer') {
+                        playSound(900, 500, 0.14);
                     } else if (target.type === 'mini') {
                         playSound(1200, 800, 0.12);
                     } else {
@@ -1565,8 +1949,7 @@
             clearInterval(game.timer);
             clearInterval(game.spawnTimer);
 
-            // Stop the music
-            stopChristmasMusic();
+            // Music keeps playing! It's Christmas after all!
 
             arena.removeEventListener('click', handleClick);
             arena.removeEventListener('touchstart', handleTouch);
