@@ -1,3 +1,413 @@
+/* Dancing Santa */
+.dancing-santa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9998;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dancing-santa:hover {
+    transform: scale(1.1);
+}
+
+.santa-character {
+    position: relative;
+    width: 80px;
+    height: 120px;
+    animation: santaBop 0.6s ease-in-out infinite;
+}
+
+/* Santa's Hat */
+.santa-hat {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.hat-base {
+    width: 50px;
+    height: 30px;
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    border-radius: 50% 50% 0 0;
+    position: relative;
+}
+
+.hat-base::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: -5px;
+    width: 60px;
+    height: 12px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.hat-pom {
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    animation: pomBounce 0.6s ease-in-out infinite;
+}
+
+/* Santa's Face */
+.santa-face {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 50px;
+    background: #ffccbc;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.santa-eyes {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 14px;
+}
+
+.eye {
+    width: 8px;
+    height: 8px;
+    background: #333;
+    border-radius: 50%;
+    animation: blink 3s infinite;
+}
+
+.santa-nose {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 10px;
+    background: #ef9a9a;
+    border-radius: 50%;
+}
+
+.santa-cheeks {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.cheek {
+    width: 10px;
+    height: 8px;
+    background: rgba(244, 143, 177, 0.6);
+    border-radius: 50%;
+}
+
+.santa-beard {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 35px;
+    background: #fff;
+    border-radius: 0 0 50% 50%;
+}
+
+.santa-beard::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    width: 40px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.santa-mouth {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 6px;
+    background: #c62828;
+    border-radius: 0 0 10px 10px;
+    z-index: 3;
+}
+
+/* Santa's Body */
+.santa-body {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 45px;
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    border-radius: 30px 30px 20px 20px;
+    z-index: 1;
+}
+
+.belt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #333;
+}
+
+.belt::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 12px;
+    background: #ffd700;
+    border-radius: 2px;
+}
+
+/* Santa's Arms */
+.santa-arms {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.arm {
+    width: 15px;
+    height: 30px;
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    border-radius: 10px;
+}
+
+.arm.left {
+    transform-origin: top center;
+    animation: armWaveLeft 0.6s ease-in-out infinite;
+}
+
+.arm.right {
+    transform-origin: top center;
+    animation: armWaveRight 0.6s ease-in-out infinite;
+}
+
+.arm::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #ffccbc;
+    border-radius: 50%;
+}
+
+/* Santa's Legs */
+.santa-legs {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.leg {
+    width: 14px;
+    height: 25px;
+    background: #333;
+    border-radius: 0 0 8px 8px;
+}
+
+.leg.left {
+    transform-origin: top center;
+    animation: legKickLeft 0.6s ease-in-out infinite;
+}
+
+.leg.right {
+    transform-origin: top center;
+    animation: legKickRight 0.6s ease-in-out infinite;
+}
+
+/* Santa's Shadow */
+.santa-shadow {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    animation: shadowPulse 0.6s ease-in-out infinite;
+}
+
+/* Dance Text */
+.dance-text {
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    margin-top: 8px;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.dancing-santa:hover .dance-text {
+    opacity: 1;
+}
+
+/* Party Mode - More Energetic Dance */
+.dancing-santa.party-mode .santa-character {
+    animation: santaParty 0.3s ease-in-out infinite;
+}
+
+.dancing-santa.party-mode .arm.left {
+    animation: armPartyLeft 0.3s ease-in-out infinite;
+}
+
+.dancing-santa.party-mode .arm.right {
+    animation: armPartyRight 0.3s ease-in-out infinite;
+}
+
+.dancing-santa.party-mode .leg.left {
+    animation: legPartyLeft 0.3s ease-in-out infinite;
+}
+
+.dancing-santa.party-mode .leg.right {
+    animation: legPartyRight 0.3s ease-in-out infinite;
+}
+
+.dancing-santa.party-mode .hat-pom {
+    animation: pomParty 0.15s ease-in-out infinite;
+}
+
+.dancing-santa.party-mode .dance-text::after {
+    content: ' 🎉';
+}
+
+/* Animations */
+@keyframes santaBop {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+@keyframes santaParty {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+@keyframes pomBounce {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(3px, -3px); }
+}
+
+@keyframes pomParty {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(5px, -5px) scale(1.2); }
+}
+
+@keyframes armWaveLeft {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(15deg); }
+}
+
+@keyframes armWaveRight {
+    0%, 100% { transform: rotate(10deg); }
+    50% { transform: rotate(-15deg); }
+}
+
+@keyframes armPartyLeft {
+    0%, 100% { transform: rotate(-30deg); }
+    50% { transform: rotate(40deg); }
+}
+
+@keyframes armPartyRight {
+    0%, 100% { transform: rotate(30deg); }
+    50% { transform: rotate(-40deg); }
+}
+
+@keyframes legKickLeft {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(8deg); }
+}
+
+@keyframes legKickRight {
+    0%, 100% { transform: rotate(5deg); }
+    50% { transform: rotate(-8deg); }
+}
+
+@keyframes legPartyLeft {
+    0%, 100% { transform: rotate(-15deg); }
+    50% { transform: rotate(20deg); }
+}
+
+@keyframes legPartyRight {
+    0%, 100% { transform: rotate(15deg); }
+    50% { transform: rotate(-20deg); }
+}
+
+@keyframes shadowPulse {
+    0%, 100% { transform: translateX(-50%) scaleX(1); opacity: 0.2; }
+    50% { transform: translateX(-50%) scaleX(0.8); opacity: 0.3; }
+}
+
+@keyframes blink {
+    0%, 90%, 100% { transform: scaleY(1); }
+    95% { transform: scaleY(0.1); }
+}
+
+/* Accessibility - reduce motion */
+@media (prefers-reduced-motion: reduce) {
+    .dancing-santa {
+        display: none;
+    }
+}
+
+/* Mobile positioning */
+@media (max-width: 768px) {
+    .dancing-santa {
+        bottom: 80px;
+        right: 10px;
+        transform: scale(0.8);
+    }
+
+    .dancing-santa:hover {
+        transform: scale(0.9);
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .dance-text {
+        color: #aaa;
+    }
+}
+
 /* Snow Animation */
 .snowflakes {
     position: fixed;

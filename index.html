@@ -111,6 +111,42 @@
     </script>
 </head>
 <body>
+    <!-- Dancing Santa -->
+    <div class="dancing-santa" onclick="toggleSantaParty(this)" title="Click me to party!">
+        <div class="santa-character">
+            <div class="santa-hat">
+                <div class="hat-base"></div>
+                <div class="hat-pom"></div>
+            </div>
+            <div class="santa-face">
+                <div class="santa-eyes">
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                </div>
+                <div class="santa-nose"></div>
+                <div class="santa-cheeks">
+                    <div class="cheek left"></div>
+                    <div class="cheek right"></div>
+                </div>
+                <div class="santa-beard"></div>
+                <div class="santa-mouth"></div>
+            </div>
+            <div class="santa-body">
+                <div class="belt"></div>
+            </div>
+            <div class="santa-arms">
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+            </div>
+            <div class="santa-legs">
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+            </div>
+        </div>
+        <div class="santa-shadow"></div>
+        <div class="dance-text">Click Santa!</div>
+    </div>
+
     <!-- Snow Animation -->
     <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">&#10052;</div>
@@ -744,6 +780,135 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('cookieConsent').classList.add('show');
     }
 });
+
+// Santa Party Mode with Techno Jingle Bells
+let santaAudioContext = null;
+let santaIsPlaying = false;
+let santaOscillators = [];
+
+function toggleSantaParty(element) {
+    element.classList.toggle('party-mode');
+
+    if (element.classList.contains('party-mode')) {
+        playTechnoJingleBells();
+    } else {
+        stopTechnoJingleBells();
+    }
+}
+
+function playTechnoJingleBells() {
+    if (santaIsPlaying) return;
+    santaIsPlaying = true;
+
+    try {
+        santaAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+        // Jingle Bells melody notes (simplified, techno style)
+        const melody = [
+            { note: 'E5', duration: 0.15 },
+            { note: 'E5', duration: 0.15 },
+            { note: 'E5', duration: 0.3 },
+            { note: 'E5', duration: 0.15 },
+            { note: 'E5', duration: 0.15 },
+            { note: 'E5', duration: 0.3 },
+            { note: 'E5', duration: 0.15 },
+            { note: 'G5', duration: 0.15 },
+            { note: 'C5', duration: 0.15 },
+            { note: 'D5', duration: 0.15 },
+            { note: 'E5', duration: 0.5 },
+            { note: 'F5', duration: 0.15 },
+            { note: 'F5', duration: 0.15 },
+            { note: 'F5', duration: 0.15 },
+            { note: 'F5', duration: 0.15 },
+            { note: 'F5', duration: 0.15 },
+            { note: 'E5', duration: 0.15 },
+            { note: 'E5', duration: 0.15 },
+            { note: 'E5', duration: 0.1 },
+            { note: 'E5', duration: 0.1 },
+            { note: 'E5', duration: 0.15 },
+            { note: 'D5', duration: 0.15 },
+            { note: 'D5', duration: 0.15 },
+            { note: 'E5', duration: 0.15 },
+            { note: 'D5', duration: 0.3 },
+            { note: 'G5', duration: 0.3 },
+        ];
+
+        const noteFreq = {
+            'C5': 523.25, 'D5': 587.33, 'E5': 659.25, 'F5': 698.46, 'G5': 783.99, 'A5': 880.00
+        };
+
+        let startTime = santaAudioContext.currentTime;
+
+        function playMelodyLoop() {
+            if (!santaIsPlaying) return;
+
+            melody.forEach((item, index) => {
+                const osc = santaAudioContext.createOscillator();
+                const gain = santaAudioContext.createGain();
+
+                // Techno sound - square wave
+                osc.type = 'square';
+                osc.frequency.value = noteFreq[item.note];
+
+                gain.gain.setValueAtTime(0.08, startTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, startTime + item.duration);
+
+                osc.connect(gain);
+                gain.connect(santaAudioContext.destination);
+
+                osc.start(startTime);
+                osc.stop(startTime + item.duration);
+
+                santaOscillators.push(osc);
+                startTime += item.duration;
+            });
+
+            // Add techno bass drum
+            for (let i = 0; i < 16; i++) {
+                const kickTime = santaAudioContext.currentTime + (i * 0.25);
+                if (kickTime < startTime) {
+                    const kick = santaAudioContext.createOscillator();
+                    const kickGain = santaAudioContext.createGain();
+                    kick.type = 'sine';
+                    kick.frequency.setValueAtTime(150, kickTime);
+                    kick.frequency.exponentialRampToValueAtTime(50, kickTime + 0.1);
+                    kickGain.gain.setValueAtTime(0.15, kickTime);
+                    kickGain.gain.exponentialRampToValueAtTime(0.01, kickTime + 0.1);
+                    kick.connect(kickGain);
+                    kickGain.connect(santaAudioContext.destination);
+                    kick.start(kickTime);
+                    kick.stop(kickTime + 0.1);
+                    santaOscillators.push(kick);
+                }
+            }
+
+            // Loop the melody
+            const loopDuration = startTime - santaAudioContext.currentTime;
+            if (santaIsPlaying) {
+                setTimeout(() => {
+                    startTime = santaAudioContext.currentTime;
+                    playMelodyLoop();
+                }, loopDuration * 1000);
+            }
+        }
+
+        playMelodyLoop();
+    } catch (e) {
+        console.log('Audio not supported');
+    }
+}
+
+function stopTechnoJingleBells() {
+    santaIsPlaying = false;
+    santaOscillators.forEach(osc => {
+        try { osc.stop(); } catch(e) {}
+    });
+    santaOscillators = [];
+    if (santaAudioContext) {
+        santaAudioContext.close();
+        santaAudioContext = null;
+    }
+}
 </script>
 </body>
 </html>
