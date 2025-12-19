@@ -422,24 +422,63 @@
 
         .milo-scarf {
             position: absolute;
-            bottom: 60px;
-            left: 55px;
-            width: 60px;
-            height: 12px;
-            background: linear-gradient(90deg, #4CAF50, #2E7D32, #4CAF50);
-            border-radius: 6px;
+            bottom: 42px;
+            left: 58px;
+            width: 55px;
+            height: 10px;
+            background: repeating-linear-gradient(
+                90deg,
+                #d32f2f 0px,
+                #d32f2f 8px,
+                #fff 8px,
+                #fff 16px
+            );
+            border-radius: 5px;
             z-index: 3;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
         .milo-scarf::after {
             content: '';
             position: absolute;
-            right: -10px;
-            top: 8px;
-            width: 18px;
-            height: 25px;
-            background: linear-gradient(180deg, #4CAF50 0%, #2E7D32 100%);
-            border-radius: 0 0 8px 8px;
+            right: -8px;
+            top: 6px;
+            width: 15px;
+            height: 22px;
+            background: repeating-linear-gradient(
+                180deg,
+                #d32f2f 0px,
+                #d32f2f 6px,
+                #fff 6px,
+                #fff 12px
+            );
+            border-radius: 0 0 6px 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+
+        /* Super wag when scoring */
+        .milo.scored .milo-tail {
+            animation: superWag 0.1s ease-in-out infinite;
+        }
+
+        @keyframes superWag {
+            0%, 100% { transform: rotate(-40deg) scale(1.2); }
+            50% { transform: rotate(40deg) scale(1.2); }
+        }
+
+        .milo.scored::after {
+            content: '🎉';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            font-size: 24px;
+            animation: celebrateEmoji 0.5s ease-out forwards;
+        }
+
+        @keyframes celebrateEmoji {
+            0% { transform: translateX(-50%) translateY(0) scale(0); opacity: 1; }
+            50% { transform: translateX(-50%) translateY(-20px) scale(1.5); opacity: 1; }
+            100% { transform: translateX(-50%) translateY(-40px) scale(1); opacity: 0; }
         }
 
         /* Snowman Target */
@@ -862,6 +901,117 @@
             spawnTimer: null
         };
 
+        // Christmas Music
+        let musicCtx = null;
+        let musicPlaying = false;
+        let musicOscillators = [];
+
+        function startChristmasMusic() {
+            if (musicPlaying) return;
+            musicPlaying = true;
+
+            try {
+                musicCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+                const melody = [
+                    { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.4 },
+                    { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.4 },
+                    { note: 'E5', dur: 0.2 }, { note: 'G5', dur: 0.2 }, { note: 'C5', dur: 0.2 }, { note: 'D5', dur: 0.2 },
+                    { note: 'E5', dur: 0.6 }, { note: 'rest', dur: 0.2 },
+                    { note: 'F5', dur: 0.2 }, { note: 'F5', dur: 0.2 }, { note: 'F5', dur: 0.2 }, { note: 'F5', dur: 0.2 },
+                    { note: 'F5', dur: 0.2 }, { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.1 }, { note: 'E5', dur: 0.1 },
+                    { note: 'E5', dur: 0.2 }, { note: 'D5', dur: 0.2 }, { note: 'D5', dur: 0.2 }, { note: 'E5', dur: 0.2 },
+                    { note: 'D5', dur: 0.4 }, { note: 'G5', dur: 0.4 },
+                ];
+
+                const freq = {
+                    'C5': 523.25, 'D5': 587.33, 'E5': 659.25, 'F5': 698.46, 'G5': 783.99, 'rest': 0
+                };
+
+                let t = musicCtx.currentTime;
+
+                function playLoop() {
+                    if (!musicPlaying) return;
+
+                    melody.forEach(note => {
+                        if (note.note !== 'rest') {
+                            const osc = musicCtx.createOscillator();
+                            const gain = musicCtx.createGain();
+                            osc.type = 'triangle';
+                            osc.frequency.value = freq[note.note];
+                            gain.gain.setValueAtTime(0.08, t);
+                            gain.gain.exponentialRampToValueAtTime(0.01, t + note.dur * 0.9);
+                            osc.connect(gain);
+                            gain.connect(musicCtx.destination);
+                            osc.start(t);
+                            osc.stop(t + note.dur);
+                            musicOscillators.push(osc);
+                        }
+                        t += note.dur;
+                    });
+
+                    // Bass beats
+                    for (let i = 0; i < 20; i++) {
+                        const beatT = musicCtx.currentTime + i * 0.4;
+                        if (beatT < t) {
+                            const kick = musicCtx.createOscillator();
+                            const kGain = musicCtx.createGain();
+                            kick.type = 'sine';
+                            kick.frequency.setValueAtTime(120, beatT);
+                            kick.frequency.exponentialRampToValueAtTime(40, beatT + 0.1);
+                            kGain.gain.setValueAtTime(0.12, beatT);
+                            kGain.gain.exponentialRampToValueAtTime(0.01, beatT + 0.1);
+                            kick.connect(kGain);
+                            kGain.connect(musicCtx.destination);
+                            kick.start(beatT);
+                            kick.stop(beatT + 0.1);
+                            musicOscillators.push(kick);
+                        }
+                    }
+
+                    // Sleigh bells (high frequency clicks)
+                    for (let i = 0; i < 30; i++) {
+                        const bellT = musicCtx.currentTime + i * 0.25;
+                        if (bellT < t) {
+                            const bell = musicCtx.createOscillator();
+                            const bGain = musicCtx.createGain();
+                            bell.type = 'square';
+                            bell.frequency.value = 2000 + Math.random() * 1000;
+                            bGain.gain.setValueAtTime(0.015, bellT);
+                            bGain.gain.exponentialRampToValueAtTime(0.001, bellT + 0.05);
+                            bell.connect(bGain);
+                            bGain.connect(musicCtx.destination);
+                            bell.start(bellT);
+                            bell.stop(bellT + 0.05);
+                            musicOscillators.push(bell);
+                        }
+                    }
+
+                    const loopLen = t - musicCtx.currentTime;
+                    if (musicPlaying) {
+                        setTimeout(() => {
+                            t = musicCtx.currentTime;
+                            playLoop();
+                        }, loopLen * 1000);
+                    }
+                }
+
+                playLoop();
+            } catch(e) {
+                console.log('Music not supported');
+            }
+        }
+
+        function stopChristmasMusic() {
+            musicPlaying = false;
+            musicOscillators.forEach(o => { try { o.stop(); } catch(e) {} });
+            musicOscillators = [];
+            if (musicCtx) {
+                musicCtx.close();
+                musicCtx = null;
+            }
+        }
+
         const arena = document.getElementById('arena');
         const milo = document.getElementById('milo');
         const targetsEl = document.getElementById('targets');
@@ -889,6 +1039,9 @@
             arena.addEventListener('click', handleClick);
             arena.addEventListener('touchstart', handleTouch, { passive: false });
 
+            // Start the Christmas music!
+            startChristmasMusic();
+
             // Timer
             game.timer = setInterval(() => {
                 game.time--;
@@ -902,6 +1055,7 @@
         }
 
         function restartGame() {
+            stopChristmasMusic();
             startGame();
         }
 
@@ -1053,6 +1207,10 @@
                     game.score += 10;
                     updateUI();
 
+                    // Milo gets excited! Super tail wag!
+                    milo.classList.add('scored');
+                    setTimeout(() => milo.classList.remove('scored'), 600);
+
                     showScorePopup(target.x + 30, target.y);
                     playSound(800, 400, 0.12);
 
@@ -1098,6 +1256,9 @@
             game.isPlaying = false;
             clearInterval(game.timer);
             clearInterval(game.spawnTimer);
+
+            // Stop the music
+            stopChristmasMusic();
 
             arena.removeEventListener('click', handleClick);
             arena.removeEventListener('touchstart', handleTouch);
