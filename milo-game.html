@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Milo's Snowball Fight! | Feeltracker Christmas Game</title>
     <meta name="description" content="Help Milo the cocker spaniel in an epic snowball fight! A fun Christmas game from Feeltracker.">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -500,6 +500,53 @@
             pointer-events: none;
         }
 
+        /* Golden Snowman - worth more points! */
+        .snowman.golden .snowman-bottom,
+        .snowman.golden .snowman-middle,
+        .snowman.golden .snowman-head {
+            background: radial-gradient(circle at 30% 30%, #FFD700 0%, #FFA000 100%);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+
+        .snowman.golden .snowman-hat {
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+        }
+
+        .snowman.golden .snowman-hat::after {
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+        }
+
+        .snowman.golden::before {
+            content: '⭐';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            animation: starBounce 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes starBounce {
+            from { transform: translateX(-50%) translateY(0); }
+            to { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Mini Snowman - smaller, harder to hit! */
+        .snowman.mini {
+            transform: scale(0.55);
+            animation: miniWobble 0.8s ease-in-out infinite;
+        }
+
+        .snowman.mini:hover {
+            transform: scale(0.6);
+        }
+
+        @keyframes miniWobble {
+            0%, 100% { transform: scale(0.55) translateX(0); }
+            25% { transform: scale(0.55) translateX(-3px); }
+            75% { transform: scale(0.55) translateX(3px); }
+        }
+
         @keyframes snowmanHit {
             0% { transform: scale(1) rotate(0); opacity: 1; }
             25% { transform: scale(1.3) rotate(-15deg); }
@@ -751,6 +798,67 @@
             font-style: italic;
         }
 
+        /* Leaderboard */
+        .leaderboard {
+            margin-top: 15px;
+            padding: 15px;
+            background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%);
+            border-radius: 15px;
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .leaderboard h4 {
+            margin: 0 0 10px 0;
+            color: #f57c00;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .leaderboard-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .leaderboard-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px;
+            margin: 3px 0;
+            background: rgba(255,255,255,0.7);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .leaderboard-list li:first-child {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%);
+            font-weight: 700;
+        }
+
+        .leaderboard-list li:nth-child(2) {
+            background: linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 100%);
+        }
+
+        .leaderboard-list li:nth-child(3) {
+            background: linear-gradient(135deg, #ffcc80 0%, #ff9800 100%);
+        }
+
+        .new-high-score {
+            color: #4CAF50;
+            font-weight: 700;
+            animation: pulse 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
         /* Mobile adjustments */
         @media (max-width: 600px) {
             .game-header {
@@ -777,15 +885,73 @@
             }
 
             .game-over {
-                padding: 25px 35px;
+                padding: 20px 25px;
+                max-height: 85vh;
+                overflow-y: auto;
             }
 
             .game-over h2 {
-                font-size: 1.8em;
+                font-size: 1.6em;
             }
 
             .game-over .final-score {
-                font-size: 2.2em;
+                font-size: 2em;
+            }
+
+            .leaderboard {
+                padding: 10px;
+            }
+        }
+
+        /* Fix for Android/iOS bottom nav bar cutoff */
+        @supports (padding-bottom: env(safe-area-inset-bottom)) {
+            .game-wrapper {
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+
+            .game-controls {
+                padding-bottom: calc(15px + env(safe-area-inset-bottom));
+            }
+        }
+
+        /* Extra padding for devices with gesture nav */
+        @media (max-height: 700px) {
+            .game-arena {
+                height: calc(100% - 160px);
+            }
+
+            .game-controls {
+                padding: 10px 15px 25px 15px;
+            }
+
+            .instructions {
+                font-size: 0.9em;
+                margin-bottom: 8px;
+            }
+
+            .start-btn, .restart-btn {
+                padding: 10px 25px;
+                font-size: 1em;
+            }
+        }
+
+        /* Very small screens */
+        @media (max-height: 600px) {
+            .game-header {
+                padding: 8px 12px;
+            }
+
+            .game-title {
+                font-size: 0.9em;
+            }
+
+            .game-arena {
+                height: calc(100% - 140px);
+            }
+
+            .milo {
+                transform: scale(0.6);
+                bottom: 40px;
             }
         }
     </style>
@@ -804,7 +970,7 @@
             <div class="game-stats">
                 <div class="stat">Score: <span class="stat-value" id="score">0</span></div>
                 <div class="stat">Time: <span class="stat-value" id="timer">30</span>s</div>
-                <div class="stat">Snowballs: <span class="stat-value" id="ammo">10</span></div>
+                <div class="stat" id="comboStat" style="display:none;">Combo: <span class="stat-value" id="combo">x1</span></div>
             </div>
             <a href="/" class="back-btn">← Back</a>
         </div>
@@ -860,7 +1026,7 @@
 
             <!-- Controls -->
             <div class="game-controls" id="controls">
-                <p class="instructions">Tap anywhere to throw snowballs at the snowmen!</p>
+                <p class="instructions">Tap to throw! Chain hits for combo multipliers! ⭐ = 25pts, Mini = 15pts</p>
                 <button class="start-btn" id="startBtn">Start Game!</button>
                 <button class="restart-btn" id="restartBtn" style="display:none;">Play Again!</button>
             </div>
@@ -869,7 +1035,12 @@
             <div class="game-over" id="gameOver">
                 <h2>Game Over!</h2>
                 <div class="final-score" id="finalScore">0</div>
+                <div class="accuracy" id="accuracy" style="font-size: 0.9em; color: #666; margin: 5px 0;"></div>
                 <div class="message" id="message"></div>
+                <div class="leaderboard" id="leaderboard">
+                    <h4>🏆 High Scores</h4>
+                    <ol class="leaderboard-list" id="leaderboardList"></ol>
+                </div>
                 <button class="restart-btn" onclick="restartGame()">Play Again!</button>
             </div>
         </div>
@@ -894,8 +1065,11 @@
             isPlaying: false,
             score: 0,
             time: 30,
-            ammo: 10,
-            maxAmmo: 15,
+            ammo: 20,
+            throws: 0,
+            hits: 0,
+            combo: 0,
+            comboTimer: null,
             targets: [],
             timer: null,
             spawnTimer: null
@@ -1027,10 +1201,15 @@
             game.isPlaying = true;
             game.score = 0;
             game.time = 30;
-            game.ammo = 10;
+            game.ammo = 20;
+            game.throws = 0;
+            game.hits = 0;
+            game.combo = 0;
             game.targets = [];
+            if (game.comboTimer) clearTimeout(game.comboTimer);
 
             updateUI();
+            document.getElementById('comboStat').style.display = 'none';
             startBtn.style.display = 'none';
             restartBtn.style.display = 'none';
             gameOverEl.classList.remove('active');
@@ -1078,6 +1257,7 @@
             const y = clientY - rect.top;
 
             game.ammo--;
+            game.throws++;
             updateUI();
 
             // Animate Milo
@@ -1087,16 +1267,47 @@
             // Throw snowball
             throwSnowball(x, y);
 
-            // Check hits
-            checkHit(x, y);
+            // Check hits (returns true if hit)
+            const didHit = checkHit(x, y);
 
-            // Replenish ammo
-            setTimeout(() => {
-                if (game.isPlaying && game.ammo < game.maxAmmo) {
-                    game.ammo++;
-                    updateUI();
-                }
-            }, 1500);
+            // Reset combo on miss
+            if (!didHit) {
+                resetCombo();
+            }
+
+            // End game early if out of ammo and no targets left
+            if (game.ammo <= 0 && game.targets.length === 0) {
+                setTimeout(() => {
+                    if (game.isPlaying && game.ammo <= 0) {
+                        endGame();
+                    }
+                }, 500);
+            }
+        }
+
+        function resetCombo() {
+            game.combo = 0;
+            document.getElementById('comboStat').style.display = 'none';
+            if (game.comboTimer) clearTimeout(game.comboTimer);
+        }
+
+        function increaseCombo() {
+            game.combo++;
+            const comboStat = document.getElementById('comboStat');
+            const comboEl = document.getElementById('combo');
+
+            if (game.combo >= 2) {
+                comboStat.style.display = 'block';
+                const multiplier = Math.min(game.combo, 5);
+                comboEl.textContent = 'x' + multiplier;
+                comboEl.style.color = game.combo >= 5 ? '#ff5722' : game.combo >= 3 ? '#ffeb3b' : '#4CAF50';
+            }
+
+            // Reset combo after 2 seconds of no hits
+            if (game.comboTimer) clearTimeout(game.comboTimer);
+            game.comboTimer = setTimeout(() => {
+                resetCombo();
+            }, 2000);
         }
 
         function throwSnowball(targetX, targetY) {
@@ -1163,8 +1374,30 @@
             const x = 180 + Math.random() * (arena.offsetWidth - 260);
             const y = 80 + Math.random() * (arena.offsetHeight - 250);
 
+            // Determine type: 15% golden, 25% mini, 60% regular
+            const rand = Math.random();
+            let type = 'regular';
+            let points = 10;
+            let hitRadius = 50;
+            let className = 'snowman';
+            let lifetime = 3500;
+
+            if (rand < 0.15) {
+                type = 'golden';
+                points = 25;
+                hitRadius = 50;
+                className = 'snowman golden';
+                lifetime = 2500; // Golden disappears faster!
+            } else if (rand < 0.40) {
+                type = 'mini';
+                points = 15;
+                hitRadius = 30; // Smaller hit area
+                className = 'snowman mini';
+                lifetime = 3000;
+            }
+
             const snowman = document.createElement('div');
-            snowman.className = 'snowman';
+            snowman.className = className;
             snowman.style.left = x + 'px';
             snowman.style.top = y + 'px';
             snowman.innerHTML = `
@@ -1181,7 +1414,7 @@
 
             targetsEl.appendChild(snowman);
 
-            const target = { element: snowman, x, y, width: 60, height: 85, id: Date.now() };
+            const target = { element: snowman, x, y, width: 60, height: 85, id: Date.now(), type, points, hitRadius };
             game.targets.push(target);
 
             setTimeout(() => {
@@ -1189,40 +1422,61 @@
                     snowman.remove();
                     game.targets = game.targets.filter(t => t.id !== target.id);
                 }
-            }, 3500);
+            }, lifetime);
         }
 
         function checkHit(clickX, clickY) {
-            const hitRadius = 50;
+            let hitSomething = false;
 
             game.targets.forEach(target => {
                 const cx = target.x + target.width / 2;
                 const cy = target.y + target.height / 2;
                 const dist = Math.sqrt((clickX - cx) ** 2 + (clickY - cy) ** 2);
+                const hitRadius = target.hitRadius || 50;
 
                 if (dist < hitRadius) {
+                    hitSomething = true;
+                    game.hits++;
                     target.element.classList.add('hit');
                     game.targets = game.targets.filter(t => t.id !== target.id);
 
-                    game.score += 10;
+                    // Increase combo and calculate multiplier
+                    increaseCombo();
+                    const multiplier = Math.min(game.combo, 5);
+                    const basePoints = target.points || 10;
+                    const points = basePoints * multiplier;
+
+                    game.score += points;
                     updateUI();
 
                     // Milo gets excited! Super tail wag!
                     milo.classList.add('scored');
                     setTimeout(() => milo.classList.remove('scored'), 600);
 
-                    showScorePopup(target.x + 30, target.y);
-                    playSound(800, 400, 0.12);
+                    // Show points with combo indicator
+                    const comboText = multiplier > 1 ? ` x${multiplier}` : '';
+                    showScorePopup(target.x + 30, target.y, `+${points}${comboText}`);
+
+                    // Different sounds for different targets
+                    if (target.type === 'golden') {
+                        playSound(1000, 600, 0.15);
+                    } else if (target.type === 'mini') {
+                        playSound(1200, 800, 0.12);
+                    } else {
+                        playSound(800, 400, 0.12);
+                    }
 
                     setTimeout(() => target.element.remove(), 500);
                 }
             });
+
+            return hitSomething;
         }
 
-        function showScorePopup(x, y) {
+        function showScorePopup(x, y, text = '+10') {
             const popup = document.createElement('div');
             popup.className = 'score-popup';
-            popup.textContent = '+10';
+            popup.textContent = text;
             popup.style.left = x + 'px';
             popup.style.top = y + 'px';
             arena.appendChild(popup);
@@ -1249,7 +1503,61 @@
         function updateUI() {
             document.getElementById('score').textContent = game.score;
             document.getElementById('timer').textContent = game.time;
-            document.getElementById('ammo').textContent = game.ammo;
+        }
+
+        // Leaderboard functions
+        function getHighScores() {
+            try {
+                const scores = localStorage.getItem('miloSnowballHighScores');
+                return scores ? JSON.parse(scores) : [];
+            } catch(e) {
+                return [];
+            }
+        }
+
+        function saveHighScore(score) {
+            try {
+                let scores = getHighScores();
+                scores.push({ score, date: new Date().toLocaleDateString() });
+                scores.sort((a, b) => b.score - a.score);
+                scores = scores.slice(0, 5); // Keep top 5
+                localStorage.setItem('miloSnowballHighScores', JSON.stringify(scores));
+                return scores;
+            } catch(e) {
+                return [];
+            }
+        }
+
+        function updateLeaderboard(currentScore) {
+            const scores = saveHighScore(currentScore);
+            const list = document.getElementById('leaderboardList');
+            list.innerHTML = '';
+
+            if (scores.length === 0) {
+                list.innerHTML = '<li>No scores yet!</li>';
+                return false;
+            }
+
+            let isNewHighScore = false;
+            let foundCurrent = false;
+
+            scores.forEach((entry, i) => {
+                const li = document.createElement('li');
+                const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '';
+
+                // Check if this is the current score (first match only)
+                if (!foundCurrent && entry.score === currentScore) {
+                    li.classList.add('new-high-score');
+                    li.innerHTML = `<span>${medal} ${entry.score} pts</span><span>NEW!</span>`;
+                    foundCurrent = true;
+                    if (i === 0) isNewHighScore = true;
+                } else {
+                    li.innerHTML = `<span>${medal} ${entry.score} pts</span><span>${entry.date}</span>`;
+                }
+                list.appendChild(li);
+            });
+
+            return isNewHighScore;
         }
 
         function endGame() {
@@ -1265,11 +1573,19 @@
 
             document.getElementById('finalScore').textContent = game.score;
 
+            // Show accuracy
+            const accuracy = game.throws > 0 ? Math.round((game.hits / game.throws) * 100) : 0;
+            document.getElementById('accuracy').textContent = `Accuracy: ${game.hits}/${game.throws} hits (${accuracy}%)`;
+
+            // Update leaderboard
+            const isNewHighScore = updateLeaderboard(game.score);
+
             let msg = '';
-            if (game.score >= 100) msg = 'Milo is SO proud of you! 🏆';
-            else if (game.score >= 70) msg = 'Great job! Milo wags his tail! 🐕';
-            else if (game.score >= 40) msg = 'Not bad! Milo gives you a lick! 👅';
-            else if (game.score >= 20) msg = 'Keep practicing with Milo! 🎯';
+            if (isNewHighScore) msg = '🎉 NEW HIGH SCORE! Milo is ecstatic! 🏆';
+            else if (game.score >= 150) msg = 'Milo is SO proud of you! 🏆';
+            else if (game.score >= 100) msg = 'Amazing combo skills! 🐕';
+            else if (game.score >= 60) msg = 'Great job! Milo wags his tail! 🐕';
+            else if (game.score >= 30) msg = 'Keep practicing with Milo! 🎯';
             else msg = 'Milo believes in you! Try again! ❄️';
 
             document.getElementById('message').textContent = msg;
