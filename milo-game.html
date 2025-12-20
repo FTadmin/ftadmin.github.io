@@ -2355,8 +2355,10 @@
 
         function checkHit(clickX, clickY) {
             let hitSomething = false;
+            const targetsToRemove = [];
 
-            game.targets.forEach(target => {
+            // Iterate over a copy to avoid issues with modification during iteration
+            [...game.targets].forEach(target => {
                 const cx = target.x + target.width / 2;
                 const cy = target.y + target.height / 2;
                 const dist = Math.sqrt((clickX - cx) ** 2 + (clickY - cy) ** 2);
@@ -2396,12 +2398,12 @@
                         // Milo gets excited for each hit!
                         milo.classList.add('scored');
                         setTimeout(() => milo.classList.remove('scored'), 300);
-                        return;
+                        return; // Don't remove Santa yet, just damage him
                     }
 
-                    // Regular hit (or final Santa hit)
+                    // Regular hit (or final Santa hit) - mark for removal
                     target.element.classList.add('hit');
-                    game.targets = game.targets.filter(t => t.id !== target.id);
+                    targetsToRemove.push(target.id);
 
                     // Increase combo and calculate multiplier
                     increaseCombo();
@@ -2433,6 +2435,11 @@
                     setTimeout(() => target.element.remove(), 500);
                 }
             });
+
+            // Remove hit targets after iteration is complete
+            if (targetsToRemove.length > 0) {
+                game.targets = game.targets.filter(t => !targetsToRemove.includes(t.id));
+            }
 
             return hitSomething;
         }
