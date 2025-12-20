@@ -791,13 +791,29 @@ let santaAudioContext = null;
 let santaIsPlaying = false;
 let santaOscillators = [];
 
+// Clean up audio when page is shown from back-forward cache
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        // Page was restored from bfcache - stop any playing audio and reset state
+        stopTechnoJingleBells();
+        const santa = document.querySelector('.dancing-santa');
+        if (santa) santa.classList.remove('party-mode');
+    }
+});
+
+// Also stop when leaving the page
+window.addEventListener('pagehide', function() {
+    stopTechnoJingleBells();
+});
+
 function toggleSantaParty(element) {
+    // Always stop existing audio first to prevent overlapping
+    stopTechnoJingleBells();
+
     element.classList.toggle('party-mode');
 
     if (element.classList.contains('party-mode')) {
         playTechnoJingleBells();
-    } else {
-        stopTechnoJingleBells();
     }
 }
 
