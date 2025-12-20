@@ -46,6 +46,87 @@
             100% { transform: translateY(100vh) rotate(360deg); }
         }
 
+        /* Stars Background */
+        .stars-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkleStar 2s ease-in-out infinite;
+        }
+
+        .star.large {
+            width: 4px;
+            height: 4px;
+            box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.5);
+        }
+
+        .star.medium {
+            width: 3px;
+            height: 3px;
+            box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.4);
+        }
+
+        .star.small {
+            width: 2px;
+            height: 2px;
+            box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.3);
+        }
+
+        @keyframes twinkleStar {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* Shooting Stars */
+        .shooting-star {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: linear-gradient(45deg, #fff, transparent);
+            border-radius: 50%;
+            opacity: 0;
+            animation: shootingStar 3s ease-out infinite;
+        }
+
+        .shooting-star::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(255,255,255,0.4), transparent);
+            transform: translateY(-50%);
+        }
+
+        @keyframes shootingStar {
+            0% {
+                opacity: 0;
+                transform: translateX(0) translateY(0);
+            }
+            10% {
+                opacity: 1;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(300px) translateY(200px);
+            }
+        }
+
         /* Game Container */
         .game-wrapper {
             position: relative;
@@ -527,38 +608,42 @@
 
         .milo-eye {
             position: absolute;
-            width: 14px;
-            height: 14px;
-            background: radial-gradient(circle at 35% 35%, #4a3728 0%, #2D1B0E 60%, #1a0f08 100%);
+            width: 16px;
+            height: 15px;
+            background: #FFFFFF;
             border-radius: 50%;
-            top: 12px;
-            box-shadow: inset 0 -2px 4px rgba(0,0,0,0.3);
+            top: 11px;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.1);
+            overflow: hidden;
         }
 
-        .milo-eye.left { left: 10px; }
-        .milo-eye.right { right: 10px; }
+        .milo-eye.left { left: 8px; }
+        .milo-eye.right { right: 8px; }
 
+        /* Pupil - warm brown cocker spaniel eye */
         .milo-eye::before {
             content: '';
             position: absolute;
-            top: 2px;
-            left: 3px;
-            width: 6px;
-            height: 6px;
-            background: white;
+            top: 3px;
+            left: 4px;
+            width: 9px;
+            height: 9px;
+            background: radial-gradient(circle at 40% 40%, #8B5A2B 0%, #5D3A1A 50%, #3D2512 100%);
             border-radius: 50%;
-            opacity: 0.9;
+            box-shadow: inset 0 -1px 2px rgba(0,0,0,0.3);
         }
 
+        /* Eye shine/highlight */
         .milo-eye::after {
             content: '';
             position: absolute;
-            top: 6px;
-            left: 7px;
-            width: 3px;
-            height: 3px;
-            background: rgba(255,255,255,0.5);
+            top: 4px;
+            left: 5px;
+            width: 4px;
+            height: 4px;
+            background: white;
             border-radius: 50%;
+            opacity: 0.9;
         }
 
         .milo-nose {
@@ -862,6 +947,168 @@
             0%, 100% { transform: scale(0.55) translateX(0); }
             25% { transform: scale(0.55) translateX(-3px); }
             75% { transform: scale(0.55) translateX(3px); }
+        }
+
+        /* SANTA BOSS - Big, takes multiple hits! */
+        .snowman.santa {
+            width: 100px;
+            height: 140px;
+            animation: santaBounce 0.8s ease-in-out infinite;
+        }
+
+        @keyframes santaBounce {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-8px) scale(1.02); }
+        }
+
+        .snowman.santa .snowman-bottom {
+            width: 90px;
+            height: 65px;
+            background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E8E8E8 100%);
+        }
+
+        .snowman.santa .snowman-middle {
+            width: 70px;
+            height: 55px;
+            bottom: 50px;
+            background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E8E8E8 100%);
+        }
+
+        .snowman.santa .snowman-head {
+            width: 50px;
+            height: 45px;
+            bottom: 95px;
+        }
+
+        /* Santa's red hat */
+        .snowman.santa .snowman-hat {
+            bottom: 130px;
+            width: 45px;
+            height: 35px;
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            border-radius: 50% 50% 0 0;
+        }
+
+        .snowman.santa .snowman-hat::before {
+            top: -10px;
+            left: 35px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .snowman.santa .snowman-hat::after {
+            bottom: -5px;
+            left: -5px;
+            width: 55px;
+            height: 12px;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .snowman.santa .snowman-eye {
+            bottom: 118px;
+            width: 6px;
+            height: 7px;
+        }
+
+        .snowman.santa .snowman-eye.left { left: 35px; }
+        .snowman.santa .snowman-eye.right { left: 58px; }
+
+        .snowman.santa .snowman-nose {
+            bottom: 108px;
+            left: 48px;
+            border-left: 15px solid #FF6B00;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        .snowman.santa .snowman-smile {
+            bottom: 100px;
+            width: 18px;
+            height: 9px;
+        }
+
+        .snowman.santa .snowman-button {
+            bottom: 65px;
+        }
+
+        /* Santa's belt */
+        .santa-belt {
+            position: absolute;
+            bottom: 58px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 75px;
+            height: 12px;
+            background: #1a1a1a;
+            border-radius: 3px;
+            z-index: 5;
+        }
+
+        .santa-belt::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 10px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%);
+            border-radius: 2px;
+        }
+
+        /* Santa health bar */
+        .santa-health-bar {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 10px;
+            background: #333;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .santa-health-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
+            transition: width 0.2s ease-out;
+            border-radius: 5px;
+        }
+
+        /* Santa boss indicator */
+        .snowman.santa::before {
+            content: '🎅 BOSS!';
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            font-weight: 800;
+            color: #d32f2f;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            white-space: nowrap;
+            animation: bossLabel 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes bossLabel {
+            from { transform: translateX(-50%) scale(1); }
+            to { transform: translateX(-50%) scale(1.1); }
+        }
+
+        /* Santa hit shake */
+        .snowman.santa.shaking {
+            animation: santaShake 0.15s ease-in-out;
+        }
+
+        @keyframes santaShake {
+            0%, 100% { transform: translateX(0) rotate(0); }
+            25% { transform: translateX(-10px) rotate(-5deg); }
+            75% { transform: translateX(10px) rotate(5deg); }
         }
 
         @keyframes snowmanHit {
@@ -1295,6 +1542,9 @@
     </style>
 </head>
 <body>
+    <!-- Stars Background -->
+    <div class="stars-bg" id="starsBg"></div>
+
     <!-- Snow Background -->
     <div class="snow-bg" id="snowBg"></div>
 
@@ -1421,7 +1671,7 @@
 
             <!-- Controls -->
             <div class="game-controls" id="controls">
-                <p class="instructions">Tap to throw! Chain combos! Fancy ⭐ = 25pts, Dancers = 20pts, Mini = 15pts</p>
+                <p class="instructions">Tap to throw! Chain combos! Watch for SANTA BOSS (5 hits = 100pts!)</p>
                 <button class="start-btn" id="startBtn">Start Game!</button>
                 <button class="restart-btn" id="restartBtn" style="display:none;">Play Again!</button>
             </div>
@@ -1442,6 +1692,43 @@
     </div>
 
     <script>
+        // Create stars background
+        const starsBg = document.getElementById('starsBg');
+        const starSizes = ['small', 'medium', 'large'];
+        for (let i = 0; i < 40; i++) {
+            const star = document.createElement('div');
+            const size = starSizes[Math.floor(Math.random() * 3)];
+            star.className = `star ${size}`;
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = (Math.random() * 3) + 's';
+            star.style.animationDuration = (1.5 + Math.random() * 2) + 's';
+            starsBg.appendChild(star);
+        }
+
+        // Create shooting stars
+        function createShootingStar() {
+            const shootingStar = document.createElement('div');
+            shootingStar.className = 'shooting-star';
+            shootingStar.style.left = (Math.random() * 60) + '%';
+            shootingStar.style.top = (Math.random() * 20) + '%';
+            shootingStar.style.animationDuration = (2 + Math.random() * 2) + 's';
+            starsBg.appendChild(shootingStar);
+
+            // Remove after animation
+            setTimeout(() => shootingStar.remove(), 4000);
+        }
+
+        // Spawn shooting stars periodically
+        setInterval(() => {
+            if (Math.random() < 0.4) { // 40% chance every interval
+                createShootingStar();
+            }
+        }, 3000);
+
+        // Initial shooting star
+        setTimeout(createShootingStar, 1000);
+
         // Create snow background
         const snowBg = document.getElementById('snowBg');
         for (let i = 0; i < 50; i++) {
@@ -1467,7 +1754,9 @@
             comboTimer: null,
             targets: [],
             timer: null,
-            spawnTimer: null
+            spawnTimer: null,
+            santaSpawned: false,
+            santaDefeated: false
         };
 
         // Christmas Music - Deck the Halls that speeds up!
@@ -1603,65 +1892,142 @@
             }
         }
 
-        // Enhanced sound effects
+        // Dramatic sound effects
         function playHitSound(type) {
             try {
                 const ctx = new (window.AudioContext || window.webkitAudioContext)();
                 const now = ctx.currentTime;
 
+                // Add dramatic impact bass for ALL hits
+                const bass = ctx.createOscillator();
+                const bassGain = ctx.createGain();
+                bass.type = 'sine';
+                bass.frequency.setValueAtTime(80, now);
+                bass.frequency.exponentialRampToValueAtTime(30, now + 0.15);
+                bassGain.gain.setValueAtTime(0.3, now);
+                bassGain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+                bass.connect(bassGain);
+                bassGain.connect(ctx.destination);
+                bass.start(now);
+                bass.stop(now + 0.2);
+
                 if (type === 'fancy') {
-                    // Magical chime for fancy snowman
-                    [1, 1.5, 2].forEach((mult, i) => {
+                    // Magical explosion chime cascade
+                    [1, 1.25, 1.5, 2, 2.5].forEach((mult, i) => {
                         const osc = ctx.createOscillator();
                         const gain = ctx.createGain();
                         osc.type = 'sine';
                         osc.frequency.value = 880 * mult;
-                        gain.gain.setValueAtTime(0.15 / (i + 1), now + i * 0.05);
+                        gain.gain.setValueAtTime(0.2 / (i + 1), now + i * 0.04);
+                        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.4 + i * 0.04);
+                        osc.connect(gain);
+                        gain.connect(ctx.destination);
+                        osc.start(now + i * 0.04);
+                        osc.stop(now + 0.5);
+                    });
+                    // Add sparkle noise
+                    playDramaticCrash(ctx, now, 0.15);
+                } else if (type === 'dancer') {
+                    // Funky explosion with wobble
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.type = 'square';
+                    osc.frequency.setValueAtTime(800, now);
+                    osc.frequency.exponentialRampToValueAtTime(100, now + 0.2);
+                    gain.gain.setValueAtTime(0.18, now);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start(now);
+                    osc.stop(now + 0.25);
+                    playDramaticCrash(ctx, now, 0.12);
+                } else if (type === 'mini') {
+                    // High pitched explosion ping
+                    [1200, 1600, 2000].forEach((freq, i) => {
+                        const osc = ctx.createOscillator();
+                        const gain = ctx.createGain();
+                        osc.type = 'sine';
+                        osc.frequency.value = freq;
+                        gain.gain.setValueAtTime(0.15, now + i * 0.03);
+                        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15 + i * 0.03);
+                        osc.connect(gain);
+                        gain.connect(ctx.destination);
+                        osc.start(now + i * 0.03);
+                        osc.stop(now + 0.2);
+                    });
+                    playDramaticCrash(ctx, now, 0.1);
+                } else if (type === 'santa') {
+                    // Epic boss hit sound - big dramatic impact
+                    [200, 150, 100, 75].forEach((freq, i) => {
+                        const osc = ctx.createOscillator();
+                        const gain = ctx.createGain();
+                        osc.type = 'sawtooth';
+                        osc.frequency.value = freq;
+                        gain.gain.setValueAtTime(0.15, now + i * 0.05);
                         gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3 + i * 0.05);
                         osc.connect(gain);
                         gain.connect(ctx.destination);
                         osc.start(now + i * 0.05);
                         osc.stop(now + 0.4);
                     });
-                } else if (type === 'dancer') {
-                    // Funky pop for dancer
-                    const osc = ctx.createOscillator();
-                    const gain = ctx.createGain();
-                    osc.type = 'square';
-                    osc.frequency.setValueAtTime(600, now);
-                    osc.frequency.exponentialRampToValueAtTime(200, now + 0.1);
-                    gain.gain.setValueAtTime(0.12, now);
-                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
-                    osc.connect(gain);
-                    gain.connect(ctx.destination);
-                    osc.start(now);
-                    osc.stop(now + 0.15);
-                } else if (type === 'mini') {
-                    // High pitched ping for mini
-                    const osc = ctx.createOscillator();
-                    const gain = ctx.createGain();
-                    osc.type = 'sine';
-                    osc.frequency.value = 1200;
-                    gain.gain.setValueAtTime(0.15, now);
-                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
-                    osc.connect(gain);
-                    gain.connect(ctx.destination);
-                    osc.start(now);
-                    osc.stop(now + 0.1);
+                    playDramaticCrash(ctx, now, 0.25);
                 } else {
-                    // Satisfying thunk for regular
+                    // Satisfying explosion thunk for regular
                     const osc = ctx.createOscillator();
                     const gain = ctx.createGain();
                     osc.type = 'triangle';
-                    osc.frequency.setValueAtTime(400, now);
-                    osc.frequency.exponentialRampToValueAtTime(150, now + 0.15);
-                    gain.gain.setValueAtTime(0.2, now);
-                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+                    osc.frequency.setValueAtTime(500, now);
+                    osc.frequency.exponentialRampToValueAtTime(100, now + 0.2);
+                    gain.gain.setValueAtTime(0.25, now);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
                     osc.connect(gain);
                     gain.connect(ctx.destination);
                     osc.start(now);
-                    osc.stop(now + 0.2);
+                    osc.stop(now + 0.25);
+                    playDramaticCrash(ctx, now, 0.1);
                 }
+            } catch(e) {}
+        }
+
+        // Dramatic crash/explosion noise effect
+        function playDramaticCrash(ctx, startTime, volume) {
+            const bufferSize = ctx.sampleRate * 0.15;
+            const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+            const data = buffer.getChannelData(0);
+            for (let i = 0; i < bufferSize; i++) {
+                data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / bufferSize, 2);
+            }
+            const noise = ctx.createBufferSource();
+            noise.buffer = buffer;
+            const noiseGain = ctx.createGain();
+            noiseGain.gain.setValueAtTime(volume, startTime);
+            noiseGain.gain.exponentialRampToValueAtTime(0.01, startTime + 0.15);
+            noise.connect(noiseGain);
+            noiseGain.connect(ctx.destination);
+            noise.start(startTime);
+        }
+
+        // Santa defeat sound - triumphant!
+        function playSantaDefeatSound() {
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const now = ctx.currentTime;
+                // Triumphant fanfare
+                const notes = [523.25, 659.25, 783.99, 1046.50];
+                notes.forEach((freq, i) => {
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.type = 'triangle';
+                    osc.frequency.value = freq;
+                    gain.gain.setValueAtTime(0.2, now + i * 0.1);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.5 + i * 0.1);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start(now + i * 0.1);
+                    osc.stop(now + 0.6 + i * 0.1);
+                });
+                // Big explosion
+                playDramaticCrash(ctx, now + 0.3, 0.4);
             } catch(e) {}
         }
 
@@ -1707,6 +2073,8 @@
             game.hits = 0;
             game.combo = 0;
             game.targets = [];
+            game.santaSpawned = false;
+            game.santaDefeated = false;
             if (game.comboTimer) clearTimeout(game.comboTimer);
 
             updateUI();
@@ -1873,6 +2241,13 @@
         function spawnTarget() {
             if (!game.isPlaying) return;
 
+            // Spawn Santa boss when time is 15 seconds or less and hasn't spawned yet
+            if (game.time <= 15 && !game.santaSpawned) {
+                spawnSanta();
+                game.santaSpawned = true;
+                return;
+            }
+
             const x = 180 + Math.random() * (arena.offsetWidth - 260);
             const y = 80 + Math.random() * (arena.offsetHeight - 250);
 
@@ -1936,6 +2311,48 @@
             }, lifetime);
         }
 
+        // Spawn Santa Boss - takes 5 hits, worth 100 points!
+        function spawnSanta() {
+            const x = arena.offsetWidth / 2 - 50;
+            const y = 60 + Math.random() * (arena.offsetHeight - 280);
+
+            const snowman = document.createElement('div');
+            snowman.className = 'snowman santa';
+            snowman.style.left = x + 'px';
+            snowman.style.top = y + 'px';
+            snowman.innerHTML = `
+                <div class="santa-health-bar"><div class="santa-health-fill" style="width: 100%"></div></div>
+                <div class="snowman-hat"></div>
+                <div class="snowman-head"></div>
+                <div class="snowman-eye left"></div>
+                <div class="snowman-eye right"></div>
+                <div class="snowman-nose"></div>
+                <div class="snowman-smile"></div>
+                <div class="snowman-middle"></div>
+                <div class="santa-belt"></div>
+                <div class="snowman-button"></div>
+                <div class="snowman-bottom"></div>
+            `;
+
+            targetsEl.appendChild(snowman);
+
+            const target = {
+                element: snowman,
+                x, y,
+                width: 100,
+                height: 140,
+                id: Date.now(),
+                type: 'santa',
+                points: 100,
+                hitRadius: 70,
+                health: 5,
+                maxHealth: 5
+            };
+            game.targets.push(target);
+
+            // Santa doesn't auto-disappear - must be defeated!
+        }
+
         function checkHit(clickX, clickY) {
             let hitSomething = false;
 
@@ -1948,6 +2365,41 @@
                 if (dist < hitRadius) {
                     hitSomething = true;
                     game.hits++;
+
+                    // Handle Santa boss - takes multiple hits!
+                    if (target.type === 'santa' && target.health > 1) {
+                        target.health--;
+                        // Update health bar
+                        const healthPercent = (target.health / target.maxHealth) * 100;
+                        const healthFill = target.element.querySelector('.santa-health-fill');
+                        if (healthFill) {
+                            healthFill.style.width = healthPercent + '%';
+                            // Change color as health decreases
+                            if (healthPercent <= 20) {
+                                healthFill.style.background = 'linear-gradient(90deg, #f44336 0%, #e53935 100%)';
+                            } else if (healthPercent <= 50) {
+                                healthFill.style.background = 'linear-gradient(90deg, #ff9800 0%, #ffc107 100%)';
+                            }
+                        }
+                        // Shake effect
+                        target.element.classList.remove('shaking');
+                        void target.element.offsetWidth; // Force reflow
+                        target.element.classList.add('shaking');
+                        setTimeout(() => target.element.classList.remove('shaking'), 150);
+
+                        // Play santa hit sound
+                        playHitSound('santa');
+
+                        // Show damage popup
+                        showScorePopup(target.x + 50, target.y + 20, `HIT! ${target.health} left`);
+
+                        // Milo gets excited for each hit!
+                        milo.classList.add('scored');
+                        setTimeout(() => milo.classList.remove('scored'), 300);
+                        return;
+                    }
+
+                    // Regular hit (or final Santa hit)
                     target.element.classList.add('hit');
                     game.targets = game.targets.filter(t => t.id !== target.id);
 
@@ -1966,7 +2418,13 @@
 
                     // Show points with combo indicator
                     const comboText = multiplier > 1 ? ` x${multiplier}` : '';
-                    showScorePopup(target.x + 30, target.y, `+${points}${comboText}`);
+                    if (target.type === 'santa') {
+                        showScorePopup(target.x + 50, target.y, `DEFEATED! +${points}${comboText}`);
+                        game.santaDefeated = true;
+                        playSantaDefeatSound();
+                    } else {
+                        showScorePopup(target.x + 30, target.y, `+${points}${comboText}`);
+                    }
 
                     // Play hit sound and combo sound
                     playHitSound(target.type);
@@ -2087,7 +2545,11 @@
 
             let msg = '';
             if (isNewHighScore) msg = '🎉 NEW HIGH SCORE! Milo is ecstatic! 🏆';
-            else if (game.score >= 150) msg = 'Milo is SO proud of you! 🏆';
+            else if (game.santaDefeated && game.score >= 400) msg = 'LEGENDARY! Santa defeated with style! 🏆🎅';
+            else if (game.santaDefeated && game.score >= 300) msg = 'AMAZING! You crushed Santa boss! 🎅💪';
+            else if (game.santaDefeated) msg = 'You defeated Santa! Milo is SO proud! 🎅';
+            else if (game.score >= 250) msg = 'Incredible combo master! 🏆';
+            else if (game.score >= 150) msg = 'Milo is SO proud of you! 🐕';
             else if (game.score >= 100) msg = 'Amazing combo skills! 🐕';
             else if (game.score >= 60) msg = 'Great job! Milo wags his tail! 🐕';
             else if (game.score >= 30) msg = 'Keep practicing with Milo! 🎯';
