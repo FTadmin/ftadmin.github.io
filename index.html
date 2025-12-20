@@ -795,7 +795,7 @@ let santaOscillators = [];
 window.addEventListener('pageshow', function(event) {
     if (event.persisted) {
         // Page was restored from bfcache - stop any playing audio and reset state
-        stopTechnoJingleBells();
+        stopJingleBells();
         const santa = document.querySelector('.dancing-santa');
         if (santa) santa.classList.remove('party-mode');
     }
@@ -803,55 +803,54 @@ window.addEventListener('pageshow', function(event) {
 
 // Also stop when leaving the page
 window.addEventListener('pagehide', function() {
-    stopTechnoJingleBells();
+    stopJingleBells();
 });
 
 function toggleSantaParty(element) {
     // Always stop existing audio first to prevent overlapping
-    stopTechnoJingleBells();
+    stopJingleBells();
 
     element.classList.toggle('party-mode');
 
     if (element.classList.contains('party-mode')) {
-        playTechnoJingleBells();
+        playJingleBells();
     }
 }
 
-function playTechnoJingleBells() {
+function playJingleBells() {
     if (santaIsPlaying) return;
     santaIsPlaying = true;
 
     try {
         santaAudioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-        // Jingle Bells melody notes (simplified, techno style)
+        // Jingle Bells melody - classic style
         const melody = [
-            { note: 'E5', duration: 0.15 },
-            { note: 'E5', duration: 0.15 },
-            { note: 'E5', duration: 0.3 },
-            { note: 'E5', duration: 0.15 },
-            { note: 'E5', duration: 0.15 },
-            { note: 'E5', duration: 0.3 },
-            { note: 'E5', duration: 0.15 },
-            { note: 'G5', duration: 0.15 },
-            { note: 'C5', duration: 0.15 },
-            { note: 'D5', duration: 0.15 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
             { note: 'E5', duration: 0.5 },
-            { note: 'F5', duration: 0.15 },
-            { note: 'F5', duration: 0.15 },
-            { note: 'F5', duration: 0.15 },
-            { note: 'F5', duration: 0.15 },
-            { note: 'F5', duration: 0.15 },
-            { note: 'E5', duration: 0.15 },
-            { note: 'E5', duration: 0.15 },
-            { note: 'E5', duration: 0.1 },
-            { note: 'E5', duration: 0.1 },
-            { note: 'E5', duration: 0.15 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.5 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'G5', duration: 0.25 },
+            { note: 'C5', duration: 0.35 },
             { note: 'D5', duration: 0.15 },
-            { note: 'D5', duration: 0.15 },
-            { note: 'E5', duration: 0.15 },
-            { note: 'D5', duration: 0.3 },
-            { note: 'G5', duration: 0.3 },
+            { note: 'E5', duration: 0.8 },
+            { note: 'F5', duration: 0.25 },
+            { note: 'F5', duration: 0.25 },
+            { note: 'F5', duration: 0.35 },
+            { note: 'F5', duration: 0.15 },
+            { note: 'F5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'D5', duration: 0.25 },
+            { note: 'D5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'D5', duration: 0.5 },
+            { note: 'G5', duration: 0.5 },
         ];
 
         const noteFreq = {
@@ -863,47 +862,55 @@ function playTechnoJingleBells() {
         function playMelodyLoop() {
             if (!santaIsPlaying) return;
 
-            melody.forEach((item, index) => {
+            melody.forEach((item) => {
+                // Main melody - soft triangle wave
                 const osc = santaAudioContext.createOscillator();
                 const gain = santaAudioContext.createGain();
-
-                // Techno sound - square wave
-                osc.type = 'square';
+                osc.type = 'triangle';
                 osc.frequency.value = noteFreq[item.note];
-
-                gain.gain.setValueAtTime(0.08, startTime);
-                gain.gain.exponentialRampToValueAtTime(0.01, startTime + item.duration);
-
+                gain.gain.setValueAtTime(0.12, startTime);
+                gain.gain.exponentialRampToValueAtTime(0.02, startTime + item.duration * 0.9);
                 osc.connect(gain);
                 gain.connect(santaAudioContext.destination);
-
                 osc.start(startTime);
                 osc.stop(startTime + item.duration);
-
                 santaOscillators.push(osc);
+
+                // Add soft bell harmonics
+                const bell = santaAudioContext.createOscillator();
+                const bellGain = santaAudioContext.createGain();
+                bell.type = 'sine';
+                bell.frequency.value = noteFreq[item.note] * 2;
+                bellGain.gain.setValueAtTime(0.03, startTime);
+                bellGain.gain.exponentialRampToValueAtTime(0.001, startTime + item.duration * 0.5);
+                bell.connect(bellGain);
+                bellGain.connect(santaAudioContext.destination);
+                bell.start(startTime);
+                bell.stop(startTime + item.duration);
+                santaOscillators.push(bell);
+
                 startTime += item.duration;
             });
 
-            // Add techno bass drum
-            for (let i = 0; i < 16; i++) {
-                const kickTime = santaAudioContext.currentTime + (i * 0.25);
-                if (kickTime < startTime) {
-                    const kick = santaAudioContext.createOscillator();
-                    const kickGain = santaAudioContext.createGain();
-                    kick.type = 'sine';
-                    kick.frequency.setValueAtTime(150, kickTime);
-                    kick.frequency.exponentialRampToValueAtTime(50, kickTime + 0.1);
-                    kickGain.gain.setValueAtTime(0.15, kickTime);
-                    kickGain.gain.exponentialRampToValueAtTime(0.01, kickTime + 0.1);
-                    kick.connect(kickGain);
-                    kickGain.connect(santaAudioContext.destination);
-                    kick.start(kickTime);
-                    kick.stop(kickTime + 0.1);
-                    santaOscillators.push(kick);
+            // Gentle sleigh bells
+            const loopStart = santaAudioContext.currentTime;
+            for (let i = 0; i < 25; i++) {
+                const bellTime = loopStart + (i * 0.3);
+                if (bellTime < startTime) {
+                    const sleigh = santaAudioContext.createOscillator();
+                    const sGain = santaAudioContext.createGain();
+                    sleigh.type = 'sine';
+                    sleigh.frequency.value = 2500 + Math.random() * 500;
+                    sGain.gain.setValueAtTime(0.02, bellTime);
+                    sGain.gain.exponentialRampToValueAtTime(0.001, bellTime + 0.08);
+                    sleigh.connect(sGain);
+                    sGain.connect(santaAudioContext.destination);
+                    sleigh.start(bellTime);
+                    sleigh.stop(bellTime + 0.08);
+                    santaOscillators.push(sleigh);
                 }
             }
 
-            // Loop the melody
             const loopDuration = startTime - santaAudioContext.currentTime;
             if (santaIsPlaying) {
                 setTimeout(() => {
@@ -919,7 +926,7 @@ function playTechnoJingleBells() {
     }
 }
 
-function stopTechnoJingleBells() {
+function stopJingleBells() {
     santaIsPlaying = false;
     santaOscillators.forEach(osc => {
         try { osc.stop(); } catch(e) {}
