@@ -897,73 +897,95 @@
 
         .snowman-head {
             position: absolute;
-            bottom: 58px;
+            bottom: 55px;
             left: 50%;
             transform: translateX(-50%);
-            width: 30px;
-            height: 28px;
-            background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #E0E0E0 100%);
+            width: 32px;
+            height: 30px;
+            background: radial-gradient(circle at 35% 35%, #FFFFFF 0%, #E8E8E8 70%, #D0D0D0 100%);
             border-radius: 50%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
 
         .snowman-hat {
             position: absolute;
-            bottom: 80px;
+            bottom: 78px;
             left: 50%;
             transform: translateX(-50%);
-            width: 24px;
-            height: 18px;
-            background: #1A1A1A;
-            border-radius: 4px 4px 0 0;
+            width: 22px;
+            height: 16px;
+            background: linear-gradient(180deg, #2a2a2a 0%, #1A1A1A 100%);
+            border-radius: 3px 3px 0 0;
+        }
+
+        .snowman-hat::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 2px;
+            width: 6px;
+            height: 6px;
+            background: #c41e3a;
+            border-radius: 50%;
         }
 
         .snowman-hat::after {
             content: '';
             position: absolute;
-            bottom: -4px;
-            left: -6px;
-            width: 36px;
-            height: 6px;
-            background: #1A1A1A;
-            border-radius: 3px;
+            bottom: -3px;
+            left: -5px;
+            width: 32px;
+            height: 5px;
+            background: linear-gradient(180deg, #333 0%, #1A1A1A 100%);
+            border-radius: 2px;
         }
 
         .snowman-eye {
             position: absolute;
-            width: 5px;
+            width: 4px;
             height: 5px;
             background: #1A1A1A;
             border-radius: 50%;
-            bottom: 68px;
+            bottom: 70px;
         }
 
-        .snowman-eye.left { left: 18px; }
-        .snowman-eye.right { right: 18px; }
+        .snowman-eye.left { left: 22px; }
+        .snowman-eye.right { left: 34px; }
 
         .snowman-nose {
             position: absolute;
-            bottom: 63px;
-            left: 50%;
+            bottom: 65px;
+            left: 30px;
             width: 0;
             height: 0;
-            border-left: 12px solid #FF6B00;
-            border-top: 4px solid transparent;
-            border-bottom: 4px solid transparent;
+            border-left: 10px solid #FF6B00;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+        }
+
+        .snowman-smile {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 12px;
+            height: 6px;
+            border: 2px solid #1A1A1A;
+            border-top: none;
+            border-radius: 0 0 12px 12px;
         }
 
         .snowman-button {
             position: absolute;
-            width: 6px;
-            height: 6px;
+            width: 5px;
+            height: 5px;
             background: #1A1A1A;
             border-radius: 50%;
             left: 50%;
             transform: translateX(-50%);
         }
 
-        .snowman-button:nth-of-type(1) { bottom: 42px; }
-        .snowman-button:nth-of-type(2) { bottom: 34px; }
+        .snowman-button:nth-of-type(1) { bottom: 40px; }
 
         /* Snowball */
         .snowball {
@@ -1449,31 +1471,36 @@
             spawnTimer: null
         };
 
-        // Christmas Music
+        // Christmas Music - Deck the Halls that speeds up!
         let musicCtx = null;
         let musicPlaying = false;
         let musicOscillators = [];
+        let musicSpeed = 1.0;
+        let musicLoopTimeout = null;
 
         function startChristmasMusic() {
             if (musicPlaying) return;
             musicPlaying = true;
+            musicSpeed = 1.0;
 
             try {
                 musicCtx = new (window.AudioContext || window.webkitAudioContext)();
 
+                // "Deck the Halls" melody
                 const melody = [
-                    { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.4 },
-                    { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.4 },
-                    { note: 'E5', dur: 0.2 }, { note: 'G5', dur: 0.2 }, { note: 'C5', dur: 0.2 }, { note: 'D5', dur: 0.2 },
-                    { note: 'E5', dur: 0.6 }, { note: 'rest', dur: 0.2 },
-                    { note: 'F5', dur: 0.2 }, { note: 'F5', dur: 0.2 }, { note: 'F5', dur: 0.2 }, { note: 'F5', dur: 0.2 },
-                    { note: 'F5', dur: 0.2 }, { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.2 }, { note: 'E5', dur: 0.1 }, { note: 'E5', dur: 0.1 },
-                    { note: 'E5', dur: 0.2 }, { note: 'D5', dur: 0.2 }, { note: 'D5', dur: 0.2 }, { note: 'E5', dur: 0.2 },
-                    { note: 'D5', dur: 0.4 }, { note: 'G5', dur: 0.4 },
+                    { note: 'C6', dur: 0.375 }, { note: 'B5', dur: 0.125 }, { note: 'A5', dur: 0.25 }, { note: 'G5', dur: 0.25 },
+                    { note: 'A5', dur: 0.25 }, { note: 'G5', dur: 0.25 }, { note: 'F5', dur: 0.25 }, { note: 'E5', dur: 0.25 },
+                    { note: 'F5', dur: 0.25 }, { note: 'G5', dur: 0.25 }, { note: 'A5', dur: 0.25 }, { note: 'F5', dur: 0.25 },
+                    { note: 'G5', dur: 0.75 }, { note: 'rest', dur: 0.25 },
+                    { note: 'C6', dur: 0.375 }, { note: 'B5', dur: 0.125 }, { note: 'A5', dur: 0.25 }, { note: 'G5', dur: 0.25 },
+                    { note: 'A5', dur: 0.25 }, { note: 'G5', dur: 0.25 }, { note: 'F5', dur: 0.25 }, { note: 'E5', dur: 0.25 },
+                    { note: 'F5', dur: 0.25 }, { note: 'G5', dur: 0.25 }, { note: 'A5', dur: 0.25 }, { note: 'F5', dur: 0.25 },
+                    { note: 'G5', dur: 0.75 }, { note: 'rest', dur: 0.25 },
                 ];
 
                 const freq = {
-                    'C5': 523.25, 'D5': 587.33, 'E5': 659.25, 'F5': 698.46, 'G5': 783.99, 'rest': 0
+                    'C5': 523.25, 'D5': 587.33, 'E5': 659.25, 'F5': 698.46, 'G5': 783.99,
+                    'A5': 880.00, 'B5': 987.77, 'C6': 1046.50, 'rest': 0
                 };
 
                 let t = musicCtx.currentTime;
@@ -1481,66 +1508,66 @@
                 function playLoop() {
                     if (!musicPlaying) return;
 
+                    const speed = musicSpeed;
+                    const startT = musicCtx.currentTime;
+                    t = startT;
+
                     melody.forEach(note => {
+                        const dur = note.dur / speed;
                         if (note.note !== 'rest') {
                             const osc = musicCtx.createOscillator();
                             const gain = musicCtx.createGain();
                             osc.type = 'triangle';
                             osc.frequency.value = freq[note.note];
-                            gain.gain.setValueAtTime(0.08, t);
-                            gain.gain.exponentialRampToValueAtTime(0.01, t + note.dur * 0.9);
+                            gain.gain.setValueAtTime(0.1, t);
+                            gain.gain.exponentialRampToValueAtTime(0.01, t + dur * 0.85);
                             osc.connect(gain);
                             gain.connect(musicCtx.destination);
                             osc.start(t);
-                            osc.stop(t + note.dur);
+                            osc.stop(t + dur);
                             musicOscillators.push(osc);
+
+                            // Octave harmony
+                            const harm = musicCtx.createOscillator();
+                            const hGain = musicCtx.createGain();
+                            harm.type = 'sine';
+                            harm.frequency.value = freq[note.note] / 2;
+                            hGain.gain.setValueAtTime(0.04, t);
+                            hGain.gain.exponentialRampToValueAtTime(0.01, t + dur * 0.7);
+                            harm.connect(hGain);
+                            hGain.connect(musicCtx.destination);
+                            harm.start(t);
+                            harm.stop(t + dur);
+                            musicOscillators.push(harm);
                         }
-                        t += note.dur;
+                        t += dur;
                     });
 
-                    // Bass beats
-                    for (let i = 0; i < 20; i++) {
-                        const beatT = musicCtx.currentTime + i * 0.4;
-                        if (beatT < t) {
-                            const kick = musicCtx.createOscillator();
-                            const kGain = musicCtx.createGain();
-                            kick.type = 'sine';
-                            kick.frequency.setValueAtTime(120, beatT);
-                            kick.frequency.exponentialRampToValueAtTime(40, beatT + 0.1);
-                            kGain.gain.setValueAtTime(0.12, beatT);
-                            kGain.gain.exponentialRampToValueAtTime(0.01, beatT + 0.1);
-                            kick.connect(kGain);
-                            kGain.connect(musicCtx.destination);
-                            kick.start(beatT);
-                            kick.stop(beatT + 0.1);
-                            musicOscillators.push(kick);
-                        }
-                    }
-
-                    // Sleigh bells (high frequency clicks)
-                    for (let i = 0; i < 30; i++) {
-                        const bellT = musicCtx.currentTime + i * 0.25;
-                        if (bellT < t) {
-                            const bell = musicCtx.createOscillator();
-                            const bGain = musicCtx.createGain();
-                            bell.type = 'square';
-                            bell.frequency.value = 2000 + Math.random() * 1000;
-                            bGain.gain.setValueAtTime(0.015, bellT);
-                            bGain.gain.exponentialRampToValueAtTime(0.001, bellT + 0.05);
-                            bell.connect(bGain);
-                            bGain.connect(musicCtx.destination);
-                            bell.start(bellT);
-                            bell.stop(bellT + 0.05);
-                            musicOscillators.push(bell);
+                    // Light percussion
+                    const loopDur = t - startT;
+                    const beatInterval = 0.25 / speed;
+                    for (let i = 0; i * beatInterval < loopDur; i++) {
+                        const beatT = startT + i * beatInterval;
+                        if (i % 2 === 0) {
+                            const tick = musicCtx.createOscillator();
+                            const tGain = musicCtx.createGain();
+                            tick.type = 'sine';
+                            tick.frequency.value = 800;
+                            tGain.gain.setValueAtTime(0.03, beatT);
+                            tGain.gain.exponentialRampToValueAtTime(0.001, beatT + 0.05);
+                            tick.connect(tGain);
+                            tGain.connect(musicCtx.destination);
+                            tick.start(beatT);
+                            tick.stop(beatT + 0.05);
+                            musicOscillators.push(tick);
                         }
                     }
 
                     const loopLen = t - musicCtx.currentTime;
                     if (musicPlaying) {
-                        setTimeout(() => {
-                            t = musicCtx.currentTime;
+                        musicLoopTimeout = setTimeout(() => {
                             playLoop();
-                        }, loopLen * 1000);
+                        }, Math.max(100, loopLen * 1000 - 50));
                     }
                 }
 
@@ -1550,14 +1577,115 @@
             }
         }
 
+        function updateMusicSpeed(timeLeft) {
+            // Speed up as time runs out
+            if (timeLeft <= 5) {
+                musicSpeed = 2.0;
+            } else if (timeLeft <= 10) {
+                musicSpeed = 1.5;
+            } else if (timeLeft <= 15) {
+                musicSpeed = 1.25;
+            } else {
+                musicSpeed = 1.0;
+            }
+        }
+
         function stopChristmasMusic() {
             musicPlaying = false;
+            if (musicLoopTimeout) {
+                clearTimeout(musicLoopTimeout);
+                musicLoopTimeout = null;
+            }
             musicOscillators.forEach(o => { try { o.stop(); } catch(e) {} });
             musicOscillators = [];
             if (musicCtx) {
                 musicCtx.close();
                 musicCtx = null;
             }
+        }
+
+        // Enhanced sound effects
+        function playHitSound(type) {
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const now = ctx.currentTime;
+
+                if (type === 'fancy') {
+                    // Magical chime for fancy snowman
+                    [1, 1.5, 2].forEach((mult, i) => {
+                        const osc = ctx.createOscillator();
+                        const gain = ctx.createGain();
+                        osc.type = 'sine';
+                        osc.frequency.value = 880 * mult;
+                        gain.gain.setValueAtTime(0.15 / (i + 1), now + i * 0.05);
+                        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3 + i * 0.05);
+                        osc.connect(gain);
+                        gain.connect(ctx.destination);
+                        osc.start(now + i * 0.05);
+                        osc.stop(now + 0.4);
+                    });
+                } else if (type === 'dancer') {
+                    // Funky pop for dancer
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.type = 'square';
+                    osc.frequency.setValueAtTime(600, now);
+                    osc.frequency.exponentialRampToValueAtTime(200, now + 0.1);
+                    gain.gain.setValueAtTime(0.12, now);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start(now);
+                    osc.stop(now + 0.15);
+                } else if (type === 'mini') {
+                    // High pitched ping for mini
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.type = 'sine';
+                    osc.frequency.value = 1200;
+                    gain.gain.setValueAtTime(0.15, now);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start(now);
+                    osc.stop(now + 0.1);
+                } else {
+                    // Satisfying thunk for regular
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(400, now);
+                    osc.frequency.exponentialRampToValueAtTime(150, now + 0.15);
+                    gain.gain.setValueAtTime(0.2, now);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start(now);
+                    osc.stop(now + 0.2);
+                }
+            } catch(e) {}
+        }
+
+        function playComboSound(combo) {
+            if (combo < 2) return;
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const now = ctx.currentTime;
+                // Rising chime based on combo level
+                const baseFreq = 400 + (combo * 100);
+                for (let i = 0; i < Math.min(combo, 5); i++) {
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.type = 'sine';
+                    osc.frequency.value = baseFreq + (i * 150);
+                    gain.gain.setValueAtTime(0.08, now + i * 0.06);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15 + i * 0.06);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start(now + i * 0.06);
+                    osc.stop(now + 0.25 + i * 0.06);
+                }
+            } catch(e) {}
         }
 
         const arena = document.getElementById('arena');
@@ -1599,6 +1727,7 @@
             game.timer = setInterval(() => {
                 game.time--;
                 document.getElementById('timer').textContent = game.time;
+                updateMusicSpeed(game.time);
                 if (game.time <= 0) endGame();
             }, 1000);
 
@@ -1788,6 +1917,7 @@
                 <div class="snowman-eye left"></div>
                 <div class="snowman-eye right"></div>
                 <div class="snowman-nose"></div>
+                <div class="snowman-smile"></div>
                 <div class="snowman-middle"></div>
                 ${extraHTML}
                 <div class="snowman-button"></div>
@@ -1839,16 +1969,9 @@
                     const comboText = multiplier > 1 ? ` x${multiplier}` : '';
                     showScorePopup(target.x + 30, target.y, `+${points}${comboText}`);
 
-                    // Different sounds for different targets
-                    if (target.type === 'fancy') {
-                        playSound(1000, 600, 0.15);
-                    } else if (target.type === 'dancer') {
-                        playSound(900, 500, 0.14);
-                    } else if (target.type === 'mini') {
-                        playSound(1200, 800, 0.12);
-                    } else {
-                        playSound(800, 400, 0.12);
-                    }
+                    // Play hit sound and combo sound
+                    playHitSound(target.type);
+                    playComboSound(game.combo);
 
                     setTimeout(() => target.element.remove(), 500);
                 }
