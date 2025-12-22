@@ -2007,6 +2007,141 @@ th, td {
     padding: 10px;
 }
 
+/* Doctor Endorsement Section */
+.endorsement-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding: 60px 20px;
+    margin: 0;
+}
+
+.endorsement-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto 0;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+}
+
+.endorsement-photo {
+    flex-shrink: 0;
+}
+
+.endorsement-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #10b981;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+}
+
+.endorsement-photo-fallback {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+}
+
+.endorsement-content {
+    flex: 1;
+}
+
+.endorsement-quote {
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: #374151;
+    font-style: italic;
+    margin: 0 0 25px 0;
+    padding: 0;
+    border: none;
+    position: relative;
+}
+
+.endorsement-quote::before {
+    content: '"';
+    font-size: 4em;
+    color: #10b981;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    font-family: Georgia, serif;
+    opacity: 0.3;
+}
+
+.endorsement-author {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+}
+
+.endorsement-name {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.endorsement-credentials {
+    font-size: 0.95em;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+.endorsement-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #E1306C 0%, #C13584 50%, #833AB4 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.endorsement-social:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(193, 53, 132, 0.4);
+}
+
+@media (max-width: 768px) {
+    .endorsement-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .endorsement-quote::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .endorsement-photo img,
+    .endorsement-photo-fallback {
+        width: 120px;
+        height: 120px;
+    }
+
+    .endorsement-photo-fallback {
+        font-size: 48px;
+    }
+}
+
 /* Review Cards */
 .reviews-grid {
     display: grid;
