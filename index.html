@@ -169,9 +169,47 @@
     End Christmas features -->
 
     <!-- Language Selector -->
-    <div class="language-selector" style="position: fixed; top: 10px; right: 10px; z-index: 1001; display: flex; gap: 8px; background: rgba(255,255,255,0.95); padding: 6px 12px; border-radius: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
-        <a href="/" style="text-decoration: none; font-size: 1.2em; opacity: 1;" title="English">🇬🇧</a>
-        <a href="/de/" style="text-decoration: none; font-size: 1.2em; opacity: 0.5;" title="Deutsch">🇩🇪</a>
+    <style>
+        .language-selector {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            z-index: 1001;
+            display: flex;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px 14px;
+            border-radius: 22px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+            align-items: center;
+        }
+        .language-selector a {
+            text-decoration: none;
+            font-size: 1.3em;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .language-selector a:hover {
+            transform: scale(1.1);
+        }
+        .language-selector a.active {
+            opacity: 1;
+        }
+        .language-selector a.inactive {
+            opacity: 0.5;
+        }
+        .language-selector a.inactive:hover {
+            opacity: 0.8;
+        }
+        @media (prefers-color-scheme: dark) {
+            .language-selector {
+                background: rgba(45, 45, 45, 0.95);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+    </style>
+    <div class="language-selector">
+        <a href="/" class="active" title="English">🇬🇧</a>
+        <a href="/de/" class="inactive" title="Deutsch">🇩🇪</a>
     </div>
 
     <!-- Navigation -->

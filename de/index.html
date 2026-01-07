@@ -117,9 +117,47 @@
 </head>
 <body>
     <!-- Language Selector -->
-    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000; background: rgba(255,255,255,0.95); padding: 10px 15px; border-radius: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: flex; gap: 15px; align-items: center;">
-        <a href="/" style="text-decoration: none; font-size: 24px; opacity: 0.5; transition: opacity 0.2s;" title="English">🇬🇧</a>
-        <a href="/de/" style="text-decoration: none; font-size: 24px; opacity: 1;" title="Deutsch">🇩🇪</a>
+    <style>
+        .language-selector {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            z-index: 1001;
+            display: flex;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px 14px;
+            border-radius: 22px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+            align-items: center;
+        }
+        .language-selector a {
+            text-decoration: none;
+            font-size: 1.3em;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .language-selector a:hover {
+            transform: scale(1.1);
+        }
+        .language-selector a.active {
+            opacity: 1;
+        }
+        .language-selector a.inactive {
+            opacity: 0.5;
+        }
+        .language-selector a.inactive:hover {
+            opacity: 0.8;
+        }
+        @media (prefers-color-scheme: dark) {
+            .language-selector {
+                background: rgba(45, 45, 45, 0.95);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+    </style>
+    <div class="language-selector">
+        <a href="/" class="inactive" title="English">🇬🇧</a>
+        <a href="/de/" class="active" title="Deutsch">🇩🇪</a>
     </div>
 
     <!-- Navigation -->
