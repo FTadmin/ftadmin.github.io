@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=1065268459">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/">
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/">
+
+    <!-- Primary Meta Tags -->
+    <title>Schlaf Feeltracker - CPAP Apnoe Monitor Träume Tagebuch</title>
+    <meta name="title" content="Schlaf Feeltracker - CPAP Apnoe Monitor Träume Tagebuch">
+    <meta name="description" content="Verbessern Sie Ihren Schlaf mit KI-gestützter Traumanalyse, CPAP-Therapieüberwachung und Entspannungstools. Protokollieren Sie Schlafzeiten, überwachen Sie Muster, synchronisieren Sie mit Apple Health, analysieren Sie Träume und verfolgen Sie CPAP-Metriken. Besserer Schlaf beginnt mit besserer Verfolgung.">
+    <meta name="keywords" content="schlaf,tagebuch,schlaftracking,apnoe,monitor,traum,protokoll,nickerchen,cpap,apple,rechner,studie,luzid">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/de/sleep/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/de/sleep/">
+    <meta property="og:title" content="Feeltracker ST | Schlafmuster mit KI verfolgen">
+    <meta property="og:description" content="Verfolgen Sie Ihren Schlaf mit KI-Traumanalyse, CPAP-Therapieüberwachung, Entspannungstools und Apple Health-Integration.">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/de/sleep/">
+    <meta property="twitter:title" content="Feeltracker ST | Schlafmuster mit KI verfolgen">
+    <meta property="twitter:description" content="Verfolgen Sie Ihren Schlaf mit KI-Traumanalyse, CPAP-Therapieüberwachung und Entspannungstools.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Feeltracker ST",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "description": "Verfolgen Sie Schlafmuster und -qualität mit KI-Einblicken und Apple Health-Integration",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": 237,
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="breadcrumb">
+                <a href="/de/">feeltracker</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current">Schlaf</span>
+            </div>
+            <div class="breadcrumb">
+                <a href="/de/blood-pressure/">Blutdruck</a><a href="/de/daily-journal/">Tagebuch</a><a href="/de/mental-health/">Psychische Gesundheit</a><a href="/de/sleep/">Schlaf</a><a href="/de/weight/">Gewicht</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/ST_1024.png" alt="Schlaf & Träume: Feeltracker ST App-Symbol" width="150" height="150" class="hero-logo app-icon">
+        <h1>Schlaf & Träume: Feeltracker ST</h1>
+        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 12px 24px; border-radius: 30px; display: inline-block; margin: 10px auto; font-weight: 600; font-size: 0.9em; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);">
+            <i class="fas fa-shield-alt"></i> Keine Werbung • Kein Tracking • Datenschutz zuerst
+        </div>
+        <p class="hero-subtitle">Verfolgen Sie Ihre Schlafmuster und entdecken Sie, was Ihre Schlafqualität beeinflusst. Mit KI-gestützter Traumanalyse, CPAP-Therapieüberwachung, Entspannungstools und Apple Health-Integration für besseren Schlaf.</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="Feeltracker ST im App Store herunterladen" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">Kostenlose App mit optionalen Premium-Funktionen<br>iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">Sehen Sie Feeltracker ST in Aktion</h2>
+        <div class="screenshots-grid">
+            <div>
+                <img src="/images/screenshots/st-1.png" alt="Feeltracker ST Screenshot 1" class="screenshot-img">
+            </div>
+            <div>
+                <img src="/images/screenshots/st-2.png" alt="Feeltracker ST Screenshot 2" class="screenshot-img">
+            </div>
+            <div>
+                <img src="/images/screenshots/st-3.png" alt="Feeltracker ST Screenshot 3" class="screenshot-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">Funktionen für besseres Schlaftracking</h2>
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                <h3>Einfache Schlafprotokollierung</h3>
+                <p>Protokollieren Sie Ihre Schlaf- und Aufwachzeiten in Sekunden. Keine komplexen Formulare oder Sensoren erforderlich. Tippen Sie einfach, um aufzuzeichnen, wann Sie ins Bett gegangen und aufgewacht sind.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>Automatische Berechnung</h3>
+                <p>Die Schlafdauer wird automatisch aus Ihren Schlaf- und Aufwachzeiten berechnet. Sehen Sie auf einen Blick, wie viele Stunden Sie jede Nacht bekommen haben.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                <h3>Apple Health-Integration</h3>
+                <p>Synchronisieren Sie mit den Schlafdaten von Apple Health. Importieren Sie Schlaf, der von Ihrer Apple Watch oder anderen Apps erfasst wurde, und speichern Sie Ihre manuellen Einträge in HealthKit.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>KI-Schlafeinblicke</h3>
+                <p>Entdecken Sie, was Ihre Schlafqualität beeinflusst. KI analysiert Ihre Notizen, um Faktoren wie Koffein, Bewegung, Bildschirmzeit oder Stress zu identifizieren, die Ihre Ruhe beeinflussen.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h3>Traumanalyse</h3>
+                <p>KI-gestützte Traumdeutung mit Symbolbedeutungen, emotionalen Einblicken und psychologischer Analyse. Perfekt zum Verfolgen wiederkehrender Träume und Verstehen ihrer Bedeutung.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-lungs"></i></div>
+                <h3>CPAP-Therapieunterstützung</h3>
+                <p>Umfassende CPAP-Analyse mit AHI-Tracking, Maskensitz-Bewertung, Leckerkennung und personalisierten Empfehlungen zur Optimierung Ihrer Schlafapnoe-Therapie.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>Visuelle Schlafdiagramme</h3>
+                <p>Sehen Sie Ihre Schlafmuster mit intuitiven Diagrammen und Grafiken. Verfolgen Sie Trends über Wochen und Monate, um Ihre Schlafzyklen zu verstehen.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-lines"></i></div>
+                <h3>Schlafnotizen</h3>
+                <p>Fügen Sie Notizen über Ihren Tag hinzu - was Sie gegessen, getrunken oder vor dem Schlafengehen gemacht haben. Diese helfen Ihnen zu erkennen, was guten Schlaf fördert oder stört.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-spa"></i></div>
+                <h3>Entspannungstools</h3>
+                <p>KI-generierte beruhigende Inhalte mit Atemübungen, friedlichen Visualisierungen und personalisierten Entspannungstechniken, die Ihnen helfen, schneller einzuschlafen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">So funktioniert Feeltracker ST</h2>
+        <p class="section-subtitle center-text">Eine komplette Schlaftracking-Lösung, um Ihre Ruhe zu verstehen und zu verbessern</p>
+        <div class="app-card">
+            <h3>1. Schlafzeiten protokollieren</h3>
+            <div class="app-card-content">
+            <p><strong>Schnelleingabe:</strong> Geben Sie jeden Morgen ein, wann Sie ins Bett gegangen und aufgewacht sind. Die App berechnet automatisch Ihre gesamte Schlafdauer, sodass Sie nicht rechnen müssen.</p>
+            <p><strong>Mehrfacheinträge:</strong> Verfolgen Sie Nickerchen und mehrere Schlafphasen pro Tag. Perfekt für Schichtarbeiter, Eltern mit unterbrochenem Schlaf oder alle mit unkonventionellen Schlafplänen.</p>
+            <p><strong>Detaillierte Notizen:</strong> Erfassen Sie Schlafqualitätsbewertungen, Träume, Albträume, wie Sie sich beim Aufwachen gefühlt haben und alle Faktoren, die Ihre Ruhe beeinflusst haben - Koffeinaufnahme, Trainingszeit, Raumtemperatur, Stressniveau, Bildschirmzeit vor dem Schlafengehen oder Medikamente. Je mehr Details Sie hinzufügen, desto besser kann KI Muster erkennen.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>2. Muster überprüfen</h3>
+            <div class="app-card-content">
+                <p><strong>Kalenderansicht:</strong> Sehen Sie Ihre gesamte Schlafhistorie in einer intuitiven Kalenderoberfläche. Jeder Tag zeigt die Schlafdauer mit farbcodierten Indikatoren, die anzeigen, ob Sie Ihre Schlafziele erreicht haben.</p>
+                <p><strong>Schlafstatistiken:</strong> Automatisch berechnete Metriken umfassen durchschnittliche Schlafdauer, Gesamtschlafzeit pro Woche, Schlafdefizit/-überschuss, konsistenteste Schlafplantage und Trends im Zeitverlauf. Identifizieren Sie auf einen Blick Ihre besten und schlechtesten Nächte.</p>
+                <p><strong>Visuelle Trends:</strong> Diagramme zeigen Ihre Schlafmuster über Tage, Wochen oder Monate. Sehen Sie, wie Ihre Schlafenszeit und Aufwachzeit variieren, erkennen Sie unregelmäßige Muster und verfolgen Sie den Fortschritt zu konsistenten Schlafplänen.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>3. KI-Einblicke erhalten</h3>
+            <div class="app-card-content">
+                <p><strong>Mustererkennung:</strong> KI analysiert Ihre Notizen, um zu identifizieren, was Ihren Schlaf beeinflusst. Entdecken Sie Korrelationen wie "Sie schlafen 45 Minuten länger in Nächten, in denen Sie trainieren" oder "Schlafqualität ist schlechter, wenn Sie nach 14 Uhr Koffein haben."</p>
+                <p><strong>Personalisierte Tipps:</strong> Erhalten Sie spezifische Empfehlungen basierend auf Ihren Daten. KI könnte optimale Schlafenszeiten basierend darauf vorschlagen, wann Sie konsequent den besten Schlaf bekommen, oder Faktoren hervorheben, die wiederholt Ihre Ruhe stören.</p>
+                <p><strong>Schlaf-Chat:</strong> Stellen Sie natürlichsprachliche Fragen zu Ihren Schlafdaten: "Wie viele Stunden habe ich letzte Woche im Durchschnitt bekommen?" oder "Zeige mir alle Nächte, in denen ich weniger als 6 Stunden bekommen habe." Erhalten Sie sofortige, gesprächige Antworten aus Ihrer Schlafhistorie.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>4. Ihren Schlaf verbessern</h3>
+            <div class="app-card-content">
+                <p><strong>Umsetzbare Daten:</strong> Nutzen Sie Einblicke, um evidenzbasierte Änderungen an Ihrer Routine vorzunehmen. Testen Sie Hypothesen wie "Wird Lesen vor dem Schlafengehen meinen Schlaf verbessern?" indem Sie Ergebnisse verfolgen und KI die Unterschiede erkennen lassen.</p>
+                <p><strong>Professionelle Berichte:</strong> Exportieren Sie PDF- oder Excel-Berichte für Schlafspezialisten, Ärzte oder CPAP-Therapiekonsultationen. Berichte umfassen Schlafdauerdiagramme, Qualitätstrends, Notizen über Schlafstörungen und statistische Zusammenfassungen, die für medizinische Überprüfungen formatiert sind.</p>
+                <p><strong>Apple Health-Synchronisierung:</strong> Integrieren Sie mit Apple Health, um manuelle Protokolle mit automatischem Schlaftracking von Apple Watch oder anderen Geräten zu kombinieren. Importieren Sie historische Schlafdaten oder exportieren Sie Ihre Protokolle nach HealthKit für ein vollständiges Gesundheitsbild.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>Angetrieben von Künstlicher Intelligenz</h2>
+        <p class="section-subtitle">Fortschrittliche KI-Funktionen, um Ihre Schlafmuster besser zu verstehen</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Kostenlose KI-Funktionen</h3>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> Frage stellen</h4>
+                <p>Schnelle Fragen und Antworten zu Ihren Schlafdaten - erhalten Sie sofortige Antworten auf Ihre Schlaffragen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <p>Führen Sie interaktive Gespräche über Ihre Schlafgesundheit und erhalten Sie personalisierte Anleitung</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> Sprachzusammenfassung</h4>
+                <p>Hören Sie Audiozusammenfassungen Ihrer Schlaftrends - perfekt für unterwegs</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> Einfache Traumanalyse</h4>
+                <p>KI interpretiert Ihre Träume mit Schlüsselsymbolen, emotionalen Einblicken und Reflexionsfragen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-spa"></i> Beruhigung zum Einschlafen</h4>
+                <p>Personalisierte Entspannungstechniken, Atemübungen und friedliche Visualisierungen, um Ihnen beim Einschlafen zu helfen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> Zum Lachen bringen</h4>
+                <p>Erhalten Sie personalisierten Humor aus Ihren Tracking-Daten, um Ihren Tag aufzuhellen</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Premium-KI-Funktionen</h3>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> Tiefgehende Forschungsberichte</h4>
+                <p>Umfassende KI-Analyse Ihrer Schlafdaten mit detaillierten Einblicken</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-lungs"></i> CPAP-Bericht</h4>
+                <p>Vollständige CPAP-Therapieanalyse mit AHI-Tracking, Maskensitz-Bewertung, Adhärenzüberwachung und interaktiven Aktionskarten</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-brain"></i> Erweiterte Traumanalyse</h4>
+                <p>Tiefe psychologische Traumdeutung unter Verwendung Jungscher Archetypen, wiederkehrender Symbole, emotionaler Muster und persönlichem Symbolwörterbuch</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> Musterdetektiv</h4>
+                <p>Finden Sie versteckte Korrelationen zwischen Ihrer Schlafqualität und Lebensstilfaktoren</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> Zielassistent</h4>
+                <p>Erhalten Sie personalisierte, datengesteuerte Schlafziele basierend auf Ihren Mustern</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> Arztzusammenfassung</h4>
+                <p>Erstellen Sie professionelle Schlafzusammenfassungen für Arztbesuche oder Schlafstudien</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> Krankmeldungsgenerator</h4>
+                <p>KI-generierte Krankmeldungen für Arbeit oder Schule, wenn Sie sie benötigen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> Story-Generator</h4>
+                <p>Verwandeln Sie Ihre Schlafreise in kreative, fesselnde Erzählungen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> Textzusammenfassung</h4>
+                <p>Erstellen Sie teilbare Textnachrichtenzusammenfassungen Ihrer Schlaftrends</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> Personalisiertes Quiz</h4>
+                <p>Testen Sie Ihr Wissen mit einem unterhaltsamen KI-generierten 10-Fragen-Quiz über Ihre Daten</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> Text-zu-Sprache</h4>
+                <p>Hören Sie Ihre KI-Einblicke und Zusammenfassungen mit natürlicher Sprachwiedergabe</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> Maßgeschneiderter Gesundheitsbericht</h4>
+                <p>Erstellen Sie umfassende, personalisierte Schlafgesundheitsdokumente, um Ihren Fortschritt zu verfolgen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>Warum Ihren Schlaf verfolgen?</h2>
+        <p class="section-subtitle">Besserer Schlaf führt zu besserer Gesundheit, Stimmung und Produktivität</p>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> Schlaflosigkeit bewältigen</h4>
+                <p>Identifizieren Sie Muster und Auslöser, die Ihren Schlaf stören</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-bolt"></i> Mehr Energie</h4>
+                <p>Stellen Sie sicher, dass Sie genug Ruhe für optimale tägliche Leistung bekommen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> Schlafziele</h4>
+                <p>Arbeiten Sie auf konsistente Schlafpläne und Dauerziele hin</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-house-medical"></i> Gesundheitseinblicke</h4>
+                <p>Stellen Sie Ärzten Schlafdaten zur Verfügung, die Gesundheitsprobleme untersuchen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-line"></i> Verbesserungen verfolgen</h4>
+                <p>Sehen Sie, wie sich Lebensstiländerungen auf Ihre Schlafqualität auswirken</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-flask"></i> Strategien testen</h4>
+                <p>Experimentieren Sie mit verschiedenen Schlafhygienepraktiken und messen Sie Ergebnisse</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>Verfügbar in 33 Sprachen</h2>
+        <p class="section-subtitle">Feeltracker ST ist vollständig lokalisiert in: Englisch, Spanisch (Español), Französisch (Français), Französisch Kanadisch, Deutsch (Deutsch), Italienisch (Italiano), Niederländisch (Nederlands), Portugiesisch Brasilien (Português), Portugiesisch Portugal, Schwedisch (Svenska), Norwegisch (Norsk), Dänisch (Dansk), Finnisch (Suomi), Polnisch (Polski), Russisch (Русский), Ukrainisch (Українська), Tschechisch (Čeština), Slowakisch (Slovenčina), Rumänisch (Română), Kroatisch (Hrvatski), Ungarisch (Magyar), Arabisch (العربية), Hebräisch (עברית), Vereinfachtes Chinesisch (简体中文), Traditionelles Chinesisch (繁體中文), Japanisch (日本語), Koreanisch (한국어), Thai (ไทย), Vietnamesisch (Tiếng Việt), Indonesisch (Bahasa Indonesia), Griechisch (Ελληνικά), Türkisch (Türkçe) und Katalanisch (Català).</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>Häufig gestellte Fragen</h2>
+
+        <h3>Wie viel Schlaf brauche ich?</h3>
+        <p>Die meisten Erwachsenen benötigen 7-9 Stunden Schlaf pro Nacht, obwohl die individuellen Bedürfnisse variieren. Die App hilft Ihnen, Ihre Schlafdauer zu verfolgen und Ihre persönliche optimale Menge basierend darauf zu identifizieren, wie Sie sich fühlen.</p>
+
+        <h3>Verfolgt diese App den Schlaf automatisch?</h3>
+        <p>Nein. Im Gegensatz zur Apple Watch oder anderen Wearables erfordert das Schlaftagebuch manuelle Protokollierung. Sie geben jeden Morgen Ihre Schlaf- und Aufwachzeiten ein. Sie können jedoch Schlafdaten aus Apple Health importieren, wenn Sie andere automatische Tracking-Geräte verwenden.</p>
+
+        <h3>Kann ich Nickerchen protokollieren?</h3>
+        <p>Ja. Sie können mehrere Schlafphasen pro Tag protokollieren, einschließlich Nickerchen. Jeder Eintrag zeigt die Dauer, und der Kalender zeigt alle Ihre Schlaf-/Aufwachzeiten an.</p>
+
+        <h3>Was ist der Unterschied zwischen dieser App und Apple Health?</h3>
+        <p>Das Schlaftagebuch bietet eine dedizierte Oberfläche für das Schlaftracking mit speziell für die Verwaltung von Schlafmustern entwickelten Funktionen - Notizen, KI-Einblicke, Trends und einfache manuelle Protokollierung. Es integriert sich mit Apple Health, bietet aber detailliertere schlaffokussierte Funktionen.</p>
+
+        <h3>Wie hilft KI bei Schlafeinblicken?</h3>
+        <p>Wenn Sie Notizen über Ihren Tag hinzufügen (z. B. "hatte Kaffee um 20 Uhr" oder "morgens trainiert"), analysiert KI diese im Laufe der Zeit, um Korrelationen mit Ihrer Schlafdauer und -qualität zu zeigen. Dies hilft zu identifizieren, was guten Schlaf fördert oder stört.</p>
+
+        <h3>Kann ich Schlafdaten mit meinem Arzt teilen?</h3>
+        <p>Ja. Exportieren Sie Ihre Schlafhistorie als PDF- oder Excel-Berichte, um sie mit Gesundheitsdienstleistern zu teilen. Dies ist besonders nützlich, wenn Sie auf Schlafstörungen oder Schlaflosigkeit untersucht werden.</p>
+
+        <h3>Verfolgt es Schlafqualität oder nur Dauer?</h3>
+        <p>Die App verfolgt hauptsächlich die Schlafdauer (geschlafene Stunden) basierend auf Ihren protokollierten Schlaf- und Aufwachzeiten. Sie können Notizen über Schlafqualität, Träume oder wie ausgeruht Sie sich fühlen hinzufügen, was bei der qualitativen Verfolgung hilft.</p>
+
+        <h3>Gibt es eine Erinnerung zum Protokollieren des Schlafs?</h3>
+        <p>Ja. Sie können tägliche Erinnerungen zum Protokollieren Ihrer Schlafzeiten einstellen. Viele Benutzer stellen eine morgendliche Erinnerung ein, um sie aufzufordern, den Schlaf der vorherigen Nacht zu erfassen.</p>
+
+        <h3>Zeigen Sie Werbung an oder verfolgen Sie mich?</h3>
+        <p><strong>Nein.</strong> Wir haben alle Werbung vollständig aus der App entfernt. Wir verfolgen Sie nicht über andere Apps oder Websites hinweg, und wir verkaufen Ihre Daten niemals an Werbetreibende.</p>
+        <p>Ihre Daten werden über iCloud synchronisiert - genau wie Apple Notizen und Fotos. Das bedeutet, wir müssen Ihre E-Mail-Adresse, Ihren Namen oder persönliche Informationen nicht kennen. Ihre Schlafdaten werden auf Ihren Geräten und in Ihrem iCloud-Konto gespeichert und sind vollständig privat, unabhängig davon, ob Sie die kostenlose Version oder Premium verwenden.</p>
+
+        <h3>Benötige ich ein Abonnement?</h3>
+        <p>Die App kann vollständig kostenlos heruntergeladen und verwendet werden. Alle Kerntracking-Funktionen funktionieren ohne Abonnement. Ein Premium-Abonnement schaltet erweiterte KI-Funktionen, unbegrenzte Exporte und erweiterte Anpassung frei. Sie können alle Premium-Funktionen während der kostenlosen Testphase ausprobieren.</p>
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">Was Benutzer sagen</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">Echte Bewertungen aus dem App Store</p>
+
+        <div class="reviews-grid">
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Aufruf an alle Schlafärzte!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Ich war so überrascht, dass mein Schlafarzt mir Zettel geben wollte, um meine Schlafstunden aufzuzeichnen! Als ich nach einer App fragte, schlugen sie eine andere vor, die nutzlos war. Zum Glück habe ich diese App gefunden und bat meinen Arzt sofort, sie zu empfehlen. Ich schätze auch, wie reaktionsschnell der Entwickler ist. Diese Person will eindeutig Leben verbessern. DANKE!!"</p>
+            <p class="review-author">- Jbobthebuilder</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Liebe diese App!! So einfach zu bedienen.</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Diese App ist großartig zum Überwachen Ihrer Schlafgewohnheiten und Zeit. Sie ist einfach und leicht zu bedienen. Ich hatte einen Vorschlag und der App-Entwickler Gaurav war absolut erstaunlich!! Ich kontaktierte ihn und er antwortete innerhalb von Minuten und fügte meinen Vorschlag innerhalb von Tagen hinzu! Ich empfehle dringend, dies zu verwenden. Und es lohnt sich absolut zu abonnieren."</p>
+            <p class="review-author">- Absolutely Annoyed!</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Gute App zum Verfolgen von Schlafmustern</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Ich brauchte etwas, um beim Schlaftracking zu helfen, als ich im November 2022 mit der CPAP-Therapie begann. Diese App war großartig, um mich an einen Zeitplan zu halten und meinen Fortschritt zu betrachten. Ich kann geschlafene Stunden, Träume, Schlafmuster sowie andere Daten verfolgen. Update - habe die App jetzt 400 Nächte verwendet und sie zeigt mir den Fortschritt in meiner CPAP-Therapie!"</p>
+            <p class="review-author">- Gadget guy Fl</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Kostenlos mit voller Funktionalität</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Das war alles, was nötig war, um den Unterschied zwischen 2 und 5 Sternen für mich auszumachen. Vielen Dank für diese erstaunliche App."</p>
+            <p class="review-author">- Kye_53636</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Sehr nützliche App! Großartiger Support!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Ich verwende diese App seit einigen Wochen, weil ich sehr unregelmäßige Stunden schlafe. Sleep Journal war genau das, was ich brauchte. An einem Punkt fand ich einen Bug und meldete ihn dem Entwickler, der mir nicht nur schnell antwortete, sondern den Bug auch in nur wenigen Tagen behoben hatte. Danke Gaurav!"</p>
+            <p class="review-author">- AnotherOldGuy</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Einfacher effektiver Schlaftracker</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Einfach und effektiv!"</p>
+            <p class="review-author">- SK301301</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Unkompliziert und zuverlässig</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Dies ist der bequemste Weg, um eine konsistente Aufzeichnung Ihres Schlafplans zu führen und Gewohnheiten zu identifizieren, die Ihren Schlaf beeinflussen können. Sie brauchen wirklich keine andere App."</p>
+            <p class="review-author">- Tab Munch</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Großartig!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Dieses Schlaftagebuch ist perfekt für das, was ich brauchte. Es ist gut gestaltet und einfach zu bedienen. Vielen Dank an die Entwickler, dass sie es kostenlos gemacht haben."</p>
+            <p class="review-author">- Naamyri</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 0; border-radius: 20px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> Möchten Sie Ihre Schlafgesundheit meistern?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">Entdecken Sie 20 Expertentipps für besseren Schlaf, CPAP-Therapie und optimale Schlafqualität</p>
+            <a href="/de/sleep/tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                Expertentipps lesen <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Beginnen Sie heute Nacht Ihren Schlaf zu verbessern</h2>
+        <p>Bessere Ruhe ist nur wenige Fingertipps entfernt</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="Feeltracker ST herunterladen" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/de/sleep/">Startseite</a>
+            <a href="/de/about.html">Über uns</a>
+            <a href="mailto:support@feeltracker.com">E-Mail-Support</a>
+            <a href="/de/support.html">Support</a>
+            <a href="/de/faq.html">FAQ</a>
+            <a href="https://x.com/feeltracker">Folgen Sie uns auf X</a>
+            <a href="/de/privacy.html">Datenschutzrichtlinie</a>
+            <a href="/de/terms.html">Allgemeine Geschäftsbedingungen</a>
+        </div>
+        <p class="footer-copyright">© 2025 Custom Arts. Alle Rechte vorbehalten.</p>
+        <p class="footer-tagline">Teil der Feeltracker-Familie von Gesundheitstracking-Apps</p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Wir schätzen Ihre Privatsphäre</strong></p>
+                <p>Wir verwenden Cookies für Analysen, um unsere Website und App zu verbessern. Es werden keine Werbe-Cookies verwendet. Siehe unsere <a href="/de/privacy/">Datenschutzrichtlinie</a> für Details.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Ablehnen</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+</body>
+</html>
