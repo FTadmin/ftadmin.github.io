@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=1557699226">
+
+    <!-- Primary Meta Tags -->
+    <title>Tagebuch Feeltracker - Notizen Fotos Gedanken KI Tagebuch</title>
+    <meta name="title" content="Tagebuch Feeltracker - Notizen Fotos Gedanken KI Tagebuch">
+    <meta name="description" content="Ihr privates Tagebuch mit KI-Scanning und Einblicken. Scannen Sie Objekte & Text für sofortige Einträge, fügen Sie Fotos hinzu, entdecken Sie Muster mit Worthäufigkeit und Stimmungsanalyse. Synchronisieren Sie auf iPhone, iPad und Mac mit iCloud. Einfaches, sicheres Tagebuchführen.">
+    <meta name="keywords" content="log,day,diario,lock,free,moleskine,personal,private,secret,taker,writer,journaling,my,笔记,дневник,笔记本,Tagebuch,Journal,persönlich,privat">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/de/daily-journal/">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/daily-journal/">
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/daily-journal/">
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/daily-journal/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/de/daily-journal/">
+    <meta property="og:title" content="Feeltracker NT | KI-gesteuertes Tagebuch">
+    <meta property="og:description" content="Ihr privates Tagebuch mit KI-Scanning, Stimmungsanalyse, Wortmustern und Fotoanhängen.">
+    <meta property="og:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/de/daily-journal/">
+    <meta property="twitter:title" content="Feeltracker NT | KI-gesteuertes Tagebuch">
+    <meta property="twitter:description" content="Ihr privates Tagebuch mit KI-Scanning, Stimmungsanalyse und Wortmustern.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Feeltracker NT",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS",
+      "description": "KI-gestütztes Tagebuch mit Stimmungsanalyse und Fotoanhängen",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": 778,
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="breadcrumb">
+                <a href="/de/">feeltracker</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current">Tagebuch</span>
+            </div>
+            <div class="breadcrumb">
+                <a href="/de/blood-pressure/">Blutdruck</a><a href="/de/daily-journal/">Tagebuch</a><a href="/de/mental-health/">Psychische Gesundheit</a><a href="/de/sleep/">Schlaf</a><a href="/de/weight/">Gewicht</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/NT_1024.png" alt="Tagebuch: Feeltracker NT App Icon" width="150" height="150" class="hero-logo app-icon">
+        <h1>Tagebuch: Feeltracker NT</h1>
+        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 12px 24px; border-radius: 30px; display: inline-block; margin: 10px auto; font-weight: 600; font-size: 0.9em; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);">
+            <i class="fas fa-shield-alt"></i> Keine Werbung • Kein Tracking • Datenschutz zuerst
+        </div>
+        <p class="hero-subtitle">Ihr privater Raum für tägliche Reflexionen, Gedanken und Erinnerungen. Schreiben Sie frei mit KI-gestützter Stimmungsanalyse, Fotoanhängen und intelligenten Einblicken in Ihre Schreibmuster.</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="Feeltracker NT im App Store herunterladen" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">Kostenlose App mit optionalen Premium-Funktionen<br>iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">Sehen Sie Feeltracker NT in Aktion</h2>
+        <div class="screenshots-grid">
+            <div>
+                <img src="/images/screenshots/nt-1.png" alt="Feeltracker NT Screenshot 1" class="screenshot-img">
+            </div>
+            <div>
+                <img src="/images/screenshots/nt-2.png" alt="Feeltracker NT Screenshot 2" class="screenshot-img">
+            </div>
+            <div>
+                <img src="/images/screenshots/nt-3.png" alt="Feeltracker NT Screenshot 3" class="screenshot-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">Alles, was Sie für achtsames Tagebuchführen brauchen</h2>
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-pen"></i></div>
+                <h3>Ablenkungsfreies Schreiben</h3>
+                <p>Klare, einfache Benutzeroberfläche, die Ihre Worte in den Vordergrund stellt. Kein Durcheinander, nur Sie und Ihre Gedanken. Schreiben Sie jeden Tag so viel oder so wenig, wie Sie möchten.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-smile"></i></div>
+                <h3>KI-Stimmungsanalyse</h3>
+                <p>Automatische Stimmungserkennung zeigt den emotionalen Ton Ihrer Einträge mit Apples geräteseitiger Natural Language API. Vollständig privat - verlässt niemals Ihr Gerät.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-barcode-scan"></i></div>
+                <h3>KI-Scanning</h3>
+                <p>Scannen Sie Objekte, Dokumente, Quittungen oder Text mit Ihrer Kamera und lassen Sie KI sie beschreiben und Text extrahieren. Erstellen Sie sofort Tagebucheinträge aus realen Gegenständen.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>Worthäufigkeitsanalyse</h3>
+                <p>Entdecken Sie, was Ihnen wirklich im Kopf herumgeht. Sehen Sie, welche Wörter und Themen am häufigsten in Ihrem Schreiben vorkommen, um Muster und wiederkehrende Gedanken zu identifizieren.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>Fototagebücher</h3>
+                <p>Fügen Sie bis zu 8 Fotos pro Eintrag hinzu, um Erinnerungen visuell festzuhalten. Perfekt für Reisetagebücher, Dankbarkeitstagebücher oder einfach zur Dokumentation Ihres Tages.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>Notizenvorlagen</h3>
+                <p>Schnellstart für Ihre Einträge mit anpassbaren Vorlagen. Perfekt für Dankbarkeitstagebücher, Morgenseiten, Zielverfolgung oder jede wiederkehrende Tagebuchpraxis.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>Gegenstandsscanning</h3>
+                <p>Richten Sie Ihre Kamera auf ein beliebiges Objekt und lassen Sie KI es mit kreativem Kontext für Ihr Tagebuch beschreiben. Verwandeln Sie alltägliche Momente in bedeutungsvolle Einträge.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-lines"></i></div>
+                <h3>Textscanning</h3>
+                <p>Erfassen Sie Text aus Dokumenten, Schildern oder Bildschirmen mit KI-gestützter OCR. Digitalisieren Sie sofort geschriebene Inhalte in Ihre Tagebucheinträge.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-search"></i></div>
+                <h3>Leistungsstarke Suche</h3>
+                <p>Finden Sie jeden Eintrag sofort mit Volltextsuche. Ihre Tagebücher werden auch in iOS Spotlight indexiert für schnellen Zugriff von überall auf Ihrem Gerät.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">So funktioniert Feeltracker NT</h2>
+        <p class="section-subtitle center-text">Ihr persönlicher Tagebuchbegleiter zum Festhalten von Lebensmomentenen und Entdecken von Mustern</p>
+        <div class="app-card">
+            <h3>1. Schreiben Sie Ihre Gedanken</h3>
+            <div class="app-card-content">
+                <p><strong>Sofortiger Eintrag:</strong> Öffnen Sie die App und fangen Sie sofort an zu schreiben. Keine Einrichtung, keine Konfiguration, keine Komplexität. Nur Ihre Gedanken und die Seite. Die klare, ablenkungsfreie Benutzeroberfläche hilft Ihnen, sich auf Ihren Ausdruck zu konzentrieren.</p>
+                <p><strong>Rich Media:</strong> Erweitern Sie Einträge mit Fotos, fügen Sie Bilder hinzu, um Erinnerungen visuell festzuhalten. Fügen Sie Sprachaufnahmen, Skizzen oder beliebige Medien hinzu, die helfen, Ihre Geschichte zu erzählen. Jeder Eintrag wird zu einem vollständigen Schnappschuss Ihres Tages.</p>
+                <p><strong>Notizenvorlagen:</strong> Verwenden Sie vorgefertigte Vorlagen für tägliche Reflexionen, Dankbarkeitstagebuch, Zielverfolgung, Traumtagebücher oder erstellen Sie Ihre eigenen benutzerdefinierten Vorlagen. Vorlagen bieten Struktur und geben Ihnen dennoch die Freiheit, natürlich zu schreiben.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>2. Sehen Sie Muster entstehen</h3>
+            <div class="app-card-content">
+                <p><strong>Stimmungsanalyse:</strong> KI erkennt automatisch den emotionalen Ton Ihrer Einträge - positiv, negativ oder neutral. Sehen Sie Ihre Stimmungstrends über Wochen und Monate visualisiert, um Ihre emotionalen Muster zu verstehen.</p>
+                <p><strong>Worthäufigkeit:</strong> Entdecken Sie, über welche Themen, Personen oder Themen Sie am meisten schreiben. Die App identifiziert wiederkehrende Wörter und Phrasen und zeigt, was Ihnen ständig im Kopf ist und wie sich Ihr Fokus im Laufe der Zeit verschiebt.</p>
+                <p><strong>Kalenderansicht:</strong> Durchsuchen Sie Ihre gesamte Tagebuchgeschichte in einer Kalenderoberfläche. Jeder Tag zeigt einen Auszug und Stimmungsindikator. Springen Sie schnell zu jedem vergangenen Eintrag, um zu sehen, was Sie an diesem Tag gedacht haben.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>3. Reflektieren und Wachsen</h3>
+            <div class="app-card-content">
+                <p><strong>KI-gestützte Einblicke:</strong> Stellen Sie Fragen zu Ihrem Tagebuch: "Was waren meine glücklichsten Tage letzten Monat?" oder "Zeige mir alle Einträge, in denen ich meine Ziele erwähnt habe." Erhalten Sie sofortige, durchdachte Antworten, die Ihnen helfen, Ihre Reise zu verstehen.</p>
+                <p><strong>Persönliche Entwicklungsverfolgung:</strong> Überprüfen Sie, wie sich Ihre Gedanken, Sorgen und Bestrebungen entwickeln. Sehen Sie Fortschritte bei Zielen, die in vergangenen Einträgen erwähnt wurden. Identifizieren Sie Wachstumsbereiche und feiern Sie, wie weit Sie gekommen sind.</p>
+                <p><strong>Alles durchsuchen:</strong> Die leistungsstarke Suche findet jedes Wort, jede Phrase oder jedes Konzept über Jahre des Tagebuchführens. Filtern Sie nach Datum, Stimmung oder Stichwörtern. Ihre gesamte geschriebene Geschichte ist sofort zugänglich und durchsuchbar.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>4. Halten Sie alles sicher</h3>
+            <div class="app-card-content">
+                <p><strong>Privat & Sicher:</strong> Alle Einträge werden verschlüsselt und in Ihrem persönlichen iCloud-Konto gespeichert. Nur Sie können Ihr Tagebuch lesen - die App verwendet Ende-zu-Ende-Verschlüsselung, sodass Ihre Worte vollständig privat bleiben.</p>
+                <p><strong>Automatisches Backup:</strong> Wöchentliche automatische JSON-Backups stellen sicher, dass Sie Ihre Gedanken nie verlieren. Manuelles Backup jederzeit, um Ihr gesamtes Tagebuch zu exportieren. Ihre Worte sind vor Geräteverlust oder -ausfall geschützt.</p>
+                <p><strong>Geräteübergreifende Synchronisation:</strong> Schreiben Sie auf dem iPhone, fahren Sie auf dem iPad fort, überprüfen Sie auf dem Mac. Alle Ihre Einträge werden automatisch über iCloud synchronisiert. Ihr Tagebuch folgt Ihnen überall hin, immer auf dem neuesten Stand auf jedem Gerät.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>Angetrieben durch künstliche Intelligenz</h2>
+        <p class="section-subtitle">Erweiterte KI-Funktionen, damit Sie mehr aus Ihrer Tagebuchpraxis herausholen</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Kostenlose KI-Funktionen</h3>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> Stellen Sie eine Frage</h4>
+                <p>Schnelle Fragen und Antworten zu Ihren Tagebucheinträgen - erhalten Sie sofortige Antworten zu Ihrem Schreiben</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <p>Führen Sie interaktive Gespräche über Ihre Tagebuchreise und erhalten Sie persönliche Anleitung</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> Sprachzusammenfassung</h4>
+                <p>Hören Sie sich Audio-Zusammenfassungen Ihrer Tagebuchthemen an - perfekt für unterwegs Reflexionen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-barcode-scan"></i> KI-Scanning</h4>
+                <p>Scannen Sie Objekte, Dokumente, Quittungen oder Text, um sofortige Tagebucheinträge mit KI-Beschreibungen zu erstellen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> Bring mich zum Lachen</h4>
+                <p>Erhalten Sie personalisierten Humor aus Ihren Tagebucheinträgen, um Ihren Tag aufzuhellen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> Beruhige mich</h4>
+                <p>KI-gesteuerte Atem- und Entspannungsübungen zur Stressreduzierung</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Premium-KI-Funktionen</h3>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> Tiefgehende Forschungsberichte</h4>
+                <p>Umfassende KI-Analyse Ihres Tagebuchs mit detaillierten Einblicken</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> Muster-Detektiv</h4>
+                <p>Finden Sie verborgene Themen und Muster in Ihren Tagebucheinträgen im Laufe der Zeit</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> Zielassistent</h4>
+                <p>Erhalten Sie personalisierte, datengestützte Lebensziele basierend auf Ihren Tagebuchmustern</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> Arztzusammenfassung</h4>
+                <p>Erstellen Sie professionelle Zusammenfassungen zum Teilen bei Arztbesuchen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> Krankschreibungs-Generator</h4>
+                <p>KI-generierte Krankschreibungen für Arbeit oder Schule, wenn Sie sie brauchen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> Story-Generator</h4>
+                <p>Verwandeln Sie Ihre Tagebucheinträge in kreative, ansprechende Erzählungen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> Textzusammenfassung</h4>
+                <p>Erstellen Sie teilbare Textnachrichten-Zusammenfassungen Ihrer Tagebuchthemen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> Personalisiertes Quiz</h4>
+                <p>Testen Sie Ihr Wissen mit einem lustigen KI-generierten 10-Fragen-Quiz über Ihre Daten</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> Text-zu-Sprache</h4>
+                <p>Hören Sie sich Ihre KI-Einblicke und Zusammenfassungen mit natürlicher Sprachwiedergabe an</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> Maßgeschneiderter Gesundheitsbericht</h4>
+                <p>Erstellen Sie umfassende, personalisierte Dokumente zur Verfolgung Ihres Tagebuchfortschritts</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-tags"></i> Themen-Explorer</h4>
+                <p>Entdecken Sie wiederkehrende Themen und Ideen in Ihrem Schreiben mit KI-gestützter Themenanalyse</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-line"></i> Stimmungs-Zeitlinie</h4>
+                <p>Visualisieren Sie Ihre emotionale Reise im Laufe der Zeit mit KI-analysierter Stimmungsverfolgung</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>Warum ein Tagebuch führen?</h2>
+        <p class="section-subtitle">Forschungen zeigen, dass Tagebuchführen die psychische Gesundheit, Klarheit und Kreativität verbessert</p>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-brain"></i> Mentale Klarheit</h4>
+                <p>Schreiben hilft, Gedanken zu ordnen und mentales Durcheinander zu reduzieren</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment"></i> Emotionale Verarbeitung</h4>
+                <p>Drücken Sie Gefühle in einem sicheren, privaten Raum aus und verarbeiten Sie sie</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> Fortschritt verfolgen</h4>
+                <p>Sehen Sie, wie weit Sie gekommen sind, indem Sie vergangene Einträge überprüfen</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-lightbulb"></i> Selbstentdeckung</h4>
+                <p>Entdecken Sie Muster in Ihrem Denken und Verhalten</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-hands-praying"></i> Dankbarkeitspraxis</h4>
+                <p>Kultivieren Sie Dankbarkeit mit täglichem Dankbarkeitstagebuch</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> Erinnerungen bewahren</h4>
+                <p>Erstellen Sie ein persönliches Archiv der Momente Ihres Lebens</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="support-section">
+        <h2>Perfekt für...</h2>
+
+        <h3>Tägliche Reflexion</h3>
+        <p>Beenden Sie jeden Tag, indem Sie darüber schreiben, was passiert ist, was Sie gelernt haben und wie Sie sich gefühlt haben. Bauen Sie eine konsistente Tagebuchgewohnheit mit Erinnerungen und Vorlagen auf.</p>
+
+        <h3>Dankbarkeitstagebuch</h3>
+        <p>Verwenden Sie Notizenvorlagen, um schnell drei Dinge zu protokollieren, für die Sie jeden Tag dankbar sind. Verfolgen Sie Ihre Dankbarkeitspraxis und sehen Sie positive Muster entstehen.</p>
+
+        <h3>Reisetagebücher</h3>
+        <p>Dokumentieren Sie Ihre Abenteuer mit Fotos und detaillierten Notizen. Erstellen Sie eine reichhaltige Aufzeichnung Ihrer Reisen, die Sie jederzeit erneut besuchen können.</p>
+
+        <h3>Zielverfolgung</h3>
+        <p>Schreiben Sie über Ihre Ziele, verfolgen Sie Ihren Fortschritt und reflektieren Sie, was funktioniert. Verwenden Sie KI-Einblicke, um zu sehen, welche Ansätze am effektivsten sind.</p>
+
+        <h3>Kreatives Schreiben</h3>
+        <p>Üben Sie tägliches Schreiben, erfassen Sie Ideen und entwickeln Sie Ihre Stimme. Die ablenkungsfreie Benutzeroberfläche hilft Ihnen, sich auf Ihr Handwerk zu konzentrieren.</p>
+
+        <h3>Psychische Gesundheit</h3>
+        <p>Verarbeiten Sie Emotionen, identifizieren Sie Auslöser und verfolgen Sie Stimmungsmuster durch Schreiben. Die Stimmungsanalyse bietet objektives Feedback zum emotionalen Ton.</p>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>Verfügbar in 33 Sprachen</h2>
+        <p class="section-subtitle">Feeltracker NT ist vollständig lokalisiert in: Englisch, Spanisch (Español), Französisch (Français), Französisch Kanada, Deutsch (Deutsch), Italienisch (Italiano), Niederländisch (Nederlands), Portugiesisch Brasilien (Português), Portugiesisch Portugal, Schwedisch (Svenska), Norwegisch (Norsk), Dänisch (Dansk), Finnisch (Suomi), Polnisch (Polski), Russisch (Русский), Ukrainisch (Українська), Tschechisch (Čeština), Slowakisch (Slovenčina), Rumänisch (Română), Kroatisch (Hrvatski), Ungarisch (Magyar), Arabisch (العربية), Hebräisch (עברית), Vereinfachtes Chinesisch (简体中文), Traditionelles Chinesisch (繁體中文), Japanisch (日本語), Koreanisch (한국어), Thai (ไทย), Vietnamesisch (Tiếng Việt), Indonesisch (Bahasa Indonesia), Griechisch (Ελληνικά), Türkisch (Türkçe) und Katalanisch (Català).</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>Häufig gestellte Fragen</h2>
+
+        <h3>Ist mein Tagebuch privat?</h3>
+        <p>Absolut. Ihre Einträge werden verschlüsselt auf Ihrem Gerät und in Ihrem privaten iCloud-Konto gespeichert. Wir sehen Ihr Schreiben nie. Selbst die KI-Stimmungsanalyse erfolgt vollständig auf Ihrem Gerät mit Apples Natural Language API - Ihre Worte verlassen niemals Ihr Telefon.</p>
+
+        <h3>Wie funktioniert die Stimmungsanalyse?</h3>
+        <p>Wenn Sie 8 oder mehr Wörter schreiben, verwendet die App Apples integriertes Natural Language Framework, um den emotionalen Ton zu analysieren. Ein Emoji erscheint, um zu zeigen, ob der Eintrag als positiv, negativ oder neutral gelesen wird. Dies geschieht vollständig auf dem Gerät für vollständige Privatsphäre.</p>
+
+        <h3>Was ist Worthäufigkeitsanalyse?</h3>
+        <p>Die Trends-Funktion analysiert alle Ihre Einträge, um zu zeigen, über welche Wörter und Themen Sie am häufigsten schreiben. Dies hilft Ihnen, wiederkehrende Themen, Sorgen oder Interessen in Ihrem Denken zu identifizieren.</p>
+
+        <h3>Kann ich Fotos zu meinem Tagebuch hinzufügen?</h3>
+        <p>Ja! Sie können bis zu 8 Fotos zu jedem Tagebucheintrag hinzufügen. Fotos werden effizient gespeichert mit automatischer Miniaturbildgenerierung und sie werden über alle Ihre Geräte über iCloud synchronisiert.</p>
+
+        <h3>Was sind Notizenvorlagen?</h3>
+        <p>Vorlagen sind vorgeschriebene Eingabeaufforderungen, die Ihnen helfen, schnell mit dem Schreiben zu beginnen. Erstellen Sie benutzerdefinierte Vorlagen für Dinge wie Dankbarkeitslisten, tägliche Bewertungen, Zielverfolgung oder jedes andere wiederkehrende Format, das Sie verwenden.</p>
+
+        <h3>Kann ich meine Tagebucheinträge exportieren?</h3>
+        <p>Ja. Sie können Ihre Einträge als PDF, Excel oder JSON-Dateien exportieren. Damit können Sie Backups erstellen, ausgewählte Einträge teilen oder Ihre Daten bei Bedarf auf andere Plattformen verschieben.</p>
+
+        <h3>Funktioniert es auf dem Mac?</h3>
+        <p>Ja! Die App läuft nativ auf Apple Silicon Macs (M1 und später). Ihre Einträge werden automatisch zwischen Ihrem iPhone, iPad und Mac über iCloud synchronisiert.</p>
+
+        <h3>Kann ich mehrere Einträge pro Tag schreiben?</h3>
+        <p>Absolut. Schreiben Sie so viele Einträge, wie Sie jeden Tag möchten. Manche Menschen schreiben morgens und abends Tagebuch, während andere den ganzen Tag über Notizen hinzufügen.</p>
+
+        <h3>Zeigen Sie Werbung an oder verfolgen Sie mich?</h3>
+        <p><strong>Nein.</strong> Wir haben alle Werbung vollständig aus der App entfernt. Wir verfolgen Sie nicht über andere Apps oder Websites hinweg und wir verkaufen Ihre Daten niemals an Werbetreibende.</p>
+        <p>Ihre Daten werden über iCloud synchronisiert - genau wie Apple Notes und Fotos. Das bedeutet, wir müssen Ihre E-Mail-Adresse, Ihren Namen oder persönliche Informationen nicht kennen. Ihre Tagebucheinträge werden auf Ihren Geräten und in Ihrem iCloud-Konto gespeichert und sie sind vollständig privat, egal ob Sie die kostenlose Version oder Premium verwenden.</p>
+
+        <h3>Benötige ich ein Abonnement?</h3>
+        <p>Die App ist völlig kostenlos zum Herunterladen und Verwenden. Alle Kernfunktionen funktionieren ohne Abonnement. Ein Premium-Abonnement schaltet erweiterte KI-Funktionen, unbegrenzte Exporte und erweiterte Anpassung frei. Sie können alle Premium-Funktionen während der kostenlosen Testphase ausprobieren.</p>
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">Was Benutzer sagen</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">Echte Bewertungen aus dem App Store</p>
+
+        <div class="reviews-grid">
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Perfekt & Einfach</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Ich habe über ein Jahr lang nach genau so etwas gesucht. Perfekte App, die tut, was sie tut, ohne Aufhebens. Ich verwende diese, um Notizen über erledigte Aufgaben, getätigte Anrufe, gelernte Informationen usw. zu notieren."</p>
+            <p class="review-author">- Danofishje</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Bisher so gut</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Dies ist eine nette kleine einfache App, die sich nicht in unnötige Bereiche ausdehnt. Es ist die Einfachheit, einschließlich der Einfachheit der Benutzeroberfläche, die ich mehr schätze als alles andere."</p>
+            <p class="review-author">- PRE'</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Sehr gut für Behandlungsprotokoll</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Ich versuche, eine Aufzeichnung der Schmerzpegel den ganzen Tag über zu führen. Diese App ist perfekt dafür!"</p>
+            <p class="review-author">- LT351</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Freiheit</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Freiheit und wie man seine Zeit verwaltet"</p>
+            <p class="review-author">- 223tr</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Es lohnt sich</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Danke für die schnelle Antwort, das war schnell. Dieses Projekt hat sicher meine Unterstützung."</p>
+            <p class="review-author">- Gualmarl</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Mir gefällt, wie es aussieht!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Habe diese App gerade heruntergeladen, sie ist großartig! Ich liebe sie!"</p>
+            <p class="review-author">- EdwardPrince91</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Tolle einfache App</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Diese App war großartig, weil ich jetzt genau erklären kann, was ich den ganzen Tag mache, damit er das Geschäft übernehmen und erfolgreich sein kann."</p>
+            <p class="review-author">- Seandello 1</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Ich liebe es</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Ich verwende dieses Tagebuch hauptsächlich, um kleine Siege meines Tages zu speichern. Es ist sehr einfach zu bedienen und seine Statistiken sind erstaunlich."</p>
+            <p class="review-author">- Luciernagas</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Einfach auf den Punkt</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Diese App ist genau das, was ich brauchte, um alle Streiche meines bösen Nachbarn mit Zeit/Datum und Notizen zu protokollieren."</p>
+            <p class="review-author">- Ineedabass</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Perfekt für schnelle detaillierte Tagebucheinträge</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Liebe die einfache Benutzeroberfläche. Sehr minimalistisch und intuitiv. Die App macht Tagebucheinträge und Suche sehr gut."</p>
+            <p class="review-author">- Nutelozopj</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Unverzichtbare App!!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Dies ist eine großartige App mit minimalen Funktionen, die aber jedem nützt… Ich verwende diese seit einiger Zeit und bin sehr zufrieden damit."</p>
+            <p class="review-author">- Blissful Sunshine</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Tolle App</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Ich habe nach etwas Einfachem wie diesem gesucht! Und ich liebe auch die kleinen Pieptöne - es ist eine coole App."</p>
+            <p class="review-author">- unicorona</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Fabelhafte App für Tagebuch oder Notizen</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Toller Support, einfach zu bedienen und genau. Probieren Sie es aus, Sie werden froh sein, dass Sie es getan haben!"</p>
+            <p class="review-author">- stanmoffat</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Perfekt!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Habe dies gerade heruntergeladen und konnte sofort sagen, dass es genau das war, wonach ich gesucht habe! So sauber und einfach zu bedienen!"</p>
+            <p class="review-author">- Val_MN</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Einfach</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Diese App ist sehr einfach und macht das Tagebuchführen einfach und flexibel."</p>
+            <p class="review-author">- Jdhott29</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">!! Danke</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Hoffentlich wird Leerlaufzeit nie wieder ungeprüft verstreichen. Jetzt bin ich protokolliert und erledige Dinge, die für später aufgeschoben wurden!"</p>
+            <p class="review-author">- studioart</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Liebe die Trends-Funktion</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Ich verwende diese App auf untypische Weise. Ich gebe jedes Mal ein T, F oder B ein, wenn ich einen Gedanken, ein Gefühl oder ein Verhalten im Zusammenhang mit meiner Suchtgenesung habe. Dann kann ich in den Trends sehen, wie mein Fortschritt im Laufe der Zeit aussieht."</p>
+            <p class="review-author">- Paul77785</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">5 Sterne</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Beste App, liebe es, 5 Sterne"</p>
+            <p class="review-author">- shaz1851985</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 0; border-radius: 20px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> Möchten Sie Ihre Tagebuchpraxis transformieren?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">Entdecken Sie 20 Expertentipps für effektive Selbstreflexion, Dankbarkeit und persönliches Wachstum</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                Expertentipps lesen <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Beginnen Sie heute mit Ihrer Tagebuchpraxis</h2>
+        <p>Schließen Sie sich Tausenden an, die die Vorteile der täglichen Reflexion entdecken</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="Feeltracker NT herunterladen" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/de/daily-journal/">Startseite</a>
+            <a href="/de/about.html">Über uns</a>
+            <a href="mailto:support@feeltracker.com">E-Mail-Support</a>
+            <a href="/de/support.html">Support</a>
+            <a href="/de/faq.html">FAQ</a>
+            <a href="https://x.com/feeltracker">Folgen Sie uns auf X</a>
+            <a href="/de/privacy.html">Datenschutzerklärung</a>
+            <a href="/de/terms.html">Allgemeine Geschäftsbedingungen</a>
+        </div>
+        <p class="footer-copyright">© 2025 Custom Arts. Alle Rechte vorbehalten.</p>
+        <p class="footer-tagline">Teil der Feeltracker-Familie von Gesundheits-Tracking-Apps</p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Wir schätzen Ihre Privatsphäre</strong></p>
+                <p>Wir verwenden Cookies für Analysen, um unsere Website und App zu verbessern. Es werden keine Werbe-Cookies verwendet. Siehe unsere <a href="/de/privacy/">Datenschutzerklärung</a> für Details.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Ablehnen</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+</body>
+</html>
