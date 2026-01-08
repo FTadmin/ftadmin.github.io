@@ -118,35 +118,55 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="breadcrumb">
-                <a href="#" onclick="location.reload(); return false;">feeltracker</a>
-            </div>
-            <div class="breadcrumb">
-                <a href="/de/blood-pressure/">Blutdruck</a><a href="/de/daily-journal/">Tagebuch</a><a href="/de/mental-health/">Psychische Gesundheit</a><a href="/de/sleep/">Schlaf</a><a href="/de/weight/">Gewicht</a>
-            </div>
-        </div>
-        <!-- Language Selector -->
         <style>
-            .navbar {
-                position: relative;
+            .nav-container {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+            .nav-row-apps {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4px;
+            }
+            .nav-row-apps a {
+                color: #2B7BD3;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 0.95em;
+                padding: 4px 8px;
+            }
+            .nav-row-apps a:hover {
+                text-decoration: underline;
+            }
+            .nav-row-brand {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .nav-row-brand .brand-logo {
+                color: #2B7BD3;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.3em;
+                font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #1a5ca8;
             }
             .language-selector {
-                position: absolute;
-                top: 50%;
-                right: 20px;
-                transform: translateY(-50%);
-                z-index: 100;
+                position: relative;
             }
             .language-current {
                 display: flex;
                 align-items: center;
                 gap: 6px;
                 background: #f0f4f8;
-                padding: 8px 12px;
-                border-radius: 20px;
+                padding: 6px 10px;
+                border-radius: 16px;
                 cursor: pointer;
-                font-size: 0.85em;
+                font-size: 0.8em;
                 font-weight: 600;
                 color: #2B7BD3;
                 transition: background 0.2s, box-shadow 0.2s;
@@ -162,9 +182,8 @@
                 font-size: 1.1em;
             }
             .language-current .arrow {
-                font-size: 0.65em;
+                font-size: 0.6em;
                 transition: transform 0.2s;
-                margin-left: 2px;
             }
             .language-selector.open .arrow {
                 transform: rotate(180deg);
@@ -174,7 +193,7 @@
                 top: calc(100% + 6px);
                 right: 0;
                 background: #ffffff;
-                border-radius: 12px;
+                border-radius: 10px;
                 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
                 border: 1px solid #e0e0e0;
                 overflow: hidden;
@@ -182,9 +201,10 @@
                 visibility: hidden;
                 transform: translateY(-8px);
                 transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
-                min-width: 140px;
+                min-width: 130px;
                 max-height: 300px;
                 overflow-y: auto;
+                z-index: 1000;
             }
             .language-selector.open .language-dropdown {
                 opacity: 1;
@@ -195,10 +215,10 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
-                padding: 10px 14px;
+                padding: 8px 12px;
                 text-decoration: none;
                 color: #333;
-                font-size: 0.9em;
+                font-size: 0.85em;
                 transition: background 0.2s;
             }
             .language-dropdown a:hover,
@@ -211,22 +231,24 @@
                 font-weight: 600;
             }
             .language-dropdown a .flag {
-                font-size: 1.1em;
+                font-size: 1em;
             }
-            /* Mobile: Move below navbar content */
             @media (max-width: 768px) {
-                .language-selector {
-                    position: static;
-                    transform: none;
-                    margin: 10px auto 0;
-                    display: flex;
-                    justify-content: center;
+                .nav-row-apps {
+                    justify-content: flex-start;
                 }
-                .navbar .nav-container {
-                    padding-bottom: 0;
+                .nav-row-apps a {
+                    font-size: 0.85em;
+                    padding: 3px 6px;
                 }
             }
             @media (prefers-color-scheme: dark) {
+                .nav-row-apps a {
+                    color: #5BA4FF;
+                }
+                .nav-row-brand .brand-logo {
+                    color: #5BA4FF;
+                }
                 .language-current {
                     background: #2a2a2a;
                     color: #5BA4FF;
@@ -252,15 +274,27 @@
                 }
             }
         </style>
-        <div class="language-selector" id="langSelector">
-            <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
-                <span class="flag">🇩🇪</span>
-                <span>Deutsch</span>
-                <span class="arrow">▼</span>
+        <div class="nav-container">
+            <div class="nav-row-apps">
+                <a href="/de/blood-pressure/">Blutdruck</a>
+                <a href="/de/daily-journal/">Tagebuch</a>
+                <a href="/de/mental-health/">Psychische Gesundheit</a>
+                <a href="/de/sleep/">Schlaf</a>
+                <a href="/de/weight/">Gewicht</a>
             </div>
-            <div class="language-dropdown">
-                <a href="/"><span class="flag">🇬🇧</span> English</a>
-                <a href="/de/" class="active"><span class="flag">🇩🇪</span> Deutsch</a>
+            <div class="nav-row-brand">
+                <a href="#" class="brand-logo" onclick="location.reload(); return false;">feeltracker</a>
+                <div class="language-selector" id="langSelector">
+                    <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="language-dropdown">
+                        <a href="/"><span class="flag">🇬🇧</span> English</a>
+                        <a href="/de/" class="active"><span class="flag">🇩🇪</span> Deutsch</a>
+                    </div>
+                </div>
             </div>
         </div>
         <script>
