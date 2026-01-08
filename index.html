@@ -178,7 +178,7 @@
             }
             .nav-row-apps {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 flex-wrap: wrap;
                 gap: 4px;
             }
@@ -188,6 +188,9 @@
                 font-weight: 600;
                 font-size: 0.95em;
                 padding: 4px 8px;
+            }
+            .nav-row-apps a:first-child {
+                padding-left: 0;
             }
             .nav-row-apps a:hover {
                 text-decoration: underline;
@@ -286,12 +289,12 @@
                 font-size: 1em;
             }
             @media (max-width: 768px) {
-                .nav-row-apps {
-                    justify-content: flex-start;
-                }
                 .nav-row-apps a {
                     font-size: 0.85em;
                     padding: 3px 6px;
+                }
+                .nav-row-apps a:first-child {
+                    padding-left: 0;
                 }
             }
             @media (prefers-color-scheme: dark) {
