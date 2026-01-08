@@ -131,17 +131,13 @@
                 display: flex;
                 justify-content: flex-start;
                 flex-wrap: wrap;
-                gap: 4px;
+                gap: 4px 16px;
             }
             .nav-row-apps a {
                 color: #2B7BD3;
                 text-decoration: none;
                 font-weight: 600;
                 font-size: 0.95em;
-                padding: 4px 8px;
-            }
-            .nav-row-apps a:first-child {
-                padding-left: 0;
             }
             .nav-row-apps a:hover {
                 text-decoration: underline;
@@ -242,10 +238,6 @@
             @media (max-width: 768px) {
                 .nav-row-apps a {
                     font-size: 0.85em;
-                    padding: 3px 6px;
-                }
-                .nav-row-apps a:first-child {
-                    padding-left: 0;
                 }
             }
             @media (prefers-color-scheme: dark) {
