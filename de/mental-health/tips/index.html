@@ -107,19 +107,198 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="breadcrumb">
-                <a href="/de/">feeltracker</a>
-                <span class="breadcrumb-separator">›</span>
-                <a href="index.html" style="font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;">FT</a>
-                <span class="breadcrumb-separator">›</span>
-                <span class="breadcrumb-current">Tipps</span>
-            </div>
-            <div class="breadcrumb">
-                <a href="/de/blood-pressure/">Blutdruck</a><a href="/de/daily-journal/">Tagebuch</a><a href="/de/mental-health/">Psychische Gesundheit</a><a href="/de/sleep/">Schlaf</a><a href="/de/weight/">Gewicht</a>
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        .nav-row-apps a:hover {
+            text-decoration: underline;
+        }
+        .nav-row-apps a.current {
+            color: #333;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.3em;
+            font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #f0f4f8;
+            padding: 6px 10px;
+            border-radius: 16px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: #2B7BD3;
+            transition: background 0.2s, box-shadow 0.2s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e0e0e0;
+        }
+        .language-current:hover {
+            background: #e4ecf4;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #5BA4FF;
+            }
+            .nav-row-apps a.current {
+                color: #e0e0e0;
+            }
+            .nav-row-brand .brand-logo {
+                color: #5BA4FF;
+            }
+            .language-current {
+                background: #2a2a2a;
+                color: #5BA4FF;
+                border-color: #404040;
+            }
+            .language-current:hover {
+                background: #333;
+            }
+            .language-dropdown {
+                background: #2a2a2a;
+                border-color: #404040;
+            }
+            .language-dropdown a {
+                color: #eee;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #333;
+            }
+            .language-dropdown a.active {
+                background: #1a3a5c;
+                color: #5BA4FF;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/de/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇩🇪</span>
+                    <span>Deutsch</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+                    <a href="/mental-health/tips/"><span class="flag">🇬🇧</span> English</a>
+                    <a href="/de/mental-health/tips/" class="active"><span class="flag">🇩🇪</span> Deutsch</a>
+                </div>
             </div>
         </div>
-    </nav>
+        <div class="nav-row-apps">
+            <a href="/de/blood-pressure/">Blutdruck</a>
+            <a href="/de/daily-journal/">Tagebuch</a>
+            <a href="/de/mental-health/" class="current">Psychische Gesundheit</a>
+            <a href="/de/sleep/">Schlaf</a>
+            <a href="/de/weight/">Gewicht</a>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
 
     <section class="hero">
         <img src="/images/FT_1024.png" alt="Stimmung BPD DBT Feeltracker FT" class="hero-app-icon">
