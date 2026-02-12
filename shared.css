@@ -1329,13 +1329,13 @@
 /* Navigation Bar */
 .navbar {
     background: #ffffff;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
     padding: 18px 30px;
     margin: -20px -20px 40px -20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
     min-height: 70px;
 }
 
@@ -1458,8 +1458,8 @@ a:hover {
 .hero {
     padding: 60px 20px;
     margin-bottom: 40px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    border-radius: 20px;
+    background: #f5f7fa;
+    border-radius: 8px;
 }
 
 .hero-logo {
@@ -1497,18 +1497,18 @@ a:hover {
 }
 
 .feature-badge {
-    background: rgba(255, 255, 255, 0.9);
+    background: #ffffff;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 6px;
     font-size: 0.95em;
     font-weight: 500;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
     transition: transform 0.2s ease;
 }
 
 .feature-badge:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 /* Apps Section */
@@ -1526,15 +1526,15 @@ a:hover {
 .app-card {
     background: #ffffff;
     border: 1px solid #e0e0e0;
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 30px;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 .app-card:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
 }
 
 .app-card-header {
@@ -1607,7 +1607,7 @@ a:hover {
     padding: 0 30px;
     background: #0051D5;
     color: #ffffff;
-    border-radius: 8px;
+    border-radius: 6px;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -1632,7 +1632,7 @@ a:hover {
     margin: 40px 0;
     padding: 40px 20px;
     background: #f8f9fa;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .screenshots-grid {
@@ -1667,7 +1667,7 @@ a:hover {
     background: #f8f9fa;
     padding: 60px 30px;
     margin: 60px -30px;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 .features-grid {
@@ -1680,15 +1680,15 @@ a:hover {
 .feature-box {
     background: #ffffff;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 6px;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #eaeaea;
 }
 
 .feature-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 .feature-icon {
@@ -1734,8 +1734,8 @@ a:hover {
 .ai-section {
     margin: 60px 0;
     padding: 60px 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 20px;
+    background: #1e293b;
+    border-radius: 8px;
     color: #ffffff;
 }
 
@@ -1764,16 +1764,16 @@ a:hover {
 }
 
 .ai-feature {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08);
     padding: 25px;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 }
 
 .ai-feature:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
 }
 
 .ai-feature h3 {
@@ -1799,7 +1799,7 @@ a:hover {
     margin: 60px 0;
     padding: 60px 30px;
     background: #f8f9fa;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 .social-proof .section-subtitle {
@@ -1862,8 +1862,8 @@ a:hover {
 .cta-section {
     margin: 60px 0;
     padding: 60px 30px;
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    border-radius: 20px;
+    background: #2B7BD3;
+    border-radius: 8px;
     color: #ffffff;
 }
 
@@ -1919,10 +1919,10 @@ footer {
 /* Layout components */
 .contact-box {
     background-color: #f8f9fa;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 30px;
     margin: 20px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #eaeaea;
 }
 
 .support-section {
@@ -2009,18 +2009,18 @@ th, td {
 
 /* Doctor Endorsement Section */
 .endorsement-section {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: #f8fafc;
     padding: 60px 20px;
     margin: 0;
 }
 
 .endorsement-card {
     background: #ffffff;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 40px;
     max-width: 900px;
     margin: 40px auto 0;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     display: flex;
     gap: 40px;
     align-items: center;
@@ -2104,10 +2104,10 @@ th, td {
     gap: 8px;
     margin-top: 12px;
     padding: 8px 16px;
-    background: linear-gradient(135deg, #E1306C 0%, #C13584 50%, #833AB4 100%);
+    background: #C13584;
     color: white;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 6px;
     font-size: 0.9em;
     font-weight: 600;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -2153,17 +2153,16 @@ th, td {
 .review-card {
     background: #ffffff;
     border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 25px;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
 }
 
 .review-card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transform: translateY(-1px);
 }
 
 .review-header {
@@ -2450,7 +2449,7 @@ th, td {
     }
 
     .hero {
-        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+        background: #2d3748;
     }
 
     .hero-logo {
@@ -2468,6 +2467,7 @@ th, td {
     .feature-badge {
         background: rgba(255, 255, 255, 0.1);
         color: #ffffff;
+        border-color: #404040;
     }
 
     .app-card {
