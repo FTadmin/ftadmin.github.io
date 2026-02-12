@@ -1588,8 +1588,8 @@ a:hover {
 }
 
 .app-icon-large {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 22.37%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     transition: none;
@@ -1948,6 +1948,16 @@ footer {
     font-style: normal;
     max-width: 500px;
     margin: 0 auto;
+}
+
+.footer-disclaimer {
+    color: #9ca3af;
+    font-size: 0.7em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 16px auto 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* Layout components */
@@ -2330,8 +2340,8 @@ th, td {
     }
 
     .app-icon-large {
-        width: 72px;
-        height: 72px;
+        width: 88px;
+        height: 88px;
     }
 
     .features-grid,
@@ -2621,6 +2631,11 @@ th, td {
 
     .footer-tagline {
         color: #374151;
+    }
+
+    .footer-disclaimer {
+        color: #4b5563;
+        border-top-color: rgba(0, 0, 0, 0.06);
     }
 
     .review-card {
