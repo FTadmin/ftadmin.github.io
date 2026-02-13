@@ -341,10 +341,60 @@ function extractTipsPage(html, lang, slug) {
     const jsonLdMatches = mAll(html, /(<script type="application\/ld\+json">[\s\S]*?<\/script>)/g);
     data.structuredDataHtml = jsonLdMatches.map(m => '    ' + m[1]).join('\n');
 
-    // Main content: everything between nav and footer, as raw HTML
-    const bodyContent = between(html, '</nav>', '<!-- Footer -->') ||
-                        between(html, '</nav>', '<footer>');
-    data.bodyContent = bodyContent.trim();
+    // Conversion event (optional)
+    const convMatch = html.match(/gtag\('event',\s*'conversion',\s*\{[\s\S]*?'send_to':\s*'([^']+)'[\s\S]*?'value':\s*([\d.]+)[\s\S]*?'currency':\s*'([^']+)'/);
+    if (convMatch) {
+        data.conversionEvent = {
+            sendTo: convMatch[1],
+            value: convMatch[2],
+            currency: convMatch[3]
+        };
+    }
+
+    // Hero section
+    const heroHtml = m(html, /<section class="hero">([\s\S]*?)<\/section>/);
+    data.hero = {
+        image: m(heroHtml, /src="([^"]+)"/),
+        imageAlt: m(heroHtml, /alt="([^"]+)"/),
+        title: m(heroHtml, /<h1>([\s\S]*?)<\/h1>/),
+        subtitle: m(heroHtml, /class="hero-subtitle">([\s\S]*?)<\/p>/)
+    };
+
+    // Tip categories — parse support-section
+    const supportHtml = m(html, /<section class="support-section">([\s\S]*?)<\/section>/);
+    data.tipCategories = [];
+    if (supportHtml) {
+        // Split by h2 tags to get categories
+        const h2Splits = supportHtml.split(/<h2 class="center-text">/);
+        for (let i = 1; i < h2Splits.length; i++) {
+            const chunk = h2Splits[i];
+            const catTitle = clean(chunk.slice(0, chunk.indexOf('</h2>')));
+
+            // Extract tip cards from this chunk
+            const tipMatches = mAll(chunk, /<div class="tip-card">\s*<div class="tip-icon"><i class="([^>]*?)"><\/i><\/div>\s*<h3>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>\s*<\/div>/g);
+            const tips = tipMatches.map(tm => ({
+                icon: tm[1],
+                title: tm[2].trim(),
+                content: tm[3].trim()
+            }));
+
+            data.tipCategories.push({ title: catTitle, tips });
+        }
+    }
+
+    // CTA section
+    const ctaHtml = m(html, /<section class="cta-section">([\s\S]*?)<\/section>/);
+    data.cta = {
+        title: m(ctaHtml, /<h2>([\s\S]*?)<\/h2>/),
+        subtitle: m(ctaHtml, /<h2>[\s\S]*?<\/h2>\s*<p>([\s\S]*?)<\/p>/),
+        appStoreUrl: m(ctaHtml, /href="([^"]+)"/),
+        buttonAlt: m(ctaHtml, /alt="([^"]+)"/),
+        platformInfo: m(ctaHtml, /class="hero-platform-info">([\s\S]*?)<\/p>/)
+    };
+
+    // Custom CSS (the <style> block after the sections)
+    const styleMatch = html.match(/<\/section>\s*\n\s*<style>([\s\S]*?)<\/style>/);
+    data.customCss = styleMatch ? styleMatch[1] : '';
 
     return data;
 }
@@ -392,16 +442,241 @@ function extractIndexPage(html, lang) {
         ogTitle: m(html, /<meta property="og:title" content="([\s\S]*?)">/),
         ogDescription: m(html, /<meta property="og:description" content="([\s\S]*?)">/),
         ogImage: m(html, /<meta property="og:image" content="([\s\S]*?)">/) || SITE_URL + '/images/feeltracker.png',
-        twitterDescription: m(html, /<meta property="twitter:description" content="([\s\S]*?)">/)
+        ogSiteName: m(html, /<meta property="og:site_name" content="([\s\S]*?)">/) || '',
+        twitterDescription: m(html, /<meta property="twitter:description" content="([\s\S]*?)">/),
+        twitterSite: m(html, /<meta name="twitter:site" content="([\s\S]*?)">/) || ''
     };
 
-    // Structured data — store as pre-rendered HTML string
+    // Structured data
     const jsonLdMatches = mAll(html, /(<script type="application\/ld\+json">[\s\S]*?<\/script>)/g);
     data.structuredDataHtml = jsonLdMatches.map(m => '    ' + m[1]).join('\n');
 
-    const bodyContent = between(html, '</nav>', '<!-- Footer -->') ||
-                        between(html, '</nav>', '<footer>');
-    data.bodyContent = bodyContent.trim();
+    // Christmas HTML (commented out, EN-only typically)
+    const christmasMatch = html.match(/<!-- Christmas features disabled[\s\S]*?End Christmas features -->/);
+    data.christmasHtml = christmasMatch ? christmasMatch[0] : '';
+    const christmasBannerMatch = html.match(/<!-- Christmas Welcome Banner[\s\S]*?End Christmas Banner -->/);
+    data.christmasBannerHtml = christmasBannerMatch ? christmasBannerMatch[0] : '';
+
+    // Hero section
+    const heroHtml = extractSection(html, 'hero center-text') || extractSection(html, 'hero');
+    data.hero = {};
+    if (heroHtml) {
+        data.hero.logo = m(heroHtml, /class="hero-logo">([\s\S]*?)<\/div>/);
+        data.hero.title = m(heroHtml, /<h1>([\s\S]*?)<\/h1>/);
+        data.hero.subtitle = m(heroHtml, /class="hero-subtitle">([\s\S]*?)<\/p>/);
+
+        // Stats
+        data.hero.stats = mAll(heroHtml, /<div class="hero-stat">\s*<div class="hero-stat-number">([\s\S]*?)<\/div>\s*<div class="hero-stat-label">([\s\S]*?)<\/div>\s*<\/div>/g).map(sm => ({
+            number: sm[1].trim(),
+            label: sm[2].trim()
+        }));
+
+        // Privacy text
+        const privacyMatch = heroHtml.match(/fa-shield-alt"><\/i>\s*([\s\S]*?)<\/div>/);
+        data.hero.privacyText = privacyMatch ? clean(privacyMatch[1]) : '';
+
+        // Feature badges
+        data.hero.featureBadges = mAll(heroHtml, /class="feature-badge"><i class="([^"]+)"><\/i>\s*([\s\S]*?)<\/span>/g).map(sm => ({
+            icon: sm[1],
+            text: sm[2].trim()
+        }));
+    }
+
+    // Apps section
+    const appsHtml = extractSection(html, 'apps-section');
+    data.apps = { title: '', items: [] };
+    if (appsHtml) {
+        data.apps.title = m(appsHtml, /<h2[^>]*>([\s\S]*?)<\/h2>/);
+
+        // Parse each app card
+        const appCardSplits = appsHtml.split(/<div class="app-card">/);
+        for (let i = 1; i < appCardSplits.length; i++) {
+            const cardHtml = appCardSplits[i];
+            const item = {};
+
+            item.slug = m(cardHtml, /href="([^"]*)\/"[^>]*>\s*<img/);
+            item.iconSrc = m(cardHtml, /src="([^"]+)"[^>]*class="app-icon-large"/);
+            item.iconAlt = m(cardHtml, /class="app-icon-large"[^>]*alt="([^"]+)"/) || m(cardHtml, /alt="([^"]+)"[^>]*class="app-icon-large"/);
+            item.title = m(cardHtml, /<h3>([\s\S]*?)<\/h3>/);
+            item.subtitle = m(cardHtml, /class="app-subtitle">([\s\S]*?)<\/p>/);
+
+            // Badge (optional, like "#1 in UK")
+            const badgeMatch = cardHtml.match(/fa-trophy[\s\S]*?<\/div>/);
+            if (badgeMatch) {
+                item.badge = clean(badgeMatch[0].replace(/<\/?div[^>]*>/g, '').replace(/style="[^"]*"/g, ''));
+            } else {
+                item.badge = '';
+            }
+
+            item.description = m(cardHtml, /class="app-description">([\s\S]*?)<\/p>/);
+
+            // Feature list
+            item.features = mAll(cardHtml, /<li><i class="([^"]+)"><\/i>\s*([\s\S]*?)<\/li>/g).map(fm => ({
+                icon: fm[1],
+                text: fm[2].trim()
+            }));
+
+            item.learnMoreText = m(cardHtml, /class="learn-more-button">([\s\S]*?)<\/a>/);
+            item.appStoreId = m(cardHtml, /app\/id(\d+)/);
+            item.downloadAlt = m(cardHtml, /class="store_button"[^>]*alt="([^"]+)"/) || m(cardHtml, /alt="([^"]+)"[^>]*class="store_button"/);
+
+            data.apps.items.push(item);
+        }
+    }
+
+    // Features section
+    const featuresHtml = extractSection(html, 'features-section center-text');
+    data.features = { title: '', items: [] };
+    if (featuresHtml) {
+        data.features.title = m(featuresHtml, /<h2>([\s\S]*?)<\/h2>/);
+        data.features.items = mAll(featuresHtml, /<div class="feature-box">\s*<div class="feature-icon"><i class="([^"]+)"><\/i><\/div>\s*<h3>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>/g).map(fm => ({
+            icon: fm[1],
+            title: clean(fm[2]),
+            description: fm[3].trim()
+        }));
+    }
+
+    // AI Features section
+    const aiHtml = m(html, /<section class="ai-section center-text">([\s\S]*?)<\/section>/);
+    data.aiFeatures = { title: '', subtitle: '', freeTitle: '', free: [], premiumTitle: '', premium: [], disclaimerTitle: '', disclaimerText: '' };
+    if (aiHtml) {
+        data.aiFeatures.title = m(aiHtml, /<h2>([\s\S]*?)<\/h2>/);
+        data.aiFeatures.subtitle = m(aiHtml, /class="section-subtitle">([\s\S]*?)<\/p>/);
+
+        // Parse all h3 tags to get section titles
+        const h3Matches = mAll(aiHtml, /<h3[^>]*>([\s\S]*?)<\/h3>/g);
+        // Free and premium titles are the first two h3s (before AI features)
+        // AI feature items use h3 inside .ai-feature divs, so we need to distinguish
+
+        // Get the two grid section titles (they have inline styles)
+        const gridTitleMatches = mAll(aiHtml, /<h3 style="[^"]*(?:margin-top|text-transform)[^"]*">([\s\S]*?)<\/h3>/g);
+        if (gridTitleMatches.length >= 1) data.aiFeatures.freeTitle = clean(gridTitleMatches[0][1]);
+        if (gridTitleMatches.length >= 2) data.aiFeatures.premiumTitle = clean(gridTitleMatches[1][1]);
+
+        // Parse AI feature items
+        const allAiItems = mAll(aiHtml, /<div class="ai-feature">\s*<h3><i class="([^"]+)"><\/i>\s*([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>\s*<\/div>/g);
+
+        // Split by second grid title position
+        const secondGridPos = gridTitleMatches.length >= 2 ? aiHtml.indexOf(gridTitleMatches[1][0], aiHtml.indexOf(gridTitleMatches[0][0]) + 1) : -1;
+
+        for (const item of allAiItems) {
+            const parsed = { icon: item[1], title: clean(item[2]), description: clean(item[3]) };
+            const itemPos = aiHtml.indexOf(item[0]);
+            if (secondGridPos === -1 || itemPos < secondGridPos) {
+                data.aiFeatures.free.push(parsed);
+            } else {
+                data.aiFeatures.premium.push(parsed);
+            }
+        }
+
+        // Disclaimer — use indexOf to avoid greedy regex spanning multiple h3 tags
+        const disclaimerPos = aiHtml.indexOf('AI Disclaimer');
+        if (disclaimerPos > 0) {
+            const h3Start = aiHtml.lastIndexOf('<h3', disclaimerPos);
+            const h3End = aiHtml.indexOf('</h3>', disclaimerPos) + 5;
+            data.aiFeatures.disclaimerTitle = aiHtml.substring(h3Start, h3End);
+            const pMatch = aiHtml.substring(h3End).match(/<p[^>]*>([\s\S]*?)<\/p>/);
+            if (pMatch) data.aiFeatures.disclaimerText = pMatch[1].trim();
+        }
+    }
+
+    // Social Proof section
+    const socialHtml = extractSection(html, 'social-proof center-text');
+    data.socialProof = { title: '', subtitle: '', stats: [] };
+    if (socialHtml) {
+        data.socialProof.title = m(socialHtml, /<h2>([\s\S]*?)<\/h2>/);
+        data.socialProof.subtitle = m(socialHtml, /class="section-subtitle">([\s\S]*?)<\/p>/);
+        data.socialProof.stats = mAll(socialHtml, /<div class="stat-box">\s*<div class="stat-number">([\s\S]*?)<\/div>\s*<div class="stat-label">([\s\S]*?)<\/div>\s*<\/div>/g).map(sm => ({
+            number: sm[1].trim(),
+            label: sm[2].trim()
+        }));
+    }
+
+    // Doctor endorsement (commented out)
+    const doctorMatch = html.match(/<!-- Doctor Endorsement[\s\S]*?-->/);
+    data.doctorEndorsementHtml = doctorMatch ? doctorMatch[0] : '';
+
+    // Reviews
+    const reviewsSectionMatch = html.match(/<section class="support-section">\s*<h2 class="center-text">([\s\S]*?)<\/h2>\s*<p class="center-text section-subtitle"[^>]*>([\s\S]*?)<\/p>\s*<div class="reviews-grid">([\s\S]*?)<\/div>\s*<\/section>/);
+    data.reviews = { title: '', subtitle: '', items: [] };
+    if (reviewsSectionMatch) {
+        data.reviews.title = clean(reviewsSectionMatch[1]);
+        data.reviews.subtitle = clean(reviewsSectionMatch[2]);
+        // Index page reviews have star icons, not emoji stars
+        const reviewCards = mAll(reviewsSectionMatch[3], /<div class="review-card">\s*<div class="review-header">\s*<div class="review-rating">[\s\S]*?<\/div>\s*<div class="review-title">([\s\S]*?)<\/div>\s*<\/div>\s*<p class="review-content">"([\s\S]*?)"<\/p>\s*<p class="review-author">-\s*([\s\S]*?)<\/p>\s*<\/div>/g);
+        data.reviews.items = reviewCards.map(rm => ({
+            title: clean(rm[1]),
+            content: rm[2].trim(),
+            author: clean(rm[3])
+        }));
+    }
+
+    // Platforms section
+    const platformsHtml = extractSection(html, 'platforms-section center-text');
+    data.platforms = { title: '', subtitle: '', text: '' };
+    if (platformsHtml) {
+        data.platforms.title = m(platformsHtml, /<h2>([\s\S]*?)<\/h2>/);
+        data.platforms.subtitle = m(platformsHtml, /class="section-subtitle">([\s\S]*?)<\/p>/);
+        // The text after subtitle
+        const allPs = mAll(platformsHtml, /<p[^>]*>([\s\S]*?)<\/p>/g);
+        if (allPs.length > 1) {
+            data.platforms.text = allPs[allPs.length - 1][1].trim();
+        }
+    }
+
+    // FAQ section - find the last support-section before the CTA section
+    data.faq = { title: '', items: [] };
+    const ctaSectionPos = html.indexOf('<!-- CTA Section') !== -1 ? html.indexOf('<!-- CTA Section') : html.indexOf('<section class="cta-section');
+    if (ctaSectionPos > 0) {
+        const beforeCta = html.substring(0, ctaSectionPos);
+        const lastSupportStart = beforeCta.lastIndexOf('<section class="support-section">');
+        if (lastSupportStart > 0) {
+            const faqChunk = html.substring(lastSupportStart);
+            const faqEnd = faqChunk.indexOf('</section>');
+            const faqContent = faqChunk.substring(0, faqEnd);
+            data.faq.title = m(faqContent, /<h2[^>]*>([\s\S]*?)<\/h2>/);
+            const parts = faqContent.split(/<h3>/);
+            for (let i = 1; i < parts.length; i++) {
+                const qEnd = parts[i].indexOf('</h3>');
+                const question = clean(parts[i].slice(0, qEnd));
+                let answer = parts[i].slice(qEnd + 5).trim().replace(/\s+$/, '');
+                data.faq.items.push({ question, answer });
+            }
+        }
+    }
+
+    // CTA section
+    const ctaHtml = extractSection(html, 'cta-section center-text');
+    data.cta = { title: '', subtitle: '', items: [] };
+    if (ctaHtml) {
+        data.cta.title = m(ctaHtml, /<h2>([\s\S]*?)<\/h2>/);
+        data.cta.subtitle = m(ctaHtml, /<h2>[\s\S]*?<\/h2>\s*<p>([\s\S]*?)<\/p>/);
+        // Each download block
+        const downloadBlocks = mAll(ctaHtml, /<p style="[^"]*font-weight[^"]*">([\s\S]*?)<\/p>\s*<a[^>]*href="[^"]*\/id(\d+)"[^>]*>\s*<img[^>]*alt="([^"]+)"[^>]*>/g);
+        data.cta.items = downloadBlocks.map(dm => ({
+            name: clean(dm[1]),
+            appStoreId: dm[2],
+            downloadAlt: dm[3]
+        }));
+    }
+
+    // Index footer (different from app page footer)
+    const footerHtml = between(html, '<footer>', '</footer>');
+    data.indexFooter = {
+        links: mAll(footerHtml, /<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/g).map(lm => ({
+            href: lm[1],
+            text: clean(lm[2])
+        })),
+        copyright: m(footerHtml, /class="footer-copyright">([\s\S]*?)<\/p>/),
+        tagline: m(footerHtml, /class="footer-tagline">([\s\S]*?)<\/p>/),
+        disclaimer: m(footerHtml, /class="footer-disclaimer">([\s\S]*?)<\/p>/)
+    };
+    // Remove footer links from copyright links
+    data.indexFooter.links = data.indexFooter.links.filter(l => !l.href.includes('customarts.com'));
+
+    // Santa script (raw JS, shared across languages)
+    const santaMatch = html.match(/(\/\/ Santa Party Mode[\s\S]*?)<\/script>\s*<\/body>/);
+    data.santaScript = santaMatch ? santaMatch[1].trim() : '';
 
     return data;
 }
