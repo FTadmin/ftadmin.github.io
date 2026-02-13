@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Questions fréquemment posées - Feeltracker</title>
+    <meta name="title" content="Questions fréquemment posées - Feeltracker">
+    <meta name="description" content="">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/fr/faq/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/faq/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/faq/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/faq/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/faq/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/faq/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/fr/faq/">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/fr/faq/">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/fr/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇫🇷</span>
+                    <span>Français</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/faq/"><span class="flag">🇬🇧</span> English</a>
+
+                    <a href="/de/faq/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/faq/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/fr/faq/" class="active"><span class="flag">🇫🇷</span> Français</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/fr/blood-pressure/">Tension Artérielle</a>
+
+            <a href="/fr/daily-journal/">Journal Intime</a>
+
+            <a href="/fr/mental-health/">Santé Mentale</a>
+
+            <a href="/fr/sleep/">Sommeil & Rêves</a>
+
+            <a href="/fr/weight/">Poids & Alimentation</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+<h1>Questions fréquemment posées</h1>
+
+    <h3>Comment ajouter un enregistrement ?</h3>
+    <p>Vous pouvez ajouter un nouvel enregistrement en 1. appuyant sur le jour ou 2. appuyant sur + en haut à droite. Les deux options sont indiquées par les flèches dans l'image ci-dessous.</p>
+    <img src="../../images/add_new.jpg" class="screenshot">
+
+    <h3>Puis-je enregistrer plusieurs fois par jour ?</h3>
+    <p>Oui. Vous pouvez ajouter plusieurs enregistrements par jour, comme indiqué ci-dessus. Appuyez simplement à nouveau sur le jour ou sur + pour ce faire.</p>
+
+    <h3>Comment supprimer un enregistrement ?</h3>
+    <p>Pour supprimer un enregistrement, vous pouvez glisser vers la gauche sur l'enregistrement et appuyer sur Supprimer, ou appuyer sur l'enregistrement pour l'ouvrir et appuyer sur l'icône de la corbeille en haut à gauche de l'écran. Les deux méthodes sont illustrées ci-dessous :</p>
+    <p>
+        <img src="../../images/delete_swipe.jpg" class="screenshot-small padded10">
+        <img src="../../images/delete_trashcan.jpg" class="screenshot-small padded10">
+    </p>
+
+    <h3>Pourquoi est-ce que je vois un score de sentiment au-dessus de mes notes ? Est-ce privé ?</h3>
+    <p>Lorsque vos notes contiennent 8 mots ou plus, un emoji apparaît au-dessus pour indiquer le sentiment prédit. Cette fonctionnalité peut vous aider à comprendre si votre écriture semble excessivement négative ou positive, ou vous rappeler ce qui fonctionne ou non, servant de guide pour votre écriture. Le sentiment est calculé entièrement sur votre appareil grâce à l'API Natural Language d'Apple, donc aucune donnée ne quitte votre appareil, garantissant une confidentialité totale. Si vous le souhaitez, vous pouvez désactiver cette fonctionnalité dans Réglages sous Général.</p>
+
+    <h3>Comment imprimer ?</h3>
+    <p>Lorsque vous appuyez sur Exporter (comme indiqué ci-dessous), vous verrez une feuille de partage. Faites défiler vers le bas et appuyez sur Imprimer (comme indiqué ci-dessous). Vous aurez besoin d'une imprimante sans fil compatible Apple AirPrint pour imprimer sans fil depuis votre iPhone ou iPad.</p>
+    <p>Si vous n'avez pas d'imprimante sans fil compatible AirPrint, vous pouvez en acheter une <a href="https://geni.us/airprint_printer">ici</a>.
+    </p>
+    <p> <img src="../../images/printing_example_ios.jpg" class="screenshot"></p>
+
+    <h3>Puis-je partager les informations médicales que je suis avec mon médecin ?</h3>
+    <p>Oui. L'application facilite cela. Appuyez sur le bouton de partage (comme indiqué ci-dessous), sélectionnez PDF, puis choisissez votre application Mail. Le rapport PDF sera joint à un e-mail que vous pourrez ensuite envoyer à votre médecin.</p>
+    <p> <img src="../../images/sharing_example.jpg" class="screenshot"></p>
+
+    <h3>Comment masquer les moyennes ou les totaux dans le Journal ?</h3>
+    <p>Vous pouvez masquer les moyennes et les totaux dans les options d'affichage, comme indiqué ci-dessous. Cela n'affichera alors que vos valeurs saisies, sans les moyennes. Cela peut être utile si vous trouvez les moyennes/totaux entre vos données saisies confus.</p>
+    <p> <img src="../../images/hide_averages.jpg" class="screenshot"></p>
+
+
+    <h3>Puis-je exporter vers Excel ou un logiciel tableur similaire ?</h3>
+    <p>Oui. Suivez les instructions ci-dessus, mais sélectionnez Excel ou CSV au lieu de PDF comme format de sortie. Ensuite, enregistrez le fichier sur votre appareil ou envoyez-le-vous par e-mail.</p>
+    <p> Le format Excel est plus fiable, tandis que le CSV peut être plus largement compatible - les deux devraient s'ouvrir dans Excel et des logiciels similaires comme Apple Numbers ou Google Sheets.</p>
+
+    <h3>À qui puis-je envoyer mes données ?</h3>
+    <p>Vous pouvez les envoyer par e-mail à qui vous voulez. Vous pouvez vouloir vous envoyer périodiquement vos données pour les conserver et les sauvegarder. Vous pouvez également enregistrer le fichier PDF ou CSV sur votre appareil pour une utilisation ultérieure.</p>
+
+    <h3>Comment faire défiler directement jusqu'au jour actuel en vue mensuelle ?</h3>
+    <p>Appuyez deux fois sur l'icône Journal dans la barre d'onglets en bas de votre écran.</p>
+
+    <h3>Comment afficher les données des mois précédents ?</h3>
+    <p>Pour afficher les données d'un mois précédent (par exemple, les données de septembre quand vous êtes en octobre) :</p>
+    <ul>
+      <li>Allez dans l'onglet Journal</li>
+      <li>Appuyez sur le bouton retour en haut à gauche - cela vous amènera à la sélection du mois</li>
+      <li>Sélectionnez le mois que vous souhaitez consulter (par exemple, septembre)</li>
+      <li>Si vous ne voyez pas vos données, appuyez sur le bouton d'options du Journal (le 2e bouton en haut, à côté du bouton retour) et assurez-vous que toutes les options d'affichage sont réglées sur « Afficher »</li>
+    </ul>
+    <p>Vos données sont toujours enregistrées et accessibles - vous pouvez naviguer entre les mois à tout moment pour consulter vos enregistrements historiques.</p>
+    <p><strong>Si vous ne voyez toujours pas vos données après avoir vérifié la vue mensuelle :</strong> Allez dans Réglages > Données > Gérer les sauvegardes et cherchez des sauvegardes du mois que vous essayez de consulter (ou du début du mois suivant). Si vous trouvez une sauvegarde de cette période, vous pouvez la restaurer pour récupérer vos données. Cela peut aider si vous avez réinstallé l'application ou s'il y a eu un problème de synchronisation.</p>
+
+    <h3>Comment changer l'heure ou la date d'un enregistrement ?</h3>
+    <p>Ouvrez un enregistrement et appuyez simplement sur l'heure ou la date pour la modifier, comme indiqué ci-dessous.</p>
+    <p> <img src="../../images/change_time_date.jpg" class="screenshot"></p>
+
+    <h3>Mes données sont-elles en sécurité ?</h3>
+    <p>Vos données sont chiffrées lorsqu'elles sont stockées sur votre appareil. Cela signifie que même si votre appareil est volé, personne ne peut y accéder.</p>
+
+    <h3>Où sont stockées mes données ?</h3>
+    <p>Sur votre appareil et sur iCloud. Cette application utilise la même technologie qu'Apple Notes et Photos pour enregistrer et synchroniser vos données entre vos appareils, ce qui signifie qu'elle est très fiable et sécurisée.</p>
+
+    <h3>Quelqu'un d'autre peut-il voir mes données privées ?</h3>
+    <p>Non. Les données ne sont stockées que sur votre appareil et sur iCloud, qui fonctionne sur des serveurs gérés par Apple.</p>
+
+    <h3>Pourquoi mes données doivent-elles être enregistrées sur iCloud ?</h3>
+    <p>iCloud permet de sauvegarder vos données et de les synchroniser entre vos appareils. Ainsi, si vous perdez votre téléphone ou en obtenez un nouveau, vos données peuvent être restaurées depuis iCloud.</p>
+
+    <h3>Pourquoi mes données ne se synchronisent-elles pas entre mes appareils ?</h3>
+    <p>Vos données devraient être automatiquement synchronisées entre vos appareils. Assurez-vous que :</p>
+    <ul>
+      <li>Vous êtes connecté au même compte iCloud sur tous les appareils.</li>
+      <li>Tous les appareils iOS sont sur la même version d'iOS (de préférence la plus récente).</li>
+      <li>iCloud Drive est activé sur tous les appareils (dans Réglages > Votre nom > iCloud > iCloud Drive, comme indiqué ci-dessous).</li>
+      <p><img src="../../images/icloud_on.png" class="screenshot"></p>
+    </ul>
+
+    <h3>Ai-je besoin d'un abonnement pour chaque appareil ?</h3>
+    <p>Un seul abonnement supprime les publicités sur tous les appareils. Si vous voyez des publicités sur des appareils supplémentaires, allez dans Réglages > Supprimer les publicités et appuyez sur Restaurer l'achat. Assurez-vous que chaque appareil est connecté au même compte iCloud.</p>
+
+    <h3>Comment fonctionnent les sauvegardes ?</h3>
+    <p>Les sauvegardes sont effectuées automatiquement chaque semaine par défaut (bien que vous puissiez désactiver cela dans les Réglages). Vous pouvez également créer des sauvegardes manuelles dans Réglages > Données.</p>
+
+    <h3>Combien de sauvegardes sont effectuées ? Dois-je les supprimer ?</h3>
+    <p>Il n'y a pas de limite au nombre de sauvegardes effectuées. Les sauvegardes peuvent remonter à des années et prennent généralement très peu d'espace, donc les supprimer ne fera pas grande différence pour le stockage de votre appareil. Si vous devez libérer de l'espace, il est préférable de supprimer des fichiers plus volumineux sur votre appareil comme les photos et les vidéos.</p>
+
+    <h3>Les sauvegardes sont-elles synchronisées sur iCloud ?</h3>
+    <p>Actuellement, les sauvegardes ne sont pas synchronisées sur iCloud, mais vos données actuelles le sont. Cela signifie que si vous obtenez un nouvel iPhone ou iPad, vos données actuelles y apparaîtront aussi, mais pas vos sauvegardes, car chaque appareil conserve ses propres sauvegardes locales.</p><p>Cela signifie que, par exemple, si vous supprimez un enregistrement sur votre iPhone et qu'il a disparu d'iCloud et de votre téléphone, vous pourriez toujours aller sur votre iPad et restaurer à partir d'un de ses anciens snapshots de sauvegarde.</p>
+
+    <h3>Ai-je besoin d'un compte pour utiliser cette application ?</h3>
+    <p>Non. Vous pouvez l'utiliser immédiatement sans avoir besoin de vous connecter ou de vous inscrire. L'application utilise votre compte iCloud pour synchroniser automatiquement vos données avec vos autres appareils, en utilisant l'infrastructure d'Apple. Cela signifie que c'est rapide, fiable et sécurisé.</p>
+
+    <h3>Puis-je utiliser cette application sur mon iPhone et mon iPad ?</h3>
+    <p>Oui, et vos données sont automatiquement synchronisées entre eux si vous êtes connecté au même compte iCloud. Sur la version iPad, vous disposez de plus d'espace pour les notes et pouvez voir plus d'éléments.</p>
+
+    <h3>Existe-t-il une version Mac de l'application ?</h3>
+    <p>Oui. L'application est disponible pour les Mac Apple Silicon (M1 et ultérieur). Dans l'application Mac, vous pouvez redimensionner la fenêtre pour voir plus de données sur les grands écrans. Vous pouvez télécharger l'application Mac <a href="https://apps.apple.com/us/developer/custom-arts/id968118447">ici</a> sur votre Mac M1 ou ultérieur.</p>
+
+    <h3>Je souhaiterais suggérer une fonctionnalité ou une amélioration pour l'application.</h3>
+    <p>Nous serions ravis de recevoir vos commentaires. Écrivez-nous à <a href="mailto:feedback@feeltracker.com">feedback@feeltracker.com</a>.</p>
+
+    <h3>Puis-je couper le son ?</h3>
+    <p>Oui. Allez dans l'onglet Réglages et désactivez le curseur à côté d'Activer les effets sonores.</p>
+
+    <h3>À quoi sert l'onglet Tendances ?</h3>
+    <p>Tendances vous permet d'identifier ce qui vous préoccupe, pourquoi et l'effet que cela a sur vous. Faites défiler vers le bas pour plus de détails et quelques exemples sur le fonctionnement de Tendances dans votre application.</p>
+
+    <h3>Pourquoi ne vois-je rien dans Tendances ?</h3>
+    <p>Pour que Tendances fonctionne, vous devez prendre des notes lorsque vous enregistrez des entrées. Vous pouvez le faire sur n'importe quel enregistrement dans le champ Notes.</p>
+
+    <h3>À quoi sert l'onglet Statistiques ?</h3>
+    <p>Il vous montre actuellement tous les enregistrements entre 2 dates, et une moyenne/un total dans cette plage. Cela vous permet d'obtenir une moyenne/un total pour n'importe quelle période.</p>
+
+    <h3>Quelle est la différence entre Journal, Tendances et Statistiques ?</h3>
+    <p>Journal est la section principale de journal/registre qui vous permet de saisir des données et de les visualiser sur une base mensuelle/annuelle/à vie, avec des moyennes et des totaux.</p>
+    <p>Tendances vous aide à identifier des schémas dans les données que vous enregistrez dans Journal afin que vous puissiez agir en conséquence.</p>
+    <p>Statistiques vous montre vos données dans l'ordre chronologique (entrée la plus récente en premier) sans regroupement mensuel ou annuel, et vous permet de voir les moyennes et totaux entre deux dates quelconques.</p>
+
+    <h3>Dois-je me déconnecter ou éteindre pour économiser la mémoire et la batterie du téléphone ?</h3>
+    <p>Il n'est absolument pas nécessaire de se déconnecter - l'appareil décharge automatiquement les applications/ressources de la mémoire selon les besoins.</p>
+    <p>Les iPhones et iPads modernes disposent de beaucoup de mémoire économe en énergie, donc les applications peuvent rester en mémoire longtemps sans effets négatifs. L'accès à cette mémoire est sécurisé et déjà protégé par Face ID, Touch ID ou un code d'accès.</p>
+
+    <p>Si vous souhaitez tout de même fermer une application (par exemple si elle ne répond plus), vous pouvez suivre les instructions d'Apple <a href="https://support.apple.com/en-gb/HT201330">ici</a>.</p>
+    <p>Il n'est pas non plus nécessaire de se connecter, car l'application utilise votre compte iCloud et peut donc déjà synchroniser/sauvegarder les données entre vos appareils, de manière similaire aux applications Photos et Notes, sans nécessiter le partage de données personnelles d'identification.</p>
+
+    <h3>Si je ne me déconnecte pas, est-ce sûr ?</h3>
+    <p>Oui. Dès que vous appuyez sur le bouton latéral de l'appareil pour le verrouiller comme vous le faites habituellement, personne ne peut accéder à votre application ou vos données tant qu'il est verrouillé.</p>
+
+    <h3>Qu'en est-il des publicités ?</h3>
+    <p>Nous voulons que vous essayiez d'abord l'application et que vous voyiez si elle vous est utile, sans aucune distraction - vous pouvez le faire gratuitement, sans voir de publicités Google. Après avoir enregistré 7 entrées, vous pourrez voir quelques publicités Google, qui aident à soutenir l'application et à la maintenir gratuite.</p>
+
+    <h3>Je n'aime pas les publicités ! Puis-je payer pour les supprimer ?</h3>
+    <p>Oui ! Pour ce faire, appuyez sur le bouton ❎ sur la bannière. Cela affichera l'option de s'abonner, pour un montant modique. Tant que vous êtes abonné, vous ne verrez aucune publicité.</p>
+
+    <h3>Je ne peux pas payer, mais je déteste les publicités dans les applications !</h3>
+    <p>Nous vous comprenons. Ces publicités natives personnalisées sont conçues pour s'intégrer au reste de l'application tout en restant esthétiques, sans être intrusives ou envahissantes. Nous voulons que vous puissiez profiter de l'application, même si vous ne pouvez pas payer. N'oubliez pas d'en parler à vos amis !</p>
+
+    <h3>Pourquoi devrais-je m'abonner ? Pourquoi ne puis-je pas payer une seule fois ?</h3>
+    <p>Un petit abonnement régulier rend l'application plus facile à essayer sans coût initial important. À long terme, les revenus d'abonnement nous aident à maintenir l'application et financent le développement de nouvelles fonctionnalités utiles.</p>
+
+    <h3>Puis-je faire quelque chose pour soutenir cette application ?</h3>
+    <p>Nous dépendons des bons avis pour développer l'application et continuer à créer de nouvelles fonctionnalités. Veuillez laisser un avis en suivant le lien de votre application :</p>
+    <ul>
+      <li><a href = "https://apps.apple.com/app/id794542324?action=write-review">Blood Pressure Monitor Checker</a></li>
+      <li><a href = "https://apps.apple.com/app/id1557699226?action=write-review">Daily Journaling</a></li>
+      <li><a href = "https://apps.apple.com/app/id687448999?action=write-review">Feeltracker Mood Journal</a></li>
+      <li><a href = "https://apps.apple.com/app/id799503787?action=write-review">Weight and Body Fat Journal</a></li>
+      <li><a href = "https://apps.apple.com/app/id1065268459?action=write-review">Sleep and Nap Journal</a></li>
+    </ul>
+
+    <h3>Je souhaite annuler mon abonnement payant</h3>
+    <p>Merci d'avoir essayé l'application. Faites-moi savoir si je peux faire mieux à <a href="mailto:gs@feeltracker.com">gs@feeltracker.com</a> et j'essaierai de vous aider. Souvent, les corrections et améliorations basées sur les retours des utilisateurs sont livrées dans une mise à jour de l'application le jour même ou le lendemain.</p>
+    <p>Si vous n'êtes toujours pas satisfait, vous pouvez annuler votre abonnement <a href="https://apps.apple.com/account/subscriptions">ici</a>.</p>
+
+    <h2>Application Tension Artérielle</h2>
+
+    <h3>L'application se connecte-t-elle à mon tensiomètre via Bluetooth ?</h3>
+    <p>Non, l'application ne se connecte pas directement aux tensiomètres via Bluetooth. Au lieu de cela, nous nous sommes concentrés sur la simplification de la saisie manuelle grâce à la technologie de scan par caméra IA. Pointez simplement la caméra de votre iPhone vers l'écran de votre tensiomètre après une mesure, et l'application lit automatiquement les chiffres. Cela fonctionne avec pratiquement tous les tensiomètres à affichage numérique, quelle que soit la marque ou le modèle. Aucun appairage n'est nécessaire, aucune compatibilité spécifique à respecter, et cela ne prend que quelques secondes. Cette fonctionnalité est toujours gratuite et illimitée.</p>
+
+    <h3>Comment fonctionne le scan par caméra IA ?</h3>
+    <p>Après avoir pris votre mesure de tension artérielle, ouvrez l'application et appuyez sur le bouton « + », puis sélectionnez « Scanner avec la caméra ». Tenez votre téléphone stable à environ 15-30 cm de l'écran de votre tensiomètre, en vous assurant que les chiffres sont clairement visibles et bien éclairés. L'application lira automatiquement les valeurs systolique, diastolique et de pouls. Pour de meilleurs résultats, assurez-vous d'un bon éclairage et gardez votre téléphone stable pendant le scan. Cela fonctionne avec la plupart des tensiomètres numériques, y compris les marques OMRON, Microlife et Beurer.</p>
+
+    <h3>Pourquoi est-ce que je vois des entrées en double ?</h3>
+    <p>Cela est généralement causé par la configuration de la synchronisation Apple Health. Le problème le plus courant est d'avoir uniquement les autorisations d'écriture activées pour Apple Health, mais pas les autorisations de lecture. Pour corriger cela : Allez dans Réglages > Données > Apple Health, et assurez-vous que les autorisations de lecture ET d'écriture sont activées pour la tension artérielle et la fréquence cardiaque - pas seulement l'écriture. L'application a besoin de l'autorisation de lecture pour vérifier si une mesure existe déjà avant de l'importer depuis Health.</p>
+
+    <h3>Puis-je suivre les mesures de plusieurs membres de ma famille ?</h3>
+    <p>Une fonctionnalité d'étiquettes arrive dans les prochains mois qui vous permettra de suivre les mesures de plusieurs personnes sur un seul appareil. Vous pourrez étiqueter chaque entrée avec le nom d'une personne, puis générer des rapports individuels pour chaque membre de la famille.</p>
+
+    <h3>Mes données ne se synchronisent pas entre mon iPhone et mon iPad. Pourquoi ?</h3>
+    <p>Tout d'abord, assurez-vous que vous êtes connecté au même compte iCloud sur les deux appareils. Allez dans Réglages > [Votre nom] et vérifiez l'identifiant Apple. Ensuite, vérifiez qu'iCloud Drive est activé sur les deux appareils (Réglages > [Votre nom] > iCloud > iCloud Drive). Vos données se synchronisent automatiquement via iCloud, mais cela nécessite une connexion Internet et peut prendre quelques minutes. Essayez d'ouvrir l'application sur chaque appareil et de tirer vers le bas pour actualiser.</p>
+
+    <h3>Que comprend l'abonnement ? Qu'est-ce qui est gratuit ?</h3>
+    <p>Toutes les fonctionnalités principales de suivi sont entièrement gratuites : entrées illimitées, scan par caméra IA (toujours gratuit), tous les graphiques et tendances, synchronisation Apple Health et exportations PDF/CSV. L'abonnement ajoute : suppression des publicités pour une expérience épurée, chat IA amélioré (100 utilisations par jour contre 10 gratuites) et accès aux fonctionnalités IA avancées. Toutes les futures fonctionnalités premium seront incluses pour les abonnés.</p>
+
+    <h3>Qu'est-ce que la PAM et dois-je la suivre ?</h3>
+    <p>La PAM (Pression Artérielle Moyenne) représente la pression moyenne dans vos artères pendant un cycle cardiaque. Elle est calculée automatiquement pour chaque mesure. La PAM est particulièrement importante pour les patients porteurs de DAV (Dispositif d'Assistance Ventriculaire) et d'autres personnes souffrant de conditions cardiovasculaires spécifiques. Pour activer l'affichage de la PAM, allez dans Réglages > Tension artérielle > Afficher la Pression Artérielle Moyenne (PAM). Des plages de PAM personnalisables arrivent dans la version 2.8.x.</p>
+
+    <h3>Comment utiliser les modèles de notes pour gagner du temps ?</h3>
+    <p>Lorsque vous saisissez une note (comme « Mesure du matin - avant les médicaments »), appuyez sur le bouton « Modèle » en bas à gauche du champ de notes et enregistrez-la comme modèle. La prochaine fois que vous saisissez une mesure, appuyez à nouveau sur « Modèle » et sélectionnez parmi vos modèles enregistrés - le texte est inséré instantanément. C'est idéal pour les notes récurrentes comme « Matin - avant médicaments » ou « Soir - après le dîner ».</p>
+
+    <h3>Quelle est une tension artérielle trop haute ou trop basse ?</h3>
+    <p>Votre tension artérielle devrait normalement se situer entre 90-140 pour la valeur systolique et 60-90 pour la valeur diastolique. Si elle est en dehors de cette plage, vous devriez consulter un médecin.</p>
+
+    <h3>Quelle est la tension artérielle idéale ?</h3>
+    <p>Selon le NHS, la tension artérielle idéale se situe entre 90/60 mmHg et 120/80 mmHg. Cependant, cela peut varier selon le sexe, l'âge et d'autres variables. Il est donc préférable de consulter votre médecin pour une évaluation précise de votre tension artérielle en fonction de votre situation personnelle.</p>
+
+    <h3>Comment mesurer ma tension artérielle ?</h3>
+    <p>La tension artérielle se mesure avec un tensiomètre numérique. <a href="https://geni.us/B9RB">Ici</a> vous pouvez trouver des tensiomètres qui fonctionnent parfaitement avec la fonctionnalité Camera Scan AI. L'application peut lire automatiquement les valeurs de la plupart des tensiomètres numériques, y compris les marques OMRON, Microlife et Beurer.</p>
+
+    <h3>À quoi sert Tendances ?</h3>
+    <p>Avec Tendances, cette application prend vos données et notes et montre quels éléments vous affectent et comment. Par exemple, vous pourriez voir que vous avez médité 20 fois l'année dernière et que la méditation fait baisser votre tension artérielle. À l'inverse, vous pourriez voir que chaque fois que vous rencontrez Bob, vous vous disputez et il fait monter votre tension artérielle. Plus vous utilisez les notes, plus Tendances peut être utile.</p>
+
+    <h3>Pouvez-vous expliquer Tendances avec un exemple ?</h3>
+    <p>Par exemple, vous courez 10 fois. 5 fois, votre tension artérielle baisse de 10, et les autres fois elle baisse de 5. Tendances montrera qu'en moyenne, courir aide à réduire votre tension artérielle d'environ 7,5 points.</p>
+
+
+    <h2>Application Journal d'humeur Feeltracker</h2>
+
+    <h3>À quoi sert Tendances ?</h3>
+    <p>Avec Tendances, cette application prend vos données et notes et montre quels éléments vous affectent et comment. Par exemple, vous pourriez voir que vous avez rencontré Jeanne 20 fois l'année dernière et qu'en moyenne, Jeanne vous rend très heureux. À l'inverse, vous pourriez voir que chaque fois que vous rencontrez Bob, vous vous disputez et il vous rend malheureux. Plus vous utilisez les notes, plus Tendances peut être utile.</p>
+
+    <h3>Pouvez-vous expliquer Tendances avec un exemple ?</h3>
+    <p>Par exemple, vous rencontrez Jeanne 10 fois. 5 fois elle vous a rendu très heureux (+2) et 5 fois elle vous a rendu plutôt heureux (+1). Tendances montrera qu'en moyenne, Jeanne vous rend assez (+1,5) heureux.</p>
+
+
+    <h2>Application Journal quotidien</h2>
+
+    <h3>À quoi sert Tendances ?</h3>
+    <p>Avec Tendances, cette application prend vos données et notes et montre quels mots occupent le plus votre esprit. Par exemple, vous pourriez voir que vous avez utilisé un mot 20 fois l'année dernière. À l'inverse, vous pourriez voir que vous avez utilisé un autre mot 50 fois - beaucoup plus souvent. Plus vous utilisez les notes, plus Tendances peut être utile.</p>
+
+    <h3>Pouvez-vous expliquer Tendances avec un exemple ?</h3>
+    <p>Par exemple, vous écrivez sur Jeanne 120 fois dans vos notes, plus que sur votre travail, dont vous écrivez 50 fois. Tendances montre dans ce cas que clairement la chose principale dans votre esprit était Jeanne.</p>
+
+
+    <h2>Application Journal de sommeil</h2>
+
+    <h3>À quoi sert Tendances ?</h3>
+    <p>Avec Tendances, cette application prend vos données et notes et montre quels éléments vous affectent et comment. Par exemple, vous pourriez voir que vous avez bu beaucoup de café la semaine dernière et que, par conséquent, vous avez moins dormi. À l'inverse, vous pourriez voir que chaque fois que vous mangez de la salade ou allez à la salle de sport, vous dormez mieux. Plus vous utilisez les notes, plus Tendances peut être utile.</p>
+
+    <h3>Pouvez-vous expliquer Tendances avec un exemple ?</h3>
+    <p>Par exemple, vous buvez du café 10 fois. 5 fois, vous avez dormi 2 heures de moins, et les 5 autres fois vous avez dormi 1 heure de moins. Tendances montrera qu'en moyenne, boire du café vous fait dormir 1,5 heures de moins.</p>
+
+
+    <h2>Application Journal de poids et masse grasse</h2>
+
+    <h3>À quoi sert Tendances ?</h3>
+    <p>Avec Tendances, cette application prend vos données et notes et montre quels éléments vous affectent et comment. Par exemple, vous pourriez voir que vous avez mangé de la restauration rapide 20 fois l'année dernière et qu'au fil du temps, vous prenez du poids quand vous mangez de la restauration rapide. À l'inverse, vous pourriez voir que chaque fois que vous mangez de la salade ou allez à la salle de sport, vous perdez du poids. Plus vous utilisez les notes, plus Tendances peut être utile.</p>
+
+    <h3>Pouvez-vous expliquer Tendances avec un exemple ?</h3>
+    <p>Par exemple, vous mangez des beignets 10 fois. 5 fois, votre poids augmente de 0,1 kg. Les 5 autres fois, votre poids augmente de 0,3 kg. Tendances montrera que manger des beignets fait augmenter votre poids de 0,2 kg en moyenne.</p>
+
+    <h3>Comment mesurer la masse grasse ?</h3>
+    <p>La masse grasse est mesurée par des balances spécialement conçues qui mesurent la composition corporelle en plus du poids. <a href="https://geni.us/PQXEb">Voici</a> un exemple d'une telle balance, d'Omron. D'autres options sont disponibles auprès d'autres marques - ce qu'il faut rechercher, c'est « Composition corporelle » en plus de la fonction de pesée.</p><p>Notez également que même si vous n'entrez que le poids, vous verrez quand même une valeur d'IMC (à gauche du poids, avec un code couleur), qui donnera une indication générale de si vous avez un poids santé (où le vert est bon et le rouge est en surpoids).</p>
+
+    <h2>Contactez-nous</h2>
+    <p>Si vous avez des questions ou des suggestions, n'hésitez pas à nous contacter à <a href="mailto:support@feeltracker.com">support@feeltracker.com</a>.</p>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/fr/faq/">Accueil</a>
+            <a href="/fr/about/">À propos</a>
+            <a href="mailto:support@feeltracker.com">Support par e-mail</a>
+            <a href="/fr/support/">Support</a>
+            <a href="/fr/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Suivre sur X</a>
+            <a href="/fr/privacy/">Politique de confidentialité</a>
+            <a href="/fr/terms/">Conditions d'utilisation</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Tous droits réservés.</p>
+        <p class="footer-tagline">Fait partie de la famille Feeltracker d'applications de suivi de santé</p>
+        <p class="footer-disclaimer">Vos données de santé restent sur votre appareil et dans iCloud — nous n'y accédons jamais et ne les vendons pas. Les applications Feeltracker ne sont pas des dispositifs médicaux. À titre informatif uniquement, ne remplacent pas un avis, un diagnostic ou un traitement médical professionnel.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Nous respectons votre vie privée</strong></p>
+                <p>Nous utilisons des cookies d'analyse pour améliorer notre site web et notre application. Aucun cookie publicitaire n'est utilisé. Consultez notre <a href="/fr/privacy/">Politique de confidentialité</a> pour plus de détails.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Refuser</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accepter</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>
