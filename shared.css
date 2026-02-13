@@ -1820,6 +1820,35 @@ a:hover {
     line-height: 1.6;
 }
 
+/* Hero Stats */
+.hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 32px;
+    margin: 28px auto 0;
+    max-width: 600px;
+}
+
+.hero-stat {
+    text-align: center;
+}
+
+.hero-stat-number {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.hero-stat-label {
+    font-size: 0.75em;
+    color: #6b7280;
+    font-weight: 500;
+}
+
 /* Social Proof Section */
 .social-proof {
     margin: 0;
@@ -2562,6 +2591,10 @@ th, td {
 
     .feature-box p {
         color: #9ca3af;
+    }
+
+    .hero-stat-number {
+        color: #f9fafb;
     }
 
     .social-proof {
