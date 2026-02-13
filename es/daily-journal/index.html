@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=1557699226">
+
+    <!-- Primary Meta Tags -->
+    <title>Diario - Notas Fotos Pensamientos Diario IA | Feeltracker</title>
+    <meta name="title" content="Diario - Notas Fotos Pensamientos Diario IA | Feeltracker">
+    <meta name="description" content="Su diario privado con escaneo e información impulsados por IA. Escanee objetos y texto para entradas instantáneas, añada fotos, descubra patrones con frecuencia de palabras y análisis de sentimientos. Sincronice en iPhone, iPad y Mac con iCloud. Escritura de diario sencilla y segura.">
+    <meta name="keywords" content="log,day,diario,lock,free,moleskine,personal,private,secret,taker,writer,journaling,my,笔记,дневник,笔记本,diario,journal,personal,privado">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/es/daily-journal/">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/daily-journal/">
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/daily-journal/">
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/daily-journal/">
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/daily-journal/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/es/daily-journal/">
+    <meta property="og:title" content="Diario | Diario impulsado por IA | Feeltracker">
+    <meta property="og:description" content="Su diario privado con escaneo IA, análisis de sentimientos, patrones de palabras y archivos adjuntos de fotos.">
+    <meta property="og:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/es/daily-journal/">
+    <meta property="twitter:title" content="Diario | Diario impulsado por IA | Feeltracker">
+    <meta property="twitter:description" content="Su diario privado con escaneo IA, análisis de sentimientos y patrones de palabras.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Diario",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS",
+      "description": "Diario impulsado por IA con análisis de sentimientos y archivos adjuntos de fotos",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": 778,
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/es/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇪🇸</span>
+                    <span>Español</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+                    <a href="/daily-journal/"><span class="flag">🇬🇧</span> English</a>
+                    <a href="/de/daily-journal/"><span class="flag">🇩🇪</span> Deutsch</a>
+                    <a href="/es/daily-journal/" class="active"><span class="flag">🇪🇸</span> Español</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+            <a href="/es/blood-pressure/">Presión Arterial</a>
+            <a href="/es/daily-journal/" class="current">Diario</a>
+            <a href="/es/mental-health/">Salud Mental</a>
+            <a href="/es/sleep/">Sueño y Sueños</a>
+            <a href="/es/weight/">Peso y Alimentación</a>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/NT_1024.png" alt="Icono de la app Diario" width="150" height="150" class="hero-logo app-icon">
+        <h1>Diario</h1>
+        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> Sin anuncios · Sin rastreo · Privacidad ante todo
+        </div>
+        <p class="hero-subtitle">Su espacio privado para reflexiones diarias, pensamientos y recuerdos. Escriba libremente con análisis de sentimientos impulsado por IA, archivos adjuntos de fotos e información inteligente sobre sus patrones de escritura.</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="Descargar Diario en la App Store" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">App gratuita con funciones premium opcionales<br>iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">Vea Feeltracker para Diario en acción</h2>
+        <div class="screenshots-grid">
+            <div>
+                <img src="/images/screenshots/nt-1.png" alt="Captura de pantalla del Diario 1" class="screenshot-img">
+            </div>
+            <div>
+                <img src="/images/screenshots/nt-2.png" alt="Captura de pantalla del Diario 2" class="screenshot-img">
+            </div>
+            <div>
+                <img src="/images/screenshots/nt-3.png" alt="Captura de pantalla del Diario 3" class="screenshot-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">Todo lo que necesita para escribir un diario consciente</h2>
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-pen"></i></div>
+                <h3>Escritura sin distracciones</h3>
+                <p>Interfaz clara y sencilla que pone sus palabras en primer plano. Sin desorden, solo usted y sus pensamientos. Escriba tanto o tan poco como desee cada día.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-smile"></i></div>
+                <h3>Análisis de sentimientos con IA</h3>
+                <p>La detección automática de sentimientos muestra el tono emocional de sus entradas utilizando la API de Lenguaje Natural de Apple en el dispositivo. Completamente privado: nunca sale de su dispositivo.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-barcode-scan"></i></div>
+                <h3>Escaneo con IA</h3>
+                <p>Escanee objetos, documentos, recibos o texto con su cámara y deje que la IA los describa y extraiga texto. Cree entradas de diario al instante a partir de objetos del mundo real.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>Análisis de frecuencia de palabras</h3>
+                <p>Descubra qué tiene realmente en mente. Vea qué palabras y temas aparecen con más frecuencia en su escritura para identificar patrones y pensamientos recurrentes.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>Diarios con fotos</h3>
+                <p>Añada hasta 8 fotos por entrada para capturar recuerdos visualmente. Perfecto para diarios de viaje, diarios de gratitud o simplemente para documentar su día.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>Plantillas de notas</h3>
+                <p>Comience rápidamente sus entradas con plantillas personalizables. Perfectas para diarios de gratitud, páginas matutinas, seguimiento de metas o cualquier práctica de diario recurrente.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>Escaneo de objetos</h3>
+                <p>Apunte su cámara a cualquier objeto y deje que la IA lo describa con contexto creativo para su diario. Transforme momentos cotidianos en entradas significativas.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-lines"></i></div>
+                <h3>Escaneo de texto</h3>
+                <p>Capture texto de documentos, carteles o pantallas con OCR impulsado por IA. Digitalice al instante contenido escrito en sus entradas de diario.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-search"></i></div>
+                <h3>Búsqueda potente</h3>
+                <p>Encuentre cualquier entrada al instante con búsqueda de texto completo. Sus diarios también se indexan en iOS Spotlight para un acceso rápido desde cualquier lugar de su dispositivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">Cómo funciona Diario</h2>
+        <p class="section-subtitle center-text">Su compañero personal de diario para capturar momentos de vida y descubrir patrones</p>
+        <div class="app-card">
+            <h3>1. Escriba sus pensamientos</h3>
+            <div class="app-card-content">
+                <p><strong>Entrada instantánea:</strong> Abra la app y comience a escribir de inmediato. Sin configuración, sin ajustes, sin complejidad. Solo sus pensamientos y la página. La interfaz limpia y sin distracciones le ayuda a concentrarse en su expresión.</p>
+                <p><strong>Contenido multimedia:</strong> Enriquezca sus entradas con fotos, añada imágenes para capturar recuerdos visualmente. Agregue grabaciones de voz, bocetos o cualquier medio que ayude a contar su historia. Cada entrada se convierte en una instantánea completa de su día.</p>
+                <p><strong>Plantillas de notas:</strong> Use plantillas predefinidas para reflexiones diarias, diario de gratitud, seguimiento de metas, diarios de sueños o cree sus propias plantillas personalizadas. Las plantillas proporcionan estructura y al mismo tiempo le dan la libertad de escribir de forma natural.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>2. Vea cómo surgen los patrones</h3>
+            <div class="app-card-content">
+                <p><strong>Análisis de sentimientos:</strong> La IA detecta automáticamente el tono emocional de sus entradas: positivo, negativo o neutral. Vea sus tendencias de ánimo visualizadas a lo largo de semanas y meses para comprender sus patrones emocionales.</p>
+                <p><strong>Frecuencia de palabras:</strong> Descubra sobre qué temas, personas o asuntos escribe más. La app identifica palabras y frases recurrentes, mostrando lo que constantemente ocupa su mente y cómo cambia su enfoque con el tiempo.</p>
+                <p><strong>Vista de calendario:</strong> Explore todo su historial de diario en una interfaz de calendario. Cada día muestra un extracto e indicador de ánimo. Salte rápidamente a cualquier entrada pasada para ver qué pensaba ese día.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>3. Reflexione y crezca</h3>
+            <div class="app-card-content">
+                <p><strong>Información impulsada por IA:</strong> Haga preguntas sobre su diario: "¿Cuáles fueron mis días más felices el mes pasado?" o "Muéstrame todas las entradas donde mencioné mis metas." Obtenga respuestas instantáneas y reflexivas que le ayudan a comprender su camino.</p>
+                <p><strong>Seguimiento del desarrollo personal:</strong> Revise cómo evolucionan sus pensamientos, preocupaciones y aspiraciones. Vea el progreso en metas mencionadas en entradas pasadas. Identifique áreas de crecimiento y celebre lo lejos que ha llegado.</p>
+                <p><strong>Busque en todo:</strong> La búsqueda potente encuentra cada palabra, frase o concepto a lo largo de años de escritura de diario. Filtre por fecha, estado de ánimo o palabras clave. Toda su historia escrita es accesible y se puede buscar al instante.</p>
+            </div>
+        </div>
+        <div class="app-card">
+            <h3>4. Mantenga todo seguro</h3>
+            <div class="app-card-content">
+                <p><strong>Privado y seguro:</strong> Todas las entradas se cifran y almacenan en su cuenta personal de iCloud. Solo usted puede leer su diario: la app utiliza cifrado de extremo a extremo, por lo que sus palabras permanecen completamente privadas.</p>
+                <p><strong>Copia de seguridad automática:</strong> Las copias de seguridad automáticas semanales en JSON garantizan que nunca pierda sus pensamientos. Haga una copia de seguridad manual en cualquier momento para exportar todo su diario. Sus palabras están protegidas contra la pérdida o el fallo del dispositivo.</p>
+                <p><strong>Sincronización entre dispositivos:</strong> Escriba en el iPhone, continúe en el iPad, revise en el Mac. Todas sus entradas se sincronizan automáticamente a través de iCloud. Su diario le sigue a todas partes, siempre actualizado en cada dispositivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>Impulsado por inteligencia artificial</h2>
+        <p class="section-subtitle">Funciones avanzadas de IA para que aproveche al máximo su práctica de diario</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Funciones de IA gratuitas</h3>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> Haga una pregunta</h4>
+                <p>Preguntas y respuestas rápidas sobre sus entradas de diario: obtenga respuestas instantáneas sobre su escritura</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <p>Mantenga conversaciones interactivas sobre su camino en el diario y reciba orientación personalizada</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> Resumen de voz</h4>
+                <p>Escuche resúmenes en audio de los temas de su diario, perfecto para reflexiones sobre la marcha</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-barcode-scan"></i> Escaneo con IA</h4>
+                <p>Escanee objetos, documentos, recibos o texto para crear entradas de diario instantáneas con descripciones de IA</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> Hazme reír</h4>
+                <p>Obtenga humor personalizado a partir de sus entradas de diario para alegrar su día</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> Cálmame</h4>
+                <p>Ejercicios de respiración y relajación guiados por IA para reducir el estrés</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Funciones de IA premium</h3>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> Informes de investigación profunda</h4>
+                <p>Análisis completo de IA de su diario con información detallada</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> Detective de patrones</h4>
+                <p>Encuentre temas y patrones ocultos en sus entradas de diario a lo largo del tiempo</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> Asistente de metas</h4>
+                <p>Reciba metas de vida personalizadas y basadas en datos según los patrones de su diario</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> Resumen para el médico</h4>
+                <p>Genere resúmenes profesionales para compartir en consultas médicas</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> Generador de justificantes médicos</h4>
+                <p>Justificantes médicos generados por IA para el trabajo o la escuela cuando los necesite</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> Generador de historias</h4>
+                <p>Transforme sus entradas de diario en narrativas creativas y cautivadoras</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> Resumen de texto</h4>
+                <p>Cree resúmenes en formato de mensaje de texto de los temas de su diario para compartir</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> Quiz personalizado</h4>
+                <p>Ponga a prueba sus conocimientos con un divertido quiz de 10 preguntas generado por IA sobre sus datos</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> Texto a voz</h4>
+                <p>Escuche sus análisis y resúmenes de IA con reproducción de voz natural</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> Informe de salud personalizado</h4>
+                <p>Cree documentos completos y personalizados para el seguimiento del progreso de su diario</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-tags"></i> Explorador de temas</h4>
+                <p>Descubra temas e ideas recurrentes en su escritura con análisis temático impulsado por IA</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-line"></i> Línea temporal de ánimo</h4>
+                <p>Visualice su viaje emocional a lo largo del tiempo con seguimiento de sentimientos analizado por IA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>¿Por qué llevar un diario?</h2>
+        <p class="section-subtitle">Las investigaciones demuestran que escribir un diario mejora la salud mental, la claridad y la creatividad</p>
+        <div class="ai-features-grid">
+            <div class="ai-feature">
+                <h4><i class="fas fa-brain"></i> Claridad mental</h4>
+                <p>Escribir ayuda a organizar los pensamientos y reducir el desorden mental</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment"></i> Procesamiento emocional</h4>
+                <p>Exprese y procese sus sentimientos en un espacio seguro y privado</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> Seguimiento del progreso</h4>
+                <p>Vea lo lejos que ha llegado revisando entradas pasadas</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-lightbulb"></i> Autodescubrimiento</h4>
+                <p>Descubra patrones en su pensamiento y comportamiento</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-hands-praying"></i> Práctica de gratitud</h4>
+                <p>Cultive la gratitud con un diario de agradecimiento diario</p>
+            </div>
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> Preservar recuerdos</h4>
+                <p>Cree un archivo personal de los momentos de su vida</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="support-section">
+        <h2>Perfecto para...</h2>
+
+        <h3>Reflexión diaria</h3>
+        <p>Termine cada día escribiendo sobre lo que sucedió, lo que aprendió y cómo se sintió. Construya un hábito de diario consistente con recordatorios y plantillas.</p>
+
+        <h3>Diario de gratitud</h3>
+        <p>Use plantillas de notas para registrar rápidamente tres cosas por las que está agradecido cada día. Haga seguimiento de su práctica de gratitud y vea surgir patrones positivos.</p>
+
+        <h3>Diarios de viaje</h3>
+        <p>Documente sus aventuras con fotos y notas detalladas. Cree un registro rico de sus viajes que pueda revisitar en cualquier momento.</p>
+
+        <h3>Seguimiento de metas</h3>
+        <p>Escriba sobre sus metas, haga seguimiento de su progreso y reflexione sobre lo que funciona. Use la información de IA para ver qué enfoques son más efectivos.</p>
+
+        <h3>Escritura creativa</h3>
+        <p>Practique la escritura diaria, capture ideas y desarrolle su voz. La interfaz sin distracciones le ayuda a concentrarse en su arte.</p>
+
+        <h3>Salud mental</h3>
+        <p>Procese emociones, identifique desencadenantes y haga seguimiento de patrones de ánimo a través de la escritura. El análisis de sentimientos proporciona retroalimentación objetiva sobre el tono emocional.</p>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>Disponible en 33 idiomas</h2>
+        <p class="section-subtitle">Diario está completamente localizado en: inglés, español (Español), francés (Français), francés de Canadá, alemán (Deutsch), italiano (Italiano), neerlandés (Nederlands), portugués de Brasil (Português), portugués de Portugal, sueco (Svenska), noruego (Norsk), danés (Dansk), finlandés (Suomi), polaco (Polski), ruso (Русский), ucraniano (Українська), checo (Čeština), eslovaco (Slovenčina), rumano (Română), croata (Hrvatski), húngaro (Magyar), árabe (العربية), hebreo (עברית), chino simplificado (简体中文), chino tradicional (繁體中文), japonés (日本語), coreano (한국어), tailandés (ไทย), vietnamita (Tiếng Việt), indonesio (Bahasa Indonesia), griego (Ελληνικά), turco (Türkçe) y catalán (Català).</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>Preguntas frecuentes</h2>
+
+        <h3>¿Es privado mi diario?</h3>
+        <p>Absolutamente. Sus entradas se almacenan cifradas en su dispositivo y en su cuenta privada de iCloud. Nunca vemos su escritura. Incluso el análisis de sentimientos con IA se realiza completamente en su dispositivo utilizando la API de Lenguaje Natural de Apple: sus palabras nunca salen de su teléfono.</p>
+
+        <h3>¿Cómo funciona el análisis de sentimientos?</h3>
+        <p>Cuando escribe 8 o más palabras, la app utiliza el framework de Lenguaje Natural integrado de Apple para analizar el tono emocional. Aparece un emoji para mostrar si la entrada se lee como positiva, negativa o neutral. Esto se realiza completamente en el dispositivo para una privacidad total.</p>
+
+        <h3>¿Qué es el análisis de frecuencia de palabras?</h3>
+        <p>La función de Tendencias analiza todas sus entradas para mostrar sobre qué palabras y temas escribe con más frecuencia. Esto le ayuda a identificar temas recurrentes, preocupaciones o intereses en su pensamiento.</p>
+
+        <h3>¿Puedo añadir fotos a mi diario?</h3>
+        <p>¡Sí! Puede añadir hasta 8 fotos a cada entrada del diario. Las fotos se almacenan de forma eficiente con generación automática de miniaturas y se sincronizan en todos sus dispositivos a través de iCloud.</p>
+
+        <h3>¿Qué son las plantillas de notas?</h3>
+        <p>Las plantillas son indicaciones preescritas que le ayudan a comenzar a escribir rápidamente. Cree plantillas personalizadas para cosas como listas de gratitud, revisiones diarias, seguimiento de metas o cualquier otro formato recurrente que utilice.</p>
+
+        <h3>¿Puedo exportar mis entradas de diario?</h3>
+        <p>Sí. Puede exportar sus entradas como archivos PDF, Excel o JSON. Esto le permite crear copias de seguridad, compartir entradas seleccionadas o mover sus datos a otras plataformas si lo necesita.</p>
+
+        <h3>¿Funciona en Mac?</h3>
+        <p>¡Sí! La app se ejecuta de forma nativa en Macs con Apple Silicon (M1 y posteriores). Sus entradas se sincronizan automáticamente entre su iPhone, iPad y Mac a través de iCloud.</p>
+
+        <h3>¿Puedo escribir varias entradas al día?</h3>
+        <p>Por supuesto. Escriba tantas entradas como desee cada día. Algunas personas escriben en su diario por la mañana y por la noche, mientras que otras añaden notas a lo largo del día.</p>
+
+        <h3>¿Muestran anuncios o me rastrean?</h3>
+        <p><strong>No.</strong> Hemos eliminado completamente toda la publicidad de la app. No le rastreamos a través de otras apps o sitios web y nunca vendemos sus datos a anunciantes.</p>
+        <p>Sus datos se sincronizan a través de iCloud, exactamente como Notas y Fotos de Apple. Esto significa que no necesitamos conocer su dirección de correo electrónico, su nombre ni información personal. Sus entradas de diario se almacenan en sus dispositivos y en su cuenta de iCloud, y son completamente privadas, ya sea que use la versión gratuita o premium.</p>
+
+        <h3>¿Necesito una suscripción?</h3>
+        <p>La app es completamente gratuita para descargar y usar. Todas las funciones principales funcionan sin suscripción. Una suscripción premium desbloquea funciones avanzadas de IA, exportaciones ilimitadas y personalización ampliada. Puede probar todas las funciones premium durante el período de prueba gratuito.</p>
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">Lo que dicen los usuarios</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">Reseñas reales de la App Store</p>
+
+        <div class="reviews-grid">
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Perfecta y sencilla</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Estuve buscando exactamente algo así durante más de un año. App perfecta que hace lo que hace sin complicaciones. La uso para anotar tareas completadas, llamadas realizadas, información aprendida, etc."</p>
+            <p class="review-author">- Danofishje</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Hasta ahora todo bien</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Esta es una pequeña app agradable y sencilla que no se expande en áreas innecesarias. Es la simplicidad, incluida la simplicidad de la interfaz, lo que valoro más que cualquier otra cosa."</p>
+            <p class="review-author">- PRE'</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Muy buena para registro de tratamiento</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Estoy tratando de llevar un registro de los niveles de dolor durante todo el día. ¡Esta app es perfecta para eso!"</p>
+            <p class="review-author">- LT351</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Libertad</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Libertad y cómo gestionar tu tiempo"</p>
+            <p class="review-author">- 223tr</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Vale la pena</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Gracias por la respuesta rápida, eso fue rápido. Este proyecto sin duda tiene mi apoyo."</p>
+            <p class="review-author">- Gualmarl</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">¡Me encanta cómo se ve!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Acabo de descargar esta app, ¡es genial! ¡Me encanta!"</p>
+            <p class="review-author">- EdwardPrince91</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Gran app sencilla</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Esta app fue genial porque ahora puedo explicar exactamente lo que hago todo el día para que él pueda hacerse cargo del negocio y tener éxito."</p>
+            <p class="review-author">- Seandello 1</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Me encanta</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Uso este diario principalmente para guardar las pequeñas victorias de mi día. Es muy fácil de usar y sus estadísticas son increíbles."</p>
+            <p class="review-author">- Luciernagas</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Directo al grano</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Esta app es exactamente lo que necesitaba para registrar todas las travesuras de mi vecino problemático con hora/fecha y notas."</p>
+            <p class="review-author">- Ineedabass</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Perfecta para entradas de diario rápidas y detalladas</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Me encanta la interfaz sencilla. Muy minimalista e intuitiva. La app maneja las entradas de diario y la búsqueda muy bien."</p>
+            <p class="review-author">- Nutelozopj</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">¡¡App imprescindible!!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Esta es una gran app con funciones mínimas pero que beneficia a todos... La he usado durante un tiempo y estoy muy satisfecho con ella."</p>
+            <p class="review-author">- Blissful Sunshine</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Gran app</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"¡Estaba buscando algo sencillo como esto! Y también me encantan los pequeños sonidos, es una app genial."</p>
+            <p class="review-author">- unicorona</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">App fabulosa para diario o notas</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Gran soporte, fácil de usar y precisa. ¡Pruébela, se alegrará de haberlo hecho!"</p>
+            <p class="review-author">- stanmoffat</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">¡Perfecta!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Acabo de descargar esto y pude ver de inmediato que era exactamente lo que estaba buscando. ¡Tan limpia y fácil de usar!"</p>
+            <p class="review-author">- Val_MN</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Sencilla</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Esta app es muy sencilla y hace que escribir un diario sea fácil y flexible."</p>
+            <p class="review-author">- Jdhott29</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">¡¡Gracias!!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Espero que el tiempo libre nunca más pase sin control. ¡Ahora estoy registrado y haciendo cosas que se habían pospuesto para después!"</p>
+            <p class="review-author">- studioart</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Me encanta la función de Tendencias</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Uso esta app de una manera atípica. Ingreso una T, S o C cada vez que tengo un pensamiento, sentimiento o comportamiento relacionado con mi recuperación de adicción. Luego puedo ver en las tendencias cómo va mi progreso a lo largo del tiempo."</p>
+            <p class="review-author">- Paul77785</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">5 estrellas</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Mejor app, me encanta, 5 estrellas"</p>
+            <p class="review-author">- shaz1851985</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> ¿Quiere transformar su práctica de diario?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">Descubra 20 consejos de expertos para una autorreflexión, gratitud y crecimiento personal efectivos</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                Leer consejos de expertos <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Comience hoy su práctica de diario</h2>
+        <p>Únase a miles de personas que descubren los beneficios de la reflexión diaria</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="Descargar Diario" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/es/daily-journal/">Inicio</a>
+            <a href="/es/about.html">Sobre nosotros</a>
+            <a href="mailto:support@feeltracker.com">Soporte por email</a>
+            <a href="/es/support.html">Soporte</a>
+            <a href="/es/faq.html">Preguntas frecuentes</a>
+            <a href="https://x.com/feeltracker">Síguenos en X</a>
+            <a href="/es/privacy.html">Política de privacidad</a>
+            <a href="/es/terms.html">Términos y condiciones</a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Custom Arts. Todos los derechos reservados.</p>
+        <p class="footer-tagline">Parte de la familia Feeltracker de apps de seguimiento de salud</p>
+        <p class="footer-disclaimer">Sus datos de salud permanecen en su dispositivo y en iCloud — nunca accedemos a ellos ni los vendemos. Las apps de Feeltracker no son dispositivos médicos. Solo con fines informativos, no sustituyen el consejo médico profesional, diagnóstico o tratamiento.</p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Valoramos su privacidad</strong></p>
+                <p>Usamos cookies de análisis para mejorar nuestro sitio web y app. No se utilizan cookies publicitarias. Consulte nuestra <a href="/es/privacy/">Política de privacidad</a> para más detalles.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Rechazar</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+</body>
+</html>
