@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{lang.code}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{> analytics-head}}
+
+{{#if appId}}
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id={{appId}}">
+{{/if}}
+
+    <!-- Primary Meta Tags -->
+    <title>{{meta.title}}</title>
+    <meta name="title" content="{{meta.title}}">
+    <meta name="description" content="{{meta.description}}">
+{{#if meta.keywords}}
+    <meta name="keywords" content="{{meta.keywords}}">
+{{/if}}
+    <meta name="author" content="{{site.author}}">
+    <link rel="canonical" href="{{canonicalUrl}}">
+{{#each langSwitcher}}
+    <link rel="alternate" hreflang="{{code}}" href="{{fullUrl}}">
+{{/each}}
+    <link rel="alternate" hreflang="x-default" href="{{xDefaultUrl}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{canonicalUrl}}">
+    <meta property="og:title" content="{{meta.ogTitle}}">
+    <meta property="og:description" content="{{meta.ogDescription}}">
+    <meta property="og:image" content="{{meta.ogImage}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{canonicalUrl}}">
+    <meta property="twitter:title" content="{{meta.ogTitle}}">
+    <meta property="twitter:description" content="{{meta.twitterDescription}}">
+    <meta property="twitter:image" content="{{meta.ogImage}}">
+
+{{> head-assets}}
+
+{{structuredDataHtml}}
+</head>
+<body>
+{{> nav}}
+
+{{bodyContent}}
+
+{{> footer}}
+
+{{> cookie-consent}}
+</body>
+</html>

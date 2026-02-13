@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="{{lang.code}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{> analytics-head}}
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id={{appId}}">
+
+    <!-- Primary Meta Tags -->
+    <title>{{meta.title}}</title>
+    <meta name="title" content="{{meta.title}}">
+    <meta name="description" content="{{meta.description}}">
+    <meta name="keywords" content="{{meta.keywords}}">
+    <meta name="author" content="{{site.author}}">
+    <link rel="canonical" href="{{canonicalUrl}}">
+{{#each langSwitcher}}
+    <link rel="alternate" hreflang="{{code}}" href="{{fullUrl}}">
+{{/each}}
+    <link rel="alternate" hreflang="x-default" href="{{xDefaultUrl}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{canonicalUrl}}">
+    <meta property="og:title" content="{{meta.ogTitle}}">
+    <meta property="og:description" content="{{meta.ogDescription}}">
+    <meta property="og:image" content="{{meta.ogImage}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{canonicalUrl}}">
+    <meta property="twitter:title" content="{{meta.ogTitle}}">
+    <meta property="twitter:description" content="{{meta.twitterDescription}}">
+    <meta property="twitter:image" content="{{meta.ogImage}}">
+
+{{> head-assets}}
+
+    <!-- Structured Data -->
+{{structuredDataHtml}}
+</head>
+<body>
+{{> nav}}
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="{{hero.image}}" alt="{{hero.imageAlt}}" width="150" height="150" class="hero-logo app-icon">
+        <h1>{{hero.title}}</h1>
+{{#if hero.badge}}
+        <p style="color: #f59e0b; font-weight: 700; font-size: 1.1em; margin-top: 8px;">{{hero.badge}}</p>
+{{/if}}
+        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> {{hero.privacy}}
+        </div>
+        <p class="hero-subtitle">{{hero.subtitle}}</p>
+        <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="{{hero.ctaAlt}}" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">{{hero.platformInfo}}</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">{{screenshots.title}}</h2>
+        <div class="screenshots-grid">
+{{#each screenshots.items}}
+            <div>
+                <img src="{{src}}" alt="{{alt}}" class="screenshot-img">
+            </div>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">{{features.title}}</h2>
+        <div class="features-grid">
+{{#each features.items}}
+            <div class="feature-box">
+                <div class="feature-icon"><i class="{{icon}}"></i></div>
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">{{howItWorks.title}}</h2>
+        <p class="section-subtitle center-text">{{howItWorks.subtitle}}</p>
+{{#each howItWorks.steps}}
+        <div class="app-card">
+            <h3>{{title}}</h3>
+            <div class="app-card-content">
+{{content}}
+            </div>
+        </div>
+{{/each}}
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>{{aiFeatures.title}}</h2>
+        <p class="section-subtitle">{{aiFeatures.subtitle}}</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">{{aiFeatures.freeTitle}}</h3>
+        <div class="ai-features-grid">
+{{#each aiFeatures.free}}
+            <div class="ai-feature">
+                <h4><i class="{{icon}}"></i> {{title}}</h4>
+                <p>{{description}}</p>
+            </div>
+{{/each}}
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">{{aiFeatures.premiumTitle}}</h3>
+        <div class="ai-features-grid">
+{{#each aiFeatures.premium}}
+            <div class="ai-feature">
+                <h4><i class="{{icon}}"></i> {{title}}</h4>
+                <p>{{description}}</p>
+            </div>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>{{benefits.title}}</h2>
+        <p class="section-subtitle">{{benefits.subtitle}}</p>
+        <div class="ai-features-grid">
+{{#each benefits.items}}
+            <div class="ai-feature">
+                <h4><i class="{{icon}}"></i> {{title}}</h4>
+                <p>{{description}}</p>
+            </div>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>{{languages.title}}</h2>
+        <p class="section-subtitle">{{languages.text}}</p>
+    </section>
+
+{{#if useCases}}
+    <!-- Use Cases -->
+    <section class="support-section">
+        <h2>{{useCases.title}}</h2>
+{{#each useCases.items}}
+        <h3>{{title}}</h3>
+        <p>{{description}}</p>
+{{/each}}
+    </section>
+{{/if}}
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>{{faq.title}}</h2>
+{{#each faq.items}}
+
+        <h3>{{question}}</h3>
+        {{answer}}
+{{/each}}
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">{{reviews.title}}</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">{{reviews.subtitle}}</p>
+
+        <div class="reviews-grid">
+{{#each reviews.items}}
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">{{title}}</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"{{content}}"</p>
+            <p class="review-author">- {{author}}</p>
+        </div>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> {{tips.title}}</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">{{tips.subtitle}}</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                {{tips.ctaText}} <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>{{cta.title}}</h2>
+        <p>{{cta.subtitle}}</p>
+        <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="{{cta.buttonAlt}}" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+{{> footer}}
+
+{{> cookie-consent}}
+</body>
+</html>
