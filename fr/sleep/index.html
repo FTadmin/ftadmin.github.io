@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=1065268459">
+
+    <!-- Primary Meta Tags -->
+    <title>Sommeil & Rêves - CPAP Apnée Moniteur Journal des Rêves | Feeltracker</title>
+    <meta name="title" content="Sommeil & Rêves - CPAP Apnée Moniteur Journal des Rêves | Feeltracker">
+    <meta name="description" content="Améliorez votre sommeil avec l'analyse des rêves par IA, le suivi de la thérapie CPAP et des outils de relaxation. Enregistrez vos heures de sommeil, surveillez les habitudes, synchronisez avec Apple Health, analysez vos rêves et suivez les métriques CPAP. Un meilleur repos commence par un meilleur suivi.">
+    <meta name="keywords" content="sommeil,journal,suivi,apnée,moniteur,rêve,sieste,cpap,apple,calculateur,étude,lucide">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/fr/sleep/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/fr/sleep/">
+    <meta property="og:title" content="Sommeil & Rêves | Suivez vos habitudes de sommeil avec l'IA | Feeltracker">
+    <meta property="og:description" content="Suivez votre sommeil avec l'analyse des rêves par IA, le suivi de la thérapie CPAP, des outils de relaxation et l'intégration Apple Health.">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/fr/sleep/">
+    <meta property="twitter:title" content="Sommeil & Rêves | Suivez vos habitudes de sommeil avec l'IA | Feeltracker">
+    <meta property="twitter:description" content="Suivez votre sommeil avec l'analyse des rêves par IA, le suivi de la thérapie CPAP et des outils de relaxation.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Sommeil & Rêves",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "description": "Suivez vos habitudes et la qualité de votre sommeil avec des analyses IA et l'intégration Apple Health",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": 237,
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/fr/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇫🇷</span>
+                    <span>Français</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/sleep/"><span class="flag">🇬🇧</span> English</a>
+
+                    <a href="/de/sleep/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/sleep/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/fr/sleep/" class="active"><span class="flag">🇫🇷</span> Français</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/fr/blood-pressure/">Tension Artérielle</a>
+
+            <a href="/fr/daily-journal/">Journal Intime</a>
+
+            <a href="/fr/mental-health/">Santé Mentale</a>
+
+            <a href="/fr/sleep/" class="current">Sommeil & Rêves</a>
+
+            <a href="/fr/weight/">Poids & Alimentation</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/ST_1024.png" alt="Icône de l'application Sommeil & Rêves" width="150" height="150" class="hero-logo app-icon">
+        <h1>Sommeil & Rêves</h1>
+
+        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> Sans publicité · Sans pistage · Confidentialité d'abord
+        </div>
+        <p class="hero-subtitle">Suivez vos habitudes de sommeil et découvrez ce qui affecte la qualité de votre repos. Avec l'analyse des rêves par IA, le suivi de la thérapie CPAP, des outils de relaxation et l'intégration Apple Health pour mieux dormir.</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="Télécharger Sleep & Dreams sur l'App Store" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">Application gratuite avec fonctionnalités premium optionnelles<br>iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">Découvrez Feeltracker pour Sommeil & Rêves en action</h2>
+        <div class="screenshots-grid">
+
+            <div>
+                <img src="/images/screenshots/st-1.png" alt="Sleep & Dreams Capture d'écran 1" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/st-2.png" alt="Sleep & Dreams Capture d'écran 2" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/st-3.png" alt="Sleep & Dreams Capture d'écran 3" class="screenshot-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">Fonctionnalités pour un meilleur suivi du sommeil</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                <h3>Enregistrement simple du sommeil</h3>
+                <p>Enregistrez vos heures de coucher et de réveil en quelques secondes. Pas besoin de formulaires complexes ni de capteurs. Appuyez simplement pour noter quand vous vous êtes couché et quand vous vous êtes réveillé.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>Durée automatique</h3>
+                <p>La durée du sommeil est calculée automatiquement à partir de vos heures de coucher et de réveil. Voyez en un coup d'œil combien d'heures vous avez dormi chaque nuit.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                <h3>Intégration Apple Health</h3>
+                <p>Synchronisez avec les données de sommeil d'Apple Health. Importez le sommeil enregistré par votre Apple Watch ou d'autres applications, et sauvegardez vos entrées manuelles dans HealthKit.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>Analyses IA du sommeil</h3>
+                <p>Découvrez ce qui affecte la qualité de votre sommeil. L'IA analyse vos notes pour identifier des facteurs comme la caféine, l'exercice, le temps d'écran ou le stress qui impactent votre repos.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h3>Analyse des rêves</h3>
+                <p>Interprétation des rêves par IA avec signification des symboles, aperçus émotionnels et analyse psychologique. Parfait pour suivre les rêves récurrents et comprendre leur signification.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-lungs"></i></div>
+                <h3>Suivi thérapie CPAP</h3>
+                <p>Analyse CPAP complète avec suivi de l'IAH, évaluation de l'ajustement du masque, détection des fuites et recommandations personnalisées pour optimiser votre thérapie de l'apnée du sommeil.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>Graphiques visuels du sommeil</h3>
+                <p>Visualisez vos habitudes de sommeil avec des graphiques et diagrammes intuitifs. Suivez les tendances sur des semaines et des mois pour comprendre vos cycles de sommeil.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-lines"></i></div>
+                <h3>Notes de sommeil</h3>
+                <p>Ajoutez des notes sur votre journée - ce que vous avez mangé, bu ou fait avant de vous coucher. Elles vous aident à identifier ce qui favorise ou perturbe un bon sommeil.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-spa"></i></div>
+                <h3>Outils de relaxation</h3>
+                <p>Contenus apaisants générés par IA avec exercices de respiration, visualisations paisibles et techniques de relaxation personnalisées pour vous aider à vous endormir plus vite.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">Comment fonctionne Sleep & Dreams</h2>
+        <p class="section-subtitle center-text">Une solution complète de suivi du sommeil pour comprendre et améliorer votre repos</p>
+
+        <div class="app-card">
+            <h3>1. Enregistrer les heures de sommeil</h3>
+            <div class="app-card-content">
+<p><strong>Saisie rapide :</strong> Chaque matin, indiquez quand vous vous êtes couché et quand vous vous êtes réveillé. L'application calcule automatiquement votre durée totale de sommeil, sans que vous ayez à faire le calcul.</p>
+<p><strong>Entrées multiples :</strong> Suivez les siestes et les sessions de sommeil multiples par jour. Parfait pour les travailleurs en horaires décalés, les parents au sommeil interrompu ou toute personne ayant des horaires de sommeil non conventionnels.</p>
+<p><strong>Notes détaillées :</strong> Enregistrez les évaluations de qualité du sommeil, les rêves, les cauchemars, comment vous vous êtes senti au réveil et tous les facteurs ayant affecté votre repos - consommation de caféine, horaire d'exercice, température de la chambre, niveau de stress, temps d'écran avant le coucher ou médicaments. Plus vous ajoutez de détails, mieux l'IA peut identifier les habitudes.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>2. Examiner les habitudes</h3>
+            <div class="app-card-content">
+<p><strong>Vue calendrier :</strong> Consultez l'intégralité de votre historique de sommeil dans une interface calendrier intuitive. Chaque jour affiche la durée du sommeil avec des indicateurs colorés montrant si vous avez atteint vos objectifs de sommeil.</p>
+<p><strong>Statistiques du sommeil :</strong> Les métriques calculées automatiquement incluent la durée moyenne du sommeil, le temps de sommeil total par semaine, le déficit/surplus de sommeil, les jours les plus réguliers et les tendances dans le temps. Identifiez en un coup d'œil vos meilleures et pires nuits.</p>
+<p><strong>Tendances visuelles :</strong> Les graphiques montrent vos habitudes de sommeil sur des jours, semaines ou mois. Voyez comment vos heures de coucher et de réveil varient, repérez les irrégularités et suivez vos progrès vers des horaires de sommeil réguliers.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>3. Obtenir des analyses IA</h3>
+            <div class="app-card-content">
+<p><strong>Reconnaissance de motifs :</strong> L'IA analyse vos notes pour identifier ce qui affecte votre sommeil. Découvrez des corrélations comme « Vous dormez 45 minutes de plus les nuits où vous faites de l'exercice » ou « La qualité du sommeil est moins bonne lorsque vous consommez de la caféine après 14h ».</p>
+<p><strong>Conseils personnalisés :</strong> Recevez des recommandations spécifiques basées sur vos données. L'IA peut suggérer des heures de coucher optimales en fonction de quand vous obtenez systématiquement le meilleur sommeil, ou mettre en évidence les facteurs qui perturbent régulièrement votre repos.</p>
+<p><strong>Chat sommeil :</strong> Posez des questions en langage naturel sur vos données de sommeil : « Combien d'heures ai-je dormi en moyenne la semaine dernière ? » ou « Montre-moi toutes les nuits où j'ai dormi moins de 6 heures. » Obtenez des réponses instantanées et conversationnelles à partir de votre historique de sommeil.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>4. Améliorer votre sommeil</h3>
+            <div class="app-card-content">
+<p><strong>Données exploitables :</strong> Utilisez les analyses pour apporter des changements fondés sur des preuves à votre routine. Testez des hypothèses comme « Est-ce que lire avant de dormir améliore mon sommeil ? » en suivant les résultats et en laissant l'IA repérer les différences.</p>
+<p><strong>Rapports professionnels :</strong> Exportez des rapports PDF ou Excel pour les spécialistes du sommeil, médecins ou consultations de thérapie CPAP. Les rapports incluent des graphiques de durée du sommeil, des tendances de qualité, des notes sur les perturbations du sommeil et des résumés statistiques formatés pour un examen médical.</p>
+<p><strong>Synchronisation Apple Health :</strong> Intégrez Apple Health pour combiner les enregistrements manuels avec le suivi automatique du sommeil de l'Apple Watch ou d'autres appareils. Importez les données de sommeil historiques ou exportez vos enregistrements vers HealthKit pour un tableau de santé complet.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>Propulsé par l'intelligence artificielle</h2>
+        <p class="section-subtitle">Des fonctionnalités IA avancées pour mieux comprendre vos habitudes de sommeil</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Fonctionnalités IA gratuites</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> Poser une question</h4>
+                <p>Questions-réponses rapides sur vos données de sommeil - obtenez des réponses instantanées à vos questions sur le sommeil</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <p>Ayez des conversations interactives sur votre santé du sommeil et recevez des conseils personnalisés</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> Résumé vocal</h4>
+                <p>Écoutez des résumés audio de vos tendances de sommeil - parfait pour les analyses en déplacement</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> Analyse simple des rêves</h4>
+                <p>L'IA interprète vos rêves avec les symboles clés, des aperçus émotionnels et des questions de réflexion</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-spa"></i> Relaxation pour s'endormir</h4>
+                <p>Techniques de relaxation personnalisées, exercices de respiration et visualisations paisibles pour vous aider à vous endormir</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> Faites-moi rire</h4>
+                <p>Recevez de l'humour personnalisé à partir de vos données de suivi pour égayer votre journée</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Fonctionnalités IA premium</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> Rapports de recherche approfondis</h4>
+                <p>Analyse IA complète de vos données de sommeil avec des informations détaillées</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-lungs"></i> Rapport CPAP</h4>
+                <p>Analyse complète de la thérapie CPAP avec suivi de l'IAH, évaluation de l'ajustement du masque, suivi de l'observance et cartes d'action interactives</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-brain"></i> Analyse avancée des rêves</h4>
+                <p>Interprétation psychologique approfondie des rêves utilisant les archétypes jungiens, les symboles récurrents, les schémas émotionnels et un dictionnaire personnel de symboles</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> Détective de motifs</h4>
+                <p>Trouvez des corrélations cachées entre la qualité de votre sommeil et vos facteurs de mode de vie</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> Assistant d'objectifs</h4>
+                <p>Obtenez des objectifs de sommeil personnalisés et basés sur les données selon vos habitudes</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> Résumé pour le médecin</h4>
+                <p>Générez des résumés professionnels du sommeil pour les visites médicales ou les études du sommeil</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> Générateur de certificat médical</h4>
+                <p>Certificats médicaux générés par IA pour le travail ou l'école quand vous en avez besoin</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> Générateur d'histoires</h4>
+                <p>Transformez votre parcours de sommeil en récits créatifs et captivants</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> Résumé textuel</h4>
+                <p>Créez des résumés partageables par message de vos tendances de sommeil</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> Quiz personnalisé</h4>
+                <p>Testez vos connaissances avec un quiz amusant de 10 questions généré par IA sur vos données</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> Synthèse vocale</h4>
+                <p>Écoutez vos analyses et résumés IA avec une lecture vocale naturelle</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> Rapport de santé personnalisé</h4>
+                <p>Créez des documents de santé du sommeil complets et personnalisés pour suivre vos progrès</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>Pourquoi suivre votre sommeil ?</h2>
+        <p class="section-subtitle">Un meilleur sommeil mène à une meilleure santé, humeur et productivité</p>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> Gérer l'insomnie</h4>
+                <p>Identifiez les habitudes et les déclencheurs qui perturbent votre sommeil</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bolt"></i> Plus d'énergie</h4>
+                <p>Assurez-vous d'obtenir suffisamment de repos pour des performances quotidiennes optimales</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> Objectifs de sommeil</h4>
+                <p>Travaillez vers des horaires de sommeil réguliers et des objectifs de durée</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-house-medical"></i> Informations santé</h4>
+                <p>Fournissez des données de sommeil aux médecins qui étudient des problèmes de santé</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-line"></i> Suivre les améliorations</h4>
+                <p>Voyez comment les changements de mode de vie impactent la qualité de votre sommeil</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-flask"></i> Tester des stratégies</h4>
+                <p>Expérimentez différentes pratiques d'hygiène du sommeil et mesurez les résultats</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>Disponible en 33 langues</h2>
+        <p class="section-subtitle">Sleep & Dreams est entièrement localisé en : anglais, espagnol (Español), français (Français), français canadien, allemand (Deutsch), italien (Italiano), néerlandais (Nederlands), portugais brésilien (Português), portugais du Portugal, suédois (Svenska), norvégien (Norsk), danois (Dansk), finnois (Suomi), polonais (Polski), russe (Русский), ukrainien (Українська), tchèque (Čeština), slovaque (Slovenčina), roumain (Română), croate (Hrvatski), hongrois (Magyar), arabe (العربية), hébreu (עברית), chinois simplifié (简体中文), chinois traditionnel (繁體中文), japonais (日本語), coréen (한국어), thaï (ไทย), vietnamien (Tiếng Việt), indonésien (Bahasa Indonesia), grec (Ελληνικά), turc (Türkçe) et catalan (Català).</p>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>Questions fréquemment posées</h2>
+
+
+        <h3>De combien de sommeil ai-je besoin ?</h3>
+        <p>La plupart des adultes ont besoin de 7 à 9 heures de sommeil par nuit, bien que les besoins individuels varient. L'application vous aide à suivre votre durée de sommeil et à identifier votre quantité optimale personnelle en fonction de comment vous vous sentez.</p>
+
+
+        <h3>Cette application suit-elle le sommeil automatiquement ?</h3>
+        <p>Non. Contrairement à l'Apple Watch ou à d'autres appareils connectés, le journal du sommeil nécessite un enregistrement manuel. Vous saisissez vos heures de coucher et de réveil chaque matin. Cependant, vous pouvez importer les données de sommeil depuis Apple Health si vous utilisez d'autres appareils de suivi automatique.</p>
+
+
+        <h3>Puis-je enregistrer les siestes ?</h3>
+        <p>Oui. Vous pouvez enregistrer plusieurs périodes de sommeil par jour, y compris les siestes. Chaque entrée affiche la durée, et le calendrier montre toutes vos heures de sommeil et de réveil.</p>
+
+
+        <h3>Quelle est la différence entre cette application et Apple Health ?</h3>
+        <p>Le journal du sommeil offre une interface dédiée au suivi du sommeil avec des fonctionnalités spécialement conçues pour gérer vos habitudes de sommeil - notes, analyses IA, tendances et enregistrement manuel facile. Il s'intègre à Apple Health mais propose des fonctionnalités plus détaillées axées sur le sommeil.</p>
+
+
+        <h3>Comment l'IA aide-t-elle pour les analyses du sommeil ?</h3>
+        <p>Lorsque vous ajoutez des notes sur votre journée (par ex. « café à 20h » ou « exercice le matin »), l'IA les analyse au fil du temps pour montrer les corrélations avec votre durée et qualité de sommeil. Cela aide à identifier ce qui favorise ou perturbe un bon sommeil.</p>
+
+
+        <h3>Puis-je partager mes données de sommeil avec mon médecin ?</h3>
+        <p>Oui. Exportez votre historique de sommeil sous forme de rapports PDF ou Excel à partager avec les professionnels de santé. C'est particulièrement utile si vous êtes évalué pour des troubles du sommeil ou de l'insomnie.</p>
+
+
+        <h3>L'application suit-elle la qualité du sommeil ou seulement la durée ?</h3>
+        <p>L'application suit principalement la durée du sommeil (heures dormies) basée sur vos heures de coucher et de réveil enregistrées. Vous pouvez ajouter des notes sur la qualité du sommeil, les rêves ou votre niveau de repos, ce qui aide au suivi qualitatif.</p>
+
+
+        <h3>Y a-t-il un rappel pour enregistrer le sommeil ?</h3>
+        <p>Oui. Vous pouvez configurer des rappels quotidiens pour enregistrer vos heures de sommeil. Beaucoup d'utilisateurs configurent un rappel matinal pour les inciter à enregistrer le sommeil de la nuit précédente.</p>
+
+
+        <h3>Affichez-vous des publicités ou me pistez-vous ?</h3>
+        <p><strong>Non.</strong> Nous avons complètement supprimé toute publicité de l'application. Nous ne vous pistons pas à travers d'autres applications ou sites web, et nous ne vendons jamais vos données aux annonceurs.</p>
+<p>Vos données sont synchronisées via iCloud - tout comme Apple Notes et Photos. Cela signifie que nous n'avons pas besoin de connaître votre adresse e-mail, votre nom ou toute information personnelle. Vos données de sommeil sont stockées sur vos appareils et dans votre compte iCloud, et restent entièrement privées que vous utilisiez la version gratuite ou premium.</p>
+
+
+        <h3>Ai-je besoin d'un abonnement ?</h3>
+        <p>L'application est entièrement gratuite à télécharger et à utiliser. Toutes les fonctionnalités de suivi de base fonctionnent sans abonnement. Un abonnement premium débloque des fonctionnalités IA avancées, des exports illimités et une personnalisation améliorée. Vous pouvez essayer toutes les fonctionnalités premium pendant la période d'essai gratuit.</p>
+
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">Ce que disent les utilisateurs</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">Avis réels de l'App Store</p>
+
+        <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Avis à tous les médecins du sommeil !</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"J'étais tellement surpris que mon médecin du sommeil essayait de me donner des feuilles de papier pour noter mes heures de sommeil ! Quand j'ai demandé une application, ils m'en ont suggéré une autre qui était inutile. Heureusement, j'ai trouvé cette application et j'ai immédiatement demandé à mon médecin de la recommander. J'apprécie aussi la réactivité du développeur. Cette personne veut clairement améliorer des vies. MERCI !!"</p>
+            <p class="review-author">- Jbobthebuilder</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">J'adore cette appli !! Si facile à utiliser.</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Cette application est formidable pour surveiller vos habitudes de sommeil et vos horaires. Elle est simple et facile à utiliser. J'avais une suggestion et le développeur Gaurav a été absolument incroyable !! Je l'ai contacté, il m'a répondu en quelques minutes et a ajouté ma suggestion en quelques jours ! Je recommande vivement cette application. Et l'abonnement en vaut vraiment la peine."</p>
+            <p class="review-author">- Absolutely Annoyed!</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Bonne appli pour suivre les habitudes de sommeil</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"J'avais besoin de quelque chose pour m'aider avec le suivi du sommeil quand j'ai commencé la thérapie CPAP en novembre 2022. Cette application a été formidable pour me tenir responsable d'un planning et voir mes progrès. Je peux suivre les heures de sommeil, les rêves, les habitudes de sommeil ainsi que d'autres données. Mise à jour - j'ai utilisé l'application pendant 400 nuits maintenant et elle me montre les progrès de ma thérapie CPAP !"</p>
+            <p class="review-author">- Gadget guy Fl</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Gratuit avec toutes les fonctionnalités</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"C'est tout ce qu'il a fallu pour faire la différence entre 2 et 5 étoiles pour moi. Merci pour cette application incroyable."</p>
+            <p class="review-author">- Kye_53636</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Application très utile ! Support génial !</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"J'utilise cette application depuis quelques semaines car j'ai des horaires de sommeil très irréguliers. Sleep Journal était exactement ce qu'il me fallait. À un moment, j'ai trouvé un bug et je l'ai signalé au développeur qui non seulement m'a répondu rapidement, mais a aussi corrigé le bug en quelques jours seulement. Merci Gaurav !"</p>
+            <p class="review-author">- AnotherOldGuy</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Simple et fiable</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"C'est le moyen le plus pratique de tenir un registre cohérent de votre planning de sommeil et d'identifier les habitudes qui peuvent affecter votre sommeil. Vous n'avez vraiment besoin d'aucune autre application."</p>
+            <p class="review-author">- Tab Munch</p>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> Envie de maîtriser votre santé du sommeil ?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">Découvrez 20 conseils d'experts pour un meilleur sommeil, la thérapie CPAP et une qualité de sommeil optimale</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                Lire les conseils d'experts <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Commencez à améliorer votre sommeil dès ce soir</h2>
+        <p>Un meilleur repos n'est qu'à quelques tapotements</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="Télécharger Sleep & Dreams" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/fr/sleep/">Accueil</a>
+            <a href="/fr/about/">À propos</a>
+            <a href="mailto:support@feeltracker.com">Support par e-mail</a>
+            <a href="/fr/support/">Support</a>
+            <a href="/fr/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Suivre sur X</a>
+            <a href="/fr/privacy/">Politique de confidentialité</a>
+            <a href="/fr/terms/">Conditions d'utilisation</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Tous droits réservés.</p>
+        <p class="footer-tagline">Fait partie de la famille Feeltracker d'applications de suivi de santé</p>
+        <p class="footer-disclaimer">Vos données de santé restent sur votre appareil et dans iCloud — nous n'y accédons jamais et ne les vendons pas. Les applications Feeltracker ne sont pas des dispositifs médicaux. À titre informatif uniquement, ne remplacent pas un avis, un diagnostic ou un traitement médical professionnel.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Nous respectons votre vie privée</strong></p>
+                <p>Nous utilisons des cookies d'analyse pour améliorer notre site web et notre application. Aucun cookie publicitaire n'est utilisé. Consultez notre <a href="/fr/privacy/">Politique de confidentialité</a> pour plus de détails.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Refuser</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accepter</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>
