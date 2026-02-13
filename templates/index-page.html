@@ -107,10 +107,10 @@
                 </div>
             </div>
             <div class="app-card-content">
-                <p class="app-description">{{description}}</p>
+                <p class="app-description">{{mdi description}}</p>
                 <ul class="feature-list">
 {{#each features}}
-                    <li><i class="{{icon}}"></i> {{text}}</li>
+                    <li><i class="{{icon}}"></i> {{mdi text}}</li>
 {{/each}}
                 </ul>
                 <div class="app-card-buttons">
@@ -133,7 +133,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="{{icon}}"></i></div>
                 <h3>{{title}}</h3>
-                <p>{{description}}</p>
+                <p>{{mdi description}}</p>
             </div>
 {{/each}}
         </div>
@@ -221,7 +221,7 @@
 
 {{#each faq.items}}
         <h3>{{question}}</h3>
-        {{answer}}
+        {{md answer}}
 
 {{/each}}
     </section>
@@ -249,7 +249,7 @@
             <a href="{{href}}">{{text}}</a>
 {{/each}}
         </div>
-        <p class="footer-copyright">{{indexFooter.copyright}}</p>
+        <p class="footer-copyright">{{mdi indexFooter.copyright}}</p>
         <p class="footer-tagline">{{indexFooter.tagline}}</p>
         <p class="footer-disclaimer">{{indexFooter.disclaimer}}</p>
     </footer>

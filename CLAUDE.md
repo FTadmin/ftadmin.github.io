@@ -183,7 +183,9 @@ The build system uses a custom mustache-like template engine:
 
 | Syntax | Purpose | Example |
 |--------|---------|---------|
-| `{{variable}}` | Output value | `{{meta.title}}` |
+| `{{variable}}` | Output value (raw) | `{{meta.title}}` |
+| `{{md variable}}` | Markdown → HTML (block, with `<p>` wrapping) | `{{md answer}}` |
+| `{{mdi variable}}` | Markdown → HTML (inline, no `<p>`) | `{{mdi description}}` |
 | `{{#each array}}...{{/each}}` | Loop | `{{#each features.items}}` |
 | `{{#if value}}...{{/if}}` | Conditional | `{{#if hero.badge}}` |
 | `{{#if value}}...{{else}}...{{/if}}` | If/else | |
@@ -191,6 +193,31 @@ The build system uses a custom mustache-like template engine:
 | `{{json object}}` | Output as JSON | `{{json structuredData}}` |
 
 Inside `{{#each}}` blocks, properties of the current item are available directly (e.g., `{{title}}`, `{{icon}}`).
+
+### Markdown in Data Fields
+
+Translatable content fields use markdown instead of raw HTML. The build converts at render time:
+
+| Markdown | HTML output |
+|----------|-------------|
+| `**bold text**` | `<strong>bold text</strong>` |
+| `[link text](url)` | `<a href="url" target="_blank" rel="noopener">link text</a>` |
+| Double newline | New `<p>` paragraph (block mode only) |
+| Single newline | `<br>` (inline mode only) |
+| `## Heading` | `<h2>Heading</h2>` (block mode only) |
+| `### Heading` | `<h3>Heading</h3>` (block mode only) |
+
+**When to use which tag:**
+- `{{md field}}` — for standalone content that needs paragraph wrapping (FAQ answers, how-it-works steps)
+- `{{mdi field}}` — for content inside an existing `<p>` or `<li>` tag (descriptions, feature text, tips)
+- `{{field}}` — for raw output: plain text, raw HTML blobs (`structuredDataHtml`, `bodyContent`), or values in attributes
+
+**Fields using markdown:** FAQ answers, tip content, feature descriptions, howItWorks step content, app descriptions, footer copyright. These fields store content like:
+```json
+"answer": "Your data syncs via iCloud. This means **no email** or personal info needed. See our [privacy policy](https://feeltracker.com/privacy/)."
+```
+
+**Fields that stay as raw HTML:** `structuredDataHtml`, `bodyContent`, `christmasHtml`, `customCss`, `santaScript`, `doctorEndorsementHtml`, `disclaimerTitle`
 
 ## Build Context
 

@@ -57,7 +57,7 @@
         <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
             <img class="store_button" src="/images/appstore_link.svg" alt="{{hero.ctaAlt}}" style="width: 180px; height: 53px;">
         </a>
-        <p class="hero-platform-info">{{hero.platformInfo}}</p>
+        <p class="hero-platform-info">{{mdi hero.platformInfo}}</p>
     </section>
 
     <!-- Screenshots Section -->
@@ -80,7 +80,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="{{icon}}"></i></div>
                 <h3>{{title}}</h3>
-                <p>{{description}}</p>
+                <p>{{mdi description}}</p>
             </div>
 {{/each}}
         </div>
@@ -94,7 +94,7 @@
         <div class="app-card">
             <h3>{{title}}</h3>
             <div class="app-card-content">
-{{content}}
+{{md content}}
             </div>
         </div>
 {{/each}}
@@ -110,7 +110,7 @@
 {{#each aiFeatures.free}}
             <div class="ai-feature">
                 <h4><i class="{{icon}}"></i> {{title}}</h4>
-                <p>{{description}}</p>
+                <p>{{mdi description}}</p>
             </div>
 {{/each}}
         </div>
@@ -120,7 +120,7 @@
 {{#each aiFeatures.premium}}
             <div class="ai-feature">
                 <h4><i class="{{icon}}"></i> {{title}}</h4>
-                <p>{{description}}</p>
+                <p>{{mdi description}}</p>
             </div>
 {{/each}}
         </div>
@@ -163,7 +163,7 @@
 {{#each faq.items}}
 
         <h3>{{question}}</h3>
-        {{answer}}
+        {{md answer}}
 {{/each}}
     </section>
 

@@ -21,6 +21,37 @@ const path = require('path');
 // ============================================================
 
 /**
+ * Convert inline markdown to HTML (no paragraph wrapping).
+ * Supports: **bold**, [text](url)
+ * Links get target="_blank" rel="noopener" automatically.
+ */
+function markdownInline(md) {
+    if (!md || typeof md !== 'string') return md || '';
+    let text = md;
+    text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    // Single newlines → <br>
+    text = text.replace(/\n/g, '<br>');
+    return text;
+}
+
+/**
+ * Convert block markdown to HTML (with paragraph wrapping).
+ * Supports: **bold**, [text](url), paragraphs (double newline), ## headings
+ */
+function markdownToHtml(md) {
+    if (!md || typeof md !== 'string') return md || '';
+    const paragraphs = md.split(/\n{2,}/);
+    return paragraphs.map(p => {
+        p = p.trim();
+        if (!p) return '';
+        if (p.startsWith('### ')) return '<h3>' + markdownInline(p.slice(4)) + '</h3>';
+        if (p.startsWith('## ')) return '<h2>' + markdownInline(p.slice(3)) + '</h2>';
+        return '<p>' + markdownInline(p) + '</p>';
+    }).filter(Boolean).join('\n');
+}
+
+/**
  * Resolve a dot-notation path against an object.
  * e.g. resolve(ctx, "meta.title") → ctx.meta.title
  */
@@ -201,6 +232,20 @@ function render(template, data, partials) {
             } else {
                 console.warn(`  Warning: partial "${partialName}" not found`);
             }
+            pos = afterTag;
+
+        } else if (tag.startsWith('md ')) {
+            // {{md varPath}} - render block markdown to HTML (with <p> wrapping)
+            const varName = tag.slice(3).trim();
+            const value = resolve(data, varName);
+            output += markdownToHtml(value != null ? String(value) : '');
+            pos = afterTag;
+
+        } else if (tag.startsWith('mdi ')) {
+            // {{mdi varPath}} - render inline markdown to HTML (no <p> wrapping)
+            const varName = tag.slice(4).trim();
+            const value = resolve(data, varName);
+            output += markdownInline(value != null ? String(value) : '');
             pos = afterTag;
 
         } else if (tag.startsWith('json ')) {
