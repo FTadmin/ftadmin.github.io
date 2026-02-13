@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * One-time migration tool: reads existing HTML files → generates data.json
+ * One-time migration tool: reads existing HTML files → generates data/ files
  *
  * Run: node extract.js
  * Then: node build.js   (to verify round-trip)
  *
- * After verifying, this script can be deleted — data.json is the source of truth.
+ * After verifying, this script can be deleted — data/ files are the source of truth.
  */
 
 const fs = require('fs');
@@ -892,11 +892,28 @@ function extract() {
         console.log(`  Index page: ${langCode}`);
     }
 
-    // --- Write output ---
-    const outputPath = path.join(ROOT, 'data.json');
-    fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
-    console.log(`\nDone! Wrote ${output.pages.length} page entries to data.json`);
-    console.log(`File size: ${(fs.statSync(outputPath).size / 1024).toFixed(1)} KB`);
+    // --- Write output as split files ---
+    const dataDir = path.join(ROOT, 'data');
+    if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+
+    fs.writeFileSync(path.join(dataDir, 'site.json'), JSON.stringify(output.site, null, 2) + '\n');
+    fs.writeFileSync(path.join(dataDir, 'languages.json'), JSON.stringify(output.languages, null, 2) + '\n');
+
+    // Group pages by language
+    const byLang = {};
+    for (const page of output.pages) {
+        if (!byLang[page.lang]) byLang[page.lang] = [];
+        byLang[page.lang].push(page);
+    }
+    for (const [lang, pages] of Object.entries(byLang)) {
+        const langDir = path.join(dataDir, lang);
+        if (!fs.existsSync(langDir)) fs.mkdirSync(langDir, { recursive: true });
+        const filePath = path.join(langDir, 'pages.json');
+        fs.writeFileSync(filePath, JSON.stringify(pages, null, 2) + '\n');
+        console.log(`  ${lang}/pages.json: ${(fs.statSync(filePath).size / 1024).toFixed(1)} KB (${pages.length} pages)`);
+    }
+
+    console.log(`\nDone! Wrote ${output.pages.length} page entries to data/ directory`);
 }
 
 extract();

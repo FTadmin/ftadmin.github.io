@@ -2,14 +2,14 @@
 /**
  * Feeltracker Static Site Builder
  *
- * Reads data.json + HTML templates → generates all static HTML pages.
+ * Reads data/ files + HTML templates → generates all static HTML pages.
  * No dependencies — uses only Node.js built-in modules.
  *
  * Usage: node build.js
  *
  * Workflow for adding a new language:
- *   1. Add the language to data.json under "languages"
- *   2. Add page entries with translated content
+ *   1. Add the language config to data/languages.json
+ *   2. Create data/{lang}/pages.json with translated page entries
  *   3. Run: node build.js
  */
 
@@ -230,7 +230,7 @@ function render(template, data, partials) {
 const ROOT = __dirname;
 const TEMPLATES_DIR = path.join(ROOT, 'templates');
 const PARTIALS_DIR = path.join(TEMPLATES_DIR, 'partials');
-const DATA_FILE = path.join(ROOT, 'data.json');
+const DATA_DIR = path.join(ROOT, 'data');
 
 function loadPartials() {
     const partials = {};
@@ -337,12 +337,23 @@ function build() {
     console.log('Feeltracker Site Builder');
     console.log('========================\n');
 
-    // Load data
-    if (!fs.existsSync(DATA_FILE)) {
-        console.error('ERROR: data.json not found. Run extract.js first or create data.json manually.');
+    // Load data from split files
+    if (!fs.existsSync(DATA_DIR)) {
+        console.error('ERROR: data/ directory not found. Run extract.js first or create data files manually.');
         process.exit(1);
     }
-    const data = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+    const site = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'site.json'), 'utf8'));
+    const languages = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'languages.json'), 'utf8'));
+
+    // Load all per-language page files
+    const pages = [];
+    for (const entry of fs.readdirSync(DATA_DIR)) {
+        const pagesFile = path.join(DATA_DIR, entry, 'pages.json');
+        if (fs.statSync(path.join(DATA_DIR, entry)).isDirectory() && fs.existsSync(pagesFile)) {
+            const langPages = JSON.parse(fs.readFileSync(pagesFile, 'utf8'));
+            pages.push(...langPages);
+        }
+    }
 
     // Load templates and partials
     const templates = loadTemplates();
@@ -350,12 +361,12 @@ function build() {
 
     console.log(`Templates: ${Object.keys(templates).join(', ')}`);
     console.log(`Partials:  ${Object.keys(partials).join(', ')}`);
-    console.log(`Pages:     ${data.pages.length}\n`);
+    console.log(`Pages:     ${pages.length}\n`);
 
     let built = 0;
     let errors = 0;
 
-    for (const page of data.pages) {
+    for (const page of pages) {
         const template = templates[page.template];
         if (!template) {
             console.error(`  ✗ ${page.outputPath} — template "${page.template}" not found`);
@@ -364,7 +375,7 @@ function build() {
         }
 
         try {
-            const context = buildContext(data.site, data.languages, page);
+            const context = buildContext(site, languages, page);
             const html = render(template, context, partials);
             const outputFile = path.join(ROOT, page.outputPath);
             ensureDir(outputFile);

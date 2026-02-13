@@ -2,47 +2,65 @@
 
 ## Architecture Overview
 
-All 48 HTML pages are generated from a single `data.json` file + HTML templates.
+All 48 HTML pages are generated from `data/` JSON files + HTML templates.
 **Never edit the HTML files directly** — they are overwritten on every build.
 
 ```
-data.json          ← All content (text, meta tags, structured data)
-templates/         ← HTML templates with {{mustache}} syntax
-  app-page.html    ← Product pages (blood-pressure, sleep, weight, etc.)
-  tips-page.html   ← Tips pages (20 tips per app)
-  index-page.html  ← Homepage (hero, apps grid, features, reviews, etc.)
-  utility-page.html← About, privacy, terms, faq, support (raw HTML body)
-  partials/        ← Shared components
-    nav.html       ← Navigation bar with language selector
-    footer.html    ← Footer links, copyright, disclaimer
+data/
+  site.json          ← Global config (URLs, GTM/GA IDs, author)
+  languages.json     ← Per-language config (nav, footer, cookie, flag)
+  en/pages.json      ← All 16 English page entries
+  de/pages.json      ← All 16 German page entries
+  es/pages.json      ← All 16 Spanish page entries
+templates/           ← HTML templates with {{mustache}} syntax
+  app-page.html      ← Product pages (blood-pressure, sleep, weight, etc.)
+  tips-page.html     ← Tips pages (20 tips per app)
+  index-page.html    ← Homepage (hero, apps grid, features, reviews, etc.)
+  utility-page.html  ← About, privacy, terms, faq, support (raw HTML body)
+  partials/          ← Shared components
+    nav.html         ← Navigation bar with language selector
+    footer.html      ← Footer links, copyright, disclaimer
     cookie-consent.html
     analytics-head.html
     head-assets.html
-build.js           ← Node.js build script (zero dependencies)
-extract.js         ← One-time migration tool (extracts data from existing HTML)
+build.js             ← Node.js build script (zero dependencies)
+validate.js          ← Checks structural parity across languages (EN = reference)
+extract.js           ← One-time migration tool (extracts data from existing HTML)
 ```
 
 ## Quick Commands
 
 ```bash
-node build.js      # Regenerate all 48 HTML pages from data.json
-node extract.js    # Re-extract data.json from existing HTML (migration only)
+node build.js        # Regenerate all 48 HTML pages from data/ files
+node validate.js     # Check all languages match EN structure
+node extract.js      # Re-extract data from existing HTML (migration only)
 ```
 
-## data.json Structure
+## Data File Structure
 
+### data/site.json
+```json
+{ "url": "...", "name": "...", "author": "...", "copyrightYear": "...", "gtmId": "...", "gaId": "...", "awId": "..." }
 ```
+
+### data/languages.json
+```json
 {
-  "site": { url, name, author, copyrightYear, gtmId, gaId, awId },
-  "languages": {
-    "en": { code, name, flag, prefix, currency, nav: { apps: [...] }, footer: {...}, cookie: {...} },
-    "de": { ... },
-    "es": { ... }
-  },
-  "pages": [
-    { template, lang, slug, path, outputPath, appId?, data: { ... } }
-  ]
+  "en": { "code": "en", "name": "English", "flag": "🇬🇧", "prefix": "", "currency": "USD",
+          "nav": { "apps": [...] }, "footer": {...}, "cookie": {...} },
+  "de": { ... },
+  "es": { ... }
 }
+```
+
+### data/{lang}/pages.json
+Array of page entries:
+```json
+[
+  { "template": "app-page", "lang": "en", "slug": "blood-pressure",
+    "path": "blood-pressure", "outputPath": "blood-pressure/index.html",
+    "data": { ... } }
+]
 ```
 
 ## Page Types and Their Data
@@ -96,30 +114,30 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
 ## Common Tasks
 
 ### Edit existing text (e.g., change a feature description)
-1. Open `data.json`
-2. Find the page by `slug` and `lang` (e.g., `slug: "blood-pressure"`, `lang: "en"`)
+1. Open `data/en/pages.json` (or `de`, `es`)
+2. Find the page by `slug` (e.g., `"slug": "blood-pressure"`)
 3. Edit the field (e.g., `data.features.items[2].description`)
 4. Run `node build.js`
 
 ### Add a new tip to a tips page
-1. Find the tips page in `data.json` (e.g., `path: "blood-pressure/tips"`, `lang: "en"`)
+1. Find the tips page in `data/en/pages.json` (e.g., `"slug": "blood-pressure"`, template `"tips-page"`)
 2. Add to the appropriate `tipCategories[].tips[]` array:
    ```json
    { "icon": "fas fa-icon-name", "title": "21. New Tip Title", "content": "Tip text with <a href=\"url\">links</a> supported." }
    ```
-3. Do the same for DE and ES translations
-4. Run `node build.js`
+3. Do the same in `data/de/pages.json` and `data/es/pages.json`
+4. Run `node validate.js && node build.js`
 
 ### Add a new FAQ item
-1. Find the page in `data.json`
+1. Find the page in the relevant `data/{lang}/pages.json`
 2. Add to `data.faq.items[]`:
    ```json
    { "question": "New question?", "answer": "<p>Answer with <strong>HTML</strong> supported.</p>" }
    ```
-3. Run `node build.js`
+3. Add to all languages, then run `node validate.js && node build.js`
 
 ### Add a new review
-1. Find the page in `data.json`
+1. Find the page in `data/{lang}/pages.json`
 2. Add to `data.reviews.items[]`:
    ```json
    { "title": "Review Title", "content": "Review text without quotes", "author": "Username, App Name" }
@@ -127,7 +145,7 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
 3. Run `node build.js`
 
 ### Add a new language (e.g., French)
-1. Add language config to `data.json` under `languages`:
+1. Add language config to `data/languages.json`:
    ```json
    "fr": {
      "code": "fr", "name": "Français", "flag": "🇫🇷", "prefix": "/fr", "currency": "EUR",
@@ -136,18 +154,28 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
      "cookie": { "title": "Paramètres des Cookies", ... }
    }
    ```
-2. Duplicate each EN page entry in the `pages` array, set `lang: "fr"`, update `path` (e.g., `"fr/blood-pressure"`), `outputPath` (e.g., `"fr/blood-pressure/index.html"`), and translate all `data` fields
-3. Run `node build.js` — new HTML files are created automatically
+2. Copy `data/en/pages.json` → `data/fr/pages.json`
+3. In `data/fr/pages.json`: set `lang: "fr"`, update `path` (e.g., `"fr/blood-pressure"`), `outputPath` (e.g., `"fr/blood-pressure/index.html"`), and translate all `data` fields
+4. Run `node validate.js && node build.js`
 
 ### Add a new app
-1. Add the app to `nav.apps[]` for each language in `languages`
-2. Add page entries for each language: app page, tips page
-3. Run `node build.js`
+1. Add the app to `nav.apps[]` for each language in `data/languages.json`
+2. Add page entries to each `data/{lang}/pages.json`: app page + tips page
+3. Run `node validate.js && node build.js`
 
 ### Delete a page
-1. Remove the page entry from `data.json` `pages` array
+1. Remove the page entry from each `data/{lang}/pages.json`
 2. Run `node build.js` (note: build won't delete old files, remove them manually)
 3. `rm path/to/old/index.html`
+
+## Validation
+
+`validate.js` uses EN as the reference language and checks all other languages for:
+- **Same page set** — every slug+template in EN must exist in each language
+- **Same data structure** — matching keys and nested object shapes
+- **Array length differences** — shown as warnings (not errors), since languages may legitimately differ (e.g., more reviews in EN)
+
+Structural errors (missing keys/pages) exit with code 1. Array length warnings exit with code 0.
 
 ## Template Syntax
 
@@ -180,8 +208,9 @@ When a page is rendered, the template receives a merged context containing:
 ## Important Notes
 
 - **Never edit HTML files** — they are regenerated by `node build.js`
+- **Always run `node validate.js`** before building after structural changes
 - **extract.js is for migration only** — don't run it on built files (it reads originals)
 - If you need to re-extract, first restore originals: `git checkout <commit> -- <files>`
 - The build does NOT delete old files — remove manually when deleting pages
 - Tips and index pages have NO shared footer partial — tips pages have no footer at all, index pages have a custom footer stored in `indexFooter`
-- Utility pages (about, privacy, terms, faq, support) use raw HTML `bodyContent` — edit the HTML directly in data.json for these pages
+- Utility pages (about, privacy, terms, faq, support) use raw HTML `bodyContent` — edit the HTML directly in the pages.json for these pages
