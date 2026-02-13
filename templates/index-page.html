@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="{{lang.code}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{> analytics-head}}
+
+    <!-- Primary Meta Tags -->
+    <title>{{meta.title}}</title>
+    <meta name="title" content="{{meta.title}}">
+    <meta name="description" content="{{meta.description}}">
+{{#if meta.keywords}}
+    <meta name="keywords" content="{{meta.keywords}}">
+{{/if}}
+    <meta name="author" content="{{site.author}}">
+    <link rel="canonical" href="{{canonicalUrl}}">
+{{#each langSwitcher}}
+    <link rel="alternate" hreflang="{{code}}" href="{{fullUrl}}">
+{{/each}}
+    <link rel="alternate" hreflang="x-default" href="{{xDefaultUrl}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{canonicalUrl}}">
+    <meta property="og:title" content="{{meta.ogTitle}}">
+    <meta property="og:description" content="{{meta.ogDescription}}">
+    <meta property="og:image" content="{{meta.ogImage}}">
+{{#if meta.ogSiteName}}
+    <meta property="og:site_name" content="{{meta.ogSiteName}}">
+{{/if}}
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{canonicalUrl}}">
+    <meta property="twitter:title" content="{{meta.ogTitle}}">
+    <meta property="twitter:description" content="{{meta.twitterDescription}}">
+    <meta property="twitter:image" content="{{meta.ogImage}}">
+{{#if meta.twitterSite}}
+    <meta name="twitter:site" content="{{meta.twitterSite}}">
+{{/if}}
+
+    <!-- iOS / Apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="{{site.name}}">
+
+{{> head-assets}}
+
+    <!-- Structured Data -->
+{{structuredDataHtml}}
+</head>
+<body>
+{{christmasHtml}}
+
+{{> nav}}
+
+{{christmasBannerHtml}}
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <div class="hero-logo">{{hero.logo}}</div>
+        <h1>{{hero.title}}</h1>
+        <p class="hero-subtitle">{{hero.subtitle}}</p>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+{{#each hero.stats}}
+            <div class="hero-stat">
+                <div class="hero-stat-number">{{number}}</div>
+                <div class="hero-stat-label">{{label}}</div>
+            </div>
+{{/each}}
+        </div>
+
+        <!-- Privacy Badge -->
+        <div style="color: #059669; padding: 16px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> {{hero.privacyText}}
+        </div>
+
+        <div class="hero-features">
+{{#each hero.featureBadges}}
+            <span class="feature-badge"><i class="{{icon}}"></i> {{text}}</span>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Apps Grid -->
+    <section class="apps-section">
+        <h2 class="center-text">{{apps.title}}</h2>
+
+{{#each apps.items}}
+        <!-- {{title}} -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="{{slug}}/">
+                    <img src="{{iconSrc}}" class="app-icon-large" alt="{{iconAlt}}">
+                </a>
+                <div class="app-card-title">
+                    <h3>{{title}}</h3>
+                    <p class="app-subtitle">{{subtitle}}</p>
+{{#if badge}}
+                    <div style="color: #2563eb; display: inline-block; margin-top: 8px; font-size: 0.8em; font-weight: 600;">
+                        {{badge}}
+                    </div>
+{{/if}}
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">{{description}}</p>
+                <ul class="feature-list">
+{{#each features}}
+                    <li><i class="{{icon}}"></i> {{text}}</li>
+{{/each}}
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="{{slug}}/" class="learn-more-button">{{learnMoreText}}</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-button" aria-label="{{downloadAlt}}">
+                        <img class="store_button" src="images/appstore_link.svg" alt="{{downloadAlt}}">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+{{/each}}
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section center-text">
+        <h2>{{features.title}}</h2>
+        <div class="features-grid">
+{{#each features.items}}
+            <div class="feature-box">
+                <div class="feature-icon"><i class="{{icon}}"></i></div>
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- AI Features Highlight -->
+    <section class="ai-section center-text">
+        <h2>{{aiFeatures.title}}</h2>
+        <p class="section-subtitle">{{aiFeatures.subtitle}}</p>
+
+        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">{{aiFeatures.freeTitle}}</h3>
+        <div class="ai-features-grid">
+{{#each aiFeatures.free}}
+            <div class="ai-feature">
+                <h3><i class="{{icon}}"></i> {{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+{{/each}}
+        </div>
+
+        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">{{aiFeatures.premiumTitle}}</h3>
+        <div class="ai-features-grid">
+{{#each aiFeatures.premium}}
+            <div class="ai-feature">
+                <h3><i class="{{icon}}"></i> {{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+{{/each}}
+        </div>
+
+        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
+            {{aiFeatures.disclaimerTitle}}
+            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
+                {{aiFeatures.disclaimerText}}
+            </p>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof center-text">
+        <h2>{{socialProof.title}}</h2>
+        <p class="section-subtitle">{{socialProof.subtitle}}</p>
+        <div class="stats-grid">
+{{#each socialProof.stats}}
+            <div class="stat-box">
+                <div class="stat-number">{{number}}</div>
+                <div class="stat-label">{{label}}</div>
+            </div>
+{{/each}}
+        </div>
+    </section>
+
+{{doctorEndorsementHtml}}
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">{{reviews.title}}</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 32px;">{{reviews.subtitle}}</p>
+
+        <div class="reviews-grid">
+{{#each reviews.items}}
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">{{title}}</div>
+                </div>
+                <p class="review-content">"{{content}}"</p>
+                <p class="review-author">- {{author}}</p>
+            </div>
+
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Platforms -->
+    <section class="platforms-section center-text">
+        <h2>{{platforms.title}}</h2>
+        <p class="section-subtitle">{{platforms.subtitle}}</p>
+        <p>{{platforms.text}}</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2 class="center-text">{{faq.title}}</h2>
+
+{{#each faq.items}}
+        <h3>{{question}}</h3>
+        {{answer}}
+
+{{/each}}
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>{{cta.title}}</h2>
+        <p>{{cta.subtitle}}</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 40px;">
+{{#each cta.items}}
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">{{name}}</p>
+                <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" aria-label="{{downloadAlt}}">
+                    <img class="store_button" src="images/appstore_link.svg" alt="{{downloadAlt}}" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+{{#each indexFooter.links}}
+            <a href="{{href}}">{{text}}</a>
+{{/each}}
+        </div>
+        <p class="footer-copyright">{{indexFooter.copyright}}</p>
+        <p class="footer-tagline">{{indexFooter.tagline}}</p>
+        <p class="footer-disclaimer">{{indexFooter.disclaimer}}</p>
+    </footer>
+
+{{> cookie-consent}}
+
+{{#if santaScript}}
+<script>
+{{santaScript}}
+</script>
+{{/if}}
+</body>
+</html>

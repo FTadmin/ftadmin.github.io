@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{lang.code}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{> analytics-head}}
+
+{{#if conversionEvent}}
+    <!-- Event snippet for Page view conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': '{{conversionEvent.sendTo}}',
+          'value': {{conversionEvent.value}},
+          'currency': '{{conversionEvent.currency}}'
+      });
+    </script>
+
+{{/if}}
+{{#if appId}}
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id={{appId}}">
+
+{{/if}}
+    <!-- Primary Meta Tags -->
+    <title>{{meta.title}}</title>
+    <meta name="title" content="{{meta.title}}">
+    <meta name="description" content="{{meta.description}}">
+{{#if meta.keywords}}
+    <meta name="keywords" content="{{meta.keywords}}">
+{{/if}}
+    <meta name="author" content="{{site.author}}">
+    <link rel="canonical" href="{{canonicalUrl}}">
+{{#each langSwitcher}}
+    <link rel="alternate" hreflang="{{code}}" href="{{fullUrl}}">
+{{/each}}
+    <link rel="alternate" hreflang="x-default" href="{{xDefaultUrl}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{canonicalUrl}}">
+    <meta property="og:title" content="{{meta.ogTitle}}">
+    <meta property="og:description" content="{{meta.ogDescription}}">
+    <meta property="og:image" content="{{meta.ogImage}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{canonicalUrl}}">
+    <meta property="twitter:title" content="{{meta.ogTitle}}">
+    <meta property="twitter:description" content="{{meta.twitterDescription}}">
+    <meta property="twitter:image" content="{{meta.ogImage}}">
+
+{{> head-assets}}
+
+    <!-- Structured Data -->
+{{structuredDataHtml}}
+</head>
+<body>
+{{> nav}}
+
+    <section class="hero">
+        <img src="{{hero.image}}" alt="{{hero.imageAlt}}" class="hero-app-icon">
+        <h1>{{hero.title}}</h1>
+        <p class="hero-subtitle">{{hero.subtitle}}</p>
+    </section>
+
+    <section class="support-section">
+        <div class="container">
+{{#each tipCategories}}
+            <h2 class="center-text">{{title}}</h2>
+            <div class="tips-grid">
+{{#each tips}}
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="{{icon}}"></i></div>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                </div>
+
+{{/each}}
+            </div>
+
+{{/each}}
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container center-text">
+            <h2>{{cta.title}}</h2>
+            <p>{{cta.subtitle}}</p>
+            <a href="{{cta.appStoreUrl}}" class="cta-button">
+                <img class="store_button" src="/images/appstore_link.svg" alt="{{cta.buttonAlt}}" style="width: 180px; height: 53px;">
+            </a>
+            <p class="hero-platform-info">{{cta.platformInfo}}</p>
+        </div>
+    </section>
+
+    <style>
+{{customCss}}
+    </style>
+
+{{> cookie-consent}}
+</body>
+</html>
