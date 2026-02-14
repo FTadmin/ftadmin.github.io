@@ -48,7 +48,7 @@ node extract.js      # Re-extract data from existing HTML (migration only)
 ### data/languages.json
 ```json
 {
-  "en": { "code": "en", "name": "English", "flag": "🇬🇧", "prefix": "", "currency": "GBP",
+  "en": { "code": "en", "name": "English", "flag": "🇺🇸", "prefix": "",
           "nav": { "apps": [...] }, "footer": {...}, "cookie": {...} },
   "de": { ... }, "es": { ... }, "fr": { ... }, "it": { ... }
 }
