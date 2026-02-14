@@ -158,13 +158,17 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
 2. **Create pages data:** Copy `data/en/pages.json` → `data/pt/pages.json`
 3. **Update all page entries** in `data/pt/pages.json`:
    - Set `"lang": "pt"` on every page entry
-   - Update `"path"` (e.g., `"pt/blood-pressure"`) and `"outputPath"` (e.g., `"pt/blood-pressure/index.html"`)
+   - Keep `"path"` the same as EN (e.g., `"blood-pressure"`, NOT `"pt/blood-pressure"`)
+   - Update `"outputPath"` to add language prefix (e.g., `"pt/blood-pressure/index.html"`)
    - Translate all `data` fields
-4. **Translate everything** — common things to miss:
-   - `cta.items[].name` and `cta.items[].downloadAlt` on the **index page** (the app names above download buttons, e.g., "Pressão Arterial Feeltracker")
-   - `apps.items[].downloadAlt` on the index page
-   - `indexFooter` content on the index page
+4. **Translate everything** — CRITICAL fields that are frequently missed on the **index page**:
+   - **`apps.items[].title`** — the app name shown in the apps grid (e.g., "Pressão Arterial Feeltracker"). These MUST be translated, not left in English.
+   - **`apps.items[].downloadAlt`** — alt text for download buttons in the apps grid
+   - **`cta.items[].name`** — the app name shown above download buttons in the CTA section at the bottom of the page (e.g., "Pressão Arterial Feeltracker"). These MUST be translated.
+   - **`cta.items[].downloadAlt`** — alt text for download buttons in the CTA section
+   - **`indexFooter`** content (links, copyright, tagline, disclaimer)
    - All `meta` fields (title, description, keywords, OG tags)
+   - All `structuredDataHtml` text content
 5. **Use absolute image paths** — all `iconSrc` values must start with `/` (e.g., `/images/BPT_1024.png`, not `images/BPT_1024.png`), otherwise images break in language subdirectories
 6. **Update `sitemap.xml`:**
    - Add a new `<url>` entry for every page in the new language (16 total)
