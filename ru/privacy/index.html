@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Политика конфиденциальности - Feeltracker</title>
+    <meta name="title" content="Политика конфиденциальности - Feeltracker">
+    <meta name="description" content="">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ru/privacy/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/privacy/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/privacy/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/privacy/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/privacy/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/privacy/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/privacy/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/privacy/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/ru/privacy/">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ru/privacy/">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/ru/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇷🇺</span>
+                    <span>Русский</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/privacy/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/privacy/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/privacy/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/privacy/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/privacy/" class="active"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/fr/privacy/"><span class="flag">🇫🇷</span> Français</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/ru/blood-pressure/">Артериальное давление</a>
+
+            <a href="/ru/daily-journal/">Ежедневник</a>
+
+            <a href="/ru/mental-health/">Психическое здоровье</a>
+
+            <a href="/ru/sleep/">Сон и сновидения</a>
+
+            <a href="/ru/weight/">Вес и питание</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+<h1>Политика конфиденциальности</h1>
+<p>Компания Custom Arts Ltd создала приложение Feeltracker как условно-бесплатное приложение. Данная УСЛУГА предоставляется компанией Custom Arts Ltd бесплатно и предназначена для использования «как есть».</p>
+<p>Эта страница предназначена для информирования посетителей о нашей политике в отношении сбора, использования и раскрытия информации при использовании нашего Сервиса.</p>
+<p>Если вы решите использовать наш Сервис, вы соглашаетесь со сбором и использованием информации в соответствии с данной политикой. Однако приложение Feeltracker не собирает и не хранит персональные данные (PII) на наших серверах. Все данные, генерируемые приложением, хранятся локально на вашем устройстве или синхронизируются с вашей личной учётной записью iCloud. Мы не имеем доступа к этим данным.</p>
+
+<h2>Сбор и использование информации</h2>
+<p>Для улучшения работы нашего Сервиса приложение Feeltracker может использовать iCloud для синхронизации данных между вашими устройствами. Эти данные надёжно хранятся в вашей учётной записи iCloud, и мы не собираем и не получаем доступ к вашим персональным данным. Вы можете управлять данными iCloud через настройки iCloud на вашем устройстве.</p>
+
+<div>
+  <p>Приложение использует сторонние сервисы, которые могут собирать агрегированные, неидентифицируемые данные (такие как аналитика использования или отчёты о сбоях) для улучшения работы приложения.</p>
+  <p>Ссылки на политику конфиденциальности сторонних сервисов, используемых приложением:</p>
+  <ul>
+    <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+    <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+    <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+    <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a></li>
+  </ul>
+</div>
+
+<h2>Синхронизация через iCloud</h2>
+<p>Feeltracker хранит и синхронизирует данные пользователей между устройствами с помощью сервиса Apple iCloud. Это позволяет вам получать доступ к дневнику здоровья на всех ваших устройствах Apple. Данные, хранящиеся в iCloud, защищены мерами конфиденциальности и безопасности Apple. Мы не имеем доступа к этим данным. Для получения дополнительной информации о конфиденциальности iCloud, пожалуйста, ознакомьтесь с <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности Apple</a>.</p>
+
+<h2>Данные журнала</h2>
+<p>В случае ошибки или сбоя в приложении мы собираем данные журнала через сторонние сервисы, такие как Firebase Crashlytics. Эти данные журнала не содержат персональной информации и используются исключительно для диагностики и исправления ошибок с целью улучшения работы приложения.</p>
+
+<h2>Файлы cookie</h2>
+<p>Само приложение Feeltracker не использует файлы cookie. Однако приложение может использовать сторонние сервисы или библиотеки, которые используют «cookie» для сбора неперсонализированных данных. Вы можете принять или отклонить эти файлы cookie и узнать, когда cookie отправляется на ваше устройство. Если вы откажетесь от файлов cookie, некоторые функции Сервиса могут быть недоступны.</p>
+
+<h2>Поставщики услуг</h2>
+<p>Мы можем привлекать сторонние компании и лиц по следующим причинам:</p>
+<ul>
+  <li>Для обеспечения работы нашего Сервиса;</li>
+  <li>Для предоставления Сервиса от нашего имени;</li>
+  <li>Для выполнения услуг, связанных с Сервисом; или</li>
+  <li>Для помощи в анализе использования нашего Сервиса.</li>
+</ul>
+<p>Эти сторонние сервисы могут собирать неперсонализированную информацию, как описано выше, но они обязаны не раскрывать и не использовать информацию для каких-либо иных целей.</p>
+
+<h2>Безопасность</h2>
+<p>Мы ценим ваше доверие при предоставлении информации через использование iCloud. Мы стремимся использовать коммерчески приемлемые средства её защиты. Однако помните, что ни один метод передачи данных через интернет или электронного хранения не является на 100% безопасным и надёжным, и мы не можем гарантировать абсолютную безопасность.</p>
+
+<h2>Ссылки на другие сайты</h2>
+<p>Данный Сервис может содержать ссылки на другие сайты. Если вы нажмёте на ссылку третьей стороны, вы будете перенаправлены на этот сайт. Обратите внимание, что эти внешние сайты не управляются нами. Поэтому мы настоятельно рекомендуем вам ознакомиться с Политикой конфиденциальности этих сайтов. Мы не контролируем и не несём ответственности за содержание, политику конфиденциальности или практики сторонних сайтов или сервисов.</p>
+
+<h2>Конфиденциальность детей</h2>
+<p>Приложение Feeltracker не предназначено для детей младше 12 лет. Мы сознательно не собираем персональные данные пользователей младше 12 лет. Если нам станет известно, что ребёнок младше 12 лет предоставил нам персональную информацию, мы немедленно примем меры по её удалению.</p>
+<p>Если вы являетесь родителем или опекуном и считаете, что ваш ребёнок младше 12 лет предоставил нам персональную информацию, пожалуйста, свяжитесь с нами, чтобы мы могли принять соответствующие меры.</p>
+
+<h2>Использование сервисов OpenAI</h2>
+<p>Наше приложение интегрирует сервисы, предоставляемые OpenAI, которые могут обрабатывать вводимые пользователем данные (такие как текст или другие данные) для генерации обратной связи, предложений или контента на основе ИИ. При использовании этих сервисов предоставляемые вами данные передаются на серверы OpenAI для обработки. Эти данные используются исключительно для предоставления запрошенного ИИ-ответа и не хранятся и не используются для каких-либо иных целей, если иное явно не указано в политике конфиденциальности OpenAI.</p>
+<p>Мы рекомендуем ознакомиться с политикой конфиденциальности OpenAI, чтобы понять, как обрабатываются ваши данные: 
+    <a href="https://openai.com/policies/privacy-policy" target="_blank">Политика конфиденциальности OpenAI</a>.</p>
+<p>Используя эту функцию в нашем приложении, вы подтверждаете и соглашаетесь с тем, что ваши данные будут переданы и обработаны OpenAI в соответствии с их политикой.</p>
+
+<h2>Изменения данной Политики конфиденциальности</h2>
+<p>Мы можем время от времени обновлять нашу Политику конфиденциальности. Поэтому рекомендуем вам периодически просматривать эту страницу на предмет изменений. Мы уведомим вас о любых изменениях, разместив новую Политику конфиденциальности на этой странице.</p>
+<p>Данная политика действует с 19 октября 2024 года.</p>
+
+<h2>Связаться с нами</h2>
+<p>Если у вас есть вопросы или предложения по нашей Политике конфиденциальности, не стесняйтесь обращаться к нам по адресу <a href="mailto:support@feeltracker.com">support@feeltracker.com</a>.</p>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ru/privacy/">Главная</a>
+            <a href="/ru/about/">О нас</a>
+            <a href="mailto:support@feeltracker.com">Поддержка по эл. почте</a>
+            <a href="/ru/support/">Поддержка</a>
+            <a href="/ru/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Подписаться в X</a>
+            <a href="/ru/privacy/">Политика конфиденциальности</a>
+            <a href="/ru/terms/">Условия использования</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Все права защищены.</p>
+        <p class="footer-tagline">Часть семейства приложений Feeltracker для отслеживания здоровья</p>
+        <p class="footer-disclaimer">Ваши данные о здоровье хранятся на вашем устройстве и в iCloud — мы никогда не получаем к ним доступ и не продаём их. Приложения Feeltracker не являются медицинскими устройствами. Только для информационных целей, не заменяют профессиональную медицинскую консультацию, диагностику или лечение.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Мы ценим вашу конфиденциальность</strong></p>
+                <p>Мы используем файлы cookie для аналитики, чтобы улучшить наш сайт и приложение. Рекламные cookie не используются. Ознакомьтесь с нашей <a href="/ru/privacy/">Политикой конфиденциальности</a> для подробностей.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Отклонить</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Принять</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>
