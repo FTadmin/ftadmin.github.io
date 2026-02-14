@@ -170,6 +170,7 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
    - All `meta` fields (title, description, keywords, OG tags)
    - All `structuredDataHtml` text content
 5. **Use absolute image paths** — all `iconSrc` values must start with `/` (e.g., `/images/BPT_1024.png`, not `images/BPT_1024.png`), otherwise images break in language subdirectories
+   - **Utility page `bodyContent`** — the FAQ page contains `<img src="...">` tags with relative paths. EN uses `../images/` (one level up from `/faq/`), but non-EN languages are two levels deep (`/{lang}/faq/`) so they MUST use `../../images/`. When copying from EN, always fix these relative paths. Preferred: use absolute paths like `/images/add_new.jpg`.
 6. **Update `sitemap.xml`:**
    - Add a new `<url>` entry for every page in the new language (16 total)
    - Add `<xhtml:link rel="alternate" hreflang="pt" href="..."/>` to **every existing** `<url>` entry across all languages
