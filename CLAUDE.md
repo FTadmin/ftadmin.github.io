@@ -2,7 +2,7 @@
 
 ## Architecture Overview
 
-All 48 HTML pages are generated from `data/` JSON files + HTML templates.
+All HTML pages are generated from `data/` JSON files + HTML templates (16 pages per language).
 **Never edit the HTML files directly** — they are overwritten on every build.
 
 ```
@@ -12,6 +12,8 @@ data/
   en/pages.json      ← All 16 English page entries
   de/pages.json      ← All 16 German page entries
   es/pages.json      ← All 16 Spanish page entries
+  fr/pages.json      ← All 16 French page entries
+  it/pages.json      ← All 16 Italian page entries
 templates/           ← HTML templates with {{mustache}} syntax
   app-page.html      ← Product pages (blood-pressure, sleep, weight, etc.)
   tips-page.html     ← Tips pages (20 tips per app)
@@ -31,7 +33,7 @@ extract.js           ← One-time migration tool (extracts data from existing HT
 ## Quick Commands
 
 ```bash
-node build.js        # Regenerate all 48 HTML pages from data/ files
+node build.js        # Regenerate all HTML pages from data/ files
 node validate.js     # Check all languages match EN structure
 node extract.js      # Re-extract data from existing HTML (migration only)
 ```
@@ -46,10 +48,9 @@ node extract.js      # Re-extract data from existing HTML (migration only)
 ### data/languages.json
 ```json
 {
-  "en": { "code": "en", "name": "English", "flag": "🇬🇧", "prefix": "", "currency": "USD",
+  "en": { "code": "en", "name": "English", "flag": "🇺🇸", "prefix": "",
           "nav": { "apps": [...] }, "footer": {...}, "cookie": {...} },
-  "de": { ... },
-  "es": { ... }
+  "de": { ... }, "es": { ... }, "fr": { ... }, "it": { ... }
 }
 ```
 
@@ -114,7 +115,7 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
 ## Common Tasks
 
 ### Edit existing text (e.g., change a feature description)
-1. Open `data/en/pages.json` (or `de`, `es`)
+1. Open `data/en/pages.json` (or any language)
 2. Find the page by `slug` (e.g., `"slug": "blood-pressure"`)
 3. Edit the field (e.g., `data.features.items[2].description`)
 4. Run `node build.js`
@@ -125,7 +126,7 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
    ```json
    { "icon": "fas fa-icon-name", "title": "21. New Tip Title", "content": "Tip text with <a href=\"url\">links</a> supported." }
    ```
-3. Do the same in `data/de/pages.json` and `data/es/pages.json`
+3. Do the same in every other language's `pages.json`
 4. Run `node validate.js && node build.js`
 
 ### Add a new FAQ item
@@ -144,19 +145,33 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
    ```
 3. Run `node build.js`
 
-### Add a new language (e.g., French)
-1. Add language config to `data/languages.json`:
+### Add a new language (e.g., Portuguese)
+1. **Add language config** to `data/languages.json`:
    ```json
-   "fr": {
-     "code": "fr", "name": "Français", "flag": "🇫🇷", "prefix": "/fr", "currency": "EUR",
-     "nav": { "apps": [{ "name": "Tension Artérielle", "slug": "blood-pressure" }, ...] },
-     "footer": { "home": "Accueil", "about": "À propos", ... },
-     "cookie": { "title": "Paramètres des Cookies", ... }
+   "pt": {
+     "code": "pt", "name": "Português", "flag": "🇵🇹", "prefix": "/pt", "currency": "EUR",
+     "nav": { "apps": [{ "name": "Pressão Arterial", "slug": "blood-pressure" }, ...] },
+     "footer": { "home": "Início", "about": "Sobre", ... },
+     "cookie": { "title": "Valorizamos a sua privacidade", ... }
    }
    ```
-2. Copy `data/en/pages.json` → `data/fr/pages.json`
-3. In `data/fr/pages.json`: set `lang: "fr"`, update `path` (e.g., `"fr/blood-pressure"`), `outputPath` (e.g., `"fr/blood-pressure/index.html"`), and translate all `data` fields
-4. Run `node validate.js && node build.js`
+2. **Create pages data:** Copy `data/en/pages.json` → `data/pt/pages.json`
+3. **Update all page entries** in `data/pt/pages.json`:
+   - Set `"lang": "pt"` on every page entry
+   - Update `"path"` (e.g., `"pt/blood-pressure"`) and `"outputPath"` (e.g., `"pt/blood-pressure/index.html"`)
+   - Translate all `data` fields
+4. **Translate everything** — common things to miss:
+   - `cta.items[].name` and `cta.items[].downloadAlt` on the **index page** (the app names above download buttons, e.g., "Pressão Arterial Feeltracker")
+   - `apps.items[].downloadAlt` on the index page
+   - `indexFooter` content on the index page
+   - All `meta` fields (title, description, keywords, OG tags)
+5. **Use absolute image paths** — all `iconSrc` values must start with `/` (e.g., `/images/BPT_1024.png`, not `images/BPT_1024.png`), otherwise images break in language subdirectories
+6. **Update `sitemap.xml`:**
+   - Add a new `<url>` entry for every page in the new language (16 total)
+   - Add `<xhtml:link rel="alternate" hreflang="pt" href="..."/>` to **every existing** `<url>` entry across all languages
+7. **Update `robots.txt`:** Add the new language to the "Available in" comment
+8. **Update `llms.txt`:** Add the new language to the Languages section with its URL
+9. **Validate and build:** Run `node validate.js && node build.js`
 
 ### Add a new app
 1. Add the app to `nav.apps[]` for each language in `data/languages.json`

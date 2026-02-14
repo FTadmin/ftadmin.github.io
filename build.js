@@ -357,7 +357,6 @@ function buildContext(site, languages, page) {
         site,
         lang,
         langPrefix: lang.prefix || '',
-        currency: lang.currency,
         langSwitcher,
         navApps,
         brandUrl,
