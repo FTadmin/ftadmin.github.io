@@ -7,10 +7,8 @@
  *
  * Usage: node build.js
  *
- * Workflow for adding a new language:
- *   1. Add the language config to data/languages.json
- *   2. Create data/{lang}/pages.json with translated page entries
- *   3. Run: node build.js
+ * Data layout: each page is a separate JSON file in data/{lang}/
+ *   e.g., data/en/blood-pressure.app.json, data/de/index.json
  */
 
 const fs = require('fs');
@@ -389,13 +387,15 @@ function build() {
     const site = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'site.json'), 'utf8'));
     const languages = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'languages.json'), 'utf8'));
 
-    // Load all per-language page files
+    // Load all per-language page files (individual .json files per page)
     const pages = [];
     for (const entry of fs.readdirSync(DATA_DIR)) {
-        const pagesFile = path.join(DATA_DIR, entry, 'pages.json');
-        if (fs.statSync(path.join(DATA_DIR, entry)).isDirectory() && fs.existsSync(pagesFile)) {
-            const langPages = JSON.parse(fs.readFileSync(pagesFile, 'utf8'));
-            pages.push(...langPages);
+        const langDir = path.join(DATA_DIR, entry);
+        if (!fs.statSync(langDir).isDirectory()) continue;
+        for (const file of fs.readdirSync(langDir)) {
+            if (!file.endsWith('.json')) continue;
+            const page = JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'));
+            pages.push(page);
         }
     }
 

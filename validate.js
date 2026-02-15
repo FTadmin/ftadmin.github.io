@@ -15,9 +15,14 @@ const DATA_DIR = path.join(__dirname, 'data');
 const REF_LANG = 'en';
 
 function loadLanguagePages(lang) {
-    const file = path.join(DATA_DIR, lang, 'pages.json');
-    if (!fs.existsSync(file)) return null;
-    return JSON.parse(fs.readFileSync(file, 'utf8'));
+    const langDir = path.join(DATA_DIR, lang);
+    if (!fs.existsSync(langDir)) return null;
+    const pages = [];
+    for (const file of fs.readdirSync(langDir)) {
+        if (!file.endsWith('.json')) continue;
+        pages.push(JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8')));
+    }
+    return pages.length > 0 ? pages : null;
 }
 
 /**
