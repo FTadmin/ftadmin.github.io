@@ -197,6 +197,20 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
 8. **Update `llms.txt`:** Add the new language to the Languages section with its URL
 9. **Validate and build:** Run `node validate.js && node build.js`
 
+### Translation tips and common pitfalls
+These lessons were learned from the Simplified Chinese (zh) translation and apply to all future translations:
+
+1. **JSON escaping** — Translated text often contains quotation marks (e.g., AI says "your data shows..."). ASCII double quotes (`"`) inside JSON string values MUST be escaped as `\"`, or use the language's native quotation marks (e.g., Chinese `\u201C...\u201D`, French `«...»`, German `„..."`) which don't need escaping.
+2. **The `howItWorks` steps** are the most error-prone fields — they contain long markdown content with embedded examples using quotes. Always verify these parse as valid JSON after translation.
+3. **Utility pages (`bodyContent`)** contain raw HTML strings that can be thousands of characters long on a single JSON line. Special characters in the translated HTML (unescaped quotes, backslashes) will break JSON parsing. After writing utility page files, always validate with `node -e "JSON.parse(require('fs').readFileSync('data/{lang}/file.json','utf8'))"`.
+4. **Quick JSON validation for all files in a language:**
+   ```bash
+   for f in data/{lang}/*.json; do node -e "try { JSON.parse(require('fs').readFileSync('$f','utf8')); console.log('OK: $f'); } catch(e) { console.log('ERROR: $f: ' + e.message); }"; done
+   ```
+5. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
+6. **Reviews disclaimer** — Every non-EN language MUST include `"disclaimer"` in the reviews section of app pages AND the index page, stating reviews were translated from English (e.g., Chinese: `"评论翻译自英文原文。最初发布在App Store上。"`).
+7. **Current languages** (10 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh)
+
 ### Add a new app
 1. Add the app to `nav.apps[]` for each language in `data/languages.json`
 2. Create `{slug}.app.json` and `{slug}.tips.json` in each `data/{lang}/` directory
