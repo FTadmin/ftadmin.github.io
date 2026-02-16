@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=799503787">
+
+    <!-- Primary Meta Tags -->
+    <title>체중과 식단 - BMI 체지방률 AI 식단 일기 | Feeltracker</title>
+    <meta name="title" content="체중과 식단 - BMI 체지방률 AI 식단 일기 | Feeltracker">
+    <meta name="description" content="스마트한 체중 관리로 피트니스 목표를 달성하세요. 카메라 스캔 AI로 체중계 수치와 음식을 스캔하여 즉각적인 영양 분석을 받으세요. 체중, BMI, 체지방률을 AI 인사이트로 관리하세요. Apple Health와 동기화, 트렌드 확인, 매크로 영양소 추적. iPhone, iPad, Mac에서 간편한 체중 관리.">
+    <meta name="keywords" content="체지방,체지방률,계산기,BMI,체중,식단,다이어트,감량,체중관리,체중기록,식단일기,칼로리">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ko/weight/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/">
+
+    <link rel="alternate" hreflang="pt-br" href="https://feeltracker.com/pt-br/weight/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/ko/weight/">
+    <meta property="og:title" content="체중과 식단 | AI로 체중과 체지방 기록 | Feeltracker">
+    <meta property="og:description" content="카메라 스캔 AI로 체중과 음식을 관리하세요. 영양 추적, AI 인사이트로 진행 상황 모니터링, Apple Health와 동기화.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ko/weight/">
+    <meta property="twitter:title" content="체중과 식단 | AI로 체중과 체지방 기록 | Feeltracker">
+    <meta property="twitter:description" content="AI로 체중과 음식을 스캔하세요. 영양 추적, 진행 상황 모니터링, 피트니스 목표 달성을 지원합니다.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "체중과 식단",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "체중 트래커",
+      "operatingSystem": "iOS 16.0 or later",
+      "description": "카메라 스캔 AI로 체중, BMI, 체지방률을 기록하세요. 체중계 수치와 음식을 스캔하여 즉각적인 영양 분석을 받으세요. AI 기반 인사이트, Apple Health 동기화, 의사를 위한 보고서 내보내기.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": 493,
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Custom Arts"
+      },
+      "featureList": [
+        "카메라 스캔 AI로 체중계 수치 읽기",
+        "음식 스캔으로 즉각적인 영양 분석",
+        "체중, BMI, 체지방률 기록",
+        "Apple Health 양방향 동기화",
+        "AI 패턴 감지",
+        "월간 평균 및 트렌드 분석",
+        "목표 설정 및 진행 추적",
+        "PDF 및 Excel로 내보내기",
+        "iCloud 백업 및 동기화",
+        "33개 언어 지원"
+      ],
+      "screenshot": "https://feeltracker.com/images/screenshots/wt-1.png",
+      "softwareVersion": "Latest",
+      "inLanguage": ["en", "es", "fr", "de", "it", "nl", "pt", "sv", "no", "da", "fi", "pl", "ru", "uk", "cs", "sk", "ro", "hr", "hu", "ar", "he", "zh", "ja", "ko", "th", "vi", "id", "el", "tr", "ca"],
+      "datePublished": "2015",
+      "downloadUrl": "https://apps.apple.com/app/id799503787",
+      "installUrl": "https://apps.apple.com/app/id799503787",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Wiesiu33"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Excellent App",
+          "reviewBody": "Best weight app in the App Store. Simple to use and it's loaded with valuable information. I use it everyday."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Rufuslynx"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Weight and BMI",
+          "reviewBody": "I find this app is outstanding except for two minor flaws that just irritate me but still works out very well."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "cutting weight"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Simple food diary. Awesome.",
+          "reviewBody": "Simple food diary. Awesome."
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/ko/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇰🇷</span>
+                    <span>한국어</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/weight/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/weight/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/weight/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/weight/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/weight/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/weight/"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/fr/weight/"><span class="flag">🇫🇷</span> Français</a>
+
+                    <a href="/ko/weight/" class="active"><span class="flag">🇰🇷</span> 한국어</a>
+
+                    <a href="/pt-br/weight/"><span class="flag">🇧🇷</span> Português (Brasil)</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/ko/blood-pressure/">혈압</a>
+
+            <a href="/ko/daily-journal/">일기</a>
+
+            <a href="/ko/mental-health/">정신 건강</a>
+
+            <a href="/ko/sleep/">수면과 꿈</a>
+
+            <a href="/ko/weight/" class="current">체중과 식단</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/WT_1024.png" alt="체중과 식단 앱 아이콘" width="150" height="150" class="hero-logo app-icon">
+        <h1>체중과 식단</h1>
+
+        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> 광고 없음 · 추적 없음 · 개인정보 보호 우선
+        </div>
+        <p class="hero-subtitle">스마트한 체중 관리로 피트니스 목표를 달성하세요. 카메라 스캔 AI로 체중계 수치를 읽고, 체중, BMI, 체지방률을 AI 인사이트로 관리하며 무엇이 효과적이고 무엇이 그렇지 않은지 확인하세요.</p>
+        <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="App Store에서 체중과 식단 다운로드" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">기본 기능 무료 (프리미엄 기능 선택 가능)<br>iPhone, iPad, Mac 지원 • iOS 16.0 이상</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">체중과 식단 Feeltracker 실제 화면 보기</h2>
+        <div class="screenshots-grid">
+
+            <div>
+                <img src="/images/screenshots/wt-1.png" alt="체중과 식단 스크린샷 1" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/wt-2.png" alt="체중과 식단 스크린샷 2" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/wt-3.png" alt="체중과 식단 스크린샷 3" class="screenshot-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">체중 관리를 위한 스마트 기능</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>카메라 스캔 AI</h3>
+                <p>체중계 디스플레이를 스캔하여 자동으로 체중을 읽거나, 음식을 스캔하여 칼로리, 단백질, 탄수화물, 지방 분석을 포함한 즉각적인 영양 분석을 받으세요. AI 시각 인식으로 기록이 간편해집니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-weight-scale"></i></div>
+                <h3>종합 신체 측정</h3>
+                <p>체중, BMI, 체지방률을 기록하세요. BMI는 키와 체중으로 자동 계산됩니다. 미터법과 야드파운드법 모두 지원합니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>트렌드 및 평균</h3>
+                <p>월간 평균, 주간 트렌드, 장기적인 진행 상황을 확인하세요. 아름다운 차트로 체중 변화를 한눈에 파악할 수 있으며, 표시 기간도 맞춤 설정할 수 있습니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>목표 추적</h3>
+                <p>감량 또는 증량 목표를 설정하고 진행 상황을 추적하세요. 시각적 인디케이터로 목표 체중까지 얼마나 남았는지 확인할 수 있습니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-dumbbell"></i></div>
+                <h3>Apple Health 연동</h3>
+                <p>Apple Health와 완벽하게 동기화됩니다. 다른 앱이나 웨어러블 기기에서 체중 기록을 가져오세요. 모든 기록을 HealthKit에 저장하여 종합적인 피트니스 관리가 가능합니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                <h3>음식 스캔</h3>
+                <p>카메라를 음식에 갖다 대면 칼로리와 매크로 영양소의 즉각적인 영양 분석을 받을 수 있습니다. 무엇을 먹을지 정보에 기반한 선택을 하고, 다양한 음식이 체중에 어떤 영향을 미치는지 추적하세요.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>AI 기반 인사이트</h3>
+                <p>체중에 영향을 미치는 요인을 발견하세요. AI가 메모를 분석하여 어떤 음식, 운동, 습관이 체중 변화와 관련이 있는지 파악합니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-calendar"></i></div>
+                <h3>캘린더 보기</h3>
+                <p>직관적인 캘린더 인터페이스에서 모든 체중 기록을 확인하세요. 체중 변화의 패턴과 트렌드를 빠르게 파악할 수 있습니다.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">체중과 식단 사용 방법</h2>
+        <p class="section-subtitle center-text">AI 인사이트가 탑재된 종합 체중 관리 시스템</p>
+
+        <div class="app-card">
+            <h3>1. 체중과 음식 기록하기</h3>
+            <div class="app-card-content">
+<p><strong>체중계 디스플레이 스캔:</strong> 카메라를 체중계 디스플레이에 갖다 대면 AI가 자동으로 체중을 읽어냅니다. 모든 브랜드의 디지털 체중계에 호환됩니다 — 입력 불필요, 오류 없음, 화면의 숫자를 즉시 캡처합니다.</p>
+<p><strong>음식 스캔:</strong> 식사나 간식의 사진을 찍으면 즉각적인 영양 분석을 받을 수 있습니다. AI가 음식을 식별하고 칼로리, 단백질, 탄수화물, 지방 분석 및 양 추정치를 제공합니다. 체중과 함께 식단을 기록하기에 완벽합니다.</p>
+<p><strong>수동 입력:</strong> 직접 입력하는 것을 선호하시나요? 체중을 수동으로 입력하고 체지방률, BMI(자동 계산), 허리둘레 등 원하는 측정값을 추가할 수 있습니다.</p>
+<p><strong>상세 메모:</strong> 식사 내용, 운동, 수분 섭취량, 수면의 질, 스트레스 수준, 생리 주기, 약물 복용 등 체중에 영향을 줄 수 있는 내용을 메모로 추가하세요. 진행 사진을 첨부하여 숫자와 함께 시각적으로 기록할 수도 있습니다.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>2. 진행 상황 추적하기</h3>
+            <div class="app-card-content">
+<p><strong>시각적 추적:</strong> 아름다운 차트와 그래프로 체중 기록을 확인하세요. 일별, 주별, 월별 또는 사용자 지정 기간별로 트렌드를 볼 수 있습니다. 색상으로 구분된 인디케이터가 목표를 향한 진행 상황을 보여줍니다.</p>
+<p><strong>스마트 평균:</strong> 자동으로 계산되는 통계에는 일일 변동을 완화하는 주간 및 월간 평균, 체중 변화율, 목표 달성 예측, 일상적인 변동 너머의 실질적인 진행을 보여주는 트렌드 라인이 포함됩니다.</p>
+<p><strong>마일스톤 축하:</strong> 앱이 여러분의 성취를 인식하고 축하해 줍니다 — 첫 2kg 감량, 목표의 10% 달성, 최장 연속 기록 등. 시각적 진행 인디케이터와 달성 배지로 동기부여를 유지하세요.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>3. 패턴 발견하기</h3>
+            <div class="app-card-content">
+<p><strong>AI 분석:</strong> 인공지능이 메모를 분석하여 체중 변화와의 상관관계를 파악합니다. "식단 준비를 한 주에 더 많이 감량한다" 또는 "운동이 주 5회 미만인 주에는 체중이 증가한다" 같은 인사이트를 발견할 수 있습니다.</p>
+<p><strong>맞춤형 인사이트:</strong> 여러분만의 데이터를 기반으로 구체적인 제안을 받으세요. AI가 "아침 운동을 한 주에 0.15kg 더 감량한다" 또는 "주말에는 일관되게 0.5kg 증가하고 수요일까지 원래대로 돌아온다" 같은 패턴을 발견할 수 있습니다.</p>
+<p><strong>대화형 채팅:</strong> 데이터에 대해 자연스러운 한국어로 질문하세요: "주당 평균 감량은 얼마인가요?" 또는 "치팅데이 후의 모든 체중 기록을 보여줘." AI가 맥락을 이해하고 기록 이력에서 즉시 답변합니다.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>4. 목표 달성하기</h3>
+            <div class="app-card-content">
+<p><strong>목표 설정:</strong> 현실적인 일정으로 목표 체중을 설정하세요. 현재 트렌드를 기반으로 목표 달성 예상일을 산출하고, 순조로운지, 앞서가고 있는지, 접근 방식을 조정해야 하는지 보여줍니다.</p>
+<p><strong>전문 보고서:</strong> 영양사, 퍼스널 트레이너, 의사를 위한 종합적인 PDF 또는 Excel 보고서를 내보내세요. 보고서에는 체중 그래프, BMI 트렌드, 체지방률 변화, 식단 및 운동 메모, 통계 요약이 포함되어 전문가 상담에 완벽합니다.</p>
+<p><strong>Apple Health 연동:</strong> Apple Health와 완벽한 양방향 동기화. 스마트 체중계나 다른 앱에서 체중을 가져오고, 모든 데이터를 HealthKit으로 내보내세요. 체중 데이터를 전체 피트니스 및 건강 생태계와 연결합니다.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>인공지능으로 구동</h2>
+        <p class="section-subtitle">체중 패턴을 더 깊이 이해하기 위한 고급 AI 기능</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">무료 AI 기능</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> 질문하기</h4>
+                <p>체중 데이터에 대한 빠른 Q&A — 건강 관련 질문에 즉각적인 답변</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> 채팅</h4>
+                <p>피트니스 여정에 대해 대화형으로 소통하고 맞춤형 가이드를 받으세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> 음성 요약</h4>
+                <p>체중 트렌드의 음성 요약을 들어보세요 — 이동 중 인사이트 확인에 최적</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> 웃겨줘</h4>
+                <p>기록 데이터로 만든 맞춤형 유머로 기분을 전환하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> 마음 진정</h4>
+                <p>스트레스성 과식을 줄이기 위한 AI 가이드 호흡법과 릴랙세이션 운동</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-camera"></i> 카메라 스캔 AI</h4>
+                <p>체중계 디스플레이나 음식을 스캔하여 즉각적인 영양 분석을 받으세요</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">프리미엄 AI 기능</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> 딥 리서치 보고서</h4>
+                <p>체중 데이터의 포괄적인 AI 분석과 상세한 인사이트</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> 패턴 탐정</h4>
+                <p>체중과 생활 습관 요인 사이의 숨겨진 상관관계를 발견하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 목표 어시스턴트</h4>
+                <p>패턴에 기반한 맞춤형 데이터 기반 체중 목표를 받으세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> 의사 요약</h4>
+                <p>의료 방문을 위한 전문적인 체중 관리 요약을 생성하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> 진단서 생성기</h4>
+                <p>필요한 경우 직장이나 학교용 AI 생성 진단서</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> 스토리 생성기</h4>
+                <p>체중 관리 여정을 창의적이고 매력적인 이야기로 변환하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> 텍스트 요약</h4>
+                <p>체중 트렌드의 공유 가능한 텍스트 메시지 요약을 만드세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> 맞춤형 퀴즈</h4>
+                <p>데이터 기반 AI 생성 10문항 퀴즈로 재미있게 지식을 테스트하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> 텍스트 음성 변환</h4>
+                <p>AI 인사이트와 요약을 자연스러운 음성으로 들어보세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> 맞춤 건강 보고서</h4>
+                <p>진행 상황을 추적하기 위한 포괄적이고 개인화된 피트니스 문서를 작성하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-utensils"></i> 식단 플래너</h4>
+                <p>체중 목표와 식단 선호도에 맞춘 맞춤형 주간 식단 계획을 받으세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-dumbbell"></i> 운동 플래너</h4>
+                <p>피트니스 수준과 목표에 맞춘 맞춤형 운동 루틴을 받으세요</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>왜 체중을 기록해야 할까요?</h2>
+        <p class="section-subtitle">꾸준한 기록이 성공적인 체중 관리의 핵심입니다</p>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 자기 관리 유지</h4>
+                <p>정기적인 체중 측정으로 목표에 집중할 수 있습니다</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-bar"></i> 실제 진행 상황 확인</h4>
+                <p>데이터가 일일 변동에 가려진 트렌드를 보여줍니다</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-apple-alt"></i> 내 몸 이해하기</h4>
+                <p>다양한 음식과 활동이 체중에 어떤 영향을 미치는지 알아보세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-lightbulb"></i> 더 나은 선택하기</h4>
+                <p>데이터 기반 인사이트로 더 현명한 결정을 내리세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-trophy"></i> 성과 축하하기</h4>
+                <p>피트니스 여정의 모든 달성을 기록하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-arrows-rotate"></i> 결과 유지하기</h4>
+                <p>지속적인 기록으로 장기적인 체중 유지를 실현하세요</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>33개 언어 지원</h2>
+        <p class="section-subtitle">체중과 식단은 다음 언어로 완벽하게 현지화되어 있습니다: 영어(English), 스페인어(Español), 프랑스어(Français), 캐나다 프랑스어, 독일어(Deutsch), 이탈리아어(Italiano), 네덜란드어(Nederlands), 브라질 포르투갈어(Português), 포르투갈 포르투갈어, 스웨덴어(Svenska), 노르웨이어(Norsk), 덴마크어(Dansk), 핀란드어(Suomi), 폴란드어(Polski), 러시아어(Русский), 우크라이나어(Українська), 체코어(Čeština), 슬로바키아어(Slovenčina), 루마니아어(Română), 크로아티아어(Hrvatski), 헝가리어(Magyar), 아랍어(العربية), 히브리어(עברית), 중국어 간체(简体中文), 중국어 번체(繁體中文), 일본어(日本語), 한국어(한국어), 태국어(ไทย), 베트남어(Tiếng Việt), 인도네시아어(Bahasa Indonesia), 그리스어(Ελληνικά), 터키어(Türkçe), 카탈루냐어(Català).</p>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>자주 묻는 질문</h2>
+
+
+        <h3>카메라 스캔 AI는 어떻게 작동하나요?</h3>
+        <p>iPhone 또는 iPad 카메라를 체중계의 디지털 디스플레이에 갖다 대기만 하면 됩니다. 앱이 고급 AI 카메라 인식 기술을 사용하여 자동으로 체중을 읽고 필드에 입력합니다. 수동 입력 오류가 사라지고 더 빠르고 쉽게 기록할 수 있습니다.</p>
+
+
+        <h3>얼마나 자주 체중을 측정해야 하나요?</h3>
+        <p>대부분의 전문가들은 일관성을 위해 매주 같은 요일, 같은 시간에 측정할 것을 권장합니다. 자연스러운 변동을 확인하기 위해 매일 측정하는 분들도 있습니다. 앱은 여러분에게 맞는 어떤 빈도든 지원합니다.</p>
+
+
+        <h3>BMI란 무엇이고 왜 중요한가요?</h3>
+        <p>BMI(체질량지수)는 키와 체중을 기반으로 한 체지방 지표입니다. 계산 공식은 체중(kg) ÷ 키(m)²입니다. BMI 18.5~24.9는 정상, 25~29.9는 과체중, 30 이상은 비만으로 분류됩니다. 앱이 BMI를 자동으로 계산하고 색상으로 구분된 인디케이터로 표시합니다.</p>
+
+
+        <h3>체지방률은 어떻게 측정하나요?</h3>
+        <p>체지방률 측정에는 체성분 분석기가 필요합니다. 이는 생체전기 임피던스법을 사용하여 체중과 체성분을 동시에 측정하는 특수 체중계입니다. 오므론, 타니타, Withings 등의 브랜드에서 구매할 수 있습니다. 일반 체중계는 체중만 측정합니다.</p>
+
+
+        <h3>왜 체중이 매일 변동하나요?</h3>
+        <p>수분 저류, 염분 섭취량, 호르몬, 식사 시간, 배변 습관 등으로 인해 하루에 1~2kg 정도의 체중 변동이 발생할 수 있습니다. 이는 완전히 정상입니다. 매일의 변화보다는 주간 또는 월간 트렌드에 집중하세요.</p>
+
+
+        <h3>Apple Health에서 체중을 가져올 수 있나요?</h3>
+        <p>네. 앱에서 한 번의 탭으로 Apple Health의 모든 과거 체중 데이터를 가져올 수 있습니다. 스마트 체중계, Apple Watch 또는 다른 피트니스 앱에서 기록된 체중도 포함됩니다.</p>
+
+
+        <h3>AI가 체중 감량에 어떻게 도움이 되나요?</h3>
+        <p>체중 기록에 메모를 추가하면("키토 다이어트 시작" 또는 "피자 먹음" 등) AI가 시간 경과에 따라 분석하여 상관관계를 보여줍니다. 예를 들어, 식단 준비를 한 주에 더 효과적으로 감량한다거나, 외식이 잦은 주에 체중이 증가하는 경향이 있다는 것을 보여줄 수 있습니다.</p>
+
+
+        <h3>파운드와 킬로그램 모두로 기록할 수 있나요?</h3>
+        <p>네. 앱은 야드파운드법(파운드, 피트/인치)과 미터법(킬로그램, 센티미터) 모두를 지원합니다. 설정에서 전환할 수 있습니다.</p>
+
+
+        <h3>체중 데이터를 내보낼 수 있나요?</h3>
+        <p>네. 체중 기록을 PDF 차트, Excel 스프레드시트 또는 JSON 데이터로 내보낼 수 있습니다. 의사, 트레이너, 영양사와 보고서를 공유하세요.</p>
+
+
+        <h3>이것은 다이어트 또는 식단 기록 앱인가요?</h3>
+        <p>아닙니다. 체중과 식단은 신체 측정(체중, BMI, 체지방)의 기록에 특화되어 있습니다. 칼로리나 식사의 상세한 추적은 하지 않습니다. 다만, 식단에 관한 메모를 추가하여 체중에 영향을 미치는 요인을 파악할 수 있습니다.</p>
+
+
+        <h3>광고가 표시되거나 추적되나요?</h3>
+        <p><strong>아닙니다.</strong> 앱에서 모든 광고를 완전히 제거했습니다. 다른 앱이나 웹사이트에 걸친 추적을 하지 않으며, 광고주에게 데이터를 판매하지 않습니다.</p>
+<p>데이터는 iCloud를 통해 동기화됩니다 — Apple 메모 및 사진과 동일한 방식입니다. 따라서 이메일 주소, 이름 또는 기타 개인 정보를 알 필요가 없습니다. 체중 및 건강 데이터는 여러분의 기기와 iCloud 계정에 저장되며, 무료 버전이든 프리미엄이든 완전히 비공개입니다.</p>
+
+
+        <h3>구독이 필요한가요?</h3>
+        <p>앱은 완전 무료로 다운로드하여 사용할 수 있습니다. 모든 기본 기록 기능은 구독 없이 이용 가능합니다. 프리미엄 구독은 고급 AI 기능, 무제한 내보내기, 향상된 맞춤 설정을 제공합니다. 무료 체험 기간 동안 모든 프리미엄 기능을 사용해 볼 수 있습니다.</p>
+
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">사용자 후기</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">App Store의 실제 리뷰</p>
+
+        <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">훌륭한 앱</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"App Store 최고의 체중 관리 앱입니다. 사용이 간편하고 유용한 정보가 가득합니다. 매일 사용하고 있습니다."</p>
+            <p class="review-author">- Wiesiu33</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">체중과 BMI</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"이 앱은 두 가지 사소한 불편함을 제외하면 뛰어나지만, 그래도 전반적으로 매우 잘 작동합니다. 1: 체중이 마지막으로 입력한 값이 아니라 항상 150으로 돌아갑니다. 매번 스크롤하지 않아도 되도록 입력한 체중이 그대로 유지되면 훨씬 편리할 것 같습니다. 2: BMI는 수동으로 계산하지 않고 자동으로 계산되어야 합니다."</p>
+            <p class="review-author">- Rufuslynx</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">심플한 식단 일기. 최고.</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"심플한 식단 일기. 최고."</p>
+            <p class="review-author">- cutting weight</p>
+        </div>
+
+        </div>
+
+        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">리뷰는 영어에서 번역되었습니다. 원본은 App Store에 게시되어 있습니다.</p>
+
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> 체중 목표를 달성하고 싶으신가요?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">건강한 체중 감량, BMI 관리, 지속 가능한 피트니스를 위한 20가지 전문가 팁을 확인하세요</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                전문가 팁 읽기 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>오늘부터 체중 관리를 시작하세요</h2>
+        <p>체중과 식단 Feeltracker로 피트니스 목표를 달성하고 있는 수천 명과 함께하세요</p>
+        <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="체중과 식단 다운로드" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ko/weight/">홈</a>
+            <a href="/ko/about/">소개</a>
+            <a href="mailto:support@feeltracker.com">이메일 지원</a>
+            <a href="/ko/support/">지원</a>
+            <a href="/ko/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">X에서 팔로우</a>
+            <a href="/ko/privacy/">개인정보 처리방침</a>
+            <a href="/ko/terms/">이용약관</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Feeltracker 건강 트래킹 앱 패밀리의 일원</p>
+        <p class="footer-disclaimer">건강 데이터는 사용자의 기기와 iCloud에 저장됩니다. 저희는 데이터에 접근하거나 판매하지 않습니다. Feeltracker 앱은 의료기기가 아닙니다. 정보 제공 목적으로만 사용되며, 전문적인 의료 조언, 진단 또는 치료를 대체하지 않습니다.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>개인정보를 소중히 여깁니다</strong></p>
+                <p>웹사이트와 앱 개선을 위해 분석용 쿠키를 사용합니다. 광고 쿠키는 사용하지 않습니다. 자세한 내용은 <a href="/ko/privacy/">개인정보 처리방침</a> 을 참조하세요.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">거부</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">동의</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>
