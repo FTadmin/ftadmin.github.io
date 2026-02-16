@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Feeltracker | Aplicativos de Diario de Saude e Bem-Estar com IA para iOS</title>
+    <meta name="title" content="Feeltracker | Aplicativos de Diario de Saude e Bem-Estar com IA para iOS">
+    <meta name="description" content="Acompanhe sua saude facilmente com os aplicativos de diario com IA da Feeltracker. Monitore pressao arterial, humor, peso, sono e pensamentos diarios. Sincronize com o Apple Health, receba insights de IA e exporte dados para compartilhar com seu medico. Disponivel para iPhone, iPad e Mac.">
+
+    <meta name="keywords" content="aplicativo de saude, monitor de pressao arterial, diario de humor, rastreador de peso, rastreador de sono, diario pessoal, aplicativo de saude com IA, integracao Apple Health, diario de saude, rastreador de bem-estar, aplicativo de saude mental, aplicativo de pressao arterial, aplicativo para emagrecer, monitoramento do sono, aplicativo de diario">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/pt-br/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/">
+
+    <link rel="alternate" hreflang="pt-br" href="https://feeltracker.com/pt-br/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/pt-br/">
+    <meta property="og:title" content="Feeltracker | Aplicativos de Diario de Saude e Bem-Estar com IA">
+    <meta property="og:description" content="Acompanhe sua saude facilmente com aplicativos de diario com IA para pressao arterial, humor, peso, sono e anotacoes diarias. Sincronize com o Apple Health e receba insights personalizados.">
+    <meta property="og:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <meta property="og:site_name" content="Feeltracker">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/pt-br/">
+    <meta property="twitter:title" content="Feeltracker | Aplicativos de Diario de Saude e Bem-Estar com IA">
+    <meta property="twitter:description" content="Acompanhe sua saude facilmente com aplicativos de diario com IA para pressao arterial, humor, peso, sono e anotacoes diarias.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <meta name="twitter:site" content="@feeltracker">
+
+
+    <!-- iOS / Apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Feeltracker">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Feeltracker",
+      "url": "https://feeltracker.com",
+      "logo": "https://feeltracker.com/images/feeltracker.png",
+      "description": "AI-powered health and wellness tracking apps for iOS",
+      "sameAs": [
+        "https://x.com/feeltracker"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@feeltracker.com",
+        "contactType": "Customer Support"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Feeltracker Health & Wellness Apps",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "description": "Suite of AI-powered health and wellness tracking apps for iOS. Monitor blood pressure, mood, weight, sleep, and daily thoughts. Sync with Apple Health, get AI insights, and export data to share with your doctor.",
+      "image": "https://feeltracker.com/images/feeltracker.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": 20000
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Custom Arts"
+      },
+      "featureList": [
+        "AI-powered health insights",
+        "Camera Scan AI for reading capture",
+        "Apple Health bidirectional sync",
+        "Export reports to PDF and Excel",
+        "iCloud backup and sync",
+        "33 language support",
+        "No ads, no tracking, privacy first"
+      ],
+      "inLanguage": ["en", "es", "fr", "de", "it", "nl", "pt", "sv", "no", "da", "fi", "pl", "ru", "uk", "cs", "sk", "ro", "hr", "hu", "ar", "he", "zh", "ja", "ko", "th", "vi", "id", "el", "tr", "ca"],
+      "datePublished": "2015"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Feeltracker Health & Wellness Apps",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": 20000,
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "MelGreer"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Best Blood Pressure App Experience",
+          "reviewBody": "I've found the best blood pressure app I've ever tried. It not only lets me send results to my doctor, but people seem work tirelessly to keep the app running smoothly. They're constantly updating and improving it, which is awesome. Honestly, it's the best subscription I've got on my phone right now."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "CynnCatt"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Even my therapist likes this app",
+          "reviewBody": "I just got diagnosed with adhd about a month ago. And I had to wait for 3 weeks to get meds for it. During that time I found this app, and it's been pretty amazing to see the erraticness of my un medicated brain compared to my medicated brain."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "PRE'"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "So far so good",
+          "reviewBody": "This is a nice little simple app that does not overextend into unneeded areas. It is the simplicity of it, including the simplicity of the interface that I value more than anything."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Jbobthebuilder"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Calling all sleep Docs!",
+          "reviewBody": "I was so surprised that my Sleep doctor was trying to give me pieces of paper to record my sleep hours with no way to even collate them!? Luckily I found this app and I immediately asked my Sleep doctor to start recommending it."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Wiesiu33"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Very good app",
+          "reviewBody": "My doctor wants me to record my BP daily. This app allows me to record my info and records it in a very nicely designed format. Great app."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Aprthax"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Great app",
+          "reviewBody": "As someone with bipolar disorder I needed to record my moods and emotions but I couldn't find an app that didn't want an expensive subscription. I'm very thankful for this app, full functionality without a subscription."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Absolutely Annoyed!"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Love this app!! So easy to use.",
+          "reviewBody": "This app is awesome for monitoring your sleep habits, time and being able to make notes for future reference. It's simple and easy to use. The app developer Gaurav was absolutely amazing!! I highly recommend using this to keep a record of your sleep patterns."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "frdfranz"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Really Cool App",
+          "reviewBody": "Just a few nights ago I started keeping a record of my blood pressure this app is really cool. I would recommend this app in a heartbeat."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "dariusslayss"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "i like it",
+          "reviewBody": "i like how i dont need to pay for everything, on my other mood apps i have to pay to see what triggers me. it really helped me correct myself."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Gadget guy Fl"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Good app for tracking sleep patterns",
+          "reviewBody": "I needed something to help with sleep tracking as I was starting CPAP therapy back in November 2022. This app has been great at keeping me accountable to a schedule and looking at my progress."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Tippy's Dad"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Fantastic App",
+          "reviewBody": "Such a great app. It keeps track of my blood pressure. You won't go wrong here!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Rufuslynx"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Weight and BMI",
+          "reviewBody": "I find this app is outstanding except for two minor flaws that just irritate me but still works out very well."
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/pt-br/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇧🇷</span>
+                    <span>Português (Brasil)</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/fr/"><span class="flag">🇫🇷</span> Français</a>
+
+                    <a href="/ko/"><span class="flag">🇰🇷</span> 한국어</a>
+
+                    <a href="/pt-br/" class="active"><span class="flag">🇧🇷</span> Português (Brasil)</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/pt-br/blood-pressure/">Pressão Arterial</a>
+
+            <a href="/pt-br/daily-journal/">Diário Pessoal</a>
+
+            <a href="/pt-br/mental-health/">Saúde Mental</a>
+
+            <a href="/pt-br/sleep/">Sono e Sonhos</a>
+
+            <a href="/pt-br/weight/">Peso e Alimentação</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <div class="hero-logo">feeltracker</div>
+        <h1>Monitoramento de Saude com IA de Forma Simples</h1>
+        <p class="hero-subtitle">Acompanhe sua pressao arterial, humor, peso, sono e pensamentos diarios com aplicativos de diario inteligentes que sincronizam com o Apple Health e fornecem insights personalizados de IA.</p>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">1M+</div>
+                <div class="hero-stat-label">Downloads</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">20K+</div>
+                <div class="hero-stat-label">Avaliacoes</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">4.8★</div>
+                <div class="hero-stat-label">Nota Media</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">96%</div>
+                <div class="hero-stat-label">Satisfacao</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">5M+</div>
+                <div class="hero-stat-label">Registros / Ano</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">12anos</div>
+                <div class="hero-stat-label">Desde 2013</div>
+            </div>
+
+        </div>
+
+        <!-- Privacy Badge -->
+        <div style="color: #059669; padding: 16px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> Privacidade em Primeiro Lugar — Sem Anuncios, Sem Rastreamento, Seus Dados Ficam Privados
+        </div>
+
+        <div class="hero-features">
+
+            <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health Sync</span>
+
+            <span class="feature-badge"><i class="fas fa-robot"></i> Insights de IA</span>
+
+            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+            <span class="feature-badge"><i class="fas fa-cloud"></i> Backup iCloud</span>
+
+        </div>
+    </section>
+
+    <!-- Apps Grid -->
+    <section class="apps-section">
+        <h2 class="center-text">Escolha Seu Aplicativo de Monitoramento de Saude</h2>
+
+
+        <!-- Pressao Arterial Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="blood-pressure/">
+                    <img src="/images/BPT_1024.png" class="app-icon-large" alt="Icone do Aplicativo de Pressao Arterial">
+                </a>
+                <div class="app-card-title">
+                    <h3>Pressao Arterial Feeltracker</h3>
+                    <p class="app-subtitle">Monitorar OMRON Hipertensao IA Diario</p>
+
+                    <div style="color: #2563eb; display: inline-block; margin-top: 8px; font-size: 0.8em; font-weight: 600;">
+                        <i class="fas fa-trophy"></i> #1 no Reino Unido
+                    </div>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description"><strong>Aplicativo numero 1 de pressao arterial no Reino Unido.</strong> Acompanhe facilmente as leituras sistolica, diastolica e de pulso. Receba insights de IA sobre o que afeta sua pressao arterial. Integra-se com o Apple Health e suporta Camera Scan AI para capturar valores diretamente da tela do seu monitor.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-camera"></i> Camera Scan AI para capturar leituras das telas dos monitores</li>
+
+                    <li><i class="fas fa-chart-line"></i> Analise de tendencias e deteccao de padroes</li>
+
+                    <li><i class="fas fa-file-medical"></i> Exportar relatorios para compartilhar com seu medico (PDF com opcao de texto grande, Excel)</li>
+
+                    <li><i class="fas fa-heart"></i> Integracao com Apple Health para monitoramento completo</li>
+
+                    <li><i class="fas fa-bullseye"></i> Monitoramento de PAM (Pressao Arterial Media)</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="blood-pressure/" class="learn-more-button">Saiba Mais</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button" aria-label="Baixar Pressao Arterial na App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Pressao Arterial na App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Diario Pessoal Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="daily-journal/">
+                    <img src="/images/NT_1024.png" class="app-icon-large" alt="Icone do Aplicativo de Diario">
+                </a>
+                <div class="app-card-title">
+                    <h3>Diario Pessoal Feeltracker</h3>
+                    <p class="app-subtitle">Notas Fotos Pensamentos IA Diario</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">Escreva reflexoes diarias, acompanhe eventos da vida e descubra padroes em seus pensamentos. A IA analisa o sentimento e ajuda voce a entender temas recorrentes atraves da analise de frequencia de palavras.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-pen"></i> Diario simples e sem distracoes</li>
+
+                    <li><i class="fas fa-brain"></i> Analise de sentimento e insights de IA</li>
+
+                    <li><i class="fas fa-chart-bar"></i> Frequencia de palavras para acompanhar temas</li>
+
+                    <li><i class="fas fa-camera"></i> <strong>NOVO:</strong> Escaneamento de Itens - A IA descreve objetos para seu diario</li>
+
+                    <li><i class="fas fa-file-lines"></i> <strong>NOVO:</strong> Escaneamento de Texto - OCR para capturar texto de qualquer lugar</li>
+
+                    <li><i class="fas fa-clipboard-list"></i> Modelos de notas para registros rapidos</li>
+
+                    <li><i class="fas fa-search"></i> Busca em texto completo e integracao com Spotlight</li>
+
+                    <li><i class="fas fa-camera"></i> Anexe ate 8 fotos por registro</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="daily-journal/" class="learn-more-button">Saiba Mais</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button" aria-label="Baixar Diario Pessoal na App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Diario Pessoal na App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Saude Mental Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="mental-health/">
+                    <img src="/images/FT_1024.png" class="app-icon-large" alt="Icone do Aplicativo de Humor">
+                </a>
+                <div class="app-card-title">
+                    <h3>Saude Mental Feeltracker</h3>
+                    <p class="app-subtitle">Bipolar TCD TCC TDAH IA Diario</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">Monitore sua saude emocional com avaliacoes diarias de humor e anotacoes. Identifique gatilhos e padroes com analise de IA. Suporta integracao iOS 18+ Saude Mental com o Apple Health.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-smile"></i> Escala de humor simples de 5 pontos</li>
+
+                    <li><i class="fas fa-brain"></i> Sincronizacao iOS 18+ Saude Mental (Estado de Espirito)</li>
+
+                    <li><i class="fas fa-face-smile"></i> <strong>NOVO:</strong> Escaneamento Facial - analise seu humor por selfies com IA</li>
+
+                    <li><i class="fas fa-search"></i> Identificacao de gatilhos com IA</li>
+
+                    <li><i class="fas fa-chart-line"></i> Graficos de humor visuais e tendencias</li>
+
+                    <li><i class="fas fa-comment"></i> Notas privadas com analise de sentimento</li>
+
+                    <li><i class="fas fa-palette"></i> Interface bonita e intuitiva</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="mental-health/" class="learn-more-button">Saiba Mais</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id687448999" class="cta-button" aria-label="Baixar Rastreador de Humor na App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Rastreador de Humor na App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Peso Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="weight/">
+                    <img src="/images/WT_1024.png" class="app-icon-large" alt="Icone do Aplicativo de Peso">
+                </a>
+                <div class="app-card-title">
+                    <h3>Peso Feeltracker</h3>
+                    <p class="app-subtitle">Emagrecer Massa Corporal % Alimentos IA Diario</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">Acompanhe peso, percentual de gordura corporal e IMC ao longo do tempo. Escaneie leituras com Camera Scan AI, veja medias mensais, identifique o que ajuda ou atrapalha seu progresso e sincronize com o Apple Health para monitoramento fitness completo.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-camera"></i> Camera Scan AI para capturar peso das telas das balancas</li>
+
+                    <li><i class="fas fa-weight"></i> Monitoramento de peso, IMC e gordura corporal</li>
+
+                    <li><i class="fas fa-chart-line"></i> Medias mensais e analise de tendencias</li>
+
+                    <li><i class="fas fa-utensils"></i> <strong>NOVO:</strong> Escaneamento de Alimentos - analise nutricional instantanea com IA</li>
+
+                    <li><i class="fas fa-bullseye"></i> Definicao de metas e acompanhamento de progresso</li>
+
+                    <li><i class="fas fa-dumbbell"></i> Integracao completa com Apple Health</li>
+
+                    <li><i class="fas fa-apple-alt"></i> Descubra o que afeta seu peso atraves de insights de IA</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="weight/" class="learn-more-button">Saiba Mais</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button" aria-label="Baixar Rastreador de Peso na App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Rastreador de Peso na App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sono Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="sleep/">
+                    <img src="/images/ST_1024.png" class="app-icon-large" alt="Icone do Aplicativo de Sono">
+                </a>
+                <div class="app-card-title">
+                    <h3>Sono Feeltracker</h3>
+                    <p class="app-subtitle">Apneia Monitoramento Sonhos Diario</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">Registre horarios de dormir e acordar para monitorar seus padroes e duracao do sono. Integra-se com os dados de sono do Apple Health e ajuda a identificar fatores que afetam a qualidade do seu sono atraves de analise de IA.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-bed"></i> Registro simples de horarios de dormir e acordar</li>
+
+                    <li><i class="fas fa-clock"></i> Calculo automatico da duracao do sono</li>
+
+                    <li><i class="fas fa-moon"></i> Integracao com dados de sono do Apple Health</li>
+
+                    <li><i class="fas fa-search"></i> Insights de IA sobre padroes de sono</li>
+
+                    <li><i class="fas fa-mug-hot"></i> Identifique o que afeta a qualidade do seu sono</li>
+
+                    <li><i class="fas fa-chart-bar"></i> Graficos visuais e estatisticas de sono</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="sleep/" class="learn-more-button">Saiba Mais</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button" aria-label="Baixar Rastreador de Sono na App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Rastreador de Sono na App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section center-text">
+        <h2>Por Que Escolher os Aplicativos Feeltracker?</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>Insights com Inteligencia Artificial</h3>
+                <p>Receba insights personalizados e deteccao de padroes com IA avancada. Entenda o que afeta sua saude e tome decisoes informadas.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fab fa-apple"></i></div>
+                <h3>Integracao com Apple Health</h3>
+                <p>Sincronizacao perfeita com o Apple Health para monitoramento completo. Leia e grave dados de saude em todos os seus dispositivos automaticamente.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Sincronizacao e Backup iCloud</h3>
+                <p>Seus dados sincronizam automaticamente entre iPhone, iPad e Mac via iCloud. Backups semanais automaticos opcionais em JSON garantem que seus dados estejam sempre seguros e exportaveis.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                <h3>Privacidade em Primeiro Lugar</h3>
+                <p><strong>Sem anuncios. Sem rastreamento.</strong> Seus dados de saude sao criptografados e armazenados apenas em seus dispositivos e iCloud. Nos nao rastreamos voce em aplicativos ou sites (sem IDFA ou tecnologias de rastreamento similares), e nunca vendemos seus dados para anunciantes.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-export"></i></div>
+                <h3>Exportar e Compartilhar</h3>
+                <p>Exporte seus dados em PDF (com opcao de texto grande), Excel ou JSON. Compartilhe relatorios completos com seu medico ou profissional de saude facilmente.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                <h3>33 Idiomas</h3>
+                <p>Totalmente localizado em 33 idiomas: ingles, espanhol (Espanol), frances (Francais), frances canadense, alemao (Deutsch), italiano (Italiano), holandes (Nederlands), portugues Brasil (Portugues), portugues Portugal, sueco (Svenska), noruegues (Norsk), dinamarques (Dansk), finlandes (Suomi), polones (Polski), russo (Russkiy), ucraniano (Ukrayinska), tcheco (Cestina), eslovaco (Slovencina), romeno (Romana), croata (Hrvatski), hungaro (Magyar), arabe (Al-Arabiyyah), hebraico (Ivrit), chines simplificado (Zhongwen), chines tradicional (Fantizi), japones (Nihongo), coreano (Hangugeo), tailandes (Thai), vietnamita (Tieng Viet), indonesio (Bahasa Indonesia), grego (Ellinika), turco (Turkce) e catalao (Catala).</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud-sun"></i></div>
+                <h3>Integracao com Clima</h3>
+                <p>Inclua automaticamente dados meteorologicos do servico de clima da Apple em seus registros. Acompanhe como os padroes climaticos afetam sua pressao arterial, humor, sono ou peso ao longo do tempo.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
+                <h3>Multiplos Sistemas de Calendario</h3>
+                <p>Suporte para calendarios Gregoriano, Islamico (Hijri), Hebraico, Chines e Japones. Visualize seus dados de saude no sistema de calendario mais significativo para voce.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-tablet-alt"></i></div>
+                <h3>iPad Split View</h3>
+                <p>Layout multi-colunas otimizado para iPad com suporte completo a multitarefa em tela dividida. Trabalhe com seus dados de saude junto com outros aplicativos para maxima produtividade.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                <h3>Multiplos Modos Escuros</h3>
+                <p>Escolha entre multiplas variantes de modo escuro, incluindo preto verdadeiro (perfeito para telas OLED) e temas cinza escuro. Personalize sua experiencia visual para reduzir o cansaco visual.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>Suporte a Fusos Horarios</h3>
+                <p>Registre entradas com configuracoes personalizadas de fuso horario. Perfeito para viajantes ou trabalhadores de turno que precisam de rastreamento preciso em diferentes fusos horarios.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Acompanhamento de Conquistas</h3>
+                <p>Celebre seu progresso com marcos de conquistas. Seja reconhecido por monitoramento consistente, alcance de metas de saude e manutencao de habitos saudaveis.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AI Features Highlight -->
+    <section class="ai-section center-text">
+        <h2>Impulsionado por Inteligencia Artificial</h2>
+        <p class="section-subtitle">Nossos recursos de IA ajudam voce a entender seus dados de saude como nunca antes</p>
+
+        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Recursos de IA Gratuitos</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-question-circle"></i> Fazer uma Pergunta</h3>
+                <p>Perguntas e respostas rapidas sobre seus dados - receba respostas instantaneas para suas duvidas de saude</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-comments"></i> Chat</h3>
+                <p>Tenha conversas interativas sobre sua jornada de saude e receba orientacoes personalizadas</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-volume-up"></i> Resumo por Voz</h3>
+                <p>Ouca resumos em audio das suas tendencias de saude - perfeito para insights em movimento</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-laugh"></i> Me Faca Rir</h3>
+                <p>Receba humor personalizado dos seus dados de monitoramento para alegrar seu dia</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-moon"></i> Me Acalme</h3>
+                <p>Exercicios de respiracao e relaxamento guiados por IA para ajudar a reduzir o estresse</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-camera"></i> Camera Scan AI</h3>
+                <p>Escaneie leituras de telas de dispositivos, analise rostos para humor, identifique objetos, capture texto - visao de IA em todos os aplicativos</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Recursos de IA Premium</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-lightbulb"></i> Banner de Insights Diarios</h3>
+                <p>Acorde com dicas diarias personalizadas geradas por IA baseadas em seus ultimos 30 registros - insights inteligentes de 10-15 palavras que ajudam voce a entender seus padroes de saude</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-medical-alt"></i> Relatorios de Pesquisa Aprofundada</h3>
+                <p>Analise abrangente de IA dos seus dados de saude com insights detalhados e resumos de nivel profissional</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-search"></i> Detetive de Padroes</h3>
+                <p>IA avancada encontra correlacoes ocultas entre fatores de estilo de vida, horario do dia e suas metricas de saude</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-bullseye"></i> Assistente de Metas</h3>
+                <p>Receba metas de saude personalizadas e baseadas em dados, fundamentadas em seus padroes e progresso unicos</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-user-md"></i> Resumo para o Medico</h3>
+                <p>Gere resumos medicos profissionais para consultas com estatisticas e analise de tendencias</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-medical"></i> Gerador de Atestado Medico</h3>
+                <p>Atestados gerados por IA para trabalho ou escola baseados nos seus dados de monitoramento de saude</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-book"></i> Gerador de Historias</h3>
+                <p>Transforme seus dados de saude em narrativas criativas e envolventes e historias personalizadas</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-comment-alt"></i> Resumo em Texto</h3>
+                <p>Crie resumos em mensagem de texto compartilhaveis das suas tendencias de saude para amigos e familia</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-graduation-cap"></i> Quiz Personalizado</h3>
+                <p>Teste seus conhecimentos com um quiz divertido de 10 perguntas gerado por IA sobre seus dados</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-microphone"></i> Texto para Fala</h3>
+                <p>Ouca seus insights e resumos de IA com reproducao de voz natural - perfeito para acessibilidade</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-invoice"></i> Relatorio de Saude Personalizado</h3>
+                <p>Crie documentos de saude abrangentes e personalizados com insights gerados por IA sobre seu progresso</p>
+            </div>
+
+        </div>
+
+        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
+            <h3 style="color: rgba(255,255,255,0.6); margin-top: 0; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fas fa-info-circle"></i> Aviso sobre IA</h3>
+            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
+                Insights, relatorios e recomendacoes gerados por IA sao apenas para fins informativos e nao substituem aconselhamento medico, diagnostico ou tratamento. Padroes identificados por IA mostram correlacoes, mas correlacao nao implica causalidade. Sempre consulte um medico ou profissional de saude qualificado com quaisquer duvidas ou preocupacoes medicas. Essas ferramentas foram projetadas para ajudar voce a organizar e entender seus dados de saude, nao para fornecer orientacao medica.
+            </p>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof center-text">
+        <h2>Confiado por Milhares de Usuarios no Mundo Todo</h2>
+        <p class="section-subtitle">Junte-se aos usuarios que estao assumindo o controle da sua saude</p>
+        <div class="stats-grid">
+
+            <div class="stat-box">
+                <div class="stat-number">4.8★</div>
+                <div class="stat-label">Nota Media</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">20K</div>
+                <div class="stat-label">Avaliacoes</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">96%</div>
+                <div class="stat-label">Taxa de Satisfacao</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">1M+</div>
+                <div class="stat-label">Downloads</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">50K</div>
+                <div class="stat-label">Usuarios Mensais</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">5M+</div>
+                <div class="stat-label">Registros Salvos por Ano</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">&lt;24h</div>
+                <div class="stat-label">Resposta do Suporte</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">33</div>
+                <div class="stat-label">Idiomas</div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">O Que Nossos Usuarios Dizem</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 32px;">Avaliacoes reais da App Store</p>
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Melhor Experiencia com App de Pressao Arterial</div>
+                </div>
+                <p class="review-content">"Encontrei o melhor aplicativo de pressao arterial que ja experimentei. Ele nao so me permite enviar resultados ao meu medico, como a equipe parece trabalhar incansavelmente para manter o app funcionando perfeitamente. Eles estao constantemente atualizando e melhorando, o que e incrivel. Sinceramente, e a melhor assinatura que tenho no meu celular agora."</p>
+                <p class="review-author">- MelGreer, Blood Pressure</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Ate meu terapeuta gosta deste app</div>
+                </div>
+                <p class="review-content">"Fui diagnosticado com TDAH ha cerca de um mes. E tive que esperar 3 semanas para conseguir a medicacao. Durante esse tempo encontrei este app, e foi incrivel ver a irregularidade do meu cerebro sem medicacao comparado ao meu cerebro medicado. Meu cerebro medicado e muito mais estavel no grafico. Alem disso, gosto de poder anotar rapidamente o que estou pensando."</p>
+                <p class="review-author">- CynnCatt, Diario de Humor</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Ate agora tudo bem</div>
+                </div>
+                <p class="review-content">"Este e um aplicativo simples e agradavel que nao se estende para areas desnecessarias. E a simplicidade dele, incluindo a simplicidade da interface, que eu valorizo mais do que tudo. Nao preciso de flores, esquilos, jogos, coisinhas e unicornios arco-iris. Preciso apenas de um aplicativo simples tipo diario. Ate agora, este app cumpriu esses requisitos ou falta de requisitos. E bem refrescante. Tambem aprecio que voce pode exportar em PDF quando necessario. Obrigado por manter tudo simples."</p>
+                <p class="review-author">- PRE', Diario Pessoal</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Atencao, medicos do sono!</div>
+                </div>
+                <p class="review-content">"Fiquei muito surpreso que meu medico do sono estava tentando me dar papeis para registrar minhas horas de sono sem nenhuma forma de organiza-los!? Quando pedi um aplicativo, sugeriram o Diario de Sono Consensus, que e inutil. Felizmente encontrei este app e imediatamente pedi ao meu medico do sono para comecar a recomenda-lo. Tambem aprecio a rapidez de resposta do desenvolvedor. Essa pessoa claramente quer melhorar vidas. MUITO OBRIGADO!!"</p>
+                <p class="review-author">- Jbobthebuilder, Diario de Sono</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Aplicativo muito bom</div>
+                </div>
+                <p class="review-content">"Meu medico quer que eu registre minha pressao arterial diariamente. Este aplicativo me permite registrar minhas informacoes e as armazena em um formato muito bem projetado. Otimo aplicativo."</p>
+                <p class="review-author">- Wiesiu33, Blood Pressure</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Otimo aplicativo</div>
+                </div>
+                <p class="review-content">"Como alguem com transtorno bipolar, eu precisava registrar meus humores e emocoes, mas nao conseguia encontrar um app que nao quisesse uma assinatura cara. Sou muito grato por este aplicativo, funcionalidade completa sem assinatura e uma opcao de assinatura se voce quiser."</p>
+                <p class="review-author">- Aprthax, Diario de Humor</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Amo este app!! Super facil de usar.</div>
+                </div>
+                <p class="review-content">"Primeiro, por favor, ignore o nome de usuario que voce ve aqui. Foi um erro que cometi no inicio e nao consigo mudar sem um Mac, segundo a Apple. Agora vamos a avaliacao deste app. Este aplicativo e incrivel para monitorar seus habitos de sono, horarios e poder fazer anotacoes para referencia futura. E simples e facil de usar. Eu tinha uma sugestao, algo que esperava ver mudado, e o desenvolvedor Gaurav foi absolutamente incrivel!! Entrei em contato com ele, e ele me respondeu em minutos e em dias realmente adicionou minha sugestao! Recomendo muito usar isso para manter um registro dos seus padroes de sono. E vale totalmente a pena assinar. Gaurav Sharma, voce e demais!!"</p>
+                <p class="review-author">- Absolutely Annoyed!, Diario de Sono</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Aplicativo Muito Legal</div>
+                </div>
+                <p class="review-content">"Ha apenas algumas noites comecei a registrar minha pressao arterial, este aplicativo e muito legal. E engracado como este app apareceu no meu celular hoje. Eu recomendaria este aplicativo sem hesitar."</p>
+                <p class="review-author">- frdfranz, Blood Pressure</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Eu gosto</div>
+                </div>
+                <p class="review-content">"Gosto de nao precisar pagar por tudo, nos meus outros apps de humor eu tenho que pagar para ver o que me afeta. Gosto quando ele te mostra quais palavras mais te afetam. Tem um codigo de acesso ou bloqueio se voce quiser que so voce leia o que digita. Realmente me ajudou a me corrigir. Faco isso quase todos os dias e vejo os graficos e consigo ver quando e onde melhoro ou pioro. Gosto muito deste aplicativo e dos efeitos sonoros quando voce clica nos seus humores."</p>
+                <p class="review-author">- dariusslayss, Diario de Humor</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Bom app para acompanhar padroes de sono</div>
+                </div>
+                <p class="review-content">"Eu precisava de algo para ajudar com o monitoramento do sono quando comecei a terapia CPAP em novembro de 2022. Este app tem sido otimo para me manter responsavel com um horario e acompanhar meu progresso. Consigo rastrear horas dormidas, sonhos que tive, padroes de sono e outros dados que quero analisar. O unico problema e que as vezes o app nao abre de primeira no meu iPad e tenho que forcar o fechamento e reabrir. Atualizacao - ja usei o app por 400 noites e ele me mostra o progresso que fiz na minha terapia CPAP e muitos insights uteis!"</p>
+                <p class="review-author">- Gadget guy Fl, Diario de Sono</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Aplicativo Fantastico</div>
+                </div>
+                <p class="review-content">"Que aplicativo incrivel. Ele acompanha minha pressao arterial. Voce nao vai se arrepender!"</p>
+                <p class="review-author">- Tippy's Dad, Blood Pressure</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Peso e IMC</div>
+                </div>
+                <p class="review-content">"Acho este aplicativo excelente, exceto por dois pequenos defeitos que me irritam um pouco, mas mesmo assim funciona muito bem. 1: o peso sempre volta para 150 em vez de ficar no peso que voce colocou por ultimo. Seria muito mais conveniente se ficasse no peso que voce inseriu em vez de ter que rolar pelos pesos para chegar ao seu peso atual. 2: o IMC deveria ser calculado automaticamente em vez de tentar fazer o calculo manualmente."</p>
+                <p class="review-author">- Rufuslynx, Rastreador de Peso</p>
+            </div>
+
+
+        </div>
+
+        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">As avaliacoes foram traduzidas do ingles. Publicadas originalmente na App Store.</p>
+
+    </section>
+
+    <!-- Platforms -->
+    <section class="platforms-section center-text">
+        <h2>Disponivel em Todos os Seus Dispositivos Apple</h2>
+        <p class="section-subtitle">iPhone · iPad · Mac (Apple Silicon M1+)</p>
+        <p>Uma compra, todas as plataformas. Os dados sincronizam automaticamente via iCloud.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2 class="center-text">Perguntas Frequentes</h2>
+
+
+        <h3>Voces exibem anuncios ou me rastreiam?</h3>
+        <p><strong>Nao.</strong> Removemos completamente todos os anuncios de todos os aplicativos Feeltracker. Nao rastreamos voce em outros aplicativos ou sites, e nunca vendemos seus dados para anunciantes.</p>
+<p>Seus dados sincronizam via iCloud - assim como o Apple Notes e o Fotos. Isso significa que nao precisamos saber seu e-mail, nome ou qualquer informacao pessoal. Seus dados de saude ficam armazenados em seus dispositivos e na sua conta iCloud, e sao completamente privados, seja usando a versao gratuita ou premium.</p>
+
+
+        <h3>Preciso de uma assinatura?</h3>
+        <p>Todos os aplicativos sao completamente gratuitos para baixar e usar. Os recursos basicos de monitoramento funcionam sem assinatura. Uma assinatura premium desbloqueia recursos avancados de IA, exportacoes ilimitadas e personalizacao aprimorada. Voce pode experimentar todos os recursos premium durante o periodo de teste gratuito.</p>
+
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Comece a Monitorar Sua Saude Hoje</h2>
+        <p>Escolha o aplicativo que atende suas necessidades. Gratuito para baixar com recursos premium opcionais.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 40px;">
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Pressao Arterial Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id794542324" aria-label="Baixar Pressao Arterial Feeltracker na App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Pressao Arterial Feeltracker na App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Diario Pessoal Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id1557699226" aria-label="Baixar Diario Pessoal Feeltracker na App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Diario Pessoal Feeltracker na App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Saude Mental Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id687448999" aria-label="Baixar Saude Mental Feeltracker na App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Saude Mental Feeltracker na App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Peso Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id799503787" aria-label="Baixar Peso Feeltracker na App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Peso Feeltracker na App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Sono Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id1065268459" aria-label="Baixar Sono Feeltracker na App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Baixar Sono Feeltracker na App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+
+            <a href="/pt-br/about/">Sobre</a>
+
+            <a href="mailto:support@feeltracker.com">E-mail</a>
+
+            <a href="/pt-br/support/">Suporte</a>
+
+            <a href="/pt-br/faq/">Perguntas Frequentes</a>
+
+            <a href="https://x.com/feeltracker">Siga no X</a>
+
+            <a href="/pt-br/privacy/">Politica de Privacidade</a>
+
+            <a href="/pt-br/terms/">Termos e Condicoes</a>
+
+        </div>
+        <p class="footer-copyright">© 2026 <a href="https://www.customarts.com" target="_blank" rel="noopener">Custom Arts</a>. Todos os direitos reservados.</p>
+        <p class="footer-tagline">Ajudando voce a entender e melhorar sua saude atraves de monitoramento inteligente.</p>
+        <p class="footer-disclaimer">Seus dados de saude ficam armazenados no seu dispositivo e iCloud — nunca acessamos ou vendemos seus dados. Os aplicativos Feeltracker nao sao dispositivos medicos. Apenas para fins informativos, nao substitui aconselhamento medico profissional, diagnostico ou tratamento.</p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Valorizamos sua privacidade</strong></p>
+                <p>Usamos cookies de análise para melhorar nosso site e aplicativo. Nenhum cookie publicitário é utilizado. Consulte nossa <a href="/pt-br/privacy/">Política de Privacidade</a> para mais detalhes.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Rejeitar</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+
+<script>
+// Santa Party Mode with Techno Jingle Bells
+let santaAudioContext = null;
+let santaIsPlaying = false;
+let santaOscillators = [];
+
+// Clean up audio when page is shown from back-forward cache
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        // Page was restored from bfcache - stop any playing audio and reset state
+        stopJingleBells();
+        const santa = document.querySelector('.dancing-santa');
+        if (santa) santa.classList.remove('party-mode');
+    }
+});
+
+// Also stop when leaving the page
+window.addEventListener('pagehide', function() {
+    stopJingleBells();
+});
+
+function toggleSantaParty(element) {
+    // Always stop existing audio first to prevent overlapping
+    stopJingleBells();
+
+    element.classList.toggle('party-mode');
+
+    if (element.classList.contains('party-mode')) {
+        playJingleBells();
+    }
+}
+
+function playJingleBells() {
+    if (santaIsPlaying) return;
+    santaIsPlaying = true;
+
+    try {
+        santaAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+        // Jingle Bells melody - classic style
+        const melody = [
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.5 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.5 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'G5', duration: 0.25 },
+            { note: 'C5', duration: 0.35 },
+            { note: 'D5', duration: 0.15 },
+            { note: 'E5', duration: 0.8 },
+            { note: 'F5', duration: 0.25 },
+            { note: 'F5', duration: 0.25 },
+            { note: 'F5', duration: 0.35 },
+            { note: 'F5', duration: 0.15 },
+            { note: 'F5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'D5', duration: 0.25 },
+            { note: 'D5', duration: 0.25 },
+            { note: 'E5', duration: 0.25 },
+            { note: 'D5', duration: 0.5 },
+            { note: 'G5', duration: 0.5 },
+        ];
+
+        const noteFreq = {
+            'C5': 523.25, 'D5': 587.33, 'E5': 659.25, 'F5': 698.46, 'G5': 783.99, 'A5': 880.00
+        };
+
+        let startTime = santaAudioContext.currentTime;
+
+        function playMelodyLoop() {
+            if (!santaIsPlaying) return;
+
+            melody.forEach((item) => {
+                // Main melody - soft triangle wave
+                const osc = santaAudioContext.createOscillator();
+                const gain = santaAudioContext.createGain();
+                osc.type = 'triangle';
+                osc.frequency.value = noteFreq[item.note];
+                gain.gain.setValueAtTime(0.12, startTime);
+                gain.gain.exponentialRampToValueAtTime(0.02, startTime + item.duration * 0.9);
+                osc.connect(gain);
+                gain.connect(santaAudioContext.destination);
+                osc.start(startTime);
+                osc.stop(startTime + item.duration);
+                santaOscillators.push(osc);
+
+                // Add soft bell harmonics
+                const bell = santaAudioContext.createOscillator();
+                const bellGain = santaAudioContext.createGain();
+                bell.type = 'sine';
+                bell.frequency.value = noteFreq[item.note] * 2;
+                bellGain.gain.setValueAtTime(0.03, startTime);
+                bellGain.gain.exponentialRampToValueAtTime(0.001, startTime + item.duration * 0.5);
+                bell.connect(bellGain);
+                bellGain.connect(santaAudioContext.destination);
+                bell.start(startTime);
+                bell.stop(startTime + item.duration);
+                santaOscillators.push(bell);
+
+                startTime += item.duration;
+            });
+
+            // Gentle sleigh bells
+            const loopStart = santaAudioContext.currentTime;
+            for (let i = 0; i < 25; i++) {
+                const bellTime = loopStart + (i * 0.3);
+                if (bellTime < startTime) {
+                    const sleigh = santaAudioContext.createOscillator();
+                    const sGain = santaAudioContext.createGain();
+                    sleigh.type = 'sine';
+                    sleigh.frequency.value = 2500 + Math.random() * 500;
+                    sGain.gain.setValueAtTime(0.02, bellTime);
+                    sGain.gain.exponentialRampToValueAtTime(0.001, bellTime + 0.08);
+                    sleigh.connect(sGain);
+                    sGain.connect(santaAudioContext.destination);
+                    sleigh.start(bellTime);
+                    sleigh.stop(bellTime + 0.08);
+                    santaOscillators.push(sleigh);
+                }
+            }
+
+            const loopDuration = startTime - santaAudioContext.currentTime;
+            if (santaIsPlaying) {
+                setTimeout(() => {
+                    startTime = santaAudioContext.currentTime;
+                    playMelodyLoop();
+                }, loopDuration * 1000);
+            }
+        }
+
+        playMelodyLoop();
+    } catch (e) {
+        console.log('Audio not supported');
+    }
+}
+
+function stopJingleBells() {
+    santaIsPlaying = false;
+    santaOscillators.forEach(osc => {
+        try { osc.stop(); } catch(e) {}
+    });
+    santaOscillators = [];
+    if (santaAudioContext) {
+        santaAudioContext.close();
+        santaAudioContext = null;
+    }
+}
+</script>
+
+</body>
+</html>
