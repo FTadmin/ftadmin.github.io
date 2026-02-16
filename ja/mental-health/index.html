@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=687448999">
+
+    <!-- Primary Meta Tags -->
+    <title>メンタルヘルス - 気分 BPD DBT CBT ADHD AI日記 | Feeltracker</title>
+    <meta name="title" content="メンタルヘルス - 気分 BPD DBT CBT ADHD AI日記 | Feeltracker">
+    <meta name="description" content="AI顔スキャンと感情分析で気分を記録。毎日の感情をモニタリングし、トリガーを特定し、パターンを発見。Apple Health（iOS 18以降のState of Mind）と同期。iPhone、iPad、Macでシンプルかつプライベートな気分記録。">
+    <meta name="keywords" content="境界性,人格,障害,双極性,気分,メンタル,BPD,PTSD,DBT,感情,CBT,不安,日記,ADHD,記録">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ja/mental-health/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mental-health/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mental-health/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mental-health/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mental-health/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mental-health/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mental-health/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mental-health/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mental-health/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/ja/mental-health/">
+    <meta property="og:title" content="メンタルヘルス | AIで気分を記録 | Feeltracker">
+    <meta property="og:description" content="AI顔スキャン、トリガー検出、感情分析、Apple Healthとの連携でメンタルウェルネスを管理。">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ja/mental-health/">
+    <meta property="twitter:title" content="メンタルヘルス | AIで気分を記録 | Feeltracker">
+    <meta property="twitter:description" content="AI顔スキャン、トリガー検出、感情分析で気分を記録。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "メンタルヘルス",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "気分トラッカー",
+      "operatingSystem": "iOS 16.0 or later",
+      "description": "AI顔スキャン、感情分析、トリガー特定で気分とメンタルヘルスを記録。毎日の感情をモニタリングし、パターンを発見し、Apple Health（iOS 18以降のState of Mind）と同期。iPhone、iPad、Macでシンプルかつプライベートな気分記録。",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": 355,
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Custom Arts"
+      },
+      "featureList": [
+        "AI顔スキャンによる気分検出",
+        "日記エントリーの感情分析",
+        "iOS 18以降のState of Mind Apple Health同期",
+        "AIによるトリガー特定",
+        "視覚的な気分チャートとトレンド",
+        "5段階気分評価スケール",
+        "PDFおよびExcelへのエクスポート",
+        "分析付きプライベートメモ",
+        "iCloudバックアップと同期",
+        "33言語対応"
+      ],
+      "screenshot": "https://feeltracker.com/images/screenshots/ft-1.png",
+      "softwareVersion": "Latest",
+      "inLanguage": ["en", "es", "fr", "de", "it", "nl", "pt", "sv", "no", "da", "fi", "pl", "ru", "uk", "cs", "sk", "ro", "hr", "hu", "ar", "he", "zh", "ja", "ko", "th", "vi", "id", "el", "tr", "ca"],
+      "datePublished": "2014",
+      "downloadUrl": "https://apps.apple.com/app/id687448999",
+      "installUrl": "https://apps.apple.com/app/id687448999",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "CynnCatt"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Even my therapist likes this app",
+          "reviewBody": "I just got diagnosed with adhd about a month ago. During that time I found this app, and it's been pretty amazing to see the erraticness of my un medicated brain compared to my medicated brain. My medicated brain is much more level in the graph."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Aprthax"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Great app",
+          "reviewBody": "As someone with bipolar disorder I needed to record my moods and emotions but I couldn't find an app that didn't want an expensive subscription. I'm very thankful for this app, full functionality without a subscription."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "dariusslayss"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "i like it",
+          "reviewBody": "i like how i dont need to pay for everything. it really helped me correct myself. i've been doing this almost everyday and i see the charts and i can see when and where i improve or downgrade."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "XxLila_BugxX"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "AWESOME!",
+          "reviewBody": "I just started like one minute ago and I'm already happy! I love the noises they make me laugh! This app tells you how are you feeling today. You should totally get this app!!!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "tyggerted"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Best of the bunch so far",
+          "reviewBody": "I love that I can enter multiple notes per day with auto time stamp. The 5 smiley face ratings are just right to cover ups and downs throughout the day."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "MZinMPCA"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Cute little journal!",
+          "reviewBody": "I'm enjoying this app as a place to jot down thoughts and feelings during the day. The little mood face makes me think about what I might want to consider in order to enjoy my life more. I've tried a few of these apps and I'm liking this one best."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "olympics music"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Great and very useful",
+          "reviewBody": "I love using this like a journal to keep track of what's going on in my life. It's helpful to look at the graphs and trends to see where patterns are as well as what stands out. Works great!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Light it up blue"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Not a bot",
+          "reviewBody": "Not paid. Just another with depression. I love this app. Can see patterns or remember a week that I wouldn't. The graph is something you can't get with paper journal."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "harlemhoney1428"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Very good app",
+          "reviewBody": "Very good app for mood tracking."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "User*09"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Cool App!",
+          "reviewBody": "Easy to use, how you feel should be incorporated into the Health App"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/ja/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇯🇵</span>
+                    <span>日本語</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/mental-health/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/mental-health/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/mental-health/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/mental-health/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/mental-health/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/mental-health/" class="active"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/fr/mental-health/"><span class="flag">🇫🇷</span> Français</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/ja/blood-pressure/">血圧</a>
+
+            <a href="/ja/daily-journal/">日記</a>
+
+            <a href="/ja/mental-health/" class="current">メンタルヘルス</a>
+
+            <a href="/ja/sleep/">睡眠と夢</a>
+
+            <a href="/ja/weight/">体重と食事</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/FT_1024.png" alt="メンタルヘルスアプリアイコン" width="150" height="150" class="hero-logo app-icon">
+        <h1>メンタルヘルス</h1>
+
+        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> 広告なし・トラッキングなし・プライバシー最優先
+        </div>
+        <p class="hero-subtitle">シンプルな気分記録とAIパターン検出で感情の健康を理解しましょう。何があなたを幸せにし、何がストレスの原因となり、どうすればメンタルヘルスを改善できるかを発見できます。</p>
+        <a target="_blank" href="https://apps.apple.com/app/id687448999" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="App Storeでメンタルヘルスをダウンロード" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">オプションのプレミアム機能付き無料アプリ<br>iPhone、iPad、Mac対応 • iOS 16.0以降</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">Feeltracker メンタルヘルスの使い方を見る</h2>
+        <div class="screenshots-grid">
+
+            <div>
+                <img src="/images/screenshots/ft-1.png" alt="メンタルヘルス スクリーンショット1" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/ft-2.png" alt="メンタルヘルス スクリーンショット2" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/ft-3.png" alt="メンタルヘルス スクリーンショット3" class="screenshot-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">メンタルウェルネスのためのシンプルなツール</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-smile"></i></div>
+                <h3>シンプルな5段階スケール</h3>
+                <p>とても悲しいからとても幸せまで、数秒で気分を評価。複雑なアンケートは不要 - 一日を通して素早く正直にチェックインするだけです。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>AI顔スキャン</h3>
+                <p>自撮りを撮ると、AIがあなたの表情を分析して気分の評価を提案します。顔の表情やしぐさに基づいた客観的な感情インサイトを得られます。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-dna"></i></div>
+                <h3>iOS 18以降 State of Mind</h3>
+                <p>Apple Healthのメンタルヘルス機能と完全統合。State of Mindトラッキングと気分データを同期し、包括的な感情ウェルネスモニタリングを実現します。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>AIトリガー検出</h3>
+                <p>気分に影響を与えるものを発見。AIがメモを分析し、あなたの感情状態に影響を与える人、場所、活動、状況を特定します。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>視覚的な気分チャート</h3>
+                <p>美しいチャートで感情パターンを一目で把握。日、週、月、年単位のトレンドを追跡し、メンタルヘルスの道のりを理解できます。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-face-smile"></i></div>
+                <h3>顔スキャン</h3>
+                <p>自撮りを撮ると、AIが気分を分析し、日記エントリーを生成します。顔の表情が即座に気分のインサイトとなり、これまで以上に素早く正確なトラッキングが可能です。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-comment"></i></div>
+                <h3>プライベートメモ</h3>
+                <p>各気分エントリーにメモでコンテキストを追加。何が起きたか、どう感じているか、なぜそう感じるかを書きましょう。自動感情分析付きです。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                <h3>完全プライベート</h3>
+                <p><strong>広告なし。IDFAトラッキングなし。</strong> あなたの気分データは暗号化され、ご自身のデバイスとiCloudにのみ保存されます。アプリやウェブサイト間でのトラッキングは行わず、広告主へのデータ販売も一切ありません。</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">メンタルヘルスの使い方</h2>
+        <p class="section-subtitle center-text">感情ウェルネスとメンタルヘルス意識のために設計された包括的な気分記録システム</p>
+
+        <div class="app-card">
+            <h3>1. 気分を記録する</h3>
+            <div class="app-card-content">
+<p><strong>AI顔スキャン:</strong> 素早く自撮りを撮ると、AIが表情を分析して気分の評価を提案します。笑顔、しかめ面、その他の表情を検出し、気分エントリーの客観的な出発点を提供します。</p>
+<p><strong>シンプルな評価スケール:</strong> 一日に複数回、直感的な1〜5段階で気分を評価。素早く記録できるよう設計されており、わずか数秒で気分を記録でき、一日を通して継続的なトラッキングが簡単です。</p>
+<p><strong>詳細なコンテキスト:</strong> 今起きていることについてメモを追加 - 活動、対人関係、服薬、睡眠、ストレスの原因、ポジティブな瞬間など、感情状態に影響するあらゆることを。コンテキストを多く提供するほど、より価値のあるインサイトが得られます。</p>
+<p><strong>感情ラベル:</strong> 数値評価だけでなく、具体的な感情タグを付けましょう - 不安、希望、イライラ、満足、圧倒、穏やか。単純な数字を超えた、繊細な感情の全体像を構築します。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>2. パターンを発見する</h3>
+            <div class="app-card-content">
+<p><strong>カレンダー表示:</strong> 直感的なカレンダーインターフェースで気分履歴を一覧表示。各日は色分けされた平均気分を表示。良い週、辛い時期、感情のサイクルを一目で把握できます。</p>
+<p><strong>統計分析:</strong> 日次、週次、月次の気分平均値、気分安定性スコア、感情の幅、トレンドパターンが自動計算されます。感情ウェルネスの客観的データを時系列で確認できます。</p>
+<p><strong>トレンドチャート:</strong> 美しいグラフが日、週、月にわたる気分パターンを表示。季節パターン、服薬の効果、セラピーの進捗、長期的な感情の軌跡を特定。視覚データによりパターンを見逃すことがありません。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>3. トリガーを発見する</h3>
+            <div class="app-card-content">
+<p><strong>AIパターン認識:</strong> 人工知能がメモと気分評価を分析し、相関関係を特定。「運動した日は気分が40%向上」や「睡眠不足の後に気分が一貫して低下」といったインサイトを発見します。</p>
+<p><strong>トリガーの特定:</strong> どの人、場所、活動、状況がメンタルヘルスに一貫して影響を与えるかを学びます。AIは「仕事の締め切りに言及した日は気分が低い」や「社交活動について書くと気分が改善する」といったことを明らかにするかもしれません。</p>
+<p><strong>会話型インサイト:</strong> 自然言語で質問：「何が最も気分を改善する？」や「今月の最も調子が悪い日を見せて」。AIが完全な感情トラッキング履歴に基づいて思慮深い回答を提供します。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>4. ケアチームと共有する</h3>
+            <div class="app-card-content">
+<p><strong>専門家向けレポート:</strong> 臨床レビュー用にフォーマットされた包括的なPDFまたはExcelレポートをエクスポート。レポートには気分グラフ、詳細な統計、トリガーやパターンに関するメモ、服薬トラッキング、セラピーの進捗など、メンタルヘルス専門家に必要なすべてが含まれます。</p>
+<p><strong>Apple Health連携:</strong> iOS 18以降で、Apple HealthのState of Mind機能と同期。他のソースから気分データをインポートしたり、FTのトラッキングをHealthKitにエクスポートして完全な健康記録と統合できます。</p>
+<p><strong>DBTとCBTのサポート:</strong> メンタルヘルス専門家の意見を取り入れて設計。弁証法的行動療法（DBT）と認知行動療法（CBT）のテクニックをサポートする機能を搭載。感情の追跡、思考パターンの特定、治療の進捗モニタリングを効果的に行えます。</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>人工知能搭載</h2>
+        <p class="section-subtitle">気分パターンをより深く理解するための高度なAI機能</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">無料AI機能</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> 質問する</h4>
+                <p>気分データについてのクイックQ&A - メンタルヘルスに関する質問に即座に回答</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> チャット</h4>
+                <p>感情の健康について対話的な会話を行い、パーソナライズされたガイダンスを取得</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> 音声サマリー</h4>
+                <p>気分トレンドの音声要約を聴く - 外出先でのインサイトに最適</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-camera"></i> AI顔スキャン</h4>
+                <p>顔の表情をスキャンし、感情の手がかりのAI分析に基づく気分提案を取得</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> 笑わせて</h4>
+                <p>トラッキングデータからパーソナライズされたユーモアで気分を明るくする</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> 落ち着かせて</h4>
+                <p>不安やストレスの軽減に役立つAIガイド付き呼吸法とリラクゼーションエクササイズ</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">プレミアムAI機能</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> ディープリサーチレポート</h4>
+                <p>詳細なインサイトを含む気分データの包括的なAI分析</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> パターン探偵</h4>
+                <p>気分とライフスタイル要因の隠れた相関関係を発見</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 目標アシスタント</h4>
+                <p>パターンに基づいたパーソナライズされたデータ駆動型メンタルウェルネス目標を取得</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> 医師向けサマリー</h4>
+                <p>セラピストと共有するための専門的なメンタルヘルスサマリーを生成</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> 診断書ジェネレーター</h4>
+                <p>必要な時に仕事や学校用のAI生成診断書を作成</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> ストーリージェネレーター</h4>
+                <p>気分の旅をクリエイティブで魅力的な物語に変換</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> テキストサマリー</h4>
+                <p>気分トレンドの共有可能なテキストメッセージ要約を作成</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> パーソナライズクイズ</h4>
+                <p>データに基づいた楽しいAI生成10問クイズで知識をテスト</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> テキスト読み上げ</h4>
+                <p>AIインサイトとサマリーを自然な音声再生で聴く</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> カスタム健康レポート</h4>
+                <p>進捗を追跡するための包括的でパーソナライズされたメンタルヘルスドキュメントを作成</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-crosshairs"></i> トリガー特定</h4>
+                <p>どの活動、人、状況が気分に最も影響を与えるかを発見</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-lightbulb"></i> 認知リフレーミング</h4>
+                <p>CBTにインスパイアされたAI技法でネガティブな思考に新しい視点を得る</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-line"></i> 感情タイムライン</h4>
+                <p>AI分析による感情トラッキングで感情の旅を時系列で可視化</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>なぜ気分を記録するのか？</h2>
+        <p class="section-subtitle">メンタルヘルス専門家は定期的な気分モニタリングを推奨しています</p>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> パターンを特定</h4>
+                <p>感情の健康のサイクルを認識し、落ち込みの時期を予測</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-pills"></i> 治療を追跡</h4>
+                <p>セラピーや服薬が時間の経過とともに気分にどう影響するかを確認</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-exclamation-triangle"></i> 早期警告</h4>
+                <p>うつや不安の兆候を悪化する前に察知</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-line"></i> 進捗を測定</h4>
+                <p>メンタルヘルスの改善を具体的なエビデンスで確認</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-dots"></i> より良いセラピー</h4>
+                <p>治療の意思決定に役立つ詳細なデータをセラピストに提供</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-spa"></i> 自己認識</h4>
+                <p>自分の感情を理解することで感情知性を高める</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>33言語対応</h2>
+        <p class="section-subtitle">メンタルヘルスは以下の言語に完全ローカライズ済み：英語、スペイン語（Español）、フランス語（Français）、カナダフランス語、ドイツ語（Deutsch）、イタリア語（Italiano）、オランダ語（Nederlands）、ブラジルポルトガル語（Português）、ポルトガルポルトガル語、スウェーデン語（Svenska）、ノルウェー語（Norsk）、デンマーク語（Dansk）、フィンランド語（Suomi）、ポーランド語（Polski）、ロシア語（Русский）、ウクライナ語（Українська）、チェコ語（Čeština）、スロバキア語（Slovenčina）、ルーマニア語（Română）、クロアチア語（Hrvatski）、ハンガリー語（Magyar）、アラビア語（العربية）、ヘブライ語（עברית）、簡体字中国語（简体中文）、繁体字中国語（繁體中文）、日本語（日本語）、韓国語（한국어）、タイ語（ไทย）、ベトナム語（Tiếng Việt）、インドネシア語（Bahasa Indonesia）、ギリシャ語（Ελληνικά）、トルコ語（Türkçe）、カタルーニャ語（Català）。</p>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>よくある質問</h2>
+
+
+        <h3>どのくらいの頻度で気分を記録すべきですか？</h3>
+        <p>メンタルヘルス専門家は通常、1日2〜3回のチェックインを推奨しています - 朝、午後、夕方など。これにより、一日を通した感情状態のバランスの取れた全体像が得られます。アプリ内でリマインダーを設定して、この習慣を身につけることができます。</p>
+
+
+        <h3>Apple Health State of Mindとは何ですか？</h3>
+        <p>State of Mindは、iOS 18で導入されたAppleのメンタルヘルストラッキング機能です。瞬間的な感情と日々の気分を記録できます。メンタルヘルスはこの機能と完全に統合されており、気分評価がApple Healthと同期されて包括的なメンタルウェルネスのトラッキングが可能です。</p>
+
+
+        <h3>このアプリはセラピーの代わりになりますか？</h3>
+        <p>いいえ。メンタルヘルスはトラッキングツールであり、治療ではありません。専門的なメンタルヘルスケアを補完するものであり、代替するものではありません。メンタルヘルスに問題がある場合は、資格を持つセラピスト、カウンセラー、または精神科医にご相談ください。</p>
+
+
+        <h3>AIトリガー検出はどのように機能しますか？</h3>
+        <p>気分エントリーにメモを追加すると、AIがテキストを分析して繰り返し出現する単語やテーマを特定します。例えば、「サラとのコーヒー」を複数回言及し、その日の気分が一貫して高い場合、アプリはそれをポジティブな影響として表示します。プライバシーのため、これはすべてデバイス上で行われます。</p>
+
+
+        <h3>気分データはプライベートですか？</h3>
+        <p>もちろんです。気分エントリーは暗号化され、デバイスとプライベートなiCloudアカウントにのみ保存されます。あなたのメンタルヘルス情報を閲覧、アクセス、共有することは一切ありません。Apple Healthデータと同様にプライベートです。</p>
+
+
+        <h3>気分履歴をエクスポートできますか？</h3>
+        <p>はい。気分データをPDF、Excel、またはJSONファイルとしてエクスポートできます。多くのユーザーがセラピストや医師にこれらのレポートを共有し、治療の議論にコンテキストを提供しています。</p>
+
+
+        <h3>オフラインで使えますか？</h3>
+        <p>はい。インターネット接続がなくても、いつでも気分を記録できます。エントリーはオンラインに戻った時にiCloudに同期されます。</p>
+
+
+        <h3>特定の状態の気分を追跡できますか？</h3>
+        <p>アプリは一般的な気分トラッキングを提供しますが、多くのユーザーがうつ病、不安障害、双極性障害、季節性感情障害などの状態のモニタリングに役立てています。トラッキングデータについては常にかかりつけの医療提供者とご相談ください。</p>
+
+
+        <h3>広告は表示されますか？トラッキングされますか？</h3>
+        <p><strong>いいえ。</strong> アプリからすべての広告を完全に削除しました。他のアプリやウェブサイト間でのトラッキングは行わず、広告主へのデータ販売も一切ありません。</p>
+<p>データはiCloud経由で同期されます - Apple NotesやPhotosと同じです。つまり、メールアドレス、名前、その他の個人情報は必要ありません。メンタルヘルスデータはデバイスとiCloudアカウントに保存され、無料版でもプレミアム版でも完全にプライベートです。</p>
+
+
+        <h3>サブスクリプションは必要ですか？</h3>
+        <p>アプリは完全無料でダウンロードしてご利用いただけます。すべてのコアトラッキング機能はサブスクリプションなしで動作します。プレミアムサブスクリプションでは、高度なAI機能、無制限のエクスポート、拡張カスタマイズがアンロックされます。無料トライアル期間中にすべてのプレミアム機能をお試しいただけます。</p>
+
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">ユーザーの声</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">App Storeからの実際のレビュー</p>
+
+        <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Even my therapist likes this app</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"I just got diagnosed with adhd about a month ago. And I had to wait for 3 weeks to get meds for it. During that time I found this app, and it's been pretty amazing to see the erraticness of my un medicated brain compared to my medicated brain. My medicated brain is much more level in the graph. Plus I like that I can jot down what's on my mind really fast."</p>
+            <p class="review-author">- CynnCatt</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Great app</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"As someone with bipolar disorder I needed to record my moods and emotions but I couldn't find an app that didn't want an expensive subscription. I'm very thankful for this app, full functionality without a subscription and a subscription option if you want one."</p>
+            <p class="review-author">- Aprthax</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">i like it</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"i like how i dont need to pay for everything, on my other mood apps i have to pay to see what triggers me i like when it tells you what words affect you the most. it has a passcode or a lock on it if you only want yourself reading what u type. it really helped me correct myself. i've been doing this almost everyday and i see the charts and i can see when and where i improve or downgrade. i really enjoy this app and i like the sound effects it makes when your clicking your moods."</p>
+            <p class="review-author">- dariusslayss</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">AWESOME!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"I have one question before I start..how do you get down there to type? Okay so I just started like one minute ago and I'm already happy! Oh btw(by the way) I love the noises they make me laugh! This app tells you, 'how are you feeling today' something like that with the emojis You should totally get this app!!! Whoever made this must have worked really hard, so byeeee!!! From, Lila To, The person who made this!"</p>
+            <p class="review-author">- XxLila_BugxX</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Best of the bunch so far</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Only used it a couple days, but I love that I can enter multiple notes per day with auto time stamp (that I can edit if I want). The 5 smiley face ratings are just right to cover ups and downs throughout the day. Hope the app gets enough users to keep the developers going!"</p>
+            <p class="review-author">- tyggerted</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Cute little journal!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"I'm enjoying this app as a place to jot down thoughts and feelings during the day. The little mood face makes me think about what I might want to consider in order to enjoy my life more. I've tried a few of these apps and I'm liking this one best."</p>
+            <p class="review-author">- MZinMPCA</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Great and very useful</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"I love using this like a journal to keep track of what's going on in my life. It's helpful to look at the graphs and trends to see where patterns are as well as what stands out. Works great!"</p>
+            <p class="review-author">- olympics music</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Not a bot</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Not paid. Just another with depression. I love this app. Can see patterns or remember a week that I wouldn't. The graph is something you can't get with paper journal. Love ing this app."</p>
+            <p class="review-author">- Light it up blue</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Very good app</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Harlemhoney"</p>
+            <p class="review-author">- harlemhoney1428</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">Cool App!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"Easy to use, how you feel should be incorporated into the Health App"</p>
+            <p class="review-author">- User*09</p>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> 感情的ウェルビーイングをマスターしたいですか？</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">気分トラッキング、DBTスキル、メンタルヘルス管理のための20の専門家のヒントを発見</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                専門家のヒントを読む <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>感情を理解し始めましょう</h2>
+        <p>メンタルウェルネスの改善にメンタルヘルスを活用する数千人の仲間入りをしましょう</p>
+        <a target="_blank" href="https://apps.apple.com/app/id687448999" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="メンタルヘルスをダウンロード" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ja/mental-health/">ホーム</a>
+            <a href="/ja/about/">概要</a>
+            <a href="mailto:support@feeltracker.com">メールサポート</a>
+            <a href="/ja/support/">サポート</a>
+            <a href="/ja/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Xでフォロー</a>
+            <a href="/ja/privacy/">プライバシーポリシー</a>
+            <a href="/ja/terms/">利用規約</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Feeltrackerヘルストラッキングアプリファミリーの一員</p>
+        <p class="footer-disclaimer">健康データはお使いのデバイスとiCloudに保存されます。私たちがデータにアクセスしたり販売したりすることはありません。Feeltrackerアプリは医療機器ではありません。情報提供のみを目的としており、専門的な医療アドバイス、診断、治療の代わりとなるものではありません。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>プライバシーを大切にしています</strong></p>
+                <p>ウェブサイトとアプリの改善のため、分析用Cookieを使用しています。広告Cookieは使用していません。詳しくは <a href="/ja/privacy/">プライバシーポリシー</a> をご覧ください。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒否</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">同意</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>
