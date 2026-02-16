@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=1557699226">
+
+    <!-- Primary Meta Tags -->
+    <title>일기 - 메모·사진·생각·AI 다이어리 | Feeltracker</title>
+    <meta name="title" content="일기 - 메모·사진·생각·AI 다이어리 | Feeltracker">
+    <meta name="description" content="AI 스캔과 인사이트를 갖춘 프라이빗 일기 앱. 물체와 텍스트를 스캔하여 즉시 기록을 생성하고, 사진을 첨부하고, 단어 빈도 및 감정 분석으로 패턴을 발견하세요. iPhone, iPad, Mac에서 iCloud로 동기화. 간편하고 안전한 일기 앱입니다.">
+    <meta name="keywords" content="log,day,diario,lock,free,moleskine,personal,private,secret,taker,writer,journaling,my,笔记,дневник,笔记本,일기,저널,메모,노트,다이어리">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ko/daily-journal/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/daily-journal/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/daily-journal/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/daily-journal/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/daily-journal/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/daily-journal/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/daily-journal/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/daily-journal/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/daily-journal/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/daily-journal/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/ko/daily-journal/">
+    <meta property="og:title" content="일기 | AI 기반 다이어리 | Feeltracker">
+    <meta property="og:description" content="AI 스캔, 감정 분석, 단어 패턴 분석, 사진 첨부 기능을 갖춘 프라이빗 일기 앱.">
+    <meta property="og:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ko/daily-journal/">
+    <meta property="twitter:title" content="일기 | AI 기반 다이어리 | Feeltracker">
+    <meta property="twitter:description" content="AI 스캔, 감정 분석, 단어 패턴 분석을 갖춘 프라이빗 일기 앱.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "일기",
+      "applicationCategory": "LifestyleApplication",
+      "applicationSubCategory": "일기 및 다이어리",
+      "operatingSystem": "iOS 16.0 or later",
+      "description": "AI 스캔과 인사이트를 갖춘 프라이빗 일기 앱. 물체와 텍스트를 스캔하여 즉시 기록을 생성하고, 최대 8장의 사진을 첨부하고, 단어 빈도 및 감정 분석으로 패턴을 발견하세요. iPhone, iPad, Mac에서 iCloud로 동기화.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": 778,
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Custom Arts"
+      },
+      "featureList": [
+        "AI 아이템 스캔 - 일기 기록을 위해 물체를 설명",
+        "AI 텍스트 스캔 - OCR로 텍스트 캡처",
+        "기록의 감정 분석",
+        "단어 빈도 및 테마 추적",
+        "기록당 최대 8장의 사진 첨부",
+        "빠른 기록을 위한 메모 템플릿",
+        "전체 텍스트 검색 및 Spotlight 연동",
+        "PDF 및 Excel로 내보내기",
+        "iCloud 백업 및 동기화",
+        "33개 언어 지원"
+      ],
+      "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
+      "softwareVersion": "Latest",
+      "inLanguage": ["en", "es", "fr", "de", "it", "nl", "pt", "sv", "no", "da", "fi", "pl", "ru", "uk", "cs", "sk", "ro", "hr", "hu", "ar", "he", "zh", "ja", "ko", "th", "vi", "id", "el", "tr", "ca"],
+      "datePublished": "2021",
+      "downloadUrl": "https://apps.apple.com/app/id1557699226",
+      "installUrl": "https://apps.apple.com/app/id1557699226",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Danofishje"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Perfect & Simple",
+          "reviewBody": "Been looking for something exactly like this for over a year. Perfect app that does what it does without any fuss. I love the simplicity of what is essentially a calendar based notes app. You can read the entirety of each entry right from the main calendar page."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "PRE'"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "So far so good",
+          "reviewBody": "This is a nice little simple app that does not overextend into unneeded areas. It is the simplicity of it, including the simplicity of the interface that I value more than anything. I also appreciate that you can export it in PDF form. Thank you for keeping it simple."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "LT351"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Very good for health treatment log.",
+          "reviewBody": "I'm trying to keep a record of pain levels throughout the day. This app is perfect for that!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "EdwardPrince91"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "I like the way it looks!",
+          "reviewBody": "Just downloaded this app, it's amazing! I love it!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Seandello 1"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Great easy app, for what I do",
+          "reviewBody": "I was trying to explain what I do every day to my son who will be taking over my business I realized I needed to write it down as I often forget things. This app has been awesome."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Luciernagas"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Lo amo",
+          "reviewBody": "Uso este diario principalmente para guardar pequeñas victorias de mi día. Es facilisimo de usar y sus estadísticas son asombrosas. Te alienta a seguir adelante y te ayuda francamente a conocerte mejor."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Ineedabass"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Simple to the point",
+          "reviewBody": "This app is exactly what I needed to log all of my events with time/date and notes. This makes it so easy to see only the events that I need to share."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Nutelozopj"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Perfect for quick detailed journal entries",
+          "reviewBody": "Love the simple UI. Very minimalist and intuitive. App does journal entries and search very well. Incredibly useful and really helps keep one organized. Love the app and its just what I needed."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Blissful Sunshine"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Must have app!!",
+          "reviewBody": "This is an awesome app with minimal features yet benefits every one. I've been using this for a while and very happy with it. Every feature is at your fingertips which makes your life easy."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "unicorona"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Great app",
+          "reviewBody": "I have been looking for something simple like this! And love the little beep noises too. It's really helpful in reminding I wasn't a sloth or doing too little today."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "stanmoffat"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Fabulous app for keeping journal or notes",
+          "reviewBody": "Great support, easy to use and accurate. Give it a try you'll be glad you did!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Val_MN"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Perfect!",
+          "reviewBody": "Just downloaded this and could instantly tell it was exactly what I was looking for! So clean and easy to use!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Paul77785"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Love the trends feature",
+          "reviewBody": "I've been using this app in a non-typical way to track my addiction recovery progress. Then I can see in the trends how my progress is looking over time. Cool app though, thanks!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "shaz1851985"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "5 stars",
+          "reviewBody": "Best app love it 5 stars"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/ko/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇰🇷</span>
+                    <span>한국어</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/daily-journal/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/daily-journal/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/daily-journal/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/daily-journal/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/daily-journal/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/daily-journal/"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/fr/daily-journal/"><span class="flag">🇫🇷</span> Français</a>
+
+                    <a href="/ko/daily-journal/" class="active"><span class="flag">🇰🇷</span> 한국어</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/ko/blood-pressure/">혈압</a>
+
+            <a href="/ko/daily-journal/" class="current">일기</a>
+
+            <a href="/ko/mental-health/">정신 건강</a>
+
+            <a href="/ko/sleep/">수면과 꿈</a>
+
+            <a href="/ko/weight/">체중과 식단</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/NT_1024.png" alt="일기 앱 아이콘" width="150" height="150" class="hero-logo app-icon">
+        <h1>일기</h1>
+
+        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> 광고 없음 · 추적 없음 · 프라이버시 최우선
+        </div>
+        <p class="hero-subtitle">일상의 성찰, 생각, 추억을 위한 나만의 공간. AI 감정 분석, 사진 첨부, 글쓰기 패턴에 대한 지능형 인사이트로 자유롭게 기록하세요.</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="App Store에서 일기 Feeltracker 다운로드" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">선택적 프리미엄 기능이 포함된 무료 앱<br>iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">Feeltracker 일기 앱을 직접 확인하세요</h2>
+        <div class="screenshots-grid">
+
+            <div>
+                <img src="/images/screenshots/nt-1.png" alt="일기 앱 스크린샷 1" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/nt-2.png" alt="일기 앱 스크린샷 2" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/nt-3.png" alt="일기 앱 스크린샷 3" class="screenshot-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">마음 챙김 일기에 필요한 모든 것</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-pen"></i></div>
+                <h3>집중할 수 있는 글쓰기 환경</h3>
+                <p>당신의 글을 최우선으로 하는 깔끔하고 심플한 인터페이스. 불필요한 요소 없이 오직 당신과 당신의 생각만. 매일 원하는 만큼 자유롭게 쓸 수 있습니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-smile"></i></div>
+                <h3>AI 감정 분석</h3>
+                <p>Apple의 온디바이스 Natural Language API를 사용하여 기록의 감정적 톤을 자동으로 감지합니다. 완전한 프라이버시 보장 - 데이터가 기기를 벗어나지 않습니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-barcode-scan"></i></div>
+                <h3>AI 스캔</h3>
+                <p>카메라로 물체, 문서, 영수증, 텍스트를 스캔하면 AI가 설명하고 텍스트를 추출합니다. 실제 물건에서 즉시 일기 기록을 만들 수 있습니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>단어 빈도 분석</h3>
+                <p>당신이 정말 무엇을 생각하고 있는지 알아보세요. 글에서 가장 자주 등장하는 단어와 테마를 확인하여 패턴과 반복되는 생각을 파악할 수 있습니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>포토 저널</h3>
+                <p>기록당 최대 8장의 사진을 첨부하여 추억을 시각적으로 담아보세요. 여행 일기, 감사 일기, 또는 하루를 기록하는 데 완벽합니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>메모 템플릿</h3>
+                <p>맞춤형 템플릿으로 빠르게 글쓰기를 시작하세요. 감사 일기, 모닝 페이지, 목표 추적 등 반복적인 저널링 습관에 안성맞춤입니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>아이템 스캔</h3>
+                <p>카메라를 물체에 향하면 AI가 창의적인 맥락과 함께 설명해 줍니다. 일상의 순간을 의미 있는 기록으로 바꿔보세요.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-lines"></i></div>
+                <h3>텍스트 스캔</h3>
+                <p>AI 기반 OCR로 문서, 간판, 화면에서 텍스트를 캡처하세요. 작성된 내용을 즉시 디지털화하여 일기 기록에 추가할 수 있습니다.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-search"></i></div>
+                <h3>강력한 검색</h3>
+                <p>전체 텍스트 검색으로 모든 기록을 즉시 찾을 수 있습니다. iOS Spotlight에도 인덱싱되어 기기 어디서든 빠르게 접근할 수 있습니다.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">일기 앱 사용 방법</h2>
+        <p class="section-subtitle center-text">인생의 순간을 기록하고 패턴을 발견하는 나만의 저널링 동반자</p>
+
+        <div class="app-card">
+            <h3>1. 생각을 적어보세요</h3>
+            <div class="app-card-content">
+<p><strong>즉시 기록 작성:</strong> 앱을 열고 바로 쓰기 시작하세요. 설정도, 구성도, 복잡한 과정도 없습니다. 오직 당신의 생각과 페이지뿐. 깔끔하고 집중할 수 있는 인터페이스가 자기 표현에 몰입하도록 도와줍니다.</p>
+<p><strong>리치 미디어:</strong> 사진으로 기록을 풍성하게 만들고, 이미지를 첨부하여 추억을 시각적으로 담아보세요. 음성 녹음, 스케치 등 스토리를 전하는 데 도움이 되는 미디어를 추가할 수 있습니다. 모든 기록이 하루의 완전한 스냅샷이 됩니다.</p>
+<p><strong>메모 템플릿:</strong> 일상 성찰, 감사 일기, 목표 추적, 꿈 일기 등의 기본 템플릿을 사용하거나 나만의 맞춤 템플릿을 만들 수 있습니다. 템플릿이 구조를 제공하면서도 자연스럽게 쓸 수 있는 자유를 줍니다.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>2. 패턴을 발견하세요</h3>
+            <div class="app-card-content">
+<p><strong>감정 분석:</strong> AI가 기록의 감정적 톤(긍정, 부정, 중립)을 자동으로 감지합니다. 몇 주에서 몇 달에 걸친 기분 트렌드를 시각화하여 감정 패턴을 이해하세요.</p>
+<p><strong>단어 빈도:</strong> 어떤 주제, 사람, 테마에 대해 가장 많이 쓰는지 알아보세요. 앱이 반복되는 단어와 구문을 파악하여 항상 마음에 있는 것과 관심사의 변화를 보여줍니다.</p>
+<p><strong>캘린더 보기:</strong> 캘린더 인터페이스에서 전체 저널링 이력을 탐색할 수 있습니다. 각 날짜에 발췌문과 기분 표시가 나타납니다. 과거 기록으로 빠르게 이동하여 그날 무슨 생각을 했는지 돌아볼 수 있습니다.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>3. 성찰하고 성장하세요</h3>
+            <div class="app-card-content">
+<p><strong>AI 기반 인사이트:</strong> 일기에 대해 질문할 수 있습니다: "지난달 가장 행복했던 날은?" 또는 "목표에 대해 쓴 기록을 모두 보여줘." 여정을 이해하는 데 도움이 되는 즉각적이고 사려 깊은 답변을 받을 수 있습니다.</p>
+<p><strong>개인 성장 추적:</strong> 생각, 관심사, 포부가 어떻게 변화해 왔는지 돌아보세요. 과거 기록에 언급된 목표의 진척 상황을 확인하세요. 성장 영역을 파악하고 지금까지 걸어온 길을 축하하세요.</p>
+<p><strong>모든 것을 검색:</strong> 강력한 검색으로 수년간의 일기에서 어떤 단어, 구문, 개념이든 찾을 수 있습니다. 날짜, 기분, 키워드로 필터링하세요. 작성한 모든 이력에 즉시 접근하고 검색할 수 있습니다.</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>4. 모든 것을 안전하게 보관</h3>
+            <div class="app-card-content">
+<p><strong>프라이빗 & 보안:</strong> 모든 기록은 암호화되어 개인 iCloud 계정에 저장됩니다. 일기를 읽을 수 있는 사람은 오직 당신뿐입니다. 종단 간 암호화로 당신의 글은 완전히 비공개로 유지됩니다.</p>
+<p><strong>자동 백업:</strong> 주간 자동 JSON 백업으로 생각을 잃어버릴 걱정이 없습니다. 언제든 수동 백업으로 전체 일기를 내보낼 수 있습니다. 기기 분실이나 고장으로부터 당신의 글을 지켜줍니다.</p>
+<p><strong>기기 간 동기화:</strong> iPhone에서 쓰고, iPad에서 이어쓰고, Mac에서 확인하세요. 모든 기록이 iCloud를 통해 자동 동기화됩니다. 일기는 어디서나 함께하며, 모든 기기에서 항상 최신 상태를 유지합니다.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>인공지능으로 구동</h2>
+        <p class="section-subtitle">저널링 습관에서 더 많은 것을 이끌어내는 고급 AI 기능</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">무료 AI 기능</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> 질문하기</h4>
+                <p>일기 기록에 대한 빠른 Q&A - 글에 관한 즉각적인 답변을 받으세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> 채팅</h4>
+                <p>저널링 여정에 대해 대화형으로 이야기하고 맞춤형 안내를 받으세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> 음성 요약</h4>
+                <p>일기 테마의 오디오 요약을 들어보세요 - 이동 중 성찰에 딱 좋습니다</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-barcode-scan"></i> AI 스캔</h4>
+                <p>물체, 문서, 영수증, 텍스트를 스캔하여 AI 설명과 함께 즉시 일기 기록을 생성하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> 웃겨주세요</h4>
+                <p>일기 기록에서 나만을 위한 유머를 만들어 기분을 밝게 해드립니다</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> 진정시켜 주세요</h4>
+                <p>AI 안내 호흡법과 이완 운동으로 스트레스를 줄여보세요</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">프리미엄 AI 기능</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> 심층 리서치 보고서</h4>
+                <p>상세한 인사이트를 포함한 일기의 종합적인 AI 분석</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> 패턴 탐정</h4>
+                <p>일기 기록에 숨겨진 테마와 패턴을 시간순으로 발견</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 목표 어시스턴트</h4>
+                <p>저널링 패턴을 기반으로 한 맞춤형 데이터 기반 인생 목표를 제안받으세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> 의사 요약</h4>
+                <p>의료 기관 방문 시 공유할 수 있는 전문적인 요약을 생성</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> 진단서 생성기</h4>
+                <p>필요할 때 AI가 생성하는 진단서를 만들어보세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> 스토리 생성기</h4>
+                <p>일기 기록을 창의적이고 매력적인 이야기로 변환</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> 텍스트 요약</h4>
+                <p>일기 테마를 공유 가능한 텍스트 메시지 요약으로 만들기</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> 맞춤형 퀴즈</h4>
+                <p>당신의 데이터를 기반으로 AI가 생성한 재미있는 10문항 퀴즈로 지식을 테스트</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> 텍스트 음성 변환</h4>
+                <p>AI 인사이트와 요약을 자연스러운 음성으로 들어보세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> 맞춤형 건강 보고서</h4>
+                <p>저널링 진행 상황을 추적하기 위한 종합적이고 개인화된 문서를 생성</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-tags"></i> 테마 탐색기</h4>
+                <p>AI 기반 테마 분석으로 글에서 반복되는 주제와 아이디어를 발견</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-line"></i> 감정 타임라인</h4>
+                <p>AI 분석 감정 추적으로 시간에 따른 감정의 여정을 시각화</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>왜 매일 일기를 써야 할까요?</h2>
+        <p class="section-subtitle">연구에 따르면 일기 쓰기는 정신 건강, 명확성, 창의성을 향상시킵니다</p>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-brain"></i> 사고의 명확성</h4>
+                <p>글쓰기는 생각을 정리하고 머릿속 혼란을 줄이는 데 도움이 됩니다</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment"></i> 감정 처리</h4>
+                <p>안전하고 프라이빗한 공간에서 감정을 표현하고 처리하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 진행 상황 추적</h4>
+                <p>과거 기록을 돌아보며 얼마나 성장했는지 확인하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-lightbulb"></i> 자기 발견</h4>
+                <p>사고와 행동의 패턴을 발견하세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-hands-praying"></i> 감사 실천</h4>
+                <p>매일 감사 일기로 감사하는 마음을 길러보세요</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> 추억 보존</h4>
+                <p>인생의 순간들을 나만의 아카이브로 만들어보세요</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>33개 언어 지원</h2>
+        <p class="section-subtitle">일기 앱은 다음 언어를 완벽하게 지원합니다: 영어(English), 스페인어(Español), 프랑스어(Français), 캐나다 프랑스어, 독일어(Deutsch), 이탈리아어(Italiano), 네덜란드어(Nederlands), 브라질 포르투갈어(Português), 포르투갈 포르투갈어, 스웨덴어(Svenska), 노르웨이어(Norsk), 덴마크어(Dansk), 핀란드어(Suomi), 폴란드어(Polski), 러시아어(Русский), 우크라이나어(Українська), 체코어(Čeština), 슬로바키아어(Slovenčina), 루마니아어(Română), 크로아티아어(Hrvatski), 헝가리어(Magyar), 아랍어(العربية), 히브리어(עברית), 중국어 간체(简体中文), 중국어 번체(繁體中文), 일본어(日本語), 한국어(한국어), 태국어(ไทย), 베트남어(Tiếng Việt), 인도네시아어(Bahasa Indonesia), 그리스어(Ελληνικά), 터키어(Türkçe), 카탈루냐어(Català).</p>
+    </section>
+
+
+    <!-- Use Cases -->
+    <section class="support-section">
+        <h2>이런 분께 딱 맞습니다...</h2>
+
+        <h3>일상 성찰</h3>
+        <p>하루를 마무리하며 무슨 일이 있었는지, 무엇을 배웠는지, 어떤 기분이었는지 적어보세요. 알림과 템플릿으로 꾸준한 일기 습관을 만들어보세요.</p>
+
+        <h3>감사 일기</h3>
+        <p>메모 템플릿을 사용하여 매일 감사한 세 가지를 빠르게 기록하세요. 감사 실천을 추적하고 긍정적인 패턴이 나타나는 것을 확인하세요.</p>
+
+        <h3>여행 일기</h3>
+        <p>사진과 상세한 메모로 모험을 기록하세요. 언제든 다시 볼 수 있는 풍성한 여행 기록을 만들어보세요.</p>
+
+        <h3>목표 추적</h3>
+        <p>목표에 대해 쓰고, 진행 상황을 추적하고, 무엇이 효과적인지 돌아보세요. AI 인사이트로 어떤 접근 방식이 가장 효과적인지 확인할 수 있습니다.</p>
+
+        <h3>창작 글쓰기</h3>
+        <p>매일 글쓰기를 연습하고, 아이디어를 기록하고, 자신만의 목소리를 발전시키세요. 집중할 수 있는 인터페이스가 창작에 몰입하도록 도와줍니다.</p>
+
+        <h3>정신 건강</h3>
+        <p>글쓰기를 통해 감정을 처리하고, 트리거를 파악하고, 기분 패턴을 추적하세요. 감정 분석이 감정적 톤에 대한 객관적인 피드백을 제공합니다.</p>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>이런 분께 딱 맞습니다...</h2> <h3>일상 성찰</h3> <p>하루를 마무리하며 무슨 일이 있었는지, 무엇을 배웠는지, 어떤 기분이었는지 적어보세요. 알림과 템플릿으로 꾸준한 일기 습관을 만들어보세요.</p> <h3>감사 일기</h3> <p>메모 템플릿을 사용하여 매일 감사한 세 가지를 빠르게 기록하세요. 감사 실천을 추적하고 긍정적인 패턴이 나타나는 것을 확인하세요.</p> <h3>여행 일기</h3> <p>사진과 상세한 메모로 모험을 기록하세요. 언제든 다시 볼 수 있는 풍성한 여행 기록을 만들어보세요.</p> <h3>목표 추적</h3> <p>목표에 대해 쓰고, 진행 상황을 추적하고, 무엇이 효과적인지 돌아보세요. AI 인사이트로 어떤 접근 방식이 가장 효과적인지 확인할 수 있습니다.</p> <h3>창작 글쓰기</h3> <p>매일 글쓰기를 연습하고, 아이디어를 기록하고, 자신만의 목소리를 발전시키세요. 집중할 수 있는 인터페이스가 창작에 몰입하도록 도와줍니다.</p> <h3>정신 건강</h3> <p>글쓰기를 통해 감정을 처리하고, 트리거를 파악하고, 기분 패턴을 추적하세요. 감정 분석이 감정적 톤에 대한 객관적인 피드백을 제공합니다.</p> </section> <!-- Languages --> <section class="platforms-section center-text"> <h2>33개 언어 지원</h2> <p class="section-subtitle">일기 앱은 다음 언어를 완벽하게 지원합니다: 영어(English), 스페인어(Español), 프랑스어(Français), 캐나다 프랑스어, 독일어(Deutsch), 이탈리아어(Italiano), 네덜란드어(Nederlands), 브라질 포르투갈어(Português), 포르투갈 포르투갈어, 스웨덴어(Svenska), 노르웨이어(Norsk), 덴마크어(Dansk), 핀란드어(Suomi), 폴란드어(Polski), 러시아어(Русский), 우크라이나어(Українська), 체코어(Čeština), 슬로바키아어(Slovenčina), 루마니아어(Română), 크로아티아어(Hrvatski), 헝가리어(Magyar), 아랍어(العربية), 히브리어(עברית), 중국어 간체(简体中文), 중국어 번체(繁體中文), 일본어(日本語), 한국어(한국어), 태국어(ไทย), 베트남어(Tiếng Việt), 인도네시아어(Bahasa Indonesia), 그리스어(Ελληνικά), 터키어(Türkçe), 카탈루냐어(Català).</p> </section> <!-- FAQ --> <section class="support-section"> <h2>자주 묻는 질문</h2>
+
+
+        <h3>제 일기는 비공개인가요?</h3>
+        <p>물론입니다. 기록은 기기와 개인 iCloud 계정에 암호화되어 저장됩니다. 저희는 절대 당신의 글을 볼 수 없습니다. AI 감정 분석조차 Apple의 Natural Language API를 사용하여 완전히 기기에서만 이루어집니다. 당신의 글은 절대 휴대폰 밖으로 나가지 않습니다.</p>
+
+
+        <h3>감정 분석은 어떻게 작동하나요?</h3>
+        <p>8단어 이상을 작성하면, 앱이 Apple 내장 Natural Language 프레임워크를 사용하여 감정적 톤을 분석합니다. 이모지가 나타나 기록이 긍정적, 부정적, 중립적인지 보여줍니다. 이 과정은 완전한 프라이버시 보호를 위해 전적으로 기기에서 이루어집니다.</p>
+
+
+        <h3>단어 빈도 분석이란 무엇인가요?</h3>
+        <p>트렌드 기능이 모든 기록을 분석하여 가장 자주 쓰는 단어와 주제를 보여줍니다. 사고에서 반복되는 테마, 관심사, 흥미를 파악하는 데 도움이 됩니다.</p>
+
+
+        <h3>일기에 사진을 추가할 수 있나요?</h3>
+        <p>네! 각 일기 기록에 최대 8장의 사진을 첨부할 수 있습니다. 사진은 자동 썸네일 생성으로 효율적으로 저장되며, iCloud를 통해 모든 기기에 동기화됩니다.</p>
+
+
+        <h3>메모 템플릿이란 무엇인가요?</h3>
+        <p>템플릿은 빠르게 글쓰기를 시작할 수 있도록 미리 작성된 프롬프트입니다. 감사 목록, 일일 회고, 목표 추적 또는 자주 사용하는 형식의 맞춤 템플릿을 만들 수 있습니다.</p>
+
+
+        <h3>일기 기록을 내보낼 수 있나요?</h3>
+        <p>네. 기록을 PDF, Excel, JSON 파일로 내보낼 수 있습니다. 백업을 만들거나, 선택한 기록을 공유하거나, 필요 시 다른 플랫폼으로 데이터를 이동할 수 있습니다.</p>
+
+
+        <h3>Mac에서도 사용할 수 있나요?</h3>
+        <p>네! 앱은 Apple Silicon Mac(M1 이상)에서 네이티브로 작동합니다. 기록은 iCloud를 통해 iPhone, iPad, Mac 간에 자동 동기화됩니다.</p>
+
+
+        <h3>하루에 여러 개의 기록을 쓸 수 있나요?</h3>
+        <p>물론입니다. 매일 원하는 만큼 기록을 작성할 수 있습니다. 아침과 저녁에 일기를 쓰는 분도 있고, 하루 종일 메모를 추가하는 분도 있습니다.</p>
+
+
+        <h3>광고가 표시되거나 추적이 되나요?</h3>
+        <p><strong>아닙니다.</strong> 앱에서 모든 광고를 완전히 제거했습니다. 다른 앱이나 웹사이트를 통해 추적하지 않으며, 데이터를 광고주에게 판매하지 않습니다.</p>
+<p>데이터는 iCloud를 통해 동기화됩니다. Apple 메모나 사진과 동일한 방식입니다. 즉, 이메일 주소, 이름, 기타 개인 정보를 알 필요가 없습니다. 일기 기록은 기기와 iCloud 계정에 저장되며, 무료 버전이든 프리미엄 버전이든 완전히 비공개입니다.</p>
+
+
+        <h3>구독이 필요한가요?</h3>
+        <p>앱은 완전히 무료로 다운로드하여 사용할 수 있습니다. 모든 기본 기록 기능은 구독 없이 작동합니다. 프리미엄 구독을 통해 고급 AI 기능, 무제한 내보내기, 향상된 커스터마이징이 가능해집니다. 무료 체험 기간 동안 모든 프리미엄 기능을 사용해 보실 수 있습니다.</p>
+
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">사용자 후기</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">App Store의 실제 리뷰</p>
+
+        <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">완벽하고 심플해요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"1년 넘게 정확히 이런 앱을 찾고 있었어요. 군더더기 없이 제 역할을 완벽하게 해내는 앱입니다. 완료한 작업, 걸었던 전화, 배운 정보 등을 메모하는 데 사용하고 있어요. 프리랜서라서 동시에 진행 중인 여러 프로젝트의 정보를 기록할 간단한 방법이 필요했습니다. 간단한 검색 기능이 있어서 용어나 프로젝트 이름을 일관성 있게 유지하면 태그 검색처럼 기록을 불러올 수 있어요. 기본적으로 캘린더 기반 메모 앱이라는 단순함이 정말 마음에 듭니다. 한 날짜에 여러 짧은 기록을 만들 수 있고, 모두 시작 화면에서 볼 수 있습니다. 이 기능은 프로젝트별로 기록을 분리하면서도 해당 날의 모든 메모를 한눈에 볼 수 있게 해주는 핵심 기능이에요. 미리보기만 보여주는 복잡한 포맷 없이, 메인 캘린더 페이지에서 각 기록의 전체 내용을 읽을 수 있습니다."</p>
+            <p class="review-author">- Danofishje</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">지금까지 아주 좋아요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"불필요한 기능으로 확장하지 않는 깔끔하고 심플한 앱입니다. 인터페이스의 심플함을 포함해서, 그 단순함이 무엇보다 소중합니다. 꽃이나 다람쥐, 게임, 무지개 유니콘 같은 건 필요 없어요. 그냥 심플한 일기 같은 메모 앱이 필요할 뿐입니다. 지금까지 이 앱은 그 요구 사항을 충족해 주고 있어요. 일종의 상쾌함이 느껴집니다. 필요할 때 PDF 형태로 내보낼 수 있는 것도 감사합니다. 심플하게 유지해 주셔서 감사합니다."</p>
+            <p class="review-author">- PRE'</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">건강 관리 기록에 아주 좋아요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"하루 동안의 통증 수준을 기록하려고 합니다. 이 앱이 그것에 딱 맞아요!"</p>
+            <p class="review-author">- LT351</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">자유로움</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"자유로움, 눈, 그리고 시간 관리 방법"</p>
+            <p class="review-author">- 223tr</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">가치 있어요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"빠른 답변 감사합니다, 정말 빨랐어요. 이 프로젝트를 확실히 응원합니다. 마지막으로 한 가지 요청: AI를 좀 더 사용하기 편하게 해주세요. 시간에 대한 프롬프트 등, 어떤 종류의 프롬프트 GUI나 일반적인 것을 만들어 주세요."</p>
+            <p class="review-author">- Gualmarl</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">디자인이 마음에 들어요!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"방금 이 앱을 다운로드했는데, 정말 놀라워요! 너무 좋아요!"</p>
+            <p class="review-author">- EdwardPrince91</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">제 업무에 딱 맞는 간편한 앱</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"사업을 물려받을 아들에게 매일 하는 일을 설명하려다가, 자주 잊어버리기 때문에 적어둘 필요가 있다는 것을 깨달았어요. 이 앱 덕분에 아들이 사업을 이어받아 성공할 수 있도록 매일 하는 일을 정확하게 설명할 수 있게 되었습니다."</p>
+            <p class="review-author">- Seandello 1</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">정말 좋아해요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"이 일기를 주로 하루의 작은 승리(상대적인 표현이지만)를 기록하는 데 사용합니다. 하루 중 아무 때나, 원하는 만큼 자주 사용할 수 있고, 정말 쉽게 쓸 수 있으며 통계 기능이 놀라워요(특정 단어를 몇 번 사용했는지까지 세어줍니다). 앞으로 나아갈 용기를 주고 솔직히 자기 자신을 더 잘 알게 도와줍니다. 만들어주신 분들께 감사드리고, 무료인 게 너무 좋아요. 요즘 세상에 뭐든 다 돈을 내야 하니까요. 정신 건강이 최근 몇 년간 주목받게 되어서 든든한 느낌입니다. 감사합니다!"</p>
+            <p class="review-author">- Luciernagas</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">심플하고 핵심만</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"이 앱은 성가신 이웃의 행동을 날짜/시간과 메모와 함께 기록하는 데 정확히 필요한 것이었어요. 일반 캘린더를 지저분하게 만들고 싶지 않았거든요. 공유해야 할 이벤트만 쉽게 확인할 수 있어요."</p>
+            <p class="review-author">- Ineedabass</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">빠르고 상세한 일기 기록에 완벽해요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"심플한 UI가 정말 좋아요. 매우 미니멀하고 직관적입니다. 일기 기록과 검색 기능이 뛰어나서, 정확히 설명대로입니다. 엄청나게 유용하고 정리 정돈을 유지하며 한 주간의 세세한 사항들을 빠르게 되돌아보는 데 도움이 돼요. 메인 페이지가 매년 트리 뷰로 되어 있어서 홈 화면 공간이 좀 비어 보이기도 하지만, 자리만 채우는 것처럼 보이지 않게 뭘로 채울지는 모르겠어요. 이 앱을 정말 좋아하고 딱 필요한 것이었어요. 말 그대로 매일 쓸 겁니다."</p>
+            <p class="review-author">- Nutelozopj</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">필수 앱!!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"최소한의 기능이지만 누구에게나 도움이 되는 멋진 앱입니다... 한동안 사용해 왔고 매우 만족하고 있어요... 모든 기능이 바로 손끝에 있어서 생활이 편해집니다..."</p>
+            <p class="review-author">- Blissful Sunshine</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">좋은 앱이에요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"이렇게 심플한 것을 계속 찾고 있었어요! 작은 비프음도 좋아요 - 멋진 앱이에요. 뭘 했는지 가끔 까먹어서, 강아지 산책시킬 때, 밤 루틴 마칠 때, 샤워할 때, 뭔가 생산적인 일을 할 때마다 기록해요. 오늘 게으름 피우거나 너무 적게 한 게 아니라는 걸 상기시켜 줘서 정말 도움이 됩니다."</p>
+            <p class="review-author">- unicorona</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">일기나 메모 보관에 최고의 앱</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"지원이 훌륭하고, 사용하기 쉽고, 정확합니다. 한번 써보세요, 분명 만족하실 거예요!"</p>
+            <p class="review-author">- stanmoffat</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">완벽해요!</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"다운로드하자마자 바로 제가 찾던 것이라는 걸 알 수 있었어요! 정말 깔끔하고 사용하기 쉬워요!"</p>
+            <p class="review-author">- Val_MN</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">쉬워요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"이 앱은 매우 심플하고 일기를 쉽고 유연하게 만들어줍니다. Moleskine의 다른 앱(Timepage나 Actions)과 동기화할 수 있으면 좋겠어요."</p>
+            <p class="review-author">- Jdhott29</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">!! 감사합니다</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"이제 빈 시간이 기록되지 않고 지나가는 일은 없을 거예요. 이제 기록에 남기고, 미루던 일들을 해치우고 있어요!"</p>
+            <p class="review-author">- studioart</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">트렌드 기능이 최고예요</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"이 앱을 좀 독특한 방식으로 사용하고 있어요. 중독 회복과 관련된 생각, 감정, 행동이 있을 때마다 T, F, B를 입력합니다. 그러면 트렌드에서 시간이 지남에 따라 진행 상황이 어떻게 되는지 확인할 수 있어요. 트렌드 뷰에서 직접 날짜 범위를 선택할 수 있으면 좋겠어요. 주별이나 월별 비교가 가능하면 더 좋겠고요. 그래도 멋진 앱이에요, 감사합니다!"</p>
+            <p class="review-author">- Paul77785</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">별 5개</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"최고의 앱이에요. 정말 좋아합니다. 별 5개."</p>
+            <p class="review-author">- shaz1851985</p>
+        </div>
+
+        </div>
+
+        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">리뷰는 영어에서 번역되었습니다. 원본은 App Store에 게시되어 있습니다.</p>
+
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> 저널링 습관을 바꾸고 싶으신가요?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">효과적인 자기 성찰, 감사, 개인 성장을 위한 20가지 전문가 팁을 확인하세요</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                전문가 팁 읽기 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>오늘부터 일기 쓰기를 시작하세요</h2>
+        <p>수천 명이 매일 성찰의 효과를 경험하고 있습니다</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="일기 Feeltracker 다운로드" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ko/daily-journal/">홈</a>
+            <a href="/ko/about/">소개</a>
+            <a href="mailto:support@feeltracker.com">이메일 지원</a>
+            <a href="/ko/support/">지원</a>
+            <a href="/ko/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">X에서 팔로우</a>
+            <a href="/ko/privacy/">개인정보 처리방침</a>
+            <a href="/ko/terms/">이용약관</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Feeltracker 건강 트래킹 앱 패밀리의 일원</p>
+        <p class="footer-disclaimer">건강 데이터는 사용자의 기기와 iCloud에 저장됩니다. 저희는 데이터에 접근하거나 판매하지 않습니다. Feeltracker 앱은 의료기기가 아닙니다. 정보 제공 목적으로만 사용되며, 전문적인 의료 조언, 진단 또는 치료를 대체하지 않습니다.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>개인정보를 소중히 여깁니다</strong></p>
+                <p>웹사이트와 앱 개선을 위해 분석용 쿠키를 사용합니다. 광고 쿠키는 사용하지 않습니다. 자세한 내용은 <a href="/ko/privacy/">개인정보 처리방침</a> 을 참조하세요.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">거부</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">동의</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>
