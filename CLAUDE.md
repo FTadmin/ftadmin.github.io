@@ -95,7 +95,7 @@ Fully structured. Each section is a JSON object:
 - `languages` — title, text
 - `useCases` — (optional) title + items array
 - `faq` — title + items array (question, answer with HTML)
-- `reviews` — title, subtitle + items array (title, content, author)
+- `reviews` — title, subtitle, disclaimer (non-EN only) + items array (title, content, author)
 - `tips` — title, subtitle, ctaText
 - `cta` — title, subtitle
 
@@ -116,7 +116,7 @@ Fully structured:
 - `features` — title + items[] (icon, title, description)
 - `aiFeatures` — title, subtitle, freeTitle, free[], premiumTitle, premium[], disclaimerTitle, disclaimerText
 - `socialProof` — title, subtitle, stats[]
-- `reviews` — title, subtitle, items[]
+- `reviews` — title, subtitle, disclaimer (non-EN only), items[]
 - `platforms` — title, subtitle, text
 - `faq` — title + items[] (question, answer)
 - `cta` — title, subtitle, items[] (name, appStoreId, downloadAlt)
@@ -159,7 +159,8 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
    ```json
    { "title": "Review Title", "content": "Review text without quotes", "author": "Username, App Name" }
    ```
-3. Run `node build.js`
+3. **Translate the review** into every non-EN language's matching file. Keep `author` names unchanged (real usernames). Each non-EN language must have a `reviews.disclaimer` field (see below).
+4. Run `node build.js`
 
 ### Add a new language (e.g., Portuguese)
 1. **Add language config** to `data/languages.json`:
@@ -182,9 +183,11 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
    - **`apps.items[].downloadAlt`** — alt text for download buttons in the apps grid
    - **`cta.items[].name`** — the app name shown above download buttons in the CTA section at the bottom of the page (e.g., "Pressão Arterial Feeltracker"). These MUST be translated.
    - **`cta.items[].downloadAlt`** — alt text for download buttons in the CTA section
+   - **`indexFooter.links[].href`** — MUST use absolute paths with language prefix (e.g., `"/pt/about/"`, `"/pt/privacy/"`). Never use relative paths like `about.html` — they break on non-root pages. For EN, use `"/about/"`, `"/privacy/"`, etc.
    - **`indexFooter`** content (links, copyright, tagline, disclaimer)
    - All `meta` fields (title, description, keywords, OG tags)
    - All `structuredDataHtml` text content
+   - **`reviews.items[]`** — all review `title` and `content` fields MUST be translated. Keep `author` names unchanged (real usernames). Add a `reviews.disclaimer` field in the target language stating reviews were translated from English (e.g., `"Les avis ont été traduits de l'anglais. Publiés à l'origine sur l'App Store."`)
 5. **Use absolute image paths** — all `iconSrc` values must start with `/` (e.g., `/images/BPT_1024.png`, not `images/BPT_1024.png`), otherwise images break in language subdirectories
    - **Utility page `bodyContent`** — the FAQ page contains `<img src="...">` tags with relative paths. EN uses `../images/` (one level up from `/faq/`), but non-EN languages are two levels deep (`/{lang}/faq/`) so they MUST use `../../images/`. When copying from EN, always fix these relative paths. Preferred: use absolute paths like `/images/add_new.jpg`.
 6. **Update `sitemap.xml`:**
