@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=1065268459">
+
+    <!-- Primary Meta Tags -->
+    <title>睡眠与梦境 - CPAP呼吸暂停监测梦境日志日记 | Feeltracker</title>
+    <meta name="title" content="睡眠与梦境 - CPAP呼吸暂停监测梦境日志日记 | Feeltracker">
+    <meta name="description" content="通过AI驱动的梦境分析、CPAP治疗监测和放松工具改善您的睡眠。记录睡眠时间、监测模式、与Apple Health同步、分析梦境并追踪CPAP指标。更好的休息始于更好的追踪。">
+    <meta name="keywords" content="睡眠,追踪,日记,呼吸暂停,监测,梦境,记录,午睡,CPAP,健康,质量">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/zh/sleep/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/">
+
+    <link rel="alternate" hreflang="zh" href="https://feeltracker.com/zh/sleep/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/zh/sleep/">
+    <meta property="og:title" content="睡眠与梦境 | AI睡眠模式追踪 | Feeltracker">
+    <meta property="og:description" content="使用AI梦境分析、CPAP治疗监测、放松工具和Apple Health集成追踪睡眠。">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/zh/sleep/">
+    <meta property="twitter:title" content="睡眠与梦境 | AI睡眠模式追踪 | Feeltracker">
+    <meta property="twitter:description" content="使用AI梦境分析、CPAP治疗监测和放松工具追踪睡眠。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Sleep & Dreams",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "Sleep Tracker",
+      "operatingSystem": "iOS 16.0 or later",
+      "description": "Track sleep patterns and quality with AI-powered dream analysis, CPAP therapy monitoring, relaxation tools, and Apple Health integration. Log sleep and wake times, monitor duration trends, and discover what affects your rest.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": 237,
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Custom Arts"
+      },
+      "featureList": [
+        "AI-powered dream analysis and interpretation",
+        "CPAP therapy monitoring with AHI tracking",
+        "Apple Health bidirectional sync",
+        "AI-powered sleep pattern detection",
+        "Export to PDF and Excel",
+        "Relaxation and breathing exercises",
+        "Sleep duration and quality tracking",
+        "Nap and multiple sleep session logging",
+        "iCloud backup and sync",
+        "33 language support"
+      ],
+      "screenshot": "https://feeltracker.com/images/screenshots/st-1.png",
+      "softwareVersion": "Latest",
+      "inLanguage": ["en", "es", "fr", "de", "it", "nl", "pt", "sv", "no", "da", "fi", "pl", "ru", "uk", "cs", "sk", "ro", "hr", "hu", "ar", "he", "zh", "ja", "ko", "th", "vi", "id", "el", "tr", "ca"],
+      "datePublished": "2016",
+      "downloadUrl": "https://apps.apple.com/app/id1065268459",
+      "installUrl": "https://apps.apple.com/app/id1065268459",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Jbobthebuilder"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Calling all sleep Docs!",
+          "reviewBody": "I was so surprised that my Sleep doctor was trying to give me pieces of paper to record my sleep hours. Luckily I found this app and I immediately asked my Sleep doctor to start recommending it. I also appreciate how responsive the developer is. THANK YOU!!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Absolutely Annoyed!"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Love this app!! So easy to use.",
+          "reviewBody": "This app is awesome for monitoring your sleep habits, time and being able to make notes for future reference. It's simple and easy to use. The app developer Gaurav was absolutely amazing!! I highly recommend using this to keep a record of your sleep patterns."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Gadget guy Fl"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Good app for tracking sleep patterns",
+          "reviewBody": "I needed something to help with sleep tracking as I was starting CPAP therapy. This app has been great at keeping me accountable to a schedule. Update - have used app 400 nights now and it shows me progress I've made in my CPAP therapy."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Kye_53636"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Free with full functionality",
+          "reviewBody": "That's all it took to make the difference between 2 and 5 stars for me. Thank you for this amazing app."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Naamyri"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Awesome!",
+          "reviewBody": "This sleep journal is perfect for what I needed. It's well designed and easy to use. Thank you so much developers for making it free"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Mdne"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Simple to use",
+          "reviewBody": "Simple to use."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "AnotherOldGuy"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Very useful app! Great support!",
+          "reviewBody": "I've been using this app for a few weeks because I sleep very irregular hours and found it hard to keep track of my sleep time. Sleep Journal was just what I needed. The developer not only replied quickly but also had the bug fixed in just a few days."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "SK301301"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Simple effective sleep tracker",
+          "reviewBody": "Simple and effective!"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Tab Munch"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Straightforward and reliable",
+          "reviewBody": "This is the most convenient way to keep a consistent record of your sleep schedule and identify habits that can be affecting your sleep. You really don't need any other app"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/zh/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇨🇳</span>
+                    <span>简体中文</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/sleep/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/sleep/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/sleep/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/sleep/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/sleep/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/sleep/"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/zh/sleep/" class="active"><span class="flag">🇨🇳</span> 简体中文</a>
+
+                    <a href="/fr/sleep/"><span class="flag">🇫🇷</span> Français</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/zh/blood-pressure/">血压</a>
+
+            <a href="/zh/daily-journal/">日记</a>
+
+            <a href="/zh/mental-health/">心理健康</a>
+
+            <a href="/zh/sleep/" class="current">睡眠与梦境</a>
+
+            <a href="/zh/weight/">体重与饮食</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/ST_1024.png" alt="睡眠与梦境应用图标" width="150" height="150" class="hero-logo app-icon">
+        <h1>睡眠与梦境</h1>
+
+        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> 无广告 · 无追踪 · 隐私优先
+        </div>
+        <p class="hero-subtitle">追踪您的睡眠模式，了解影响睡眠质量的因素。具备AI驱动的梦境分析、CPAP治疗监测、放松工具和Apple Health集成，帮助您获得更好的休息。</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="在App Store下载睡眠与梦境" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">免费应用，含可选高级功能<br>iPhone、iPad和Mac · iOS 16.0+</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">查看Feeltracker睡眠与梦境实际效果</h2>
+        <div class="screenshots-grid">
+
+            <div>
+                <img src="/images/screenshots/st-1.png" alt="睡眠与梦境截图1" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/st-2.png" alt="睡眠与梦境截图2" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/st-3.png" alt="睡眠与梦境截图3" class="screenshot-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">更好睡眠追踪的功能</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                <h3>简单的睡眠记录</h3>
+                <p>几秒钟内记录您的入睡和起床时间。无需复杂的表格或传感器。只需轻点记录何时上床和何时醒来。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>自动计算时长</h3>
+                <p>睡眠时长根据您的入睡和起床时间自动计算。一目了然地查看每晚睡了多少小时。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                <h3>Apple Health集成</h3>
+                <p>与Apple Health的睡眠数据同步。导入Apple Watch或其他应用追踪的睡眠数据，并将手动记录保存到HealthKit。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>AI睡眠洞察</h3>
+                <p>了解影响睡眠质量的因素。AI分析您的备注，识别咖啡因、运动、屏幕时间或压力等影响休息的因素。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h3>梦境分析</h3>
+                <p>AI驱动的梦境解析，包含符号含义、情感洞察和心理分析。非常适合追踪反复出现的梦境并理解其意义。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-lungs"></i></div>
+                <h3>CPAP治疗支持</h3>
+                <p>全面的CPAP分析，包括AHI追踪、面罩适配评估、漏气检测和个性化建议，优化您的睡眠呼吸暂停治疗。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>可视化睡眠图表</h3>
+                <p>通过直观的图表和图形查看睡眠模式。追踪数周和数月的趋势，了解您的睡眠周期。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-lines"></i></div>
+                <h3>睡眠备注</h3>
+                <p>添加关于一天的备注——睡前吃了什么、喝了什么或做了什么。这些帮助您识别什么促进或干扰了良好的睡眠。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-spa"></i></div>
+                <h3>放松工具</h3>
+                <p>AI生成的舒缓内容，包含呼吸练习、平静的视觉意象和个性化的放松技巧，帮助您更快入睡。</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">睡眠与梦境使用方法</h2>
+        <p class="section-subtitle center-text">帮助您了解和改善休息的完整睡眠追踪解决方案</p>
+
+        <div class="app-card">
+            <h3>1. 记录睡眠时间</h3>
+            <div class="app-card-content">
+<p><strong>快速输入：</strong> 每天早上，输入何时上床和何时醒来。应用自动计算总睡眠时长，无需您做计算。</p>
+<p><strong>多次记录：</strong> 追踪午睡和每天多次睡眠。非常适合轮班工作者、睡眠被打断的父母或任何非传统睡眠模式的人。</p>
+<p><strong>详细备注：</strong> 记录睡眠质量评级、梦境、噩梦、醒来时的感觉以及任何影响休息的因素——咖啡因摄入、运动时间、室温、压力水平、睡前屏幕时间或药物。您添加的细节越多，AI就能更好地识别模式。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>2. 查看模式</h3>
+            <div class="app-card-content">
+<p><strong>日历视图：</strong> 在直观的日历界面中查看整个睡眠历史。每天显示睡眠时长，颜色编码指示器显示您是否达到了睡眠目标。</p>
+<p><strong>睡眠统计：</strong> 自动计算的指标包括平均睡眠时长、每周总睡眠时间、睡眠不足/过量、最一致的睡眠时间表日以及随时间变化的趋势。一目了然地识别最好和最差的夜晚。</p>
+<p><strong>可视化趋势：</strong> 图表展示您在数天、数周或数月的睡眠模式。查看就寝和起床时间如何变化，发现不规律的模式，追踪朝着一致睡眠时间表的进展。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>3. 获取AI洞察</h3>
+            <div class="app-card-content">
+<p><strong>模式识别：</strong> AI分析您的备注以识别影响睡眠的因素。发现诸如"您运动日的睡眠时间多45分钟"或"下午2点后摄入咖啡因时睡眠质量更差"等相关性。</p>
+<p><strong>个性化建议：</strong> 根据您的数据获取具体建议。AI可能根据您一直获得最佳睡眠的时间建议最佳就寝时间，或突出显示反复干扰休息的因素。</p>
+<p><strong>睡眠对话：</strong> 用自然语言提问："上周我平均睡了几个小时？"或"显示所有少于6小时的夜晚"。从您的睡眠历史中获得即时、对话式的答案。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>4. 改善您的睡眠</h3>
+            <div class="app-card-content">
+<p><strong>可操作的数据：</strong> 使用洞察对您的日常作息进行基于证据的改变。测试假设如"睡前阅读会改善我的睡眠吗？"通过追踪结果让AI发现差异。</p>
+<p><strong>专业报告：</strong> 导出PDF或Excel报告用于睡眠专家、医生或CPAP治疗咨询。报告包括睡眠时长图表、质量趋势、睡眠干扰备注和统计摘要，格式适合医疗审查。</p>
+<p><strong>Apple Health同步：</strong> 与Apple Health集成，将手动记录与Apple Watch或其他设备的自动睡眠追踪结合。导入历史睡眠数据或将您的日志导出到HealthKit，获得完整的健康画面。</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>人工智能驱动</h2>
+        <p class="section-subtitle">先进的AI功能帮助您更好地了解睡眠模式</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">免费AI功能</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> 提问</h4>
+                <p>关于睡眠数据的快速问答——即时获取睡眠问题的答案</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> 对话</h4>
+                <p>就您的睡眠健康进行互动对话，获取个性化指导</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> 语音摘要</h4>
+                <p>收听睡眠趋势的音频摘要——非常适合随时随地获取洞察</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> 简单梦境分析</h4>
+                <p>AI解读您的梦境，提供关键符号、情感洞察和反思问题</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-spa"></i> 助眠放松</h4>
+                <p>个性化的放松技巧、呼吸练习和平静的视觉意象，帮助您入睡</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> 逗我笑</h4>
+                <p>根据您的追踪数据获取个性化幽默内容，让您开心一下</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">高级AI功能</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> 深度研究报告</h4>
+                <p>对您的睡眠数据进行全面AI分析，提供详细洞察</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-lungs"></i> CPAP报告</h4>
+                <p>完整的CPAP治疗分析，包含AHI追踪、面罩适配评估、依从性监测和互动操作卡</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-brain"></i> 高级梦境分析</h4>
+                <p>使用荣格原型、反复出现的符号、情感模式和个人符号词典进行深度心理梦境解析</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> 模式侦探</h4>
+                <p>发现睡眠质量与生活方式因素之间的隐藏关联</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 目标助手</h4>
+                <p>根据您的模式获取个性化的、数据驱动的睡眠目标</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> 医生摘要</h4>
+                <p>生成专业的睡眠摘要用于医疗就诊或睡眠研究</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> 病假条生成器</h4>
+                <p>在需要时生成AI病假条，用于工作或学校</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> 故事生成器</h4>
+                <p>将您的睡眠旅程转化为创意、引人入胜的叙事</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> 文字摘要</h4>
+                <p>创建可分享的睡眠趋势短信摘要</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> 个性化测验</h4>
+                <p>用AI生成的关于您数据的10道趣味测验题测试您的知识</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> 文字转语音</h4>
+                <p>通过自然语音播放收听您的AI洞察和摘要</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> 定制健康报告</h4>
+                <p>创建全面的个性化睡眠健康文档来追踪您的进展</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>为什么要追踪睡眠？</h2>
+        <p class="section-subtitle">更好的睡眠带来更好的健康、情绪和工作效率</p>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> 管理失眠</h4>
+                <p>识别干扰睡眠的模式和触发因素</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bolt"></i> 更多精力</h4>
+                <p>确保您获得足够的休息以获得最佳日常表现</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 睡眠目标</h4>
+                <p>朝着一致的睡眠时间表和时长目标努力</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-house-medical"></i> 健康洞察</h4>
+                <p>为调查健康问题的医生提供睡眠数据</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-line"></i> 追踪改善</h4>
+                <p>查看生活方式改变如何影响您的睡眠质量</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-flask"></i> 测试策略</h4>
+                <p>尝试不同的睡眠卫生习惯并衡量结果</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>支持33种语言</h2>
+        <p class="section-subtitle">睡眠与梦境完全支持以下语言：英语、西班牙语（Español）、法语（Français）、加拿大法语、德语（Deutsch）、意大利语（Italiano）、荷兰语（Nederlands）、巴西葡萄牙语（Português）、葡萄牙葡萄牙语、瑞典语（Svenska）、挪威语（Norsk）、丹麦语（Dansk）、芬兰语（Suomi）、波兰语（Polski）、俄语（Русский）、乌克兰语（Українська）、捷克语（Čeština）、斯洛伐克语（Slovenčina）、罗马尼亚语（Română）、克罗地亚语（Hrvatski）、匈牙利语（Magyar）、阿拉伯语（العربية）、希伯来语（עברית）、简体中文（简体中文）、繁体中文（繁體中文）、日语（日本語）、韩语（한국어）、泰语（ไทย）、越南语（Tiếng Việt）、印尼语（Bahasa Indonesia）、希腊语（Ελληνικά）、土耳其语（Türkçe）和加泰罗尼亚语（Català）。</p>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>常见问题</h2>
+
+
+        <h3>我需要多少睡眠？</h3>
+        <p>大多数成年人每晚需要7-9小时的睡眠，但个人需求各不相同。应用帮助您追踪睡眠时长，并根据您的感受确定最佳睡眠量。</p>
+
+
+        <h3>这款应用会自动追踪睡眠吗？</h3>
+        <p>不会。与Apple Watch或其他可穿戴设备不同，睡眠日记需要手动记录。您每天早上输入入睡和起床时间。但是，如果您使用其他自动追踪设备，可以从Apple Health导入睡眠数据。</p>
+
+
+        <h3>我可以记录午睡吗？</h3>
+        <p>可以。您每天可以记录多个睡眠时段，包括午睡。每条记录显示时长，日历显示所有入睡/起床时间。</p>
+
+
+        <h3>这款应用与Apple Health有什么区别？</h3>
+        <p>睡眠日记提供专门的睡眠追踪界面，具有专为管理睡眠模式设计的功能——备注、AI洞察、趋势和简便的手动记录。它与Apple Health集成，但提供更详细的以睡眠为中心的功能。</p>
+
+
+        <h3>AI如何帮助提供睡眠洞察？</h3>
+        <p>当您添加关于一天的备注时（例如"晚上8点喝了咖啡"或"早上运动了"），AI会随着时间分析这些内容，显示与睡眠时长和质量的相关性。这有助于识别什么促进或干扰了良好的睡眠。</p>
+
+
+        <h3>我可以与医生分享睡眠数据吗？</h3>
+        <p>可以。将您的睡眠历史导出为PDF或Excel报告与医疗服务提供者分享。如果您正在接受睡眠障碍或失眠的评估，这特别有用。</p>
+
+
+        <h3>它追踪睡眠质量还是只追踪时长？</h3>
+        <p>应用主要根据您记录的入睡和起床时间追踪睡眠时长（睡眠小时数）。您可以添加关于睡眠质量、梦境或休息程度的备注，这有助于定性追踪。</p>
+
+
+        <h3>有提醒记录睡眠的功能吗？</h3>
+        <p>有。您可以设置每日提醒来记录睡眠时间。许多用户设置早晨提醒来提示他们记录前一晚的睡眠。</p>
+
+
+        <h3>你们会展示广告或追踪我吗？</h3>
+        <p><strong>不会。</strong> 我们已从应用中完全移除了所有广告。我们不会跨其他应用或网站追踪您，也从不向广告商出售您的数据。</p>
+<p>您的数据通过iCloud同步——就像Apple备忘录和照片一样。这意味着我们不需要知道您的电子邮件地址、姓名或任何个人信息。您的睡眠数据存储在您的设备和iCloud账户中，无论您使用免费版还是高级版，都完全私密。</p>
+
+
+        <h3>我需要订阅吗？</h3>
+        <p>该应用完全免费下载和使用。所有核心追踪功能无需订阅即可使用。高级订阅可解锁高级AI功能、无限导出和增强自定义。您可以在免费试用期间试用所有高级功能。</p>
+
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">用户评价</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">来自App Store的真实评论</p>
+
+        <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">所有睡眠医生请注意！</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"我很惊讶我的睡眠医生居然要给我纸来记录睡眠时间，甚至没办法整理它们！当我问有没有应用时，他们建议了一个完全没用的应用。幸运的是我找到了这款应用，我立即要求我的睡眠医生开始推荐它。我也感谢开发者的积极响应。显然这个人想要改善人们的生活。非常感谢！！"</p>
+            <p class="review-author">- Jbobthebuilder</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">喜欢这款应用！！非常易用。</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"这款应用在监测您的睡眠习惯、时间和做备注方面非常出色。它简单易用。我有一个建议，开发者Gaurav太棒了！！我联系了他，他几分钟内就回复了我，几天内就实现了我的建议！我强烈推荐用这款应用来记录睡眠模式。绝对值得订阅。"</p>
+            <p class="review-author">- Absolutely Annoyed!</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">追踪睡眠模式的好应用</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"我在2022年11月开始CPAP治疗时需要帮助追踪睡眠。这款应用帮我保持时间表的自律性和查看进展方面表现出色。我可以追踪睡眠时长、做过的梦、睡眠模式和其他我想查看的数据。更新——已经使用这款应用400多个夜晚了，它向我展示了CPAP治疗的进步和许多有用的洞察！"</p>
+            <p class="review-author">- Gadget guy Fl</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">免费且功能完整</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"这就是让我从2星评到5星的原因。感谢这款出色的应用。"</p>
+            <p class="review-author">- Kye_53636</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">不适用</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"我试图记录0小时睡眠但无法保存。而且问题不允许追踪0睡眠，像"花了多久才入睡"这样的问题没有选项说你没睡。编辑：是的，我现在知道怎么正确记录了，谢谢回复"</p>
+            <p class="review-author">- ha Anzy</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">太棒了！</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"这款睡眠日记正是我需要的。设计精良，易于使用。非常感谢开发者让它免费"</p>
+            <p class="review-author">- Naamyri</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">简单易用</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"简单易用。"</p>
+            <p class="review-author">- Mdne</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">非常有用的应用！出色的支持！</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"我使用这款应用已经几周了，因为我的睡眠时间非常不规律，很难追踪睡眠时间。睡眠日记正是我需要的。开发者不仅很快回复了我，还在几天内就修复了bug。谢谢Gaurav！"</p>
+            <p class="review-author">- AnotherOldGuy</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">简单有效的睡眠追踪器</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"简单且有效！"</p>
+            <p class="review-author">- SK301301</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-title">简单可靠</div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-content">"这是保持睡眠时间表一致记录和识别可能影响睡眠习惯的最便捷方式。你真的不需要其他应用了"</p>
+            <p class="review-author">- Tab Munch</p>
+        </div>
+
+        </div>
+
+        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">评论翻译自英文原文。最初发布于App Store。</p>
+
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> 想要掌握睡眠健康？</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">了解20条关于改善睡眠、CPAP治疗和最佳睡眠质量的专家建议</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                阅读专家建议 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>今晚开始改善您的睡眠</h2>
+        <p>更好的休息只需几次轻点</p>
+        <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="下载睡眠与梦境" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/zh/sleep/">首页</a>
+            <a href="/zh/about/">关于我们</a>
+            <a href="mailto:support@feeltracker.com">邮件支持</a>
+            <a href="/zh/support/">支持</a>
+            <a href="/zh/faq/">常见问题</a>
+            <a href="https://x.com/feeltracker">在X上关注我们</a>
+            <a href="/zh/privacy/">隐私政策</a>
+            <a href="/zh/terms/">使用条款</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. 保留所有权利。</p>
+        <p class="footer-tagline">Feeltracker健康追踪应用家族成员</p>
+        <p class="footer-disclaimer">您的健康数据存储在您的设备和iCloud中——我们绝不会访问或出售您的数据。Feeltracker应用不是医疗设备。仅供参考，不能替代专业医疗建议、诊断或治疗。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>我们重视您的隐私</strong></p>
+                <p>我们使用分析Cookie来改善我们的网站和应用。不使用广告Cookie。请参阅我们的 <a href="/zh/privacy/">隐私政策</a> 了解详情。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒绝</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">接受</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>

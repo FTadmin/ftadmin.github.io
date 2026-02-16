@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>常见问题 - Feeltracker</title>
+    <meta name="title" content="常见问题 - Feeltracker">
+    <meta name="description" content="">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/zh/faq/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/faq/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/faq/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/faq/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/faq/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/faq/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/faq/">
+
+    <link rel="alternate" hreflang="zh" href="https://feeltracker.com/zh/faq/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/faq/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/faq/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/zh/faq/">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/zh/faq/">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/zh/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇨🇳</span>
+                    <span>简体中文</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/faq/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/faq/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/faq/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/faq/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/faq/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/faq/"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/zh/faq/" class="active"><span class="flag">🇨🇳</span> 简体中文</a>
+
+                    <a href="/fr/faq/"><span class="flag">🇫🇷</span> Français</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/zh/blood-pressure/">血压</a>
+
+            <a href="/zh/daily-journal/">日记</a>
+
+            <a href="/zh/mental-health/">心理健康</a>
+
+            <a href="/zh/sleep/">睡眠与梦境</a>
+
+            <a href="/zh/weight/">体重与饮食</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+<h1>常见问题</h1>
+
+    <h3>如何添加记录？</h3>
+    <p>您可以通过以下两种方式添加新记录：1. 按下日期，或 2. 按右上角的 +。下图中的箭头显示了这两种方式。</p>
+    <img src="/images/add_new.jpg" class="screenshot">
+
+    <h3>我可以一天记录多次吗？</h3>
+    <p>可以。如上所示，您可以每天添加多条记录。只需再次按下日期或按 + 即可。</p>
+
+    <h3>如何删除记录？</h3>
+    <p>要删除记录，您可以向左滑动记录并按“删除”，或按下记录打开它，然后按屏幕左上角的垃圾桶图标。以下显示了两种方法：</p>
+    <p>
+        <img src="/images/delete_swipe.jpg" class="screenshot-small padded10">
+        <img src="/images/delete_trashcan.jpg" class="screenshot-small padded10">
+    </p>
+
+    <h3>为什么我的笔记上方显示情感评分？这是私密的吗？</h3>
+    <p>当您的笔记包含8个或更多单词时，会在上方显示一个表情符号来表示预测的情感。此功能可以帮助您了解您的文字是否显得过于消极或积极，或提醒您什么有效什么无效，作为写作的指导。情感分析完全在您的设备上使用Apple的Natural Language API进行计算，因此数据不会离开您的设备，确保完全的隐私。如果您愿意，可以在“设置”的“通用”中禁用此功能。</p>
+
+    <h3>如何打印？</h3>
+    <p>当您按下导出（如下所示）时，您会看到一个共享表单。在此表单中，向下滚动并按“打印”（如下所示）。您需要一台兼容Apple AirPrint的无线打印机才能从iPhone或iPad无线打印。</p>
+    <p>如果您没有兼容AirPrint的无线打印机，可以在<a href="https://geni.us/airprint_printer">这里</a>购买。
+    </p>
+    <p> <img src="/images/printing_example_ios.jpg" class="screenshot"></p>
+
+    <h3>我可以将追踪的医疗信息与医生共享吗？</h3>
+    <p>可以。应用使此操作非常简单。按下共享按钮（如下所示），选择PDF，然后选择您的邮件应用。PDF报告将附加到一封电子邮件中，您可以将其发送给您的医生。</p>
+    <p> <img src="/images/sharing_example.jpg" class="screenshot"></p>
+
+    <h3>如何在日记中隐藏平均值或总计？</h3>
+    <p>您可以在视图选项中隐藏平均值和总计，如下所示。这样将只显示您输入的值，而不显示平均值。如果您觉得平均值/总计夹在输入数据之间容易造成混淆，这个功能会很有用。</p>
+    <p> <img src="/images/hide_averages.jpg" class="screenshot"></p>
+
+
+    <h3>我可以导出到Excel或类似的电子表格软件吗？</h3>
+    <p>可以。按照上述步骤操作，但选择Excel或CSV作为输出格式而不是PDF。然后将文件保存到设备上，或通过电子邮件发送给自己。</p>
+    <p>Excel格式更可靠，而CSV可能有更广泛的兼容性——两者都可以在Excel和类似软件（如Apple Numbers或Google Sheets）中打开。</p>
+
+    <h3>我可以将数据发送给谁？</h3>
+    <p>您可以通过电子邮件将数据发送给任何人。您可能希望定期将数据通过电子邮件发送给自己以进行安全保管和备份。您还可以将PDF或CSV文件保存在设备上以备后用。</p>
+
+    <h3>在月视图中如何直接滚动到当天？</h3>
+    <p>双击屏幕底部标签栏中的“日记”图标。</p>
+
+    <h3>如何查看以前月份的数据？</h3>
+    <p>要查看以前月份的数据（例如，在10月查看9月的数据）：</p>
+    <ul>
+      <li>转到日记标签</li>
+      <li>按左上角的返回按钮——这将带您进入月份选择界面</li>
+      <li>选择您要查看的月份（例如9月）</li>
+      <li>如果看不到数据，按日记选项按钮（顶部的第2个按钮，返回按钮旁边），确保所有显示选项都设置为“显示”</li>
+    </ul>
+    <p>您的数据始终被保存且可访问——您可以随时在月份之间切换以查看历史记录。</p>
+    <p><strong>如果检查月视图后仍然看不到数据：</strong> 转到“设置” > “数据” > “管理备份”，查找您尝试查看的月份（或下个月初）的备份。如果找到该时间段的备份，您可以从中恢复以找回数据。如果您重新安装了应用或存在同步问题，这会有所帮助。</p>
+
+    <h3>如何更改记录的时间或日期？</h3>
+    <p>打开一条记录，如下所示，只需点击时间或日期即可更改。</p>
+    <p> <img src="/images/change_time_date.jpg" class="screenshot"></p>
+
+    <h3>我的数据有多安全？</h3>
+    <p>您的数据在存储到设备时是加密的。这意味着即使您的设备被盗，也没有人能够访问它。</p>
+
+    <h3>我的数据存储在哪里？</h3>
+    <p>在您的设备上和iCloud上。此应用使用与Apple备忘录和照片相同的技术来保存和在设备之间同步您的数据，这意味着它非常可靠和安全。</p>
+
+    <h3>其他人能看到我的私人数据吗？</h3>
+    <p>不能。数据仅存在于您的设备和iCloud上，iCloud运行在Apple管理的服务器上。</p>
+
+    <h3>为什么我的数据需要保存在iCloud上？</h3>
+    <p>iCloud使您的数据能够被备份，并在设备之间同步。如果您丢失手机或换了新手机，您的数据可以从iCloud恢复。</p>
+
+    <h3>为什么我的数据没有在设备之间同步？</h3>
+    <p>您的数据应该会自动在设备之间同步。请确保：</p>
+    <ul>
+      <li>所有设备都登录了同一个iCloud账户。</li>
+      <li>所有iOS设备都使用相同版本的iOS（最好是最新版本）。</li>
+      <li>确保所有设备上的iCloud Drive已开启（在“设置” > “您的姓名” > iCloud > iCloud Drive中，如下所示）。</li>
+      <p><img src="/images/icloud_on.png" class="screenshot"></p>
+    </ul>
+
+    <h3>每台设备都需要订阅吗？</h3>
+    <p>一个订阅将移除所有设备上的广告。如果在任何其他设备上看到广告，请转到“设置” > “移除广告”，然后按“恢复购买”。确保每台设备都登录了同一个iCloud账户。</p>
+
+    <h3>备份是如何工作的？</h3>
+    <p>默认情况下，备份每周自动创建一次（您也可以在“设置”中关闭此功能）。您还可以在“设置” > “数据”中创建手动备份。</p>
+
+    <h3>会创建多少个备份？我应该删除它们吗？</h3>
+    <p>备份数量没有限制。备份可以追溯到数年前，通常占用很少的空间，因此删除它们不会对设备存储产生太大影响。如果需要释放空间，最好删除设备上较大的文件，如照片和视频。</p>
+
+    <h3>备份会同步到iCloud吗？</h3>
+    <p>目前备份不会同步到iCloud，但您的当前数据会同步。这意味着如果您获得了新的iPhone或iPad，您的当前数据也会出现在那里，但备份不会，因为每台设备保留自己的本地备份。</p><p>这意味着，例如，如果您在iPhone上删除了一条记录，它从iCloud和手机上消失了，您仍然可以回到iPad上，从其较早的备份快照中恢复。</p>
+
+    <h3>使用此应用需要账户吗？</h3>
+    <p>不需要。您无需登录或注册即可立即使用。应用使用您的iCloud账户，利用Apple的基础设施自动将数据同步到其他设备。这意味着它快速、可靠且安全。</p>
+
+    <h3>我可以在iPhone和iPad上同时使用此应用吗？</h3>
+    <p>可以，如果登录了同一个iCloud账户，您的数据会自动在设备之间同步。在iPad版本中，您有更多的笔记空间，可以查看更多项目。</p>
+
+    <h3>有Mac版本的应用吗？</h3>
+    <p>有。该应用适用于Apple Silicon Mac（M1及以上）。在Mac应用中，您可以调整窗口大小以在更大的屏幕上查看更多数据。您可以在M1或更高版本的Mac上<a href="https://apps.apple.com/us/developer/custom-arts/id968118447">从这里</a>下载Mac应用。</p>
+
+    <h3>我想为应用建议功能或改进。</h3>
+    <p>我们很乐意听取您的反馈。请发送电子邮件至<a href="mailto:feedback@feeltracker.com">feedback@feeltracker.com</a>。</p>
+
+    <h3>我可以关闭声音吗？</h3>
+    <p>可以。转到“设置”标签，关闭“启用声音效果”旁边的滑块。</p>
+
+    <h3>趋势标签是做什么用的？</h3>
+    <p>趋势让您可以识别什么在您心中、为什么以及它对您产生的影响。向下滚动以了解趋势在您的应用中如何工作的更多详情和示例。</p>
+
+    <h3>为什么我在趋势中看不到任何内容？</h3>
+    <p>要使趋势正常工作，您需要在保存记录时添加笔记。您可以在任何记录的笔记字段中进行此操作。</p>
+
+    <h3>统计标签是做什么用的？</h3>
+    <p>目前它显示两个日期之间的所有记录，以及该范围内的平均值/总计。这使您能够获得任何时期的平均值/总计。</p>
+
+    <h3>日记、趋势和统计有什么区别？</h3>
+    <p>日记是主要的日记/记录部分，让您输入数据并按月/年/全部时间查看，包含平均值和总计。</p>
+    <p>趋势让您识别在日记中记录的数据中的模式，以便您可以据此采取行动。</p>
+    <p>统计让您按时间顺序（最新的在前）查看数据，没有月度或年度分组，并可以查看任意两个日期之间的平均值和总计。</p>
+
+    <h3>我是否应该退出登录或关机以节省手机内存和电量？</h3>
+    <p>完全不需要退出登录——设备会根据需要自动从内存中卸载应用/资源。</p>
+    <p>现代iPhone和iPad拥有大量节能内存，因此应用可以长时间留在内存中而不会产生任何不良影响。对此内存的访问是安全的，已经受到Face ID、Touch ID或密码的保护。</p>
+
+    <p>如果您仍然想关闭应用（例如，如果应用变得无响应），您可以按照Apple的说明<a href="https://support.apple.com/en-gb/HT201330">在这里</a>操作。</p>
+    <p>也不需要登录，因为应用使用您的iCloud账户，类似于照片和备忘录应用的工作方式，无需共享任何个人身份数据即可在设备之间同步/备份数据。</p>
+
+    <h3>如果我不退出登录，安全吗？</h3>
+    <p>安全。只要您像平时一样按下设备的侧面按钮锁定它，在锁定期间没有人能进入您的应用或数据。</p>
+
+    <h3>广告是怎么回事？</h3>
+    <p>我们希望您首先试用应用，看看它是否对您有用，没有任何干扰——您可以免费使用，不会看到Google广告。保存7条记录后，您可能会看到一些Google广告，这些广告有助于支持应用并保持其免费。</p>
+
+    <h3>我不喜欢广告！可以付费移除吗？</h3>
+    <p>可以！按横幅上的 ❎ 按钮。这将显示订阅选项，费用很低。在订阅期间，您将不会看到任何广告。</p>
+
+    <h3>我付不起费用，但讨厌应用中的广告！</h3>
+    <p>我们理解您的感受。这些定制的原生广告旨在与应用的其他部分融为一体，看起来仍然美观，不会令人不快或像垃圾信息。我们希望您即使无法付费也能享受使用应用的乐趣。别忘了告诉您的朋友！</p>
+
+    <h3>为什么是订阅制？为什么不能一次性付费？</h3>
+    <p>少量的定期订阅费使应用更容易尝试，无需大额前期费用。从长远来看，订阅收入有助于我们维护应用并资助有用新功能的开发。</p>
+
+    <h3>我能做什么来支持这个应用？</h3>
+    <p>我们依靠好评来发展应用并继续构建新功能。请通过以下链接为您的应用留下评论：</p>
+    <ul>
+      <li><a href="https://apps.apple.com/app/id794542324?action=write-review">Blood Pressure Monitor Checker</a></li>
+      <li><a href="https://apps.apple.com/app/id1557699226?action=write-review">Daily Journaling</a></li>
+      <li><a href="https://apps.apple.com/app/id687448999?action=write-review">Feeltracker Mood Journal</a></li>
+      <li><a href="https://apps.apple.com/app/id799503787?action=write-review">Weight and Body Fat Journal</a></li>
+      <li><a href="https://apps.apple.com/app/id1065268459?action=write-review">Sleep and Nap Journal</a></li>
+    </ul>
+
+    <h3>我想取消付费订阅</h3>
+    <p>感谢您试用应用。如果有什么我可以改进的，请通过<a href="mailto:gs@feeltracker.com">gs@feeltracker.com</a>告诉我，我会尽力帮助。通常，根据用户反馈的修复和改进会在当天或次日的应用更新中提供。</p>
+    <p>如果仍不满意，您可以在<a href="https://apps.apple.com/account/subscriptions">这里</a>取消订阅。</p>
+
+    <h2>血压应用</h2>
+
+    <h3>应用是否通过蓝牙连接我的血压计？</h3>
+    <p>不，应用不通过蓝牙直接连接血压计。相反，我们专注于通过AI相机扫描技术使手动输入变得轻松。测量后，只需将iPhone的摄像头对准显示屏，应用就会自动读取数字。这适用于几乎所有带有数字显示屏的血压计，无论品牌或型号如何。无需配对，无需担心特定设备兼容性，只需几秒钟。此功能始终免费且不限次数。</p>
+
+    <h3>AI相机扫描是如何工作的？</h3>
+    <p>测量血压后，打开应用并点击“+”按钮，然后选择“用相机扫描”。将手机稳定地举在距血压计显示屏约15-30厘米处，确保数字清晰可见且光线充足。应用将自动读取收缩压、舒张压和脉搏值。为获得最佳效果，请确保良好的照明，并在扫描时保持手机稳定。这适用于大多数数字血压计，包括OMRON、Microlife和Beurer品牌。</p>
+
+    <h3>为什么我看到重复的条目？</h3>
+    <p>这通常是由Apple Health同步配置引起的。最常见的问题是仅为Apple Health启用了写入权限，但未启用读取权限。修复方法：转到“设置” > “数据” > Apple Health，确保血压和心率的读取和写入权限都已启用——不仅仅是写入。应用需要读取权限来检查从Health导入前是否已存在该读数。</p>
+
+    <h3>我可以记录多个家庭成员的读数吗？</h3>
+    <p>标签功能将在未来几个月内推出，届时您可以在一台设备上记录多人的读数。您将能够为每个条目标记一个人的名字，然后为每个家庭成员生成单独的报告。</p>
+
+    <h3>我的iPhone和iPad之间数据没有同步。为什么？</h3>
+    <p>首先，确保两台设备上都登录了同一个iCloud账户。转到“设置” > [您的姓名]检查Apple ID。其次，确认两台设备上都启用了iCloud Drive（“设置” > [您的姓名] > iCloud > iCloud Drive）。您的数据通过iCloud自动同步，但需要互联网连接，可能需要几分钟。尝试在每台设备上打开应用并下拉刷新。</p>
+
+    <h3>订阅包含什么内容？什么是免费的？</h3>
+    <p>所有核心追踪功能完全免费：无限条目、AI相机扫描（始终免费）、所有图表和趋势、Apple Health同步、PDF/CSV导出。订阅增加：去除广告获得清爽体验、增强型AI聊天（每天100次使用对比免费的10次）、以及高级AI功能的访问权限。所有未来的高级功能都将包含在订阅中。</p>
+
+    <h3>什么是MAP，我应该追踪它吗？</h3>
+    <p>MAP（平均动脉压）代表一个心动周期中动脉内的平均压力。它会为每次读数自动计算。MAP对于LVAD（左心室辅助装置）患者和其他特定心血管疾病患者尤为重要。要启用MAP显示，请转到“设置” > “血压” > “显示平均动脉压（MAP）”。可自定义的MAP范围将在2.8.x版本中推出。</p>
+
+    <h3>如何使用笔记模板节省时间？</h3>
+    <p>输入笔记时（如“早晨测量 - 服药前”），点击笔记字段左下方的“模板”按钮并将其保存为模板。下次输入读数时，再次点击“模板”并从保存的模板中选择——文本将立即插入。这对于重复性笔记（如“早晨 - 服药前”或“晚上 - 晚餐后”）非常有用。</p>
+
+    <h3>血压多高或多低算异常？</h3>
+    <p>通常，收缩压应在90-140之间，舒张压应在60-90之间。如果超出此范围，您应该咨询医生。</p>
+
+    <h3>理想的血压是多少？</h3>
+    <p>根据英国国家医疗服务体系（NHS），理想血压在90/60 mmHg至120/80 mmHg之间。但是，这可能因性别、年龄和其他变量而异。因此，最好咨询您当地的医生，根据您个人的具体情况对血压进行准确评估。</p>
+
+    <h3>如何测量血压？</h3>
+    <p>血压使用数字血压计测量。<a href="https://geni.us/B9RB">在这里</a>您可以找到与相机扫描AI功能配合良好的血压计。应用可以自动读取大多数数字血压计的数值，包括OMRON、Microlife和Beurer品牌。</p>
+
+    <h3>趋势是做什么用的？</h3>
+    <p>通过趋势，应用分析您的数据和笔记，显示什么因素影响您以及如何影响。例如，您可以看到去年冥想了20次，而且冥想降低了您的血压。相反，您可以看到每次遇到某人时，你们会争论，他会使您的血压升高。笔记用得越多，趋势就越有用。</p>
+
+    <h3>能用例子解释趋势吗？</h3>
+    <p>例如，您跑步了10次。5次血压下降了10，另外5次下降了5。趋势会显示，平均而言，跑步有助于将您的血压降低约7.5个点。</p>
+
+
+    <h2>Feeltracker情绪日记应用</h2>
+
+    <h3>趋势是做什么用的？</h3>
+    <p>通过趋势，应用分析您的数据和笔记，显示什么因素影响您以及如何影响。例如，您可以看到去年见了Jane 20次，而且平均而言，Jane让您非常开心。相反，您可以看到每次遇到Bob时，你们会争论，他让您不开心。笔记用得越多，趋势就越有用。</p>
+
+    <h3>能用例子解释趋势吗？</h3>
+    <p>例如，您见了Jane 10次。5次她让您非常开心（+2），5次她让您比较开心（+1）。趋势会显示，平均而言，Jane让您相当开心（+1.5）。</p>
+
+
+    <h2>Daily Journaling笔记应用</h2>
+
+    <h3>趋势是做什么用的？</h3>
+    <p>通过趋势，应用分析您的数据和笔记，显示哪些词语最常出现在您的脑海中。例如，您可以看到去年使用了某个词20次。相反，您可以看到另一个词使用了50次——频率高得多。笔记用得越多，趋势就越有用。</p>
+
+    <h3>能用例子解释趋势吗？</h3>
+    <p>例如，您在笔记中写了120次关于Jane的内容，比您写关于工作的50次多得多。在这种情况下，趋势清楚地表明您最关心的是Jane。</p>
+
+
+    <h2>睡眠日记应用</h2>
+
+    <h3>趋势是做什么用的？</h3>
+    <p>通过趋势，应用分析您的数据和笔记，显示什么因素影响您以及如何影响。例如，您可以看到上周喝了很多咖啡，因此睡眠减少了。相反，您可以看到每次吃沙拉或去健身房时，您都睡得更好。笔记用得越多，趋势就越有用。</p>
+
+    <h3>能用例子解释趋势吗？</h3>
+    <p>例如，您喝了10次咖啡。其中5次，您少睡了2小时，另外5次少睡了1小时。趋势会显示，平均而言，喝咖啡导致您少睡1.5小时。</p>
+
+
+    <h2>体重与体脂饮食日记应用</h2>
+
+    <h3>趋势是做什么用的？</h3>
+    <p>通过趋势，应用分析您的数据和笔记，显示什么因素影响您以及如何影响。例如，您可以看到去年吃了20次快餐，而且随着时间推移，吃快餐时体重会增加。相反，您可以看到每次吃沙拉或去健身房时，体重会减轻。笔记用得越多，趋势就越有用。</p>
+
+    <h3>能用例子解释趋势吗？</h3>
+    <p>例如，您吃了10次甜甜圈。5次体重增加了0.1公斤，另外5次增加了0.3公斤。趋势会显示，平均而言，吃甜甜圈会使您的体重增加0.2公斤。</p>
+
+    <h3>如何测量体脂？</h3>
+    <p>体脂由专门设计的体重秤报告，这些秤可以测量身体成分和体重。<a href="https://geni.us/PQXEb">这里</a>是Omron的一款此类体重秤的示例。其他品牌也有其他选择——需要寻找的关键词是“身体成分”功能的体重秤。</p><p>另请注意，即使您只输入体重，您仍然会看到BMI值（在体重左侧，用颜色编码），这将大致表明您的体重是否健康（绿色表示良好，红色表示超重）。</p>
+
+    <h2>联系我们</h2>
+    <p>如果您有任何疑问或建议，请随时通过<a href="mailto:support@feeltracker.com">support@feeltracker.com</a>联系我们。</p>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/zh/faq/">首页</a>
+            <a href="/zh/about/">关于我们</a>
+            <a href="mailto:support@feeltracker.com">邮件支持</a>
+            <a href="/zh/support/">支持</a>
+            <a href="/zh/faq/">常见问题</a>
+            <a href="https://x.com/feeltracker">在X上关注我们</a>
+            <a href="/zh/privacy/">隐私政策</a>
+            <a href="/zh/terms/">使用条款</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. 保留所有权利。</p>
+        <p class="footer-tagline">Feeltracker健康追踪应用家族成员</p>
+        <p class="footer-disclaimer">您的健康数据存储在您的设备和iCloud中——我们绝不会访问或出售您的数据。Feeltracker应用不是医疗设备。仅供参考，不能替代专业医疗建议、诊断或治疗。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>我们重视您的隐私</strong></p>
+                <p>我们使用分析Cookie来改善我们的网站和应用。不使用广告Cookie。请参阅我们的 <a href="/zh/privacy/">隐私政策</a> 了解详情。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒绝</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">接受</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>
