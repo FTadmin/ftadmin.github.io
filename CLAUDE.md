@@ -7,14 +7,22 @@ All HTML pages are generated from `data/` JSON files + HTML templates (16 pages 
 
 ```
 data/
-  site.json          ← Global config (URLs, GTM/GA IDs, author)
-  languages.json     ← Per-language config (nav, footer, cookie, flag)
-  en/pages.json      ← All 16 English page entries
-  de/pages.json      ← All 16 German page entries
-  es/pages.json      ← All 16 Spanish page entries
-  fr/pages.json      ← All 16 French page entries
-  it/pages.json      ← All 16 Italian page entries
-templates/           ← HTML templates with {{mustache}} syntax
+  site.json                    ← Global config (URLs, GTM/GA IDs, author)
+  languages.json               ← Per-language config (nav, footer, cookie, flag)
+  en/                          ← English page files (1 file per page)
+    blood-pressure.app.json    ← App page: Blood Pressure
+    blood-pressure.tips.json   ← Tips page: Blood Pressure
+    sleep.app.json             ← App page: Sleep
+    sleep.tips.json            ← Tips page: Sleep
+    ...                        ← (5 app + 5 tips + 5 utility + 1 index = 16 files)
+    about.utility.json         ← Utility page: About
+    index.json                 ← Homepage
+  de/                          ← German (same 16 files, translated)
+  es/                          ← Spanish
+  fr/                          ← French
+  it/                          ← Italian
+  ru/                          ← Russian
+templates/                     ← HTML templates with {{mustache}} syntax
   app-page.html      ← Product pages (blood-pressure, sleep, weight, etc.)
   tips-page.html     ← Tips pages (20 tips per app)
   index-page.html    ← Homepage (hero, apps grid, features, reviews, etc.)
@@ -28,6 +36,7 @@ templates/           ← HTML templates with {{mustache}} syntax
 build.js             ← Node.js build script (zero dependencies)
 validate.js          ← Checks structural parity across languages (EN = reference)
 extract.js           ← One-time migration tool (extracts data from existing HTML)
+split-pages.js       ← One-time migration tool (splits pages.json into per-page files)
 ```
 
 ## Quick Commands
@@ -54,14 +63,22 @@ node extract.js      # Re-extract data from existing HTML (migration only)
 }
 ```
 
-### data/{lang}/pages.json
-Array of page entries:
+### data/{lang}/ — Individual Page Files
+
+Each page is a separate JSON file. Naming convention: `{slug}.{type}.json`
+
+| File pattern | Template | Example |
+|---|---|---|
+| `{slug}.app.json` | app-page | `blood-pressure.app.json` |
+| `{slug}.tips.json` | tips-page | `blood-pressure.tips.json` |
+| `{slug}.utility.json` | utility-page | `about.utility.json` |
+| `index.json` | index-page | `index.json` |
+
+Each file is a single page object:
 ```json
-[
-  { "template": "app-page", "lang": "en", "slug": "blood-pressure",
-    "path": "blood-pressure", "outputPath": "blood-pressure/index.html",
-    "data": { ... } }
-]
+{ "template": "app-page", "lang": "en", "slug": "blood-pressure",
+  "path": "blood-pressure", "outputPath": "blood-pressure/index.html",
+  "data": { ... } }
 ```
 
 ## Page Types and Their Data
@@ -115,30 +132,29 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
 ## Common Tasks
 
 ### Edit existing text (e.g., change a feature description)
-1. Open `data/en/pages.json` (or any language)
-2. Find the page by `slug` (e.g., `"slug": "blood-pressure"`)
-3. Edit the field (e.g., `data.features.items[2].description`)
-4. Run `node build.js`
+1. Open the page file directly, e.g., `data/en/blood-pressure.app.json`
+2. Edit the field (e.g., `data.features.items[2].description`)
+3. Run `node build.js`
 
 ### Add a new tip to a tips page
-1. Find the tips page in `data/en/pages.json` (e.g., `"slug": "blood-pressure"`, template `"tips-page"`)
+1. Open `data/en/blood-pressure.tips.json` (or the relevant `{slug}.tips.json`)
 2. Add to the appropriate `tipCategories[].tips[]` array:
    ```json
    { "icon": "fas fa-icon-name", "title": "21. New Tip Title", "content": "Tip text with <a href=\"url\">links</a> supported." }
    ```
-3. Do the same in every other language's `pages.json`
+3. Do the same in every other language's matching file (e.g., `data/de/blood-pressure.tips.json`)
 4. Run `node validate.js && node build.js`
 
 ### Add a new FAQ item
-1. Find the page in the relevant `data/{lang}/pages.json`
+1. Open the page file, e.g., `data/en/blood-pressure.app.json`
 2. Add to `data.faq.items[]`:
    ```json
    { "question": "New question?", "answer": "<p>Answer with <strong>HTML</strong> supported.</p>" }
    ```
-3. Add to all languages, then run `node validate.js && node build.js`
+3. Do the same in every other language's matching file, then run `node validate.js && node build.js`
 
 ### Add a new review
-1. Find the page in `data/{lang}/pages.json`
+1. Open the page file, e.g., `data/en/blood-pressure.app.json`
 2. Add to `data.reviews.items[]`:
    ```json
    { "title": "Review Title", "content": "Review text without quotes", "author": "Username, App Name" }
@@ -155,9 +171,9 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
      "cookie": { "title": "Valorizamos a sua privacidade", ... }
    }
    ```
-2. **Create pages data:** Copy `data/en/pages.json` → `data/pt/pages.json`
-3. **Update all page entries** in `data/pt/pages.json`:
-   - Set `"lang": "pt"` on every page entry
+2. **Create page files:** Copy all `data/en/*.json` files to `data/pt/` (16 files)
+3. **Update every page file** in `data/pt/`:
+   - Set `"lang": "pt"` in each file
    - Keep `"path"` the same as EN (e.g., `"blood-pressure"`, NOT `"pt/blood-pressure"`)
    - Update `"outputPath"` to add language prefix (e.g., `"pt/blood-pressure/index.html"`)
    - Translate all `data` fields
@@ -180,12 +196,12 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
 
 ### Add a new app
 1. Add the app to `nav.apps[]` for each language in `data/languages.json`
-2. Add page entries to each `data/{lang}/pages.json`: app page + tips page
+2. Create `{slug}.app.json` and `{slug}.tips.json` in each `data/{lang}/` directory
 3. Run `node validate.js && node build.js`
 
 ### Delete a page
-1. Remove the page entry from each `data/{lang}/pages.json`
-2. Run `node build.js` (note: build won't delete old files, remove them manually)
+1. Delete the page file from each `data/{lang}/` directory (e.g., `rm data/*/sleep.app.json`)
+2. Run `node build.js` (note: build won't delete old HTML files, remove them manually)
 3. `rm path/to/old/index.html`
 
 ## Validation
@@ -260,4 +276,4 @@ When a page is rendered, the template receives a merged context containing:
 - If you need to re-extract, first restore originals: `git checkout <commit> -- <files>`
 - The build does NOT delete old files — remove manually when deleting pages
 - Tips and index pages have NO shared footer partial — tips pages have no footer at all, index pages have a custom footer stored in `indexFooter`
-- Utility pages (about, privacy, terms, faq, support) use raw HTML `bodyContent` — edit the HTML directly in the pages.json for these pages
+- Utility pages (about, privacy, terms, faq, support) use raw HTML `bodyContent` — edit the HTML directly in the `.utility.json` files
