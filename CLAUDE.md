@@ -26,7 +26,8 @@ templates/                     ← HTML templates with {{mustache}} syntax
   app-page.html      ← Product pages (blood-pressure, sleep, weight, etc.)
   tips-page.html     ← Tips pages (20 tips per app)
   index-page.html    ← Homepage (hero, apps grid, features, reviews, etc.)
-  utility-page.html  ← About, privacy, terms, faq, support (raw HTML body)
+  utility-page.html  ← About, privacy, terms, support (raw HTML body)
+  faq-page.html      ← FAQ page (structured sections/items with markdown)
   partials/          ← Shared components
     nav.html         ← Navigation bar with language selector
     footer.html      ← Footer links, copyright, disclaimer
@@ -37,6 +38,7 @@ build.js             ← Node.js build script (zero dependencies)
 validate.js          ← Checks structural parity across languages (EN = reference)
 extract.js           ← One-time migration tool (extracts data from existing HTML)
 split-pages.js       ← One-time migration tool (splits pages.json into per-page files)
+convert-faq.js       ← One-time migration tool (converts FAQ bodyContent → structured JSON)
 ```
 
 ## Quick Commands
@@ -72,6 +74,7 @@ Each page is a separate JSON file. Naming convention: `{slug}.{type}.json`
 | `{slug}.app.json` | app-page | `blood-pressure.app.json` |
 | `{slug}.tips.json` | tips-page | `blood-pressure.tips.json` |
 | `{slug}.utility.json` | utility-page | `about.utility.json` |
+| `faq.utility.json` | faq-page | `faq.utility.json` (structured, not raw HTML) |
 | `index.json` | index-page | `index.json` |
 
 Each file is a single page object:
@@ -125,9 +128,24 @@ Fully structured:
 - `doctorEndorsementHtml` — commented-out endorsement section
 
 ### Utility Pages (`template: "utility-page"`)
-Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
+Use raw HTML in `bodyContent` field (about, privacy, terms, support):
 - `meta`, `structuredDataHtml`
 - `bodyContent` — raw HTML between nav and footer
+
+### FAQ Page (`template: "faq-page"`)
+Structured data with per-question isolation (file: `faq.utility.json`):
+- `meta`, `structuredDataHtml`
+- `pageTitle` — the `<h1>` heading text
+- `sections[]` — each section has:
+  - `title` — section heading (`null` for the general/first section)
+  - `items[]` — array of FAQ items, each with:
+    - `question` — plain text (rendered as `<h3>`)
+    - `answer` — markdown (rendered with `{{md answer}}`)
+    - `images` — optional array of `{src, class}` (absolute `/images/...` paths)
+    - `listItems` — optional string array for bullet lists (markdown, rendered with `{{mdi}}`)
+    - `listImage` — optional `{src, class}` for an image inside a list
+    - `answerAfterList` — optional markdown for text after a list
+  - OR `content` — markdown for content-only sections (e.g., Contact Us, no `items`)
 
 ## Common Tasks
 
@@ -146,10 +164,20 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
 4. Run `node validate.js && node build.js`
 
 ### Add a new FAQ item
+**On the FAQ page** (`faq.utility.json`):
+1. Open `data/en/faq.utility.json`
+2. Add to the appropriate `data.sections[].items[]`:
+   ```json
+   { "question": "New question?", "answer": "Answer with **bold** and [links](url) supported." }
+   ```
+   Optional fields: `images` (array of `{src, class}`), `listItems` (string array), `answerAfterList` (markdown)
+3. Do the same in every other language's matching file, then run `node validate.js && node build.js`
+
+**On app pages** (e.g., `blood-pressure.app.json`):
 1. Open the page file, e.g., `data/en/blood-pressure.app.json`
 2. Add to `data.faq.items[]`:
    ```json
-   { "question": "New question?", "answer": "<p>Answer with <strong>HTML</strong> supported.</p>" }
+   { "question": "New question?", "answer": "Answer with **bold** and [links](url) supported." }
    ```
 3. Do the same in every other language's matching file, then run `node validate.js && node build.js`
 
@@ -189,7 +217,7 @@ Use raw HTML in `bodyContent` field (about, privacy, terms, faq, support):
    - All `structuredDataHtml` text content
    - **`reviews.items[]`** — all review `title` and `content` fields MUST be translated. Keep `author` names unchanged (real usernames). Add a `reviews.disclaimer` field in the target language stating reviews were translated from English (e.g., `"Les avis ont été traduits de l'anglais. Publiés à l'origine sur l'App Store."`)
 5. **Use absolute image paths** — all `iconSrc` values must start with `/` (e.g., `/images/BPT_1024.png`, not `images/BPT_1024.png`), otherwise images break in language subdirectories
-   - **Utility page `bodyContent`** — the FAQ page contains `<img src="...">` tags with relative paths. EN uses `../images/` (one level up from `/faq/`), but non-EN languages are two levels deep (`/{lang}/faq/`) so they MUST use `../../images/`. When copying from EN, always fix these relative paths. Preferred: use absolute paths like `/images/add_new.jpg`.
+   - **Utility page `bodyContent`** — pages may contain `<img src="...">` tags. Always use absolute paths like `/images/add_new.jpg` to avoid breakage in language subdirectories. The FAQ page now uses structured JSON with absolute image paths (no longer raw HTML).
 6. **Update `sitemap.xml`:**
    - Add a new `<url>` entry for every page in the new language (16 total)
    - Add `<xhtml:link rel="alternate" hreflang="pt" href="..."/>` to **every existing** `<url>` entry across all languages
@@ -293,4 +321,5 @@ When a page is rendered, the template receives a merged context containing:
 - If you need to re-extract, first restore originals: `git checkout <commit> -- <files>`
 - The build does NOT delete old files — remove manually when deleting pages
 - Tips and index pages have NO shared footer partial — tips pages have no footer at all, index pages have a custom footer stored in `indexFooter`
-- Utility pages (about, privacy, terms, faq, support) use raw HTML `bodyContent` — edit the HTML directly in the `.utility.json` files
+- Utility pages (about, privacy, terms, support) use raw HTML `bodyContent` — edit the HTML directly in the `.utility.json` files
+- The FAQ page (`faq.utility.json`) uses structured JSON with `template: "faq-page"` — edit individual questions/answers as markdown, not raw HTML
