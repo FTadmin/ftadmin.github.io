@@ -7,11 +7,26 @@ All HTML pages are generated from `data/` JSON files + HTML templates (16 pages 
 **Translation/content workflow rule:** edit only JSON source files in `data/` (for example `data/en/*.json`, `data/es/*.json`, `data/languages.json`, `data/site.json`), then run `node build.js` to regenerate webpages.
 **Do not manually edit files under language output folders** such as `de/`, `es/`, `fr/`, `zh/`, etc.; those are generated artifacts.
 
+### Translation overlay system
+
+**EN files are the source of truth** — they contain the complete page structure (template, slug, paths, image references, icon classes) plus English text content.
+
+**Non-EN files are translation overlays** — they contain **only translated text fields**. At build time, `build.js` deep-merges the EN base with the translation overlay. Structural fields (images, icons, app IDs, CSS, etc.) are inherited from EN automatically.
+
+This means:
+- Adding a structural field (new icon, image, section) only requires editing the EN file
+- Non-EN files are much smaller and faster to work with (only text to translate)
+- `path`, `template`, `slug`, `outputPath`, `appId`, and `lang` are derived from EN + language config — never put these in non-EN files
+- Arrays merge positionally: item 0 in the overlay merges with item 0 from EN, etc.
+- The overlay's array length wins — if a language has 6 reviews, only 6 are shown (not padded with EN reviews)
+
+**Structural fields** (stripped from overlays, inherited from EN): `icon`, `src`, `image`, `ogImage`, `appId`, `appStoreId`, `appStoreUrl`, `iconSrc`, `customCss`, `santaScript`
+
 ```
 data/
   site.json                    ← Global config (URLs, GTM/GA IDs, author)
   languages.json               ← Per-language config (nav, footer, cookie, flag)
-  en/                          ← English page files (1 file per page)
+  en/                          ← English page files — COMPLETE (structure + text)
     blood-pressure.app.json    ← App page: Blood Pressure
     blood-pressure.tips.json   ← Tips page: Blood Pressure
     sleep.app.json             ← App page: Sleep
@@ -19,7 +34,7 @@ data/
     ...                        ← (5 app + 5 tips + 5 utility + 1 index = 16 files)
     about.utility.json         ← Utility page: About
     index.json                 ← Homepage
-  de/                          ← German (same 16 files, translated)
+  de/                          ← German (16 OVERLAY files, translated text only)
   es/                          ← Spanish
   fr/                          ← French
   it/                          ← Italian
@@ -41,6 +56,7 @@ validate.js          ← Checks structural parity across languages (EN = referen
 extract.js           ← One-time migration tool (extracts data from existing HTML)
 split-pages.js       ← One-time migration tool (splits pages.json into per-page files)
 convert-faq.js       ← One-time migration tool (converts FAQ bodyContent → structured JSON)
+migrate-translations.js ← One-time migration tool (converts complete files → overlay format)
 ```
 
 ## Quick Commands
@@ -79,12 +95,29 @@ Each page is a separate JSON file. Naming convention: `{slug}.{type}.json`
 | `faq.utility.json` | faq-page | `faq.utility.json` (structured, not raw HTML) |
 | `index.json` | index-page | `index.json` |
 
-Each file is a single page object:
+**EN files** are complete page objects with all metadata:
 ```json
 { "template": "app-page", "lang": "en", "slug": "blood-pressure",
   "path": "blood-pressure", "outputPath": "blood-pressure/index.html",
   "data": { ... } }
 ```
+
+**Non-EN files** are translation overlays containing only translated text:
+```json
+{
+  "data": {
+    "meta": { "title": "Blutdruck...", "description": "..." },
+    "hero": { "imageAlt": "...", "title": "Blutdruck", "subtitle": "..." },
+    "features": {
+      "title": "...",
+      "items": [
+        { "title": "KI-Kamera-Scan", "description": "..." }
+      ]
+    }
+  }
+}
+```
+No `template`, `slug`, `path`, `outputPath`, `appId`, or `lang` — these are derived from the EN base file. No `icon`, `src`, `image`, or other structural fields — inherited from EN via deep merge.
 
 ## Page Types and Their Data
 
@@ -163,7 +196,10 @@ Structured data with per-question isolation (file: `faq.utility.json`):
    ```json
    { "icon": "fas fa-icon-name", "title": "21. New Tip Title", "content": "Tip text with <a href=\"url\">links</a> supported." }
    ```
-3. Do the same in every other language's matching file (e.g., `data/de/blood-pressure.tips.json`)
+3. In each non-EN overlay file, add the translated tip at the same array position (only text fields — `title` and `content` — no `icon`):
+   ```json
+   { "title": "21. Neuer Tipp-Titel", "content": "Tipp-Text..." }
+   ```
 4. Run `node validate.js && node build.js`
 
 ### Add a new FAQ item
@@ -174,7 +210,8 @@ Structured data with per-question isolation (file: `faq.utility.json`):
    { "question": "New question?", "answer": "Answer with **bold** and [links](url) supported." }
    ```
    Optional fields: `images` (array of `{src, class}`), `listItems` (string array), `answerAfterList` (markdown)
-3. Do the same in every other language's matching file, then run `node validate.js && node build.js`
+3. In each non-EN overlay, add the translated item at the same array position (only translated text fields, no structural fields like `images` with paths)
+4. Run `node validate.js && node build.js`
 
 **On app pages** (e.g., `blood-pressure.app.json`):
 1. Open the page file, e.g., `data/en/blood-pressure.app.json`
@@ -182,15 +219,16 @@ Structured data with per-question isolation (file: `faq.utility.json`):
    ```json
    { "question": "New question?", "answer": "Answer with **bold** and [links](url) supported." }
    ```
-3. Do the same in every other language's matching file, then run `node validate.js && node build.js`
+3. In each non-EN overlay, add the translated item at the same array position (text fields only)
+4. Run `node validate.js && node build.js`
 
 ### Add a new review
-1. Open the page file, e.g., `data/en/blood-pressure.app.json`
+1. Open the EN page file, e.g., `data/en/blood-pressure.app.json`
 2. Add to `data.reviews.items[]`:
    ```json
    { "title": "Review Title", "content": "Review text without quotes", "author": "Username, App Name" }
    ```
-3. **Translate the review** into every non-EN language's matching file. Keep `author` names unchanged (real usernames). Each non-EN language must have a `reviews.disclaimer` field (see below).
+3. **Translate the review** into every non-EN overlay file. Add only text fields (`title`, `content`, `author`) at the same array position. Each non-EN language must have a `reviews.disclaimer` field (see below).
 4. Run `node build.js`
 
 ### Add a new language (e.g., Portuguese)
@@ -203,24 +241,29 @@ Structured data with per-question isolation (file: `faq.utility.json`):
      "cookie": { "title": "Valorizamos a sua privacidade", ... }
    }
    ```
-2. **Create page files:** Copy all `data/en/*.json` files to `data/pt/` (16 files)
-3. **Update every page file** in `data/pt/`:
-   - Set `"lang": "pt"` in each file
-   - Keep `"path"` the same as EN (e.g., `"blood-pressure"`, NOT `"pt/blood-pressure"`)
-   - Update `"outputPath"` to add language prefix (e.g., `"pt/blood-pressure/index.html"`)
-   - Translate all `data` fields
-4. **Translate everything** — CRITICAL fields that are frequently missed on the **index page**:
+2. **Create overlay files:** For each `data/en/*.json` file, create a corresponding `data/pt/*.json` containing **only the `data` object with translated text fields**. Do NOT include `template`, `slug`, `path`, `outputPath`, `appId`, or `lang` — these are derived from the EN base file automatically. Do NOT include structural fields like `icon`, `src`, `image`, `ogImage`, `iconSrc`, `appStoreUrl`, `appStoreId`, `customCss`, `santaScript` — these are inherited from EN via deep merge.
+   ```json
+   {
+     "data": {
+       "meta": { "title": "Pressão Arterial...", "description": "..." },
+       "hero": { "imageAlt": "...", "title": "Pressão Arterial", "subtitle": "..." },
+       "features": { "title": "...", "items": [{ "title": "...", "description": "..." }] }
+     }
+   }
+   ```
+3. **Translate text fields** — CRITICAL fields that are frequently missed on the **index page**:
    - **`apps.items[].title`** — the app name shown in the apps grid (e.g., "Pressão Arterial Feeltracker"). These MUST be translated, not left in English.
    - **`apps.items[].downloadAlt`** — alt text for download buttons in the apps grid
+   - **`apps.items[].slug`** — MUST include language prefix (e.g., `"/pt/blood-pressure"`)
    - **`cta.items[].name`** — the app name shown above download buttons in the CTA section at the bottom of the page (e.g., "Pressão Arterial Feeltracker"). These MUST be translated.
    - **`cta.items[].downloadAlt`** — alt text for download buttons in the CTA section
-   - **`indexFooter.links[].href`** — MUST use absolute paths with language prefix (e.g., `"/pt/about/"`, `"/pt/privacy/"`). Never use relative paths like `about.html` — they break on non-root pages. For EN, use `"/about/"`, `"/privacy/"`, etc.
+   - **`indexFooter.links[].href`** — MUST use absolute paths with language prefix (e.g., `"/pt/about/"`, `"/pt/privacy/"`). Never use relative paths like `about.html` — they break on non-root pages.
    - **`indexFooter`** content (links, copyright, tagline, disclaimer)
    - All `meta` fields (title, description, keywords, OG tags)
    - All `structuredDataHtml` text content
    - **`reviews.items[]`** — all review `title` and `content` fields MUST be translated. Keep `author` names unchanged (real usernames). Add a `reviews.disclaimer` field in the target language stating reviews were translated from English (e.g., `"Les avis ont été traduits de l'anglais. Publiés à l'origine sur l'App Store."`)
-5. **Use absolute image paths** — all `iconSrc` values must start with `/` (e.g., `/images/BPT_1024.png`, not `images/BPT_1024.png`), otherwise images break in language subdirectories
-   - **Utility page `bodyContent`** — pages may contain `<img src="...">` tags. Always use absolute paths like `/images/add_new.jpg` to avoid breakage in language subdirectories. The FAQ page now uses structured JSON with absolute image paths (no longer raw HTML).
+   - **`conversionEvent.currency`** — set to the local currency (e.g., `"EUR"` for Portugal)
+4. **Image paths are inherited from EN** — no need to include them in overlay files. Utility page `bodyContent` with `<img src="...">` tags should use absolute paths like `/images/add_new.jpg`.
 6. **Update `sitemap.xml`:**
    - Add a new `<url>` entry for every page in the new language (16 total)
    - Add `<xhtml:link rel="alternate" hreflang="pt" href="..."/>` to **every existing** `<url>` entry across all languages

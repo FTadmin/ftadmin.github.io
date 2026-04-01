@@ -368,6 +368,46 @@ function buildContext(site, languages, page) {
     };
 }
 
+/**
+ * Deep-merge a base object with an overlay object.
+ * - Objects: overlay keys override base keys, recurse for nested objects
+ * - Arrays: positional merge (item 0 with item 0, etc.), uses longer array
+ * - Scalars: overlay wins
+ * - undefined in overlay: use base value
+ * - null in overlay: explicitly set to null
+ */
+function deepMerge(base, overlay) {
+    if (overlay === undefined) return base;
+    if (overlay === null) return null;
+    if (typeof base !== 'object' || base === null) return overlay;
+    if (typeof overlay !== 'object') return overlay;
+
+    if (Array.isArray(base) && Array.isArray(overlay)) {
+        // Overlay array length wins — if translation has 6 reviews, keep 6
+        // (don't pad with untranslated EN items)
+        // Within each item, deep merge to fill in structural fields from base
+        const result = [];
+        for (let i = 0; i < overlay.length; i++) {
+            if (i < base.length) {
+                result.push(deepMerge(base[i], overlay[i]));
+            } else {
+                result.push(overlay[i]);
+            }
+        }
+        return result;
+    }
+    if (Array.isArray(base) !== Array.isArray(overlay)) {
+        console.warn('  Warning: type mismatch in deepMerge (array vs object), overlay wins');
+        return overlay;
+    }
+
+    const result = { ...base };
+    for (const key of Object.keys(overlay)) {
+        result[key] = deepMerge(base[key], overlay[key]);
+    }
+    return result;
+}
+
 function ensureDir(filePath) {
     const dir = path.dirname(filePath);
     if (!fs.existsSync(dir)) {
@@ -387,15 +427,56 @@ function build() {
     const site = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'site.json'), 'utf8'));
     const languages = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'languages.json'), 'utf8'));
 
-    // Load all per-language page files (individual .json files per page)
-    const pages = [];
+    // Load EN pages first (they are the structural base for all languages)
+    const REF_LANG = 'en';
+    const enDir = path.join(DATA_DIR, REF_LANG);
+    const enPagesByFile = {};
+    for (const file of fs.readdirSync(enDir)) {
+        if (!file.endsWith('.json')) continue;
+        const page = JSON.parse(fs.readFileSync(path.join(enDir, file), 'utf8'));
+        enPagesByFile[file] = page;
+    }
+
+    // Load all per-language page files
+    // Non-EN files without a "template" field are translation overlays — deep-merge with EN base
+    const pages = Object.values(enPagesByFile); // start with EN pages
     for (const entry of fs.readdirSync(DATA_DIR)) {
+        if (entry === REF_LANG) continue; // already loaded
         const langDir = path.join(DATA_DIR, entry);
         if (!fs.statSync(langDir).isDirectory()) continue;
+        const langConfig = languages[entry];
+        if (!langConfig) continue; // skip unknown directories
+
         for (const file of fs.readdirSync(langDir)) {
             if (!file.endsWith('.json')) continue;
-            const page = JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'));
-            pages.push(page);
+            const raw = JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'));
+
+            if (raw.template) {
+                // Legacy complete file — use as-is (backward compatibility)
+                pages.push(raw);
+            } else {
+                // Translation overlay — merge with EN base
+                const enPage = enPagesByFile[file];
+                if (!enPage) {
+                    console.warn(`  Warning: ${entry}/${file} has no matching EN base file, skipping`);
+                    continue;
+                }
+                const mergedData = deepMerge(enPage.data, raw.data || {});
+                const langPrefix = langConfig.prefix || '';
+                const enPath = enPage.path || '';
+                const outputPath = enPath
+                    ? `${entry}/${enPath}/index.html`
+                    : `${entry}/index.html`;
+                pages.push({
+                    template: enPage.template,
+                    lang: entry,
+                    slug: enPage.slug,
+                    path: enPage.path,
+                    outputPath,
+                    appId: enPage.appId,
+                    data: mergedData
+                });
+            }
         }
     }
 

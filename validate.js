@@ -14,13 +14,68 @@ const path = require('path');
 const DATA_DIR = path.join(__dirname, 'data');
 const REF_LANG = 'en';
 
-function loadLanguagePages(lang) {
+/**
+ * Deep-merge a base object with an overlay object.
+ * Used to reconstruct full page data from EN base + translation overlay.
+ */
+function deepMerge(base, overlay) {
+    if (overlay === undefined) return base;
+    if (overlay === null) return null;
+    if (typeof base !== 'object' || base === null) return overlay;
+    if (typeof overlay !== 'object') return overlay;
+
+    if (Array.isArray(base) && Array.isArray(overlay)) {
+        const result = [];
+        for (let i = 0; i < overlay.length; i++) {
+            if (i < base.length) {
+                result.push(deepMerge(base[i], overlay[i]));
+            } else {
+                result.push(overlay[i]);
+            }
+        }
+        return result;
+    }
+    if (Array.isArray(base) !== Array.isArray(overlay)) {
+        return overlay;
+    }
+
+    const result = { ...base };
+    for (const key of Object.keys(overlay)) {
+        result[key] = deepMerge(base[key], overlay[key]);
+    }
+    return result;
+}
+
+function loadLanguagePages(lang, enPagesByFile) {
     const langDir = path.join(DATA_DIR, lang);
     if (!fs.existsSync(langDir)) return null;
+    const languages = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'languages.json'), 'utf8'));
     const pages = [];
     for (const file of fs.readdirSync(langDir)) {
         if (!file.endsWith('.json')) continue;
-        pages.push(JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8')));
+        const raw = JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'));
+
+        if (raw.template || lang === REF_LANG) {
+            // Complete file (EN or legacy non-EN)
+            pages.push(raw);
+        } else {
+            // Translation overlay — merge with EN base
+            const enPage = enPagesByFile && enPagesByFile[file];
+            if (!enPage) {
+                console.warn(`  Warning: ${lang}/${file} has no matching EN base file`);
+                continue;
+            }
+            const mergedData = deepMerge(enPage.data, raw.data || {});
+            pages.push({
+                template: enPage.template,
+                lang: lang,
+                slug: enPage.slug,
+                path: enPage.path,
+                outputPath: `${lang}/${enPage.path ? enPage.path + '/' : ''}index.html`,
+                appId: enPage.appId,
+                data: mergedData
+            });
+        }
     }
     return pages.length > 0 ? pages : null;
 }
@@ -92,16 +147,23 @@ function validate() {
     const langs = fs.readdirSync(DATA_DIR)
         .filter(f => fs.statSync(path.join(DATA_DIR, f)).isDirectory() && f !== REF_LANG);
 
-    const refPages = loadLanguagePages(REF_LANG);
+    const refPages = loadLanguagePages(REF_LANG, null);
     if (!refPages) {
-        console.error('ERROR: EN pages not found at data/en/pages.json');
+        console.error('ERROR: EN pages not found at data/en/');
         process.exit(1);
     }
 
-    // Index EN pages by slug+template (multiple pages can share a slug)
+    // Index EN pages by slug+template and by filename for overlay merging
     const refByKey = {};
+    const enPagesByFile = {};
     for (const p of refPages) {
         refByKey[p.slug + ':' + p.template] = p;
+    }
+    // Also index by filename for overlay support
+    const enDir = path.join(DATA_DIR, REF_LANG);
+    for (const file of fs.readdirSync(enDir)) {
+        if (!file.endsWith('.json')) continue;
+        enPagesByFile[file] = JSON.parse(fs.readFileSync(path.join(enDir, file), 'utf8'));
     }
 
     let totalWarnings = 0;
@@ -109,7 +171,7 @@ function validate() {
     let missingPages = 0;
 
     for (const lang of langs.sort()) {
-        const pages = loadLanguagePages(lang);
+        const pages = loadLanguagePages(lang, enPagesByFile);
         if (!pages) {
             console.error(`  ✗ ${lang}: pages.json not found`);
             totalWarnings++;
