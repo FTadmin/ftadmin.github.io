@@ -4,6 +4,8 @@
 
 All HTML pages are generated from `data/` JSON files + HTML templates (16 pages per language).
 **Never edit the HTML files directly** — they are overwritten on every build.
+**Translation/content workflow rule:** edit only JSON source files in `data/` (for example `data/en/*.json`, `data/es/*.json`, `data/languages.json`, `data/site.json`), then run `node build.js` to regenerate webpages.
+**Do not manually edit files under language output folders** such as `de/`, `es/`, `fr/`, `zh/`, etc.; those are generated artifacts.
 
 ```
 data/
@@ -152,7 +154,8 @@ Structured data with per-question isolation (file: `faq.utility.json`):
 ### Edit existing text (e.g., change a feature description)
 1. Open the page file directly, e.g., `data/en/blood-pressure.app.json`
 2. Edit the field (e.g., `data.features.items[2].description`)
-3. Run `node build.js`
+3. Run `node build.js` to regenerate HTML output
+4. Never patch generated files in language folders directly (`/de/...`, `/es/...`, etc.)
 
 ### Add a new tip to a tips page
 1. Open `data/en/blood-pressure.tips.json` (or the relevant `{slug}.tips.json`)
