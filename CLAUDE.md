@@ -56,6 +56,8 @@ templates/                     ← HTML templates with {{mustache}} syntax
     head-assets.html
 build.js             ← Node.js build script (zero dependencies)
 validate.js          ← Checks structural parity across languages (EN = reference)
+diff-translate.js    ← Extracts changed translatable strings from EN files (vs git HEAD)
+apply-translation.js ← Patches overlay files with translated strings at specific JSON paths
 extract.js           ← One-time migration tool (extracts data from existing HTML)
 split-pages.js       ← One-time migration tool (splits pages.json into per-page files)
 convert-faq.js       ← One-time migration tool (converts FAQ bodyContent → structured JSON)
@@ -69,9 +71,11 @@ migrate-translations.js ← One-time migration tool (converts complete files →
 ## Quick Commands
 
 ```bash
-node build.js        # Regenerate all HTML pages from data/ files
-node validate.js     # Check all languages match EN structure
-node extract.js      # Re-extract data from existing HTML (migration only)
+node build.js                    # Regenerate all HTML pages from data/ files
+node validate.js                 # Check all languages match EN structure
+node diff-translate.js           # Show changed translatable strings in all modified EN files
+node diff-translate.js data/en/blood-pressure.app.json  # Show changes in one file
+node extract.js                  # Re-extract data from existing HTML (migration only)
 ```
 
 ## Data File Structure
@@ -217,10 +221,11 @@ Structured data with per-question isolation (file: `faq.utility.json`):
 ## Common Tasks
 
 ### Edit existing text (e.g., change a feature description)
-1. Open the page file directly, e.g., `data/en/blood-pressure.app.json`
-2. Edit the field (e.g., `data.features.items[2].description`)
-3. Run `node build.js` to regenerate HTML output
-4. Never patch generated files in language folders directly (`/de/...`, `/es/...`, etc.)
+1. Edit the EN page file, e.g., `data/en/blood-pressure.app.json`
+2. Run `node diff-translate.js` to see exactly which strings changed
+3. Propagate to translations — see **Translation Workflow** section for agent strategy
+4. Run `node validate.js && node build.js` to validate and regenerate HTML
+5. Never patch generated files in language folders directly (`/de/...`, `/es/...`, etc.)
 
 ### Add a new tip to a tips page
 1. Open `data/en/blood-pressure.tips.json` (or the relevant `{slug}.tips.json`)
@@ -393,85 +398,114 @@ When a page is rendered, the template receives a merged context containing:
 - `footer`, `cookie` — from language config
 - All fields from `page.data` (spread at top level)
 
-## Parallel Agent Strategy
+## Translation Workflow
 
-This codebase has exceptional parallelization potential: 32 languages x 5 apps x 16 pages per language = 512 page files. With 20x quota (Claude Max 200), **always default to maximum parallelization** — spawn as many agents as there are independent units of work. Do not batch languages together when you can give each its own agent.
+### The problem with naive translation
 
-### Scale reference
+31 languages x 16 pages = 496 overlay files. Spawning one agent per language (31 agents) to rewrite entire files is slow, token-heavy, and prone to hanging. Most EN edits change only a few strings — the translation work should be proportional to the change, not the file size.
 
+### Diff-based translation (default workflow)
+
+When EN files are edited, use the diff-based workflow. This is fast and predictable because agents receive only the changed strings, not entire files.
+
+**Step 1: Edit the EN file(s)** as normal.
+
+**Step 2: Generate the change manifest:**
+```bash
+node diff-translate.js                              # all changed EN files
+node diff-translate.js data/en/blood-pressure.app.json  # specific file
+```
+
+Output shows exactly what changed:
+```json
+{
+  "files": {
+    "blood-pressure.app.json": {
+      "changes": [
+        { "path": "data.hero.subtitle", "old": "Old text...", "new": "New text..." },
+        { "path": "data.features.items.2.description", "old": null, "new": "Brand new field" }
+      ]
+    }
+  },
+  "summary": { "filesChanged": 1, "stringsChanged": 2 }
+}
+```
+
+**Step 3: Fan out translation agents** with the compact manifest. Each agent translates the changed strings and applies them via `apply-translation.js` or direct `Edit` calls.
+
+**Step 4: Validate and build:**
+```bash
+node validate.js && node build.js
+```
+
+### Agent prompt template for diff-based translation
+
+Use this prompt structure for translation agents. It's compact — agents finish fast because they only translate N strings, not the entire file.
+
+```
+Translate these changed EN strings into [LANGUAGE] and apply them to the overlay file.
+
+Changed strings (from diff-translate.js):
+  1. data.hero.subtitle: "New English text here"
+  2. data.features.items.2.description: "Another changed string"
+
+Target file: data/[LANG]/[FILENAME]
+Action: Read the overlay file, find each path above, and update the value with the [LANGUAGE] translation. Use the Edit tool for surgical changes. If the path doesn't exist in the overlay yet, add it at the correct nesting level.
+
+Rules:
+- Only translate text content — never add structural fields (icon, src, image, appId, etc.)
+- Preserve JSON structure and escaping (use language-native quotes where possible)
+- For new array items, ensure they're at the same positional index as EN
+```
+
+### Parallelization strategy
+
+**Scale reference:**
 - **32 languages** (31 non-EN): de, es, fr, it, ru, ja, ko, pt-br, zh-Hans, sv, nb, da, fi, ar, ca, cs, el, fr-ca, he, hr, hu, nl, pl, pt, ro, sk, th, tr, uk, vi, zh-Hant
-- **5 apps**: blood-pressure, sleep, weight, heart-rate, body-temperature
 - **16 pages per language**: 5 app + 5 tips + 5 utility + 1 index
-- **Total page files**: ~512 (32 langs x 16 pages)
 
-### Default: maximize parallelism
+**Small changes (1-10 strings in 1-2 files):** Batch languages into ~6 agents, each handling ~5 languages. Each agent's prompt is tiny (just the changed strings repeated per language). This is fast and avoids spawning 31 agents for trivial work.
 
-**Translations across languages** — spawn **one agent per language**, not batches. When translating content into all languages, that's 31 parallel agents. Each agent works independently on its `data/{lang}/` files. The quota supports this — use it.
+Example: subtitle change in one file → 6 agents x 5 languages each:
+```
+Agent 1: Translate 2 strings into de, es, fr, it, ru (5 Edit calls)
+Agent 2: Translate 2 strings into ja, ko, pt-br, zh-Hans, sv (5 Edit calls)
+Agent 3: Translate 2 strings into nb, da, fi, ar, ca (5 Edit calls)
+Agent 4: Translate 2 strings into cs, el, fr-ca, he, hr (5 Edit calls)
+Agent 5: Translate 2 strings into hu, nl, pl, pt, ro (5 Edit calls)
+Agent 6: Translate 2 strings into sk, th, tr, uk, vi, zh-Hant (6 Edit calls)
+```
 
-**Multi-app content changes** — when the same change applies to multiple apps (e.g., adding a review, updating CTA text), spawn one agent per app slug. If the change also needs translation, do a two-phase fan-out:
-1. Phase 1: one agent edits all 5 EN app files (or 5 parallel agents, one per app)
-2. Phase 2: 31 agents fan out to translate the change into every non-EN language
+**Medium changes (10-50 strings across multiple files):** One agent per language (31 agents). Each agent gets the full diff manifest and handles all affected files for its language.
 
-**New language addition** — the single biggest task. Parallelize aggressively:
+**Large changes (new page or new language):** One agent per page file (up to 16 agents for a new language).
+
+**New language addition:**
 1. Phase 1 (single agent): `languages.json` config entry
-2. Phase 2 (parallel, one agent per page file): 16 agents creating the 16 overlay files for the new language simultaneously — each agent gets one EN source file to translate
-3. Phase 3 (single agent): sitemap + robots.txt + llms.txt updates
-4. Phase 4: validate + build
-
-**Adding multiple languages at once** — with 20x quota this is practical. Spawn one agent per language, each creating all 16 overlay files. For adding N languages: N parallel agents, each handling one complete language.
-
-**Multi-app x multi-language changes** — the combinatorial case. For example, adding a new FAQ item to all 5 app pages across all 32 languages:
-1. Phase 1: one agent adds the FAQ to all 5 EN app files
-2. Phase 2: up to 31 x 5 = 155 agents (one per language-app pair), or 31 agents each handling 5 app files for their language. Choose based on file size — for small changes, one agent per language is fine; for complex translations, one agent per file.
-
-**Cross-language validation/fixes** — when `validate.js` reports issues across multiple languages, spawn one agent per language to fix its specific issues in parallel.
-
-### How to structure parallel agent prompts
-
-Each agent needs:
-- The relevant section of this CLAUDE.md (especially the overlay system rules and structural field list)
-- The EN source file content or path (read it first in the parent, pass the content to avoid 31 agents all reading the same file)
-- The specific language code and target file path
-- Clear instructions on which fields to translate vs inherit
-
-Example pattern for translation fan-out:
-```
-Read data/en/blood-pressure.app.json first, then spawn 31 agents in parallel:
-  Agent 1: "Translate → data/de/blood-pressure.app.json (German overlay, text fields only). EN source: [content]"
-  Agent 2: "Translate → data/es/blood-pressure.app.json (Spanish overlay, text fields only). EN source: [content]"
-  Agent 3: "Translate → data/fr/blood-pressure.app.json (French overlay, text fields only). EN source: [content]"
-  ... (one per non-EN language)
-```
-
-Example pattern for new language (16 agents in parallel):
-```
-Agent 1: "Create data/pt/blood-pressure.app.json — Portuguese overlay from data/en/blood-pressure.app.json"
-Agent 2: "Create data/pt/blood-pressure.tips.json — Portuguese overlay from data/en/blood-pressure.tips.json"
-Agent 3: "Create data/pt/sleep.app.json — Portuguese overlay from data/en/sleep.app.json"
-... (one per page file)
-```
+2. Phase 2 (16 parallel agents): one per page file, each creating the overlay from the EN source
+3. Phase 3 (single agent): sitemap + robots.txt + llms.txt
+4. Phase 4: `node validate.js && node build.js`
 
 ### What NOT to parallelize
 
-- **`build.js` and `validate.js`** — always run sequentially after all file edits are complete
-- **`languages.json`** — single shared file, edit in one agent only
-- **`sitemap.xml`** — single shared file, edit in one agent only
-- **Template changes** — templates affect all languages, coordinate in a single agent
-- **EN source file edits** — if multiple agents need the same EN file, edit it first in one agent, then fan out to translation agents
+- **`build.js` and `validate.js`** — run sequentially after all file edits complete
+- **`languages.json`** — single shared file, one agent only
+- **`sitemap.xml`** — single shared file, one agent only
+- **Template changes** — one agent only
+- **EN source file edits** — edit first, then fan out translations
 
-### Post-parallel checklist
+### Post-translation checklist
 
-After parallel agents complete:
-1. Run `node validate.js` to catch structural mismatches
-2. Run JSON validation for all affected languages:
+After translation agents complete:
+1. Validate JSON syntax for affected languages:
    ```bash
    for lang in de es fr it ru ja ko pt-br zh-Hans sv nb da fi ar ca cs el fr-ca he hr hu nl pl pt ro sk th tr uk vi zh-Hant; do
      echo "=== $lang ===";
      for f in data/$lang/*.json; do node -e "try { JSON.parse(require('fs').readFileSync('$f','utf8')); console.log('OK: $f'); } catch(e) { console.log('ERROR: $f: ' + e.message); }"; done;
    done
    ```
+2. Run `node validate.js` to catch structural mismatches
 3. Run `node build.js` to regenerate all HTML
-4. Spot-check a few generated pages across languages
 
 ## Important Notes
 
