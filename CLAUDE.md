@@ -43,7 +43,10 @@ templates/                     ← HTML templates with {{mustache}} syntax
   app-page.html      ← Product pages (blood-pressure, sleep, weight, etc.)
   tips-page.html     ← Tips pages (20 tips per app)
   index-page.html    ← Homepage (hero, apps grid, features, reviews, etc.)
-  utility-page.html  ← About, privacy, terms, support (raw HTML body)
+  utility-page.html  ← Legacy template (unused — all utility pages now use dedicated templates)
+  about-page.html    ← About page (structured hero + content sections)
+  support-page.html  ← Support page (structured contact + apps + resources)
+  legal-page.html    ← Privacy and Terms pages (structured intro + sections)
   faq-page.html      ← FAQ page (structured sections/items with markdown)
   partials/          ← Shared components
     nav.html         ← Navigation bar with language selector
@@ -56,6 +59,10 @@ validate.js          ← Checks structural parity across languages (EN = referen
 extract.js           ← One-time migration tool (extracts data from existing HTML)
 split-pages.js       ← One-time migration tool (splits pages.json into per-page files)
 convert-faq.js       ← One-time migration tool (converts FAQ bodyContent → structured JSON)
+convert-support.js   ← One-time migration tool (converts support bodyContent → structured JSON)
+convert-legal.js     ← One-time migration tool (converts privacy/terms bodyContent → structured JSON)
+convert-about.js     ← One-time migration tool (converts about bodyContent → structured JSON)
+convert-structured-data.js ← One-time migration tool (converts structuredDataHtml strings → JSON arrays)
 migrate-translations.js ← One-time migration tool (converts complete files → overlay format)
 ```
 
@@ -91,8 +98,11 @@ Each page is a separate JSON file. Naming convention: `{slug}.{type}.json`
 |---|---|---|
 | `{slug}.app.json` | app-page | `blood-pressure.app.json` |
 | `{slug}.tips.json` | tips-page | `blood-pressure.tips.json` |
-| `{slug}.utility.json` | utility-page | `about.utility.json` |
-| `faq.utility.json` | faq-page | `faq.utility.json` (structured, not raw HTML) |
+| `about.utility.json` | about-page | `about.utility.json` (structured hero + content sections) |
+| `support.utility.json` | support-page | `support.utility.json` (structured contact + apps + resources) |
+| `privacy.utility.json` | legal-page | `privacy.utility.json` (structured intro + sections) |
+| `terms.utility.json` | legal-page | `terms.utility.json` (structured intro + sections) |
+| `faq.utility.json` | faq-page | `faq.utility.json` (structured sections/items with markdown) |
 | `index.json` | index-page | `index.json` |
 
 **EN files** are complete page objects with all metadata:
@@ -139,7 +149,7 @@ Fully structured. Each section is a JSON object:
 
 ### Tips Pages (`template: "tips-page"`)
 Fully structured:
-- `meta`, `structuredDataHtml`, `appId`, `conversionEvent`
+- `meta`, `structuredData`, `appId`, `conversionEvent`
 - `hero` — image, imageAlt, title, subtitle
 - `tipCategories[]` — each has `title` + `tips[]` (icon, title, content with HTML links)
 - `cta` — title, subtitle, appStoreUrl, buttonAlt, platformInfo
@@ -147,7 +157,7 @@ Fully structured:
 
 ### Index/Homepage (`template: "index-page"`)
 Fully structured:
-- `meta`, `structuredDataHtml`
+- `meta`, `structuredData`
 - `christmasHtml`, `christmasBannerHtml` — commented-out seasonal features
 - `hero` — logo, title, subtitle, stats[], privacyText, featureBadges[]
 - `apps` — title + items[] (slug, iconSrc, title, subtitle, badge, description, features[], learnMoreText, appStoreId, downloadAlt)
@@ -162,14 +172,36 @@ Fully structured:
 - `santaScript` — raw JS for Christmas feature
 - `doctorEndorsementHtml` — commented-out endorsement section
 
-### Utility Pages (`template: "utility-page"`)
-Use raw HTML in `bodyContent` field (about, privacy, terms, support):
-- `meta`, `structuredDataHtml`
-- `bodyContent` — raw HTML between nav and footer
+### About Page (`template: "about-page"`)
+Structured page with hero section and content sections:
+- `meta`, `structuredData` — SEO metadata and JSON-LD schema (array of objects, auto-serialized at build time)
+- `hero` — logoText, title, subtitle
+- `contentSections[]` — array of section objects, each with `html` (raw HTML for the section content)
+
+Non-EN overlays include: `meta`, `hero` (title, subtitle), and `contentSections[].html` with translated text.
+
+### Support Page (`template: "support-page"`)
+Structured page with contact info, app list, and resources:
+- `meta`
+- `pageTitle` — the `<h1>` heading text
+- `contact` — title, supportText (raw HTML), faqText (raw HTML)
+- `apps` — title + items[] (name, url, separator, description)
+- `resources` — title + items[] (name, url)
+
+Non-EN overlays include: `meta`, `pageTitle`, `contact` (all text), `apps` (title + items), `resources` (title + items). URLs included since they contain language-prefixed paths.
+
+### Legal Pages (`template: "legal-page"`) — Privacy, Terms
+Structured pages with intro text and h2-delimited sections:
+- `meta`
+- `pageTitle` — the `<h1>` heading text
+- `intro` — raw HTML for introductory paragraphs
+- `sections[]` — array of section objects, each with:
+  - `heading` — the h2 section title
+  - `content` — raw HTML for section content (paragraphs, lists, links)
 
 ### FAQ Page (`template: "faq-page"`)
 Structured data with per-question isolation (file: `faq.utility.json`):
-- `meta`, `structuredDataHtml`
+- `meta`, `structuredData`
 - `pageTitle` — the `<h1>` heading text
 - `sections[]` — each section has:
   - `title` — section heading (`null` for the general/first section)
@@ -260,7 +292,7 @@ Structured data with per-question isolation (file: `faq.utility.json`):
    - **`indexFooter.links[].href`** — MUST use absolute paths with language prefix (e.g., `"/pt/about/"`, `"/pt/privacy/"`). Never use relative paths like `about.html` — they break on non-root pages.
    - **`indexFooter`** content (links, copyright, tagline, disclaimer)
    - All `meta` fields (title, description, keywords, OG tags)
-   - All `structuredDataHtml` text content
+   - All `structuredData` text content (JSON-LD schema — translatable fields like `name`, `description`, `featureList` are in overlay; structure inherited from EN)
    - **`reviews.items[]`** — all review `title` and `content` fields MUST be translated. Keep `author` names unchanged (real usernames). Add a `reviews.disclaimer` field in the target language stating reviews were translated from English (e.g., `"Les avis ont été traduits de l'anglais. Publiés à l'origine sur l'App Store."`)
    - **`conversionEvent.currency`** — set to the local currency (e.g., `"EUR"` for Portugal)
 4. **Image paths are inherited from EN** — no need to include them in overlay files. Utility page `bodyContent` with `<img src="...">` tags should use absolute paths like `/images/add_new.jpg`.
@@ -337,14 +369,16 @@ Translatable content fields use markdown instead of raw HTML. The build converts
 **When to use which tag:**
 - `{{md field}}` — for standalone content that needs paragraph wrapping (FAQ answers, how-it-works steps)
 - `{{mdi field}}` — for content inside an existing `<p>` or `<li>` tag (descriptions, feature text, tips)
-- `{{field}}` — for raw output: plain text, raw HTML blobs (`structuredDataHtml`, `bodyContent`), or values in attributes
+- `{{field}}` — for raw output: plain text, raw HTML blobs (`structuredDataHtml`, `bodyContent`, `christmasHtml`), or values in attributes
 
 **Fields using markdown:** FAQ answers, tip content, feature descriptions, howItWorks step content, app descriptions, footer copyright. These fields store content like:
 ```json
 "answer": "Your data syncs via iCloud. This means **no email** or personal info needed. See our [privacy policy](https://feeltracker.com/privacy/)."
 ```
 
-**Fields that stay as raw HTML:** `structuredDataHtml`, `bodyContent`, `christmasHtml`, `customCss`, `santaScript`, `doctorEndorsementHtml`, `disclaimerTitle`
+**Fields that stay as raw HTML:** `christmasHtml`, `customCss`, `santaScript`, `doctorEndorsementHtml`, `disclaimerTitle`
+
+**Structured data (JSON-LD):** Pages use `structuredData` (array of JSON objects) instead of `structuredDataHtml` (raw string). At build time, `build.js` serializes `structuredData` into `<script type="application/ld+json">` blocks. Non-EN overlays only need the translatable schema fields (`name`, `description`, `featureList`, `mainEntity` for FAQ) — the schema structure is inherited from EN via deep merge.
 
 ## Build Context
 

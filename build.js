@@ -351,6 +351,16 @@ function buildContext(site, languages, page) {
     // Privacy URL for this language
     const privacyUrl = (lang.prefix || '') + '/privacy/';
 
+    // Generate structuredDataHtml from structuredData JSON array (if present)
+    const data = { ...page.data };
+    if (Array.isArray(data.structuredData) && data.structuredData.length > 0 && !data.structuredDataHtml) {
+        data.structuredDataHtml = data.structuredData.map(block =>
+            '    <script type="application/ld+json">\n' +
+            JSON.stringify(block, null, 6).split('\n').map(line => '    ' + line).join('\n') +
+            '\n    </script>'
+        ).join('\n');
+    }
+
     return {
         site,
         lang,
@@ -364,7 +374,7 @@ function buildContext(site, languages, page) {
         footer: lang.footer,
         cookie: lang.cookie,
         privacyUrl,
-        ...page.data
+        ...data
     };
 }
 
