@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=799503787">
+
+    <!-- Primary Meta Tags -->
+    <title>體重與飲食 - BMI 體脂率 飲食AI日記 | Feeltracker</title>
+    <meta name="title" content="體重與飲食 - BMI 體脂率 飲食AI日記 | Feeltracker">
+    <meta name="description" content="藉助智慧體重追蹤實現健身目標。使用Camera Scan AI掃描體重秤讀數和食物，獲取即時營養分析。透過AI洞察監測體重、BMI和體脂率。同步Apple Health，檢視趨勢，追蹤宏量營養素。在iPhone、iPad和Mac上輕鬆管理體重。">
+    <meta name="keywords" content="體脂,百分比,計算器,體重,食物,增重,減肥,BMI,日記,記錄,身體質量指數,體脂率">
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/zh-Hant/weight/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/">
+
+    <link rel="alternate" hreflang="pt-br" href="https://feeltracker.com/pt-br/weight/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/">
+
+    <link rel="alternate" hreflang="fr-ca" href="https://feeltracker.com/fr-ca/weight/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/zh-Hant/weight/">
+    <meta property="og:title" content="體重與飲食 | 用AI追蹤體重和體脂 | Feeltracker">
+    <meta property="og:description" content="藉助Camera Scan AI追蹤體重和飲食，實現健身目標。追蹤營養，透過AI洞察監測進度，同步Apple Health。">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/zh-Hant/weight/">
+    <meta property="twitter:title" content="體重與飲食 | 用AI追蹤體重和體脂 | Feeltracker">
+    <meta property="twitter:description" content="用AI掃描體重和食物。追蹤營養，監測進度，實現健身目標。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "MobileApplication",
+          "name": "體重與飲食",
+          "applicationCategory": "HealthApplication",
+          "applicationSubCategory": "體重追蹤器",
+          "operatingSystem": "iOS 16.0 or later",
+          "description": "使用Camera Scan AI追蹤體重、BMI和體脂率。掃描體重秤讀數和食物獲取即時營養分析。獲取AI驅動的洞察，同步Apple Health，匯出醫生報告。",
+          "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": 493,
+                "bestRating": "5",
+                "worstRating": "1"
+          },
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts"
+          },
+          "featureList": [
+                "Camera Scan AI 掃描體重秤讀數",
+                "食物掃描即時營養分析",
+                "體重、BMI和體脂追蹤",
+                "Apple Health雙向同步",
+                "AI驅動的模式識別",
+                "月度平均值和趨勢分析",
+                "目標設定和進度追蹤",
+                "匯出PDF和Excel",
+                "iCloud備份和同步",
+                "支援32種語言"
+          ],
+          "screenshot": "https://feeltracker.com/images/screenshots/wt-1.png",
+          "softwareVersion": "Latest",
+          "inLanguage": [
+                "en",
+                "es",
+                "fr",
+                "de",
+                "it",
+                "nl",
+                "pt",
+                "sv",
+                "no",
+                "da",
+                "fi",
+                "pl",
+                "ru",
+                "uk",
+                "cs",
+                "sk",
+                "ro",
+                "hr",
+                "hu",
+                "ar",
+                "he",
+                "zh-Hans",
+                "ja",
+                "ko",
+                "th",
+                "vi",
+                "id",
+                "el",
+                "tr",
+                "ca"
+          ],
+          "datePublished": "2015",
+          "downloadUrl": "https://apps.apple.com/app/id799503787",
+          "installUrl": "https://apps.apple.com/app/id799503787",
+          "review": [
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Wiesiu33"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "Excellent App",
+                      "reviewBody": "Best weight app in the App Store. Simple to use and it's loaded with valuable information. I use it everyday."
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Rufuslynx"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "Weight and BMI",
+                      "reviewBody": "I find this app is outstanding except for two minor flaws that just irritate me but still works out very well."
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "cutting weight"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "Simple food diary. Awesome.",
+                      "reviewBody": "Simple food diary. Awesome."
+                }
+          ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/zh-Hant/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇹🇼</span>
+                    <span>繁體中文</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/weight/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/weight/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/weight/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/weight/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/weight/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/weight/"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/fr/weight/"><span class="flag">🇫🇷</span> Français</a>
+
+                    <a href="/ko/weight/"><span class="flag">🇰🇷</span> 한국어</a>
+
+                    <a href="/pt-br/weight/"><span class="flag">🇧🇷</span> Português</a>
+
+                    <a href="/zh-Hans/weight/"><span class="flag">🇨🇳</span> 简体中文</a>
+
+                    <a href="/sv/weight/"><span class="flag">🇸🇪</span> Svenska</a>
+
+                    <a href="/nb/weight/"><span class="flag">🇳🇴</span> Norsk</a>
+
+                    <a href="/da/weight/"><span class="flag">🇩🇰</span> Dansk</a>
+
+                    <a href="/fi/weight/"><span class="flag">🇫🇮</span> Suomi</a>
+
+                    <a href="/ar/weight/"><span class="flag">🇸🇦</span> العربية</a>
+
+                    <a href="/ca/weight/"><span class="flag">🏴</span> Català</a>
+
+                    <a href="/cs/weight/"><span class="flag">🇨🇿</span> Čeština</a>
+
+                    <a href="/el/weight/"><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                    <a href="/fr-ca/weight/"><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                    <a href="/he/weight/"><span class="flag">🇮🇱</span> עברית</a>
+
+                    <a href="/hr/weight/"><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                    <a href="/hu/weight/"><span class="flag">🇭🇺</span> Magyar</a>
+
+                    <a href="/nl/weight/"><span class="flag">🇳🇱</span> Nederlands</a>
+
+                    <a href="/pl/weight/"><span class="flag">🇵🇱</span> Polski</a>
+
+                    <a href="/pt/weight/"><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                    <a href="/ro/weight/"><span class="flag">🇷🇴</span> Română</a>
+
+                    <a href="/sk/weight/"><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                    <a href="/th/weight/"><span class="flag">🇹🇭</span> ไทย</a>
+
+                    <a href="/tr/weight/"><span class="flag">🇹🇷</span> Türkçe</a>
+
+                    <a href="/uk/weight/"><span class="flag">🇺🇦</span> Українська</a>
+
+                    <a href="/vi/weight/"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                    <a href="/zh-Hant/weight/" class="active"><span class="flag">🇹🇼</span> 繁體中文</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/zh-Hant/blood-pressure/">血壓</a>
+
+            <a href="/zh-Hant/daily-journal/">每日日記</a>
+
+            <a href="/zh-Hant/mental-health/">心理健康</a>
+
+            <a href="/zh-Hant/sleep/">睡眠與夢境</a>
+
+            <a href="/zh-Hant/weight/" class="current">體重與飲食</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <img src="/images/WT_1024.png" alt="體重與飲食應用圖示" width="150" height="150" class="hero-logo app-icon">
+        <h1>體重與飲食</h1>
+
+        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> 無廣告 · 無追蹤 · 隱私至上
+        </div>
+        <p class="hero-subtitle">藉助智慧體重追蹤實現健身目標。使用Camera Scan AI掃描讀數，透過AI驅動的洞察監測體重、BMI和體脂率，瞭解哪些方法有效、哪些需要改進。</p>
+        <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="在App Store下載體重與飲食" style="width: 180px; height: 53px;">
+        </a>
+        <p class="hero-platform-info">免費應用，可選高階功能<br>iPhone、iPad 和 Mac • iOS 16.0+</p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <h2 class="center-text">體驗Feeltracker體重與飲食的實際效果</h2>
+        <div class="screenshots-grid">
+
+            <div>
+                <img src="/images/screenshots/wt-1.png" alt="體重與飲食截圖1" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/wt-2.png" alt="體重與飲食截圖2" class="screenshot-img">
+            </div>
+
+            <div>
+                <img src="/images/screenshots/wt-3.png" alt="體重與飲食截圖3" class="screenshot-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <h2 class="center-text">體重管理智慧功能</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                <h3>相機掃描AI</h3>
+                <p>掃描體重秤顯示屏自動讀取體重，或掃描食物獲取即時營養分析，包括卡路里、蛋白質、碳水化合物和脂肪分解。AI驅動的視覺識別讓追蹤變得輕鬆省力。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-weight-scale"></i></div>
+                <h3>全面身體追蹤</h3>
+                <p>追蹤體重、BMI和體脂率。BMI根據身高和體重自動計算。支援公制和英制單位。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>趨勢與平均值</h3>
+                <p>檢視月度平均值、每週趨勢和長期進度。精美的圖表讓您一目瞭然地瞭解體重變化歷程，支援自定義時間範圍。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>目標追蹤</h3>
+                <p>設定減重或增重目標並追蹤進度。透過視覺化指示器檢視距離目標體重還有多遠。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-dumbbell"></i></div>
+                <h3>Apple Health整合</h3>
+                <p>與Apple Health完全同步。從其他應用和可穿戴裝置匯入體重歷史記錄。將所有條目儲存到HealthKit，實現全面的健身追蹤。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                <h3>食物掃描</h3>
+                <p>將相機對準任何食物，即可獲取包含卡路里和宏量營養素的即時營養分析。對飲食做出明智選擇，追蹤不同食物如何影響您的體重管理之旅。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>AI驅動的洞察</h3>
+                <p>瞭解哪些因素影響您的體重。AI分析您的備註，識別哪些食物、運動或習慣與體重變化相關。</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-calendar"></i></div>
+                <h3>日曆檢視</h3>
+                <p>在直觀的日曆介面中檢視所有體重記錄。快速識別體重變化歷程中的規律和趨勢。</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="platforms-section">
+        <h2 class="center-text">體重與飲食的使用方法</h2>
+        <p class="section-subtitle center-text">配備AI驅動洞察的完整體重管理系統</p>
+
+        <div class="app-card">
+            <h3>1. 記錄體重和飲食</h3>
+            <div class="app-card-content">
+<p><strong>掃描體重秤顯示屏：</strong> 將相機對準體重秤的顯示屏，讓AI自動讀取您的體重。適用於任何品牌的電子秤——無需輸入，無需擔心錯誤，即時捕捉秤上的數字。</p>
+<p><strong>掃描食物：</strong> 拍攝您的餐食或零食照片，獲取即時營養分析。AI識別食物並提供卡路里、蛋白質、碳水化合物、脂肪分解和份量估算。非常適合在追蹤體重的同時記錄飲食。</p>
+<p><strong>手動輸入：</strong> 更喜歡打字？手動輸入體重以及可選的測量資料，如體脂率、BMI（自動計算）、腰圍或您追蹤的任何其他指標。</p>
+<p><strong>豐富的上下文資訊：</strong> 新增關於您一天的備註——飲食內容、完成的運動、飲水量、睡眠質量、壓力水平、生理週期、用藥情況，或任何可能影響體重的因素。附上進度照片，在數字之外直觀地記錄您的變化歷程。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>2. 追蹤進度</h3>
+            <div class="app-card-content">
+<p><strong>視覺化追蹤：</strong> 在精美的圖表中檢視您的體重歷史記錄。按天、周、月或自定義日期範圍檢視趨勢。顏色編碼指示器顯示目標進度。</p>
+<p><strong>智慧平均值：</strong> 自動計算的統計資料包括每週和每月平均值（平滑日常波動）、體重變化率、目標達成時間預測，以及顯示超越日常變化的真實進度的趨勢線。</p>
+<p><strong>里程碑慶祝：</strong> 應用會識別並慶祝您的成就——減掉第一個5磅、達到目標的10%、最長連續記錄等等。透過視覺化進度指示器和成就徽章保持動力。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>3. 發現規律</h3>
+            <div class="app-card-content">
+<p><strong>AI分析：</strong> 人工智慧分析您的備註，識別與體重變化相關的因素。發現諸如“在提到備餐的那幾周您減重更多”或“運動少於5次的那幾周體重會增加”等洞察。</p>
+<p><strong>個性化洞察：</strong> 根據您的獨特資料獲取具體建議。AI可能會發現“晨間鍛鍊的那幾周您的體重多減0.3磅”或“週末持續增加1磅，到週三恢復正常”。</p>
+<p><strong>互動對話：</strong> 用自然語言詢問關於您資料的問題：“我每週平均減多少？”或“顯示所有放縱日後的稱重記錄。”AI理解上下文並從您的追蹤歷史中即時提供答案。</p>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>4. 達成目標</h3>
+            <div class="app-card-content">
+<p><strong>目標設定：</strong> 設定合理時間線內的目標體重。應用根據當前趨勢預測您何時能達到目標，並顯示您是否按計劃進行、超前完成，還是需要調整方案。</p>
+<p><strong>專業報告：</strong> 匯出全面的PDF或Excel報告，供營養師、私人教練或醫生使用。報告包括體重圖表、BMI趨勢、體脂率變化、飲食和運動備註，以及非常適合專業諮詢的統計摘要。</p>
+<p><strong>Apple Health整合：</strong> 與Apple Health完全雙向同步。從智慧秤或其他應用匯入體重資料，並將所有WT資料匯出到HealthKit。您的體重資料與完整的健身和健康生態系統保持連線。</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AI Features -->
+    <section class="ai-section center-text">
+        <h2>人工智慧驅動</h2>
+        <p class="section-subtitle">先進的AI功能幫助您更好地理解體重變化規律</p>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">免費AI功能</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-question-circle"></i> 提問</h4>
+                <p>快速問答您的體重資料——即時獲取健康問題的答案</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comments"></i> 對話</h4>
+                <p>就您的健身之旅進行互動對話，獲取個性化指導</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-volume-up"></i> 語音摘要</h4>
+                <p>收聽體重趨勢的音訊摘要——隨時隨地獲取洞察的完美方式</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-laugh"></i> 逗我一笑</h4>
+                <p>從您的追蹤資料中獲取個性化幽默，點亮您的一天</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-moon"></i> 幫我放鬆</h4>
+                <p>AI引導的呼吸和放鬆練習，幫助減少壓力性進食</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-camera"></i> 相機掃描AI</h4>
+                <p>掃描體重秤顯示屏讀取體重，或掃描食物獲取即時營養分析</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">高階AI功能</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical-alt"></i> 深度研究報告</h4>
+                <p>對您的體重資料進行全面的AI分析，提供詳細洞察</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-search"></i> 模式偵探</h4>
+                <p>發現體重與生活方式因素之間的隱藏關聯</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 目標助手</h4>
+                <p>根據您的資料規律獲取個性化、資料驅動的體重目標</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-user-md"></i> 醫生摘要</h4>
+                <p>為就醫生成專業的體重管理摘要</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-medical"></i> 病假條生成器</h4>
+                <p>在需要時為工作或學校生成AI病假條</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-book"></i> 故事生成器</h4>
+                <p>將您的體重管理之旅轉化為富有創意、引人入勝的敘事</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-comment-alt"></i> 文字摘要</h4>
+                <p>建立可分享的體重趨勢文字訊息摘要</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-graduation-cap"></i> 個性化測驗</h4>
+                <p>透過AI生成的10道趣味問答測試您對自己資料的瞭解</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-microphone"></i> 文字轉語音</h4>
+                <p>以自然語音播放收聽您的AI洞察和摘要</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-file-invoice"></i> 定製健康報告</h4>
+                <p>建立全面的個性化健身文件來追蹤您的進度</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-utensils"></i> 膳食計劃</h4>
+                <p>根據您的體重目標和飲食偏好獲取個性化的每週膳食計劃</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-dumbbell"></i> 運動計劃</h4>
+                <p>獲取根據您的健身水平和目標量身定製的個性化鍛鍊方案</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="ai-section center-text">
+        <h2>為什麼要追蹤體重？</h2>
+        <p class="section-subtitle">持續追蹤是成功管理體重的關鍵</p>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-bullseye"></i> 保持自律</h4>
+                <p>定期稱重讓您始終專注於目標</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-chart-bar"></i> 看到真實進度</h4>
+                <p>資料揭示日常波動所掩蓋的趨勢</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-apple-alt"></i> 瞭解您的身體</h4>
+                <p>瞭解不同食物和活動如何影響您的體重</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-lightbulb"></i> 做出更好的選擇</h4>
+                <p>資料驅動的洞察引導更明智的決策</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-trophy"></i> 慶祝勝利</h4>
+                <p>追蹤健身之旅中的每一個成就</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-arrows-rotate"></i> 維持成果</h4>
+                <p>持續追蹤以長期保持體重</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="platforms-section center-text">
+        <h2>支援32種語言</h2>
+        <p class="section-subtitle">體重與飲食完整支援以下語言：英語、西班牙語 (Español)、法語 (Français)、加拿大法語、德語 (Deutsch)、義大利語 (Italiano)、荷蘭語 (Nederlands)、巴西葡萄牙語 (Português)、葡萄牙葡萄牙語、瑞典語 (Svenska)、挪威語 (Norsk)、丹麥語 (Dansk)、芬蘭語 (Suomi)、波蘭語 (Polski)、俄語 (Русский)、烏克蘭語 (Українська)、捷克語 (Čeština)、斯洛伐克語 (Slovenčina)、羅馬尼亞語 (Română)、克羅埃西亞語 (Hrvatski)、匈牙利語 (Magyar)、阿拉伯語 (العربية)、希伯來語 (עברית)、簡體中文 (簡體中文)、繁體中文 (繁體中文)、日語 (日本語)、韓語 (한국어)、泰語 (ไทย)、越南語 (Tiếng Việt)、希臘語 (Ελληνικά)、土耳其語 (Türkçe) 和加泰羅尼亞語 (Català)。</p>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2>常見問題</h2>
+
+
+        <h3>Camera Scan AI是如何工作的？</h3>
+        <p>只需將iPhone或iPad的相機對準體重秤的數字顯示屏。該應用使用先進的AI驅動相機識別技術自動讀取您的體重並填入欄位。這消除了手動輸入錯誤，使記錄更快、更簡便。</p>
+
+
+        <h3>我應該多久稱一次體重？</h3>
+        <p>大多數專家建議每週在相同的時間和日期稱重一次，以保持一致性。有些人更喜歡每天稱重，以瞭解自然波動。該應用支援適合您的任何頻率。</p>
+
+
+        <h3>什麼是BMI，為什麼它很重要？</h3>
+        <p>BMI（身體質量指數）是基於身高和體重的體脂衡量標準。計算公式為：體重（公斤）/ 身高（米）²。BMI 18.5-24.9為正常，25-29.9為超重，30以上為肥胖。該應用會自動計算並以顏色編碼指示器顯示您的BMI。</p>
+
+
+        <h3>如何測量體脂率？</h3>
+        <p>測量體脂率需要一臺體成分秤——一種使用生物電阻抗技術同時測量體重和身體成分的特殊秤。Omron、Tanita和Withings等品牌均有此類產品。普通秤只能測量體重。</p>
+
+
+        <h3>為什麼我的體重每天都在波動？</h3>
+        <p>由於水分瀦留、鹽分攝入、激素變化、進餐時間和排便習慣等原因，每日體重可能會波動數磅。這完全正常。請關注每週或每月的趨勢，而非每天的變化。</p>
+
+
+        <h3>我可以從Apple Health匯入體重嗎？</h3>
+        <p>可以。該應用可以一鍵從Apple Health匯入您所有的歷史體重資料。這包括智慧秤、Apple Watch或其他健身應用追蹤的體重。</p>
+
+
+        <h3>AI如何幫助減重？</h3>
+        <p>當您在體重記錄中新增備註（如“開始生酮飲食”或“吃了披薩”）時，AI會隨著時間推移分析這些內容以顯示相關性。例如，它可能會顯示您備餐的那幾周減重效果更好，或者外出就餐頻繁與體重增加相關。</p>
+
+
+        <h3>我可以用磅和公斤追蹤體重嗎？</h3>
+        <p>可以。該應用支援英制（磅、英尺/英寸）和公制（公斤、釐米）單位。您可以在設定中切換。</p>
+
+
+        <h3>我可以匯出體重資料嗎？</h3>
+        <p>可以。將體重歷史記錄匯出為PDF圖表、Excel電子表格或JSON資料。與您的醫生、教練或營養師分享報告。</p>
+
+
+        <h3>這是一款飲食或餐食追蹤應用嗎？</h3>
+        <p>不是。體重與飲食專注於追蹤身體測量資料（體重、BMI、體脂）。它不追蹤卡路里或餐食。不過，您可以新增關於飲食的備註，以幫助識別影響體重的因素。</p>
+
+
+        <h3>你們會展示廣告或追蹤我嗎？</h3>
+        <p><strong>不會。</strong> 我們已完全移除應用中的所有廣告。我們不會在其他應用或網站上追蹤您，也絕不會將您的資料出售給廣告商。</p>
+<p>您的資料透過iCloud同步——就像Apple備忘錄和照片一樣。這意味著我們不需要知道您的電子郵件地址、姓名或任何個人資訊。無論您使用免費版還是高階版，您的體重和健康資料都儲存在您的裝置和iCloud賬戶中，完全私密。</p>
+
+
+        <h3>我需要訂閱嗎？</h3>
+        <p>該應用完全免費下載和使用。所有核心追蹤功能無需訂閱即可使用。高階訂閱解鎖高階AI功能、無限匯出和增強的自定義選項。您可以在免費試用期間體驗所有高階功能。</p>
+
+    </section>
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">使用者評價</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 40px;">來自App Store的真實評論</p>
+
+        <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <div class="review-title">優秀的應用</div>
+            </div>
+            <p class="review-content">"App Store裡最好的體重應用。使用簡單，資訊豐富有價值。我每天都在用。"</p>
+            <p class="review-author">- Wiesiu33</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <div class="review-title">體重和BMI</div>
+            </div>
+            <p class="review-content">"我覺得這個應用非常出色，只有兩個小缺點有點讓人不舒服，但整體效果還是很好。1：體重總是會回到150，而不是停留在您上次輸入的體重。如果能停留在您輸入的體重上，而不用每次都滾動到當前體重，會方便很多。2：BMI應該自動計算，而不是需要手動計算。"</p>
+            <p class="review-author">- Rufuslynx</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <div class="review-title">簡單的飲食日記。太棒了。</div>
+            </div>
+            <p class="review-content">"簡單的飲食日記。太棒了。"</p>
+            <p class="review-author">- cutting weight</p>
+        </div>
+
+        </div>
+
+        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">評論翻譯自英文原文。最初發布在App Store上。</p>
+
+    </section>
+
+    <!-- Tips Section -->
+    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
+        <div class="container center-text">
+            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> 想要實現體重目標？</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">探索20條關於健康減重、BMI追蹤和可持續健身的專家建議</p>
+            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+                閱讀專家建議 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>今天就開始您的體重管理之旅</h2>
+        <p>加入數千名透過體重與飲食實現健身目標的使用者</p>
+        <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
+            <img class="store_button" src="/images/appstore_link.svg" alt="下載體重與飲食" style="width: 180px; height: 53px;">
+        </a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/zh-Hant/weight/">首頁</a>
+            <a href="/zh-Hant/about/">關於</a>
+            <a href="mailto:support@feeltracker.com">電子郵件支援</a>
+            <a href="/zh-Hant/support/">支援</a>
+            <a href="/zh-Hant/faq/">常見問題</a>
+            <a href="https://x.com/feeltracker">在X上關注</a>
+            <a href="/zh-Hant/privacy/">隱私政策</a>
+            <a href="/zh-Hant/terms/">使用條款</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. 保留所有權利。</p>
+        <p class="footer-tagline">Feeltracker 健康追蹤應用程式系列</p>
+        <p class="footer-disclaimer">您的健康資料儲存在您的裝置和iCloud中——我們絕不會存取或出售您的資料。Feeltracker應用程式不是醫療設備。僅供參考，不能替代專業的醫療建議、診斷或治療。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>我們重視您的隱私</strong></p>
+                <p>我們使用分析Cookie來改善我們的網站和應用程式。不使用廣告Cookie。請查閱我們的 <a href="/zh-Hant/privacy/">隱私政策</a> 了解詳情。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒絕</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">接受</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+</body>
+</html>
