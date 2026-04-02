@@ -1,5 +1,5 @@
 {
-  "template": "utility-page",
+  "template": "support-page",
   "lang": "en",
   "slug": "support",
   "path": "support",
@@ -14,7 +14,63 @@
       "ogImage": "https://feeltracker.com/images/feeltracker.png",
       "twitterDescription": ""
     },
-    "structuredDataHtml": "",
-    "bodyContent": "<h1>Feeltracker Support</h1>\n    \n    <div class=\"contact-box\">\n        <h2>Need Help?</h2>\n        <p>For immediate support or questions, email us at: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a></p>\n        <p>For detailed help and common questions, visit our <a href=\"../faq/\">FAQ page</a>.</p>\n    </div>\n\n    <div class=\"support-section\">\n        <h2>Our Apps</h2>\n        <ul>\n            <li><a href=\"https://apps.apple.com/us/app/daily-journal-notes-writer-log/id1557699226\">Daily Journaling</a> - For daily notes and reflections</li>\n            <li><a href=\"https://apps.apple.com/us/app/blood-pressure-monitor-checker/id794542324\">Blood Pressure</a> - Track your blood pressure readings</li>\n            <li><a href=\"https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999\">Mood Journal</a> - Monitor your emotional well-being</li>\n            <li><a href=\"https://apps.apple.com/us/app/weight-body-fat-food-journal/id799503787\">Weight & BMI Tracker</a> - Track weight, body fat, and BMI</li>\n            <li><a href=\"https://apps.apple.com/us/app/sleep-tracker-naptime-diary/id1065268459\">Sleep Tracker</a> - Monitor your sleep patterns</li>\n        </ul>\n    </div>\n\n    <div class=\"support-section\">\n        <h2>Resources</h2>\n        <ul>\n            <li><a href=\"../faq/\">Frequently Asked Questions</a></li>\n            <li><a href=\"../privacy/\">Privacy Policy</a></li>\n            <li><a href=\"../terms/\">Terms of Service</a></li>\n        </ul>\n    </div>"
+    "pageTitle": "Feeltracker Support",
+    "contact": {
+      "title": "Need Help?",
+      "supportText": "For immediate support or questions, email us at: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
+      "faqText": "For detailed help and common questions, visit our <a href=\"../faq/\">FAQ page</a>."
+    },
+    "apps": {
+      "title": "Our Apps",
+      "items": [
+        {
+          "name": "Daily Journaling",
+          "url": "https://apps.apple.com/us/app/daily-journal-notes-writer-log/id1557699226",
+          "separator": " - ",
+          "description": "For daily notes and reflections"
+        },
+        {
+          "name": "Blood Pressure",
+          "url": "https://apps.apple.com/us/app/blood-pressure-monitor-checker/id794542324",
+          "separator": " - ",
+          "description": "Track your blood pressure readings"
+        },
+        {
+          "name": "Mood Journal",
+          "url": "https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999",
+          "separator": " - ",
+          "description": "Monitor your emotional well-being"
+        },
+        {
+          "name": "Weight & BMI Tracker",
+          "url": "https://apps.apple.com/us/app/weight-body-fat-food-journal/id799503787",
+          "separator": " - ",
+          "description": "Track weight, body fat, and BMI"
+        },
+        {
+          "name": "Sleep Tracker",
+          "url": "https://apps.apple.com/us/app/sleep-tracker-naptime-diary/id1065268459",
+          "separator": " - ",
+          "description": "Monitor your sleep patterns"
+        }
+      ]
+    },
+    "resources": {
+      "title": "Resources",
+      "items": [
+        {
+          "name": "Frequently Asked Questions",
+          "url": "../faq/"
+        },
+        {
+          "name": "Privacy Policy",
+          "url": "../privacy/"
+        },
+        {
+          "name": "Terms of Service",
+          "url": "../terms/"
+        }
+      ]
+    }
   }
 }
