@@ -315,7 +315,7 @@ These lessons were learned from the Simplified Chinese (zh) translation and appl
    ```
 5. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
 6. **Reviews disclaimer** — Every non-EN language MUST include `"disclaimer"` in the reviews section of app pages AND the index page, stating reviews were translated from English (e.g., Chinese: `"评论翻译自英文原文。最初发布在App Store上。"`).
-7. **Current languages** (14 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português (pt-br), 简体中文 (zh), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi)
+7. **Current languages** (32 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh-Hans), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi), العربية (ar), Català (ca), Čeština (cs), Ελληνικά (el), Français Canada (fr-ca), עברית (he), Hrvatski (hr), Magyar (hu), Nederlands (nl), Polski (pl), Português Portugal (pt), Română (ro), Slovenčina (sk), ไทย (th), Türkçe (tr), Українська (uk), Tiếng Việt (vi), 繁體中文 (zh-Hant)
 
 ### Add a new app
 1. Add the app to `nav.apps[]` for each language in `data/languages.json`
@@ -399,7 +399,7 @@ This codebase has exceptional parallelization potential: 32 languages x 5 apps x
 
 ### Scale reference
 
-- **32 languages** (31 non-EN): de, es, fr, it, ru, ja, ko, pt-br, zh, sv, nb, da, fi + 18 more incoming
+- **32 languages** (31 non-EN): de, es, fr, it, ru, ja, ko, pt-br, zh-Hans, sv, nb, da, fi, ar, ca, cs, el, fr-ca, he, hr, hu, nl, pl, pt, ro, sk, th, tr, uk, vi, zh-Hant
 - **5 apps**: blood-pressure, sleep, weight, heart-rate, body-temperature
 - **16 pages per language**: 5 app + 5 tips + 5 utility + 1 index
 - **Total page files**: ~512 (32 langs x 16 pages)
@@ -465,7 +465,7 @@ After parallel agents complete:
 1. Run `node validate.js` to catch structural mismatches
 2. Run JSON validation for all affected languages:
    ```bash
-   for lang in de es fr it ru ja ko pt-br zh sv nb da fi; do
+   for lang in de es fr it ru ja ko pt-br zh-Hans sv nb da fi ar ca cs el fr-ca he hr hu nl pl pt ro sk th tr uk vi zh-Hant; do
      echo "=== $lang ===";
      for f in data/$lang/*.json; do node -e "try { JSON.parse(require('fs').readFileSync('$f','utf8')); console.log('OK: $f'); } catch(e) { console.log('ERROR: $f: ' + e.message); }"; done;
    done
