@@ -395,38 +395,60 @@ When a page is rendered, the template receives a merged context containing:
 
 ## Parallel Agent Strategy
 
-This codebase has high parallelization potential due to its multi-language (14 languages) and multi-app (5 apps) structure. Use parallel agents aggressively — the quota supports it.
+This codebase has exceptional parallelization potential: 32 languages x 5 apps x 16 pages per language = 512 page files. With 20x quota (Claude Max 200), **always default to maximum parallelization** — spawn as many agents as there are independent units of work. Do not batch languages together when you can give each its own agent.
 
-### When to parallelize
+### Scale reference
 
-**Translations across languages** — the highest-value parallelization target. When translating content into multiple languages, spawn one agent per language (or per batch of 2-3 languages). Each agent works independently on its `data/{lang}/` files. Example: adding a new FAQ item to all languages = 13 parallel agents (one per non-EN language).
+- **32 languages** (31 non-EN): de, es, fr, it, ru, ja, ko, pt-br, zh, sv, nb, da, fi + 18 more incoming
+- **5 apps**: blood-pressure, sleep, weight, heart-rate, body-temperature
+- **16 pages per language**: 5 app + 5 tips + 5 utility + 1 index
+- **Total page files**: ~512 (32 langs x 16 pages)
 
-**Multi-app content changes** — when the same type of change applies to multiple apps (e.g., adding a review section to all app pages, updating CTA text across all apps), spawn one agent per app slug: `blood-pressure`, `sleep`, `weight`, `heart-rate`, `body-temperature`.
+### Default: maximize parallelism
 
-**App + Tips page pairs** — when adding a new app, the `.app.json` and `.tips.json` files are independent and can be created in parallel per language.
+**Translations across languages** — spawn **one agent per language**, not batches. When translating content into all languages, that's 31 parallel agents. Each agent works independently on its `data/{lang}/` files. The quota supports this — use it.
 
-**New language addition** — the biggest task, highly parallelizable:
-1. One agent: `languages.json` config + sitemap + robots.txt + llms.txt
-2. Parallel agents for file creation: split the 16 page files across 3-4 agents (e.g., agent 1: app pages, agent 2: tips pages, agent 3: utility pages + index)
-3. Or even one agent per page file if the translation quality matters more than speed
+**Multi-app content changes** — when the same change applies to multiple apps (e.g., adding a review, updating CTA text), spawn one agent per app slug. If the change also needs translation, do a two-phase fan-out:
+1. Phase 1: one agent edits all 5 EN app files (or 5 parallel agents, one per app)
+2. Phase 2: 31 agents fan out to translate the change into every non-EN language
 
-**Cross-language validation/fixes** — when `validate.js` reports issues across multiple languages, spawn one agent per language to fix its specific issues.
+**New language addition** — the single biggest task. Parallelize aggressively:
+1. Phase 1 (single agent): `languages.json` config entry
+2. Phase 2 (parallel, one agent per page file): 16 agents creating the 16 overlay files for the new language simultaneously — each agent gets one EN source file to translate
+3. Phase 3 (single agent): sitemap + robots.txt + llms.txt updates
+4. Phase 4: validate + build
+
+**Adding multiple languages at once** — with 20x quota this is practical. Spawn one agent per language, each creating all 16 overlay files. For adding N languages: N parallel agents, each handling one complete language.
+
+**Multi-app x multi-language changes** — the combinatorial case. For example, adding a new FAQ item to all 5 app pages across all 32 languages:
+1. Phase 1: one agent adds the FAQ to all 5 EN app files
+2. Phase 2: up to 31 x 5 = 155 agents (one per language-app pair), or 31 agents each handling 5 app files for their language. Choose based on file size — for small changes, one agent per language is fine; for complex translations, one agent per file.
+
+**Cross-language validation/fixes** — when `validate.js` reports issues across multiple languages, spawn one agent per language to fix its specific issues in parallel.
 
 ### How to structure parallel agent prompts
 
 Each agent needs:
 - The relevant section of this CLAUDE.md (especially the overlay system rules and structural field list)
-- The EN source file as reference (read it first, include the path)
+- The EN source file content or path (read it first in the parent, pass the content to avoid 31 agents all reading the same file)
 - The specific language code and target file path
 - Clear instructions on which fields to translate vs inherit
 
-Example pattern for translation:
+Example pattern for translation fan-out:
 ```
-Spawn agents in parallel:
-  Agent 1: "Translate data/en/blood-pressure.app.json → data/de/blood-pressure.app.json (German overlay, text fields only)"
-  Agent 2: "Translate data/en/blood-pressure.app.json → data/es/blood-pressure.app.json (Spanish overlay, text fields only)"
-  Agent 3: "Translate data/en/blood-pressure.app.json → data/fr/blood-pressure.app.json (French overlay, text fields only)"
-  ...
+Read data/en/blood-pressure.app.json first, then spawn 31 agents in parallel:
+  Agent 1: "Translate → data/de/blood-pressure.app.json (German overlay, text fields only). EN source: [content]"
+  Agent 2: "Translate → data/es/blood-pressure.app.json (Spanish overlay, text fields only). EN source: [content]"
+  Agent 3: "Translate → data/fr/blood-pressure.app.json (French overlay, text fields only). EN source: [content]"
+  ... (one per non-EN language)
+```
+
+Example pattern for new language (16 agents in parallel):
+```
+Agent 1: "Create data/pt/blood-pressure.app.json — Portuguese overlay from data/en/blood-pressure.app.json"
+Agent 2: "Create data/pt/blood-pressure.tips.json — Portuguese overlay from data/en/blood-pressure.tips.json"
+Agent 3: "Create data/pt/sleep.app.json — Portuguese overlay from data/en/sleep.app.json"
+... (one per page file)
 ```
 
 ### What NOT to parallelize
@@ -441,7 +463,13 @@ Spawn agents in parallel:
 
 After parallel agents complete:
 1. Run `node validate.js` to catch structural mismatches
-2. Run JSON validation: `for f in data/{lang}/*.json; do node -e "try { JSON.parse(require('fs').readFileSync('$f','utf8')); console.log('OK: $f'); } catch(e) { console.log('ERROR: $f: ' + e.message); }"; done`
+2. Run JSON validation for all affected languages:
+   ```bash
+   for lang in de es fr it ru ja ko pt-br zh sv nb da fi; do
+     echo "=== $lang ===";
+     for f in data/$lang/*.json; do node -e "try { JSON.parse(require('fs').readFileSync('$f','utf8')); console.log('OK: $f'); } catch(e) { console.log('ERROR: $f: ' + e.message); }"; done;
+   done
+   ```
 3. Run `node build.js` to regenerate all HTML
 4. Spot-check a few generated pages across languages
 
