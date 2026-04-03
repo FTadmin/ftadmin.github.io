@@ -458,6 +458,10 @@ Rules:
 - For new array items, ensure they're at the same positional index as EN
 ```
 
+### Agent model selection
+
+**Use the `sonnet` model for translation agents.** Translation work is high-volume but low-reasoning — sonnet is faster and cheaper. Set `model: "sonnet"` when launching translation agents. Reserve opus for structural changes, build system work, and complex debugging.
+
 ### Parallelization strategy
 
 **Scale reference:**
