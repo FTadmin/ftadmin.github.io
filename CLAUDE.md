@@ -2,7 +2,7 @@
 
 ## MANDATORY: When asked to translate or propagate changes
 
-**NEVER** read all overlay files. **NEVER** rewrite entire overlay files. **NEVER** spawn one agent per language for small changes.
+**NEVER** read all overlay files. **NEVER** rewrite entire overlay files.
 
 **ALWAYS follow this sequence:**
 
@@ -426,7 +426,7 @@ When a page is rendered, the template receives a merged context containing:
 
 ### The problem with naive translation
 
-31 languages x 16 pages = 496 overlay files. Spawning one agent per language (31 agents) to rewrite entire files is slow, token-heavy, and prone to hanging. Most EN edits change only a few strings — the translation work should be proportional to the change, not the file size.
+31 languages x 16 pages = 496 overlay files. Rewriting entire files is slow and token-heavy. Most EN edits change only a few strings — the translation work should be proportional to the change, not the file size.
 
 ### Diff-based translation (default workflow)
 
@@ -510,19 +510,15 @@ Rules:
 - **32 languages** (31 non-EN): de, es, fr, it, ru, ja, ko, pt-br, zh-Hans, sv, nb, da, fi, ar, ca, cs, el, fr-ca, he, hr, hu, nl, pl, pt, ro, sk, th, tr, uk, vi, zh-Hant
 - **16 pages per language**: 5 app + 5 tips + 5 utility + 1 index
 
-**Small changes (1-10 strings in 1-2 files):** Batch languages into ~6 agents, each handling ~5 languages. Each agent's prompt is tiny (just the changed strings repeated per language). This is fast and avoids spawning 31 agents for trivial work.
-
-Example: subtitle change in one file → 6 agents x 5 languages each:
+Each agent's prompt contains only the changed strings (not entire files), so prompt size stays small. Parallelise however makes sense — more agents is faster. Standard language groups for reference:
 ```
-Agent 1: Translate 2 strings into de, es, fr, it, ru (5 apply-translation.js calls)
-Agent 2: Translate 2 strings into ja, ko, pt-br, zh-Hans, sv (5 apply-translation.js calls)
-Agent 3: Translate 2 strings into nb, da, fi, ar, ca (5 apply-translation.js calls)
-Agent 4: Translate 2 strings into cs, el, fr-ca, he, hr (5 apply-translation.js calls)
-Agent 5: Translate 2 strings into hu, nl, pl, pt, ro (5 apply-translation.js calls)
-Agent 6: Translate 2 strings into sk, th, tr, uk, vi, zh-Hant (6 apply-translation.js calls)
+Group 1: de, es, fr, it, ru
+Group 2: ja, ko, pt-br, zh-Hans, sv
+Group 3: nb, da, fi, ar, ca
+Group 4: cs, el, fr-ca, he, hr
+Group 5: hu, nl, pl, pt, ro
+Group 6: sk, th, tr, uk, vi, zh-Hant
 ```
-
-**Medium changes (10-50 strings across multiple files):** One agent per language (31 agents). Each agent gets the full diff manifest and handles all affected files for its language.
 
 **Large changes (new page or new language):** One agent per page file (up to 16 agents for a new language).
 
