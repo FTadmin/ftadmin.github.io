@@ -182,7 +182,7 @@
                 </div>
                 <div class="language-dropdown">
 {{#each langSwitcher}}
-                    <a href="{{url}}"{{#if isCurrent}} class="active"{{/if}}><span class="flag">{{flag}}</span> {{name}}</a>
+                    <a href="{{url}}"{{#if isCurrent}} class="active"{{/if}} onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">{{flag}}</span> {{name}}</a>
 {{/each}}
                 </div>
             </div>

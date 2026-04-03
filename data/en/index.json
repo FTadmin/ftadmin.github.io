@@ -892,6 +892,7 @@
      }
     ]
    }
-  ]
+  ],
+  "langRedirectScript": "(function(){\n  if(document.cookie.indexOf('lang-chosen=1')!==-1)return;\n  var map=[['pt-br','/pt-br'],['zh-Hans','/zh-Hans'],['zh-Hant','/zh-Hant'],['fr-ca','/fr-ca'],['nb','/nb'],['de','/de'],['es','/es'],['it','/it'],['ru','/ru'],['ja','/ja'],['fr','/fr'],['ko','/ko'],['sv','/sv'],['da','/da'],['fi','/fi'],['ar','/ar'],['ca','/ca'],['cs','/cs'],['el','/el'],['he','/he'],['hr','/hr'],['hu','/hu'],['nl','/nl'],['pl','/pl'],['pt','/pt'],['ro','/ro'],['sk','/sk'],['th','/th'],['tr','/tr'],['uk','/uk'],['vi','/vi']];\n  var lang=(navigator.language||navigator.userLanguage||'').toLowerCase();\n  for(var i=0;i<map.length;i++){\n    if(lang===map[i][0]||lang.startsWith(map[i][0]+'-')){\n      document.cookie='lang-chosen=1;path=/;max-age=31536000';\n      window.location.replace(map[i][1]+'/');\n      return;\n    }\n  }\n})()"
  }
 }
