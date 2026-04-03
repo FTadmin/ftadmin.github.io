@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Feeltracker | iOS için AI Destekli Sağlık ve Esenlik Günlüğü Uygulamaları</title>
+    <meta name="title" content="Feeltracker | iOS için AI Destekli Sağlık ve Esenlik Günlüğü Uygulamaları">
+    <meta name="description" content="Feeltracker'ın AI destekli günlük uygulamaları paketiyle sağlığınızı zahmetsizce takip edin. Kan basıncını, ruh halini, kiloyu, uykuyu ve günlük düşüncelerinizi izleyin. Apple Health ile senkronize edin, AI içgörüleri alın ve verilerinizi doktorunuzla paylaşmak için dışa aktarın. iPhone, iPad ve Mac'te kullanılabilir.">
+
+    <meta name="keywords" content="sağlık takip uygulaması, kan basıncı monitörü, ruh hali günlüğü, kilo takipçisi, uyku takipçisi, günlük yazma, AI sağlık uygulaması, Apple Health entegrasyonu, sağlık günlüğü, esenlik takipçisi, ruh sağlığı uygulaması, kan basıncı uygulaması, kilo kaybı uygulaması, uyku izleme, günlük uygulaması">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/tr/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/">
+
+    <link rel="alternate" hreflang="pt-br" href="https://feeltracker.com/pt-br/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/">
+
+    <link rel="alternate" hreflang="fr-ca" href="https://feeltracker.com/fr-ca/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/tr/">
+    <meta property="og:title" content="Feeltracker | AI Destekli Sağlık ve Esenlik Günlüğü Uygulamaları">
+    <meta property="og:description" content="AI destekli günlük uygulamalarıyla kan basıncı, ruh hali, kilo, uyku ve günlük yazma için sağlığınızı zahmetsizce takip edin. Apple Health ile senkronize edin ve kişiselleştirilmiş içgörüler alın.">
+    <meta property="og:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <meta property="og:site_name" content="Feeltracker">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/tr/">
+    <meta property="twitter:title" content="Feeltracker | AI Destekli Sağlık ve Esenlik Günlüğü Uygulamaları">
+    <meta property="twitter:description" content="AI destekli günlük uygulamalarıyla kan basıncı, ruh hali, kilo, uyku ve günlük yazma için sağlığınızı zahmetsizce takip edin.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <meta name="twitter:site" content="@feeltracker">
+
+
+    <!-- iOS / Apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Feeltracker">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Feeltracker",
+          "url": "https://feeltracker.com",
+          "logo": "https://feeltracker.com/images/feeltracker.png",
+          "description": "iOS için AI destekli sağlık ve esenlik takip uygulamaları",
+          "sameAs": [
+                "https://x.com/feeltracker"
+          ],
+          "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "support@feeltracker.com",
+                "contactType": "Customer Support"
+          }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Feeltracker Sağlık ve Esenlik Uygulamaları",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "iOS",
+          "description": "iOS için AI destekli sağlık ve esenlik takip uygulamaları paketi. Kan basıncını, ruh halini, kiloyu, uykuyu ve günlük düşüncelerinizi izleyin. Apple Health ile senkronize edin, AI içgörüleri alın ve verilerinizi doktorunuzla paylaşmak için dışa aktarın.",
+          "image": "https://feeltracker.com/images/feeltracker.png",
+          "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": 20000
+          },
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts"
+          },
+          "featureList": [
+                "AI destekli sağlık içgörüleri",
+                "Ölçüm yakalama için Kamera Tarama AI",
+                "Apple Health çift yönlü senkronizasyon",
+                "PDF ve Excel'e rapor dışa aktarma",
+                "iCloud yedekleme ve senkronizasyon",
+                "32 dil desteği",
+                "Reklam yok, takip yok, gizlilik önce"
+          ],
+          "inLanguage": [
+                "en",
+                "es",
+                "fr",
+                "de",
+                "it",
+                "nl",
+                "pt",
+                "sv",
+                "no",
+                "da",
+                "fi",
+                "pl",
+                "ru",
+                "uk",
+                "cs",
+                "sk",
+                "ro",
+                "hr",
+                "hu",
+                "ar",
+                "he",
+                "zh-Hans",
+                "ja",
+                "ko",
+                "th",
+                "vi",
+                "id",
+                "el",
+                "tr",
+                "ca"
+          ],
+          "datePublished": "2015"
+    }
+    </script>
+</head>
+<body>
+<!-- Christmas features disabled - re-enable next year
+ <div class="dancing-santa" onclick="toggleSantaParty(this)" title="Click me to party!">
+ <div class="santa-character">
+ <div class="santa-hat">
+ <div class="hat-base"></div>
+ <div class="hat-pom"></div>
+ </div>
+ <div class="santa-face">
+ <div class="santa-eyes">
+ <div class="eye left"></div>
+ <div class="eye right"></div>
+ </div>
+ <div class="santa-nose"></div>
+ <div class="santa-cheeks">
+ <div class="cheek left"></div>
+ <div class="cheek right"></div>
+ </div>
+ <div class="santa-beard"></div>
+ <div class="santa-mouth"></div>
+ </div>
+ <div class="santa-body">
+ <div class="belt"></div>
+ </div>
+ <div class="santa-arms">
+ <div class="arm left"></div>
+ <div class="arm right"></div>
+ </div>
+ <div class="santa-legs">
+ <div class="leg left"></div>
+ <div class="leg right"></div>
+ </div>
+ </div>
+ <div class="santa-shadow"></div>
+ <div class="dance-text">Click Santa!</div>
+ </div>
+
+ <div class="snowflakes" aria-hidden="true">
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ </div>
+ End Christmas features -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/tr/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇹🇷</span>
+                    <span>Türkçe</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/fr/"><span class="flag">🇫🇷</span> Français</a>
+
+                    <a href="/ko/"><span class="flag">🇰🇷</span> 한국어</a>
+
+                    <a href="/pt-br/"><span class="flag">🇧🇷</span> Português</a>
+
+                    <a href="/zh-Hans/"><span class="flag">🇨🇳</span> 简体中文</a>
+
+                    <a href="/sv/"><span class="flag">🇸🇪</span> Svenska</a>
+
+                    <a href="/nb/"><span class="flag">🇳🇴</span> Norsk</a>
+
+                    <a href="/da/"><span class="flag">🇩🇰</span> Dansk</a>
+
+                    <a href="/fi/"><span class="flag">🇫🇮</span> Suomi</a>
+
+                    <a href="/ar/"><span class="flag">🇸🇦</span> العربية</a>
+
+                    <a href="/ca/"><span class="flag">🏴</span> Català</a>
+
+                    <a href="/cs/"><span class="flag">🇨🇿</span> Čeština</a>
+
+                    <a href="/el/"><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                    <a href="/fr-ca/"><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                    <a href="/he/"><span class="flag">🇮🇱</span> עברית</a>
+
+                    <a href="/hr/"><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                    <a href="/hu/"><span class="flag">🇭🇺</span> Magyar</a>
+
+                    <a href="/nl/"><span class="flag">🇳🇱</span> Nederlands</a>
+
+                    <a href="/pl/"><span class="flag">🇵🇱</span> Polski</a>
+
+                    <a href="/pt/"><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                    <a href="/ro/"><span class="flag">🇷🇴</span> Română</a>
+
+                    <a href="/sk/"><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                    <a href="/th/"><span class="flag">🇹🇭</span> ไทย</a>
+
+                    <a href="/tr/" class="active"><span class="flag">🇹🇷</span> Türkçe</a>
+
+                    <a href="/uk/"><span class="flag">🇺🇦</span> Українська</a>
+
+                    <a href="/vi/"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                    <a href="/zh-Hant/"><span class="flag">🇹🇼</span> 繁體中文</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/tr/blood-pressure/">Tansiyon</a>
+
+            <a href="/tr/daily-journal/">Günlük</a>
+
+            <a href="/tr/mental-health/">Ruh Sağlığı</a>
+
+            <a href="/tr/sleep/">Uyku ve Rüyalar</a>
+
+            <a href="/tr/weight/">Kilo ve Beslenme</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+<!-- Christmas Welcome Banner - disabled, re-enable next year
+ <div class="christmas-banner">
+ <div class="christmas-content">
+ <span class="christmas-stars">✦</span>
+ <span class="christmas-icon">🎄</span>
+ <span class="christmas-text">
+ <span class="holiday-greeting">Merry Christmas & Happy New Year 2026</span>
+ <span class="holiday-subtext">from the Feeltracker Team</span>
+ </span>
+ <span class="christmas-icon">🎁</span>
+ <span class="christmas-stars">✦</span>
+ </div>
+ <a href="milo-game.html" class="play-game-btn">
+ <span class="game-btn-icon">🐕</span>
+ <span class="game-btn-text">Play Milo's Snowball Fight!</span>
+ <span class="game-btn-snowflake">❄️</span>
+ </a>
+ </div>
+ End Christmas Banner -->
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <div class="hero-logo">feeltracker</div>
+        <h1>AI Destekli Sağlık Takibi Artık Kolay</h1>
+        <p class="hero-subtitle">Apple Health ile senkronize olan ve kişiselleştirilmiş AI içgörüleri sağlayan akıllı günlük uygulamalarıyla kan basıncınızı, ruh halinizi, kilonuzu, uykunuzu ve günlük düşüncelerinizi takip edin.</p>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">1M+</div>
+                <div class="hero-stat-label">İndirme</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">21K+</div>
+                <div class="hero-stat-label">Değerlendirme</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">4.8★</div>
+                <div class="hero-stat-label">Ortalama Puan</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">96%</div>
+                <div class="hero-stat-label">Memnuniyet</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">5M+</div>
+                <div class="hero-stat-label">Kayıt / Yıl</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">12yıl</div>
+                <div class="hero-stat-label">Kuruluş 2013</div>
+            </div>
+
+        </div>
+
+        <!-- Privacy Badge -->
+        <div style="color: #059669; padding: 16px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> Gizlilik Önce — Reklam Yok, Takip Yok, Verileriniz Özel Kalır
+        </div>
+
+        <div class="hero-features">
+
+            <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health Senkronizasyonu</span>
+
+            <span class="feature-badge"><i class="fas fa-robot"></i> AI İçgörüleri</span>
+
+            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+            <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud Yedekleme</span>
+
+        </div>
+    </section>
+
+    <!-- Apps Grid -->
+    <section class="apps-section">
+        <h2 class="center-text">Sağlık Takip Uygulamanızı Seçin</h2>
+
+
+        <!-- Kan Basıncı Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="/tr/blood-pressure/">
+                    <img src="/images/BPT_1024.png" class="app-icon-large" alt="Kan Basıncı Uygulama Simgesi">
+                </a>
+                <div class="app-card-title">
+                    <h3>Kan Basıncı Feeltracker</h3>
+                    <p class="app-subtitle">OMRON Yüksek KB AI Günlüğü İzle</p>
+
+                    <div style="color: #2563eb; display: inline-block; margin-top: 8px; font-size: 0.8em; font-weight: 600;">
+                        <i class="fas fa-trophy"></i> İngiltere'de 1.
+                    </div>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description"><strong>Birleşik Krallık'ta 1 numaralı kan basıncı uygulaması.</strong> Sistolik, diyastolik ve nabız ölçümlerini kolayca takip edin. Kan basıncınızı nelerin etkilediğine dair AI destekli içgörüler edinin. Apple Health ile entegre olur ve monitör ekranından değerleri doğrudan okumak için Kamera Tarama AI'yı destekler.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-camera"></i> Monitör ekranlarından ölçümleri yakalamak için Kamera Tarama AI</li>
+
+                    <li><i class="fas fa-chart-line"></i> Eğilim analizi ve örüntü tespiti</li>
+
+                    <li><i class="fas fa-file-medical"></i> Doktorunuzla paylaşmak için rapor dışa aktarma (büyük metin seçeneğiyle PDF, Excel)</li>
+
+                    <li><i class="fas fa-heart"></i> Kapsamlı takip için Apple Health entegrasyonu</li>
+
+                    <li><i class="fas fa-bullseye"></i> OAB (Ortalama Arteriyel Basınç) izleme</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="/tr/blood-pressure/" class="learn-more-button">Daha Fazla Bilgi</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button" aria-label="Kan Basıncı Uygulamasını App Store'dan İndirin">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Kan Basıncı Uygulamasını App Store'dan İndirin">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Günlük Yazma Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="/tr/daily-journal/">
+                    <img src="/images/NT_1024.png" class="app-icon-large" alt="Günlük Yazma Uygulama Simgesi">
+                </a>
+                <div class="app-card-title">
+                    <h3>Günlük Yazma Feeltracker</h3>
+                    <p class="app-subtitle">Notlar Fotoğraflar Düşünceler AI Günlüğü</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">Günlük yansımalar yazın, yaşam olaylarını takip edin ve düşüncelerinizdeki örüntüleri keşfedin. AI, duygu analizi yapar ve kelime sıklığı analizi aracılığıyla tekrarlayan temaları anlamanıza yardımcı olur.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-pen"></i> Basit, dikkat dağıtmayan günlük tutma</li>
+
+                    <li><i class="fas fa-brain"></i> AI duygu analizi ve içgörüler</li>
+
+                    <li><i class="fas fa-chart-bar"></i> Temaları takip etmek için kelime sıklığı</li>
+
+                    <li><i class="fas fa-camera"></i> <strong>YENİ:</strong> Nesne Tarama - AI nesneleri günlüğünüz için tanımlar</li>
+
+                    <li><i class="fas fa-file-lines"></i> <strong>YENİ:</strong> Metin Tarama - herhangi bir yerden metin yakalamak için OCR</li>
+
+                    <li><i class="fas fa-clipboard-list"></i> Hızlı girişler için not şablonları</li>
+
+                    <li><i class="fas fa-search"></i> Tam metin arama ve Spotlight entegrasyonu</li>
+
+                    <li><i class="fas fa-camera"></i> Girişe kadar 8 fotoğraf ekle</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="/tr/daily-journal/" class="learn-more-button">Daha Fazla Bilgi</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button" aria-label="Günlük Yazma Uygulamasını App Store'dan İndirin">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Günlük Yazma Uygulamasını App Store'dan İndirin">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Ruh Sağlığı Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="/tr/mental-health/">
+                    <img src="/images/FT_1024.png" class="app-icon-large" alt="Ruh Hali Takipçisi Uygulama Simgesi">
+                </a>
+                <div class="app-card-title">
+                    <h3>Ruh Sağlığı Feeltracker</h3>
+                    <p class="app-subtitle">Bipolar DBT CBT ADHD AI Günlüğü</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">Günlük ruh hali puanları ve notlarla duygusal sağlığınızı izleyin. AI analizi ile tetikleyicileri ve örüntüleri belirleyin. Apple Health ile iOS 18+ Ruh Sağlığı entegrasyonunu destekler.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-smile"></i> Basit 5 puanlık ruh hali ölçeği</li>
+
+                    <li><i class="fas fa-brain"></i> iOS 18+ Ruh Sağlığı (Zihin Durumu) senkronizasyonu</li>
+
+                    <li><i class="fas fa-face-smile"></i> <strong>YENİ:</strong> Yüz Tarama - selfie'lerden AI ile ruh durumunu analiz edin</li>
+
+                    <li><i class="fas fa-search"></i> AI destekli tetikleyici tanımlama</li>
+
+                    <li><i class="fas fa-chart-line"></i> Görsel ruh hali grafikleri ve eğilimler</li>
+
+                    <li><i class="fas fa-comment"></i> Duygu analizli özel notlar</li>
+
+                    <li><i class="fas fa-palette"></i> Güzel, sezgisel arayüz</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="/tr/mental-health/" class="learn-more-button">Daha Fazla Bilgi</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id687448999" class="cta-button" aria-label="Ruh Hali Takipçisi Uygulamasını App Store'dan İndirin">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Ruh Hali Takipçisi Uygulamasını App Store'dan İndirin">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Kilo Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="/tr/weight/">
+                    <img src="/images/WT_1024.png" class="app-icon-large" alt="Kilo Takipçisi Uygulama Simgesi">
+                </a>
+                <div class="app-card-title">
+                    <h3>Kilo Feeltracker</h3>
+                    <p class="app-subtitle">Vücut Kitlesi % Yiyecek AI Günlüğü Kaybet</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">Kilo, vücut yağ yüzdesi ve VKİ'yi zaman içinde takip edin. Kamera Tarama AI ile ölçümleri tarayın, aylık ortalamaları görün, ilerlemenize neyin yardımcı olduğunu veya engel oluşturduğunu belirleyin ve kapsamlı fitness takibi için Apple Health ile senkronize edin.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-camera"></i> Terazi ekranlarından kiloyu yakalamak için Kamera Tarama AI</li>
+
+                    <li><i class="fas fa-weight"></i> Kilo, VKİ ve vücut yağı takibi</li>
+
+                    <li><i class="fas fa-chart-line"></i> Aylık ortalamalar ve eğilim analizi</li>
+
+                    <li><i class="fas fa-utensils"></i> <strong>YENİ:</strong> Yiyecek Tarama - AI ile anında beslenme analizi</li>
+
+                    <li><i class="fas fa-bullseye"></i> Hedef belirleme ve ilerleme takibi</li>
+
+                    <li><i class="fas fa-dumbbell"></i> Tam Apple Health entegrasyonu</li>
+
+                    <li><i class="fas fa-apple-alt"></i> AI içgörüleriyle kilonuzu nelerin etkilediğini keşfedin</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="/tr/weight/" class="learn-more-button">Daha Fazla Bilgi</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button" aria-label="Kilo Takipçisi Uygulamasını App Store'dan İndirin">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Kilo Takipçisi Uygulamasını App Store'dan İndirin">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Uyku Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="/tr/sleep/">
+                    <img src="/images/ST_1024.png" class="app-icon-large" alt="Uyku Takipçisi Uygulama Simgesi">
+                </a>
+                <div class="app-card-title">
+                    <h3>Uyku Feeltracker</h3>
+                    <p class="app-subtitle">Apne Monitörü Rüyalar Günlük Kayıt</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">Uyku örüntülerinizi ve sürenizi izlemek için uyku ve uyanma sürelerini kaydedin. Apple Health'in uyku verileriyle entegre olur ve AI analizi aracılığıyla uyku kalitenizi etkileyen faktörleri belirlemeye yardımcı olur.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-bed"></i> Basit uyku ve uyanma süresi kaydı</li>
+
+                    <li><i class="fas fa-clock"></i> Otomatik uyku süresi hesaplama</li>
+
+                    <li><i class="fas fa-moon"></i> Apple Health uyku verisi entegrasyonu</li>
+
+                    <li><i class="fas fa-search"></i> Uyku örüntülerine AI içgörüleri</li>
+
+                    <li><i class="fas fa-mug-hot"></i> Uyku kalitenizi nelerin etkilediğini belirleyin</li>
+
+                    <li><i class="fas fa-chart-bar"></i> Görsel uyku grafikleri ve istatistikler</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="/tr/sleep/" class="learn-more-button">Daha Fazla Bilgi</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button" aria-label="Uyku Takipçisi Uygulamasını App Store'dan İndirin">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="Uyku Takipçisi Uygulamasını App Store'dan İndirin">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section center-text">
+        <h2>Neden Feeltracker Uygulamalarını Seçmelisiniz?</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>AI Destekli İçgörüler</h3>
+                <p>Gelişmiş AI tarafından desteklenen kişiselleştirilmiş içgörüler ve örüntü tespiti alın. Sağlığınızı nelerin etkilediğini anlayın ve bilinçli kararlar alın.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fab fa-apple"></i></div>
+                <h3>Apple Health Entegrasyonu</h3>
+                <p>Kapsamlı takip için Apple Health ile sorunsuz senkronize edin. Sağlık verilerini tüm cihazlarınızda otomatik olarak okuyun ve yazın.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <h3>iCloud Senkronizasyonu ve Yedekleme</h3>
+                <p>Verileriniz iCloud aracılığıyla iPhone, iPad ve Mac'te otomatik olarak senkronize olur. İsteğe bağlı otomatik haftalık JSON yedeklemeleri, verilerinizin her zaman güvende ve dışa aktarılabilir olmasını sağlar.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                <h3>Gizlilik Önce</h3>
+                <p><strong>Reklam yok. Takip yok.</strong> Sağlık verileriniz şifreli ve yalnızca cihazlarınızda ve iCloud'da saklanır. Sizi uygulamalar veya web siteleri arasında takip etmiyoruz (IDFA veya benzeri takip teknolojileri yok) ve verilerinizi hiçbir zaman reklamcılara satmıyoruz.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-export"></i></div>
+                <h3>Dışa Aktar ve Paylaş</h3>
+                <p>Verilerinizi PDF (büyük metin seçeneğiyle), Excel veya JSON olarak dışa aktarın. Kapsamlı raporları doktorunuz veya sağlık personelinizle kolayca paylaşın.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                <h3>32 Dil</h3>
+                <p>32 dilde tam olarak yerelleştirilmiştir: İngilizce, İspanyolca (Español), Fransızca (Français), Fransızca Kanada, Almanca (Deutsch), İtalyanca (Italiano), Hollandaca (Nederlands), Portekizce Brezilya (Português), Portekizce Portekiz, İsveççe (Svenska), Norveççe (Norsk), Danca (Dansk), Fince (Suomi), Lehçe (Polski), Rusça (Русский), Ukraynaca (Українська), Çekçe (Čeština), Slovakça (Slovenčina), Romence (Română), Hırvatça (Hrvatski), Macarca (Magyar), Arapça (العربية), İbranice (עברית), Basitleştirilmiş Çince (简体中文), Geleneksel Çince (繁體中文), Japonca (日本語), Korece (한국어), Tayca (ไทย), Vietnamca (Tiếng Việt), Yunanca (Ελληνικά), Türkçe ve Katalanca (Català).</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud-sun"></i></div>
+                <h3>Hava Durumu Entegrasyonu</h3>
+                <p>Girişlerinizle Apple'ın hava durumu servisinden otomatik olarak hava durumu verileri ekleyin. Hava durumu örüntülerinin kan basıncınızı, ruh halinizi, uykunuzu veya kilonuzu zaman içinde nasıl etkilediğini takip edin.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
+                <h3>Çoklu Takvim Sistemleri</h3>
+                <p>Gregoryen, İslami (Hicri), İbranice, Çince ve Japon takvimleri için destek. Sağlık verilerinizi sizin için en anlamlı takvim sisteminde görüntüleyin.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-tablet-alt"></i></div>
+                <h3>iPad Bölünmüş Görünümü</h3>
+                <p>Tam bölünmüş ekran çoklu görev desteğiyle iPad için optimize edilmiş çok sütunlu düzen. Maksimum verimlilik için sağlık verilerinizle diğer uygulamalar arasında çalışın.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                <h3>Çoklu Karanlık Modlar</h3>
+                <p>Gerçek siyah (OLED ekranlar için mükemmel) ve koyu gri temalar dahil birden fazla karanlık mod varyantı arasından seçim yapın. Göz yorgunluğunu azaltmak için görüntüleme deneyiminizi özelleştirin.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>Saat Dilimi Desteği</h3>
+                <p>Özel saat dilimi ayarlarıyla girişleri takip edin. Farklı saat dilimleri boyunca doğru zaman takibine ihtiyaç duyan gezginler veya vardiyalı çalışanlar için mükemmel.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Dönüm Noktası Takibi</h3>
+                <p>Başarı dönüm noktalarıyla ilerlemenizi kutlayın. Tutarlı takip, sağlık hedeflerine ulaşma ve sağlıklı alışkanlıkları sürdürme için tanının.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AI Features Highlight -->
+    <section class="ai-section center-text">
+        <h2>Yapay Zeka Destekli</h2>
+        <p class="section-subtitle">AI özelliklerimiz sağlık verilerinizi daha önce hiç olmadığı gibi anlamanıza yardımcı olur</p>
+
+        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Ücretsiz AI Özellikleri</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-question-circle"></i> Soru Sor</h3>
+                <p>Verileriniz hakkında hızlı soru-cevap — sağlık sorularınıza anında yanıtlar alın</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-comments"></i> Sohbet</h3>
+                <p>Sağlık yolculuğunuz hakkında etkileşimli sohbetler yapın ve kişiselleştirilmiş rehberlik alın</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-volume-up"></i> Sesli Özet</h3>
+                <p>Sağlık eğilimlerinizin sesli özetlerini dinleyin — hareket halinde içgörüler için mükemmel</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-laugh"></i> Beni Güldür</h3>
+                <p>Takip verilerinizden kişiselleştirilmiş mizah alın ve gününüzü aydınlatın</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-moon"></i> Sakinleştir</h3>
+                <p>Stresi azaltmaya yardımcı AI destekli nefes ve gevşeme egzersizleri</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-camera"></i> Kamera Tarama AI</h3>
+                <p>Cihaz ekranlarından ölçümleri tarayın, yüzleri ruh hali için analiz edin, nesneleri tanımlayın, metin yakalayın — tüm uygulamalarda AI görüşü</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Premium AI Özellikleri</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-lightbulb"></i> Günlük İçgörüler Bandı</h3>
+                <p>Son 30 girişinize göre AI tarafından oluşturulmuş günlük kişiselleştirilmiş ipuçlarıyla uyanın — sağlık örüntülerinizi anlamanıza yardımcı olan akıllı 10-15 kelimelik içgörüler</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-medical-alt"></i> Derin Araştırma Raporları</h3>
+                <p>Ayrıntılı içgörüler ve profesyonel kalitede özetlerle sağlık verilerinizin kapsamlı AI analizi</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-search"></i> Örüntü Dedektifi</h3>
+                <p>Gelişmiş AI, yaşam tarzı faktörleri, günün saati ve sağlık metrikleriniz arasındaki gizli korelasyonları bulur</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-bullseye"></i> Hedef Asistanı</h3>
+                <p>Benzersiz örüntülerinize ve ilerlemenize dayalı kişiselleştirilmiş, veri odaklı sağlık hedefleri edinin</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-user-md"></i> Doktor Özeti</h3>
+                <p>İstatistikler ve eğilim analiziyle sağlık ziyaretleri için profesyonel tıbbi özetler oluşturun</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-medical"></i> Hastalık Belgesi Oluşturucu</h3>
+                <p>Sağlık takip verilerinize dayalı iş veya okul için AI tarafından oluşturulan hastalık belgesi</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-book"></i> Hikaye Oluşturucu</h3>
+                <p>Sağlık verilerinizi yaratıcı, ilgi çekici anlatılara ve kişiselleştirilmiş hikayelere dönüştürün</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-comment-alt"></i> Metin Özeti</h3>
+                <p>Arkadaşlar ve aile için sağlık eğilimlerinizin paylaşılabilir kısa mesaj özetlerini oluşturun</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-graduation-cap"></i> Kişiselleştirilmiş Quiz</h3>
+                <p>Verileriniz hakkında AI tarafından oluşturulan eğlenceli 10 soruluk bir testle bilginizi sınayın</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-microphone"></i> Metinden Konuşmaya</h3>
+                <p>AI içgörülerinizi ve özetlerinizi doğal ses oynatmayla dinleyin — erişilebilirlik için mükemmel</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-invoice"></i> Kişiselleştirilmiş Sağlık Raporu</h3>
+                <p>İlerlemeniz hakkında AI tarafından oluşturulan içgörülerle kapsamlı, kişiselleştirilmiş sağlık belgeleri oluşturun</p>
+            </div>
+
+        </div>
+
+        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
+            <h3 style="color: rgba(255,255,255,0.6); margin-top: 0; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fas fa-info-circle"></i> AI Feragatnamesi</h3>
+            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
+                AI tarafından oluşturulan içgörüler, raporlar ve öneriler yalnızca genel bilgi amaçlıdır ve tıbbi tavsiye, teşhis veya tedavenin yerine geçmez. AI tarafından belirlenen örüntüler korelasyonları gösterir, ancak korelasyon nedensellik anlamına gelmez. Herhangi bir tıbbi soru veya endişe için her zaman bir doktora veya nitelikli sağlık personelinize danışın. Bu araçlar, sağlık verilerinizi düzenlemenize ve anlamanıza yardımcı olmak için tasarlanmıştır, tıbbi rehberlik sağlamak için değil.
+            </p>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof center-text">
+        <h2>Dünya Genelinde Binlerce Kullanıcı Tarafından Güvenilir</h2>
+        <p class="section-subtitle">Sağlıklarının kontrolünü ele alan kullanıcılara katılın</p>
+        <div class="stats-grid">
+
+            <div class="stat-box">
+                <div class="stat-number">4.8★</div>
+                <div class="stat-label">Ortalama Puan</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">21K+</div>
+                <div class="stat-label">Değerlendirme</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">96%</div>
+                <div class="stat-label">Memnuniyet Oranı</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">1M+</div>
+                <div class="stat-label">İndirme</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">55K+</div>
+                <div class="stat-label">Aylık Kullanıcı</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">5M+</div>
+                <div class="stat-label">Yıllık Kaydedilen Kayıt</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">&lt;24sa</div>
+                <div class="stat-label">Destek Yanıtı</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">32</div>
+                <div class="stat-label">Dil</div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- Doctor Endorsement - COMMENTED OUT PENDING PERMISSION
+ <section class="endorsement-section center-text">
+ <h2>Recommended by Healthcare Professionals</h2>
+ <p class="section-subtitle">Trusted by doctors who prioritize patient wellness</p>
+
+ <div class="endorsement-card">
+ <div class="endorsement-photo">
+ <img src="images/dr-alpa-kumar.jpg" alt="Dr. Alpa Kumar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+ <div class="endorsement-photo-fallback"><i class="fas fa-user-md"></i></div>
+ </div>
+ <div class="endorsement-content">
+ <blockquote class="endorsement-quote">
+ "As a GP and Functional Medicine practitioner, I recommend Feeltracker apps to my patients for monitoring their health metrics. The ability to track blood pressure, weight, and lifestyle factors in one place - and share comprehensive reports - makes our consultations more productive and helps patients take ownership of their health journey."
+ </blockquote>
+ <div class="endorsement-author">
+ <div class="endorsement-name">Dr. Alpa Kumar</div>
+ <div class="endorsement-credentials">NHS GP | Certified Functional Medicine Practitioner (IFMCP)</div>
+ <div class="endorsement-credentials">15+ years experience in London | Lifestyle Medicine Specialist</div>
+ <a href="https://www.instagram.com/360wellnessdoctor/" target="_blank" class="endorsement-social">
+ <i class="fab fa-instagram"></i> @360wellnessdoctor
+ </a>
+ </div>
+ </div>
+ </div>
+ </section>
+ -->
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">Kullanıcılarımız Ne Diyor?</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 32px;">App Store'dan gerçek yorumlar</p>
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">En İyi Kan Basıncı Uygulaması Deneyimi</div>
+                </div>
+                <p class="review-content">"Şimdiye kadar denediğim en iyi kan basıncı uygulamasını buldum. Sadece doktoruma sonuçlar göndermeme izin vermekle kalmıyor, uygulamanın sorunsuz çalışması için de yorulmadan çalışıyorlar. Dürüst olmak gerekirse, şu anda telefonumdaki en iyi abonelik bu."</p>
+                <p class="review-author">- MelGreer, Kan Basıncı</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Terapistim de bu uygulamayı seviyor</div>
+                </div>
+                <p class="review-content">"Yaklaşık bir ay önce ADHD teşhisi konuldu. İlaç almak için 3 hafta beklemek zorunda kaldım. Bu süre zarfında bu uygulamayı buldum ve ilaçsız beynimle ilaçlı beynimin düzensizliğini görmek oldukça şaşırtıcı oldu. İlaçlı beyin grafikte çok daha dengeli. Ayrıca aklımdakileri çok hızlı not edebilmemi seviyorum."</p>
+                <p class="review-author">- CynnCatt, Ruh Hali Günlüğü</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Şimdiye kadar iyi gidiyor</div>
+                </div>
+                <p class="review-content">"Bu, gereksiz alanlara uzanmayan küçük, basit bir uygulama. En çok değer verdiğim şey, arayüzün basitliği de dahil olmak üzere basitliği. Sadece basit bir günlük not uygulamasına ihtiyacım var. Bu uygulama şimdiye kadar bu gereksinimleri karşıladı. PDF formunda dışa aktarabildiğiniz için de minnettarım."</p>
+                <p class="review-author">- PRE', Günlük Yazma</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Tüm uyku doktorları için!</div>
+                </div>
+                <p class="review-content">"Uyku doktorumun bana uyku saatlerimi kaydetmem için kağıt vermek istediğini gördüğümde çok şaşırdım! Neyse ki bu uygulamayı buldum ve uyku doktorumdan hemen onu tavsiye etmeye başlamasını istedim. Ayrıca geliştiricinin ne kadar hızlı yanıt verdiğini de takdir ediyorum."</p>
+                <p class="review-author">- Jbobthebuilder, Uyku Günlüğü</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Çok iyi uygulama</div>
+                </div>
+                <p class="review-content">"Doktorum kan basıncımı günlük olarak kaydetmemi istiyor. Bu uygulama bilgilerimi kaydetmemi ve çok güzel tasarlanmış bir formatta kaydetmemi sağlıyor. Harika uygulama."</p>
+                <p class="review-author">- Wiesiu33, Kan Basıncı</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Harika uygulama</div>
+                </div>
+                <p class="review-content">"Bipolar bozukluğu olan biri olarak ruh hallerimi ve duygularımı kaydetmem gerekiyordu, ancak pahalı abonelik istemeyen bir uygulama bulamıyordum. Bu uygulama için çok minnettarım, abonelik olmadan tam işlevsellik."</p>
+                <p class="review-author">- Aprthax, Ruh Hali Günlüğü</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Bu uygulamayı seviyorum!! Kullanımı çok kolay.</div>
+                </div>
+                <p class="review-content">"Bu uygulama uyku alışkanlıklarını, süresini izlemek için harika. Geliştirici Gaurav gerçekten muhteşemdi!! Ona ulaştım ve dakikalar içinde geri döndü ve birkaç gün içinde önerim eklendi! Gaurav Sharma, bir rockstar'sın!!"</p>
+                <p class="review-author">- Absolutely Annoyed!, Uyku Günlüğü</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Gerçekten Harika Uygulama</div>
+                </div>
+                <p class="review-content">"Birkaç gece önce kan basıncım hakkında kayıt tutmaya başladım, bu uygulama gerçekten harika. Bu uygulamayı içtenlikle tavsiye ederim."</p>
+                <p class="review-author">- frdfranz, Kan Basıncı</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Beğendim</div>
+                </div>
+                <p class="review-content">"Her şey için ödeme yapmak zorunda kalmamayı seviyorum, diğer ruh hali uygulamalarımda tetikleyicilerimi görmek için ödeme yapmak zorundaydım. Hangi kelimelerin sizi en çok etkilediğini söylemesi hoşuma gidiyor. Gerçekten kendimi düzeltmeme yardımcı oldu."</p>
+                <p class="review-author">- dariusslayss, Ruh Hali Günlüğü</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Uyku örüntülerini takip etmek için iyi uygulama</div>
+                </div>
+                <p class="review-content">"CPAP terapisine başlarken uyku takibine yardımcı olacak bir şeye ihtiyacım vardı. Bu uygulama bir programa bağlı kalmamı sağladı. 400 gece uygulamayı kullandıktan sonra CPAP terapisindeki ilerlemi ve çok faydalı içgörüler gösteriyor!"</p>
+                <p class="review-author">- Gadget guy Fl, Uyku Günlüğü</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Fantastik Uygulama</div>
+                </div>
+                <p class="review-content">"Çok harika bir uygulama. Kan basıncımı takip ediyor. Burada yanlış gidemezsiniz!"</p>
+                <p class="review-author">- Tippy's Dad, Kan Basıncı</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">Kilo ve VKİ</div>
+                </div>
+                <p class="review-content">"Bu uygulamanın iki küçük kusuru dışında olağanüstü olduğunu düşünüyorum ama yine de çok iyi çalışıyor. En iyi uygulama olduğunu düşünüyorum."</p>
+                <p class="review-author">- Rufuslynx, Kilo Takipçisi</p>
+            </div>
+
+
+        </div>
+
+        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">Yorumlar İngilizceden çevrilmiştir. Orijinal olarak App Store'da yayımlanmıştır.</p>
+
+    </section>
+
+    <!-- Platforms -->
+    <section class="platforms-section center-text">
+        <h2>Tüm Apple Cihazlarınızda Kullanılabilir</h2>
+        <p class="section-subtitle">iPhone · iPad · Mac (Apple Silicon M1+)</p>
+        <p>Tek satın alma, tüm platformlar. Veriler iCloud aracılığıyla otomatik senkronize olur.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2 class="center-text">Sık Sorulan Sorular</h2>
+
+
+        <h3>Reklam gösteriyor musunuz veya beni takip ediyor musunuz?</h3>
+        <p><strong>Hayır.</strong> Tüm Feeltracker uygulamalarından tüm reklamları tamamen kaldırdık. Sizi diğer uygulama veya web sitelerinde takip etmiyor ve verilerinizi hiçbir zaman reklamcılara satmıyoruz.</p>
+<p>Verileriniz iCloud aracılığıyla senkronize olur — tıpkı Apple Notlar ve Fotoğraflar gibi. Bu, e-posta adresinizi, adınızı veya herhangi bir kişisel bilginizi bilmemize gerek olmadığı anlamına gelir. Sağlık verileriniz cihazlarınızda ve iCloud hesabınızda saklanır ve ücretsiz veya premium sürümü kullansanız da tamamen özeldir.</p>
+
+
+        <h3>Aboneliğe ihtiyacım var mı?</h3>
+        <p>Tüm uygulamalar tamamen ücretsiz olarak indirilebilir ve kullanılabilir. Temel takip özellikleri abonelik olmadan çalışır. Premium abonelik, gelişmiş AI özelliklerinin, sınırsız dışa aktarmanın ve gelişmiş özelleştirmenin kilidini açar. Ücretsiz deneme süresi boyunca tüm premium özellikleri deneyebilirsiniz.</p>
+
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Sağlığınızı Bugün Takip Etmeye Başlayın</h2>
+        <p>İhtiyaçlarınıza uyan uygulamayı seçin. İsteğe bağlı premium özelliklerle indirmesi ücretsiz.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 40px;">
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Kan Basıncı Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id794542324" aria-label="Kan Basıncı Feeltracker Uygulamasını App Store'dan İndirin">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Kan Basıncı Feeltracker Uygulamasını App Store'dan İndirin" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Günlük Yazma Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id1557699226" aria-label="Günlük Yazma Feeltracker Uygulamasını App Store'dan İndirin">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Günlük Yazma Feeltracker Uygulamasını App Store'dan İndirin" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Ruh Sağlığı Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id687448999" aria-label="Ruh Sağlığı Feeltracker Uygulamasını App Store'dan İndirin">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Ruh Sağlığı Feeltracker Uygulamasını App Store'dan İndirin" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Kilo Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id799503787" aria-label="Kilo Feeltracker Uygulamasını App Store'dan İndirin">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Kilo Feeltracker Uygulamasını App Store'dan İndirin" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Uyku Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id1065268459" aria-label="Uyku Feeltracker Uygulamasını App Store'dan İndirin">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="Uyku Feeltracker Uygulamasını App Store'dan İndirin" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+
+            <a href="/tr/about/">Hakkında</a>
+
+            <a href="mailto:support@feeltracker.com">E-posta</a>
+
+            <a href="/tr/support/">Destek</a>
+
+            <a href="/tr/faq/">SSS</a>
+
+            <a href="https://x.com/feeltracker">X'te Takip Et</a>
+
+            <a href="/tr/privacy/">Gizlilik Politikası</a>
+
+            <a href="/tr/terms/">Kullanım Koşulları</a>
+
+        </div>
+        <p class="footer-copyright">© 2026 <a href="https://www.customarts.com" target="_blank" rel="noopener">Custom Arts</a>. Tüm hakları saklıdır.</p>
+        <p class="footer-tagline">Akıllı takip yoluyla sağlığınızı anlamanıza ve iyileştirmenize yardımcı oluyoruz.</p>
+        <p class="footer-disclaimer">Sağlık verileriniz cihazınızda ve iCloud'da saklanır — verilerinize asla erişmiyoruz veya satmıyoruz. Feeltracker uygulamaları tıbbi cihaz değildir. Yalnızca bilgilendirme amaçlıdır, profesyonel tıbbi tavsiye, teşhis veya tedavenin yerini tutmaz.</p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Gizliliğinize değer veriyoruz</strong></p>
+                <p>Web sitemizi ve uygulamamızı geliştirmek için analiz çerezleri kullanıyoruz. Reklam çerezleri kullanılmamaktadır. Bakınız <a href="/tr/privacy/">Gizlilik Politikası</a> detaylar için.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Reddet</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Kabul Et</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+
+<script>
+// Santa Party Mode with Techno Jingle Bells
+let santaAudioContext = null;
+let santaIsPlaying = false;
+let santaOscillators = [];
+
+// Clean up audio when page is shown from back-forward cache
+window.addEventListener('pageshow', function(event) {
+ if (event.persisted) {
+ // Page was restored from bfcache - stop any playing audio and reset state
+ stopJingleBells();
+ const santa = document.querySelector('.dancing-santa');
+ if (santa) santa.classList.remove('party-mode');
+ }
+});
+
+// Also stop when leaving the page
+window.addEventListener('pagehide', function() {
+ stopJingleBells();
+});
+
+function toggleSantaParty(element) {
+ // Always stop existing audio first to prevent overlapping
+ stopJingleBells();
+
+ element.classList.toggle('party-mode');
+
+ if (element.classList.contains('party-mode')) {
+ playJingleBells();
+ }
+}
+
+function playJingleBells() {
+ if (santaIsPlaying) return;
+ santaIsPlaying = true;
+
+ try {
+ santaAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+ // Jingle Bells melody - classic style
+ const melody = [
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.5 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.5 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'G5', duration: 0.25 },
+ { note: 'C5', duration: 0.35 },
+ { note: 'D5', duration: 0.15 },
+ { note: 'E5', duration: 0.8 },
+ { note: 'F5', duration: 0.25 },
+ { note: 'F5', duration: 0.25 },
+ { note: 'F5', duration: 0.35 },
+ { note: 'F5', duration: 0.15 },
+ { note: 'F5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'D5', duration: 0.25 },
+ { note: 'D5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'D5', duration: 0.5 },
+ { note: 'G5', duration: 0.5 },
+ ];
+
+ const noteFreq = {
+ 'C5': 523.25, 'D5': 587.33, 'E5': 659.25, 'F5': 698.46, 'G5': 783.99, 'A5': 880.00
+ };
+
+ let startTime = santaAudioContext.currentTime;
+
+ function playMelodyLoop() {
+ if (!santaIsPlaying) return;
+
+ melody.forEach((item) => {
+ // Main melody - soft triangle wave
+ const osc = santaAudioContext.createOscillator();
+ const gain = santaAudioContext.createGain();
+ osc.type = 'triangle';
+ osc.frequency.value = noteFreq[item.note];
+ gain.gain.setValueAtTime(0.12, startTime);
+ gain.gain.exponentialRampToValueAtTime(0.02, startTime + item.duration * 0.9);
+ osc.connect(gain);
+ gain.connect(santaAudioContext.destination);
+ osc.start(startTime);
+ osc.stop(startTime + item.duration);
+ santaOscillators.push(osc);
+
+ // Add soft bell harmonics
+ const bell = santaAudioContext.createOscillator();
+ const bellGain = santaAudioContext.createGain();
+ bell.type = 'sine';
+ bell.frequency.value = noteFreq[item.note] * 2;
+ bellGain.gain.setValueAtTime(0.03, startTime);
+ bellGain.gain.exponentialRampToValueAtTime(0.001, startTime + item.duration * 0.5);
+ bell.connect(bellGain);
+ bellGain.connect(santaAudioContext.destination);
+ bell.start(startTime);
+ bell.stop(startTime + item.duration);
+ santaOscillators.push(bell);
+
+ startTime += item.duration;
+ });
+
+ // Gentle sleigh bells
+ const loopStart = santaAudioContext.currentTime;
+ for (let i = 0; i < 25; i++) {
+ const bellTime = loopStart + (i * 0.3);
+ if (bellTime < startTime) {
+ const sleigh = santaAudioContext.createOscillator();
+ const sGain = santaAudioContext.createGain();
+ sleigh.type = 'sine';
+ sleigh.frequency.value = 2500 + Math.random() * 500;
+ sGain.gain.setValueAtTime(0.02, bellTime);
+ sGain.gain.exponentialRampToValueAtTime(0.001, bellTime + 0.08);
+ sleigh.connect(sGain);
+ sGain.connect(santaAudioContext.destination);
+ sleigh.start(bellTime);
+ sleigh.stop(bellTime + 0.08);
+ santaOscillators.push(sleigh);
+ }
+ }
+
+ const loopDuration = startTime - santaAudioContext.currentTime;
+ if (santaIsPlaying) {
+ setTimeout(() => {
+ startTime = santaAudioContext.currentTime;
+ playMelodyLoop();
+ }, loopDuration * 1000);
+ }
+ }
+
+ playMelodyLoop();
+ } catch (e) {
+ console.log('Audio not supported');
+ }
+}
+
+function stopJingleBells() {
+ santaIsPlaying = false;
+ santaOscillators.forEach(osc => {
+ try { osc.stop(); } catch(e) {}
+ });
+ santaOscillators = [];
+ if (santaAudioContext) {
+ santaAudioContext.close();
+ santaAudioContext = null;
+ }
+}
+</script>
+
+</body>
+</html>
