@@ -351,6 +351,17 @@ function buildContext(site, languages, page) {
     // Privacy URL for this language
     const privacyUrl = (lang.prefix || '') + '/privacy/';
 
+    // og:locale mapping
+    const ogLocaleMap = {
+        'en':'en_US','de':'de_DE','es':'es_ES','it':'it_IT','ru':'ru_RU','ja':'ja_JP',
+        'fr':'fr_FR','ko':'ko_KR','pt-br':'pt_BR','zh-Hans':'zh_CN','sv':'sv_SE',
+        'nb':'nb_NO','da':'da_DK','fi':'fi_FI','ar':'ar_AR','ca':'ca_ES','cs':'cs_CZ',
+        'el':'el_GR','fr-ca':'fr_CA','he':'he_IL','hr':'hr_HR','hu':'hu_HU','nl':'nl_NL',
+        'pl':'pl_PL','pt':'pt_PT','ro':'ro_RO','sk':'sk_SK','th':'th_TH','tr':'tr_TR',
+        'uk':'uk_UA','vi':'vi_VN','zh-Hant':'zh_TW'
+    };
+    const ogLocale = ogLocaleMap[page.lang] || 'en_US';
+
     // Generate structuredDataHtml from structuredData JSON array (if present)
     const data = { ...page.data };
     if (Array.isArray(data.structuredData) && data.structuredData.length > 0 && !data.structuredDataHtml) {
@@ -374,6 +385,7 @@ function buildContext(site, languages, page) {
         footer: lang.footer,
         cookie: lang.cookie,
         privacyUrl,
+        ogLocale,
         ...data
     };
 }

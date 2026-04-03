@@ -129,6 +129,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
     <meta property="og:url" content="https://feeltracker.com/zh-Hans/mental-health/tips/">
     <meta property="og:title" content="20个情绪追踪与DBT技巧 | Feeltracker">
     <meta property="og:description" content="关于情绪追踪、DBT技能、情绪调节和心理健康管理的专家建议，采用循证策略。">
@@ -772,5 +773,20 @@
     });
     </script>
 
+<script>
+(function(){
+  if(document.documentElement.lang!=="en")return;
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=[["pt-br","/pt-br"],["zh-Hans","/zh-Hans"],["zh-Hant","/zh-Hant"],["fr-ca","/fr-ca"],["nb","/nb"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["ja","/ja"],["fr","/fr"],["ko","/ko"],["sv","/sv"],["da","/da"],["fi","/fi"],["ar","/ar"],["ca","/ca"],["cs","/cs"],["el","/el"],["he","/he"],["hr","/hr"],["hu","/hu"],["nl","/nl"],["pl","/pl"],["pt","/pt"],["ro","/ro"],["sk","/sk"],["th","/th"],["tr","/tr"],["uk","/uk"],["vi","/vi"]];
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(map[i][1]+window.location.pathname+window.location.search);
+      return;
+    }
+  }
+})();
+</script>
 </body>
 </html>

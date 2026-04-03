@@ -114,6 +114,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
     <meta property="og:url" content="https://feeltracker.com/zh-Hant/sleep/">
     <meta property="og:title" content="睡眠與夢境 | AI智慧睡眠模式追蹤 | Feeltracker">
     <meta property="og:description" content="透過AI夢境分析、CPAP治療監測、放鬆工具和Apple Health整合來追蹤睡眠。">
@@ -1133,5 +1134,20 @@
     });
     </script>
 
+<script>
+(function(){
+  if(document.documentElement.lang!=="en")return;
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=[["pt-br","/pt-br"],["zh-Hans","/zh-Hans"],["zh-Hant","/zh-Hant"],["fr-ca","/fr-ca"],["nb","/nb"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["ja","/ja"],["fr","/fr"],["ko","/ko"],["sv","/sv"],["da","/da"],["fi","/fi"],["ar","/ar"],["ca","/ca"],["cs","/cs"],["el","/el"],["he","/he"],["hr","/hr"],["hu","/hu"],["nl","/nl"],["pl","/pl"],["pt","/pt"],["ro","/ro"],["sk","/sk"],["th","/th"],["tr","/tr"],["uk","/uk"],["vi","/vi"]];
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(map[i][1]+window.location.pathname+window.location.search);
+      return;
+    }
+  }
+})();
+</script>
 </body>
 </html>
