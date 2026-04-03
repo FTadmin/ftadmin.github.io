@@ -405,7 +405,7 @@ Translatable content fields use markdown instead of raw HTML. The build converts
 "answer": "Your data syncs via iCloud. This means **no email** or personal info needed. See our [privacy policy](https://feeltracker.com/privacy/)."
 ```
 
-**Fields that stay as raw HTML:** `christmasHtml`, `customCss`, `santaScript`, `doctorEndorsementHtml`, `disclaimerTitle`
+**Fields that stay as raw HTML:** `christmasHtml`, `customCss`, `santaScript`, `doctorEndorsementHtml`
 
 **Structured data (JSON-LD):** Pages use `structuredData` (array of JSON objects) instead of `structuredDataHtml` (raw string). At build time, `build.js` serializes `structuredData` into `<script type="application/ld+json">` blocks. Non-EN overlays only need the translatable schema fields (`name`, `description`, `featureList`, `mainEntity` for FAQ) — the schema structure is inherited from EN via deep merge.
 
