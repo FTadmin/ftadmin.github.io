@@ -1,5 +1,20 @@
 # Feeltracker Static Site — Build System Guide
 
+## MANDATORY: When asked to translate or propagate changes
+
+**NEVER** read all overlay files. **NEVER** rewrite entire overlay files. **NEVER** spawn one agent per language for small changes.
+
+**ALWAYS follow this sequence:**
+
+1. Run `node diff-translate.js` to get the change manifest (only changed strings)
+2. Batch all 31 languages into ~6 agents (5 languages each) — each agent gets only the changed strings
+3. Each agent uses `apply-translation.js` with a JSON patch (surgical update, not file rewrite)
+4. After all agents finish: `node validate.js && node build.js`
+
+**Token limit errors happen when agents read/rewrite whole files** — the patch-based approach avoids this entirely. An agent translating 3 strings for 5 languages makes 5 small `apply-translation.js` calls, touching zero bytes of the existing file content.
+
+---
+
 ## Architecture Overview
 
 All HTML pages are generated from `data/` JSON files + HTML templates (16 pages per language).
@@ -29,16 +44,24 @@ data/
   en/                          ← English page files — COMPLETE (structure + text)
     blood-pressure.app.json    ← App page: Blood Pressure
     blood-pressure.tips.json   ← Tips page: Blood Pressure
+    daily-journal.app.json     ← App page: Daily Journal
+    daily-journal.tips.json    ← Tips page: Daily Journal
+    mental-health.app.json     ← App page: Mental Health
+    mental-health.tips.json    ← Tips page: Mental Health
     sleep.app.json             ← App page: Sleep
     sleep.tips.json            ← Tips page: Sleep
-    ...                        ← (5 app + 5 tips + 5 utility + 1 index = 16 files)
-    about.utility.json         ← Utility page: About
+    weight.app.json            ← App page: Weight
+    weight.tips.json           ← Tips page: Weight
+    about.utility.json         ← Utility page: About (about-page template)
+    faq.utility.json           ← Utility page: FAQ (faq-page template)
+    privacy.utility.json       ← Utility page: Privacy (legal-page template)
+    support.utility.json       ← Utility page: Support (support-page template)
+    terms.utility.json         ← Utility page: Terms (legal-page template)
     index.json                 ← Homepage
   de/                          ← German (16 OVERLAY files, translated text only)
-  es/                          ← Spanish
-  fr/                          ← French
-  it/                          ← Italian
-  ru/                          ← Russian
+  es/  fr/  it/  ru/  ja/  ko/  pt-br/  zh-Hans/  sv/  nb/  da/  fi/
+  ar/  ca/  cs/  el/  fr-ca/  he/  hr/  hu/  nl/  pl/  pt/  ro/
+  sk/  th/  tr/  uk/  vi/  zh-Hant/   ← 31 non-EN language overlays
 templates/                     ← HTML templates with {{mustache}} syntax
   app-page.html      ← Product pages (blood-pressure, sleep, weight, etc.)
   tips-page.html     ← Tips pages (20 tips per app)
@@ -291,17 +314,17 @@ Structured data with per-question isolation (file: `faq.utility.json`):
 3. **Translate text fields** — CRITICAL fields that are frequently missed on the **index page**:
    - **`apps.items[].title`** — the app name shown in the apps grid (e.g., "Pressão Arterial Feeltracker"). These MUST be translated, not left in English.
    - **`apps.items[].downloadAlt`** — alt text for download buttons in the apps grid
-   - **`apps.items[].slug`** — MUST include language prefix (e.g., `"/pt/blood-pressure"`)
+   - **`apps.items[].slug`** — do NOT override in overlays. Inherited from EN; the build system prepends the language prefix automatically at render time.
    - **`cta.items[].name`** — the app name shown above download buttons in the CTA section at the bottom of the page (e.g., "Pressão Arterial Feeltracker"). These MUST be translated.
    - **`cta.items[].downloadAlt`** — alt text for download buttons in the CTA section
    - **`indexFooter.links[].href`** — MUST use absolute paths with language prefix (e.g., `"/pt/about/"`, `"/pt/privacy/"`). Never use relative paths like `about.html` — they break on non-root pages.
    - **`indexFooter`** content (links, copyright, tagline, disclaimer)
    - All `meta` fields (title, description, keywords, OG tags)
-   - All `structuredData` text content (JSON-LD schema — translatable fields like `name`, `description`, `featureList` are in overlay; structure inherited from EN)
+   - `structuredData` — **translate:** `name`, `description`, `featureList[]` (string array — each item by index), `mainEntity[].name`, `mainEntity[].acceptedAnswer.text`. **Never translate (structural, inherited from EN):** `@context`, `@type`, `offers`, `aggregateRating`, `author`, `screenshot`, `softwareVersion`, `award`, `inLanguage` (array of language codes).
    - **`reviews.items[]`** — all review `title` and `content` fields MUST be translated. Keep `author` names unchanged (real usernames). Add a `reviews.disclaimer` field in the target language stating reviews were translated from English (e.g., `"Les avis ont été traduits de l'anglais. Publiés à l'origine sur l'App Store."`)
    - **`conversionEvent.currency`** — set to the local currency (e.g., `"EUR"` for Portugal)
-4. **Image paths are inherited from EN** — no need to include them in overlay files. Utility page `bodyContent` with `<img src="...">` tags should use absolute paths like `/images/add_new.jpg`.
-6. **Update `sitemap.xml`:**
+4. **Image paths are inherited from EN** — no need to include them in overlay files. Any raw HTML fields (e.g. `contentSections[].html`) with `<img src="...">` tags must use absolute paths like `/images/add_new.jpg`.
+5. **Update `sitemap.xml`:**
    - Add a new `<url>` entry for every page in the new language (16 total)
    - Add `<xhtml:link rel="alternate" hreflang="pt" href="..."/>` to **every existing** `<url>` entry across all languages
 7. **Update `robots.txt`:** Add the new language to the "Available in" comment
@@ -313,12 +336,13 @@ These lessons were learned from the Simplified Chinese (zh) translation and appl
 
 1. **JSON escaping** — Translated text often contains quotation marks (e.g., AI says "your data shows..."). ASCII double quotes (`"`) inside JSON string values MUST be escaped as `\"`, or use the language's native quotation marks (e.g., Chinese `\u201C...\u201D`, French `«...»`, German `„..."`) which don't need escaping.
 2. **The `howItWorks` steps** are the most error-prone fields — they contain long markdown content with embedded examples using quotes. Always verify these parse as valid JSON after translation.
-3. **Utility pages (`bodyContent`)** contain raw HTML strings that can be thousands of characters long on a single JSON line. Special characters in the translated HTML (unescaped quotes, backslashes) will break JSON parsing. After writing utility page files, always validate with `node -e "JSON.parse(require('fs').readFileSync('data/{lang}/file.json','utf8'))"`.
+3. **Raw HTML fields in utility pages** — fields like `contentSections[].html`, `contact.supportText`, `intro`, `sections[].content` contain raw HTML that can be thousands of characters on a single JSON line. Unescaped quotes or backslashes in translated HTML will break JSON parsing. After writing utility page overlay files, always validate with `node -e "JSON.parse(require('fs').readFileSync('data/{lang}/file.json','utf8'))"`.
 4. **Quick JSON validation for all files in a language:**
    ```bash
    for f in data/{lang}/*.json; do node -e "try { JSON.parse(require('fs').readFileSync('$f','utf8')); console.log('OK: $f'); } catch(e) { console.log('ERROR: $f: ' + e.message); }"; done
    ```
-5. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
+5. **Sparse array risk with `apply-translation.js`** — When translating an array item at index N, all items 0..N-1 must already exist in the overlay. If they don't, `apply-translation.js` pads missing indices with `null`, which overrides the EN values on merge. Always translate all items in an array together, never selectively by index.
+6. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
 6. **Reviews disclaimer** — Every non-EN language MUST include `"disclaimer"` in the reviews section of app pages AND the index page, stating reviews were translated from English (e.g., Chinese: `"评论翻译自英文原文。最初发布在App Store上。"`).
 7. **Current languages** (32 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh-Hans), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi), العربية (ar), Català (ca), Čeština (cs), Ελληνικά (el), Français Canada (fr-ca), עברית (he), Hrvatski (hr), Magyar (hu), Nederlands (nl), Polski (pl), Português Portugal (pt), Română (ro), Slovenčina (sk), ไทย (th), Türkçe (tr), Українська (uk), Tiếng Việt (vi), 繁體中文 (zh-Hant)
 
@@ -374,7 +398,7 @@ Translatable content fields use markdown instead of raw HTML. The build converts
 **When to use which tag:**
 - `{{md field}}` — for standalone content that needs paragraph wrapping (FAQ answers, how-it-works steps)
 - `{{mdi field}}` — for content inside an existing `<p>` or `<li>` tag (descriptions, feature text, tips)
-- `{{field}}` — for raw output: plain text, raw HTML blobs (`structuredDataHtml`, `bodyContent`, `christmasHtml`), or values in attributes
+- `{{field}}` — for raw output: plain text, raw HTML blobs (`christmasHtml`, `doctorEndorsementHtml`), or values in attributes
 
 **Fields using markdown:** FAQ answers, tip content, feature descriptions, howItWorks step content, app descriptions, footer copyright. These fields store content like:
 ```json
@@ -431,7 +455,23 @@ Output shows exactly what changed:
 }
 ```
 
-**Step 3: Fan out translation agents** with the compact manifest. Each agent translates the changed strings and applies them via `apply-translation.js` or direct `Edit` calls.
+**Step 3: Fan out translation agents** with the compact manifest. Each agent translates the changed strings and applies them via `apply-translation.js`. **Do not use Edit to rewrite overlay files.**
+
+`apply-translation.js` patch format (pipe JSON to stdin or pass a file):
+```bash
+echo '{
+  "lang": "de",
+  "file": "blood-pressure.app.json",
+  "translations": [
+    { "path": "data.hero.subtitle", "value": "Übersetzter Text" },
+    { "path": "data.features.items.2.description", "value": "..." }
+  ]
+}' | node apply-translation.js
+
+# Multiple languages in one shot:
+node apply-translation.js patches/de.json patches/es.json patches/fr.json
+```
+Set `"value": null` to delete a path. The script creates the overlay file if it doesn't exist.
 
 **Step 4: Validate and build:**
 ```bash
@@ -450,7 +490,9 @@ Changed strings (from diff-translate.js):
   2. data.features.items.2.description: "Another changed string"
 
 Target file: data/[LANG]/[FILENAME]
-Action: Read the overlay file, find each path above, and update the value with the [LANGUAGE] translation. Use the Edit tool for surgical changes. If the path doesn't exist in the overlay yet, add it at the correct nesting level.
+Action: Translate the strings above into [LANGUAGE], then apply them using apply-translation.js:
+  echo '{"lang":"[LANG]","file":"[FILENAME]","translations":[{"path":"data.hero.subtitle","value":"...translated..."},...]}' | node apply-translation.js
+Do NOT read the overlay file. Do NOT use Edit. apply-translation.js handles missing paths and creates the file if needed.
 
 Rules:
 - Only translate text content — never add structural fields (icon, src, image, appId, etc.)
@@ -472,12 +514,12 @@ Rules:
 
 Example: subtitle change in one file → 6 agents x 5 languages each:
 ```
-Agent 1: Translate 2 strings into de, es, fr, it, ru (5 Edit calls)
-Agent 2: Translate 2 strings into ja, ko, pt-br, zh-Hans, sv (5 Edit calls)
-Agent 3: Translate 2 strings into nb, da, fi, ar, ca (5 Edit calls)
-Agent 4: Translate 2 strings into cs, el, fr-ca, he, hr (5 Edit calls)
-Agent 5: Translate 2 strings into hu, nl, pl, pt, ro (5 Edit calls)
-Agent 6: Translate 2 strings into sk, th, tr, uk, vi, zh-Hant (6 Edit calls)
+Agent 1: Translate 2 strings into de, es, fr, it, ru (5 apply-translation.js calls)
+Agent 2: Translate 2 strings into ja, ko, pt-br, zh-Hans, sv (5 apply-translation.js calls)
+Agent 3: Translate 2 strings into nb, da, fi, ar, ca (5 apply-translation.js calls)
+Agent 4: Translate 2 strings into cs, el, fr-ca, he, hr (5 apply-translation.js calls)
+Agent 5: Translate 2 strings into hu, nl, pl, pt, ro (5 apply-translation.js calls)
+Agent 6: Translate 2 strings into sk, th, tr, uk, vi, zh-Hant (6 apply-translation.js calls)
 ```
 
 **Medium changes (10-50 strings across multiple files):** One agent per language (31 agents). Each agent gets the full diff manifest and handles all affected files for its language.
@@ -519,5 +561,6 @@ After translation agents complete:
 - If you need to re-extract, first restore originals: `git checkout <commit> -- <files>`
 - The build does NOT delete old files — remove manually when deleting pages
 - Tips and index pages have NO shared footer partial — tips pages have no footer at all, index pages have a custom footer stored in `indexFooter`
-- Utility pages (about, privacy, terms, support) use raw HTML `bodyContent` — edit the HTML directly in the `.utility.json` files
+- All utility pages (about, support, privacy, terms, faq) use **structured JSON templates** — NOT raw `bodyContent`. Edit the structured fields (`contentSections`, `sections`, `contact`, etc.) in the `.utility.json` files.
 - The FAQ page (`faq.utility.json`) uses structured JSON with `template: "faq-page"` — edit individual questions/answers as markdown, not raw HTML
+- **16 files per language** = 5 app (`blood-pressure`, `daily-journal`, `mental-health`, `sleep`, `weight`) + 5 tips (same slugs) + 5 utility (`about`, `faq`, `privacy`, `support`, `terms`) + 1 `index`
