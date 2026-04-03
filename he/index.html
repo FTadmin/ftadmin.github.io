@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+                gtag('config', 'AW-1066893004');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Feeltracker | אפליקציות יומן בריאות ורווחה מבוססות בינה מלאכותית ל-iOS</title>
+    <meta name="title" content="Feeltracker | אפליקציות יומן בריאות ורווחה מבוססות בינה מלאכותית ל-iOS">
+    <meta name="description" content="עקוב אחר בריאותך בקלות עם חבילת אפליקציות היומן מבוססות הבינה המלאכותית של Feeltracker. עקוב אחר לחץ דם, מצב רוח, משקל, שינה ומחשבות יומיות. סנכרן עם Apple Health, קבל תובנות בינה מלאכותית וייצא נתונים לשיתוף עם הרופא שלך. זמין ב-iPhone, iPad ו-Mac.">
+
+    <meta name="keywords" content="אפליקציית מעקב בריאות, מד לחץ דם, יומן מצב רוח, מעקב משקל, מעקב שינה, יומן יומי, אפליקציית בינה מלאכותית לבריאות, שילוב Apple Health, יומן בריאות, מעקב רווחה, אפליקציית בריאות נפש, אפליקציית לחץ דם, אפליקציית ירידה במשקל, מעקב שינה, אפליקציית יומן">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/he/">
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/">
+
+    <link rel="alternate" hreflang="pt-br" href="https://feeltracker.com/pt-br/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/">
+
+    <link rel="alternate" hreflang="fr-ca" href="https://feeltracker.com/fr-ca/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feeltracker.com/he/">
+    <meta property="og:title" content="Feeltracker | אפליקציות יומן בריאות ורווחה מבוססות בינה מלאכותית">
+    <meta property="og:description" content="עקוב אחר בריאותך בקלות עם אפליקציות יומן מבוססות בינה מלאכותית ללחץ דם, מצב רוח, משקל, שינה ורישום יומן. סנכרן עם Apple Health וקבל תובנות מותאמות אישית.">
+    <meta property="og:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <meta property="og:site_name" content="Feeltracker">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/he/">
+    <meta property="twitter:title" content="Feeltracker | אפליקציות יומן בריאות ורווחה מבוססות בינה מלאכותית">
+    <meta property="twitter:description" content="עקוב אחר בריאותך בקלות עם אפליקציות יומן מבוססות בינה מלאכותית ללחץ דם, מצב רוח, משקל, שינה ורישום יומן.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/feeltracker.png">
+
+    <meta name="twitter:site" content="@feeltracker">
+
+
+    <!-- iOS / Apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Feeltracker">
+
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Feeltracker",
+          "url": "https://feeltracker.com",
+          "logo": "https://feeltracker.com/images/feeltracker.png",
+          "description": "אפליקציות מעקב בריאות ורווחה מבוססות בינה מלאכותית ל-iOS",
+          "sameAs": [
+                "https://x.com/feeltracker"
+          ],
+          "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "support@feeltracker.com",
+                "contactType": "Customer Support"
+          }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "אפליקציות בריאות ורווחה Feeltracker",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "iOS",
+          "description": "חבילת אפליקציות מעקב בריאות ורווחה מבוססות בינה מלאכותית ל-iOS. עקוב אחר לחץ דם, מצב רוח, משקל, שינה ומחשבות יומיות. סנכרן עם Apple Health, קבל תובנות בינה מלאכותית וייצא נתונים לשיתוף עם הרופא שלך.",
+          "image": "https://feeltracker.com/images/feeltracker.png",
+          "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": 20000
+          },
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts"
+          },
+          "featureList": [
+                "תובנות בריאות מבוססות בינה מלאכותית",
+                "סריקת מצלמה בינה מלאכותית ללכידת קריאות",
+                "סנכרון דו-כיווני עם Apple Health",
+                "ייצוא דוחות ב-PDF ו-Excel",
+                "גיבוי וסנכרון iCloud",
+                "תמיכה ב-32 שפות",
+                "ללא פרסומות, ללא מעקב, פרטיות קודמת"
+          ],
+          "inLanguage": [
+                "en",
+                "es",
+                "fr",
+                "de",
+                "it",
+                "nl",
+                "pt",
+                "sv",
+                "no",
+                "da",
+                "fi",
+                "pl",
+                "ru",
+                "uk",
+                "cs",
+                "sk",
+                "ro",
+                "hr",
+                "hu",
+                "ar",
+                "he",
+                "zh-Hans",
+                "ja",
+                "ko",
+                "th",
+                "vi",
+                "id",
+                "el",
+                "tr",
+                "ca"
+          ],
+          "datePublished": "2015"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "אפליקציות בריאות ורווחה Feeltracker",
+          "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": 20000,
+                "bestRating": "5",
+                "worstRating": "1"
+          },
+          "review": [
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "MelGreer"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "חוויית אפליקציית לחץ הדם הטובה ביותר",
+                      "reviewBody": "מצאתי את אפליקציית לחץ הדם הטובה ביותר שניסיתי אי פעם. היא לא רק מאפשרת לי לשלוח תוצאות לרופא שלי, אלא נראה שאנשים עובדים ללא לאות כדי לשמור על האפליקציה פועלת בצורה חלקה."
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "CynnCatt"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "גם המטפל שלי אוהב את האפליקציה הזו",
+                      "reviewBody": "קיבלתי לפני כחודש אבחנה של ADHD. והייתי צריך לחכות 3 שבועות כדי לקבל תרופות לכך. במהלך הזמן הזה מצאתי את האפליקציה הזו, והיה מדהים לראות את האקראיות של המוח שלי ללא תרופות."
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "PRE'"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "עד כה טוב",
+                      "reviewBody": "זוהי אפליקציה פשוטה ונחמדה שאינה חורגת לתחומים מיותרים. הפשטות שלה, כולל פשטות הממשק, היא מה שאני מעריך יותר מכל."
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Jbobthebuilder"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "קריאה לכל רופאי השינה!",
+                      "reviewBody": "הייתי כל כך מופתע שרופא השינה שלי ניסה לתת לי דפי נייר לרישום שעות השינה שלי ללא אפשרות לאסוף אותם!? למרבה המזל מצאתי את האפליקציה הזו ומיד ביקשתי מרופא השינה שלי להתחיל להמליץ עליה."
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Wiesiu33"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "אפליקציה טובה מאוד",
+                      "reviewBody": "הרופא שלי רוצה שאתעד את לחץ הדם שלי מדי יום. האפליקציה הזו מאפשרת לי לתעד את המידע שלי ומאחסנת אותו בפורמט מעוצב יפה מאוד. אפליקציה נהדרת."
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Aprthax"
+                      },
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                      },
+                      "name": "אפליקציה נהדרת",
+                      "reviewBody": "כמישהו עם הפרעה דו-קוטבית הייתי צריך לתעד את מצבי הרוח והרגשות שלי אבל לא יכולתי למצוא אפליקציה שלא רצתה מנוי יקר. אני מאוד אסיר תודה על האפליקציה הזו."
+                }
+          ]
+    }
+    </script>
+</head>
+<body>
+<!-- Christmas features disabled - re-enable next year
+ <div class="dancing-santa" onclick="toggleSantaParty(this)" title="Click me to party!">
+ <div class="santa-character">
+ <div class="santa-hat">
+ <div class="hat-base"></div>
+ <div class="hat-pom"></div>
+ </div>
+ <div class="santa-face">
+ <div class="santa-eyes">
+ <div class="eye left"></div>
+ <div class="eye right"></div>
+ </div>
+ <div class="santa-nose"></div>
+ <div class="santa-cheeks">
+ <div class="cheek left"></div>
+ <div class="cheek right"></div>
+ </div>
+ <div class="santa-beard"></div>
+ <div class="santa-mouth"></div>
+ </div>
+ <div class="santa-body">
+ <div class="belt"></div>
+ </div>
+ <div class="santa-arms">
+ <div class="arm left"></div>
+ <div class="arm right"></div>
+ </div>
+ <div class="santa-legs">
+ <div class="leg left"></div>
+ <div class="leg right"></div>
+ </div>
+ </div>
+ <div class="santa-shadow"></div>
+ <div class="dance-text">Click Santa!</div>
+ </div>
+
+ <div class="snowflakes" aria-hidden="true">
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ <div class="snowflake">&#10052;</div>
+ <div class="snowflake">&#10053;</div>
+ </div>
+ End Christmas features -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+    <style>
+        .navbar .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: none;
+            margin: 0;
+            align-items: stretch;
+        }
+        .nav-row-apps {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+        }
+        .nav-row-apps a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875em;
+        }
+        .nav-row-apps a:hover {
+            color: #111827;
+            text-decoration: none;
+        }
+        .nav-row-apps a.current {
+            color: #111827;
+        }
+        .nav-row-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-row-brand .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .nav-row-brand .brand-logo:hover {
+            color: #1a5ca8;
+        }
+        .language-selector {
+            position: relative;
+        }
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #6b7280;
+            transition: color 0.15s;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            border: 1px solid #e5e7eb;
+        }
+        .language-current:hover {
+            color: #111827;
+            border-color: #9ca3af;
+        }
+        .language-current .flag {
+            font-size: 1.1em;
+        }
+        .language-current .arrow {
+            font-size: 0.6em;
+            transition: transform 0.2s;
+        }
+        .language-selector.open .arrow {
+            transform: rotate(180deg);
+        }
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f3f4f6;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+            min-width: 130px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .language-selector.open .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .language-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .language-dropdown a:hover,
+        .language-dropdown a:active {
+            background: #f5f5f5;
+        }
+        .language-dropdown a.active {
+            background: #e8f0fe;
+            color: #2B7BD3;
+            font-weight: 600;
+        }
+        .language-dropdown a .flag {
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .nav-row-apps a {
+                font-size: 0.85em;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav-row-apps a {
+                color: #6b7280;
+            }
+            .nav-row-apps a:hover {
+                color: #e5e7eb;
+            }
+            .nav-row-apps a.current {
+                color: #e5e7eb;
+            }
+            .nav-row-brand .brand-logo {
+                color: #60a5fa;
+            }
+            .nav-row-brand .brand-logo:hover {
+                color: #93bbfd;
+            }
+            .language-current {
+                background: transparent;
+                color: #6b7280;
+                border-color: #1f2937;
+            }
+            .language-current:hover {
+                color: #e5e7eb;
+                border-color: #374151;
+            }
+            .language-dropdown {
+                background: #111827;
+                border-color: #1f2937;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            .language-dropdown a {
+                color: #9ca3af;
+            }
+            .language-dropdown a:hover,
+            .language-dropdown a:active {
+                background: #1f2937;
+                color: #e5e7eb;
+            }
+            .language-dropdown a.active {
+                background: #1f2937;
+                color: #60a5fa;
+            }
+        }
+    </style>
+    <div class="nav-container">
+        <div class="nav-row-brand">
+            <a href="/he/" class="brand-logo">feeltracker</a>
+            <div class="language-selector" id="langSelector">
+                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                    <span class="flag">🇮🇱</span>
+                    <span>עברית</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="language-dropdown">
+
+                    <a href="/"><span class="flag">🇺🇸</span> English</a>
+
+                    <a href="/de/"><span class="flag">🇩🇪</span> Deutsch</a>
+
+                    <a href="/es/"><span class="flag">🇪🇸</span> Español</a>
+
+                    <a href="/it/"><span class="flag">🇮🇹</span> Italiano</a>
+
+                    <a href="/ru/"><span class="flag">🇷🇺</span> Русский</a>
+
+                    <a href="/ja/"><span class="flag">🇯🇵</span> 日本語</a>
+
+                    <a href="/fr/"><span class="flag">🇫🇷</span> Français</a>
+
+                    <a href="/ko/"><span class="flag">🇰🇷</span> 한국어</a>
+
+                    <a href="/pt-br/"><span class="flag">🇧🇷</span> Português</a>
+
+                    <a href="/zh-Hans/"><span class="flag">🇨🇳</span> 简体中文</a>
+
+                    <a href="/sv/"><span class="flag">🇸🇪</span> Svenska</a>
+
+                    <a href="/nb/"><span class="flag">🇳🇴</span> Norsk</a>
+
+                    <a href="/da/"><span class="flag">🇩🇰</span> Dansk</a>
+
+                    <a href="/fi/"><span class="flag">🇫🇮</span> Suomi</a>
+
+                    <a href="/ar/"><span class="flag">🇸🇦</span> العربية</a>
+
+                    <a href="/ca/"><span class="flag">🏴</span> Català</a>
+
+                    <a href="/cs/"><span class="flag">🇨🇿</span> Čeština</a>
+
+                    <a href="/el/"><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                    <a href="/fr-ca/"><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                    <a href="/he/" class="active"><span class="flag">🇮🇱</span> עברית</a>
+
+                    <a href="/hr/"><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                    <a href="/hu/"><span class="flag">🇭🇺</span> Magyar</a>
+
+                    <a href="/nl/"><span class="flag">🇳🇱</span> Nederlands</a>
+
+                    <a href="/pl/"><span class="flag">🇵🇱</span> Polski</a>
+
+                    <a href="/pt/"><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                    <a href="/ro/"><span class="flag">🇷🇴</span> Română</a>
+
+                    <a href="/sk/"><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                    <a href="/th/"><span class="flag">🇹🇭</span> ไทย</a>
+
+                    <a href="/tr/"><span class="flag">🇹🇷</span> Türkçe</a>
+
+                    <a href="/uk/"><span class="flag">🇺🇦</span> Українська</a>
+
+                    <a href="/vi/"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                    <a href="/zh-Hant/"><span class="flag">🇹🇼</span> 繁體中文</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-row-apps">
+
+            <a href="/he/blood-pressure/">לחץ דם</a>
+
+            <a href="/he/daily-journal/">יומן אישי</a>
+
+            <a href="/he/mental-health/">בריאות הנפש</a>
+
+            <a href="/he/sleep/">שינה וחלומות</a>
+
+            <a href="/he/weight/">משקל ותזונה</a>
+
+        </div>
+    </div>
+    <script>
+    document.addEventListener('click', function(e) {
+        var selector = document.getElementById('langSelector');
+        if (selector && !selector.contains(e.target)) {
+            selector.classList.remove('open');
+        }
+    });
+    </script>
+</nav>
+
+
+<!-- Christmas Welcome Banner - disabled, re-enable next year
+ <div class="christmas-banner">
+ <div class="christmas-content">
+ <span class="christmas-stars">✦</span>
+ <span class="christmas-icon">🎄</span>
+ <span class="christmas-text">
+ <span class="holiday-greeting">Merry Christmas & Happy New Year 2026</span>
+ <span class="holiday-subtext">from the Feeltracker Team</span>
+ </span>
+ <span class="christmas-icon">🎁</span>
+ <span class="christmas-stars">✦</span>
+ </div>
+ <a href="milo-game.html" class="play-game-btn">
+ <span class="game-btn-icon">🐕</span>
+ <span class="game-btn-text">Play Milo's Snowball Fight!</span>
+ <span class="game-btn-snowflake">❄️</span>
+ </a>
+ </div>
+ End Christmas Banner -->
+
+    <!-- Hero Section -->
+    <section class="hero center-text">
+        <div class="hero-logo">feeltracker</div>
+        <h1>מעקב בריאות מבוסס בינה מלאכותית — פשוט וחכם</h1>
+        <p class="hero-subtitle">עקוב אחר לחץ הדם, מצב הרוח, המשקל, השינה והמחשבות היומיות שלך עם אפליקציות יומן חכמות המסתנכרנות עם Apple Health ומספקות תובנות בינה מלאכותית מותאמות אישית.</p>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">1M+</div>
+                <div class="hero-stat-label">הורדות</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">21K+</div>
+                <div class="hero-stat-label">דירוגים</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">4.8★</div>
+                <div class="hero-stat-label">דירוג ממוצע</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">96%</div>
+                <div class="hero-stat-label">שביעות רצון</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">5M+</div>
+                <div class="hero-stat-label">שמירות / שנה</div>
+            </div>
+
+            <div class="hero-stat">
+                <div class="hero-stat-number">12שנה</div>
+                <div class="hero-stat-label">נוסד 2013</div>
+            </div>
+
+        </div>
+
+        <!-- Privacy Badge -->
+        <div style="color: #059669; padding: 16px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+            <i class="fas fa-shield-alt"></i> פרטיות קודמת — ללא פרסומות, ללא מעקב, הנתונים שלך נשארים פרטיים
+        </div>
+
+        <div class="hero-features">
+
+            <span class="feature-badge"><i class="fas fa-chart-line"></i> סנכרון Apple Health</span>
+
+            <span class="feature-badge"><i class="fas fa-robot"></i> תובנות בינה מלאכותית</span>
+
+            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+            <span class="feature-badge"><i class="fas fa-cloud"></i> גיבוי iCloud</span>
+
+        </div>
+    </section>
+
+    <!-- Apps Grid -->
+    <section class="apps-section">
+        <h2 class="center-text">בחר את אפליקציית מעקב הבריאות שלך</h2>
+
+
+        <!-- לחץ דם Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="blood-pressure/">
+                    <img src="/images/BPT_1024.png" class="app-icon-large" alt="אייקון אפליקציית לחץ דם">
+                </a>
+                <div class="app-card-title">
+                    <h3>לחץ דם Feeltracker</h3>
+                    <p class="app-subtitle">יומן בינה מלאכותית לניטור לחץ דם גבוה OMRON</p>
+
+                    <div style="color: #2563eb; display: inline-block; margin-top: 8px; font-size: 0.8em; font-weight: 600;">
+                        <i class="fas fa-trophy"></i> מס' 1 בבריטניה
+                    </div>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description"><strong>אפליקציית לחץ הדם מספר 1 בבריטניה.</strong> עקוב בקלות אחר קריאות סיסטולי, דיאסטולי ודופק. קבל תובנות מבוססות בינה מלאכותית על מה שמשפיע על לחץ הדם שלך. משתלב עם Apple Health ותומך בסריקת מצלמה בינה מלאכותית לקריאת ערכים ישירות ממסך המד שלך.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-camera"></i> סריקת מצלמה בינה מלאכותית ללכידת קריאות ממסכי מד</li>
+
+                    <li><i class="fas fa-chart-line"></i> ניתוח מגמות וזיהוי דפוסים</li>
+
+                    <li><i class="fas fa-file-medical"></i> ייצוא דוחות לשיתוף עם הרופא שלך (PDF עם אפשרות טקסט גדול, Excel)</li>
+
+                    <li><i class="fas fa-heart"></i> שילוב Apple Health למעקב מקיף</li>
+
+                    <li><i class="fas fa-bullseye"></i> ניטור MAP (לחץ עורקי ממוצע)</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="blood-pressure/" class="learn-more-button">למד עוד</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button" aria-label="הורד לחץ דם מה-App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="הורד לחץ דם מה-App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- יומן יומי Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="daily-journal/">
+                    <img src="/images/NT_1024.png" class="app-icon-large" alt="אייקון אפליקציית יומן יומי">
+                </a>
+                <div class="app-card-title">
+                    <h3>יומן יומי Feeltracker</h3>
+                    <p class="app-subtitle">יומן בינה מלאכותית לתמונות, הערות ומחשבות</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">כתוב רפלקציות יומיות, עקוב אחר אירועי חיים וגלה דפוסים במחשבותיך. הבינה המלאכותית מנתחת סנטימנט ועוזרת לך להבין נושאים חוזרים דרך ניתוח תדירות מילים.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-pen"></i> רישום יומן פשוט ונטול הסחות דעת</li>
+
+                    <li><i class="fas fa-brain"></i> ניתוח סנטימנט ותובנות בינה מלאכותית</li>
+
+                    <li><i class="fas fa-chart-bar"></i> תדירות מילים למעקב אחר נושאים</li>
+
+                    <li><i class="fas fa-camera"></i> <strong>חדש:</strong> סריקת פריטים — בינה מלאכותית מתארת אובייקטים ליומן שלך</li>
+
+                    <li><i class="fas fa-file-lines"></i> <strong>חדש:</strong> סריקת טקסט — OCR ללכידת טקסט מכל מקום</li>
+
+                    <li><i class="fas fa-clipboard-list"></i> תבניות הערות לרשומות מהירות</li>
+
+                    <li><i class="fas fa-search"></i> חיפוש טקסט מלא ושילוב Spotlight</li>
+
+                    <li><i class="fas fa-camera"></i> צירוף עד 8 תמונות לכל רשומה</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="daily-journal/" class="learn-more-button">למד עוד</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button" aria-label="הורד יומן יומי מה-App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="הורד יומן יומי מה-App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- בריאות נפשית Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="mental-health/">
+                    <img src="/images/FT_1024.png" class="app-icon-large" alt="אייקון אפליקציית מעקב מצב רוח">
+                </a>
+                <div class="app-card-title">
+                    <h3>בריאות נפשית Feeltracker</h3>
+                    <p class="app-subtitle">יומן בינה מלאכותית לדו-קוטביות, DBT, CBT ו-ADHD</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">עקוב אחר בריאותך הרגשית עם דירוגי מצב רוח יומיים והערות. זהה טריגרים ודפוסים עם ניתוח בינה מלאכותית. תומך בשילוב iOS 18+ Mental Health עם Apple Health.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-smile"></i> סולם מצב רוח פשוט בן 5 נקודות</li>
+
+                    <li><i class="fas fa-brain"></i> סנכרון iOS 18+ Mental Health (State of Mind)</li>
+
+                    <li><i class="fas fa-face-smile"></i> <strong>חדש:</strong> סריקת פנים — ניתוח מצב רוח מסלפי עם בינה מלאכותית</li>
+
+                    <li><i class="fas fa-search"></i> זיהוי טריגרים מבוסס בינה מלאכותית</li>
+
+                    <li><i class="fas fa-chart-line"></i> גרפי מצב רוח חזותיים ומגמות</li>
+
+                    <li><i class="fas fa-comment"></i> הערות פרטיות עם ניתוח סנטימנט</li>
+
+                    <li><i class="fas fa-palette"></i> ממשק יפה ואינטואיטיבי</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="mental-health/" class="learn-more-button">למד עוד</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id687448999" class="cta-button" aria-label="הורד מעקב מצב רוח מה-App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="הורד מעקב מצב רוח מה-App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- משקל Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="weight/">
+                    <img src="/images/WT_1024.png" class="app-icon-large" alt="אייקון אפליקציית מעקב משקל">
+                </a>
+                <div class="app-card-title">
+                    <h3>משקל Feeltracker</h3>
+                    <p class="app-subtitle">יומן בינה מלאכותית לירידה במשקל גוף ושומן</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">עקוב אחר משקל, אחוז שומן גוף ו-BMI לאורך זמן. סרוק קריאות עם סריקת מצלמה בינה מלאכותית, ראה ממוצעים חודשיים, זהה מה עוזר או מעכב את ההתקדמות שלך, וסנכרן עם Apple Health למעקב כושר מקיף.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-camera"></i> סריקת מצלמה בינה מלאכותית ללכידת משקל ממסכי מאזניים</li>
+
+                    <li><i class="fas fa-weight"></i> מעקב משקל, BMI ושומן גוף</li>
+
+                    <li><i class="fas fa-chart-line"></i> ממוצעים חודשיים וניתוח מגמות</li>
+
+                    <li><i class="fas fa-utensils"></i> <strong>חדש:</strong> סריקת מזון — ניתוח תזונתי מיידי עם בינה מלאכותית</li>
+
+                    <li><i class="fas fa-bullseye"></i> הגדרת יעדים ומעקב התקדמות</li>
+
+                    <li><i class="fas fa-dumbbell"></i> שילוב מלא של Apple Health</li>
+
+                    <li><i class="fas fa-apple-alt"></i> גלה מה משפיע על משקלך דרך תובנות בינה מלאכותית</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="weight/" class="learn-more-button">למד עוד</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button" aria-label="הורד מעקב משקל מה-App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="הורד מעקב משקל מה-App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- שינה Feeltracker -->
+        <div class="app-card">
+            <div class="app-card-header">
+                <a href="sleep/">
+                    <img src="/images/ST_1024.png" class="app-icon-large" alt="אייקון אפליקציית מעקב שינה">
+                </a>
+                <div class="app-card-title">
+                    <h3>שינה Feeltracker</h3>
+                    <p class="app-subtitle">יומן ניטור דום נשימה ורישום חלומות</p>
+
+                </div>
+            </div>
+            <div class="app-card-content">
+                <p class="app-description">רשום זמני שינה והתעוררות כדי לנטר את דפוסי השינה והמשכם שלך. משתלב עם נתוני השינה של Apple Health ועוזר לזהות גורמים המשפיעים על איכות השינה שלך דרך ניתוח בינה מלאכותית.</p>
+                <ul class="feature-list">
+
+                    <li><i class="fas fa-bed"></i> רישום פשוט של זמני שינה והתעוררות</li>
+
+                    <li><i class="fas fa-clock"></i> חישוב אוטומטי של משך השינה</li>
+
+                    <li><i class="fas fa-moon"></i> שילוב נתוני שינה של Apple Health</li>
+
+                    <li><i class="fas fa-search"></i> תובנות בינה מלאכותית על דפוסי שינה</li>
+
+                    <li><i class="fas fa-mug-hot"></i> זהה מה משפיע על איכות השינה שלך</li>
+
+                    <li><i class="fas fa-chart-bar"></i> גרפי שינה חזותיים וסטטיסטיקות</li>
+
+                </ul>
+                <div class="app-card-buttons">
+                    <a href="sleep/" class="learn-more-button">למד עוד</a>
+                    <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button" aria-label="הורד מעקב שינה מה-App Store">
+                        <img class="store_button" src="/images/appstore_link.svg" alt="הורד מעקב שינה מה-App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section center-text">
+        <h2>למה לבחור באפליקציות Feeltracker?</h2>
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>תובנות מבוססות בינה מלאכותית</h3>
+                <p>קבל תובנות מותאמות אישית וזיהוי דפוסים המופעלים על ידי בינה מלאכותית מתקדמת. הבן מה משפיע על בריאותך וקבל החלטות מושכלות.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fab fa-apple"></i></div>
+                <h3>שילוב Apple Health</h3>
+                <p>סנכרן בצורה חלקה עם Apple Health למעקב מקיף. קרא וכתוב נתוני בריאות בכל המכשירים שלך באופן אוטומטי.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <h3>סנכרון וגיבוי iCloud</h3>
+                <p>הנתונים שלך מסתנכרנים אוטומטית בין iPhone, iPad ו-Mac דרך iCloud. גיבויי JSON שבועיים אוטומטיים אופציונליים מבטיחים שהנתונים שלך תמיד בטוחים וניתנים לייצוא.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                <h3>פרטיות קודמת</h3>
+                <p><strong>ללא פרסומות. ללא מעקב.</strong> נתוני הבריאות שלך מוצפנים ומאוחסנים רק במכשירים שלך וב-iCloud. איננו עוקבים אחריך בין אפליקציות ואתרים (ללא IDFA או טכנולוגיות מעקב דומות), ולעולם לא מוכרים את נתוניך למפרסמים.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-file-export"></i></div>
+                <h3>ייצוא ושיתוף</h3>
+                <p>ייצא את הנתונים שלך כ-PDF (עם אפשרות טקסט גדול), Excel או JSON. שתף דוחות מקיפים עם הרופא או ספק שירותי הבריאות שלך בקלות.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                <h3>32 שפות</h3>
+                <p>מלא לוקליזציה ב-32 שפות: אנגלית, ספרדית (Español), צרפתית (Français), צרפתית קנדית, גרמנית (Deutsch), איטלקית (Italiano), הולנדית (Nederlands), פורטוגזית ברזילאית (Português), פורטוגזית מפורטוגל, שוודית (Svenska), נורווגית (Norsk), דנית (Dansk), פינית (Suomi), פולנית (Polski), רוסית (Русский), אוקראינית (Українська), צ'כית (Čeština), סלובקית (Slovenčina), רומנית (Română), קרואטית (Hrvatski), הונגרית (Magyar), ערבית (العربية), עברית (עברית), סינית פשוטה (简体中文), סינית מסורתית (繁體中文), יפנית (日本語), קוראנית (한국어), תאילנדית (ไทย), וייטנאמית (Tiếng Việt), יוונית (Ελληνικά), טורקית (Türkçe) וקטלנית (Català).</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud-sun"></i></div>
+                <h3>שילוב מזג אוויר</h3>
+                <p>כלול אוטומטית נתוני מזג אוויר משירות מזג האוויר של Apple עם הרשומות שלך. עקוב כיצד דפוסי מזג האוויר משפיעים על לחץ הדם, מצב הרוח, השינה או המשקל שלך לאורך זמן.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
+                <h3>מערכות לוח שנה מרובות</h3>
+                <p>תמיכה בלוחות שנה גרגוריאני, אסלאמי (הג'רי), עברי, סיני ויפני. צפה בנתוני הבריאות שלך במערכת לוח השנה המשמעותית ביותר עבורך.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-tablet-alt"></i></div>
+                <h3>iPad Split View</h3>
+                <p>פריסה רב-עמודות מותאמת ל-iPad עם תמיכה מלאה ב-split-screen multitasking. עבוד עם נתוני הבריאות שלך לצד אפליקציות אחרות לפרודוקטיביות מרבית.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                <h3>מצבי כהה מרובים</h3>
+                <p>בחר מתוך מספר גרסאות מצב כהה כולל שחור אמיתי (מושלם למסכי OLED) וערכות נושא אפור כהה. התאם אישית את חוויית הצפייה שלך להפחתת עייפות עיניים.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>תמיכה באזורי זמן</h3>
+                <p>עקוב אחר רשומות עם הגדרות אזור זמן מותאמות אישית. מושלם לנוסעים או עובדי משמרות הזקוקים למעקב זמן מדויק בין אזורי זמן שונים.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                <h3>מעקב אבני דרך</h3>
+                <p>חגוג את ההתקדמות שלך עם אבני דרך הישגים. קבל הכרה על מעקב עקבי, השגת יעדי בריאות ושמירה על הרגלים בריאים.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AI Features Highlight -->
+    <section class="ai-section center-text">
+        <h2>מופעל על ידי בינה מלאכותית</h2>
+        <p class="section-subtitle">תכונות הבינה המלאכותית שלנו עוזרות לך להבין את נתוני הבריאות שלך כמו מעולם</p>
+
+        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">תכונות בינה מלאכותית חינמיות</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-question-circle"></i> שאל שאלה</h3>
+                <p>שאלות ותשובות מהירות על הנתונים שלך — קבל תשובות מיידיות לשאלות הבריאות שלך</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-comments"></i> צ'אט</h3>
+                <p>קיים שיחות אינטראקטיביות על מסע הבריאות שלך וקבל הדרכה מותאמת אישית</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-volume-up"></i> סיכום קולי</h3>
+                <p>האזן לסיכומי שמע של מגמות הבריאות שלך — מושלם לתובנות בתנועה</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-laugh"></i> גרום לי לצחוק</h3>
+                <p>קבל הומור מותאם אישית מנתוני המעקב שלך כדי להאיר את יומך</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-moon"></i> הרגע אותי</h3>
+                <p>תרגילי נשימה והרפיה מודרכים בינה מלאכותית לסיוע בהפחתת מתח</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-camera"></i> סריקת מצלמה בינה מלאכותית</h3>
+                <p>סרוק קריאות ממסכי מכשירים, נתח פנים למצב רוח, זהה אובייקטים, לכוד טקסט — ראיית בינה מלאכותית בכל האפליקציות</p>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">תכונות בינה מלאכותית פרמיום</h3>
+        <div class="ai-features-grid">
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-lightbulb"></i> באנר תובנות יומיות</h3>
+                <p>התעורר לטיפים יומיים מותאמים אישית שנוצרו על ידי בינה מלאכותית בהתבסס על 30 הרשומות האחרונות שלך — תובנות חכמות של 10-15 מילים שעוזרות לך להבין את דפוסי הבריאות שלך</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-medical-alt"></i> דוחות מחקר מעמיקים</h3>
+                <p>ניתוח בינה מלאכותית מקיף של נתוני הבריאות שלך עם תובנות מפורטות וסיכומים ברמה מקצועית</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-search"></i> בלש דפוסים</h3>
+                <p>בינה מלאכותית מתקדמת מוצאת קורלציות נסתרות בין גורמי אורח חיים, שעה ביום ומדדי הבריאות שלך</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-bullseye"></i> עוזר יעדים</h3>
+                <p>קבל יעדי בריאות מותאמים אישית ומבוססי נתונים בהתבסס על הדפוסים וההתקדמות הייחודיים שלך</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-user-md"></i> סיכום לרופא</h3>
+                <p>צור סיכומים רפואיים מקצועיים לביקורי בריאות עם סטטיסטיקות וניתוח מגמות</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-medical"></i> מחולל אישור מחלה</h3>
+                <p>אישורי מחלה שנוצרו על ידי בינה מלאכותית לעבודה או לבית הספר בהתבסס על נתוני מעקב הבריאות שלך</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-book"></i> מחולל סיפורים</h3>
+                <p>הפוך את נתוני הבריאות שלך לנרטיבים יצירתיים ומרתקים וסיפורים מותאמים אישית</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-comment-alt"></i> סיכום טקסט</h3>
+                <p>צור סיכומי הודעות טקסט הניתנים לשיתוף של מגמות הבריאות שלך לחברים ולמשפחה</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-graduation-cap"></i> חידון מותאם אישית</h3>
+                <p>בחן את הידע שלך עם חידון מהנה שנוצר על ידי בינה מלאכותית עם 10 שאלות על הנתונים שלך</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-microphone"></i> טקסט לדיבור</h3>
+                <p>האזן לתובנות הבינה המלאכותית והסיכומים שלך עם השמעה קולית טבעית — מושלם לנגישות</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-file-invoice"></i> דוח בריאות מותאם אישית</h3>
+                <p>צור מסמכי בריאות מקיפים ומותאמים אישית עם תובנות שנוצרו על ידי בינה מלאכותית על ההתקדמות שלך</p>
+            </div>
+
+        </div>
+
+        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
+            
+            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
+                
+            </p>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof center-text">
+        <h2>מהימן על ידי אלפי משתמשים ברחבי העולם</h2>
+        <p class="section-subtitle">הצטרף למשתמשים שלוקחים שליטה על בריאותם</p>
+        <div class="stats-grid">
+
+            <div class="stat-box">
+                <div class="stat-number">4.8★</div>
+                <div class="stat-label">דירוג ממוצע</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">21K+</div>
+                <div class="stat-label">דירוגים</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">96%</div>
+                <div class="stat-label">שיעור שביעות רצון</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">1M+</div>
+                <div class="stat-label">הורדות</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">55K+</div>
+                <div class="stat-label">משתמשים חודשיים</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">5M+</div>
+                <div class="stat-label">רשומות שנשמרו מדי שנה</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">&lt;24שע</div>
+                <div class="stat-label">תגובת תמיכה</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">32</div>
+                <div class="stat-label">שפות</div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- Doctor Endorsement - COMMENTED OUT PENDING PERMISSION
+ <section class="endorsement-section center-text">
+ <h2>Recommended by Healthcare Professionals</h2>
+ <p class="section-subtitle">Trusted by doctors who prioritize patient wellness</p>
+
+ <div class="endorsement-card">
+ <div class="endorsement-photo">
+ <img src="images/dr-alpa-kumar.jpg" alt="Dr. Alpa Kumar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+ <div class="endorsement-photo-fallback"><i class="fas fa-user-md"></i></div>
+ </div>
+ <div class="endorsement-content">
+ <blockquote class="endorsement-quote">
+ "As a GP and Functional Medicine practitioner, I recommend Feeltracker apps to my patients for monitoring their health metrics. The ability to track blood pressure, weight, and lifestyle factors in one place - and share comprehensive reports - makes our consultations more productive and helps patients take ownership of their health journey."
+ </blockquote>
+ <div class="endorsement-author">
+ <div class="endorsement-name">Dr. Alpa Kumar</div>
+ <div class="endorsement-credentials">NHS GP | Certified Functional Medicine Practitioner (IFMCP)</div>
+ <div class="endorsement-credentials">15+ years experience in London | Lifestyle Medicine Specialist</div>
+ <a href="https://www.instagram.com/360wellnessdoctor/" target="_blank" class="endorsement-social">
+ <i class="fab fa-instagram"></i> @360wellnessdoctor
+ </a>
+ </div>
+ </div>
+ </div>
+ </section>
+ -->
+
+    <!-- User Reviews -->
+    <section class="support-section">
+        <h2 class="center-text">מה המשתמשים שלנו אומרים</h2>
+        <p class="center-text section-subtitle" style="margin-bottom: 32px;">ביקורות אמיתיות מה-App Store</p>
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">חוויית אפליקציית לחץ הדם הטובה ביותר</div>
+                </div>
+                <p class="review-content">"מצאתי את אפליקציית לחץ הדם הטובה ביותר שניסיתי אי פעם. היא לא רק מאפשרת לי לשלוח תוצאות לרופא שלי, אלא נראה שאנשים עובדים ללא לאות כדי לשמור על האפליקציה פועלת בצורה חלקה. הם מעדכנים ומשפרים אותה כל הזמן, מה שנהדר. בכנות, זה המנוי הטוב ביותר שיש לי בטלפון שלי כרגע."</p>
+                <p class="review-author">- MelGreer, Blood Pressure</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">גם המטפל שלי אוהב את האפליקציה הזו</div>
+                </div>
+                <p class="review-content">"קיבלתי לפני כחודש אבחנה של ADHD. והייתי צריך לחכות 3 שבועות כדי לקבל תרופות לכך. במהלך הזמן הזה מצאתי את האפליקציה הזו, והיה מדהים לראות את האקראיות של המוח שלי ללא תרופות בהשוואה למוח שלי עם תרופות. המוח שלי עם תרופות הרבה יותר יציב בגרף. בנוסף, אני אוהב שאני יכול לרשום מה עולה בראשי ממש מהר."</p>
+                <p class="review-author">- CynnCatt, Mood Diary</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">עד כה טוב</div>
+                </div>
+                <p class="review-content">"זוהי אפליקציה פשוטה ונחמדה שאינה חורגת לתחומים מיותרים. הפשטות שלה, כולל פשטות הממשק, היא מה שאני מעריך יותר מכל. אני לא צריך פרחים ועצבות ומשחקים ויוניקורנים צבעוניים. אני רק צריך אפליקציית פתקים פשוטה דמויית יומן. עד כה האפליקציה הזו עמדה בדרישות אלו. זה מרענן. אני גם מעריך שאפשר לייצא אותה בפורמט PDF כשצריך. תודה שמשאירים אותה פשוטה."</p>
+                <p class="review-author">- PRE', Daily Journaling</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">קריאה לכל רופאי השינה!</div>
+                </div>
+                <p class="review-content">"הייתי כל כך מופתע שרופא השינה שלי ניסה לתת לי דפי נייר לרישום שעות השינה שלי ללא אפשרות לאסוף אותם!? כשביקשתי אפליקציה, הם הציעו יומן שינה consensus, שהוא חסר תועלת. למרבה המזל מצאתי את האפליקציה הזו ומיד ביקשתי מרופא השינה שלי להתחיל להמליץ עליה. אני גם מעריך כמה המפתח מגיב. ברור שאדם זה רוצה לשפר חיים. תודה!!"</p>
+                <p class="review-author">- Jbobthebuilder, Sleep Diary</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">אפליקציה טובה מאוד</div>
+                </div>
+                <p class="review-content">"הרופא שלי רוצה שאתעד את לחץ הדם שלי מדי יום. האפליקציה הזו מאפשרת לי לתעד את המידע שלי ומאחסנת אותו בפורמט מעוצב יפה מאוד. אפליקציה נהדרת."</p>
+                <p class="review-author">- Wiesiu33, Blood Pressure</p>
+            </div>
+
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-title">אפליקציה נהדרת</div>
+                </div>
+                <p class="review-content">"כמישהו עם הפרעה דו-קוטבית הייתי צריך לתעד את מצבי הרוח והרגשות שלי אבל לא יכולתי למצוא אפליקציה שלא רצתה מנוי יקר. אני מאוד אסיר תודה על האפליקציה הזו, פונקציונליות מלאה ללא מנוי ואפשרות מנוי אם רוצים."</p>
+                <p class="review-author">- Aprthax, Mood Diary</p>
+            </div>
+
+
+        </div>
+
+        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">הביקורות תורגמו מאנגלית. פורסמו במקור ב-App Store.</p>
+
+    </section>
+
+    <!-- Platforms -->
+    <section class="platforms-section center-text">
+        <h2>זמין בכל מכשירי Apple שלך</h2>
+        <p class="section-subtitle">iPhone · iPad · Mac (Apple Silicon M1+)</p>
+        <p>רכישה אחת, כל הפלטפורמות. נתונים מסתנכרנים אוטומטית דרך iCloud.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="support-section">
+        <h2 class="center-text">שאלות נפוצות</h2>
+
+
+        <h3>האם אתם מציגים פרסומות או עוקבים אחרי?</h3>
+        <p><strong>לא.</strong> הסרנו לחלוטין את כל הפרסומות מכל אפליקציות Feeltracker. איננו עוקבים אחריך בין אפליקציות ואתרים אחרים, ולעולם לא מוכרים את נתוניך למפרסמים.</p>
+<p>הנתונים שלך מסתנכרנים דרך iCloud — בדיוק כמו Apple Notes ותמונות. המשמעות היא שאיננו צריכים לדעת את כתובת האימייל, השם או כל מידע אישי שלך. נתוני הבריאות שלך מאוחסנים במכשירים שלך ובחשבון iCloud שלך, והם לחלוטין פרטיים בין אם אתה משתמש בגרסה החינמית ובין אם בפרמיום.</p>
+
+
+        <h3>האם אני צריך מנוי?</h3>
+        <p>כל האפליקציות חינמיות לחלוטין להורדה ולשימוש. תכונות המעקב הבסיסיות פועלות ללא מנוי. מנוי פרמיום פותח תכונות בינה מלאכותית מתקדמות, ייצואים בלתי מוגבלים והתאמה אישית משופרת. אתה יכול לנסות את כל תכונות הפרמיום בתקופת הניסיון החינמית.</p>
+
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>התחל לעקוב אחר בריאותך היום</h2>
+        <p>בחר את האפליקציה המתאימה לצרכיך. חינמית להורדה עם תכונות פרמיום אופציונליות.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 40px;">
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">לחץ דם Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id794542324" aria-label="הורד לחץ דם Feeltracker מה-App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="הורד לחץ דם Feeltracker מה-App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">יומן יומי Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id1557699226" aria-label="הורד יומן יומי Feeltracker מה-App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="הורד יומן יומי Feeltracker מה-App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">בריאות נפשית Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id687448999" aria-label="הורד בריאות נפשית Feeltracker מה-App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="הורד בריאות נפשית Feeltracker מה-App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">משקל Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id799503787" aria-label="הורד משקל Feeltracker מה-App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="הורד משקל Feeltracker מה-App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">שינה Feeltracker</p>
+                <a target="_blank" href="https://apps.apple.com/app/id1065268459" aria-label="הורד שינה Feeltracker מה-App Store">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="הורד שינה Feeltracker מה-App Store" style="width: 180px; height: 53px;">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+
+            <a href="/he/about/">אודות</a>
+
+            <a href="mailto:support@feeltracker.com">אימייל</a>
+
+            <a href="/he/support/">תמיכה</a>
+
+            <a href="/he/faq/">שאלות נפוצות</a>
+
+            <a href="https://x.com/feeltracker">עקוב אחרינו ב-X</a>
+
+            <a href="/he/privacy/">מדיניות פרטיות</a>
+
+            <a href="/he/terms/">תנאים והגבלות</a>
+
+        </div>
+        <p class="footer-copyright">© 2026 <a href="https://www.customarts.com" target="_blank" rel="noopener">Custom Arts</a>. כל הזכויות שמורות.</p>
+        <p class="footer-tagline">מסמיכים אותך להבין ולשפר את בריאותך דרך מעקב חכם.</p>
+        <p class="footer-disclaimer">נתוני הבריאות שלך מאוחסנים במכשיר שלך וב-iCloud — אנו לעולם לא ניגשים אליהם ולא מוכרים אותם. אפליקציות Feeltracker אינן מכשירים רפואיים. למטרות מידע בלבד, לא תחליף לייעוץ רפואי מקצועי, אבחנה או טיפול.</p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>אנו מעריכים את פרטיותך</strong></p>
+                <p>אנו משתמשים בעוגיות אנליטיקה לשיפור האתר והאפליקציה שלנו. לא נעשה שימוש בעוגיות פרסום. ראו את <a href="/he/privacy/">מדיניות הפרטיות</a> לפרטים.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">דחייה</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">אישור</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+
+<script>
+// Santa Party Mode with Techno Jingle Bells
+let santaAudioContext = null;
+let santaIsPlaying = false;
+let santaOscillators = [];
+
+// Clean up audio when page is shown from back-forward cache
+window.addEventListener('pageshow', function(event) {
+ if (event.persisted) {
+ // Page was restored from bfcache - stop any playing audio and reset state
+ stopJingleBells();
+ const santa = document.querySelector('.dancing-santa');
+ if (santa) santa.classList.remove('party-mode');
+ }
+});
+
+// Also stop when leaving the page
+window.addEventListener('pagehide', function() {
+ stopJingleBells();
+});
+
+function toggleSantaParty(element) {
+ // Always stop existing audio first to prevent overlapping
+ stopJingleBells();
+
+ element.classList.toggle('party-mode');
+
+ if (element.classList.contains('party-mode')) {
+ playJingleBells();
+ }
+}
+
+function playJingleBells() {
+ if (santaIsPlaying) return;
+ santaIsPlaying = true;
+
+ try {
+ santaAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+ // Jingle Bells melody - classic style
+ const melody = [
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.5 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.5 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'G5', duration: 0.25 },
+ { note: 'C5', duration: 0.35 },
+ { note: 'D5', duration: 0.15 },
+ { note: 'E5', duration: 0.8 },
+ { note: 'F5', duration: 0.25 },
+ { note: 'F5', duration: 0.25 },
+ { note: 'F5', duration: 0.35 },
+ { note: 'F5', duration: 0.15 },
+ { note: 'F5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'D5', duration: 0.25 },
+ { note: 'D5', duration: 0.25 },
+ { note: 'E5', duration: 0.25 },
+ { note: 'D5', duration: 0.5 },
+ { note: 'G5', duration: 0.5 },
+ ];
+
+ const noteFreq = {
+ 'C5': 523.25, 'D5': 587.33, 'E5': 659.25, 'F5': 698.46, 'G5': 783.99, 'A5': 880.00
+ };
+
+ let startTime = santaAudioContext.currentTime;
+
+ function playMelodyLoop() {
+ if (!santaIsPlaying) return;
+
+ melody.forEach((item) => {
+ // Main melody - soft triangle wave
+ const osc = santaAudioContext.createOscillator();
+ const gain = santaAudioContext.createGain();
+ osc.type = 'triangle';
+ osc.frequency.value = noteFreq[item.note];
+ gain.gain.setValueAtTime(0.12, startTime);
+ gain.gain.exponentialRampToValueAtTime(0.02, startTime + item.duration * 0.9);
+ osc.connect(gain);
+ gain.connect(santaAudioContext.destination);
+ osc.start(startTime);
+ osc.stop(startTime + item.duration);
+ santaOscillators.push(osc);
+
+ // Add soft bell harmonics
+ const bell = santaAudioContext.createOscillator();
+ const bellGain = santaAudioContext.createGain();
+ bell.type = 'sine';
+ bell.frequency.value = noteFreq[item.note] * 2;
+ bellGain.gain.setValueAtTime(0.03, startTime);
+ bellGain.gain.exponentialRampToValueAtTime(0.001, startTime + item.duration * 0.5);
+ bell.connect(bellGain);
+ bellGain.connect(santaAudioContext.destination);
+ bell.start(startTime);
+ bell.stop(startTime + item.duration);
+ santaOscillators.push(bell);
+
+ startTime += item.duration;
+ });
+
+ // Gentle sleigh bells
+ const loopStart = santaAudioContext.currentTime;
+ for (let i = 0; i < 25; i++) {
+ const bellTime = loopStart + (i * 0.3);
+ if (bellTime < startTime) {
+ const sleigh = santaAudioContext.createOscillator();
+ const sGain = santaAudioContext.createGain();
+ sleigh.type = 'sine';
+ sleigh.frequency.value = 2500 + Math.random() * 500;
+ sGain.gain.setValueAtTime(0.02, bellTime);
+ sGain.gain.exponentialRampToValueAtTime(0.001, bellTime + 0.08);
+ sleigh.connect(sGain);
+ sGain.connect(santaAudioContext.destination);
+ sleigh.start(bellTime);
+ sleigh.stop(bellTime + 0.08);
+ santaOscillators.push(sleigh);
+ }
+ }
+
+ const loopDuration = startTime - santaAudioContext.currentTime;
+ if (santaIsPlaying) {
+ setTimeout(() => {
+ startTime = santaAudioContext.currentTime;
+ playMelodyLoop();
+ }, loopDuration * 1000);
+ }
+ }
+
+ playMelodyLoop();
+ } catch (e) {
+ console.log('Audio not supported');
+ }
+}
+
+function stopJingleBells() {
+ santaIsPlaying = false;
+ santaOscillators.forEach(osc => {
+ try { osc.stop(); } catch(e) {}
+ });
+ santaOscillators = [];
+ if (santaAudioContext) {
+ santaAudioContext.close();
+ santaAudioContext = null;
+ }
+}
+</script>
+
+</body>
+</html>
