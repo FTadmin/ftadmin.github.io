@@ -460,7 +460,7 @@ Rules:
 
 ### Agent model selection
 
-**Use the `sonnet` model for translation agents.** Translation work is high-volume but low-reasoning — sonnet is faster and cheaper. Set `model: "sonnet"` when launching translation agents. Reserve opus for structural changes, build system work, and complex debugging.
+**Use the `opus` model for translation agents.** Although translation is low-reasoning, overlay files are 4,000-10,000+ tokens — exceeding sonnet's ~8K output limit per response. Sonnet agents get stuck in Write-fail retry loops. Opus has a higher output limit and can write complete overlay files in a single call.
 
 ### Parallelization strategy
 
@@ -498,7 +498,9 @@ Agent 7: index.json → ar, ca, el, he, nl, ro, sk, th, tr (large file)
 Agent 8: faq.utility.json → ar, ca, el, he, nl, ro, sk, th, tr (large file)
 ```
 
-**WARNING:** Never assign one agent to create all 8+ overlay files for a single language. Each app page overlay is 300-400 lines, index is 600+ lines, FAQ is 340+ lines. An agent writing all of these will timeout (~27 min limit). Splitting by file type means each agent writes the same structure repeatedly (just different text), which is faster and more reliable.
+**WARNING — agent timeout:** Never assign one agent to create all 8+ overlay files for a single language. Each app page overlay is 300-400 lines, index is 600+ lines, FAQ is 340+ lines. An agent writing all of these will timeout (~27 min limit). Splitting by file type means each agent writes the same structure repeatedly (just different text), which is faster and more reliable.
+
+**WARNING — sonnet output limit:** Sonnet has an ~8K output token limit per response. Overlay files for app pages are 4,000-6,000+ tokens; about/FAQ pages are 10,000+ tokens. Sonnet physically cannot write these files in a single Write call — the content parameter gets truncated, causing `stop_reason: "max_tokens"` errors in a retry loop. **Use opus model for translation agents**, not sonnet, despite translation being "low-reasoning" work. The bottleneck is output size, not reasoning complexity.
 
 **New language addition:**
 1. Phase 1 (single agent): `languages.json` config entry
