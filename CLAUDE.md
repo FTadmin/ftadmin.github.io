@@ -484,21 +484,16 @@ Agent 6: Translate 2 strings into sk, th, tr, uk, vi, zh-Hant (6 Edit calls)
 
 **Large changes (new page or new language):** One agent per page file (up to 16 agents for a new language).
 
-**Bulk translation (same file across many languages):** When multiple languages need the same file translated (e.g., 9 languages all missing `blood-pressure.app.json`), organize agents **by file type, not by language**. One agent reads the EN source + DE reference once, then writes overlay files for all target languages. This is far more efficient than one-agent-per-language, which times out because app/index/FAQ overlay files are 300-600+ lines each and an agent creating 8+ such files will exceed the timeout.
+**Bulk translation (many languages, many files):** Process **one language at a time**, with one agent per file running in parallel. Once all files for a language complete, validate JSON, commit, and push. Then move to the next language. This ensures each commit contains a complete language — if quota or time runs out, all committed languages are fully usable.
 
-Example: 9 languages each missing 8 files → 8 agents (one per file type), each writing 9 overlays:
+Example: 9 languages each missing 8 files → process one language at a time:
 ```
-Agent 1: about.utility.json → ar, ca, el, he, nl, ro, sk, th, tr (small file, fast)
-Agent 2: weight.app.json → ar, ca, el, he, nl, ro, sk, th, tr
-Agent 3: sleep.app.json → ar, ca, el, he, nl, ro, sk, th, tr
-Agent 4: mental-health.app.json → ar, ca, el, he, nl, ro, sk, th, tr
-Agent 5: blood-pressure.app.json → ar, ca, el, he, nl, ro, sk, th, tr
-Agent 6: daily-journal.app.json → ar, ca, el, he, nl, ro, sk, th, tr
-Agent 7: index.json → ar, ca, el, he, nl, ro, sk, th, tr (large file)
-Agent 8: faq.utility.json → ar, ca, el, he, nl, ro, sk, th, tr (large file)
+Language 1 (nl): Launch 8 agents in parallel (one per file) → validate → commit → push
+Language 2 (ca): Launch 8 agents in parallel (one per file) → validate → commit → push
+...repeat for each language...
 ```
 
-**WARNING — agent timeout:** Never assign one agent to create all 8+ overlay files for a single language. Each app page overlay is 300-400 lines, index is 600+ lines, FAQ is 340+ lines. An agent writing all of these will timeout (~27 min limit). Splitting by file type means each agent writes the same structure repeatedly (just different text), which is faster and more reliable.
+**WARNING — agent timeout:** Never assign one agent to create all 8+ overlay files for a single language. Each app page overlay is 300-400 lines, index is 600+ lines, FAQ is 340+ lines. An agent writing all of these will timeout (~27 min limit). One agent per file keeps each task small and reliable.
 
 **WARNING — sonnet output limit:** Sonnet has an ~8K output token limit per response. Overlay files for app pages are 4,000-6,000+ tokens; about/FAQ pages are 10,000+ tokens. Sonnet physically cannot write these files in a single Write call — the content parameter gets truncated, causing `stop_reason: "max_tokens"` errors in a retry loop. **Use opus model for translation agents**, not sonnet, despite translation being "low-reasoning" work. The bottleneck is output size, not reasoning complexity.
 
