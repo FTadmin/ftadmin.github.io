@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Feeltracker</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            padding: 16px 24px;
+            border-bottom: 1px solid #e5e7eb;
+            background: #fff;
+        }
+        .brand-logo {
+            color: #2B7BD3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .brand-logo:hover { color: #1a5ca8; }
+        .error-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            text-align: center;
+        }
+        .error-code {
+            font-size: 6em;
+            font-weight: 800;
+            color: #e5e7eb;
+            line-height: 1;
+            font-family: 'Inter', sans-serif;
+        }
+        .error-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin: 16px 0 8px;
+            color: #111827;
+        }
+        .error-message {
+            font-size: 1.05em;
+            color: #6b7280;
+            margin-bottom: 32px;
+            max-width: 420px;
+        }
+        .home-link {
+            display: inline-block;
+            padding: 12px 32px;
+            background: #2B7BD3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+        .home-link:hover { background: #1a5ca8; }
+        footer {
+            padding: 24px;
+            text-align: center;
+            font-size: 0.85em;
+            color: #9ca3af;
+            border-top: 1px solid #e5e7eb;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #030712; color: #e5e7eb; }
+            .navbar { background: #030712; border-color: #1f2937; }
+            .brand-logo { color: #60a5fa; }
+            .brand-logo:hover { color: #93bbfd; }
+            .error-code { color: #1f2937; }
+            .error-title { color: #e5e7eb; }
+            .error-message { color: #9ca3af; }
+            .home-link { background: #2563eb; }
+            .home-link:hover { background: #3b82f6; }
+            footer { border-color: #1f2937; color: #6b7280; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a id="brand" href="/" class="brand-logo">feeltracker</a>
+    </nav>
+
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title" id="title">Page not found</h1>
+        <p class="error-message" id="message">The page you're looking for doesn't exist or has been moved.</p>
+        <a id="homeLink" href="/" class="home-link">Go to Homepage</a>
+    </div>
+
+    <footer id="footer">
+        &copy; 2026 Feeltracker
+    </footer>
+
+    <script>
+    (function() {
+        var i18n = {
+            de: { title: "Seite nicht gefunden", message: "Die gesuchte Seite existiert nicht oder wurde verschoben.", button: "Zur Startseite" },
+            es: { title: "P\u00e1gina no encontrada", message: "La p\u00e1gina que buscas no existe o ha sido movida.", button: "Ir al inicio" },
+            fr: { title: "Page introuvable", message: "La page que vous recherchez n\u2019existe pas ou a \u00e9t\u00e9 d\u00e9plac\u00e9e.", button: "Aller \u00e0 l\u2019accueil" },
+            it: { title: "Pagina non trovata", message: "La pagina che stai cercando non esiste o \u00e8 stata spostata.", button: "Vai alla home" },
+            ru: { title: "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u0430", message: "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430, \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u0432\u044b \u0438\u0449\u0435\u0442\u0435, \u043d\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u0438\u043b\u0438 \u0431\u044b\u043b\u0430 \u043f\u0435\u0440\u0435\u043c\u0435\u0449\u0435\u043d\u0430.", button: "\u041d\u0430 \u0433\u043b\u0430\u0432\u043d\u0443\u044e" },
+            ja: { title: "\u30da\u30fc\u30b8\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093", message: "\u304a\u63a2\u3057\u306e\u30da\u30fc\u30b8\u306f\u5b58\u5728\u3057\u306a\u3044\u304b\u3001\u79fb\u52d5\u3055\u308c\u305f\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059\u3002", button: "\u30db\u30fc\u30e0\u3078" },
+            ko: { title: "\ud398\uc774\uc9c0\ub97c \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4", message: "\ucc3e\uc73c\uc2dc\ub294 \ud398\uc774\uc9c0\uac00 \uc874\uc7ac\ud558\uc9c0 \uc54a\uac70\ub098 \uc774\ub3d9\ub418\uc5c8\uc2b5\ub2c8\ub2e4.", button: "\ud648\uc73c\ub85c" },
+            "pt-br": { title: "P\u00e1gina n\u00e3o encontrada", message: "A p\u00e1gina que voc\u00ea procura n\u00e3o existe ou foi movida.", button: "Ir para o in\u00edcio" },
+            "zh-Hans": { title: "\u9875\u9762\u672a\u627e\u5230", message: "\u60a8\u67e5\u627e\u7684\u9875\u9762\u4e0d\u5b58\u5728\u6216\u5df2\u88ab\u79fb\u52a8\u3002", button: "\u8fd4\u56de\u9996\u9875" },
+            "zh-Hant": { title: "\u9801\u9762\u672a\u627e\u5230", message: "\u60a8\u67e5\u627e\u7684\u9801\u9762\u4e0d\u5b58\u5728\u6216\u5df2\u88ab\u79fb\u52d5\u3002", button: "\u8fd4\u56de\u9996\u9801" },
+            sv: { title: "Sidan hittades inte", message: "Sidan du letar efter finns inte eller har flyttats.", button: "G\u00e5 till startsidan" },
+            nb: { title: "Siden ble ikke funnet", message: "Siden du leter etter finnes ikke eller har blitt flyttet.", button: "G\u00e5 til forsiden" },
+            da: { title: "Siden blev ikke fundet", message: "Siden du leder efter findes ikke eller er blevet flyttet.", button: "G\u00e5 til forsiden" },
+            fi: { title: "Sivua ei l\u00f6ytynyt", message: "Etsim\u00e4\u00e4si sivua ei ole olemassa tai se on siirretty.", button: "Etusivulle" },
+            ar: { title: "\u0627\u0644\u0635\u0641\u062d\u0629 \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f\u0629", message: "\u0627\u0644\u0635\u0641\u062d\u0629 \u0627\u0644\u062a\u064a \u062a\u0628\u062d\u062b \u0639\u0646\u0647\u0627 \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f\u0629 \u0623\u0648 \u062a\u0645 \u0646\u0642\u0644\u0647\u0627.", button: "\u0627\u0644\u0639\u0648\u062f\u0629 \u0644\u0644\u0631\u0626\u064a\u0633\u064a\u0629" },
+            ca: { title: "P\u00e0gina no trobada", message: "La p\u00e0gina que busqueu no existeix o s\u2019ha mogut.", button: "Anar a l\u2019inici" },
+            cs: { title: "Str\u00e1nka nenalezena", message: "Str\u00e1nka, kterou hled\u00e1te, neexistuje nebo byla p\u0159esunuta.", button: "Na \u00favod" },
+            el: { title: "\u0397 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1 \u03b4\u03b5\u03bd \u03b2\u03c1\u03ad\u03b8\u03b7\u03ba\u03b5", message: "\u0397 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1 \u03c0\u03bf\u03c5 \u03b1\u03bd\u03b1\u03b6\u03b7\u03c4\u03b5\u03af\u03c4\u03b5 \u03b4\u03b5\u03bd \u03c5\u03c0\u03ac\u03c1\u03c7\u03b5\u03b9 \u03ae \u03ad\u03c7\u03b5\u03b9 \u03bc\u03b5\u03c4\u03b1\u03ba\u03b9\u03bd\u03b7\u03b8\u03b5\u03af.", button: "\u0391\u03c1\u03c7\u03b9\u03ba\u03ae \u03c3\u03b5\u03bb\u03af\u03b4\u03b1" },
+            "fr-ca": { title: "Page introuvable", message: "La page que vous recherchez n\u2019existe pas ou a \u00e9t\u00e9 d\u00e9plac\u00e9e.", button: "Aller \u00e0 l\u2019accueil" },
+            he: { title: "\u05d4\u05d3\u05e3 \u05dc\u05d0 \u05e0\u05de\u05e6\u05d0", message: "\u05d4\u05d3\u05e3 \u05e9\u05d0\u05ea\u05d4 \u05de\u05d7\u05e4\u05e9 \u05dc\u05d0 \u05e7\u05d9\u05d9\u05dd \u05d0\u05d5 \u05d4\u05d5\u05e2\u05d1\u05e8.", button: "\u05dc\u05d3\u05e3 \u05d4\u05d1\u05d9\u05ea" },
+            hr: { title: "Stranica nije prona\u0111ena", message: "Stranica koju tra\u017eite ne postoji ili je premje\u0161tena.", button: "Na po\u010detnu" },
+            hu: { title: "Az oldal nem tal\u00e1lhat\u00f3", message: "A keresett oldal nem l\u00e9tezik vagy \u00e1t lett helyezve.", button: "F\u0151oldalra" },
+            nl: { title: "Pagina niet gevonden", message: "De pagina die u zoekt bestaat niet of is verplaatst.", button: "Naar startpagina" },
+            pl: { title: "Strona nie znaleziona", message: "Strona, kt\u00f3rej szukasz, nie istnieje lub zosta\u0142a przeniesiona.", button: "Strona g\u0142\u00f3wna" },
+            pt: { title: "P\u00e1gina n\u00e3o encontrada", message: "A p\u00e1gina que procura n\u00e3o existe ou foi movida.", button: "Ir para o in\u00edcio" },
+            ro: { title: "Pagina nu a fost g\u0103sit\u0103", message: "Pagina pe care o c\u0103uta\u021bi nu exist\u0103 sau a fost mutat\u0103.", button: "Acas\u0103" },
+            sk: { title: "Str\u00e1nka nen\u00e1jden\u00e1", message: "Str\u00e1nka, ktor\u00fa h\u013ead\u00e1te, neexistuje alebo bola presunut\u00e1.", button: "Na \u00favod" },
+            th: { title: "\u0e44\u0e21\u0e48\u0e1e\u0e1a\u0e2b\u0e19\u0e49\u0e32\u0e19\u0e35\u0e49", message: "\u0e2b\u0e19\u0e49\u0e32\u0e17\u0e35\u0e48\u0e04\u0e38\u0e13\u0e01\u0e33\u0e25\u0e31\u0e07\u0e21\u0e2d\u0e07\u0e2b\u0e32\u0e44\u0e21\u0e48\u0e21\u0e35\u0e2d\u0e22\u0e39\u0e48\u0e2b\u0e23\u0e37\u0e2d\u0e16\u0e39\u0e01\u0e22\u0e49\u0e32\u0e22\u0e44\u0e1b\u0e41\u0e25\u0e49\u0e27", button: "\u0e01\u0e25\u0e31\u0e1a\u0e2b\u0e19\u0e49\u0e32\u0e2b\u0e25\u0e31\u0e01" },
+            tr: { title: "Sayfa bulunamad\u0131", message: "Arad\u0131\u011f\u0131n\u0131z sayfa mevcut de\u011fil veya ta\u015f\u0131nm\u0131\u015f.", button: "Ana sayfaya git" },
+            uk: { title: "\u0421\u0442\u043e\u0440\u0456\u043d\u043a\u0443 \u043d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e", message: "\u0421\u0442\u043e\u0440\u0456\u043d\u043a\u0430, \u044f\u043a\u0443 \u0432\u0438 \u0448\u0443\u043a\u0430\u0454\u0442\u0435, \u043d\u0435 \u0456\u0441\u043d\u0443\u0454 \u0430\u0431\u043e \u0431\u0443\u043b\u0430 \u043f\u0435\u0440\u0435\u043c\u0456\u0449\u0435\u043d\u0430.", button: "\u041d\u0430 \u0433\u043e\u043b\u043e\u0432\u043d\u0443" },
+            vi: { title: "Kh\u00f4ng t\u00ecm th\u1ea5y trang", message: "Trang b\u1ea1n \u0111ang t\u00ecm kh\u00f4ng t\u1ed3n t\u1ea1i ho\u1eb7c \u0111\u00e3 \u0111\u01b0\u1ee3c di chuy\u1ec3n.", button: "V\u1ec1 trang ch\u1ee7" }
+        };
+
+        // Detect language from URL path prefix
+        var path = window.location.pathname;
+        var prefixes = ["pt-br","zh-Hans","zh-Hant","fr-ca","nb","de","es","fr","it","ru","ja","ko","sv","da","fi","ar","ca","cs","el","he","hr","hu","nl","pl","pt","ro","sk","th","tr","uk","vi"];
+        var detectedLang = null;
+        for (var i = 0; i < prefixes.length; i++) {
+            if (path.indexOf("/" + prefixes[i] + "/") === 0) {
+                detectedLang = prefixes[i];
+                break;
+            }
+        }
+
+        var homeUrl = detectedLang ? "/" + detectedLang + "/" : "/";
+
+        if (detectedLang && i18n[detectedLang]) {
+            var t = i18n[detectedLang];
+            document.getElementById("title").textContent = t.title;
+            document.getElementById("message").textContent = t.message;
+            document.getElementById("homeLink").textContent = t.button;
+            document.documentElement.lang = detectedLang;
+        }
+
+        document.getElementById("brand").href = homeUrl;
+        document.getElementById("homeLink").href = homeUrl;
+
+        // RTL support for Arabic and Hebrew
+        if (detectedLang === "ar" || detectedLang === "he") {
+            document.documentElement.dir = "rtl";
+        }
+    })();
+    </script>
+</body>
+</html>
