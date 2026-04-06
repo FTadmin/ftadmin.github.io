@@ -300,6 +300,15 @@ function loadTemplates() {
 }
 
 /**
+ * Convert a language code to proper BCP 47 format.
+ * Region subtags (2-letter, e.g., 'br' in 'pt-br') become uppercase.
+ * Script subtags (4-letter, e.g., 'Hans' in 'zh-Hans') stay as-is.
+ */
+function toBcp47(code) {
+    return code.replace(/-([a-zA-Z]{2})$/, (_, region) => '-' + region.toUpperCase());
+}
+
+/**
  * Build the full context object for rendering a page.
  * Merges: site globals + language data + page-specific data
  */
@@ -318,6 +327,7 @@ function buildContext(site, languages, page) {
         }
         return {
             code,
+            hreflang: toBcp47(code),
             name: l.name,
             flag: l.flag,
             url,
@@ -375,6 +385,7 @@ function buildContext(site, languages, page) {
     return {
         site,
         lang,
+        htmlLang: toBcp47(page.lang),
         langPrefix: lang.prefix || '',
         langSwitcher,
         navApps,

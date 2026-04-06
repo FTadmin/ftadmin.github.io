@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{lang.code}}">
+<html lang="{{htmlLang}}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
     <meta name="author" content="{{site.author}}">
     <link rel="canonical" href="{{canonicalUrl}}">
 {{#each langSwitcher}}
-    <link rel="alternate" hreflang="{{code}}" href="{{fullUrl}}">
+    <link rel="alternate" hreflang="{{hreflang}}" href="{{fullUrl}}">
 {{/each}}
     <link rel="alternate" hreflang="x-default" href="{{xDefaultUrl}}">
 
