@@ -2735,6 +2735,15 @@ th, td {
         color: #d1d5db !important;
     }
 
+    .as-seen-logo {
+        opacity: 0.85;
+        transition: opacity 0.2s;
+    }
+
+    .as-seen-link:hover .as-seen-logo {
+        opacity: 1;
+    }
+
     .founder-quote {
         background: #111827 !important;
         border-left-color: #60a5fa !important;
@@ -2772,9 +2781,18 @@ th, td {
     }
 }
 
-/* As Seen In / GQ feature — light mode hover states */
+/* As Seen In / GQ feature — hover states */
 .as-seen-link:hover span {
     color: #374151 !important;
+}
+
+.as-seen-logo {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.as-seen-link:hover .as-seen-logo {
+    opacity: 1;
 }
 
 .press-mention-link:hover {
