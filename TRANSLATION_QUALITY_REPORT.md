@@ -11,10 +11,11 @@
 Every translation file across all 31 languages was reviewed for accuracy, naturalness, consistency, completeness, formatting, and structural compliance. The audit uncovered **systemic cross-language issues** alongside language-specific problems.
 
 **Overall statistics:**
-- **CRITICAL issues:** ~95 across all languages
-- **WARNING issues:** ~280 across all languages
+- **CRITICAL issues:** ~98 across all languages
+- **WARNING issues:** ~290 across all languages
 - **Languages with 0 critical issues:** ko, zh-Hans (2 languages)
-- **Worst languages (by critical count):** hr (5), pt-br (5), es (5), pt (4), hu (4)
+- **Worst languages (by critical count):** hr (5), pt-br (5), es (5), tr (6), he (5)
+- **All 31 languages reviewed** (cs completed in follow-up batch)
 
 ---
 
@@ -25,10 +26,8 @@ Every translation file across all 31 languages was reviewed for accuracy, natura
 **Issue:** `apps.items[].slug` contains hardcoded language prefix (e.g., `/th/blood-pressure`) instead of bare slug. Build system prepends prefix automatically, causing potential double-prefix URLs.
 **Fix:** Remove slug fields from index.json overlays in all affected languages.
 
-### 2. Fabricated Reviews in weight.app.json (CRITICAL)
-**Affected:** zh-Hant, th, ko, pt (4+ languages)
-**Issue:** Three fake reviews (HealthyLife2024, FitTracker99, TechFitFan) appear in weight.app.json that don't exist in the EN source. These were apparently invented during translation.
-**Fix:** Remove fabricated reviews from all affected languages.
+### 2. ~~Fabricated Reviews in weight.app.json~~ — CORRECTED
+**Status:** FALSE POSITIVE — Cross-check confirmed the EN source DOES contain these 3 reviews (HealthyLife2024, FitTracker99, TechFitFan). The EN has 6 reviews total. Individual review agents compared against stale data. No languages have extra reviews beyond the EN count.
 
 ### 3. Raw HTML Blob in daily-journal.app.json faq.title (EN SOURCE BUG)
 **Affected:** ALL 31 languages
@@ -92,7 +91,7 @@ Every translation file across all 31 languages was reviewed for accuracy, natura
 | **fi** | 2 | 20 | **Footer links missing /fi/ prefix**, many Finnish word errors (10+ typos), untranslated features |
 | **ar** | 2 | 7 | SAR currency, slug overrides, "Daily Daily" app name, 3 variants of "No Ads" |
 | **ca** | 3 | 14 | Slug overrides, "#1 in Catalonia" false claim, "insights" untranslated 13x, "detonant" calque |
-| **cs** | — | — | Rate limited - not reviewed |
+| **cs** | 3 | 9 | "Türkčina" typo (5 files), "plain English" literal translation, Slovak word slipped in, missing content in howItWorks, grammar errors |
 | **el** | 2 | 3 | Stray Korean character in review, slug overrides, German review author |
 | **fr-ca** | 4 | 8 | meta.description says UK not Canada, slug overrides, English app names, stale stat |
 | **he** | 5 | 9 | "Korean" mistranslated as "קורנית", 3 privacy variants, premium spelling, app name inconsistencies |
@@ -117,7 +116,7 @@ Every translation file across all 31 languages was reviewed for accuracy, natura
 3. **fi/index.json** — Footer links missing `/fi/` prefix. All footer navigation points to English pages.
 4. **pt-br + pt + it** — Thousands of missing diacritics across app files. Needs systematic restoration.
 5. **10 languages** — Slug overrides with language prefix in index.json. Risk of double-prefixed broken URLs.
-6. **4+ languages** — Fabricated weight.app.json reviews (HealthyLife2024, FitTracker99, TechFitFan).
+6. **5 languages** — conversionEvent.currency not localized: ja (GBP→JPY), ko (GBP→KRW), pt-br (GBP→BRL), zh-Hans (GBP→CNY), nb (GBP→NOK). Also th missing currency on 3 of 5 tips files.
 7. **ja/blood-pressure.app.json** — "Beurer" (medical brand) translated as "ボイラー" (boiler). 6+ occurrences.
 8. **sk/blood-pressure.tips.json** — Medical error: "forearm" instead of "upper arm" for BP measurement.
 9. **el/mental-health.app.json** — Stray Korean character embedded in review text.
@@ -137,6 +136,7 @@ Several languages show contamination from other language translations:
 | ro | German review author | blood-pressure.app.json |
 | nl | German word "Artzt" | blood-pressure.app.json, index.json, daily-journal.app.json |
 | he | Cornish-like mistranslation of "Korean" | Multiple files |
+| cs | Slovak word "podvádzení" in Czech text | weight.app.json |
 
 ---
 
