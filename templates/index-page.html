@@ -87,12 +87,13 @@
 
 {{#if asSeenIn}}
     <!-- As Seen In -->
+    <style>.as-seen-link span:hover { color: #374151 !important; }</style>
     <section class="center-text" style="padding: 32px 20px 0;">
         <p style="text-transform: uppercase; font-size: 0.7em; letter-spacing: 0.12em; color: #9ca3af; margin-bottom: 16px; font-weight: 600;">{{asSeenIn.label}}</p>
         <div style="display: flex; justify-content: center; align-items: center; gap: 32px;">
 {{#each asSeenIn.items}}
-            <a href="{{url}}" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;" aria-label="{{articleTitle}}">
-                <span style="font-family: Georgia, 'Times New Roman', serif; font-size: 2.8em; font-weight: 700; font-style: italic; color: #6b7280; letter-spacing: 0.02em; transition: color 0.2s;">{{name}}</span>
+            <a href="{{url}}" target="_blank" rel="noopener" class="as-seen-link" style="text-decoration: none; color: inherit;" aria-label="{{articleTitle}}">
+                <span style="font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2em, 5vw, 2.8em); font-weight: 700; font-style: italic; color: #6b7280; letter-spacing: 0.02em; transition: color 0.2s;">{{name}}</span>
             </a>
 {{/each}}
         </div>
@@ -101,10 +102,11 @@
 
 {{#if founderQuote}}
     <!-- Founder Quote -->
+    <style>.press-mention-link:hover { background: #f3f4f6 !important; }</style>
     <section class="center-text" style="padding: 40px 20px 16px; max-width: 780px; margin: 0 auto;">
         <blockquote style="margin: 0; padding: 28px 32px; background: #f9fafb; border-left: 4px solid #2563eb; border-radius: 0 12px 12px 0; text-align: left;">
             <p style="font-size: 1.1em; line-height: 1.7; color: #374151; margin: 0 0 12px; font-style: italic;">"{{founderQuote.quote}}"</p>
-            <footer style="font-size: 0.9em; color: #6b7280;">— {{founderQuote.attribution}}, <span style="font-style: italic;">{{founderQuote.source}}</span></footer>
+            <footer style="font-size: 0.9em; color: #6b7280;">— {{founderQuote.attribution}}, <a href="{{founderQuote.sourceUrl}}" target="_blank" rel="noopener" style="color: #6b7280; text-decoration: none; font-style: italic; border-bottom: 1px solid #d1d5db;">{{founderQuote.source}}</a></footer>
         </blockquote>
     </section>
 {{/if}}
