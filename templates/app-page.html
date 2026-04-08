@@ -60,6 +60,15 @@
         <p class="hero-platform-info">{{mdi hero.platformInfo}}</p>
     </section>
 
+{{#if pressMention}}
+    <!-- Press Mention -->
+    <div class="center-text" style="padding: 20px 20px 0;">
+        <a href="{{pressMention.url}}" target="_blank" rel="noopener" style="display: inline-block; padding: 12px 24px; background: #f9fafb; border-radius: 8px; text-decoration: none; color: #374151; font-size: 0.95em; transition: background 0.2s;">
+            <i class="{{pressMention.icon}}" style="color: #2563eb; margin-right: 8px;"></i>{{pressMention.text}}
+        </a>
+    </div>
+{{/if}}
+
     <!-- Screenshots Section -->
     <section class="screenshots-section">
         <h2 class="center-text">{{screenshots.title}}</h2>

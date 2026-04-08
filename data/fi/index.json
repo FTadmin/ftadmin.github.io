@@ -1,564 +1,577 @@
 {
-  "data": {
-    "meta": {
-      "title": "Feeltracker | AI-terveys- ja hyvinvointipäiväkirjasovellukset iOS:lle",
-      "description": "AI-terveyspäiväkirjasovellukset iPhone:lle, iPad:lle ja Mac:lle. Seuraa verenpainetta, mielialaa, painoa, unta ja päivittäistä päiväkirjaa. Apple Health -synkronointi, AI-oivallukset, vienti lääkärillesi.",
-      "keywords": "terveyden seurantasovellus, verenpaineen mittari, mielialan päiväkirja, painon seuranta, unen seuranta, päiväkirja, AI-terveyssovellus, Apple Health -integraatio, terveyspäiväkirja, hyvinvoinnin seuranta, mielenterveyssovellus, verenpaineen seurantasovellus, laihdutussovellus, unen seuranta, päiväkirjasovellus",
-      "ogTitle": "Feeltracker | AI-pohjaiset terveys- ja hyvinvointipäiväkirjasovellukset",
-      "ogDescription": "Seuraa terveyttäsi vaivattomasti AI-pohjaisilla päiväkirjasovelluksilla verenpaineen, mielialan, painon, unen ja päiväkirjanpidon seurantaan. Synkronoi Apple Healthin kanssa ja saa henkilökohtaisia oivalluksia.",
-      "ogSiteName": "Feeltracker",
-      "twitterDescription": "Seuraa terveyttäsi vaivattomasti AI-pohjaisilla päiväkirjasovelluksilla verenpaineen, mielialan, painon, unen ja päiväkirjanpidon seurantaan.",
-      "twitterSite": "@feeltracker"
+ "data": {
+  "meta": {
+   "title": "Feeltracker | AI-terveys- ja hyvinvointipäiväkirjasovellukset iOS:lle",
+   "description": "AI-terveyspäiväkirjasovellukset iPhone:lle, iPad:lle ja Mac:lle. Seuraa verenpainetta, mielialaa, painoa, unta ja päivittäistä päiväkirjaa. Apple Health -synkronointi, AI-oivallukset, vienti lääkärillesi.",
+   "keywords": "terveyden seurantasovellus, verenpaineen mittari, mielialan päiväkirja, painon seuranta, unen seuranta, päiväkirja, AI-terveyssovellus, Apple Health -integraatio, terveyspäiväkirja, hyvinvoinnin seuranta, mielenterveyssovellus, verenpaineen seurantasovellus, laihdutussovellus, unen seuranta, päiväkirjasovellus",
+   "ogTitle": "Feeltracker | AI-pohjaiset terveys- ja hyvinvointipäiväkirjasovellukset",
+   "ogDescription": "Seuraa terveyttäsi vaivattomasti AI-pohjaisilla päiväkirjasovelluksilla verenpaineen, mielialan, painon, unen ja päiväkirjanpidon seurantaan. Synkronoi Apple Healthin kanssa ja saa henkilökohtaisia oivalluksia.",
+   "ogSiteName": "Feeltracker",
+   "twitterDescription": "Seuraa terveyttäsi vaivattomasti AI-pohjaisilla päiväkirjasovelluksilla verenpaineen, mielialan, painon, unen ja päiväkirjanpidon seurantaan.",
+   "twitterSite": "@feeltracker"
+  },
+  "hero": {
+   "logo": "feeltracker",
+   "title": "AI-pohjainen terveyden seuranta yksinkertaisesti",
+   "subtitle": "Seuraa verenpainettasi, mielialaasi, painoasi, untasi ja päivittäisiä ajatuksiasi älykkäillä päiväkirjasovelluksilla, jotka synkronoivat Apple Healthin kanssa ja tarjoavat henkilökohtaisia AI-oivalluksia.",
+   "stats": [
+    {
+     "number": "1M+",
+     "label": "Latauksia"
     },
-    "hero": {
-      "logo": "feeltracker",
-      "title": "AI-pohjainen terveyden seuranta yksinkertaisesti",
-      "subtitle": "Seuraa verenpainettasi, mielialaasi, painoasi, untasi ja päivittäisiä ajatuksiasi älykkäillä päiväkirjasovelluksilla, jotka synkronoivat Apple Healthin kanssa ja tarjoavat henkilökohtaisia AI-oivalluksia.",
-      "stats": [
-        {
-          "number": "1M+",
-          "label": "Latauksia"
-        },
-        {
-          "number": "21K+",
-          "label": "Arvostelut"
-        },
-        {
-          "number": "4.8★",
-          "label": "Keskiarvosana"
-        },
-        {
-          "number": "96%",
-          "label": "Tyytyväisyys"
-        },
-        {
-          "number": "5M+",
-          "label": "Tallennuksia / vuosi"
-        },
-        {
-          "number": "12yr",
-          "label": "Per. 2013"
-        }
-      ],
-      "privacyText": "Yksityisyys ensin — Ei mainoksia, ei seurantaa, tietosi pysyvät yksityisinä",
-      "featureBadges": [
-        {
-          "text": "Apple Health -synkronointi"
-        },
-        {
-          "text": "Tekoälynäkemykset"
-        },
-        {
-          "text": "iPhone · iPad · Mac"
-        },
-        {
-          "text": "iCloud-varmuuskopio"
-        }
-      ]
+    {
+     "number": "21K+",
+     "label": "Arvostelut"
     },
-    "apps": {
-      "title": "Valitse terveyden seurantasovelluksesi",
-      "items": [
-        {
-          "slug": "blood-pressure",
-          "iconAlt": "Verenpaine-sovelluksen kuvake",
-          "title": "Verenpaine Feeltracker",
-          "subtitle": "OMRON korkea verenpaine AI -päiväkirja",
-          "badge": "<i class=\"fas fa-trophy\"></i> #1 Iso-Britanniassa",
-          "description": "**Verenpaineen seurannan ykkönen Yhdistyneessä kuningaskunnassa.** Seuraa systolisia, diastolisia ja pulssimittauksia helposti. Saa AI-pohjaisia oivalluksia siitä, mikä vaikuttaa verenpaineeseesi. Integroituu Apple Healthin kanssa ja tukee Camera Scan AI:ta arvojen lukemiseen suoraan mittarisi näytöltä.",
-          "features": [
-            {
-              "text": "Camera Scan AI mittausarvojen tallentamiseen mittarinäytöiltä"
-            },
-            {
-              "text": "Trendianalyysi ja kaavioiden tunnistus"
-            },
-            {
-              "text": "Vie raportit lääkärillesi (PDF suurella tekstillä, Excel)"
-            },
-            {
-              "text": "Apple Health -integraatio kattavaan seurantaan"
-            },
-            {
-              "text": "MAP (keskivaltimopaine) -seuranta"
-            }
-          ],
-          "learnMoreText": "Lue lisää",
-          "downloadAlt": "Lataa Verenpaine App Storesta"
-        },
-        {
-          "slug": "daily-journal",
-          "iconAlt": "Päiväkirjasovelluksen kuvake",
-          "title": "Päiväkirja Feeltracker",
-          "subtitle": "Muistiinpanot, kuvat, ajatukset AI -päiväkirja",
-          "badge": "",
-          "description": "Kirjoita päivittäisiä pohdintoja, seuraa elämäntapahtumia ja löydä kaavoja ajatuksistasi. AI analysoi tunnelmia ja auttaa ymmärtämään toistuvia teemoja sanafrekvenssianalyysin avulla.",
-          "features": [
-            {
-              "text": "Yksinkertainen, häiriötön päiväkirjanpito"
-            },
-            {
-              "text": "AI-tunnelma-analyysi ja oivallukset"
-            },
-            {
-              "text": "Sanafrekvenssit teemojen seuraamiseen"
-            },
-            {
-              "text": "**UUTTA:** Kohteiden skannaus – AI kuvaa esineitä päiväkirjaasi"
-            },
-            {
-              "text": "**UUTTA:** Tekstin skannaus – OCR tekstin tallentamiseen mistä tahansa"
-            },
-            {
-              "text": "Muistiinpanomallit nopeisiin merkintöihin"
-            },
-            {
-              "text": "Koko tekstin haku ja Spotlight-integraatio"
-            },
-            {
-              "text": "Liitä jopa 8 valokuvaa merkintää kohden"
-            }
-          ],
-          "learnMoreText": "Lue lisää",
-          "downloadAlt": "Lataa Päiväkirja App Storesta"
-        },
-        {
-          "slug": "mental-health",
-          "iconAlt": "Mielialaseurannan kuvake",
-          "title": "Mielenterveys Feeltracker",
-          "subtitle": "Bipolaarinen DBT CBT ADHD AI -päiväkirja",
-          "badge": "",
-          "description": "Seuraa tunne-elämääsi päivittäisillä mieliala-arvioilla ja muistiinpanoilla. Tunnista laukaisimet ja kaavat AI-analyysin avulla. Tukee iOS 18+ mielenterveyden integraatiota Apple Healthin kanssa.",
-          "features": [
-            {
-              "text": "Yksinkertainen 5-portainen mielialaasteikko"
-            },
-            {
-              "text": "iOS 18+ mielenterveys (Mielentila) -synkronointi"
-            },
-            {
-              "text": "**UUTTA:** Kasvojen skannaus – analysoi mieliala selfieistä AI:n avulla"
-            },
-            {
-              "text": "AI-pohjainen laukaisijatekijöiden tunnistus"
-            },
-            {
-              "text": "Visuaaliset mielialakaaviot ja trendit"
-            },
-            {
-              "text": "Yksityiset muistiinpanot tunnelma-analyysillä"
-            },
-            {
-              "text": "Kaunis, intuitiivinen käyttöliittymä"
-            }
-          ],
-          "learnMoreText": "Lue lisää",
-          "downloadAlt": "Lataa Mielialaseuranta App Storesta"
-        },
-        {
-          "slug": "weight",
-          "iconAlt": "Painonseurannan kuvake",
-          "title": "Paino Feeltracker",
-          "subtitle": "Laihdu, kehon massa % ruoka AI -päiväkirja",
-          "badge": "",
-          "description": "Seuraa painoa, kehon rasvaprosentin ja painoindeksin kehitystä. Skannaa lukemia Camera Scan AI:lla, katso kuukausikeskiarvoja, tunnista mikä edistää tai haittaa edistymistäsi ja synkronoi Apple Healthin kanssa kattavaan kuntoseurantaan.",
-          "features": [
-            {
-              "text": "Camera Scan AI painon tallentamiseen vaakan näytöltä"
-            },
-            {
-              "text": "Painon, painoindeksin ja kehon rasvan seuranta"
-            },
-            {
-              "text": "Kuukausikeskiarvot ja trendianalyysi"
-            },
-            {
-              "text": "**UUTTA:** Ruoan skannaus – välitön ravintosisältöanalyysi AI:n avulla"
-            },
-            {
-              "text": "Tavoitteiden asettaminen ja edistymisen seuranta"
-            },
-            {
-              "text": "Täydellinen Apple Health -integraatio"
-            },
-            {
-              "text": "Löydä AI-oivalluksilla, mikä vaikuttaa painoosi"
-            }
-          ],
-          "learnMoreText": "Lue lisää",
-          "downloadAlt": "Lataa Paino App Storesta"
-        },
-        {
-          "slug": "sleep",
-          "iconAlt": "Unenseurannan kuvake",
-          "title": "Uni Feeltracker",
-          "subtitle": "Apnea-seuranta, unipäiväkirja",
-          "badge": "",
-          "description": "Kirjaa nukkumis- ja heräämisajat unikaavojesi ja -kestosi seuraamiseksi. Integroituu Apple Healthin unitietoihin ja auttaa tunnistamaan unen laatuun vaikuttavia tekijöitä AI-analyysin avulla.",
-          "features": [
-            {
-              "text": "Yksinkertainen nukkumis- ja heräämisaikojen kirjaaminen"
-            },
-            {
-              "text": "Automaattinen unen keston laskenta"
-            },
-            {
-              "text": "Apple Health -unidata-integraatio"
-            },
-            {
-              "text": "AI-näkemyksiä unirytmeistä"
-            },
-            {
-              "text": "Tunnista, mikä vaikuttaa unen laadullesi"
-            },
-            {
-              "text": "Visuaaliset unikaaviot ja tilastot"
-            }
-          ],
-          "learnMoreText": "Lue lisää",
-          "downloadAlt": "Lataa Uni App Storesta"
-        }
-      ]
+    {
+     "number": "4.8★",
+     "label": "Keskiarvosana"
     },
-    "features": {
-      "title": "Miksi valita Feeltracker-sovellukset?",
-      "items": [
-        {
-          "title": "Tekoälyllä toimivat näkemykset",
-          "description": "Saat henkilökohtaisia näkemyksiä ja kuvioiden tunnistuksen kehittyneen AI:n avulla. Ymmärrä, mikä vaikuttaa terveyteesi, ja tee tietoon perustuvia päätöksiä."
-        },
-        {
-          "title": "Apple Health Integration",
-          "description": "Synkronoi saumattomasti Apple Healthin kanssa kattavaa seurantaa varten. Lue ja kirjoita terveystietoja kaikilla laitteillasi automaattisesti."
-        },
-        {
-          "title": "iCloud-synkronointi ja varmuuskopiointi",
-          "description": "Tietosi synkronoituvat automaattisesti iPhonen, iPadin ja Macin välillä iCloudin kautta. Valinnainen automaattinen viikoittainen JSON-varmuuskopiointi pitää tietosi aina turvassa ja vietävissä."
-        },
-        {
-          "title": "Yksityisyys ensin",
-          "description": "**Ei mainoksia. Ei seurantaa.** Terveystietosi on salattu ja tallennettu vain laitteillesi ja iCloudiin. Emme seuraa sinua sovellusten tai verkkosivustojen välillä (ei IDFA:ta tai vastaavia seurantateknologioita), emmekä koskaan myy tietojasi mainostajille."
-        },
-        {
-          "title": "Vienti ja jakaminen",
-          "description": "Vie tietosi PDF-muodossa (myös suuri teksti -vaihtoehto), Excelinä tai JSON-tiedostona. Jaa kattavat raportit lääkärillesi tai terveydenhuollon ammattilaiselle helposti."
-        },
-        {
-          "title": "32 kieltä",
-          "description": "Täysin lokalisoitu 32 kielellä: englanti (English), espanja (Español), ranska (Français), kanadanranska, saksa (Deutsch), italia (Italiano), hollanti (Nederlands), brasilianportugali (Português), Portugalin portugali, ruotsi (Svenska), norja (Norsk), tanska (Dansk), suomi (Suomi), puola (Polski), venäjä (Русский), ukraina (Українська), tšekki (Čeština), slovakia (Slovenčina), romania (Română), kroatia (Hrvatski), unkari (Magyar), arabia (العربية), heprea (עברית), yksinkertaistettu kiina (简体中文), perinteinen kiina (繁體中文), japani (日本語), korea (한국어), thai (ไทย), vietnam (Tiếng Việt), kreikka (Ελληνικά), turkki (Türkçe) ja katalaani (Català)."
-        },
-        {
-          "title": "Sää-integraatio",
-          "description": "Sisällytä automaattisesti säätieto Applen sääpalvelusta kirjauksesi yhteydessä. Seuraa, miten sääolosuhteet vaikuttavat verenpaineeseen, mielialaan, uneen tai painoon ajan myötä."
-        },
-        {
-          "title": "Useita kalenterijärjestelmiä",
-          "description": "Tuki gregoriaaniselle, islamilaiselle (hijri), heprealaiselle, kiinalaiselle ja japanilaiselle kalenterille. Tarkastele terveystietojasi sinulle merkityksellisimmässä kalenterijärjestelmässä."
-        },
-        {
-          "title": "iPad Split View",
-          "description": "Optimoitu monisarakeasettelu iPadille täydellä jaetun näkymän moniajotuella. Käsittele terveystietojasi muiden sovellusten rinnalla parhaan tuottavuuden saavuttamiseksi."
-        },
-        {
-          "title": "Useita tummia tiloja",
-          "description": "Valitse useista tumman tilan vaihtoehdoista, kuten aidosta mustasta (täydellinen OLED-näytöille) ja tummanharmaista teemoista. Mukauta katselukokemuksesi silmien rasituksen vähentämiseksi."
-        },
-        {
-          "title": "Aikavyöhyketuki",
-          "description": "Kirjaa merkinnät mukautetuilla aikavyöhykeasetuksilla. Täydellinen matkailijoille tai vuorotyöntekijöille, jotka tarvitsevat tarkkaa ajanseurantaa eri aikavyöhykkeillä."
-        },
-        {
-          "title": "Välitavoitteiden seuranta",
-          "description": "Juhli edistymistäsi saavutusvirstanpylväillä. Saa tunnustusta johdonmukaisesta seurannasta, terveystavoitteiden saavuttamisesta ja terveellisten tottumusten ylläpitämisestä."
-        }
-      ]
+    {
+     "number": "96%",
+     "label": "Tyytyväisyys"
     },
-    "aiFeatures": {
-      "title": "Tekoälyn voimalla",
-      "subtitle": "AI-ominaisuutemme auttavat sinua ymmärtämään terveystietojasi kuten koskaan ennen",
-      "freeTitle": "Ilmaiset AI-ominaisuudet",
-      "free": [
-        {
-          "title": "Kysy kysymys",
-          "description": "Nopeat kysymykset tiedoistasi – saat välittömät vastaukset terveyskysymyksiisi"
-        },
-        {
-          "title": "Chat",
-          "description": "Käy vuorovaikutteisia keskusteluja terveysmatkastasi ja saa henkilökohtaisia neuvoja"
-        },
-        {
-          "title": "Ääniyhteenveto",
-          "description": "Kuuntele äänitiivistelmiä terveystrendeistäsi – täydelliset liikkeellä oleville"
-        },
-        {
-          "title": "Naurattaja",
-          "description": "Saa seurantatiedoistasi räätälöityä huumoria piristämään päivääsi"
-        },
-        {
-          "title": "Rauhoittaja",
-          "description": "AI-ohjatut hengitys- ja rentoutusharjoitukset stressin vähentämiseksi"
-        },
-        {
-          "title": "Kameraskannaava AI",
-          "description": "Skannaa lukemia laitteiden näytöiltä, analysoi kasvoja mielialan tunnistamiseksi, tunnista kohteita, kaappaa tekstiä – AI-näkökyky kaikissa sovelluksissa"
-        }
-      ],
-      "premiumTitle": "Premium-AI-ominaisuudet",
-      "premium": [
-        {
-          "title": "Päivittäiset näkemykset -banneri",
-          "description": "Herää henkilökohtaisiin AI:n luomiin päivittäisiin vinkkeihin viimeisten 30 kirjauksen perusteella – älykkäitä 10–15 sanan oivalluksia, jotka auttavat sinua ymmärtämään terveyskaavasi"
-        },
-        {
-          "title": "Syvätutkimusraportit",
-          "description": "Kattava AI-analyysi terveystiedoistasi yksityiskohtaisilla näkemyksillä ja ammattitason yhteenvedoilla"
-        },
-        {
-          "title": "Kuvioetsivä",
-          "description": "Kehittynyt AI löytää piilotettuja yhteyksiä elämäntapatekijöiden, vuorokaudenajan ja terveysarvojesi välillä"
-        },
-        {
-          "title": "Tavoiteavustaja",
-          "description": "Saa henkilökohtaiset, tietoon perustuvat terveystavoitteet ainutlaatuisten kaavioittesi ja edistymisesi perusteella"
-        },
-        {
-          "title": "Lääkäriyhteenveto",
-          "description": "Luo ammattimaisia lääketieteellisiä yhteenvetoja terveydenhuollon käynteille tilastojen ja trendianalyysin kera"
-        },
-        {
-          "title": "Sairauslomatodistuksen luoja",
-          "description": "AI:n luomat sairauslomatodistukset työtä tai koulua varten seurantatietojesi perusteella"
-        },
-        {
-          "title": "Tarinageneraattori",
-          "description": "Muunna terveystietosi luoviksi, mukaansatempaaviksi tarinoiksi ja henkilökohtaisiksi kertomuksiksi"
-        },
-        {
-          "title": "Tekstiyhteenveto",
-          "description": "Luo jaettavia tekstiviestiyhteenvetoja terveystrendeistäsi ystävillesi ja perheellesi"
-        },
-        {
-          "title": "Henkilökohtainen tietovisa",
-          "description": "Testaa tietosi hauskalla AI:n luomalla 10 kysymyksen visalla tiedoistasi"
-        },
-        {
-          "title": "Teksti puheeksi",
-          "description": "Kuuntele AI-näkemyksiäsi ja yhteenvetojasi luonnollisella äänentoistotuella – täydellinen saavutettavuuden kannalta"
-        },
-        {
-          "title": "Räätälöity terveysraportti",
-          "description": "Luo kattavia, henkilökohtaisia terveysasiakirjoja AI:n tuottamilla näkemyksillä edistymisestäsi"
-        }
-      ],
-      "disclaimerTitle": "Tekoälyn vastuuvapauslauseke",
-      "disclaimerText": "AI:n tuottamat näkemykset, raportit ja suositukset ovat tarkoitettu vain yleiseen tiedottamiseen, eivätkä ne korvaa lääketieteellistä neuvontaa, diagnoosia tai hoitoa. AI:n tunnistamat kaavat osoittavat korrelaatioita, mutta korrelaatio ei tarkoita syy-yhteyttä. Ota aina yhteyttä lääkäriin tai pätevään terveydenhuollon ammattilaiseen kaikissa lääketieteellisissä kysymyksissä tai huolenaiheissa. Nämä työkalut on suunniteltu auttamaan sinua järjestämään ja ymmärtämään terveystietojasi, eivät antamaan lääketieteellistä ohjausta."
+    {
+     "number": "5M+",
+     "label": "Tallennuksia / vuosi"
     },
-    "socialProof": {
-      "title": "Tuhansien käyttäjien luottama ympäri maailmaa",
-      "subtitle": "Liity käyttäjien joukkoon, jotka ottavat terveytensä hallintaan",
-      "stats": [
-        {
-          "number": "4.8★",
-          "label": "Keskiarvosana"
-        },
-        {
-          "number": "21K+",
-          "label": "Arvostelut"
-        },
-        {
-          "number": "96%",
-          "label": "Tyytyväisyysaste"
-        },
-        {
-          "number": "1M+",
-          "label": "Latauksia"
-        },
-        {
-          "number": "55K+",
-          "label": "Kuukausittaisia käyttäjiä"
-        },
-        {
-          "number": "5M+",
-          "label": "Tallennettuja tietueita vuodessa"
-        },
-        {
-          "number": "&lt;24hr",
-          "label": "Tukivaste"
-        },
-        {
-          "number": "32",
-          "label": "Kieltä"
-        }
-      ]
+    {
+     "number": "12yr",
+     "label": "Per. 2013"
+    }
+   ],
+   "privacyText": "Yksityisyys ensin — Ei mainoksia, ei seurantaa, tietosi pysyvät yksityisinä",
+   "featureBadges": [
+    {
+     "text": "Apple Health -synkronointi"
     },
-    "reviews": {
-      "title": "Mitä käyttäjämme sanovat",
-      "subtitle": "Aitoja arvosteluja App Storesta",
-      "disclaimer": "Arvostelut on käännetty englannista. Alun perin julkaistu App Storessa.",
-      "items": [
-        {
-          "title": "Paras verenpainensovellus koskaan",
-          "content": "Olen löytänyt parhaan verenpainensovelluksen, jota olen koskaan kokeillut. Se ei ainoastaan anna minulle mahdollisuutta lähettää tuloksia lääkärilleni, vaan kehittäjät näyttävät tekevän väsymättömästi töitä pitääkseen sovelluksen toiminnassa sujuvasti. He päivittävät ja parantavat sitä jatkuvasti, mikä on mahtavaa. Rehellisesti sanottuna se on paras tilaus, mitä minulla on puhelimessani juuri nyt.",
-          "author": "MelGreer, Blood Pressure"
-        },
-        {
-          "title": "Jopa terapeuttini pitää tästä sovelluksesta",
-          "content": "Minulla diagnosoitiin ADHD noin kuukausi sitten. Minun piti odottaa 3 viikkoa saadakseni lääkityksen siihen. Sinä aikana löysin tämän sovelluksen, ja on ollut aika hämmästyttävää nähdä lääkitsemättömän aivoni levottomuus verrattuna lääkittyyn aivooni. Lääkitty aivoni on paljon tasaisempi graafissa. Lisäksi pidän siitä, että voin kirjata ajatuksiani erittäin nopeasti.",
-          "author": "CynnCatt, Mood Diary"
-        },
-        {
-          "title": "Toistaiseksi hyvä",
-          "content": "Tämä on mukava pieni yksinkertainen sovellus, joka ei ylety tarpeettomille alueille. Arvostan eniten sen yksinkertaisuutta, mukaan lukien käyttöliittymän yksinkertaisuus. En tarvitse kukkia ja oravia ja pelejä ja pikku yllätyksiä ja sateenkaariyksisarvia. Tarvitsen vain yksinkertaisen päiväkirjamaisen muistiinpanosovelluksen. Toistaiseksi tämä sovellus on täyttänyt nämä vaatimukset tai pikemminkin vaatimusten puuttumisen. Se on jonkin verran virkistävää. Arvostan myös sitä, että voit viedä sen PDF-muodossa tarvittaessa. Kiitos yksinkertaisuuden säilyttämisestä.",
-          "author": "PRE', Daily Journaling"
-        },
-        {
-          "title": "Huomio kaikille unilääkäreille!",
-          "content": "Olin niin yllättynyt, että unilääkärini yritti antaa minulle paperilappuja unentuntieni kirjaamiseen ilman mitään tapaa koota niitä yhteen! Kun pyysin sovellusta, he suosittelivat consensus Sleep Diary -sovellusta, joka on hyödytön. Onneksi löysin tämän sovelluksen ja pyysin välittömästi unilääkäriäni alkamaan suositella sitä. Arvostan myös sitä, kuinka reagoiva kehittäjä on. Tällä henkilöllä on selvästi halu parantaa elämää. KIITOS!!",
-          "author": "Jbobthebuilder, Sleep Diary"
-        },
-        {
-          "title": "Todella hyvä sovellus",
-          "content": "Lääkärini haluaa minun kirjaavan verenpaineeni päivittäin. Tämä sovellus antaa minulle mahdollisuuden kirjata tietoni ja tallentaa ne erittäin hyvin suunniteltuun muotoon. Loistava sovellus.",
-          "author": "Wiesiu33, Blood Pressure"
-        },
-        {
-          "title": "Loistava sovellus",
-          "content": "Kaksisuuntaista mielialahäiriötä sairastavana minun piti kirjata mielialani ja tunteeni, mutta en löytänyt sovellusta, joka ei vaatisi kallista tilausta. Olen hyvin kiitollinen tästä sovelluksesta – täysi toiminnallisuus ilman tilausta ja tilausvaihtoehto jos haluaa.",
-          "author": "Aprthax, Mood Diary"
-        },
-        {
-          "title": "Rakastan tätä sovellusta!! Niin helppokäyttöinen.",
-          "content": "Aluksi pyydän, anna minun sanoa: älä kiinnitä huomiota käyttäjänimeen, jonka näet täällä minulle. Se oli virhe, jonka tein aikaisin, eikä sitä voi ilmeisesti muuttaa ilman Mac-tietokonetta Applen mukaan. Nyt syvennytään tähän sovellukseen. Tämä sovellus on mahtava unirytmien, ajan seurantaan ja muistiinpanojen tekemiseen tulevaa viitettä varten. Se on yksinkertainen ja helppokäyttöinen. Minulla oli ehdotus, jotain toivoin muutettavan, ja sovelluskehittäjä Gaurav oli täysin hämmästyttävä!! Otin häneen yhteyttä, ja hän vastasi minulle muutamassa minuutissa ja muutamassa päivässä hän todella lisäsi ehdotukseni! Suosittelen lämpimästi käyttämään tätä unirytmiesi kirjaamiseen. Ja se on ehdottomasti tilauksen arvoinen. Gaurav Sharma, olet tähti!!",
-          "author": "Absolutely Annoyed!, Sleep Diary"
-        },
-        {
-          "title": "Todella siisti sovellus",
-          "content": "Vasta muutama yö sitten aloin pitää kirjaa verenpaineestani – tämä sovellus on todella siistiä. On hauskaa, miten tämä sovellus vain ilmestyi puhelimeeni tänään. Suosittelisin tätä sovellusta epäröimättä.",
-          "author": "frdfranz, Blood Pressure"
-        },
-        {
-          "title": "pidän tästä",
-          "content": "pidän siitä, että minun ei tarvitse maksaa kaikesta – muissa mieliala-sovelluksissani minun täytyy maksaa nähdäkseni, mikä laukaisee reaktioni. pidän siitä, kun se kertoo, mitkä sanat vaikuttavat sinuun eniten. siinä on salasana tai lukko, jos haluat vain itse lukea kirjoittamaasi. se on todella auttanut minua korjaamaan itseäni. olen tehnyt tämän lähes joka päivä ja näen kaaviot ja voin nähdä milloin ja missä parannen tai heikennän. nautin todella tästä sovelluksesta ja pidän ääniefekteistä, jotka se tekee kun napsautat mielialojasi.",
-          "author": "dariusslayss, Mood Diary"
-        },
-        {
-          "title": "Hyvä sovellus unirytmien seurantaan",
-          "content": "Tarvitsin jotain avukseni unenseurantaan, kun aloitin CPAP-hoidon marraskuussa 2022. Tämä sovellus on ollut loistava pitämään minut vastuullisena aikataulusta ja seuraamaan edistymistäni. Voin seurata nukuttuja tunteja, uniani, unirytmejä sekä muita tietoja, joita haluan tarkastella. Ainoa ongelma on, että sovellus ei joskus avaudu heti iPad:llani ja minun täytyy pakottaa se sulkeutumaan ja avata uudelleen. Päivitys – olen nyt käyttänyt sovellusta 400 yötä ja se näyttää minulle edistymiseni CPAP-hoidossani ja paljon hyödyllisiä oivalluksia!",
-          "author": "Gadget guy Fl, Sleep Diary"
-        },
-        {
-          "title": "Upea sovellus",
-          "content": "Aivan loistava sovellus. Se seuraa verenpaineeni. Et mene väärään suuntaan tässä!",
-          "author": "Tippy's Dad, Blood Pressure"
-        },
-        {
-          "title": "Paino ja BMI",
-          "content": "Mielestäni tämä sovellus on erinomainen kahta pientä vikaa lukuun ottamatta, jotka ärsyttävät minua mutta toimivat silti erittäin hyvin. 1: paino palaa aina 150:een sen sijaan, että pysyisi viimeksi syöttämässäsi painossa. Olisi paljon kätevämpää, jos se pysyisi syöttämässäsi painossa sen sijaan, että täytyy selata painoja päästäkseni nykyiseen painooni. 2: BMI pitäisi laskea automaattisesti sen sijaan, että yritän tehdä laskelman manuaalisesti.",
-          "author": "Rufuslynx, Weight Tracker"
-        }
-      ]
+    {
+     "text": "Tekoälynäkemykset"
     },
-    "platforms": {
-      "title": "Saatavilla kaikille Apple-laitteillesi",
-      "subtitle": "iPhone · iPad · Mac (Apple Silicon M1+)",
-      "text": "Yksi ostos, kaikki alustat. Tiedot synkronoituvat automaattisesti iCloudin kautta."
+    {
+     "text": "iPhone · iPad · Mac"
     },
-    "faq": {
-      "title": "Yleisiä kysymyksiä",
-      "items": [
-        {
-          "question": "Näytättekö mainoksia tai seuraatteko minua?",
-          "answer": "**Ei.** Olemme poistaneet kaikki mainokset kokonaan kaikista Feeltracker-sovelluksista. Emme seuraa sinua muissa sovelluksissa tai verkkosivustoilla, emmekä koskaan myy tietojasi mainostajille.\n\nTietosi synkronoituvat iCloudin kautta – aivan kuten Apple Notes ja Kuvat. Tämä tarkoittaa, että meidän ei tarvitse tietää sähköpostiosoitettasi, nimeäsi tai mitään henkilökohtaisia tietoja. Terveystietosi tallennetaan laitteillesi ja iCloud-tiliisi, ja ne ovat täysin yksityisiä riippumatta siitä, käytätkö ilmaista versiota vai premiumia."
-        },
-        {
-          "question": "Tarvitsenko tilauksen?",
-          "answer": "Kaikki sovellukset ovat täysin ilmaisia ladata ja käyttää. Perusseurantatoiminnot toimivat ilman tilausta. Premium-tilaus avaa kehittyneet AI-ominaisuudet, rajattomat viennit ja parannetun mukautuksen. Voit kokeilla kaikkia premium-ominaisuuksia ilmaisen kokeilujakson aikana."
-        }
-      ]
-    },
-    "cta": {
-      "title": "Aloita terveytesi seuranta tänään",
-      "subtitle": "Valitse tarpeisiisi sopiva sovellus. Ilmainen ladattava, valinnaisia premium-ominaisuuksia.",
-      "items": [
-        {
-          "name": "Verenpaine Feeltracker",
-          "downloadAlt": "Lataa Blood Pressure Feeltracker App Storesta"
-        },
-        {
-          "name": "Päiväkirja Feeltracker",
-          "downloadAlt": "Lataa Daily Journaling Feeltracker App Storesta"
-        },
-        {
-          "name": "Mielenterveys Feeltracker",
-          "downloadAlt": "Lataa Mental Health Feeltracker App Storesta"
-        },
-        {
-          "name": "Paino Feeltracker",
-          "downloadAlt": "Lataa Weight Feeltracker App Storesta"
-        },
-        {
-          "name": "Uni Feeltracker",
-          "downloadAlt": "Lataa Sleep Feeltracker App Storesta"
-        }
-      ]
-    },
-    "indexFooter": {
-      "links": [
-        {
-          "href": "/fi/about/",
-          "text": "Tietoa"
-        },
-        {
-          "href": "mailto:support@feeltracker.com",
-          "text": "Email"
-        },
-        {
-          "href": "/fi/support/",
-          "text": "Tuki"
-        },
-        {
-          "href": "/fi/faq/",
-          "text": "UKK"
-        },
-        {
-          "href": "https://x.com/feeltracker",
-          "text": "Seuraa X:ssä"
-        },
-        {
-          "href": "/fi/privacy/",
-          "text": "Tietosuojakäytäntö"
-        },
-        {
-          "href": "/fi/terms/",
-          "text": "Käyttöehdot"
-        }
-      ],
-      "copyright": "© 2026 [Custom Arts](https://www.customarts.com). Kaikki oikeudet pidätetään.",
-      "tagline": "Voimaannutamme sinua ymmärtämään ja parantamaan terveyttäsi älykkään seurannan avulla.",
-      "disclaimer": "Terveystietosi tallennetaan laitteellesi ja iCloudiin – emme koskaan käytä tai myy tietojasi. Feeltracker-sovellukset eivät ole lääkinnällisiä laitteita. Tarkoitettu ainoastaan tiedottamistarkoituksiin, ei korvaamaan ammatillista lääketieteellistä neuvontaa, diagnoosia tai hoitoa."
-    },
-    "structuredData": [
+    {
+     "text": "iCloud-varmuuskopio"
+    }
+   ]
+  },
+  "apps": {
+   "title": "Valitse terveyden seurantasovelluksesi",
+   "items": [
+    {
+     "slug": "blood-pressure",
+     "iconAlt": "Verenpaine-sovelluksen kuvake",
+     "title": "Verenpaine Feeltracker",
+     "subtitle": "OMRON korkea verenpaine AI -päiväkirja",
+     "badge": "<i class=\"fas fa-trophy\"></i> #1 Iso-Britanniassa",
+     "description": "**Verenpaineen seurannan ykkönen Yhdistyneessä kuningaskunnassa.** Seuraa systolisia, diastolisia ja pulssimittauksia helposti. Saa AI-pohjaisia oivalluksia siitä, mikä vaikuttaa verenpaineeseesi. Integroituu Apple Healthin kanssa ja tukee Camera Scan AI:ta arvojen lukemiseen suoraan mittarisi näytöltä.",
+     "features": [
       {
-        "name": "Feeltracker",
-        "description": "AI-pohjaiset terveys- ja hyvinvointiseurantasovellukset iOS:lle"
+       "text": "Camera Scan AI mittausarvojen tallentamiseen mittarinäytöiltä"
       },
       {
-        "name": "Feeltracker Terveys- ja hyvinvointisovellukset",
-        "operatingSystem": "iOS",
-        "description": "Kokoelma AI-pohjaisia terveys- ja hyvinvointiseurantasovelluksia iOS:lle. Seuraa verenpainetta, mielialaa, painoa, unta ja päivittäisiä ajatuksia. Synkronoi Apple Healthin kanssa, saat AI-näkemyksiä ja voit viedä tietoja jaettavaksi lääkärisi kanssa.",
-        "featureList": [
-          "AI-pohjaiset terveysanalyysit",
-          "AI-kameraskannaus lukemien tallentamiseen",
-          "Apple Health kaksisuuntainen synkronointi",
-          "Raporttien vienti PDF- ja Excel-muotoon",
-          "iCloud-varmuuskopiointi ja synkronointi",
-          "32 kielen tuki",
-          "Ei mainoksia, ei seurantaa, yksityisyys etusijalla"
-        ]
+       "text": "Trendianalyysi ja kaavioiden tunnistus"
       },
       {
-        "name": "Feeltracker Terveys- ja hyvinvointisovellukset"
+       "text": "Vie raportit lääkärillesi (PDF suurella tekstillä, Excel)"
+      },
+      {
+       "text": "Apple Health -integraatio kattavaan seurantaan"
+      },
+      {
+       "text": "MAP (keskivaltimopaine) -seuranta"
       }
+     ],
+     "learnMoreText": "Lue lisää",
+     "downloadAlt": "Lataa Verenpaine App Storesta"
+    },
+    {
+     "slug": "daily-journal",
+     "iconAlt": "Päiväkirjasovelluksen kuvake",
+     "title": "Päiväkirja Feeltracker",
+     "subtitle": "Muistiinpanot, kuvat, ajatukset AI -päiväkirja",
+     "badge": "",
+     "description": "Kirjoita päivittäisiä pohdintoja, seuraa elämäntapahtumia ja löydä kaavoja ajatuksistasi. AI analysoi tunnelmia ja auttaa ymmärtämään toistuvia teemoja sanafrekvenssianalyysin avulla.",
+     "features": [
+      {
+       "text": "Yksinkertainen, häiriötön päiväkirjanpito"
+      },
+      {
+       "text": "AI-tunnelma-analyysi ja oivallukset"
+      },
+      {
+       "text": "Sanafrekvenssit teemojen seuraamiseen"
+      },
+      {
+       "text": "**UUTTA:** Kohteiden skannaus – AI kuvaa esineitä päiväkirjaasi"
+      },
+      {
+       "text": "**UUTTA:** Tekstin skannaus – OCR tekstin tallentamiseen mistä tahansa"
+      },
+      {
+       "text": "Muistiinpanomallit nopeisiin merkintöihin"
+      },
+      {
+       "text": "Koko tekstin haku ja Spotlight-integraatio"
+      },
+      {
+       "text": "Liitä jopa 8 valokuvaa merkintää kohden"
+      }
+     ],
+     "learnMoreText": "Lue lisää",
+     "downloadAlt": "Lataa Päiväkirja App Storesta"
+    },
+    {
+     "slug": "mental-health",
+     "iconAlt": "Mielialaseurannan kuvake",
+     "title": "Mielenterveys Feeltracker",
+     "subtitle": "Bipolaarinen DBT CBT ADHD AI -päiväkirja",
+     "badge": "",
+     "description": "Seuraa tunne-elämääsi päivittäisillä mieliala-arvioilla ja muistiinpanoilla. Tunnista laukaisimet ja kaavat AI-analyysin avulla. Tukee iOS 18+ mielenterveyden integraatiota Apple Healthin kanssa.",
+     "features": [
+      {
+       "text": "Yksinkertainen 5-portainen mielialaasteikko"
+      },
+      {
+       "text": "iOS 18+ mielenterveys (Mielentila) -synkronointi"
+      },
+      {
+       "text": "**UUTTA:** Kasvojen skannaus – analysoi mieliala selfieistä AI:n avulla"
+      },
+      {
+       "text": "AI-pohjainen laukaisijatekijöiden tunnistus"
+      },
+      {
+       "text": "Visuaaliset mielialakaaviot ja trendit"
+      },
+      {
+       "text": "Yksityiset muistiinpanot tunnelma-analyysillä"
+      },
+      {
+       "text": "Kaunis, intuitiivinen käyttöliittymä"
+      }
+     ],
+     "learnMoreText": "Lue lisää",
+     "downloadAlt": "Lataa Mielialaseuranta App Storesta"
+    },
+    {
+     "slug": "weight",
+     "iconAlt": "Painonseurannan kuvake",
+     "title": "Paino Feeltracker",
+     "subtitle": "Laihdu, kehon massa % ruoka AI -päiväkirja",
+     "badge": "",
+     "description": "Seuraa painoa, kehon rasvaprosentin ja painoindeksin kehitystä. Skannaa lukemia Camera Scan AI:lla, katso kuukausikeskiarvoja, tunnista mikä edistää tai haittaa edistymistäsi ja synkronoi Apple Healthin kanssa kattavaan kuntoseurantaan.",
+     "features": [
+      {
+       "text": "Camera Scan AI painon tallentamiseen vaakan näytöltä"
+      },
+      {
+       "text": "Painon, painoindeksin ja kehon rasvan seuranta"
+      },
+      {
+       "text": "Kuukausikeskiarvot ja trendianalyysi"
+      },
+      {
+       "text": "**UUTTA:** Ruoan skannaus – välitön ravintosisältöanalyysi AI:n avulla"
+      },
+      {
+       "text": "Tavoitteiden asettaminen ja edistymisen seuranta"
+      },
+      {
+       "text": "Täydellinen Apple Health -integraatio"
+      },
+      {
+       "text": "Löydä AI-oivalluksilla, mikä vaikuttaa painoosi"
+      }
+     ],
+     "learnMoreText": "Lue lisää",
+     "downloadAlt": "Lataa Paino App Storesta"
+    },
+    {
+     "slug": "sleep",
+     "iconAlt": "Unenseurannan kuvake",
+     "title": "Uni Feeltracker",
+     "subtitle": "Apnea-seuranta, unipäiväkirja",
+     "badge": "",
+     "description": "Kirjaa nukkumis- ja heräämisajat unikaavojesi ja -kestosi seuraamiseksi. Integroituu Apple Healthin unitietoihin ja auttaa tunnistamaan unen laatuun vaikuttavia tekijöitä AI-analyysin avulla.",
+     "features": [
+      {
+       "text": "Yksinkertainen nukkumis- ja heräämisaikojen kirjaaminen"
+      },
+      {
+       "text": "Automaattinen unen keston laskenta"
+      },
+      {
+       "text": "Apple Health -unidata-integraatio"
+      },
+      {
+       "text": "AI-näkemyksiä unirytmeistä"
+      },
+      {
+       "text": "Tunnista, mikä vaikuttaa unen laadullesi"
+      },
+      {
+       "text": "Visuaaliset unikaaviot ja tilastot"
+      }
+     ],
+     "learnMoreText": "Lue lisää",
+     "downloadAlt": "Lataa Uni App Storesta"
+    }
+   ]
+  },
+  "features": {
+   "title": "Miksi valita Feeltracker-sovellukset?",
+   "items": [
+    {
+     "title": "Tekoälyllä toimivat näkemykset",
+     "description": "Saat henkilökohtaisia näkemyksiä ja kuvioiden tunnistuksen kehittyneen AI:n avulla. Ymmärrä, mikä vaikuttaa terveyteesi, ja tee tietoon perustuvia päätöksiä."
+    },
+    {
+     "title": "Apple Health Integration",
+     "description": "Synkronoi saumattomasti Apple Healthin kanssa kattavaa seurantaa varten. Lue ja kirjoita terveystietoja kaikilla laitteillasi automaattisesti."
+    },
+    {
+     "title": "iCloud-synkronointi ja varmuuskopiointi",
+     "description": "Tietosi synkronoituvat automaattisesti iPhonen, iPadin ja Macin välillä iCloudin kautta. Valinnainen automaattinen viikoittainen JSON-varmuuskopiointi pitää tietosi aina turvassa ja vietävissä."
+    },
+    {
+     "title": "Yksityisyys ensin",
+     "description": "**Ei mainoksia. Ei seurantaa.** Terveystietosi on salattu ja tallennettu vain laitteillesi ja iCloudiin. Emme seuraa sinua sovellusten tai verkkosivustojen välillä (ei IDFA:ta tai vastaavia seurantateknologioita), emmekä koskaan myy tietojasi mainostajille."
+    },
+    {
+     "title": "Vienti ja jakaminen",
+     "description": "Vie tietosi PDF-muodossa (myös suuri teksti -vaihtoehto), Excelinä tai JSON-tiedostona. Jaa kattavat raportit lääkärillesi tai terveydenhuollon ammattilaiselle helposti."
+    },
+    {
+     "title": "32 kieltä",
+     "description": "Täysin lokalisoitu 32 kielellä: englanti (English), espanja (Español), ranska (Français), kanadanranska, saksa (Deutsch), italia (Italiano), hollanti (Nederlands), brasilianportugali (Português), Portugalin portugali, ruotsi (Svenska), norja (Norsk), tanska (Dansk), suomi (Suomi), puola (Polski), venäjä (Русский), ukraina (Українська), tšekki (Čeština), slovakia (Slovenčina), romania (Română), kroatia (Hrvatski), unkari (Magyar), arabia (العربية), heprea (עברית), yksinkertaistettu kiina (简体中文), perinteinen kiina (繁體中文), japani (日本語), korea (한국어), thai (ไทย), vietnam (Tiếng Việt), kreikka (Ελληνικά), turkki (Türkçe) ja katalaani (Català)."
+    },
+    {
+     "title": "Sää-integraatio",
+     "description": "Sisällytä automaattisesti säätieto Applen sääpalvelusta kirjauksesi yhteydessä. Seuraa, miten sääolosuhteet vaikuttavat verenpaineeseen, mielialaan, uneen tai painoon ajan myötä."
+    },
+    {
+     "title": "Useita kalenterijärjestelmiä",
+     "description": "Tuki gregoriaaniselle, islamilaiselle (hijri), heprealaiselle, kiinalaiselle ja japanilaiselle kalenterille. Tarkastele terveystietojasi sinulle merkityksellisimmässä kalenterijärjestelmässä."
+    },
+    {
+     "title": "iPad Split View",
+     "description": "Optimoitu monisarakeasettelu iPadille täydellä jaetun näkymän moniajotuella. Käsittele terveystietojasi muiden sovellusten rinnalla parhaan tuottavuuden saavuttamiseksi."
+    },
+    {
+     "title": "Useita tummia tiloja",
+     "description": "Valitse useista tumman tilan vaihtoehdoista, kuten aidosta mustasta (täydellinen OLED-näytöille) ja tummanharmaista teemoista. Mukauta katselukokemuksesi silmien rasituksen vähentämiseksi."
+    },
+    {
+     "title": "Aikavyöhyketuki",
+     "description": "Kirjaa merkinnät mukautetuilla aikavyöhykeasetuksilla. Täydellinen matkailijoille tai vuorotyöntekijöille, jotka tarvitsevat tarkkaa ajanseurantaa eri aikavyöhykkeillä."
+    },
+    {
+     "title": "Välitavoitteiden seuranta",
+     "description": "Juhli edistymistäsi saavutusvirstanpylväillä. Saa tunnustusta johdonmukaisesta seurannasta, terveystavoitteiden saavuttamisesta ja terveellisten tottumusten ylläpitämisestä."
+    }
+   ]
+  },
+  "aiFeatures": {
+   "title": "Tekoälyn voimalla",
+   "subtitle": "AI-ominaisuutemme auttavat sinua ymmärtämään terveystietojasi kuten koskaan ennen",
+   "freeTitle": "Ilmaiset AI-ominaisuudet",
+   "free": [
+    {
+     "title": "Kysy kysymys",
+     "description": "Nopeat kysymykset tiedoistasi – saat välittömät vastaukset terveyskysymyksiisi"
+    },
+    {
+     "title": "Chat",
+     "description": "Käy vuorovaikutteisia keskusteluja terveysmatkastasi ja saa henkilökohtaisia neuvoja"
+    },
+    {
+     "title": "Ääniyhteenveto",
+     "description": "Kuuntele äänitiivistelmiä terveystrendeistäsi – täydelliset liikkeellä oleville"
+    },
+    {
+     "title": "Naurattaja",
+     "description": "Saa seurantatiedoistasi räätälöityä huumoria piristämään päivääsi"
+    },
+    {
+     "title": "Rauhoittaja",
+     "description": "AI-ohjatut hengitys- ja rentoutusharjoitukset stressin vähentämiseksi"
+    },
+    {
+     "title": "Kameraskannaava AI",
+     "description": "Skannaa lukemia laitteiden näytöiltä, analysoi kasvoja mielialan tunnistamiseksi, tunnista kohteita, kaappaa tekstiä – AI-näkökyky kaikissa sovelluksissa"
+    }
+   ],
+   "premiumTitle": "Premium-AI-ominaisuudet",
+   "premium": [
+    {
+     "title": "Päivittäiset näkemykset -banneri",
+     "description": "Herää henkilökohtaisiin AI:n luomiin päivittäisiin vinkkeihin viimeisten 30 kirjauksen perusteella – älykkäitä 10–15 sanan oivalluksia, jotka auttavat sinua ymmärtämään terveyskaavasi"
+    },
+    {
+     "title": "Syvätutkimusraportit",
+     "description": "Kattava AI-analyysi terveystiedoistasi yksityiskohtaisilla näkemyksillä ja ammattitason yhteenvedoilla"
+    },
+    {
+     "title": "Kuvioetsivä",
+     "description": "Kehittynyt AI löytää piilotettuja yhteyksiä elämäntapatekijöiden, vuorokaudenajan ja terveysarvojesi välillä"
+    },
+    {
+     "title": "Tavoiteavustaja",
+     "description": "Saa henkilökohtaiset, tietoon perustuvat terveystavoitteet ainutlaatuisten kaavioittesi ja edistymisesi perusteella"
+    },
+    {
+     "title": "Lääkäriyhteenveto",
+     "description": "Luo ammattimaisia lääketieteellisiä yhteenvetoja terveydenhuollon käynteille tilastojen ja trendianalyysin kera"
+    },
+    {
+     "title": "Sairauslomatodistuksen luoja",
+     "description": "AI:n luomat sairauslomatodistukset työtä tai koulua varten seurantatietojesi perusteella"
+    },
+    {
+     "title": "Tarinageneraattori",
+     "description": "Muunna terveystietosi luoviksi, mukaansatempaaviksi tarinoiksi ja henkilökohtaisiksi kertomuksiksi"
+    },
+    {
+     "title": "Tekstiyhteenveto",
+     "description": "Luo jaettavia tekstiviestiyhteenvetoja terveystrendeistäsi ystävillesi ja perheellesi"
+    },
+    {
+     "title": "Henkilökohtainen tietovisa",
+     "description": "Testaa tietosi hauskalla AI:n luomalla 10 kysymyksen visalla tiedoistasi"
+    },
+    {
+     "title": "Teksti puheeksi",
+     "description": "Kuuntele AI-näkemyksiäsi ja yhteenvetojasi luonnollisella äänentoistotuella – täydellinen saavutettavuuden kannalta"
+    },
+    {
+     "title": "Räätälöity terveysraportti",
+     "description": "Luo kattavia, henkilökohtaisia terveysasiakirjoja AI:n tuottamilla näkemyksillä edistymisestäsi"
+    }
+   ],
+   "disclaimerTitle": "Tekoälyn vastuuvapauslauseke",
+   "disclaimerText": "AI:n tuottamat näkemykset, raportit ja suositukset ovat tarkoitettu vain yleiseen tiedottamiseen, eivätkä ne korvaa lääketieteellistä neuvontaa, diagnoosia tai hoitoa. AI:n tunnistamat kaavat osoittavat korrelaatioita, mutta korrelaatio ei tarkoita syy-yhteyttä. Ota aina yhteyttä lääkäriin tai pätevään terveydenhuollon ammattilaiseen kaikissa lääketieteellisissä kysymyksissä tai huolenaiheissa. Nämä työkalut on suunniteltu auttamaan sinua järjestämään ja ymmärtämään terveystietojasi, eivät antamaan lääketieteellistä ohjausta."
+  },
+  "socialProof": {
+   "title": "Tuhansien käyttäjien luottama ympäri maailmaa",
+   "subtitle": "Liity käyttäjien joukkoon, jotka ottavat terveytensä hallintaan",
+   "stats": [
+    {
+     "number": "4.8★",
+     "label": "Keskiarvosana"
+    },
+    {
+     "number": "21K+",
+     "label": "Arvostelut"
+    },
+    {
+     "number": "96%",
+     "label": "Tyytyväisyysaste"
+    },
+    {
+     "number": "1M+",
+     "label": "Latauksia"
+    },
+    {
+     "number": "55K+",
+     "label": "Kuukausittaisia käyttäjiä"
+    },
+    {
+     "number": "5M+",
+     "label": "Tallennettuja tietueita vuodessa"
+    },
+    {
+     "number": "&lt;24hr",
+     "label": "Tukivaste"
+    },
+    {
+     "number": "32",
+     "label": "Kieltä"
+    }
+   ]
+  },
+  "reviews": {
+   "title": "Mitä käyttäjämme sanovat",
+   "subtitle": "Aitoja arvosteluja App Storesta",
+   "disclaimer": "Arvostelut on käännetty englannista. Alun perin julkaistu App Storessa.",
+   "items": [
+    {
+     "title": "Paras verenpainensovellus koskaan",
+     "content": "Olen löytänyt parhaan verenpainensovelluksen, jota olen koskaan kokeillut. Se ei ainoastaan anna minulle mahdollisuutta lähettää tuloksia lääkärilleni, vaan kehittäjät näyttävät tekevän väsymättömästi töitä pitääkseen sovelluksen toiminnassa sujuvasti. He päivittävät ja parantavat sitä jatkuvasti, mikä on mahtavaa. Rehellisesti sanottuna se on paras tilaus, mitä minulla on puhelimessani juuri nyt.",
+     "author": "MelGreer, Blood Pressure"
+    },
+    {
+     "title": "Jopa terapeuttini pitää tästä sovelluksesta",
+     "content": "Minulla diagnosoitiin ADHD noin kuukausi sitten. Minun piti odottaa 3 viikkoa saadakseni lääkityksen siihen. Sinä aikana löysin tämän sovelluksen, ja on ollut aika hämmästyttävää nähdä lääkitsemättömän aivoni levottomuus verrattuna lääkittyyn aivooni. Lääkitty aivoni on paljon tasaisempi graafissa. Lisäksi pidän siitä, että voin kirjata ajatuksiani erittäin nopeasti.",
+     "author": "CynnCatt, Mood Diary"
+    },
+    {
+     "title": "Toistaiseksi hyvä",
+     "content": "Tämä on mukava pieni yksinkertainen sovellus, joka ei ylety tarpeettomille alueille. Arvostan eniten sen yksinkertaisuutta, mukaan lukien käyttöliittymän yksinkertaisuus. En tarvitse kukkia ja oravia ja pelejä ja pikku yllätyksiä ja sateenkaariyksisarvia. Tarvitsen vain yksinkertaisen päiväkirjamaisen muistiinpanosovelluksen. Toistaiseksi tämä sovellus on täyttänyt nämä vaatimukset tai pikemminkin vaatimusten puuttumisen. Se on jonkin verran virkistävää. Arvostan myös sitä, että voit viedä sen PDF-muodossa tarvittaessa. Kiitos yksinkertaisuuden säilyttämisestä.",
+     "author": "PRE', Daily Journaling"
+    },
+    {
+     "title": "Huomio kaikille unilääkäreille!",
+     "content": "Olin niin yllättynyt, että unilääkärini yritti antaa minulle paperilappuja unentuntieni kirjaamiseen ilman mitään tapaa koota niitä yhteen! Kun pyysin sovellusta, he suosittelivat consensus Sleep Diary -sovellusta, joka on hyödytön. Onneksi löysin tämän sovelluksen ja pyysin välittömästi unilääkäriäni alkamaan suositella sitä. Arvostan myös sitä, kuinka reagoiva kehittäjä on. Tällä henkilöllä on selvästi halu parantaa elämää. KIITOS!!",
+     "author": "Jbobthebuilder, Sleep Diary"
+    },
+    {
+     "title": "Todella hyvä sovellus",
+     "content": "Lääkärini haluaa minun kirjaavan verenpaineeni päivittäin. Tämä sovellus antaa minulle mahdollisuuden kirjata tietoni ja tallentaa ne erittäin hyvin suunniteltuun muotoon. Loistava sovellus.",
+     "author": "Wiesiu33, Blood Pressure"
+    },
+    {
+     "title": "Loistava sovellus",
+     "content": "Kaksisuuntaista mielialahäiriötä sairastavana minun piti kirjata mielialani ja tunteeni, mutta en löytänyt sovellusta, joka ei vaatisi kallista tilausta. Olen hyvin kiitollinen tästä sovelluksesta – täysi toiminnallisuus ilman tilausta ja tilausvaihtoehto jos haluaa.",
+     "author": "Aprthax, Mood Diary"
+    },
+    {
+     "title": "Rakastan tätä sovellusta!! Niin helppokäyttöinen.",
+     "content": "Aluksi pyydän, anna minun sanoa: älä kiinnitä huomiota käyttäjänimeen, jonka näet täällä minulle. Se oli virhe, jonka tein aikaisin, eikä sitä voi ilmeisesti muuttaa ilman Mac-tietokonetta Applen mukaan. Nyt syvennytään tähän sovellukseen. Tämä sovellus on mahtava unirytmien, ajan seurantaan ja muistiinpanojen tekemiseen tulevaa viitettä varten. Se on yksinkertainen ja helppokäyttöinen. Minulla oli ehdotus, jotain toivoin muutettavan, ja sovelluskehittäjä Gaurav oli täysin hämmästyttävä!! Otin häneen yhteyttä, ja hän vastasi minulle muutamassa minuutissa ja muutamassa päivässä hän todella lisäsi ehdotukseni! Suosittelen lämpimästi käyttämään tätä unirytmiesi kirjaamiseen. Ja se on ehdottomasti tilauksen arvoinen. Gaurav Sharma, olet tähti!!",
+     "author": "Absolutely Annoyed!, Sleep Diary"
+    },
+    {
+     "title": "Todella siisti sovellus",
+     "content": "Vasta muutama yö sitten aloin pitää kirjaa verenpaineestani – tämä sovellus on todella siistiä. On hauskaa, miten tämä sovellus vain ilmestyi puhelimeeni tänään. Suosittelisin tätä sovellusta epäröimättä.",
+     "author": "frdfranz, Blood Pressure"
+    },
+    {
+     "title": "pidän tästä",
+     "content": "pidän siitä, että minun ei tarvitse maksaa kaikesta – muissa mieliala-sovelluksissani minun täytyy maksaa nähdäkseni, mikä laukaisee reaktioni. pidän siitä, kun se kertoo, mitkä sanat vaikuttavat sinuun eniten. siinä on salasana tai lukko, jos haluat vain itse lukea kirjoittamaasi. se on todella auttanut minua korjaamaan itseäni. olen tehnyt tämän lähes joka päivä ja näen kaaviot ja voin nähdä milloin ja missä parannen tai heikennän. nautin todella tästä sovelluksesta ja pidän ääniefekteistä, jotka se tekee kun napsautat mielialojasi.",
+     "author": "dariusslayss, Mood Diary"
+    },
+    {
+     "title": "Hyvä sovellus unirytmien seurantaan",
+     "content": "Tarvitsin jotain avukseni unenseurantaan, kun aloitin CPAP-hoidon marraskuussa 2022. Tämä sovellus on ollut loistava pitämään minut vastuullisena aikataulusta ja seuraamaan edistymistäni. Voin seurata nukuttuja tunteja, uniani, unirytmejä sekä muita tietoja, joita haluan tarkastella. Ainoa ongelma on, että sovellus ei joskus avaudu heti iPad:llani ja minun täytyy pakottaa se sulkeutumaan ja avata uudelleen. Päivitys – olen nyt käyttänyt sovellusta 400 yötä ja se näyttää minulle edistymiseni CPAP-hoidossani ja paljon hyödyllisiä oivalluksia!",
+     "author": "Gadget guy Fl, Sleep Diary"
+    },
+    {
+     "title": "Upea sovellus",
+     "content": "Aivan loistava sovellus. Se seuraa verenpaineeni. Et mene väärään suuntaan tässä!",
+     "author": "Tippy's Dad, Blood Pressure"
+    },
+    {
+     "title": "Paino ja BMI",
+     "content": "Mielestäni tämä sovellus on erinomainen kahta pientä vikaa lukuun ottamatta, jotka ärsyttävät minua mutta toimivat silti erittäin hyvin. 1: paino palaa aina 150:een sen sijaan, että pysyisi viimeksi syöttämässäsi painossa. Olisi paljon kätevämpää, jos se pysyisi syöttämässäsi painossa sen sijaan, että täytyy selata painoja päästäkseni nykyiseen painooni. 2: BMI pitäisi laskea automaattisesti sen sijaan, että yritän tehdä laskelman manuaalisesti.",
+     "author": "Rufuslynx, Weight Tracker"
+    }
+   ]
+  },
+  "platforms": {
+   "title": "Saatavilla kaikille Apple-laitteillesi",
+   "subtitle": "iPhone · iPad · Mac (Apple Silicon M1+)",
+   "text": "Yksi ostos, kaikki alustat. Tiedot synkronoituvat automaattisesti iCloudin kautta."
+  },
+  "faq": {
+   "title": "Yleisiä kysymyksiä",
+   "items": [
+    {
+     "question": "Näytättekö mainoksia tai seuraatteko minua?",
+     "answer": "**Ei.** Olemme poistaneet kaikki mainokset kokonaan kaikista Feeltracker-sovelluksista. Emme seuraa sinua muissa sovelluksissa tai verkkosivustoilla, emmekä koskaan myy tietojasi mainostajille.\n\nTietosi synkronoituvat iCloudin kautta – aivan kuten Apple Notes ja Kuvat. Tämä tarkoittaa, että meidän ei tarvitse tietää sähköpostiosoitettasi, nimeäsi tai mitään henkilökohtaisia tietoja. Terveystietosi tallennetaan laitteillesi ja iCloud-tiliisi, ja ne ovat täysin yksityisiä riippumatta siitä, käytätkö ilmaista versiota vai premiumia."
+    },
+    {
+     "question": "Tarvitsenko tilauksen?",
+     "answer": "Kaikki sovellukset ovat täysin ilmaisia ladata ja käyttää. Perusseurantatoiminnot toimivat ilman tilausta. Premium-tilaus avaa kehittyneet AI-ominaisuudet, rajattomat viennit ja parannetun mukautuksen. Voit kokeilla kaikkia premium-ominaisuuksia ilmaisen kokeilujakson aikana."
+    }
+   ]
+  },
+  "cta": {
+   "title": "Aloita terveytesi seuranta tänään",
+   "subtitle": "Valitse tarpeisiisi sopiva sovellus. Ilmainen ladattava, valinnaisia premium-ominaisuuksia.",
+   "items": [
+    {
+     "name": "Verenpaine Feeltracker",
+     "downloadAlt": "Lataa Blood Pressure Feeltracker App Storesta"
+    },
+    {
+     "name": "Päiväkirja Feeltracker",
+     "downloadAlt": "Lataa Daily Journaling Feeltracker App Storesta"
+    },
+    {
+     "name": "Mielenterveys Feeltracker",
+     "downloadAlt": "Lataa Mental Health Feeltracker App Storesta"
+    },
+    {
+     "name": "Paino Feeltracker",
+     "downloadAlt": "Lataa Weight Feeltracker App Storesta"
+    },
+    {
+     "name": "Uni Feeltracker",
+     "downloadAlt": "Lataa Sleep Feeltracker App Storesta"
+    }
+   ]
+  },
+  "indexFooter": {
+   "links": [
+    {
+     "href": "/fi/about/",
+     "text": "Tietoa"
+    },
+    {
+     "href": "mailto:support@feeltracker.com",
+     "text": "Email"
+    },
+    {
+     "href": "/fi/support/",
+     "text": "Tuki"
+    },
+    {
+     "href": "/fi/faq/",
+     "text": "UKK"
+    },
+    {
+     "href": "https://x.com/feeltracker",
+     "text": "Seuraa X:ssä"
+    },
+    {
+     "href": "/fi/privacy/",
+     "text": "Tietosuojakäytäntö"
+    },
+    {
+     "href": "/fi/terms/",
+     "text": "Käyttöehdot"
+    }
+   ],
+   "copyright": "© 2026 [Custom Arts](https://www.customarts.com). Kaikki oikeudet pidätetään.",
+   "tagline": "Voimaannutamme sinua ymmärtämään ja parantamaan terveyttäsi älykkään seurannan avulla.",
+   "disclaimer": "Terveystietosi tallennetaan laitteellesi ja iCloudiin – emme koskaan käytä tai myy tietojasi. Feeltracker-sovellukset eivät ole lääkinnällisiä laitteita. Tarkoitettu ainoastaan tiedottamistarkoituksiin, ei korvaamaan ammatillista lääketieteellistä neuvontaa, diagnoosia tai hoitoa."
+  },
+  "structuredData": [
+   {
+    "name": "Feeltracker",
+    "description": "AI-pohjaiset terveys- ja hyvinvointiseurantasovellukset iOS:lle"
+   },
+   {
+    "name": "Feeltracker Terveys- ja hyvinvointisovellukset",
+    "operatingSystem": "iOS",
+    "description": "Kokoelma AI-pohjaisia terveys- ja hyvinvointiseurantasovelluksia iOS:lle. Seuraa verenpainetta, mielialaa, painoa, unta ja päivittäisiä ajatuksia. Synkronoi Apple Healthin kanssa, saat AI-näkemyksiä ja voit viedä tietoja jaettavaksi lääkärisi kanssa.",
+    "featureList": [
+     "AI-pohjaiset terveysanalyysit",
+     "AI-kameraskannaus lukemien tallentamiseen",
+     "Apple Health kaksisuuntainen synkronointi",
+     "Raporttien vienti PDF- ja Excel-muotoon",
+     "iCloud-varmuuskopiointi ja synkronointi",
+     "32 kielen tuki",
+     "Ei mainoksia, ei seurantaa, yksityisyys etusijalla"
     ]
+   },
+   {
+    "name": "Feeltracker Terveys- ja hyvinvointisovellukset"
+   }
+  ],
+  "asSeenIn": {
+   "label": "Esillä mediassa",
+   "items": [
+    {
+     "articleTitle": "Voiko puettava laite tehdä sinut onnellisemmaksi?"
+    }
+   ]
+  },
+  "founderQuote": {
+   "quote": "Sovellus on suunniteltu seuranta- ja tietoisuustyökaluksi eikä hoitotyökaluksi. Todellinen arvo on siinä, että se auttaa ihmisiä huomaamaan kaavoja ja laukaisijoita.",
+   "attribution": "Gaurav Sharma, Perustaja",
+   "source": "lainattuna GQ:ssa"
   }
+ }
 }
