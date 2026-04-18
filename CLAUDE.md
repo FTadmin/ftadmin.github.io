@@ -20,10 +20,10 @@
 The "feeltracker" wordmark (`.hero-logo` on the homepage hero and `.nav-row-brand .brand-logo` on every page's nav) has a **fixed** visual treatment. Do not change it without explicit instruction from the user.
 
 - **Font:** `Nunito Sans` (the non-rounded sibling of Nunito). Loaded in `templates/partials/head-assets.html` and exposed as the `--font-brand` token in `shared.css`. Do NOT use Nunito (rounded), Inter, Instrument Serif, or any other face for the wordmark.
-- **Weight:** `800`.
+- **Weight:** `700`. (800 reads heavier than the original Inter 700 — don't bump it.)
 - **Color:** `var(--color-primary)` (#2B7BD3 light / #60a5fa dark). Never a gradient, never black, never muted.
 - **Case:** lowercase.
-- **Letter-spacing:** `-0.03em`.
+- **Letter-spacing:** `-0.02em`.
 
 Both `.hero-logo` and `.nav-row-brand .brand-logo` carry a `/* Brand wordmark — ... See CLAUDE.md. */` comment in `shared.css`. If a redesign pass touches those rules, restore this exact set.
 
