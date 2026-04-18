@@ -51,40 +51,56 @@
     <!-- Key Facts -->
     <section class="features-section">
         <h2 class="center-text">{{keyFacts.title}}</h2>
-{{#each keyFacts.cards}}
         <div class="app-card">
-            <h3>{{title}}</h3>
-            <div class="app-card-content">
-                <ul class="feature-list">
-{{#each items}}
-                    <li>{{#if label}}<strong>{{label}}:</strong> {{/if}}{{#if strong}}<strong>{{text}}</strong>{{else}}{{text}}{{/if}}{{value}}</li>
+            <h3>{{keyFacts.cards.0.title}}</h3>
+            <ul class="fact-list">
+{{#each keyFacts.cards.0.items}}
+                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{value}}</span></li>
 {{/each}}
-                </ul>
-            </div>
+            </ul>
         </div>
+        <div class="app-card">
+            <h3>{{keyFacts.cards.1.title}}</h3>
+            <ul class="awards-list">
+{{#each keyFacts.cards.1.items}}
+                <li{{#if featured}} class="awards-list__featured"{{/if}}>{{text}}</li>
 {{/each}}
+            </ul>
+        </div>
     </section>
 
     <!-- Applications -->
     <section class="support-section">
         <h2 class="center-text">{{applications.title}}</h2>
 {{#each applications.apps}}
-        <article>
-            <h3>{{name}}</h3>
-            <p><strong>{{applications.labels.appStoreId}}:</strong> {{appStoreId}} | <strong>{{applications.labels.rating}}:</strong> {{rating}}</p>
+        <article class="about-app">
+            <header class="about-app-header">
+                <img src="{{iconSrc}}" alt="{{name}}" class="about-app-icon">
+                <div class="about-app-title">
+                    <h3>{{name}}</h3>
+                    <div class="about-app-meta">
+                        <span class="chip"><i class="fas fa-star"></i> {{rating}}</span>
+                        <span class="chip-muted">{{category}}</span>
+                    </div>
 {{#if ranking}}
-            <p><strong>{{applications.labels.ranking}}:</strong> {{ranking}}</p>
+                    <div class="about-app-ranking">🏆 {{ranking}}</div>
 {{/if}}
-            <p><strong>{{applications.labels.category}}:</strong> {{category}}</p>
-            <p><strong>{{applications.labels.description}}:</strong> {{description}}</p>
-            <p><strong>{{featuresTitle}}:</strong></p>
-            <ul>
+                </div>
+            </header>
+            <p class="about-app-description">{{description}}</p>
+            <h4 class="about-app-features-title">{{featuresTitle}}</h4>
+            <ul class="about-app-features">
 {{#each features}}
                 <li>{{text}}</li>
 {{/each}}
             </ul>
-            <p><strong>{{bestForLabel}}:</strong> {{bestFor}}</p>
-            <p><a href="{{learnMoreUrl}}">{{learnMoreText}}</a> | <a href="https://apps.apple.com/app/id{{appStoreId}}">{{downloadText}}</a></p>
+            <p class="about-app-bestfor"><strong>{{bestForLabel}}:</strong> {{bestFor}}</p>
+            <div class="about-app-cta">
+                <a href="{{learnMoreUrl}}" class="btn btn--ghost">{{learnMoreText}}</a>
+                <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-button" aria-label="{{downloadText}}">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="{{downloadText}}">
+                </a>
+            </div>
         </article>
 {{/each}}
     </section>
@@ -95,16 +111,14 @@
 {{#each technology.cards}}
         <div class="app-card">
             <h3>{{title}}</h3>
-            <div class="app-card-content">
 {{#if intro}}
-                <p>{{intro}}</p>
+            <p>{{intro}}</p>
 {{/if}}
-                <ul class="feature-list">
+            <ul class="fact-list">
 {{#each items}}
-                    <li><strong>{{label}}:</strong> {{text}}</li>
+                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{text}}</span></li>
 {{/each}}
-                </ul>
-            </div>
+            </ul>
         </div>
 {{/each}}
     </section>
@@ -114,9 +128,12 @@
         <h2>{{globalReach.title}}</h2>
         <h3>{{globalReach.subtitle}}</h3>
         <p>{{globalReach.intro}}</p>
-        <div class="region-list">
+        <div class="region-grid">
 {{#each globalReach.groups}}
-            <p><strong>{{label}}:</strong> {{languages}}</p>
+            <div class="region-card">
+                <h4>{{label}}</h4>
+                <p>{{languages}}</p>
+            </div>
 {{/each}}
         </div>
     </section>
@@ -124,17 +141,20 @@
     <!-- Use Cases -->
     <section class="support-section">
         <h2 class="center-text">{{useCases.title}}</h2>
+        <div class="use-case-grid">
 {{#each useCases.cases}}
-        <article>
-            <h3>{{title}}</h3>
-            <p>{{intro}}</p>
-            <ul>
+            <article class="use-case-card">
+                <div class="use-case-icon"><i class="{{icon}}"></i></div>
+                <h3>{{title}}</h3>
+                <p>{{intro}}</p>
+                <ul>
 {{#each items}}
-                <li>{{text}}</li>
+                    <li>{{text}}</li>
 {{/each}}
-            </ul>
-        </article>
+                </ul>
+            </article>
 {{/each}}
+        </div>
     </section>
 
     <!-- Technical Information -->
@@ -143,25 +163,25 @@
 {{#each technicalInfo.cards}}
         <div class="app-card">
             <h3>{{title}}</h3>
-            <div class="app-card-content">
-                <ul class="feature-list">
+            <ul class="fact-list">
 {{#each items}}
-                    <li><strong>{{label}}:</strong> {{text}}</li>
+                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{text}}</span></li>
 {{/each}}
-                </ul>
-            </div>
+            </ul>
         </div>
 {{/each}}
     </section>
 
     <!-- Medical Disclaimer -->
     <section class="callout center-text">
+        <div class="callout-icon"><i class="{{medicalDisclaimer.icon}}"></i></div>
         <h2>{{medicalDisclaimer.title}}</h2>
         <p>{{medicalDisclaimer.body}}</p>
     </section>
 
     <!-- Machine-Readable Data Reference -->
     <section class="callout center-text">
+        <div class="callout-icon"><i class="{{machineReadable.icon}}"></i></div>
         <h2>{{machineReadable.title}}</h2>
         <p>{{machineReadable.intro}}</p>
         <p class="code-inline"><a href="{{machineReadable.url}}">{{machineReadable.url}}</a></p>
@@ -170,6 +190,7 @@
 
     <!-- Contact -->
     <section class="callout callout--highlight center-text">
+        <div class="callout-icon"><i class="{{contact.icon}}"></i></div>
         <h2>{{contact.title}}</h2>
 {{#each contact.lines}}
         <p><strong>{{label}}:</strong> {{#if href}}<a href="{{href}}">{{value}}</a>{{else}}{{value}}{{/if}}</p>

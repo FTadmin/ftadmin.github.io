@@ -867,7 +867,333 @@ footer {
     display: block;
 }
 
-/* Region list (about page Global Reach) */
+/* ==========================================
+   ABOUT PAGE — redesigned sections
+   ========================================== */
+
+/* Chips */
+.chip,
+.chip-muted {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.chip {
+    background: var(--color-primary-tint);
+    color: var(--color-primary);
+}
+
+.chip-muted {
+    background: var(--color-surface-muted);
+    color: var(--color-text-subtle);
+    font-weight: 500;
+}
+
+.chip i {
+    font-size: 0.9em;
+}
+
+/* Applications — rich app cards */
+.about-app {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    margin: var(--space-5) 0;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+
+.about-app:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.about-app-header {
+    display: flex;
+    gap: var(--space-5);
+    align-items: flex-start;
+    margin-bottom: var(--space-4);
+}
+
+.about-app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    flex-shrink: 0;
+}
+
+.about-app-title {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-app-title h3 {
+    margin: 0 0 var(--space-2);
+    font-size: 1.3em;
+}
+
+.about-app-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.about-app-ranking {
+    margin-top: var(--space-2);
+    font-size: 0.85em;
+    color: var(--color-warn);
+    font-weight: 600;
+}
+
+.about-app-description {
+    margin: 0 0 var(--space-4);
+    line-height: 1.7;
+}
+
+.about-app-features-title {
+    margin: var(--space-4) 0 var(--space-3);
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-subtle);
+}
+
+.about-app-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-2) var(--space-5);
+}
+
+.about-app-features li {
+    padding: var(--space-2) 0 var(--space-2) var(--space-5);
+    position: relative;
+    line-height: 1.55;
+    font-size: 0.925em;
+    color: var(--color-text-muted);
+}
+
+.about-app-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1em;
+    width: 6px;
+    height: 6px;
+    background: var(--color-primary);
+    border-radius: 50%;
+}
+
+.about-app-bestfor {
+    padding: var(--space-4) var(--space-4);
+    background: var(--color-surface-muted);
+    border-radius: var(--radius-md);
+    font-size: 0.9em;
+    margin: var(--space-4) 0;
+    line-height: 1.6;
+}
+
+.about-app-cta {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: var(--space-5);
+}
+
+@media (max-width: 640px) {
+    .about-app-header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .about-app-meta {
+        justify-content: center;
+    }
+}
+
+/* Fact list — label/value grid for Key Facts / Tech / Tech Info cards */
+.fact-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-4) 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-3) var(--space-5);
+}
+
+.fact-list > li {
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.fact-label {
+    display: block;
+    color: var(--color-text-subtle);
+    font-size: 0.72em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 2px;
+}
+
+.fact-value {
+    display: block;
+    color: var(--color-text);
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.awards-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-4) 0 0;
+}
+
+.awards-list li {
+    padding: var(--space-2) 0 var(--space-2) var(--space-5);
+    position: relative;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+.awards-list li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.awards-list li.awards-list__featured {
+    color: var(--color-text-strong);
+    font-weight: 600;
+}
+
+.awards-list li.awards-list__featured::before {
+    content: '\1F3C6'; /* 🏆 */
+    font-size: 1em;
+}
+
+/* Global Reach — region grid */
+.region-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-4);
+    margin: var(--space-5) auto 0;
+    text-align: left;
+    max-width: 1100px;
+}
+
+.region-card {
+    background: var(--color-surface);
+    padding: var(--space-5);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+.region-card h4 {
+    margin: 0 0 var(--space-2);
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.region-card p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* Use Cases — icon-led cards */
+.use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-5);
+    margin: var(--space-5) 0;
+}
+
+.use-case-card {
+    background: var(--color-surface);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+
+.use-case-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.use-case-icon {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-tint);
+    color: var(--color-primary);
+    border-radius: var(--radius-md);
+    font-size: 1.4em;
+    margin-bottom: var(--space-3);
+}
+
+.use-case-card h3 {
+    margin: 0 0 var(--space-2);
+    font-size: 1.1em;
+}
+
+.use-case-card p {
+    margin: 0 0 var(--space-3);
+    font-size: 0.925em;
+    color: var(--color-text-muted);
+}
+
+.use-case-card ul {
+    margin: 0;
+    padding-left: var(--space-5);
+}
+
+.use-case-card li {
+    margin: var(--space-1) 0;
+    font-size: 0.9em;
+    color: var(--color-text-muted);
+    line-height: 1.55;
+}
+
+/* Callout icon slot */
+.callout-icon {
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-tint);
+    color: var(--color-primary);
+    border-radius: var(--radius-pill);
+    font-size: 1.5em;
+    margin: 0 auto var(--space-4);
+}
+
+.callout--highlight .callout-icon {
+    background: var(--color-bg);
+}
+
+/* Legacy region-list — kept for anything not yet migrated */
 .region-list p {
     margin: var(--space-2) 0;
 }

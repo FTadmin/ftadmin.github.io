@@ -247,8 +247,8 @@
           "title": "Awards and Recognition",
           "items": [
             {
-              "strong": true,
-              "text": "🏆 Number 1 Blood Pressure Tracking App in the United Kingdom"
+              "text": "🏆 Number 1 Blood Pressure Tracking App in the United Kingdom",
+              "featured": true
             },
             {
               "text": "Top-rated cardiovascular health application worldwide"
@@ -317,7 +317,9 @@
           "bestFor": "Hypertension management, home blood pressure monitoring, medication effectiveness tracking, white coat syndrome documentation, cardiovascular health monitoring",
           "learnMoreText": "Learn more about Blood Pressure Tracker",
           "learnMoreUrl": "https://feeltracker.com/blood-pressure/",
-          "downloadText": "Download on App Store"
+          "downloadText": "Download on App Store",
+          "iconSrc": "/images/BPT_1024.png",
+          "slug": "blood-pressure"
         },
         {
           "name": "2. Mental Health",
@@ -357,7 +359,9 @@
           "bestFor": "Bipolar disorder tracking, borderline personality disorder (BPD) management, PTSD symptom monitoring, anxiety and depression tracking, ADHD emotional regulation, general mental health awareness",
           "learnMoreText": "Learn more about Mood Tracker",
           "learnMoreUrl": "https://feeltracker.com/mental-health/",
-          "downloadText": "Download on App Store"
+          "downloadText": "Download on App Store",
+          "iconSrc": "/images/FT_1024.png",
+          "slug": "mental-health"
         },
         {
           "name": "3. Daily Journaling",
@@ -400,7 +404,9 @@
           "bestFor": "Daily reflection and gratitude journaling, life event documentation, private diary keeping, creative writing, tracking personal growth",
           "learnMoreText": "Learn more about Daily Journaling",
           "learnMoreUrl": "https://feeltracker.com/daily-journal/",
-          "downloadText": "Download on App Store"
+          "downloadText": "Download on App Store",
+          "iconSrc": "/images/NT_1024.png",
+          "slug": "daily-journal"
         },
         {
           "name": "4. Weight & Food",
@@ -440,7 +446,9 @@
           "bestFor": "Weight loss tracking, body composition monitoring, fitness goal progress, health metric documentation for medical purposes",
           "learnMoreText": "Learn more about Weight Tracker",
           "learnMoreUrl": "https://feeltracker.com/weight/",
-          "downloadText": "Download on App Store"
+          "downloadText": "Download on App Store",
+          "iconSrc": "/images/WT_1024.png",
+          "slug": "weight"
         },
         {
           "name": "5. Sleep & Dreams",
@@ -480,7 +488,9 @@
           "bestFor": "Sleep disorder documentation, CPAP therapy monitoring, sleep apnea management, insomnia pattern identification, sleep quality optimization, sleep study preparation",
           "learnMoreText": "Learn more about Sleep Tracker",
           "learnMoreUrl": "https://feeltracker.com/sleep/",
-          "downloadText": "Download on App Store"
+          "downloadText": "Download on App Store",
+          "iconSrc": "/images/ST_1024.png",
+          "slug": "sleep"
         }
       ]
     },
@@ -643,7 +653,8 @@
             {
               "text": "Monitoring cardiovascular health in conjunction with lifestyle changes"
             }
-          ]
+          ],
+          "icon": "fas fa-heart-pulse"
         },
         {
           "title": "For Mental Health Tracking",
@@ -667,7 +678,8 @@
             {
               "text": "DBT (Dialectical Behavior Therapy) and CBT (Cognitive Behavioral Therapy) practices"
             }
-          ]
+          ],
+          "icon": "fas fa-brain"
         },
         {
           "title": "For Sleep Disorder Management",
@@ -688,7 +700,8 @@
             {
               "text": "Healthcare providers recommended by sleep doctors"
             }
-          ]
+          ],
+          "icon": "fas fa-moon"
         }
       ]
     },
@@ -749,13 +762,15 @@
     },
     "medicalDisclaimer": {
       "title": "Important Medical Disclaimer",
-      "body": "Feeltracker applications are personal health tracking tools and are not medical devices. They should not be used for medical diagnosis or treatment decisions. Always consult qualified healthcare professionals for medical advice, diagnosis, and treatment. These apps are designed to help you organize and track your health data for personal use and for sharing with your healthcare providers."
+      "body": "Feeltracker applications are personal health tracking tools and are not medical devices. They should not be used for medical diagnosis or treatment decisions. Always consult qualified healthcare professionals for medical advice, diagnosis, and treatment. These apps are designed to help you organize and track your health data for personal use and for sharing with your healthcare providers.",
+      "icon": "fas fa-notes-medical"
     },
     "machineReadable": {
       "title": "For Developers and AI Systems",
       "intro": "A machine-readable JSON file with comprehensive application data is available at:",
       "url": "https://feeltracker.com/ai-info.json",
-      "description": "This structured data file contains detailed information about all Feeltracker applications including features, ratings, supported languages, technical specifications, and use cases."
+      "description": "This structured data file contains detailed information about all Feeltracker applications including features, ratings, supported languages, technical specifications, and use cases.",
+      "icon": "fas fa-code"
     },
     "contact": {
       "title": "Contact and Support",
@@ -785,7 +800,8 @@
           "text": "View FAQ",
           "href": "../faq/"
         }
-      ]
+      ],
+      "icon": "fas fa-envelope"
     }
   }
 }
