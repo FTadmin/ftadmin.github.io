@@ -548,7 +548,8 @@ a:hover {
     gap: var(--space-5);
     padding: var(--space-6) var(--space-5);
     margin: var(--space-3) 0;
-    background: transparent;
+    background:
+        radial-gradient(ellipse 55% 60% at 82% 50%, var(--app-tint, var(--color-primary-tint)), transparent 55%);
     box-shadow: none;
     border-radius: var(--radius-xl);
     position: relative;
@@ -559,17 +560,34 @@ a:hover {
 .apps-section .app-card:hover {
     transform: none;
     box-shadow: none;
-    background: transparent;
 }
 
+/* Alternation: even cards have icon on the right on desktop, so the tint moves right;
+   odd non-first cards have icon on the left, tint goes left. The first card uses the
+   default (right) to match its default icon-left/text-right layout flipped visually. */
 .apps-section .app-card:nth-child(even) {
     background:
-        radial-gradient(ellipse 65% 55% at 18% 50%, var(--app-tint, var(--color-primary-tint)), transparent 60%),
+        radial-gradient(ellipse 55% 60% at 18% 50%, var(--app-tint, var(--color-primary-tint)), transparent 55%),
         var(--color-surface);
 }
 
-.apps-section .app-card:nth-child(odd):not(:first-of-type) {
-    background: radial-gradient(ellipse 65% 55% at 82% 50%, var(--app-tint, var(--color-primary-tint)), transparent 60%);
+.apps-section .app-card:nth-child(odd) {
+    background:
+        radial-gradient(ellipse 55% 60% at 18% 50%, var(--app-tint, var(--color-primary-tint)), transparent 55%);
+}
+
+@media (min-width: 820px) {
+    /* Odd (icon-left / text-right) → tint on left */
+    .apps-section .app-card:nth-child(odd) {
+        background:
+            radial-gradient(ellipse 55% 65% at 15% 50%, var(--app-tint, var(--color-primary-tint)), transparent 52%);
+    }
+    /* Even (text-left / icon-right) → tint on right */
+    .apps-section .app-card:nth-child(even) {
+        background:
+            radial-gradient(ellipse 55% 65% at 85% 50%, var(--app-tint, var(--color-primary-tint)), transparent 52%),
+            var(--color-surface);
+    }
 }
 
 .apps-section .app-card-header {
@@ -584,13 +602,13 @@ a:hover {
     width: 160px;
     height: 160px;
     border-radius: 22%;
-    filter: drop-shadow(0 20px 30px var(--app-glow, var(--color-primary-tint)));
-    transition: transform 400ms var(--ease), filter 400ms var(--ease);
+    box-shadow: 0 18px 32px -6px var(--app-glow, var(--color-primary-tint));
+    transition: transform 400ms var(--ease), box-shadow 400ms var(--ease);
 }
 
 .apps-section .app-card:hover .app-icon-large {
     transform: scale(1.05) translateY(-4px);
-    filter: drop-shadow(0 28px 44px var(--app-glow, var(--color-primary-tint)));
+    box-shadow: 0 24px 44px -4px var(--app-glow, var(--color-primary-tint));
 }
 
 .apps-section .app-card-title h3 {
