@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -507,12 +507,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>מעקב בריאות מבוסס בינה מלאכותית — פשוט וחכם</h1>
-        <p class="hero-subtitle">עקוב אחר לחץ הדם, מצב הרוח, המשקל, השינה והמחשבות היומיות שלך עם אפליקציות יומן חכמות המסתנכרנות עם Apple Health ומספקות תובנות בינה מלאכותית מותאמות אישית.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>מעקב בריאות מבוסס בינה מלאכותית — פשוט וחכם</h1>
+                <p class="hero-subtitle">עקוב אחר לחץ הדם, מצב הרוח, המשקל, השינה והמחשבות היומיות שלך עם אפליקציות יומן חכמות המסתנכרנות עם Apple Health ומספקות תובנות בינה מלאכותית מותאמות אישית.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> פרטיות קודמת — ללא פרסומות, ללא מעקב, הנתונים שלך נשארים פרטיים
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> סנכרון Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> תובנות בינה מלאכותית</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> גיבוי iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="לחץ דם Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="יומן יומי Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="בריאות נפשית Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="משקל Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="שינה Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -545,23 +579,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> פרטיות קודמת — ללא פרסומות, ללא מעקב, הנתונים שלך נשארים פרטיים
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> סנכרון Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> תובנות בינה מלאכותית</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> גיבוי iCloud</span>
-
-        </div>
     </section>
 
 
@@ -591,7 +608,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">בחר את אפליקציית מעקב הבריאות שלך</h2>
 
 
@@ -801,7 +818,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>למה לבחור באפליקציות Feeltracker?</h2>
         <div class="features-grid">
 
@@ -881,7 +898,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>מופעל על ידי בינה מלאכותית</h2>
         <p class="section-subtitle">תכונות הבינה המלאכותית שלנו עוזרות לך להבין את נתוני הבריאות שלך כמו מעולם</p>
 
@@ -987,7 +1004,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>מהימן על ידי אלפי משתמשים ברחבי העולם</h2>
         <p class="section-subtitle">הצטרף למשתמשים שלוקחים שליטה על בריאותם</p>
         <div class="stats-grid">
@@ -1063,15 +1080,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">מה המשתמשים שלנו אומרים</h2>
         <p class="center-text section-subtitle reviews-subtitle">ביקורות אמיתיות מה-App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">חוויית אפליקציית לחץ הדם הטובה ביותר</div>
                 </div>
                 <p class="review-content">"מצאתי את אפליקציית לחץ הדם הטובה ביותר שניסיתי אי פעם. היא לא רק מאפשרת לי לשלוח תוצאות לרופא שלי, אלא נראה שאנשים עובדים ללא לאות כדי לשמור על האפליקציה פועלת בצורה חלקה. הם מעדכנים ומשפרים אותה כל הזמן, מה שנהדר. בכנות, זה המנוי הטוב ביותר שיש לי בטלפון שלי כרגע."</p>
@@ -1081,7 +1106,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">גם המטפל שלי אוהב את האפליקציה הזו</div>
                 </div>
                 <p class="review-content">"קיבלתי לפני כחודש אבחנה של ADHD. והייתי צריך לחכות 3 שבועות כדי לקבל תרופות לכך. במהלך הזמן הזה מצאתי את האפליקציה הזו, והיה מדהים לראות את האקראיות של המוח שלי ללא תרופות בהשוואה למוח שלי עם תרופות. המוח שלי עם תרופות הרבה יותר יציב בגרף. בנוסף, אני אוהב שאני יכול לרשום מה עולה בראשי ממש מהר."</p>
@@ -1091,7 +1116,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">עד כה טוב</div>
                 </div>
                 <p class="review-content">"זוהי אפליקציה פשוטה ונחמדה שאינה חורגת לתחומים מיותרים. הפשטות שלה, כולל פשטות הממשק, היא מה שאני מעריך יותר מכל. אני לא צריך פרחים ועצבות ומשחקים ויוניקורנים צבעוניים. אני רק צריך אפליקציית פתקים פשוטה דמויית יומן. עד כה האפליקציה הזו עמדה בדרישות אלו. זה מרענן. אני גם מעריך שאפשר לייצא אותה בפורמט PDF כשצריך. תודה שמשאירים אותה פשוטה."</p>
@@ -1101,7 +1126,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">קריאה לכל רופאי השינה!</div>
                 </div>
                 <p class="review-content">"הייתי כל כך מופתע שרופא השינה שלי ניסה לתת לי דפי נייר לרישום שעות השינה שלי ללא אפשרות לאסוף אותם!? כשביקשתי אפליקציה, הם הציעו יומן שינה consensus, שהוא חסר תועלת. למרבה המזל מצאתי את האפליקציה הזו ומיד ביקשתי מרופא השינה שלי להתחיל להמליץ עליה. אני גם מעריך כמה המפתח מגיב. ברור שאדם זה רוצה לשפר חיים. תודה!!"</p>
@@ -1111,7 +1136,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">אפליקציה טובה מאוד</div>
                 </div>
                 <p class="review-content">"הרופא שלי רוצה שאתעד את לחץ הדם שלי מדי יום. האפליקציה הזו מאפשרת לי לתעד את המידע שלי ומאחסנת אותו בפורמט מעוצב יפה מאוד. אפליקציה נהדרת."</p>
@@ -1121,7 +1146,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">אפליקציה נהדרת</div>
                 </div>
                 <p class="review-content">"כמישהו עם הפרעה דו-קוטבית הייתי צריך לתעד את מצבי הרוח והרגשות שלי אבל לא יכולתי למצוא אפליקציה שלא רצתה מנוי יקר. אני מאוד אסיר תודה על האפליקציה הזו, פונקציונליות מלאה ללא מנוי ואפשרות מנוי אם רוצים."</p>
@@ -1129,9 +1154,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">אוהב את האפליקציה!! כל כך קל לשימוש.</div>
                 </div>
                 <p class="review-content">"האפליקציה מדהימה למעקב אחר הרגלי שינה, זמן ולתיעוד הערות. פשוטה וקלה לשימוש. פניתי למפתח Gaurav שחזר אלי תוך דקות ותוך ימים הוסיף את הצעתי! ממליץ בחום. Gaurav Sharma, אתה רוקסטאר!!"</p>
@@ -1141,7 +1166,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">אפליקציה ממש מגניבה</div>
                 </div>
                 <p class="review-content">"לפני כמה לילות התחלתי לתעד את לחץ הדם שלי, ואפליקציה זו ממש מגניבה. מצחיק שהיא הופיעה בטלפון שלי בדיוק היום. הייתי ממליץ על האפליקציה הזו בכל לב."</p>
@@ -1151,7 +1176,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">אני אוהב את זה</div>
                 </div>
                 <p class="review-content">"אני אוהב שאני לא צריך לשלם על הכל. באפליקציות מצב רוח אחרות שלי אני צריך לשלם כדי לראות מה מפעיל אותי. אני אוהב כשזה מספר לך אילו מילים משפיעות עליך הכי הרבה. יש קוד גישה אם אתה רוצה שרק אתה תקרא. זה ממש עזר לי לשפר את עצמי. אני רואה בגרפים מתי ואיפה אני משתפר."</p>
@@ -1161,7 +1186,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">אפליקציה טובה למעקב דפוסי שינה</div>
                 </div>
                 <p class="review-content">"הייתי צריך עזרה במעקב שינה כשהתחלתי טיפול CPAP. האפליקציה הייתה מצוינת. אני יכול לעקוב אחר שעות השינה, חלומות, דפוסי שינה ועוד. אחרי 400 לילות היא מראה לי את ההתקדמות שעשיתי בטיפול CPAP!"</p>
@@ -1171,7 +1196,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">אפליקציה פנטסטית</div>
                 </div>
                 <p class="review-content">"אפליקציה נהדרת כזאת. היא עוקבת אחר לחץ הדם שלי. לא תטעה כאן!"</p>
@@ -1181,7 +1206,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">משקל ו-BMI</div>
                 </div>
                 <p class="review-content">"האפליקציה מצוינת פרט לשני פגמים קטנים. 1: המשקל תמיד חוזר ל-150 במקום להישאר במשקל האחרון שהכנסת. 2: ה-BMI צריך להיות מחושב אוטומטית במקום לנסות לחשב ידנית."</p>
@@ -1219,7 +1244,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>התחל לעקוב אחר בריאותך היום</h2>
         <p>בחר את האפליקציה המתאימה לצרכיך. חינמית להורדה עם תכונות פרמיום אופציונליות.</p>
         <div class="cta-downloads">

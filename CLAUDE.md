@@ -15,6 +15,10 @@
 
 ---
 
+## Large-file edits
+
+Prefer `Edit` with targeted old/new strings over full-file `Write` for any file over ~50KB (e.g. `shared.css`, large JSON overlays, 500+ line templates) — `Write` can time out on big payloads. Break rewrites into several small `Edit` calls, or pipe through a Node one-liner via `Bash` (`node -e "const fs=require('fs'); …; fs.writeFileSync(…)"`). The same rule applies to the plan file during plan mode.
+
 ## Architecture Overview
 
 All HTML pages are generated from `data/` JSON files + HTML templates (16 pages per language).

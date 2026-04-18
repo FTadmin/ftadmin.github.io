@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>MI-alapú Egészségkövetés Egyszerűen</h1>
-        <p class="hero-subtitle">Kövesse nyomon vérnyomását, hangulatát, súlyát, alvását és napi gondolatait intelligens naplóalkalmazásokkal, amelyek szinkronizálnak az Apple Health-szel és személyre szabott MI-elemzéseket nyújtanak.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>MI-alapú Egészségkövetés Egyszerűen</h1>
+                <p class="hero-subtitle">Kövesse nyomon vérnyomását, hangulatát, súlyát, alvását és napi gondolatait intelligens naplóalkalmazásokkal, amelyek szinkronizálnak az Apple Health-szel és személyre szabott MI-elemzéseket nyújtanak.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Adatvédelem Először – Nincs Hirdetés, Nincs Követés, Adatai Magánjellegűek Maradnak
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health Szinkron</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> MI Elemzések</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud Biztonsági Mentés</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Vérnyomás Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Napi Naplóírás Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Mentális Egészség Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Súly Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Alvás Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Adatvédelem Először – Nincs Hirdetés, Nincs Követés, Adatai Magánjellegűek Maradnak
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health Szinkron</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> MI Elemzések</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud Biztonsági Mentés</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Válassza ki az Egészségkövetó Alkalmazást</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Miért válassza a Feeltracker alkalmazásokat?</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Mesterséges Intelligencia Hajtja</h2>
         <p class="section-subtitle">MI funkcióink segítenek megérteni egészségadatait, mint soha korábban</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Világszerte Több Ezer Felhasználó Bízik Benne</h2>
         <p class="section-subtitle">Csatlakozzon azokhoz a felhasználókhoz, akik kézben tartják az egészségüket</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Mit Mondanak Felhasználóink</h2>
         <p class="center-text section-subtitle reviews-subtitle">Valódi vélemények az App Store-ból</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Legjobb Vérnyomás Alkalmazás Élmény</div>
                 </div>
                 <p class="review-content">"Megtaláltam a legjobb vérnyomás-alkalmazást, amit valaha kipróbáltam. Nemcsak lehetővé teszi, hogy az eredményeket elküldhessem az orvosomnak, de úgy tűnik, az emberek fáradhatatlanul dolgoznak az alkalmazás zökkenőmentes működéséért. Folyamatosan frissítik és fejlesztik, ami nagyszerű. Őszintén szólva, ez a legjobb előfizetés a telefonomon."</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Még a terapeutámnak is tetszik ez az alkalmazás</div>
                 </div>
                 <p class="review-content">"Körülbelül egy hónapja diagnosztizáltak ADHD-val. Három hetet kellett várnom a gyógyszerekre. Ez idő alatt megtaláltam ezt az alkalmazást, és elképesztő volt látni a gyógyszer nélküli agyam rendhagyóságát a gyógyszeres agyamhoz képest. A gyógyszeres agyam sokkal kiegyensúlyozottabb a grafikonon. Ráadásul szeretem, hogy gyorsan le tudom jegyezni, mi jár az eszemben."</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Eddig minden rendben</div>
                 </div>
                 <p class="review-content">"Ez egy szép kis egyszerű alkalmazás, amely nem terjeszkedik felesleges területekre. Az egyszerűsége, beleértve a felület egyszerűségét, az, amit a legtöbbre értékelek. Csak egy egyszerű napló jellegű feljegyzés-alkalmazásra van szükségem. Eddig ez az alkalmazás teljesítette ezeket a követelményeket. Frissítő. Azt is értékelem, hogy PDF formátumban exportálható. Köszönöm az egyszerűségért."</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Alvást Figyelő Orvosok, Figyeljetek!</div>
                 </div>
                 <p class="review-content">"Nagyon meglepett, hogy az alvást figyelő orvosom papírlapokat akart adni az alvási órák rögzítéséhez! Amikor alkalmazást kértem, a Consensus Sleep Diary-t javasolták, ami használhatatlan. Szerencsére megtaláltam ezt az alkalmazást, és azonnal megkértem az alvást figyelő orvosomat, hogy ajánlja ezt. KÖSZÖNÖM!!"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Nagyon jó alkalmazás</div>
                 </div>
                 <p class="review-content">"Az orvosom azt szeretné, hogy naponta feljegyezzem a vérnyomásomat. Ez az alkalmazás lehetővé teszi, hogy rögzítsem az adataimat nagyon szépen megtervezett formátumban. Remek alkalmazás."</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Remek alkalmazás</div>
                 </div>
                 <p class="review-content">"Bipoláris zavarban szenvedőként hangulataimat és érzelmeimet kellett rögzítenem, de nem találtam olyan alkalmazást, amely ne igényelt volna drága előfizetést. Nagyon hálás vagyok ezért az alkalmazásért, előfizetés nélküli teljes funkcionalitással és opcionális előfizetési lehetőséggel."</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Szeretem ezt az alkalmazást!! Olyan könnyen használható.</div>
                 </div>
                 <p class="review-content">"Ez az alkalmazás fantasztikus az alvási szokások figyeléséhez és a jövőbeli hivatkozáshoz szükséges jegyzetek készítéséhez. Egyszerű és könnyen használható. A fejlesztő, Gaurav, egyszerűen csodálatos volt!! Perceken belül visszahívott, napok alatt pedig ténylegesen hozzáadta a javaslatomat! Határozottan ajánlom az alvási minták nyilvántartásához. Gaurav Sharma, Ön egy rocksztár!!"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Tényleg Klassz Alkalmazás</div>
                 </div>
                 <p class="review-content">"Néhány éjjel ezelőtt kezdtem el nyilvántartást vezetni a vérnyomásomról, ez az alkalmazás tényleg klassz. Teljes szívemből ajánlanám ezt az alkalmazást."</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Tetszik nekem</div>
                 </div>
                 <p class="review-content">"Tetszik, hogy nem kell mindenért fizetni, a többi hangulat-alkalmazásomban fizetnem kell a kiváltóokok megtekintéséért. Valóban segített javítani magamon. Szinte minden nap csinálom, és látom a diagramokat, és láthatom mikor és hol fejlesztem vagy romlik. Tényleg élvezem ezt az alkalmazást."</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Jó alkalmazás az alvásmintázatok nyomon követéséhez</div>
                 </div>
                 <p class="review-content">"Szükségem volt valamire, ami segít az alváskövetésben, amikor 2022 novemberében elkezdtem a CPAP-terápiát. Ez az alkalmazás remekül segít abban, hogy felelős legyek egy menetrend iránt és lássam a fejlődésemet. Frissítés – most 400 éjszakája használom az alkalmazást, és megmutatja a CPAP-terápiában elért fejlődésemet."</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Fantasztikus Alkalmazás</div>
                 </div>
                 <p class="review-content">"Milyen remek alkalmazás. Nyomon követi a vérnyomásomat. Nem téved ezzel!"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Súly és BMI</div>
                 </div>
                 <p class="review-content">"Úgy találom, ez az alkalmazás kivételes, kivéve két kisebb hiányosságot. 1: a súly mindig visszaugrik 150-re a legutóbb beírt súly helyett. 2: a BMI-t automatikusan kellene kiszámítani, ahelyett, hogy manuálisan kellene számolni."</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Kezdje el az Egészségkövetést Ma</h2>
         <p>Válassza az Önnek megfelelő alkalmazást. Ingyenesen letölthető opcionális prémium funkciókkal.</p>
         <div class="cta-downloads">

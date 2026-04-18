@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>AI-pohjainen terveyden seuranta yksinkertaisesti</h1>
-        <p class="hero-subtitle">Seuraa verenpainettasi, mielialaasi, painoasi, untasi ja päivittäisiä ajatuksiasi älykkäillä päiväkirjasovelluksilla, jotka synkronoivat Apple Healthin kanssa ja tarjoavat henkilökohtaisia AI-oivalluksia.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>AI-pohjainen terveyden seuranta yksinkertaisesti</h1>
+                <p class="hero-subtitle">Seuraa verenpainettasi, mielialaasi, painoasi, untasi ja päivittäisiä ajatuksiasi älykkäillä päiväkirjasovelluksilla, jotka synkronoivat Apple Healthin kanssa ja tarjoavat henkilökohtaisia AI-oivalluksia.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Yksityisyys ensin — Ei mainoksia, ei seurantaa, tietosi pysyvät yksityisinä
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health -synkronointi</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> Tekoälynäkemykset</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud-varmuuskopio</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Verenpaine Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Päiväkirja Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Mielenterveys Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Paino Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Uni Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Yksityisyys ensin — Ei mainoksia, ei seurantaa, tietosi pysyvät yksityisinä
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health -synkronointi</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> Tekoälynäkemykset</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud-varmuuskopio</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Valitse terveyden seurantasovelluksesi</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Miksi valita Feeltracker-sovellukset?</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Tekoälyn voimalla</h2>
         <p class="section-subtitle">AI-ominaisuutemme auttavat sinua ymmärtämään terveystietojasi kuten koskaan ennen</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Tuhansien käyttäjien luottama ympäri maailmaa</h2>
         <p class="section-subtitle">Liity käyttäjien joukkoon, jotka ottavat terveytensä hallintaan</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Mitä käyttäjämme sanovat</h2>
         <p class="center-text section-subtitle reviews-subtitle">Aitoja arvosteluja App Storesta</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Paras verenpainensovellus koskaan</div>
                 </div>
                 <p class="review-content">"Olen löytänyt parhaan verenpainensovelluksen, jota olen koskaan kokeillut. Se ei ainoastaan anna minulle mahdollisuutta lähettää tuloksia lääkärilleni, vaan kehittäjät näyttävät tekevän väsymättömästi töitä pitääkseen sovelluksen toiminnassa sujuvasti. He päivittävät ja parantavat sitä jatkuvasti, mikä on mahtavaa. Rehellisesti sanottuna se on paras tilaus, mitä minulla on puhelimessani juuri nyt."</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Jopa terapeuttini pitää tästä sovelluksesta</div>
                 </div>
                 <p class="review-content">"Minulla diagnosoitiin ADHD noin kuukausi sitten. Minun piti odottaa 3 viikkoa saadakseni lääkityksen siihen. Sinä aikana löysin tämän sovelluksen, ja on ollut aika hämmästyttävää nähdä lääkitsemättömän aivoni levottomuus verrattuna lääkittyyn aivooni. Lääkitty aivoni on paljon tasaisempi graafissa. Lisäksi pidän siitä, että voin kirjata ajatuksiani erittäin nopeasti."</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Toistaiseksi hyvä</div>
                 </div>
                 <p class="review-content">"Tämä on mukava pieni yksinkertainen sovellus, joka ei ylety tarpeettomille alueille. Arvostan eniten sen yksinkertaisuutta, mukaan lukien käyttöliittymän yksinkertaisuus. En tarvitse kukkia ja oravia ja pelejä ja pikku yllätyksiä ja sateenkaariyksisarvia. Tarvitsen vain yksinkertaisen päiväkirjamaisen muistiinpanosovelluksen. Toistaiseksi tämä sovellus on täyttänyt nämä vaatimukset tai pikemminkin vaatimusten puuttumisen. Se on jonkin verran virkistävää. Arvostan myös sitä, että voit viedä sen PDF-muodossa tarvittaessa. Kiitos yksinkertaisuuden säilyttämisestä."</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Huomio kaikille unilääkäreille!</div>
                 </div>
                 <p class="review-content">"Olin niin yllättynyt, että unilääkärini yritti antaa minulle paperilappuja unentuntieni kirjaamiseen ilman mitään tapaa koota niitä yhteen! Kun pyysin sovellusta, he suosittelivat consensus Sleep Diary -sovellusta, joka on hyödytön. Onneksi löysin tämän sovelluksen ja pyysin välittömästi unilääkäriäni alkamaan suositella sitä. Arvostan myös sitä, kuinka reagoiva kehittäjä on. Tällä henkilöllä on selvästi halu parantaa elämää. KIITOS!!"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Todella hyvä sovellus</div>
                 </div>
                 <p class="review-content">"Lääkärini haluaa minun kirjaavan verenpaineeni päivittäin. Tämä sovellus antaa minulle mahdollisuuden kirjata tietoni ja tallentaa ne erittäin hyvin suunniteltuun muotoon. Loistava sovellus."</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Loistava sovellus</div>
                 </div>
                 <p class="review-content">"Kaksisuuntaista mielialahäiriötä sairastavana minun piti kirjata mielialani ja tunteeni, mutta en löytänyt sovellusta, joka ei vaatisi kallista tilausta. Olen hyvin kiitollinen tästä sovelluksesta – täysi toiminnallisuus ilman tilausta ja tilausvaihtoehto jos haluaa."</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Rakastan tätä sovellusta!! Niin helppokäyttöinen.</div>
                 </div>
                 <p class="review-content">"Aluksi pyydän, anna minun sanoa: älä kiinnitä huomiota käyttäjänimeen, jonka näet täällä minulle. Se oli virhe, jonka tein aikaisin, eikä sitä voi ilmeisesti muuttaa ilman Mac-tietokonetta Applen mukaan. Nyt syvennytään tähän sovellukseen. Tämä sovellus on mahtava unirytmien, ajan seurantaan ja muistiinpanojen tekemiseen tulevaa viitettä varten. Se on yksinkertainen ja helppokäyttöinen. Minulla oli ehdotus, jotain toivoin muutettavan, ja sovelluskehittäjä Gaurav oli täysin hämmästyttävä!! Otin häneen yhteyttä, ja hän vastasi minulle muutamassa minuutissa ja muutamassa päivässä hän todella lisäsi ehdotukseni! Suosittelen lämpimästi käyttämään tätä unirytmiesi kirjaamiseen. Ja se on ehdottomasti tilauksen arvoinen. Gaurav Sharma, olet tähti!!"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Todella siisti sovellus</div>
                 </div>
                 <p class="review-content">"Vasta muutama yö sitten aloin pitää kirjaa verenpaineestani – tämä sovellus on todella siistiä. On hauskaa, miten tämä sovellus vain ilmestyi puhelimeeni tänään. Suosittelisin tätä sovellusta epäröimättä."</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">pidän tästä</div>
                 </div>
                 <p class="review-content">"pidän siitä, että minun ei tarvitse maksaa kaikesta – muissa mieliala-sovelluksissani minun täytyy maksaa nähdäkseni, mikä laukaisee reaktioni. pidän siitä, kun se kertoo, mitkä sanat vaikuttavat sinuun eniten. siinä on salasana tai lukko, jos haluat vain itse lukea kirjoittamaasi. se on todella auttanut minua korjaamaan itseäni. olen tehnyt tämän lähes joka päivä ja näen kaaviot ja voin nähdä milloin ja missä parannen tai heikennän. nautin todella tästä sovelluksesta ja pidän ääniefekteistä, jotka se tekee kun napsautat mielialojasi."</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Hyvä sovellus unirytmien seurantaan</div>
                 </div>
                 <p class="review-content">"Tarvitsin jotain avukseni unenseurantaan, kun aloitin CPAP-hoidon marraskuussa 2022. Tämä sovellus on ollut loistava pitämään minut vastuullisena aikataulusta ja seuraamaan edistymistäni. Voin seurata nukuttuja tunteja, uniani, unirytmejä sekä muita tietoja, joita haluan tarkastella. Ainoa ongelma on, että sovellus ei joskus avaudu heti iPad:llani ja minun täytyy pakottaa se sulkeutumaan ja avata uudelleen. Päivitys – olen nyt käyttänyt sovellusta 400 yötä ja se näyttää minulle edistymiseni CPAP-hoidossani ja paljon hyödyllisiä oivalluksia!"</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Upea sovellus</div>
                 </div>
                 <p class="review-content">"Aivan loistava sovellus. Se seuraa verenpaineeni. Et mene väärään suuntaan tässä!"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Paino ja BMI</div>
                 </div>
                 <p class="review-content">"Mielestäni tämä sovellus on erinomainen kahta pientä vikaa lukuun ottamatta, jotka ärsyttävät minua mutta toimivat silti erittäin hyvin. 1: paino palaa aina 150:een sen sijaan, että pysyisi viimeksi syöttämässäsi painossa. Olisi paljon kätevämpää, jos se pysyisi syöttämässäsi painossa sen sijaan, että täytyy selata painoja päästäkseni nykyiseen painooni. 2: BMI pitäisi laskea automaattisesti sen sijaan, että yritän tehdä laskelman manuaalisesti."</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Aloita terveytesi seuranta tänään</h2>
         <p>Valitse tarpeisiisi sopiva sovellus. Ilmainen ladattava, valinnaisia premium-ominaisuuksia.</p>
         <div class="cta-downloads">

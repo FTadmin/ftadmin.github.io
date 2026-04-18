@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>Śledzenie zdrowia wspierane przez AI — proste i skuteczne</h1>
-        <p class="hero-subtitle">Śledź ciśnienie krwi, nastrój, wagę, sen i codzienne myśli dzięki inteligentnym aplikacjom-dziennikom, które synchronizują się z Apple Health i dostarczają spersonalizowanych wglądów AI.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>Śledzenie zdrowia wspierane przez AI — proste i skuteczne</h1>
+                <p class="hero-subtitle">Śledź ciśnienie krwi, nastrój, wagę, sen i codzienne myśli dzięki inteligentnym aplikacjom-dziennikom, które synchronizują się z Apple Health i dostarczają spersonalizowanych wglądów AI.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Prywatność przede wszystkim — bez reklam, bez śledzenia, Twoje dane pozostają prywatne
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Synchronizacja z Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> Wglądy AI</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> Kopia zapasowa iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Ciśnienie Krwi Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Dziennik Codzienny Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Zdrowie Psychiczne Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Waga Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Sen Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Prywatność przede wszystkim — bez reklam, bez śledzenia, Twoje dane pozostają prywatne
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Synchronizacja z Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> Wglądy AI</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> Kopia zapasowa iCloud</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Wybierz swoją aplikację do śledzenia zdrowia</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Dlaczego warto wybrać aplikacje Feeltracker?</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Zasilane sztuczną inteligencją</h2>
         <p class="section-subtitle">Nasze funkcje AI pomagają rozumieć dane zdrowotne jak nigdy dotąd</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Zaufany przez tysiące użytkowników na całym świecie</h2>
         <p class="section-subtitle">Dołącz do użytkowników, którzy przejmują kontrolę nad swoim zdrowiem</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Co mówią nasi użytkownicy</h2>
         <p class="center-text section-subtitle reviews-subtitle">Prawdziwe recenzje z App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Najlepsze doświadczenie z aplikacją do ciśnienia krwi</div>
                 </div>
                 <p class="review-content">"Znalazłem najlepszą aplikację do ciśnienia krwi, jaką kiedykolwiek próbowałem. Nie tylko pozwala mi wysyłać wyniki do lekarza, ale ludzie wydają się niestrudzenie pracować, aby aplikacja działała sprawnie. Ciągle ją aktualizują i ulepszają, co jest świetne. Szczerze mówiąc, to najlepsza subskrypcja, jaką mam teraz na telefonie."</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Nawet mój terapeuta lubi tę aplikację</div>
                 </div>
                 <p class="review-content">"Właśnie miesiąc temu zdiagnozowano u mnie ADHD. I musiałem czekać 3 tygodnie na leki. W tym czasie znalazłem tę aplikację i naprawdę niesamowite jest zobaczyć nieregularność mojego nielekowawanego mózgu w porównaniu z lekowanym. Mój lekowany mózg jest znacznie bardziej wyrównany na wykresie. Plus podoba mi się, że mogę bardzo szybko zapisać co mi chodzi po głowie."</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Jak na razie wszystko w porządku</div>
                 </div>
                 <p class="review-content">"To fajna, prosta aplikacja, która nie wychodzi poza potrzebne obszary. To prostota, w tym prostota interfejsu, którą cenię najbardziej. Nie potrzebuję kwiatków i wiewiórek, gier i niespodzianek oraz tęczowych jednorożców. Potrzebuję tylko prostej aplikacji-dziennika z notatkami. Jak na razie aplikacja spełniła te wymagania lub ich brak. To jest w pewnym sensie odświeżające. Doceniam też, że możesz eksportować ją w formie PDF, gdy jest taka potrzeba. Dziękuję za prostotę."</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Uwaga, lekarze specjalizujący się w śnie!</div>
                 </div>
                 <p class="review-content">"Byłem bardzo zaskoczony, że mój lekarz snu próbował dać mi kartki papieru do rejestrowania godzin snu bez możliwości ich zebrania! Kiedy zapytałem o aplikację, zasugerowali Consensus Sleep Diary, który jest bezużyteczny. Na szczęście znalazłem tę aplikację i od razu poprosiłem mojego lekarza snu, żeby zaczął ją polecać. Doceniam też responsywność dewelopera. Wyraźnie ta osoba chce poprawiać życie. DZIĘKUJĘ!"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Bardzo dobra aplikacja</div>
                 </div>
                 <p class="review-content">"Mój lekarz chce, żebym codziennie mierzył ciśnienie. Ta aplikacja pozwala mi rejestrować informacje i zapisuje je w bardzo ładnie zaprojektowanym formacie. Świetna aplikacja."</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Świetna aplikacja</div>
                 </div>
                 <p class="review-content">"Jako osoba z zaburzeniami afektywnymi dwubiegunowymi musiałem rejestrować nastroje i emocje, ale nie mogłem znaleźć aplikacji, która nie wymagałaby drogiej subskrypcji. Jestem bardzo wdzięczny za tę aplikację — pełna funkcjonalność bez subskrypcji i opcja subskrypcji, jeśli chcesz."</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Uwielbiam tę aplikację!! Taka łatwa w użyciu.</div>
                 </div>
                 <p class="review-content">"Ta aplikacja jest świetna do monitorowania nawyków snu, czasu i możliwości robienia notatek do przyszłego wglądu. Jest prosta i łatwa w użyciu. Miałem sugestię, coś co chciałem zmienić, a deweloper Gaurav był absolutnie niesamowity!! Skontaktowałem się z nim i odpisał mi w ciągu kilku minut, a w ciągu dni faktycznie dodał moją sugestię! Gorąco polecam używanie tego do prowadzenia rejestru wzorców snu. I zdecydowanie warto subskrybować. Gaurav Sharma, jesteś gwiazdą!"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Naprawdę fajne aplikacja</div>
                 </div>
                 <p class="review-content">"Kilka nocy temu zacząłem prowadzić rejestr ciśnienia krwi, a ta aplikacja jest naprawdę fajna. Zabawne, jak ta aplikacja po prostu pojawiła się na moim telefonie dzisiaj. Poleciłbym tę aplikację bez wahania."</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Podoba mi się</div>
                 </div>
                 <p class="review-content">"Podoba mi się, że nie muszę za wszystko płacić; w innych aplikacjach nastrojowych muszę płacić, żeby zobaczyć co mnie wyzwala. Podoba mi się, gdy mówi ci, które słowa najbardziej na ciebie wpływają. Ma kod dostępu lub blokadę, jeśli chcesz, żeby tylko Ty czytał to co wpisujesz. Naprawdę mi pomogło. Robię to prawie codziennie i widzę wykresy i mogę zobaczyć kiedy i gdzie się poprawiam lub pogarszam. Naprawdę lubię tę aplikację i podoba mi się dźwięk, który wydaje gdy klikasz nastroje."</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Dobra aplikacja do śledzenia wzorców snu</div>
                 </div>
                 <p class="review-content">"Potrzebowałem czegoś do śledzenia snu, gdy zaczynałem terapię CPAP w listopadzie 2022. Ta aplikacja świetnie sprawdziła się w utrzymaniu mnie na harmonogramie i śledzeniu postępów. Mogę śledzić godziny snu, moje sny, wzorce snu i inne dane, które chcę sprawdzić. Jedynym problemem jest to, że czasami aplikacja nie otwiera się od razu na moim iPadzie i muszę ją wymusić zamknąć, a następnie ponownie otworzyć. Aktualizacja — używam aplikacji od 400 nocy i pokazuje mi postępy, jakie zrobiłem w terapii CPAP i wiele przydatnych wglądów!"</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Fantastyczna aplikacja</div>
                 </div>
                 <p class="review-content">"Taka świetna aplikacja. Śledzi moje ciśnienie krwi. Nie pomylisz się z tym wyborem!"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Waga i BMI</div>
                 </div>
                 <p class="review-content">"Uważam, że ta aplikacja jest wyjątkowa, z wyjątkiem dwóch drobnych wad, które mnie irytują, ale mimo to działa bardzo dobrze. 1: waga zawsze wraca do 150 zamiast pozostać na wadze, którą ostatnio wprowadzono. Byłoby znacznie wygodniej, gdyby pozostawała na wprowadzonej wadze zamiast przewijać się przez wagi, aby dojść do aktualnej wagi. 2: BMI powinno być obliczane automatycznie zamiast próbować wykonywać obliczenia ręcznie."</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Zacznij śledzić swoje zdrowie już dziś</h2>
         <p>Wybierz aplikację dopasowaną do Twoich potrzeb. Bezpłatna do pobrania z opcjonalnymi funkcjami premium.</p>
         <div class="cta-downloads">

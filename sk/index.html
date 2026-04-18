@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -535,12 +535,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>Sledovanie zdravia pomocou AI jednoducho</h1>
-        <p class="hero-subtitle">Sledujte krvný tlak, náladu, hmotnosť, spánok a každodenné myšlienky pomocou inteligentných denníkových aplikácií, ktoré sa synchronizujú s Apple Health a poskytujú personalizované AI poznatky.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>Sledovanie zdravia pomocou AI jednoducho</h1>
+                <p class="hero-subtitle">Sledujte krvný tlak, náladu, hmotnosť, spánok a každodenné myšlienky pomocou inteligentných denníkových aplikácií, ktoré sa synchronizujú s Apple Health a poskytujú personalizované AI poznatky.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Súkromie na prvom mieste — Žiadne reklamy, žiadne sledovanie, vaše údaje zostávajú súkromné
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Synchronizácia Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> AI poznatky</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> Záloha iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Krvný tlak Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Denný denník Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Duševné zdravie Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Hmotnosť Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Spánok Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -573,23 +607,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Súkromie na prvom mieste — Žiadne reklamy, žiadne sledovanie, vaše údaje zostávajú súkromné
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Synchronizácia Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> AI poznatky</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> Záloha iCloud</span>
-
-        </div>
     </section>
 
 
@@ -619,7 +636,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Vyberte si aplikáciu na sledovanie zdravia</h2>
 
 
@@ -829,7 +846,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Prečo si vybrať aplikácie Feeltracker?</h2>
         <div class="features-grid">
 
@@ -909,7 +926,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Poháňané umelou inteligenciou</h2>
         <p class="section-subtitle">Naše AI funkcie vám pomôžu pochopiť zdravotné údaje ako nikdy predtým</p>
 
@@ -1015,7 +1032,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Dôverujú im tisíce používateľov po celom svete</h2>
         <p class="section-subtitle">Pripojte sa k používateľom, ktorí preberajú kontrolu nad zdravím</p>
         <div class="stats-grid">
@@ -1091,15 +1108,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Čo hovoria naši používatelia</h2>
         <p class="center-text section-subtitle reviews-subtitle">Skutočné recenzie z App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Najlepší zážitok s aplikáciou na krvný tlak</div>
                 </div>
                 <p class="review-content">"Našiel som najlepšiu aplikáciu na krvný tlak, akú som kedy vyskúšal. Nielenže mi umožňuje posielať výsledky lekárovi, ale ľudia sa zdajú tvrdo pracovať, aby aplikácia fungovala hladko. Neustále ju aktualizujú a zlepšujú, čo je skvelé. Úprimne, je to najlepšie predplatné, ktoré mám v telefóne."</p>
@@ -1109,7 +1134,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Dokonca aj môj terapeut túto aplikáciu má rád</div>
                 </div>
                 <p class="review-content">"Pred mesiacom mi diagnostikovali ADHD. A musel som čakať 3 týždne na lieky. Počas toho som našiel túto aplikáciu a bolo úžasné vidieť erratickosť môjho nemedicínovaného mozgu v porovnaní s medicínovaným. Medicínovaný mozog je oveľa rovnomernejší v grafe. Navyše sa mi páči, že si môžem rýchlo zapísať, čo mi leží na mysli."</p>
@@ -1119,7 +1144,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Zatiaľ dobre</div>
                 </div>
                 <p class="review-content">"Je to pekná malá jednoduchá aplikácia, ktorá sa neprehnanú rozširuje do nepotrebných oblastí. Je to jej jednoduchosť vrátane jednoduchosti rozhrania, ktorú si vážim najviac. Nepotrebujem kvety, veveričky a hry. Len jednoduchú aplikáciu podobnú diáru. Oceňujem tiež, že môžete exportovať vo formáte PDF."</p>
@@ -1129,7 +1154,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Pozor všetci spánkoví doktori!</div>
                 </div>
                 <p class="review-content">"Bol som tak prekvapený, že môj spánkový doktor sa mi snažil dávať papiere na zaznamenávanie hodín spánku bez akéhokoľvek spôsobu, ako ich zosumarizovať! Keď som požiadal o aplikáciu, navrhol Consensus Sleep Diary, čo je nanič. Našťastie som našiel túto aplikáciu a okamžite som požiadal môjho spánkového doktora, aby ju začal odporúčať."</p>
@@ -1139,7 +1164,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Veľmi dobrá aplikácia</div>
                 </div>
                 <p class="review-content">"Môj lekár chce, aby som denne zaznamenával TK. Táto aplikácia mi umožňuje zaznamenávať informácie vo veľmi pekne navrhnutom formáte. Skvelá aplikácia."</p>
@@ -1149,7 +1174,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Skvelá aplikácia</div>
                 </div>
                 <p class="review-content">"Ako niekto s bipolárnou poruchou som potreboval zaznamenávať nálady a emócie, ale nemohol som nájsť aplikáciu, ktorá by nechcela drahé predplatné. Som veľmi vďačný za túto aplikáciu."</p>
@@ -1157,9 +1182,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Milujem túto aplikáciu!! Také ľahko použiteľné.</div>
                 </div>
                 <p class="review-content">"Táto aplikácia je skvelá na monitorovanie spánkových návykov, časov a na poznámky pre budúcu referenciu. Je jednoduchá a ľahko použiteľná. Vývojár Gaurav Sharma, ste rockstar!!"</p>
@@ -1169,7 +1194,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Naozaj skvelá aplikácia</div>
                 </div>
                 <p class="review-content">"Len pred pár nocami som začal zaznamenávať krvný tlak – táto aplikácia je naozaj skvelá. Je zábavné, ako sa mi dnes objavila v telefóne. Odporučil by som túto aplikáciu celým srdcom."</p>
@@ -1179,7 +1204,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Páči sa mi to</div>
                 </div>
                 <p class="review-content">"Páči sa mi, že nemusím platiť za všetko. V iných aplikáciách nálady musím platiť, aby som videl, čo ma spúšťa. Páči sa mi, keď vám hovorí, ktoré slová vás ovplyvňujú najviac. Naozaj mi pomohlo napraviť sa."</p>
@@ -1189,7 +1214,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Dobrá aplikácia na sledovanie spánkových vzorov</div>
                 </div>
                 <p class="review-content">"Potreboval som niečo na sledovanie spánku, keď som začínal CPAP terapiu. Táto aplikácia ma skvelé drží zodpovedným voči harmonogramu a sleduje pokrok. Aktualizácia – používam aplikáciu 400 nocí a ukazuje mi pokrok v CPAP terapii!"</p>
@@ -1199,7 +1224,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Fantastická aplikácia</div>
                 </div>
                 <p class="review-content">"Taká skvelá aplikácia. Sleduje môj krvný tlak. Tu nič nezkazíte!"</p>
@@ -1209,7 +1234,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Hmotnosť a BMI</div>
                 </div>
                 <p class="review-content">"Táto aplikácia je výnimočná okrem dvoch menších nedostatkov. BMI by sa malo automaticky vypočítavať namiesto ručného výpočtu."</p>
@@ -1247,7 +1272,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Začnite sledovať zdravie ešte dnes</h2>
         <p>Vyberte si aplikáciu, ktorá vyhovuje vašim potrebám. Zadarmo na stiahnutie s voliteľnými prémiovými funkciami.</p>
         <div class="cta-downloads">

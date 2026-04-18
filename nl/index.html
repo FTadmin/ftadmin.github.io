@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -507,12 +507,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>AI-gestuurde gezondheidsmonitoring eenvoudig gemaakt</h1>
-        <p class="hero-subtitle">Houd uw bloeddruk, stemming, gewicht, slaap en dagelijkse gedachten bij met intelligente dagboek-apps die synchroniseren met Apple Health en gepersonaliseerde AI-inzichten bieden.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>AI-gestuurde gezondheidsmonitoring eenvoudig gemaakt</h1>
+                <p class="hero-subtitle">Houd uw bloeddruk, stemming, gewicht, slaap en dagelijkse gedachten bij met intelligente dagboek-apps die synchroniseren met Apple Health en gepersonaliseerde AI-inzichten bieden.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Privacy eerst — geen advertenties, geen tracking, uw gegevens blijven privé
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health Sync</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> AI-inzichten</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud-back-up</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Bloeddruk Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Dagelijks Dagboek Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Geestelijke Gezondheid Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Gewicht Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Slaap Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -545,23 +579,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Privacy eerst — geen advertenties, geen tracking, uw gegevens blijven privé
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health Sync</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> AI-inzichten</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud-back-up</span>
-
-        </div>
     </section>
 
 
@@ -591,7 +608,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Kies uw gezondheidstrack-app</h2>
 
 
@@ -801,7 +818,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Waarom Feeltracker-apps kiezen?</h2>
         <div class="features-grid">
 
@@ -881,7 +898,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Aangedreven door kunstmatige intelligentie</h2>
         <p class="section-subtitle">Onze AI-functies helpen u uw gezondheidsgegevens als nooit tevoren te begrijpen</p>
 
@@ -987,7 +1004,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Vertrouwd door duizenden gebruikers wereldwijd</h2>
         <p class="section-subtitle">Sluit u aan bij gebruikers die de controle over hun gezondheid nemen</p>
         <div class="stats-grid">
@@ -1063,15 +1080,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Wat onze gebruikers zeggen</h2>
         <p class="center-text section-subtitle reviews-subtitle">Echte recensies uit de App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Beste ervaring met een bloeddruk-app</div>
                 </div>
                 <p class="review-content">"Ik heb de beste bloeddruk-app gevonden die ik ooit heb geprobeerd. Het laat me niet alleen resultaten naar mijn arts sturen, maar mensen lijken onvermoeibaar te werken om de app soepel te laten draaien. Ze updaten en verbeteren hem voortdurend, wat geweldig is. Eerlijk gezegd is het het beste abonnement dat ik momenteel op mijn telefoon heb."</p>
@@ -1081,7 +1106,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Zelfs mijn therapeut vindt deze app geweldig</div>
                 </div>
                 <p class="review-content">"Ik ben ongeveer een maand geleden gediagnosticeerd met ADHD. En ik moest 3 weken wachten op medicijnen daarvoor. In die tijd vond ik deze app, en het was best verbazingwekkend om de grilligheid van mijn niet-gemediceerde brein te vergelijken met mijn gemediceerde brein. Mijn gemediceerde brein is veel gelijkmatiger in de grafiek. Bovendien vind ik het fijn dat ik snel kan opschrijven wat er door mijn hoofd gaat."</p>
@@ -1091,7 +1116,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Tot nu toe prima</div>
                 </div>
                 <p class="review-content">"Dit is een leuke kleine eenvoudige app die zich niet uitstrekt naar onnodige gebieden. Het is de eenvoud ervan, inclusief de eenvoud van de interface, die ik meer dan wat ook waardeer. Ik heb geen bloemen en eekhoorns en spelletjes en kiekeboe-dingen en regenboogeenhoorns nodig. Ik heb gewoon een eenvoudige dagboekachtige notitie-app nodig. Tot nu toe heeft deze app aan die vereisten of het gebrek aan vereisten voldaan. Het is verfrissend. Ik waardeer ook dat u het in PDF-formaat kunt exporteren wanneer dat nodig is. Bedankt voor het eenvoudig houden."</p>
@@ -1101,7 +1126,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Oproep aan alle slaapspecialisten!</div>
                 </div>
                 <p class="review-content">"Ik was zo verbaasd dat mijn slaapspecialist me papiertjes probeerde te geven om mijn slaapuren bij te houden zonder mogelijkheid om ze te verzamelen!? Toen ik om een app vroeg, stelden ze het Consensus Slaaptijdschrift voor, dat nutteloos is. Gelukkig vond ik deze app en vroeg ik mijn slaapspecialist meteen om hem aan te bevelen. Ik waardeer ook hoe responsief de ontwikkelaar is. Deze persoon wil duidelijk levens verbeteren. BEDANKT!!"</p>
@@ -1111,7 +1136,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Zeer goede app</div>
                 </div>
                 <p class="review-content">"Mijn arts wil dat ik dagelijks mijn bloeddruk registreer. Met deze app kan ik mijn gegevens bijhouden en ze worden opgeslagen in een prachtig ontworpen formaat. Geweldige app."</p>
@@ -1121,7 +1146,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Geweldige app</div>
                 </div>
                 <p class="review-content">"Als iemand met een bipolaire stoornis moest ik mijn stemmingen en emoties bijhouden, maar ik kon geen app vinden die geen duur abonnement wilde. Ik ben heel dankbaar voor deze app, volledige functionaliteit zonder abonnement en een abonnementsoptie als u er een wilt."</p>
@@ -1129,9 +1154,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ik hou van deze app!! Zo makkelijk te gebruiken.</div>
                 </div>
                 <p class="review-content">"Allereerst, deze app is geweldig voor het monitoren van je slaapgewoonten, tijd en het maken van notities. Eenvoudig en makkelijk te gebruiken. Ik had een suggestie en de ontwikkelaar Gaurav reageerde binnen minuten en voegde mijn suggestie binnen dagen toe! Ik raad het ten zeerste aan. Gaurav Sharma, je bent een rockster!!"</p>
@@ -1141,7 +1166,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Echt coole app</div>
                 </div>
                 <p class="review-content">"Een paar nachten geleden ben ik begonnen met het bijhouden van mijn bloeddruk en deze app is echt cool. Het is grappig dat hij vandaag zomaar op mijn telefoon verscheen. Ik zou deze app zonder twijfel aanbevelen."</p>
@@ -1151,7 +1176,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ik vind het fijn</div>
                 </div>
                 <p class="review-content">"Ik vind het fijn dat ik niet voor alles hoef te betalen. Bij andere stemming-apps moet ik betalen om te zien wat mijn triggers zijn. Ik vind het fijn als het je vertelt welke woorden je het meest beïnvloeden. Het heeft een toegangscode als je wilt dat alleen jij het leest. Het heeft me echt geholpen mezelf te verbeteren. Ik zie in de grafieken wanneer en waar ik verbeter."</p>
@@ -1161,7 +1186,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Goede app voor het bijhouden van slaappatronen</div>
                 </div>
                 <p class="review-content">"Ik had iets nodig om mijn slaap bij te houden toen ik begon met CPAP-therapie. Deze app was geweldig. Ik kan slaapuren, dromen, slaappatronen en meer bijhouden. Na 400 nachten toont het me de voortgang die ik heb gemaakt in mijn CPAP-therapie!"</p>
@@ -1171,7 +1196,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Fantastische app</div>
                 </div>
                 <p class="review-content">"Zo'n geweldige app. Hij houdt mijn bloeddruk bij. Je kunt hier niet mis mee gaan!"</p>
@@ -1181,7 +1206,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Gewicht en BMI</div>
                 </div>
                 <p class="review-content">"Ik vind deze app uitstekend op twee kleine ongemakken na. 1: het gewicht gaat altijd terug naar 150 in plaats van op je laatst ingevoerde gewicht te blijven. 2: de BMI zou automatisch berekend moeten worden in plaats van handmatig."</p>
@@ -1219,7 +1244,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Begin vandaag met het bijhouden van uw gezondheid</h2>
         <p>Kies de app die bij uw behoeften past. Gratis te downloaden met optionele premiumfuncties.</p>
         <div class="cta-downloads">

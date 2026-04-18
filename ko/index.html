@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>AI 기반으로 간편해진 건강 관리</h1>
-        <p class="hero-subtitle">Apple Health와 동기화하고 맞춤형 AI 인사이트를 제공하는 지능형 일기 앱으로 혈압, 기분, 체중, 수면, 일상의 생각을 기록하세요.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>AI 기반으로 간편해진 건강 관리</h1>
+                <p class="hero-subtitle">Apple Health와 동기화하고 맞춤형 AI 인사이트를 제공하는 지능형 일기 앱으로 혈압, 기분, 체중, 수면, 일상의 생각을 기록하세요.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> 개인정보 보호 우선 — 광고 없음, 추적 없음, 데이터는 철저히 비공개
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health 동기화</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> AI 인사이트</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud 백업</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="혈압 Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="일기 Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="정신 건강 Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="체중과 식단 Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="수면과 꿈 Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> 개인정보 보호 우선 — 광고 없음, 추적 없음, 데이터는 철저히 비공개
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health 동기화</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> AI 인사이트</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud 백업</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">나에게 맞는 건강 관리 앱을 선택하세요</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Feeltracker를 선택해야 하는 이유</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>인공지능으로 강화된 건강 관리</h2>
         <p class="section-subtitle">AI 기능이 건강 데이터를 이전과는 다르게 이해하도록 도와줍니다</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>전 세계 수천 명의 사용자가 신뢰합니다</h2>
         <p class="section-subtitle">건강을 스스로 관리하는 사용자 대열에 합류하세요</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">사용자들의 이야기</h2>
         <p class="center-text section-subtitle reviews-subtitle">App Store의 실제 리뷰</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">최고의 혈압 앱 경험</div>
                 </div>
                 <p class="review-content">"지금까지 사용해 본 혈압 앱 중 최고를 찾았습니다. 결과를 의사에게 보낼 수 있을 뿐만 아니라, 앱이 원활하게 작동하도록 끊임없이 노력하는 것 같습니다. 계속 업데이트하고 개선하고 있어서 정말 멋집니다. 솔직히 지금 폰에 있는 구독 중 가장 가치 있는 구독입니다."</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">제 치료사도 이 앱을 좋아합니다</div>
                 </div>
                 <p class="review-content">"약 한 달 전에 ADHD 진단을 받았습니다. 약을 받기까지 3주를 기다려야 했습니다. 그 기간에 이 앱을 발견했는데, 약을 먹지 않았을 때의 불안정한 뇌와 약을 먹었을 때의 뇌를 비교하는 것이 정말 놀라웠습니다. 약을 먹었을 때 그래프가 훨씬 안정적입니다. 또한 마음에 떠오르는 것을 빠르게 메모할 수 있는 점도 좋습니다."</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">지금까지 좋습니다</div>
                 </div>
                 <p class="review-content">"이 앱은 불필요한 영역으로 확장하지 않는 깔끔하고 심플한 앱입니다. 인터페이스의 단순함을 포함해 그 심플함이 무엇보다 가치 있습니다. 꽃이나 다람쥐, 게임, 까꿍, 무지개 유니콘 같은 것은 필요 없습니다. 심플한 일기장 같은 메모 앱이 필요할 뿐입니다. 지금까지 이 앱은 그 요구 사항(또는 요구 사항의 부재)을 충족시켜 주고 있습니다. 어느 정도 신선합니다. 필요할 때 PDF 형식으로 내보낼 수 있는 것도 감사합니다. 심플함을 유지해 주셔서 감사합니다."</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">수면 전문의 여러분에게!</div>
                 </div>
                 <p class="review-content">"수면 전문의가 수면 시간을 기록하라며 종이를 주려고 하는데, 그것을 정리할 방법도 없다는 사실에 놀랐습니다!? 앱을 물어보니 Consensus Sleep Diary를 추천했는데, 쓸모가 없었습니다. 다행히 이 앱을 발견하고 즉시 수면 전문의에게 이 앱을 추천하라고 부탁했습니다. 개발자의 빠른 응답에도 감사합니다. 확실히 사람들의 삶을 개선하고 싶어하는 마음이 느껴집니다. 감사합니다!!"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">매우 좋은 앱</div>
                 </div>
                 <p class="review-content">"의사가 매일 혈압을 기록하라고 합니다. 이 앱으로 정보를 기록할 수 있고, 매우 깔끔하게 디자인된 형식으로 저장됩니다. 훌륭한 앱입니다."</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">훌륭한 앱</div>
                 </div>
                 <p class="review-content">"양극성 장애가 있는 사람으로서 기분과 감정을 기록해야 했지만, 비싼 구독을 요구하지 않는 앱을 찾을 수 없었습니다. 이 앱에 정말 감사합니다. 구독 없이도 모든 기능을 사용할 수 있고, 원하면 구독 옵션도 있습니다."</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">이 앱이 정말 좋아요!! 사용하기 너무 쉽습니다.</div>
                 </div>
                 <p class="review-content">"먼저, 여기에 표시된 제 사용자명은 신경 쓰지 마세요. 초기에 실수로 만들었는데, Apple에 따르면 Mac 없이는 변경할 수 없다고 합니다. 이제 리뷰로 들어가겠습니다. 이 앱은 수면 습관, 시간 모니터링, 나중에 참고할 수 있는 메모를 남기기에 최고입니다. 심플하고 사용하기 쉽습니다. 개선 제안이 있었는데, 개발자 Gaurav가 정말 놀라웠습니다!! 연락했더니 몇 분 만에 답변이 왔고, 며칠 만에 제 제안을 실제로 추가해 주었습니다! 수면 패턴 기록에 강력히 추천합니다. 구독할 가치가 충분합니다. Gaurav Sharma, 당신은 최고입니다!!"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">정말 멋진 앱</div>
                 </div>
                 <p class="review-content">"며칠 전 혈압 기록을 시작했는데, 이 앱이 정말 멋집니다. 오늘 갑자기 폰에 이 앱이 뜬 것도 재미있네요. 주저 없이 이 앱을 추천합니다."</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">마음에 듭니다</div>
                 </div>
                 <p class="review-content">"모든 기능에 돈을 내지 않아도 되는 점이 좋습니다. 다른 기분 앱에서는 트리거를 확인하려면 돈을 내야 했습니다. 어떤 단어가 가장 영향을 미치는지 알려주는 기능이 마음에 듭니다. 비밀번호나 잠금 기능이 있어서 자기만 읽을 수 있게 할 수 있습니다. 자신을 바로잡는 데 정말 도움이 되었습니다. 거의 매일 기록하고 있는데, 차트를 보면 언제 어디서 개선되거나 나빠졌는지 알 수 있습니다. 이 앱이 정말 즐겁고, 기분을 클릭할 때 나는 효과음도 좋습니다."</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">수면 패턴 추적에 좋은 앱</div>
                 </div>
                 <p class="review-content">"2022년 11월에 CPAP 치료를 시작하면서 수면 추적에 도움이 되는 것이 필요했습니다. 이 앱은 일정을 지키고 진행 상황을 확인하는 데 큰 도움이 되었습니다. 수면 시간, 꿈, 수면 패턴 및 기타 데이터를 기록할 수 있습니다. 유일한 문제는 가끔 iPad에서 바로 열리지 않아 강제 종료 후 다시 열어야 한다는 것입니다. 업데이트 - 400일 넘게 사용했는데, CPAP 치료의 진행 상황과 많은 유용한 인사이트를 보여줍니다!"</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">환상적인 앱</div>
                 </div>
                 <p class="review-content">"정말 훌륭한 앱입니다. 혈압을 잘 기록해 줍니다. 틀림없을 겁니다!"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">체중과 BMI</div>
                 </div>
                 <p class="review-content">"이 앱은 두 가지 사소한 불만을 제외하면 훌륭하지만, 그래도 매우 잘 작동합니다. 1: 체중이 마지막에 입력한 값이 아닌 항상 150으로 돌아갑니다. 입력한 체중으로 유지되면 매번 스크롤할 필요가 없어 훨씬 편리할 텐데요. 2: BMI는 수동으로 계산하지 않고 자동으로 계산되어야 합니다."</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>오늘부터 건강 관리를 시작하세요</h2>
         <p>필요에 맞는 앱을 선택하세요. 무료 다운로드, 선택적 프리미엄 기능.</p>
         <div class="cta-downloads">

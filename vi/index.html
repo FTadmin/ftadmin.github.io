@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>Theo dõi Sức khỏe Thông minh với AI</h1>
-        <p class="hero-subtitle">Theo dõi huyết áp, tâm trạng, cân nặng, giấc ngủ và suy nghĩ hằng ngày với ứng dụng nhật ký thông minh đồng bộ Apple Health và cung cấp thông tin AI cá nhân hóa.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>Theo dõi Sức khỏe Thông minh với AI</h1>
+                <p class="hero-subtitle">Theo dõi huyết áp, tâm trạng, cân nặng, giấc ngủ và suy nghĩ hằng ngày với ứng dụng nhật ký thông minh đồng bộ Apple Health và cung cấp thông tin AI cá nhân hóa.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Ưu tiên Quyền riêng tư — Không quảng cáo, không theo dõi, dữ liệu của bạn được bảo mật
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Đồng bộ Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> Thông tin AI</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> Sao lưu iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Huyết áp Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Nhật ký hằng ngày Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Sức khỏe Tâm thần Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Cân nặng Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Giấc ngủ Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Ưu tiên Quyền riêng tư — Không quảng cáo, không theo dõi, dữ liệu của bạn được bảo mật
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Đồng bộ Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> Thông tin AI</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> Sao lưu iCloud</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Chọn ứng dụng Theo dõi Sức khỏe của bạn</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Tại sao chọn ứng dụng Feeltracker?</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Được hỗ trợ bởi Trí tuệ Nhân tạo</h2>
         <p class="section-subtitle">Các tính năng AI giúp bạn hiểu dữ liệu sức khỏe hơn bao giờ hết</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Được hàng nghìn người dùng trên toàn thế giới tin tưởng</h2>
         <p class="section-subtitle">Tham gia cùng những người dùng đang kiểm soát sức khỏe của mình</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Người dùng nói gì về chúng tôi</h2>
         <p class="center-text section-subtitle reviews-subtitle">Đánh giá thực từ App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Trải nghiệm tuyệt vời với ứng dụng huyết áp</div>
                 </div>
                 <p class="review-content">"Tôi đã tìm được ứng dụng huyết áp tốt nhất từ trước đến nay. Không chỉ giúp gửi kết quả cho bác sĩ, nhà phát triển còn luôn nỗ lực cải thiện ứng dụng. Họ liên tục cập nhật và cải tiến, thật tuyệt vời. Thực sự, đây là gói đăng ký tốt nhất tôi có trên điện thoại hiện tại."</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ngay cả nhà trị liệu của tôi cũng thích ứng dụng này</div>
                 </div>
                 <p class="review-content">"Tôi vừa được chẩn đoán ADHD khoảng một tháng trước và phải chờ 3 tuần để có thuốc. Trong thời gian đó tôi tìm thấy ứng dụng này và thật tuyệt khi thấy sự không ổn định của não chưa dùng thuốc so với não đã dùng thuốc. Não dùng thuốc ổn định hơn nhiều trên biểu đồ. Tôi cũng thích có thể ghi lại suy nghĩ nhanh chóng."</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Đến nay vẫn tốt</div>
                 </div>
                 <p class="review-content">"Đây là ứng dụng nhỏ đơn giản, không lấn sang những mảng không cần thiết. Chính sự đơn giản của nó, kể cả giao diện, là điều tôi trân trọng nhất. Tôi không cần hoa lá cành, trò chơi hay kỳ lân cầu vồng. Tôi chỉ cần ứng dụng ghi chú đơn giản kiểu nhật ký. Đến nay ứng dụng đã đáp ứng được những yêu cầu đó. Tôi cũng đánh giá cao tính năng xuất PDF khi cần. Cảm ơn vì đã giữ nó đơn giản."</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Gọi tất cả bác sĩ giấc ngủ!</div>
                 </div>
                 <p class="review-content">"Tôi rất ngạc nhiên khi bác sĩ giấc ngủ của mình cố đưa cho tôi những tờ giấy để ghi lại giờ ngủ mà không có cách nào tổng hợp! Khi tôi hỏi về ứng dụng, họ gợi ý một ứng dụng vô ích. May mắn thay tôi tìm thấy ứng dụng này và ngay lập tức yêu cầu bác sĩ giấc ngủ khuyến nghị nó. Tôi cũng đánh giá cao sự phản hồi nhanh chóng của nhà phát triển. Người này rõ ràng muốn cải thiện cuộc sống. CẢM ƠN!!"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ứng dụng rất tốt</div>
                 </div>
                 <p class="review-content">"Bác sĩ muốn tôi ghi lại huyết áp hằng ngày. Ứng dụng này cho phép tôi ghi lại thông tin và lưu trữ theo định dạng được thiết kế rất đẹp. Ứng dụng tuyệt vời."</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ứng dụng tuyệt</div>
                 </div>
                 <p class="review-content">"Là người mắc rối loạn lưỡng cực, tôi cần ghi lại tâm trạng và cảm xúc nhưng không tìm được ứng dụng không yêu cầu đăng ký đắt tiền. Tôi rất biết ơn ứng dụng này, đầy đủ chức năng mà không cần đăng ký, và có tùy chọn đăng ký nếu muốn."</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Yêu thích ứng dụng này!! Rất dễ sử dụng.</div>
                 </div>
                 <p class="review-content">"Trước tiên, xin hãy bỏ qua tên người dùng của tôi — đó là lỗi sớm tôi mắc phải và không thể thay đổi nếu không có máy Mac theo Apple. Bây giờ về việc đánh giá ứng dụng. Ứng dụng này tuyệt vời để theo dõi thói quen ngủ, thời gian và ghi chú để tham khảo sau. Đơn giản và dễ sử dụng. Tôi có đề xuất và nhà phát triển Gaurav đã phản hồi trong vài phút và thêm đề xuất của tôi trong vài ngày! Tôi khuyên bạn hãy dùng ứng dụng này để ghi lại các mẫu giấc ngủ. Gaurav Sharma, bạn thật tuyệt vời!!"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ứng dụng thực sự thú vị</div>
                 </div>
                 <p class="review-content">"Chỉ vài ngày trước tôi bắt đầu ghi lại huyết áp và ứng dụng này thực sự thú vị. Thật lạ khi ứng dụng này xuất hiện trên điện thoại tôi hôm nay. Tôi sẽ giới thiệu ứng dụng này ngay lập tức."</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Tôi thích nó</div>
                 </div>
                 <p class="review-content">"Tôi thích việc không phải trả tiền cho mọi thứ, các ứng dụng tâm trạng khác tôi phải trả để biết điều gì kích hoạt tôi. Tôi thích khi nó cho bạn biết từ nào ảnh hưởng nhiều nhất đến bạn. Nó có mã PIN hoặc khóa nếu bạn chỉ muốn mình đọc những gì bạn nhập. Nó thực sự giúp tôi cải thiện bản thân. Tôi thực hiện gần như mỗi ngày và thấy biểu đồ, tôi có thể thấy khi nào và ở đâu tôi tiến bộ hay tụt lùi. Tôi thực sự thích ứng dụng này."</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ứng dụng tốt để theo dõi mẫu giấc ngủ</div>
                 </div>
                 <p class="review-content">"Tôi cần ứng dụng hỗ trợ theo dõi giấc ngủ khi bắt đầu liệu pháp CPAP vào tháng 11 năm 2022. Ứng dụng này rất tuyệt vời giúp tôi tuân thủ lịch trình và theo dõi tiến trình. Tôi có thể theo dõi giờ ngủ, giấc mơ, các mẫu giấc ngủ và dữ liệu khác. Vấn đề duy nhất là đôi khi ứng dụng không mở ngay trên iPad và phải tắt mở lại. Cập nhật - đã dùng ứng dụng 400 đêm và nó cho tôi thấy tiến trình trong liệu pháp CPAP và nhiều thông tin hữu ích!"</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ứng dụng tuyệt vời</div>
                 </div>
                 <p class="review-content">"Ứng dụng thật tuyệt. Nó theo dõi huyết áp của tôi. Bạn sẽ không thất vọng!"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Cân nặng và BMI</div>
                 </div>
                 <p class="review-content">"Tôi thấy ứng dụng này xuất sắc ngoại trừ hai lỗi nhỏ hơi khó chịu nhưng vẫn hoạt động rất tốt. 1: Cân nặng luôn trở về 150 thay vì giữ nguyên cân nặng bạn nhập lần cuối. 2: BMI nên được tính tự động thay vì phải tính thủ công."</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Bắt đầu Theo dõi Sức khỏe ngay hôm nay</h2>
         <p>Chọn ứng dụng phù hợp với nhu cầu. Tải miễn phí với các tính năng cao cấp tùy chọn.</p>
         <div class="cta-downloads">

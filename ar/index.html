@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -507,12 +507,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>تتبع الصحة المدعوم بالذكاء الاصطناعي بكل سهولة</h1>
-        <p class="hero-subtitle">تتبع ضغط الدم والمزاج والوزن والنوم وأفكارك اليومية مع تطبيقات يوميات ذكية تتزامن مع Apple Health وتقدم رؤى ذكاء اصطناعي مخصصة.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>تتبع الصحة المدعوم بالذكاء الاصطناعي بكل سهولة</h1>
+                <p class="hero-subtitle">تتبع ضغط الدم والمزاج والوزن والنوم وأفكارك اليومية مع تطبيقات يوميات ذكية تتزامن مع Apple Health وتقدم رؤى ذكاء اصطناعي مخصصة.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> الخصوصية أولاً — لا إعلانات، لا تتبع، بياناتك تبقى خاصة
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> مزامنة Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> رؤى الذكاء الاصطناعي</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> نسخ احتياطي iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="مراقب ضغط الدم Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="اليوميات اليومية Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="الصحة النفسية Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="الوزن Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="النوم Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -545,23 +579,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> الخصوصية أولاً — لا إعلانات، لا تتبع، بياناتك تبقى خاصة
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> مزامنة Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> رؤى الذكاء الاصطناعي</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> نسخ احتياطي iCloud</span>
-
-        </div>
     </section>
 
 
@@ -591,7 +608,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">اختر تطبيق تتبع صحتك</h2>
 
 
@@ -801,7 +818,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>لماذا تختار تطبيقات Feeltracker؟</h2>
         <div class="features-grid">
 
@@ -881,7 +898,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>مدعوم بالذكاء الاصطناعي</h2>
         <p class="section-subtitle">ميزات الذكاء الاصطناعي لدينا تساعدك على فهم بيانات صحتك كما لم يحدث من قبل</p>
 
@@ -987,7 +1004,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>موثوق به من قِبل آلاف المستخدمين حول العالم</h2>
         <p class="section-subtitle">انضم إلى المستخدمين الذين يتحكمون في صحتهم</p>
         <div class="stats-grid">
@@ -1063,15 +1080,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">ماذا يقول مستخدمونا</h2>
         <p class="center-text section-subtitle reviews-subtitle">تقييمات حقيقية من App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">أفضل تجربة مع تطبيق ضغط الدم</div>
                 </div>
                 <p class="review-content">"وجدت أفضل تطبيق لضغط الدم جربته على الإطلاق. لا يتيح لي فقط إرسال النتائج إلى طبيبي، بل يبدو أن فريق العمل يجتهد بلا كلل للحفاظ على سير التطبيق بسلاسة. يُحدّثونه ويحسّنونه باستمرار، وهذا رائع. بصراحة، إنه أفضل اشتراك لديّ على هاتفي الآن."</p>
@@ -1081,7 +1106,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">حتى معالجي النفسي يحب هذا التطبيق</div>
                 </div>
                 <p class="review-content">"تم تشخيصي بـ ADHD منذ شهر تقريباً، واضطررت للانتظار 3 أسابيع للحصول على دواء. خلال تلك الفترة وجدت هذا التطبيق، وكان من المذهل رؤية عشوائية دماغي غير الدوائي مقارنةً بدماغي مع الدواء. دماغي مع الدواء أكثر استقراراً في الرسم البياني. وأُعجبت أيضاً بإمكانية تدوين ما يخطر ببالي بسرعة."</p>
@@ -1091,7 +1116,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">جيد حتى الآن</div>
                 </div>
                 <p class="review-content">"هذا تطبيق صغير بسيط لا يتجاوز حدوده إلى مجالات غير ضرورية. ما أقدّره أكثر من أي شيء آخر هو بساطته، بما في ذلك بساطة الواجهة. لا أحتاج إلى زخارف ومزايا لا لزوم لها. أحتاج فقط إلى تطبيق يوميات بسيط. حتى الآن حقق هذا التطبيق تلك المتطلبات. كما أقدّر إمكانية تصديره بصيغة PDF عند الحاجة. شكراً على الحفاظ على البساطة."</p>
@@ -1101,7 +1126,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">نداء لجميع أطباء النوم!</div>
                 </div>
                 <p class="review-content">"فوجئت جداً عندما حاول طبيب النوم الخاص بي إعطائي أوراقاً لتسجيل ساعات نومي دون أي طريقة لتجميعها! عندما طلبت تطبيقاً، اقترحوا تطبيقاً آخر غير مفيد. لحسن الحظ وجدت هذا التطبيق وطلبت من طبيب النوم على الفور أن يبدأ في التوصية به. أقدّر أيضاً استجابة المطور السريعة. من الواضح أن هذا الشخص يريد تحسين الحياة. شكراً جزيلاً!!"</p>
@@ -1111,7 +1136,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">تطبيق جيد جداً</div>
                 </div>
                 <p class="review-content">"طبيبي يريد مني تسجيل ضغط دمي يومياً. يتيح لي هذا التطبيق تسجيل معلوماتي وحفظها بتنسيق مصمم بشكل جميل جداً. تطبيق رائع."</p>
@@ -1121,7 +1146,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">تطبيق رائع</div>
                 </div>
                 <p class="review-content">"بوصفي شخصاً يعاني من اضطراب ثنائي القطب، كنت بحاجة إلى تسجيل مزاجي وعواطفي لكنني لم أجد تطبيقاً لا يطلب اشتراكاً باهظ الثمن. أنا ممتن جداً لهذا التطبيق، وظائف كاملة دون اشتراك مع خيار اشتراك إن أردت."</p>
@@ -1129,9 +1154,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">أحب هذا التطبيق!! سهل الاستخدام جداً.</div>
                 </div>
                 <p class="review-content">"أولاً، هذا التطبيق رائع لمراقبة عادات نومك. المطور كان مذهلاً وتواصل معي خلال دقائق."</p>
@@ -1141,7 +1166,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">تطبيق رائع حقاً</div>
                 </div>
                 <p class="review-content">"منذ بضع ليالٍ بدأت في تسجيل ضغط دمي، هذا التطبيق رائع حقاً. أنصح به بكل قلبي."</p>
@@ -1151,7 +1176,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">أحبه</div>
                 </div>
                 <p class="review-content">"أحب أنني لست بحاجة للدفع مقابل كل شيء. يحتوي على قفل برمز مرور. ساعدني فعلاً في تصحيح نفسي."</p>
@@ -1161,7 +1186,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">تطبيق جيد لتتبع أنماط النوم</div>
                 </div>
                 <p class="review-content">"احتجت شيئاً للمساعدة في تتبع النوم حيث بدأت علاج CPAP. هذا التطبيق رائع في إبقائي ملتزماً."</p>
@@ -1171,7 +1196,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">تطبيق رائع</div>
                 </div>
                 <p class="review-content">"تطبيق رائع جداً. يتتبع ضغط دمي. لن تندم!"</p>
@@ -1181,7 +1206,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">الوزن ومؤشر كتلة الجسم</div>
                 </div>
                 <p class="review-content">"أجد هذا التطبيق متميزاً. تتبع مؤشر كتلة الجسم يعمل بشكل ممتاز."</p>
@@ -1219,7 +1244,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>ابدأ تتبع صحتك اليوم</h2>
         <p>اختر التطبيق الذي يناسب احتياجاتك. مجاني للتنزيل مع ميزات مميزة اختيارية.</p>
         <div class="cta-downloads">
