@@ -15,6 +15,18 @@
 
 ---
 
+## Brand wordmark — locked styling
+
+The "feeltracker" wordmark (`.hero-logo` on the homepage hero and `.nav-row-brand .brand-logo` on every page's nav) has a **fixed** visual treatment. Do not change it without explicit instruction from the user.
+
+- **Font:** `Nunito Sans` (the non-rounded sibling of Nunito). Loaded in `templates/partials/head-assets.html` and exposed as the `--font-brand` token in `shared.css`. Do NOT use Nunito (rounded), Inter, Instrument Serif, or any other face for the wordmark.
+- **Weight:** `800`.
+- **Color:** `var(--color-primary)` (#2B7BD3 light / #60a5fa dark). Never a gradient, never black, never muted.
+- **Case:** lowercase.
+- **Letter-spacing:** `-0.03em`.
+
+Both `.hero-logo` and `.nav-row-brand .brand-logo` carry a `/* Brand wordmark — ... See CLAUDE.md. */` comment in `shared.css`. If a redesign pass touches those rules, restore this exact set.
+
 ## Large-file edits
 
 Prefer `Edit` with targeted old/new strings over full-file `Write` for any file over ~50KB (e.g. `shared.css`, large JSON overlays, 500+ line templates) — `Write` can time out on big payloads. Break rewrites into several small `Edit` calls, or pipe through a Node one-liner via `Bash` (`node -e "const fs=require('fs'); …; fs.writeFileSync(…)"`). The same rule applies to the plan file during plan mode.
