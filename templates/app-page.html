@@ -114,19 +114,8 @@
         <h2>{{aiFeatures.title}}</h2>
         <p class="section-subtitle">{{aiFeatures.subtitle}}</p>
 
-        <h3 class="ai-tier-label">{{aiFeatures.freeTitle}}</h3>
         <div class="ai-features-grid">
-{{#each aiFeatures.free}}
-            <div class="ai-feature">
-                <h4><i class="{{icon}}"></i> {{title}}</h4>
-                <p>{{mdi description}}</p>
-            </div>
-{{/each}}
-        </div>
-
-        <h3 class="ai-tier-label">{{aiFeatures.premiumTitle}}</h3>
-        <div class="ai-features-grid">
-{{#each aiFeatures.premium}}
+{{#each aiFeatures.items}}
             <div class="ai-feature">
                 <h4><i class="{{icon}}"></i> {{title}}</h4>
                 <p>{{mdi description}}</p>
