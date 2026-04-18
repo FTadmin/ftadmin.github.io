@@ -41,16 +41,145 @@
 <body>
 {{> nav}}
 
-<!-- Hero Section -->
+    <!-- Hero Section -->
     <section class="hero center-text">
         <div class="hero-logo">{{hero.logoText}}</div>
         <h1>{{hero.title}}</h1>
         <p class="hero-subtitle">{{hero.subtitle}}</p>
     </section>
 
-{{#each contentSections}}
-{{html}}
+    <!-- Key Facts -->
+    <section class="features-section">
+        <h2 class="center-text">{{keyFacts.title}}</h2>
+{{#each keyFacts.cards}}
+        <div class="app-card">
+            <h3>{{title}}</h3>
+            <div class="app-card-content">
+                <ul class="feature-list">
+{{#each items}}
+                    <li>{{#if label}}<strong>{{label}}:</strong> {{/if}}{{#if strong}}<strong>{{text}}</strong>{{else}}{{text}}{{/if}}{{value}}</li>
 {{/each}}
+                </ul>
+            </div>
+        </div>
+{{/each}}
+    </section>
+
+    <!-- Applications -->
+    <section class="support-section">
+        <h2 class="center-text">{{applications.title}}</h2>
+{{#each applications.apps}}
+        <article>
+            <h3>{{name}}</h3>
+            <p><strong>{{applications.labels.appStoreId}}:</strong> {{appStoreId}} | <strong>{{applications.labels.rating}}:</strong> {{rating}}</p>
+{{#if ranking}}
+            <p><strong>{{applications.labels.ranking}}:</strong> {{ranking}}</p>
+{{/if}}
+            <p><strong>{{applications.labels.category}}:</strong> {{category}}</p>
+            <p><strong>{{applications.labels.description}}:</strong> {{description}}</p>
+            <p><strong>{{featuresTitle}}:</strong></p>
+            <ul>
+{{#each features}}
+                <li>{{text}}</li>
+{{/each}}
+            </ul>
+            <p><strong>{{bestForLabel}}:</strong> {{bestFor}}</p>
+            <p><a href="{{learnMoreUrl}}">{{learnMoreText}}</a> | <a href="https://apps.apple.com/app/id{{appStoreId}}">{{downloadText}}</a></p>
+        </article>
+{{/each}}
+    </section>
+
+    <!-- Technology -->
+    <section class="features-section">
+        <h2 class="center-text">{{technology.title}}</h2>
+{{#each technology.cards}}
+        <div class="app-card">
+            <h3>{{title}}</h3>
+            <div class="app-card-content">
+{{#if intro}}
+                <p>{{intro}}</p>
+{{/if}}
+                <ul class="feature-list">
+{{#each items}}
+                    <li><strong>{{label}}:</strong> {{text}}</li>
+{{/each}}
+                </ul>
+            </div>
+        </div>
+{{/each}}
+    </section>
+
+    <!-- Global Reach -->
+    <section class="platforms-section center-text">
+        <h2>{{globalReach.title}}</h2>
+        <h3>{{globalReach.subtitle}}</h3>
+        <p>{{globalReach.intro}}</p>
+        <div class="region-list">
+{{#each globalReach.groups}}
+            <p><strong>{{label}}:</strong> {{languages}}</p>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="support-section">
+        <h2 class="center-text">{{useCases.title}}</h2>
+{{#each useCases.cases}}
+        <article>
+            <h3>{{title}}</h3>
+            <p>{{intro}}</p>
+            <ul>
+{{#each items}}
+                <li>{{text}}</li>
+{{/each}}
+            </ul>
+        </article>
+{{/each}}
+    </section>
+
+    <!-- Technical Information -->
+    <section class="features-section">
+        <h2 class="center-text">{{technicalInfo.title}}</h2>
+{{#each technicalInfo.cards}}
+        <div class="app-card">
+            <h3>{{title}}</h3>
+            <div class="app-card-content">
+                <ul class="feature-list">
+{{#each items}}
+                    <li><strong>{{label}}:</strong> {{text}}</li>
+{{/each}}
+                </ul>
+            </div>
+        </div>
+{{/each}}
+    </section>
+
+    <!-- Medical Disclaimer -->
+    <section class="callout center-text">
+        <h2>{{medicalDisclaimer.title}}</h2>
+        <p>{{medicalDisclaimer.body}}</p>
+    </section>
+
+    <!-- Machine-Readable Data Reference -->
+    <section class="callout center-text">
+        <h2>{{machineReadable.title}}</h2>
+        <p>{{machineReadable.intro}}</p>
+        <p class="code-inline"><a href="{{machineReadable.url}}">{{machineReadable.url}}</a></p>
+        <p>{{machineReadable.description}}</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="callout callout--highlight center-text">
+        <h2>{{contact.title}}</h2>
+{{#each contact.lines}}
+        <p><strong>{{label}}:</strong> {{#if href}}<a href="{{href}}">{{value}}</a>{{else}}{{value}}{{/if}}</p>
+{{/each}}
+        <p>
+{{#each contact.links}}
+            <a href="{{href}}">{{text}}</a>{{#if separator}} | {{/if}}
+{{/each}}
+        </p>
+    </section>
 
 {{> footer}}
 
