@@ -832,6 +832,40 @@ footer {
     border: none;
 }
 
+/* Callouts — tinted content boxes (used on utility pages) */
+.callout {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: 40px 24px;
+    margin: var(--space-6) 0;
+}
+
+.callout--highlight {
+    background-color: var(--color-primary-tint);
+    border: 1px solid var(--color-primary-tint);
+    padding: var(--space-7) var(--space-6);
+    margin: var(--space-7) 0;
+}
+
+.callout > :first-child {
+    margin-top: 0;
+}
+
+.callout > :last-child {
+    margin-bottom: 0;
+}
+
+.code-inline {
+    font-family: 'SFMono-Regular', Menlo, Consolas, monospace;
+    background: var(--color-bg);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-sm);
+    margin: var(--space-4) auto;
+    max-width: 600px;
+    border: 1px solid var(--color-border);
+    word-break: break-all;
+}
+
 .support-section {
     margin-bottom: 40px;
 }
