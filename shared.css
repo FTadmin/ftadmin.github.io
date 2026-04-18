@@ -2093,29 +2093,6 @@ th, td {
     letter-spacing: 1px;
 }
 
-/* Featured review — pull-quote treatment */
-.review-card.review-card--featured {
-    background: linear-gradient(135deg, var(--color-primary-tint), transparent);
-    border: 1px solid var(--color-primary-tint);
-    padding: var(--space-7);
-}
-
-.review-card.review-card--featured .review-content {
-    font-family: var(--font-display);
-    font-size: 1.4em;
-    line-height: 1.45;
-    color: var(--color-text-strong);
-    font-style: italic;
-}
-
-.review-card.review-card--featured::before {
-    color: var(--color-primary);
-    opacity: 0.35;
-    top: -24px;
-    right: 16px;
-    font-size: 8rem;
-}
-
 @media (max-width: 900px) {
     .reviews-grid { column-count: 2; }
 }
