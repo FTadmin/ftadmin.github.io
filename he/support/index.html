@@ -124,11 +124,13 @@
     <meta property="twitter:image" content="https://feeltracker.com/images/feeltracker.png">
 
     <link rel="stylesheet" href="/shared.css">
+
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
 
 
 
@@ -136,251 +138,80 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-    <style>
-        .navbar .nav-container {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            max-width: none;
-            margin: 0;
-            align-items: stretch;
-        }
-        .nav-row-apps {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 4px 16px;
-        }
-        .nav-row-apps a {
-            color: #6b7280;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.875em;
-        }
-        .nav-row-apps a:hover {
-            color: #111827;
-            text-decoration: none;
-        }
-        .nav-row-apps a.current {
-            color: #111827;
-        }
-        .nav-row-brand {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-row-brand .brand-logo {
-            color: #2B7BD3;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.15em;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            letter-spacing: -0.02em;
-        }
-        .nav-row-brand .brand-logo:hover {
-            color: #1a5ca8;
-        }
-        .language-selector {
-            position: relative;
-        }
-        .language-current {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: transparent;
-            padding: 6px 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 500;
-            color: #6b7280;
-            transition: color 0.15s;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-            border: 1px solid #e5e7eb;
-        }
-        .language-current:hover {
-            color: #111827;
-            border-color: #9ca3af;
-        }
-        .language-current .flag {
-            font-size: 1.1em;
-        }
-        .language-current .arrow {
-            font-size: 0.6em;
-            transition: transform 0.2s;
-        }
-        .language-selector.open .arrow {
-            transform: rotate(180deg);
-        }
-        .language-dropdown {
-            position: absolute;
-            top: calc(100% + 6px);
-            right: 0;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-            border: 1px solid #f3f4f6;
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-4px);
-            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
-            min-width: 130px;
-            max-height: calc(100vh - 120px);
-            overflow-y: auto;
-            z-index: 1000;
-        }
-        .language-selector.open .language-dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .language-dropdown a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            text-decoration: none;
-            color: #333;
-            font-size: 0.85em;
-            transition: background 0.2s;
-        }
-        .language-dropdown a:hover,
-        .language-dropdown a:active {
-            background: #f5f5f5;
-        }
-        .language-dropdown a.active {
-            background: #e8f0fe;
-            color: #2B7BD3;
-            font-weight: 600;
-        }
-        .language-dropdown a .flag {
-            font-size: 1em;
-        }
-        @media (max-width: 768px) {
-            .nav-row-apps a {
-                font-size: 0.85em;
-            }
-        }
-        @media (prefers-color-scheme: dark) {
-            .nav-row-apps a {
-                color: #6b7280;
-            }
-            .nav-row-apps a:hover {
-                color: #e5e7eb;
-            }
-            .nav-row-apps a.current {
-                color: #e5e7eb;
-            }
-            .nav-row-brand .brand-logo {
-                color: #60a5fa;
-            }
-            .nav-row-brand .brand-logo:hover {
-                color: #93bbfd;
-            }
-            .language-current {
-                background: transparent;
-                color: #6b7280;
-                border-color: #1f2937;
-            }
-            .language-current:hover {
-                color: #e5e7eb;
-                border-color: #374151;
-            }
-            .language-dropdown {
-                background: #111827;
-                border-color: #1f2937;
-                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-            }
-            .language-dropdown a {
-                color: #9ca3af;
-            }
-            .language-dropdown a:hover,
-            .language-dropdown a:active {
-                background: #1f2937;
-                color: #e5e7eb;
-            }
-            .language-dropdown a.active {
-                background: #1f2937;
-                color: #60a5fa;
-            }
-        }
-    </style>
     <div class="nav-container">
         <div class="nav-row-brand">
             <a href="/he/" class="brand-logo">feeltracker</a>
             <div class="language-selector" id="langSelector">
-                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                <div class="language-current" data-lang-toggle>
                     <span class="flag">🇮🇱</span>
                     <span>עברית</span>
                     <span class="arrow">▼</span>
                 </div>
                 <div class="language-dropdown">
 
-                    <a href="/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇸</span> English</a>
+                    <a href="/support/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
 
-                    <a href="/de/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇪</span> Deutsch</a>
+                    <a href="/de/support/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
 
-                    <a href="/es/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇪🇸</span> Español</a>
+                    <a href="/es/support/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
 
-                    <a href="/it/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇹</span> Italiano</a>
+                    <a href="/it/support/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
 
-                    <a href="/ru/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇺</span> Русский</a>
+                    <a href="/ru/support/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
 
-                    <a href="/ja/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇯🇵</span> 日本語</a>
+                    <a href="/ja/support/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
 
-                    <a href="/fr/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇷</span> Français</a>
+                    <a href="/fr/support/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
 
-                    <a href="/ko/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇰🇷</span> 한국어</a>
+                    <a href="/ko/support/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
 
-                    <a href="/pt-br/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇧🇷</span> Português</a>
+                    <a href="/pt-br/support/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
 
-                    <a href="/zh-Hans/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇳</span> 简体中文</a>
+                    <a href="/zh-Hans/support/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
 
-                    <a href="/sv/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇪</span> Svenska</a>
+                    <a href="/sv/support/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
 
-                    <a href="/nb/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇴</span> Norsk</a>
+                    <a href="/nb/support/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
 
-                    <a href="/da/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇰</span> Dansk</a>
+                    <a href="/da/support/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
 
-                    <a href="/fi/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇮</span> Suomi</a>
+                    <a href="/fi/support/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
 
-                    <a href="/ar/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇦</span> العربية</a>
+                    <a href="/ar/support/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
 
-                    <a href="/ca/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🏴</span> Català</a>
+                    <a href="/ca/support/" data-lang-choose><span class="flag">🏴</span> Català</a>
 
-                    <a href="/cs/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇿</span> Čeština</a>
+                    <a href="/cs/support/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
 
-                    <a href="/el/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇬🇷</span> Ελληνικά</a>
+                    <a href="/el/support/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
 
-                    <a href="/fr-ca/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇦</span> Français (Canada)</a>
+                    <a href="/fr-ca/support/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
 
-                    <a href="/he/support/" class="active" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇱</span> עברית</a>
+                    <a href="/he/support/" class="active" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
 
-                    <a href="/hr/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇷</span> Hrvatski</a>
+                    <a href="/hr/support/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
 
-                    <a href="/hu/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇺</span> Magyar</a>
+                    <a href="/hu/support/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
 
-                    <a href="/nl/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇱</span> Nederlands</a>
+                    <a href="/nl/support/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
 
-                    <a href="/pl/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇱</span> Polski</a>
+                    <a href="/pl/support/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
 
-                    <a href="/pt/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇹</span> Português (Portugal)</a>
+                    <a href="/pt/support/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
 
-                    <a href="/ro/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇴</span> Română</a>
+                    <a href="/ro/support/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
 
-                    <a href="/sk/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇰</span> Slovenčina</a>
+                    <a href="/sk/support/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
 
-                    <a href="/th/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇭</span> ไทย</a>
+                    <a href="/th/support/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
 
-                    <a href="/tr/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇷</span> Türkçe</a>
+                    <a href="/tr/support/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
 
-                    <a href="/uk/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇦</span> Українська</a>
+                    <a href="/uk/support/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
 
-                    <a href="/vi/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+                    <a href="/vi/support/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
 
-                    <a href="/zh-Hant/support/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇼</span> 繁體中文</a>
+                    <a href="/zh-Hant/support/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
 
                 </div>
             </div>
@@ -399,14 +230,6 @@
 
         </div>
     </div>
-    <script>
-    document.addEventListener('click', function(e) {
-        var selector = document.getElementById('langSelector');
-        if (selector && !selector.contains(e.target)) {
-            selector.classList.remove('open');
-        }
-    });
-    </script>
 </nav>
 
 

@@ -35,7 +35,7 @@ This means:
 - Arrays merge positionally: item 0 in the overlay merges with item 0 from EN, etc.
 - The overlay's array length wins — if a language has 6 reviews, only 6 are shown (not padded with EN reviews)
 
-**Structural fields** (stripped from overlays, inherited from EN): `icon`, `src`, `image`, `ogImage`, `appId`, `appStoreId`, `appStoreUrl`, `iconSrc`, `customCss`, `santaScript`
+**Structural fields** (stripped from overlays, inherited from EN): `icon`, `src`, `image`, `ogImage`, `appId`, `appStoreId`, `appStoreUrl`, `iconSrc`, `santaScript`
 
 ```
 data/
@@ -180,7 +180,6 @@ Fully structured:
 - `hero` — image, imageAlt, title, subtitle
 - `tipCategories[]` — each has `title` + `tips[]` (icon, title, content with HTML links)
 - `cta` — title, subtitle, appStoreUrl, buttonAlt, platformInfo
-- `customCss` — inline CSS for tip card styling
 
 ### Index/Homepage (`template: "index-page"`)
 Fully structured:
@@ -301,7 +300,7 @@ Structured data with per-question isolation (file: `faq.utility.json`):
      "cookie": { "title": "Valorizamos a sua privacidade", ... }
    }
    ```
-2. **Create overlay files:** For each `data/en/*.json` file, create a corresponding `data/pt/*.json` containing **only the `data` object with translated text fields**. Do NOT include `template`, `slug`, `path`, `outputPath`, `appId`, or `lang` — these are derived from the EN base file automatically. Do NOT include structural fields like `icon`, `src`, `image`, `ogImage`, `iconSrc`, `appStoreUrl`, `appStoreId`, `customCss`, `santaScript` — these are inherited from EN via deep merge.
+2. **Create overlay files:** For each `data/en/*.json` file, create a corresponding `data/pt/*.json` containing **only the `data` object with translated text fields**. Do NOT include `template`, `slug`, `path`, `outputPath`, `appId`, or `lang` — these are derived from the EN base file automatically. Do NOT include structural fields like `icon`, `src`, `image`, `ogImage`, `iconSrc`, `appStoreUrl`, `appStoreId`, `santaScript` — these are inherited from EN via deep merge.
    ```json
    {
      "data": {
@@ -405,7 +404,7 @@ Translatable content fields use markdown instead of raw HTML. The build converts
 "answer": "Your data syncs via iCloud. This means **no email** or personal info needed. See our [privacy policy](https://feeltracker.com/privacy/)."
 ```
 
-**Fields that stay as raw HTML:** `christmasHtml`, `customCss`, `santaScript`, `doctorEndorsementHtml`
+**Fields that stay as raw HTML:** `christmasHtml`, `santaScript`, `doctorEndorsementHtml`
 
 **Structured data (JSON-LD):** Pages use `structuredData` (array of JSON objects) instead of `structuredDataHtml` (raw string). At build time, `build.js` serializes `structuredData` into `<script type="application/ld+json">` blocks. Non-EN overlays only need the translatable schema fields (`name`, `description`, `featureList`, `mainEntity` for FAQ) — the schema structure is inherited from EN via deep merge.
 

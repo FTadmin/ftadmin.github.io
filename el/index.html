@@ -137,11 +137,15 @@
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
     <link rel="stylesheet" href="/shared.css">
+
+    <link rel="stylesheet" href="/game.css">
+
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
 
 
     <!-- Structured Data -->
@@ -386,251 +390,80 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-    <style>
-        .navbar .nav-container {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            max-width: none;
-            margin: 0;
-            align-items: stretch;
-        }
-        .nav-row-apps {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 4px 16px;
-        }
-        .nav-row-apps a {
-            color: #6b7280;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.875em;
-        }
-        .nav-row-apps a:hover {
-            color: #111827;
-            text-decoration: none;
-        }
-        .nav-row-apps a.current {
-            color: #111827;
-        }
-        .nav-row-brand {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-row-brand .brand-logo {
-            color: #2B7BD3;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.15em;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            letter-spacing: -0.02em;
-        }
-        .nav-row-brand .brand-logo:hover {
-            color: #1a5ca8;
-        }
-        .language-selector {
-            position: relative;
-        }
-        .language-current {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: transparent;
-            padding: 6px 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 500;
-            color: #6b7280;
-            transition: color 0.15s;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-            border: 1px solid #e5e7eb;
-        }
-        .language-current:hover {
-            color: #111827;
-            border-color: #9ca3af;
-        }
-        .language-current .flag {
-            font-size: 1.1em;
-        }
-        .language-current .arrow {
-            font-size: 0.6em;
-            transition: transform 0.2s;
-        }
-        .language-selector.open .arrow {
-            transform: rotate(180deg);
-        }
-        .language-dropdown {
-            position: absolute;
-            top: calc(100% + 6px);
-            right: 0;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-            border: 1px solid #f3f4f6;
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-4px);
-            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
-            min-width: 130px;
-            max-height: calc(100vh - 120px);
-            overflow-y: auto;
-            z-index: 1000;
-        }
-        .language-selector.open .language-dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .language-dropdown a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            text-decoration: none;
-            color: #333;
-            font-size: 0.85em;
-            transition: background 0.2s;
-        }
-        .language-dropdown a:hover,
-        .language-dropdown a:active {
-            background: #f5f5f5;
-        }
-        .language-dropdown a.active {
-            background: #e8f0fe;
-            color: #2B7BD3;
-            font-weight: 600;
-        }
-        .language-dropdown a .flag {
-            font-size: 1em;
-        }
-        @media (max-width: 768px) {
-            .nav-row-apps a {
-                font-size: 0.85em;
-            }
-        }
-        @media (prefers-color-scheme: dark) {
-            .nav-row-apps a {
-                color: #6b7280;
-            }
-            .nav-row-apps a:hover {
-                color: #e5e7eb;
-            }
-            .nav-row-apps a.current {
-                color: #e5e7eb;
-            }
-            .nav-row-brand .brand-logo {
-                color: #60a5fa;
-            }
-            .nav-row-brand .brand-logo:hover {
-                color: #93bbfd;
-            }
-            .language-current {
-                background: transparent;
-                color: #6b7280;
-                border-color: #1f2937;
-            }
-            .language-current:hover {
-                color: #e5e7eb;
-                border-color: #374151;
-            }
-            .language-dropdown {
-                background: #111827;
-                border-color: #1f2937;
-                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-            }
-            .language-dropdown a {
-                color: #9ca3af;
-            }
-            .language-dropdown a:hover,
-            .language-dropdown a:active {
-                background: #1f2937;
-                color: #e5e7eb;
-            }
-            .language-dropdown a.active {
-                background: #1f2937;
-                color: #60a5fa;
-            }
-        }
-    </style>
     <div class="nav-container">
         <div class="nav-row-brand">
             <a href="/el/" class="brand-logo">feeltracker</a>
             <div class="language-selector" id="langSelector">
-                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                <div class="language-current" data-lang-toggle>
                     <span class="flag">🇬🇷</span>
                     <span>Ελληνικά</span>
                     <span class="arrow">▼</span>
                 </div>
                 <div class="language-dropdown">
 
-                    <a href="/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇸</span> English</a>
+                    <a href="/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
 
-                    <a href="/de/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇪</span> Deutsch</a>
+                    <a href="/de/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
 
-                    <a href="/es/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇪🇸</span> Español</a>
+                    <a href="/es/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
 
-                    <a href="/it/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇹</span> Italiano</a>
+                    <a href="/it/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
 
-                    <a href="/ru/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇺</span> Русский</a>
+                    <a href="/ru/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
 
-                    <a href="/ja/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇯🇵</span> 日本語</a>
+                    <a href="/ja/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
 
-                    <a href="/fr/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇷</span> Français</a>
+                    <a href="/fr/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
 
-                    <a href="/ko/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇰🇷</span> 한국어</a>
+                    <a href="/ko/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
 
-                    <a href="/pt-br/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇧🇷</span> Português</a>
+                    <a href="/pt-br/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
 
-                    <a href="/zh-Hans/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇳</span> 简体中文</a>
+                    <a href="/zh-Hans/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
 
-                    <a href="/sv/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇪</span> Svenska</a>
+                    <a href="/sv/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
 
-                    <a href="/nb/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇴</span> Norsk</a>
+                    <a href="/nb/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
 
-                    <a href="/da/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇰</span> Dansk</a>
+                    <a href="/da/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
 
-                    <a href="/fi/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇮</span> Suomi</a>
+                    <a href="/fi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
 
-                    <a href="/ar/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇦</span> العربية</a>
+                    <a href="/ar/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
 
-                    <a href="/ca/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🏴</span> Català</a>
+                    <a href="/ca/" data-lang-choose><span class="flag">🏴</span> Català</a>
 
-                    <a href="/cs/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇿</span> Čeština</a>
+                    <a href="/cs/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
 
-                    <a href="/el/" class="active" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇬🇷</span> Ελληνικά</a>
+                    <a href="/el/" class="active" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
 
-                    <a href="/fr-ca/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇦</span> Français (Canada)</a>
+                    <a href="/fr-ca/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
 
-                    <a href="/he/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇱</span> עברית</a>
+                    <a href="/he/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
 
-                    <a href="/hr/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇷</span> Hrvatski</a>
+                    <a href="/hr/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
 
-                    <a href="/hu/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇺</span> Magyar</a>
+                    <a href="/hu/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
 
-                    <a href="/nl/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇱</span> Nederlands</a>
+                    <a href="/nl/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
 
-                    <a href="/pl/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇱</span> Polski</a>
+                    <a href="/pl/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
 
-                    <a href="/pt/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇹</span> Português (Portugal)</a>
+                    <a href="/pt/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
 
-                    <a href="/ro/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇴</span> Română</a>
+                    <a href="/ro/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
 
-                    <a href="/sk/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇰</span> Slovenčina</a>
+                    <a href="/sk/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
 
-                    <a href="/th/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇭</span> ไทย</a>
+                    <a href="/th/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
 
-                    <a href="/tr/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇷</span> Türkçe</a>
+                    <a href="/tr/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
 
-                    <a href="/uk/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇦</span> Українська</a>
+                    <a href="/uk/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
 
-                    <a href="/vi/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+                    <a href="/vi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
 
-                    <a href="/zh-Hant/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇼</span> 繁體中文</a>
+                    <a href="/zh-Hant/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
 
                 </div>
             </div>
@@ -649,14 +482,6 @@
 
         </div>
     </div>
-    <script>
-    document.addEventListener('click', function(e) {
-        var selector = document.getElementById('langSelector');
-        if (selector && !selector.contains(e.target)) {
-            selector.classList.remove('open');
-        }
-    });
-    </script>
 </nav>
 
 
@@ -722,7 +547,7 @@
         </div>
 
         <!-- Privacy Badge -->
-        <div style="color: #059669; padding: 16px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+        <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Προστασία Ιδιωτικότητας — Χωρίς Διαφημίσεις, Χωρίς Παρακολούθηση, Τα Δεδομένα Σας Παραμένουν Ιδιωτικά
         </div>
 
@@ -741,13 +566,13 @@
 
 
     <!-- As Seen In -->
-    <section class="as-seen-section center-text" style="padding: 32px 20px 0;">
-        <p class="as-seen-label" style="text-transform: uppercase; font-size: 0.7em; letter-spacing: 0.12em; color: #9ca3af; margin-bottom: 16px; font-weight: 600;">Όπως παρουσιάστηκε σε</p>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 32px;">
+    <section class="as-seen-section center-text">
+        <p class="as-seen-label">Όπως παρουσιάστηκε σε</p>
+        <div class="as-seen-logo-row">
 
-            <a href="https://www.gq.com/story/can-a-wearable-make-you-happier-with-mood-tracking" target="_blank" rel="noopener" class="as-seen-link" style="text-decoration: none; color: inherit;" aria-label="Μπορεί μια φορετή συσκευή να σας κάνει πιο ευτυχισμένους;">
+            <a href="https://www.gq.com/story/can-a-wearable-make-you-happier-with-mood-tracking" target="_blank" rel="noopener" class="as-seen-link" aria-label="Μπορεί μια φορετή συσκευή να σας κάνει πιο ευτυχισμένους;">
 
-                <img src="/images/gq-logo.svg" alt="GQ" class="as-seen-logo" style="height: clamp(3em, 7vw, 3.8em); width: auto; display: block;">
+                <img src="/images/gq-logo.svg" alt="GQ" class="as-seen-logo">
 
             </a>
 
@@ -757,10 +582,10 @@
 
 
     <!-- Founder Quote -->
-    <section class="center-text" style="padding: 40px 20px 16px; max-width: 780px; margin: 0 auto;">
-        <blockquote class="founder-quote" style="margin: 0; padding: 28px 32px; background: #f9fafb; border-left: 4px solid #2563eb; border-radius: 0 12px 12px 0; text-align: left;">
-            <p class="founder-quote-text" style="font-size: 1.1em; line-height: 1.7; color: #374151; margin: 0 0 12px; font-style: italic;">"Η εφαρμογή έχει σχεδιαστεί ως εργαλείο παρακολούθησης και ευαισθητοποίησης, όχι ως εργαλείο θεραπείας. Η πραγματική αξία έγκειται στο να βοηθά τους ανθρώπους να παρατηρούν μοτίβα και ερεθίσματα."</p>
-            <footer class="founder-quote-footer" style="font-size: 0.9em; color: #6b7280;">— Gaurav Sharma, Ιδρυτής, <a href="https://www.gq.com/story/can-a-wearable-make-you-happier-with-mood-tracking" target="_blank" rel="noopener" style="color: #6b7280; text-decoration: none; font-style: italic; border-bottom: 1px solid #d1d5db;">όπως αναφέρθηκε στο GQ</a></footer>
+    <section class="founder-quote-section center-text">
+        <blockquote class="founder-quote">
+            <p class="founder-quote-text">"Η εφαρμογή έχει σχεδιαστεί ως εργαλείο παρακολούθησης και ευαισθητοποίησης, όχι ως εργαλείο θεραπείας. Η πραγματική αξία έγκειται στο να βοηθά τους ανθρώπους να παρατηρούν μοτίβα και ερεθίσματα."</p>
+            <footer class="founder-quote-footer">— Gaurav Sharma, Ιδρυτής, <a href="https://www.gq.com/story/can-a-wearable-make-you-happier-with-mood-tracking" target="_blank" rel="noopener">όπως αναφέρθηκε στο GQ</a></footer>
         </blockquote>
     </section>
 
@@ -780,9 +605,7 @@
                     <h3>Αρτηριακή Πίεση Feeltracker</h3>
                     <p class="app-subtitle">Παρακολούθηση OMRON Υψηλής ΑΠ ΤΝ Ημερολόγιο</p>
 
-                    <div style="color: #2563eb; display: inline-block; margin-top: 8px; font-size: 0.8em; font-weight: 600;">
-                        <i class="fas fa-trophy"></i> #1 στο Ηνωμένο Βασίλειο
-                    </div>
+                    <div class="app-badge"><i class="fas fa-trophy"></i> #1 στο Ηνωμένο Βασίλειο</div>
 
                 </div>
             </div>
@@ -1062,7 +885,7 @@
         <h2>Τροφοδοτείται από Τεχνητή Νοημοσύνη</h2>
         <p class="section-subtitle">Τα χαρακτηριστικά ΤΝ μας σας βοηθούν να κατανοήσετε τα δεδομένα υγείας σας όπως ποτέ πριν</p>
 
-        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Δωρεάν Χαρακτηριστικά ΤΝ</h3>
+        <h3 class="ai-tier-label">Δωρεάν Χαρακτηριστικά ΤΝ</h3>
         <div class="ai-features-grid">
 
             <div class="ai-feature">
@@ -1097,7 +920,7 @@
 
         </div>
 
-        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Premium Χαρακτηριστικά ΤΝ</h3>
+        <h3 class="ai-tier-label">Premium Χαρακτηριστικά ΤΝ</h3>
         <div class="ai-features-grid">
 
             <div class="ai-feature">
@@ -1157,11 +980,9 @@
 
         </div>
 
-        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
-            <h3 style="color: rgba(255,255,255,0.6); margin-top: 0; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fas fa-info-circle"></i> Αποποίηση ευθύνης ΑΙ</h3>
-            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
-                Οι γνώσεις, αναφορές και συστάσεις που δημιουργούνται από την ΤΝ προορίζονται μόνο για γενική πληροφόρηση και δεν αντικαθιστούν την ιατρική συμβουλή, διάγνωση ή θεραπεία. Τα πρότυπα που εντοπίζει η ΤΝ δείχνουν συσχετίσεις, αλλά η συσχέτιση δεν συνεπάγεται αιτιότητα. Να συμβουλεύεστε πάντα έναν γιατρό ή εξειδικευμένο πάροχο υγειονομικής περίθαλψης για οποιαδήποτε ιατρική ερώτηση ή ανησυχία. Αυτά τα εργαλεία έχουν σχεδιαστεί για να σας βοηθούν να οργανώνετε και να κατανοείτε τα δεδομένα υγείας σας, όχι για να παρέχουν ιατρική καθοδήγηση.
-            </p>
+        <div class="ai-disclaimer">
+            <h3><i class="fas fa-info-circle"></i> Αποποίηση ευθύνης ΑΙ</h3>
+            <p>Οι γνώσεις, αναφορές και συστάσεις που δημιουργούνται από την ΤΝ προορίζονται μόνο για γενική πληροφόρηση και δεν αντικαθιστούν την ιατρική συμβουλή, διάγνωση ή θεραπεία. Τα πρότυπα που εντοπίζει η ΤΝ δείχνουν συσχετίσεις, αλλά η συσχέτιση δεν συνεπάγεται αιτιότητα. Να συμβουλεύεστε πάντα έναν γιατρό ή εξειδικευμένο πάροχο υγειονομικής περίθαλψης για οποιαδήποτε ιατρική ερώτηση ή ανησυχία. Αυτά τα εργαλεία έχουν σχεδιαστεί για να σας βοηθούν να οργανώνετε και να κατανοείτε τα δεδομένα υγείας σας, όχι για να παρέχουν ιατρική καθοδήγηση.</p>
         </div>
     </section>
 
@@ -1244,7 +1065,7 @@
     <!-- User Reviews -->
     <section class="support-section">
         <h2 class="center-text">Τι Λένε οι Χρήστες μας</h2>
-        <p class="center-text section-subtitle" style="margin-bottom: 32px;">Πραγματικές κριτικές από το App Store</p>
+        <p class="center-text section-subtitle reviews-subtitle">Πραγματικές κριτικές από το App Store</p>
 
         <div class="reviews-grid">
 
@@ -1370,7 +1191,7 @@
 
         </div>
 
-        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">Οι κριτικές έχουν μεταφραστεί από τα αγγλικά. Αρχικά δημοσιεύτηκαν στο App Store.</p>
+        <p class="reviews-disclaimer">Οι κριτικές έχουν μεταφραστεί από τα αγγλικά. Αρχικά δημοσιεύτηκαν στο App Store.</p>
 
     </section>
 
@@ -1401,40 +1222,40 @@
     <section class="cta-section center-text">
         <h2>Ξεκινήστε την Παρακολούθηση της Υγείας σας Σήμερα</h2>
         <p>Επιλέξτε την εφαρμογή που ταιριάζει στις ανάγκες σας. Δωρεάν λήψη με προαιρετικά premium χαρακτηριστικά.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 40px;">
+        <div class="cta-downloads">
 
-            <div style="text-align: center;">
-                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Αρτηριακή Πίεση Feeltracker</p>
+            <div class="cta-download-item">
+                <p class="cta-download-name">Αρτηριακή Πίεση Feeltracker</p>
                 <a target="_blank" href="https://apps.apple.com/app/id794542324" aria-label="Λήψη Αρτηριακής Πίεσης Feeltracker στο App Store">
-                    <img class="store_button" src="/images/appstore_link.svg" alt="Λήψη Αρτηριακής Πίεσης Feeltracker στο App Store" style="width: 180px; height: 53px;">
+                    <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="Λήψη Αρτηριακής Πίεσης Feeltracker στο App Store">
                 </a>
             </div>
 
-            <div style="text-align: center;">
-                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Καθημερινό Ημερολόγιο Feeltracker</p>
+            <div class="cta-download-item">
+                <p class="cta-download-name">Καθημερινό Ημερολόγιο Feeltracker</p>
                 <a target="_blank" href="https://apps.apple.com/app/id1557699226" aria-label="Λήψη Καθημερινού Ημερολογίου Feeltracker στο App Store">
-                    <img class="store_button" src="/images/appstore_link.svg" alt="Λήψη Καθημερινού Ημερολογίου Feeltracker στο App Store" style="width: 180px; height: 53px;">
+                    <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="Λήψη Καθημερινού Ημερολογίου Feeltracker στο App Store">
                 </a>
             </div>
 
-            <div style="text-align: center;">
-                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Ψυχική Υγεία Feeltracker</p>
+            <div class="cta-download-item">
+                <p class="cta-download-name">Ψυχική Υγεία Feeltracker</p>
                 <a target="_blank" href="https://apps.apple.com/app/id687448999" aria-label="Λήψη Ψυχικής Υγείας Feeltracker στο App Store">
-                    <img class="store_button" src="/images/appstore_link.svg" alt="Λήψη Ψυχικής Υγείας Feeltracker στο App Store" style="width: 180px; height: 53px;">
+                    <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="Λήψη Ψυχικής Υγείας Feeltracker στο App Store">
                 </a>
             </div>
 
-            <div style="text-align: center;">
-                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Βάρος Feeltracker</p>
+            <div class="cta-download-item">
+                <p class="cta-download-name">Βάρος Feeltracker</p>
                 <a target="_blank" href="https://apps.apple.com/app/id799503787" aria-label="Λήψη Βάρους Feeltracker στο App Store">
-                    <img class="store_button" src="/images/appstore_link.svg" alt="Λήψη Βάρους Feeltracker στο App Store" style="width: 180px; height: 53px;">
+                    <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="Λήψη Βάρους Feeltracker στο App Store">
                 </a>
             </div>
 
-            <div style="text-align: center;">
-                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">Ύπνος Feeltracker</p>
+            <div class="cta-download-item">
+                <p class="cta-download-name">Ύπνος Feeltracker</p>
                 <a target="_blank" href="https://apps.apple.com/app/id1065268459" aria-label="Λήψη Ύπνου Feeltracker στο App Store">
-                    <img class="store_button" src="/images/appstore_link.svg" alt="Λήψη Ύπνου Feeltracker στο App Store" style="width: 180px; height: 53px;">
+                    <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="Λήψη Ύπνου Feeltracker στο App Store">
                 </a>
             </div>
 
