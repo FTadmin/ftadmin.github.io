@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -507,12 +507,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>Έξυπνη Παρακολούθηση Υγείας με Τεχνητή Νοημοσύνη</h1>
-        <p class="hero-subtitle">Παρακολουθήστε την αρτηριακή σας πίεση, διάθεση, βάρος, ύπνο και καθημερινές σκέψεις με έξυπνες εφαρμογές ημερολογίου που συγχρονίζονται με το Apple Health και παρέχουν εξατομικευμένες πληροφορίες ΤΝ.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>Έξυπνη Παρακολούθηση Υγείας με Τεχνητή Νοημοσύνη</h1>
+                <p class="hero-subtitle">Παρακολουθήστε την αρτηριακή σας πίεση, διάθεση, βάρος, ύπνο και καθημερινές σκέψεις με έξυπνες εφαρμογές ημερολογίου που συγχρονίζονται με το Apple Health και παρέχουν εξατομικευμένες πληροφορίες ΤΝ.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Προστασία Ιδιωτικότητας — Χωρίς Διαφημίσεις, Χωρίς Παρακολούθηση, Τα Δεδομένα Σας Παραμένουν Ιδιωτικά
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Συγχρονισμός Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> Πληροφορίες ΤΝ</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> Αντίγραφο iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Αρτηριακή Πίεση Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Καθημερινό Ημερολόγιο Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Ψυχική Υγεία Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Βάρος Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Ύπνος Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -545,23 +579,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Προστασία Ιδιωτικότητας — Χωρίς Διαφημίσεις, Χωρίς Παρακολούθηση, Τα Δεδομένα Σας Παραμένουν Ιδιωτικά
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Συγχρονισμός Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> Πληροφορίες ΤΝ</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> Αντίγραφο iCloud</span>
-
-        </div>
     </section>
 
 
@@ -591,7 +608,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Επιλέξτε την Εφαρμογή Παρακολούθησης Υγείας σας</h2>
 
 
@@ -801,7 +818,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Γιατί να Επιλέξετε τις Εφαρμογές Feeltracker;</h2>
         <div class="features-grid">
 
@@ -881,7 +898,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Τροφοδοτείται από Τεχνητή Νοημοσύνη</h2>
         <p class="section-subtitle">Τα χαρακτηριστικά ΤΝ μας σας βοηθούν να κατανοήσετε τα δεδομένα υγείας σας όπως ποτέ πριν</p>
 
@@ -987,7 +1004,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Αξιόπιστο από Χιλιάδες Χρήστες Παγκοσμίως</h2>
         <p class="section-subtitle">Γίνετε μέρος χρηστών που αναλαμβάνουν τον έλεγχο της υγείας τους</p>
         <div class="stats-grid">
@@ -1063,15 +1080,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Τι Λένε οι Χρήστες μας</h2>
         <p class="center-text section-subtitle reviews-subtitle">Πραγματικές κριτικές από το App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Η Καλύτερη Εμπειρία Εφαρμογής Αρτηριακής Πίεσης</div>
                 </div>
                 <p class="review-content">"Βρήκα την καλύτερη εφαρμογή αρτηριακής πίεσης που έχω δοκιμάσει. Όχι μόνο μου επιτρέπει να στέλνω αποτελέσματα στον γιατρό μου, αλλά οι άνθρωποι φαίνεται να εργάζονται αδιάκοπα για να κρατήσουν την εφαρμογή σε άρτια λειτουργία. Την ενημερώνουν και τη βελτιώνουν συνεχώς, κάτι που είναι υπέροχο. Ειλικρινά, είναι η καλύτερη συνδρομή που έχω στο τηλέφωνό μου αυτήν τη στιγμή."</p>
@@ -1081,7 +1106,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Ακόμα και ο θεραπευτής μου αγαπά αυτή την εφαρμογή</div>
                 </div>
                 <p class="review-content">"Διαγνώστηκα με ΔΕΠΥ πριν από περίπου ένα μήνα. Και έπρεπε να περιμένω 3 εβδομάδες για να πάρω φάρμακα. Κατά τη διάρκεια αυτής της περιόδου βρήκα αυτήν την εφαρμογή, και ήταν αρκετά εκπληκτικό να βλέπω την αστάθεια του μη φαρμακευμένου εγκεφάλου μου σε σύγκριση με τον φαρμακευμένο. Ο φαρμακευμένος εγκέφαλός μου είναι πολύ πιο ισορροπημένος στο γράφημα. Επίσης μου αρέσει που μπορώ να σημειώσω γρήγορα τι μου περνά από το μυαλό."</p>
@@ -1091,7 +1116,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Μέχρι στιγμής πολύ καλά</div>
                 </div>
                 <p class="review-content">"Αυτή είναι μια ωραία απλή εφαρμογή που δεν επεκτείνεται σε περιττούς τομείς. Αυτό που εκτιμώ περισσότερο από όλα είναι η απλότητά της, συμπεριλαμβανομένης της απλότητας της διεπαφής. Δεν χρειάζομαι λουλούδια και σκίουρους και παιχνίδια. Χρειάζομαι απλώς μια απλή εφαρμογή ημερολογίου. Μέχρι στιγμής αυτή η εφαρμογή έχει ικανοποιήσει αυτές τις απαιτήσεις. Εκτιμώ επίσης ότι μπορείτε να την εξάγετε σε μορφή PDF όταν χρειαστεί."</p>
@@ -1101,7 +1126,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Κάλεσμα σε όλους τους γιατρούς ύπνου!</div>
                 </div>
                 <p class="review-content">"Εκπλάχτηκα τόσο που ο γιατρός ύπνου μου προσπαθούσε να μου δώσει χαρτάκια για να καταγράφω τις ώρες ύπνου μου χωρίς καμία δυνατότητα συλλογής! Όταν ζήτησα εφαρμογή, πρότεινε το Consensus Sleep Diary, που είναι άχρηστο. Ευτυχώς βρήκα αυτήν την εφαρμογή και αμέσως ζήτησα από τον γιατρό μου να αρχίσει να τη συνιστά. Εκτιμώ επίσης πόσο ανταποκρίσιμος είναι ο προγραμματιστής. Αυτός ο άνθρωπος θέλει ξεκάθαρα να βελτιώσει ζωές. ΕΥΧΑΡΙΣΤΩ!!"</p>
@@ -1111,7 +1136,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Πολύ καλή εφαρμογή</div>
                 </div>
                 <p class="review-content">"Ο γιατρός μου θέλει να καταγράφω την αρτηριακή μου πίεση καθημερινά. Αυτή η εφαρμογή μου επιτρέπει να καταγράφω τις πληροφορίες μου και τις αποθηκεύει σε πολύ ωραία σχεδιασμένη μορφή. Εξαιρετική εφαρμογή."</p>
@@ -1121,7 +1146,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Εξαιρετική εφαρμογή</div>
                 </div>
                 <p class="review-content">"Ως άτομο με διπολική διαταραχή έπρεπε να καταγράφω τις διαθέσεις και τα συναισθήματά μου, αλλά δεν μπορούσα να βρω εφαρμογή που να μην απαιτεί ακριβή συνδρομή. Είμαι πολύ ευγνώμων για αυτήν την εφαρμογή, πλήρης λειτουργικότητα χωρίς συνδρομή και επιλογή συνδρομής αν θέλετε."</p>
@@ -1129,9 +1154,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Λατρεύω αυτή την εφαρμογή!! Τόσο εύκολη στη χρήση.</div>
                 </div>
                 <p class="review-content">"Πρώτα απ' όλα, αυτή η εφαρμογή είναι υπέροχη για την παρακολούθηση των συνηθειών ύπνου σου. Ο προγραμματιστής ήταν καταπληκτικός και μου απάντησε μέσα σε λίγα λεπτά."</p>
@@ -1141,7 +1166,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Πολύ ωραία εφαρμογή</div>
                 </div>
                 <p class="review-content">"Μερικές νύχτες πριν άρχισα να καταγράφω την αρτηριακή μου πίεση, αυτή η εφαρμογή είναι πολύ ωραία. Θα τη συνιστούσα ανεπιφύλακτα."</p>
@@ -1151,7 +1176,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Μου αρέσει</div>
                 </div>
                 <p class="review-content">"Μου αρέσει που δεν χρειάζεται να πληρώνω για τα πάντα. Έχει κλείδωμα με κωδικό. Με βοήθησε πραγματικά να διορθώσω τον εαυτό μου."</p>
@@ -1161,7 +1186,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Καλή εφαρμογή για παρακολούθηση μοτίβων ύπνου</div>
                 </div>
                 <p class="review-content">"Χρειαζόμουν κάτι για βοήθεια με την παρακολούθηση του ύπνου καθώς ξεκίνησα θεραπεία CPAP. Αυτή η εφαρμογή ήταν εξαιρετική για να με κρατά υπεύθυνο."</p>
@@ -1171,7 +1196,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Φανταστική εφαρμογή</div>
                 </div>
                 <p class="review-content">"Μια πολύ καλή εφαρμογή. Παρακολουθεί την αρτηριακή μου πίεση. Δεν θα κάνεις λάθος!"</p>
@@ -1181,7 +1206,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Βάρος και ΔΜΣ</div>
                 </div>
                 <p class="review-content">"Βρίσκω αυτή την εφαρμογή εξαιρετική. Η παρακολούθηση του ΔΜΣ λειτουργεί πολύ καλά."</p>
@@ -1219,7 +1244,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Ξεκινήστε την Παρακολούθηση της Υγείας σας Σήμερα</h2>
         <p>Επιλέξτε την εφαρμογή που ταιριάζει στις ανάγκες σας. Δωρεάν λήψη με προαιρετικά premium χαρακτηριστικά.</p>
         <div class="cta-downloads">

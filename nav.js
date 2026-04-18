@@ -1,5 +1,5 @@
 (function () {
-    function init() {
+    function initLangSelector() {
         var selector = document.getElementById('langSelector');
         if (!selector) return;
 
@@ -21,6 +21,78 @@
                 selector.classList.remove('open');
             }
         });
+    }
+
+    function initReveal() {
+        if (!('IntersectionObserver' in window)) return;
+        var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var targets = document.querySelectorAll('[data-reveal]');
+        if (!targets.length) return;
+
+        if (reduced) {
+            targets.forEach(function (el) { el.classList.add('is-visible'); });
+            return;
+        }
+
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        targets.forEach(function (el) { io.observe(el); });
+    }
+
+    function initCounters() {
+        if (!('IntersectionObserver' in window)) return;
+        var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var targets = document.querySelectorAll('[data-count]');
+        if (!targets.length) return;
+
+        targets.forEach(function (el) {
+            var target = parseFloat(el.getAttribute('data-count'));
+            if (isNaN(target)) return;
+            var suffix = el.getAttribute('data-count-suffix') || '';
+            var prefix = el.getAttribute('data-count-prefix') || '';
+            var decimals = parseInt(el.getAttribute('data-count-decimals') || '0', 10);
+
+            if (reduced) {
+                el.textContent = prefix + target.toLocaleString(undefined, {
+                    minimumFractionDigits: decimals, maximumFractionDigits: decimals
+                }) + suffix;
+                return;
+            }
+
+            var io = new IntersectionObserver(function (entries, obs) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    obs.unobserve(entry.target);
+                    var start = null;
+                    var duration = 1400;
+                    function tick(now) {
+                        if (!start) start = now;
+                        var t = Math.min(1, (now - start) / duration);
+                        var eased = 1 - Math.pow(1 - t, 3);
+                        var val = target * eased;
+                        el.textContent = prefix + val.toLocaleString(undefined, {
+                            minimumFractionDigits: decimals, maximumFractionDigits: decimals
+                        }) + suffix;
+                        if (t < 1) requestAnimationFrame(tick);
+                    }
+                    requestAnimationFrame(tick);
+                });
+            }, { threshold: 0.5 });
+            io.observe(el);
+        });
+    }
+
+    function init() {
+        initLangSelector();
+        initReveal();
+        initCounters();
     }
 
     if (document.readyState === 'loading') {

@@ -46,7 +46,16 @@
         <div class="hero-logo">{{hero.logoText}}</div>
         <h1>{{hero.title}}</h1>
         <p class="hero-subtitle">{{hero.subtitle}}</p>
+{{#if hero.ribbon}}
+        <div class="hero-ribbon">
+{{#each hero.ribbon}}
+            <span class="hero-ribbon-item"><strong data-count="{{count}}"{{#if suffix}} data-count-suffix="{{suffix}}"{{/if}}{{#if prefix}} data-count-prefix="{{prefix}}"{{/if}}>{{display}}</strong> <em>{{label}}</em></span>
+{{/each}}
+        </div>
+{{/if}}
     </section>
+
+    <div class="numbered-sections">
 
     <!-- Key Facts -->
     <section class="features-section">
@@ -201,6 +210,8 @@
 {{/each}}
         </p>
     </section>
+
+    </div>
 
 {{> footer}}
 

@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -535,12 +535,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>การติดตามสุขภาพด้วย AI ที่ง่ายดาย</h1>
-        <p class="hero-subtitle">ติดตามความดันโลหิต อารมณ์ น้ำหนัก การนอน และความคิดรายวันด้วยแอปไดอารี่อัจฉริยะที่ซิงค์กับ Apple Health และให้ AI insights ส่วนตัว</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>การติดตามสุขภาพด้วย AI ที่ง่ายดาย</h1>
+                <p class="hero-subtitle">ติดตามความดันโลหิต อารมณ์ น้ำหนัก การนอน และความคิดรายวันด้วยแอปไดอารี่อัจฉริยะที่ซิงค์กับ Apple Health และให้ AI insights ส่วนตัว</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> ความเป็นส่วนตัวมาก่อน — ไม่มีโฆษณา ไม่ติดตาม ข้อมูลของคุณปลอดภัย
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> ซิงค์ Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> AI Insights</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> สำรอง iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="ความดันโลหิต Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="การเขียนบันทึกประจำวัน Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="สุขภาพจิต Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="น้ำหนัก Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="การนอนหลับ Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -573,23 +607,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> ความเป็นส่วนตัวมาก่อน — ไม่มีโฆษณา ไม่ติดตาม ข้อมูลของคุณปลอดภัย
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> ซิงค์ Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> AI Insights</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> สำรอง iCloud</span>
-
-        </div>
     </section>
 
 
@@ -619,7 +636,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">เลือกแอปติดตามสุขภาพของคุณ</h2>
 
 
@@ -829,7 +846,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>ทำไมต้องเลือกแอป Feeltracker?</h2>
         <div class="features-grid">
 
@@ -909,7 +926,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>ขับเคลื่อนด้วย AI</h2>
         <p class="section-subtitle">ฟีเจอร์ AI ของเราช่วยให้เข้าใจข้อมูลสุขภาพเหมือนไม่เคยมีมาก่อน</p>
 
@@ -1015,7 +1032,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>ได้รับความไว้วางใจจากผู้ใช้หลายพันคนทั่วโลก</h2>
         <p class="section-subtitle">ร่วมกับผู้ใช้ที่ควบคุมสุขภาพของตนเอง</p>
         <div class="stats-grid">
@@ -1091,15 +1108,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">สิ่งที่ผู้ใช้พูด</h2>
         <p class="center-text section-subtitle reviews-subtitle">รีวิวจริงจาก App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">ประสบการณ์แอปความดันที่ดีที่สุด</div>
                 </div>
                 <p class="review-content">"ฉันพบแอปความดันที่ดีที่สุดที่เคยลอง ไม่เพียงส่งผลลัพธ์ให้แพทย์ได้ แต่ทีมทำงานอย่างไม่เหน็ดเหนื่อยเพื่ออัปเดตและปรับปรุง นี่คือการสมัครสมาชิกที่ดีที่สุดในโทรศัพท์ของฉัน"</p>
@@ -1109,7 +1134,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">แม้แต่นักบำบัดของฉันก็ชอบแอปนี้</div>
                 </div>
                 <p class="review-content">"เพิ่งได้รับการวินิจฉัยว่าเป็น ADHD เมื่อเดือนที่แล้ว รอยาอยู่ 3 สัปดาห์ ระหว่างนั้นพบแอปนี้ น่าทึ่งมากที่เห็นความผันผวนของสมองที่ไม่ได้รับยาเทียบกับสมองที่ได้รับยา"</p>
@@ -1119,7 +1144,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">ไปได้ดีตอนนี้</div>
                 </div>
                 <p class="review-content">"แอปเล็กๆ ที่น่ารักไม่ยื่นมือเข้าไปในพื้นที่ที่ไม่จำเป็น ความเรียบง่ายคือสิ่งที่ให้ความสำคัญมากที่สุด ขอบคุณที่รักษาความเรียบง่าย"</p>
@@ -1129,7 +1154,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">เรียกหมอนอน!</div>
                 </div>
                 <p class="review-content">"แปลกใจมากที่หมอนอนให้กระดาษมาบันทึกชั่วโมงการนอน พบแอปนี้และขอให้หมอนอนแนะนำแก่คนไข้ทันที ขอบคุณสำหรับการตอบสนองที่ยอดเยี่ยม!"</p>
@@ -1139,7 +1164,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">แอปดีมาก</div>
                 </div>
                 <p class="review-content">"แพทย์ต้องการให้บันทึกความดันทุกวัน แอปนี้ช่วยบันทึกข้อมูลในรูปแบบที่ออกแบบมาอย่างดี แอปยอดเยี่ยม"</p>
@@ -1149,7 +1174,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">แอปยอดเยี่ยม</div>
                 </div>
                 <p class="review-content">"ในฐานะคนที่เป็น bipolar disorder ต้องการบันทึกอารมณ์ แต่หาแอปที่ไม่ต้องจ่ายค่าสมาชิกแพงๆ ไม่ได้ ขอบคุณมากสำหรับแอปนี้"</p>
@@ -1157,9 +1182,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">ชอบแอปนี้มาก ใช้งานง่าย!</div>
                 </div>
                 <p class="review-content">"แอปนี้ยอดเยี่ยมสำหรับตรวจสอบนิสัยการนอนและบันทึก เสนอไอเดียไปและนักพัฒนา Gaurav ตอบในไม่กี่นาทีและเพิ่มสิ่งที่แนะนำในไม่กี่วัน Gaurav Sharma คุณเป็นซุปเปอร์สตาร์!"</p>
@@ -1169,7 +1194,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">แอปเจ๋งมาก</div>
                 </div>
                 <p class="review-content">"เพิ่งเริ่มบันทึกความดันเมื่อคืน แอปนี้เจ๋งมาก แนะนำได้เลย"</p>
@@ -1179,7 +1204,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">ชอบนะ</div>
                 </div>
                 <p class="review-content">"ชอบที่ไม่ต้องจ่ายเงินทุกอย่าง แอปนี้บอกว่าคำใดส่งผลต่อคุณมากที่สุด มีรหัสผ่านล็อค ช่วยให้แก้ไขตัวเองได้ ดูกราฟและเห็นว่าปรับปรุงหรือแย่ลงเมื่อใด ชอบมาก"</p>
@@ -1189,7 +1214,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">แอปดีสำหรับติดตามรูปแบบการนอน</div>
                 </div>
                 <p class="review-content">"ต้องการติดตามการนอนตอนเริ่ม CPAP therapy แอปนี้ยอดเยี่ยมในการรักษาตารางและดูความคืบหน้า ใช้แล้ว 400 คืนและแสดง insights ที่มีประโยชน์!"</p>
@@ -1199,7 +1224,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">แอปยอดเยี่ยม</div>
                 </div>
                 <p class="review-content">"แอปนี้ยอดเยี่ยม ติดตามความดันได้ดี ไม่ผิดหวังแน่นอน!"</p>
@@ -1209,7 +1234,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">น้ำหนักและ BMI</div>
                 </div>
                 <p class="review-content">"แอปนี้โดดเด่นมากยกเว้นข้อบกพร่องเล็กน้อย BMI ควรคำนวณอัตโนมัติแทนที่จะต้องคำนวณเอง"</p>
@@ -1247,7 +1272,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>เริ่มติดตามสุขภาพวันนี้</h2>
         <p>เลือกแอปที่เหมาะกับความต้องการ ดาวน์โหลดฟรีพร้อมฟีเจอร์พรีเมียมเสริม</p>
         <div class="cta-downloads">

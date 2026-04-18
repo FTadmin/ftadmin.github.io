@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>Monitoreo de salud impulsado por IA, simplificado</h1>
-        <p class="hero-subtitle">Controle su presi&oacute;n arterial, estado de &aacute;nimo, peso, sue&ntilde;o y pensamientos diarios con apps de diario inteligentes que se sincronizan con Apple Health y ofrecen informaci&oacute;n personalizada con IA.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>Monitoreo de salud impulsado por IA, simplificado</h1>
+                <p class="hero-subtitle">Controle su presi&oacute;n arterial, estado de &aacute;nimo, peso, sue&ntilde;o y pensamientos diarios con apps de diario inteligentes que se sincronizan con Apple Health y ofrecen informaci&oacute;n personalizada con IA.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Privacidad primero: Sin anuncios &middot; Sin rastreo &middot; Sus datos permanecen privados
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Sincronizaci&oacute;n con Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> Informaci&oacute;n de IA</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone &middot; iPad &middot; Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> Copia de seguridad en iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Presi&oacute;n Arterial Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Diario Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Salud Mental Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Peso Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Sue&ntilde;o Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Privacidad primero: Sin anuncios &middot; Sin rastreo &middot; Sus datos permanecen privados
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Sincronizaci&oacute;n con Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> Informaci&oacute;n de IA</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone &middot; iPad &middot; Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> Copia de seguridad en iCloud</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Elija su app de seguimiento de salud</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>&iquest;Por qu&eacute; elegir las apps de Feeltracker?</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Impulsado por Inteligencia Artificial</h2>
         <p class="section-subtitle">Nuestras funciones de IA le ayudan a comprender sus datos de salud como nunca antes</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>La confianza de miles de usuarios en todo el mundo</h2>
         <p class="section-subtitle">&Uacute;nase a los usuarios que est&aacute;n tomando el control de su salud</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Lo que dicen nuestros usuarios</h2>
         <p class="center-text section-subtitle reviews-subtitle">Rese&ntilde;as reales del App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">La mejor experiencia con una app de presi&oacute;n arterial</div>
                 </div>
                 <p class="review-content">"He encontrado la mejor app de presi&oacute;n arterial que he probado. No solo me permite enviar los resultados a mi m&eacute;dico, sino que el equipo parece trabajar incansablemente para que la app funcione sin problemas. La actualizan y mejoran constantemente, lo cual es genial. Sinceramente, es la mejor suscripci&oacute;n que tengo actualmente en mi tel&eacute;fono."</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Incluso a mi terapeuta le gusta esta app</div>
                 </div>
                 <p class="review-content">"Me diagnosticaron TDAH hace aproximadamente un mes. Y tuve que esperar 3 semanas para obtener la medicaci&oacute;n. Durante ese tiempo encontr&eacute; esta app, y fue bastante sorprendente ver la inconsistencia de mi cerebro sin medicaci&oacute;n frente al medicado. Mi cerebro medicado es mucho m&aacute;s equilibrado en el gr&aacute;fico. Adem&aacute;s, me gusta poder anotar r&aacute;pidamente lo que me pasa por la cabeza."</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Hasta ahora, muy bien</div>
                 </div>
                 <p class="review-content">"Esta es una peque&ntilde;a app sencilla y agradable que no se extiende a &aacute;reas innecesarias. Es su simplicidad, incluida la sencillez de la interfaz, lo que m&aacute;s valoro. No necesito flores ni ardillas ni juegos ni arco&iacute;ris con unicornios. Solo necesito una app de notas tipo diario simple. Hasta ahora, esta app ha cumplido con esos requisitos o la falta de ellos. Es bastante refrescante. Tambi&eacute;n agradezco que se pueda exportar en formato PDF cuando sea necesario. Gracias por mantenerlo simple."</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">&iexcl;Atenci&oacute;n, m&eacute;dicos del sue&ntilde;o!</div>
                 </div>
                 <p class="review-content">"Me sorprendi&oacute; mucho que mi m&eacute;dico del sue&ntilde;o intentara darme papeles para registrar mis horas de sue&ntilde;o, &iexcl;sin forma de recopilarlos! Cuando pregunt&eacute; por una app, me sugirieron el Consensus Sleep Diary, que es in&uacute;til. Afortunadamente encontr&eacute; esta app e inmediatamente le ped&iacute; a mi m&eacute;dico que la recomiende. Tambi&eacute;n valoro lo receptivo que es el desarrollador. Esta persona claramente quiere mejorar vidas. &iexcl;&iexcl;GRACIAS!!"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Muy buena app</div>
                 </div>
                 <p class="review-content">"Mi m&eacute;dico quiere que registre mi presi&oacute;n arterial diariamente. Esta app me permite registrar mi informaci&oacute;n y la almacena en un formato muy bien dise&ntilde;ado. Excelente app."</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Excelente app</div>
                 </div>
                 <p class="review-content">"Como persona con trastorno bipolar, necesitaba registrar mis estados de &aacute;nimo y emociones, pero no pod&iacute;a encontrar una app que no quisiera una suscripci&oacute;n cara. Estoy muy agradecido por esta app, funcionalidad completa sin suscripci&oacute;n y una opci&oacute;n de suscripci&oacute;n si la desea."</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">&iexcl;Me encanta esta app! Muy f&aacute;cil de usar.</div>
                 </div>
                 <p class="review-content">"Primero que nada, d&eacute;jenme decir que ignoren el nombre de usuario que ven aqu&iacute;. Fue un error que comet&iacute; al principio y aparentemente no puedo cambiar sin una Mac, seg&uacute;n Apple. Ahora, sobre la rese&ntilde;a de esta app. Esta app es genial para monitorear sus h&aacute;bitos de sue&ntilde;o, tiempo y poder hacer notas para referencia futura. Es sencilla y f&aacute;cil de usar. Tuve una sugerencia, algo que esperaba que cambiara, y el desarrollador Gaurav fue &iexcl;absolutamente incre&iacute;ble! Le escrib&iacute; y me respondi&oacute; en minutos, y en d&iacute;as realmente a&ntilde;adi&oacute; mi sugerencia. Recomiendo encarecidamente usar esto para registrar sus patrones de sue&ntilde;o. Y definitivamente vale la pena suscribirse. &iexcl;&iexcl;Gaurav Sharma, eres un crack!!"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">App realmente genial</div>
                 </div>
                 <p class="review-content">"Hace solo un par de noches empec&eacute; a registrar mi presi&oacute;n arterial, esta app es realmente genial. Es curioso c&oacute;mo esta app apareci&oacute; en mi tel&eacute;fono justo hoy. Recomendar&iacute;a esta app sin dudarlo."</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Me gusta</div>
                 </div>
                 <p class="review-content">"Me gusta que no tengo que pagar por todo, con mis otras apps de &aacute;nimo tengo que pagar para ver qu&eacute; me afecta. Me gusta que te diga qu&eacute; palabras te influyen m&aacute;s. Tiene c&oacute;digo de acceso o bloqueo por si solo quieres que t&uacute; leas lo que escribes. Realmente me ha ayudado a corregirme. Hago esto casi todos los d&iacute;as y veo los gr&aacute;ficos y puedo ver cu&aacute;ndo y d&oacute;nde mejoro o empeoro. Realmente disfruto de esta app y me gustan los efectos de sonido que hace cuando seleccionas tus estados de &aacute;nimo."</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Buena app para seguir patrones de sue&ntilde;o</div>
                 </div>
                 <p class="review-content">"Necesitaba algo para el seguimiento del sue&ntilde;o cuando empec&eacute; la terapia CPAP en noviembre de 2022. Esta app ha sido genial para mantenerme en un horario y revisar mi progreso. Puedo registrar cu&aacute;ntas horas dorm&iacute;, qu&eacute; sue&ntilde;os tuve, patrones de sue&ntilde;o y otros datos que quiero revisar. El &uacute;nico problema es que a veces la app no abre inmediatamente en mi iPad y tengo que forzar el cierre y volver a abrirla. Actualizaci&oacute;n: ya llevo 400 noches usando la app y me muestra el progreso que he hecho en mi terapia CPAP, &iexcl;adem&aacute;s de muchos datos &uacute;tiles!"</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">App fant&aacute;stica</div>
                 </div>
                 <p class="review-content">"Qu&eacute; app tan genial. Hace un seguimiento de mi presi&oacute;n arterial. &iexcl;No fallan en nada!"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Peso e IMC</div>
                 </div>
                 <p class="review-content">"Creo que esta app es excelente, excepto por dos peque&ntilde;os fallos que solo me molestan un poco, pero de todas formas funciona muy bien. 1: El peso siempre vuelve a 150 en lugar de quedarse en su &uacute;ltimo peso ingresado. Ser&iacute;a mucho m&aacute;s c&oacute;modo si se quedara en el peso que ingresaste en vez de tener que desplazarte para llegar a tu peso actual. 2: El IMC deber&iacute;a calcularse autom&aacute;ticamente en lugar de intentar hacer el c&aacute;lculo manualmente."</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Empiece a controlar su salud hoy mismo</h2>
         <p>Elija la app que se adapte a sus necesidades. Descarga gratuita con funciones Premium opcionales.</p>
         <div class="cta-downloads">

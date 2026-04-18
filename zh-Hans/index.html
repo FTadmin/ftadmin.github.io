@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>AI驱动，让健康追踪更简单</h1>
-        <p class="hero-subtitle">使用智能日记应用追踪您的血压、情绪、体重、睡眠和日常心得，与Apple Health同步并获取个性化AI分析洞察。</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>AI驱动，让健康追踪更简单</h1>
+                <p class="hero-subtitle">使用智能日记应用追踪您的血压、情绪、体重、睡眠和日常心得，与Apple Health同步并获取个性化AI分析洞察。</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> 隐私至上 — 无广告、无追踪、您的数据完全私密
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health同步</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> AI分析洞察</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud备份</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="血压 Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="每日日记 Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="心理健康 Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="体重 Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="睡眠 Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> 隐私至上 — 无广告、无追踪、您的数据完全私密
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health同步</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> AI分析洞察</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud备份</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">选择适合您的健康追踪应用</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>为什么选择Feeltracker应用？</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>人工智能驱动</h2>
         <p class="section-subtitle">我们的AI功能帮助您以前所未有的方式理解健康数据</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>深受全球数千用户信赖</h2>
         <p class="section-subtitle">加入正在掌控自身健康的用户行列</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">用户评价</h2>
         <p class="center-text section-subtitle reviews-subtitle">来自App Store的真实评论</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">最佳血压应用体验</div>
                 </div>
                 <p class="review-content">"我找到了迄今为止试过的最好的血压应用。它不仅让我能将结果发送给医生，而且团队似乎不知疲倦地保持应用运行流畅。他们不断更新和改进，真的很棒。老实说，这是我手机上目前最值得的订阅。"</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">连我的心理治疗师都喜欢这个应用</div>
                 </div>
                 <p class="review-content">"大约一个月前我被诊断出ADHD。我不得不等了3周才拿到药物。在这段时间里我发现了这个应用，看到未服药时大脑的不稳定状态与服药后的对比真的太神奇了。服药后我的图表稳定多了。另外我喜欢能快速记下心中所想的功能。"</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">目前为止很不错</div>
                 </div>
                 <p class="review-content">"这是一个简洁实用的小应用，不会过度扩展到不必要的领域。我最看重的就是它的简洁性，包括界面的简洁。我不需要花朵、松鼠、游戏、躲猫猫和彩虹独角兽。我只需要一个简单的类似日记的笔记应用。目前这个应用满足了这些要求，或者说满足了我对简单的需求。这真的很清新。我也很欣赏在需要时可以导出PDF格式。感谢保持简洁。"</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">所有睡眠医生请注意！</div>
                 </div>
                 <p class="review-content">"我很惊讶我的睡眠医生居然想给我纸张来记录睡眠时间，而且根本没办法汇总！？当我问有没有应用时，他们推荐了Consensus Sleep Diary，完全没用。幸运的是我找到了这个应用，我立刻请我的睡眠医生开始推荐它。我也很感谢开发者的响应速度。显然这个人想要改善人们的生活。非常感谢！！"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">非常好的应用</div>
                 </div>
                 <p class="review-content">"我的医生要求我每天记录血压。这个应用让我能够记录信息，并以设计精美的格式保存。很棒的应用。"</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">优秀的应用</div>
                 </div>
                 <p class="review-content">"作为双相情感障碍患者，我需要记录情绪和感受，但找不到一个不要求昂贵订阅的应用。我非常感谢这个应用，无需订阅即可使用全部功能，如果需要也可以选择订阅。"</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">超爱这个应用！！非常好用。</div>
                 </div>
                 <p class="review-content">"首先，请忽略我的用户名。那是我早期犯的一个错误，据苹果说没有Mac电脑就无法更改。现在来说说这个应用的评价。这个应用非常适合监测睡眠习惯、时间以及记笔记供将来参考。简单易用。我有一个建议，是我希望能改进的地方，开发者Gaurav简直太棒了！！我联系了他，他几分钟内就回复了我，几天内就真的添加了我的建议！我强烈推荐用这个来记录睡眠模式。订阅绝对物超所值。Gaurav Sharma，你是最棒的！！"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">非常酷的应用</div>
                 </div>
                 <p class="review-content">"几天前我刚开始记录血压，这个应用真的很酷。有趣的是今天这个应用恰好出现在我手机上。我毫不犹豫地推荐这个应用。"</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">我很喜欢</div>
                 </div>
                 <p class="review-content">"我喜欢不需要为所有功能付费。在其他情绪应用上，我得付费才能看到什么触发了我的情绪。我喜欢它告诉你哪些词语对你影响最大。它有密码或锁定功能，可以让只有自己能看到写的内容。它真的帮助我改善了自己。我几乎每天都在记录，看图表时能看到我在何时何处有进步或退步。我真的很喜欢这个应用，也喜欢点击情绪时的音效。"</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">追踪睡眠模式的好应用</div>
                 </div>
                 <p class="review-content">"2022年11月开始CPAP治疗时，我需要一个帮助追踪睡眠的工具。这个应用非常有助于让我保持作息规律和查看进展。我可以记录睡眠时长、做过的梦、睡眠模式以及其他想要回顾的数据。唯一的问题是有时应用在iPad上无法立即打开，需要强制关闭后重新打开。更新 - 已使用400多个夜晚，它向我展示了CPAP治疗的进展和许多有用的洞察！"</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">非常棒的应用</div>
                 </div>
                 <p class="review-content">"真的是很棒的应用。它准确地追踪我的血压。绝对不会出错！"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">体重和BMI</div>
                 </div>
                 <p class="review-content">"我觉得这个应用除了两个小缺点外非常出色，虽然有些烦人但整体仍然运行良好。1: 体重总是回到150而不是停留在你上次输入的体重。如果能保持在你输入的体重而不用每次滚动查找就更方便了。2: BMI应该自动计算而不是需要手动计算。"</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>今天就开始追踪您的健康</h2>
         <p>选择适合您需求的应用。免费下载，含可选高级功能。</p>
         <div class="cta-downloads">

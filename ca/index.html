@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -507,12 +507,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>Seguiment de la salut amb IA, simplificat</h1>
-        <p class="hero-subtitle">Controla la teva pressió arterial, l'estat d'ànim, el pes, el son i els pensaments diaris amb aplicacions de diari intel·ligents que se sincronitzen amb Apple Health i ofereixen informació personalitzada de la IA.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>Seguiment de la salut amb IA, simplificat</h1>
+                <p class="hero-subtitle">Controla la teva pressió arterial, l'estat d'ànim, el pes, el son i els pensaments diaris amb aplicacions de diari intel·ligents que se sincronitzen amb Apple Health i ofereixen informació personalitzada de la IA.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Privacitat primer — Sense anuncis, sense seguiment, les teves dades romanen privades
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Sincronització amb Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> Informació de la IA</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> Còpia de seguretat a iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Pressió Arterial Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Diari Diari Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Salut Mental Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Pes Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Son Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -545,23 +579,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Privacitat primer — Sense anuncis, sense seguiment, les teves dades romanen privades
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Sincronització amb Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> Informació de la IA</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> Còpia de seguretat a iCloud</span>
-
-        </div>
     </section>
 
 
@@ -591,7 +608,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Tria la teva aplicació de seguiment de salut</h2>
 
 
@@ -801,7 +818,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Per què triar les apps de Feeltracker?</h2>
         <div class="features-grid">
 
@@ -881,7 +898,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Potenciat per la intel·ligència artificial</h2>
         <p class="section-subtitle">Les nostres funcions d'IA t'ajuden a entendre les teves dades de salut com mai abans</p>
 
@@ -987,7 +1004,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Confiats per milers d'usuaris a tot el món</h2>
         <p class="section-subtitle">Uneix-te als usuaris que estan prenent el control de la seva salut</p>
         <div class="stats-grid">
@@ -1063,15 +1080,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">El que diuen els nostres usuaris</h2>
         <p class="center-text section-subtitle reviews-subtitle">Ressenyes reals de l'App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">La millor experiència amb una app de pressió arterial</div>
                 </div>
                 <p class="review-content">"He trobat la millor app de pressió arterial que mai he provat. No només em permet enviar els resultats al meu metge, sinó que sembla que la gent treballa incansablement per mantenir l'app funcionant perfectament. L'actualitzen i la milloren constantment, cosa que és fantàstica. Sincerament, és la millor subscripció que tinc al mòbil ara mateix."</p>
@@ -1081,7 +1106,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Fins i tot al meu terapeuta li agrada aquesta app</div>
                 </div>
                 <p class="review-content">"Em van diagnosticar TDAH fa aproximadament un mes. I vaig haver d'esperar 3 setmanes per obtenir medicació. Durant aquest temps vaig trobar aquesta app, i ha estat força increïble veure l'erraticitat del meu cervell sense medicar comparat amb el meu cervell medicat. El meu cervell medicat és molt més estable al gràfic. A més, m'agrada poder anotar el que tinc al cap molt ràpidament."</p>
@@ -1091,7 +1116,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Fins ara, molt bé</div>
                 </div>
                 <p class="review-content">"És una aplicació petita i senzilla que no s'extralimita en àrees innecessàries. El que valoro més que res és la seva senzillesa, inclosa la senzillesa de la interfície. No necessito flors, esquirols, jocs, sorpreses ni unicorns de colors. Només necessito una app de notes senzilla com un diari. Fins ara, aquesta app ha complert aquests requisits, o la manca d'ells. És força refrescant. També aprecio que pots exportar-la en format PDF quan cal. Gràcies per mantenir-la senzilla."</p>
@@ -1101,7 +1126,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Una crida a tots els especialistes del son!</div>
                 </div>
                 <p class="review-content">"Em va sorprendre molt que el meu especialista del son intentés donar-me papers per registrar les meves hores de son sense cap manera de compilar-los! Quan vaig demanar una app, em van suggerir el Diari de Son per consens, que és inútil. Per sort vaig trobar aquesta app i immediatament vaig demanar al meu especialista que comencés a recomanar-la. També aprecio la capacitat de resposta del desenvolupador. Clarament, aquesta persona vol millorar vides. GRÀCIES!!"</p>
@@ -1111,7 +1136,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Molt bona app</div>
                 </div>
                 <p class="review-content">"El meu metge vol que registri la pressió arterial diàriament. Aquesta app em permet registrar la meva informació i la desa en un format molt ben dissenyat. Una app fantàstica."</p>
@@ -1121,7 +1146,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Gran app</div>
                 </div>
                 <p class="review-content">"Com a persona amb trastorn bipolar, necessitava registrar els meus estats d'ànim i emocions, però no podia trobar cap app que no requerís una subscripció cara. Estic molt agraït per aquesta app: funcionalitat completa sense subscripció i una opció de subscripció si en vols una."</p>
@@ -1129,9 +1154,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">M'encanta aquesta aplicació!! Tan fàcil d'usar.</div>
                 </div>
                 <p class="review-content">"En primer lloc, aquesta aplicació és fantàstica per controlar els teus hàbits de son. El desenvolupador va ser increïble i em va respondre en qüestió de minuts."</p>
@@ -1141,7 +1166,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Una aplicació molt interessant</div>
                 </div>
                 <p class="review-content">"Fa unes quantes nits vaig començar a registrar la meva pressió arterial i aquesta aplicació és realment genial. La recomanaria de tot cor."</p>
@@ -1151,7 +1176,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">M'agrada</div>
                 </div>
                 <p class="review-content">"M'agrada no haver de pagar per tot. Té un bloqueig amb codi d'accés. Realment m'ha ajudat a corregir-me."</p>
@@ -1161,7 +1186,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Bona aplicació per fer el seguiment dels patrons de son</div>
                 </div>
                 <p class="review-content">"Necessitava alguna cosa per ajudar amb el seguiment del son quan vaig començar la teràpia CPAP. Aquesta aplicació ha estat fantàstica per mantenir-me responsable."</p>
@@ -1171,7 +1196,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Aplicació fantàstica</div>
                 </div>
                 <p class="review-content">"Una aplicació molt bona. Fa el seguiment de la meva pressió arterial. No t'equivocaràs!"</p>
@@ -1181,7 +1206,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Pes i IMC</div>
                 </div>
                 <p class="review-content">"Trobo que aquesta aplicació és excel·lent. El seguiment de l'IMC funciona molt bé."</p>
@@ -1219,7 +1244,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Comença a fer el seguiment de la teva salut avui mateix</h2>
         <p>Tria l'app que s'adapta a les teves necessitats. Gratuïta per descarregar amb funcions premium opcionals.</p>
         <div class="cta-downloads">

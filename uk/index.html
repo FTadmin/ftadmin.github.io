@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>Простий моніторинг здоров'я з підтримкою ШІ</h1>
-        <p class="hero-subtitle">Стежте за артеріальним тиском, настроєм, вагою, сном та щоденними думками за допомогою інтелектуальних щоденників, які синхронізуються з Apple Health та надають персоналізовану ШІ-аналітику.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>Простий моніторинг здоров'я з підтримкою ШІ</h1>
+                <p class="hero-subtitle">Стежте за артеріальним тиском, настроєм, вагою, сном та щоденними думками за допомогою інтелектуальних щоденників, які синхронізуються з Apple Health та надають персоналізовану ШІ-аналітику.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Конфіденційність понад усе — без реклами, без стеження, ваші дані залишаються приватними
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Синхронізація з Apple Health</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> ШІ-аналітика</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> Резервне копіювання iCloud</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Артеріальний тиск Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Щоденник Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Психічне здоров'я Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Вага Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Сон Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Конфіденційність понад усе — без реклами, без стеження, ваші дані залишаються приватними
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Синхронізація з Apple Health</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> ШІ-аналітика</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> Резервне копіювання iCloud</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Оберіть додаток для відстеження здоров'я</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Чому варто обрати додатки Feeltracker?</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>На основі штучного інтелекту</h2>
         <p class="section-subtitle">Наші функції ШІ допомагають зрозуміти ваші дані про здоров'я як ніколи раніше</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Довіра тисяч користувачів по всьому світу</h2>
         <p class="section-subtitle">Приєднуйтесь до користувачів, які беруть своє здоров'я під контроль</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Що кажуть наші користувачі</h2>
         <p class="center-text section-subtitle reviews-subtitle">Реальні відгуки з App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Найкращий досвід з додатком для тиску</div>
                 </div>
                 <p class="review-content">"Я знайшов найкращий додаток для артеріального тиску, який будь-коли пробував. Він не лише дозволяє надсилати результати лікарю, але й розробники невтомно працюють над стабільністю додатку. Вони постійно оновлюють та покращують його, що чудово. Чесно кажучи, це найкраща підписка на моєму телефоні."</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Навіть мій терапевт оцінив цей додаток</div>
                 </div>
                 <p class="review-content">"Мені поставили діагноз СДУГ близько місяця тому. І мені довелося чекати 3 тижні, щоб отримати ліки. За цей час я знайшов цей додаток, і було дивовижно бачити хаотичність мого мозку без ліків порівняно з мозком на ліках. Мій мозок на ліках набагато стабільніший на графіку. Плюс мені подобається, що можна швидко записати, що на думці."</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Поки що все добре</div>
                 </div>
                 <p class="review-content">"Це приємний простий додаток, який не виходить за рамки необхідного. Саме його простоту, включаючи простоту інтерфейсу, я ціную найбільше. Мені не потрібні квіточки, білочки, ігри та веселкові єдинороги. Мені потрібен простий додаток-щоденник для нотаток. Поки що цей додаток повністю задовольняє ці вимоги. Це освіжає. Також ціную можливість експорту в PDF за потреби. Дякую за простоту."</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Увага, лікарі-сомнологи!</div>
                 </div>
                 <p class="review-content">"Я був дуже здивований, що мій лікар-сомнолог намагався давати мені папірці для запису годин сну, які неможливо навіть систематизувати!? Коли я попросив додаток, мені порадили consensus Sleep Diary, який є марним. На щастя, я знайшов цей додаток і відразу попросив лікаря почати його рекомендувати. Також ціную чуйність розробника. Видно, що ця людина хоче покращити життя людей. ДЯКУЮ!!"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Дуже хороший додаток</div>
                 </div>
                 <p class="review-content">"Мій лікар хоче, щоб я записував тиск щодня. Цей додаток дозволяє записувати інформацію у дуже зручному форматі. Чудовий додаток."</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Чудовий додаток</div>
                 </div>
                 <p class="review-content">"Як людині з біполярним розладом, мені потрібно було записувати настрої та емоції, але я не міг знайти додаток без дорогої підписки. Я дуже вдячний за цей додаток — повна функціональність без підписки та можливість підписки, якщо хочете."</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Обожнюю цей додаток!! Дуже простий у використанні.</div>
                 </div>
                 <p class="review-content">"Цей додаток чудово підходить для моніторингу звичок сну, часу та можливості робити нотатки на майбутнє. Він простий та зручний. У мене була пропозиція, і розробник Гаурав виявився просто неймовірним!! Я звернувся до нього, він відповів протягом кількох хвилин, а через кілька днів реально додав мою пропозицію! Дуже рекомендую для ведення запису режиму сну. І підписка того варта. Гаурав Шарма, ви — зірка!!"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Реально класний додаток</div>
                 </div>
                 <p class="review-content">"Буквально кілька днів тому я почав вести записи тиску — цей додаток реально класний. Кумедно, що він просто з'явився на телефоні сьогодні. Рекомендую без вагань."</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Мені подобається</div>
                 </div>
                 <p class="review-content">"Мені подобається, що не потрібно платити за все — в інших додатках для настрою потрібно платити, щоб побачити, що вас тригерить. Подобається, коли показує, які слова найбільше на вас впливають. Є пароль або замок, якщо хочете, щоб тільки ви читали записи. Це реально допомогло мені виправитися. Я роблю це майже щодня і бачу по графіках, коли і де покращуюсь або погіршуюсь. Мені дуже подобається цей додаток та звукові ефекти при виборі настрою."</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Хороший додаток для відстеження сну</div>
                 </div>
                 <p class="review-content">"Мені потрібно було щось для відстеження сну, коли я почав CPAP-терапію у листопаді 2022. Цей додаток чудово допомагає дотримуватися розкладу та відстежувати прогрес. Я можу відстежувати години сну, сновидіння, режими сну та інші дані. Оновлення — я використовую додаток вже 400 ночей, і він показує мій прогрес у CPAP-терапії та багато корисної аналітики!"</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Фантастичний додаток</div>
                 </div>
                 <p class="review-content">"Чудовий додаток. Він відстежує мій тиск. Ви не помилитеся!"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Вага та ІМТ</div>
                 </div>
                 <p class="review-content">"Я вважаю, що цей додаток чудовий, за винятком двох незначних недоліків, які трохи дратують, але загалом працює дуже добре. 1: вага завжди повертається до 150 замість того, щоб залишатися на останньому введеному значенні. Було б набагато зручніше, якби вона залишалася на введеній вазі. 2: ІМТ повинен розраховуватися автоматично, а не вручну."</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Почніть відстежувати своє здоров'я сьогодні</h2>
         <p>Оберіть додаток, який підходить саме вам. Безкоштовне завантаження з необов'язковими преміум-функціями.</p>
         <div class="cta-downloads">

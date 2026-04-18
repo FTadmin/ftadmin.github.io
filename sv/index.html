@@ -136,16 +136,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Feeltracker">
 
-    <link rel="stylesheet" href="/shared.css?v=c4ecca60">
+    <link rel="stylesheet" href="/shared.css?v=0e11adac">
 
     <link rel="stylesheet" href="/game.css?v=9b48e75d">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="/nav.js?v=bc4bc24d"></script>
+    <script defer src="/nav.js?v=97a16615"></script>
 
 
     <!-- Structured Data -->
@@ -591,12 +591,46 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <div class="hero-logo">feeltracker</div>
-        <h1>AI-driven hälsospårning gjord enkel</h1>
-        <p class="hero-subtitle">Spåra ditt blodtryck, humör, vikt, sömn och dagliga tankar med intelligenta dagboksappar som synkar med Apple Health och ger personliga AI-insikter.</p>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-logo">feeltracker</div>
+                <h1>AI-driven hälsospårning gjord enkel</h1>
+                <p class="hero-subtitle">Spåra ditt blodtryck, humör, vikt, sömn och dagliga tankar med intelligenta dagboksappar som synkar med Apple Health och ger personliga AI-insikter.</p>
+
+                <!-- Privacy Badge -->
+                <div class="privacy-badge">
+                    <i class="fas fa-shield-alt"></i> Integritet först — Inga annonser, ingen spårning, din data förblir privat
+                </div>
+
+                <div class="hero-features">
+
+                    <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health-synk</span>
+
+                    <span class="feature-badge"><i class="fas fa-robot"></i> AI-insikter</span>
+
+                    <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
+
+                    <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud-säkerhetskopia</span>
+
+                </div>
+            </div>
+            <div class="hero-app-cluster" aria-hidden="true">
+
+                <img src="/images/BPT_1024.png" alt="Blodtryck Feeltracker">
+
+                <img src="/images/NT_1024.png" alt="Dagbok Feeltracker">
+
+                <img src="/images/FT_1024.png" alt="Mental hälsa Feeltracker">
+
+                <img src="/images/WT_1024.png" alt="Vikt Feeltracker">
+
+                <img src="/images/ST_1024.png" alt="Sömn Feeltracker">
+
+            </div>
+        </div>
 
         <!-- Hero Stats -->
-        <div class="hero-stats">
+        <div class="hero-stats" data-reveal>
 
             <div class="hero-stat">
                 <div class="hero-stat-number">1M+</div>
@@ -629,23 +663,6 @@
             </div>
 
         </div>
-
-        <!-- Privacy Badge -->
-        <div class="privacy-badge">
-            <i class="fas fa-shield-alt"></i> Integritet först — Inga annonser, ingen spårning, din data förblir privat
-        </div>
-
-        <div class="hero-features">
-
-            <span class="feature-badge"><i class="fas fa-chart-line"></i> Apple Health-synk</span>
-
-            <span class="feature-badge"><i class="fas fa-robot"></i> AI-insikter</span>
-
-            <span class="feature-badge"><i class="fas fa-mobile-alt"></i> iPhone · iPad · Mac</span>
-
-            <span class="feature-badge"><i class="fas fa-cloud"></i> iCloud-säkerhetskopia</span>
-
-        </div>
     </section>
 
 
@@ -675,7 +692,7 @@
 
 
     <!-- Apps Grid -->
-    <section class="apps-section">
+    <section class="apps-section" data-reveal>
         <h2 class="center-text">Välj din hälsospårningsapp</h2>
 
 
@@ -885,7 +902,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="features-section center-text">
+    <section class="features-section center-text" data-reveal>
         <h2>Varför välja Feeltracker-appar?</h2>
         <div class="features-grid">
 
@@ -965,7 +982,7 @@
     </section>
 
     <!-- AI Features Highlight -->
-    <section class="ai-section center-text">
+    <section class="ai-section center-text" data-reveal>
         <h2>Drivet av artificiell intelligens</h2>
         <p class="section-subtitle">Våra AI-funktioner hjälper dig att förstå din hälsodata som aldrig förr</p>
 
@@ -1071,7 +1088,7 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="social-proof center-text">
+    <section class="social-proof center-text" data-reveal>
         <h2>Betrodd av tusentals användare världen över</h2>
         <p class="section-subtitle">Gå med bland användare som tar kontroll över sin hälsa</p>
         <div class="stats-grid">
@@ -1147,15 +1164,23 @@
  -->
 
     <!-- User Reviews -->
-    <section class="support-section">
+    <section class="support-section" data-reveal>
         <h2 class="center-text">Vad våra användare säger</h2>
         <p class="center-text section-subtitle reviews-subtitle">Riktiga recensioner från App Store</p>
+
+
+        <div class="reviews-authority">
+            <span class="reviews-authority-stars">★★★★★</span>
+            <span class="reviews-authority-rating">4.8</span>
+            <span class="reviews-authority-meta">18,565+ reviews · <span class="reviews-authority-source">on the App Store</span></span>
+        </div>
+
 
         <div class="reviews-grid">
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Bästa upplevelsen med en blodtrycksapp</div>
                 </div>
                 <p class="review-content">"Jag har hittat den bästa blodtrycksappen jag någonsin provat. Den låter mig inte bara skicka resultat till min läkare, utan utvecklarna verkar jobba outtröttligt för att hålla appen igång smidigt. De uppdaterar och förbättrar den ständigt, vilket är fantastiskt. Ärligt talat är det den bästa prenumerationen jag har på min telefon just nu."</p>
@@ -1165,7 +1190,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Till och med min terapeut gillar den här appen</div>
                 </div>
                 <p class="review-content">"Jag fick diagnosen ADHD för ungefär en månad sedan. Jag fick vänta i 3 veckor för att få medicin. Under den tiden hittade jag den här appen, och det har varit ganska häpnadsväckande att se hur oregelbundet mitt omedicinerade hjärna beter sig jämfört med mitt medicinerade. Mitt medicinerade hjärna är mycket jämnare i grafen. Dessutom gillar jag att jag kan anteckna vad som är på mitt sinne riktigt snabbt."</p>
@@ -1175,7 +1200,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Hittills allt bra</div>
                 </div>
                 <p class="review-content">"Det här är en trevlig liten enkel app som inte sträcker sig in i onödiga områden. Det är enkelheten i den, inklusive gränssnittets enkelhet, som jag värdesätter mer än något annat. Jag behöver inga blommor och ekorrar och spel och lekfulla saker och regnbågsenhjörningar. Jag behöver bara en enkel dagboksliknande anteckningsapp. Hittills har den här appen uppfyllt dessa krav eller brist på krav. Det är nästan uppfriskande. Jag uppskattar också att man kan exportera den som PDF när det behövs. Tack för att du håller det enkelt."</p>
@@ -1185,7 +1210,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Hej alla sömnläkare!</div>
                 </div>
                 <p class="review-content">"Jag var så förvånad över att min sömnläkare försökte ge mig papperslappar för att registrera mina sömntimmar utan möjlighet att ens sammanställa dem!? När jag frågade efter en app föreslog de en konsensus-sömnddagbok, som är värdelös. Lyckligtvis hittade jag den här appen och bad direkt min sömnläkare att börja rekommendera den. Jag uppskattar också hur lyhörd utvecklaren är. Tydligen vill den här personen förbättra liv. TACK!!"</p>
@@ -1195,7 +1220,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Mycket bra app</div>
                 </div>
                 <p class="review-content">"Min läkare vill att jag ska registrera mitt blodtryck dagligen. Den här appen låter mig registrera min information och presenterar den i ett väldigt snyggt format. Utmärkt app."</p>
@@ -1205,7 +1230,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Great app</div>
                 </div>
                 <p class="review-content">"Som person med bipolär sjukdom behövde jag registrera mina stämningar och känslor men kunde inte hitta en app som inte krävde en dyr prenumeration. Jag är väldigt tacksam för den här appen – full funktionalitet utan prenumeration, och ett prenumerationsalternativ om man vill ha det."</p>
@@ -1213,9 +1238,9 @@
             </div>
 
 
-            <div class="review-card">
+            <div class="review-card review-card--featured">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Älskar den här appen!! Så enkel att använda.</div>
                 </div>
                 <p class="review-content">"Först och främst, låt mig säga, ignorera användarnamnet du ser på mig här. Det var ett misstag jag gjorde tidigt och verkar inte kunna ändra utan en Mac-dator, enligt Apple. Nu till att recensera appen. Den här appen är fantastisk för att övervaka dina sömnvanor, tid och möjligheten att göra anteckningar för framtida referens. Den är enkel och lätt att använda. Jag hade ett förslag, något jag hoppades skulle ändras, och apputvecklaren Gaurav var helt otrolig!! Jag kontaktade honom och han svarade inom minuter och inom dagar hade han faktiskt lagt till mitt förslag! Jag rekommenderar starkt att använda den för att hålla koll på dina sömnmönster. Och det är absolut värt att prenumerera på. Gaurav Sharma, du är en rockstjärna!!"</p>
@@ -1225,7 +1250,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Riktigt cool app</div>
                 </div>
                 <p class="review-content">"För bara några nätter sedan började jag föra ett register över mitt blodtryck – den här appen är riktigt cool. Det är lustigt hur den dök upp på min telefon idag. Jag skulle rekommendera den här appen utan tvekan."</p>
@@ -1235,7 +1260,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">i like it</div>
                 </div>
                 <p class="review-content">"Jag gillar att jag inte behöver betala för allt. I mina andra humörAppar måste jag betala för att se vad som triggar mig. Jag gillar när den berättar vilka ord som påverkar dig mest. Den har ett lösenord eller ett lås om du bara vill att du själv ska läsa vad du skriver. Det har verkligen hjälpt mig att korrigera mig själv. Jag har gjort det här nästan varje dag och ser graferna och kan se när och var jag förbättras eller försämras. Jag njuter verkligen av appen och gillar ljudeffekterna den gör när man klickar på sina humör."</p>
@@ -1245,7 +1270,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Bra app för att spåra sömnmönster</div>
                 </div>
                 <p class="review-content">"Jag behövde något för att hjälpa till med sömnspårning när jag började med CPAP-terapi i november 2022. Den här appen har varit utmärkt för att hålla mig till ett schema och följa mina framsteg. Jag kan spåra sömntimmar, drömmar jag haft, sömnmönster samt annan data jag vill granska. Enda problemet är att appen ibland inte öppnar direkt på min iPad och jag måste tvångsstänga den och öppna igen. Uppdatering – har nu använt appen i 400 nätter och den visar mig framstegen jag gjort i min CPAP-terapi och massor av användbara insikter!"</p>
@@ -1255,7 +1280,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Fantastisk app</div>
                 </div>
                 <p class="review-content">"En riktigt bra app. Den håller koll på mitt blodtryck. Du kan inte ha fel här!"</p>
@@ -1265,7 +1290,7 @@
 
             <div class="review-card">
                 <div class="review-header">
-                    <div class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="review-rating">★★★★★</div>
                     <div class="review-title">Vikt och BMI</div>
                 </div>
                 <p class="review-content">"Jag tycker att den här appen är enastående förutom två mindre brister som irriterar mig men som ändå fungerar bra. 1: Vikten återgår alltid till 150 istället för att stanna på den vikt du senast angav. Det vore mycket mer praktiskt om den stannade på den vikt du angav istället för att behöva scrolla genom vikterna för att komma till din nuvarande vikt. 2: BMI borde beräknas automatiskt istället för att man ska försöka göra beräkningen manuellt."</p>
@@ -1303,7 +1328,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section center-text">
+    <section class="cta-section center-text" data-reveal>
         <h2>Börja spåra din hälsa idag</h2>
         <p>Välj den app som passar dina behov. Gratis att ladda ner med valfria premiumfunktioner.</p>
         <div class="cta-downloads">
