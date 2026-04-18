@@ -548,8 +548,7 @@ a:hover {
     gap: var(--space-5);
     padding: var(--space-6) var(--space-5);
     margin: var(--space-3) 0;
-    background:
-        radial-gradient(ellipse 55% 60% at 82% 50%, var(--app-tint, var(--color-primary-tint)), transparent 55%);
+    background: radial-gradient(ellipse 110% 100% at 20% 50%, var(--app-tint, var(--color-primary-tint)), transparent 85%);
     box-shadow: none;
     border-radius: var(--radius-xl);
     position: relative;
@@ -562,30 +561,25 @@ a:hover {
     box-shadow: none;
 }
 
-/* Alternation: even cards have icon on the right on desktop, so the tint moves right;
-   odd non-first cards have icon on the left, tint goes left. The first card uses the
-   default (right) to match its default icon-left/text-right layout flipped visually. */
 .apps-section .app-card:nth-child(even) {
     background:
-        radial-gradient(ellipse 55% 60% at 18% 50%, var(--app-tint, var(--color-primary-tint)), transparent 55%),
+        radial-gradient(ellipse 110% 100% at 20% 50%, var(--app-tint, var(--color-primary-tint)), transparent 85%),
         var(--color-surface);
 }
 
 .apps-section .app-card:nth-child(odd) {
-    background:
-        radial-gradient(ellipse 55% 60% at 18% 50%, var(--app-tint, var(--color-primary-tint)), transparent 55%);
+    background: radial-gradient(ellipse 110% 100% at 20% 50%, var(--app-tint, var(--color-primary-tint)), transparent 85%);
 }
 
 @media (min-width: 820px) {
-    /* Odd (icon-left / text-right) → tint on left */
+    /* Odd (icon-left / text-right) — wash from the left */
     .apps-section .app-card:nth-child(odd) {
-        background:
-            radial-gradient(ellipse 55% 65% at 15% 50%, var(--app-tint, var(--color-primary-tint)), transparent 52%);
+        background: radial-gradient(ellipse 110% 120% at 10% 50%, var(--app-tint, var(--color-primary-tint)), transparent 80%);
     }
-    /* Even (text-left / icon-right) → tint on right */
+    /* Even (text-left / icon-right) — wash from the right */
     .apps-section .app-card:nth-child(even) {
         background:
-            radial-gradient(ellipse 55% 65% at 85% 50%, var(--app-tint, var(--color-primary-tint)), transparent 52%),
+            radial-gradient(ellipse 110% 120% at 90% 50%, var(--app-tint, var(--color-primary-tint)), transparent 80%),
             var(--color-surface);
     }
 }
