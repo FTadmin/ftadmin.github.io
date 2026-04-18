@@ -405,10 +405,9 @@ a:hover {
 .hero-app-cluster img {
     width: 100%;
     height: 100%;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-primary);
-    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
-    background: var(--color-surface);
+    filter: drop-shadow(0 14px 26px rgba(43, 123, 211, 0.22));
+    transition: transform var(--dur) var(--ease), filter var(--dur) var(--ease);
+    background: transparent;
 }
 
 .hero-app-cluster img:nth-child(1) { transform: rotate(-6deg); }
@@ -419,7 +418,7 @@ a:hover {
 
 .hero-app-cluster img:hover {
     transform: scale(1.08) rotate(0);
-    box-shadow: 0 20px 40px rgba(43, 123, 211, 0.28);
+    filter: drop-shadow(0 20px 36px rgba(43, 123, 211, 0.32));
     z-index: 2;
     position: relative;
 }
@@ -467,9 +466,10 @@ a:hover {
 }
 
 .hero-logo {
-    font-family: var(--font-sans);
-    font-size: 3em;
-    font-weight: 700;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 2.2em;
+    font-weight: 400;
     color: var(--color-primary);
     margin-bottom: 16px;
     text-transform: lowercase;
@@ -518,7 +518,7 @@ a:hover {
 /* Apps Section — zigzag layout */
 .apps-section {
     margin: 0;
-    padding: 96px 0 120px;
+    padding: 72px 0 96px;
     display: block;
 }
 
@@ -530,14 +530,15 @@ a:hover {
 .apps-section .app-card {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-6);
-    padding: var(--space-8) var(--space-6);
-    margin: var(--space-5) 0;
+    gap: var(--space-5);
+    padding: var(--space-6) var(--space-5);
+    margin: var(--space-3) 0;
     background: transparent;
     box-shadow: none;
     border-radius: var(--radius-xl);
     position: relative;
     overflow: hidden;
+    align-items: center;
 }
 
 .apps-section .app-card:hover {
@@ -547,20 +548,26 @@ a:hover {
 }
 
 .apps-section .app-card:nth-child(even) {
-    background: var(--color-surface);
+    background:
+        radial-gradient(ellipse 80% 60% at 20% 50%, var(--color-primary-tint), transparent 70%),
+        var(--color-surface);
+}
+
+.apps-section .app-card:nth-child(odd):not(:first-of-type) {
+    background: radial-gradient(ellipse 80% 60% at 80% 50%, var(--color-primary-tint), transparent 70%);
 }
 
 .apps-section .app-card-header {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    gap: var(--space-4);
-    margin-bottom: var(--space-4);
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
 }
 
 .apps-section .app-icon-large {
-    width: 168px;
-    height: 168px;
+    width: 160px;
+    height: 160px;
     filter: drop-shadow(0 20px 30px rgba(43, 123, 211, 0.22));
     transition: transform 400ms var(--ease), filter 400ms var(--ease);
 }
@@ -570,35 +577,59 @@ a:hover {
     filter: drop-shadow(0 28px 40px rgba(43, 123, 211, 0.30));
 }
 
+.apps-section .app-card-title h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--color-text-strong);
+}
+
+.apps-section .app-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-3);
+}
+
+.apps-section .feature-list {
+    margin: var(--space-3) 0;
+}
+
+.apps-section .feature-list li {
+    padding: var(--space-1) 0 var(--space-1) var(--space-5);
+    position: relative;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.apps-section .feature-list li i {
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    color: var(--color-primary);
+    width: auto;
+}
+
 @media (min-width: 820px) {
     .apps-section .app-card {
-        grid-template-columns: 240px 1fr;
-        align-items: center;
-        gap: var(--space-8);
-        padding: var(--space-8);
-    }
-    .apps-section .app-card:nth-of-type(odd of .app-card) .app-card-header {
-        order: 2;
+        grid-template-columns: 220px 1fr;
+        gap: var(--space-7);
+        padding: var(--space-7) var(--space-6);
     }
     .apps-section .app-card-header {
         margin-bottom: 0;
         text-align: center;
     }
-    .apps-section .app-card:nth-of-type(3n) {
-        flex-direction: row-reverse;
-    }
-    .apps-section .app-card > :not(.app-card-header) {
-        /* copy block */
-    }
     /* Alternating — even cards flip icon to right side */
+    .apps-section .app-card:nth-child(even) {
+        grid-template-columns: 1fr 220px;
+    }
     .apps-section .app-card:nth-child(even) .app-card-header {
         order: 2;
     }
-    .apps-section .app-card:nth-child(even) {
-        grid-template-columns: 1fr 240px;
-    }
-    .apps-section .app-card:nth-child(odd) .app-card-header {
-        order: 0;
+    .apps-section .app-card-content {
+        text-align: left;
     }
 }
 
@@ -673,9 +704,8 @@ a:hover {
 .app-icon-large {
     width: 128px;
     height: 128px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-    transition: transform var(--dur) var(--ease);
+    filter: drop-shadow(var(--shadow-sm));
+    transition: transform var(--dur) var(--ease), filter var(--dur) var(--ease);
 }
 
 .app-card:hover .app-icon-large {
@@ -1174,6 +1204,106 @@ footer {
 }
 
 /* ==========================================
+   LEGAL PAGES (Privacy, Terms)
+   ========================================== */
+.legal-article {
+    max-width: 720px;
+    margin: var(--space-7) auto var(--space-8);
+    padding: 0 var(--space-5);
+    font-size: 1.02em;
+    line-height: 1.75;
+    color: var(--color-text-muted);
+}
+
+.legal-article-header {
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.legal-article-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin: 0;
+    color: var(--color-text-strong);
+}
+
+.legal-intro {
+    margin-bottom: var(--space-7);
+}
+
+.legal-intro > p:first-of-type::first-letter {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 3.4em;
+    line-height: 0.9;
+    float: left;
+    padding: 0.12em 0.1em 0 0;
+    color: var(--color-primary);
+}
+
+.legal-section {
+    margin: var(--space-7) 0;
+    padding-top: var(--space-5);
+    counter-increment: legal-section;
+    position: relative;
+}
+
+.legal-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin: 0 0 var(--space-4);
+    position: relative;
+}
+
+.legal-section h2::before {
+    content: counter(legal-section, decimal-leading-zero);
+    display: inline-block;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 0.55em;
+    color: var(--color-primary);
+    margin-right: 0.6em;
+    vertical-align: baseline;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+}
+
+.legal-article {
+    counter-reset: legal-section;
+}
+
+.legal-content p,
+.legal-content li {
+    line-height: 1.75;
+}
+
+.legal-content ul,
+.legal-content ol {
+    padding-left: var(--space-5);
+}
+
+.legal-content li {
+    margin: var(--space-2) 0;
+}
+
+.legal-content a {
+    border-bottom: 1px dotted var(--color-primary);
+    transition: border-bottom-style var(--dur-fast) var(--ease);
+}
+
+.legal-content a:hover {
+    border-bottom-style: solid;
+}
+
+/* ==========================================
    ABOUT PAGE — redesigned sections
    ========================================== */
 
@@ -1272,8 +1402,7 @@ footer {
 .about-app-icon {
     width: 80px;
     height: 80px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    filter: drop-shadow(var(--shadow-sm));
     flex-shrink: 0;
 }
 
@@ -1466,6 +1595,28 @@ footer {
     color: var(--color-text-muted);
 }
 
+.region-lang {
+    color: var(--color-text-muted);
+    border-bottom: 1px dotted transparent;
+    transition: color var(--dur-fast) var(--ease), border-bottom-color var(--dur-fast) var(--ease);
+}
+
+.region-lang:hover {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.region-lang:not(:last-of-type)::after {
+    content: ', ';
+    color: var(--color-text-faint);
+    pointer-events: none;
+}
+
+.region-note {
+    color: var(--color-text-faint);
+    font-style: italic;
+}
+
 /* Use Cases — icon-led cards */
 .use-case-grid {
     display: grid;
@@ -1605,19 +1756,17 @@ th, td {
 }
 
 .app-icon {
-    border-radius: var(--radius-lg);
     width: 160px;
     height: 160px;
     display: inline-block;
     margin: 0 auto;
-    box-shadow: var(--shadow-md);
+    filter: drop-shadow(var(--shadow-md));
 }
 
 .hero-app-icon {
     width: 120px;
     height: 120px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    filter: drop-shadow(var(--shadow-md));
     display: block;
     margin: 0 auto 20px;
 }
@@ -2316,10 +2465,11 @@ th, td {
 .nav-row-brand .brand-logo {
     color: var(--color-primary);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.15em;
-    font-family: var(--font-sans);
-    letter-spacing: -0.02em;
+    font-weight: 400;
+    font-size: 1.3em;
+    font-family: var(--font-display);
+    font-style: italic;
+    letter-spacing: -0.01em;
     transition: color var(--dur-fast) var(--ease);
 }
 
@@ -2776,22 +2926,53 @@ th, td {
 
 /* CTA downloads (index) */
 .cta-downloads {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-5);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-4);
     justify-content: center;
     margin-top: var(--space-7);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-download-item {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-5) var(--space-3);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.cta-download-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-primary);
+    text-decoration: none;
+}
+
+.cta-download-icon {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 8px 16px rgba(43, 123, 211, 0.2));
 }
 
 .cta-download-name {
-    font-weight: 500;
-    margin-bottom: var(--space-2);
-    font-size: 0.8em;
-    color: var(--color-text-faint);
+    font-weight: 600;
+    font-size: 0.85em;
+    color: var(--color-text-strong);
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+.cta-download-item .store_button {
+    width: 120px;
+    height: auto;
+    margin-top: var(--space-1);
 }
 
 /* Store button large variant (hero + CTA) */

@@ -179,19 +179,8 @@
         <h2>{{aiFeatures.title}}</h2>
         <p class="section-subtitle">{{aiFeatures.subtitle}}</p>
 
-        <h3 class="ai-tier-label">{{aiFeatures.freeTitle}}</h3>
         <div class="ai-features-grid">
-{{#each aiFeatures.free}}
-            <div class="ai-feature">
-                <h3><i class="{{icon}}"></i> {{title}}</h3>
-                <p>{{description}}</p>
-            </div>
-{{/each}}
-        </div>
-
-        <h3 class="ai-tier-label">{{aiFeatures.premiumTitle}}</h3>
-        <div class="ai-features-grid">
-{{#each aiFeatures.premium}}
+{{#each aiFeatures.items}}
             <div class="ai-feature">
                 <h3><i class="{{icon}}"></i> {{title}}</h3>
                 <p>{{description}}</p>
@@ -276,12 +265,13 @@
         <p>{{cta.subtitle}}</p>
         <div class="cta-downloads">
 {{#each cta.items}}
-            <div class="cta-download-item">
-                <p class="cta-download-name">{{name}}</p>
-                <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" aria-label="{{downloadAlt}}">
-                    <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="{{downloadAlt}}">
-                </a>
-            </div>
+            <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-download-item" aria-label="{{downloadAlt}}">
+{{#if iconSrc}}
+                <img src="{{iconSrc}}" alt="" class="cta-download-icon">
+{{/if}}
+                <span class="cta-download-name">{{name}}</span>
+                <img class="store_button" src="/images/appstore_link.svg" alt="{{downloadAlt}}">
+            </a>
 {{/each}}
         </div>
     </section>

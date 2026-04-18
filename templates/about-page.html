@@ -125,7 +125,7 @@
 {{/if}}
             <ul class="fact-list">
 {{#each items}}
-                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{text}}</span></li>
+                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{value}}</span></li>
 {{/each}}
             </ul>
         </div>
@@ -141,7 +141,14 @@
 {{#each globalReach.groups}}
             <div class="region-card">
                 <h4>{{label}}</h4>
-                <p>{{languages}}</p>
+                <p class="region-languages">
+{{#each languages}}
+                    <a href="{{prefix}}/about/" class="region-lang">{{name}}</a>
+{{/each}}
+{{#if note}}
+                    <span class="region-note">— {{note}}</span>
+{{/if}}
+                </p>
             </div>
 {{/each}}
         </div>
@@ -174,7 +181,7 @@
             <h3>{{title}}</h3>
             <ul class="fact-list">
 {{#each items}}
-                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{text}}</span></li>
+                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{value}}</span></li>
 {{/each}}
             </ul>
         </div>
