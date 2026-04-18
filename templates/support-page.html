@@ -41,31 +41,39 @@
 <body>
 {{> nav}}
 
-<h1>{{pageTitle}}</h1>
+<article class="support-article">
+    <header class="support-article-header center-text">
+        <div class="callout-icon"><i class="fas fa-life-ring"></i></div>
+        <h1>{{pageTitle}}</h1>
+    </header>
 
-    <div class="contact-box">
+    <section class="callout callout--highlight center-text">
         <h2>{{contact.title}}</h2>
         <p>{{contact.supportText}}</p>
         <p>{{contact.faqText}}</p>
-    </div>
+    </section>
 
-    <div class="support-section">
+    <section class="support-block">
         <h2>{{apps.title}}</h2>
-        <ul>
+        <div class="support-app-grid">
 {{#each apps.items}}
-            <li><a href="{{url}}">{{name}}</a>{{separator}}{{description}}</li>
+            <a href="{{url}}" class="support-app-link">
+                <span class="support-app-name">{{name}}</span>
+                <span class="support-app-desc">{{description}}</span>
+            </a>
 {{/each}}
-        </ul>
-    </div>
+        </div>
+    </section>
 
-    <div class="support-section">
+    <section class="support-block">
         <h2>{{resources.title}}</h2>
-        <ul>
+        <ul class="support-resource-list">
 {{#each resources.items}}
-            <li><a href="{{url}}">{{name}}</a></li>
+            <li><a href="{{url}}"><i class="fas fa-arrow-right"></i> {{name}}</a></li>
 {{/each}}
         </ul>
-    </div>
+    </section>
+</article>
 
 {{> footer}}
 
