@@ -23,6 +23,7 @@ const assetVersion = {
     shared: hashFile('shared.css'),
     game:   hashFile('game.css'),
     nav:    hashFile('nav.js'),
+    heroPhysics: hashFile('hero-physics.js'),
 };
 
 // ============================================================
@@ -394,6 +395,7 @@ function buildContext(site, languages, page) {
     }
 
     const hasGame = typeof data.santaScript === 'string' && data.santaScript.trim().length > 0;
+    const hasHeroPhysics = page.template === 'index-page';
 
     return {
         site,
@@ -411,6 +413,7 @@ function buildContext(site, languages, page) {
         privacyUrl,
         ogLocale,
         hasGame,
+        hasHeroPhysics,
         assetVersion,
         ...data
     };
