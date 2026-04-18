@@ -1,25 +1,23 @@
     <!-- Navigation -->
     <nav class="navbar">
     <div class="nav-container">
-        <div class="nav-row-brand">
-            <a href="{{brandUrl}}" class="brand-logo">feeltracker</a>
-            <div class="language-selector" id="langSelector">
-                <div class="language-current" data-lang-toggle>
-                    <span class="flag">{{lang.flag}}</span>
-                    <span>{{lang.name}}</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="language-dropdown">
-{{#each langSwitcher}}
-                    <a href="{{url}}"{{#if isCurrent}} class="active"{{/if}} data-lang-choose><span class="flag">{{flag}}</span> {{name}}</a>
-{{/each}}
-                </div>
-            </div>
-        </div>
+        <a href="{{brandUrl}}" class="brand-logo">feeltracker</a>
         <div class="nav-row-apps">
 {{#each navApps}}
             <a href="{{url}}"{{#if isCurrent}} class="current"{{/if}}>{{name}}</a>
 {{/each}}
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">{{lang.flag}}</span>
+                <span class="lang-name">{{lang.name}}</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+{{#each langSwitcher}}
+                <a href="{{url}}"{{#if isCurrent}} class="active"{{/if}} data-lang-choose><span class="flag">{{flag}}</span> {{name}}</a>
+{{/each}}
+            </div>
         </div>
     </div>
 </nav>
