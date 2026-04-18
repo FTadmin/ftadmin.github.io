@@ -74,7 +74,7 @@
         </div>
 
         <!-- Privacy Badge -->
-        <div style="color: #059669; padding: 16px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+        <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> {{hero.privacyText}}
         </div>
 
@@ -87,15 +87,15 @@
 
 {{#if asSeenIn}}
     <!-- As Seen In -->
-    <section class="as-seen-section center-text" style="padding: 32px 20px 0;">
-        <p class="as-seen-label" style="text-transform: uppercase; font-size: 0.7em; letter-spacing: 0.12em; color: #9ca3af; margin-bottom: 16px; font-weight: 600;">{{asSeenIn.label}}</p>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 32px;">
+    <section class="as-seen-section center-text">
+        <p class="as-seen-label">{{asSeenIn.label}}</p>
+        <div class="as-seen-logo-row">
 {{#each asSeenIn.items}}
-            <a href="{{url}}" target="_blank" rel="noopener" class="as-seen-link" style="text-decoration: none; color: inherit;" aria-label="{{articleTitle}}">
+            <a href="{{url}}" target="_blank" rel="noopener" class="as-seen-link" aria-label="{{articleTitle}}">
 {{#if logoSrc}}
-                <img src="{{logoSrc}}" alt="{{name}}" class="as-seen-logo" style="height: clamp(3em, 7vw, 3.8em); width: auto; display: block;">
+                <img src="{{logoSrc}}" alt="{{name}}" class="as-seen-logo">
 {{else}}
-                <span style="font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2em, 5vw, 2.8em); font-weight: 700; font-style: italic; color: #6b7280; letter-spacing: 0.02em; transition: color 0.2s;">{{name}}</span>
+                <span class="as-seen-name">{{name}}</span>
 {{/if}}
             </a>
 {{/each}}
@@ -105,10 +105,10 @@
 
 {{#if founderQuote}}
     <!-- Founder Quote -->
-    <section class="center-text" style="padding: 40px 20px 16px; max-width: 780px; margin: 0 auto;">
-        <blockquote class="founder-quote" style="margin: 0; padding: 28px 32px; background: #f9fafb; border-left: 4px solid #2563eb; border-radius: 0 12px 12px 0; text-align: left;">
-            <p class="founder-quote-text" style="font-size: 1.1em; line-height: 1.7; color: #374151; margin: 0 0 12px; font-style: italic;">"{{founderQuote.quote}}"</p>
-            <footer class="founder-quote-footer" style="font-size: 0.9em; color: #6b7280;">— {{founderQuote.attribution}}, <a href="{{founderQuote.sourceUrl}}" target="_blank" rel="noopener" style="color: #6b7280; text-decoration: none; font-style: italic; border-bottom: 1px solid #d1d5db;">{{founderQuote.source}}</a></footer>
+    <section class="founder-quote-section center-text">
+        <blockquote class="founder-quote">
+            <p class="founder-quote-text">"{{founderQuote.quote}}"</p>
+            <footer class="founder-quote-footer">— {{founderQuote.attribution}}, <a href="{{founderQuote.sourceUrl}}" target="_blank" rel="noopener">{{founderQuote.source}}</a></footer>
         </blockquote>
     </section>
 {{/if}}
@@ -128,9 +128,7 @@
                     <h3>{{title}}</h3>
                     <p class="app-subtitle">{{subtitle}}</p>
 {{#if badge}}
-                    <div style="color: #2563eb; display: inline-block; margin-top: 8px; font-size: 0.8em; font-weight: 600;">
-                        {{badge}}
-                    </div>
+                    <div class="app-badge">{{badge}}</div>
 {{/if}}
                 </div>
             </div>
@@ -172,7 +170,7 @@
         <h2>{{aiFeatures.title}}</h2>
         <p class="section-subtitle">{{aiFeatures.subtitle}}</p>
 
-        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">{{aiFeatures.freeTitle}}</h3>
+        <h3 class="ai-tier-label">{{aiFeatures.freeTitle}}</h3>
         <div class="ai-features-grid">
 {{#each aiFeatures.free}}
             <div class="ai-feature">
@@ -182,7 +180,7 @@
 {{/each}}
         </div>
 
-        <h3 style="margin-top: 48px; margin-bottom: 16px; color: rgba(255,255,255,0.5); font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">{{aiFeatures.premiumTitle}}</h3>
+        <h3 class="ai-tier-label">{{aiFeatures.premiumTitle}}</h3>
         <div class="ai-features-grid">
 {{#each aiFeatures.premium}}
             <div class="ai-feature">
@@ -192,11 +190,9 @@
 {{/each}}
         </div>
 
-        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
-            <h3 style="color: rgba(255,255,255,0.6); margin-top: 0; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fas fa-info-circle"></i> {{aiFeatures.disclaimerTitle}}</h3>
-            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
-                {{aiFeatures.disclaimerText}}
-            </p>
+        <div class="ai-disclaimer">
+            <h3><i class="fas fa-info-circle"></i> {{aiFeatures.disclaimerTitle}}</h3>
+            <p>{{aiFeatures.disclaimerText}}</p>
         </div>
     </section>
 
@@ -219,7 +215,7 @@
     <!-- User Reviews -->
     <section class="support-section">
         <h2 class="center-text">{{reviews.title}}</h2>
-        <p class="center-text section-subtitle" style="margin-bottom: 32px;">{{reviews.subtitle}}</p>
+        <p class="center-text section-subtitle reviews-subtitle">{{reviews.subtitle}}</p>
 
         <div class="reviews-grid">
 {{#each reviews.items}}
@@ -235,7 +231,7 @@
 {{/each}}
         </div>
 {{#if reviews.disclaimer}}
-        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">{{reviews.disclaimer}}</p>
+        <p class="reviews-disclaimer">{{reviews.disclaimer}}</p>
 {{/if}}
     </section>
 
@@ -261,12 +257,12 @@
     <section class="cta-section center-text">
         <h2>{{cta.title}}</h2>
         <p>{{cta.subtitle}}</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 40px;">
+        <div class="cta-downloads">
 {{#each cta.items}}
-            <div style="text-align: center;">
-                <p style="font-weight: 500; margin-bottom: 8px; font-size: 0.8em; color: #9ca3af;">{{name}}</p>
+            <div class="cta-download-item">
+                <p class="cta-download-name">{{name}}</p>
                 <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" aria-label="{{downloadAlt}}">
-                    <img class="store_button" src="/images/appstore_link.svg" alt="{{downloadAlt}}" style="width: 180px; height: 53px;">
+                    <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="{{downloadAlt}}">
                 </a>
             </div>
 {{/each}}

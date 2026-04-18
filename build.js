@@ -382,6 +382,8 @@ function buildContext(site, languages, page) {
         ).join('\n');
     }
 
+    const hasGame = typeof data.santaScript === 'string' && data.santaScript.trim().length > 0;
+
     return {
         site,
         lang,
@@ -397,6 +399,7 @@ function buildContext(site, languages, page) {
         cookie: lang.cookie,
         privacyUrl,
         ogLocale,
+        hasGame,
         ...data
     };
 }

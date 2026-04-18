@@ -142,11 +142,13 @@
     <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
 
     <link rel="stylesheet" href="/shared.css">
+
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
 
 
     <!-- Structured Data -->
@@ -176,251 +178,80 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-    <style>
-        .navbar .nav-container {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            max-width: none;
-            margin: 0;
-            align-items: stretch;
-        }
-        .nav-row-apps {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 4px 16px;
-        }
-        .nav-row-apps a {
-            color: #6b7280;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.875em;
-        }
-        .nav-row-apps a:hover {
-            color: #111827;
-            text-decoration: none;
-        }
-        .nav-row-apps a.current {
-            color: #111827;
-        }
-        .nav-row-brand {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-row-brand .brand-logo {
-            color: #2B7BD3;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.15em;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            letter-spacing: -0.02em;
-        }
-        .nav-row-brand .brand-logo:hover {
-            color: #1a5ca8;
-        }
-        .language-selector {
-            position: relative;
-        }
-        .language-current {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: transparent;
-            padding: 6px 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 500;
-            color: #6b7280;
-            transition: color 0.15s;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-            border: 1px solid #e5e7eb;
-        }
-        .language-current:hover {
-            color: #111827;
-            border-color: #9ca3af;
-        }
-        .language-current .flag {
-            font-size: 1.1em;
-        }
-        .language-current .arrow {
-            font-size: 0.6em;
-            transition: transform 0.2s;
-        }
-        .language-selector.open .arrow {
-            transform: rotate(180deg);
-        }
-        .language-dropdown {
-            position: absolute;
-            top: calc(100% + 6px);
-            right: 0;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-            border: 1px solid #f3f4f6;
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-4px);
-            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
-            min-width: 130px;
-            max-height: calc(100vh - 120px);
-            overflow-y: auto;
-            z-index: 1000;
-        }
-        .language-selector.open .language-dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .language-dropdown a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            text-decoration: none;
-            color: #333;
-            font-size: 0.85em;
-            transition: background 0.2s;
-        }
-        .language-dropdown a:hover,
-        .language-dropdown a:active {
-            background: #f5f5f5;
-        }
-        .language-dropdown a.active {
-            background: #e8f0fe;
-            color: #2B7BD3;
-            font-weight: 600;
-        }
-        .language-dropdown a .flag {
-            font-size: 1em;
-        }
-        @media (max-width: 768px) {
-            .nav-row-apps a {
-                font-size: 0.85em;
-            }
-        }
-        @media (prefers-color-scheme: dark) {
-            .nav-row-apps a {
-                color: #6b7280;
-            }
-            .nav-row-apps a:hover {
-                color: #e5e7eb;
-            }
-            .nav-row-apps a.current {
-                color: #e5e7eb;
-            }
-            .nav-row-brand .brand-logo {
-                color: #60a5fa;
-            }
-            .nav-row-brand .brand-logo:hover {
-                color: #93bbfd;
-            }
-            .language-current {
-                background: transparent;
-                color: #6b7280;
-                border-color: #1f2937;
-            }
-            .language-current:hover {
-                color: #e5e7eb;
-                border-color: #374151;
-            }
-            .language-dropdown {
-                background: #111827;
-                border-color: #1f2937;
-                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-            }
-            .language-dropdown a {
-                color: #9ca3af;
-            }
-            .language-dropdown a:hover,
-            .language-dropdown a:active {
-                background: #1f2937;
-                color: #e5e7eb;
-            }
-            .language-dropdown a.active {
-                background: #1f2937;
-                color: #60a5fa;
-            }
-        }
-    </style>
     <div class="nav-container">
         <div class="nav-row-brand">
             <a href="/ja/" class="brand-logo">feeltracker</a>
             <div class="language-selector" id="langSelector">
-                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                <div class="language-current" data-lang-toggle>
                     <span class="flag">🇯🇵</span>
                     <span>日本語</span>
                     <span class="arrow">▼</span>
                 </div>
                 <div class="language-dropdown">
 
-                    <a href="/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇸</span> English</a>
+                    <a href="/sleep/tips/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
 
-                    <a href="/de/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇪</span> Deutsch</a>
+                    <a href="/de/sleep/tips/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
 
-                    <a href="/es/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇪🇸</span> Español</a>
+                    <a href="/es/sleep/tips/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
 
-                    <a href="/it/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇹</span> Italiano</a>
+                    <a href="/it/sleep/tips/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
 
-                    <a href="/ru/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇺</span> Русский</a>
+                    <a href="/ru/sleep/tips/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
 
-                    <a href="/ja/sleep/tips/" class="active" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇯🇵</span> 日本語</a>
+                    <a href="/ja/sleep/tips/" class="active" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
 
-                    <a href="/fr/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇷</span> Français</a>
+                    <a href="/fr/sleep/tips/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
 
-                    <a href="/ko/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇰🇷</span> 한국어</a>
+                    <a href="/ko/sleep/tips/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
 
-                    <a href="/pt-br/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇧🇷</span> Português</a>
+                    <a href="/pt-br/sleep/tips/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
 
-                    <a href="/zh-Hans/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇳</span> 简体中文</a>
+                    <a href="/zh-Hans/sleep/tips/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
 
-                    <a href="/sv/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇪</span> Svenska</a>
+                    <a href="/sv/sleep/tips/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
 
-                    <a href="/nb/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇴</span> Norsk</a>
+                    <a href="/nb/sleep/tips/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
 
-                    <a href="/da/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇰</span> Dansk</a>
+                    <a href="/da/sleep/tips/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
 
-                    <a href="/fi/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇮</span> Suomi</a>
+                    <a href="/fi/sleep/tips/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
 
-                    <a href="/ar/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇦</span> العربية</a>
+                    <a href="/ar/sleep/tips/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
 
-                    <a href="/ca/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🏴</span> Català</a>
+                    <a href="/ca/sleep/tips/" data-lang-choose><span class="flag">🏴</span> Català</a>
 
-                    <a href="/cs/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇿</span> Čeština</a>
+                    <a href="/cs/sleep/tips/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
 
-                    <a href="/el/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇬🇷</span> Ελληνικά</a>
+                    <a href="/el/sleep/tips/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
 
-                    <a href="/fr-ca/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇦</span> Français (Canada)</a>
+                    <a href="/fr-ca/sleep/tips/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
 
-                    <a href="/he/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇱</span> עברית</a>
+                    <a href="/he/sleep/tips/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
 
-                    <a href="/hr/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇷</span> Hrvatski</a>
+                    <a href="/hr/sleep/tips/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
 
-                    <a href="/hu/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇺</span> Magyar</a>
+                    <a href="/hu/sleep/tips/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
 
-                    <a href="/nl/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇱</span> Nederlands</a>
+                    <a href="/nl/sleep/tips/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
 
-                    <a href="/pl/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇱</span> Polski</a>
+                    <a href="/pl/sleep/tips/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
 
-                    <a href="/pt/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇹</span> Português (Portugal)</a>
+                    <a href="/pt/sleep/tips/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
 
-                    <a href="/ro/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇴</span> Română</a>
+                    <a href="/ro/sleep/tips/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
 
-                    <a href="/sk/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇰</span> Slovenčina</a>
+                    <a href="/sk/sleep/tips/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
 
-                    <a href="/th/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇭</span> ไทย</a>
+                    <a href="/th/sleep/tips/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
 
-                    <a href="/tr/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇷</span> Türkçe</a>
+                    <a href="/tr/sleep/tips/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
 
-                    <a href="/uk/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇦</span> Українська</a>
+                    <a href="/uk/sleep/tips/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
 
-                    <a href="/vi/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+                    <a href="/vi/sleep/tips/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
 
-                    <a href="/zh-Hant/sleep/tips/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇼</span> 繁體中文</a>
+                    <a href="/zh-Hant/sleep/tips/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
 
                 </div>
             </div>
@@ -439,14 +270,6 @@
 
         </div>
     </div>
-    <script>
-    document.addEventListener('click', function(e) {
-        var selector = document.getElementById('langSelector');
-        if (selector && !selector.contains(e.target)) {
-            selector.classList.remove('open');
-        }
-    });
-    </script>
 </nav>
 
 
@@ -631,117 +454,11 @@
             <h2>睡眠の質を極める準備はできましたか？</h2>
             <p>睡眠＆夢をダウンロードして、今日からこれらのエキスパートヒントで追跡を始めましょう</p>
             <a href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button">
-                <img class="store_button" src="/images/appstore_link.svg" alt="App Storeで睡眠＆夢をダウンロード" style="width: 180px; height: 53px;">
+                <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="App Storeで睡眠＆夢をダウンロード">
             </a>
             <p class="hero-platform-info">iPhone、iPad、Macで利用可能</p>
         </div>
     </section>
-
-    <style>
-
- .hero h1 {
- text-align: center;
- }
-
- .tips-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- gap: 2rem;
- margin: 2rem 0 4rem 0;
- }
-
- .tip-card {
- background: #ffffff;
- padding: 2rem;
- border-radius: 12px;
- box-shadow: 0 2px 8px rgba(0,0,0,0.1);
- transition: transform 0.3s ease, box-shadow 0.3s ease;
- }
-
- .tip-card:hover {
- transform: translateY(-4px);
- box-shadow: 0 4px 16px rgba(0,0,0,0.15);
- }
-
- .tip-icon {
- font-size: 2.5rem;
- color: #2B7BD3;
- margin-bottom: 1rem;
- }
-
- .tip-card h3 {
- color: #2c3e50;
- font-size: 1.3rem;
- margin-bottom: 1rem;
- font-weight: 700;
- }
-
- .tip-card p {
- color: #666;
- line-height: 1.6;
- margin: 0;
- }
-
- .tip-card a {
- color: #2B7BD3;
- text-decoration: none;
- border-bottom: 1px dotted #2B7BD3;
- }
-
- .tip-card a:hover {
- border-bottom-style: solid;
- }
-
- .support-section h2 {
- margin-top: 3rem;
- margin-bottom: 1rem;
- }
-
- @media (max-width: 768px) {
- .tips-grid {
- grid-template-columns: 1fr;
- gap: 1.5rem;
- }
-
- .tip-card {
- padding: 1.5rem;
- }
- }
-
- @media (prefers-color-scheme: dark) {
- .tip-card {
- background: #2d2d2d;
- box-shadow: 0 2px 8px rgba(0,0,0,0.3);
- }
-
- .tip-card:hover {
- box-shadow: 0 4px 16px rgba(0,0,0,0.4);
- }
-
- .tip-icon {
- color: #5BA4FF;
- }
-
- .tip-card h3 {
- color: #ffffff;
- }
-
- .tip-card p {
- color: #cccccc;
- }
-
- .tip-card a {
- color: #5BA4FF;
- border-bottom-color: #5BA4FF;
- }
-
- .tip-card a:hover {
- color: #7CB9FF;
- border-bottom-color: #7CB9FF;
- }
- }
- 
-    </style>
 
     <!-- Cookie Consent Banner -->
     <div id="cookieConsent" class="cookie-consent">

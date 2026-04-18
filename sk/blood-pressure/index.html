@@ -127,11 +127,13 @@
     <meta property="twitter:image" content="https://feeltracker.com/images/BPT_1024.png">
 
     <link rel="stylesheet" href="/shared.css">
+
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
 
 
     <!-- Structured Data -->
@@ -684,251 +686,80 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-    <style>
-        .navbar .nav-container {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            max-width: none;
-            margin: 0;
-            align-items: stretch;
-        }
-        .nav-row-apps {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 4px 16px;
-        }
-        .nav-row-apps a {
-            color: #6b7280;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.875em;
-        }
-        .nav-row-apps a:hover {
-            color: #111827;
-            text-decoration: none;
-        }
-        .nav-row-apps a.current {
-            color: #111827;
-        }
-        .nav-row-brand {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-row-brand .brand-logo {
-            color: #2B7BD3;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.15em;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            letter-spacing: -0.02em;
-        }
-        .nav-row-brand .brand-logo:hover {
-            color: #1a5ca8;
-        }
-        .language-selector {
-            position: relative;
-        }
-        .language-current {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: transparent;
-            padding: 6px 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 500;
-            color: #6b7280;
-            transition: color 0.15s;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-            border: 1px solid #e5e7eb;
-        }
-        .language-current:hover {
-            color: #111827;
-            border-color: #9ca3af;
-        }
-        .language-current .flag {
-            font-size: 1.1em;
-        }
-        .language-current .arrow {
-            font-size: 0.6em;
-            transition: transform 0.2s;
-        }
-        .language-selector.open .arrow {
-            transform: rotate(180deg);
-        }
-        .language-dropdown {
-            position: absolute;
-            top: calc(100% + 6px);
-            right: 0;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-            border: 1px solid #f3f4f6;
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-4px);
-            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
-            min-width: 130px;
-            max-height: calc(100vh - 120px);
-            overflow-y: auto;
-            z-index: 1000;
-        }
-        .language-selector.open .language-dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .language-dropdown a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            text-decoration: none;
-            color: #333;
-            font-size: 0.85em;
-            transition: background 0.2s;
-        }
-        .language-dropdown a:hover,
-        .language-dropdown a:active {
-            background: #f5f5f5;
-        }
-        .language-dropdown a.active {
-            background: #e8f0fe;
-            color: #2B7BD3;
-            font-weight: 600;
-        }
-        .language-dropdown a .flag {
-            font-size: 1em;
-        }
-        @media (max-width: 768px) {
-            .nav-row-apps a {
-                font-size: 0.85em;
-            }
-        }
-        @media (prefers-color-scheme: dark) {
-            .nav-row-apps a {
-                color: #6b7280;
-            }
-            .nav-row-apps a:hover {
-                color: #e5e7eb;
-            }
-            .nav-row-apps a.current {
-                color: #e5e7eb;
-            }
-            .nav-row-brand .brand-logo {
-                color: #60a5fa;
-            }
-            .nav-row-brand .brand-logo:hover {
-                color: #93bbfd;
-            }
-            .language-current {
-                background: transparent;
-                color: #6b7280;
-                border-color: #1f2937;
-            }
-            .language-current:hover {
-                color: #e5e7eb;
-                border-color: #374151;
-            }
-            .language-dropdown {
-                background: #111827;
-                border-color: #1f2937;
-                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-            }
-            .language-dropdown a {
-                color: #9ca3af;
-            }
-            .language-dropdown a:hover,
-            .language-dropdown a:active {
-                background: #1f2937;
-                color: #e5e7eb;
-            }
-            .language-dropdown a.active {
-                background: #1f2937;
-                color: #60a5fa;
-            }
-        }
-    </style>
     <div class="nav-container">
         <div class="nav-row-brand">
             <a href="/sk/" class="brand-logo">feeltracker</a>
             <div class="language-selector" id="langSelector">
-                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                <div class="language-current" data-lang-toggle>
                     <span class="flag">🇸🇰</span>
                     <span>Slovenčina</span>
                     <span class="arrow">▼</span>
                 </div>
                 <div class="language-dropdown">
 
-                    <a href="/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇸</span> English</a>
+                    <a href="/blood-pressure/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
 
-                    <a href="/de/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇪</span> Deutsch</a>
+                    <a href="/de/blood-pressure/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
 
-                    <a href="/es/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇪🇸</span> Español</a>
+                    <a href="/es/blood-pressure/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
 
-                    <a href="/it/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇹</span> Italiano</a>
+                    <a href="/it/blood-pressure/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
 
-                    <a href="/ru/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇺</span> Русский</a>
+                    <a href="/ru/blood-pressure/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
 
-                    <a href="/ja/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇯🇵</span> 日本語</a>
+                    <a href="/ja/blood-pressure/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
 
-                    <a href="/fr/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇷</span> Français</a>
+                    <a href="/fr/blood-pressure/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
 
-                    <a href="/ko/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇰🇷</span> 한국어</a>
+                    <a href="/ko/blood-pressure/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
 
-                    <a href="/pt-br/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇧🇷</span> Português</a>
+                    <a href="/pt-br/blood-pressure/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
 
-                    <a href="/zh-Hans/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇳</span> 简体中文</a>
+                    <a href="/zh-Hans/blood-pressure/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
 
-                    <a href="/sv/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇪</span> Svenska</a>
+                    <a href="/sv/blood-pressure/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
 
-                    <a href="/nb/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇴</span> Norsk</a>
+                    <a href="/nb/blood-pressure/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
 
-                    <a href="/da/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇰</span> Dansk</a>
+                    <a href="/da/blood-pressure/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
 
-                    <a href="/fi/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇮</span> Suomi</a>
+                    <a href="/fi/blood-pressure/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
 
-                    <a href="/ar/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇦</span> العربية</a>
+                    <a href="/ar/blood-pressure/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
 
-                    <a href="/ca/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🏴</span> Català</a>
+                    <a href="/ca/blood-pressure/" data-lang-choose><span class="flag">🏴</span> Català</a>
 
-                    <a href="/cs/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇿</span> Čeština</a>
+                    <a href="/cs/blood-pressure/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
 
-                    <a href="/el/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇬🇷</span> Ελληνικά</a>
+                    <a href="/el/blood-pressure/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
 
-                    <a href="/fr-ca/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇦</span> Français (Canada)</a>
+                    <a href="/fr-ca/blood-pressure/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
 
-                    <a href="/he/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇱</span> עברית</a>
+                    <a href="/he/blood-pressure/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
 
-                    <a href="/hr/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇷</span> Hrvatski</a>
+                    <a href="/hr/blood-pressure/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
 
-                    <a href="/hu/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇺</span> Magyar</a>
+                    <a href="/hu/blood-pressure/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
 
-                    <a href="/nl/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇱</span> Nederlands</a>
+                    <a href="/nl/blood-pressure/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
 
-                    <a href="/pl/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇱</span> Polski</a>
+                    <a href="/pl/blood-pressure/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
 
-                    <a href="/pt/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇹</span> Português (Portugal)</a>
+                    <a href="/pt/blood-pressure/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
 
-                    <a href="/ro/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇴</span> Română</a>
+                    <a href="/ro/blood-pressure/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
 
-                    <a href="/sk/blood-pressure/" class="active" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇰</span> Slovenčina</a>
+                    <a href="/sk/blood-pressure/" class="active" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
 
-                    <a href="/th/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇭</span> ไทย</a>
+                    <a href="/th/blood-pressure/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
 
-                    <a href="/tr/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇷</span> Türkçe</a>
+                    <a href="/tr/blood-pressure/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
 
-                    <a href="/uk/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇦</span> Українська</a>
+                    <a href="/uk/blood-pressure/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
 
-                    <a href="/vi/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+                    <a href="/vi/blood-pressure/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
 
-                    <a href="/zh-Hant/blood-pressure/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇼</span> 繁體中文</a>
+                    <a href="/zh-Hant/blood-pressure/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
 
                 </div>
             </div>
@@ -947,14 +778,6 @@
 
         </div>
     </div>
-    <script>
-    document.addEventListener('click', function(e) {
-        var selector = document.getElementById('langSelector');
-        if (selector && !selector.contains(e.target)) {
-            selector.classList.remove('open');
-        }
-    });
-    </script>
 </nav>
 
 
@@ -963,12 +786,12 @@
         <img src="/images/BPT_1024.png" alt="Ikona aplikácie Krvný tlak" width="150" height="150" class="hero-logo app-icon">
         <h1>Krvný tlak</h1>
 
-        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+        <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Žiadne reklamy · Žiadne sledovanie · Súkromie na prvom mieste
         </div>
         <p class="hero-subtitle">Najinteligentnejší spôsob sledovania a pochopenia vášho krvného tlaku. Skenujte odčítania pomocou Camera Scan AI, synchronizujte s Apple Health a získajte poznatky o vašom kardiovaskulárnom zdraví pomocou AI.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <img class="store_button" src="/images/appstore_link.svg" alt="Stiahnuť Krvný tlak v App Store" style="width: 180px; height: 53px;">
+            <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="Stiahnuť Krvný tlak v App Store">
         </a>
         <p class="hero-platform-info">Bezplatná aplikácia s voliteľnými prémiovými funkciami<br>iPhone, iPad a Mac • iOS 16.0+</p>
     </section>
@@ -1087,7 +910,7 @@
         <h2>Poháňané umelou inteligenciou</h2>
         <p class="section-subtitle">Pokročilé AI funkcie, ktoré vám pomôžu lepšie porozumieť krvnému tlaku</p>
 
-        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Bezplatné AI funkcie</h3>
+        <h3 class="ai-tier-label">Bezplatné AI funkcie</h3>
         <div class="ai-features-grid">
 
             <div class="ai-feature">
@@ -1122,7 +945,7 @@
 
         </div>
 
-        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">Prémiové AI funkcie</h3>
+        <h3 class="ai-tier-label">Prémiové AI funkcie</h3>
         <div class="ai-features-grid">
 
             <div class="ai-feature">
@@ -1177,11 +1000,9 @@
 
         </div>
 
-        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
-            <h3 style="color: rgba(255,255,255,0.6); margin-top: 0; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fas fa-info-circle"></i> Vyhlásenie o AI</h3>
-            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
-                Poznatky, správy a odporúčania generované AI sú určené iba na všeobecné informácie a nenahradzujú lekársku radu, diagnózu ani liečbu. Vzory identifikované AI ukazujú korelácie, ale korelácia neznamená príčinnú súvislosť. Vždy konzultujte s lekárom alebo kvalifikovaným zdravotníckym pracovníkom pri akýchkoľvek lekárskych otázkach. Tieto nástroje sú navrhnuté na pomoc pri organizovaní a pochopení zdravotných údajov, nie na poskytovanie lekárskych rád.
-            </p>
+        <div class="ai-disclaimer">
+            <h3><i class="fas fa-info-circle"></i> Vyhlásenie o AI</h3>
+            <p>Poznatky, správy a odporúčania generované AI sú určené iba na všeobecné informácie a nenahradzujú lekársku radu, diagnózu ani liečbu. Vzory identifikované AI ukazujú korelácie, ale korelácia neznamená príčinnú súvislosť. Vždy konzultujte s lekárom alebo kvalifikovaným zdravotníckym pracovníkom pri akýchkoľvek lekárskych otázkach. Tieto nástroje sú navrhnuté na pomoc pri organizovaní a pochopení zdravotných údajov, nie na poskytovanie lekárskych rád.</p>
         </div>
     </section>
 
@@ -1278,7 +1099,7 @@
     <!-- User Reviews -->
     <section class="support-section">
         <h2 class="center-text">Čo hovoria používatelia</h2>
-        <p class="center-text section-subtitle" style="margin-bottom: 40px;">Skutočné recenzie z App Store</p>
+        <p class="center-text section-subtitle reviews-subtitle">Skutočné recenzie z App Store</p>
 
         <div class="reviews-grid">
 
@@ -1608,16 +1429,16 @@
 
         </div>
 
-        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">Recenzie boli preložené z angličtiny. Pôvodne uverejnené v App Store.</p>
+        <p class="reviews-disclaimer">Recenzie boli preložené z angličtiny. Pôvodne uverejnené v App Store.</p>
 
     </section>
 
     <!-- Tips Section -->
-    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
-        <div class="container center-text">
-            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> Chcete zvládnuť manažment krvného tlaku?</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">Objavte 20 odborných tipov na presné sledovanie, monitorovanie a kontrolu</p>
-            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+    <section class="tips-teaser">
+        <div class="container">
+            <h2><i class="fas fa-lightbulb"></i> Chcete zvládnuť manažment krvného tlaku?</h2>
+            <p>Objavte 20 odborných tipov na presné sledovanie, monitorovanie a kontrolu</p>
+            <a href="tips/" class="btn">
                 Čítať odborné tipy <i class="fas fa-arrow-right"></i>
             </a>
         </div>
@@ -1628,7 +1449,7 @@
         <h2>Začnite sledovať krvný tlak ešte dnes</h2>
         <p>Pripojte sa k tisícom ľudí, ktorí aktívne riadia kardiovaskulárne zdravie</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <img class="store_button" src="/images/appstore_link.svg" alt="Stiahnuť Krvný tlak" style="width: 180px; height: 53px;">
+            <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="Stiahnuť Krvný tlak">
         </a>
     </section>
     <!-- Footer -->

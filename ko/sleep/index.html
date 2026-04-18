@@ -127,11 +127,13 @@
     <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
 
     <link rel="stylesheet" href="/shared.css">
+
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
 
 
     <!-- Structured Data -->
@@ -343,251 +345,80 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-    <style>
-        .navbar .nav-container {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            max-width: none;
-            margin: 0;
-            align-items: stretch;
-        }
-        .nav-row-apps {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 4px 16px;
-        }
-        .nav-row-apps a {
-            color: #6b7280;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.875em;
-        }
-        .nav-row-apps a:hover {
-            color: #111827;
-            text-decoration: none;
-        }
-        .nav-row-apps a.current {
-            color: #111827;
-        }
-        .nav-row-brand {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-row-brand .brand-logo {
-            color: #2B7BD3;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.15em;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            letter-spacing: -0.02em;
-        }
-        .nav-row-brand .brand-logo:hover {
-            color: #1a5ca8;
-        }
-        .language-selector {
-            position: relative;
-        }
-        .language-current {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: transparent;
-            padding: 6px 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 500;
-            color: #6b7280;
-            transition: color 0.15s;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-            border: 1px solid #e5e7eb;
-        }
-        .language-current:hover {
-            color: #111827;
-            border-color: #9ca3af;
-        }
-        .language-current .flag {
-            font-size: 1.1em;
-        }
-        .language-current .arrow {
-            font-size: 0.6em;
-            transition: transform 0.2s;
-        }
-        .language-selector.open .arrow {
-            transform: rotate(180deg);
-        }
-        .language-dropdown {
-            position: absolute;
-            top: calc(100% + 6px);
-            right: 0;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-            border: 1px solid #f3f4f6;
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-4px);
-            transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
-            min-width: 130px;
-            max-height: calc(100vh - 120px);
-            overflow-y: auto;
-            z-index: 1000;
-        }
-        .language-selector.open .language-dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .language-dropdown a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            text-decoration: none;
-            color: #333;
-            font-size: 0.85em;
-            transition: background 0.2s;
-        }
-        .language-dropdown a:hover,
-        .language-dropdown a:active {
-            background: #f5f5f5;
-        }
-        .language-dropdown a.active {
-            background: #e8f0fe;
-            color: #2B7BD3;
-            font-weight: 600;
-        }
-        .language-dropdown a .flag {
-            font-size: 1em;
-        }
-        @media (max-width: 768px) {
-            .nav-row-apps a {
-                font-size: 0.85em;
-            }
-        }
-        @media (prefers-color-scheme: dark) {
-            .nav-row-apps a {
-                color: #6b7280;
-            }
-            .nav-row-apps a:hover {
-                color: #e5e7eb;
-            }
-            .nav-row-apps a.current {
-                color: #e5e7eb;
-            }
-            .nav-row-brand .brand-logo {
-                color: #60a5fa;
-            }
-            .nav-row-brand .brand-logo:hover {
-                color: #93bbfd;
-            }
-            .language-current {
-                background: transparent;
-                color: #6b7280;
-                border-color: #1f2937;
-            }
-            .language-current:hover {
-                color: #e5e7eb;
-                border-color: #374151;
-            }
-            .language-dropdown {
-                background: #111827;
-                border-color: #1f2937;
-                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-            }
-            .language-dropdown a {
-                color: #9ca3af;
-            }
-            .language-dropdown a:hover,
-            .language-dropdown a:active {
-                background: #1f2937;
-                color: #e5e7eb;
-            }
-            .language-dropdown a.active {
-                background: #1f2937;
-                color: #60a5fa;
-            }
-        }
-    </style>
     <div class="nav-container">
         <div class="nav-row-brand">
             <a href="/ko/" class="brand-logo">feeltracker</a>
             <div class="language-selector" id="langSelector">
-                <div class="language-current" onclick="document.getElementById('langSelector').classList.toggle('open')">
+                <div class="language-current" data-lang-toggle>
                     <span class="flag">🇰🇷</span>
                     <span>한국어</span>
                     <span class="arrow">▼</span>
                 </div>
                 <div class="language-dropdown">
 
-                    <a href="/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇸</span> English</a>
+                    <a href="/sleep/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
 
-                    <a href="/de/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇪</span> Deutsch</a>
+                    <a href="/de/sleep/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
 
-                    <a href="/es/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇪🇸</span> Español</a>
+                    <a href="/es/sleep/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
 
-                    <a href="/it/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇹</span> Italiano</a>
+                    <a href="/it/sleep/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
 
-                    <a href="/ru/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇺</span> Русский</a>
+                    <a href="/ru/sleep/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
 
-                    <a href="/ja/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇯🇵</span> 日本語</a>
+                    <a href="/ja/sleep/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
 
-                    <a href="/fr/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇷</span> Français</a>
+                    <a href="/fr/sleep/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
 
-                    <a href="/ko/sleep/" class="active" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇰🇷</span> 한국어</a>
+                    <a href="/ko/sleep/" class="active" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
 
-                    <a href="/pt-br/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇧🇷</span> Português</a>
+                    <a href="/pt-br/sleep/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
 
-                    <a href="/zh-Hans/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇳</span> 简体中文</a>
+                    <a href="/zh-Hans/sleep/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
 
-                    <a href="/sv/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇪</span> Svenska</a>
+                    <a href="/sv/sleep/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
 
-                    <a href="/nb/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇴</span> Norsk</a>
+                    <a href="/nb/sleep/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
 
-                    <a href="/da/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇩🇰</span> Dansk</a>
+                    <a href="/da/sleep/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
 
-                    <a href="/fi/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇫🇮</span> Suomi</a>
+                    <a href="/fi/sleep/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
 
-                    <a href="/ar/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇦</span> العربية</a>
+                    <a href="/ar/sleep/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
 
-                    <a href="/ca/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🏴</span> Català</a>
+                    <a href="/ca/sleep/" data-lang-choose><span class="flag">🏴</span> Català</a>
 
-                    <a href="/cs/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇿</span> Čeština</a>
+                    <a href="/cs/sleep/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
 
-                    <a href="/el/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇬🇷</span> Ελληνικά</a>
+                    <a href="/el/sleep/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
 
-                    <a href="/fr-ca/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇨🇦</span> Français (Canada)</a>
+                    <a href="/fr-ca/sleep/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
 
-                    <a href="/he/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇮🇱</span> עברית</a>
+                    <a href="/he/sleep/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
 
-                    <a href="/hr/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇷</span> Hrvatski</a>
+                    <a href="/hr/sleep/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
 
-                    <a href="/hu/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇭🇺</span> Magyar</a>
+                    <a href="/hu/sleep/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
 
-                    <a href="/nl/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇳🇱</span> Nederlands</a>
+                    <a href="/nl/sleep/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
 
-                    <a href="/pl/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇱</span> Polski</a>
+                    <a href="/pl/sleep/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
 
-                    <a href="/pt/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇵🇹</span> Português (Portugal)</a>
+                    <a href="/pt/sleep/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
 
-                    <a href="/ro/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇷🇴</span> Română</a>
+                    <a href="/ro/sleep/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
 
-                    <a href="/sk/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇸🇰</span> Slovenčina</a>
+                    <a href="/sk/sleep/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
 
-                    <a href="/th/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇭</span> ไทย</a>
+                    <a href="/th/sleep/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
 
-                    <a href="/tr/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇷</span> Türkçe</a>
+                    <a href="/tr/sleep/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
 
-                    <a href="/uk/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇺🇦</span> Українська</a>
+                    <a href="/uk/sleep/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
 
-                    <a href="/vi/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+                    <a href="/vi/sleep/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
 
-                    <a href="/zh-Hant/sleep/" onclick="document.cookie='lang-chosen=1;path=/;max-age=31536000'"><span class="flag">🇹🇼</span> 繁體中文</a>
+                    <a href="/zh-Hant/sleep/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
 
                 </div>
             </div>
@@ -606,14 +437,6 @@
 
         </div>
     </div>
-    <script>
-    document.addEventListener('click', function(e) {
-        var selector = document.getElementById('langSelector');
-        if (selector && !selector.contains(e.target)) {
-            selector.classList.remove('open');
-        }
-    });
-    </script>
 </nav>
 
 
@@ -622,12 +445,12 @@
         <img src="/images/ST_1024.png" alt="수면과 꿈 앱 아이콘" width="150" height="150" class="hero-logo app-icon">
         <h1>수면과 꿈</h1>
 
-        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+        <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> 광고 없음 · 추적 없음 · 프라이버시 우선
         </div>
         <p class="hero-subtitle">수면 패턴을 추적하고 수면의 질에 영향을 미치는 요인을 발견하세요. AI 기반 꿈 분석, CPAP 치료 모니터링, 릴렉세이션 도구, Apple Health 연동 기능을 갖추어 더 나은 휴식을 도와드립니다.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <img class="store_button" src="/images/appstore_link.svg" alt="App Store에서 수면과 꿈 다운로드" style="width: 180px; height: 53px;">
+            <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="App Store에서 수면과 꿈 다운로드">
         </a>
         <p class="hero-platform-info">선택적 프리미엄 기능이 포함된 무료 앱<br>iPhone, iPad & Mac • iOS 16.0+</p>
     </section>
@@ -764,7 +587,7 @@
         <h2>인공지능으로 구동</h2>
         <p class="section-subtitle">수면 패턴을 더 깊이 이해하기 위한 고급 AI 기능</p>
 
-        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">무료 AI 기능</h3>
+        <h3 class="ai-tier-label">무료 AI 기능</h3>
         <div class="ai-features-grid">
 
             <div class="ai-feature">
@@ -799,7 +622,7 @@
 
         </div>
 
-        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">프리미엄 AI 기능</h3>
+        <h3 class="ai-tier-label">프리미엄 AI 기능</h3>
         <div class="ai-features-grid">
 
             <div class="ai-feature">
@@ -864,11 +687,9 @@
 
         </div>
 
-        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
-            <h3 style="color: rgba(255,255,255,0.6); margin-top: 0; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fas fa-info-circle"></i> AI 면책 조항</h3>
-            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
-                AI가 생성한 인사이트, 보고서, 권장 사항은 일반적인 정보 제공만을 목적으로 하며, 의학적 조언, 진단 또는 치료를 대체하지 않습니다. AI가 식별한 패턴은 상관관계를 보여주는 것이며, 상관관계가 인과관계를 의미하는 것은 아닙니다. 의학적 질문이나 우려 사항이 있으면 반드시 의사 또는 자격을 갖춘 의료 전문가와 상담하세요. 이 도구는 건강 데이터를 정리하고 이해하는 데 도움을 주기 위한 것이며, 의료 지침을 제공하기 위한 것이 아닙니다.
-            </p>
+        <div class="ai-disclaimer">
+            <h3><i class="fas fa-info-circle"></i> AI 면책 조항</h3>
+            <p>AI가 생성한 인사이트, 보고서, 권장 사항은 일반적인 정보 제공만을 목적으로 하며, 의학적 조언, 진단 또는 치료를 대체하지 않습니다. AI가 식별한 패턴은 상관관계를 보여주는 것이며, 상관관계가 인과관계를 의미하는 것은 아닙니다. 의학적 질문이나 우려 사항이 있으면 반드시 의사 또는 자격을 갖춘 의료 전문가와 상담하세요. 이 도구는 건강 데이터를 정리하고 이해하는 데 도움을 주기 위한 것이며, 의료 지침을 제공하기 위한 것이 아닙니다.</p>
         </div>
     </section>
 
@@ -969,7 +790,7 @@
     <!-- User Reviews -->
     <section class="support-section">
         <h2 class="center-text">사용자 후기</h2>
-        <p class="center-text section-subtitle" style="margin-bottom: 40px;">App Store의 실제 리뷰</p>
+        <p class="center-text section-subtitle reviews-subtitle">App Store의 실제 리뷰</p>
 
         <div class="reviews-grid">
 
@@ -1065,16 +886,16 @@
 
         </div>
 
-        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">리뷰는 영어에서 번역되었습니다. 원본은 App Store에 게시되어 있습니다.</p>
+        <p class="reviews-disclaimer">리뷰는 영어에서 번역되었습니다. 원본은 App Store에 게시되어 있습니다.</p>
 
     </section>
 
     <!-- Tips Section -->
-    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
-        <div class="container center-text">
-            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> 수면 건강을 완벽히 관리하고 싶으신가요?</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">더 나은 수면, CPAP 치료, 최적의 수면 질을 위한 20가지 전문가 팁을 확인하세요</p>
-            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+    <section class="tips-teaser">
+        <div class="container">
+            <h2><i class="fas fa-lightbulb"></i> 수면 건강을 완벽히 관리하고 싶으신가요?</h2>
+            <p>더 나은 수면, CPAP 치료, 최적의 수면 질을 위한 20가지 전문가 팁을 확인하세요</p>
+            <a href="tips/" class="btn">
                 전문가 팁 읽기 <i class="fas fa-arrow-right"></i>
             </a>
         </div>
@@ -1085,7 +906,7 @@
         <h2>오늘 밤부터 수면을 개선하세요</h2>
         <p>더 나은 휴식이 몇 번의 탭으로 가능합니다</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <img class="store_button" src="/images/appstore_link.svg" alt="수면과 꿈 다운로드" style="width: 180px; height: 53px;">
+            <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="수면과 꿈 다운로드">
         </a>
     </section>
     <!-- Footer -->

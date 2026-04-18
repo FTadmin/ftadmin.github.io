@@ -48,23 +48,23 @@
         <img src="{{hero.image}}" alt="{{hero.imageAlt}}" width="150" height="150" class="hero-logo app-icon">
         <h1>{{hero.title}}</h1>
 {{#if hero.badge}}
-        <p style="color: #f59e0b; font-weight: 700; font-size: 1.1em; margin-top: 8px;">{{hero.badge}}</p>
+        <p class="hero-badge">{{hero.badge}}</p>
 {{/if}}
-        <div style="color: #059669; padding: 12px 0; display: block; margin: 8px auto 0; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em;">
+        <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> {{hero.privacy}}
         </div>
         <p class="hero-subtitle">{{hero.subtitle}}</p>
         <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
-            <img class="store_button" src="/images/appstore_link.svg" alt="{{hero.ctaAlt}}" style="width: 180px; height: 53px;">
+            <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="{{hero.ctaAlt}}">
         </a>
         <p class="hero-platform-info">{{mdi hero.platformInfo}}</p>
     </section>
 
 {{#if pressMention}}
     <!-- Press Mention -->
-    <div class="center-text" style="padding: 20px 20px 0;">
-        <a href="{{pressMention.url}}" target="_blank" rel="noopener" class="press-mention-link" style="display: inline-block; padding: 12px 24px; background: #f9fafb; border-radius: 8px; text-decoration: none; color: #374151; font-size: 0.95em; transition: background 0.2s;">
-            <i class="{{pressMention.icon}}" style="color: #2563eb; margin-right: 8px;"></i>{{pressMention.text}}
+    <div class="press-mention-wrap center-text">
+        <a href="{{pressMention.url}}" target="_blank" rel="noopener" class="press-mention-link">
+            <i class="{{pressMention.icon}}"></i>{{pressMention.text}}
         </a>
     </div>
 {{/if}}
@@ -114,7 +114,7 @@
         <h2>{{aiFeatures.title}}</h2>
         <p class="section-subtitle">{{aiFeatures.subtitle}}</p>
 
-        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">{{aiFeatures.freeTitle}}</h3>
+        <h3 class="ai-tier-label">{{aiFeatures.freeTitle}}</h3>
         <div class="ai-features-grid">
 {{#each aiFeatures.free}}
             <div class="ai-feature">
@@ -124,7 +124,7 @@
 {{/each}}
         </div>
 
-        <h3 style="margin-top: 40px; margin-bottom: 20px; color: white;">{{aiFeatures.premiumTitle}}</h3>
+        <h3 class="ai-tier-label">{{aiFeatures.premiumTitle}}</h3>
         <div class="ai-features-grid">
 {{#each aiFeatures.premium}}
             <div class="ai-feature">
@@ -134,11 +134,9 @@
 {{/each}}
         </div>
 
-        <div style="max-width: 700px; margin: 48px auto 0; padding: 24px; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
-            <h3 style="color: rgba(255,255,255,0.6); margin-top: 0; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;"><i class="fas fa-info-circle"></i> {{aiFeatures.disclaimerTitle}}</h3>
-            <p style="color: rgba(255,255,255,0.4); font-size: 0.85em; line-height: 1.7; margin: 0;">
-                {{aiFeatures.disclaimerText}}
-            </p>
+        <div class="ai-disclaimer">
+            <h3><i class="fas fa-info-circle"></i> {{aiFeatures.disclaimerTitle}}</h3>
+            <p>{{aiFeatures.disclaimerText}}</p>
         </div>
     </section>
 
@@ -186,7 +184,7 @@
     <!-- User Reviews -->
     <section class="support-section">
         <h2 class="center-text">{{reviews.title}}</h2>
-        <p class="center-text section-subtitle" style="margin-bottom: 40px;">{{reviews.subtitle}}</p>
+        <p class="center-text section-subtitle reviews-subtitle">{{reviews.subtitle}}</p>
 
         <div class="reviews-grid">
 {{#each reviews.items}}
@@ -201,16 +199,16 @@
 {{/each}}
         </div>
 {{#if reviews.disclaimer}}
-        <p class="center-text" style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; font-style: italic;">{{reviews.disclaimer}}</p>
+        <p class="reviews-disclaimer">{{reviews.disclaimer}}</p>
 {{/if}}
     </section>
 
     <!-- Tips Section -->
-    <section class="support-section" style="background: #111827; color: #e5e7eb; padding: 3rem 0; border-radius: 16px; margin: 60px 0;">
-        <div class="container center-text">
-            <h2 style="color: white; margin-bottom: 1rem;"><i class="fas fa-lightbulb"></i> {{tips.title}}</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">{{tips.subtitle}}</p>
-            <a href="tips/" class="cta-button" style="background: white; color: #667eea; border: none; border-radius: 8px; padding: 0 30px;">
+    <section class="tips-teaser">
+        <div class="container">
+            <h2><i class="fas fa-lightbulb"></i> {{tips.title}}</h2>
+            <p>{{tips.subtitle}}</p>
+            <a href="tips/" class="btn">
                 {{tips.ctaText}} <i class="fas fa-arrow-right"></i>
             </a>
         </div>
@@ -221,7 +219,7 @@
         <h2>{{cta.title}}</h2>
         <p>{{cta.subtitle}}</p>
         <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
-            <img class="store_button" src="/images/appstore_link.svg" alt="{{cta.buttonAlt}}" style="width: 180px; height: 53px;">
+            <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="{{cta.buttonAlt}}">
         </a>
     </section>
 {{> footer}}
