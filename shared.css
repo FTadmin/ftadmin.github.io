@@ -139,23 +139,6 @@
     font-style: italic;
 }
 
-/* Scroll reveal */
-[data-reveal] {
-    opacity: 0;
-    transform: translateY(12px);
-    transition: opacity 600ms var(--ease), transform 600ms var(--ease);
-    will-change: opacity, transform;
-}
-
-[data-reveal].is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    [data-reveal] { opacity: 1; transform: none; }
-}
-
 /* Gradient hairline divider */
 .divider,
 .hairline {
