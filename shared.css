@@ -552,12 +552,12 @@ a:hover {
 
 .apps-section .app-card:nth-child(even) {
     background:
-        radial-gradient(ellipse 80% 60% at 20% 50%, var(--color-primary-tint), transparent 70%),
+        radial-gradient(ellipse 85% 70% at 20% 50%, var(--app-tint, var(--color-primary-tint)), transparent 72%),
         var(--color-surface);
 }
 
 .apps-section .app-card:nth-child(odd):not(:first-of-type) {
-    background: radial-gradient(ellipse 80% 60% at 80% 50%, var(--color-primary-tint), transparent 70%);
+    background: radial-gradient(ellipse 85% 70% at 80% 50%, var(--app-tint, var(--color-primary-tint)), transparent 72%);
 }
 
 .apps-section .app-card-header {
@@ -571,13 +571,13 @@ a:hover {
 .apps-section .app-icon-large {
     width: 160px;
     height: 160px;
-    filter: drop-shadow(0 20px 30px rgba(43, 123, 211, 0.22));
+    filter: drop-shadow(0 20px 30px var(--app-tint, var(--color-primary-tint)));
     transition: transform 400ms var(--ease), filter 400ms var(--ease);
 }
 
 .apps-section .app-card:hover .app-icon-large {
     transform: scale(1.05) translateY(-4px);
-    filter: drop-shadow(0 28px 40px rgba(43, 123, 211, 0.30));
+    filter: drop-shadow(0 28px 44px var(--app-tint, var(--color-primary-tint)));
 }
 
 .apps-section .app-card-title h3 {
