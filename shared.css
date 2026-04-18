@@ -2851,6 +2851,29 @@ th, td {
    EXTRACTED FROM TEMPLATE INLINE STYLES
    ========================================== */
 
+/* Works with Apple Health badge (index hero + supported product pages) */
+.works-with-health {
+    display: inline-flex;
+    justify-content: center;
+    margin: var(--space-3) auto 0;
+}
+
+.works-with-health--hero {
+    margin-top: var(--space-4);
+}
+
+.apple-health-badge {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+    .apple-health-badge {
+        filter: invert(1) brightness(1.12);
+    }
+}
+
 /* Privacy badge (shield-alt — index + app hero) */
 .privacy-badge {
     color: var(--color-accent);

@@ -70,6 +70,10 @@
                     <i class="fas fa-shield-alt"></i> {{hero.privacyText}}
                 </div>
 
+                <div class="works-with-health">
+                    <img src="{{lang.appleHealthBadge}}" alt="Works with Apple Health" class="apple-health-badge">
+                </div>
+
                 <div class="hero-features">
 {{#each hero.featureBadges}}
                     <span class="feature-badge"><i class="{{icon}}"></i> {{text}}</span>
@@ -151,7 +155,7 @@
                 <div class="app-card-buttons">
                     <a href="{{slug}}/" class="btn btn--ghost">{{learnMoreText}}</a>
                     <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-button" aria-label="{{downloadAlt}}">
-                        <img class="store_button" src="/images/appstore_link.svg" alt="{{downloadAlt}}">
+                        <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadAlt}}"></picture>
                     </a>
                 </div>
             </div>
@@ -270,7 +274,7 @@
                 <img src="{{iconSrc}}" alt="" class="cta-download-icon">
 {{/if}}
                 <span class="cta-download-name">{{name}}</span>
-                <img class="store_button" src="/images/appstore_link.svg" alt="{{downloadAlt}}">
+                <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadAlt}}"></picture>
             </a>
 {{/each}}
         </div>

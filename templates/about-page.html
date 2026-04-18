@@ -107,7 +107,7 @@
             <div class="about-app-cta">
                 <a href="{{learnMoreUrl}}" class="btn btn--ghost">{{learnMoreText}}</a>
                 <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-button" aria-label="{{downloadText}}">
-                    <img class="store_button" src="/images/appstore_link.svg" alt="{{downloadText}}">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadText}}"></picture>
                 </a>
             </div>
         </article>
