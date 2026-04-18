@@ -60,6 +60,11 @@
     <!-- Hero Section -->
     <section class="hero center-text">
         <div class="hero-layout">
+            <div class="hero-app-cluster" aria-hidden="true">
+{{#each apps.items}}
+                <img src="{{iconSrc}}" alt="{{title}}">
+{{/each}}
+            </div>
             <div class="hero-content">
                 <div class="hero-logo">{{hero.logo}}</div>
                 <h1>{{hero.title}}</h1>
@@ -75,11 +80,6 @@
                     <span class="feature-badge"><i class="{{icon}}"></i> {{text}}</span>
 {{/each}}
                 </div>
-            </div>
-            <div class="hero-app-cluster" aria-hidden="true">
-{{#each apps.items}}
-                <img src="{{iconSrc}}" alt="{{title}}">
-{{/each}}
             </div>
         </div>
 
