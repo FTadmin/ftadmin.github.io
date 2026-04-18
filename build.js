@@ -13,6 +13,17 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
+
+function hashFile(p) {
+    if (!fs.existsSync(p)) return '';
+    return crypto.createHash('sha1').update(fs.readFileSync(p)).digest('hex').slice(0, 8);
+}
+const assetVersion = {
+    shared: hashFile('shared.css'),
+    game:   hashFile('game.css'),
+    nav:    hashFile('nav.js'),
+};
 
 // ============================================================
 // Template Engine
@@ -400,6 +411,7 @@ function buildContext(site, languages, page) {
         privacyUrl,
         ogLocale,
         hasGame,
+        assetVersion,
         ...data
     };
 }

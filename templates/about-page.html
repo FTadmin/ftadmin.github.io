@@ -41,16 +41,166 @@
 <body>
 {{> nav}}
 
-<!-- Hero Section -->
+    <!-- Hero Section -->
     <section class="hero center-text">
         <div class="hero-logo">{{hero.logoText}}</div>
         <h1>{{hero.title}}</h1>
         <p class="hero-subtitle">{{hero.subtitle}}</p>
     </section>
 
-{{#each contentSections}}
-{{html}}
+    <!-- Key Facts -->
+    <section class="features-section">
+        <h2 class="center-text">{{keyFacts.title}}</h2>
+        <div class="app-card">
+            <h3>{{keyFacts.cards.0.title}}</h3>
+            <ul class="fact-list">
+{{#each keyFacts.cards.0.items}}
+                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{value}}</span></li>
 {{/each}}
+            </ul>
+        </div>
+        <div class="app-card">
+            <h3>{{keyFacts.cards.1.title}}</h3>
+            <ul class="awards-list">
+{{#each keyFacts.cards.1.items}}
+                <li{{#if featured}} class="awards-list__featured"{{/if}}>{{text}}</li>
+{{/each}}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="support-section">
+        <h2 class="center-text">{{applications.title}}</h2>
+{{#each applications.apps}}
+        <article class="about-app">
+            <header class="about-app-header">
+                <img src="{{iconSrc}}" alt="{{name}}" class="about-app-icon">
+                <div class="about-app-title">
+                    <h3>{{name}}</h3>
+                    <div class="about-app-meta">
+                        <span class="chip"><i class="fas fa-star"></i> {{rating}}</span>
+                        <span class="chip-muted">{{category}}</span>
+                    </div>
+{{#if ranking}}
+                    <div class="about-app-ranking">🏆 {{ranking}}</div>
+{{/if}}
+                </div>
+            </header>
+            <p class="about-app-description">{{description}}</p>
+            <h4 class="about-app-features-title">{{featuresTitle}}</h4>
+            <ul class="about-app-features">
+{{#each features}}
+                <li>{{text}}</li>
+{{/each}}
+            </ul>
+            <p class="about-app-bestfor"><strong>{{bestForLabel}}:</strong> {{bestFor}}</p>
+            <div class="about-app-cta">
+                <a href="{{learnMoreUrl}}" class="btn btn--ghost">{{learnMoreText}}</a>
+                <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-button" aria-label="{{downloadText}}">
+                    <img class="store_button" src="/images/appstore_link.svg" alt="{{downloadText}}">
+                </a>
+            </div>
+        </article>
+{{/each}}
+    </section>
+
+    <!-- Technology -->
+    <section class="features-section">
+        <h2 class="center-text">{{technology.title}}</h2>
+{{#each technology.cards}}
+        <div class="app-card">
+            <h3>{{title}}</h3>
+{{#if intro}}
+            <p>{{intro}}</p>
+{{/if}}
+            <ul class="fact-list">
+{{#each items}}
+                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{text}}</span></li>
+{{/each}}
+            </ul>
+        </div>
+{{/each}}
+    </section>
+
+    <!-- Global Reach -->
+    <section class="platforms-section center-text">
+        <h2>{{globalReach.title}}</h2>
+        <h3>{{globalReach.subtitle}}</h3>
+        <p>{{globalReach.intro}}</p>
+        <div class="region-grid">
+{{#each globalReach.groups}}
+            <div class="region-card">
+                <h4>{{label}}</h4>
+                <p>{{languages}}</p>
+            </div>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="support-section">
+        <h2 class="center-text">{{useCases.title}}</h2>
+        <div class="use-case-grid">
+{{#each useCases.cases}}
+            <article class="use-case-card">
+                <div class="use-case-icon"><i class="{{icon}}"></i></div>
+                <h3>{{title}}</h3>
+                <p>{{intro}}</p>
+                <ul>
+{{#each items}}
+                    <li>{{text}}</li>
+{{/each}}
+                </ul>
+            </article>
+{{/each}}
+        </div>
+    </section>
+
+    <!-- Technical Information -->
+    <section class="features-section">
+        <h2 class="center-text">{{technicalInfo.title}}</h2>
+{{#each technicalInfo.cards}}
+        <div class="app-card">
+            <h3>{{title}}</h3>
+            <ul class="fact-list">
+{{#each items}}
+                <li><span class="fact-label">{{label}}</span><span class="fact-value">{{text}}</span></li>
+{{/each}}
+            </ul>
+        </div>
+{{/each}}
+    </section>
+
+    <!-- Medical Disclaimer -->
+    <section class="callout center-text">
+        <div class="callout-icon"><i class="{{medicalDisclaimer.icon}}"></i></div>
+        <h2>{{medicalDisclaimer.title}}</h2>
+        <p>{{medicalDisclaimer.body}}</p>
+    </section>
+
+    <!-- Machine-Readable Data Reference -->
+    <section class="callout center-text">
+        <div class="callout-icon"><i class="{{machineReadable.icon}}"></i></div>
+        <h2>{{machineReadable.title}}</h2>
+        <p>{{machineReadable.intro}}</p>
+        <p class="code-inline"><a href="{{machineReadable.url}}">{{machineReadable.url}}</a></p>
+        <p>{{machineReadable.description}}</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="callout callout--highlight center-text">
+        <div class="callout-icon"><i class="{{contact.icon}}"></i></div>
+        <h2>{{contact.title}}</h2>
+{{#each contact.lines}}
+        <p><strong>{{label}}:</strong> {{#if href}}<a href="{{href}}">{{value}}</a>{{else}}{{value}}{{/if}}</p>
+{{/each}}
+        <p>
+{{#each contact.links}}
+            <a href="{{href}}">{{text}}</a>{{#if separator}} | {{/if}}
+{{/each}}
+        </p>
+    </section>
 
 {{> footer}}
 
