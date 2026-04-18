@@ -390,6 +390,7 @@ a:hover {
 .hero-app-cluster img {
     width: 100%;
     height: 100%;
+    border-radius: 22%;
     filter: drop-shadow(0 14px 26px rgba(43, 123, 211, 0.22));
     transition: transform var(--dur) var(--ease);
     background: transparent;
@@ -556,6 +557,7 @@ a:hover {
 .apps-section .app-icon-large {
     width: 160px;
     height: 160px;
+    border-radius: 22%;
     filter: drop-shadow(0 20px 30px var(--app-glow, var(--color-primary-tint)));
     transition: transform 400ms var(--ease), filter 400ms var(--ease);
 }
@@ -692,6 +694,7 @@ a:hover {
 .app-icon-large {
     width: 128px;
     height: 128px;
+    border-radius: 22%;
     filter: drop-shadow(var(--shadow-sm));
     transition: transform var(--dur) var(--ease), filter var(--dur) var(--ease);
 }
@@ -1502,6 +1505,7 @@ footer {
 .about-app-icon {
     width: 80px;
     height: 80px;
+    border-radius: 22%;
     filter: drop-shadow(var(--shadow-sm));
     flex-shrink: 0;
 }
@@ -1858,6 +1862,7 @@ th, td {
 .app-icon {
     width: 160px;
     height: 160px;
+    border-radius: 22%;
     display: inline-block;
     margin: 0 auto;
     filter: drop-shadow(var(--shadow-md));
@@ -1866,6 +1871,7 @@ th, td {
 .hero-app-icon {
     width: 120px;
     height: 120px;
+    border-radius: 22%;
     filter: drop-shadow(var(--shadow-md));
     display: block;
     margin: 0 auto 20px;
