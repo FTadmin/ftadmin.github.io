@@ -190,7 +190,7 @@ body {
 /* Typography */
 h1 {
     font-family: var(--font-sans);
-    font-size: 3em;
+    font-size: var(--fs-h1);
     color: var(--color-text-strong);
     margin-top: 0.5em;
     margin-bottom: 0.3em;
@@ -201,7 +201,7 @@ h1 {
 
 h2 {
     font-family: var(--font-sans);
-    font-size: 2.2em;
+    font-size: var(--fs-h2);
     color: var(--color-text-strong);
     margin-top: 0;
     margin-bottom: 0.6em;
@@ -212,7 +212,7 @@ h2 {
 
 h3 {
     font-family: var(--font-sans);
-    font-size: 1.25em;
+    font-size: var(--fs-h3);
     color: var(--color-text-strong);
     margin-top: 1.5em;
     margin-bottom: 0.5em;
@@ -222,7 +222,7 @@ h3 {
 
 h4 {
     font-family: var(--font-sans);
-    font-size: 1.1em;
+    font-size: var(--fs-h4);
     color: var(--color-text-strong);
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -252,6 +252,18 @@ a:hover {
     margin-bottom: 0;
     background: transparent;
     border-radius: 0;
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -10% -20% auto -20%;
+    height: 70%;
+    background: radial-gradient(ellipse at top, var(--color-primary-tint), transparent 60%);
+    z-index: -1;
+    pointer-events: none;
 }
 
 .hero-logo {
@@ -322,11 +334,14 @@ a:hover {
     border: none;
     border-radius: var(--radius-lg);
     padding: 36px;
-    transition: background 0.2s ease;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), background var(--dur) var(--ease);
 }
 
 .app-card:hover {
-    background: var(--color-surface-muted);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-primary);
+    background: var(--color-surface);
 }
 
 .app-card-header {
@@ -372,13 +387,13 @@ a:hover {
 .app-icon-large {
     width: 128px;
     height: 128px;
-    border-radius: var(--radius-app-icon);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-    transition: none;
+    transition: transform var(--dur) var(--ease);
 }
 
-.app-icon-large:hover {
-    transform: none;
+.app-card:hover .app-icon-large {
+    transform: scale(1.03);
 }
 
 .cta-button {
@@ -536,9 +551,27 @@ a:hover {
 .ai-section {
     margin: 0 calc(-1.4em - 20px);
     padding: 100px 40px;
-    background: var(--color-surface-dark);
+    background:
+        radial-gradient(ellipse at 20% 0%, rgba(43, 123, 211, 0.18), transparent 55%),
+        linear-gradient(180deg, #0f172a, #111827);
     border-radius: 0;
     color: var(--color-text-invert);
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'><circle cx='1' cy='1' r='1' fill='white' opacity='0.05'/></svg>");
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ai-section > * {
+    position: relative;
+    z-index: 1;
 }
 
 .ai-section h2 {
@@ -570,16 +603,20 @@ a:hover {
 }
 
 .ai-feature {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     padding: 28px;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    transition: background 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background var(--dur) var(--ease), transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
     text-align: left;
 }
 
 .ai-feature:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.10);
+    border-color: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
 }
 
 .ai-feature h3 {
@@ -607,13 +644,28 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px 32px;
+    align-items: center;
+    gap: 8px 0;
     margin: 28px auto 0;
     max-width: 800px;
 }
 
 .hero-stat {
     text-align: center;
+    padding: 0 var(--space-7);
+}
+
+.hero-stat + .hero-stat {
+    border-left: 1px solid var(--color-border);
+}
+
+@media (max-width: 640px) {
+    .hero-stat {
+        padding: 0 var(--space-4);
+    }
+    .hero-stat + .hero-stat {
+        border-left: 0;
+    }
 }
 
 .hero-stat-number {
@@ -839,19 +891,19 @@ th, td {
 }
 
 .app-icon {
-    border-radius: var(--radius-app-icon);
+    border-radius: var(--radius-lg);
     width: 160px;
     height: 160px;
     display: inline-block;
     margin: 0 auto;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
 }
 
 .hero-app-icon {
     width: 120px;
     height: 120px;
-    border-radius: var(--radius-app-icon);
-    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
     display: block;
     margin: 0 auto 20px;
 }
@@ -1007,13 +1059,28 @@ th, td {
     border: none;
     border-radius: var(--radius-lg);
     padding: 28px;
-    transition: background 0.2s ease;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-card::before {
+    content: '\201C';
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    font: 700 6rem/1 Georgia, 'Times New Roman', serif;
+    color: var(--color-primary-tint);
+    pointer-events: none;
+    user-select: none;
 }
 
 .review-card:hover {
-    background: var(--color-surface-muted);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .review-header {
@@ -1047,10 +1114,12 @@ th, td {
 
 .review-author {
     color: var(--color-text-subtle);
-    font-size: 0.8em;
+    font-size: 0.72em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     margin: auto 0 0 0;
     padding-top: 12px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* Mobile Responsiveness */
