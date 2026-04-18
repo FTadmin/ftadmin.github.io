@@ -595,14 +595,14 @@ a:hover {
 .apps-section .app-icon-large {
     width: 160px;
     height: 160px;
-    border-radius: 22%;
-    box-shadow: 0 18px 32px -6px var(--app-glow, var(--color-primary-tint));
-    transition: transform 400ms var(--ease), box-shadow 400ms var(--ease);
+    border-radius: 0;
+    filter: drop-shadow(0 18px 26px var(--app-glow, var(--color-primary-tint)));
+    transition: transform 400ms var(--ease), filter 400ms var(--ease);
 }
 
 .apps-section .app-card:hover .app-icon-large {
     transform: scale(1.05) translateY(-4px);
-    box-shadow: 0 24px 44px -4px var(--app-glow, var(--color-primary-tint));
+    filter: drop-shadow(0 24px 34px var(--app-glow, var(--color-primary-tint)));
 }
 
 .apps-section .app-card-title h3 {
