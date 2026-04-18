@@ -41,13 +41,23 @@
 <body>
 {{> nav}}
 
-<h1>{{pageTitle}}</h1>
-{{intro}}
+<article class="legal-article">
+    <header class="legal-article-header">
+        <h1>{{pageTitle}}</h1>
+    </header>
+    <div class="legal-intro">
+        {{intro}}
+    </div>
 
 {{#each sections}}
-<h2>{{heading}}</h2>
-{{content}}
+    <section class="legal-section">
+        <h2>{{heading}}</h2>
+        <div class="legal-content">
+            {{content}}
+        </div>
+    </section>
 {{/each}}
+</article>
 
 {{> footer}}
 
