@@ -2880,29 +2880,45 @@ th, td {
    EXTRACTED FROM TEMPLATE INLINE STYLES
    ========================================== */
 
-/* Works with Apple Health badge (index hero + supported product pages).
-   Apple requires the badge to sit on a white or light background and
-   not be recolored. Wrapper keeps it on a light surface even in dark mode. */
+/* Works with Apple Health badge.
+   Apple requires the badge on a white/light background, unrecolored.
+   Wrapper keeps a light safe area even in dark mode. */
 .works-with-health {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: var(--space-6) auto;
-    padding: var(--space-4) var(--space-5);
+    padding: var(--space-2) var(--space-4);
     background: #ffffff;
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
 }
 
 .works-with-health--hero {
-    margin-top: var(--space-5);
-    margin-bottom: var(--space-5);
+    margin: var(--space-5) auto;
 }
 
 .apple-health-badge {
-    height: 44px;
+    height: 32px;
     width: auto;
     display: block;
+}
+
+/* Side-by-side row of Apple Health badge + small feature chips (index hero) */
+.hero-features-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3) var(--space-5);
+    margin-top: var(--space-5);
+}
+
+.hero-features-row .works-with-health {
+    margin: 0;
+}
+
+.hero-features-row .hero-features {
+    margin: 0;
 }
 
 /* Privacy badge (shield-alt — index + app hero) */
