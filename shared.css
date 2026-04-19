@@ -882,6 +882,35 @@ a:hover {
     margin-right: 2px;
 }
 
+.feature-langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: var(--space-3) 0 0;
+}
+
+.feature-langs li {
+    padding: 0;
+}
+
+.feature-langs a {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--color-surface-muted);
+    border-radius: var(--radius-pill);
+    font-size: 0.78em;
+    color: var(--color-text-muted);
+    transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+
+.feature-langs a:hover {
+    background: var(--color-primary-tint);
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 .feature-box h3 {
     margin-top: 4px;
     margin-bottom: 8px;
@@ -3153,38 +3182,39 @@ th, td {
 
 /* Tips teaser card (dark) on app page */
 .tips-teaser {
-    background: var(--color-surface-dark-2);
-    color: var(--color-text-invert);
-    padding: var(--space-7) 0;
+    background:
+        radial-gradient(ellipse 70% 80% at 15% 30%, var(--color-primary-tint), transparent 60%),
+        radial-gradient(ellipse 60% 70% at 85% 80%, var(--color-warm-tint), transparent 60%),
+        var(--color-surface);
+    color: var(--color-text-strong);
+    padding: var(--space-7) var(--space-6);
     border-radius: var(--radius-lg);
     margin: var(--space-8) 0;
     text-align: center;
-}
-
-.tips-teaser h2,
-.tips-teaser p {
-    color: var(--color-text-invert);
+    border: 1px solid var(--color-border);
 }
 
 .tips-teaser h2 {
-    margin-bottom: var(--space-4);
+    color: var(--color-text-strong);
+    margin-bottom: var(--space-3);
 }
 
 .tips-teaser p {
+    color: var(--color-text-muted);
     font-size: 1.1rem;
     margin-bottom: var(--space-5);
 }
 
 .tips-teaser .btn {
-    background: var(--color-text-invert);
-    color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-text-invert);
     border-radius: var(--radius-sm);
     padding: 0 var(--space-6);
 }
 
 .tips-teaser .btn:hover {
-    background: var(--color-surface);
-    color: var(--color-primary-hover);
+    background: var(--color-primary-hover);
+    color: var(--color-text-invert);
 }
 
 /* Reviews subtitle spacing (already inside section-subtitle) */

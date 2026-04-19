@@ -173,6 +173,13 @@
                 <div class="feature-icon"><i class="{{icon}}"></i></div>
                 <h3>{{title}}</h3>
                 <p>{{mdi description}}</p>
+{{#if languages}}
+                <ul class="feature-langs">
+{{#each languages}}
+                    <li><a href="{{url}}">{{name}}</a></li>
+{{/each}}
+                </ul>
+{{/if}}
             </div>
 {{/each}}
         </div>
