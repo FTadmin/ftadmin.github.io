@@ -882,6 +882,10 @@ a:hover {
     margin-right: 2px;
 }
 
+.feature-box:has(.feature-langs) {
+    grid-column: 1 / -1;
+}
+
 .feature-langs {
     display: flex;
     flex-wrap: wrap;
