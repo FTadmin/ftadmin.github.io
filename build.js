@@ -30,6 +30,60 @@ const assetVersion = {
 // ============================================================
 
 /**
+ * Read PNG/JPEG dimensions without any dependencies.
+ * Returns { width, height } or null if not recognised / not found.
+ */
+function getImageDimensions(localPath) {
+    if (!fs.existsSync(localPath)) return null;
+    const buf = fs.readFileSync(localPath);
+    // PNG: 8-byte signature + 4-byte IHDR length + "IHDR" + width(4) + height(4) big-endian
+    if (buf.length >= 24 && buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4E && buf[3] === 0x47) {
+        return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+    }
+    // JPEG: scan markers
+    if (buf.length >= 4 && buf[0] === 0xFF && buf[1] === 0xD8) {
+        let i = 2;
+        while (i < buf.length) {
+            if (buf[i] !== 0xFF) break;
+            const marker = buf[i + 1];
+            // SOF markers (baseline/progressive): 0xC0..0xCF except 0xC4/0xC8/0xCC
+            if (marker >= 0xC0 && marker <= 0xCF && marker !== 0xC4 && marker !== 0xC8 && marker !== 0xCC) {
+                return { height: buf.readUInt16BE(i + 5), width: buf.readUInt16BE(i + 7) };
+            }
+            i += 2 + buf.readUInt16BE(i + 2);
+        }
+    }
+    return null;
+}
+
+const imageDimCache = {};
+function resolveOgImageDims(ogImage, siteUrl) {
+    if (!ogImage) return null;
+    if (imageDimCache[ogImage] !== undefined) return imageDimCache[ogImage];
+    let localPath = null;
+    if (siteUrl && ogImage.startsWith(siteUrl + '/')) {
+        localPath = path.join(ROOT, ogImage.slice(siteUrl.length + 1));
+    } else if (ogImage.startsWith('/')) {
+        localPath = path.join(ROOT, ogImage.slice(1));
+    }
+    const dims = localPath ? getImageDimensions(localPath) : null;
+    imageDimCache[ogImage] = dims;
+    return dims;
+}
+
+/**
+ * Strip markdown to plain text (for JSON-LD schema where HTML isn't allowed).
+ */
+function stripMarkdown(md) {
+    if (!md || typeof md !== 'string') return md || '';
+    return md
+        .replace(/\*\*(.+?)\*\*/g, '$1')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/\n+/g, ' ')
+        .trim();
+}
+
+/**
  * Convert inline markdown to HTML (no paragraph wrapping).
  * Supports: **bold**, [text](url)
  * Links get target="_blank" rel="noopener" automatically.
@@ -281,6 +335,41 @@ function render(template, data, partials) {
 // Build Logic
 // ============================================================
 
+const RELATED_APPS_TITLE = {
+    en: 'Explore our other apps',
+    de: 'Entdecken Sie unsere anderen Apps',
+    es: 'Descubre nuestras otras aplicaciones',
+    fr: 'Découvrez nos autres applications',
+    'fr-ca': 'Découvrez nos autres applications',
+    it: 'Scopri le nostre altre app',
+    ru: 'Откройте для себя другие наши приложения',
+    ja: '他のアプリもチェック',
+    ko: '다른 앱 둘러보기',
+    'pt-br': 'Conheça nossos outros aplicativos',
+    pt: 'Conheça as nossas outras aplicações',
+    'zh-Hans': '探索我们的其他应用',
+    'zh-Hant': '探索我們的其他應用程式',
+    sv: 'Utforska våra andra appar',
+    nb: 'Utforsk våre andre apper',
+    da: 'Udforsk vores andre apps',
+    fi: 'Tutustu muihin sovelluksiimme',
+    nl: 'Ontdek onze andere apps',
+    pl: 'Odkryj nasze inne aplikacje',
+    cs: 'Prozkoumejte naše další aplikace',
+    sk: 'Preskúmajte naše ďalšie aplikácie',
+    ro: 'Descoperă celelalte aplicații ale noastre',
+    hr: 'Istražite naše druge aplikacije',
+    hu: 'Fedezze fel többi alkalmazásunkat',
+    uk: 'Відкрийте для себе наші інші додатки',
+    ar: 'استكشف تطبيقاتنا الأخرى',
+    he: 'גלו את האפליקציות האחרות שלנו',
+    el: 'Ανακαλύψτε τις άλλες εφαρμογές μας',
+    tr: 'Diğer uygulamalarımızı keşfedin',
+    th: 'สำรวจแอปอื่นๆ ของเรา',
+    vi: 'Khám phá các ứng dụng khác của chúng tôi',
+    ca: 'Descobreix les nostres altres aplicacions'
+};
+
 const ROOT = __dirname;
 const TEMPLATES_DIR = path.join(ROOT, 'templates');
 const PARTIALS_DIR = path.join(TEMPLATES_DIR, 'partials');
@@ -323,7 +412,7 @@ function toBcp47(code) {
  * Build the full context object for rendering a page.
  * Merges: site globals + language data + page-specific data
  */
-function buildContext(site, languages, page) {
+function buildContext(site, languages, page, appCatalog) {
     const lang = languages[page.lang];
     const pagePath = page.path || '';
 
@@ -385,7 +474,92 @@ function buildContext(site, languages, page) {
 
     // Generate structuredDataHtml from structuredData JSON array (if present)
     const data = { ...page.data };
-    if (Array.isArray(data.structuredData) && data.structuredData.length > 0 && !data.structuredDataHtml) {
+
+    // Auto-detect og:image dimensions for social card meta tags
+    if (data.meta && data.meta.ogImage && !data.meta.ogImageWidth) {
+        const dims = resolveOgImageDims(data.meta.ogImage, site.url);
+        if (dims) {
+            data.meta = { ...data.meta, ogImageWidth: dims.width, ogImageHeight: dims.height };
+        }
+    }
+
+    // Auto-generate SEO schemas from page content where missing
+    data.structuredData = Array.isArray(data.structuredData) ? [...data.structuredData] : [];
+
+    // FAQPage schema — from data.faq.items (if not already present)
+    if (data.faq && Array.isArray(data.faq.items) && data.faq.items.length > 0) {
+        const hasFAQ = data.structuredData.some(b => b && b['@type'] === 'FAQPage');
+        if (!hasFAQ) {
+            data.structuredData.push({
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: data.faq.items.map(item => ({
+                    '@type': 'Question',
+                    name: stripMarkdown(item.question),
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: stripMarkdown(item.answer)
+                    }
+                }))
+            });
+        }
+    }
+
+    // Review items — inject into the first SoftwareApplication/MobileApplication block
+    if (data.reviews && Array.isArray(data.reviews.items) && data.reviews.items.length > 0) {
+        const appBlock = data.structuredData.find(b =>
+            b && (b['@type'] === 'SoftwareApplication' || b['@type'] === 'MobileApplication')
+        );
+        if (appBlock && !appBlock.review) {
+            appBlock.review = data.reviews.items.map(item => ({
+                '@type': 'Review',
+                reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+                author: { '@type': 'Person', name: (item.author || '').split(',')[0].trim() || 'Anonymous' },
+                name: item.title,
+                reviewBody: item.content
+            }));
+        }
+    }
+
+    // BreadcrumbList — tips pages get Home > {App} > Tips
+    if (page.template === 'tips-page' && page.slug) {
+        const hasBreadcrumb = data.structuredData.some(b => b && b['@type'] === 'BreadcrumbList');
+        if (!hasBreadcrumb) {
+            const langPrefix = lang.prefix || '';
+            const homeUrl = site.url + (langPrefix ? langPrefix + '/' : '/');
+            const appUrl = site.url + langPrefix + '/' + page.slug + '/';
+            const tipsUrl = site.url + langPrefix + '/' + page.slug + '/tips/';
+            const navApp = (lang.nav && lang.nav.apps) ? lang.nav.apps.find(a => a.slug === page.slug) : null;
+            const appName = navApp ? navApp.name : page.slug;
+            const tipsLabel = (data.hero && data.hero.title) ? data.hero.title : 'Tips';
+            data.structuredData.push({
+                '@context': 'https://schema.org',
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    { '@type': 'ListItem', position: 1, name: 'Home', item: homeUrl },
+                    { '@type': 'ListItem', position: 2, name: appName, item: appUrl },
+                    { '@type': 'ListItem', position: 3, name: tipsLabel, item: tipsUrl }
+                ]
+            });
+        }
+    }
+
+    // Related apps — cross-link from app pages to the other apps
+    if (page.template === 'app-page' && appCatalog && lang.nav && lang.nav.apps) {
+        const langPrefix = lang.prefix || '';
+        data.relatedApps = lang.nav.apps
+            .filter(a => a.slug !== page.slug && appCatalog[a.slug])
+            .map(a => ({
+                slug: a.slug,
+                name: a.name,
+                url: langPrefix + '/' + a.slug + '/',
+                iconSrc: appCatalog[a.slug].iconSrc,
+                appId: appCatalog[a.slug].appId
+            }));
+        data.relatedAppsTitle = RELATED_APPS_TITLE[page.lang] || RELATED_APPS_TITLE.en;
+    }
+
+    if (data.structuredData.length > 0 && !data.structuredDataHtml) {
         data.structuredDataHtml = data.structuredData.map(block =>
             '    <script type="application/ld+json">\n' +
             JSON.stringify(block, null, 6).split('\n').map(line => '    ' + line).join('\n') +
@@ -485,6 +659,18 @@ function build() {
         enPagesByFile[file] = page;
     }
 
+    // Build app catalog (slug → { iconSrc, appId }) from EN .app.json files
+    // for cross-linking between related app pages
+    const appCatalog = {};
+    for (const [file, page] of Object.entries(enPagesByFile)) {
+        if (!file.endsWith('.app.json')) continue;
+        appCatalog[page.slug] = {
+            slug: page.slug,
+            iconSrc: page.data && page.data.hero && page.data.hero.image,
+            appId: page.appId || (page.data && page.data.appId)
+        };
+    }
+
     // Load all per-language page files
     // Non-EN files without a "template" field are translation overlays — deep-merge with EN base
     const pages = Object.values(enPagesByFile); // start with EN pages
@@ -548,7 +734,7 @@ function build() {
         }
 
         try {
-            const context = buildContext(site, languages, page);
+            const context = buildContext(site, languages, page, appCatalog);
             const html = render(template, context, partials);
             const outputFile = path.join(ROOT, page.outputPath);
             ensureDir(outputFile);

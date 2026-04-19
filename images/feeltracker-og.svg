@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+    <!-- Feeltracker Open Graph card, 1200x630.
+         Export to PNG and save as images/feeltracker.png to replace the current (1447x397) file.
+         Font: Nunito Sans 700 for the wordmark; converters that don't have it will fall back to system-ui. -->
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#e8f1fd"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="20%" cy="40%" r="70%">
+            <stop offset="0%" stop-color="#dbeafe" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#dbeafe" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+
+    <rect width="1200" height="630" fill="url(#bg)"/>
+    <rect width="1200" height="630" fill="url(#glow)"/>
+
+    <!-- App icon: rounded blue squircle + white smile (matches favicon geometry) -->
+    <g transform="translate(96 135)">
+        <rect width="360" height="360" rx="112" fill="#2B7BD3"/>
+        <path d="M101 152 Q 180 259 259 152" stroke="#ffffff" stroke-width="28" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Wordmark -->
+    <text x="508" y="290"
+          font-family="'Nunito Sans', system-ui, -apple-system, sans-serif"
+          font-weight="700"
+          font-size="128"
+          fill="#2B7BD3"
+          letter-spacing="-2.5">feeltracker</text>
+
+    <!-- Primary tagline -->
+    <text x="508" y="360"
+          font-family="'Nunito Sans', system-ui, -apple-system, sans-serif"
+          font-weight="400"
+          font-size="40"
+          fill="#334155">AI Health &amp; Wellness Journal Apps</text>
+
+    <!-- Secondary line: product coverage -->
+    <text x="508" y="414"
+          font-family="'Nunito Sans', system-ui, -apple-system, sans-serif"
+          font-weight="400"
+          font-size="26"
+          fill="#64748b">Blood Pressure · Sleep · Weight · Mood · Journal</text>
+
+    <!-- Trust line -->
+    <g transform="translate(508 470)">
+        <circle cx="10" cy="10" r="10" fill="#2B7BD3" fill-opacity="0.12"/>
+        <path d="M5 10 L9 14 L15 6" stroke="#2B7BD3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <text x="30" y="16"
+              font-family="'Nunito Sans', system-ui, -apple-system, sans-serif"
+              font-weight="600"
+              font-size="22"
+              fill="#2B7BD3">Syncs with Apple Health · Privacy-first · As featured in GQ</text>
+    </g>
+
+    <!-- Bottom-right URL -->
+    <text x="1120" y="590" text-anchor="end"
+          font-family="'Nunito Sans', system-ui, -apple-system, sans-serif"
+          font-weight="600"
+          font-size="22"
+          fill="#2B7BD3">feeltracker.com</text>
+</svg>

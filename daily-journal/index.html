@@ -119,6 +119,10 @@
     <meta property="og:description" content="Your private daily journal with AI scanning, sentiment analysis, word patterns, and photo attachments.">
     <meta property="og:image" content="https://feeltracker.com/images/NT_1024.png">
 
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://feeltracker.com/daily-journal/">
@@ -126,7 +130,7 @@
     <meta property="twitter:description" content="Your private daily journal with AI scanning, sentiment analysis, and word patterns.">
     <meta property="twitter:image" content="https://feeltracker.com/images/NT_1024.png">
 
-    <link rel="stylesheet" href="/shared.css?v=db91ff7a">
+    <link rel="stylesheet" href="/shared.css?v=06e60198">
 
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="alternate icon" type="image/x-icon" href="/images/favicon.ico">
@@ -412,6 +416,94 @@
           ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Is my journal private?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Absolutely. Your entries are stored encrypted on your device and in your private iCloud account. We never see your writing. Even the AI sentiment analysis happens entirely on your device using Apple's Natural Language API - your words never leave your phone."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "How does sentiment analysis work?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "When you write 8 or more words, the app uses Apple's built-in Natural Language framework to analyze the emotional tone. An emoji appears to show whether the entry reads as positive, negative, or neutral. This happens entirely on-device for complete privacy."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "What is word frequency analysis?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The Trends feature analyzes all your entries to show which words and topics you write about most often. This helps you identify recurring themes, concerns, or interests in your thinking."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Can I add photos to my journal?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes! You can attach up to 8 photos to each journal entry. Photos are stored efficiently with automatic thumbnail generation, and they sync across all your devices via iCloud."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "What are note templates?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Templates are pre-written prompts that help you start writing quickly. Create custom templates for things like gratitude lists, daily reviews, goal tracking, or any other recurring format you use."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Can I export my journal entries?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. You can export your entries as PDF, Excel, or JSON files. This lets you create backups, share selected entries, or move your data to other platforms if needed."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Does it work on Mac?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes! The app runs natively on Apple Silicon Macs (M1 and later). Your entries sync automatically between your iPhone, iPad, and Mac via iCloud."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Can I write multiple entries per day?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Absolutely. Write as many entries as you want each day. Some people journal in the morning and evening, while others add notes throughout the day."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Do you show ads or track me?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. We've completely removed all advertisements from the app. We don't track you across other apps or websites, and we never sell your data to advertisers. Your data syncs via iCloud - just like Apple Notes and Photos. This means we don't need to know your email address, name, or any personal information. Your journal entries are stored on your devices and in your iCloud account, and they're completely private whether you use the free version or premium."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Do I need a subscription?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The app is completely free to download and use. All core tracking features work without a subscription. A premium subscription unlocks advanced AI features, unlimited exports, and enhanced customization. You can try all premium features during the free trial period."
+                      }
+                }
+          ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -511,7 +603,7 @@
 
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Daily Journaling App Icon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Daily Journal — AI health and mood journaling app for iPhone" width="150" height="150" class="hero-logo app-icon">
         <h1>Daily Journaling</h1>
 
         <div class="privacy-badge">
@@ -533,15 +625,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Daily Journaling Screenshot 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Feeltracker Daily Journal app home view with entries" class="screenshot-img">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Daily Journaling Screenshot 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="Creating a journal entry with AI prompts" class="screenshot-img">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Daily Journaling Screenshot 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Weekly mood and wellness insights overview" class="screenshot-img">
             </div>
 
         </div>
@@ -758,37 +850,37 @@
     </section>
 
     <!-- Benefits -->
-    <section class="ai-section center-text">
+    <section class="benefits-section center-text">
         <h2>Why Practice Daily Journaling?</h2>
         <p class="section-subtitle">Research shows journaling improves mental health, clarity, and creativity</p>
-        <div class="ai-features-grid">
+        <div class="benefits-grid">
 
-            <div class="ai-feature">
+            <div class="benefit-item">
                 <h4><i class="fas fa-brain"></i> Mental Clarity</h4>
                 <p>Writing helps organize thoughts and reduce mental clutter</p>
             </div>
 
-            <div class="ai-feature">
+            <div class="benefit-item">
                 <h4><i class="fas fa-comment"></i> Emotional Processing</h4>
                 <p>Express and process feelings in a safe, private space</p>
             </div>
 
-            <div class="ai-feature">
+            <div class="benefit-item">
                 <h4><i class="fas fa-bullseye"></i> Track Progress</h4>
                 <p>See how far you've come by reviewing past entries</p>
             </div>
 
-            <div class="ai-feature">
+            <div class="benefit-item">
                 <h4><i class="fas fa-lightbulb"></i> Self-Discovery</h4>
                 <p>Uncover patterns in your thinking and behavior</p>
             </div>
 
-            <div class="ai-feature">
+            <div class="benefit-item">
                 <h4><i class="fas fa-hands-praying"></i> Gratitude Practice</h4>
                 <p>Cultivate thankfulness with daily gratitude journaling</p>
             </div>
 
-            <div class="ai-feature">
+            <div class="benefit-item">
                 <h4><i class="fas fa-book"></i> Preserve Memories</h4>
                 <p>Create a personal archive of your life's moments</p>
             </div>
@@ -1058,6 +1150,36 @@
             </a>
         </div>
     </section>
+
+
+    <!-- Related Apps -->
+    <section class="related-apps center-text">
+        <h2>Explore our other apps</h2>
+        <div class="related-apps-grid">
+
+            <a href="/blood-pressure/" class="related-app-card" aria-label="Blood Pressure">
+                <img src="/images/BPT_1024.png" alt="Blood Pressure" class="related-app-icon">
+                <span class="related-app-name">Blood Pressure</span>
+            </a>
+
+            <a href="/mental-health/" class="related-app-card" aria-label="Mental Health">
+                <img src="/images/FT_1024.png" alt="Mental Health" class="related-app-icon">
+                <span class="related-app-name">Mental Health</span>
+            </a>
+
+            <a href="/sleep/" class="related-app-card" aria-label="Sleep">
+                <img src="/images/ST_1024.png" alt="Sleep" class="related-app-icon">
+                <span class="related-app-name">Sleep</span>
+            </a>
+
+            <a href="/weight/" class="related-app-card" aria-label="Weight">
+                <img src="/images/WT_1024.png" alt="Weight" class="related-app-icon">
+                <span class="related-app-name">Weight</span>
+            </a>
+
+        </div>
+    </section>
+
 
     <!-- CTA Section -->
     <section class="cta-section center-text">
