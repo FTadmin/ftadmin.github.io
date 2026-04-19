@@ -848,6 +848,10 @@ a:hover {
     text-align: left;
     transition: background 0.2s ease;
     border: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 14px;
+    align-items: center;
 }
 
 .feature-box:hover {
@@ -856,7 +860,7 @@ a:hover {
 
 .feature-icon {
     font-size: 1.5em;
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 .feature-icon i {
@@ -917,17 +921,21 @@ a:hover {
 }
 
 .feature-box h3 {
-    margin-top: 4px;
-    margin-bottom: 8px;
+    margin: 0;
     color: var(--color-text-strong);
     font-size: 1.05em;
 }
 
-.feature-box p {
+.feature-box > p {
     color: var(--color-text-muted);
     line-height: 1.7;
     font-size: 0.925em;
-    margin-bottom: 0;
+    margin: 10px 0 0;
+    grid-column: 1 / -1;
+}
+
+.feature-box > .feature-langs {
+    grid-column: 1 / -1;
 }
 
 /* AI Features Section */
