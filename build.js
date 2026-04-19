@@ -23,7 +23,7 @@ const assetVersion = {
     shared:  hashFile('shared.css'),
     game:    hashFile('game.css'),
     nav:     hashFile('nav.js'),
-    favicon: hashFile('images/feeltracker-icon.svg'),
+    favicon: hashFile('images/feeltracker-icon.png'),
 };
 
 // ============================================================
