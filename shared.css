@@ -2880,27 +2880,44 @@ th, td {
    EXTRACTED FROM TEMPLATE INLINE STYLES
    ========================================== */
 
-/* Works with Apple Health badge (index hero + supported product pages) */
+/* Works with Apple Health badge.
+   Apple requires clear space around the lockup — no panel/background
+   needed on light surfaces, just breathing room. */
 .works-with-health {
     display: inline-flex;
+    align-items: center;
     justify-content: center;
-    margin: var(--space-3) auto 0;
+    padding: var(--space-2) var(--space-3);
+    background: transparent;
+    border: 0;
 }
 
 .works-with-health--hero {
-    margin-top: var(--space-4);
+    margin: var(--space-5) auto;
 }
 
 .apple-health-badge {
-    height: 44px;
+    height: 32px;
     width: auto;
     display: block;
 }
 
-@media (prefers-color-scheme: dark) {
-    .apple-health-badge {
-        filter: invert(1) brightness(1.12);
-    }
+/* Side-by-side row of Apple Health badge + small feature chips (index hero) */
+.hero-features-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3) var(--space-5);
+    margin-top: var(--space-5);
+}
+
+.hero-features-row .works-with-health {
+    margin: 0;
+}
+
+.hero-features-row .hero-features {
+    margin: 0;
 }
 
 /* Privacy badge (shield-alt — index + app hero) */
