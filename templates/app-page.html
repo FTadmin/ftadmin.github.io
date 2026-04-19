@@ -55,9 +55,14 @@
         </div>
         <p class="hero-subtitle">{{hero.subtitle}}</p>
         <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
-            <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="{{hero.ctaAlt}}">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{hero.ctaAlt}}"></picture>
         </a>
         <p class="hero-platform-info">{{mdi hero.platformInfo}}</p>
+{{#if supportsAppleHealth}}
+        <div class="works-with-health works-with-health--hero">
+            <img src="{{lang.appleHealthBadge}}" alt="Works with Apple Health" class="apple-health-badge">
+        </div>
+{{/if}}
     </section>
 
 {{#if pressMention}}
@@ -208,7 +213,7 @@
         <h2>{{cta.title}}</h2>
         <p>{{cta.subtitle}}</p>
         <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
-            <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="{{cta.buttonAlt}}">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{cta.buttonAlt}}"></picture>
         </a>
     </section>
 {{> footer}}

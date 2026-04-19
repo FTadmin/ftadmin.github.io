@@ -547,7 +547,7 @@ a:hover {
     grid-template-columns: 1fr;
     gap: var(--space-5);
     padding: var(--space-6) var(--space-5);
-    margin: var(--space-3) 0;
+    margin: var(--space-7) 0;
     background: radial-gradient(ellipse 110% 100% at 20% 50%, var(--app-tint, var(--color-primary-tint)), transparent 85%);
     box-shadow: none;
     border-radius: var(--radius-xl);
@@ -595,13 +595,13 @@ a:hover {
     width: 160px;
     height: 160px;
     border-radius: 0;
-    filter: drop-shadow(0 18px 26px var(--app-glow, var(--color-primary-tint)));
+    filter: none;
     transition: transform 400ms var(--ease), filter 400ms var(--ease);
 }
 
 .apps-section .app-card:hover .app-icon-large {
-    transform: scale(1.05) translateY(-4px);
-    filter: drop-shadow(0 24px 34px var(--app-glow, var(--color-primary-tint)));
+    transform: scale(1.04) translateY(-2px);
+    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.12));
 }
 
 .apps-section .app-card-title h3 {
@@ -643,6 +643,7 @@ a:hover {
         grid-template-columns: 220px 1fr;
         gap: var(--space-7);
         padding: var(--space-7) var(--space-6);
+        margin: var(--space-6) 0;
     }
     .apps-section .app-card-header {
         margin-bottom: 0;
@@ -881,6 +882,35 @@ a:hover {
     margin-right: 2px;
 }
 
+.feature-langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: var(--space-3) 0 0;
+}
+
+.feature-langs li {
+    padding: 0;
+}
+
+.feature-langs a {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--color-surface-muted);
+    border-radius: var(--radius-pill);
+    font-size: 0.78em;
+    color: var(--color-text-muted);
+    transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+
+.feature-langs a:hover {
+    background: var(--color-primary-tint);
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 .feature-box h3 {
     margin-top: 4px;
     margin-bottom: 8px;
@@ -897,12 +927,14 @@ a:hover {
 
 /* AI Features Section */
 .ai-section {
-    margin: 0 calc(-1.4em - 20px);
-    padding: 100px 40px;
+    margin: var(--space-6) calc(-1.4em - 20px);
+    padding: 96px 40px;
     background:
-        radial-gradient(ellipse at 20% 0%, rgba(43, 123, 211, 0.18), transparent 55%),
-        linear-gradient(180deg, #0f172a, #111827);
-    border-radius: 0;
+        radial-gradient(ellipse 70% 60% at 12% 8%, rgba(96, 165, 250, 0.32), transparent 55%),
+        radial-gradient(ellipse 55% 50% at 88% 90%, rgba(249, 146, 108, 0.18), transparent 55%),
+        radial-gradient(ellipse 60% 55% at 50% 100%, rgba(147, 197, 253, 0.14), transparent 60%),
+        linear-gradient(160deg, #1e2a4a 0%, #2a2150 50%, #1a2440 100%);
+    border-radius: var(--radius-xl);
     color: var(--color-text-invert);
     position: relative;
     overflow: hidden;
@@ -912,7 +944,7 @@ a:hover {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'><circle cx='1' cy='1' r='1' fill='white' opacity='0.05'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'><circle cx='1' cy='1' r='1' fill='white' opacity='0.04'/></svg>");
     pointer-events: none;
     z-index: 0;
 }
@@ -935,7 +967,7 @@ a:hover {
 }
 
 .ai-section .section-subtitle {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.78);
     opacity: 1;
     font-weight: 400;
 }
@@ -951,12 +983,12 @@ a:hover {
 }
 
 .ai-feature {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.08);
     padding: 28px;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transition: background var(--dur) var(--ease), transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
     text-align: left;
 }
@@ -981,7 +1013,7 @@ a:hover {
 }
 
 .ai-feature p {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.72);
     margin: 0;
     font-size: 0.875em;
     line-height: 1.6;
@@ -2848,6 +2880,29 @@ th, td {
    EXTRACTED FROM TEMPLATE INLINE STYLES
    ========================================== */
 
+/* Works with Apple Health badge (index hero + supported product pages) */
+.works-with-health {
+    display: inline-flex;
+    justify-content: center;
+    margin: var(--space-3) auto 0;
+}
+
+.works-with-health--hero {
+    margin-top: var(--space-4);
+}
+
+.apple-health-badge {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+    .apple-health-badge {
+        filter: invert(1) brightness(1.12);
+    }
+}
+
 /* Privacy badge (shield-alt — index + app hero) */
 .privacy-badge {
     color: var(--color-accent);
@@ -3127,38 +3182,39 @@ th, td {
 
 /* Tips teaser card (dark) on app page */
 .tips-teaser {
-    background: var(--color-surface-dark-2);
-    color: var(--color-text-invert);
-    padding: var(--space-7) 0;
+    background:
+        radial-gradient(ellipse 70% 80% at 15% 30%, var(--color-primary-tint), transparent 60%),
+        radial-gradient(ellipse 60% 70% at 85% 80%, var(--color-warm-tint), transparent 60%),
+        var(--color-surface);
+    color: var(--color-text-strong);
+    padding: var(--space-7) var(--space-6);
     border-radius: var(--radius-lg);
     margin: var(--space-8) 0;
     text-align: center;
-}
-
-.tips-teaser h2,
-.tips-teaser p {
-    color: var(--color-text-invert);
+    border: 1px solid var(--color-border);
 }
 
 .tips-teaser h2 {
-    margin-bottom: var(--space-4);
+    color: var(--color-text-strong);
+    margin-bottom: var(--space-3);
 }
 
 .tips-teaser p {
+    color: var(--color-text-muted);
     font-size: 1.1rem;
     margin-bottom: var(--space-5);
 }
 
 .tips-teaser .btn {
-    background: var(--color-text-invert);
-    color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-text-invert);
     border-radius: var(--radius-sm);
     padding: 0 var(--space-6);
 }
 
 .tips-teaser .btn:hover {
-    background: var(--color-surface);
-    color: var(--color-primary-hover);
+    background: var(--color-primary-hover);
+    color: var(--color-text-invert);
 }
 
 /* Reviews subtitle spacing (already inside section-subtitle) */

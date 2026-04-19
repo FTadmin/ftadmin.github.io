@@ -88,7 +88,7 @@
             <h2>{{cta.title}}</h2>
             <p>{{cta.subtitle}}</p>
             <a href="{{cta.appStoreUrl}}" class="cta-button">
-                <img class="store_button store_button--lg" src="/images/appstore_link.svg" alt="{{cta.buttonAlt}}">
+                <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{cta.buttonAlt}}"></picture>
             </a>
             <p class="hero-platform-info">{{cta.platformInfo}}</p>
         </div>
