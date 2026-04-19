@@ -788,8 +788,8 @@ a:hover {
 
 /* Screenshots Section */
 .screenshots-section {
-    margin: 40px 0;
-    padding: 40px 20px;
+    margin: 8px 0 32px;
+    padding: 32px 20px;
     background: var(--color-surface);
     border-radius: 6px;
 }
@@ -1239,17 +1239,44 @@ a:hover {
 .platforms-section .app-card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+    padding: 28px 32px 28px 36px;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    box-shadow: none;
+    margin: 0 0 16px;
+    transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.platforms-section .app-card:hover {
+    transform: none;
+    box-shadow: none;
+    background: var(--color-surface-muted);
+    border-left-color: var(--color-primary);
+}
+
+.platforms-section .app-card:last-child {
+    margin-bottom: 0;
+}
+
+.platforms-section .app-card h3 {
+    margin: 0;
+    color: var(--color-text-strong);
+    font-size: 1.15em;
 }
 
 .platforms-section .app-card-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: block;
+    margin: 0;
 }
 
 .platforms-section .app-card-content p {
-    margin: 0;
+    margin: 0 0 12px;
+}
+
+.platforms-section .app-card-content p:last-child {
+    margin-bottom: 0;
 }
 
 /* CTA Section */
