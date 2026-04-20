@@ -131,7 +131,7 @@
      },
      {
       "question": "Må jeg ha et abonnement for hver enhet?",
-      "answer": "Ett abonnement fjerner annonser på alle enheter. Hvis du ser annonser på noen ekstra enheter, gå til Innstillinger > Fjern annonser, og trykk på Gjenopprett kjøp. Sørg for at hver enhet er logget inn på samme iCloud-konto."
+      "answer": "Nei. Ett abonnement låser opp premiumfunksjoner på alle enheter som er logget inn på samme iCloud-konto. Hvis premium ikke vises på en annen enhet, gå til Innstillinger > Abonnement (eller tilsvarende i appen) og trykk på Gjenopprett kjøp. Sørg for at alle enheter er logget inn på samme iCloud-konto."
      },
      {
       "question": "Hvordan fungerer sikkerhetskopier?",
@@ -190,16 +190,16 @@
       "answer": "Ja. Så snart du trykker på sideknappen på enheten for å låse den som du normalt gjør, kan ingen få tilgang til appen eller dataene dine mens den er låst."
      },
      {
-      "question": "Hva med annonsene?",
-      "answer": "Vi ønsker at du først prøver appen og ser om du finner den nyttig, uten noen forstyrrelser – du kan gjøre dette gratis uten å se Google-annonser. Etter at du har lagret 7 registreringer, kan du se noen Google-annonser, som hjelper til å støtte appen og holde den gratis."
+      "question": "Viser appen annonser?",
+      "answer": "Nei. Feeltracker-appene viser ingen tredjeparts annonser og bruker ingen annonsenettverk eller annonsesporings-SDK-er (som AdMob). Dine personlige data og helsedata deles aldri med annonsører. Appene finansieres utelukkende av valgfrie premiumabonnementer og engangskjøp via App Store."
      },
      {
-      "question": "Jeg liker ikke annonser! Kan jeg betale for å fjerne dem?",
-      "answer": "Ja! For å gjøre dette, trykk på ❎-knappen på banneret. Da vil du få muligheten til å abonnere for en liten avgift. Mens du er abonnent vil du ikke se noen annonser."
+      "question": "Finnes det en gratis versjon?",
+      "answer": "Ja. Alle kjernefunksjonene for sporing – ubegrensede oppføringer, diagrammer og trender, Apple Health-synk, PDF/CSV-eksport og AI Camera Scan – er helt gratis. Premium er valgfritt og legger bare til ting som forbedrede AI-chat-grenser og avanserte AI-funksjoner."
      },
      {
-      "question": "Jeg kan ikke betale, men hater annonser i apper!",
-      "answer": "Vi forstår deg. Disse tilpassede innebygde annonsene er utformet for å passe inn med resten av appen og fortsatt se bra ut, uten å være forstyrrende eller spamaktige. Vi ønsker at du skal kunne nyte å bruke appen, selv om du ikke kan betale. Ikke glem å fortelle vennene dine om den!"
+      "question": "Hva betaler abonnementet mitt for?",
+      "answer": "Abonnementet ditt finansierer løpende utvikling – nye funksjoner, feilrettinger, oversettelser og serverkostnader for valgfrie AI-funksjoner. Siden vi ikke viser annonser, er abonnementer og engangskjøp den eneste måten vi finansierer appen på, og de holder opplevelsen ren og privat for alle."
      },
      {
       "question": "Hvorfor bør jeg abonnere? Kan jeg ikke betale én gang?",
@@ -219,6 +219,26 @@
      {
       "question": "Jeg vil kansellere det betalte abonnementet mitt",
       "answer": "Takk for at du prøvde appen. Gi meg beskjed hvis det er noe jeg kan gjøre bedre på [gs@feeltracker.com](mailto:gs@feeltracker.com), så skal jeg prøve å hjelpe. Ofte leveres reparasjoner og forbedringer basert på tilbakemeldinger fra brukere i en appoppdatering samme dag eller neste dag.\n\nHvis du fortsatt ikke er fornøyd, kan du kansellere abonnementet ditt [her](https://apps.apple.com/account/subscriptions)."
+     },
+     {
+      "question": "Samler appen inn mitt navn, fødselsdato eller kjønn?",
+      "answer": "Bare hvis du velger å lagre dem. Du kan valgfritt fylle ut en liten profil (navn, fødselsdato, kjønn) for å tilpasse opplevelsen – det er helt frivillig, og kjernefunksjonene for sporing fungerer uten det. Når de er angitt, forblir profildetaljer på enheten din og i din egen iCloud, aldri på serverne våre."
+     },
+     {
+      "question": "Hvordan brukes profildetaljene mine?",
+      "answer": "Hvis du bruker en valgfri AI-funksjon (som chat, innsikter eller tilpasset tilbakemelding), kan appen inkludere de relevante delene av profilen din i forespørselen – vanligvis fornavnet ditt, alder (beregnet fra fødselsdatoen) og kjønn – slik at AI-en kan gi deg mer relevante svar (for eksempel alderspassende helseveiledning eller riktige pronomen). Dette skjer bare når du aktivt bruker en AI-funksjon. Du kan redigere eller slette profilen din, eller slå av AI-funksjoner, når som helst."
+     },
+     {
+      "question": "Hvilke AI-tjenester bruker appen?",
+      "answer": "Appene bruker tre typer AI, alle valgfrie og på forespørsel:\n\n1. **AI på enheten** (Apples Natural Language API) for ting som sentimentscoring – kjører helt på enheten din, ingen data forlater den.\n2. **Apple Intelligence** på støttede enheter – behandles på enheten der det er mulig, og via Apples Private Cloud Compute for tyngre oppgaver. Apple lagrer eller ser ikke dataene dine, og de brukes ikke til å trene Apples modeller.\n3. **OpenAI API** for chat, innsikter og tilpasset tilbakemelding – brukes bare når du aktivt utløser det. Bare relevante data (og, hvis lagret, begrenset profilkontekst) sendes. OpenAI bruker ikke API-data til å trene modellene sine."
+     },
+     {
+      "question": "Er Apple Health påkrevd?",
+      "answer": "Nei. Apple Health-integrasjon er helt valgfri. Appene fungerer fullt ut uten det – du kan legge inn målinger manuelt, bruke AI Camera Scan eller importere CSV-filer. Når du slår det på, kan du velge hvilke datatyper appen kan lese eller skrive, og tilbakekalle tilgang når som helst i iOS-innstillinger."
+     },
+     {
+      "question": "Hvordan sletter jeg dataene mine?",
+      "answer": "Du har full kontroll:\n\n- Slett individuelle oppføringer ved å sveipe på dem.\n- Slett profilen din (navn, fødselsdato, kjønn) når som helst på appens profilskjerm.\n- Slett alle appdata på én gang fra appens innstillinger.\n- Å fjerne appen og iCloud-sikkerhetskopien i iOS-innstillinger sletter alt. Siden vi ikke oppbevarer en kopi på serverne våre, er det ingenting ekstra for oss å slette for deg."
      }
     ]
    },
@@ -247,7 +267,7 @@
      },
      {
       "question": "Hva inkluderer abonnementet? Hva er gratis?",
-      "answer": "Alle kjernesporingsfunksjoner er helt gratis: ubegrensede oppføringer, AI-kameraskanning (alltid gratis), alle diagrammer og trender, Apple Helse-synkronisering og PDF/CSV-eksporter. Abonnementet legger til: annonsefjerning for en ren opplevelse, forbedret AI-chat (100 bruk per dag mot 10 gratis), og tilgang til avanserte AI-funksjoner. Alle fremtidige premiumfunksjoner vil inkluderes for abonnenter."
+      "answer": "Alle kjernefunksjoner for sporing er helt gratis: ubegrensede oppføringer, AI-kameraskanning (alltid gratis), alle diagrammer og trender, Apple Health-synk og PDF/CSV-eksport. Abonnementet legger til forbedret AI-chat (100 bruk per dag mot 10 gratis) og tilgang til avanserte AI-funksjoner. Alle fremtidige premiumfunksjoner vil være inkludert for abonnenter. Appene viser aldri annonser, enten du abonnerer eller ikke."
      },
      {
       "question": "Hva er MAP, og bør jeg spore det?",

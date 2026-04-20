@@ -145,7 +145,7 @@
      },
      {
       "question": "Do I have to have a subscription for each device?",
-      "answer": "One subscription will remove ads on all devices. If you see ads on any additional devices, go to Settings > Remove Ads, and press Restore Purchase. Ensure each device is logged into the same iCloud account."
+      "answer": "No. One subscription unlocks premium features on all devices signed into the same iCloud account. If premium doesn’t show up on another device, go to Settings > Subscription (or the equivalent in the app) and press Restore Purchase. Make sure every device is signed into the same iCloud account."
      },
      {
       "question": "How do Backups work?",
@@ -204,16 +204,16 @@
       "answer": "Yes. As soon as you press the side button on the device, to lock it as you normally do, no one can get into your app or data while it's locked."
      },
      {
-      "question": "What's with the ads?",
-      "answer": "We want you to first try the app and see if you find useful, without any distractions - you can do this for free, without seeing Google ads. After you save 7 records, you may see some Google ads, which help support the app and keep it free."
+      "question": "Does the app show ads?",
+      "answer": "No. The Feeltracker apps don’t show third-party ads and don’t use any ad networks or ad-tracking SDKs (such as AdMob). Your personal and health data is never shared with advertisers. The apps are funded entirely by optional premium subscriptions and one-time purchases through the App Store."
      },
      {
-      "question": "I don’t like ads! Can I pay to remove them?",
-      "answer": "Yes! To do this, press the ❎ button on the banner. This will bring up the option to subscribe, for a nominal fee. While you are subscribed you will not see any ads."
+      "question": "Is there a free version?",
+      "answer": "Yes. All the core tracking features — unlimited entries, charts and trends, Apple Health sync, PDF/CSV export, and AI Camera Scan — are completely free. Premium is optional and only adds things like enhanced AI chat limits and advanced AI features."
      },
      {
-      "question": "I'm unable to pay, but hate ads in apps!",
-      "answer": "We hear you. These customised native ads are designed to blend in with the rest of the app and still look good, without being jarring or spammy. We want you to be able to enjoy using the app, even if you're unable to pay. Don't forget to tell your friends about it!"
+      "question": "What does my subscription pay for?",
+      "answer": "Your subscription funds ongoing development — new features, bug fixes, translations, and server costs for optional AI features. Because we don’t run ads, subscriptions and one-time purchases are the only way we fund the app, and they keep the experience clean and private for everyone."
      },
      {
       "question": "Why should I subscribe? Why can’t I pay just once?",
@@ -233,6 +233,26 @@
      {
       "question": "I want to cancel my paid subscription",
       "answer": "Thank you for trying the app. Let me know if there’s anything I can do better at [gs@feeltracker.com](mailto:gs@feeltracker.com) and I'll try to help. Often, fixes and improvements based on user feedback are shipped in an app update on the same or next day.\n\nIf still not satisfied, you can cancel your subscription [here](https://apps.apple.com/account/subscriptions)."
+     },
+     {
+      "question": "Does the app collect my name, date of birth, or gender?",
+      "answer": "Only if you choose to save them. You can optionally fill in a small profile (name, date of birth, gender) to personalise the experience — it’s completely optional and the core tracking features work without it. When provided, profile details stay on your device and in your own iCloud, never on our servers."
+     },
+     {
+      "question": "How are my profile details used?",
+      "answer": "If you use an optional AI feature (like chat, insights, or tailored feedback), the app can include the relevant bits of your profile — typically your first name, age (worked out from your date of birth), and gender — with the request, so the AI can give you more relevant answers (for example, age-appropriate health guidance or the right pronouns). This only happens when you actively use an AI feature. You can edit or clear your profile, or turn off AI features, any time."
+     },
+     {
+      "question": "What AI services does the app use?",
+      "answer": "The apps use three kinds of AI, all optional and on-demand:\n\n1. **On-device AI** (Apple’s Natural Language API) for things like sentiment scoring — runs entirely on your device, no data leaves it.\n2. **Apple Intelligence** on supported devices — processed on-device where possible, and via Apple’s Private Cloud Compute for heavier tasks. Apple doesn’t store or see your data, and it isn’t used to train Apple’s models.\n3. **OpenAI API** for chat, insights, and tailored feedback — only used when you actively trigger it. Only the relevant data (and, if saved, limited profile context) is sent. OpenAI doesn’t use API data to train their models."
+     },
+     {
+      "question": "Is Apple Health required?",
+      "answer": "No. Apple Health integration is completely optional. The apps work fully without it — you can enter readings manually, use AI Camera Scan, or import CSVs. When you do turn it on, you can pick which data types the app can read or write, and revoke access any time in iOS Settings."
+     },
+     {
+      "question": "How do I delete my data?",
+      "answer": "You’re in control:\n\n- Delete individual entries by swiping on them.\n- Delete your profile (name, date of birth, gender) at any time in the app’s profile screen.\n- Delete all app data at once from the app’s settings.\n- Removing the app and its iCloud backup in your iOS Settings clears everything. Because we don’t keep a copy on our servers, there’s nothing extra for us to delete for you."
      }
     ]
    },
@@ -261,7 +281,7 @@
      },
      {
       "question": "What does the subscription include? What's free?",
-      "answer": "All core tracking features are completely free: unlimited entries, AI camera scanning (always free), all charts and trends, Apple Health sync, and PDF/CSV exports. The subscription adds: ad removal for a clean experience, enhanced AI chat (100 uses per day vs 10 free), and access to advanced AI features. All future premium features will be included for subscribers."
+      "answer": "All core tracking features are completely free: unlimited entries, AI camera scanning (always free), all charts and trends, Apple Health sync, and PDF/CSV exports. The subscription adds enhanced AI chat (100 uses per day vs 10 free) and access to advanced AI features. All future premium features will be included for subscribers. The apps never show ads, whether you subscribe or not."
      },
      {
       "question": "What is MAP and should I track it?",

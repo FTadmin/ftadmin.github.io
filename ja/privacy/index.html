@@ -25,7 +25,6 @@
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-L718GV41LN');
-                gtag('config', 'AW-1066893004');
             };
         }
 
@@ -250,12 +249,11 @@
     <section class="legal-section">
         <h2>情報の収集と使用</h2>
         <div class="legal-content">
-            <p>本サービスをより快適にご利用いただくために、Feeltrackerアプリはデバイス間のデータ同期にiCloudを利用する場合があります。このデータはお客様のiCloudアカウントに安全に保存され、当社がお客様の個人データを収集またはアクセスすることはありません。お客様はデバイスのiCloud設定からiCloudデータを管理できます。</p>
+            <p>サービスをより快適にご利用いただくために、FeeltrackerアプリはデバイスをまたいだデータのSync用にiCloudを使用することがあります。このデータはお客様のiCloudアカウントに安全に保存され、当社が個人データを収集またはアクセスすることはありません。iCloudのデータはデバイスのiCloud設定から管理できます。</p>
 
- <p>本アプリは、アプリ体験を向上させるために集計された非識別データ（使用状況分析やクラッシュレポートなど）を収集する可能性のあるサードパーティサービスを使用しています。</p>
- <p>本アプリが使用するサードパーティサービスプロバイダーのプライバシーポリシーへのリンク：</p>
+ <p>アプリは少数のサードパーティサービスを使用しており、それらのサービスはアプリ体験を向上させるために集計された匿名データ（利用状況の分析やクラッシュレポートなど）を収集する場合があります。広告や広告ネットワークのサービスは使用していません。</p>
+ <p>アプリで使用されるサードパーティサービスプロバイダーのプライバシーポリシーへのリンク：</p>
  <ul>
- <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
  <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
  <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
  <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a></li>
@@ -321,27 +319,99 @@
     </section>
 
     <section class="legal-section">
-        <h2>OpenAIサービスの使用</h2>
+        <h2>プロフィール情報（オプション）</h2>
         <div class="legal-content">
-            <p>当社のアプリは、OpenAIが提供するサービスを統合しており、AI搭載のフィードバック、提案、コンテンツを生成するためにユーザーの入力（テキストやその他のデータなど）を処理する場合があります。これらのサービスを使用する際、お客様が提供するデータは処理のためにOpenAIのサーバーに送信されます。このデータは、要求されたAI応答を提供する目的でのみ使用され、OpenAIのプライバシーポリシーに明示的に記載されている場合を除き、その他の目的で保存または使用されることはありません。</p>
-<p>お客様のデータがOpenAIによってどのように取り扱われるかを理解するために、OpenAIのプライバシーポリシーをご確認ください：
- <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAIプライバシーポリシー</a></p>
-<p>当社のアプリでこの機能を使用することにより、お客様のデータがOpenAIのポリシーに従ってOpenAIと共有され、処理されることに同意したものとみなされます。</p>
+            <p>アプリ内で<strong>氏名、生年月日、性別</strong>を含む小さなプロフィールをオプションで保存できます。これは完全に任意であり——主要なトラッキング機能はそれなしでも動作します。保存した場合でも、アプリ内からいつでも編集・削除できます。</p>
+<p>プロフィール情報は他のデータと同様に保存されます：デバイス上に、またiCloudを使用している場合はプライベートなiCloudアカウントに。当社のサーバーにアップロードすることはなく、広告やマーケティング目的で誰かと共有することもありません。</p>
+<p>オプションのAI機能（OpenAIやApple Intelligenceを利用したチャット、インサイト、カスタムフィードバックなど）を使用する場合、アプリはプロフィールの関連部分——通常は名前、年齢（生年月日から算出）、性別——をリクエストに含めることで、AIがより適切な回答（年齢に応じた健康アドバイスや適切な代名詞など）を提供できるようにします。これはAI機能を実際に使用するときのみ発生し、そのリクエストに必要なプロフィールフィールドのみが送信されます。AI機能をオフにしたり、プロフィールを削除したりすることで、いつでも停止できます。</p>
         </div>
     </section>
 
     <section class="legal-section">
-        <h2>本プライバシーポリシーの変更</h2>
+        <h2>Apple Health（オプション）</h2>
         <div class="legal-content">
-            <p>当社は、プライバシーポリシーを随時更新する場合があります。したがって、変更がないか定期的にこのページをご確認いただくことをお勧めします。変更がある場合は、このページに新しいプライバシーポリシーを掲載することでお知らせいたします。</p>
-<p>本ポリシーは2024年10月19日より有効です。</p>
+            <p>FeeltrackerアプリはApple Health（HealthKit）と連携できますが、これはオンにした場合のみです。iOSで許可を与えるまでアプリはApple Healthからの読み取りや書き込みを行わず、iOSの設定からいつでも許可を取り消せます。</p>
+<p>オンにすると、アプリはApple Healthから関連する履歴（血圧、心拍数、体重、睡眠、State of Mindなど）を読み取り、記録した新しいデータをHealthKitに保存できます。すべての処理はデバイス上で行われます。Apple HealthのデータはCustom Arts Ltdのサーバーを経由せず、第三者に送信されることもなく、Custom Arts Ltdが閲覧することもありません。</p>
+<p>AppleのHealthデータの取り扱いについての詳細は、<a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Appleのプライバシーポリシー</a>をご確認ください。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>Apple Intelligence（オプション）</h2>
+        <div class="legal-content">
+            <p>iOS、iPadOS、またはmacOSの互換バージョンを搭載した最新デバイスでは、FeeltrackerアプリはApple IntelligenceというApple組み込みAIを使ったオプション機能を提供することがあります。これらはお客様が使用を選択した場合にのみ動作します。</p>
+<p>Apple Intelligenceは可能な限りデバイス上で動作し、重い処理にはAppleのPrivate Cloud Computeを使用します。どちらの場合も、Appleはデータが保存されず、Appleに見えず、Appleのモデルのトレーニングに使用されないと述べています。Custom Arts LtdはApple Intelligenceのリクエストや応答を受け取り、保存、または閲覧することはありません。</p>
+<p>詳細については、<a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Appleのプライバシーポリシー</a>をご確認ください。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>OpenAI API（オプション）</h2>
+        <div class="legal-content">
+            <p>アプリの一部のAI機能は、オプションでOpenAI APIを使用しています。入力した内容（例：AIへの質問、日記のエントリ、特定のデータ）を確認し、フィードバック、提案、またはインサイトを返すことができます。これらの機能は完全なオプトイン制です——アクティブに使用することを選択する必要があり、アプリ内からいつでもオフにできます。</p>
+<p>AI機能を使用すると、そのリクエストに必要なものだけがOpenAIに送信されます：(a) プロンプトまたは質問；(b) 質問している特定のデータ（例：説明してほしい血圧や気分のデータ）；(c) プロフィールを保存している場合は、少しのコンテキスト——通常は名前、年齢（生年月日から算出）、性別——AIが返答をカスタマイズできるようにするため（例：適切な代名詞や年齢に合ったアドバイス）。</p>
+<p>OpenAIのAPIポリシーに基づき、API経由で送信されたデータはモデルのトレーニングには使用されず、不正使用チェックのためのみ短期間保存されます。当社はAIのプロンプトや応答をサーバーに保持しません——それらはデバイス上のみに存在します。</p>
+<p>完全なポリシーはこちらでご確認いただけます：<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAIプライバシーポリシー</a>。</p>
+<p>AI機能を使用することにより、関連データ（保存を選択したプロフィール情報を含む）がOpenAIに送信され、そのポリシーに従って処理されることに同意したことになります。OpenAIのポリシーの条件で送信することに抵抗のある内容はAIに入力しないでください。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>広告なし</h2>
+        <div class="legal-content">
+            <p>Feeltrackerアプリは広告を表示せず、広告ネットワークや広告SDKに接続せず、個人・プロフィール・健康データを広告主と共有しません。AdMob、広告取引所、広告アトリビューションSDK、広告ターゲティング分析は使用していません。アプリはApp Storeを通じてAppleが処理するオプションのプレミアムサブスクリプションと一時購入のみで運営されています。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>お客様の権利と選択</h2>
+        <div class="legal-content">
+            <p>アプリに入力したすべての情報はお客様がコントロールできます：</p>
+<ul>
+ <li><strong>データの確認とエクスポート。</strong>プロフィール情報（氏名、生年月日、性別）、記録、日記のエントリはいつでもアプリ内から確認でき、PDF、Excel、またはJSONファイルとしてエクスポートできます。</li>
+ <li><strong>修正。</strong>すべてのエントリやプロフィールフィールドはアプリ内で直接編集できます。</li>
+ <li><strong>削除。</strong>個別のエントリ、プロフィール全体、またはすべてのアプリデータをアプリ内から削除できます。iOSの設定でアプリとそのiCloudバックアップを削除すると、すべてが消去されます。サーバーにコピーを保持していないため、当社側での追加の削除操作は不要です。</li>
+ <li><strong>設定変更。</strong>オプション機能（Apple Health、Apple Intelligence、OpenAI搭載のAI機能、分析・クラッシュレポート）は、アプリまたはiOSの設定で個別にオフにでき、残りのアプリの機能には影響しません。</li>
+ <li><strong>処理の停止。</strong>このポリシーの何かが気に入らない場合は、その機能の使用を停止するか、アプリの使用を停止できます。</li>
+</ul>
+<p>これらの権利はどこでも適用されます。EU/UK GDPRやカリフォルニア州のCCPA/CPRAなどの法律に沿っています。当社はお客様の個人情報を販売せず、CCPA/CPRAの意味での「共有」も行わず、クロスサイト行動広告に使用することもありません。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>法的根拠（EU/UK GDPR）</h2>
+        <div class="legal-content">
+            <p>EU またはUK GDPRが適用される場合、当社はお客様が自分でオンにするオプション機能（Apple Health、Apple Intelligence、OpenAI搭載のAI機能、AIをカスタマイズするために使用されるプロフィールデータ、分析・クラッシュレポート）については<strong>お客様の同意</strong>に依拠し、アプリの動作維持、クラッシュの修正、不正使用の防止については<strong>正当な利益</strong>に依拠しています。機能をオフにすることで同意をいつでも撤回できます——それ以前に起きたことには影響しません。</p>
+<p>Custom Arts Ltdはアプリが処理する個人データのデータコントローラーです。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>データの保管場所</h2>
+        <div class="legal-content">
+            <p>お客様の個人データと健康データはデバイス上およびお客様自身のiCloudアカウントに保管されます——お客様が管理しています。当社が使用する一部のオプションのサードパーティサービス（Firebase、RevenueCat、OpenAI）は米国を拠点とするプロバイダーが運営しており、一部のデータをそこで処理する場合があります。必要な場合、これらはEU/UK圏外への個人データの移転に標準契約条項および/またはEU-US Data Privacy Frameworkを使用しています。データが移転されることを避けたい場合は、対応するオプション機能をオフにすることができます。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>データの保存期間</h2>
+        <div class="legal-content">
+            <p>当社はサーバーにアプリデータのコピーを保持しません。お客様のデータはアプリがインストールされ、iCloudバックアップがオンになっている間は、デバイス上およびiCloud上に保存されます。Firebase Crashlytics/Analyticsのデータはプロジェクトのデフォルト保存期間でGoogleが保持します。RevenueCatはアクティブなサブスクリプションがある間および税法が要求する期間、購入・領収書データを保持します。OpenAIはAPIデータ使用ポリシーに従ってAPIリクエストデータを保持します。機能をオフにするかアプリを削除すると、それ以降の収集が停止されます。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>プライバシーポリシーの変更</h2>
+        <div class="legal-content">
+            <p>プライバシーポリシーは随時更新される場合があります。変更がないか定期的にこのページをご確認いただくことをお勧めします。重要な変更はこのページで強調表示され、更新されたポリシーが発効した後にアプリを継続して使用することで、更新されたポリシーへの同意とみなされます。</p>
+<p>このポリシーは2026年4月20日より有効です。</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>お問い合わせ</h2>
         <div class="legal-content">
-            <p>当社のプライバシーポリシーに関するご質問やご提案がございましたら、お気軽に<a href="mailto:support@feeltracker.com">support@feeltracker.com</a>までご連絡ください。</p>
+            <p>プライバシーポリシーについてご質問やご意見がございましたら、<a href="mailto:support@feeltracker.com">support@feeltracker.com</a>までお気軽にご連絡ください。</p>
         </div>
     </section>
 

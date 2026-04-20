@@ -139,7 +139,7 @@
      },
      {
       "question": "Her cihaz için ayrı bir aboneliğim olması gerekiyor mu?",
-      "answer": "Bir abonelik tüm cihazlarda reklamları kaldırır. Ek cihazlarda reklam görüyorsanız Ayarlar > Reklamları Kaldır'a gidin ve Satın Alma Geçmişini Geri Yükle'ye basın. Her cihazın aynı iCloud hesabına giriş yaptığından emin olun."
+      "answer": "Hayır. Tek bir abonelik, aynı iCloud hesabına giriş yapılmış tüm cihazlarda premium özelliklerin kilidini açar. Premium başka bir cihazda görünmüyorsa Ayarlar > Abonelik'e (veya uygulamadaki eşdeğerine) gidin ve Satın Almayı Geri Yükle'ye basın. Her cihazın aynı iCloud hesabına giriş yapıldığından emin olun."
      },
      {
       "question": "Yedeklemeler nasıl çalışır?",
@@ -198,16 +198,16 @@
       "answer": "Evet. Normalde yaptığınız gibi cihazı kilitlemek için yan düğmeye bastığınız anda, cihaz kilitliyken kimse uygulamanıza veya verilerinize erişemez."
      },
      {
-      "question": "Reklamlar neden var?",
-      "answer": "Sizi önce uygulamayı denemenizi ve herhangi bir dikkat dağıtıcı olmadan faydalı bulup bulmadığınızı görmenizi istiyoruz — bunu Google reklamları görmeden ücretsiz yapabilirsiniz. 7 kayıt kaydettikten sonra, uygulamayı desteklemeye ve ücretsiz tutmaya yardımcı olan bazı Google reklamları görebilirsiniz."
+      "question": "Uygulama reklam gösteriyor mu?",
+      "answer": "Hayır. Feeltracker uygulamaları üçüncü taraf reklam göstermez ve herhangi bir reklam ağı veya reklam izleme SDK'sı (AdMob gibi) kullanmaz. Kişisel ve sağlık verileriniz asla reklamverenlerle paylaşılmaz. Uygulamalar tamamen App Store üzerinden sunulan isteğe bağlı premium abonelikler ve tek seferlik satın almalar ile finanse edilmektedir."
      },
      {
-      "question": "Reklamlardan hoşlanmıyorum! Onları kaldırmak için ödeme yapabilir miyim?",
-      "answer": "Evet! Bunu yapmak için bannerdaki ❎ düğmesine basın. Bu, nominal bir ücret karşılığında abone olma seçeneğini getirecektir. Abone olduğunuz sürece herhangi bir reklam görmeyeceksiniz."
+      "question": "Ücretsiz sürüm var mı?",
+      "answer": "Evet. Temel takip özelliklerinin tamamı — sınırsız giriş, grafikler ve eğilimler, Apple Health senkronizasyonu, PDF/CSV dışa aktarma ve AI Kamera Tarama — tamamen ücretsizdir. Premium isteğe bağlıdır ve yalnızca gelişmiş AI sohbet limitleri ve ileri düzey yapay zeka özellikleri gibi şeyler ekler."
      },
      {
-      "question": "Ödeme yapamıyorum, ama uygulamalardaki reklamlardan nefret ediyorum!",
-      "answer": "Sizi anlıyoruz. Bu özelleştirilmiş yerel reklamlar, göze batmadan veya spam gibi görünmeden uygulamanın geri kalanıyla uyum sağlayacak şekilde tasarlanmıştır. Ödeme yapamıyor olsanız bile uygulamayı keyifle kullanabilmenizi istiyoruz. Arkadaşlarınıza söylemeyi unutmayın!"
+      "question": "Aboneliğim ne için ödeniyor?",
+      "answer": "Aboneliğiniz süregelen geliştirmeyi finanse eder — yeni özellikler, hata düzeltmeleri, çeviriler ve isteğe bağlı yapay zeka özellikleri için sunucu maliyetleri. Reklam yayınlamadığımızdan, abonelikler ve tek seferlik satın almalar uygulamayı finanse etmenin tek yoludur ve herkes için deneyimi temiz ve gizli tutar."
      },
      {
       "question": "Neden abone olmalıyım? Neden bir kez ödeyemiyorum?",
@@ -227,6 +227,26 @@
      {
       "question": "Ücretli aboneliğimi iptal etmek istiyorum",
       "answer": "Uygulamayı denediğiniz için teşekkür ederiz. Daha iyi yapabileceğim bir şey varsa [gs@feeltracker.com](mailto:gs@feeltracker.com) adresinden bana bildirin, yardımcı olmaya çalışacağım. Genellikle kullanıcı geri bildirimlerine dayalı düzeltmeler ve iyileştirmeler aynı veya ertesi gün bir uygulama güncellemesinde gönderilir.\n\nHâlâ memnun değilseniz, aboneliğinizi [buradan](https://apps.apple.com/account/subscriptions) iptal edebilirsiniz."
+     },
+     {
+      "question": "Uygulama adımı, doğum tarihimi veya cinsiyetimi topluyor mu?",
+      "answer": "Yalnızca kaydetmeyi seçerseniz. Deneyimi kişiselleştirmek için isteğe bağlı olarak küçük bir profil (ad, doğum tarihi, cinsiyet) doldurabilirsiniz — tamamen isteğe bağlıdır ve temel takip özellikleri onsuz da çalışır. Girildiğinde profil ayrıntıları cihazınızda ve kendi iCloud'unuzda kalır, sunucularımızda asla yer almaz."
+     },
+     {
+      "question": "Profil bilgilerim nasıl kullanılıyor?",
+      "answer": "İsteğe bağlı bir yapay zeka özelliği kullanırsanız (sohbet, içgörüler veya OpenAI ya da Apple Intelligence destekli özelleştirilmiş geri bildirim gibi), uygulama profilinizin ilgili bölümlerini — genellikle adınız, yaşınız (doğum tarihinizden hesaplanır) ve cinsiyetiniz — isteğe dahil edebilir; böylece yapay zeka daha ilgili yanıtlar verebilir (örneğin yaşa uygun sağlık rehberliği veya doğru zamirler). Bu yalnızca bir yapay zeka özelliğini aktif olarak kullandığınızda gerçekleşir. Profilinizi istediğiniz zaman düzenleyebilir veya temizleyebilir ya da yapay zeka özelliklerini kapatabilirsiniz."
+     },
+     {
+      "question": "Uygulama hangi yapay zeka hizmetlerini kullanıyor?",
+      "answer": "Uygulamalar üç tür yapay zeka kullanır; hepsi isteğe bağlı ve talep üzerinedir:\n\n1. **Cihaz üzerinde yapay zeka** (Apple'ın Natural Language API'si) duygu puanlaması gibi şeyler için — tamamen cihazınızda çalışır, hiçbir veri dışarı çıkmaz.\n2. **Apple Intelligence** destekli cihazlarda — mümkün olan durumlarda cihaz üzerinde, daha ağır görevler için Apple'ın Private Cloud Compute aracılığıyla işlenir. Apple verilerinizi saklamaz veya görmez ve bu veriler Apple'ın modellerini eğitmek için kullanılmaz.\n3. **OpenAI API** sohbet, içgörüler ve özelleştirilmiş geri bildirim için — yalnızca aktif olarak tetiklediğinizde kullanılır. Yalnızca ilgili veriler (ve kaydedildiyse sınırlı profil bağlamı) gönderilir. OpenAI, API verilerini modellerini eğitmek için kullanmaz."
+     },
+     {
+      "question": "Apple Health zorunlu mu?",
+      "answer": "Hayır. Apple Health entegrasyonu tamamen isteğe bağlıdır. Uygulamalar onsuz tam olarak çalışır — okumaları manuel olarak girebilir, AI Kamera Tarama kullanabilir veya CSV içe aktarabilirsiniz. Açtığınızda, uygulamanın hangi veri türlerini okuyup yazabileceğini seçebilir ve iOS Ayarları'nda erişimi istediğiniz zaman iptal edebilirsiniz."
+     },
+     {
+      "question": "Verilerimi nasıl silebilirim?",
+      "answer": "Kontrol sizdedir:\n\n- Bireysel girişleri üzerlerinde kaydırarak silin.\n- Profilinizi (ad, doğum tarihi, cinsiyet) uygulamanın profil ekranından istediğiniz zaman silin.\n- Tüm uygulama verilerini bir seferde uygulamanın ayarlarından silin.\n- Uygulamayı ve iOS Ayarları'ndaki iCloud yedeğini kaldırmak her şeyi temizler. Sunucularımızda bir kopyasını saklamadığımızdan, sizin adınıza silmemiz gereken ekstra bir şey yoktur."
      }
     ]
    },
@@ -255,7 +275,7 @@
      },
      {
       "question": "Abonelik neleri kapsıyor? Ücretsiz olan neler?",
-      "answer": "Tüm temel takip özellikleri tamamen ücretsizdir: sınırsız girişler, AI kamera tarama (her zaman ücretsiz), tüm grafikler ve eğilimler, Apple Health senkronizasyonu ve PDF/CSV dışa aktarmaları. Abonelik şunları ekler: temiz bir deneyim için reklam kaldırma, gelişmiş AI sohbeti (günde 10 ücretsiz yerine 100 kullanım) ve gelişmiş AI özelliklerine erişim. Tüm gelecekteki premium özellikler aboneler için dahil edilecektir."
+      "answer": "Tüm temel takip özellikleri tamamen ücretsizdir: sınırsız giriş, AI kamera tarama (her zaman ücretsiz), tüm grafikler ve eğilimler, Apple Health senkronizasyonu ve PDF/CSV dışa aktarma. Abonelik gelişmiş AI sohbeti (günde 10 ücretsiz yerine 100 kullanım) ve gelişmiş yapay zeka özelliklerine erişim ekler. Gelecekteki tüm premium özellikler aboneler için dahil edilecektir. Uygulamalar abone olsanız da olmasanız da hiçbir zaman reklam göstermez."
      },
      {
       "question": "OAB nedir ve takip etmeli miyim?",
