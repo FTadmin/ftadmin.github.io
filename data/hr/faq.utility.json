@@ -131,7 +131,7 @@
      },
      {
       "question": "Trebam li pretplatu za svaki uređaj?",
-      "answer": "Jedna pretplata uklonit će oglase na svim uređajima. Ako vidite oglase na dodatnim uređajima, idite na Postavke > Ukloni oglase i pritisnite Vrati kupnju. Provjerite da je svaki uređaj prijavljen na isti iCloud račun."
+      "answer": "Ne. Jedna pretplata otključava premium značajke na svim uređajima prijavljenima na isti iCloud račun. Ako se premium ne pojavi na drugom uređaju, idi na Postavke > Pretplata (ili ekvivalent u aplikaciji) i pritisni Obnovi kupnju. Osiguraj da je svaki uređaj prijavljen na isti iCloud račun."
      },
      {
       "question": "Kako funkcioniraju sigurnosne kopije?",
@@ -190,16 +190,16 @@
       "answer": "Da. Čim pritisnete bočni gumb na uređaju, da ga zaključate kao što to inače radite, nitko ne može pristupiti vašoj aplikaciji ili podacima dok je zaključan."
      },
      {
-      "question": "Što je s oglasima?",
-      "answer": "Želimo da prvo isprobate aplikaciju i vidite je li vam korisna, bez ikakvih smetnji - to možete učiniti besplatno, bez Google oglasa. Nakon što spremite 7 zapisa, možda ćete vidjeti neke Google oglase koji pomažu u podršci aplikacije i održavaju je besplatnom."
+      "question": "Prikazuje li aplikacija oglase?",
+      "answer": "Ne. Feeltracker aplikacije ne prikazuju oglase trećih strana i ne koriste mreže oglašavanja ili SDK-ove za praćenje oglasa (poput AdMoba). Tvoji osobni i zdravstveni podaci nikad se ne dijele s oglašivačima. Aplikacije se financiraju isključivo opcijskim premium pretplatama i jednokratnim kupnjama putem App Storea."
      },
      {
-      "question": "Ne volim oglase! Mogu li platiti da ih uklonim?",
-      "answer": "Da! Za to pritisnite gumb ❎ na banneru. To će prikazati opciju za pretplatu, za simboličnu naknadu. Dok ste pretplaćeni, nećete vidjeti nikakve oglase."
+      "question": "Postoji li besplatna verzija?",
+      "answer": "Da. Sve osnovne značajke praćenja — neograničeni unosi, grafikoni i trendovi, sinkronizacija s Apple Healthom, PDF/CSV izvoz i AI Camera Scan — potpuno su besplatne. Premium je opcionalan i dodaje samo stvari poput poboljšanih ograničenja AI chata i naprednih AI značajki."
      },
      {
-      "question": "Ne mogu platiti, ali mrzim oglase u aplikacijama!",
-      "answer": "Razumijemo vas. Ovi prilagođeni oglasi dizajnirani su da se uklope u ostatak aplikacije i još uvijek izgledaju dobro, bez da su nametljivi ili spamovski. Želimo da možete uživati u korištenju aplikacije, čak i ako ne možete platiti. Ne zaboravite reći prijateljima o njoj!"
+      "question": "Za što plaćam pretplatom?",
+      "answer": "Tvoja pretplata financira kontinuirani razvoj — nove značajke, ispravke grešaka, prijevode i troškove poslužitelja za opcijske AI značajke. Budući da ne prikazujemo oglase, pretplate i jednokratne kupnje jedini su način na koji financiramo aplikaciju, a iskustvo za sve drže čistim i privatnim."
      },
      {
       "question": "Zašto bih se trebao/trebala pretplatiti? Zašto ne mogu platiti samo jednom?",
@@ -219,6 +219,26 @@
      {
       "question": "Želim otkazati svoju plaćenu pretplatu",
       "answer": "Hvala vam što ste isprobali aplikaciju. Javite mi mogu li nešto poboljšati na [gs@feeltracker.com](mailto:gs@feeltracker.com) i pokušat ću pomoći. Često se popravci i poboljšanja temeljena na povratnim informacijama korisnika isporučuju u ažuriranju aplikacije isti ili sljedeći dan.\n\nAko još uvijek niste zadovoljni, možete otkazati pretplatu [ovdje](https://apps.apple.com/account/subscriptions)."
+     },
+     {
+      "question": "Prikuplja li aplikacija moje ime, datum rođenja ili spol?",
+      "answer": "Samo ako odabereš njihovo spremanje. Opcionalno možeš ispuniti mali profil (ime, datum rođenja, spol) za personalizaciju iskustva — to je potpuno opcionalno i osnovne značajke praćenja rade bez njega. Kada su navedeni, detalji profila ostaju na tvom uređaju i u tvom iCloudu, nikad na našim poslužiteljima."
+     },
+     {
+      "question": "Kako se koriste moji podaci iz profila?",
+      "answer": "Ako koristiš opcijsku AI značajku (poput chata, uvida ili personaliziranog povratka), aplikacija može uključiti relevantne dijelove tvog profila — obično ime, dob (izračunatu iz datuma rođenja) i spol — u zahtjev, kako bi AI mogla dati relevantnije odgovore (primjerice, zdravstvene smjernice primjerene dobi ili ispravne zamjenice). To se događa samo kada aktivno koristiš AI značajku. Profil možeš urediti ili obrisati, ili isključiti AI značajke, bilo kada."
+     },
+     {
+      "question": "Koje AI usluge koristi aplikacija?",
+      "answer": "Aplikacije koriste tri vrste AI, sve opcijske i na zahtjev:\n\n1. **AI na uređaju** (Appleov Natural Language API) za stvari poput analize sentimenta — pokreće se potpuno na tvom uređaju, podaci ga ne napuštaju.\n2. **Apple Intelligence** na podržanim uređajima — obrađuje se na uređaju gdje je moguće i putem Appleovog Private Cloud Computea za zahtjevnije zadatke. Apple ne pohranjuje niti vidi tvoje podatke i ne koriste se za obučavanje Appleovih modela.\n3. **OpenAI API** za chat, uvide i personalizirani povrat — koristi se samo kada ga aktivno pokreneš. Šalju se samo relevantni podaci (i, ako su spremljeni, ograničeni kontekst profila). OpenAI ne koristi API podatke za obučavanje svojih modela."
+     },
+     {
+      "question": "Je li Apple Health obavezan?",
+      "answer": "Ne. Integracija s Apple Healthom potpuno je opcionalna. Aplikacije u potpunosti rade bez njega — možeš ručno unositi očitanja, koristiti AI Camera Scan ili uvoziti CSV datoteke. Kada ga uključiš, možeš odabrati koje vrste podataka aplikacija može čitati ili pisati i opozvati pristup bilo kada u iOS Postavkama."
+     },
+     {
+      "question": "Kako izbrisati svoje podatke?",
+      "answer": "Ti upravljaš svime:\n\n- Briši pojedinačne unose povlačenjem.\n- Izbriši profil (ime, datum rođenja, spol) bilo kada na zaslonu profila u aplikaciji.\n- Izbriši sve podatke aplikacije odjednom iz postavki aplikacije.\n- Uklanjanje aplikacije i njezine iCloud sigurnosne kopije u iOS Postavkama briše sve. Budući da ne čuvamo kopiju na našim poslužiteljima, nema ničega dodatnog za nas da brišemo u tvoje ime."
      }
     ]
    },
@@ -247,7 +267,7 @@
      },
      {
       "question": "Što uključuje pretplata? Što je besplatno?",
-      "answer": "Sve osnovne značajke praćenja su potpuno besplatne: neograničeni unosi, AI skeniranje kamerom (uvijek besplatno), svi grafikoni i trendovi, sinkronizacija s Apple Healthom i izvoz u PDF/CSV. Pretplata dodaje: uklanjanje oglasa za čist doživljaj, poboljšani AI chat (100 korištenja dnevno naspram 10 besplatnih) i pristup naprednim AI značajkama. Sve buduće premium značajke bit će uključene za pretplatnike."
+      "answer": "Sve osnovne značajke praćenja potpuno su besplatne: neograničeni unosi, AI skeniranje kamerom (uvijek besplatno), svi grafikoni i trendovi, sinkronizacija s Apple Healthom i PDF/CSV izvozi. Pretplata dodaje poboljšani AI chat (100 upotreba dnevno nasuprot 10 besplatnih) i pristup naprednim AI značajkama. Sve buduće premium značajke bit će uključene za pretplatnike. Aplikacije nikad ne prikazuju oglase, bez obzira na pretplatu."
      },
      {
       "question": "Što je MAP i trebam li ga pratiti?",

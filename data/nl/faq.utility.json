@@ -131,7 +131,7 @@
      },
      {
       "question": "Heb ik een abonnement nodig voor elk apparaat?",
-      "answer": "Eén abonnement verwijdert advertenties op alle apparaten. Als u advertenties ziet op extra apparaten, ga naar Instellingen > Advertenties verwijderen en druk op Aankoop herstellen. Zorg ervoor dat elk apparaat is ingelogd met hetzelfde iCloud-account."
+      "answer": "Nee. Eén abonnement ontgrendelt premiumfuncties op alle apparaten die zijn aangemeld bij hetzelfde iCloud-account. Als premium niet verschijnt op een ander apparaat, ga dan naar Instellingen > Abonnement (of het equivalent in de app) en tik op Aankoop herstellen. Zorg ervoor dat elk apparaat is aangemeld bij hetzelfde iCloud-account."
      },
      {
       "question": "Hoe werken back-ups?",
@@ -190,16 +190,16 @@
       "answer": "Ja. Zodra u op de zijknop van het apparaat drukt om het te vergrendelen zoals u normaal doet, kan niemand bij uw app of gegevens komen terwijl het vergrendeld is."
      },
      {
-      "question": "Wat is er met de advertenties?",
-      "answer": "We willen dat u de app eerst uitprobeert en ziet of u hem nuttig vindt, zonder afleidingen - dit kunt u gratis doen, zonder Google-advertenties te zien. Nadat u 7 records heeft opgeslagen, kunt u mogelijk enkele Google-advertenties zien, die de app ondersteunen en gratis houden."
+      "question": "Toont de app advertenties?",
+      "answer": "Nee. De Feeltracker-apps tonen geen advertenties van derden en gebruiken geen advertentienetwerken of advertentietracering-SDK's (zoals AdMob). Je persoonlijke en gezondheidsgegevens worden nooit gedeeld met adverteerders. De apps worden volledig gefinancierd door optionele premiumabonnementen en eenmalige aankopen via de App Store."
      },
      {
-      "question": "Ik houd niet van advertenties! Kan ik betalen om ze te verwijderen?",
-      "answer": "Ja! Druk hiervoor op de ❎ knop op de banner. Dit brengt de optie omhoog om te abonneren voor een kleine vergoeding. Zolang u geabonneerd bent, ziet u geen advertenties."
+      "question": "Is er een gratis versie?",
+      "answer": "Ja. Alle basisfuncties voor bijhouden — onbeperkte invoer, grafieken en trends, Apple Health-synchronisatie, PDF/CSV-export en AI Camera Scan — zijn volledig gratis. Premium is optioneel en voegt alleen dingen toe zoals verbeterde AI-chatlimieten en geavanceerde AI-functies."
      },
      {
-      "question": "Ik kan niet betalen, maar haat advertenties in apps!",
-      "answer": "We begrijpen u. Deze aangepaste native advertenties zijn ontworpen om op te gaan in de rest van de app en er toch goed uit te zien, zonder storend of opdringerig te zijn. We willen dat u de app kunt genieten, zelfs als u niet kunt betalen. Vergeet niet het aan uw vrienden te vertellen!"
+      "question": "Waar betaal ik mijn abonnement voor?",
+      "answer": "Je abonnement financiert de doorlopende ontwikkeling — nieuwe functies, bugfixes, vertalingen en serverkosten voor optionele AI-functies. Omdat we geen advertenties tonen, zijn abonnementen en eenmalige aankopen de enige manier waarop we de app financieren, en ze houden de ervaring schoon en privé voor iedereen."
      },
      {
       "question": "Waarom zou ik me abonneren? Waarom kan ik niet één keer betalen?",
@@ -219,6 +219,26 @@
      {
       "question": "Ik wil mijn betaald abonnement opzeggen",
       "answer": "Bedankt voor het uitproberen van de app. Laat me weten of er iets is dat ik beter kan doen op [gs@feeltracker.com](mailto:gs@feeltracker.com) en ik zal proberen te helpen. Vaak worden fixes en verbeteringen op basis van gebruikersfeedback dezelfde of volgende dag in een app-update uitgebracht.\n\nAls u nog steeds niet tevreden bent, kunt u uw abonnement [hier](https://apps.apple.com/account/subscriptions) opzeggen."
+     },
+     {
+      "question": "Verzamelt de app mijn naam, geboortedatum of geslacht?",
+      "answer": "Alleen als je ervoor kiest ze op te slaan. Je kunt optioneel een klein profiel invullen (naam, geboortedatum, geslacht) om de ervaring te personaliseren — dit is volledig optioneel en de basisfuncties werken er zonder. Als je dit invult, blijven de profielgegevens op je apparaat en in je eigen iCloud, nooit op onze servers."
+     },
+     {
+      "question": "Hoe worden mijn profielgegevens gebruikt?",
+      "answer": "Als je een optionele AI-functie gebruikt (zoals chat, inzichten of gepersonaliseerde feedback), kan de app de relevante delen van je profiel meesturen met het verzoek — meestal je voornaam, leeftijd (berekend uit je geboortedatum) en geslacht — zodat de AI relevantere antwoorden kan geven (bijvoorbeeld leeftijdsgeschikte gezondheidsbegeleiding of de juiste voornaamwoorden). Dit gebeurt alleen wanneer je actief een AI-functie gebruikt. Je kunt je profiel op elk moment bewerken of wissen, of AI-functies uitschakelen."
+     },
+     {
+      "question": "Welke AI-diensten gebruikt de app?",
+      "answer": "De apps gebruiken drie soorten AI, allemaal optioneel en op aanvraag:\n\n1. **On-device AI** (Apple's Natural Language API) voor dingen zoals sentimentscores — werkt volledig op je apparaat, er verlaat geen data het apparaat.\n2. **Apple Intelligence** op ondersteunde apparaten — verwerkt op het apparaat waar mogelijk, en via Apple's Private Cloud Compute voor zwaardere taken. Apple slaat je data niet op en ziet het niet, en het wordt niet gebruikt om Apple's modellen te trainen.\n3. **OpenAI API** voor chat, inzichten en gepersonaliseerde feedback — alleen gebruikt wanneer je het actief activeert. Alleen de relevante data (en, indien opgeslagen, beperkte profielcontext) wordt verstuurd. OpenAI gebruikt API-data niet om hun modellen te trainen."
+     },
+     {
+      "question": "Is Apple Health vereist?",
+      "answer": "Nee. Apple Health-integratie is volledig optioneel. De apps werken volledig zonder — je kunt metingen handmatig invoeren, AI Camera Scan gebruiken of CSV's importeren. Als je het inschakelt, kun je kiezen welke datatypes de app kan lezen of schrijven, en je kunt toegang op elk moment intrekken in iOS-instellingen."
+     },
+     {
+      "question": "Hoe verwijder ik mijn gegevens?",
+      "answer": "Jij hebt de controle:\n\n- Verwijder individuele invoer door erop te vegen.\n- Verwijder je profiel (naam, geboortedatum, geslacht) op elk moment in het profielscherm van de app.\n- Verwijder alle app-gegevens tegelijk via de app-instellingen.\n- De app verwijderen en de iCloud-back-up in je iOS-instellingen wist alles. Omdat we geen kopie op onze servers bewaren, is er niets extra's voor ons om voor jou te verwijderen."
      }
     ]
    },
@@ -247,7 +267,7 @@
      },
      {
       "question": "Wat is er inbegrepen bij het abonnement? Wat is gratis?",
-      "answer": "Alle kernfuncties voor het bijhouden zijn volledig gratis: onbeperkte invoer, AI-camerascanning (altijd gratis), alle grafieken en trends, Apple Health-synchronisatie en PDF/CSV-exports. Het abonnement voegt toe: advertentieverwijdering voor een nette ervaring, verbeterde AI-chat (100 gebruiken per dag vs. 10 gratis), en toegang tot geavanceerde AI-functies. Alle toekomstige premiumfuncties zijn inbegrepen voor abonnees."
+      "answer": "Alle basisfuncties voor bijhouden zijn volledig gratis: onbeperkte invoer, AI-camerascan (altijd gratis), alle grafieken en trends, Apple Health-synchronisatie en PDF/CSV-exports. Het abonnement voegt verbeterde AI-chat toe (100 gebruik per dag vs. 10 gratis) en toegang tot geavanceerde AI-functies. Alle toekomstige premiumfuncties zijn inbegrepen voor abonnees. De apps tonen nooit advertenties, of je nu abonnee bent of niet."
      },
      {
       "question": "Wat is MAP en moet ik het bijhouden?",

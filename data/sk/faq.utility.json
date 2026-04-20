@@ -95,7 +95,7 @@
      },
      {
       "question": "Musím mať predplatné pre každé zariadenie?",
-      "answer": "Jedno predplatné odstráni reklamy na všetkých zariadeniach. Ak sa reklamy zobrazujú na ďalších zariadeniach, prejdite do Nastavenia > Odstrániť reklamy a stlačte Obnoviť nákup. Uistite sa, že každé zariadenie je prihlásené do rovnakého iCloud účtu."
+      "answer": "Nie. Jedno predplatné odomkne prémiové funkcie na všetkých zariadeniach prihlásených do rovnakého účtu iCloud. Ak sa prémium na inom zariadení nezobrazí, prejdi do Nastavenia > Predplatné (alebo do ekvivalentu v aplikácii) a stlač Obnoviť nákup. Uisti sa, že každé zariadenie je prihlásené do rovnakého účtu iCloud."
      },
      {
       "question": "Ako fungujú zálohy?",
@@ -154,16 +154,16 @@
       "answer": "Áno. Akonáhle stlačíte bočné tlačidlo na zariadení, aby ste ho zamkli, nikto sa nemôže dostať do vašej aplikácie alebo údajov, kým je zariadenie zamknuté."
      },
      {
-      "question": "Čo s reklamami?",
-      "answer": "Chceme, aby ste si aplikáciu najprv vyskúšali a zistili, či je pre vás užitočná, bez rozptyľovania – môžete to urobiť zadarmo bez zobrazenia reklám Google. Po uložení 7 záznamov sa môžu zobraziť niektoré reklamy Google, ktoré pomáhajú podporovať aplikáciu a udržiavať ju zadarmo."
+      "question": "Zobrazuje aplikácia reklamy?",
+      "answer": "Nie. Aplikácie Feeltracker nezobrazujú reklamy tretích strán a nepoužívajú žiadne reklamné siete ani SDK na sledovanie reklám (ako napríklad AdMob). Tvoje osobné a zdravotné údaje nikdy nezdieľame s inzerentmi. Aplikácie sú financované výlučne voliteľnými prémiami predplatnými a jednorazovými nákupmi cez App Store."
      },
      {
-      "question": "Nemám rád reklamy! Môžem zaplatiť za ich odstránenie?",
-      "answer": "Áno! Stlačte tlačidlo ❎ na banneri. Zobrazí sa možnosť predplatného za nominálny poplatok. Počas predplatného sa reklamy nezobrazia."
+      "question": "Existuje bezplatná verzia?",
+      "answer": "Áno. Všetky základné funkcie sledovania — neobmedzené záznamy, grafy a trendy, synchronizácia Apple Health, export PDF/CSV a AI Camera Scan — sú úplne zadarmo. Prémium je voliteľné a pridáva iba veci ako vylepšené limity AI chatu a pokročilé funkcie AI."
      },
      {
-      "question": "Nemôžem platiť, ale nenávidím reklamy v aplikáciách!",
-      "answer": "Rozumieme. Tieto prispôsobené natívne reklamy sú navrhnuté tak, aby sa splývali so zvyškom aplikácie a stále vyzerali dobre, bez toho, aby pôsobili rušivo alebo spamovito. Chceme, aby ste mohžli aplikáciu užívať, aj keď nemôžete platiť. Nezabudnite o nej povedať priateľom!"
+      "question": "Na čo platím predplatným?",
+      "answer": "Tvoje predplatné financuje priebežný vývoj — nové funkcie, opravy chýb, preklady a náklady na server pre voliteľné funkcie AI. Keďže neprevádzkujeme reklamy, predplatné a jednorazové nákupy sú jediný spôsob, ako financujeme aplikáciu, a udržiavajú zážitok čistý a súkromný pre každého."
      },
      {
       "question": "Prečo by som si mal predplatiť? Prečo nemôžem zaplatiť len raz?",
@@ -183,6 +183,26 @@
      {
       "question": "Chcem zrušiť platené predplatné",
       "answer": "Ďakujeme za vyskúšanie aplikácie. Dajte mi vedieť, ak môžem niečo zlepšiť na [gs@feeltracker.com](mailto:gs@feeltracker.com) a pokúsim sa pomôcť. Opravy a vylepšenia na základe spätnej väzby používateľov sa často odosielú v aktualizácii aplikácie v rovnaký alebo nasledujúci deň.\n\nAk stále nie ste spokojní, predplatné môžete zrušiť [tu](https://apps.apple.com/account/subscriptions)."
+     },
+     {
+      "question": "Zbiera aplikácia moje meno, dátum narodenia alebo pohlavie?",
+      "answer": "Iba ak sa rozhodneš ich uložiť. Voliteľne môžeš vyplniť malý profil (meno, dátum narodenia, pohlavie) na prispôsobenie zážitku — je to úplne voliteľné a základné funkcie sledovania fungujú aj bez neho. Keď sú poskytnuté, podrobnosti profilu zostávajú na tvojom zariadení a vo vlastnom iCloud, nikdy na našich serveroch."
+     },
+     {
+      "question": "Ako sa používajú moje profilové údaje?",
+      "answer": "Ak používaš voliteľnú funkciu AI (ako chat, prehľady alebo prispôsobenú spätnú väzbu), aplikácia môže zahrnúť relevantné časti tvojho profilu — zvyčajne krstné meno, vek (vypočítaný z dátumu narodenia) a pohlavie — do žiadosti, aby AI mohla poskytnúť relevantnejšie odpovede (napríklad zdravotné usmernenia vhodné pre vek alebo správne zámenná). Toto sa deje iba vtedy, keď aktívne používaš funkciu AI. Profil môžeš kedykoľvek upraviť alebo vymazať, alebo vypnúť funkcie AI."
+     },
+     {
+      "question": "Aké služby AI aplikácia používa?",
+      "answer": "Aplikácie používajú tri druhy AI, všetky voliteľné a na vyžiadanie:\n\n1. **AI na zariadení** (Apple Natural Language API) pre veci ako skórovanie sentimentu — beží úplne na tvojom zariadení, žiadne dáta ho neopúšťajú.\n2. **Apple Intelligence** na podporovaných zariadeniach — spracúvaná na zariadení tam, kde je to možné, a prostredníctvom Apple Private Cloud Compute pre náročnejšie úlohy. Apple neukladá ani nevidí tvoje dáta a nepoužívajú sa na tréning modelov Apple.\n3. **OpenAI API** pre chat, prehľady a prispôsobenú spätnú väzbu — používa sa iba vtedy, keď ho aktívne spustíš. Odosielajú sa iba relevantné dáta (a, ak sú uložené, obmedzený kontext profilu). OpenAI nepoužíva dáta API na tréning svojich modelov."
+     },
+     {
+      "question": "Je Apple Health povinný?",
+      "answer": "Nie. Integrácia Apple Health je úplne voliteľná. Aplikácie fungujú úplne aj bez neho — môžeš zadávať údaje manuálne, používať AI Camera Scan alebo importovať CSV súbory. Keď ho zapneš, môžeš si vybrať, ktoré typy dát môže aplikácia čítať alebo zapisovať, a prístup môžeš kedykoľvek odvolať v Nastaveniach iOS."
+     },
+     {
+      "question": "Ako vymazat moje dáta?",
+      "answer": "Máš nad tým kontrolu:\n\n- Vymaž jednotlivé záznamy potiahnutím.\n- Vymaž svoj profil (meno, dátum narodenia, pohlavie) kedykoľvek na obrazovke profilu v aplikácii.\n- Vymaž všetky dáta aplikácie naraz z nastavení aplikácie.\n- Odstránenie aplikácie a jej zálohy iCloud v Nastaveniach iOS vymaže všetko. Keďže neuchovávame kópiu na našich serveroch, nie je nič navyše, čo by sme za teba mali vymazať."
      }
     ]
    },
@@ -211,7 +231,7 @@
      },
      {
       "question": "Čo zahŕňa predplatné? Čo je zadarmo?",
-      "answer": "Všetky základné funkcie sledovania sú úplne zadarmo: neobmedzené záznamy, AI skenovanie kamerou (vždy zadarmo), všetky grafy a trendy, synchronizácia Apple Health a exporty PDF/CSV. Predplatné pridáva: odstránenie reklám pre čistý zážitok, vylepšený AI chat (100 použití za deň vs. 10 zadarmo) a prístup k pokročilým AI funkciám."
+      "answer": "Všetky základné funkcie sledovania sú úplne zadarmo: neobmedzené záznamy, skenovanie AI kamerou (vždy zadarmo), všetky grafy a trendy, synchronizácia Apple Health a export PDF/CSV. Predplatné pridáva vylepšený AI chat (100 použití denne oproti 10 zadarmo) a prístup k pokročilým funkciám AI. Všetky budúce prémiové funkcie budú zahrnuté pre predplatiteľov. Aplikácie nikdy nezobrazujú reklamy, či si predplatiteľom alebo nie."
      },
      {
       "question": "Čo je MAP a mám ho sledovať?",

@@ -131,7 +131,7 @@
      },
      {
       "question": "Tarvitsenko tilauksen jokaiselle laitteelle?",
-      "answer": "Yksi tilaus poistaa mainokset kaikilta laitteilta. Jos näet mainoksia lisälaitteilla, siirry kohtaan Asetukset > Poista mainokset ja paina Palauta ostos. Varmista, että jokainen laite on kirjautuneena samalle iCloud-tilille."
+      "answer": "Ei. Yksi tilaus avaa premium-ominaisuudet kaikilla samaan iCloud-tiliin kirjatuilla laitteilla. Jos premium ei näy toisella laitteella, siirry Asetuksiin > Tilaus (tai vastaavaan kohtaan sovelluksessa) ja paina Palauta osto. Varmista, että kaikki laitteet on kirjattu samaan iCloud-tiliin."
      },
      {
       "question": "Kuinka varmuuskopiot toimivat?",
@@ -190,16 +190,16 @@
       "answer": "Kyllä. Heti kun painat laitteen sivupainiketta lukitaksesi sen normaalisti, kukaan ei pääse sovellukseesi tai dataasi käsiksi laitteen ollessa lukittuna."
      },
      {
-      "question": "Mitä mainoksista?",
-      "answer": "Haluamme, että voit ensin kokeilla sovellusta ja nähdä, onko se sinulle hyödyllinen ilman häiriötekijöitä – voit tehdä tämän ilmaiseksi, ilman Google-mainoksia. Kun olet tallentanut 7 tietuetta, saatat nähdä joitakin Google-mainoksia, jotka auttavat tukemaan sovellusta ja pitämään sen ilmaisena."
+      "question": "Näyttääkö sovellus mainoksia?",
+      "answer": "Ei. Feeltracker-sovellukset eivät näytä kolmannen osapuolen mainoksia eivätkä käytä mainosverkostoja tai mainosseuranta-SDK:ita (kuten AdMob). Henkilö- ja terveystietojasi ei koskaan jaeta mainostajille. Sovellukset rahoitetaan kokonaan valinnaisilla premium-tilauksilla ja kertaluonteisilla ostoksilla App Storen kautta."
      },
      {
-      "question": "En pidä mainoksista! Voinko maksaa niiden poistamisesta?",
-      "answer": "Kyllä! Paina bannerin ❎-painiketta. Tämä avaa tilausvaihtoehdot kohtuullisella maksulla. Tilauksen ollessa voimassa et näe mainoksia."
+      "question": "Onko ilmainen versio saatavilla?",
+      "answer": "Kyllä. Kaikki ydinseurantaominaisuudet – rajattomat merkinnät, kaaviot ja trendit, Apple Health -synkronointi, PDF/CSV-vienti ja AI Camera Scan – ovat täysin ilmaisia. Premium on valinnainen ja lisää vain esimerkiksi parannetut AI-chat-rajat ja edistyneet tekoälyominaisuudet."
      },
      {
-      "question": "En pysty maksamaan, mutta vihaan mainoksia sovelluksissa!",
-      "answer": "Ymmärrämme. Nämä mukautetut natiivimainokset on suunniteltu sulautumaan sovelluksen muuhun ulkoasuun ja näyttämään hyvältä olematta häiritseviä tai roskapostimaisia. Haluamme, että voit nauttia sovelluksen käytöstä, vaikka et pystyisi maksamaan. Muista kertoa siitä ystävillesikin!"
+      "question": "Mihin tilaukseni maksu käytetään?",
+      "answer": "Tilauksesi rahoittaa jatkuvaa kehitystä – uusia ominaisuuksia, bugikorjauksia, käännöksiä ja valinnaisten tekoälyominaisuuksien palvelinkustannuksia. Koska emme näytä mainoksia, tilaukset ja kertaluonteiset ostokset ovat ainoa tapa rahoittaa sovellus, ja ne pitävät kokemuksen siistinä ja yksityisenä kaikille."
      },
      {
       "question": "Miksi minun pitäisi tilata? Miksi en voi maksaa vain kerran?",
@@ -219,6 +219,26 @@
      {
       "question": "Haluan peruuttaa maksullisen tilaukseni",
       "answer": "Kiitos sovelluksen kokeilusta. Kerro minulle, mitä voisin tehdä paremmin osoitteessa [gs@feeltracker.com](mailto:gs@feeltracker.com), ja yritän auttaa. Usein käyttäjäpalautteeseen perustuvat korjaukset ja parannukset toimitetaan sovelluspäivityksessä samana tai seuraavana päivänä.\n\nJos et ole vieläkään tyytyväinen, voit peruuttaa tilauksesi [täältä](https://apps.apple.com/account/subscriptions)."
+     },
+     {
+      "question": "Kerääkö sovellus nimeni, syntymäaikani tai sukupuoleni?",
+      "answer": "Vain jos valitset tallentaa ne. Voit halutessasi täyttää pienen profiilin (nimi, syntymäaika, sukupuoli) kokemuksen personoimiseksi – se on täysin vapaaehtoista, ja ydinseurantaominaisuudet toimivat ilman sitä. Kun profiilitiedot on annettu, ne pysyvät laitteellasi ja omassa iCloudissasi, eivät koskaan palvelimillamme."
+     },
+     {
+      "question": "Miten profiilitietojani käytetään?",
+      "answer": "Jos käytät valinnaista tekoälyominaisuutta (kuten chat, oivallukset tai räätälöity palaute), sovellus voi sisällyttää pyyntöön profiilisi olennaiset osat – tyypillisesti etunimesi, ikäsi (laskettuna syntymäajastasi) ja sukupuolesi – jotta tekoäly voi antaa sinulle osuvampia vastauksia (esimerkiksi ikään sopivia terveysohjeita tai oikeat pronominit). Tämä tapahtuu vain, kun käytät aktiivisesti tekoälyominaisuutta. Voit muokata tai tyhjentää profiilisi tai poistaa tekoälyominaisuudet käytöstä milloin tahansa."
+     },
+     {
+      "question": "Mitä tekoälypalveluja sovellus käyttää?",
+      "answer": "Sovellukset käyttävät kolmea tekoälytyyppiä, kaikki valinnaisia ja tilauksesta:\n\n1. **Laitteen tekoäly** (Applen Natural Language API) esimerkiksi tunnepisteytykseen – toimii kokonaan laitteellasi, mitään dataa ei lähde siitä.\n2. **Apple Intelligence** tuetuilla laitteilla – käsitellään laitteella mahdollisuuksien mukaan ja Applen Private Cloud Computessa raskaampiin tehtäviin. Apple ei tallenna tai näe tietojasi, eikä niitä käytetä Applen mallien kouluttamiseen.\n3. **OpenAI API** chattiin, oivalluksiin ja räätälöityyn palautteeseen – käytetään vain, kun käynnistät sen aktiivisesti. Vain tarvittava data (ja jos tallennettu, rajattu profiiliyhteys) lähetetään. OpenAI ei käytä API-dataa malliensa kouluttamiseen."
+     },
+     {
+      "question": "Onko Apple Health pakollinen?",
+      "answer": "Ei. Apple Health -integraatio on täysin valinnainen. Sovellukset toimivat täysin ilman sitä – voit syöttää lukemia manuaalisesti, käyttää AI Camera Scania tai tuoda CSV-tiedostoja. Kun otat sen käyttöön, voit valita, mitä datatyyppejä sovellus voi lukea tai kirjoittaa, ja peruuttaa käyttöoikeudet milloin tahansa iOS-asetuksissa."
+     },
+     {
+      "question": "Miten poistan tietoni?",
+      "answer": "Sinulla on täysi hallinta:\n\n- Poista yksittäiset merkinnät pyyhkäisemällä niitä.\n- Poista profiilisi (nimi, syntymäaika, sukupuoli) milloin tahansa sovelluksen profiilisivulta.\n- Poista kaikki sovellustiedot kerralla sovelluksen asetuksista.\n- Sovelluksen ja sen iCloud-varmuuskopion poistaminen iOS-asetuksissa poistaa kaiken. Koska meillä ei ole kopiota palvelimillamme, meillä ei ole mitään ylimääräistä poistettavaa puolestasi."
      }
     ]
    },
@@ -247,7 +267,7 @@
      },
      {
       "question": "Mitä tilaus sisältää? Mikä on ilmaista?",
-      "answer": "Kaikki ydinseurantatoiminnot ovat täysin ilmaisia: rajoittamattomat merkinnät, AI-kameraSkannaus (aina ilmainen), kaikki kaaviot ja trendit, Apple Health -synkronointi sekä PDF- ja CSV-vienti. Tilaus lisää: mainosten poiston siistin käyttökokemuksen saamiseksi, parannetun AI-chatin (100 käyttöä päivässä vs. 10 ilmaisena) sekä pääsyn kehittyneisiin AI-ominaisuuksiin. Kaikki tulevat premium-ominaisuudet sisältyvät tilaajille."
+      "answer": "Kaikki ydinseurantaominaisuudet ovat täysin ilmaisia: rajattomat merkinnät, AI-kameraskannaus (aina ilmainen), kaikki kaaviot ja trendit, Apple Health -synkronointi ja PDF/CSV-vienti. Tilaus lisää parannetun AI-chatin (100 käyttökertaa päivässä vs. 10 ilmaista) ja pääsyn edistyneisiin tekoälyominaisuuksiin. Kaikki tulevat premium-ominaisuudet sisältyvät tilaajille. Sovellukset eivät koskaan näytä mainoksia, tilaatpa tai et."
      },
      {
       "question": "Mikä on MAP ja pitäisikö minun seurata sitä?",

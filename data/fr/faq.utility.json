@@ -131,7 +131,7 @@
      },
      {
       "question": "Ai-je besoin d'un abonnement pour chaque appareil ?",
-      "answer": "Un seul abonnement supprime les publicités sur tous les appareils. Si vous voyez des publicités sur des appareils supplémentaires, allez dans Réglages > Supprimer les publicités et appuyez sur Restaurer l'achat. Assurez-vous que chaque appareil est connecté au même compte iCloud."
+      "answer": "Non. Un abonnement déverrouille les fonctionnalités premium sur tous les appareils connectés au même compte iCloud. Si Premium n'apparaît pas sur un autre appareil, accédez à Réglages > Abonnement (ou la section équivalente dans l'app) et appuyez sur Restaurer les achats. Assurez-vous que chaque appareil est connecté au même compte iCloud."
      },
      {
       "question": "Comment fonctionnent les sauvegardes ?",
@@ -190,16 +190,16 @@
       "answer": "Oui. Dès que vous appuyez sur le bouton latéral de l'appareil pour le verrouiller comme vous le faites habituellement, personne ne peut accéder à votre application ou vos données tant qu'il est verrouillé."
      },
      {
-      "question": "Qu'en est-il des publicités ?",
-      "answer": "Nous voulons que vous essayiez d'abord l'application et que vous voyiez si elle vous est utile, sans aucune distraction - vous pouvez le faire gratuitement, sans voir de publicités Google. Après avoir enregistré 7 entrées, vous pourrez voir quelques publicités Google, qui aident à soutenir l'application et à la maintenir gratuite."
+      "question": "L'app affiche-t-elle des publicités ?",
+      "answer": "Non. Les apps Feeltracker n'affichent pas de publicités tierces et n'utilisent aucun réseau publicitaire ni SDK de suivi publicitaire (comme AdMob). Vos données personnelles et de santé ne sont jamais partagées avec des annonceurs. Les apps sont entièrement financées par des abonnements premium optionnels et des achats uniques via l'App Store."
      },
      {
-      "question": "Je n'aime pas les publicités ! Puis-je payer pour les supprimer ?",
-      "answer": "Oui ! Pour ce faire, appuyez sur le bouton ❎ sur la bannière. Cela affichera l'option de s'abonner, pour un montant modique. Tant que vous êtes abonné, vous ne verrez aucune publicité."
+      "question": "Existe-t-il une version gratuite ?",
+      "answer": "Oui. Toutes les fonctionnalités de suivi principales — entrées illimitées, graphiques et tendances, synchronisation Apple Health, export PDF/CSV et Scanner de caméra IA — sont entièrement gratuites. Premium est optionnel et ajoute uniquement des choses comme des limites améliorées de chat IA et des fonctionnalités IA avancées."
      },
      {
-      "question": "Je ne peux pas payer, mais je déteste les publicités dans les applications !",
-      "answer": "Nous vous comprenons. Ces publicités natives personnalisées sont conçues pour s'intégrer au reste de l'application tout en restant esthétiques, sans être intrusives ou envahissantes. Nous voulons que vous puissiez profiter de l'application, même si vous ne pouvez pas payer. N'oubliez pas d'en parler à vos amis !"
+      "question": "À quoi sert mon abonnement ?",
+      "answer": "Votre abonnement finance le développement continu — nouvelles fonctionnalités, corrections de bugs, traductions et coûts serveur pour les fonctionnalités IA optionnelles. Comme nous n'affichons pas de publicités, les abonnements et les achats uniques sont la seule façon de financer l'app, et ils maintiennent une expérience propre et privée pour tous."
      },
      {
       "question": "Pourquoi devrais-je m'abonner ? Pourquoi ne puis-je pas payer une seule fois ?",
@@ -219,6 +219,26 @@
      {
       "question": "Je souhaite annuler mon abonnement payant",
       "answer": "Merci d'avoir essayé l'application. Faites-moi savoir si je peux faire mieux à [gs@feeltracker.com](mailto:gs@feeltracker.com) et j'essaierai de vous aider. Souvent, les corrections et améliorations basées sur les retours des utilisateurs sont livrées dans une mise à jour de l'application le jour même ou le lendemain.\n\nSi vous n'êtes toujours pas satisfait, vous pouvez annuler votre abonnement [ici](https://apps.apple.com/account/subscriptions)."
+     },
+     {
+      "question": "L'app collecte-t-elle mon nom, ma date de naissance ou mon genre ?",
+      "answer": "Uniquement si vous choisissez de les enregistrer. Vous pouvez optionnellement remplir un petit profil (nom, date de naissance, genre) pour personnaliser l'expérience — c'est totalement optionnel et les fonctionnalités de suivi principales fonctionnent sans. Quand ils sont fournis, les détails du profil restent sur votre appareil et dans votre propre iCloud, jamais sur nos serveurs."
+     },
+     {
+      "question": "Comment mes données de profil sont-elles utilisées ?",
+      "answer": "Si vous utilisez une fonctionnalité IA optionnelle (comme le chat, les analyses ou les retours personnalisés), l'app peut inclure les parties pertinentes de votre profil — généralement votre prénom, votre âge (calculé à partir de votre date de naissance) et votre genre — avec la demande, afin que l'IA puisse vous donner des réponses plus pertinentes (par exemple, des conseils de santé adaptés à votre âge ou les bons pronoms). Cela n'arrive que lorsque vous utilisez activement une fonctionnalité IA. Vous pouvez modifier ou supprimer votre profil, ou désactiver les fonctionnalités IA, à tout moment."
+     },
+     {
+      "question": "Quels services IA l'app utilise-t-elle ?",
+      "answer": "Les apps utilisent trois types d'IA, tous optionnels et à la demande :\n\n1. **IA sur l'appareil** (Natural Language API d'Apple) pour des choses comme l'analyse de sentiment — fonctionne entièrement sur votre appareil, aucune donnée ne le quitte.\n2. **Apple Intelligence** sur les appareils compatibles — traitée sur l'appareil si possible, et via le Private Cloud Compute d'Apple pour les tâches plus lourdes. Apple ne stocke ni ne voit vos données, et elles ne sont pas utilisées pour entraîner les modèles d'Apple.\n3. **OpenAI API** pour le chat, les analyses et les retours personnalisés — utilisée uniquement quand vous la déclenchez activement. Seules les données pertinentes (et, si enregistré, un contexte de profil limité) sont envoyées. OpenAI n'utilise pas les données API pour entraîner ses modèles."
+     },
+     {
+      "question": "Apple Health est-il obligatoire ?",
+      "answer": "Non. L'intégration Apple Health est totalement optionnelle. Les apps fonctionnent parfaitement sans — vous pouvez saisir des mesures manuellement, utiliser le Scanner de caméra IA ou importer des CSV. Quand vous l'activez, vous pouvez choisir quels types de données l'app peut lire ou écrire, et révoquer l'accès à tout moment dans les Réglages iOS."
+     },
+     {
+      "question": "Comment supprimer mes données ?",
+      "answer": "Vous avez le contrôle :\n\n- Supprimez des entrées individuelles en les faisant glisser.\n- Supprimez votre profil (nom, date de naissance, genre) à tout moment dans l'écran de profil de l'app.\n- Supprimez toutes les données de l'app en une fois depuis les réglages de l'app.\n- Supprimer l'app et sa sauvegarde iCloud dans vos Réglages iOS efface tout. Comme nous ne conservons pas de copie sur nos serveurs, il n'y a rien de plus à supprimer de notre côté."
      }
     ]
    },
@@ -247,7 +267,7 @@
      },
      {
       "question": "Que comprend l'abonnement ? Qu'est-ce qui est gratuit ?",
-      "answer": "Toutes les fonctionnalités principales de suivi sont entièrement gratuites : entrées illimitées, scan par caméra IA (toujours gratuit), tous les graphiques et tendances, synchronisation Apple Health et exportations PDF/CSV. L'abonnement ajoute : suppression des publicités pour une expérience épurée, chat IA amélioré (100 utilisations par jour contre 10 gratuites) et accès aux fonctionnalités IA avancées. Toutes les futures fonctionnalités premium seront incluses pour les abonnés."
+      "answer": "Toutes les fonctionnalités de suivi principales sont entièrement gratuites : entrées illimitées, scanner de caméra IA (toujours gratuit), tous les graphiques et tendances, synchronisation Apple Health et exports PDF/CSV. L'abonnement ajoute un chat IA amélioré (100 utilisations par jour contre 10 gratuites) et l'accès aux fonctionnalités IA avancées. Toutes les futures fonctionnalités premium seront incluses pour les abonnés. Les apps n'affichent jamais de publicités, que vous vous abonniez ou non."
      },
      {
       "question": "Qu'est-ce que la PAM et dois-je la suivre ?",

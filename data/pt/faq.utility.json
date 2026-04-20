@@ -131,7 +131,7 @@
      },
      {
       "question": "Preciso de uma assinatura para cada dispositivo?",
-      "answer": "Uma assinatura removerá os anúncios em todos os dispositivos. Se você vir anúncios em algum dispositivo adicional, vá para Ajustes > Remover Anúncios e prima Restaurar Compra. Certifique-se de que cada dispositivo esteja conectado à mesma conta do iCloud."
+      "answer": "Não. Uma subscrição desbloqueia as funcionalidades premium em todos os dispositivos com sessão iniciada na mesma conta iCloud. Se o premium não aparecer noutro dispositivo, vá a Definições > Subscrição (ou o equivalente na aplicação) e prima Restaurar Compra. Certifique-se de que todos os dispositivos têm sessão iniciada na mesma conta iCloud."
      },
      {
       "question": "Como funcionam os Backups?",
@@ -190,16 +190,16 @@
       "answer": "Sim. Assim que você pressionar o botão lateral do dispositivo para bloqueá-lo como normalmente faz, ninguém poderá acessar seu aplicação ou dados enquanto estiver bloqueado."
      },
      {
-      "question": "E os anúncios?",
-      "answer": "Queremos que você primeiro experimente a aplicação e veja se o acha útil, sem distrações - você pode fazer isso de graça, sem ver anúncios do Google. Depois de salvar 7 registos, você poderá ver alguns anúncios do Google, que ajudam a manter a aplicação e mantê-lo gratuito."
+      "question": "A aplicação mostra anúncios?",
+      "answer": "Não. As aplicações Feeltracker não mostram anúncios de terceiros e não utilizam redes de publicidade nem SDKs de rastreamento de anúncios (como o AdMob). Os seus dados pessoais e de saúde nunca são partilhados com anunciantes. As aplicações são financiadas inteiramente por subscrições premium opcionais e compras avulsas na App Store."
      },
      {
-      "question": "Não gosto de anúncios! Posso pagar para removê-los?",
-      "answer": "Sim! Para fazer isso, prima o botão ❎ no banner. Isso apresentará a opção de assinar, por uma taxa simbólica. Enquanto você estiver assinante, não verá nenhum anúncio."
+      "question": "Existe uma versão gratuita?",
+      "answer": "Sim. Todas as funcionalidades principais de monitorização — registos ilimitados, gráficos e tendências, sincronização com o Apple Health, exportação em PDF/CSV e Digitalização por Câmara com IA — são completamente gratuitas. O premium é opcional e apenas acrescenta coisas como limites de chat com IA melhorados e funcionalidades avançadas de IA."
      },
      {
-      "question": "Não tenho como pagar, mas odeio anúncios em aplicações!",
-      "answer": "Entendemos. Esses anúncios nativos personalizados são projetados para se misturar com o resto da aplicação e ainda ficarem bonitos, sem serem irritantes ou invasivos. Queremos que você possa aproveitar o uso da aplicação, mesmo que não possa pagar. Não se esqueça de contar para seus amigos sobre ele!"
+      "question": "Para que serve a minha subscrição?",
+      "answer": "A sua subscrição financia o desenvolvimento contínuo — novas funcionalidades, correções de erros, traduções e custos de servidor para funcionalidades opcionais de IA. Como não mostramos anúncios, as subscrições e compras avulsas são a única forma de financiarmos a aplicação, e mantêm a experiência limpa e privada para todos."
      },
      {
       "question": "Por que devo assinar? Por que não posso pagar apenas uma vez?",
@@ -219,6 +219,26 @@
      {
       "question": "Quero cancelar minha assinatura paga",
       "answer": "Obrigado por experimentar a aplicação. Me avise se há algo que eu possa melhorar em [gs@feeltracker.com](mailto:gs@feeltracker.com) e tentarei ajudar. Frequentemente, correções e melhorias baseadas no feedback dos usuários são enviadas em uma atualização da aplicação no mesmo dia ou no dia seguinte.\n\nSe ainda não estiver satisfeito, você pode cancelar sua assinatura [aqui](https://apps.apple.com/account/subscriptions)."
+     },
+     {
+      "question": "A aplicação recolhe o meu nome, data de nascimento ou género?",
+      "answer": "Apenas se optar por guardá-los. Pode preencher opcionalmente um pequeno perfil (nome, data de nascimento, género) para personalizar a experiência — é completamente opcional e as funcionalidades principais funcionam sem ele. Quando fornecidos, os dados do perfil ficam no seu dispositivo e no seu próprio iCloud, nunca nos nossos servidores."
+     },
+     {
+      "question": "Como são utilizados os dados do meu perfil?",
+      "answer": "Se utilizar uma funcionalidade de IA opcional (como chat, insights ou feedback personalizado), a aplicação pode incluir as partes relevantes do seu perfil com o pedido — normalmente o seu primeiro nome, idade (calculada a partir da data de nascimento) e género — para que a IA possa fornecer respostas mais relevantes (por exemplo, orientações de saúde adequadas à idade ou os pronomes corretos). Isto só acontece quando utiliza ativamente uma funcionalidade de IA. Pode editar ou limpar o seu perfil, ou desativar as funcionalidades de IA, a qualquer momento."
+     },
+     {
+      "question": "Que serviços de IA utiliza a aplicação?",
+      "answer": "As aplicações utilizam três tipos de IA, todos opcionais e a pedido:\n\n1. **IA no dispositivo** (Natural Language API da Apple) para coisas como pontuação de sentimentos — funciona inteiramente no seu dispositivo, sem enviar dados.\n2. **Apple Intelligence** em dispositivos compatíveis — processada no dispositivo sempre que possível, e via Private Cloud Compute da Apple para tarefas mais pesadas. A Apple não armazena nem vê os seus dados, e estes não são utilizados para treinar os modelos da Apple.\n3. **OpenAI API** para chat, insights e feedback personalizado — utilizada apenas quando a aciona ativamente. Apenas os dados relevantes (e, se guardados, um contexto limitado do perfil) são enviados. A OpenAI não utiliza dados da API para treinar os seus modelos."
+     },
+     {
+      "question": "O Apple Health é obrigatório?",
+      "answer": "Não. A integração com o Apple Health é completamente opcional. As aplicações funcionam totalmente sem ele — pode introduzir leituras manualmente, usar a Digitalização por Câmara com IA ou importar CSVs. Quando o ativar, pode escolher que tipos de dados a aplicação pode ler ou escrever e revogar o acesso a qualquer momento nas Definições do iOS."
+     },
+     {
+      "question": "Como elimino os meus dados?",
+      "answer": "Tem o controlo:\n\n- Elimine entradas individuais deslizando sobre elas.\n- Elimine o seu perfil (nome, data de nascimento, género) a qualquer momento no ecrã de perfil da aplicação.\n- Elimine todos os dados da aplicação de uma vez nas definições da aplicação.\n- Remover a aplicação e a sua cópia de segurança do iCloud nas Definições do iOS apaga tudo. Como não guardamos uma cópia nos nossos servidores, não há nada extra para eliminarmos por si."
      }
     ]
    },
@@ -247,7 +267,7 @@
      },
      {
       "question": "O que a assinatura inclui? O que é gratuito?",
-      "answer": "Todos os recursos principais de monitoramento são completamente gratuitos: entradas ilimitadas, escaneamento por câmera com IA (sempre gratuito), todos os gráficos e tendências, sincronização com Apple Health e exportações em PDF/CSV. A assinatura adiciona: remoção de anúncios para uma experiência limpa, chat de IA aprimorado (100 usos por dia vs 10 gratuitos) e acesso a recursos avançados de IA. Todos os futuros recursos premium serão incluídos para assinantes."
+      "answer": "Todas as funcionalidades principais de monitorização são completamente gratuitas: registos ilimitados, digitalização por câmara com IA (sempre gratuita), todos os gráficos e tendências, sincronização com o Apple Health e exportações em PDF/CSV. A subscrição acrescenta chat com IA melhorado (100 utilizações por dia vs. 10 gratuitas) e acesso a funcionalidades avançadas de IA. Todas as futuras funcionalidades premium serão incluídas para subscritores. As aplicações nunca mostram anúncios, quer subscreva ou não."
      },
      {
       "question": "O que é PAM e devo monitorá-la?",

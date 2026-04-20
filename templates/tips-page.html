@@ -6,17 +6,6 @@
 
 {{> analytics-head}}
 
-{{#if conversionEvent}}
-    <!-- Event snippet for Page view conversion page -->
-    <script>
-      gtag('event', 'conversion', {
-          'send_to': '{{conversionEvent.sendTo}}',
-          'value': {{conversionEvent.value}},
-          'currency': '{{conversionEvent.currency}}'
-      });
-    </script>
-
-{{/if}}
 {{#if appId}}
     <!-- iOS Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id={{appId}}">

@@ -131,7 +131,7 @@
      },
      {
       "question": "He de tenir una subscripció per a cada dispositiu?",
-      "answer": "Una subscripció eliminarà els anuncis a tots els dispositius. Si veieu anuncis a algun dispositiu addicional, aneu a Configuració > Elimina els anuncis i premeu Restaura la compra. Assegureu-vos que cada dispositiu hagi iniciat sessió amb el mateix compte d'iCloud."
+      "answer": "No. Una subscripció desbloqueja les funcions premium a tots els dispositius que hagin iniciat sessió amb el mateix compte d'iCloud. Si el premium no apareix en un altre dispositiu, ves a Configuració > Subscripció (o l'equivalent a l'aplicació) i prem Restaurar compra. Assegura't que tots els dispositius han iniciat sessió amb el mateix compte d'iCloud."
      },
      {
       "question": "Com funcionen les còpies de seguretat?",
@@ -190,16 +190,16 @@
       "answer": "Sí. Tan aviat com premeu el botó lateral del dispositiu per bloquejar-lo com de costum, ningú no pot accedir a la vostra aplicació ni a les vostres dades mentre estigui bloquejat."
      },
      {
-      "question": "Què passa amb els anuncis?",
-      "answer": "Volem que primer proveu l'aplicació i vegeu si us és útil, sense cap distracció; podeu fer-ho de manera gratuïta, sense veure anuncis de Google. Després de desar 7 registres, és possible que vegeu alguns anuncis de Google, que ajuden a donar suport a l'aplicació i a mantenir-la gratuïta."
+      "question": "L'aplicació mostra anuncis?",
+      "answer": "No. Les aplicacions Feeltracker no mostren anuncis de tercers i no utilitzen xarxes publicitàries ni SDKs de seguiment d'anuncis (com AdMob). Les teves dades personals i de salut mai no es comparteixen amb anunciants. Les aplicacions estan finançades íntegrament per subscripcions premium opcionals i compres úniques a l'App Store."
      },
      {
-      "question": "No m'agraden els anuncis! Puc pagar per eliminar-los?",
-      "answer": "Sí! Per fer-ho, premeu el botó ❎ al bàner. Això mostrarà l'opció de subscriure's per una tarifa nominal. Mentre esteu subscrits, no veureu cap anunci."
+      "question": "Hi ha una versió gratuïta?",
+      "answer": "Sí. Totes les funcions principals de seguiment — entrades il·limitades, gràfics i tendències, sincronització amb Apple Health, exportació en PDF/CSV i Escaneig per Càmera amb IA — són completament gratuïtes. El premium és opcional i només afegeix coses com límits millorats de xat amb IA i funcions avançades d'IA."
      },
      {
-      "question": "No puc pagar, però odio els anuncis a les aplicacions!",
-      "answer": "Us entenem. Aquests anuncis natius personalitzats estan dissenyats per integrar-se amb la resta de l'aplicació i continuar tenint bon aspecte, sense ser intrusius ni molests. Volem que pugueu gaudir de l'aplicació, fins i tot si no podeu pagar. No oblideu parlar-ne als vostres amics!"
+      "question": "Per a què serveix la meva subscripció?",
+      "answer": "La teva subscripció finança el desenvolupament continu — noves funcions, correccions d'errors, traduccions i costos de servidor per a funcions opcionals d'IA. Com que no mostrem anuncis, les subscripcions i compres úniques són l'única manera de finançar l'aplicació, i mantenen l'experiència neta i privada per a tothom."
      },
      {
       "question": "Per què m'hauria de subscriure? Per què no puc pagar una sola vegada?",
@@ -219,6 +219,26 @@
      {
       "question": "Vull cancel·lar la meva subscripció de pagament",
       "answer": "Gràcies per provar l'aplicació. Feu-me saber si hi ha alguna cosa que pugui millorar a [gs@feeltracker.com](mailto:gs@feeltracker.com) i intentaré ajudar-vos. Sovint, les correccions i millores basades en els comentaris dels usuaris es publiquen en una actualització de l'aplicació el mateix dia o l'endemà.\n\nSi encara no esteu satisfets, podeu cancel·lar la subscripció [aquí](https://apps.apple.com/account/subscriptions)."
+     },
+     {
+      "question": "L'aplicació recull el meu nom, data de naixement o gènere?",
+      "answer": "Només si tries guardar-los. Pots omplir opcionalment un petit perfil (nom, data de naixement, gènere) per personalitzar l'experiència — és completament opcional i les funcions principals funcionen sense ell. Quan es proporcionen, les dades del perfil es guarden al teu dispositiu i al teu propi iCloud, mai als nostres servidors."
+     },
+     {
+      "question": "Com s'utilitzen les dades del meu perfil?",
+      "answer": "Si uses una funció d'IA opcional (com ara xat, insights o comentaris personalitzats), l'aplicació pot incloure les parts rellevants del teu perfil amb la sol·licitud — normalment el teu nom, edat (calculada a partir de la data de naixement) i gènere — perquè la IA pugui donar respostes més rellevants (per exemple, orientació de salut adequada a l'edat o els pronoms correctes). Això només passa quan uses activament una funció d'IA. Pots editar o esborrar el teu perfil, o desactivar les funcions d'IA, en qualsevol moment."
+     },
+     {
+      "question": "Quins serveis d'IA utilitza l'aplicació?",
+      "answer": "Les aplicacions utilitzen tres tipus d'IA, tots opcionals i a demanda:\n\n1. **IA al dispositiu** (Natural Language API d'Apple) per a coses com la puntuació de sentiment — s'executa íntegrament al teu dispositiu, sense enviar dades.\n2. **Apple Intelligence** en dispositius compatibles — processada al dispositiu sempre que sigui possible, i via Private Cloud Compute d'Apple per a tasques més pesades. Apple no emmagatzema ni veu les teves dades, i no s'utilitzen per entrenar els models d'Apple.\n3. **OpenAI API** per a xat, insights i comentaris personalitzats — s'utilitza només quan l'actives. Només s'envien les dades rellevants (i, si s'han guardat, un context limitat del perfil). OpenAI no utilitza dades de l'API per entrenar els seus models."
+     },
+     {
+      "question": "Cal tenir Apple Health?",
+      "answer": "No. La integració amb Apple Health és completament opcional. Les aplicacions funcionen perfectament sense ell — pots introduir lectures manualment, usar l'Escaneig per Càmera amb IA o importar CSVs. Quan l'activis, pots triar quins tipus de dades pot llegir o escriure l'aplicació i revocar l'accés en qualsevol moment a Configuració d'iOS."
+     },
+     {
+      "question": "Com elimino les meves dades?",
+      "answer": "Tens el control:\n\n- Elimina entrades individuals lliscant sobre elles.\n- Elimina el teu perfil (nom, data de naixement, gènere) en qualsevol moment des de la pantalla de perfil de l'aplicació.\n- Elimina totes les dades de l'aplicació alhora des de la configuració de l'aplicació.\n- Eliminar l'aplicació i la seva còpia de seguretat d'iCloud a Configuració d'iOS esborra-ho tot. Com que no guardem cap còpia als nostres servidors, no hi ha res addicional per eliminar per tu."
      }
     ]
    },
@@ -247,7 +267,7 @@
      },
      {
       "question": "Què inclou la subscripció? Què és gratuït?",
-      "answer": "Totes les funcions de seguiment bàsiques són completament gratuïtes: entrades il·limitades, escaneig per càmera amb IA (sempre gratuït), tots els gràfics i tendències, sincronització amb Apple Health i exportacions en PDF/CSV. La subscripció afegeix: eliminació d'anuncis per a una experiència neta, xat d'IA millorat (100 usos al dia en comparació amb 10 gratuïts) i accés a funcions d'IA avançades. Totes les funcions premium futures s'inclouran per als subscriptors."
+      "answer": "Totes les funcions principals de seguiment són completament gratuïtes: entrades il·limitades, escaneig per càmera amb IA (sempre gratuït), tots els gràfics i tendències, sincronització amb Apple Health i exportacions en PDF/CSV. La subscripció afegeix xat amb IA millorat (100 usos al dia vs. 10 gratuïts) i accés a funcions avançades d'IA. Totes les futures funcions premium s'inclouran per als subscriptors. Les aplicacions mai no mostren anuncis, subscriguis o no."
      },
      {
       "question": "Què és la MAP i hauria de fer-ne un seguiment?",
