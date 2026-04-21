@@ -3015,6 +3015,23 @@ th, td {
     text-decoration: none;
 }
 
+/* Learn More buttons paired with the App Store badge stay clearly visible
+   on the card surface but remain subordinate to the solid badge — outlined
+   in primary, transparent fill, so the hierarchy reads badge-first. */
+.app-card-buttons .btn--ghost,
+.about-app-cta .btn--ghost {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.app-card-buttons .btn--ghost:hover,
+.about-app-cta .btn--ghost:hover {
+    background: var(--color-primary-tint);
+    color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+}
+
 .btn--sm {
     min-height: 32px;
     padding: var(--space-1) var(--space-3);
