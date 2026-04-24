@@ -879,6 +879,23 @@ a:hover {
     margin-right: 6px;
 }
 
+/* SF Symbols–style "sparkles" icon for AI badges — matches the in-app iOS icon. */
+.icon-ai-sparkles {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M14 5Q14.5 12.5 22 13Q14.5 13.5 14 21Q13.5 13.5 6 13Q13.5 12.5 14 5ZM6.5 2Q6.75 5.75 10 6Q6.75 6.25 6.5 10Q6.25 6.25 3 6Q6.25 5.75 6.5 2Z'/></svg>");
+    mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M14 5Q14.5 12.5 22 13Q14.5 13.5 14 21Q13.5 13.5 6 13Q13.5 12.5 14 5ZM6.5 2Q6.75 5.75 10 6Q6.75 6.25 6.5 10Q6.25 6.25 3 6Q6.25 5.75 6.5 2Z'/></svg>");
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    -webkit-mask-position: center;
+            mask-position: center;
+    vertical-align: -0.125em;
+}
+
 .ai-feature h3 i {
     margin-right: 8px;
 }
