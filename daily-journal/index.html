@@ -176,20 +176,24 @@
                 "Full-text search and Spotlight integration",
                 "Export to PDF and Excel",
                 "iCloud backup and sync",
-                "32 language support"
+                "32 language support",
+                "Home-screen widgets for quick entry"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
           "inLanguage": [
                 "en",
+                "de",
                 "es",
                 "fr",
-                "de",
+                "fr-CA",
                 "it",
+                "ca",
                 "nl",
                 "pt",
+                "pt-BR",
                 "sv",
-                "no",
+                "nb",
                 "da",
                 "fi",
                 "pl",
@@ -200,17 +204,16 @@
                 "ro",
                 "hr",
                 "hu",
-                "ar",
-                "he",
-                "zh-Hans",
-                "ja",
-                "ko",
-                "th",
-                "vi",
-                "id",
                 "el",
                 "tr",
-                "ca"
+                "ar",
+                "he",
+                "ja",
+                "ko",
+                "zh-Hans",
+                "zh-Hant",
+                "th",
+                "vi"
           ],
           "datePublished": "2021",
           "downloadUrl": "https://apps.apple.com/app/id1557699226",
@@ -425,7 +428,7 @@
                       "name": "Is my journal private?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Absolutely. Your entries are stored encrypted on your device and in your private iCloud account. We never see your writing. Even the AI sentiment analysis happens entirely on your device using Apple's Natural Language API - your words never leave your phone."
+                            "text": "Absolutely. Your entries are stored on your device and in your private iCloud account — we have no servers storing your journal and we never see your writing. Optional AI features use privacy-respecting cloud AI you can switch off at any time; with AI off, sentiment analysis runs entirely on-device using Apple's Natural Language framework, and with the Apple Intelligence option all AI runs on-device."
                       }
                 },
                 {
@@ -433,7 +436,7 @@
                       "name": "How does sentiment analysis work?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "When you write 8 or more words, the app uses Apple's built-in Natural Language framework to analyze the emotional tone. An emoji appears to show whether the entry reads as positive, negative, or neutral. This happens entirely on-device for complete privacy."
+                            "text": "As you write, the app analyzes the emotional tone of your entry and shows an emoji indicating whether it reads as positive, negative, or neutral. By default this uses the app's privacy-respecting AI; if you turn AI off, it switches to Apple's built-in on-device Natural Language framework instead."
                       }
                 },
                 {
@@ -465,7 +468,7 @@
                       "name": "Can I export my journal entries?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes. You can export your entries as PDF, Excel, or JSON files. This lets you create backups, share selected entries, or move your data to other platforms if needed."
+                            "text": "Yes. You can export your entries as PDF, CSV, Excel, or JSON files. This lets you create backups, share selected entries, or move your data to other platforms if needed."
                       }
                 },
                 {
@@ -497,7 +500,7 @@
                       "name": "Do I need a subscription?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "No subscription required. The app is completely free to download and every feature — including all AI features — is available to everyone. An optional premium subscription simply raises your AI usage limits to 10× the free tier. The apps never show ads."
+                            "text": "No subscription is required. The app is free to download, all tracking, charts, Apple Health sync, and exports are free, and every user gets real AI features free every day — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Theme Explorer, Sentiment Timeline, Doctor Summary, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits."
                       }
                 }
           ]
@@ -652,7 +655,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-smile"></i></div>
                 <h3>AI Sentiment Analysis</h3>
-                <p>Automatic sentiment detection shows the emotional tone of your entries using Apple's on-device Natural Language API. Completely private - never leaves your device.</p>
+                <p>Automatic sentiment detection shows the emotional tone of your entries as you write. Uses privacy-respecting AI — or Apple's on-device Natural Language analysis when AI is switched off.</p>
             </div>
 
             <div class="feature-box">
@@ -721,7 +724,7 @@
             <h3>1. Write Your Thoughts</h3>
             <div class="app-card-content">
 <p><strong>Instant Entry:</strong> Open the app and start writing immediately. No setup, no configuration, no complexity. Just your thoughts and the page. The clean, distraction-free interface helps you focus on expressing yourself.</p>
-<p><strong>Rich Media:</strong> Enhance entries with photos, attach images to capture memories visually. Add voice recordings, sketches, or any media that helps tell your story. Every entry becomes a complete snapshot of your day.</p>
+<p><strong>Rich Media:</strong> Enhance entries with photos — attach up to 8 images to capture memories visually, straight from your camera or library, or let AI scan items and text into your entry. Every entry becomes a complete snapshot of your day.</p>
 <p><strong>Note Templates:</strong> Use pre-made templates for daily reflections, gratitude journaling, goal tracking, dream logs, or create your own custom templates. Templates provide structure while still giving you freedom to write naturally.</p>
             </div>
         </div>
@@ -747,8 +750,8 @@
         <div class="app-card">
             <h3>4. Keep Everything Safe</h3>
             <div class="app-card-content">
-<p><strong>Private & Secure:</strong> All entries are encrypted and stored in your personal iCloud account. Only you can read your journal - the app uses end-to-end encryption so your words stay completely private.</p>
-<p><strong>Automatic Backup:</strong> Weekly automatic JSON backups ensure you never lose your thoughts. Manual backup anytime to export your entire journal. Your words are protected against device loss or failure.</p>
+<p><strong>Private & Secure:</strong> Your journal lives on your device and in your personal iCloud account — we have no servers storing it, we never access it, and we never sell it. Your words stay yours.</p>
+<p><strong>Automatic Backup:</strong> Weekly automatic backups (a ZIP of your entries and photos) ensure you never lose your thoughts. Manual backup anytime to export your entire journal. Your words are protected against device loss or failure.</p>
 <p><strong>Cross-Device Sync:</strong> Write on iPhone, continue on iPad, review on Mac. All your entries sync automatically via iCloud. Your journal follows you everywhere, always up-to-date on every device.</p>
             </div>
         </div>
@@ -758,7 +761,7 @@
     <!-- AI Features -->
     <section class="ai-section center-text">
         <h2>Powered by Artificial Intelligence</h2>
-        <p class="section-subtitle">Advanced AI features to help you get more from your journaling practice</p>
+        <p class="section-subtitle">Every user gets real AI free every day. Features marked Pro are part of the optional Pro subscription — the fullest version of each feature, on our most capable AI.</p>
 
         <div class="ai-features-grid">
 
@@ -769,7 +772,7 @@
 
             <div class="ai-feature">
                 <h4><i class="fas fa-comments"></i> Chat</h4>
-                <p>Have interactive conversations about your journaling journey and get personalized guidance</p>
+                <p>Have interactive conversations about your journaling journey and get personalized guidance. Quick Chat is free every day; Pro Chat goes deeper on our most capable AI</p>
             </div>
 
             <div class="ai-feature">
@@ -793,68 +796,73 @@
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Deep Research Reports</h4>
+                <h4><i class="fas fa-file-medical-alt"></i> Deep Research <span class="ai-pro-badge">Pro</span></h4>
                 <p>Comprehensive AI analysis of your journal with detailed insights</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Pattern Detective</h4>
+                <h4><i class="fas fa-search"></i> Pattern Detective <span class="ai-pro-badge">Pro</span></h4>
                 <p>Find hidden themes and patterns in your journal entries over time</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Goal Assistant</h4>
+                <h4><i class="fas fa-bullseye"></i> Goal Assistant <span class="ai-pro-badge">Pro</span></h4>
                 <p>Get personalized, data-driven life goals based on your journaling patterns</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Doctor Summary</h4>
+                <h4><i class="fas fa-user-md"></i> Doctor Summary <span class="ai-pro-badge">Pro</span></h4>
                 <p>Generate professional summaries to share at healthcare visits</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sick Note Generator</h4>
+                <h4><i class="fas fa-file-medical"></i> Sick Note <span class="ai-pro-badge">Pro</span></h4>
                 <p>AI-generated sick notes for work or school when you need them</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Story Generator</h4>
+                <h4><i class="fas fa-book"></i> Story Generator <span class="ai-pro-badge">Pro</span></h4>
                 <p>Transform your journal entries into creative, engaging narratives</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Text Summary</h4>
+                <h4><i class="fas fa-comment-alt"></i> Text Summary <span class="ai-pro-badge">Pro</span></h4>
                 <p>Create shareable text message summaries of your journal themes</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personalized Quiz</h4>
+                <h4><i class="fas fa-graduation-cap"></i> Personal Quiz <span class="ai-pro-badge">Pro</span></h4>
                 <p>Test your knowledge with a fun AI-generated 10-question quiz about your data</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Text-to-Speech</h4>
+                <h4><i class="fas fa-microphone"></i> Text-to-Speech <span class="ai-pro-badge">Pro</span></h4>
                 <p>Listen to your AI insights and summaries with natural voice playback</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Tailored Health Report</h4>
+                <h4><i class="fas fa-file-invoice"></i> Tailored Health Report <span class="ai-pro-badge">Pro</span></h4>
                 <p>Create comprehensive, personalized documents to track your journaling progress</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Theme Explorer</h4>
+                <h4><i class="fas fa-tags"></i> Theme Explorer <span class="ai-pro-badge">Pro</span></h4>
                 <p>Discover recurring topics and ideas in your writing with AI-powered theme analysis</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Sentiment Timeline</h4>
+                <h4><i class="fas fa-chart-line"></i> Sentiment Timeline <span class="ai-pro-badge">Pro</span></h4>
                 <p>Visualize your emotional journey over time with AI-analyzed sentiment tracking</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (On-Device)</h4>
-                <p>Privacy-first option that runs AI locally on your device using Apple's Foundation Models — nothing leaves your iPhone, iPad, or Mac. Unlimited use with a paid account, on supported Apple Silicon devices.</p>
+                <h4><i class="fas fa-microchip"></i> Apple Intelligence (On-Device) <span class="ai-pro-badge">Pro</span></h4>
+                <p>Privacy-first option that runs AI locally on your device using Apple's Foundation Models — nothing leaves your iPhone, iPad, or Mac. Unlimited use with a paid account, on supported Apple Silicon devices (iOS 26+).</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-headset"></i> Voice Chat <span class="ai-pro-badge">Pro</span></h4>
+                <p>Hands-free, two-way spoken conversations with the AI about your data — ask questions and hear answers without touching the screen</p>
             </div>
 
         </div>
@@ -942,11 +950,11 @@
 
 
         <h3>Is my journal private?</h3>
-        <p>Absolutely. Your entries are stored encrypted on your device and in your private iCloud account. We never see your writing. Even the AI sentiment analysis happens entirely on your device using Apple's Natural Language API - your words never leave your phone.</p>
+        <p>Absolutely. Your entries are stored on your device and in your private iCloud account — we have no servers storing your journal and we never see your writing. Optional AI features use privacy-respecting cloud AI you can switch off at any time; with AI off, sentiment analysis runs entirely on-device using Apple's Natural Language framework, and with the Apple Intelligence option all AI runs on-device.</p>
 
 
         <h3>How does sentiment analysis work?</h3>
-        <p>When you write 8 or more words, the app uses Apple's built-in Natural Language framework to analyze the emotional tone. An emoji appears to show whether the entry reads as positive, negative, or neutral. This happens entirely on-device for complete privacy.</p>
+        <p>As you write, the app analyzes the emotional tone of your entry and shows an emoji indicating whether it reads as positive, negative, or neutral. By default this uses the app's privacy-respecting AI; if you turn AI off, it switches to Apple's built-in on-device Natural Language framework instead.</p>
 
 
         <h3>What is word frequency analysis?</h3>
@@ -962,7 +970,7 @@
 
 
         <h3>Can I export my journal entries?</h3>
-        <p>Yes. You can export your entries as PDF, Excel, or JSON files. This lets you create backups, share selected entries, or move your data to other platforms if needed.</p>
+        <p>Yes. You can export your entries as PDF, CSV, Excel, or JSON files. This lets you create backups, share selected entries, or move your data to other platforms if needed.</p>
 
 
         <h3>Does it work on Mac?</h3>
@@ -979,7 +987,7 @@
 
 
         <h3>Do I need a subscription?</h3>
-        <p>No subscription required. The app is completely free to download and every feature — including all AI features — is available to everyone. An optional premium subscription simply raises your AI usage limits to 10× the free tier. The apps never show ads.</p>
+        <p>No subscription is required. The app is free to download, all tracking, charts, Apple Health sync, and exports are free, and every user gets real AI features free every day — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Theme Explorer, Sentiment Timeline, Doctor Summary, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits.</p>
 
     </section>
 

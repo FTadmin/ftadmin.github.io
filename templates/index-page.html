@@ -198,7 +198,7 @@
         <div class="ai-features-grid">
 {{#each aiFeatures.items}}
             <div class="ai-feature">
-                <h3><i class="{{icon}}"></i> {{title}}</h3>
+                <h3><i class="{{icon}}"></i> {{title}}{{#if pro}} <span class="ai-pro-badge">Pro</span>{{/if}}</h3>
                 <p>{{description}}</p>
             </div>
 {{/each}}

@@ -69,7 +69,7 @@
         {
           "icon": "fas fa-file-medical",
           "title": "Doctor-Ready Reports",
-          "description": "Export your blood pressure history as PDF or Excel reports. Share comprehensive data with your healthcare provider in a format they can easily review."
+          "description": "Export your blood pressure history as PDF, CSV, Excel, or JSON reports. Share comprehensive data with your healthcare provider in a format they can easily review."
         },
         {
           "icon": "fas fa-chart-line",
@@ -79,12 +79,12 @@
         {
           "icon": "fas fa-file-medical-alt",
           "title": "MAP Report for Your Doctor",
-          "description": "A specialised report that breaks down your Mean Arterial Pressure across morning, evening, and full-day windows over any month, quarter, year, or custom range. Built to make clinical conversations easier."
+          "description": "A specialized report that breaks down your Mean Arterial Pressure across morning, evening, and full-day windows over any month, quarter, year, or custom range. Built to make clinical conversations easier. Part of the optional Pro subscription."
         },
         {
           "icon": "fas fa-sliders-h",
           "title": "Your Ranges, Your Way",
-          "description": "Dial in your own targets and band thresholds — Normal, Elevated, Stage 1, Stage 2 — to match the guidance your doctor has given you. Charts and reports colour every reading by your own ranges."
+          "description": "Dial in your own targets and band thresholds — Normal, Elevated, Stage 1, Stage 2 — to match the guidance your doctor has given you. Charts and reports color every reading by your own ranges."
         }
       ]
     },
@@ -106,13 +106,13 @@
         },
         {
           "title": "4. Share with Your Doctor",
-          "content": "**Professional Reports:** Export comprehensive PDF or Excel reports formatted for medical review. Reports include summary statistics, trend charts, medication logs, and all your notes - everything your doctor needs in one document.\n\n**Apple Health Integration:** Automatically sync all readings to Apple Health. Import historical data from other apps or devices. Your blood pressure data stays connected with your complete health picture.\n\n**Cloud Backup:** All data is automatically backed up to your private iCloud account. Switch devices seamlessly - your entire blood pressure history moves with you, encrypted and secure."
+          "content": "**Professional Reports:** Export comprehensive PDF, CSV, Excel, or JSON reports formatted for medical review. Reports include summary statistics, trend charts, and all your notes - everything your doctor needs in one document.\n\n**Apple Health Integration:** Automatically sync all readings to Apple Health. Import historical data from other apps or devices. Your blood pressure data stays connected with your complete health picture.\n\n**Cloud Backup:** All data is automatically backed up to your private iCloud account. Switch devices seamlessly - your entire blood pressure history moves with you, encrypted and secure."
         }
       ]
     },
     "aiFeatures": {
       "title": "Powered by Artificial Intelligence",
-      "subtitle": "Advanced AI features to help you understand your blood pressure better",
+      "subtitle": "Every user gets real AI free every day. Features marked Pro are part of the optional Pro subscription — the fullest version of each feature, on our most capable AI.",
       "disclaimerTitle": "AI Disclaimer",
       "disclaimerText": "AI-generated insights are for general information only — not medical advice, diagnosis, or treatment. Patterns show correlations, not causation. Always consult a qualified healthcare provider for medical decisions.",
       "items": [
@@ -124,7 +124,7 @@
         {
           "icon": "fas fa-comments",
           "title": "Chat",
-          "description": "Have interactive conversations about your cardiovascular health and get personalized guidance"
+          "description": "Have interactive conversations about your cardiovascular health and get personalized guidance. Quick Chat is free every day; Pro Chat goes deeper on our most capable AI"
         },
         {
           "icon": "fas fa-volume-up",
@@ -148,58 +148,75 @@
         },
         {
           "icon": "fas fa-file-medical-alt",
-          "title": "Deep Research Reports",
-          "description": "Comprehensive AI analysis of your blood pressure data with detailed insights"
+          "title": "Deep Research",
+          "description": "Comprehensive AI analysis of your blood pressure data with detailed insights",
+          "pro": true
         },
         {
           "icon": "fas fa-search",
           "title": "Pattern Detective",
-          "description": "Find hidden correlations between your BP readings and lifestyle factors"
+          "description": "Find hidden correlations between your BP readings and lifestyle factors",
+          "pro": true
         },
         {
           "icon": "fas fa-bullseye",
           "title": "Goal Assistant",
-          "description": "Get personalized, data-driven blood pressure goals based on your patterns"
+          "description": "Get personalized, data-driven blood pressure goals based on your patterns",
+          "pro": true
         },
         {
           "icon": "fas fa-user-md",
           "title": "Doctor Summary",
-          "description": "Generate professional medical summaries to share at healthcare visits"
+          "description": "Generate professional medical summaries to share at healthcare visits",
+          "pro": true
         },
         {
           "icon": "fas fa-file-medical",
-          "title": "Sick Note Generator",
-          "description": "AI-generated sick notes for work or school when you need them"
+          "title": "Sick Note",
+          "description": "AI-generated sick notes for work or school when you need them",
+          "pro": true
         },
         {
           "icon": "fas fa-book",
           "title": "Story Generator",
-          "description": "Transform your health data into creative, engaging narratives"
+          "description": "Transform your health data into creative, engaging narratives",
+          "pro": true
         },
         {
           "icon": "fas fa-comment-alt",
           "title": "Text Summary",
-          "description": "Create shareable text message summaries of your blood pressure trends"
+          "description": "Create shareable text message summaries of your blood pressure trends",
+          "pro": true
         },
         {
           "icon": "fas fa-graduation-cap",
-          "title": "Personalized Quiz",
-          "description": "Test your knowledge with a fun AI-generated 10-question quiz about your data"
+          "title": "Personal Quiz",
+          "description": "Test your knowledge with a fun AI-generated 10-question quiz about your data",
+          "pro": true
         },
         {
           "icon": "fas fa-microphone",
           "title": "Text-to-Speech",
-          "description": "Listen to your AI insights and summaries with natural voice playback"
+          "description": "Listen to your AI insights and summaries with natural voice playback",
+          "pro": true
         },
         {
           "icon": "fas fa-file-invoice",
           "title": "Tailored Health Report",
-          "description": "Create comprehensive, personalized health documents to track your progress"
+          "description": "Create comprehensive, personalized health documents to track your progress",
+          "pro": true
         },
         {
           "icon": "fas fa-microchip",
           "title": "Apple Intelligence (On-Device)",
-          "description": "Privacy-first option that runs AI locally on your device using Apple's Foundation Models — nothing leaves your iPhone, iPad, or Mac. Unlimited use with a paid account, on supported Apple Silicon devices."
+          "description": "Privacy-first option that runs AI locally on your device using Apple's Foundation Models — nothing leaves your iPhone, iPad, or Mac. Unlimited use with a paid account, on supported Apple Silicon devices (iOS 26+).",
+          "pro": true
+        },
+        {
+          "icon": "fas fa-headset",
+          "title": "Voice Chat",
+          "description": "Hands-free, two-way spoken conversations with the AI about your data — ask questions and hear answers without touching the screen",
+          "pro": true
         }
       ]
     },
@@ -215,7 +232,7 @@
         {
           "icon": "fas fa-pills",
           "title": "Medication Effectiveness",
-          "description": "See how well your blood pressure medications are working over time"
+          "description": "Note the medications you take in each entry and watch how your readings respond over time"
         },
         {
           "icon": "fas fa-person-running",
@@ -280,7 +297,7 @@
         },
         {
           "question": "Do I need a subscription?",
-          "answer": "No subscription required. The app is completely free to download and every feature — including all AI features — is available to everyone. An optional premium subscription simply raises your AI usage limits to 10× the free tier. The apps never show ads."
+          "answer": "No subscription is required. The app is free to download, all tracking, charts, Apple Health sync, and exports are free, and every user gets real AI features free every day — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Doctor Summary, Pattern Detective, the Pro MAP Report, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits."
         }
       ]
     },
@@ -514,7 +531,7 @@
           "Mean Arterial Pressure calculation",
           "Compatible with OMRON, Microlife, Beurer monitors",
           "Track multiple readings per day",
-          "Medication tracking",
+          "Home-screen widgets for quick entry",
           "Calendar view with color-coded indicators",
           "iCloud backup and sync",
           "32 language support"
@@ -524,14 +541,17 @@
         "award": "Number 1 Blood Pressure Tracking App in United Kingdom App Store",
         "inLanguage": [
           "en",
+          "de",
           "es",
           "fr",
-          "de",
+          "fr-CA",
           "it",
+          "ca",
           "nl",
           "pt",
+          "pt-BR",
           "sv",
-          "no",
+          "nb",
           "da",
           "fi",
           "pl",
@@ -542,17 +562,16 @@
           "ro",
           "hr",
           "hu",
-          "ar",
-          "he",
-          "zh-Hans",
-          "ja",
-          "ko",
-          "th",
-          "vi",
-          "id",
           "el",
           "tr",
-          "ca"
+          "ar",
+          "he",
+          "ja",
+          "ko",
+          "zh-Hans",
+          "zh-Hant",
+          "th",
+          "vi"
         ],
         "countriesSupported": [
           "United Kingdom",
@@ -997,7 +1016,7 @@
             "name": "Can I export my blood pressure data for my doctor?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, Blood Pressure allows you to export comprehensive reports in PDF and Excel formats. These professionally formatted reports include summary statistics, trend charts, medication logs, and all your notes - everything your healthcare provider needs in one document. You can easily share these reports via email or other sharing methods."
+              "text": "Yes, Blood Pressure allows you to export comprehensive reports in PDF, CSV, Excel, or JSON format. These professionally formatted reports include summary statistics, trend charts, and all your notes - everything your healthcare provider needs in one document. You can easily share these reports via email or other sharing methods."
             }
           },
           {
