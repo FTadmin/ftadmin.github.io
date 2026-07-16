@@ -175,7 +175,9 @@
                 "Pretraživanje punog teksta i Spotlight integracija",
                 "Izvoz u PDF, Excel i JSON",
                 "iCloud sinkronizacija i sinkronizacija između uređaja",
-                "Podrška za 32 jezika"
+                "Podrška za 32 jezika",
+                null,
+                "Widgeti na početnom zaslonu za brzi unos"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -426,7 +428,7 @@
                       "name": "Je li moj dnevnik privatan?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Apsolutno. Vaši unosi su šifrirani na vašem uređaju i u privatnom iCloud računu. Nikad ne vidimo vaše pisanje. Čak i AI analiza sentimenta odvija se u potpunosti na vašem uređaju."
+                            "text": "Apsolutno. Vaši unosi pohranjuju se na vašem uređaju i u vašem privatnom iCloud računu — nemamo poslužitelje koji pohranjuju vaš dnevnik i nikada ne vidimo što ste napisali. Neobavezne AI značajke koriste AI u oblaku koji poštuje privatnost, a koji možete isključiti u bilo kojem trenutku; kada je AI isključen, analiza raspoloženja odvija se u potpunosti na uređaju pomoću Appleova Natural Language okvira, a uz opciju Apple Intelligence sav AI radi na uređaju."
                       }
                 },
                 {
@@ -434,7 +436,7 @@
                       "name": "Kako funkcionira analiza sentimenta?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kad napišete 8 ili više riječi, aplikacija koristi Appleov ugrađeni Natural Language framework za analizu emocionalnog tona. Emotikon se pojavljuje kako bi pokazao ton unosa. Ovo se odvija u potpunosti on-device."
+                            "text": "Dok pišete, aplikacija analizira emocionalni ton vašeg unosa i prikazuje emotikon koji pokazuje je li pozitivan, negativan ili neutralan. Prema zadanim postavkama za to se koristi AI aplikacije koji poštuje privatnost; ako isključite AI, prebacuje se na Appleov ugrađeni Natural Language okvir na uređaju."
                       }
                 },
                 {
@@ -466,7 +468,7 @@
                       "name": "Mogu li izvesti unose dnevnika?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Da. Možete izvesti unose kao PDF, Excel ili JSON datoteke."
+                            "text": "Da. Svoje unose možete izvesti kao PDF, CSV, Excel ili JSON datoteke. To vam omogućuje izradu sigurnosnih kopija, dijeljenje odabranih unosa ili prijenos podataka na druge platforme po potrebi."
                       }
                 },
                 {
@@ -498,7 +500,7 @@
                       "name": "Trebam li pretplatu?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Pretplata nije potrebna. Aplikacija je potpuno besplatna za preuzimanje i svaka značajka — uključujući sve AI značajke — dostupna je svima. Neobavezna premium pretplata jednostavno povećava vaše limite korištenja AI-ja na 10× besplatne razine. Aplikacije nikad ne prikazuju oglase."
+                            "text": "Pretplata nije potrebna. Aplikacija se besplatno preuzima, svo praćenje, grafikoni, sinkronizacija s Apple Healthom i izvozi su besplatni, a svaki korisnik svaki dan dobiva stvarne AI značajke besplatno — bez oglasa, nikad. Neobavezna pretplata Pro otključava najdetaljnije AI značajke (Dubinsko istraživanje, Istraživač tema, Vremenska crta raspoloženja, Sažetak za liječnika, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja."
                       }
                 }
           ]
@@ -653,7 +655,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-smile"></i></div>
                 <h3>AI analiza sentimenta</h3>
-                <p>Automatska detekcija sentimenta prikazuje emocionalni ton unosa koristeći Appleov on-device Natural Language API. Potpuno privatno.</p>
+                <p>Automatsko prepoznavanje raspoloženja prikazuje emocionalni ton vaših unosa dok pišete. Koristi AI koji poštuje privatnost — ili Appleovu analizu Natural Language na uređaju kada je AI isključen.</p>
             </div>
 
             <div class="feature-box">
@@ -721,9 +723,9 @@
         <div class="app-card">
             <h3>1. Zapišite misli</h3>
             <div class="app-card-content">
-<p><strong>Trenutni unos:</strong> Otvorite aplikaciju i odmah počnite pisati. Bez postavljanja, bez konfiguracije, bez složenosti. Čisto sučelje bez ometanja pomaže vam fokusirati se na izražavanje.</p>
-<p><strong>Bogati mediji:</strong> Obogatite unose fotografijama za vizualno hvatanje uspomena. Svaki unos postaje potpuna snimka vašeg dana.</p>
-<p><strong>Predlošci bilješki:</strong> Koristite gotove predloške za dnevna razmišljanja, pisanje dnevnika zahvalnosti, praćenje ciljeva ili kreirajte vlastite prilagođene predloške.</p>
+<p><strong>Trenutačni unos:</strong> Otvorite aplikaciju i odmah počnite pisati. Bez postavljanja, bez konfiguracije, bez kompliciranja. Samo vaše misli i stranica. Čisto sučelje bez ometanja pomaže vam da se usredotočite na izražavanje sebe.</p>
+<p><strong>Bogati mediji:</strong> Obogatite unose fotografijama — priložite do 8 slika za vizualno bilježenje uspomena, izravno s kamere ili iz knjižnice, ili prepustite AI-u da skenira predmete i tekst u vaš unos. Svaki unos postaje potpuni snimak vašeg dana.</p>
+<p><strong>Predlošci bilježaka:</strong> Koristite gotove predloške za svakodnevna promišljanja, dnevnik zahvalnosti, praćenje ciljeva, zapise snova, ili izradite vlastite prilagođene predloške. Predlošci pružaju strukturu, a istovremeno vam daju slobodu da pišete prirodno.</p>
             </div>
         </div>
 
@@ -748,9 +750,9 @@
         <div class="app-card">
             <h3>4. Čuvajte sve sigurnim</h3>
             <div class="app-card-content">
-<p><strong>Privatno i sigurno:</strong> Svi unosi su šifrirani i pohranjeni u vašem osobnom iCloud računu. Samo vi možete čitati dnevnik.</p>
-<p><strong>Automatska sigurnosna kopija:</strong> Tjedne automatske JSON sigurnosne kopije osiguravaju da nikad nećete izgubiti misli.</p>
-<p><strong>Sinkronizacija između uređaja:</strong> Pišite na iPhoneu, nastavite na iPadu, pregledajte na Macu. Svi unosi automatski se sinkroniziraju putem iClouda.</p>
+<p><strong>Privatno i sigurno:</strong> Vaš dnevnik nalazi se na vašem uređaju i u vašem osobnom iCloud računu — nemamo poslužitelje koji ga pohranjuju, nikada mu ne pristupamo i nikada ga ne prodajemo. Vaše riječi ostaju vaše.</p>
+<p><strong>Automatska sigurnosna kopija:</strong> Tjedne automatske sigurnosne kopije (ZIP datoteka vaših unosa i fotografija) osiguravaju da nikada ne izgubite svoje misli. Ručnu sigurnosnu kopiju možete napraviti bilo kada kako biste izvezli cijeli dnevnik. Vaše riječi zaštićene su od gubitka ili kvara uređaja.</p>
+<p><strong>Sinkronizacija između uređaja:</strong> Pišite na iPhoneu, nastavite na iPadu, pregledajte na Macu. Svi vaši unosi automatski se sinkroniziraju putem iClouda. Vaš dnevnik prati vas posvuda, uvijek ažuriran na svakom uređaju.</p>
             </div>
         </div>
 
@@ -759,7 +761,7 @@
     <!-- AI Features -->
     <section class="ai-section center-text">
         <h2>Pokretano umjetnom inteligencijom</h2>
-        <p class="section-subtitle">Napredne AI funkcije za više koristi od prakse pisanja dnevnika</p>
+        <p class="section-subtitle">Svaki korisnik svaki dan dobiva stvarnu AI besplatno. Značajke označene s Pro dio su neobavezne pretplate Pro — najpotpunija verzija svake značajke, na našoj najsposobnijoj AI.</p>
 
         <div class="ai-features-grid">
 
@@ -770,7 +772,7 @@
 
             <div class="ai-feature">
                 <h4><i class="fas fa-comments"></i> Chat</h4>
-                <p>Vodite interaktivne razgovore o putovanju pisanja dnevnika i dobijte personalizirane smjernice</p>
+                <p>Vodite interaktivne razgovore o svom putovanju pisanja dnevnika i dobijte personaliziranu podršku. Brzi chat besplatan je svaki dan; Pro Chat ide dublje na našoj najsposobnijoj AI</p>
             </div>
 
             <div class="ai-feature">
@@ -794,7 +796,7 @@
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Duboka istraživačka izvješća <span class="ai-pro-badge">Pro</span></h4>
+                <h4><i class="fas fa-file-medical-alt"></i> Dubinsko istraživanje <span class="ai-pro-badge">Pro</span></h4>
                 <p>Sveobuhvatna AI analiza dnevnika s detaljnim uvidima</p>
             </div>
 
@@ -814,7 +816,7 @@
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Generator potvrde o bolovanju <span class="ai-pro-badge">Pro</span></h4>
+                <h4><i class="fas fa-file-medical"></i> Potvrda o bolovanju <span class="ai-pro-badge">Pro</span></h4>
                 <p>AI generirane potvrde o bolovanju za posao ili školu</p>
             </div>
 
@@ -829,7 +831,7 @@
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personalizirani kviz <span class="ai-pro-badge">Pro</span></h4>
+                <h4><i class="fas fa-graduation-cap"></i> Osobni kviz <span class="ai-pro-badge">Pro</span></h4>
                 <p>Testirajte znanje uz zabavni AI generirani kviz od 10 pitanja</p>
             </div>
 
@@ -855,7 +857,12 @@
 
             <div class="ai-feature">
                 <h4><i class="fas fa-microchip"></i> Apple Intelligence (Na Uređaju) <span class="ai-pro-badge">Pro</span></h4>
-                <p>Opcija s prioritetom privatnosti koja pokreće AI lokalno na vašem uređaju koristeći Apple Foundation Models — ništa ne napušta vaš iPhone, iPad ili Mac. Neograničeno korištenje s plaćenim računom, na podržanim uređajima Apple Silicon.</p>
+                <p>Opcija koja stavlja privatnost na prvo mjesto i pokreće AI lokalno na vašem uređaju pomoću Appleovih Foundation Models — ništa ne napušta vaš iPhone, iPad ili Mac. Neograničena upotreba uz plaćeni račun, na podržanim Apple Silicon uređajima (iOS 26+).</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-headset"></i> Glasovni chat <span class="ai-pro-badge">Pro</span></h4>
+                <p>Dvosmjerni glasovni razgovori s AI-jem o vašim podacima bez korištenja ruku — postavljajte pitanja i slušajte odgovore bez dodirivanja zaslona</p>
             </div>
 
         </div>
@@ -943,11 +950,11 @@
 
 
         <h3>Je li moj dnevnik privatan?</h3>
-        <p>Apsolutno. Vaši unosi su šifrirani na vašem uređaju i u privatnom iCloud računu. Nikad ne vidimo vaše pisanje. Čak i AI analiza sentimenta odvija se u potpunosti na vašem uređaju.</p>
+        <p>Apsolutno. Vaši unosi pohranjuju se na vašem uređaju i u vašem privatnom iCloud računu — nemamo poslužitelje koji pohranjuju vaš dnevnik i nikada ne vidimo što ste napisali. Neobavezne AI značajke koriste AI u oblaku koji poštuje privatnost, a koji možete isključiti u bilo kojem trenutku; kada je AI isključen, analiza raspoloženja odvija se u potpunosti na uređaju pomoću Appleova Natural Language okvira, a uz opciju Apple Intelligence sav AI radi na uređaju.</p>
 
 
         <h3>Kako funkcionira analiza sentimenta?</h3>
-        <p>Kad napišete 8 ili više riječi, aplikacija koristi Appleov ugrađeni Natural Language framework za analizu emocionalnog tona. Emotikon se pojavljuje kako bi pokazao ton unosa. Ovo se odvija u potpunosti on-device.</p>
+        <p>Dok pišete, aplikacija analizira emocionalni ton vašeg unosa i prikazuje emotikon koji pokazuje je li pozitivan, negativan ili neutralan. Prema zadanim postavkama za to se koristi AI aplikacije koji poštuje privatnost; ako isključite AI, prebacuje se na Appleov ugrađeni Natural Language okvir na uređaju.</p>
 
 
         <h3>Što je analiza frekvencije riječi?</h3>
@@ -963,7 +970,7 @@
 
 
         <h3>Mogu li izvesti unose dnevnika?</h3>
-        <p>Da. Možete izvesti unose kao PDF, Excel ili JSON datoteke.</p>
+        <p>Da. Svoje unose možete izvesti kao PDF, CSV, Excel ili JSON datoteke. To vam omogućuje izradu sigurnosnih kopija, dijeljenje odabranih unosa ili prijenos podataka na druge platforme po potrebi.</p>
 
 
         <h3>Radi li na Macu?</h3>
@@ -979,7 +986,7 @@
 
 
         <h3>Trebam li pretplatu?</h3>
-        <p>Pretplata nije potrebna. Aplikacija je potpuno besplatna za preuzimanje i svaka značajka — uključujući sve AI značajke — dostupna je svima. Neobavezna premium pretplata jednostavno povećava vaše limite korištenja AI-ja na 10× besplatne razine. Aplikacije nikad ne prikazuju oglase.</p>
+        <p>Pretplata nije potrebna. Aplikacija se besplatno preuzima, svo praćenje, grafikoni, sinkronizacija s Apple Healthom i izvozi su besplatni, a svaki korisnik svaki dan dobiva stvarne AI značajke besplatno — bez oglasa, nikad. Neobavezna pretplata Pro otključava najdetaljnije AI značajke (Dubinsko istraživanje, Istraživač tema, Vremenska crta raspoloženja, Sažetak za liječnika, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja.</p>
 
     </section>
 

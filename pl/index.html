@@ -198,7 +198,7 @@
                 "Wglądy zdrowotne zasilane AI",
                 "Camera Scan AI do przechwytywania odczytów",
                 "Dwukierunkowa synchronizacja z Apple Health",
-                "Eksport raportów do PDF i Excel",
+                "Eksport raportów do PDF, CSV, Excel i JSON",
                 "Kopia zapasowa i synchronizacja iCloud",
                 "Obsługa 32 języków",
                 "Bez reklam, bez śledzenia, prywatność przede wszystkim"
@@ -612,7 +612,7 @@
                       "name": "Czy potrzebuję subskrypcji?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Subskrypcja nie jest wymagana. Wszystkie aplikacje są całkowicie bezpłatne do pobrania i każda funkcja — w tym wszystkie funkcje AI — jest dostępna dla wszystkich. Opcjonalna subskrypcja premium jedynie podnosi limity użycia AI do 10× poziomu darmowego. Aplikacje nigdy nie wyświetlają reklam."
+                            "text": "Subskrypcja nie jest wymagana. Wszystkie aplikacje są darmowe do pobrania, całe śledzenie, wykresy, synchronizacja z Apple Health i eksporty są bezpłatne, a każdy użytkownik codziennie otrzymuje prawdziwe funkcje AI za darmo — bez reklam, zawsze. Opcjonalna subskrypcja Pro odblokowuje najbardziej rozbudowane funkcje AI (Dogłębna analiza, Detektyw wzorców, Podsumowanie dla lekarza, Czat Pro i inne), uruchamia je na naszym najbardziej zaawansowanym modelu AI i podnosi hojne dzienne limity."
                       }
                 }
           ]
@@ -839,7 +839,7 @@
             </div>
 
             <div class="hero-stat">
-                <div class="hero-stat-number">22K+</div>
+                <div class="hero-stat-number">23K+</div>
                 <div class="hero-stat-label">Oceny</div>
             </div>
 
@@ -919,7 +919,7 @@
 
                     <li><i class="fas fa-chart-line"></i> Analiza trendów i wykrywanie wzorców</li>
 
-                    <li><i class="fas fa-file-medical"></i> Eksportuj raporty do udostępnienia lekarzowi (PDF z opcją dużego tekstu, Excel)</li>
+                    <li><i class="fas fa-file-medical"></i> Eksport raportów do udostępnienia lekarzowi (PDF z opcją dużego tekstu, CSV, Excel, JSON)</li>
 
                     <li><i class="fas fa-heart"></i> Integracja z Apple Health dla kompleksowego śledzenia</li>
 
@@ -1124,7 +1124,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-cloud"></i></div>
                 <h3>Synchronizacja i kopia zapasowa iCloud</h3>
-                <p>Twoje dane automatycznie synchronizują się między iPhone, iPad i Mac przez iCloud. Opcjonalne automatyczne cotygodniowe kopie zapasowe JSON zapewniają, że Twoje dane są zawsze bezpieczne i możliwe do eksportu.</p>
+                <p>Twoje dane automatycznie synchronizują się między iPhonem, iPadem i Makiem przez iCloud. Automatyczne cotygodniowe kopie zapasowe zachowują pełną kopię Twoich wpisów i zdjęć, dzięki czemu Twoje dane są zawsze bezpieczne i możliwe do wyeksportowania.</p>
 
             </div>
 
@@ -1138,7 +1138,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-export"></i></div>
                 <h3>Eksport i udostępnianie</h3>
-                <p>Eksportuj dane jako PDF (z opcją dużego tekstu), Excel lub JSON. Łatwo udostępniaj kompleksowe raporty lekarzowi lub dostawcy opieki zdrowotnej.</p>
+                <p>Eksportuj swoje dane jako PDF (z opcją dużego tekstu), CSV, Excel lub JSON. Łatwo udostępniaj kompleksowe raporty swojemu lekarzowi.</p>
 
             </div>
 
@@ -1293,7 +1293,7 @@
     <!-- AI Features Highlight -->
     <section class="ai-section center-text">
         <h2>Zasilane sztuczną inteligencją</h2>
-        <p class="section-subtitle">Nasze funkcje AI pomagają rozumieć dane zdrowotne jak nigdy dotąd</p>
+        <p class="section-subtitle">Każdy użytkownik codziennie otrzymuje prawdziwe AI za darmo. Funkcje oznaczone jako Pro są częścią opcjonalnej subskrypcji Pro — najpełniejsza wersja każdej funkcji, na naszym najbardziej zaawansowanym modelu AI.</p>
 
         <div class="ai-features-grid">
 
@@ -1304,7 +1304,7 @@
 
             <div class="ai-feature">
                 <h3><i class="fas fa-comments"></i> Czat</h3>
-                <p>Prowadź interaktywne rozmowy o swojej drodze zdrowotnej i uzyskuj spersonalizowane wskazówki</p>
+                <p>Prowadź interaktywne rozmowy o swojej drodze zdrowotnej i otrzymuj spersonalizowane wskazówki. Szybki Czat jest darmowy każdego dnia; Czat Pro sięga głębiej dzięki naszemu najbardziej zaawansowanemu modelowi AI</p>
             </div>
 
             <div class="ai-feature">
@@ -1333,7 +1333,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-file-medical-alt"></i> Pogłębione raporty badawcze <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-file-medical-alt"></i> Dogłębna analiza <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kompleksowa analiza AI Twoich danych zdrowotnych ze szczegółowymi wglądami i podsumowaniami profesjonalnej jakości</p>
             </div>
 
@@ -1353,7 +1353,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-file-medical"></i> Generator zwolnień lekarskich <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-file-medical"></i> Zwolnienie lekarskie <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generowane przez AI zwolnienia lekarskie do pracy lub szkoły na podstawie danych śledzenia zdrowia</p>
             </div>
 
@@ -1368,7 +1368,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-graduation-cap"></i> Spersonalizowany quiz <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-graduation-cap"></i> Osobisty quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Sprawdź swoją wiedzę zabawnym quizem generowanym przez AI z 10 pytaniami o Twoje dane</p>
             </div>
 
@@ -1379,12 +1379,17 @@
 
             <div class="ai-feature">
                 <h3><i class="fas fa-file-invoice"></i> Dostosowany raport zdrowotny <span class="ai-pro-badge">Pro</span></h3>
-                <p>Twórz kompleksowe, spersonalizowane dokumenty zdrowotne z wglądami generowanymi przez AI dotyczącymi Twoich postępów</p>
+                <p>Twórz kompleksowe, spersonalizowane dokumenty zdrowotne z wnioskami wygenerowanymi przez AI dotyczącymi Twoich postępów. Darmowy Szybki Raport Zdrowotny jest dostępny dla każdego</p>
             </div>
 
             <div class="ai-feature">
                 <h3><i class="fas fa-microchip"></i> Apple Intelligence (na urządzeniu) <span class="ai-pro-badge">Pro</span></h3>
-                <p>Opcja stawiająca prywatność na pierwszym miejscu, która uruchamia AI lokalnie na Twoim urządzeniu przy użyciu Apple Foundation Models — nic nie opuszcza Twojego iPhone'a, iPada ani Maca. Nieograniczone użytkowanie z płatnym kontem, na obsługiwanych urządzeniach Apple Silicon.</p>
+                <p>Opcja stawiająca na prywatność, która uruchamia AI lokalnie na Twoim urządzeniu za pomocą modeli Apple Foundation Models — nic nie opuszcza Twojego iPhone'a, iPada ani Maca. Nieograniczone użycie z płatnym kontem, na obsługiwanych urządzeniach z Apple Silicon (iOS 26+).</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-headset"></i> Czat głosowy <span class="ai-pro-badge">Pro</span></h3>
+                <p>Rozmowy głosowe z AI o Twoich danych, prowadzone bez użycia rąk, w obie strony — zadawaj pytania i słuchaj odpowiedzi bez dotykania ekranu</p>
             </div>
 
         </div>
@@ -1407,7 +1412,7 @@
             </div>
 
             <div class="stat-box">
-                <div class="stat-number">22K+</div>
+                <div class="stat-number">23K+</div>
                 <div class="stat-label">Oceny</div>
             </div>
 
@@ -1630,7 +1635,7 @@
 
 
         <h3>Czy potrzebuję subskrypcji?</h3>
-        <p>Subskrypcja nie jest wymagana. Wszystkie aplikacje są całkowicie bezpłatne do pobrania i każda funkcja — w tym wszystkie funkcje AI — jest dostępna dla wszystkich. Opcjonalna subskrypcja premium jedynie podnosi limity użycia AI do 10× poziomu darmowego. Aplikacje nigdy nie wyświetlają reklam.</p>
+        <p>Subskrypcja nie jest wymagana. Wszystkie aplikacje są darmowe do pobrania, całe śledzenie, wykresy, synchronizacja z Apple Health i eksporty są bezpłatne, a każdy użytkownik codziennie otrzymuje prawdziwe funkcje AI za darmo — bez reklam, zawsze. Opcjonalna subskrypcja Pro odblokowuje najbardziej rozbudowane funkcje AI (Dogłębna analiza, Detektyw wzorców, Podsumowanie dla lekarza, Czat Pro i inne), uruchamia je na naszym najbardziej zaawansowanym modelu AI i podnosi hojne dzienne limity.</p>
 
 
     </section>

@@ -198,7 +198,7 @@
                 "AI zdravotné poznatky",
                 "Camera Scan AI na zachytávanie odčítaní",
                 "Obojsmerná synchronizácia Apple Health",
-                "Export správ do PDF a Excel",
+                "Export správ do PDF, CSV, Excel a JSON",
                 "Zálohovanie a synchronizácia cez iCloud",
                 "Podpora 32 jazykov",
                 "Žiadne reklamy, žiadne sledovanie, súkromie na prvom mieste"
@@ -556,7 +556,7 @@
                       "name": "Potrebujem predplatné?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Predplatné nie je potrebné. Všetky aplikácie sú úplne zadarmo na stiahnutie a každá funkcia — vrátane všetkých funkcií AI — je dostupná pre každého. Voliteľné prémiové predplatné jednoducho zvyšuje limity využívania AI na 10× oproti bezplatnému plánu. Aplikácie nikdy nezobrazujú reklamy."
+                            "text": "Predplatné nie je potrebné. Všetky aplikácie sú zdarma na stiahnutie, všetko sledovanie, grafy, synchronizácia s Apple Health a exporty sú zdarma a každý používateľ má skutočné AI funkcie zdarma každý deň — bez reklám, navždy. Voliteľné predplatné Pro odomkne najpodrobnejšie AI funkcie (Hĺbkový výskum, Detektív vzorov, Súhrn pre lekára, Pro Chat a ďalšie), spúšťa ich na našej najschopnejšej AI a zvyšuje už aj tak štedré denné limity."
                       }
                 }
           ]
@@ -783,7 +783,7 @@
             </div>
 
             <div class="hero-stat">
-                <div class="hero-stat-number">22K+</div>
+                <div class="hero-stat-number">23K+</div>
                 <div class="hero-stat-label">Hodnotení</div>
             </div>
 
@@ -863,7 +863,7 @@
 
                     <li><i class="fas fa-chart-line"></i> Analýza trendov a detekcia vzorov</li>
 
-                    <li><i class="fas fa-file-medical"></i> Export správ na zdieľanie s lekárom (PDF s možnosťou veľkého textu, Excel)</li>
+                    <li><i class="fas fa-file-medical"></i> Exportujte správy na zdieľanie s lekárom (PDF s možnosťou veľkého textu, CSV, Excel, JSON)</li>
 
                     <li><i class="fas fa-heart"></i> Integrácia Apple Health pre komplexné sledovanie</li>
 
@@ -1068,7 +1068,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-cloud"></i></div>
                 <h3>Synchronizácia a záloha iCloud</h3>
-                <p>Vaše údaje sa automaticky synchronizujú naprieč iPhone, iPad a Mac cez iCloud. Voliteľné automatické týždenné JSON zálohy zaistia, že údaje sú vždy bezpečné a exportovateľné.</p>
+                <p>Vaše údaje sa automaticky synchronizujú medzi iPhone, iPad a Mac cez iCloud. Automatické týždenné zálohy uchovávajú kompletnú kópiu vašich záznamov a fotografií, takže vaše údaje sú vždy v bezpečí a pripravené na export.</p>
 
             </div>
 
@@ -1082,7 +1082,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-export"></i></div>
                 <h3>Export a zdieľanie</h3>
-                <p>Exportujte údaje ako PDF (s možnosťou veľkého textu), Excel alebo JSON. Ľahko zdieľajte komplexné správy s lekárom alebo zdravotníckym pracovníkom.</p>
+                <p>Exportujte svoje údaje ako PDF (s možnosťou veľkého textu), CSV, Excel alebo JSON. Jednoducho zdieľajte komplexné správy so svojím lekárom.</p>
 
             </div>
 
@@ -1237,7 +1237,7 @@
     <!-- AI Features Highlight -->
     <section class="ai-section center-text">
         <h2>Poháňané umelou inteligenciou</h2>
-        <p class="section-subtitle">Naše AI funkcie vám pomôžu pochopiť zdravotné údaje ako nikdy predtým</p>
+        <p class="section-subtitle">Každý používateľ má skutočnú AI zdarma každý deň. Funkcie označené Pro sú súčasťou voliteľného predplatného Pro — najkompletnejšia verzia každej funkcie, na našej najschopnejšej AI.</p>
 
         <div class="ai-features-grid">
 
@@ -1248,7 +1248,7 @@
 
             <div class="ai-feature">
                 <h3><i class="fas fa-comments"></i> Chat</h3>
-                <p>Interaktívne rozhovory o zdravotnej ceste a personalizované rady</p>
+                <p>Veďte interaktívne rozhovory o svojej zdravotnej ceste a získajte personalizované odporúčania. Quick Chat je zdarma každý deň; Pro Chat ide do hĺbky na našej najschopnejšej AI</p>
             </div>
 
             <div class="ai-feature">
@@ -1277,7 +1277,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-file-medical-alt"></i> Hĺbkové výskumné správy <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-file-medical-alt"></i> Hĺbkový výskum <span class="ai-pro-badge">Pro</span></h3>
                 <p>Komplexná AI analýza zdravotných údajov s podrobnými poznatkami a profesionálnymi zhrnutiami</p>
             </div>
 
@@ -1297,7 +1297,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-file-medical"></i> Generátor PN lístka <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-file-medical"></i> PN lístok <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI generované PN lístky do práce alebo školy na základe sledovacích zdravotných údajov</p>
             </div>
 
@@ -1312,7 +1312,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-graduation-cap"></i> Personalizovaný kvíz <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-graduation-cap"></i> Osobný kvíz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Otestujte si vedomosti zábavným AI kvízom s 10 otázkami o vašich údajoch</p>
             </div>
 
@@ -1323,12 +1323,17 @@
 
             <div class="ai-feature">
                 <h3><i class="fas fa-file-invoice"></i> Prispôsobená zdravotná správa <span class="ai-pro-badge">Pro</span></h3>
-                <p>Vytvorte komplexné, personalizované zdravotné dokumenty s AI poznatkami o pokroku</p>
+                <p>Vytvorte komplexné, personalizované zdravotné dokumenty s AI generovanými poznatkami o vašom pokroku. Bezplatná rýchla zdravotná správa je súčasťou pre každého</p>
             </div>
 
             <div class="ai-feature">
                 <h3><i class="fas fa-microchip"></i> Apple Intelligence (na zariadení) <span class="ai-pro-badge">Pro</span></h3>
-                <p>Možnosť uprednostňujúca súkromie, ktorá spúšťa AI lokálne na vašom zariadení pomocou Foundation Models od Apple — nič neopúšťa váš iPhone, iPad ani Mac. Neobmedzené používanie s plateným účtom na podporovaných zariadeniach Apple Silicon.</p>
+                <p>Súkromná možnosť, ktorá spúšťa AI lokálne vo vašom zariadení pomocou Apple Foundation Models — nič neopúšťa váš iPhone, iPad ani Mac. Neobmedzené používanie s plateným účtom na podporovaných zariadeniach s Apple Silicon (iOS 26+).</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-headset"></i> Hlasový chat <span class="ai-pro-badge">Pro</span></h3>
+                <p>Obojsmerné hlasové rozhovory s AI o vašich údajoch bez použitia rúk — pýtajte sa otázky a počúvajte odpovede bez dotyku obrazovky</p>
             </div>
 
         </div>
@@ -1351,7 +1356,7 @@
             </div>
 
             <div class="stat-box">
-                <div class="stat-number">22K+</div>
+                <div class="stat-number">23K+</div>
                 <div class="stat-label">Hodnotení</div>
             </div>
 
@@ -1574,7 +1579,7 @@
 
 
         <h3>Potrebujem predplatné?</h3>
-        <p>Predplatné nie je potrebné. Všetky aplikácie sú úplne zadarmo na stiahnutie a každá funkcia — vrátane všetkých funkcií AI — je dostupná pre každého. Voliteľné prémiové predplatné jednoducho zvyšuje limity využívania AI na 10× oproti bezplatnému plánu. Aplikácie nikdy nezobrazujú reklamy.</p>
+        <p>Predplatné nie je potrebné. Všetky aplikácie sú zdarma na stiahnutie, všetko sledovanie, grafy, synchronizácia s Apple Health a exporty sú zdarma a každý používateľ má skutočné AI funkcie zdarma každý deň — bez reklám, navždy. Voliteľné predplatné Pro odomkne najpodrobnejšie AI funkcie (Hĺbkový výskum, Detektív vzorov, Súhrn pre lekára, Pro Chat a ďalšie), spúšťa ich na našej najschopnejšej AI a zvyšuje už aj tak štedré denné limity.</p>
 
 
     </section>

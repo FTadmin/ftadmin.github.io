@@ -198,7 +198,7 @@
                 "AI-drevne helseinnsikter",
                 "AI kameraskann for avlesning",
                 "Toveis synkronisering med Apple Health",
-                "Eksporter rapporter til PDF og Excel",
+                "Eksporter rapporter til PDF, CSV, Excel og JSON",
                 "iCloud-sikkerhetskopiering og synkronisering",
                 "Støtte for 32 språk",
                 "Ingen reklame, ingen sporing, personvern først"
@@ -612,7 +612,7 @@
                       "name": "Trenger jeg et abonnement?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ikke nødvendig med abonnement. Alle apper er helt gratis å laste ned, og alle funksjoner – inkludert alle AI-funksjoner – er tilgjengelige for alle. Et valgfritt premiumabonnement øker bare AI-bruksgrensene dine til 10× gratisplanen. Appene viser aldri annonser."
+                            "text": "Ingen abonnement er nødvendig. Alle apper er gratis å laste ned, all sporing, diagrammer, Apple Health-synk og eksport er gratis, og alle brukere får ekte AI-funksjoner gratis hver dag – uten annonser, noensinne. Et valgfritt Pro-abonnement låser opp de mest omfattende AI-funksjonene (Dyptgående forskning, Mønsterdetektiv, Legeoppsummering, Pro-chat og mer), kjører dem på vår mest kapable AI, og hever de allerede sjenerøse daglige grensene."
                       }
                 }
           ]
@@ -839,7 +839,7 @@
             </div>
 
             <div class="hero-stat">
-                <div class="hero-stat-number">22K+</div>
+                <div class="hero-stat-number">23K+</div>
                 <div class="hero-stat-label">Ratings</div>
             </div>
 
@@ -919,7 +919,7 @@
 
                     <li><i class="fas fa-chart-line"></i> Trendanalyse og mønstergjenkjenning</li>
 
-                    <li><i class="fas fa-file-medical"></i> Eksporter rapporter til legen din (PDF med stor tekst-alternativ, Excel)</li>
+                    <li><i class="fas fa-file-medical"></i> Eksporter rapporter for å dele med legen din (PDF med stor tekst-alternativ, CSV, Excel, JSON)</li>
 
                     <li><i class="fas fa-heart"></i> Apple Health-integrasjon for fullstendig sporing</li>
 
@@ -1124,7 +1124,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-cloud"></i></div>
                 <h3>iCloud-synkronisering og sikkerhetskopiering</h3>
-                <p>Dataene dine synkroniseres automatisk på tvers av iPhone, iPad og Mac via iCloud. Valgfri automatisk ukentlig JSON-sikkerhetskopiering sikrer at dataene dine alltid er trygge og kan eksporteres.</p>
+                <p>Dataene dine synkroniseres automatisk mellom iPhone, iPad og Mac via iCloud. Automatiske ukentlige sikkerhetskopier holder en komplett kopi av oppføringene og bildene dine, slik at dataene dine alltid er trygge og eksporterbare.</p>
 
             </div>
 
@@ -1138,7 +1138,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-export"></i></div>
                 <h3>Eksporter og del</h3>
-                <p>Eksporter dataene dine som PDF (med stort tekstalternativ), Excel eller JSON. Del omfattende rapporter med legen din eller helsepersonell på en enkel måte.</p>
+                <p>Eksporter dataene dine som PDF (med stor tekst-alternativ), CSV, Excel eller JSON. Del omfattende rapporter med legen din enkelt.</p>
 
             </div>
 
@@ -1293,7 +1293,7 @@
     <!-- AI Features Highlight -->
     <section class="ai-section center-text">
         <h2>Drevet av kunstig intelligens</h2>
-        <p class="section-subtitle">AI-funksjonene våre hjelper deg å forstå helsedataene dine som aldri før</p>
+        <p class="section-subtitle">Alle brukere får ekte AI gratis hver dag. Funksjoner merket Pro er del av det valgfrie Pro-abonnementet – den mest fullstendige versjonen av hver funksjon, på vår mest kapable AI.</p>
 
         <div class="ai-features-grid">
 
@@ -1304,7 +1304,7 @@
 
             <div class="ai-feature">
                 <h3><i class="fas fa-comments"></i> Chat</h3>
-                <p>Ha interaktive samtaler om helseveien din og få personalisert veiledning</p>
+                <p>Ha interaktive samtaler om helsereisen din og få personlig veiledning. Rask chat er gratis hver dag; Pro-chat går dypere på vår mest kapable AI</p>
             </div>
 
             <div class="ai-feature">
@@ -1333,7 +1333,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-file-medical-alt"></i> Dype forskningsrapporter <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-file-medical-alt"></i> Dyptgående forskning <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omfattende AI-analyse av helsedataene dine med detaljerte innsikter og oppsummeringer av profesjonell kvalitet</p>
             </div>
 
@@ -1353,7 +1353,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-file-medical"></i> Sykemeldingsgenerator <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-file-medical"></i> Sykmelding <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-genererte sykmeldinger for jobb eller skole basert på helsesporingsdataene dine</p>
             </div>
 
@@ -1368,7 +1368,7 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-graduation-cap"></i> Personalisert quiz <span class="ai-pro-badge">Pro</span></h3>
+                <h3><i class="fas fa-graduation-cap"></i> Personlig quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test kunnskapen din med en morsom AI-generert quiz med 10 spørsmål om dataene dine</p>
             </div>
 
@@ -1379,12 +1379,17 @@
 
             <div class="ai-feature">
                 <h3><i class="fas fa-file-invoice"></i> Skreddersydd helsetapport <span class="ai-pro-badge">Pro</span></h3>
-                <p>Lag omfattende, personlige helsedokumenter med AI-genererte innsikter om fremgangen din</p>
+                <p>Lag omfattende, personlige helsedokumenter med AI-genererte innsikter om fremgangen din. En gratis Rask helserapport er inkludert for alle</p>
             </div>
 
             <div class="ai-feature">
                 <h3><i class="fas fa-microchip"></i> Apple Intelligence (på enheten) <span class="ai-pro-badge">Pro</span></h3>
-                <p>Personvernfokusert alternativ som kjører AI lokalt på enheten din ved hjelp av Apples Foundation Models — ingenting forlater din iPhone, iPad eller Mac. Ubegrenset bruk med en betalt konto, på støttede Apple Silicon-enheter.</p>
+                <p>Personvernfokusert alternativ som kjører AI lokalt på enheten din ved hjelp av Apples Foundation Models — ingenting forlater din iPhone, iPad eller Mac. Ubegrenset bruk med en betalt konto, på støttede Apple Silicon-enheter (iOS 26+).</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h3>
+                <p>Håndfri, toveis talesamtaler med AI-en om dataene dine – still spørsmål og hør svar uten å røre skjermen</p>
             </div>
 
         </div>
@@ -1407,7 +1412,7 @@
             </div>
 
             <div class="stat-box">
-                <div class="stat-number">22K+</div>
+                <div class="stat-number">23K+</div>
                 <div class="stat-label">Ratings</div>
             </div>
 
@@ -1630,7 +1635,7 @@
 
 
         <h3>Trenger jeg et abonnement?</h3>
-        <p>Ikke nødvendig med abonnement. Alle apper er helt gratis å laste ned, og alle funksjoner – inkludert alle AI-funksjoner – er tilgjengelige for alle. Et valgfritt premiumabonnement øker bare AI-bruksgrensene dine til 10× gratisplanen. Appene viser aldri annonser.</p>
+        <p>Ingen abonnement er nødvendig. Alle apper er gratis å laste ned, all sporing, diagrammer, Apple Health-synk og eksport er gratis, og alle brukere får ekte AI-funksjoner gratis hver dag – uten annonser, noensinne. Et valgfritt Pro-abonnement låser opp de mest omfattende AI-funksjonene (Dyptgående forskning, Mønsterdetektiv, Legeoppsummering, Pro-chat og mer), kjører dem på vår mest kapable AI, og hever de allerede sjenerøse daglige grensene.</p>
 
 
     </section>

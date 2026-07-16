@@ -176,7 +176,8 @@
                 "Målsättning och framgångsspårning",
                 "Export till PDF och Excel",
                 "iCloud-säkerhetskopiering och synkronisering",
-                "Stöd för 32 språk"
+                "Stöd för 32 språk",
+                "Hemskärmswidgetar för snabb registrering"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/wt-1.png",
           "softwareVersion": "Latest",
@@ -337,7 +338,7 @@
                       "name": "Kan jag exportera min viktdata?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ja. Exportera din vikthistorik som PDF-diagram, Excel-kalkylblad eller JSON-data. Dela rapporter med din läkare, tränare eller nutritionist."
+                            "text": "Ja. Exportera din viktshistorik som PDF-diagram, CSV- eller Excel-kalkylblad, eller JSON-data. Dela rapporter med din läkare, tränare eller nutritionist."
                       }
                 },
                 {
@@ -345,7 +346,7 @@
                       "name": "Är detta en diet- eller måltidsspårningsapp?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Nej. Weight & Food fokuserar på att spåra kroppsliga mätningar (vikt, BMI, kroppsfett). Den spårar inte kalorier eller måltider. Du kan dock lägga till anteckningar om din kost för att identifiera vad som påverkar din vikt."
+                            "text": "Kärnan är kroppsmått — vikt, BMI och kroppsfett. Men mat är också en del av bilden: ta ett foto av valfri måltid så uppskattar AI-matskanningen kalorier, protein, kolhydrater och fett, och AI-måltidsplaneraren (Pro) kan föreslå måltider anpassade efter dina mål. Det finns ingen daglig kaloriräknare - bara enkel kontext vid sidan av din vikt."
                       }
                 },
                 {
@@ -361,7 +362,7 @@
                       "name": "Behöver jag en prenumeration?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Inget abonnemang krävs. Appen är helt gratis att ladda ned och alla funktioner – inklusive alla AI-funktioner – är tillgängliga för alla. Ett valfritt premiumabonnemang höjer bara dina AI-användningsgränser till 10× gratisversionen. Apparna visar aldrig annonser."
+                            "text": "Ingen prenumeration krävs. Appen är gratis att ladda ner, all spårning, diagram, Apple Health-synk och exporter är gratis, och alla användare får riktig AI gratis varje dag — utan annonser, någonsin. En valfri Pro-prenumeration låser upp de mest djupgående AI-funktionerna (Djupgående research, Måltids- och träningsplanerarna, Mönsterdetektiven, Läkarsammanfattning, Pro-chatt med mera), kör dem på vår mest kapabla AI och höjer de generösa dagliga gränserna."
                       }
                 }
           ]
@@ -568,7 +569,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-percent"></i></div>
                 <h3>BMI och kroppsfett inbyggt</h3>
-                <p>BMI beräknas automatiskt från din vikt och längd med färgkodade kategorier. Kroppsfettspårning är valfritt — ett eget diagram visas i det ögonblick du börjar logga det.</p>
+                <p>BMI beräknas automatiskt utifrån din vikt och längd med färgkodade kategorier. Kroppsfettspårning är valfritt — dess eget diagram visas så fort du börjar registrera det.</p>
             </div>
 
         </div>
@@ -582,19 +583,19 @@
         <div class="app-card">
             <h3>1. Logga Din Vikt & Mat</h3>
             <div class="app-card-content">
-<p><strong>Skanna Vågdisplay:</strong> Rikta kameran mot din vågs display och låt AI automatiskt läsa av din vikt. Fungerar med digitala vågar från alla märken – ingen skrivning, inga fel, bara omedelbar avläsning av siffrorna på din våg.</p>
-<p><strong>Skanna Mat:</strong> Ta ett foto av din måltid eller mellanmål och få omedelbar nutritionsanalys. AI identifierar maten och ger kalorier, protein, kolhydrater, fettuppdelning och portionsuppskattningar. Perfekt för att spåra vad du äter tillsammans med din vikt.</p>
-<p><strong>Manuell Inmatning:</strong> Föredrar du att skriva? Ange vikt manuellt tillsammans med valfria mätvärden som kroppsfettprocent, BMI (auto-beräknat), midjemått eller andra mätvärden du spårar.</p>
-<p><strong>Rik Kontext:</strong> Lägg till anteckningar om din dag – ätna måltider, genomförd träning, vattenintag, sömnkvalitet, stressnivåer, menstruationscykel, mediciner eller allt annat som kan påverka din vikt. Bifoga framstegsfoton för att visuellt dokumentera din resa vid sidan av siffrorna.</p>
+<p><strong>Skanna vågens display:</strong> Rikta kameran mot din vågs display och låt AI automatiskt läsa av din vikt. Fungerar med digitala vågar från alla märken - ingen inmatning, inga fel, bara omedelbar avläsning av siffrorna på din våg.</p>
+<p><strong>Skanna mat:</strong> Ta ett foto av din måltid eller ditt mellanmål och få omedelbar näringsanalys. AI identifierar maten och ger kalorier, protein, kolhydrater, fettuppdelning och portionsuppskattningar. Perfekt för att spåra vad du äter tillsammans med din vikt.</p>
+<p><strong>Manuell inmatning:</strong> Föredrar du att skriva? Ange vikt manuellt tillsammans med valfri kroppsfettprocent - BMI beräknas automatiskt utifrån din längd och vikt.</p>
+<p><strong>Rik kontext:</strong> Lägg till anteckningar om din dag - måltider, träning, vätskeintag, sömnkvalitet, stressnivåer, menscykel, mediciner, eller allt som kan påverka din vikt. Bifoga framstegsfoton för att visuellt dokumentera din resa tillsammans med siffrorna.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>2. Följ Framstegen</h3>
             <div class="app-card-content">
-<p><strong>Visuell Spårning:</strong> Se din vikthistorik visad i vackra diagram och grafer. Visa trender över dagar, veckor, månader eller anpassade datumintervall. Färgkodade indikatorer visar framsteg mot dina mål.</p>
-<p><strong>Smarta Medelvärden:</strong> Automatiskt beräknad statistik inkluderar vecko- och månadsmedelvärden som jämnar ut dagliga variationer, viktförändringshastighet, tidsprognoser till målet och trendlinjer som visar verkliga framsteg bortom dag-till-dag-variationer.</p>
-<p><strong>Milstolpsfiranden:</strong> Appen känner igen och firar dina prestationer – första 2 kg borttagna, 10 % av målet nått, längsta streak och mer. Håll motivationen uppe med visuella framstegsindikatatorer och prestationsmärken.</p>
+<p><strong>Visuell spårning:</strong> Se din viktshistorik visad i vackra diagram och grafer. Visa trender över dagar, veckor, månader eller anpassade datumintervall. Färgkodade indikatorer visar framsteg mot dina mål.</p>
+<p><strong>Smarta genomsnitt:</strong> Automatiskt beräknad statistik inkluderar vecko- och månadsgenomsnitt som jämnar ut dagliga fluktuationer, viktförändringstakt, prognoser för tid till mål, och trendlinjer som visar verkliga framsteg bortom dag-till-dag-variationer.</p>
+<p><strong>Milstolpsfiranden:</strong> Appen firar din konsekvens i registreringen - ett personligt AI-skrivet meddelande markerar din 5:e, 10:e, 50:e, 100:e registrering och därefter. Små ögonblick av uppmuntran som håller vanan vid liv.</p>
             </div>
         </div>
 
@@ -610,9 +611,9 @@
         <div class="app-card">
             <h3>4. Nå Dina Mål</h3>
             <div class="app-card-content">
-<p><strong>Målsättning:</strong> Sätt målvikter med realistiska tidsramar. Appen beräknar när du når ditt mål baserat på aktuella trender och visar om du är på rätt spår, i förväg eller behöver justera ditt tillvägagångssätt.</p>
-<p><strong>Professionella Rapporter:</strong> Exportera omfattande PDF- eller Excel-rapporter för nutritionister, personliga tränare eller läkare. Rapporter inkluderar viktgrafer, BMI-trender, förändringar i kroppsfettprocent, anteckningar om kost och träning samt statistiska sammanfattningar perfekta för professionella konsultationer.</p>
-<p><strong>Apple Health-Integration:</strong> Full dubbelriktad synkronisering med Apple Health. Importera vikt från smarta vågar eller andra appar och exportera all din viktdata till HealthKit. Din viktdata förblir kopplad till ditt kompletta tränings- och hälsoekosystem.</p>
+<p><strong>Målsättning:</strong> Sätt målvikter med realistiska tidslinjer. Appen förutspår när du når ditt mål baserat på nuvarande trender och visar om du ligger i fas, före, eller behöver justera din strategi.</p>
+<p><strong>Professionella rapporter:</strong> Exportera omfattande PDF-, CSV-, Excel- eller JSON-rapporter för nutritionister, personliga tränare eller läkare. Rapporterna innehåller viktdiagram, BMI-trender, förändringar i kroppsfettprocent, anteckningar om kost och träning, samt statistiska sammanfattningar perfekta för professionella konsultationer.</p>
+<p><strong>Apple Health-integration:</strong> Fullständig tvåvägssynkronisering med Apple Health. Importera vikt från smarta vågar eller andra appar, och exportera all din WT-data till HealthKit. Din viktdata förblir kopplad till ditt fullständiga fitness- och hälsoekosystem.</p>
             </div>
         </div>
 
@@ -621,7 +622,7 @@
     <!-- AI Features -->
     <section class="ai-section center-text">
         <h2>Drivs av Artificiell Intelligens</h2>
-        <p class="section-subtitle">Avancerade AI-funktioner för att hjälpa dig förstå dina viktmönster bättre</p>
+        <p class="section-subtitle">Alla användare får riktig AI gratis varje dag. Funktioner märkta Pro ingår i den valfria Pro-prenumerationen — den fullständigaste versionen av varje funktion, på vår mest kapabla AI.</p>
 
         <div class="ai-features-grid">
 
@@ -632,7 +633,7 @@
 
             <div class="ai-feature">
                 <h4><i class="fas fa-comments"></i> Chatt</h4>
-                <p>Ha interaktiva samtal om din träningsresa och få personlig vägledning</p>
+                <p>Ha interaktiva samtal om din träningsresa och få personlig vägledning. Snabbchatt är gratis varje dag; Pro-chatt går djupare på vår mest kapabla AI</p>
             </div>
 
             <div class="ai-feature">
@@ -656,7 +657,7 @@
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Djupgående Forskningsrapporter <span class="ai-pro-badge">Pro</span></h4>
+                <h4><i class="fas fa-file-medical-alt"></i> Djupgående research <span class="ai-pro-badge">Pro</span></h4>
                 <p>Omfattande AI-analys av dina viktdata med detaljerade insikter</p>
             </div>
 
@@ -676,7 +677,7 @@
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sjukintyggenerator <span class="ai-pro-badge">Pro</span></h4>
+                <h4><i class="fas fa-file-medical"></i> Sjukintyg <span class="ai-pro-badge">Pro</span></h4>
                 <p>AI-genererade sjukintyg för arbete eller skola när du behöver dem</p>
             </div>
 
@@ -717,7 +718,12 @@
 
             <div class="ai-feature">
                 <h4><i class="fas fa-microchip"></i> Apple Intelligence (på enheten) <span class="ai-pro-badge">Pro</span></h4>
-                <p>Integritetsfokuserat alternativ som kör AI lokalt på din enhet med Apples Foundation Models — ingenting lämnar din iPhone, iPad eller Mac. Obegränsad användning med ett betalkonto, på Apple Silicon-enheter som stöds.</p>
+                <p>Integritetsfokuserat alternativ som kör AI lokalt på din enhet med Apples Foundation Models — ingenting lämnar din iPhone, iPad eller Mac. Obegränsad användning med ett betalkonto, på Apple Silicon-enheter som stöds (iOS 26+).</p>
+            </div>
+
+            <div class="ai-feature">
+                <h4><i class="fas fa-headset"></i> Röstchatt <span class="ai-pro-badge">Pro</span></h4>
+                <p>Handsfria, tvåvägs röstsamtal med AI:n om din data — ställ frågor och hör svar utan att röra skärmen</p>
             </div>
 
         </div>
@@ -813,11 +819,11 @@
 
 
         <h3>Kan jag exportera min viktdata?</h3>
-        <p>Ja. Exportera din vikthistorik som PDF-diagram, Excel-kalkylblad eller JSON-data. Dela rapporter med din läkare, tränare eller nutritionist.</p>
+        <p>Ja. Exportera din viktshistorik som PDF-diagram, CSV- eller Excel-kalkylblad, eller JSON-data. Dela rapporter med din läkare, tränare eller nutritionist.</p>
 
 
         <h3>Är detta en diet- eller måltidsspårningsapp?</h3>
-        <p>Nej. Weight & Food fokuserar på att spåra kroppsliga mätningar (vikt, BMI, kroppsfett). Den spårar inte kalorier eller måltider. Du kan dock lägga till anteckningar om din kost för att identifiera vad som påverkar din vikt.</p>
+        <p>Kärnan är kroppsmått — vikt, BMI och kroppsfett. Men mat är också en del av bilden: ta ett foto av valfri måltid så uppskattar AI-matskanningen kalorier, protein, kolhydrater och fett, och AI-måltidsplaneraren (Pro) kan föreslå måltider anpassade efter dina mål. Det finns ingen daglig kaloriräknare - bara enkel kontext vid sidan av din vikt.</p>
 
 
         <h3>Visar ni reklam eller spårar ni mig?</h3>
@@ -826,7 +832,7 @@
 
 
         <h3>Behöver jag en prenumeration?</h3>
-        <p>Inget abonnemang krävs. Appen är helt gratis att ladda ned och alla funktioner – inklusive alla AI-funktioner – är tillgängliga för alla. Ett valfritt premiumabonnemang höjer bara dina AI-användningsgränser till 10× gratisversionen. Apparna visar aldrig annonser.</p>
+        <p>Ingen prenumeration krävs. Appen är gratis att ladda ner, all spårning, diagram, Apple Health-synk och exporter är gratis, och alla användare får riktig AI gratis varje dag — utan annonser, någonsin. En valfri Pro-prenumeration låser upp de mest djupgående AI-funktionerna (Djupgående research, Måltids- och träningsplanerarna, Mönsterdetektiven, Läkarsammanfattning, Pro-chatt med mera), kör dem på vår mest kapabla AI och höjer de generösa dagliga gränserna.</p>
 
     </section>
 

@@ -72,7 +72,7 @@
     },
     {
      "title": "BMI en lichaamsvet, ingebouwd",
-     "description": "BMI wordt automatisch berekend uit je gewicht en lengte, met kleurgecodeerde categorieën. Lichaamsvet bijhouden is optioneel — de eigen grafiek verschijnt zodra je begint met loggen."
+     "description": "BMI wordt automatisch berekend op basis van je gewicht en lengte met kleurgecodeerde categorieën. Vetpercentage-tracking is optioneel — de eigen grafiek verschijnt zodra je begint met bijhouden."
     }
    ]
   },
@@ -82,11 +82,11 @@
    "steps": [
     {
      "title": "1. Registreer je gewicht & voeding",
-     "content": "**Weegschaaldisplay scannen:** Richt je camera op het display van je weegschaal en laat AI je gewicht automatisch aflezen. Werkt met digitale weegschalen van elk merk - geen typen, geen fouten, alleen directe registratie van de cijfers op je weegschaal.\n\n**Voeding scannen:** Maak een foto van je maaltijd of snack en ontvang directe voedingsanalyse. AI identificeert het voedsel en geeft calorieën, eiwit-, koolhydraat- en vetopsplitsing en portieramingen. Perfect voor het bijhouden van wat je eet naast je gewicht.\n\n**Handmatige invoer:** Liever typen? Voer het gewicht handmatig in samen met optionele metingen zoals lichaamsvetpercentage, BMI (automatisch berekend), tailleomtrek of andere statistieken die je bijhoudt.\n\n**Rijke context:** Voeg notities toe over je dag - gegeten maaltijden, voltooide oefeningen, waterinname, slaapkwaliteit, stressniveaus, menstruatiecyclus, medicijnen of alles wat je gewicht kan beïnvloeden. Voeg voortgangsfoto's toe om je reis visueel vast te leggen naast de cijfers."
+     "content": "**Weegschaaldisplay scannen:** Richt je camera op het display van je weegschaal en laat AI automatisch je gewicht aflezen. Werkt met digitale weegschalen van elk merk - geen getypt, geen fouten, gewoon directe vastlegging van de cijfers op je weegschaal.\n\n**Voedsel scannen:** Maak een foto van je maaltijd of snack en krijg direct een voedingsanalyse. AI identificeert het voedsel en geeft calorieën, eiwit-, koolhydraat- en vetverdeling en portieschattingen. Perfect om bij te houden wat je eet naast je gewicht.\n\n**Handmatige invoer:** Liever typen? Voer je gewicht handmatig in met optioneel vetpercentage - BMI wordt automatisch berekend op basis van je lengte en gewicht.\n\n**Rijke context:** Voeg notities toe over je dag - gegeten maaltijden, gedane oefeningen, waterinname, slaapkwaliteit, stressniveaus, menstruatiecyclus, medicijnen, of alles wat je gewicht kan beïnvloeden. Voeg voortgangsfoto's toe om je traject visueel te documenteren naast de cijfers."
     },
     {
      "title": "2. Voortgang bijhouden",
-     "content": "**Visuele registratie:** Zie je gewichtsgeschiedenis weergegeven in prachtige grafieken. Bekijk trends over dagen, weken, maanden of aangepaste datumbereiken. Kleurgecodeerde indicatoren tonen voortgang richting je doelen.\n\n**Slimme gemiddelden:** Automatisch berekende statistieken omvatten wekelijkse en maandelijkse gemiddelden die dagelijkse schommelingen uitvlakken, gewichtsveranderingssnelheid, tijd-tot-doel-projecties en trendlijnen die echte voortgang tonen buiten de dagelijkse variaties.\n\n**Mijlpaalvieringen:** De app herkent en viert je prestaties - eerste 2 kg verloren, 10% van het doel bereikt, langste reeks en meer. Blijf gemotiveerd met visuele voortgangsindicatoren en prestatiebadges."
+     "content": "**Visuele tracking:** Bekijk je gewichtsgeschiedenis in prachtige grafieken en diagrammen. Bekijk trends over dagen, weken, maanden of aangepaste periodes. Kleurgecodeerde indicatoren tonen voortgang richting je doelen.\n\n**Slimme gemiddelden:** Automatisch berekende statistieken omvatten wekelijkse en maandelijkse gemiddelden die dagelijkse schommelingen gladstrijken, gewichtsveranderingssnelheid, doelprojecties, en trendlijnen die echte vooruitgang tonen voorbij dagelijkse variaties.\n\n**Mijlpaalvieringen:** De app viert je consistentie in bijhouden - een persoonlijk, door AI geschreven bericht markeert je 5e, 10e, 50e, 100e registratie en verder. Kleine momenten van aanmoediging die de gewoonte levend houden."
     },
     {
      "title": "3. Patronen ontdekken",
@@ -94,13 +94,13 @@
     },
     {
      "title": "4. Je doelen bereiken",
-     "content": "**Doelen stellen:** Stel doelgewichten in met realistische tijdlijnen. De app projecteert wanneer je je doel bereikt op basis van huidige trends en laat zien of je op schema ligt, voorloopt of je aanpak moet aanpassen.\n\n**Professionele rapporten:** Exporteer uitgebreide PDF- of Excel-rapporten voor diëtisten, personal trainers of artsen. Rapporten bevatten gewichtsgrafieken, BMI-trends, veranderingen in lichaamsvetpercentage, notities over voeding en beweging, en statistische samenvattingen perfect voor professionele consultaties.\n\n**Apple Gezondheid-integratie:** Volledige bidirectionele synchronisatie met Apple Gezondheid. Importeer gewicht van slimme weegschalen of andere apps en exporteer al je WT-gegevens naar HealthKit. Je gewichtsgegevens blijven verbonden met je volledige fitness- en gezondheidsecosysteem."
+     "content": "**Doelen stellen:** Stel streefgewichten in met realistische termijnen. De app voorspelt wanneer je je doel bereikt op basis van huidige trends en toont of je op schema ligt, voorloopt, of je aanpak moet bijstellen.\n\n**Professionele rapporten:** Exporteer uitgebreide PDF-, CSV-, Excel- of JSON-rapporten voor diëtisten, personal trainers of artsen. Rapporten bevatten gewichtsgrafieken, BMI-trends, veranderingen in vetpercentage, notities over dieet en beweging, en statistische samenvattingen, perfect voor professionele consultaties.\n\n**Apple Health-integratie:** Volledige tweerichtingssynchronisatie met Apple Health. Importeer gewicht van slimme weegschalen of andere apps, en exporteer al je WT-gegevens naar HealthKit. Je gewichtsgegevens blijven verbonden met je volledige fitness- en gezondheidsecosysteem."
     }
    ]
   },
   "aiFeatures": {
    "title": "Aangedreven door kunstmatige intelligentie",
-   "subtitle": "Geavanceerde AI-functies om je gewichtspatronen beter te begrijpen",
+   "subtitle": "Elke gebruiker krijgt elke dag echte AI gratis. Functies met de aanduiding Pro maken deel uit van het optionele Pro-abonnement — de meest uitgebreide versie van elke functie, op onze krachtigste AI.",
    "disclaimerTitle": "AI-disclaimer",
    "disclaimerText": "Door AI gegenereerde inzichten zijn alleen voor algemene informatie — geen medisch advies, diagnose of behandeling. Patronen tonen correlaties, geen oorzakelijk verband. Raadpleeg altijd een gekwalificeerde zorgverlener voor medische beslissingen.",
    "items": [
@@ -110,7 +110,7 @@
     },
     {
      "title": "Chat",
-     "description": "Voer interactieve gesprekken over je fitnessreis en ontvang persoonlijke begeleiding"
+     "description": "Voer interactieve gesprekken over je fitnessreis en krijg persoonlijk advies. Snelle Chat is elke dag gratis; Pro Chat gaat dieper met onze krachtigste AI"
     },
     {
      "title": "Gesproken samenvatting",
@@ -129,7 +129,7 @@
      "description": "Scan gewichtsaflesingen van het display van je weegschaal of voeding voor directe voedingsanalyse"
     },
     {
-     "title": "Diepgaande onderzoeksrapporten",
+     "title": "Diepgaand Onderzoek",
      "description": "Uitgebreide AI-analyse van je gewichtsgegevens met gedetailleerde inzichten"
     },
     {
@@ -145,7 +145,7 @@
      "description": "Genereer professionele gewichtsbeheerssamenvattingen voor doktersbezoeken"
     },
     {
-     "title": "Ziektemeldingsgenerator",
+     "title": "Ziektebriefje",
      "description": "AI-gegenereerde ziekmeldingen voor werk of school wanneer je ze nodig hebt"
     },
     {
@@ -157,7 +157,7 @@
      "description": "Maak deelbare tekstberichtssamenvattingen van je gewichtstrends"
     },
     {
-     "title": "Gepersonaliseerde quiz",
+     "title": "Persoonlijke Quiz",
      "description": "Test je kennis met een leuke AI-gegenereerde quiz van 10 vragen over je gegevens"
     },
     {
@@ -178,7 +178,11 @@
     },
     {
      "title": "Apple Intelligence (op apparaat)",
-     "description": "Privacy-eerst optie die AI lokaal op je apparaat uitvoert met Apple's Foundation Models — niets verlaat je iPhone, iPad of Mac. Onbeperkt gebruik met een betaald account, op ondersteunde Apple Silicon apparaten."
+     "description": "Privacyvriendelijke optie die AI lokaal op je apparaat draait met Apple's Foundation Models — er verlaat niets je iPhone, iPad of Mac. Onbeperkt gebruik met een betaald account, op ondersteunde Apple Silicon-apparaten (iOS 26+)."
+    },
+    {
+     "title": "Spraakchat",
+     "description": "Handsfree, tweerichtingsgesprekken met de AI over je gegevens — stel vragen en hoor antwoorden zonder het scherm aan te raken"
     }
    ]
   },
@@ -253,11 +257,11 @@
     },
     {
      "question": "Kan ik mijn gewichtsgegevens exporteren?",
-     "answer": "Ja. Exporteer je gewichtsgeschiedenis als PDF-grafieken, Excel-spreadsheets of JSON-gegevens. Deel rapporten met je arts, trainer of diëtist."
+     "answer": "Ja. Exporteer je gewichtsgeschiedenis als PDF-grafieken, CSV- of Excel-spreadsheets, of JSON-gegevens. Deel rapporten met je arts, trainer of diëtist."
     },
     {
      "question": "Is dit een dieet- of maaltijdregistratieapp?",
-     "answer": "Nee. Gewicht & Voeding richt zich op het bijhouden van lichaamsmetingen (gewicht, BMI, lichaamsvet). Het houdt geen calorieën of maaltijden bij. Je kunt echter notities over je voeding toevoegen om te identificeren wat je gewicht beïnvloedt."
+     "answer": "De kern draait om lichaamsmaten - gewicht, BMI en vetpercentage. Maar voeding hoort er ook bij: maak een foto van elke maaltijd en de AI Voedselscan schat calorieën, eiwitten, koolhydraten en vetten, en de AI Maaltijdplanner (Pro) kan maaltijden voorstellen die passen bij je doelen. Er is geen dagelijks calorieën-telboek - gewoon moeiteloze context naast je gewicht."
     },
     {
      "question": "Tonen jullie advertenties of volgen jullie me?",
@@ -265,7 +269,7 @@
     },
     {
      "question": "Heb ik een abonnement nodig?",
-     "answer": "Geen abonnement vereist. De app is volledig gratis te downloaden en elke functie — inclusief alle AI-functies — is voor iedereen beschikbaar. Een optioneel premium abonnement verhoogt alleen je AI-gebruikslimiet naar 10× de gratis limiet. De apps tonen nooit advertenties."
+     "answer": "Geen abonnement vereist. De app is gratis te downloaden, alle tracking, grafieken, Apple Health-synchronisatie en exports zijn gratis, en elke gebruiker krijgt elke dag echte AI-functies gratis — zonder advertenties, altijd. Een optioneel Pro-abonnement ontgrendelt de meest uitgebreide AI-functies (Diepgaand Onderzoek, de Maaltijd- en Trainingsplanners, Patroondetective, Doktersoverzicht, Pro Chat en meer), draait ze op onze krachtigste AI en verhoogt de royale daglimieten."
     }
    ]
   },
@@ -331,7 +335,8 @@
      "Doelen stellen en voortgang bijhouden",
      "Exporteren naar PDF en Excel",
      "iCloud-back-up en synchronisatie",
-     "Ondersteuning voor 32 talen"
+     "Ondersteuning voor 32 talen",
+     "Widgets op het beginscherm voor snelle invoer"
     ]
    }
   ]

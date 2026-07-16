@@ -52,7 +52,7 @@
     },
     {
      "title": "Raporty gotowe dla lekarza",
-     "description": "Eksportuj historię ciśnienia krwi jako raporty PDF lub Excel. Udostępniaj kompleksowe dane swojemu lekarzowi w formacie, który łatwo przejrzeć."
+     "description": "Eksportuj historię ciśnienia krwi jako raport PDF, CSV, Excel lub JSON. Udostępnij kompleksowe dane swojemu lekarzowi w formacie, który łatwo przejrzy."
     },
     {
      "title": "Wykresy wizualne i trendy",
@@ -60,11 +60,11 @@
     },
     {
      "title": "Raport MAP dla lekarza",
-     "description": "Specjalistyczny raport przedstawiający średnie ciśnienie tętnicze w oknach porannych, wieczornych i całodziennych dla dowolnego miesiąca, kwartału, roku lub własnego zakresu. Stworzony, by ułatwić rozmowy kliniczne."
+     "description": "Specjalistyczny raport, który przedstawia Twoje średnie ciśnienie tętnicze (MAP) w podziale na okna poranne, wieczorne i całodobowe, dla dowolnego miesiąca, kwartału, roku lub niestandardowego zakresu. Stworzony, aby ułatwić rozmowy z lekarzem. Element opcjonalnej subskrypcji Pro."
     },
     {
      "title": "Twoje zakresy, twój sposób",
-     "description": "Ustaw własne cele i progi — Normalny, Podwyższony, Stopień 1, Stopień 2 — zgodnie z zaleceniami swojego lekarza. Wykresy i raporty kolorują każdy pomiar według twoich własnych zakresów."
+     "description": "Ustaw własne cele i progi zakresów — Normalny, Podwyższony, Stadium 1, Stadium 2 — zgodnie z zaleceniami lekarza. Wykresy i raporty kolorują każdy pomiar według Twoich własnych zakresów."
     }
    ]
   },
@@ -86,13 +86,13 @@
     },
     {
      "title": "4. Udostępnij lekarzowi",
-     "content": "**Profesjonalne raporty:** Eksportuj kompleksowe raporty PDF lub Excel sformatowane do przeglądu medycznego. Raporty zawierają podsumowanie statystyk, wykresy trendów, rejestry leków i wszystkie notatki — wszystko, czego potrzebuje lekarz w jednym dokumencie.\n\n**Integracja z Apple Health:** Automatycznie synchronizuj wszystkie odczyty z Apple Health. Importuj historyczne dane z innych aplikacji lub urządzeń. Dane ciśnienia krwi pozostają połączone z pełnym obrazem zdrowia.\n\n**Kopia zapasowa w chmurze:** Wszystkie dane są automatycznie kopiowane na Twoje prywatne konto iCloud. Płynnie przełączaj urządzenia — cała historia ciśnienia krwi przenosi się razem z Tobą, zaszyfrowana i bezpieczna."
+     "content": "**Profesjonalne raporty:** Eksportuj kompleksowe raporty PDF, CSV, Excel lub JSON sformatowane do przeglądu medycznego. Raporty zawierają statystyki podsumowujące, wykresy trendów i wszystkie Twoje notatki - wszystko, czego potrzebuje lekarz, w jednym dokumencie.\n\n**Integracja z Apple Health:** Automatycznie synchronizuj wszystkie pomiary z Apple Health. Importuj dane historyczne z innych aplikacji lub urządzeń. Twoje dane o ciśnieniu krwi pozostają połączone z pełnym obrazem Twojego zdrowia.\n\n**Kopia zapasowa w chmurze:** Wszystkie dane są automatycznie zapisywane w kopii zapasowej na Twoim prywatnym koncie iCloud. Płynnie zmieniaj urządzenia - cała historia ciśnienia krwi podąża za Tobą, zaszyfrowana i bezpieczna."
     }
    ]
   },
   "aiFeatures": {
    "title": "Zasilane sztuczną inteligencją",
-   "subtitle": "Zaawansowane funkcje AI pomagające lepiej zrozumieć ciśnienie krwi",
+   "subtitle": "Każdy użytkownik codziennie otrzymuje prawdziwe AI za darmo. Funkcje oznaczone jako Pro są częścią opcjonalnej subskrypcji Pro — najpełniejsza wersja każdej funkcji, na naszym najbardziej zaawansowanym modelu AI.",
    "disclaimerText": "Wnioski generowane przez AI służą wyłącznie celom informacyjnym — nie stanowią porady medycznej, diagnozy ani leczenia. Wzorce pokazują korelacje, a nie związki przyczynowo-skutkowe. Decyzje medyczne zawsze konsultuj z wykwalifikowanym pracownikiem ochrony zdrowia.",
    "disclaimerTitle": "Zastrzeżenie dotyczące AI",
    "items": [
@@ -102,7 +102,7 @@
     },
     {
      "title": "Czat",
-     "description": "Prowadź interaktywne rozmowy o zdrowiu układu krążenia i uzyskuj spersonalizowane wskazówki"
+     "description": "Prowadź interaktywne rozmowy o swoim zdrowiu sercowo-naczyniowym i otrzymuj spersonalizowane wskazówki. Szybki Czat jest darmowy każdego dnia; Czat Pro sięga głębiej dzięki naszemu najbardziej zaawansowanemu modelowi AI"
     },
     {
      "title": "Podsumowanie głosowe",
@@ -121,7 +121,7 @@
      "description": "Skanuj odczyty bezpośrednio z ekranu monitora — działa z [OMRON](https://geni.us/B9RB), Microlife, Beurer"
     },
     {
-     "title": "Pogłębione raporty badawcze",
+     "title": "Dogłębna analiza",
      "description": "Kompleksowa analiza AI danych ciśnienia krwi ze szczegółowymi wglądami"
     },
     {
@@ -137,7 +137,7 @@
      "description": "Generuj profesjonalne podsumowania medyczne do udostępnienia na wizytach lekarskich"
     },
     {
-     "title": "Generator zwolnień lekarskich",
+     "title": "Zwolnienie lekarskie",
      "description": "Generowane przez AI zwolnienia lekarskie do pracy lub szkoły, gdy są potrzebne"
     },
     {
@@ -149,7 +149,7 @@
      "description": "Twórz udostępnialne podsumowania SMS trendów ciśnienia krwi"
     },
     {
-     "title": "Spersonalizowany quiz",
+     "title": "Osobisty quiz",
      "description": "Sprawdź swoją wiedzę zabawnym quizem generowanym przez AI z 10 pytaniami o Twoje dane"
     },
     {
@@ -162,7 +162,11 @@
     },
     {
      "title": "Apple Intelligence (na urządzeniu)",
-     "description": "Opcja stawiająca prywatność na pierwszym miejscu, która uruchamia AI lokalnie na Twoim urządzeniu przy użyciu Apple Foundation Models — nic nie opuszcza Twojego iPhone'a, iPada ani Maca. Nieograniczone użytkowanie z płatnym kontem, na obsługiwanych urządzeniach Apple Silicon."
+     "description": "Opcja stawiająca na prywatność, która uruchamia AI lokalnie na Twoim urządzeniu za pomocą modeli Apple Foundation Models — nic nie opuszcza Twojego iPhone'a, iPada ani Maca. Nieograniczone użycie z płatnym kontem, na obsługiwanych urządzeniach z Apple Silicon (iOS 26+)."
+    },
+    {
+     "title": "Czat głosowy",
+     "description": "Rozmowy głosowe z AI o Twoich danych, prowadzone bez użycia rąk, w obie strony — zadawaj pytania i słuchaj odpowiedzi bez dotykania ekranu"
     }
    ]
   },
@@ -176,7 +180,7 @@
     },
     {
      "title": "Skuteczność leków",
-     "description": "Sprawdzaj jak dobrze działają leki na ciśnienie krwi w czasie"
+     "description": "Zapisuj leki przyjmowane przy każdym wpisie i obserwuj, jak Twoje pomiary reagują na nie w czasie"
     },
     {
      "title": "Wpływ stylu życia",
@@ -237,7 +241,7 @@
     },
     {
      "question": "Czy potrzebuję subskrypcji?",
-     "answer": "Subskrypcja nie jest wymagana. Aplikacja jest całkowicie bezpłatna do pobrania i każda funkcja — w tym wszystkie funkcje AI — jest dostępna dla wszystkich. Opcjonalna subskrypcja premium jedynie podnosi limity użycia AI do 10× poziomu darmowego. Aplikacje nigdy nie wyświetlają reklam."
+     "answer": "Subskrypcja nie jest wymagana. Aplikacja jest darmowa do pobrania, całe śledzenie, wykresy, synchronizacja z Apple Health i eksporty są bezpłatne, a każdy użytkownik codziennie otrzymuje prawdziwe funkcje AI za darmo — bez reklam, zawsze. Opcjonalna subskrypcja Pro odblokowuje najbardziej rozbudowane funkcje AI (Dogłębna analiza, Podsumowanie dla lekarza, Detektyw wzorców, raport Pro MAP, Czat Pro i inne), uruchamia je na naszym najbardziej zaawansowanym modelu AI i podnosi hojne dzienne limity."
     }
    ]
   },
@@ -450,7 +454,7 @@
      "Obliczanie średniego ciśnienia tętniczego",
      "Kompatybilny z monitorami OMRON, Microlife, Beurer",
      "Śledzenie wielu odczytów dziennie",
-     "Śledzenie leków",
+     "Widżety na ekranie głównym do szybkiego wprowadzania danych",
      "Widok kalendarza z kolorowymi wskaźnikami",
      "Kopia zapasowa i synchronizacja iCloud",
      "Obsługa 32 języków"
@@ -487,7 +491,7 @@
       "name": "Czy mogę wyeksportować dane o ciśnieniu krwi dla lekarza?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Tak, aplikacja Blood Pressure pozwala eksportować szczegółowe raporty w formatach PDF i Excel. Te profesjonalnie sformatowane raporty zawierają statystyki zbiorcze, wykresy trendów, dzienniki leków i wszystkie notatki – wszystko czego potrzebuje Twój lekarz w jednym dokumencie. Raporty można łatwo udostępniać przez e-mail lub inne metody."
+       "text": "Tak, aplikacja Ciśnienie Krwi pozwala eksportować kompleksowe raporty w formacie PDF, CSV, Excel lub JSON. Te profesjonalnie sformatowane raporty zawierają statystyki podsumowujące, wykresy trendów i wszystkie Twoje notatki - wszystko, czego potrzebuje Twój lekarz, w jednym dokumencie. Możesz łatwo udostępnić te raporty przez e-mail lub inne metody."
       }
      },
      {
