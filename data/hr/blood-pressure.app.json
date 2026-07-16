@@ -52,7 +52,7 @@
     },
     {
      "title": "Izvještaji za liječnika",
-     "description": "Izvezite povijest krvnog tlaka kao PDF ili Excel izvještaje. Podijelite sveobuhvatne podatke sa zdravstvenim pružateljem."
+     "description": "Izvezite povijest krvnog tlaka kao PDF, CSV, Excel ili JSON izvješća. Podijelite sveobuhvatne podatke sa svojim liječnikom u formatu koji može lako pregledati."
     },
     {
      "title": "Vizualni grafikoni i trendovi",
@@ -60,11 +60,11 @@
     },
     {
      "title": "MAP izvješće za vašeg liječnika",
-     "description": "Specijalizirano izvješće koje razlaže vaš srednji arterijski tlak (Mean Arterial Pressure) po jutarnjim, večernjim i cjelodnevnim prozorima za bilo koji mjesec, kvartal, godinu ili prilagođeni raspon. Dizajnirano za lakše kliničke razgovore."
+     "description": "Specijalizirano izvješće koje razlaže vaš srednji arterijski tlak (MAP) po jutarnjim, večernjim i cjelodnevnim razdobljima, za bilo koji mjesec, kvartal, godinu ili prilagođeni raspon. Osmišljeno da olakša razgovore s liječnikom. Dio je neobavezne pretplate Pro."
     },
     {
      "title": "Vaši rasponi, na vaš način",
-     "description": "Postavite vlastite ciljeve i pragove raspona — Normalno, Povišeno, Stupanj 1, Stupanj 2 — prema uputama vašeg liječnika. Grafovi i izvješća boje svako mjerenje prema vašim osobnim rasponima."
+     "description": "Podesite vlastite ciljeve i granice raspona — Normalan, Povišen, Stadij 1, Stadij 2 — kako bi odgovarali smjernicama vašeg liječnika. Grafikoni i izvješća boje svako očitanje prema vašim vlastitim rasponima."
     }
    ]
   },
@@ -86,13 +86,13 @@
     },
     {
      "title": "4. Podijelite s liječnikom",
-     "content": "**Profesionalni izvještaji:** Izvezite sveobuhvatne PDF ili Excel izvještaje formatirane za medicinski pregled. Izvještaji uključuju sažetne statistike, grafikone trendova, evidenciju lijekova i sve vaše bilješke.\n\n**Apple Health integracija:** Automatski sinkronizirajte sva očitanja s Apple Healthom. Uvezite povijesne podatke iz drugih aplikacija ili uređaja.\n\n**Oblak sigurnosna kopija:** Svi podaci automatski se sigurnosno kopiraju na vaš privatni iCloud račun."
+     "content": "**Profesionalna izvješća:** Izvezite sveobuhvatna PDF, CSV, Excel ili JSON izvješća oblikovana za liječnički pregled. Izvješća uključuju sažetu statistiku, grafikone trendova i sve vaše bilješke - sve što vašem liječniku treba u jednom dokumentu.\n\n**Integracija s Apple Healthom:** Automatski sinkronizirajte sva očitanja s Apple Healthom. Uvezite povijesne podatke iz drugih aplikacija ili uređaja. Vaši podaci o krvnom tlaku ostaju povezani s cjelovitom slikom vašeg zdravlja.\n\n**Sigurnosna kopija u oblaku:** Svi podaci automatski se sigurnosno kopiraju na vaš privatni iCloud račun. Neometano mijenjajte uređaje - cijela vaša povijest krvnog tlaka putuje s vama, šifrirana i sigurna."
     }
    ]
   },
   "aiFeatures": {
    "title": "Pokretano umjetnom inteligencijom",
-   "subtitle": "Napredne AI funkcije za bolje razumijevanje krvnog tlaka",
+   "subtitle": "Svaki korisnik svaki dan dobiva stvarnu AI besplatno. Značajke označene s Pro dio su neobavezne pretplate Pro — najpotpunija verzija svake značajke, na našoj najsposobnijoj AI.",
    "disclaimerText": "Uvidi generirani umjetnom inteligencijom služe samo za opću informaciju — nisu medicinski savjet, dijagnoza ni liječenje. Obrasci pokazuju korelacije, a ne uzročnost. Za medicinske odluke uvijek se posavjetujte s kvalificiranim zdravstvenim radnikom.",
    "disclaimerTitle": "AI odricanje od odgovornosti",
    "items": [
@@ -102,7 +102,7 @@
     },
     {
      "title": "Chat",
-     "description": "Vodite interaktivne razgovore o kardiovaskularnom zdravlju i dobijte personalizirane smjernice"
+     "description": "Vodite interaktivne razgovore o svom kardiovaskularnom zdravlju i dobijte personaliziranu podršku. Brzi chat besplatan je svaki dan; Pro Chat ide dublje na našoj najsposobnijoj AI"
     },
     {
      "title": "Glasovni sažetak",
@@ -121,7 +121,7 @@
      "description": "Skenirajte očitanja izravno s ekrana monitora — radi s [OMRON](https://geni.us/B9RB), Microlife, Beurer"
     },
     {
-     "title": "Duboka istraživačka izvješća",
+     "title": "Dubinsko istraživanje",
      "description": "Sveobuhvatna AI analiza podataka krvnog tlaka s detaljnim uvidima"
     },
     {
@@ -137,7 +137,7 @@
      "description": "Generirajte profesionalne medicinske sažetke za dijeljenje na zdravstvenim posjetima"
     },
     {
-     "title": "Generator potvrde o bolovanju",
+     "title": "Potvrda o bolovanju",
      "description": "AI generirane potvrde o bolovanju za posao ili školu kad su vam potrebne"
     },
     {
@@ -149,7 +149,7 @@
      "description": "Kreirajte tekstualne sažetke trendova krvnog tlaka koji se mogu dijeliti"
     },
     {
-     "title": "Personalizirani kviz",
+     "title": "Osobni kviz",
      "description": "Testirajte znanje uz zabavni AI generirani kviz od 10 pitanja o vašim podacima"
     },
     {
@@ -162,7 +162,11 @@
     },
     {
      "title": "Apple Intelligence (Na Uređaju)",
-     "description": "Opcija s prioritetom privatnosti koja pokreće AI lokalno na vašem uređaju koristeći Apple Foundation Models — ništa ne napušta vaš iPhone, iPad ili Mac. Neograničeno korištenje s plaćenim računom, na podržanim uređajima Apple Silicon."
+     "description": "Opcija koja stavlja privatnost na prvo mjesto i pokreće AI lokalno na vašem uređaju pomoću Appleovih Foundation Models — ništa ne napušta vaš iPhone, iPad ili Mac. Neograničena upotreba uz plaćeni račun, na podržanim Apple Silicon uređajima (iOS 26+)."
+    },
+    {
+     "title": "Glasovni chat",
+     "description": "Dvosmjerni glasovni razgovori s AI-jem o vašim podacima bez korištenja ruku — postavljajte pitanja i slušajte odgovore bez dodirivanja zaslona"
     }
    ]
   },
@@ -176,7 +180,7 @@
     },
     {
      "title": "Učinkovitost lijekova",
-     "description": "Vidite koliko dobro lijekovi za krvni tlak funkcioniraju kroz vrijeme"
+     "description": "Bilježite lijekove koje uzimate u svakom unosu i pratite kako se vaša očitanja mijenjaju tijekom vremena"
     },
     {
      "title": "Utjecaj načina života",
@@ -237,7 +241,7 @@
     },
     {
      "question": "Trebam li pretplatu?",
-     "answer": "Pretplata nije potrebna. Aplikacija je potpuno besplatna za preuzimanje i svaka značajka — uključujući sve AI značajke — dostupna je svima. Neobavezna premium pretplata jednostavno povećava vaše limite korištenja AI-ja na 10× besplatne razine. Aplikacije nikad ne prikazuju oglase."
+     "answer": "Pretplata nije potrebna. Aplikacija se besplatno preuzima, svo praćenje, grafikoni, sinkronizacija s Apple Healthom i izvozi su besplatni, a svaki korisnik svaki dan dobiva stvarne AI značajke besplatno — bez oglasa, nikad. Neobavezna pretplata Pro otključava najdetaljnije AI značajke (Dubinsko istraživanje, Sažetak za liječnika, Detektiv obrazaca, Pro MAP izvješće, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja."
     }
    ]
   },
@@ -438,7 +442,9 @@
      "Izvoz izvještaja u PDF i Excel",
      "AI uvidi u obrasce krvnog tlaka",
      "iCloud sigurnosna kopija i sinkronizacija",
-     "Podrška za 32 jezika"
+     "Podrška za 32 jezika",
+     null,
+     "Widgeti na početnom zaslonu za brzi unos"
     ]
    },
    {
@@ -472,7 +478,7 @@
       "name": "Mogu li izvesti podatke o krvnom tlaku za svog liječnika?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Da, Blood Pressure vam omogućuje izvoz sveobuhvatnih izvješća u PDF i Excel formatima. Ova profesionalno formatirana izvješća uključuju sažetke statistike, grafove trendova, evidencije lijekova i sve vaše bilješke — sve što vašem zdravstvenom pružatelju treba u jednom dokumentu. Možete lako dijeliti ova izvješća putem e-pošte ili drugih načina dijeljenja."
+       "text": "Da, Blood Pressure vam omogućuje izvoz sveobuhvatnih izvješća u formatu PDF, CSV, Excel ili JSON. Ta profesionalno oblikovana izvješća uključuju sažetu statistiku, grafikone trendova i sve vaše bilješke - sve što vašem pružatelju zdravstvene skrbi treba u jednom dokumentu. Ta izvješća možete jednostavno podijeliti putem e-pošte ili drugih načina dijeljenja."
       }
      },
      {

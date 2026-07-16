@@ -1033,6 +1033,23 @@ a:hover {
     line-height: 1.6;
 }
 
+/* "Pro" pill next to AI feature titles — marks features in the optional
+   Pro subscription (dark ai-section background in both themes). */
+.ai-pro-badge {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    padding: 1px 8px 2px;
+    border-radius: 999px;
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
 /* Related apps — cross-links from one app page to the others */
 .related-apps {
     padding: 48px 20px 72px;

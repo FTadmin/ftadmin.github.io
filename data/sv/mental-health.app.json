@@ -59,8 +59,8 @@
      "description": "Fånga hur du ser ut med frontkameran eller vad som omger dig med bakkameran. AI föreslår en humörpoäng och lägger till kontext i din anteckning — en fylligare logg utan att skriva mer."
     },
     {
-     "title": "Ljud, färg och känsla",
-     "description": "Varje betyg har sin egen färg, ett mjukt ljud och haptik — små sensoriska signaler som gör varje incheckning naturlig snarare än klinisk."
+     "title": "Ljud, färg och beröring",
+     "description": "Varje betyg har sin egen färg, mjuka ljud och haptik — små sensoriska signaler som gör att varje incheckning känns naturlig snarare än klinisk."
     },
     {
      "title": "Privata anteckningar",
@@ -78,7 +78,7 @@
    "steps": [
     {
      "title": "1. Logga ditt humör",
-     "content": "**AI-ansiktsskanning:** Ta en snabb selfie och låt AI analysera ditt ansiktsuttryck för att föreslå ett humörbetyg. Systemet upptäcker emotionella ledtrådar som leenden, rynkor och andra ansiktsindikatorer.\n\n**Enkel betygsskala:** Flera gånger om dagen, betygsätt hur du mår på en intuitiv 1-5 skala. Systemet är designat för att vara snabbt - det tar bara sekunder att logga ett humör.\n\n**Detaljerat sammanhang:** Lägg till anteckningar om vad som händer - aktiviteter, interaktioner, mediciner, sömn, stresstriggrar, positiva ögonblick. Ju mer sammanhang du ger, desto värdefullare insikter får du.\n\n**Känsloetiketter:** Tagga inlägg med specifika känslor utöver det numeriska betyget - ångestfylld, hoppfull, irriterad, nöjd, överväldigad, fridfull."
+     "content": "**AI-ansiktsskanning:** Ta en snabb selfie och låt AI analysera ditt ansiktsuttryck för att föreslå ett humörbetyg. Systemet upptäcker känslomässiga signaler som leenden, rynkade pannor och andra ansiktsindikatorer för att ge en objektiv utgångspunkt för din humörregistrering.\n\n**Enkel betygsskala:** Flera gånger om dagen betygsätter du hur du mår på en intuitiv 5-gradig skala. Systemet är utformat för att vara snabbt - det tar bara några sekunder att registrera ett humör, vilket gör det enkelt att spåra konsekvent under dagen.\n\n**Detaljerad kontext:** Lägg till anteckningar om vad som händer - aktiviteter, interaktioner, mediciner, sömn, stressutlösare, positiva stunder, eller allt som påverkar ditt känslomässiga tillstånd. Ju mer kontext du ger, desto mer värdefulla insikter får du.\n\n**Foton och väder:** Bifoga foton till valfri registrering, och låt appen automatiskt registrera vädret tillsammans med ditt humör — extra kontext som hjälper AI:n att upptäcka mönster du kanske missar."
     },
     {
      "title": "2. Se mönster",
@@ -90,13 +90,13 @@
     },
     {
      "title": "4. Dela med vårdteamet",
-     "content": "**Professionella rapporter:** Exportera omfattande PDF- eller Excel-rapporter formaterade för klinisk granskning. Rapporter inkluderar humörgrafer, detaljerad statistik, anteckningar om triggers och mönster.\n\n**Apple Health-integration:** På iOS 18+, synka med Apple Healths State of Mind-funktion. Importera humördata från andra källor eller exportera din FT-spårning till HealthKit.\n\n**DBT och KBT-stöd:** Designad med input från professionella inom mental hälsa. Funktioner stöder dialektisk beteendeterapi (DBT) och kognitiv beteendeterapi (KBT)."
+     "content": "**Professionella rapporter:** Exportera omfattande PDF-, CSV-, Excel- eller JSON-rapporter formaterade för klinisk granskning. Rapporterna innehåller humördiagram, detaljerad statistik och alla dina anteckningar om utlösare, mediciner och terapiframsteg - allt din vårdgivare för mental hälsa behöver.\n\n**Apple Health-integration:** På iOS 18+ synkroniseras med Apple Healths funktion för sinnestillstånd (State of Mind). Importera humördata från andra källor eller exportera din FT-spårning till HealthKit för integration med din fullständiga hälsojournal.\n\n**DBT- och CBT-stöd:** Utformad med input från yrkesverksamma inom mental hälsa. Funktioner stöder tekniker för dialektisk beteendeterapi (DBT) och kognitiv beteendeterapi (CBT). Spåra känslor, identifiera tankemönster och övervaka terapeutiska framsteg effektivt."
     }
    ]
   },
   "aiFeatures": {
    "title": "Drivs av artificiell intelligens",
-   "subtitle": "Avancerade AI-funktioner för att hjälpa dig förstå dina humörmönster bättre",
+   "subtitle": "Alla användare får riktig AI gratis varje dag. Funktioner märkta Pro ingår i den valfria Pro-prenumerationen — den fullständigaste versionen av varje funktion, på vår mest kapabla AI.",
    "disclaimerText": "AI-genererade insikter är endast avsedda som allmän information — de är inte medicinska råd, diagnoser eller behandlingar. Mönster visar korrelationer, inte orsakssamband. Rådgör alltid med en kvalificerad vårdgivare vid medicinska beslut.",
    "disclaimerTitle": "AI-ansvarsfriskrivning",
    "items": [
@@ -106,7 +106,7 @@
     },
     {
      "title": "Chatt",
-     "description": "Ha interaktiva samtal om ditt emotionella välbefinnande och få personlig vägledning"
+     "description": "Ha interaktiva samtal om ditt känslomässiga välbefinnande och få personlig vägledning. Snabbchatt är gratis varje dag; Pro-chatt går djupare på vår mest kapabla AI"
     },
     {
      "title": "Röstsammanfattning",
@@ -125,7 +125,7 @@
      "description": "AI-guidade andnings- och avslappningsövningar för att minska ångest och stress"
     },
     {
-     "title": "Djupgående forskningsrapporter",
+     "title": "Djupgående research",
      "description": "Omfattande AI-analys av din humördata med detaljerade insikter"
     },
     {
@@ -141,7 +141,7 @@
      "description": "Generera professionella sammanfattningar för mental hälsa att dela med terapeuter"
     },
     {
-     "title": "Sjukintyg-generator",
+     "title": "Sjukintyg",
      "description": "AI-genererade sjukintyg för arbete eller skola när du behöver dem"
     },
     {
@@ -178,7 +178,11 @@
     },
     {
      "title": "Apple Intelligence (på enheten)",
-     "description": "Integritetsfokuserat alternativ som kör AI lokalt på din enhet med Apples Foundation Models — ingenting lämnar din iPhone, iPad eller Mac. Obegränsad användning med ett betalkonto, på Apple Silicon-enheter som stöds."
+     "description": "Integritetsfokuserat alternativ som kör AI lokalt på din enhet med Apples Foundation Models — ingenting lämnar din iPhone, iPad eller Mac. Obegränsad användning med ett betalkonto, på Apple Silicon-enheter som stöds (iOS 26+)."
+    },
+    {
+     "title": "Röstchatt",
+     "description": "Handsfria, tvåvägs röstsamtal med AI:n om din data — ställ frågor och hör svar utan att röra skärmen"
     }
    ]
   },
@@ -233,7 +237,7 @@
     },
     {
      "question": "Hur fungerar AI-triggerdetektering?",
-     "answer": "När du lägger till anteckningar till dina humörinlägg analyserar AI texten för att identifiera återkommande ord och teman. Detta sker helt på din enhet för integritet."
+     "answer": "När du lägger till anteckningar i dina humörregistreringar analyserar AI-utlösaridentifieraren texten för att hitta återkommande ord och teman. Om du till exempel nämner \"fika med Sara\" flera gånger och ditt humör konsekvent är högre de dagarna, kommer appen att visa det som ett positivt inflytande. En gratis Snabb utlösarkontroll ingår för alla; den fullständiga utlösaridentifieraren ingår i den valfria Pro-prenumerationen. Analysen använder integritetsvänlig moln-AI, eller kan köras helt på enheten med Apple Intelligence-alternativet (Pro, på enheter som stöds)."
     },
     {
      "question": "Är min humördata privat?",
@@ -241,7 +245,7 @@
     },
     {
      "question": "Kan jag exportera min humörhistorik?",
-     "answer": "Ja. Du kan exportera din humördata som PDF, Excel eller JSON-filer. Många användare delar dessa rapporter med sin terapeut eller läkare."
+     "answer": "Ja. Du kan exportera din humördata som PDF-, CSV-, Excel- eller JSON-filer. Många användare delar dessa rapporter med sin terapeut eller läkare för att ge kontext till behandlingssamtal."
     },
     {
      "question": "Fungerar den offline?",
@@ -257,7 +261,7 @@
     },
     {
      "question": "Behöver jag ett abonnemang?",
-     "answer": "Inget abonnemang krävs. Appen är helt gratis att ladda ned och alla funktioner – inklusive alla AI-funktioner – är tillgängliga för alla. Ett valfritt premiumabonnemang höjer bara dina AI-användningsgränser till 10× gratisversionen. Apparna visar aldrig annonser."
+     "answer": "Ingen prenumeration krävs. Appen är gratis att ladda ner, all spårning, diagram, Apple Health-synk och exporter är gratis, och alla användare får riktig AI gratis varje dag — utan annonser, någonsin. En valfri Pro-prenumeration låser upp de mest djupgående AI-funktionerna (Djupgående research, Utlösaridentifieraren, Kognitiv omformulering, Läkarsammanfattning, Pro-chatt med mera), kör dem på vår mest kapabla AI och höjer de generösa dagliga gränserna."
     }
    ]
   },
@@ -344,7 +348,8 @@
      "Exportera till PDF och Excel",
      "Privata anteckningar med analys",
      "iCloud-säkerhetskopiering och synkronisering",
-     "Stöd för 32 språk"
+     "Stöd för 32 språk",
+     "Hemskärmswidgetar för snabb registrering"
     ]
    }
   ],

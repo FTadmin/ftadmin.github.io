@@ -28,7 +28,7 @@
           "label": "Downloads"
         },
         {
-          "number": "22K+",
+          "number": "23K+",
           "label": "Ratings"
         },
         {
@@ -103,7 +103,7 @@
             },
             {
               "icon": "fas fa-file-medical",
-              "text": "Export reports to share with your doctor (PDF with large text option, Excel)"
+              "text": "Export reports to share with your doctor (PDF with large text option, CSV, Excel, JSON)"
             },
             {
               "icon": "fas fa-heart",
@@ -314,7 +314,7 @@
         {
           "icon": "fas fa-cloud",
           "title": "iCloud Sync & Backup",
-          "description": "Your data automatically syncs across iPhone, iPad, and Mac via iCloud. Optional automatic weekly JSON backups ensure your data is always safe and exportable."
+          "description": "Your data automatically syncs across iPhone, iPad, and Mac via iCloud. Automatic weekly backups keep a complete copy of your entries and photos, so your data is always safe and exportable."
         },
         {
           "icon": "fas fa-lock",
@@ -324,7 +324,7 @@
         {
           "icon": "fas fa-file-export",
           "title": "Export & Share",
-          "description": "Export your data as PDF (with large text option), Excel, or JSON. Share comprehensive reports with your doctor or healthcare provider easily."
+          "description": "Export your data as PDF (with large text option), CSV, Excel, or JSON. Share comprehensive reports with your doctor or healthcare provider easily."
         },
         {
           "icon": "fas fa-globe",
@@ -515,7 +515,7 @@
     },
     "aiFeatures": {
       "title": "Powered by Artificial Intelligence",
-      "subtitle": "Our AI features help you understand your health data like never before",
+      "subtitle": "Every user gets real AI free every day. Features marked Pro are part of the optional Pro subscription — the fullest version of each feature, on our most capable AI.",
       "disclaimerTitle": "AI Disclaimer",
       "disclaimerText": "AI-generated insights are for general information only — not medical advice, diagnosis, or treatment. Patterns show correlations, not causation. Always consult a qualified healthcare provider for medical decisions.",
       "items": [
@@ -527,7 +527,7 @@
         {
           "icon": "fas fa-comments",
           "title": "Chat",
-          "description": "Have interactive conversations about your health journey and get personalized guidance"
+          "description": "Have interactive conversations about your health journey and get personalized guidance. Quick Chat is free every day; Pro Chat goes deeper on our most capable AI"
         },
         {
           "icon": "fas fa-volume-up",
@@ -556,58 +556,75 @@
         },
         {
           "icon": "fas fa-file-medical-alt",
-          "title": "Deep Research Reports",
-          "description": "Comprehensive AI analysis of your health data with detailed insights and professional-grade summaries"
+          "title": "Deep Research",
+          "description": "Comprehensive AI analysis of your health data with detailed insights and professional-grade summaries",
+          "pro": true
         },
         {
           "icon": "fas fa-search",
           "title": "Pattern Detective",
-          "description": "Advanced AI finds hidden correlations between lifestyle factors, time of day, and your health metrics"
+          "description": "Advanced AI finds hidden correlations between lifestyle factors, time of day, and your health metrics",
+          "pro": true
         },
         {
           "icon": "fas fa-bullseye",
           "title": "Goal Assistant",
-          "description": "Get personalized, data-driven health goals based on your unique patterns and progress"
+          "description": "Get personalized, data-driven health goals based on your unique patterns and progress",
+          "pro": true
         },
         {
           "icon": "fas fa-user-md",
           "title": "Doctor Summary",
-          "description": "Generate professional medical summaries for healthcare visits with statistics and trend analysis"
+          "description": "Generate professional medical summaries for healthcare visits with statistics and trend analysis",
+          "pro": true
         },
         {
           "icon": "fas fa-file-medical",
-          "title": "Sick Note Generator",
-          "description": "AI-generated sick notes for work or school based on your health tracking data"
+          "title": "Sick Note",
+          "description": "AI-generated sick notes for work or school based on your health tracking data",
+          "pro": true
         },
         {
           "icon": "fas fa-book",
           "title": "Story Generator",
-          "description": "Transform your health data into creative, engaging narratives and personalized stories"
+          "description": "Transform your health data into creative, engaging narratives and personalized stories",
+          "pro": true
         },
         {
           "icon": "fas fa-comment-alt",
           "title": "Text Summary",
-          "description": "Create shareable text message summaries of your health trends for friends and family"
+          "description": "Create shareable text message summaries of your health trends for friends and family",
+          "pro": true
         },
         {
           "icon": "fas fa-graduation-cap",
-          "title": "Personalized Quiz",
-          "description": "Test your knowledge with a fun AI-generated 10-question quiz about your data"
+          "title": "Personal Quiz",
+          "description": "Test your knowledge with a fun AI-generated 10-question quiz about your data",
+          "pro": true
         },
         {
           "icon": "fas fa-microphone",
           "title": "Text-to-Speech",
-          "description": "Listen to your AI insights and summaries with natural voice playback - perfect for accessibility"
+          "description": "Listen to your AI insights and summaries with natural voice playback - perfect for accessibility",
+          "pro": true
         },
         {
           "icon": "fas fa-file-invoice",
           "title": "Tailored Health Report",
-          "description": "Create comprehensive, personalized health documents with AI-generated insights about your progress"
+          "description": "Create comprehensive, personalized health documents with AI-generated insights about your progress. A free Quick Health Report is included for everyone",
+          "pro": true
         },
         {
           "icon": "fas fa-microchip",
           "title": "Apple Intelligence (On-Device)",
-          "description": "Privacy-first option that runs AI locally on your device using Apple's Foundation Models — nothing leaves your iPhone, iPad, or Mac. Unlimited use with a paid account, on supported Apple Silicon devices."
+          "description": "Privacy-first option that runs AI locally on your device using Apple's Foundation Models — nothing leaves your iPhone, iPad, or Mac. Unlimited use with a paid account, on supported Apple Silicon devices (iOS 26+).",
+          "pro": true
+        },
+        {
+          "icon": "fas fa-headset",
+          "title": "Voice Chat",
+          "description": "Hands-free, two-way spoken conversations with the AI about your data — ask questions and hear answers without touching the screen",
+          "pro": true
         }
       ]
     },
@@ -620,7 +637,7 @@
           "label": "Average Rating"
         },
         {
-          "number": "22K+",
+          "number": "23K+",
           "label": "Ratings"
         },
         {
@@ -736,7 +753,7 @@
         },
         {
           "question": "Do I need a subscription?",
-          "answer": "No subscription required. All apps are completely free to download and every feature — including all AI features — is available to everyone. An optional premium subscription simply raises your AI usage limits to 10× the free tier. The apps never show ads."
+          "answer": "No subscription is required. Every app is free to download, all tracking, charts, Apple Health sync, and exports are free, and every user gets real AI features free every day — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Pattern Detective, Doctor Summary, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits."
         }
       ]
     },
@@ -845,7 +862,7 @@
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.8",
-          "ratingCount": 21632
+          "ratingCount": 23000
         },
         "author": {
           "@type": "Organization",
@@ -855,21 +872,24 @@
           "AI-powered health insights",
           "Camera Scan AI for reading capture",
           "Apple Health bidirectional sync",
-          "Export reports to PDF and Excel",
+          "Export reports to PDF, CSV, Excel, and JSON",
           "iCloud backup and sync",
           "32 language support",
           "No ads, no tracking, privacy first"
         ],
         "inLanguage": [
           "en",
+          "de",
           "es",
           "fr",
-          "de",
+          "fr-CA",
           "it",
+          "ca",
           "nl",
           "pt",
+          "pt-BR",
           "sv",
-          "no",
+          "nb",
           "da",
           "fi",
           "pl",
@@ -880,17 +900,16 @@
           "ro",
           "hr",
           "hu",
-          "ar",
-          "he",
-          "zh-Hans",
-          "ja",
-          "ko",
-          "th",
-          "vi",
-          "id",
           "el",
           "tr",
-          "ca"
+          "ar",
+          "he",
+          "ja",
+          "ko",
+          "zh-Hans",
+          "zh-Hant",
+          "th",
+          "vi"
         ],
         "datePublished": "2015"
       },
@@ -901,7 +920,7 @@
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.8",
-          "ratingCount": 21632,
+          "ratingCount": 23000,
           "bestRating": "5",
           "worstRating": "1"
         },
