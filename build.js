@@ -397,6 +397,54 @@ function toBcp47(code) {
     return code.replace(/-([a-zA-Z]{2})$/, (_, region) => '-' + region.toUpperCase());
 }
 
+// Extra browser-locale aliases that have no language folder of their own but
+// should still redirect to an existing one. Norwegian is reported by browsers
+// as 'nb', 'no' (macrolanguage) or 'nn' (Nynorsk); the site only ships Bokmål,
+// so 'no'/'nn' both map to /nb. Mirrors the app's no->nb mapping.
+const LANG_REDIRECT_ALIASES = [['no', '/nb'], ['nn', '/nb']];
+
+/**
+ * Build the [browserLocale, /prefix] map used by the client-side language
+ * redirect, derived from languages.json so there is a single source of truth.
+ * Regional variants (codes containing '-', e.g. pt-br, fr-ca) MUST come before
+ * their base language, otherwise a 'pt-br' browser locale matches the 'pt'
+ * entry first (via startsWith). Aliases are appended last (no collisions).
+ */
+function buildLangRedirectMap(languages) {
+    const entries = Object.keys(languages)
+        .filter(code => code !== 'en' && languages[code].prefix)
+        .map(code => [code, languages[code].prefix]);
+    const regional = entries.filter(e => e[0].includes('-'));
+    const base = entries.filter(e => !e[0].includes('-'));
+    return [...regional, ...base, ...LANG_REDIRECT_ALIASES];
+}
+
+/**
+ * Generate the client-side language-redirect IIFE.
+ * home=true  -> homepage variant (redirects to the language home, no lang guard)
+ * home=false -> content-page variant (guards on lang==="en", preserves the path)
+ */
+function langRedirectScript(languages, { home } = {}) {
+    const mapLiteral = '[' + buildLangRedirectMap(languages)
+        .map(([k, v]) => `["${k}","${v}"]`).join(',') + ']';
+    const guard = home ? '' : '\n  if(document.documentElement.lang!=="en")return;';
+    const target = home
+        ? 'map[i][1]+"/"'
+        : 'map[i][1]+window.location.pathname+window.location.search';
+    return `(function(){${guard}
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=${mapLiteral};
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(${target});
+      return;
+    }
+  }
+})();`;
+}
+
 /**
  * Build the full context object for rendering a page.
  * Merges: site globals + language data + page-specific data
@@ -574,7 +622,9 @@ function buildContext(site, languages, page, appCatalog) {
         privacyUrl,
         ogLocale,
         hasGame,
-        ...data
+        ...data,
+        // Computed after ...data so it always wins over any stale field.
+        langRedirectScript: langRedirectScript(languages, { home: page.template === 'index-page' })
     };
 }
 
