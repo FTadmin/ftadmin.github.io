@@ -1558,7 +1558,7 @@
 (function(){
   if(document.documentElement.lang!=="en")return;
   if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
-  var map=[["pt-br","/pt-br"],["zh-Hans","/zh-Hans"],["zh-Hant","/zh-Hant"],["fr-ca","/fr-ca"],["nb","/nb"],["no","/nb"],["nn","/nb"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["ja","/ja"],["fr","/fr"],["ko","/ko"],["sv","/sv"],["da","/da"],["fi","/fi"],["ar","/ar"],["ca","/ca"],["cs","/cs"],["el","/el"],["he","/he"],["hr","/hr"],["hu","/hu"],["nl","/nl"],["pl","/pl"],["pt","/pt"],["ro","/ro"],["sk","/sk"],["th","/th"],["tr","/tr"],["uk","/uk"],["vi","/vi"]];
+  var map=[["pt-br","/pt-br"],["zh-Hans","/zh-Hans"],["fr-ca","/fr-ca"],["zh-Hant","/zh-Hant"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["ja","/ja"],["fr","/fr"],["ko","/ko"],["sv","/sv"],["nb","/nb"],["da","/da"],["fi","/fi"],["ar","/ar"],["ca","/ca"],["cs","/cs"],["el","/el"],["he","/he"],["hr","/hr"],["hu","/hu"],["nl","/nl"],["pl","/pl"],["pt","/pt"],["ro","/ro"],["sk","/sk"],["th","/th"],["tr","/tr"],["uk","/uk"],["vi","/vi"],["no","/nb"],["nn","/nb"]];
   var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
   for(var i=0;i<map.length;i++){
     if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
