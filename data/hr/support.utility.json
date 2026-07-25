@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "Podrška - Feeltracker",
-   "description": "Dobijte pomoć s zdravstvenim aplikacijama Feeltracker. Kontaktirajte podršku, pregledajte FAQ i pronađite resurse za aplikacije Blood Pressure, Raspoloženje, Dnevnik, San i Težina.",
-   "keywords": "",
+   "title": "Feeltracker podrška | Pomoć za naše zdravstvene aplikacije",
+   "description": "Dobij pomoć za Feeltracker zdravstvene aplikacije. Pošalji e-mail na support@feeltracker.com za odgovor unutar 24 sata, ili pregledaj FAQ, pravila privatnosti i uvjete korištenja.",
+   "keywords": "feeltracker podrška, kontakt feeltracker, pomoć za zdravstvenu aplikaciju, podrška za aplikaciju za krvni tlak, podrška za praćenje raspoloženja, podrška za praćenje sna, podrška za praćenje težine",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Feeltracker Podrška",
   "contact": {
    "title": "Trebate pomoć?",
-   "supportText": "Za neposrednu podršku ili pitanja, pišite nam na: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "Za detaljnu pomoć i česta pitanja, posjetite našu <a href=\"../../hr/faq/\">stranicu s čestim pitanjima</a>."
+   "supportText": "Najbrži način da dobiješ pomoć za bilo koju Feeltracker aplikaciju jest slanje e-maila na <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> — mali smo tim i obično odgovaramo unutar 24 sata. Javi nam koju aplikaciju koristiš i što se događalo kad se problem pojavio, a mi ćemo preuzeti od tamo.",
+   "faqText": "Za odgovore korak po korak o sinkronizaciji, sigurnosnim kopijama, izvozu za liječnika, AI značajkama, privatnosti i pretplatama, pogledaj našu <a href=\"../../hr/faq/\">FAQ stranicu</a>."
   },
   "apps": {
    "title": "Naše aplikacije",
@@ -63,8 +63,31 @@
     {
      "name": "Uvjeti korištenja",
      "url": "../../hr/terms/"
+    },
+    {
+     "name": "O Feeltrackeru",
+     "url": "../../hr/about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Feeltracker podrška",
+    "description": "Kako dobiti pomoć za Feeltracker aplikacije za praćenje zdravlja za iPhone, iPad i Mac: podrška putem e-maila, FAQ, pravila privatnosti i uvjeti korištenja.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Korisnička podrška",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "Croatian"
+      }
+     ]
+    }
+   }
+  ]
  }
 }
