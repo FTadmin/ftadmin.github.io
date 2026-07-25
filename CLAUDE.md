@@ -400,6 +400,36 @@ These lessons were learned from the Simplified Chinese (zh) translation and appl
    }
    console.log("done — no lines above means clean");'
    ```
+
+   **This check proves structure survived translation. It does NOT prove the
+   translation is current.** A purely textual edit — changing a number, a date,
+   a retention period, softening a claim — alters no tag and no `href`, and the
+   old translation is still not equal to the new English, so all three tests
+   pass on stale content. This has already produced a confident "all 31 clean"
+   report at a moment when zero locales had been patched. Whenever the EN edit
+   is textual rather than structural, add a **semantic** assertion for the thing
+   that actually changed and run it alongside:
+   ```bash
+   # e.g. the retention figure: EN section 12 went 0 -> 1 occurrences of "30",
+   # section 17 went 2 -> 4. Include non-Western digits so ar/th aren't misread.
+   node -e '
+   const fs=require("fs");
+   const WANT={12:1, 17:4};                                  // <-- min occurrences per section
+   const NUM=/30|٣٠|۳۰|๓๐/g;                                  // <-- the token that changed
+   for (const l of fs.readdirSync("data")) {
+     if (l==="en") continue;
+     const p=`data/${l}/privacy.utility.json`; if(!fs.existsSync(p)) continue;
+     const s=JSON.parse(fs.readFileSync(p,"utf8")).data.sections, bad=[];
+     for (const [i,want] of Object.entries(WANT)) {
+       const n=(s[i].content.replace(/<[^>]+>/g,"").match(NUM)||[]).length;
+       if (n<want) bad.push(`sec${i}: ${n}/${want}`);
+     }
+     if (bad.length) console.log(l, bad.join("; "));
+   }
+   console.log("done — no lines above means every locale carries the new value");'
+   ```
+   `git status` is the cheap sanity check that pairs with this: if a fan-out
+   reports success and no overlay file is modified, nothing happened.
 8. **Brand names: match what Apple actually ships in that locale, verified against Apple's own localized site.** It varies per locale and cannot be guessed. Apple Intelligence is kept in **English** in almost every locale (verified: ja, zh-Hant) but is **"Apple 智能"** in Simplified Chinese (verified on `support.apple.com/zh-cn`). The usual failure is drift: a translation pass updates the body text but leaves the section *heading* in English, so one locale says both. After any brand-touching pass, grep the whole locale file for the English form and confirm the count is zero (or matches a deliberate choice).
 9. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
 10. **Reviews disclaimer** — Every non-EN language MUST include `"disclaimer"` in the reviews section of app pages AND the index page, stating reviews were translated from English (e.g., Chinese: `"评论翻译自英文原文。最初发布在App Store上。"`).
