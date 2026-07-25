@@ -9,7 +9,7 @@
    "twitterDescription": ""
   },
   "pageTitle": "プライバシーポリシー",
-  "intro": "<p>Custom Arts Ltdは、Feeltrackerアプリをフリーミアムアプリとして開発しました。本サービスはCustom Arts Ltdにより無料で提供され、現状のまま使用することを目的としています。</p>\n<p>このページは、本サービスをご利用いただく方に対し、情報の収集、使用、開示に関する当社のポリシーをお知らせするために使用されます。</p>\n<p>本サービスをご利用いただく場合、本ポリシーに関連する情報の収集と使用に同意いただいたものとします。ただし、Feeltrackerアプリは当社のサーバーに個人を特定できる情報（PII）を収集または保存することはありません。アプリが生成するすべてのデータは、お客様のデバイスにローカルで保存されるか、お客様の個人のiCloudアカウントと同期されます。当社はこのデータにアクセスすることはできません。</p>",
+  "intro": "<p>Custom Arts LtdはFeeltrackerアプリをフリーミアムアプリとして開発しました。本SERVICEはCustom Arts Ltdによって無償で提供されており、現状のまま使用されることを前提としています。</p>\n<p>このページは、当社のサービスを利用することを選択した方に対して、情報の収集、利用、開示に関する当社のポリシーをお知らせするために使用されます。</p>\n<p>当社のサービスをご利用いただく場合、本ポリシーに関連する情報の収集および利用に同意したことになります。ただし、Feeltrackerアプリは個人を特定できる情報（PII）を当社のサーバーに収集または保存することはありません。アプリによって生成されたすべてのデータは、お使いの端末にローカルに保存されるか、お客様個人のiCloudアカウントと同期されます。当社はこのデータにアクセスすることはできません。</p>\n<p>ただし、重要な例外が1つあります。AI機能を使用すると、その機能に必要なデータが端末から送信され、OpenAIによって処理されます。クラウドAIは新規インストール時にデフォルトでオンになっています。以下の「OpenAI API」および「当社のサーバーとAIリクエストがOpenAIに届く仕組み」のセクションで、何が、いつ送信され、どのくらいの期間保持されるかを正確に説明しています。</p>",
   "sections": [
    {
     "heading": "情報の収集と使用",
@@ -21,7 +21,7 @@
    },
    {
     "heading": "ログデータ",
-    "content": "<p>アプリのエラーやクラッシュが発生した場合、Firebase Crashlyticsなどのサードパーティサービスを通じてログデータを収集します。このログデータには個人を特定できる情報は含まれず、アプリのパフォーマンスを改善するためのエラーの診断と修正にのみ使用されます。</p>"
+    "content": "<p>アプリでエラーが発生したりクラッシュしたりすると、診断ログがFirebase Crashlytics（Google）に送信され、当社が不具合を発見して修正できるようにします。これらのログはアプリ自体によって書き込まれ、アプリが<em>何をしていたか</em>を記述します。どの画面が開かれていたか、ある操作が何件のレコードに影響したか、あるテキストの長さはどれくらいだったか、どのステップで失敗したか、といった内容です。</p>\n<p><strong>これらのログには、あなたの健康記録、日記のテキスト、その他あなたが入力した内容は含まれません。</strong> ログの行がお客様のコンテンツを参照する必要がある場合は、そのコンテンツの長さのみを記録し、それ以上の情報は記録しません。個人情報を含む可能性のあるログ行は、端末から送信される前に編集（redact）されます。</p>\n<p>クラッシュレポートには、デバイスモデル、OSのバージョン、当社のコード内でクラッシュが発生した箇所など、Crashlyticsが自動的に収集する技術情報も含まれます。アプリの設定でクラッシュレポートと分析をオフにすることができ、これによりこれらのログの送信が完全に停止します。</p>"
    },
    {
     "heading": "Cookie",
@@ -29,7 +29,7 @@
    },
    {
     "heading": "サービスプロバイダー",
-    "content": "<p>当社は、以下の理由によりサードパーティの企業および個人を利用する場合があります：</p>\n<ul>\n <li>当社のサービスを促進するため</li>\n <li>当社に代わってサービスを提供するため</li>\n <li>サービス関連のサービスを実行するため</li>\n <li>当社のサービスがどのように使用されているかを分析するため</li>\n</ul>\n<p>これらのサードパーティサービスは、上記のとおり個人を特定しない情報を収集する場合がありますが、その他の目的で情報を開示または使用しない義務を負います。</p>"
+    "content": "<p>当社は以下の目的のために、第三者の企業や個人を利用することがあります。</p>\n<ul>\n <li>当社のサービスを円滑にするため。</li>\n <li>当社に代わってサービスを提供するため。</li>\n <li>サービスに関連するサービスを実行するため。または</li>\n <li>当社のサービスがどのように利用されているかを分析する際に当社を支援するため。</li>\n</ul>\n<p>当社が利用している処理業者は以下のとおりです。</p>\n<ul>\n <li><strong>Google（Firebase Analytics、Firebase Crashlytics）</strong> — 利用状況の分析とクラッシュ診断。</li>\n <li><strong>RevenueCat</strong> — サブスクリプションおよび購入の管理。</li>\n <li><strong>OpenAI</strong> — AI機能を使用した際にAIリクエストを処理します（詳細は下記「OpenAI API」を参照）。</li>\n <li><strong>Render</strong> — AIリクエストがOpenAIに届くまでに経由するサーバーをホストしています（詳細は下記「当社のサーバーとAIリクエストがOpenAIに届く仕組み」を参照）。</li>\n <li><strong>Apple</strong> — iCloud同期、App Store購入、および利用時のApple Intelligence。</li>\n</ul>\n<p>これらの第三者サービスは、当社との契約により、情報を他の目的に使用しないことが義務付けられています。</p>"
    },
    {
     "heading": "セキュリティ",
@@ -45,7 +45,7 @@
    },
    {
     "heading": "プロフィール情報（オプション）",
-    "content": "<p>アプリ内で<strong>氏名、生年月日、性別</strong>を含む小さなプロフィールをオプションで保存できます。これは完全に任意であり——主要なトラッキング機能はそれなしでも動作します。保存した場合でも、アプリ内からいつでも編集・削除できます。</p>\n<p>プロフィール情報は他のデータと同様に保存されます：デバイス上に、またiCloudを使用している場合はプライベートなiCloudアカウントに。当社のサーバーにアップロードすることはなく、広告やマーケティング目的で誰かと共有することもありません。</p>\n<p>オプションのAI機能（OpenAIやApple Intelligenceを利用したチャット、インサイト、カスタムフィードバックなど）を使用する場合、アプリはプロフィールの関連部分——通常は名前、年齢（生年月日から算出）、性別——をリクエストに含めることで、AIがより適切な回答（年齢に応じた健康アドバイスや適切な代名詞など）を提供できるようにします。これはAI機能を実際に使用するときのみ発生し、そのリクエストに必要なプロフィールフィールドのみが送信されます。AI機能をオフにしたり、プロフィールを削除したりすることで、いつでも停止できます。</p>"
+    "content": "<p>アプリでは、お客様の<strong>氏名、生年月日、性別</strong>を含む簡単なプロフィールを任意で保存できます。これは完全に任意であり、コアとなる記録機能はすべてプロフィールなしでも動作します。プロフィールはアプリ内からいつでも編集・削除できます。</p>\n<p>プロフィール情報は、他のデータと同じ方法で保存されます。お使いの端末に、またiCloudを利用している場合はお客様個人のiCloudアカウントに保存されます。当社がこれを当社のサーバーにアップロードすることは一切なく、広告やマーケティングの目的で第三者と共有することもありません。</p>\n<p>AI機能を実行する際、アプリはAIが回答を調整できるよう、プロフィールの一部をリクエストに含めます。<strong>氏名、（生年月日から算出される）年齢、性別の送信は、これらの項目を保存している場合、デフォルトでオンになっています。</strong>それぞれをAI設定内で個別にオフにすることができます。さらに2つのコンテキストオプション、現地の天気と睡眠スケジュールは、デフォルトで<strong>オフ</strong>になっており、オンにした場合のみ送信されます。自由記述の「追加コンテキスト」欄に何か入力している場合、それが入力されている間はすべてのAIリクエストとともに送信されます。送信を停止するには、この欄を空にしてください。</p>"
    },
    {
     "heading": "Apple Health（オプション）",
@@ -53,15 +53,15 @@
    },
    {
     "heading": "Apple Intelligence（オプション）",
-    "content": "<p>iOS、iPadOS、またはmacOSの互換バージョンを搭載した最新デバイスでは、FeeltrackerアプリはApple IntelligenceというApple組み込みAIを使ったオプション機能を提供することがあります。これらはお客様が使用を選択した場合にのみ動作します。</p>\n<p>Apple Intelligenceは可能な限りデバイス上で動作し、重い処理にはAppleのPrivate Cloud Computeを使用します。どちらの場合も、Appleはデータが保存されず、Appleに見えず、Appleのモデルのトレーニングに使用されないと述べています。Custom Arts LtdはApple Intelligenceのリクエストや応答を受け取り、保存、または閲覧することはありません。</p>\n<p>詳細については、<a href=\"https://www.apple.com/legal/privacy/en-ww/\" target=\"_blank\" rel=\"noopener noreferrer\">Appleのプライバシーポリシー</a>をご確認ください。</p>"
+    "content": "<p>iOS、iPadOS、またはmacOSの互換バージョンを搭載した最近のデバイスでは、FeeltrackerアプリはApple独自の組み込みAIであるApple Intelligenceを利用したオプション機能を提供する場合があります。これらは、アプリの設定でAIモードとしてApple Intelligenceを選択した場合にのみ動作します。</p>\n<p>このモードでは、アプリはAppleのオンデバイスFoundation Modelsフレームワークを呼び出します。このリクエストは当社のサーバーには送信されず、OpenAIにも送信されません。Custom Arts LtdがApple Intelligenceのリクエストやレスポンスを受け取る、保存する、または閲覧することは一切ありません。Apple自身がこのリクエストをどのように扱うかは、Apple自身のポリシーに準拠します。</p>\n<p>詳細については、<a href=\"https://www.apple.com/legal/privacy/en-ww/\" target=\"_blank\" rel=\"noopener noreferrer\">Appleのプライバシーポリシー</a>をご覧ください。</p>"
    },
    {
     "heading": "OpenAI API（オプション）",
-    "content": "<p>アプリの一部のAI機能は、オプションでOpenAI APIを使用しています。入力した内容（例：AIへの質問、日記のエントリ、特定のデータ）を確認し、フィードバック、提案、またはインサイトを返すことができます。これらの機能は完全なオプトイン制です——アクティブに使用することを選択する必要があり、アプリ内からいつでもオフにできます。</p>\n<p>AI機能を使用すると、そのリクエストに必要なものだけがOpenAIに送信されます：(a) プロンプトまたは質問；(b) 質問している特定のデータ（例：説明してほしい血圧や気分のデータ）；(c) プロフィールを保存している場合は、少しのコンテキスト——通常は名前、年齢（生年月日から算出）、性別——AIが返答をカスタマイズできるようにするため（例：適切な代名詞や年齢に合ったアドバイス）。</p>\n<p>OpenAIのAPIポリシーに基づき、API経由で送信されたデータはモデルのトレーニングには使用されず、不正使用チェックのためのみ短期間保存されます。当社はAIのプロンプトや応答をサーバーに保持しません——それらはデバイス上のみに存在します。</p>\n<p>完全なポリシーはこちらでご確認いただけます：<a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">OpenAIプライバシーポリシー</a>。</p>\n<p>AI機能を使用することにより、関連データ（保存を選択したプロフィール情報を含む）がOpenAIに送信され、そのポリシーに従って処理されることに同意したことになります。OpenAIのポリシーの条件で送信することに抵抗のある内容はAIに入力しないでください。</p>"
+    "content": "<p>当社のアプリにおけるほとんどのAI機能は、OpenAI APIによって提供されています。クラウドAIは新規インストール時の<strong>デフォルトモード</strong>です。アプリのAI設定で、オンデバイスのApple Intelligenceに切り替えたり、AIを完全にオフにしたりすることができます。</p>\n<p><strong>送信される内容。</strong> 機能によって、リクエストには以下が含まれる場合があります。</p>\n<ul>\n <li>AI機能に入力した内容、たとえば質問や、処理を依頼した文章。</li>\n <li>その機能の対象となる健康記録。日付と時刻付きの記録の行として送信されます。<strong>これには、それらの記録に付随する自由記述のメモや日記のエントリーも含まれます。</strong></li>\n <li>上記「プロフィール情報」で説明したプロフィールおよびパーソナライズのコンテキスト。</li>\n <li>Camera Scanの場合、血圧計や体重計の表示を撮影した写真。</li>\n <li>読み上げ（テキスト読み上げ）機能の場合、読み上げられるテキスト。通常はお客様のデータに関するAIの回答です。</li>\n</ul>\n<p><strong>送信されるタイミング。</strong> ほとんどのAI機能は、お客様がそれを開いて結果を求めたときにのみ動作します。ただし一部はそうではありません。クラウドAIがオンになっている間、アプリは短いパーソナライズされたメッセージ（日々のインサイト、誕生日や記念日のお祝いメッセージ、おかえりなさいのメッセージなど）を自動的に生成します。そのために、<strong>アプリまたはその日別ビューを開いたときに、AIの結果を求めていなくても</strong>、直近の記録（最大30件）とプロフィールのコンテキストをまとめてOpenAIに送信します。AIをオフにするか、Apple Intelligenceに切り替えると、これは停止します。</p>\n<p><strong>インストールごとの識別子。</strong> インストールごとにランダムな識別子が生成され、リクエストの都度、繰り返しリクエストのコストを抑えるキャッシュキーとしてOpenAIに送信されます。これにはお客様に関する情報は一切含まれておらず、お客様の氏名、アカウント、デバイスIDとも紐づいていませんが、固定されています。つまり、OpenAIは1つのインストールからのすべてのリクエストを相互に関連付けることができ、この識別子はアプリが削除・再インストールされるまで保持されます。</p>\n<p><strong>OpenAIがこれをどう扱うか。</strong> OpenAIの現行のAPIドキュメントによれば、APIに送信されたデータは、お客様が明示的に同意しない限りOpenAIのモデルの学習や改善には使用されず、不正利用監視のためのログは最長30日間保持され、Responses APIを通じて生成されたレスポンスはデフォルトで30日間保存されるとされています。当社のアプリは、チャットの会話を再アップロードすることなく複数のターンにわたって継続できるよう、この30日間の保存に依存しています。そのため、<strong>お客様のAIリクエストとその回答は、最長30日間OpenAIによって保持されます。</strong>これらはOpenAI自身の規約であり、当社の規約ではなく、OpenAIによって変更される可能性があります。</p>\n<p>ポリシーの全文はこちらでご確認いただけます。<a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">OpenAIプライバシーポリシー</a></p>\n<p>AI機能を使用することにより、お客様は、関連するデータ（保存を選択したプロフィール情報を含む）がOpenAIに送信され、OpenAIのポリシーに基づいて処理されることに同意したものとみなされます。これらの条件のもとで送信されても構わない内容のみをAIに入力してください。</p>"
    },
    {
-    "heading": "Our Server and How AI Requests Reach OpenAI",
-    "content": "<p>AI requests don’t go from your device straight to OpenAI. They travel through a small server we run, hosted by <a href=\"https://render.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Render</a> in the United States. This is a security measure: it means our OpenAI key lives on that server instead of inside the app, where someone could pull it out and run up requests in your name. The server checks the request genuinely came from one of our apps, adds our key, and streams OpenAI’s reply straight back to you.</p>\n<p><strong>It does not store your requests or the AI’s replies.</strong> They exist in memory only for the moment it takes to pass them along, and are never written to disk. Nobody at Custom Arts Ltd reads them.</p>\n<p>What the server does keep is a running tally of what our AI costs us. For each request it records the date and time, which app and version it came from, which feature and AI model were used, whether the account was free or paid, how many tokens or characters were processed, and the estimated cost. There is no health data in these records, no message text, and nothing identifying you — no account, no user ID, no IP address — so they cannot be traced back to an individual. <strong>They are currently kept indefinitely.</strong></p>\n<p>The server also writes short operational log lines covering the same ground, plus the size of each request, never its content. If OpenAI returns an error, that error message is logged as OpenAI wrote it.</p>"
+    "heading": "当社のサーバーとAIリクエストがOpenAIに届く仕組み",
+    "content": "<p>AIリクエストは、お客様の端末から直接OpenAIに送信されるわけではありません。米国の<a href=\"https://render.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Render</a>にホストされている、当社が運用する小規模なサーバーを経由します。これはセキュリティ対策の一環です。これにより、当社のOpenAIキーはアプリ内ではなくそのサーバー上に置かれ、誰かがキーを取り出してお客様になりすましてリクエストを乱用することを防ぎます。サーバーはリクエストが当社のアプリのいずれかから確実に送信されたものであることを確認し、当社のキーを追加し、OpenAIの回答をそのままお客様に返します。</p>\n<p><strong>お客様のリクエストやAIの回答は保存されません。</strong> それらは転送に必要な一瞬の間だけメモリ上に存在し、ディスクに書き込まれることは一切ありません。Custom Arts Ltdの誰もこれらを読むことはありません。</p>\n<p>サーバーが保持しているのは、当社のAI利用にかかるコストの継続的な集計です。各リクエストについて、日時、どのアプリとバージョンから送信されたか、どの機能とAIモデルが使用されたか、アカウントが無料か有料か、処理されたトークンまたは文字の数、推定コストが記録されます。これらの記録には健康データもメッセージ本文も含まれておらず、アカウント、ユーザーID、IPアドレスなどお客様を特定する情報も一切含まれていないため、個人を特定することはできません。<strong>これらは現在、無期限に保持されています。</strong></p>\n<p>サーバーはまた、同様の内容を記録する簡潔な運用ログと、各リクエストのサイズ（内容そのものではありません）も記録します。OpenAIがエラーを返した場合、そのエラーメッセージはOpenAIから受け取ったとおりに記録されます。</p>"
    },
    {
     "heading": "広告なし",
@@ -77,11 +77,11 @@
    },
    {
     "heading": "データの保管場所",
-    "content": "<p>お客様の個人データと健康データはデバイス上およびお客様自身のiCloudアカウントに保管されます——お客様が管理しています。当社が使用する一部のオプションのサードパーティサービス（Firebase、RevenueCat、OpenAI）は米国を拠点とするプロバイダーが運営しており、一部のデータをそこで処理する場合があります。必要な場合、これらはEU/UK圏外への個人データの移転に標準契約条項および/またはEU-US Data Privacy Frameworkを使用しています。データが移転されることを避けたい場合は、対応するオプション機能をオフにすることができます。</p>"
+    "content": "<p>お客様の個人データおよび健康データは、お客様の端末とご自身のiCloudアカウントに保存されており、その管理はお客様ご自身が行います。当社が利用する任意の第三者サービス（Firebase、RevenueCat、OpenAI）、および当社のAIリクエストが経由するサーバー（Renderがホスト）は、米国を拠点とするプロバイダーによって運用されており、データが米国内で処理される場合があります。必要に応じて、これらのプロバイダーは標準契約条項（SCC）やEU-USデータプライバシーフレームワークに基づき、EU/UK域外への個人データの移転を行っています。データが一切移転されないようにしたい場合は、該当する任意機能をオフにすることができます。</p>"
    },
    {
     "heading": "データの保存期間",
-    "content": "<p>当社はサーバーにアプリデータのコピーを保持しません。お客様のデータはアプリがインストールされ、iCloudバックアップがオンになっている間は、デバイス上およびiCloud上に保存されます。Firebase Crashlytics/Analyticsのデータはプロジェクトのデフォルト保存期間でGoogleが保持します。RevenueCatはアクティブなサブスクリプションがある間および税法が要求する期間、購入・領収書データを保持します。OpenAIはAPIデータ使用ポリシーに従ってAPIリクエストデータを保持します。機能をオフにするかアプリを削除すると、それ以降の収集が停止されます。</p>"
+    "content": "<p>当社はお客様のアプリデータのコピーを当社のサーバーに保持することはありません。お客様のデータは、アプリをインストールしiCloudバックアップをオンにしている限り、お客様の端末とiCloud内にとどまります。それ以外には以下の保持期間が適用されます。</p>\n<ul>\n <li><strong>OpenAI</strong> — OpenAIの現行のAPIドキュメントによれば、不正利用監視ログは最長30日間保持され、Responses APIのレスポンスはデフォルトで30日間保存されます。当社のアプリは、複数ターンにわたるチャットのためにこの保存機能に依存しています。</li>\n <li><strong>当社自身のサーバー</strong> — リクエストや回答の内容は一切保存されません。リクエストごとのコスト記録（日時、アプリ、機能、モデル、トークン数、コスト。健康データやユーザー識別子は含まれません）は現在、無期限に保持されています。</li>\n <li><strong>Firebase Crashlytics / Analytics</strong> — 当社のプロジェクトのデフォルトの保持期間の間、Googleによって保持されます。</li>\n <li><strong>RevenueCat</strong> — 有効なサブスクリプションをお持ちの間、および税法が要求する期間、購入および領収書のデータを保持します。</li>\n</ul>\n<p>機能をオフにするか、アプリを削除すると、それ以降の収集は停止します。当社自身のサーバーが保持する記録にはお客様を特定する情報が一切含まれていないため、リクエストに応じて記録内の「お客様の」エントリーを検索したり削除したりすることはできません。照合できる情報がそこには存在しないためです。</p>"
    },
    {
     "heading": "プライバシーポリシーの変更",
