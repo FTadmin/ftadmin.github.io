@@ -240,9 +240,10 @@
         <h1>Personvernerklæring</h1>
     </header>
     <div class="legal-intro">
-        <p>Custom Arts Ltd har bygget Feeltracker-appen som en Freemium-app. Denne TJENESTEN leveres av Custom Arts Ltd uten kostnad og er beregnet for bruk som den er.</p>
-<p>Denne siden brukes til å informere besøkende om våre retningslinjer for innsamling, bruk og utlevering av informasjon dersom noen velger å bruke vår tjeneste.</p>
-<p>Hvis du velger å bruke vår tjeneste, godtar du innsamling og bruk av informasjon i henhold til denne erklæringen. Feeltracker-appen samler imidlertid ikke inn eller lagrer personlig identifiserbar informasjon (PII) på våre servere. Alle data generert av appen lagres lokalt på enheten din eller synkroniseres med din personlige iCloud-konto. Vi har ikke tilgang til disse dataene.</p>
+        <p>Custom Arts Ltd har utviklet Feeltracker-appen som en Freemium-app. Denne TJENESTEN leveres av Custom Arts Ltd kostnadsfritt og er ment for bruk som den er.</p>
+<p>Denne siden brukes til å informere besøkende om vår praksis for innsamling, bruk og utlevering av informasjon dersom noen velger å bruke tjenesten vår.</p>
+<p>Hvis du velger å bruke tjenesten vår, samtykker du til innsamling og bruk av informasjon i tråd med denne policyen. Feeltracker-appen samler imidlertid ikke inn eller lagrer personlig identifiserbar informasjon (PII) på våre servere. Alle data som genereres av appen, lagres lokalt på enheten din eller synkroniseres med din personlige iCloud-konto. Vi har ikke tilgang til disse dataene.</p>
+<p>Det finnes ett unntak, og det er viktig: hvis du bruker en AI-funksjon, forlater dataene som trengs for den funksjonen enheten din og behandles av OpenAI. Skybasert AI er slått på som standard ved en ny installasjon. Avsnittene «OpenAI API» og «Vår server og hvordan AI-forespørsler når OpenAI» nedenfor beskriver nøyaktig hva som sendes, når, og hvor lenge det oppbevares.</p>
     </div>
 
 
@@ -271,7 +272,9 @@
     <section class="legal-section">
         <h2>Loggdata</h2>
         <div class="legal-content">
-            <p>Ved feil eller krasj i appen samler vi inn loggdata gjennom tredjepartstjenester som Firebase Crashlytics. Disse loggdataene inkluderer ikke personlig identifiserbar informasjon og brukes kun til å diagnostisere og fikse feil for å forbedre appens ytelse.</p>
+            <p>Når appen støter på en feil eller krasjer, sendes diagnostiske logger til Firebase Crashlytics (Google) slik at vi kan finne og rette feilen. Disse loggene skrives av appen selv og beskriver hva appen <em>gjorde</em>: hvilken skjerm som var åpen, hvor mange oppføringer en operasjon berørte, hvor lang en tekstbit var, og hvilket trinn som feilet.</p>
+<p><strong>De inneholder ikke helsemålingene dine, journaltekst eller noe annet du har skrevet.</strong> Der en loggrad må vise til innholdet ditt, registreres kun lengden på innholdet og ikke noe mer. Loggrader som ellers ville inneholdt personlige detaljer, fjernes før de forlater enheten.</p>
+<p>Krasjrapporter inneholder også teknisk informasjon som Crashlytics samler inn automatisk, som enhetsmodell, versjon av operativsystemet, og hvor i koden vår krasjet skjedde. Du kan slå av krasjrapportering og analyse i appens innstillinger, noe som stopper disse loggene fra å bli sendt i det hele tatt.</p>
         </div>
     </section>
 
@@ -285,14 +288,22 @@
     <section class="legal-section">
         <h2>Tjenesteleverandører</h2>
         <div class="legal-content">
-            <p>Vi kan ansette tredjepartsselskaper og enkeltpersoner av følgende grunner:</p>
+            <p>Vi kan benytte tredjepartsselskaper og enkeltpersoner av følgende grunner:</p>
 <ul>
- <li>For å legge til rette for vår tjeneste;</li>
+ <li>For å legge til rette for tjenesten vår;</li>
  <li>For å levere tjenesten på våre vegne;</li>
  <li>For å utføre tjenesterelaterte tjenester; eller</li>
  <li>For å hjelpe oss med å analysere hvordan tjenesten vår brukes.</li>
 </ul>
-<p>Disse tredjepartstjenestene kan samle inn ikke-personlig identifiserbar informasjon som beskrevet ovenfor, men de er forpliktet til ikke å utlevere eller bruke informasjonen til noe annet formål.</p>
+<p>Databehandlerne vi bruker er:</p>
+<ul>
+ <li><strong>Google (Firebase Analytics, Firebase Crashlytics)</strong> – bruksanalyse og krasjdiagnostikk.</li>
+ <li><strong>RevenueCat</strong> – administrasjon av abonnement og kjøp.</li>
+ <li><strong>OpenAI</strong> – behandler AI-forespørsler når du bruker en AI-funksjon (se «OpenAI API» nedenfor).</li>
+ <li><strong>Render</strong> – er vert for serveren som AI-forespørsler går gjennom på vei til OpenAI (se «Vår server og hvordan AI-forespørsler når OpenAI» nedenfor).</li>
+ <li><strong>Apple</strong> – iCloud-synkronisering, kjøp i App Store, og Apple Intelligence der du bruker det.</li>
+</ul>
+<p>Disse tredjepartstjenestene er bundet av sine avtaler med oss til ikke å bruke informasjonen til andre formål.</p>
         </div>
     </section>
 
@@ -321,9 +332,9 @@
     <section class="legal-section">
         <h2>Profilinformasjon (valgfritt)</h2>
         <div class="legal-content">
-            <p>Du kan valgfritt lagre en liten profil i appen med <strong>navn, fødselsdato og kjønn</strong>. Dette er helt valgfritt – alle kjernefunksjonene for sporing fungerer uten det, og du kan redigere eller slette profilen din når som helst fra innsiden av appen.</p>
-<p>Profildetaljer lagres på samme måte som de andre dataene dine: på enheten din og, hvis du bruker iCloud, i din private iCloud-konto. Vi laster dem aldri opp til serverne våre, og vi deler dem aldri med noen for reklame- eller markedsføringsformål.</p>
-<p>Hvis du velger å bruke en AI-funksjon (som chat, innsikter eller tilpasset tilbakemelding drevet av OpenAI eller Apple Intelligence), kan appen inkludere de relevante delene av profilen din i forespørselen – vanligvis fornavnet ditt, alder (beregnet fra fødselsdatoen) og kjønn – slik at AI-en kan gi deg mer relevante svar, for eksempel alderspassende helseveiledning eller de riktige pronomenene. Dette skjer bare når du faktisk bruker en AI-funksjon, og bare profilfeltene som trengs for den forespørselen sendes. Slå av AI-funksjoner eller slett profilen din når som helst for å stoppe dette.</p>
+            <p>Du kan valgfritt lagre en liten profil i appen med <strong>navn, fødselsdato og kjønn</strong>. Dette er helt valgfritt – alle kjernefunksjonene for registrering fungerer uten det, og du kan når som helst redigere eller slette profilen din inne i appen.</p>
+<p>Profilopplysninger lagres på samme måte som de andre dataene dine: på enheten din og, hvis du bruker iCloud, i din private iCloud-konto. Vi laster aldri opp disse til våre servere, og vi deler dem aldri med noen til reklame- eller markedsføringsformål.</p>
+<p>Når en AI-funksjon kjører, inkluderer appen deler av profilen din i forespørselen slik at AI-en kan tilpasse svaret. <strong>Å sende navnet ditt, alderen din (beregnet ut fra fødselsdatoen din) og kjønnet ditt er slått på som standard</strong> hvis du har lagret disse feltene; du kan slå av hver av dem enkeltvis under AI-innstillinger i appen. To ytterligere kontekstvalg – lokalt vær og søvnmønsteret ditt – er slått <strong>av</strong> som standard og sendes bare hvis du slår dem på. En fritekstnotat med «ytterligere kontekst», hvis du skriver et, sendes med hver AI-forespørsel så lenge feltet er utfylt; tøm feltet for å stoppe sendingen.</p>
         </div>
     </section>
 
@@ -339,20 +350,39 @@
     <section class="legal-section">
         <h2>Apple Intelligence (valgfritt)</h2>
         <div class="legal-content">
-            <p>På nyere enheter med en kompatibel versjon av iOS, iPadOS eller macOS kan Feeltracker-appene tilby valgfrie funksjoner drevet av Apple Intelligence – Apples innebygde AI. Disse kjører bare når du velger å bruke dem.</p>
-<p>Apple Intelligence kjører på enheten din der det er mulig, og bruker Apples Private Cloud Compute for tyngre forespørsler. I begge tilfeller sier Apple at dataene dine ikke lagres, ikke er synlige for Apple, og ikke brukes til å trene Apples modeller. Custom Arts Ltd mottar, lagrer eller ser ingen Apple Intelligence-forespørsler eller svar.</p>
-<p>For detaljer, se <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apples personvernregler</a>.</p>
+            <p>På nyere enheter med en kompatibel versjon av iOS, iPadOS eller macOS kan Feeltracker-appene tilby valgfrie funksjoner drevet av Apple Intelligence – Apples innebygde AI. Disse kjører bare når du velger Apple Intelligence som AI-modus i appens innstillinger.</p>
+<p>I denne modusen kaller appen Apples Foundation Models-rammeverk på enheten. Forespørselen går ikke til våre servere og går ikke til OpenAI: Custom Arts Ltd mottar, lagrer eller ser aldri noen Apple Intelligence-forespørsel eller -svar. Hvordan Apple selv håndterer forespørselen, styres av Apples egne retningslinjer.</p>
+<p>For detaljer, se <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apples personvernerklæring</a>.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>OpenAI API (valgfritt)</h2>
         <div class="legal-content">
-            <p>Noen AI-funksjoner i appen vår er valgfritt drevet av OpenAI API, som kan se på hva du skriver (for eksempel et spørsmål du stiller AI-en, et dagbokinnlegg eller spesifikke målinger) og sende tilbake tilbakemelding, forslag eller innsikter. Disse funksjonene krever et aktivt valg – du må aktivt velge å bruke dem, og du kan slå dem av når som helst inne i appen.</p>
-<p>Når du bruker en AI-funksjon, sendes bare det som trengs for den forespørselen til OpenAI: (a) oppfordringen eller spørsmålet ditt; (b) de spesifikke dataene du spør om (for eksempel blodtrykks- eller humørmålingene du ønsker forklart); og (c) hvis du har lagret en profil, litt kontekst – vanligvis fornavnet ditt, alder (beregnet fra fødselsdatoen) og kjønn – slik at AI-en kan tilpasse svaret sitt (for eksempel passende pronomen eller aldersrelevant veiledning).</p>
-<p>I henhold til OpenAIs API-retningslinjer brukes data som sendes gjennom API-et ikke til å trene modellene deres, og oppbevares bare i en kort periode for misbrukskontroll. Vi lagrer ikke AI-oppfordringene eller svarene dine på serverne våre – de finnes bare på enheten din.</p>
-<p>Du kan lese den fullstendige policyen her: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAIs personvernregler</a>.</p>
-<p>Ved å bruke en AI-funksjon godtar du at relevante data (inkludert eventuelle profildetaljer du har valgt å lagre) sendes til OpenAI og behandles under deres retningslinjer. Ikke skriv noe inn i AI-en som du ikke ville vært komfortabel med å sende under disse vilkårene.</p>
+            <p>De fleste AI-funksjonene i appene våre drives av OpenAI API. Skybasert AI er <strong>standardmodusen</strong> ved en ny installasjon; du kan bytte appen til AI på enheten med Apple Intelligence, eller slå av AI helt, i appens AI-innstillinger.</p>
+<p><strong>Hva som sendes.</strong> Avhengig av funksjonen kan en forespørsel inneholde:</p>
+<ul>
+ <li>Alt du skriver inn i en AI-funksjon – spørsmålet ditt, eller et avsnitt du ba den bearbeide.</li>
+ <li>Helseregistreringene som er relevante for den funksjonen, som rader med målinger med dato og klokkeslett. <strong>Dette inkluderer fritekstnotater og journaloppføringer knyttet til disse registreringene.</strong></li>
+ <li>Profil- og personaliseringskontekst, som beskrevet under «Profilinformasjon» ovenfor.</li>
+ <li>For Kamera-skanning, et bilde du tar av en skjerm på et måleapparat eller en vekt.</li>
+ <li>For opplesing (tekst-til-tale), teksten som leses opp, som normalt er et AI-svar om dataene dine.</li>
+</ul>
+<p><strong>Når det sendes.</strong> De fleste AI-funksjonene kjører bare når du åpner dem og ber om et resultat. Noen gjør ikke det: mens skybasert AI er på, genererer appen også korte, personlige meldinger på egen hånd – en daglig innsikt, en bursdags- eller milepælshilsen, en velkommen-tilbake-melding – og for å gjøre det sender den en samling av dine nyeste registreringer (opptil 30) og profilkonteksten din til OpenAI <strong>når du åpner appen eller dagsvisningen, uten at du har bedt om et AI-resultat</strong>. Å slå av AI, eller å bytte til Apple Intelligence, stopper dette.</p>
+<p><strong>En per-installasjon-identifikator.</strong> Hver installasjon genererer en tilfeldig identifikator og sender den til OpenAI med hver forespørsel, som en cache-nøkkel som holder gjentatte forespørsler billige. Den inneholder ingenting om deg og er ikke knyttet til navnet ditt, kontoen din eller enhets-ID-en din, men den er stabil: den lar OpenAI knytte alle forespørsler fra én installasjon til hverandre, og den vedvarer helt til appen slettes og installeres på nytt.</p>
+<p><strong>Hva OpenAI gjør med det.</strong> OpenAIs gjeldende API-dokumentasjon sier at data som sendes til API-et, ikke brukes til å trene eller forbedre OpenAIs modeller med mindre du uttrykkelig samtykker til det, at logger for misbrukskontroll oppbevares i opptil 30 dager, og at svar opprettet gjennom Responses API som standard lagres i 30 dager. Appene våre er avhengige av denne 30-dagers lagringen slik at en samtale kan fortsette over flere runder uten å måtte lastes opp på nytt, så <strong>AI-forespørslene dine og svarene på dem oppbevares av OpenAI i opptil 30 dager</strong>. Dette er OpenAIs egne vilkår, ikke våre, og de kan endre dem.</p>
+<p>Du kan lese hele policyen her: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAIs personvernerklæring</a>.</p>
+<p>Ved å bruke en AI-funksjon samtykker du i at de relevante dataene (inkludert eventuelle profilopplysninger du har valgt å lagre) sendes til OpenAI og behandles i henhold til deres retningslinjer. Ikke skriv noe inn i AI-en som du ikke ville vært komfortabel med å sende under disse vilkårene.</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>Vår server og hvordan AI-forespørsler når OpenAI</h2>
+        <div class="legal-content">
+            <p>AI-forespørsler går ikke direkte fra enheten din til OpenAI. De går gjennom en liten server vi driver, driftet av <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> i USA. Dette er et sikkerhetstiltak: det betyr at vår OpenAI-nøkkel ligger på den serveren i stedet for inne i appen, hvor noen kunne hentet den ut og kjørt forespørsler i ditt navn. Serveren kontrollerer at forespørselen faktisk kommer fra en av appene våre, legger til nøkkelen vår, og strømmer OpenAIs svar rett tilbake til deg.</p>
+<p><strong>Den lagrer ikke forespørslene dine eller AI-ens svar.</strong> De eksisterer kun i minnet i det korte øyeblikket det tar å videresende dem, og skrives aldri til disk. Ingen hos Custom Arts Ltd leser dem.</p>
+<p>Det serveren derimot holder styr på, er en løpende oversikt over hva AI-en koster oss. For hver forespørsel registrerer den dato og klokkeslett, hvilken app og versjon den kom fra, hvilken funksjon og AI-modell som ble brukt, om kontoen var gratis eller betalt, hvor mange tokens eller tegn som ble behandlet, og den estimerte kostnaden. Det finnes ingen helsedata i disse registreringene, ingen meldingstekst, og ingenting som identifiserer deg – ingen konto, ingen bruker-ID, ingen IP-adresse – så de kan ikke spores tilbake til en enkeltperson. <strong>De oppbevares for øyeblikket på ubestemt tid.</strong></p>
+<p>Serveren skriver også korte driftslogglinjer som dekker det samme, pluss størrelsen på hver forespørsel, aldri innholdet. Hvis OpenAI returnerer en feil, logges den feilmeldingen slik OpenAI skrev den.</p>
         </div>
     </section>
 
@@ -389,14 +419,21 @@
     <section class="legal-section">
         <h2>Hvor dataene dine befinner seg</h2>
         <div class="legal-content">
-            <p>Dine personlige opplysninger og helsedata befinner seg på enheten din og i din egen iCloud-konto – du har kontroll over dem. Noen valgfrie tredjepartstjenester vi bruker (Firebase, RevenueCat, OpenAI) drives av leverandører basert i USA og kan behandle noen data der. Der det er nødvendig, støtter de seg på Standardkontraktsklausuler og/eller EU-US Data Privacy Framework for å flytte personopplysninger ut av EU/UK. Hvis du foretrekker at ingen av dataene dine overføres, kan du slå av de tilsvarende valgfrie funksjonene.</p>
+            <p>Dine personlige data og helsedata ligger på enheten din og i din egen iCloud-konto – du har kontrollen over dem. De valgfrie tredjepartstjenestene vi bruker (Firebase, RevenueCat, OpenAI) og serveren AI-forespørslene våre går gjennom (driftet av Render) drives av leverandører med base i USA og kan behandle data der. Der det er nødvendig, støtter de seg på standard personvernbestemmelser (Standard Contractual Clauses) og/eller EU-US Data Privacy Framework for å overføre personopplysninger ut av EU/Storbritannia. Hvis du heller ikke vil at noen av dataene dine overføres, kan du slå av de tilsvarende valgfrie funksjonene.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>Hvor lenge data oppbevares</h2>
         <div class="legal-content">
-            <p>Vi oppbevarer ikke kopier av appdataene dine på serverne våre. Dataene dine forblir på enheten din og i iCloud så lenge du har appen installert og iCloud-sikkerhetskopiering aktivert. Firebase Crashlytics/Analytics-data oppbevares av Google for prosjektets standard oppbevaringsperiode; RevenueCat beholder kjøps-/kvitteringsdata så lenge du har et aktivt abonnement og som skatteloven krever; OpenAI beholder API-forespørselsdata i henhold til sin API-datapolicy. Å slå av en funksjon eller slette appen stopper videre innsamling.</p>
+            <p>Vi beholder ikke kopier av appdataene dine på våre servere. Dataene dine forblir på enheten din og i iCloud så lenge du har appen installert og iCloud-sikkerhetskopiering på. Utover det:</p>
+<ul>
+ <li><strong>OpenAI</strong> – ifølge OpenAIs gjeldende API-dokumentasjon oppbevares logger for misbrukskontroll i opptil 30 dager, og svar fra Responses API lagres som standard i 30 dager. Appene våre er avhengige av denne lagringen for flerturssamtaler.</li>
+ <li><strong>Vår egen server</strong> – ingen innhold fra forespørsler eller svar lagres. Kostnadsregistreringer per forespørsel (dato, app, funksjon, modell, antall tokens, kostnad – ingen helsedata og ingen brukeridentifikator) oppbevares for øyeblikket på ubestemt tid.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> – oppbevares av Google i prosjektets standard oppbevaringsperiode.</li>
+ <li><strong>RevenueCat</strong> – kjøps- og kvitteringsdata så lenge du har et aktivt abonnement, og så lenge skattelovgivningen krever det.</li>
+</ul>
+<p>Å slå av en funksjon eller slette appen stopper videre innsamling. Fordi registreringene vår egen server holder på, ikke inneholder noe som identifiserer deg, kan vi ikke søke etter eller slette «dine» oppføringer i dem på forespørsel – det finnes ingenting i dem å sammenligne deg med.</p>
         </div>
     </section>
 

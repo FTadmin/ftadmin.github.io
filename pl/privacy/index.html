@@ -240,9 +240,10 @@
         <h1>Polityka prywatności</h1>
     </header>
     <div class="legal-intro">
-        <p>Custom Arts Ltd stworzyło aplikację Feeltracker jako aplikację Freemium. Ta USŁUGA jest świadczona przez Custom Arts Ltd bezpłatnie i jest przeznaczona do użytku w obecnej formie.</p>
-<p>Ta strona służy do informowania odwiedzających o naszych zasadach dotyczących gromadzenia, wykorzystywania i ujawniania informacji, jeśli ktoś zdecyduje się korzystać z naszej Usługi.</p>
-<p>Jeśli zdecydujesz się korzystać z naszej Usługi, zgadzasz się na gromadzenie i wykorzystywanie informacji w związku z niniejszą polityką. Jednak aplikacja Feeltracker nie gromadzi ani nie przechowuje żadnych danych osobowych (PII) na naszych serwerach. Wszystkie dane generowane przez aplikację są przechowywane lokalnie na Twoim urządzeniu lub synchronizowane z Twoim osobistym kontem iCloud. Nie mamy dostępu do tych danych.</p>
+        <p>Custom Arts Ltd stworzyła aplikację Feeltracker jako aplikację typu Freemium. Ta USŁUGA jest udostępniana bezpłatnie przez Custom Arts Ltd i przeznaczona jest do użytku w formie „tak jak jest”.</p>
+<p>Ta strona służy do informowania odwiedzających o naszych zasadach dotyczących zbierania, wykorzystywania i ujawniania informacji, jeśli ktoś zdecyduje się skorzystać z naszej Usługi.</p>
+<p>Jeśli zdecydujesz się korzystać z naszej Usługi, oznacza to, że zgadzasz się na zbieranie i wykorzystywanie informacji zgodnie z niniejszą polityką. Aplikacja Feeltracker nie zbiera jednak ani nie przechowuje na naszych serwerach żadnych danych umożliwiających identyfikację osoby (PII). Wszystkie dane generowane przez aplikację są przechowywane lokalnie na Twoim urządzeniu lub synchronizowane z Twoim osobistym kontem iCloud. Nie mamy dostępu do tych danych.</p>
+<p>Istnieje jeden wyjątek i ma on znaczenie: jeśli korzystasz z funkcji AI, dane potrzebne do tej funkcji opuszczają Twoje urządzenie i są przetwarzane przez OpenAI. Chmurowa AI jest domyślnie włączona przy nowej instalacji. Poniższe sekcje „API OpenAI” oraz „Nasz serwer i jak zapytania AI docierają do OpenAI” dokładnie opisują, co jest wysyłane, kiedy i jak długo jest przechowywane.</p>
     </div>
 
 
@@ -271,7 +272,9 @@
     <section class="legal-section">
         <h2>Dane dziennika</h2>
         <div class="legal-content">
-            <p>W przypadku błędu lub awarii aplikacji gromadzimy dane dziennika za pośrednictwem usług stron trzecich, takich jak Firebase Crashlytics. Dane te nie zawierają danych osobowych i są wykorzystywane wyłącznie do diagnozowania i naprawiania błędów w celu poprawy wydajności aplikacji.</p>
+            <p>Gdy aplikacja napotka błąd lub ulegnie awarii, dzienniki diagnostyczne są wysyłane do Firebase Crashlytics (Google), abyśmy mogli znaleźć i naprawić usterkę. Te dzienniki są zapisywane przez samą aplikację i opisują, co aplikacja <em>robiła</em>: który ekran był otwarty, ile rekordów dotyczyła dana operacja, jak długi był fragment tekstu, który krok się nie powiódł.</p>
+<p><strong>Nie zawierają Twoich odczytów zdrowotnych, tekstu z dziennika ani niczego innego, co wpisałeś/wpisałaś.</strong> Tam, gdzie wiersz dziennika musi odnosić się do Twojej treści, zapisywana jest tylko długość tej treści i nic więcej. Wiersze dzienników, które w innym przypadku zawierałyby dane osobowe, są anonimizowane, zanim opuszczą urządzenie.</p>
+<p>Raporty o awariach zawierają również informacje techniczne zbierane automatycznie przez Crashlytics, takie jak model urządzenia, wersja systemu operacyjnego oraz miejsce w naszym kodzie, w którym doszło do awarii. Możesz wyłączyć raportowanie awarii i analitykę w ustawieniach aplikacji, co całkowicie zatrzyma wysyłanie tych dzienników.</p>
         </div>
     </section>
 
@@ -285,14 +288,22 @@
     <section class="legal-section">
         <h2>Dostawcy usług</h2>
         <div class="legal-content">
-            <p>Możemy zatrudniać firmy i osoby trzecie z następujących powodów:</p>
+            <p>Możemy korzystać z usług firm i osób trzecich z następujących powodów:</p>
 <ul>
- <li>W celu ułatwienia naszej Usługi;</li>
- <li>W celu świadczenia Usługi w naszym imieniu;</li>
- <li>W celu wykonywania usług związanych z Usługą; lub</li>
- <li>W celu pomocy w analizie sposobu korzystania z naszej Usługi.</li>
+ <li>Aby ułatwić działanie naszej Usługi;</li>
+ <li>Aby świadczyć Usługę w naszym imieniu;</li>
+ <li>Aby wykonywać usługi związane z Usługą; lub</li>
+ <li>Aby pomóc nam analizować sposób korzystania z naszej Usługi.</li>
 </ul>
-<p>Usługi stron trzecich mogą gromadzić dane nieosobowe opisane powyżej, ale są zobowiązane do nieujawniania ani niewykorzystywania informacji w żadnym innym celu.</p>
+<p>Podmioty przetwarzające dane, z których korzystamy:</p>
+<ul>
+ <li><strong>Google (Firebase Analytics, Firebase Crashlytics)</strong> — analityka użytkowania i diagnostyka awarii.</li>
+ <li><strong>RevenueCat</strong> — zarządzanie subskrypcjami i zakupami.</li>
+ <li><strong>OpenAI</strong> — przetwarza zapytania AI, gdy korzystasz z funkcji AI (zobacz „API OpenAI” poniżej).</li>
+ <li><strong>Render</strong> — hostuje serwer, przez który zapytania AI docierają do OpenAI (zobacz „Nasz serwer i jak zapytania AI docierają do OpenAI” poniżej).</li>
+ <li><strong>Apple</strong> — synchronizacja iCloud, zakupy w App Store oraz Apple Intelligence, jeśli z niej korzystasz.</li>
+</ul>
+<p>Te usługi stron trzecich są zobowiązane na mocy umów z nami do niewykorzystywania informacji do żadnych innych celów.</p>
         </div>
     </section>
 
@@ -321,9 +332,9 @@
     <section class="legal-section">
         <h2>Dane profilu (opcjonalne)</h2>
         <div class="legal-content">
-            <p>Opcjonalnie możesz zapisać w aplikacji mały profil ze swoim <strong>imieniem, datą urodzenia i płcią</strong>. Jest to całkowicie opcjonalne — wszystkie podstawowe funkcje śledzenia działają bez niego, a profil możesz edytować lub usunąć w dowolnym momencie z poziomu aplikacji.</p>
-<p>Dane profilu są przechowywane w taki sam sposób jak Twoje inne dane: na urządzeniu i, jeśli korzystasz z iCloud, na Twoim prywatnym koncie iCloud. Nigdy nie przesyłamy ich na nasze serwery ani nie udostępniamy ich nikomu w celach reklamowych lub marketingowych.</p>
-<p>Jeśli zdecydujesz się korzystać z funkcji AI (takiej jak czat, analiza lub spersonalizowane opinie oparte na OpenAI lub Apple Intelligence), aplikacja może dołączyć odpowiednie dane z Twojego profilu do zapytania — zazwyczaj imię, wiek (obliczony na podstawie daty urodzenia) i płeć — aby AI mogła udzielać bardziej trafnych odpowiedzi, na przykład porady zdrowotne dostosowane do wieku lub właściwe zaimki. Dzieje się to tylko wtedy, gdy faktycznie korzystasz z funkcji AI, a do zapytania trafiają tylko te pola profilu, które są potrzebne. Wyłącz funkcje AI lub wyczyść profil w dowolnym momencie, aby to zatrzymać.
+            <p>Możesz opcjonalnie zapisać w aplikacji krótki profil zawierający Twoje <strong>imię, datę urodzenia i płeć</strong>. Jest to całkowicie opcjonalne — wszystkie podstawowe funkcje śledzenia działają bez tego, a swój profil możesz edytować lub usunąć w dowolnym momencie w aplikacji.</p>
+<p>Dane profilu są przechowywane w taki sam sposób jak pozostałe Twoje dane: na Twoim urządzeniu oraz, jeśli korzystasz z iCloud, na Twoim prywatnym koncie iCloud. Nigdy nie przesyłamy ich na nasze serwery i nigdy nie udostępniamy ich nikomu w celach reklamowych ani marketingowych.</p>
+<p>Gdy uruchamiana jest funkcja AI, aplikacja dołącza do zapytania część danych z Twojego profilu, aby AI mogła dostosować odpowiedź. <strong>Wysyłanie Twojego imienia, wieku (obliczonego na podstawie daty urodzenia) i płci jest domyślnie włączone</strong>, jeśli zapisałeś/zapisałaś te pola; możesz wyłączyć każdą z tych opcji osobno w ustawieniach AI w aplikacji. Dwie kolejne opcje kontekstu — lokalna pogoda i harmonogram snu — są domyślnie <strong>wyłączone</strong> i są wysyłane tylko wtedy, gdy je włączysz. Notatka „dodatkowy kontekst” w postaci dowolnego tekstu, jeśli ją wpiszesz, jest wysyłana z każdym zapytaniem AI tak długo, jak pole jest wypełnione; wyczyść pole, aby przestać ją wysyłać.</p>
         </div>
     </section>
 
@@ -339,20 +350,39 @@
     <section class="legal-section">
         <h2>Apple Intelligence (opcjonalne)</h2>
         <div class="legal-content">
-            <p>Na nowszych urządzeniach z kompatybilną wersją iOS, iPadOS lub macOS aplikacje Feeltracker mogą oferować opcjonalne funkcje oparte na Apple Intelligence — wbudowanym AI firmy Apple. Działają one tylko wtedy, gdy zdecydujesz się z nich korzystać.</p>
-<p>Apple Intelligence działa na Twoim urządzeniu tam, gdzie to możliwe, i korzysta z Apple Private Cloud Compute w przypadku cięższych zadań. W obu przypadkach Apple zapewnia, że Twoje dane nie są przechowywane, nie są widoczne dla Apple i nie są wykorzystywane do trenowania modeli Apple. Custom Arts Ltd nie otrzymuje, nie przechowuje ani nie widzi żadnych zapytań ani odpowiedzi Apple Intelligence.</p>
-<p>Szczegółowe informacje znajdziesz w <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Polityce prywatności Apple</a>.</p>
+            <p>Na nowszych urządzeniach z kompatybilną wersją iOS, iPadOS lub macOS aplikacje Feeltracker mogą oferować opcjonalne funkcje oparte na Apple Intelligence — wbudowanej AI firmy Apple. Działają one wyłącznie wtedy, gdy w ustawieniach aplikacji wybierzesz Apple Intelligence jako tryb AI.</p>
+<p>W tym trybie aplikacja wywołuje działający na urządzeniu framework Foundation Models firmy Apple. Zapytanie nie trafia na nasze serwery ani do OpenAI: Custom Arts Ltd nigdy nie otrzymuje, nie przechowuje ani nie widzi żadnego zapytania ani odpowiedzi Apple Intelligence. Sposób, w jaki Apple obsługuje zapytanie, podlega własnym zasadom Apple.</p>
+<p>Szczegóły znajdziesz w <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Polityce prywatności Apple</a>.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>OpenAI API (opcjonalne)</h2>
         <div class="legal-content">
-            <p>Niektóre funkcje AI w naszej aplikacji są opcjonalnie zasilane przez OpenAI API, który może analizować to, co wpisujesz (na przykład pytanie do AI, wpis w dzienniku lub konkretne odczyty) i odsyłać opinie, sugestie lub analizy. Funkcje te są ściśle opcjonalne — musisz sam zdecydować się z nich korzystać i możesz je wyłączyć w dowolnym momencie w aplikacji.</p>
-<p>Gdy korzystasz z funkcji AI, do OpenAI wysyłane jest tylko to, co jest potrzebne do danego zapytania: (a) Twój prompt lub pytanie; (b) konkretne dane, o które pytasz (na przykład odczyty ciśnienia krwi lub nastroju, które chcesz wyjaśnić); oraz (c) jeśli masz zapisany profil, trochę kontekstu — zazwyczaj imię, wiek (obliczony na podstawie daty urodzenia) i płeć — aby AI mogła spersonalizować odpowiedź (na przykład odpowiednie zaimki lub wskazówki dostosowane do wieku).</p>
-<p>Zgodnie z polityką API OpenAI dane wysyłane przez API nie są używane do trenowania ich modeli i są przechowywane tylko przez krótki czas w celu sprawdzenia nadużyć. Nie przechowujemy Twoich promptów ani odpowiedzi AI na naszych serwerach — istnieją tylko na Twoim urządzeniu.</p>
+            <p>Większość funkcji AI w naszych aplikacjach jest oparta na API OpenAI. Chmurowa AI jest <strong>domyślnym trybem</strong> przy nowej instalacji; w ustawieniach AI aplikacji możesz przełączyć się na działającą na urządzeniu Apple Intelligence lub całkowicie wyłączyć AI.</p>
+<p><strong>Co jest wysyłane.</strong> W zależności od funkcji zapytanie może zawierać:</p>
+<ul>
+ <li>Wszystko, co wpiszesz w funkcji AI — Twoje pytanie lub fragment tekstu, nad którym miała popracować.</li>
+ <li>Rekordy zdrowotne objęte daną funkcją, jako wiersze odczytów z datami i godzinami. <strong>Obejmuje to notatki tekstowe i wpisy z dziennika dołączone do tych rekordów.</strong></li>
+ <li>Kontekst profilu i personalizacji, opisany w sekcji „Informacje o profilu” powyżej.</li>
+ <li>W przypadku Camera Scan — zdjęcie wykonane przez Ciebie ekranu monitora lub wagi.</li>
+ <li>W przypadku odczytywania na głos (zamiana tekstu na mowę) — czytany tekst, którym zwykle jest odpowiedź AI dotycząca Twoich danych.</li>
+</ul>
+<p><strong>Kiedy jest wysyłane.</strong> Większość funkcji AI działa tylko wtedy, gdy je otworzysz i poprosisz o wynik. Niektóre nie: gdy chmurowa AI jest włączona, aplikacja samodzielnie generuje również krótkie, spersonalizowane wiadomości — codzienną informację, życzenia urodzinowe lub z okazji kamienia milowego, wiadomość powitalną po powrocie — a aby to zrobić, wysyła do OpenAI paczkę Twoich najnowszych rekordów (do 30) oraz kontekst profilu, <strong>gdy otwierasz aplikację lub jej widok dnia, bez proszenia o wynik AI</strong>. Wyłączenie AI lub przełączenie na Apple Intelligence zatrzymuje to.</p>
+<p><strong>Identyfikator dla danej instalacji.</strong> Każda instalacja generuje losowy identyfikator i wysyła go do OpenAI z każdym zapytaniem, jako klucz pamięci podręcznej, który utrzymuje niższy koszt powtarzających się zapytań. Nie zawiera on żadnych informacji o Tobie i nie jest powiązany z Twoim imieniem, kontem ani identyfikatorem urządzenia, ale jest stały: pozwala OpenAI powiązać ze sobą wszystkie zapytania z jednej instalacji i pozostaje aktywny, dopóki aplikacja nie zostanie usunięta i ponownie zainstalowana.</p>
+<p><strong>Co OpenAI z tym robi.</strong> Zgodnie z aktualną dokumentacją API OpenAI dane wysyłane do API nie są wykorzystywane do trenowania ani ulepszania modeli OpenAI, chyba że wyraźnie się na to zgodzisz; dzienniki monitorowania nadużyć są przechowywane do 30 dni, a odpowiedzi utworzone za pomocą Responses API są domyślnie przechowywane przez 30 dni. Nasze aplikacje polegają na tym 30-dniowym przechowywaniu, aby rozmowa mogła być kontynuowana w kolejnych turach bez konieczności ponownego przesyłania jej całości, dlatego <strong>Twoje zapytania AI i udzielone na nie odpowiedzi są przechowywane przez OpenAI przez okres do 30 dni</strong>. Są to warunki OpenAI, a nie nasze, i mogą one ulec zmianie.</p>
 <p>Pełną politykę możesz przeczytać tutaj: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Polityka prywatności OpenAI</a>.</p>
-<p>Korzystając z funkcji AI, zgadzasz się, że odpowiednie dane (w tym wszelkie dane profilu, które zdecydowałeś się zapisać) zostaną wysłane do OpenAI i przetworzone zgodnie z ich polityką. Prosimy, aby nie wpisywać do AI niczego, czego nie chciałbyś wysyłać na tych warunkach.</p>
+<p>Korzystając z funkcji AI, wyrażasz zgodę na to, że odpowiednie dane (w tym wszelkie zapisane przez Ciebie dane profilu) zostaną wysłane do OpenAI i przetworzone zgodnie z ich politykami. Prosimy, nie wpisuj w AI niczego, czego nie chciałbyś/chciałabyś wysłać na tych warunkach.</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>Nasz serwer i jak zapytania AI docierają do OpenAI</h2>
+        <div class="legal-content">
+            <p>Zapytania AI nie trafiają z Twojego urządzenia bezpośrednio do OpenAI. Przechodzą przez niewielki serwer, którym zarządzamy, hostowany przez <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> w Stanach Zjednoczonych. To środek bezpieczeństwa: oznacza to, że nasz klucz OpenAI znajduje się na tym serwerze, a nie w samej aplikacji, skąd ktoś mógłby go wydobyć i wysyłać zapytania w Twoim imieniu. Serwer sprawdza, czy zapytanie rzeczywiście pochodzi z jednej z naszych aplikacji, dodaje nasz klucz i przesyła odpowiedź OpenAI strumieniowo bezpośrednio do Ciebie.</p>
+<p><strong>Nie przechowuje Twoich zapytań ani odpowiedzi AI.</strong> Istnieją one w pamięci tylko przez chwilę potrzebną do ich przekazania i nigdy nie są zapisywane na dysku. Nikt w Custom Arts Ltd ich nie czyta.</p>
+<p>To, co przechowuje serwer, to bieżące zestawienie kosztów, jakie generuje dla nas AI. Dla każdego zapytania rejestruje datę i godzinę, z której aplikacji i wersji pochodziło, jaka funkcja i model AI zostały użyte, czy konto było darmowe czy płatne, ile tokenów lub znaków przetworzono oraz szacowany koszt. W tych rekordach nie ma danych zdrowotnych, treści wiadomości ani niczego, co Cię identyfikuje — żadnego konta, identyfikatora użytkownika, adresu IP — więc nie można ich powiązać z konkretną osobą. <strong>Są one obecnie przechowywane bezterminowo.</strong></p>
+<p>Serwer zapisuje również krótkie wiersze dzienników operacyjnych dotyczące tych samych zagadnień, wraz z rozmiarem każdego zapytania, ale nigdy jego treści. Jeśli OpenAI zwróci błąd, komunikat o błędzie jest zapisywany w dzienniku dokładnie tak, jak napisało go OpenAI.</p>
         </div>
     </section>
 
@@ -389,14 +419,21 @@
     <section class="legal-section">
         <h2>Gdzie przechowywane są Twoje dane</h2>
         <div class="legal-content">
-            <p>Twoje dane osobowe i zdrowotne są przechowywane na Twoim urządzeniu i na Twoim koncie iCloud — to Ty nimi zarządzasz. Kilka opcjonalnych usług stron trzecich, z których korzystamy (Firebase, RevenueCat, OpenAI), jest prowadzonych przez dostawców z siedzibą w Stanach Zjednoczonych i może tam przetwarzać niektóre dane. W razie potrzeby korzystają ze Standardowych Klauzul Umownych i/lub Ramowego porozumienia UE-USA o ochronie prywatności danych w celu transferu danych osobowych z UE/Wielkiej Brytanii. Jeśli nie chcesz, aby Twoje dane były przekazywane, możesz wyłączyć odpowiednie funkcje opcjonalne.</p>
+            <p>Twoje dane osobowe i zdrowotne znajdują się na Twoim urządzeniu i na Twoim własnym koncie iCloud — to Ty nad nimi panujesz. Opcjonalne usługi stron trzecich, z których korzystamy (Firebase, RevenueCat, OpenAI), oraz serwer, przez który przechodzą nasze zapytania AI (hostowany przez Render), są prowadzone przez dostawców z siedzibą w Stanach Zjednoczonych i mogą tam przetwarzać dane. Tam, gdzie to konieczne, opierają się oni na Standardowych Klauzulach Umownych i/lub Ramach Ochrony Danych UE–USA w celu przekazywania danych osobowych poza UE/Wielką Brytanię. Jeśli wolisz, aby żadne z Twoich danych nie były przekazywane, możesz wyłączyć odpowiadające im funkcje opcjonalne.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>Jak długo przechowywane są dane</h2>
         <div class="legal-content">
-            <p>Nie przechowujemy kopii danych Twojej aplikacji na naszych serwerach. Twoje dane pozostają na Twoim urządzeniu i w iCloud tak długo, jak masz zainstalowaną aplikację i włączoną kopię zapasową iCloud. Dane Firebase Crashlytics/Analytics są przechowywane przez Google przez domyślny okres retencji naszego projektu; RevenueCat przechowuje dane o zakupach/paragonach przez cały czas trwania aktywnej subskrypcji i zgodnie z wymogami prawa podatkowego; OpenAI przechowuje dane żądań API zgodnie ze swoją polityką korzystania z danych API. Wyłączenie funkcji lub usunięcie aplikacji zatrzymuje dalsze zbieranie danych.</p>
+            <p>Nie przechowujemy kopii danych z Twojej aplikacji na naszych serwerach. Twoje dane pozostają na Twoim urządzeniu i w Twoim iCloud tak długo, jak masz zainstalowaną aplikację i włączoną kopię zapasową iCloud. Poza tym:</p>
+<ul>
+ <li><strong>OpenAI</strong> — zgodnie z aktualną dokumentacją API OpenAI dzienniki monitorowania nadużyć są przechowywane do 30 dni, a odpowiedzi z Responses API są domyślnie przechowywane przez 30 dni. Nasze aplikacje polegają na tym przechowywaniu w przypadku czatów wieloturowych.</li>
+ <li><strong>Nasz własny serwer</strong> — nie przechowuje treści zapytań ani odpowiedzi. Rekordy kosztów dla poszczególnych zapytań (data, aplikacja, funkcja, model, liczba tokenów, koszt — bez danych zdrowotnych i bez identyfikatora użytkownika) są obecnie przechowywane bezterminowo.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — przechowywane przez Google przez domyślny okres retencji naszego projektu.</li>
+ <li><strong>RevenueCat</strong> — dane o zakupach i paragonach tak długo, jak masz aktywną subskrypcję, oraz zgodnie z wymogami prawa podatkowego.</li>
+</ul>
+<p>Wyłączenie funkcji lub usunięcie aplikacji zatrzymuje dalsze zbieranie danych. Ponieważ rekordy przechowywane przez nasz własny serwer nie zawierają niczego, co Cię identyfikuje, nie możemy na żądanie wyszukać ani usunąć w nich „Twoich” wpisów — nie ma w nich niczego, z czym moglibyśmy Cię dopasować.</p>
         </div>
     </section>
 

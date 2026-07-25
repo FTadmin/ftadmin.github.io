@@ -240,9 +240,10 @@
         <h1>Adatvédelmi irányelvek</h1>
     </header>
     <div class="legal-intro">
-        <p>A Custom Arts Ltd a Feeltracker alkalmazást Freemium alkalmazásként fejlesztette. Ezt a SZOLGÁLTATÁST a Custom Arts Ltd ingyenesen biztosítja, és a jelenlegi formájában való használatra készült.</p>
-<p>Ez az oldal arra szolgál, hogy tájékoztassa a látogatókat az információk gyűjtésével, felhasználásával és közlésével kapcsolatos irányelveinkről, amennyiben valaki úgy dönt, hogy igénybe veszi Szolgáltatásunkat.</p>
-<p>Ha úgy dönt, hogy igénybe veszi Szolgáltatásunkat, akkor elfogadja az információk gyűjtését és felhasználását ezen irányelv szerint. A Feeltracker alkalmazás azonban nem gyűjt és nem tárol személyazonosításra alkalmas adatokat (PII) a szervereink. Az alkalmazás által létrehozott összes adat helyileg, az Ön készülékén tárolódik, vagy az Ön személyes iCloud-fiókjával szinkronizálódik. Nincs hozzáférésünk ezekhez az adatokhoz.</p>
+        <p>A Custom Arts Ltd Freemium alkalmazásként fejlesztette a Feeltracker appot. Ezt a SZOLGÁLTATÁST a Custom Arts Ltd díjmentesen biztosítja, és a jelenlegi állapotában történő használatra szánta.</p>
+<p>Ez az oldal arra szolgál, hogy tájékoztassa a látogatókat az általunk gyűjtött, felhasznált és nyilvánosságra hozott adatokkal kapcsolatos szabályzatunkról, ha valaki úgy dönt, hogy igénybe veszi a Szolgáltatásunkat.</p>
+<p>Ha úgy döntesz, hogy használod a Szolgáltatásunkat, ezzel elfogadod az adatok gyűjtését és felhasználását e szabályzattal összhangban. A Feeltracker app azonban nem gyűjt és nem tárol személyazonosításra alkalmas adatokat (PII) a szervereinken. Az app által létrehozott minden adat a készülékeden tárolódik helyben, vagy a saját iCloud-fiókoddal szinkronizálódik. Ehhez az adathoz nekünk nincs hozzáférésünk.</p>
+<p>Van egy kivétel, és ez fontos: ha egy AI funkciót használsz, az ahhoz szükséges adat elhagyja a készülékedet, és az OpenAI dolgozza fel. A felhőalapú AI új telepítés esetén alapértelmezetten be van kapcsolva. Az alábbi „OpenAI API” és „A szerverünk és hogyan jutnak el az AI-kérések az OpenAI-hoz” szakaszok pontosan leírják, mi kerül elküldésre, mikor, és meddig őrizzük meg.</p>
     </div>
 
 
@@ -271,7 +272,9 @@
     <section class="legal-section">
         <h2>Naplóadatok</h2>
         <div class="legal-content">
-            <p>Az alkalmazásban bekövetkező hiba vagy összeomlás esetén naplóadatokat gyűjtünk harmadik féltől származó szolgáltatásokon, például a Firebase Crashlytics-en keresztül. Ezek a naplóadatok nem tartalmaznak személyazonosításra alkalmas információkat, és kizárólag hibák diagnosztizálására és javítására szolgálnak az alkalmazás teljesítményének javítása érdekében.</p>
+            <p>Amikor az app hibába ütközik vagy összeomlik, diagnosztikai naplók kerülnek elküldésre a Firebase Crashlyticsnek (Google), hogy megtaláljuk és kijavítsuk a hibát. Ezeket a naplókat maga az app írja, és azt írják le, mit <em>csinált</em> az app: melyik képernyő volt nyitva, hány rekordot érintett egy művelet, milyen hosszú volt egy szövegrészlet, melyik lépés hiúsult meg.</p>
+<p><strong>Nem tartalmazzák az egészségügyi adataidat, a naplószövegedet, sem semmi mást, amit begépeltél.</strong> Ahol egy naplósornak hivatkoznia kell a tartalmadra, csak annak hosszát rögzíti, semmi mást. Azok a naplósorok, amelyek egyébként személyes adatot tartalmaznának, a készülék elhagyása előtt anonimizálásra kerülnek.</p>
+<p>Az összeomlási jelentések olyan technikai információkat is tartalmaznak, amelyeket a Crashlytics automatikusan gyűjt, például a készülék típusát, az operációs rendszer verzióját, és hogy a kódunk melyik pontján történt az összeomlás. Az összeomlás-jelentést és az analitikát kikapcsolhatod az app beállításaiban, ami teljesen leállítja ezeknek a naplóknak a küldését.</p>
         </div>
     </section>
 
@@ -285,14 +288,22 @@
     <section class="legal-section">
         <h2>Szolgáltatók</h2>
         <div class="legal-content">
-            <p>Harmadik fél vállalatokat és magánszemélyeket bízhatunk meg az alábbi okokból:</p>
+            <p>Az alábbi okokból vehetünk igénybe külső cégeket és magánszemélyeket:</p>
 <ul>
- <li>Szolgáltatásunk megkönnyítése;</li>
+ <li>A Szolgáltatásunk megkönnyítése érdekében;</li>
  <li>A Szolgáltatás nyújtása a nevünkben;</li>
- <li>Szolgáltatással kapcsolatos tevékenységek elvégzése; vagy</li>
- <li>Segítség a Szolgáltatásunk használatának elemzésében.</li>
+ <li>A Szolgáltatással kapcsolatos feladatok elvégzése; vagy</li>
+ <li>Annak elemzésében való segítségnyújtás, hogy a Szolgáltatásunkat hogyan használják.</li>
 </ul>
-<p>Ezek a harmadik fél szolgáltatások a fent leírt módon gyűjthetnek nem személyes információkat, de kötelesek az információkat más célokra nem felhasználni és nem közölni.</p>
+<p>Az általunk használt adatfeldolgozók:</p>
+<ul>
+ <li><strong>Google (Firebase Analytics, Firebase Crashlytics)</strong> — használati statisztikák és összeomlás-diagnosztika.</li>
+ <li><strong>RevenueCat</strong> — előfizetés- és vásárláskezelés.</li>
+ <li><strong>OpenAI</strong> — feldolgozza az AI-kéréseket, amikor egy AI funkciót használsz (lásd lentebb az „OpenAI API” szakaszt).</li>
+ <li><strong>Render</strong> — üzemelteti azt a szervert, amelyen keresztül az AI-kérések eljutnak az OpenAI-hoz (lásd lentebb „A szerverünk és hogyan jutnak el az AI-kérések az OpenAI-hoz” szakaszt).</li>
+ <li><strong>Apple</strong> — iCloud-szinkronizálás, App Store-vásárlások, és az Apple Intelligence, ha azt használod.</li>
+</ul>
+<p>Ezeket a külső szolgáltatókat a velünk kötött megállapodásuk kötelezi arra, hogy az információkat semmilyen más célra ne használják fel.</p>
         </div>
     </section>
 
@@ -321,9 +332,9 @@
     <section class="legal-section">
         <h2>Profilinformáció (opcionális)</h2>
         <div class="legal-content">
-            <p>Opcionálisan elmenthetsz egy kis profilt az alkalmazásban a <strong>neved, születési dátumod és nemed</strong> megadásával. Ez teljesen opcionális — az összes alapvető követési funkció enélkül is működik, és a profilt bármikor szerkesztheted vagy törölheted az alkalmazásból.</p>
-<p>A profiladatok ugyanúgy tárolódnak, mint a többi adatod: az eszközödön és, ha iCloudot használsz, a saját privát iCloud-fiókodon. Soha nem töltjük fel őket a szervereinkre, és soha nem osztjuk meg őket senkivel reklámozás vagy marketing céljából.</p>
-<p>Ha AI funkciót választasz (például OpenAI vagy Apple Intelligence által működtetett csevegést, elemzéseket vagy személyre szabott visszajelzést), az alkalmazás a profilod releváns részeit belefoglalhatja a kérésbe — általában az utónevet, a kort (a születési dátumból kiszámolva) és a nemet — hogy az AI relevánsabb válaszokat adhasson, például korosztálynak megfelelő egészségügyi útmutatást vagy a megfelelő névmásokat. Ez csak akkor történik, amikor ténylegesen AI funkciót használsz, és csak a kéréshez szükséges profilmezők kerülnek elküldésre. Bármikor kikapcsolhatod az AI funkciókat, vagy törölheted a profilodat, hogy ezt megakadályozd.</p>
+            <p>Az appban opcionálisan elmenthetsz egy rövid profilt a <strong>nevedről, születési dátumodról és nemedről</strong>. Ez teljesen opcionális — az összes alapvető nyomon követési funkció enélkül is működik, és a profilodat bármikor szerkesztheted vagy törölheted az appon belül.</p>
+<p>A profiladatok ugyanúgy tárolódnak, mint a többi adatod: a készülékeden, és ha iCloud-ot használsz, a saját privát iCloud-fiókodban. Sosem töltjük fel őket a szervereinkre, és sosem osztjuk meg senkivel reklám- vagy marketingcélra.</p>
+<p>Amikor egy AI funkció fut, az app beépíti a profilod egyes részeit a kérésbe, hogy az AI személyre tudja szabni a válaszát. <strong>A neved, korod (a születési dátumodból kiszámítva) és nemed elküldése alapértelmezetten be van kapcsolva</strong>, ha elmentetted ezeket a mezőket; ezeket egyenként ki tudod kapcsolni az app AI-beállításaiban. Két további kontextus-opció — a helyi időjárás és az alvási rended — alapértelmezetten <strong>ki</strong> van kapcsolva, és csak akkor kerülnek elküldésre, ha bekapcsolod őket. Egy szabadszöveges „további kontextus” megjegyzés, ha írsz ilyet, minden AI-kéréssel elküldésre kerül, amíg ki van töltve; töröld a mezőt, hogy leállítsd a küldését.</p>
         </div>
     </section>
 
@@ -339,20 +350,39 @@
     <section class="legal-section">
         <h2>Apple Intelligence (opcionális)</h2>
         <div class="legal-content">
-            <p>Az újabb, iOS, iPadOS vagy macOS kompatibilis verzióval rendelkező eszközökön a Feeltracker alkalmazások opcionális, az Apple Intelligence — az Apple beépített AI-ja — által működtetett funkciókat kínálhatnak. Ezek csak akkor futnak, amikor te választod a használatukat.</p>
-<p>Az Apple Intelligence lehetőség szerint az eszközödön fut, és az Apple Private Cloud Compute-ot használja a nehezebb kérésekhez. Mindkét esetben az Apple azt mondja, hogy az adataidat nem tárolják, az Apple számára nem láthatók, és nem használják az Apple modelljeinek betanítására. A Custom Arts Ltd nem kap, nem tárol és nem lát Apple Intelligence kéréseket vagy válaszokat.</p>
-<p>Részletekért lásd az <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apple adatvédelmi irányelveit</a>.</p>
+            <p>Újabb készülékeken, kompatibilis iOS-, iPadOS- vagy macOS-verzióval, a Feeltracker appok opcionális, az Apple Intelligence — az Apple beépített AI-ja — által működtetett funkciókat kínálhatnak. Ezek csak akkor futnak le, ha az app beállításaiban az Apple Intelligence-t választod AI-módként.</p>
+<p>Ebben a módban az app az Apple eszközön futó Foundation Models keretrendszerét hívja meg. A kérés nem jut el a szervereinkhez, és nem jut el az OpenAI-hoz sem: a Custom Arts Ltd sosem kapja meg, tárolja vagy látja az Apple Intelligence semmilyen kérését vagy válaszát. Azt, hogy az Apple hogyan kezeli a kérést, az Apple saját szabályzatai határozzák meg.</p>
+<p>A részletekért lásd az <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apple adatvédelmi szabályzatát</a>.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>OpenAI API (opcionális)</h2>
         <div class="legal-content">
-            <p>Néhány AI funkció az alkalmazásban opcionálisan az OpenAI API-ja által működtetett, amely megvizsgálhatja, amit begépelsz (például egy kérdést, amelyet az AI-nak teszel fel, egy naplóbejegyzést vagy konkrét méréseket), és visszaküldhet visszajelzést, javaslatokat vagy elemzéseket. Ezek a funkciók szigorúan opt-in jellegűek — aktívan kell választani a használatukat, és bármikor kikapcsolhatod őket az alkalmazáson belül.</p>
-<p>Amikor AI funkciót használsz, csak a kéréshez szükséges adatok kerülnek elküldésre az OpenAI-hoz: (a) a felszólításod vagy kérdésed; (b) az a konkrét adat, amelyről kérdezel (például a vérnyomás- vagy hangulat-mérések, amelyeket meg akarsz magyarázni); és (c) ha mentettél profilt, egy kis kontextus — általában az utónév, a kor (a születési dátumból kiszámolva) és a nem — hogy az AI személyre szabhassa a válaszát (például megfelelő névmások vagy kornak megfelelő útmutatás).</p>
-<p>Az OpenAI API irányelvei szerint az API-n keresztül küldött adatokat nem használják a modelljei betanítására, és csak rövid ideig tárolják visszaélés-ellenőrzés céljából. Nem tartjuk meg az AI-felszólításokat vagy válaszokat a szervereinken — csak az eszközödön élnek.</p>
-<p>A teljes irányelveket itt olvashatod: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI adatvédelmi irányelv</a>.</p>
-<p>Az AI funkció használatával elfogadod, hogy a releváns adatok (beleértve az esetleg elmentett profiladatokat) elküldésre kerülnek az OpenAI-hoz, és az ő irányelvei szerint kerülnek feldolgozásra. Kérjük, ne gépelj be semmit az AI-ba, amit nem szívesen küldenél el ezen feltételek szerint.</p>
+            <p>Appjaink legtöbb AI funkcióját az OpenAI API működteti. A felhőalapú AI az <strong>alapértelmezett mód</strong> új telepítés esetén; az app AI-beállításaiban átválthatsz eszközön futó Apple Intelligence-re, vagy teljesen kikapcsolhatod az AI-t.</p>
+<p><strong>Mi kerül elküldésre.</strong> A funkciótól függően egy kérés tartalmazhatja a következőket:</p>
+<ul>
+ <li>Bármit, amit egy AI funkcióba beírsz — a kérdésedet, vagy egy szövegrészt, amellyel dolgoztatni akartad.</li>
+ <li>Az adott funkció hatókörébe tartozó egészségügyi adatokat, mérési sorokként, dátummal és időponttal. <strong>Ez magában foglalja az ezekhez a rekordokhoz csatolt szabadszöveges megjegyzéseket és naplóbejegyzéseket is.</strong></li>
+ <li>A profil- és személyre szabási kontextust, ahogy a fenti „Profiladatok” szakaszban leírtuk.</li>
+ <li>Kamerás beolvasás esetén egy fotót, amelyet egy mérőműszer vagy mérleg kijelzőjéről készítesz.</li>
+ <li>Felolvasás (szövegfelolvasás) esetén a felolvasott szöveget, ami rendszerint egy, az adataidról szóló AI-válasz.</li>
+</ul>
+<p><strong>Mikor kerül elküldésre.</strong> A legtöbb AI funkció csak akkor fut le, amikor megnyitod és eredményt kérsz tőle. Néhány nem így működik: amíg a felhőalapú AI be van kapcsolva, az app önmagától is generál rövid, személyre szabott üzeneteket — napi meglátást, születésnapi vagy mérföldkő-üdvözlést, „üdv újra itt” üzenetet —, és ehhez elküldi a legutóbbi rekordjaid egy kötegét (legfeljebb 30-at) és a profilkontextusodat az OpenAI-nak <strong>amikor megnyitod az appot vagy annak napi nézetét, anélkül hogy AI-eredményt kértél volna</strong>. Az AI kikapcsolása, vagy az Apple Intelligence-re való átváltás, leállítja ezt.</p>
+<p><strong>Egy telepítésenkénti azonosító.</strong> Minden telepítés generál egy véletlenszerű azonosítót, amelyet minden kéréssel elküld az OpenAI-nak, gyorsítótár-kulcsként, ami olcsóbbá teszi az ismételt kéréseket. Nem tartalmaz semmit rólad, és nincs összekapcsolva a neveddel, fiókoddal vagy készülékazonosítóddal, de állandó: lehetővé teszi az OpenAI számára, hogy egy telepítés összes kérését egymáshoz kapcsolja, és mindaddig megmarad, amíg az appot törlöd és újratelepíted.</p>
+<p><strong>Mit csinál vele az OpenAI.</strong> Az OpenAI jelenlegi API-dokumentációja szerint az API-nak küldött adatokat nem használják fel OpenAI-modellek betanítására vagy fejlesztésére, hacsak kifejezetten nem járulsz hozzá, a visszaélés-figyelési naplókat legfeljebb 30 napig őrzik meg, és a Responses API-n keresztül létrehozott válaszokat alapértelmezetten 30 napig tárolják. Az appjaink erre a 30 napos tárolásra támaszkodnak, hogy egy beszélgetés folytatódhasson a fordulók között anélkül, hogy újra fel kellene tölteni, ezért <strong>az AI-kéréseidet és azok válaszait az OpenAI legfeljebb 30 napig őrzi meg</strong>. Ezek az OpenAI feltételei, nem a mieink, és ők bármikor megváltoztathatják őket.</p>
+<p>A teljes szabályzatot itt olvashatod: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI adatvédelmi szabályzat</a>.</p>
+<p>Egy AI funkció használatával elfogadod, hogy a releváns adatok (beleértve bármely elmentett profiladatot) elküldésre kerülnek az OpenAI-nak, és az ő szabályzataik szerint kerülnek feldolgozásra. Kérjük, ne írj be az AI-ba olyat, amit nem szeretnél ezekkel a feltételekkel elküldeni.</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>A szerverünk és hogyan jutnak el az AI-kérések az OpenAI-hoz</h2>
+        <div class="legal-content">
+            <p>Az AI-kérések nem közvetlenül a készülékedről jutnak el az OpenAI-hoz. Egy kis szerveren keresztül haladnak, amelyet mi üzemeltetünk, és amelyet a <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> hostol az Egyesült Államokban. Ez egy biztonsági intézkedés: azt jelenti, hogy az OpenAI-kulcsunk ezen a szerveren található, nem pedig magában az appban, ahonnan valaki kinyerhetné, és a te neved alatt futtathatna kéréseket. A szerver ellenőrzi, hogy a kérés valóban az egyik appunktól érkezett-e, hozzáadja a kulcsunkat, és a választ közvetlenül visszaküldi neked (streamelve).</p>
+<p><strong>Nem tárolja a kéréseidet vagy az AI válaszait.</strong> Csak addig léteznek a memóriában, amíg a továbbításuk tart, és sosem íródnak lemezre. Senki a Custom Arts Ltd-nél nem olvassa el őket.</p>
+<p>Amit a szerver megőriz, az egy folyamatosan vezetett kimutatás arról, hogy mennyibe kerül nekünk az AI. Minden kéréshez rögzíti a dátumot és időpontot, hogy melyik appból és melyik verzióból érkezett, melyik funkciót és AI-modellt használták, hogy a fiók ingyenes vagy fizetős volt-e, hány tokent vagy karaktert dolgoztak fel, és a becsült költséget. Ezekben a rekordokban nincs egészségügyi adat, nincs üzenetszöveg, és semmi, ami azonosítana téged — nincs fiók, felhasználói azonosító, IP-cím —, így nem vezethetők vissza egyetlen személyhez sem. <strong>Ezeket jelenleg határidő nélkül megőrizzük.</strong></p>
+<p>A szerver ezen felül rövid üzemeltetési naplósorokat is ír, ugyanerről a témáról, valamint az egyes kérések méretéről, de sosem azok tartalmáról. Ha az OpenAI hibát ad vissza, az a hibaüzenet úgy kerül naplózásra, ahogyan az OpenAI megírta.</p>
         </div>
     </section>
 
@@ -389,14 +419,21 @@
     <section class="legal-section">
         <h2>Hol tárolódnak az adataid</h2>
         <div class="legal-content">
-            <p>Személyes és egészségügyi adataid az eszközödön és a saját iCloud-fiókodon élnek — te felügyeleted felett állsz. Néhány általunk használt opcionális harmadik fél szolgáltatás (Firebase, RevenueCat, OpenAI) Egyesült Államokban székhellyel rendelkező szolgáltatók által működtetett, és egyes adatokat ott is feldolgozhatnak. Ahol szükséges, Standard Szerződéses Kikötésekre és/vagy az EU-US Adatvédelmi Keretrendszerre támaszkodnak a személyes adatok EU/UK-ból való átviteléhez. Ha azt szeretnéd, hogy az adataid ne kerüljenek át, kikapcsolhatod a megfelelő opcionális funkciókat.</p>
+            <p>A személyes és egészségügyi adataid a készülékeden és a saját iCloud-fiókodban élnek — te irányítod őket. Az általunk használt opcionális külső szolgáltatások (Firebase, RevenueCat, OpenAI) és a szerver, amelyen keresztül az AI-kéréseink haladnak (a Render által hostolva), az Egyesült Államokban székelő szolgáltatók által üzemeltetettek, és lehet, hogy ott dolgozzák fel az adatokat. Ahol szükséges, ők a Standard Szerződéses Feltételekre és/vagy az EU–USA Adatvédelmi Keretrendszerre támaszkodnak, hogy személyes adatokat mozgassanak ki az EU-ból/Egyesült Királyságból. Ha inkább azt szeretnéd, hogy egyik adatod se kerüljön áthelyezésre, kikapcsolhatod a megfelelő opcionális funkciókat.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>Mennyi ideig tárolódnak az adatok</h2>
         <div class="legal-content">
-            <p>Nem tartunk másolatot az alkalmazás adataidról a szervereinkre. Adataid az eszközödön és az iCloudban maradnak, amíg az alkalmazás telepítve van és az iCloud biztonsági mentés be van kapcsolva. A Firebase Crashlytics/Analytics adatait a Google a projektünk alapértelmezett megőrzési ideje szerint tárolja; a RevenueCat a vásárlási/bizonylati adatokat addig tárolja, amíg aktív előfizetésed van, és ahogy az adójog megköveteli; az OpenAI az API-kérési adatokat az API adathasználati irányelvük szerint tárolja. Egy funkció kikapcsolása vagy az alkalmazás törlése megszünteti a további gyűjtést.</p>
+            <p>Nem tárolunk másolatot az app-adataidról a szervereinken. Az adataid a készülékeden és az iCloud-odban maradnak, amíg az app telepítve van, és az iCloud-mentés be van kapcsolva. Ezen túl:</p>
+<ul>
+ <li><strong>OpenAI</strong> — az OpenAI jelenlegi API-dokumentációja szerint a visszaélés-figyelési naplókat legfeljebb 30 napig őrzik meg, és a Responses API válaszait alapértelmezetten 30 napig tárolják. Az appjaink erre a tárolásra támaszkodnak a többfordulós beszélgetésekhez.</li>
+ <li><strong>A saját szerverünk</strong> — nem tárol kérés- vagy válasz-tartalmat. A kérésenkénti költségrekordokat (dátum, app, funkció, modell, tokenszám, költség — nincs egészségügyi adat és nincs felhasználói azonosító) jelenleg határidő nélkül megőrizzük.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — a Google a projektünk alapértelmezett megőrzési időszakára tárolja.</li>
+ <li><strong>RevenueCat</strong> — vásárlási és nyugtaadatok, amíg aktív előfizetésed van, és ameddig az adójogszabályok megkövetelik.</li>
+</ul>
+<p>Egy funkció kikapcsolása vagy az app törlése leállítja a további gyűjtést. Mivel a saját szerverünk által megőrzött rekordok semmi olyat nem tartalmaznak, ami azonosítana téged, nem tudunk „a te” bejegyzéseid után kutatni vagy azokat kérésre törölni bennük — nincs bennük semmi, amihez hozzád tudnánk illeszteni.</p>
         </div>
     </section>
 

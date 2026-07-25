@@ -240,9 +240,10 @@
         <h1>Zásady ochrany osobných údajov</h1>
     </header>
     <div class="legal-intro">
-        <p>Spoločnosť Custom Arts Ltd vytvorila aplikáciu Feeltracker ako Freemium aplikáciu. Táto SLUŽBA je poskytovaná spoločnosťou Custom Arts Ltd bezplatne a je určená na používanie tak, ako je.</p>
+        <p>Custom Arts Ltd vytvorila aplikáciu Feeltracker ako freemium aplikáciu. Túto SLUŽBU poskytuje Custom Arts Ltd bezplatne a je určená na používanie v súčasnej podobe.</p>
 <p>Táto stránka slúži na informovanie návštevníkov o našich zásadách týkajúcich sa zhromažďovania, používania a zverejňovania informácií, ak sa niekto rozhodne používať našu Službu.</p>
-<p>Ak sa rozhodnete používať našu Službu, súhlasíte so zhromažďovaním a používaním informácií v súvislosti s týmito zásadami. Aplikácia Feeltracker však nezhromažďuje ani neukladá žiadne osobné identifikačné údaje (PII) na našich serveroch. Všetky údaje generované aplikáciou sú uložené lokálne vo vašom zariadení alebo synchronizované s vaším osobným účtom iCloud. K týmto údajom nemáme prístup.</p>
+<p>Ak sa rozhodnete používať našu Službu, súhlasíte so zhromažďovaním a používaním informácií v súlade s týmito zásadami. Aplikácia Feeltracker však na našich serveroch nezhromažďuje ani neukladá žiadne osobné identifikačné údaje (PII). Všetky údaje generované aplikáciou sa ukladajú lokálne vo vašom zariadení alebo sa synchronizujú s vaším osobným kontom iCloud. K týmto údajom nemáme prístup.</p>
+<p>Existuje jedna výnimka a je dôležitá: ak používate funkciu AI, údaje potrebné pre danú funkciu opustia vaše zariadenie a spracúva ich OpenAI. Cloudová AI je pri novej inštalácii predvolene zapnutá. Časti „OpenAI API“ a „Náš server a ako sa požiadavky AI dostávajú k OpenAI“ nižšie presne uvádzajú, čo sa odosiela, kedy a ako dlho sa to uchováva.</p>
     </div>
 
 
@@ -271,7 +272,9 @@
     <section class="legal-section">
         <h2>Údaje protokolov</h2>
         <div class="legal-content">
-            <p>V prípade chyby alebo zlyhania aplikácie zhromažďujeme údaje protokolov prostredníctvom služieb tretích strán, ako je Firebase Crashlytics. Tieto údaje protokolov neobsahujú osobné identifikačné informácie a slúžia výlučne na diagnostiku a opravu chýb na zlepšenie výkonu aplikácie.</p>
+            <p>Keď v aplikácii dôjde k chybe alebo k pádu, diagnostické záznamy sa odošlú do Firebase Crashlytics (Google), aby sme mohli chybu nájsť a opraviť. Tieto záznamy zapisuje samotná aplikácia a popisujú, čo aplikácia <em>robila</em>: ktorá obrazovka bola otvorená, koľkých záznamov sa operácia týkala, aká dlhá bola časť textu, ktorý krok zlyhal.</p>
+<p><strong>Neobsahujú vaše zdravotné údaje, text vášho denníka ani nič iné, čo ste napísali.</strong> Ak sa riadok záznamu potrebuje odvolávať na váš obsah, zaznamená sa iba dĺžka tohto obsahu a nič viac. Riadky záznamov, ktoré by inak obsahovali osobné údaje, sa pred odoslaním zo zariadenia anonymizujú.</p>
+<p>Správy o páde tiež obsahujú technické informácie, ktoré Crashlytics zhromažďuje automaticky, napríklad model zariadenia, verziu operačného systému a miesto v našom kóde, kde k pádu došlo. Hlásenie pádov a analytiku môžete v nastaveniach aplikácie vypnúť, čím sa odosielanie týchto záznamov úplne zastaví.</p>
         </div>
     </section>
 
@@ -285,14 +288,22 @@
     <section class="legal-section">
         <h2>Poskytovatelia služieb</h2>
         <div class="legal-content">
-            <p>Môžeme zamestnať spoločnosti a jednotlivcov tretích strán z nasledujúcich dôvodov:</p>
+            <p>Na nasledujúce účely môžeme využívať služby tretích strán a jednotlivcov:</p>
 <ul>
  <li>Na uľahčenie našej Služby;</li>
  <li>Na poskytovanie Služby v našom mene;</li>
  <li>Na vykonávanie služieb súvisiacich so Službou; alebo</li>
  <li>Na pomoc pri analýze používania našej Služby.</li>
 </ul>
-<p>Tieto služby tretích strán môžu zhromažďovať neosobné údaje, ako je opísané vyššie, ale sú povinné tieto informácie nezverejňovať ani nepoužívať na žiadny iný účel.</p>
+<p>Spracovatelia, ktorých používame, sú:</p>
+<ul>
+ <li><strong>Google (Firebase Analytics, Firebase Crashlytics)</strong> — analytika používania a diagnostika pádov.</li>
+ <li><strong>RevenueCat</strong> — správa predplatných a nákupov.</li>
+ <li><strong>OpenAI</strong> — spracúva požiadavky AI, keď použijete funkciu AI (pozri „OpenAI API“ nižšie).</li>
+ <li><strong>Render</strong> — hostí server, cez ktorý požiadavky AI putujú na ceste k OpenAI (pozri „Náš server a ako sa požiadavky AI dostávajú k OpenAI“ nižšie).</li>
+ <li><strong>Apple</strong> — synchronizácia iCloud, nákupy cez App Store a Apple Intelligence, ak ju používate.</li>
+</ul>
+<p>Tieto služby tretích strán sú na základe zmlúv s nami viazané nepoužívať tieto informácie na žiadny iný účel.</p>
         </div>
     </section>
 
@@ -321,9 +332,9 @@
     <section class="legal-section">
         <h2>Informácie o profile (voliteľné)</h2>
         <div class="legal-content">
-            <p>Do aplikácie môžeš voliteľne uložiť malý profil so svojím <strong>menom, dátumom narodenia a pohlavím</strong>. Je to úplne voliteľné — všetky základné funkcie sledovania fungujú aj bez toho a profil môžeš kedykoľvek upraviť alebo vymazať priamo z aplikácie.</p>
-<p>Podrobnosti profilu sú uložené rovnakým spôsobom ako tvoje ostatné dáta: na tvojom zariadení a, ak používaš iCloud, vo tvojom súkromnom účte iCloud. Nikdy ich nenahrávame na naše servery a nikdy ich nezdieľame s nikým na účely reklamy alebo marketingu.</p>
-<p>Ak sa rozhodneš používať funkciu AI (ako chat, prehľady alebo prispôsobenú spätnú väzbu napájanú OpenAI alebo Apple Intelligence), aplikácia môže zahrnúť relevantné časti tvojho profilu do žiadosti — zvyčajne krstné meno, vek (vypočítaný z dátumu narodenia) a pohlavie — aby AI mohla poskytnúť relevantnejšie odpovede, napríklad zdravotné usmernenia vhodné pre vek alebo správne zámenná. Toto sa deje iba vtedy, keď skutočne používaš funkciu AI, a odosielajú sa iba profilové polia potrebné pre danú žiadosť. Kedykoľvek vypni funkcie AI alebo vymaž svoj profil, aby si to zastavil.</p>
+            <p>V aplikácii si môžete voliteľne uložiť malý profil s vaším <strong>menom, dátumom narodenia a pohlavím</strong>. Je to úplne voliteľné — všetky základné funkcie sledovania fungujú aj bez toho a profil môžete kedykoľvek upraviť alebo odstrániť priamo v aplikácii.</p>
+<p>Údaje profilu sa ukladajú rovnakým spôsobom ako ostatné vaše údaje: vo vašom zariadení a, ak používate iCloud, vo vašom súkromnom konte iCloud. Nikdy ich neodosielame na naše servery a nikdy ich nikomu nezdieľame na reklamné ani marketingové účely.</p>
+<p>Keď sa spustí funkcia AI, aplikácia zahrnie do požiadavky časti vášho profilu, aby AI mohla prispôsobiť svoju odpoveď. <strong>Odosielanie vášho mena, veku (vypočítaného z dátumu narodenia) a pohlavia je predvolene zapnuté</strong>, ak ste tieto polia uložili; každú z nich môžete jednotlivo vypnúť v nastaveniach AI v aplikácii. Ďalšie dve možnosti kontextu — miestne počasie a váš spánkový režim — sú predvolene <strong>vypnuté</strong> a odosielajú sa iba vtedy, ak ich zapnete. Voľná textová poznámka „ďalší kontext“, ak ju napíšete, sa odosiela s každou požiadavkou AI dovtedy, kým je vyplnená; jej odosielanie zastavíte vymazaním poľa.</p>
         </div>
     </section>
 
@@ -339,20 +350,39 @@
     <section class="legal-section">
         <h2>Apple Intelligence (voliteľné)</h2>
         <div class="legal-content">
-            <p>Na novších zariadeniach s kompatibilnou verziou iOS, iPadOS alebo macOS môžu aplikácie Feeltracker ponúkať voliteľné funkcie napájané Apple Intelligence — vstavanou AI od Apple. Tieto bežia iba vtedy, keď sa rozhodneš ich používať.</p>
-<p>Apple Intelligence beží na tvojom zariadení tam, kde je to možné, a používa Apple Private Cloud Compute pre náročnejšie žiadosti. V obidvoch prípadoch Apple hovorí, že tvoje dáta nie sú uložené, nie sú viditeľné pre Apple a nepoužívajú sa na tréning modelov Apple. Custom Arts Ltd neprijíma, neukladá ani nevidí žiadne žiadosti alebo odpovede Apple Intelligence.</p>
-<p>Podrobnosti nájdeš v <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Zásadách ochrany osobných údajov Apple</a>.</p>
+            <p>Na novších zariadeniach s kompatibilnou verziou iOS, iPadOS alebo macOS môžu aplikácie Feeltracker ponúkať voliteľné funkcie poháňané Apple Intelligence — vstavanou AI od Apple. Tie sa spustia iba vtedy, ak si v nastaveniach aplikácie zvolíte Apple Intelligence ako režim AI.</p>
+<p>V tomto režime aplikácia volá framework Apple Foundation Models priamo v zariadení. Požiadavka nejde na naše servery ani k OpenAI: Custom Arts Ltd nikdy nedostáva, neukladá ani nevidí žiadnu požiadavku ani odpoveď Apple Intelligence. Spôsob, akým Apple samotný spracúva požiadavku, sa riadi vlastnými zásadami spoločnosti Apple.</p>
+<p>Podrobnosti nájdete v dokumente <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Zásady ochrany osobných údajov spoločnosti Apple</a>.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>OpenAI API (voliteľné)</h2>
         <div class="legal-content">
-            <p>Niektoré funkcie AI v našej aplikácii sú voliteľne napájané OpenAI API, ktoré môže analyzovať, čo píšeš (napríklad otázku, ktorú kladieš AI, záznam do denníka alebo konkrétne merania), a posielať späť spätnú väzbu, návrhy alebo prehľady. Tieto funkcie sú prísne opt-in — musíš sa aktívne rozhodnúť ich používať a kedykoľvek ich môžeš vypnúť priamo v aplikácii.</p>
-<p>Keď používaš funkciu AI, do OpenAI sa odošle iba to, čo je potrebné pre danú žiadosť: (a) tvoj príkaz alebo otázka; (b) konkrétne dáta, na ktoré sa pýtaš (napríklad merania krvného tlaku alebo nálady, ktoré chceš vysvetliť); a (c) ak si uložil profil, trochu kontextu — zvyčajne krstné meno, vek (vypočítaný z dátumu narodenia) a pohlavie — aby AI mohla prispôsobiť svoju odpoveď (napríklad vhodné zámenná alebo usmernenia relevantné pre vek).</p>
-<p>Podľa zásad API OpenAI sa dáta odoslané cez API nepoužívajú na tréning ich modelov a uchovávajú sa iba na krátku dobu na kontrolu zneužívania. Na našich serveroch neuchovávame tvoje výzvy ani odpovede AI — žijú iba na tvojom zariadení.</p>
-<p>Celú politiku si môžeš prečítať tu: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Zásady ochrany osobných údajov OpenAI</a>.</p>
-<p>Používaním funkcie AI súhlasíš s tým, že relevantné dáta (vrátane akýchkoľvek profilových podrobností, ktoré si sa rozhodol uložiť) budú odoslané do OpenAI a spracované podľa ich zásad. Prosím, nezadávaj do AI nič, čo by si nebol ochotný odoslať za týchto podmienok.</p>
+            <p>Väčšinu funkcií AI v našich aplikáciách poháňa OpenAI API. Cloudová AI je <strong>predvolený režim</strong> pri novej inštalácii; aplikáciu môžete v nastaveniach AI prepnúť na Apple Intelligence priamo v zariadení alebo AI úplne vypnúť.</p>
+<p><strong>Čo sa odosiela.</strong> V závislosti od funkcie môže požiadavka obsahovať:</p>
+<ul>
+ <li>Čokoľvek, čo napíšete do funkcie AI — vašu otázku alebo pasáž, s ktorou ste ju požiadali pracovať.</li>
+ <li>Zdravotné záznamy relevantné pre danú funkciu, ako riadky nameraných hodnôt s ich dátumami a časmi. <strong>Zahŕňa to aj voľné textové poznámky a záznamy denníka pripojené k týmto záznamom.</strong></li>
+ <li>Kontext profilu a personalizácie, ako je opísané vyššie v časti „Informácie o profile“.</li>
+ <li>Pri funkcii Camera Scan fotografiu, ktorú urobíte z displeja monitora alebo váhy.</li>
+ <li>Pri predčítaní (prevod textu na reč) text, ktorý sa má prečítať nahlas, čo je zvyčajne odpoveď AI týkajúca sa vašich údajov.</li>
+</ul>
+<p><strong>Kedy sa odosiela.</strong> Väčšina funkcií AI sa spustí iba vtedy, keď ich otvoríte a požiadate o výsledok. Niektoré nie: kým je cloudová AI zapnutá, aplikácia sama vytvára aj krátke personalizované správy — denný postreh, narodeninový alebo výročný pozdrav, správu na privítanie po návrate — a na to odošle dávku vašich najnovších záznamov (až 30) a kontext vášho profilu spoločnosti OpenAI <strong>vtedy, keď otvoríte aplikáciu alebo jej denné zobrazenie, bez toho, aby ste si výsledok AI vyžiadali</strong>. Vypnutie AI alebo prepnutie na Apple Intelligence toto zastaví.</p>
+<p><strong>Identifikátor jednej inštalácie.</strong> Každá inštalácia vygeneruje náhodný identifikátor a odosiela ho spoločnosti OpenAI s každou požiadavkou ako kľúč vyrovnávacej pamäte, ktorý udržiava opakované požiadavky lacnejšie. Neobsahuje o vás nič a nie je spojený s vaším menom, kontom ani ID zariadenia, ale je stabilný: umožňuje OpenAI priradiť všetky požiadavky z jednej inštalácie k sebe navzájom a pretrváva, kým aplikáciu neodinštalujete a znova nenainštalujete.</p>
+<p><strong>Čo s tým OpenAI robí.</strong> Aktuálna dokumentácia API spoločnosti OpenAI uvádza, že údaje odoslané do API sa nepoužívajú na trénovanie ani zlepšovanie modelov OpenAI, pokiaľ na to výslovne nedáte súhlas, že záznamy monitorovania zneužitia sa uchovávajú až 30 dní a že odpovede vytvorené cez Responses API sa predvolene ukladajú 30 dní. Naše aplikácie sa spoliehajú na toto 30-dňové uloženie, aby mohla konverzácia pokračovať cez viacero kôl bez opätovného nahrávania, takže <strong>vaše požiadavky AI a ich odpovede uchováva OpenAI až 30 dní</strong>. Sú to podmienky spoločnosti OpenAI, nie naše, a môže ich zmeniť.</p>
+<p>Celé zásady si môžete prečítať tu: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Zásady ochrany osobných údajov OpenAI</a>.</p>
+<p>Používaním funkcie AI súhlasíte s tým, že príslušné údaje (vrátane akýchkoľvek údajov profilu, ktoré ste sa rozhodli uložiť) budú odoslané spoločnosti OpenAI a spracované podľa jej zásad. Nepíšte do AI nič, čo by vám nebolo príjemné odoslať za týchto podmienok.</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>Náš server a ako sa požiadavky AI dostávajú k OpenAI</h2>
+        <div class="legal-content">
+            <p>Požiadavky AI neputujú z vášho zariadenia priamo k OpenAI. Prechádzajú cez malý server, ktorý prevádzkujeme a ktorý hostí <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> v Spojených štátoch. Ide o bezpečnostné opatrenie: znamená to, že náš kľúč OpenAI sa nachádza na tomto serveri, a nie v aplikácii, odkiaľ by ho niekto mohol vytiahnuť a zneužívať požiadavky vo vašom mene. Server overí, že požiadavka skutočne pochádza z jednej z našich aplikácií, pridá náš kľúč a odpoveď OpenAI vám okamžite streamuje späť.</p>
+<p><strong>Neukladá vaše požiadavky ani odpovede AI.</strong> Existujú iba v pamäti počas okamihu, keď sa odovzdávajú ďalej, a nikdy sa nezapisujú na disk. Nikto v Custom Arts Ltd ich nečíta.</p>
+<p>Server si vedie priebežný prehľad toho, koľko nás AI stojí. Pri každej požiadavke zaznamená dátum a čas, z ktorej aplikácie a jej verzie pochádza, ktorá funkcia a model AI sa použili, či išlo o bezplatný alebo platený účet, koľko tokenov alebo znakov sa spracovalo, a odhadované náklady. Tieto záznamy neobsahujú žiadne zdravotné údaje, žiadny text správ ani nič, čo by vás identifikovalo — žiadne konto, žiadne ID používateľa, žiadnu IP adresu — takže ich nemožno vystopovať späť ku konkrétnej osobe. <strong>V súčasnosti sa uchovávajú bez časového obmedzenia.</strong></p>
+<p>Server tiež zapisuje krátke prevádzkové záznamy pokrývajúce rovnaké údaje, plus veľkosť každej požiadavky, nikdy jej obsah. Ak OpenAI vráti chybu, táto chybová správa sa zaznamená presne tak, ako ju napísala OpenAI.</p>
         </div>
     </section>
 
@@ -389,14 +419,21 @@
     <section class="legal-section">
         <h2>Kde žijú tvoje dáta</h2>
         <div class="legal-content">
-            <p>Tvoje osobné a zdravotné dáta žijú na tvojom zariadení a vo vlastnom účte iCloud — ty máš nad nimi kontrolu. Niekoľko voliteľných služieb tretích strán, ktoré používame (Firebase, RevenueCat, OpenAI), prevádzkujú poskytovatelia so sídlom v Spojených štátoch a môžu tam spracúvať niektoré dáta. Ak je to potrebné, spoliehajú sa na Štandardné zmluvné doložky a/alebo rámec EU-US Data Privacy na prenos osobných údajov z EÚ/UK. Ak preferuješ, aby žiadne tvoje dáta neboli prenesené, môžeš vypnúť zodpovedajúce voliteľné funkcie.</p>
+            <p>Vaše osobné a zdravotné údaje sa nachádzajú vo vašom zariadení a vo vašom vlastnom konte iCloud — máte nad nimi kontrolu. Voliteľné služby tretích strán, ktoré používame (Firebase, RevenueCat, OpenAI), a server, cez ktorý putujú naše požiadavky AI (hostený spoločnosťou Render), prevádzkujú poskytovatelia so sídlom v Spojených štátoch a údaje tam môžu spracúvať. Tam, kde je to potrebné, sa spoliehajú na štandardné zmluvné doložky a/alebo rámec EU-US Data Privacy Framework na prenos osobných údajov mimo EÚ/Spojeného kráľovstva. Ak by ste radšej nechceli, aby sa akékoľvek vaše údaje prenášali, môžete vypnúť príslušné voliteľné funkcie.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>Ako dlho sa dáta uchovávajú</h2>
         <div class="legal-content">
-            <p>Na našich serveroch neuchovávame kópie dát tvojej aplikácie. Tvoje dáta zostávajú na tvojom zariadení a v tvojom iCloud tak dlho, kým máš nainštalovanú aplikáciu a zapnutú zálohu iCloud. Dáta Firebase Crashlytics/Analytics uchováva Google pre predvolenú dobu uchovávania nášho projektu; RevenueCat uchováva dáta o nákupe/pokladnici tak dlho, kým máš aktívne predplatné a ako to vyžaduje daňový zákon; OpenAI uchováva dáta API žiadostí podľa svojich zásad používania dát API. Vypnutím funkcie alebo zmazaním aplikácie sa zastaví ďalší zber.</p>
+            <p>Na našich serveroch neuchovávame kópie údajov vašej aplikácie. Vaše údaje zostávajú vo vašom zariadení a vo vašom konte iCloud dovtedy, kým máte aplikáciu nainštalovanú a zálohovanie iCloud zapnuté. Okrem toho:</p>
+<ul>
+ <li><strong>OpenAI</strong> — podľa aktuálnej dokumentácie API spoločnosti OpenAI sa záznamy monitorovania zneužitia uchovávajú až 30 dní a odpovede Responses API sa predvolene ukladajú 30 dní. Naše aplikácie sa na toto uloženie spoliehajú kvôli viackolovým konverzáciám.</li>
+ <li><strong>Náš vlastný server</strong> — neukladá sa žiadny obsah požiadaviek ani odpovedí. Záznamy nákladov na jednotlivé požiadavky (dátum, aplikácia, funkcia, model, počet tokenov, náklady — bez zdravotných údajov a bez identifikátora používateľa) sa v súčasnosti uchovávajú bez časového obmedzenia.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — uchováva Google počas predvolenej doby uchovávania nášho projektu.</li>
+ <li><strong>RevenueCat</strong> — údaje o nákupoch a potvrdenkách po dobu, kým máte aktívne predplatné, a podľa požiadaviek daňových predpisov.</li>
+</ul>
+<p>Vypnutie funkcie alebo odstránenie aplikácie zastaví ďalšie zhromažďovanie údajov. Keďže záznamy, ktoré uchováva náš vlastný server, neobsahujú nič, čo by vás identifikovalo, nemôžeme na požiadanie vyhľadať ani odstrániť „vaše“ záznamy v nich — nie je v nich nič, s čím by sme vás mohli porovnať.</p>
         </div>
     </section>
 
