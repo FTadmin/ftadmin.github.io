@@ -2,7 +2,7 @@
  "data": {
   "meta": {
    "title": "Feeltracker | AI-terveys- ja hyvinvointipäiväkirjasovellukset iOS:lle",
-   "description": "AI-terveyspäiväkirjasovellukset iPhone:lle, iPad:lle ja Mac:lle – esitelty GQ:ssa. Seuraa verenpainetta, mielialaa, painoa, unta ja päivittäistä päiväkirjaa. Apple Health -synkronointi, AI-oivallukset, vienti lääkärillesi.",
+   "description": "Viisi tekoälyllä toimivaa terveyspäiväkirjasovellusta iPhonelle, iPadille ja Macille, esillä GQ:ssa. Seuraa verenpainetta, mielialaa, painoa, unta ja päiväkirjaa Apple Health -synkronoinnilla.",
    "keywords": "terveyden seurantasovellus, verenpaineen mittari, mielialan päiväkirja, painon seuranta, unen seuranta, päiväkirja, AI-terveyssovellus, Apple Health -integraatio, terveyspäiväkirja, hyvinvoinnin seuranta, mielenterveyssovellus, verenpaineen seurantasovellus, laihdutussovellus, unen seuranta, päiväkirjasovellus",
    "ogTitle": "Feeltracker | AI-pohjaiset terveys- ja hyvinvointipäiväkirjasovellukset",
    "ogDescription": "Seuraa terveyttäsi vaivattomasti AI-pohjaisilla päiväkirjasovelluksilla – esitelty GQ:ssa. Verenpaine, mieliala, paino, uni ja päiväkirjanpito. Synkronoi Apple Healthin kanssa ja saa henkilökohtaisia oivalluksia.",
@@ -121,8 +121,8 @@
     },
     {
      "slug": "mood-journal",
-     "iconAlt": "Mielialaseurannan kuvake",
-     "title": "Mielenterveys Feeltracker",
+     "iconAlt": "Mielialapäiväkirja-sovelluksen kuvake",
+     "title": "Mielialapäiväkirja Feeltracker",
      "subtitle": "Bipolaarinen DBT CBT ADHD AI -päiväkirja",
      "badge": "",
      "description": "Seuraa tunne-elämääsi päivittäisillä mieliala-arvioilla ja muistiinpanoilla. Tunnista laukaisimet ja kaavat AI-analyysin avulla. Tukee iOS 18+ mielenterveyden integraatiota Apple Healthin kanssa.",
@@ -150,7 +150,7 @@
       }
      ],
      "learnMoreText": "Lue lisää",
-     "downloadAlt": "Lataa Mielialaseuranta App Storesta"
+     "downloadAlt": "Lataa Mielialapäiväkirja App Storesta"
     },
     {
      "slug": "weight",
@@ -210,6 +210,9 @@
       },
       {
        "text": "Visuaaliset unikaaviot ja tilastot"
+      },
+      {
+       "text": "Unipäiväkirja ja ilmainen tekoälyn unianalyysi joka päivä"
       }
      ],
      "learnMoreText": "Lue lisää",
@@ -353,8 +356,8 @@
      "description": "Testaa tietosi hauskalla AI:n luomalla 10 kysymyksen visalla tiedoistasi"
     },
     {
-     "title": "Teksti puheeksi",
-     "description": "Kuuntele AI-näkemyksiäsi ja yhteenvetojasi luonnollisella äänentoistotuella – täydellinen saavutettavuuden kannalta"
+     "title": "Puhuttu palaute",
+     "description": "Kuule lyhyt puhuttu reaktio joka kerta, kun tallennat merkinnän, valitsemallasi äänellä luettuna – erinomainen käsivapaaseen ja esteettömään käyttöön"
     },
     {
      "title": "Räätälöity terveysraportti",
@@ -367,6 +370,14 @@
     {
      "title": "Äänichat",
      "description": "Kädet vapaana käytävät, kaksisuuntaiset puhekeskustelut tekoälyn kanssa tiedoistasi – kysy kysymyksiä ja kuule vastauksia koskematta näyttöön"
+    },
+    {
+     "title": "Pikaversiot, ilmaiseksi joka päivä",
+     "description": "Ilmaiskäyttäjät saavat isojen raporttien pikaversion joka päivä, samalta ajanjaksolta: Pika-terveysraportti, Pika-laukaisijatarkistus, Pika-teemaselain, Pika-ateriaideat ja Pika-unianalyysi Uni-sovelluksessa"
+    },
+    {
+     "title": "Jokaiselle sovellukselle omat Pro-työkalut",
+     "description": "Pro-MAP-raportti Verenpaineessa; Kognitiivinen uudelleenmuotoilu, Laukaisijantunnistin ja Tunnetila-aikajana Mielialapäiväkirjassa; Teemaselain Päiväkirjassa; Pro-unianalyysi ja CPAP-raportti Unessa; Ateriasuunnittelija ja Liikuntasuunnittelija Painossa"
     }
    ]
   },
@@ -487,12 +498,20 @@
    "title": "Yleisiä kysymyksiä",
    "items": [
     {
-     "question": "Näytättekö mainoksia tai seuraatteko minua?",
-     "answer": "**Ei.** Olemme poistaneet kaikki mainokset kokonaan kaikista Feeltracker-sovelluksista. Emme seuraa sinua muissa sovelluksissa tai verkkosivustoilla, emmekä koskaan myy tietojasi mainostajille.\n\nTietosi synkronoituvat iCloudin kautta – aivan kuten Apple Notes ja Kuvat. Tämä tarkoittaa, että meidän ei tarvitse tietää sähköpostiosoitettasi, nimeäsi tai mitään henkilökohtaisia tietoja. Terveystietosi tallennetaan laitteillesi ja iCloud-tiliisi, ja ne ovat täysin yksityisiä riippumatta siitä, käytätkö ilmaista versiota vai premiumia."
+     "question": "Näyttävätkö Feeltrackerin sovellukset mainoksia vai seuraavatko ne minua?",
+     "answer": "**Ei. Feeltrackerin sovellukset eivät näytä mainoksia, eivät käytä mainosverkostoja, eivätkä koskaan myy tietojasi.** Emme seuraa sinua muissa sovelluksissa tai verkkosivustoilla (ei IDFA:ta tai vastaavia tunnisteita).\n\nMerkintäsi pysyvät laitteellasi ja synkronoituvat oman iCloud-tilisi kautta, aivan kuten Apple Notes ja Kuvat, joten emme koskaan tarvitse nimeäsi tai sähköpostiosoitettasi. Ainoa poikkeus on, jos päätät käyttää pilvipohjaista tekoälyominaisuutta: kyseisen ominaisuuden tarvitsemat tiedot lähetetään OpenAI:lle vastauksesi tuottamista varten, kuten [tietosuojakäytännössämme](https://feeltracker.com/privacy/) kerrotaan. Voit vaihtaa tekoälyn laitteella toimivaan Apple Intelligenceen tai poistaa sen kokonaan käytöstä."
     },
     {
-     "question": "Tarvitsenko tilauksen?",
-     "answer": "Tilausta ei tarvita. Kaikki sovellukset ovat ilmaisia ladata, kaikki seuranta, kaaviot, Apple Health -synkronointi ja vienti ovat ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Syvällinen tutkimus, Mallientunnistin, Lääkäriyhteenveto, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja."
+     "question": "Tarvitsenko tilauksen Feeltrackerin käyttöön?",
+     "answer": "**Ei — jokainen Feeltrackerin sovellus on ilmainen ladata ja ilmainen käyttää, ilman mainoksia.** Kaikki seuranta, kaaviot, trendit, Apple Health -synkronointi, kamerakuvaus ja PDF-/CSV-/Excel-/JSON-viennit ovat ilmaisia, ja jokainen käyttäjä saa myös aidot tekoälyominaisuudet ilmaiseksi joka päivä: Pika-chat, Kysy kysymys, Ääniyhteenveto, Naurata minua, Rauhoita minua sekä isompien raporttien päivittäinen pikaversio.\n\nValinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet — Syvällinen tutkimus, Mallientunnistin, Tavoiteavustaja, Lääkäriyhteenveto, Pro-chat, Äänichat, Päivittäiset näkemykset, laitteella toimiva Apple Intelligence ja kunkin sovelluksen omat työkalut — ja nostaa päivittäisiä rajoja."
+    },
+    {
+     "question": "Mitkä ovat Feeltrackerin viisi sovellusta?",
+     "answer": "**Feeltracker on viiden terveysseurantasovelluksen sarja iPhonelle, iPadille ja Macille, Custom Artsin tekemänä.** Ne ovat Verenpaine (systolinen, diastolinen, pulssi ja MAP), Mielialapäiväkirja (5-portainen mieliala-asteikko laukaisijoineen ja tunnesävyineen), Päiväkirja (muistiinpanot, valokuvat ja toistuvat teemat), Uni (nukkumaanmeno- ja heräämisajat sekä unipäiväkirja) ja Paino (paino, rasvaprosentti ja BMI).\n\nJokainen sovellus toimii itsenäisesti, jakaa saman tietosuojamallin ja synkronoituu oman iCloud-tilisi kautta. Käytä yhtä tai kaikkia viittä."
+    },
+    {
+     "question": "Millä laitteilla Feeltrackerin sovellukset toimivat?",
+     "answer": "**Feeltrackerin sovellukset toimivat iPhonessa ja iPadissa, joissa on iOS 16.0 tai uudempi, sekä Apple Silicon -Maceissa (M1 ja uudemmat).** Yksi ostos kattaa kaikki laitteesi, ja merkintäsi synkronoituvat niiden välillä automaattisesti oman iCloud-tilisi kautta.\n\nApple Health -integraatio on valinnainen, ja laitteella toimiva Apple Intelligence -tekoälytila vaatii laitteen, joka tukee Apple Intelligencea iOS 26:lla tai uudemmalla."
     }
    ]
   },
@@ -509,8 +528,8 @@
      "downloadAlt": "Lataa Daily Journaling Feeltracker App Storesta"
     },
     {
-     "name": "Mielenterveys Feeltracker",
-     "downloadAlt": "Lataa Mental Health Feeltracker App Storesta"
+     "name": "Mielialapäiväkirja Feeltracker",
+     "downloadAlt": "Lataa Mielialapäiväkirja Feeltracker App Storesta"
     },
     {
      "name": "Paino Feeltracker",
@@ -560,7 +579,7 @@
   "structuredData": [
    {
     "name": "Feeltracker",
-    "description": "AI-pohjaiset terveys- ja hyvinvointiseurantasovellukset iOS:lle"
+    "description": "Feeltracker on viiden tekoälyllä toimivan terveysseurantasovelluksen sarja iPhonelle, iPadille ja Macille — Verenpaine, Mielialapäiväkirja, Päiväkirja, Uni ja Paino — Custom Artsin tekemänä. Ilmainen käyttää, valinnaisella Pro-tilauksella; terveystiedot pysyvät käyttäjän laitteella ja hänen omassa iCloud-tilissään."
    },
    {
     "name": "Feeltracker Terveys- ja hyvinvointisovellukset",

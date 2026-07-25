@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "Support - Feeltracker",
-   "description": "Få hjelp med Feeltracker-helseapper. Kontakt support, bla gjennom FAQ, og finn ressurser for Blood Pressure, Mood, Journal, Sleep og Weight-apper.",
-   "keywords": "",
+   "title": "Feeltracker støtte | Få hjelp med helseappene våre",
+   "description": "Få hjelp med Feeltracker-appene. Send e-post til support@feeltracker.com for svar innen 24 timer, eller se FAQ, personvernerklæringen og vilkårene.",
+   "keywords": "feeltracker støtte, kontakt feeltracker, hjelp med helseapp, støtte for blodtrykksapp, støtte for humørdagbok, støtte for søvnapp, støtte for vektapp",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Feeltracker Brukerstøtte",
   "contact": {
    "title": "Trenger du hjelp?",
-   "supportText": "For umiddelbar støtte eller spørsmål, send oss en e-post på: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "For detaljert hjelp og vanlige spørsmål, besøk vår <a href=\"../faq/\">FAQ-side</a>."
+   "supportText": "Den raskeste måten å få hjelp med en Feeltracker-app på, er å sende en e-post til <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> — vi er et lite team og svarer vanligvis innen 24 timer. Fortell oss hvilken app du bruker og hva du gjorde da problemet oppstod, så tar vi det derfra.",
+   "faqText": "For trinnvise svar om synkronisering, sikkerhetskopier, eksport til legen din, AI-funksjoner, personvern og abonnementer, se vår <a href=\"../faq/\">FAQ-side</a>."
   },
   "apps": {
    "title": "Våre apper",
@@ -63,8 +63,31 @@
     {
      "name": "Vilkår og betingelser",
      "url": "../terms/"
+    },
+    {
+     "name": "Om Feeltracker",
+     "url": "../about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Feeltracker støtte",
+    "description": "Slik får du hjelp med Feeltrackers helsesporingsapper for iPhone, iPad og Mac: e-poststøtte, FAQ, personvernerklæring og vilkår.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Kundestøtte",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "Norwegian"
+      }
+     ]
+    }
+   }
+  ]
  }
 }

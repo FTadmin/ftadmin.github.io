@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "Tuki - Feeltracker",
-   "description": "Saat apua Feeltracker-terveyksovelluksiin. Ota yhteyttä tukeen, selaa FAQ:ta ja löydä resursseja Blood Pressure-, Mood-, Journal-, Sleep- ja Weight-sovelluksiin.",
-   "keywords": "",
+   "title": "Feeltrackerin tuki | Saa apua terveyssovelluksiimme",
+   "description": "Saa apua Feeltrackerin terveyssovelluksiin. Lähetä sähköpostia osoitteeseen support@feeltracker.com ja saat vastauksen 24 tunnin sisällä, tai selaa UKK:ta, tietosuojakäytäntöä ja käyttöehtoja.",
+   "keywords": "feeltracker-tuki, ota yhteyttä feeltrackeriin, apua terveyssovellukseen, verenpainesovelluksen tuki, mielialapäiväkirjan tuki, unenseurantasovelluksen tuki, painonseurantasovelluksen tuki",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Feeltracker-tuki",
   "contact": {
    "title": "Tarvitsetko apua?",
-   "supportText": "Jos tarvitset välitöntä tukea tai sinulla on kysyttävää, lähetä sähköpostia osoitteeseen: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "Yksityiskohtaista ohjeistusta ja vastauksia yleisiin kysymyksiin löydät <a href=\"../faq/\">UKK-sivulta</a>."
+   "supportText": "Nopein tapa saada apua mihin tahansa Feeltrackerin sovellukseen on lähettää sähköpostia osoitteeseen <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> — olemme pieni tiimi ja vastaamme yleensä 24 tunnin sisällä. Kerro meille, mitä sovellusta käytät ja mitä olit tekemässä ongelman ilmetessä, niin jatkamme siitä.",
+   "faqText": "Vaiheittaisia vastauksia synkronointiin, varmuuskopiointiin, lääkärille vientiin, tekoälyominaisuuksiin, tietosuojaan ja tilauksiin löydät <a href=\"../faq/\">UKK-sivultamme</a>."
   },
   "apps": {
    "title": "Sovelluksemme",
@@ -63,8 +63,31 @@
     {
      "name": "Käyttöehdot",
      "url": "../terms/"
+    },
+    {
+     "name": "Tietoa Feeltrackerista",
+     "url": "../about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Feeltrackerin tuki",
+    "description": "Miten saat apua Feeltrackerin terveysseurantasovelluksiin iPhonelle, iPadille ja Macille: sähköpostituki, UKK, tietosuojakäytäntö ja käyttöehdot.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Asiakastuki",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "englanti"
+      }
+     ]
+    }
+   }
+  ]
  }
 }

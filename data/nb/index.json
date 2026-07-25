@@ -2,7 +2,7 @@
  "data": {
   "meta": {
    "title": "Feeltracker | AI helse- og velværejournal-apper for iOS",
-   "description": "AI helsedagbok-apper for iPhone, iPad og Mac – omtalt i GQ. Spor blodtrykk, humør, vekt, søvn og daglig journal. Apple Health-synk, AI-innsikt, eksport til legen din.",
+   "description": "Fem AI-drevne helsedagbokapper for iPhone, iPad og Mac, omtalt i GQ. Spor blodtrykk, humør, vekt, søvn og dagboksføring med Apple Health-synk.",
    "keywords": "helseapp, blodtrykksmåler, humørdagbok, vektsporing, søvnsporing, dagbok, AI-helseapp, Apple Health-integrasjon, helsedagbok, velværeapp, mental helse-app, blodtrykkapp, vekttapsapp, søvnovervåking, dagbokapp",
    "ogTitle": "Feeltracker | AI-drevne helse- og velværeapper",
    "ogDescription": "Spor helsen din enkelt med AI-drevne dagbokapper – omtalt i GQ. Blodtrykk, humør, vekt, søvn og journalføring. Synkroniser med Apple Health og få personlig tilpassede innsikter.",
@@ -121,8 +121,8 @@
     },
     {
      "slug": "mood-journal",
-     "iconAlt": "Humørsporer-ikon",
-     "title": "Psykisk helse Feeltracker",
+     "iconAlt": "Humørdagbok appikon",
+     "title": "Humørdagbok Feeltracker",
      "subtitle": "Bipolar DBT CBT ADHD AI Dagbok",
      "badge": "",
      "description": "Overvåk den emosjonelle helsen din med daglige humørvurderinger og notater. Identifiser utløsere og mønstre med AI-analyse. Støtter iOS 18+ Mental Helse-integrasjon med Apple Health.",
@@ -150,7 +150,7 @@
       }
      ],
      "learnMoreText": "Les mer",
-     "downloadAlt": "Last ned Humørsporer i App Store"
+     "downloadAlt": "Last ned Humørdagbok på App Store"
     },
     {
      "slug": "weight",
@@ -210,6 +210,9 @@
       },
       {
        "text": "Visuelle søvndiagrammer og statistikk"
+      },
+      {
+       "text": "Drømmedagbok med gratis AI-drømmeanalyse hver dag"
       }
      ],
      "learnMoreText": "Les mer",
@@ -353,8 +356,8 @@
      "description": "Test kunnskapen din med en morsom AI-generert quiz med 10 spørsmål om dataene dine"
     },
     {
-     "title": "Tekst-til-tale",
-     "description": "Lytt til AI-innsiktene og oppsummeringene dine med naturlig stemmeavspilling – perfekt for tilgjengelighet"
+     "title": "Muntlig tilbakemelding",
+     "description": "Hør en kort, muntlig reaksjon hver gang du lagrer en oppføring, lest opp med stemmen du velger – perfekt for håndfri bruk og tilgjengelighet"
     },
     {
      "title": "Skreddersydd helsetapport",
@@ -367,6 +370,14 @@
     {
      "title": "Talechat",
      "description": "Håndfri, toveis talesamtaler med AI-en om dataene dine – still spørsmål og hør svar uten å røre skjermen"
+    },
+    {
+     "title": "Raske versjoner, gratis hver dag",
+     "description": "Gratisbrukere får en Rask versjon av de store rapportene hver dag, over samme dataperiode: Rask helserapport, Rask utløsersjekk, Rask temautforsker, Raske måltidsideer og Rask drømmeanalyse i Søvn-appen"
+    },
+    {
+     "title": "Pro-verktøy laget for hver app",
+     "description": "Pro MAP-rapport i Blodtrykk; Kognitiv omformulering, Utløseridentifikator og Sentimenttidslinje i Humørdagbok; Temautforsker i Dagbok; Pro drømmeanalyse og CPAP-rapport i Søvn; Måltidsplanlegger og Treningsplanlegger i Vekt"
     }
    ]
   },
@@ -487,12 +498,20 @@
    "title": "Vanlige spørsmål",
    "items": [
     {
-     "question": "Viser dere annonser eller sporer dere meg?",
-     "answer": "**Nei.** Vi har fjernet alle annonser fra alle Feeltracker-apper. Vi sporer deg ikke på tvers av andre apper eller nettsteder, og vi selger aldri dataene dine til annonsører.\n\nDataene dine synkroniseres via iCloud – akkurat som Apple Notater og Bilder. Dette betyr at vi ikke trenger å kjenne e-postadressen din, navnet ditt eller annen personlig informasjon. Helsedataene dine er lagret på enhetene dine og i iCloud-kontoen din, og de er helt private uansett om du bruker gratisversjonen eller premium."
+     "question": "Viser Feeltracker-appene reklame, eller sporer de meg?",
+     "answer": "**Nei. Feeltracker-appene viser ingen reklame, bruker ingen annonsenettverk, og selger aldri dataene dine.** Vi sporer deg ikke på tvers av andre apper eller nettsteder (ingen IDFA eller lignende identifikatorer).\n\nOppføringene dine blir værende på enheten din og synkroniseres via din egen iCloud-konto, akkurat som Apple Notater og Bilder, så vi trenger aldri navnet eller e-postadressen din. Det ene unntaket er hvis du velger å bruke en sky-AI-funksjon: dataene funksjonen trenger, sendes til OpenAI for å lage svaret ditt, slik det forklares i vår [personvernerklæring](https://feeltracker.com/privacy/). Du kan bytte AI til Apple Intelligence på enheten, eller slå den av helt."
     },
     {
-     "question": "Trenger jeg et abonnement?",
-     "answer": "Ingen abonnement er nødvendig. Alle apper er gratis å laste ned, all sporing, diagrammer, Apple Health-synk og eksport er gratis, og alle brukere får ekte AI-funksjoner gratis hver dag – uten annonser, noensinne. Et valgfritt Pro-abonnement låser opp de mest omfattende AI-funksjonene (Dyptgående forskning, Mønsterdetektiv, Legeoppsummering, Pro-chat og mer), kjører dem på vår mest kapable AI, og hever de allerede sjenerøse daglige grensene."
+     "question": "Trenger jeg et abonnement for å bruke Feeltracker?",
+     "answer": "**Nei — hver Feeltracker-app er gratis å laste ned og gratis å bruke, uten reklame.** All sporing, diagrammer, trender, Apple Health-synk, kameraskanning og PDF-/CSV-/Excel-/JSON-eksport er gratis, og alle brukere får også ekte AI-funksjoner gratis hver dag: Rask chat, Still et spørsmål, Lydoppsummering, Få meg til å le, Roe meg ned, og en daglig Rask versjon av de større rapportene.\n\nEt valgfritt Pro-abonnement låser opp AI-funksjonene i full dybde — Dyptgående forskning, Mønsterdetektiv, Målassistent, Legeoppsummering, Pro-chat, Talechat, Daglig innsikt, Apple Intelligence på enheten, og verktøyene laget for hver app — og hever de daglige grensene."
+    },
+    {
+     "question": "Hva er de fem Feeltracker-appene?",
+     "answer": "**Feeltracker er en samling av fem helsesporingsapper for iPhone, iPad og Mac, laget av Custom Arts.** De er Blodtrykk (systolisk, diastolisk, puls og MAP), Humørdagbok (en 5-punkts humørskala med utløsere og sentiment), Dagbok (notater, bilder og tilbakevendende temaer), Søvn (sove- og våknetider, pluss en drømmedagbok), og Vekt (vekt, fettprosent og BMI).\n\nHver app fungerer for seg selv, deler samme personvernmodell, og synkroniserer via din egen iCloud-konto. Bruk én, eller bruk alle fem."
+    },
+    {
+     "question": "Hvilke enheter fungerer Feeltracker-appene på?",
+     "answer": "**Feeltracker-appene kjører på iPhone og iPad med iOS 16.0 eller nyere, og på Mac med Apple Silicon (M1 og nyere).** Ett kjøp dekker alle enhetene dine, og oppføringene dine synkroniseres automatisk mellom dem via din egen iCloud-konto.\n\nApple Health-integrasjon er valgfritt, og Apple Intelligence-modusen på enheten krever en enhet som støtter Apple Intelligence på iOS 26 eller nyere."
     }
    ]
   },
@@ -509,8 +528,8 @@
      "downloadAlt": "Last ned Daglig journalføring Feeltracker på App Store"
     },
     {
-     "name": "Psykisk helse Feeltracker",
-     "downloadAlt": "Last ned Psykisk helse Feeltracker på App Store"
+     "name": "Humørdagbok Feeltracker",
+     "downloadAlt": "Last ned Humørdagbok Feeltracker på App Store"
     },
     {
      "name": "Vekt Feeltracker",
@@ -560,7 +579,7 @@
   "structuredData": [
    {
     "name": "Feeltracker",
-    "description": "AI-drevne helse- og velværesporingsapper for iOS"
+    "description": "Feeltracker er en samling av fem AI-drevne helseapper for iPhone, iPad og Mac — Blodtrykk, Humørdagbok, Dagbok, Søvn og Vekt — laget av Custom Arts. Gratis å bruke, med valgfritt Pro-abonnement; helsedataene lagres på brukerens enhet og i deres egen iCloud-konto."
    },
    {
     "name": "Feeltracker Helse- og velværeapper",
