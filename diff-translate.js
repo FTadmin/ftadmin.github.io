@@ -80,13 +80,26 @@ function flattenTranslatable(obj, prefix) {
 }
 
 /**
- * Get the committed version of a file from git HEAD.
- * Returns null if the file is new (untracked/not in HEAD).
+ * Base git ref to compare against. Defaults to HEAD, but a fan-out that runs
+ * after the EN edits were already committed needs to diff against the commit
+ * *before* them — otherwise the manifest comes back empty and the locales are
+ * silently left stale. Override with `--base <ref>`.
+ */
+function getBaseRef() {
+    const i = process.argv.indexOf('--base');
+    return i !== -1 && process.argv[i + 1] ? process.argv[i + 1] : 'HEAD';
+}
+
+const BASE_REF = getBaseRef();
+
+/**
+ * Get the committed version of a file from the base ref.
+ * Returns null if the file is new (untracked/not in the base ref).
  */
 function getGitVersion(filePath) {
     const rel = path.relative(ROOT, filePath);
     try {
-        const content = execSync(`git show HEAD:${rel}`, {
+        const content = execSync(`git show ${BASE_REF}:${rel}`, {
             cwd: ROOT,
             encoding: 'utf8',
             stdio: ['pipe', 'pipe', 'pipe']
@@ -104,7 +117,7 @@ function getChangedENFiles() {
     try {
         // Staged + unstaged changes in data/en/
         const diffOutput = execSync(
-            'git diff HEAD --name-only -- data/en/',
+            `git diff ${BASE_REF} --name-only -- data/en/`,
             { cwd: ROOT, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
         ).trim();
         const stagedOutput = execSync(
@@ -132,9 +145,16 @@ function getChangedENFiles() {
 function run() {
     let targetFiles;
 
-    if (process.argv[2]) {
+    // Drop `--base <ref>` so it is not mistaken for a target filename.
+    const positional = [];
+    for (let i = 2; i < process.argv.length; i++) {
+        if (process.argv[i] === '--base') { i++; continue; }
+        positional.push(process.argv[i]);
+    }
+
+    if (positional.length) {
         // Specific file(s) passed as arguments.
-        targetFiles = process.argv.slice(2).map(f => path.relative(ROOT, path.resolve(f)));
+        targetFiles = positional.map(f => path.relative(ROOT, path.resolve(f)));
     } else {
         // Auto-detect changed EN files.
         targetFiles = getChangedENFiles();
