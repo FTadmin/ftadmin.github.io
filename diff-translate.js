@@ -80,13 +80,50 @@ function flattenTranslatable(obj, prefix) {
 }
 
 /**
- * Get the committed version of a file from git HEAD.
- * Returns null if the file is new (untracked/not in HEAD).
+ * Base git ref to compare against. Defaults to HEAD, but a fan-out that runs
+ * after the EN edits were already committed needs to diff against the commit
+ * *before* them — otherwise the manifest comes back empty and the locales are
+ * silently left stale. Override with `--base <ref>`.
+ */
+function getBaseRef() {
+    const i = process.argv.indexOf('--base');
+    return i !== -1 && process.argv[i + 1] ? process.argv[i + 1] : 'HEAD';
+}
+
+const BASE_REF = getBaseRef();
+
+/**
+ * Renamed files have no counterpart at the base ref, so every string in them
+ * would be reported as new and the whole page would be re-translated instead
+ * of just what changed. `--rename old.json=new.json` maps the lookup back to
+ * the old name. Repeatable.
+ */
+function getRenameMap() {
+    const map = new Map();
+    for (let i = 0; i < process.argv.length; i++) {
+        if (process.argv[i] !== '--rename') continue;
+        const spec = process.argv[i + 1] || '';
+        const eq = spec.indexOf('=');
+        if (eq === -1) continue;
+        map.set(spec.slice(eq + 1), spec.slice(0, eq));
+    }
+    return map;
+}
+
+const RENAMES = getRenameMap();
+
+/**
+ * Get the committed version of a file from the base ref.
+ * Returns null if the file is new (untracked/not in the base ref).
  */
 function getGitVersion(filePath) {
-    const rel = path.relative(ROOT, filePath);
+    let rel = path.relative(ROOT, filePath);
+    const base = path.basename(rel);
+    if (RENAMES.has(base)) {
+        rel = path.join(path.dirname(rel), RENAMES.get(base));
+    }
     try {
-        const content = execSync(`git show HEAD:${rel}`, {
+        const content = execSync(`git show ${BASE_REF}:${rel}`, {
             cwd: ROOT,
             encoding: 'utf8',
             stdio: ['pipe', 'pipe', 'pipe']
@@ -104,7 +141,7 @@ function getChangedENFiles() {
     try {
         // Staged + unstaged changes in data/en/
         const diffOutput = execSync(
-            'git diff HEAD --name-only -- data/en/',
+            `git diff ${BASE_REF} --name-only -- data/en/`,
             { cwd: ROOT, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
         ).trim();
         const stagedOutput = execSync(
@@ -132,9 +169,16 @@ function getChangedENFiles() {
 function run() {
     let targetFiles;
 
-    if (process.argv[2]) {
+    // Drop `--base <ref>` so it is not mistaken for a target filename.
+    const positional = [];
+    for (let i = 2; i < process.argv.length; i++) {
+        if (process.argv[i] === '--base' || process.argv[i] === '--rename') { i++; continue; }
+        positional.push(process.argv[i]);
+    }
+
+    if (positional.length) {
         // Specific file(s) passed as arguments.
-        targetFiles = process.argv.slice(2).map(f => path.relative(ROOT, path.resolve(f)));
+        targetFiles = positional.map(f => path.relative(ROOT, path.resolve(f)));
     } else {
         // Auto-detect changed EN files.
         targetFiles = getChangedENFiles();

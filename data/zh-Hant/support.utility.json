@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "支援 - Feeltracker",
-   "description": "取得 Feeltracker 健康應用程式的協助。聯繫客服、瀏覽 FAQ，並尋找 Blood Pressure、Mood、Journal、Sleep 和 Weight 應用程式的相關資源。",
-   "keywords": "",
+   "title": "Feeltracker 支援 | 取得我們健康應用程式的協助",
+   "description": "取得 Feeltracker 健康應用程式的協助。寄信到 support@feeltracker.com，24 小時內回覆，或瀏覽常見問題、隱私權政策與服務條款。",
+   "keywords": "feeltracker 支援, 聯絡 feeltracker, 健康應用程式協助, 血壓應用程式支援, 心情追蹤支援, 睡眠追蹤支援, 體重追蹤支援",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Feeltracker 支援",
   "contact": {
    "title": "需要幫助？",
-   "supportText": "如需即時支援或有問題，請傳送電子郵件至：<a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "如需詳細幫助和常見問題解答，請訪問我們的<a href=\"/zh-Hant/faq/\">常見問題頁面</a>。"
+   "supportText": "取得任何 Feeltracker 應用程式協助最快的方式，就是寄信到 <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>——我們是一個小團隊，通常會在 24 小時內回覆。告訴我們你使用的是哪一款應用程式，以及問題發生時你正在做什麼，接下來就交給我們。",
+   "faqText": "如果你需要關於同步、備份、匯出給醫生、AI 功能、隱私權與訂閱的逐步說明，請參閱我們的<a href=\"../faq/\">常見問題頁面</a>。"
   },
   "apps": {
    "title": "我們的應用",
@@ -31,7 +31,7 @@
     },
     {
      "name": "情緒日記",
-     "url": "https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999",
+     "url": "https://apps.apple.com/us/app/feeltracker-mood-journal-diary/id687448999",
      "separator": " - ",
      "description": "監測您的情緒健康"
     },
@@ -63,8 +63,31 @@
     {
      "name": "服務條款",
      "url": "/zh-Hant/terms/"
+    },
+    {
+     "name": "關於 Feeltracker",
+     "url": "../about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Feeltracker 支援",
+    "description": "如何取得適用於 iPhone、iPad 與 Mac 的 Feeltracker 健康追蹤應用程式協助：電子郵件支援、常見問題、隱私權政策與服務條款。",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Customer Support",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "Chinese"
+      }
+     ]
+    }
+   }
+  ]
  }
 }

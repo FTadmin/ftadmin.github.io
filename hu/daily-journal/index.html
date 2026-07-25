@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Napló - Jegyzetek, Fotók és AI Napló | Feeltracker</title>
     <meta name="description" content="Privát, AI-alapú napi napló. Tárgyak és szövegek beolvasása azonnali bejegyzésekhez, fotók csatolása, hangulat és szómintázatok követése. iCloud szinkron. iPhone, iPad és Mac.">
-    <meta name="keywords" content="napló,nap,zárolás,ingyenes,személyes,privát,titkos,naplóírás,feljegyzések">
+    <meta name="keywords" content="napi napló alkalmazás,naplózó alkalmazás,privát napló alkalmazás,digitális napló,napló alkalmazás iPhone-ra,hálanapló,napló fotókkal,MI naplóalkalmazás,napi elmélkedő alkalmazás,napló és jegyzet alkalmazás">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/hu/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "MI tárgyszkenner – objektumok leírása naplóbejegyzésekhez",
                 "MI szövegszkenner – OCR szöveg rögzítéséhez",
-                "Hangulatelemzés bejegyzéseken",
-                "Szógyakoriság és téma követés",
+                "Hangulatmérő a bejegyzéseken",
+                "Szófelhő és szógyakorisági elemzés",
                 "Akár 8 fotó csatolása bejegyzésenként",
                 "Feljegyzéssablonok gyors bejegyzésekhez",
                 "Teljes szöveges keresés és Spotlight integráció",
-                "Exportálás PDF-be és Excelbe",
+                "Exportálás PDF, Excel, CSV és JSON formátumba",
                 "iCloud biztonsági mentés és szinkronizálás",
                 "32 nyelv támogatása",
-                "Kezdőképernyő-widgetek a gyors rögzítéshez"
+                "Kezdőképernyő-widgetek a gyors rögzítéshez",
+                "Naponta vagy hetente létrejövő ismétlődő bejegyzések",
+                "Opcionális Markdown-megjelenítés a bejegyzéslistában",
+                "MI Átfogalmazás a megírt szöveg csiszolásához",
+                "Szószám nap, hónap és év szerint",
+                "Excel-import a régebbi naplókhoz",
+                "Automatikus heti biztonsági mentések"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "Privát a naplóm?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Természetesen. A bejegyzéseid az eszközödön és a saját, privát iCloud-fiókodban tárolódnak — nincsenek szervereink, amelyek a naplódat tárolnák, és soha nem látjuk az írásaidat. Az opcionális AI-funkciók adatvédelmet tiszteletben tartó felhő-AI-t használnak, amelyet bármikor kikapcsolhatsz; ha az AI ki van kapcsolva, a hangulatelemzés teljes egészében az eszközön fut az Apple Natural Language keretrendszerével, az Apple Intelligence opcióval pedig minden AI az eszközön fut."
+                            "text": "Igen — a Feeltracker Daily Journal az eszközödön és a saját privát iCloud-fiókodban tartja a bejegyzéseidet, így nincs olyan szerverünk, amely a naplódat tárolná, és senki a Feeltrackernél nem tudja elolvasni, amit írsz. Nincsenek hirdetések és nincs alkalmazásokon átívelő követés. Az opcionális MI-funkciók elküldik a kérdésedhez tartozó bejegyzéseket egy adatvédelmet tiszteletben tartó felhőszolgáltatásnak, és bármikor kikapcsolhatod az MI-t; kikapcsolt MI mellett a hangulatmérő teljesen az eszközön fut az Apple Natural Language keretrendszerével, az Apple Intelligence opcióval pedig minden MI-funkció az eszközön fut."
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "Hogyan működik a hangulatelemzés?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Írás közben az alkalmazás elemzi a bejegyzésed érzelmi tónusát, és egy emojit jelenít meg, amely jelzi, hogy pozitívnak, negatívnak vagy semlegesnek hat-e. Alapértelmezés szerint ehhez az alkalmazás adatvédelmet tiszteletben tartó AI-ját használja; ha kikapcsolod az AI-t, helyette az Apple beépített, eszközön futó Natural Language keretrendszerére vált."
+                            "text": "A Feeltracker Daily Journal pontozza minden bejegyzésed érzelmi hangvételét, ahogy írsz, és egy színkódolt mérőként jeleníti meg a szöveg alatt, pirostól (negatív) szürkén (semleges) át zöldig és kékig (pozitív). A mérő opcionális, és kikapcsolható a Beállításokban. Alapértelmezés szerint az alkalmazás adatvédelmet tiszteletben tartó MI-jét használja; ha kikapcsolod az MI-t, átvált az Apple beépített, eszközön futó Natural Language keretrendszerére."
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "Mi a szógyakoriság elemzés?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "A Trendek funkció elemzi az összes bejegyzést, hogy megmutassa, melyik szavakról és témákról ír a leggyakrabban. Ez segít azonosítani az ismétlődő témákat, aggályokat vagy érdeklődési köröket a gondolkodásában."
+                            "text": "A Feeltracker Daily Journal szógyakorisági elemzése megszámolja a szavakat az összes bejegyzésedben, és rangsorolja azokat, amiket a leggyakrabban használsz, így láthatóvá válnak a folyamatosan visszatérő emberek, helyek és aggodalmak. A nyelvedben gyakori töltelékszavak kiszűrésre kerülnek, ugyanez az adat szófelhőként is megjelenik, és bármelyik szóra koppintva megnyílik az összes bejegyzés, amiben szerepel."
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "Szükségem van előfizetésre?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Nincs szükség előfizetésre. Az alkalmazás letöltése ingyenes, minden követés, grafikon, Apple Health szinkronizálás és exportálás ingyenes, és minden felhasználó minden nap valódi AI-funkciókat kap ingyen — reklám nélkül, mindig. Az opcionális Pro előfizetés feloldja a legrészletesebb AI-funkciókat (Mélyelemzés, Témafelfedező, Hangulat-idővonal, Orvosi összefoglaló, Pro csevegés és további funkciók), a legfejlettebb AI-modellünkön futtatja azokat, és megemeli a bőkezű napi kereteket."
+                            "text": "Nem — a Feeltracker Daily Journal letöltése ingyenes, és nincs szükség előfizetésre. Az írás, a fotók, a sablonok, az ismétlődő bejegyzések, a szóelemzés, a keresés, a grafikonok, a mentések, az exportok és az iCloud szinkronizálás mind ingyenesek, és minden felhasználó valódi MI-funkciókat kap ingyen, minden nap (Gyors chat, Kérdezz egyet, Hangösszefoglaló, Nevettess meg, Nyugtass meg, valamint a Szöveg- és Tárgyszkennerek) — hirdetések nélkül, örökre. Az opcionális Pro előfizetés feloldja a legmélyebb MI-funkciókat (Mélykutatás, Témafelfedező, Hangulati Idővonal, Orvosi összefoglaló, Pro chat és még sok más), a legerősebb MI-nkön futtatja őket, és megemeli a bőséges napi kereteket."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Működik a Feeltracker Daily Journal internetkapcsolat nélkül?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Igen — a Feeltracker Daily Journal offline is működik mindenben, ami számít: a bejegyzések írása, fotók csatolása, keresés, az éved böngészése, valamint a statisztikák és grafikonok megtekintése mind az eszközödön fut, internetkapcsolat nélkül. Amit offline írsz, szinkronizálódik a többi eszközödre iCloudon keresztül, amint legközelebb online leszel. A felhőalapú MI-funkciókhoz kapcsolat kell, de ha bekapcsolod az eszközön futó Apple Intelligence módot (Pro, a támogatott, iOS 26-ot vagy újabbat futtató eszközökön), az MI is offline működik."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Importálhatom a régi naplóbejegyzéseimet?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Igen — a Feeltracker Daily Journal naplóbejegyzéseket importál egy Excel-táblázatból. Töltsd le az import sablont a Beállításokból, illeszd be minden bejegyzés dátumát, időpontját és szövegét, majd importáld a fájlt, és minden sor egy naplóbejegyzéssé válik. Egy korábbi mentést is visszaállíthatsz, amely a bejegyzéseidet és a fotóikat együtt hozza vissza."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Lezárhatom a naplómat Face ID-val?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Igen — lezárhatod a Feeltracker Daily Journalt Face ID-val vagy Touch ID-val az iOS-be épített alkalmazászár segítségével: tartsd lenyomva az alkalmazás ikonját a kezdőképernyőn, és válaszd a Face ID megkövetelése lehetőséget. A Beállítások ugyanezekre az utasításokra hivatkozik. Ha bekapcsoltad, senki sem tudja megnyitni a naplódat az arcod, ujjlenyomatod vagy jelkódod nélkül."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mi történik a naplómmal, ha elvesztem a telefonomat?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A naplód biztonságban van: a Feeltracker Daily Journal minden bejegyzést és fotót szinkronizál a privát iCloud-fiókodba, így ha bejelentkezel egy új iPhone-on, iPaden vagy Macen, minden automatikusan visszakerül. Az alkalmazás emellett hetente nagyjából egyszer automatikus biztonsági mentést készít (a bejegyzéseid és fotóid ZIP-fájlját), amelyet bármikor magad visszaállíthatsz vagy exportálhatsz, és kézi mentést is készíthetsz, amikor csak szeretnél."
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/hu/daily-journal/" class="current">Napló</a>
 
-            <a href="/hu/mental-health/">Mentális egészség</a>
+            <a href="/hu/mood-journal/">Hangulatnapló</a>
 
             <a href="/hu/sleep/">Alvás</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Napi Naplóírás Alkalmazás Ikon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Daily Journal — privát MI-naplózó és naplóalkalmazás iPhone-ra" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Napi Naplóírás</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Nincs Hirdetés · Nincs Követés · Adatvédelem Először
         </div>
-        <p class="hero-subtitle">Az Ön privát tere napi reflexiókhoz, gondolatokhoz és emlékekhez. Írjon szabadon MI-alapú hangulatelemzéssel, fotócsatolásokkal és intelligens elemzésekkel az írási mintáiról.</p>
+        <p class="hero-subtitle">A saját privát tered napi elmélkedésekhez, gondolatokhoz és emlékekhez. Írj olyan gyakran, ahogy csak szeretnél, csatolj akár 8 fotót, és lásd meg a témákat, amikhez újra és újra visszatérsz, egy hangulatmérő, szófelhő és szógyakorisági elemzés segítségével.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Töltse le a Napi Naplóírást az App Store-ból"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Töltse le a Napi Naplóírást az App Store-ból" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Ingyenes alkalmazás opcionális prémium funkciókkal<br>iPhone, iPad és Mac • iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Feeltracker Daily Journal app home view with entries" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="A Feeltracker Daily Journal alkalmazás főnézete bejegyzésekkel" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Creating a journal entry with AI prompts" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="MI-visszajelzés egy naplóbejegyzésről a Feeltracker Daily Journalben" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Weekly mood and wellness insights overview" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Naplóbejegyzés írása dátummal, időponttal és jegyzetekkel" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Zavarásmentes Írás</h3>
-                <p>Tiszta, egyszerű felület, amely a szavait helyezi előtérbe. Nincs rendetlenség, csak Ön és gondolatai. Írjon annyit vagy annyit, amennyit naponta szeretne.</p>
+                <p>Egy letisztult, egyszerű szöveges szerkesztő, amely a szavaidat helyezi előtérbe, élő szószámlálóval, ahogy gépelsz. Koppints az MI Átfogalmazásra, hogy csiszolj egy bekezdést, és kapcsold be a Markdown-megjelenítést, ha szereted a címsorokat, a félkövér szöveget és a listákat a bejegyzéseidben.</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Szógyakoriság Elemzés</h3>
-                <p>Fedezze fel, mi jár igazán az eszébe. Lássa, melyik szavak és témák jelennek meg a leggyakrabban az írásaiban az ismétlődő minták és gondolatok azonosításához.</p>
+                <h3>Szófelhő és szógyakoriság</h3>
+                <p>Fedezd fel, mi jár igazán a fejedben. Egy szófelhő és egy rangsorolt gyakorisági lista megmutatja a leggyakrabban használt szavaidat, a nyelvedben gyakori töltelékszavak kiszűrésével — koppints bármelyik szóra, hogy megnyisd az összes bejegyzést, amiben szerepel.</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>Nap, hónap és év szerint írt szavak összesen. Néha meg fogod lepni magad — és a növekvő szám látványa önmagában is motivál.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Ismétlődő bejegyzések</h3>
+                <p>Állíts be bejegyzéseket, amelyek maguktól létrejönnek, naponta vagy hetente, így a szokásnaplód, gyógyszerjegyzeted vagy esti hálagyakorlatod már ott vár rád, amikor megnyitod az alkalmazást.</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,18 +778,18 @@
         <div class="app-card">
             <h3>2. Lássa a Mintákat Kialakulni</h3>
             <div class="app-card-content">
-<p><strong>Hangulatelemzés:</strong> Az MI automatikusan felismeri a bejegyzések érzelmi tónusát – pozitív, negatív vagy semleges. Tekintse meg a hangulati trendeket hetek és hónapok szerint.</p>
-<p><strong>Szógyakoriság:</strong> Fedezze fel, mely témákról, emberekről vagy témákról ír a legtöbbet. Az alkalmazás azonosítja az ismétlődő szavakat és kifejezéseket, feltárva, mi foglalkoztatja következetesen.</p>
-<p><strong>Naptár Nézet:</strong> Böngésszen az összes naplóírási előzményben naptár felületen. Minden nap megmutat egy részletet és hangulati jelzőt.</p>
+<p><strong>Hangulatmérő:</strong> Ahogy írsz, egy opcionális, színkódolt mérő értékeli a bejegyzés érzelmi hangvételét, negatívtól semlegesen át pozitívig. A Pro hozzáad egy Hangulati Idővonalat, amely grafikonon mutatja, hogyan mozog ez a hangvétel hetek és hónapok alatt.</p>
+<p><strong>Szógyakoriság:</strong> Fedezd fel, milyen témákról, emberekről vagy témakörökről írsz a legtöbbet. Egy szófelhő és egy rangsorolt gyakorisági lista felfedi, mi jár folyamatosan a fejedben, és egy szóra koppintva megnyílik minden bejegyzés, ami használja.</p>
+<p><strong>Év-, hónap- és napnézetek:</strong> Böngészd végig a teljes naplózási történetedet, az írással töltött napok éves hőtérképétől egyetlen napig. Minden nap felsorolja a teljes bejegyzéseidet, rekorddal és szószámmal, így egyenesen odaugorhatsz, min gondolkodtál bármelyik napon.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Reflektáljon és Fejlődjön</h3>
             <div class="app-card-content">
-<p><strong>MI-alapú Elemzések:</strong> Kérdezzen rá a naplójára: "Melyek voltak a legboldogabb napjaim a múlt hónapban?" Kapjon azonnali, elgondolkodtató válaszokat, amelyek segítenek megérteni az útját.</p>
-<p><strong>Személyes Fejlődés Követés:</strong> Tekintse át, hogyan fejlődnek gondolatai, aggályai és törekvései. Lássa a fejlődést a múltbeli bejegyzésekben említett célok felé.</p>
-<p><strong>Mindent Keressen:</strong> A hatékony keresés megtalál bármely szót, kifejezést vagy fogalmat az évek naplóírásában.</p>
+<p><strong>MI-alapú meglátások:</strong> Tegyél fel kérdéseket a naplódról: „Melyek voltak a legboldogabb napjaim a múlt hónapban?” vagy „Mutasd meg az összes bejegyzést, amiben megemlítettem a céljaimat.” Kapj azonnali, átgondolt válaszokat, amelyek segítenek megérteni az utadat.</p>
+<p><strong>Személyes fejlődés követése:</strong> Tekintsd át, hogyan alakulnak a gondolataid, aggodalmaid és törekvéseid. Lásd a korábbi bejegyzésekben említett célok felé tett haladást. Ismerd fel a fejlődési területeket, és ünnepeld, milyen messzire jutottál.</p>
+<p><strong>Keress mindenben:</strong> Keress bármilyen szót a naplózásod éveiben, szűkítsd egy dátumtartományra, és ugorj egyenesen a találatokhoz. A naplód az iOS Spotlightban is indexelve van, így egy keresés a kezdőképernyődről is megtalálja.</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Kérdés Feltevése</h4>
+                <h3><i class="fas fa-question-circle"></i> Kérdés Feltevése</h3>
                 <p>Gyors kérdés-felelet a naplóbejegyzésekről – azonnali válaszok az írásairól</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Folytass interaktív beszélgetéseket a naplózási utadról, és kapj személyre szabott útmutatást. A Gyors csevegés minden nap ingyenes; a Pro csevegés mélyebbre megy a legfejlettebb AI-modellünkön</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Hangos Összefoglaló</h4>
+                <h3><i class="fas fa-volume-up"></i> Hangos Összefoglaló</h3>
                 <p>Hallgassa meg a napló témák hangos összefoglalóit – tökéletes menetközben reflexióhoz</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> MI Szkennelés</h4>
+                <h3><i class="fas fa-barcode-scan"></i> MI Szkennelés</h3>
                 <p>Szkennálja az objektumokat, dokumentumokat, nyugtákat vagy szöveget azonnali naplóbejegyzések létrehozásához MI leírásokkal</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Nevettess meg</h4>
+                <h3><i class="fas fa-laugh"></i> Nevettess meg</h3>
                 <p>Személyre szabott humor a naplóbejegyzésekből a nap felvidítéséhez</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Nyugtass meg</h4>
+                <h3><i class="fas fa-moon"></i> Nyugtass meg</h3>
                 <p>MI-vezérelt légzési és relaxációs gyakorlatok a stressz csökkentéséhez</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Mélyelemzés <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Mélyelemzés <span class="ai-pro-badge">Pro</span></h3>
                 <p>Átfogó MI-elemzés a naplójáról részletes elemzésekkel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Minta Detektív <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Minta Detektív <span class="ai-pro-badge">Pro</span></h3>
                 <p>Rejtett témák és minták felkutatása a naplóbejegyzésekben idővel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Cél Asszisztens <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Cél Asszisztens <span class="ai-pro-badge">Pro</span></h3>
                 <p>Személyre szabott, adatvezérelt életcélok a naplóírási mintái alapján</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Orvosi Összefoglaló <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Orvosi Összefoglaló <span class="ai-pro-badge">Pro</span></h3>
                 <p>Professzionális összefoglalók generálása egészségügyi látogatások megosztásához</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Betegigazolás <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Betegigazolás <span class="ai-pro-badge">Pro</span></h3>
                 <p>MI által generált betegszabadság-igazolások munkához vagy iskolához</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Történet Generátor <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Történet Generátor <span class="ai-pro-badge">Pro</span></h3>
                 <p>Alakítsa át naplóbejegyzéseit kreatív, lebilincselő elbeszélésekké</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Szöveges Összefoglaló <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Szöveges Összefoglaló <span class="ai-pro-badge">Pro</span></h3>
                 <p>Hozzon létre megosztható szöveges összefoglalókat a napló témáiról</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Személyes kvíz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Személyes kvíz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Tesztelje tudását egy szórakoztató, MI által generált 10 kérdéses kvísszel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Szöveg-Beszéd <span class="ai-pro-badge">Pro</span></h4>
-                <p>Hallgassa meg MI-elemzéseit és összefoglalóit természetes hanglejátszással</p>
+                <h3><i class="fas fa-microphone"></i> Kimondott visszajelzés <span class="ai-pro-badge">Pro</span></h3>
+                <p>Egy rövid MI-hangjegyzet minden mentés után, amely reagál arra, amit épp megírtál</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Személyre Szabott Egészségjelentés <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Személyre Szabott Egészségjelentés <span class="ai-pro-badge">Pro</span></h3>
                 <p>Hozzon létre átfogó, személyre szabott dokumentumokat a naplóírási fejlődéséhez</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Témafelfedező <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Témafelfedező <span class="ai-pro-badge">Pro</span></h3>
                 <p>Fedezze fel az ismétlődő témákat és ötleteket az írásaiban MI-alapú téma elemzéssel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Hangulati Idővonal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Hangulati Idővonal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vizualizálja érzelmi útját idővel MI-elemzett hangulat követéssel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (eszközön) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (eszközön) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Adatvédelem-központú opció, amely az AI-t helyben, az eszközödön futtatja az Apple Foundation Models technológiájával — semmi nem hagyja el az iPhone-odat, iPadedet vagy Macedet. Korlátlan használat fizetős fiókkal, támogatott Apple Silicon eszközökön (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Hangalapú csevegés <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Hangalapú csevegés <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kéz nélküli, kétirányú beszélgetés az AI-val az adataidról — tegyél fel kérdéseket, és hallgasd meg a válaszokat anélkül, hogy megérintenéd a képernyőt</p>
             </div>
 
@@ -939,7 +985,7 @@
         <p>Gyakoroljon napi írást, rögzítsen ötleteket és fejlessze a hangját. A zavarásmentes felület segít koncentrálni az alkotásra.</p>
 
         <h3>Mentális Egészség</h3>
-        <p>Dolgozza fel az érzelmeket, azonosítsa a kiváltóokokat és kövesse nyomon a hangulati mintákat írással. A hangulatelemzés objektív visszajelzést nyújt az érzelmi tónusról.</p>
+        <p>Írd ki magadból egy nehéz napodat, vedd észre, mi tér vissza újra és újra, és nézz vissza arra, milyen volt a helyzet egy hónapja. A hangulatmérő egyszerű képet ad minden bejegyzés érzelmi hangvételéről.</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>Privát a naplóm?</h3>
-        <p>Természetesen. A bejegyzéseid az eszközödön és a saját, privát iCloud-fiókodban tárolódnak — nincsenek szervereink, amelyek a naplódat tárolnák, és soha nem látjuk az írásaidat. Az opcionális AI-funkciók adatvédelmet tiszteletben tartó felhő-AI-t használnak, amelyet bármikor kikapcsolhatsz; ha az AI ki van kapcsolva, a hangulatelemzés teljes egészében az eszközön fut az Apple Natural Language keretrendszerével, az Apple Intelligence opcióval pedig minden AI az eszközön fut.</p>
+        <p>Igen — a Feeltracker Daily Journal az eszközödön és a saját privát iCloud-fiókodban tartja a bejegyzéseidet, így nincs olyan szerverünk, amely a naplódat tárolná, és senki a Feeltrackernél nem tudja elolvasni, amit írsz. Nincsenek hirdetések és nincs alkalmazásokon átívelő követés. Az opcionális MI-funkciók elküldik a kérdésedhez tartozó bejegyzéseket egy adatvédelmet tiszteletben tartó felhőszolgáltatásnak, és bármikor kikapcsolhatod az MI-t; kikapcsolt MI mellett a hangulatmérő teljesen az eszközön fut az Apple Natural Language keretrendszerével, az Apple Intelligence opcióval pedig minden MI-funkció az eszközön fut.</p>
 
 
         <h3>Hogyan működik a hangulatelemzés?</h3>
-        <p>Írás közben az alkalmazás elemzi a bejegyzésed érzelmi tónusát, és egy emojit jelenít meg, amely jelzi, hogy pozitívnak, negatívnak vagy semlegesnek hat-e. Alapértelmezés szerint ehhez az alkalmazás adatvédelmet tiszteletben tartó AI-ját használja; ha kikapcsolod az AI-t, helyette az Apple beépített, eszközön futó Natural Language keretrendszerére vált.</p>
+        <p>A Feeltracker Daily Journal pontozza minden bejegyzésed érzelmi hangvételét, ahogy írsz, és egy színkódolt mérőként jeleníti meg a szöveg alatt, pirostól (negatív) szürkén (semleges) át zöldig és kékig (pozitív). A mérő opcionális, és kikapcsolható a Beállításokban. Alapértelmezés szerint az alkalmazás adatvédelmet tiszteletben tartó MI-jét használja; ha kikapcsolod az MI-t, átvált az Apple beépített, eszközön futó Natural Language keretrendszerére.</p>
 
 
         <h3>Mi a szógyakoriság elemzés?</h3>
-        <p>A Trendek funkció elemzi az összes bejegyzést, hogy megmutassa, melyik szavakról és témákról ír a leggyakrabban. Ez segít azonosítani az ismétlődő témákat, aggályokat vagy érdeklődési köröket a gondolkodásában.</p>
+        <p>A Feeltracker Daily Journal szógyakorisági elemzése megszámolja a szavakat az összes bejegyzésedben, és rangsorolja azokat, amiket a leggyakrabban használsz, így láthatóvá válnak a folyamatosan visszatérő emberek, helyek és aggodalmak. A nyelvedben gyakori töltelékszavak kiszűrésre kerülnek, ugyanez az adat szófelhőként is megjelenik, és bármelyik szóra koppintva megnyílik az összes bejegyzés, amiben szerepel.</p>
 
 
         <h3>Hozzáadhatok fotókat a naplómhoz?</h3>
@@ -987,7 +1033,23 @@
 
 
         <h3>Szükségem van előfizetésre?</h3>
-        <p>Nincs szükség előfizetésre. Az alkalmazás letöltése ingyenes, minden követés, grafikon, Apple Health szinkronizálás és exportálás ingyenes, és minden felhasználó minden nap valódi AI-funkciókat kap ingyen — reklám nélkül, mindig. Az opcionális Pro előfizetés feloldja a legrészletesebb AI-funkciókat (Mélyelemzés, Témafelfedező, Hangulat-idővonal, Orvosi összefoglaló, Pro csevegés és további funkciók), a legfejlettebb AI-modellünkön futtatja azokat, és megemeli a bőkezű napi kereteket.</p>
+        <p>Nem — a Feeltracker Daily Journal letöltése ingyenes, és nincs szükség előfizetésre. Az írás, a fotók, a sablonok, az ismétlődő bejegyzések, a szóelemzés, a keresés, a grafikonok, a mentések, az exportok és az iCloud szinkronizálás mind ingyenesek, és minden felhasználó valódi MI-funkciókat kap ingyen, minden nap (Gyors chat, Kérdezz egyet, Hangösszefoglaló, Nevettess meg, Nyugtass meg, valamint a Szöveg- és Tárgyszkennerek) — hirdetések nélkül, örökre. Az opcionális Pro előfizetés feloldja a legmélyebb MI-funkciókat (Mélykutatás, Témafelfedező, Hangulati Idővonal, Orvosi összefoglaló, Pro chat és még sok más), a legerősebb MI-nkön futtatja őket, és megemeli a bőséges napi kereteket.</p>
+
+
+        <h3>Működik a Feeltracker Daily Journal internetkapcsolat nélkül?</h3>
+        <p>Igen — a Feeltracker Daily Journal offline is működik mindenben, ami számít: a bejegyzések írása, fotók csatolása, keresés, az éved böngészése, valamint a statisztikák és grafikonok megtekintése mind az eszközödön fut, internetkapcsolat nélkül. Amit offline írsz, szinkronizálódik a többi eszközödre iCloudon keresztül, amint legközelebb online leszel. A felhőalapú MI-funkciókhoz kapcsolat kell, de ha bekapcsolod az eszközön futó Apple Intelligence módot (Pro, a támogatott, iOS 26-ot vagy újabbat futtató eszközökön), az MI is offline működik.</p>
+
+
+        <h3>Importálhatom a régi naplóbejegyzéseimet?</h3>
+        <p>Igen — a Feeltracker Daily Journal naplóbejegyzéseket importál egy Excel-táblázatból. Töltsd le az import sablont a Beállításokból, illeszd be minden bejegyzés dátumát, időpontját és szövegét, majd importáld a fájlt, és minden sor egy naplóbejegyzéssé válik. Egy korábbi mentést is visszaállíthatsz, amely a bejegyzéseidet és a fotóikat együtt hozza vissza.</p>
+
+
+        <h3>Lezárhatom a naplómat Face ID-val?</h3>
+        <p>Igen — lezárhatod a Feeltracker Daily Journalt Face ID-val vagy Touch ID-val az iOS-be épített alkalmazászár segítségével: tartsd lenyomva az alkalmazás ikonját a kezdőképernyőn, és válaszd a <strong>Face ID megkövetelése</strong> lehetőséget. A Beállítások ugyanezekre az utasításokra hivatkozik. Ha bekapcsoltad, senki sem tudja megnyitni a naplódat az arcod, ujjlenyomatod vagy jelkódod nélkül.</p>
+
+
+        <h3>Mi történik a naplómmal, ha elvesztem a telefonomat?</h3>
+        <p>A naplód biztonságban van: a Feeltracker Daily Journal minden bejegyzést és fotót szinkronizál a privát iCloud-fiókodba, így ha bejelentkezel egy új iPhone-on, iPaden vagy Macen, minden automatikusan visszakerül. Az alkalmazás emellett hetente nagyjából egyszer automatikus biztonsági mentést készít (a bejegyzéseid és fotóid ZIP-fájlját), amelyet bármikor magad visszaállíthatsz vagy exportálhatsz, és kézi mentést is készíthetsz, amikor csak szeretnél.</p>
 
     </section>
 
@@ -1184,22 +1246,22 @@
         <div class="related-apps-grid">
 
             <a href="/hu/blood-pressure/" class="related-app-card" aria-label="Vérnyomás">
-                <img src="/images/BPT_1024.png" alt="Vérnyomás" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Vérnyomás" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Vérnyomás</span>
             </a>
 
-            <a href="/hu/mental-health/" class="related-app-card" aria-label="Mentális egészség">
-                <img src="/images/FT_1024.png" alt="Mentális egészség" class="related-app-icon">
-                <span class="related-app-name">Mentális egészség</span>
+            <a href="/hu/mood-journal/" class="related-app-card" aria-label="Hangulatnapló">
+                <img src="/images/FT_1024.png" alt="Hangulatnapló" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Hangulatnapló</span>
             </a>
 
             <a href="/hu/sleep/" class="related-app-card" aria-label="Alvás">
-                <img src="/images/ST_1024.png" alt="Alvás" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Alvás" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Alvás</span>
             </a>
 
             <a href="/hu/weight/" class="related-app-card" aria-label="Súly">
-                <img src="/images/WT_1024.png" alt="Súly" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Súly" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Súly</span>
             </a>
 
@@ -1212,9 +1274,10 @@
         <h2>Kezdje el a Naplóírási Gyakorlatát Ma</h2>
         <p>Csatlakozzon több ezerhez, akik felfedezik a napi reflexió előnyeit</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Töltse le a Napi Naplóírást"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Töltse le a Napi Naplóírást" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

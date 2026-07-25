@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Krvni tlak - aplikacija #1 za krvni tlak u UK | Feeltracker</title>
     <meta name="description" content="Pratite krvni tlak s Camera Scan AI – br. 1 u Ujedinjenom Kraljevstvu. Pratite sistolički, dijastolički tlak, puls i MAP. Sinkronizacija s Apple Health, izvještaji za liječnika. iPhone, iPad i Mac.">
-    <meta name="keywords" content="krvni,tlak,srce,puls,monitor,omron,pratiti,provjeriti,zabilježiti,visoki,dnevnik,microlife,beurer">
+    <meta name="keywords" content="aplikacija za krvni tlak, praćenje krvnog tlaka, dnevnik krvnog tlaka, praćenje hipertenzije, praćenje sistoličkog i dijastoličkog tlaka i pulsa, srednji arterijski tlak, MAP kalkulator, dnevnik krvnog tlaka, grafikon krvnog tlaka za liječnika, skener monitora krvnog tlaka">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/hr/blood-pressure/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -149,7 +150,7 @@
           "applicationCategory": "HealthApplication",
           "applicationSubCategory": "Blood Pressure Monitor",
           "operatingSystem": "iOS 16.0 or later",
-          "description": "Pratite krvni tlak bez napora uz Camera Scan AI tehnologiju. Pratite sistolički, dijastolički, pulsni i MAP tlak. Sinkronizirajte s Apple Healthom i izvezite izvještaje za liječnika.",
+          "description": "Aplikacija broj 1 za praćenje krvnog tlaka u Ujedinjenom Kraljevstvu. Prati sistolički i dijastolički krvni tlak, puls i srednji arterijski tlak uz AI uvide. Uključuje Camera Scan AI za izravno očitavanje vrijednosti s ekrana mjerača, prilagodljive ciljne vrijednosti i granice raspona, MAP izvješće podijeljeno na jutarnji, večernji i cjelodnevni prikaz, dvosmjernu Apple Health sinkronizaciju, iCloud sinkronizaciju između iPhonea, iPada i Maca te izvoz u PDF, CSV, Excel i JSON za dijeljenje sa zdravstvenim djelatnicima. Besplatna za korištenje, s AI značajkama besplatnima svaki dan i neobaveznom Pro pretplatom za najdublja AI izvješća.",
           "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -170,11 +171,20 @@
                 "Camera Scan AI za automatsko očitanje vrijednosti",
                 "Dvosmjerna Apple Health sinkronizacija",
                 "Izvoz izvještaja u PDF i Excel",
-                "AI uvidi u obrasce krvnog tlaka",
+                "Izvoz u PDF, CSV, Excel i JSON",
                 "iCloud sigurnosna kopija i sinkronizacija",
                 "Podrška za 32 jezika",
-                null,
-                "Widgeti na početnom zaslonu za brzi unos"
+                "Track multiple readings per day",
+                "Widget na početnom zaslonu s nedavnim prosjecima",
+                "Prikaz kalendara s bojama označenim vrijednostima",
+                "iCloud sigurnosna kopija i sinkronizacija",
+                "Podrška za 32 jezika",
+                "Prilagodljive granice raspona i ciljne linije na grafikonima",
+                "MAP PDF izvješće s jutarnjim, večernjim i cjelodnevnim prikazom",
+                "Automatske tjedne sigurnosne kopije s mogućnošću vraćanja",
+                "Do četiri podsjetnika za dane koje odabereš",
+                "Besplatne dnevne AI značajke, uz neobaveznu Pro pretplatu",
+                "Bez oglasa i bez praćenja trećih strana"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/bpt-1.png",
           "softwareVersion": "Latest",
@@ -631,10 +641,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Koja je najbolja aplikacija za praćenje krvnog tlaka?",
+                      "name": "Što je normalno očitanje krvnog tlaka?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Blood Pressure je aplikacija broj 1 za praćenje krvnog tlaka u Ujedinjenom Kraljevstvu. Sadrži AI-potpomognute uvide, tehnologiju Camera Scan AI za automatsko čitanje vrijednosti s ekrana monitora (OMRON, Microlife, Beurer), integraciju s Apple Health i mogućnosti izvoza za dijeljenje s liječnicima. Podržava praćenje sistoličkog i dijastoličkog krvnog tlaka, otkucaja srca i srednjeg arterijskog tlaka (MAP)."
+                            "text": "Prema medicinskim smjernicama, normalan krvni tlak obično je ispod 120/80 mmHg. Očitanja između 120-129 sistolički i ispod 80 dijastolički smatraju se povišenima. Vrijednosti od 130/80 ili više mogu ukazivati na hipertenziju. Ipak, ciljni rasponi mogu varirati ovisno o dobi i zdravstvenom stanju, pa se za personalizirane smjernice posavjetuj sa svojim liječnikom. Feeltracker Krvni tlak boji svako očitanje prema ovim rasponima, a granice možeš osobno prilagoditi ako ti je liječnik dao drukčije ciljeve."
                       }
                 },
                 {
@@ -642,39 +652,31 @@
                       "name": "Kako funkcionira Camera Scan AI?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Camera Scan AI koristi naprednu tehnologiju optičkog prepoznavanja znakova (OCR) za automatsko čitanje vrijednosti krvnog tlaka s digitalnog zaslona vašeg monitora. Jednostavno usmjerite kameru iPhonea ili iPada prema zaslonu koji prikazuje sistolički, dijastolički i pulsni očitatak, a aplikacija će automatski unijeti te vrijednosti. To eliminira greške pri ručnom unosu i ubrzava evidentiranje. Radi s OMRON, Microlife, Beurer i većinom digitalnih monitora krvnog tlaka."
+                            "text": "Camera Scan AI čita brojeve izravno s ekrana tvog mjerača krvnog tlaka: usmjeri kameru iPhonea ili iPada prema zaslonu, a Feeltracker Krvni tlak sam popuni polja za sistolički, dijastolički tlak i puls. Nema uparivanja ni postavljanja specifičnog za marku uređaja - radi s većinom digitalnih mjerača, uključujući OMRON, Microlife i Beurer. Skeniranje je besplatno za svakoga, uz velikodušnu dnevnu kvotu, a traje samo par sekundi umjesto ručnog upisivanja tri broja."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Koji je normalan krvni tlak?",
+                      "name": "Što je MAP i trebam li ga pratiti?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Prema medicinskim smjernicama, normalan krvni tlak je obično ispod 120/80 mmHg. Očitaci između 120-129 sistoličkog i ispod 80 dijastoličkog smatraju se povišenima. Vrijednosti od 130/80 ili više mogu ukazivati na hipertenziju. Međutim, ciljani rasponi mogu se razlikovati prema dobi i zdravstvenim uvjetima, pa se posavjetujte s liječnikom za personalizirane smjernice."
+                            "text": "MAP (srednji arterijski tlak) izračunata je vrijednost koja predstavlja prosječni krvni tlak u tvojim arterijama tijekom jednog srčanog ciklusa. Izračunava se kao: MAP = (2 × dijastolički + sistolički) ÷ 3. Neki liječnici smatraju MAP korisnim za procjenu kardiovaskularnog rizika. Feeltracker Krvni tlak automatski ga izračunava za svako očitanje, prikazuje ga na grafikonu uz tvoje sistoličke i dijastoličke vrijednosti, te može izvesti MAP PDF izvješće podijeljeno na jutarnji, večernji i cjelodnevni prikaz. Možeš postaviti i vlastite MAP raspone, uz opciju fokusa na LVAD za osobe koje prate stanje uz pomoć srčane pumpe."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Mogu li izvesti podatke o krvnom tlaku za svog liječnika?",
+                      "name": "Mogu li uvesti stare podatke o krvnom tlaku?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Da, Blood Pressure vam omogućuje izvoz sveobuhvatnih izvješća u formatu PDF, CSV, Excel ili JSON. Ta profesionalno oblikovana izvješća uključuju sažetu statistiku, grafikone trendova i sve vaše bilješke - sve što vašem pružatelju zdravstvene skrbi treba u jednom dokumentu. Ta izvješća možete jednostavno podijeliti putem e-pošte ili drugih načina dijeljenja."
+                            "text": "Da - Feeltracker Krvni tlak može uvesti tvoju postojeću povijest iz Apple Healtha ili iz proračunske tablice. Ako već pratiš tlak u Apple Healthu, aplikacija ti prikaže pronađena očitanja i uveze ona koja odabereš, a možeš uključiti automatski uvoz kako bi nova Health očitanja stizala sama od sebe. Ako ti povijest živi u proračunskoj tablici, preuzmi Excel predložak aplikacije, zalijepi svoje podatke u njega i uvezi datoteku. Rade i JSON datoteke te ZIP sigurnosne kopije s drugog uređaja."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Integrira li se aplikacija s Apple Health?",
+                      "name": "Koliko često trebam provjeravati krvni tlak?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Da, Blood Pressure ima dvosmjernu integraciju s Apple Health. Možete uvesti povijesne podatke o krvnom tlaku iz Apple Healtha, a aplikacija će automatski spremati nova očitanja u HealthKit. Time se stvara sveobuhvatan ekosustav praćenja zdravlja na svim vašim Apple uređajima."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Što je MAP pri praćenju krvnog tlaka?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "MAP (srednji arterijski tlak) je izračunata vrijednost koja predstavlja prosječni krvni tlak u vašim arterijama tijekom jednog srčanog ciklusa. Izračunava se kao: MAP = (2 × dijastolički + sistolički) ÷ 3. Neki liječnici smatraju MAP korisnim za procjenu kardiovaskularnog rizika i perfuzije organa. Blood Pressure automatski izračunava MAP za svako očitanje."
+                            "text": "Smjernice za kućno mjerenje obično preporučuju dva očitanja dnevno - jedno ujutro prije lijekova i jedno navečer - u dosljedno istim terminima, no savjet tvog liječnika za tvoju situaciju uvijek ima prednost. Feeltracker Krvni tlak ti omogućuje bilježenje onoliko očitanja dnevno koliko želiš i postavljanje do četiri podsjetnika, svaki za dane u tjednu koje odabereš, pa je rutinu mjerenja dvaput dnevno lako održati."
                       }
                 },
                 {
@@ -682,7 +684,63 @@
                       "name": "Jesu li moji podaci o krvnom tlaku privatni?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Da, vaša očitanja krvnog tlaka pohranjena su šifrirana na vašem uređaju i u vašem privatnom iCloud računu. Podaci nikada ne prolaze kroz vanjske poslužitelje, a programeri ne mogu vidjeti vaše zdravstvene podatke. Jednako je sigurno kao Appleove aplikacije Notes ili Photos i u potpunosti je u skladu s GDPR-om."
+                            "text": "Tvoja očitanja žive na tvom uređaju i u tvom privatnom iCloud računu - Feeltracker Krvni tlak nema račun koji treba otvoriti, ne traži email adresu i ne čuva kopiju tvoje povijesti na našim poslužiteljima. Jedina iznimka su AI značajke: kad nešto pitaš AI, očitanja potrebna za odgovor putuju kroz naš vlastiti relejni poslužitelj do AI pružatelja usluge kako bismo ti mogli odgovoriti. Taj relej ništa ne pohranjuje - nijedan zahtjev ni odgovor nikad se ne zapisuje na disk - a AI možeš prebaciti na Apple Intelligence na uređaju ili ga potpuno isključiti u AI postavkama aplikacije. Sve ostalo, uključujući Apple Health sinkronizaciju, ostaje između tvojih uređaja i Applea."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mogu li pratiti krvni tlak za članove obitelji?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Krvni tlak izrađen je za očitanja jedne osobe, pa je najbolje da svaki član obitelji prati tlak na svom uređaju s vlastitim Apple ID-om i iCloud računom. Tako povijest, grafikoni i izvješća svih ostaju odvojeni, a podaci svake osobe sinkroniziraju se samo na uređaje te osobe."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Prikazujete li reklame ili me pratite?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ne. Potpuno smo uklonili sve reklame iz aplikacije. Ne pratimo vas kroz druge aplikacije ili web stranice i nikada ne prodajemo vaše podatke. Vaši se podaci sinkroniziraju putem iClouda — baš kao Apple Notes i Photos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Trebam li pretplatu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pretplata nije potrebna. Aplikacija se besplatno preuzima, svo praćenje, grafikoni, Apple Health sinkronizacija, sigurnosne kopije i izvozi besplatni su, a svaki korisnik svaki dan dobiva prave AI značajke besplatno - Postavi pitanje, Brzi chat, Glasovni sažetak, Brzo zdravstveno izvješće, Nasmiji me i Smiri me te Camera Scan AI - bez ikad ijednog oglasa. Neobavezna Pro pretplata otključava najdublje AI značajke (Dubinsko istraživanje, Sažetak za liječnika, Detektiv obrazaca, Pro MAP izvješće, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Radi li s mojim OMRON, Microlife ili Beurer mjeračem?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Krvni tlak radi s bilo kojim kućnim mjeračem krvnog tlaka jer čita brojeve umjesto da se povezuje s uređajem. Usmjeri kameru prema zaslonu i Camera Scan AI će popuniti sistolički, dijastolički tlak i puls - to radi s većinom digitalnih mjerača, uključujući OMRON, Microlife i Beurer - ili vrijednosti unesi ručno putem birača ili tipkovnice. Nema Bluetooth uparivanja, nema popisa kompatibilnosti i ništa se ne pokvari kad zamijeniš mjerač."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kako podijeliti svoja očitanja krvnog tlaka s liječnikom?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Krvni tlak može u par dodira izraditi PDF spreman za liječnika za bilo koji raspon datuma, a možeš ga poslati emailom, porukom, ispisati ili AirDropati izravno iz aplikacije. PDF, CSV, Excel i JSON izvozi potpuno su besplatni, kao i posebno MAP izvješće koje tvoj srednji arterijski tlak dijeli na jutarnji, večernji i cjelodnevni prikaz za mjesec, kvartal, godinu ili prilagođeni raspon. Uz Pro, AI može uz brojke napisati i Sažetak za liječnika jednostavnim jezikom za isto razdoblje."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mogu li postaviti vlastite ciljeve i raspone za krvni tlak?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da - Feeltracker Krvni tlak ti omogućuje da postaviš ciljne vrijednosti za sistolički, dijastolički tlak i puls, koje se pojavljuju kao referentne linije na grafikonima, te da urediš granice svakog raspona (Nizak, Normalan, Povišen, Visok, Vrlo visok) tako da odgovaraju smjernicama tvog liječnika. Tvoji grafikoni, boje u kalendaru i PDF izvješća prate tvoje vlastite raspone, a ne samo zadane vrijednosti. MAP ima svoje vlastite prilagodljive raspone, uključujući opciju fokusa na LVAD."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Radi li Feeltracker Krvni tlak na iPadu i Macu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da - jedno preuzimanje pokriva iPhone i iPad, a aplikacija radi i na Apple Silicon Macovima putem Mac App Storea. Tvoja se očitanja automatski sinkroniziraju između svih uređaja putem tvog privatnog iCloud računa, pa je očitanje zabilježeno na iPhoneu na tvom iPadu već nakon nekoliko trenutaka. Postoji i widget za početni zaslon koji prikazuje tvoje nedavne prosjeke, a unosi su indeksirani u Spotlightu pa svoju povijest možeš pretražiti bilo gdje u iOS-u."
                       }
                 }
           ]
@@ -700,7 +758,7 @@
 
             <a href="/hr/daily-journal/">Dnevnik</a>
 
-            <a href="/hr/mental-health/">Mentalno zdravlje</a>
+            <a href="/hr/mood-journal/">Dnevnik raspoloženja</a>
 
             <a href="/hr/sleep/">San</a>
 
@@ -785,9 +843,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Ikona aplikacije za krvni tlak" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Ikona aplikacije za krvni tlak" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Krvni tlak</h1>
 
         <div class="privacy-badge">
@@ -795,12 +854,12 @@
         </div>
         <p class="hero-subtitle">Najpametniji način praćenja i razumijevanja krvnog tlaka. Skenirajte očitanja s Camera Scan AI, sinkronizirajte s Apple Healthom i dobijte AI uvide o kardiovaskularnom zdravlju.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmite Krvni tlak u App Storeu"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmite Krvni tlak u App Storeu" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Besplatna aplikacija s opcionalnim premium funkcijama<br>iPhone, iPad i Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -813,15 +872,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Snimka zaslona krvnog tlaka 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Snimka zaslona krvnog tlaka 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Snimka zaslona krvnog tlaka 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Snimka zaslona krvnog tlaka 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Snimka zaslona krvnog tlaka 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Snimka zaslona krvnog tlaka 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -871,13 +930,19 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-medical-alt"></i></div>
                 <h3>MAP izvješće za vašeg liječnika</h3>
-                <p>Specijalizirano izvješće koje razlaže vaš srednji arterijski tlak (MAP) po jutarnjim, večernjim i cjelodnevnim razdobljima, za bilo koji mjesec, kvartal, godinu ili prilagođeni raspon. Osmišljeno da olakša razgovore s liječnikom. Dio je neobavezne pretplate Pro.</p>
+                <p>Besplatno PDF izvješće koje razlaže tvoj srednji arterijski tlak (MAP) po jutarnjim, večernjim i cjelodnevnim razdobljima za bilo koji mjesec, kvartal, godinu ili prilagođeni raspon. Osmišljeno da razgovor s liječnikom bude lakši. Pro dodaje AI napisano Pro MAP izvješće.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-sliders-h"></i></div>
                 <h3>Vaši rasponi, na vaš način</h3>
-                <p>Podesite vlastite ciljeve i granice raspona — Normalan, Povišen, Stadij 1, Stadij 2 — kako bi odgovarali smjernicama vašeg liječnika. Grafikoni i izvješća boje svako očitanje prema vašim vlastitim rasponima.</p>
+                <p>Postavi vlastite ciljne vrijednosti za sistolički, dijastolički tlak i puls — pojavljuju se kao referentne linije na tvojim grafikonima — i prilagodi granice raspona (Nizak, Normalan, Povišen, Visok, Vrlo visok) prema smjernicama koje ti je dao liječnik. Grafikoni i izvješća boje svako očitanje prema tvojim vlastitim rasponima.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Tvoja povijest, sigurno pohranjena</h3>
+                <p>Očitanja se sinkroniziraju između tvog iPhonea, iPada i Maca putem tvog privatnog iCloud računa, a aplikacija automatski svaki tjedan izrađuje sigurnosnu kopiju iz koje možeš vratiti podatke kad god poželiš. Prelaziš s proračunske tablice? Uvezi svoju povijest iz Excel datoteke pomoću ugrađenog predloška.</p>
             </div>
 
         </div>
@@ -891,27 +956,28 @@
         <div class="app-card">
             <h3>1. Zabilježite očitanje</h3>
             <div class="app-card-content">
-<p><strong>Camera Scan AI:</strong> Jednostavno usmjerite kameru prema prikazu monitora za krvni tlak i pustite AI da automatski izvuče sistolički, dijastolički i pulsni tlak. Nema tipkanja — aplikacija izravno čita brojeve s <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer i većine digitalnih monitora.</p>
-<p><strong>Ručni unos:</strong> Preferirate tipkanje? Unesite vrijednosti ručno s pojednostavljenim sučeljem. Traje svega nekoliko sekundi.</p>
-<p><strong>Bogati kontekst:</strong> Dodajte detaljne bilješke o tome što ste radili — obroke, lijekove, vježbanje, razine stresa, kvalitetu sna ili bilo koje čimbenike koji mogu utjecati na krvni tlak.</p>
+<p><strong>Camera Scan AI:</strong> Jednostavno usmjeri kameru prema zaslonu svog mjerača krvnog tlaka i pusti AI da automatski očita sistolički, dijastolički tlak i puls. Nema tipkanja - aplikacija čita brojeve izravno s <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer i većine digitalnih mjerača.</p>
+<p><strong>Ručni unos:</strong> Radije tipkaš? Unesi vrijednosti ručno kroz pojednostavljeno sučelje. Bilježenje očitanja traje samo par sekundi.</p>
+<p><strong>Bogati kontekst:</strong> Dodaj detaljne bilješke o svom danu - obroci, lijekovi, vježbanje, razina stresa, kvaliteta sna ili bilo koji drugi čimbenik koji bi mogao utjecati na tvoj krvni tlak. Uz očitanje možeš priložiti do 8 fotografija, a svaki unos kasnije lako pronađeš izravno iz iOS Spotlight pretrage.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>2. Pratite obrasce</h3>
             <div class="app-card-content">
-<p><strong>Prikaz kalendara:</strong> Vidite sva očitanja u intuitivnom rasporedu kalendara. Svaki dan prikazuje mjerenja s indikatorima kodiranim bojama za normalna, povišena ili visoka očitanja prema medicinskim smjernicama.</p>
-<p><strong>Automatske statistike:</strong> Dobijte trenutne izračune dnevnih, tjednih i mjesečnih prosjeka. Vidite najniža i najviša očitanja i trendove bez ikakvog računanja.</p>
-<p><strong>Vizualni grafikoni:</strong> Lijepi grafikoni prikazuju trendove krvnog tlaka kroz dane, tjedne, mjesece ili prilagođeni raspon datuma.</p>
+<p><strong>Prikaz kalendara:</strong> Pogledaj sva svoja očitanja u preglednom kalendarskom rasporedu. Svaki dan prikazuje mjerenja s indikatorima u boji za niska, normalna, povišena, visoka ili vrlo visoka očitanja - prema uobičajeno korištenim smjernicama ili prema tvojim vlastitim rasponima.</p>
+<p><strong>Automatske statistike:</strong> Dobij trenutne prosjeke za bilo koji raspon datuma, svoja najniža i najviša očitanja te raspodjelu koliko je očitanja upalo u svaki raspon - bez ikakvog računanja.</p>
+<p><strong>Vizualni grafikoni:</strong> Zasebni grafikoni za sistolički, dijastolički, MAP i puls prikazuju tvoje trendove kroz dane, tjedne, mjesece ili bilo koji prilagođeni raspon datuma, svaki s tvojom ciljnom vrijednošću ucrtanom kao referentna linija.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Dobijte AI uvide</h3>
             <div class="app-card-content">
-<p><strong>Detekcija obrazaca:</strong> AI analizira vaša očitanja i bilješke kako bi identificirao korelacije. Otkrijte koje aktivnosti, hrana ili situacije dosljedno podižu ili snižavaju krvni tlak.</p>
-<p><strong>Personalizirane preporuke:</strong> Dobijte specifične uvide temeljene na vašim podacima. AI može primijetiti obrasce kao što je to da je vaš krvni tlak viši na stresnim radnim danima.</p>
-<p><strong>Razgovor s podacima:</strong> Postavljajte pitanja prirodnim jezikom kao što je koji je bio prosječni krvni tlak navečer prošlog mjeseca. AI razumije kontekst i daje trenutne odgovore.</p>
+<p><strong>Detekcija obrazaca:</strong> AI analizira tvoja očitanja i bilješke kako bi prepoznao korelacije. Otkrij koje aktivnosti, namirnice ili situacije dosljedno podižu ili snižavaju tvoj krvni tlak.</p>
+<p><strong>Personalizirane preporuke:</strong> Dobij konkretne uvide temeljene na svojim podacima. AI može primijetiti obrasce poput „Tvoj tlak je obično viši danima kad spomeneš 'stres na poslu'” ili „Očitanja su niža danima s jutarnjim vježbanjem.”</p>
+<p><strong>Razgovor sa svojim podacima:</strong> Postavljaj pitanja prirodnim jezikom, poput „Koji mi je bio prosječni tlak navečer prošlog mjeseca?” ili „Pokaži mi očitanja nakon uzimanja lijeka.” AI razumije kontekst i daje ti trenutne odgovore.</p>
+<p><strong>Besplatno svaki dan:</strong> Postavi pitanje, Brzi chat, Glasovni sažetak i Brzo zdravstveno izvješće uključeni su za svakoga, uz velikodušnu dnevnu kvotu. Najdublja izvješća - Dubinsko istraživanje, Detektiv obrazaca, Sažetak za liječnika, Pro MAP izvješće - dio su neobavezne Pro pretplate.</p>
             </div>
         </div>
 
@@ -934,93 +1000,98 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Postavi pitanje</h4>
+                <h3><i class="fas fa-question-circle"></i> Postavi pitanje</h3>
                 <p>Brzi Q&A o podacima krvnog tlaka — dobijte trenutne odgovore na zdravstvena pitanja</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Vodite interaktivne razgovore o svom kardiovaskularnom zdravlju i dobijte personaliziranu podršku. Brzi chat besplatan je svaki dan; Pro Chat ide dublje na našoj najsposobnijoj AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Glasovni sažetak</h4>
+                <h3><i class="fas fa-volume-up"></i> Glasovni sažetak</h3>
                 <p>Slušajte audio sažetke trendova krvnog tlaka — savršeno za uvide u pokretu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Nasmiji me</h4>
+                <h3><i class="fas fa-laugh"></i> Nasmiji me</h3>
                 <p>Dobijte personalizirani humor iz podataka praćenja kako biste uljepšali dan</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Smiri me</h4>
-                <p>AI-vođene vježbe disanja za smanjenje stresa i snižavanje krvnog tlaka</p>
+                <h3><i class="fas fa-moon"></i> Smiri me</h3>
+                <p>AI vođene vježbe disanja i opuštanja koje ti pomažu da se opustiš nakon napornog dana</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Camera Scan AI</h4>
-                <p>Skenirajte očitanja izravno s ekrana monitora — radi s <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
+                <h3><i class="fas fa-camera"></i> Camera Scan AI</h3>
+                <p>Skeniraj očitanja izravno s ekrana svog mjerača - radi s <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer i većinom digitalnih zaslona. Besplatno za svakoga, uz velikodušnu dnevnu kvotu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dubinsko istraživanje <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dubinsko istraživanje <span class="ai-pro-badge">Pro</span></h3>
                 <p>Sveobuhvatna AI analiza podataka krvnog tlaka s detaljnim uvidima</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detektiv obrazaca <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detektiv obrazaca <span class="ai-pro-badge">Pro</span></h3>
                 <p>Pronađite skrivene korelacije između očitanja krvnog tlaka i životnih čimbenika</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistent za ciljeve <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistent za ciljeve <span class="ai-pro-badge">Pro</span></h3>
                 <p>Dobijte personalizirane, podacima potkrijepljene ciljeve krvnog tlaka</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Liječnički sažetak <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Liječnički sažetak <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generirajte profesionalne medicinske sažetke za dijeljenje na zdravstvenim posjetima</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Potvrda o bolovanju <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Potvrda o bolovanju <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI generirane potvrde o bolovanju za posao ili školu kad su vam potrebne</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generator priča <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generator priča <span class="ai-pro-badge">Pro</span></h3>
                 <p>Pretvorite zdravstvene podatke u kreativne, zanimljive narative</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstualni sažetak <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstualni sažetak <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kreirajte tekstualne sažetke trendova krvnog tlaka koji se mogu dijeliti</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Osobni kviz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Osobni kviz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Testirajte znanje uz zabavni AI generirani kviz od 10 pitanja o vašim podacima</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Pretvorba teksta u govor <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Pretvorba teksta u govor <span class="ai-pro-badge">Pro</span></h3>
                 <p>Slušajte AI uvide i sažetke s prirodnom glasovnom reprodukcijom</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Prilagođeno zdravstveno izvješće <span class="ai-pro-badge">Pro</span></h4>
-                <p>Kreirajte sveobuhvatne, personalizirane zdravstvene dokumente za praćenje napretka</p>
+                <h3><i class="fas fa-file-invoice"></i> Prilagođeno zdravstveno izvješće <span class="ai-pro-badge">Pro</span></h3>
+                <p>Izradi sveobuhvatne, personalizirane zdravstvene dokumente za praćenje napretka. Besplatno Brzo zdravstveno izvješće uključeno je za svakoga</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (Na Uređaju) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (Na Uređaju) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opcija koja stavlja privatnost na prvo mjesto i pokreće AI lokalno na vašem uređaju pomoću Appleovih Foundation Models — ništa ne napušta vaš iPhone, iPad ili Mac. Neograničena upotreba uz plaćeni račun, na podržanim Apple Silicon uređajima (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Glasovni chat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Glasovni chat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Dvosmjerni glasovni razgovori s AI-jem o vašim podacima bez korištenja ruku — postavljajte pitanja i slušajte odgovore bez dodirivanja zaslona</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-heart-pulse"></i> Pro MAP izvješće <span class="ai-pro-badge">Pro</span></h3>
+                <p>AI napisano izvješće o tvom srednjem arterijskom tlaku (MAP): obrasci jutro naspram večeri, dnevna varijabilnost i kako se tvoja očitanja uklapaju u tvoje MAP raspone - uključujući neobavezni fokus na LVAD. Osmišljeno da ga predaš svom timu za njegu</p>
             </div>
 
         </div>
@@ -1039,7 +1110,7 @@
 
             <div class="benefit-item">
                 <h4><i class="fas fa-heart-pulse"></i> Upravljanje hipertenzijom</h4>
-                <p>Držite krvni tlak pod kontrolom praćenjem dnevnih očitanja i identifikacijom okidača</p>
+                <p>Izgradi dnevni zapis svojih očitanja kako bi ti i tvoj liječnik mogli vidjeti kako se tvoji brojevi zapravo kreću između pregleda</p>
             </div>
 
             <div class="benefit-item">
@@ -1084,31 +1155,31 @@
 
 
         <h3>Što je normalno očitanje krvnog tlaka?</h3>
-        <p>Prema medicinskim smjernicama, normalan krvni tlak je obično ispod 120/80 mmHg. Vrijednosti od 130/80 ili više mogu ukazivati na hipertenziju. Savjetujte se s liječnikom za personalizirane smjernice.</p>
+        <p>Prema medicinskim smjernicama, normalan krvni tlak obično je ispod 120/80 mmHg. Očitanja između 120-129 sistolički i ispod 80 dijastolički smatraju se povišenima. Vrijednosti od 130/80 ili više mogu ukazivati na hipertenziju. Ipak, ciljni rasponi mogu varirati ovisno o dobi i zdravstvenom stanju, pa se za personalizirane smjernice posavjetuj sa svojim liječnikom. Feeltracker Krvni tlak boji svako očitanje prema ovim rasponima, a granice možeš osobno prilagoditi ako ti je liječnik dao drukčije ciljeve.</p>
 
 
         <h3>Kako funkcionira Camera Scan AI?</h3>
-        <p>Jednostavno usmjerite kameru iPhonea ili iPada prema digitalnom prikazu monitora krvnog tlaka. Aplikacija koristi naprednu AI prepoznajnu tehnologiju za automatsko čitanje brojeva. <a href="https://geni.us/B9RB" target="_blank" rel="noopener">Nabavite monitor za krvni tlak ovdje</a>.</p>
+        <p>Camera Scan AI čita brojeve izravno s ekrana tvog mjerača krvnog tlaka: usmjeri kameru iPhonea ili iPada prema zaslonu, a Feeltracker Krvni tlak sam popuni polja za sistolički, dijastolički tlak i puls. Nema uparivanja ni postavljanja specifičnog za marku uređaja - radi s većinom digitalnih mjerača, uključujući <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife i Beurer. Skeniranje je besplatno za svakoga, uz velikodušnu dnevnu kvotu, a traje samo par sekundi umjesto ručnog upisivanja tri broja.</p>
 
 
         <h3>Što je MAP i trebam li ga pratiti?</h3>
-        <p>MAP (srednji arterijski tlak) je izračunata vrijednost koja predstavlja prosječni krvni tlak u arterijama. Izračunava se kao: MAP = (2 × dijastolički + sistolički) ÷ 3. Aplikacija automatski izračunava MAP za svako očitanje.</p>
+        <p>MAP (srednji arterijski tlak) izračunata je vrijednost koja predstavlja prosječni krvni tlak u tvojim arterijama tijekom jednog srčanog ciklusa. Izračunava se kao: MAP = (2 × dijastolički + sistolički) ÷ 3. Neki liječnici smatraju MAP korisnim za procjenu kardiovaskularnog rizika. Feeltracker Krvni tlak automatski ga izračunava za svako očitanje, prikazuje ga na grafikonu uz tvoje sistoličke i dijastoličke vrijednosti, te može izvesti MAP PDF izvješće podijeljeno na jutarnji, večernji i cjelodnevni prikaz. Možeš postaviti i vlastite MAP raspone, uz opciju fokusa na LVAD za osobe koje prate stanje uz pomoć srčane pumpe.</p>
 
 
         <h3>Mogu li uvesti stare podatke o krvnom tlaku?</h3>
-        <p>Da! Ako ste pratili krvni tlak u Apple Healthu, možete uvesti sva povijesna očitanja jednim tapom. Aplikacija podržava i uvoz iz CSV/Excel datoteka.</p>
+        <p>Da - Feeltracker Krvni tlak može uvesti tvoju postojeću povijest iz Apple Healtha ili iz proračunske tablice. Ako već pratiš tlak u Apple Healthu, aplikacija ti prikaže pronađena očitanja i uveze ona koja odabereš, a možeš uključiti automatski uvoz kako bi nova Health očitanja stizala sama od sebe. Ako ti povijest živi u proračunskoj tablici, preuzmi Excel predložak aplikacije, zalijepi svoje podatke u njega i uvezi datoteku. Rade i JSON datoteke te ZIP sigurnosne kopije s drugog uređaja.</p>
 
 
         <h3>Koliko često trebam provjeravati krvni tlak?</h3>
-        <p>To ovisi o vašem zdravstvenom stanju i preporukama liječnika. Neki provjeravaju dnevno, drugi tjedno. Možete postaviti podsjetnike za dosljedno praćenje.</p>
+        <p>Smjernice za kućno mjerenje obično preporučuju dva očitanja dnevno - jedno ujutro prije lijekova i jedno navečer - u dosljedno istim terminima, no savjet tvog liječnika za tvoju situaciju uvijek ima prednost. Feeltracker Krvni tlak ti omogućuje bilježenje onoliko očitanja dnevno koliko želiš i postavljanje do četiri podsjetnika, svaki za dane u tjednu koje odabereš, pa je rutinu mjerenja dvaput dnevno lako održati.</p>
 
 
         <h3>Jesu li moji podaci o krvnom tlaku privatni?</h3>
-        <p>Apsolutno. Vaša očitanja su pohranjena šifrirana na vašem uređaju i u privatnom iCloud računu. Podaci nikad ne prolaze kroz naše servere.</p>
+        <p>Tvoja očitanja žive na tvom uređaju i u tvom privatnom iCloud računu - Feeltracker Krvni tlak nema račun koji treba otvoriti, ne traži email adresu i ne čuva kopiju tvoje povijesti na našim poslužiteljima. Jedina iznimka su AI značajke: kad nešto pitaš AI, očitanja potrebna za odgovor putuju kroz naš vlastiti relejni poslužitelj do AI pružatelja usluge kako bismo ti mogli odgovoriti. Taj relej ništa ne pohranjuje - nijedan zahtjev ni odgovor nikad se ne zapisuje na disk - a AI možeš prebaciti na Apple Intelligence na uređaju ili ga potpuno isključiti u AI postavkama aplikacije. Sve ostalo, uključujući Apple Health sinkronizaciju, ostaje između tvojih uređaja i Applea.</p>
 
 
         <h3>Mogu li pratiti krvni tlak za članove obitelji?</h3>
-        <p>Aplikacija je osmišljena za individualnu upotrebu i sinkronizira se s vašim osobnim iCloud računom. Za praćenje više članova obitelji, svaka osoba treba koristiti aplikaciju na svom uređaju s vlastitim Apple ID-om.</p>
+        <p>Feeltracker Krvni tlak izrađen je za očitanja jedne osobe, pa je najbolje da svaki član obitelji prati tlak na svom uređaju s vlastitim Apple ID-om i iCloud računom. Tako povijest, grafikoni i izvješća svih ostaju odvojeni, a podaci svake osobe sinkroniziraju se samo na uređaje te osobe.</p>
 
 
         <h3>Prikazujete li reklame ili me pratite?</h3>
@@ -1117,7 +1188,23 @@
 
 
         <h3>Trebam li pretplatu?</h3>
-        <p>Pretplata nije potrebna. Aplikacija se besplatno preuzima, svo praćenje, grafikoni, sinkronizacija s Apple Healthom i izvozi su besplatni, a svaki korisnik svaki dan dobiva stvarne AI značajke besplatno — bez oglasa, nikad. Neobavezna pretplata Pro otključava najdetaljnije AI značajke (Dubinsko istraživanje, Sažetak za liječnika, Detektiv obrazaca, Pro MAP izvješće, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja.</p>
+        <p>Pretplata nije potrebna. Aplikacija se besplatno preuzima, svo praćenje, grafikoni, Apple Health sinkronizacija, sigurnosne kopije i izvozi besplatni su, a svaki korisnik svaki dan dobiva prave AI značajke besplatno - Postavi pitanje, Brzi chat, Glasovni sažetak, Brzo zdravstveno izvješće, Nasmiji me i Smiri me te Camera Scan AI - bez ikad ijednog oglasa. Neobavezna Pro pretplata otključava najdublje AI značajke (Dubinsko istraživanje, Sažetak za liječnika, Detektiv obrazaca, Pro MAP izvješće, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja.</p>
+
+
+        <h3>Radi li s mojim OMRON, Microlife ili Beurer mjeračem?</h3>
+        <p>Feeltracker Krvni tlak radi s bilo kojim kućnim mjeračem krvnog tlaka jer čita brojeve umjesto da se povezuje s uređajem. Usmjeri kameru prema zaslonu i Camera Scan AI će popuniti sistolički, dijastolički tlak i puls - to radi s većinom digitalnih mjerača, uključujući <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife i Beurer - ili vrijednosti unesi ručno putem birača ili tipkovnice. Nema Bluetooth uparivanja, nema popisa kompatibilnosti i ništa se ne pokvari kad zamijeniš mjerač.</p>
+
+
+        <h3>Kako podijeliti svoja očitanja krvnog tlaka s liječnikom?</h3>
+        <p>Feeltracker Krvni tlak može u par dodira izraditi PDF spreman za liječnika za bilo koji raspon datuma, a možeš ga poslati emailom, porukom, ispisati ili AirDropati izravno iz aplikacije. PDF, CSV, Excel i JSON izvozi potpuno su besplatni, kao i posebno MAP izvješće koje tvoj srednji arterijski tlak dijeli na jutarnji, večernji i cjelodnevni prikaz za mjesec, kvartal, godinu ili prilagođeni raspon. Uz Pro, AI može uz brojke napisati i Sažetak za liječnika jednostavnim jezikom za isto razdoblje.</p>
+
+
+        <h3>Mogu li postaviti vlastite ciljeve i raspone za krvni tlak?</h3>
+        <p>Da - Feeltracker Krvni tlak ti omogućuje da postaviš ciljne vrijednosti za sistolički, dijastolički tlak i puls, koje se pojavljuju kao referentne linije na grafikonima, te da urediš granice svakog raspona (Nizak, Normalan, Povišen, Visok, Vrlo visok) tako da odgovaraju smjernicama tvog liječnika. Tvoji grafikoni, boje u kalendaru i PDF izvješća prate tvoje vlastite raspone, a ne samo zadane vrijednosti. MAP ima svoje vlastite prilagodljive raspone, uključujući opciju fokusa na LVAD.</p>
+
+
+        <h3>Radi li Feeltracker Krvni tlak na iPadu i Macu?</h3>
+        <p>Da - jedno preuzimanje pokriva iPhone i iPad, a aplikacija radi i na Apple Silicon Macovima putem Mac App Storea. Tvoja se očitanja automatski sinkroniziraju između svih uređaja putem tvog privatnog iCloud računa, pa je očitanje zabilježeno na iPhoneu na tvom iPadu već nakon nekoliko trenutaka. Postoji i widget za početni zaslon koji prikazuje tvoje nedavne prosjeke, a unosi su indeksirani u Spotlightu pa svoju povijest možeš pretražiti bilo gdje u iOS-u.</p>
 
     </section>
 
@@ -1476,22 +1563,22 @@
         <div class="related-apps-grid">
 
             <a href="/hr/daily-journal/" class="related-app-card" aria-label="Dnevnik">
-                <img src="/images/NT_1024.png" alt="Dnevnik" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Dnevnik" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Dnevnik</span>
             </a>
 
-            <a href="/hr/mental-health/" class="related-app-card" aria-label="Mentalno zdravlje">
-                <img src="/images/FT_1024.png" alt="Mentalno zdravlje" class="related-app-icon">
-                <span class="related-app-name">Mentalno zdravlje</span>
+            <a href="/hr/mood-journal/" class="related-app-card" aria-label="Dnevnik raspoloženja">
+                <img src="/images/FT_1024.png" alt="Dnevnik raspoloženja" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Dnevnik raspoloženja</span>
             </a>
 
             <a href="/hr/sleep/" class="related-app-card" aria-label="San">
-                <img src="/images/ST_1024.png" alt="San" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="San" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">San</span>
             </a>
 
             <a href="/hr/weight/" class="related-app-card" aria-label="Težina">
-                <img src="/images/WT_1024.png" alt="Težina" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Težina" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Težina</span>
             </a>
 
@@ -1504,9 +1591,10 @@
         <h2>Počnite pratiti krvni tlak danas</h2>
         <p>Pridružite se tisućama koji upravljaju kardiovaskularnim zdravljem s Feeltracker aplikacijom</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmite Krvni tlak"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmite Krvni tlak" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

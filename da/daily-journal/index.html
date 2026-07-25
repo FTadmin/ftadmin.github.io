@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Daglig journal - noter, fotos og AI-dagbog | Feeltracker</title>
     <meta name="description" content="Privat AI-drevet daglig journal. Skan objekter og tekst for øjeblikkelige poster, vedhæft fotos, spor sentiment og ordmønstre. iCloud-synk. iPhone, iPad og Mac.">
-    <meta name="keywords" content="log,dag,dagbog,lås,gratis,moleskine,personlig,privat,hemmelig,tager,skriver,journaling,min,笔记,дневник,笔记本">
+    <meta name="keywords" content="dagbog app,journalføring app,privat dagbog app,digital dagbog,dagbog app til iPhone,taknemmelighedsdagbog,dagbog med billeder,AI dagbog app,daglig refleksion app,dagbog og noter app">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/da/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "AI-genstandsscanning – beskriver genstande til dagbogsindlæg",
                 "AI-tekstscanning – OCR til at fange tekst",
-                "Stemningsanalyse af indlæg",
-                "Ordfrekvens og temasporing",
+                "Stemningsmåler på poster",
+                "Ordsky og ordfrekvensanalyse",
                 "Vedhæft op til 8 fotos pr. indlæg",
                 "Noteskabeloner til hurtige indlæg",
                 "Fuldtekstsøgning og Spotlight-integration",
-                "Eksporter til PDF og Excel",
+                "Eksport til PDF, Excel, CSV og JSON",
                 "iCloud-sikkerhedskopi og synkronisering",
                 "32 sprogunderstøttelse",
-                "Hjemmeskærm-widgets til hurtig registrering"
+                "Hjemmeskærm-widgets til hurtig registrering",
+                "Gentagne poster oprettet dagligt eller ugentligt",
+                "Valgfri Markdown-visning i listen over poster",
+                "AI-omformulering til at pudse det, du har skrevet, af",
+                "Ordantal pr. dag, måned og år",
+                "Excel-import til ældre dagbøger",
+                "Automatiske ugentlige sikkerhedskopier"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "Er min dagbog privat?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Absolut. Dine indlæg gemmes på din enhed og i din private iCloud-konto – vi har ingen servere, der gemmer din dagbog, og vi ser aldrig, hvad du skriver. Valgfrie AI-funktioner bruger privatlivsvenlig sky-AI, som du kan slå fra når som helst; med AI slået fra kører sentimentanalysen helt på enheden med Apples Natural Language-framework, og med Apple Intelligence-muligheden kører al AI på enheden."
+                            "text": "Ja - Feeltracker Dagbog opbevarer dine poster på din enhed og i din egen private iCloud-konto, så vi har ingen servere, der gemmer din dagbog, og ingen hos Feeltracker kan læse, hvad du skriver. Der er ingen reklamer og ingen sporing på tværs af apps. Valgfrie AI-funktioner sender de poster, du spørger om, til en privatlivsrespekterende cloud-tjeneste, og du kan slå AI fra når som helst; med AI slået fra kører stemningsmåleren helt lokalt på enheden med Apples Natural Language-framework, og med Apple Intelligence-indstillingen kører alle AI-funktioner på enheden."
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "Hvordan fungerer stemningsanalyse?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Mens du skriver, analyserer appen den følelsesmæssige tone i dit indlæg og viser en emoji, der angiver, om det læses som positivt, negativt eller neutralt. Som standard bruger dette appens privatlivsvenlige AI; hvis du slår AI fra, skifter det i stedet til Apples indbyggede Natural Language-framework på enheden."
+                            "text": "Feeltracker Dagbog vurderer den følelsesmæssige tone i hver post, mens du skriver, og viser den som en farvekodet måler under teksten, der går fra rød (negativ) over grå (neutral) til grøn og blå (positiv). Måleren er valgfri og kan slås fra i Indstillinger. Som standard bruger den appens privatlivsrespekterende AI; hvis du slår AI fra, skifter den i stedet til Apples indbyggede Natural Language-framework på enheden."
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "Hvad er ordfrekvensanalyse?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Trends-funktionen analyserer alle dine poster for at vise, hvilke ord og emner du oftest skriver om. Dette hjælper dig med at identificere tilbagevendende temaer, bekymringer eller interesser i din tænkning."
+                            "text": "Ordfrekvensanalysen i Feeltracker Dagbog tæller ordene på tværs af alle dine poster og rangerer dem, du bruger mest, så de personer, steder og bekymringer, der bliver ved med at dukke op, bliver synlige. Almindelige fyldord frasorteres på dit sprog, de samme data vises også som et ordsky, og et tryk på et ord åbner alle poster, der indeholder det."
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "Har jeg brug for et abonnement?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Der kræves intet abonnement. Appen er gratis at downloade, al sporing, diagrammer, Apple Health-synk og eksport er gratis, og alle brugere får ægte AI-funktioner gratis hver dag – uden reklamer, nogensinde. Et valgfrit Pro-abonnement låser op for de mest dybdegående AI-funktioner (Dybdegående forskning, Temautforsker, Sentimenttidslinje, Lægeoversigt, Pro-chat med mere), kører dem på vores mest kompetente AI og hæver de allerede generøse daglige grænser."
+                            "text": "Nej - Feeltracker Dagbog er gratis at downloade, og der kræves intet abonnement. Skrivning, billeder, skabeloner, gentagne poster, ordanalyse, søgning, grafer, sikkerhedskopier, eksport og iCloud-synkronisering er alt sammen gratis, og alle brugere får rigtige AI-funktioner gratis hver dag (Hurtig chat, Stil et spørgsmål, Talt resumé, Gør mig glad, Berolig mig samt tekst- og genstandsscannerne) - helt uden reklamer. Et valgfrit Pro-abonnement låser op for de mest dybdegående AI-funktioner (Dybdegående research, Temaudforsker, Stemningstidslinje, Lægeresumé, Pro Chat og mere), kører dem på vores mest avancerede AI, og hæver de gavmilde daglige grænser."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Virker Feeltracker Dagbog offline?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja - Feeltracker Dagbog virker offline til alt det, der betyder noget: at skrive poster, vedhæfte billeder, søge, gennemse dit år og se statistik og grafer kører alt sammen på din enhed uden internetforbindelse. Alt, du skriver offline, synkroniseres til dine andre enheder via iCloud, næste gang du er online. Cloud-AI-funktioner kræver forbindelse, men hvis du slår Apple Intelligence-tilstand på enheden til (Pro, på understøttede enheder med iOS 26 eller nyere), virker AI også offline."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kan jeg importere mine gamle dagbogsposter?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja - Feeltracker Dagbog importerer dagbogsposter fra et Excel-regneark. Download importskabelonen fra Indstillinger, indsæt en dato, et tidspunkt og teksten for hver post, importér derefter filen, og hver række bliver til en dagbogspost. Du kan også gendanne en tidligere sikkerhedskopi, som bringer dine poster og deres billeder tilbage sammen."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kan jeg låse min dagbog med Face ID?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja - du kan låse Feeltracker Dagbog med Face ID eller Touch ID ved hjælp af app-låsen, der er indbygget i iOS: tryk og hold på app-ikonet på din hjemmeskærm, og vælg Kræv Face ID. Indstillinger linker til de samme instruktioner. Når det er slået til, kan ingen åbne din dagbog uden dit ansigt, fingeraftryk eller din adgangskode."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Hvad sker der med min dagbog, hvis jeg mister min telefon?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Din dagbog er i sikkerhed: Feeltracker Dagbog synkroniserer hver post og hvert billede til din private iCloud-konto, så det hele kommer automatisk tilbage, når du logger ind på en ny iPhone, iPad eller Mac. Appen laver også en automatisk sikkerhedskopi cirka en gang om ugen (en ZIP-fil med dine poster og billeder), som du selv kan gendanne eller eksportere når som helst, og du kan lave en manuel sikkerhedskopi, når du vil have en."
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/da/daily-journal/" class="current">Dagbog</a>
 
-            <a href="/da/mental-health/">Mental Sundhed</a>
+            <a href="/da/mood-journal/">Humørdagbog</a>
 
             <a href="/da/sleep/">Søvn</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Daglig dagbog-app ikon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Dagbog - privat AI-dagbog og journalføring til iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Daglig dagbog</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Ingen annoncer · Ingen sporing · Privatliv først
         </div>
-        <p class="hero-subtitle">Dit private rum til daglige refleksioner, tanker og minder. Skriv frit med AI-drevet sentimentanalyse, vedhæftede fotos og intelligent indsigt i dine skrivevanemønstre.</p>
+        <p class="hero-subtitle">Dit private rum til daglige refleksioner, tanker og minder. Skriv lige så tit du vil, vedhæft op til 8 billeder, og se de temaer, du bliver ved med at vende tilbage til, med en stemningsmåler, et ordsky og en ordfrekvensanalyse.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Daglig dagbog i App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Daglig dagbog i App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Gratis app med valgfrie premium-funktioner<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Daglig dagbog skærmbillede 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Daglig dagbog skærmbillede 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Daglig dagbog skærmbillede 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="AI-feedback på en dagbogspost i Feeltracker Dagbog" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Daglig dagbog skærmbillede 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Skriv en dagbogspost med dato, tidspunkt og noter" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Skriv uden forstyrrelser</h3>
-                <p>Rent, enkelt interface der sætter dine ord i fokus. Ingen rod, bare dig og dine tanker. Skriv så meget eller så lidt du vil hver dag.</p>
+                <p>En enkel, ren tekst-editor, der sætter dine ord først, med et løbende ordantal, mens du skriver. Tryk på AI-omformulering for at pudse et afsnit af, og slå Markdown-visning til, hvis du kan lide overskrifter, fed skrift og lister i din liste over poster.</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Ordfrekvensanalyse</h3>
-                <p>Opdag hvad der virkelig fylder i dine tanker. Se hvilke ord og temaer der optræder hyppigst i din skrivning for at identificere mønstre og tilbagevendende tanker.</p>
+                <h3>Ordsky & ordfrekvens</h3>
+                <p>Find ud af, hvad der virkelig fylder i dine tanker. Et ordsky og en rangeret frekvensliste viser de ord, du bruger mest, mens almindelige fyldord frasorteres på dit sprog - tryk på et ord for at åbne alle poster, der nævner det.</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>Samlet antal ord skrevet pr. dag, måned og år. Nogle dage vil du overraske dig selv — og at se tallet stige er sin egen form for motivation.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Gentagne poster</h3>
+                <p>Opret poster, der laver sig selv, dagligt eller ugentligt, så din vanelog, medicinnote eller aftenens taknemmelighedsprompt allerede venter på dig, når du åbner appen.</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,18 +778,18 @@
         <div class="app-card">
             <h3>2. Se mønstre opstå</h3>
             <div class="app-card-content">
-<p><strong>Sentimentanalyse:</strong> AI registrerer automatisk den følelsesmæssige tone i dine indlæg – positiv, negativ eller neutral. Se dine stemningstrends visualiseret over uger og måneder for at forstå dine følelsesmæssige mønstre.</p>
-<p><strong>Ordfrekvens:</strong> Opdag hvilke emner, personer eller temaer du skriver mest om. Appen identificerer tilbagevendende ord og fraser og afslører hvad der konstant fylder i dine tanker, og hvordan dit fokus skifter over tid.</p>
-<p><strong>Kalendervisning:</strong> Gennemse hele din dagbogshistorik i en kalendervisning. Hver dag viser et uddrag og en stemningsindikator. Hop hurtigt til et tidligere indlæg for at se hvad du tænkte den dag.</p>
+<p><strong>Stemningsmåler:</strong> Mens du skriver, vurderer en valgfri farvekodet måler den følelsesmæssige tone i posten, fra negativ over neutral til positiv. Pro tilføjer en stemningstidslinje, der viser, hvordan den tone bevæger sig over uger og måneder.</p>
+<p><strong>Ordfrekvens:</strong> Find ud af, hvilke emner, personer eller temaer du skriver mest om. Et ordsky og en rangeret frekvensliste afslører, hvad der konstant fylder i dine tanker, og et tryk på et ord åbner alle poster, der bruger det.</p>
+<p><strong>Års-, måneds- og dagsvisning:</strong> Gennemse hele din skrivehistorik - fra et varmekort over året, der viser de dage du har skrevet, til en enkelt dag. Hver dag lister dine poster i deres fulde længde, med tekst og ordantal, så du kan springe direkte til det, du tænkte på en given dato.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Reflekter og voks</h3>
             <div class="app-card-content">
-<p><strong>AI-drevet indsigt:</strong> Stil spørgsmål om din dagbog: "Hvad var mine lykkeligste dage sidste måned?" eller "Vis mig alle indlæg, hvor jeg nævnte mine mål." Få øjeblikkelige, gennemtænkte svar der hjælper dig med at forstå din rejse.</p>
-<p><strong>Sporing af personlig vækst:</strong> Gennemgå hvordan dine tanker, bekymringer og ambitioner udvikler sig. Se fremskridt mod mål nævnt i tidligere indlæg. Identificer vækstområder og fejr hvor langt du er kommet.</p>
-<p><strong>Søg i alt:</strong> Kraftfuld søgning finder ethvert ord, sætning eller begreb på tværs af årevis af dagbogsskrivning. Filtrer efter dato, stemning eller nøgleord. Hele din skriftlige historik er øjeblikkeligt tilgængelig og søgbar.</p>
+<p><strong>AI-drevet indsigt:</strong> Stil spørgsmål om din dagbog: „Hvad var mine gladeste dage sidste måned?" eller „Vis mig alle poster, hvor jeg nævnte mine mål." Få øjeblikkelige, gennemtænkte svar, der hjælper dig med at forstå din rejse.</p>
+<p><strong>Personlig udvikling:</strong> Se, hvordan dine tanker, bekymringer og forhåbninger udvikler sig. Se fremskridt mod mål nævnt i tidligere poster. Find udviklingsområder og fejr, hvor langt du er nået.</p>
+<p><strong>Søg i alt:</strong> Søg efter et hvilket som helst ord på tværs af års skrivning, indsnævr det til en periode, og spring direkte til de matchende poster. Din dagbog indekseres også i iOS Spotlight, så en søgning fra din hjemmeskærm finder den også.</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Stil et spørgsmål</h4>
+                <h3><i class="fas fa-question-circle"></i> Stil et spørgsmål</h3>
                 <p>Hurtig spørgsmål og svar om dine dagbogsindlæg – få øjeblikkelige svar om din skrivning</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Hav interaktive samtaler om din dagbogsrejse og få personlig vejledning. Hurtig chat er gratis hver dag; Pro-chat går dybere på vores mest kompetente AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Stemmeoversigt</h4>
+                <h3><i class="fas fa-volume-up"></i> Stemmeoversigt</h3>
                 <p>Lyt til lydopsummeringer af dine dagbogstemaer – perfekt til refleksion på farten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> AI Scanning</h4>
+                <h3><i class="fas fa-barcode-scan"></i> AI Scanning</h3>
                 <p>Scan objekter, dokumenter, kvitteringer eller tekst for at oprette øjeblikkelige dagbogsindlæg med AI-beskrivelser</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Få mig til at grine</h4>
+                <h3><i class="fas fa-laugh"></i> Få mig til at grine</h3>
                 <p>Få personlig humor fra dine dagbogsindlæg til at lysne din dag</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Berolig mig</h4>
+                <h3><i class="fas fa-moon"></i> Berolig mig</h3>
                 <p>AI-guidede vejrtræknings- og afslapningsøvelser til at hjælpe med at reducere stress</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dybdegående forskning <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dybdegående forskning <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omfattende AI-analyse af din dagbog med detaljeret indsigt</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Mønsterdetektor <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Mønsterdetektor <span class="ai-pro-badge">Pro</span></h3>
                 <p>Find skjulte temaer og mønstre i dine dagbogsposter over tid</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h3>
                 <p>Få personaliserede, datadrevne livsmål baseret på dine dagbogsmønstre</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Lægeoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Lægeoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generer professionelle resuméer til deling ved sundhedsbesøg</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sygemelding <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Sygemelding <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-genererede sygemeldinger til arbejde eller skole, når du har brug for dem</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omsæt dine dagbogsposter til kreative, engagerende fortællinger</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opret delbare tekstbeskedresuméer af dine dagbogstemaer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personlig Quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Personlig Quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test din viden med en sjov AI-genereret quiz med 10 spørgsmål om dine data</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h4>
-                <p>Lyt til dine AI-indsigter og resuméer med naturlig stemmeafspilning</p>
+                <h3><i class="fas fa-microphone"></i> Talt feedback <span class="ai-pro-badge">Pro</span></h3>
+                <p>En kort AI-talebesked efter hver gemning, som reagerer på det, du lige har skrevet</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Skræddersyet Sundhedsrapport <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Skræddersyet Sundhedsrapport <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opret omfattende, personaliserede dokumenter til at følge din dagbogsudvikling</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Temaudforskeren <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Temaudforskeren <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opdag tilbagevendende emner og idéer i din skrivning med AI-drevet temaanalyse</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Stemningsoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Stemningsoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Visualiser din følelsesmæssige rejse over tid med AI-analyseret stemningssporing</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (på enheden) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (på enheden) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Privatlivsfokuseret mulighed, der kører AI lokalt på din enhed via Apples Foundation Models — intet forlader din iPhone, iPad eller Mac. Ubegrænset brug med en betalt konto på understøttede Apple Silicon-enheder (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Håndfri, tovejs talesamtaler med AI'en om dine data – stil spørgsmål og hør svar uden at røre skærmen</p>
             </div>
 
@@ -939,7 +985,7 @@
         <p>Øv daglig skrivning, fang idéer, og udvikl din stemme. Den forstyrrelsefrie grænseflade hjælper dig med at fokusere på dit håndværk.</p>
 
         <h3>Mental sundhed</h3>
-        <p>Bearbejd følelser, identificer udløsere, og følg stemnings­mønstre gennem skrivning. Stemningsanalyse giver objektiv feedback på følelsesmæssig tone.</p>
+        <p>Skriv dig igennem en svær dag, læg mærke til det, der bliver ved med at dukke op, og se tilbage på, hvordan tingene så ud for en måned siden. Stemningsmåleren giver dig et enkelt overblik over den følelsesmæssige tone i hver post.</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>Er min dagbog privat?</h3>
-        <p>Absolut. Dine indlæg gemmes på din enhed og i din private iCloud-konto – vi har ingen servere, der gemmer din dagbog, og vi ser aldrig, hvad du skriver. Valgfrie AI-funktioner bruger privatlivsvenlig sky-AI, som du kan slå fra når som helst; med AI slået fra kører sentimentanalysen helt på enheden med Apples Natural Language-framework, og med Apple Intelligence-muligheden kører al AI på enheden.</p>
+        <p>Ja - Feeltracker Dagbog opbevarer dine poster på din enhed og i din egen private iCloud-konto, så vi har ingen servere, der gemmer din dagbog, og ingen hos Feeltracker kan læse, hvad du skriver. Der er ingen reklamer og ingen sporing på tværs af apps. Valgfrie AI-funktioner sender de poster, du spørger om, til en privatlivsrespekterende cloud-tjeneste, og du kan slå AI fra når som helst; med AI slået fra kører stemningsmåleren helt lokalt på enheden med Apples Natural Language-framework, og med Apple Intelligence-indstillingen kører alle AI-funktioner på enheden.</p>
 
 
         <h3>Hvordan fungerer stemningsanalyse?</h3>
-        <p>Mens du skriver, analyserer appen den følelsesmæssige tone i dit indlæg og viser en emoji, der angiver, om det læses som positivt, negativt eller neutralt. Som standard bruger dette appens privatlivsvenlige AI; hvis du slår AI fra, skifter det i stedet til Apples indbyggede Natural Language-framework på enheden.</p>
+        <p>Feeltracker Dagbog vurderer den følelsesmæssige tone i hver post, mens du skriver, og viser den som en farvekodet måler under teksten, der går fra rød (negativ) over grå (neutral) til grøn og blå (positiv). Måleren er valgfri og kan slås fra i Indstillinger. Som standard bruger den appens privatlivsrespekterende AI; hvis du slår AI fra, skifter den i stedet til Apples indbyggede Natural Language-framework på enheden.</p>
 
 
         <h3>Hvad er ordfrekvensanalyse?</h3>
-        <p>Trends-funktionen analyserer alle dine poster for at vise, hvilke ord og emner du oftest skriver om. Dette hjælper dig med at identificere tilbagevendende temaer, bekymringer eller interesser i din tænkning.</p>
+        <p>Ordfrekvensanalysen i Feeltracker Dagbog tæller ordene på tværs af alle dine poster og rangerer dem, du bruger mest, så de personer, steder og bekymringer, der bliver ved med at dukke op, bliver synlige. Almindelige fyldord frasorteres på dit sprog, de samme data vises også som et ordsky, og et tryk på et ord åbner alle poster, der indeholder det.</p>
 
 
         <h3>Kan jeg tilføje fotos til min dagbog?</h3>
@@ -987,7 +1033,23 @@
 
 
         <h3>Har jeg brug for et abonnement?</h3>
-        <p>Der kræves intet abonnement. Appen er gratis at downloade, al sporing, diagrammer, Apple Health-synk og eksport er gratis, og alle brugere får ægte AI-funktioner gratis hver dag – uden reklamer, nogensinde. Et valgfrit Pro-abonnement låser op for de mest dybdegående AI-funktioner (Dybdegående forskning, Temautforsker, Sentimenttidslinje, Lægeoversigt, Pro-chat med mere), kører dem på vores mest kompetente AI og hæver de allerede generøse daglige grænser.</p>
+        <p>Nej - Feeltracker Dagbog er gratis at downloade, og der kræves intet abonnement. Skrivning, billeder, skabeloner, gentagne poster, ordanalyse, søgning, grafer, sikkerhedskopier, eksport og iCloud-synkronisering er alt sammen gratis, og alle brugere får rigtige AI-funktioner gratis hver dag (Hurtig chat, Stil et spørgsmål, Talt resumé, Gør mig glad, Berolig mig samt tekst- og genstandsscannerne) - helt uden reklamer. Et valgfrit Pro-abonnement låser op for de mest dybdegående AI-funktioner (Dybdegående research, Temaudforsker, Stemningstidslinje, Lægeresumé, Pro Chat og mere), kører dem på vores mest avancerede AI, og hæver de gavmilde daglige grænser.</p>
+
+
+        <h3>Virker Feeltracker Dagbog offline?</h3>
+        <p>Ja - Feeltracker Dagbog virker offline til alt det, der betyder noget: at skrive poster, vedhæfte billeder, søge, gennemse dit år og se statistik og grafer kører alt sammen på din enhed uden internetforbindelse. Alt, du skriver offline, synkroniseres til dine andre enheder via iCloud, næste gang du er online. Cloud-AI-funktioner kræver forbindelse, men hvis du slår Apple Intelligence-tilstand på enheden til (Pro, på understøttede enheder med iOS 26 eller nyere), virker AI også offline.</p>
+
+
+        <h3>Kan jeg importere mine gamle dagbogsposter?</h3>
+        <p>Ja - Feeltracker Dagbog importerer dagbogsposter fra et Excel-regneark. Download importskabelonen fra Indstillinger, indsæt en dato, et tidspunkt og teksten for hver post, importér derefter filen, og hver række bliver til en dagbogspost. Du kan også gendanne en tidligere sikkerhedskopi, som bringer dine poster og deres billeder tilbage sammen.</p>
+
+
+        <h3>Kan jeg låse min dagbog med Face ID?</h3>
+        <p>Ja - du kan låse Feeltracker Dagbog med Face ID eller Touch ID ved hjælp af app-låsen, der er indbygget i iOS: tryk og hold på app-ikonet på din hjemmeskærm, og vælg <strong>Kræv Face ID</strong>. Indstillinger linker til de samme instruktioner. Når det er slået til, kan ingen åbne din dagbog uden dit ansigt, fingeraftryk eller din adgangskode.</p>
+
+
+        <h3>Hvad sker der med min dagbog, hvis jeg mister min telefon?</h3>
+        <p>Din dagbog er i sikkerhed: Feeltracker Dagbog synkroniserer hver post og hvert billede til din private iCloud-konto, så det hele kommer automatisk tilbage, når du logger ind på en ny iPhone, iPad eller Mac. Appen laver også en automatisk sikkerhedskopi cirka en gang om ugen (en ZIP-fil med dine poster og billeder), som du selv kan gendanne eller eksportere når som helst, og du kan lave en manuel sikkerhedskopi, når du vil have en.</p>
 
     </section>
 
@@ -1184,22 +1246,22 @@
         <div class="related-apps-grid">
 
             <a href="/da/blood-pressure/" class="related-app-card" aria-label="Blodtryk">
-                <img src="/images/BPT_1024.png" alt="Blodtryk" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Blodtryk" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Blodtryk</span>
             </a>
 
-            <a href="/da/mental-health/" class="related-app-card" aria-label="Mental Sundhed">
-                <img src="/images/FT_1024.png" alt="Mental Sundhed" class="related-app-icon">
-                <span class="related-app-name">Mental Sundhed</span>
+            <a href="/da/mood-journal/" class="related-app-card" aria-label="Humørdagbog">
+                <img src="/images/FT_1024.png" alt="Humørdagbog" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Humørdagbog</span>
             </a>
 
             <a href="/da/sleep/" class="related-app-card" aria-label="Søvn">
-                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Søvn</span>
             </a>
 
             <a href="/da/weight/" class="related-app-card" aria-label="Vægt">
-                <img src="/images/WT_1024.png" alt="Vægt" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Vægt" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Vægt</span>
             </a>
 
@@ -1212,9 +1274,10 @@
         <h2>Start din dagbogspraksis i dag</h2>
         <p>Bliv en del af tusindvis, der opdager fordelene ved daglig refleksion</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Daglig Dagbog"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Daglig Dagbog" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "Wsparcie - Feeltracker",
-   "description": "Uzyskaj pomoc dotyczącą aplikacji zdrowotnych Feeltracker. Skontaktuj się z pomocą techniczną, przeglądaj FAQ i znajdź zasoby dotyczące aplikacji do monitorowania ciśnienia krwi, nastroju, dziennika, snu i wagi.",
-   "keywords": "",
+   "title": "Wsparcie Feeltracker | Pomoc dla aplikacji zdrowotnych",
+   "description": "Pomoc dotycząca aplikacji zdrowotnych Feeltracker. Napisz na support@feeltracker.com po odpowiedź w 24h, lub zobacz FAQ, politykę prywatności i regulamin.",
+   "keywords": "wsparcie feeltracker, kontakt z feeltracker, pomoc aplikacji zdrowotnej, wsparcie aplikacji ciśnienia krwi, wsparcie trackera nastroju, wsparcie trackera snu, wsparcie trackera wagi",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Wsparcie Feeltracker",
   "contact": {
    "title": "Potrzebujesz pomocy?",
-   "supportText": "Aby uzyskać natychmiastową pomoc lub zadać pytanie, napisz do nas: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "Aby uzyskać szczegółową pomoc i odpowiedzi na często zadawane pytania, odwiedź naszą <a href=\"../../pl/faq/\">stronę FAQ</a>."
+   "supportText": "Najszybszym sposobem uzyskania pomocy dotyczącej dowolnej aplikacji Feeltracker jest napisanie na adres <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> — jesteśmy małym zespołem i zwykle odpowiadamy w ciągu 24 godzin. Napisz nam, z której aplikacji korzystasz i co się działo, gdy pojawił się problem, a my zajmiemy się resztą.",
+   "faqText": "Aby uzyskać szczegółowe odpowiedzi dotyczące synchronizacji, kopii zapasowych, eksportu dla lekarza, funkcji AI, prywatności i subskrypcji, zobacz naszą <a href=\"../../pl/faq/\">stronę FAQ</a>."
   },
   "apps": {
    "title": "Nasze aplikacje",
@@ -31,7 +31,7 @@
     },
     {
      "name": "Dziennik nastrojów",
-     "url": "https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999",
+     "url": "https://apps.apple.com/us/app/feeltracker-mood-journal-diary/id687448999",
      "separator": " - ",
      "description": "Monitoruj swoje samopoczucie emocjonalne"
     },
@@ -63,8 +63,31 @@
     {
      "name": "Regulamin",
      "url": "../../pl/terms/"
+    },
+    {
+     "name": "O Feeltracker",
+     "url": "../../pl/about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Wsparcie Feeltracker",
+    "description": "Jak uzyskać pomoc dotyczącą aplikacji zdrowotnych Feeltracker na iPhone'a, iPada i Maca: wsparcie e-mail, FAQ, polityka prywatności i regulamin.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Customer Support",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "Polish"
+      }
+     ]
+    }
+   }
+  ]
  }
 }

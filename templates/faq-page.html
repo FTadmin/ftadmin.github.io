@@ -45,6 +45,7 @@
 <body>
 {{> nav}}
 
+<main>
 <h1>{{pageTitle}}</h1>
 {{#each sections}}
 {{#if title}}<h2>{{title}}</h2>{{/if}}
@@ -58,7 +59,7 @@
       <li>{{mdi _value}}</li>
 {{/each}}
 {{#if listImage}}
-      <p><img src="{{listImage.src}}" class="{{listImage.class}}"></p>
+      <p><img src="{{listImage.src}}" class="{{listImage.class}}" alt="" loading="lazy" decoding="async"></p>
 {{/if}}
     </ul>
 {{/if}}
@@ -68,12 +69,13 @@
 {{#if images}}
     <p>
 {{#each images}}
-        <img src="{{src}}" class="{{class}}">
+        <img src="{{src}}" class="{{class}}" alt="" loading="lazy" decoding="async">
 {{/each}}
     </p>
 {{/if}}
 {{/each}}
 {{/each}}
+</main>
 
 {{> footer}}
 

@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Pressão Arterial - App #1 de Pressão Arterial no Reino Unido | Feeltracker</title>
     <meta name="description" content="Monitorize a pressão arterial com Camera Scan AI — #1 no Reino Unido. Acompanhe sistólica, diastólica, pulso e PAM. Sincronização com Apple Health, relatórios de exportação para o médico. iPhone, iPad e Mac.">
-    <meta name="keywords" content="pressao,arterial,coracao,frequencia,monitor,omron,rastrear,verificar,registro,diario,alta,microlife,beurer">
+    <meta name="keywords" content="aplicação de pressão arterial, monitor de pressão arterial, registo de pressão arterial, monitor de hipertensão, monitor de sistólica diastólica e pulso, pressão arterial média, calculadora de PAM, diário de pressão arterial, gráfico de pressão arterial para o médico, scanner de monitor de pressão arterial">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/pt/blood-pressure/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -149,7 +150,7 @@
           "applicationCategory": "HealthApplication",
           "applicationSubCategory": "Blood Pressure Monitor",
           "operatingSystem": "iOS 16.0 or later",
-          "description": "O aplicação número 1 de monitoramento de pressão arterial no Reino Unido. Monitore a pressão arterial sistólica e diastólica, frequência cardíaca e Pressão Arterial Média com insights de IA. Possui Camera Scan AI para ler automáticamente os valores na ecrã do monitor, integração com Apple Health e recursos de exportação para compartilhar com profissionais de saúde.",
+          "description": "A aplicação número 1 de monitorização da pressão arterial no Reino Unido. Monitoriza a pressão arterial sistólica e diastólica, o pulso e a Pressão Arterial Média com insights baseados em IA. Inclui o Camera Scan AI para ler valores diretamente do ecrã de um monitor, valores-alvo e limites de intervalo personalizáveis, um relatório PAM dividido por manhã, noite e dia completo, sincronização bidirecional com o Apple Health, sincronização iCloud entre iPhone, iPad e Mac, e exportações em PDF, CSV, Excel e JSON para partilhar com profissionais de saúde. Gratuita para usar, com funcionalidades de IA incluídas gratuitamente todos os dias e uma subscrição Pro opcional para os relatórios de IA mais aprofundados.",
           "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -170,14 +171,20 @@
                 "IA de Digitalização por Câmara para captura automática de leituras",
                 "Apple Health bidirectional sync",
                 "Deteção de padrões com inteligência artificial",
-                "Exportação para PDF e Excel",
+                "Exportação para PDF, CSV, Excel e JSON",
                 "Cálculo da Pressão Arterial Média",
                 "Compatível com monitores OMRON, Microlife, Beurer",
                 "Registo de múltiplas leituras por dia",
-                "Widgets no ecrã principal para registo rápido",
+                "Widget no ecrã principal com médias recentes",
                 "Vista de calendário com indicadores por cores",
                 "iCloud backup and sync",
-                "Suporte para 32 idiomas"
+                "Suporte para 32 idiomas",
+                "Limites de intervalo personalizáveis e linhas-alvo nos gráficos",
+                "Relatório PAM em PDF com repartição por manhã, noite e dia completo",
+                "Cópias de segurança semanais automáticas com restauro",
+                "Até quatro lembretes nos dias que escolheres",
+                "Funcionalidades de IA gratuitas todos os dias, com subscrição Pro opcional",
+                "Sem anúncios e sem rastreamento de terceiros"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/bpt-1.png",
           "softwareVersion": "Latest",
@@ -634,10 +641,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Qual é o melhor aplicação de monitoramento de pressão arterial?",
+                      "name": "O que e uma leitura normal de pressão arterial?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Pressão Arterial é a aplicação número 1 de monitoramento de pressão arterial no Reino Unido. Possui insights com IA, tecnologia Camera Scan AI para ler automáticamente os valores na ecrã do monitor (OMRON, Microlife, Beurer), integração com Apple Health e recursos de exportação para compartilhar com médicos. Suporta monitoramento de pressão arterial sistólica e diastólica, frequência cardíaca e Pressão Arterial Média (PAM)."
+                            "text": "De acordo com as diretrizes médicas, a pressão arterial normal é tipicamente inferior a 120/80 mmHg. Leituras entre 120-129 de sistólica e abaixo de 80 de diastólica são consideradas elevadas. Valores de 130/80 ou superiores podem indicar hipertensão. No entanto, os intervalos-alvo podem variar consoante a idade e as condições de saúde, por isso consulta o teu médico para uma orientação personalizada. O Feeltracker Pressão Arterial codifica por cor cada leitura de acordo com estes intervalos, e podes ajustar os limites tu próprio se o teu médico te tiver dado alvos diferentes."
                       }
                 },
                 {
@@ -645,47 +652,95 @@
                       "name": "Como funciona o Camera Scan AI?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "O Camera Scan AI usa tecnologia avançada de reconhecimento óptico de caracteres (OCR) para ler automáticamente os valores de pressão arterial na ecrã digital do seu monitor. Basta apontar a câmera do seu iPhone ou iPad para a ecrã mostrando as leituras de sistólica, diastólica e pulso, e o app preencherá automáticamente esses valores. Isso elimina erros de digitação manual e torna o registo mais rápido. Funciona com OMRON, Microlife, Beurer e a maioria dos monitores digitais de pressão arterial."
+                            "text": "O Camera Scan AI lê os números diretamente do ecrã do teu monitor de pressão arterial: aponta a câmara do iPhone ou iPad para o ecrã, e o Feeltracker Pressão Arterial preenche os campos de sistólica, diastólica e pulso por ti. Não há emparelhamento nem configuração específica por marca — funciona com a maioria dos monitores digitais, incluindo OMRON, Microlife e Beurer. A digitalização é gratuita para todos, com um limite diário generoso, e demora apenas alguns segundos em vez de escreveres três números à mão."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "O que é uma leitura normal de pressão arterial?",
+                      "name": "O que e PAM e devo monitorar?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "De acordo com as diretrizes médicas, a pressão arterial normal é tipicamente abaixo de 120/80 mmHg. Leituras entre 120-129 de sistólica e abaixo de 80 de diastólica são consideradas elevadas. Valores de 130/80 ou superiores podem indicar hipertensão. No entanto, as faixas ideais podem variar conforme a idade e condições de saúde, portanto consulte seu médico para orientação personalizada."
+                            "text": "PAM (Pressão Arterial Média) é um valor calculado que representa a pressão arterial média nas tuas artérias durante um ciclo cardíaco. É calculada assim: PAM = (2 × Diastólica + Sistólica) ÷ 3. Alguns médicos consideram a PAM útil para avaliar o risco cardiovascular. O Feeltracker Pressão Arterial calcula-a automaticamente para cada leitura, representa-a graficamente junto dos teus valores de sistólica e diastólica, e pode exportar um relatório PAM em PDF dividido em vistas de manhã, noite e dia completo. Também podes definir os teus próprios intervalos de PAM, com uma opção de foco em LVAD para quem está a monitorizar com uma bomba cardíaca."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Posso exportar meus dados de pressão arterial para meu médico?",
+                      "name": "Posso importar meus dados antigos de pressão arterial?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sim, a app Pressão Arterial permite-te exportar relatórios completos em formato PDF, CSV, Excel ou JSON. Estes relatórios formatados profissionalmente incluem estatísticas resumidas, gráficos de tendências e todas as tuas notas - tudo o que o teu médico precisa num único documento. Podes partilhar facilmente estes relatórios por e-mail ou outros métodos."
+                            "text": "Sim — o Feeltracker Pressão Arterial consegue importar o teu histórico existente do Apple Health ou de uma folha de cálculo. Se já estavas a monitorizar no Apple Health, a app mostra-te as leituras que encontrou e importa as que selecionares, e podes ativar a importação automática para que as novas leituras do Apple Health cheguem sozinhas. Se o teu histórico estiver numa folha de cálculo, transfere o modelo Excel da app, cola os teus dados nele e importa o ficheiro. Ficheiros JSON e cópias de segurança ZIP de outro dispositivo também funcionam."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "O app se integra com o Apple Health?",
+                      "name": "Com que frequencia devo verificar minha pressão arterial?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sim, o Pressão Arterial possui integração bidirecional com o Apple Health. Você pode importar dados históricos de pressão arterial do Apple Health e o app salvará automáticamente novas leituras no HealthKit. Isso cria um ecossistema completo de monitoramento de saúde em todos os seus dispositivos Apple."
+                            "text": "As orientações para monitorização em casa sugerem geralmente duas leituras por dia — uma de manhã antes da medicação e outra à noite — feitas a horas consistentes, embora o conselho do teu médico para a tua situação venha sempre em primeiro lugar. O Feeltracker Pressão Arterial permite-te registar quantas leituras quiseres por dia e definir até quatro lembretes, cada um nos dias da semana que escolheres, para que uma rotina duas vezes por dia seja fácil de manter."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "O que é PAM no monitoramento de pressão arterial?",
+                      "name": "Meus dados de pressão arterial sao privados?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "PAM (Pressão Arterial Média) é um valor calculado que representa a pressão arterial média nas suas artérias durante um ciclo cardíaco. É calculada como: PAM = (2 × Diastólica + Sistólica) ÷ 3. Alguns médicos consideram a PAM útil para avaliar o risco cardiovascular e a perfusão de órgãos. O Pressão Arterial calcula automáticamente a PAM para cada leitura."
+                            "text": "As tuas leituras ficam no teu dispositivo e na tua própria conta iCloud privada — o Feeltracker Pressão Arterial não tem conta para criar, não pede um endereço de email, e não guarda nenhuma cópia do teu histórico nos nossos servidores. A única exceção são as funcionalidades de IA: quando perguntas algo à IA, as leituras necessárias para responder passam pelo nosso próprio servidor de encaminhamento até ao fornecedor de IA, para que possamos responder-te. Esse servidor não guarda nada — nenhum pedido ou resposta é alguma vez escrito em disco — e podes mudar a IA para o Apple Intelligence no dispositivo, ou desligá-la por completo, nas definições de IA da app. Tudo o resto, incluindo a sincronização com o Apple Health, fica apenas entre os teus dispositivos e a Apple."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Meus dados de pressão arterial são privados?",
+                      "name": "Posso monitorar a pressão arterial de familiares?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sim, suas leituras de pressão arterial são armazenadas de forma criptografada no seu dispositivo e na sua conta privada do iCloud. Os dados nunca passam por servidores externos, e os desenvolvedores não podem ver suas informações de saúde. É tão seguro quanto os apps Notas ou Fotos da Apple e é totalmente compatível com o RGPD."
+                            "text": "O Feeltracker Pressão Arterial foi criado para as leituras de uma só pessoa, por isso o ideal é que cada membro da família monitorize no seu próprio dispositivo, com o seu próprio Apple ID e conta iCloud. Isto mantém o histórico, os gráficos e os relatórios de cada um separados, e significa que os dados de cada pessoa sincronizam apenas com os seus próprios dispositivos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Vocês exibem anuncios ou me rastreiam?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. Removemos completamente todos os anuncios do app. Nos não rastreamos você em outros apps ou sites e nunca vendemos seus dados para anunciantes. Seus dados sincronizam via iCloud - assim como o Apple Notas e Fotos. Isso significa que não precisamos saber seu endereço de e-mail, nome ou qualquer informacao pessoal. Seus dados de pressão arterial sao armazenados nos seus dispositivos e na sua conta do iCloud, e sao completamente privados, seja usando a versão gratuita ou premium."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Preciso de uma assinatura?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não é necessária qualquer subscrição. A app é gratuita para transferir, todo o registo, gráficos, sincronização com o Apple Health, cópias de segurança e exportações são gratuitos, e todos os utilizadores recebem funcionalidades de IA reais e gratuitas todos os dias — Faça uma Pergunta, Chat Rápido, Resumo por Voz, um Relatório de Saúde Rápido, Me Faça Rir, Me Acalme, e Camera Scan AI — sem anúncios, nunca. Uma subscrição Pro opcional desbloqueia as funcionalidades de IA mais aprofundadas (Investigação Aprofundada, Resumo para o Médico, Detetive de Padrões, o Relatório PAM Pro, Chat Pro, e mais), executa-as na nossa IA mais avançada, e aumenta os limites diários generosos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Funciona com o meu monitor OMRON, Microlife ou Beurer?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "O Feeltracker Pressão Arterial funciona com qualquer monitor de pressão arterial doméstico, porque lê os números em vez de se ligar ao aparelho. Aponta a câmara para o ecrã e o Camera Scan AI preenche a sistólica, a diastólica e o pulso — isso funciona com a maioria dos monitores digitais, incluindo OMRON, Microlife e Beurer — ou introduz os valores tu mesmo com os seletores ou o teclado. Não há emparelhamento Bluetooth, não há lista de compatibilidade, e nada se estraga quando trocares de monitor."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como partilho as minhas leituras de pressão arterial com o meu médico?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "O Feeltracker Pressão Arterial consegue gerar, em poucos toques, um PDF pronto para o médico de qualquer intervalo de datas, e podes enviá-lo por email, mensagem, imprimi-lo, ou usar o AirDrop diretamente a partir da app. As exportações em PDF, CSV, Excel e JSON são todas gratuitas, tal como o relatório PAM dedicado que divide a tua Pressão Arterial Média em vistas de manhã, noite e dia completo, para um mês, trimestre, ano ou intervalo personalizado. Com o Pro, a IA também pode escrever um Resumo para o Médico em linguagem simples do mesmo período, para acompanhar os números."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso definir os meus próprios objetivos e intervalos de pressão arterial?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim — o Feeltracker Pressão Arterial permite-te definir valores-alvo de sistólica, diastólica e pulso, que aparecem como linhas de referência nos teus gráficos, e editar os limites de cada intervalo (Baixa, Normal, Elevada, Alta, Muito Alta) para corresponderem às indicações que realmente recebeste. Os teus gráficos, as cores do calendário e os relatórios em PDF seguem todos os intervalos que definires, não apenas os valores predefinidos. A PAM tem os seus próprios intervalos ajustáveis, incluindo uma opção de foco em LVAD."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "O Feeltracker Pressão Arterial funciona no iPad e no Mac?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim — uma única transferência cobre o iPhone e o iPad, e também funciona em Macs com Apple Silicon através da Mac App Store. As tuas leituras sincronizam automaticamente entre todos eles através da tua própria conta iCloud privada, por isso uma leitura registada no teu iPhone aparece no teu iPad momentos depois. Há um widget no ecrã principal que mostra as tuas médias recentes, e os registos são indexados no Spotlight para que possas pesquisar o teu histórico a partir de qualquer lugar no iOS."
                       }
                 }
           ]
@@ -703,7 +758,7 @@
 
             <a href="/pt/daily-journal/">Diário Pessoal</a>
 
-            <a href="/pt/mental-health/">Saúde Mental</a>
+            <a href="/pt/mood-journal/">Diário de Humor</a>
 
             <a href="/pt/sleep/">Sono</a>
 
@@ -788,9 +843,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Ícone do App Pressão Arterial" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Ícone do App Pressão Arterial" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Pressão Arterial</h1>
 
         <div class="privacy-badge">
@@ -798,12 +854,12 @@
         </div>
         <p class="hero-subtitle">A maneira mais inteligente de acompanhar e entender sua pressão arterial. Escaneie leituras com Camera Scan AI, sincronize com o Apple Health e obtenha insights com inteligência artificial sobre sua saúde cardiovascular.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-black.svg" alt="Descarregar Pressão Arterial na App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-black.svg" alt="Descarregar Pressão Arterial na App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuito com recursos premium opcionais<br>iPhone, iPad & Mac . iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +872,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Captura de Tela Pressão Arterial 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Captura de Tela Pressão Arterial 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Captura de Tela Pressão Arterial 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Captura de Tela Pressão Arterial 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Captura de Tela Pressão Arterial 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Captura de Tela Pressão Arterial 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -874,13 +930,19 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-medical-alt"></i></div>
                 <h3>Relatório MAP para o seu médico</h3>
-                <p>Um relatório especializado que analisa a tua Pressão Arterial Média (PAM) em períodos da manhã, da noite e do dia completo, em qualquer mês, trimestre, ano ou intervalo personalizado. Criado para facilitar as conversas com o médico. Parte da subscrição Pro opcional.</p>
+                <p>Um relatório em PDF gratuito que analisa a tua Pressão Arterial Média (PAM) nos períodos da manhã, da noite e do dia completo, para qualquer mês, trimestre, ano ou intervalo personalizado. Criado para facilitar as conversas com o médico. O Pro acrescenta o Relatório PAM Pro, escrito por IA.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-sliders-h"></i></div>
                 <h3>Os seus intervalos, à sua maneira</h3>
-                <p>Define as tuas próprias metas e limites de faixa — Normal, Elevada, Fase 1, Fase 2 — para corresponderem à orientação que o teu médico te deu. Os gráficos e relatórios colorem cada leitura de acordo com os teus próprios intervalos.</p>
+                <p>Define os teus próprios valores-alvo de sistólica, diastólica e pulso — aparecem como linhas de referência nos teus gráficos — e ajusta os limites de cada intervalo (Baixa, Normal, Elevada, Alta, Muito Alta) para corresponderem às indicações do teu médico. Os gráficos e relatórios colorem cada leitura de acordo com os teus próprios intervalos.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <h3>O Teu Histórico, Bem Guardado</h3>
+                <p>As leituras sincronizam entre o teu iPhone, iPad e Mac através da tua própria conta iCloud privada, e a app cria cópias de segurança semanais automáticas que podes restaurar a qualquer momento. Estás a mudar de uma folha de cálculo? Importa o teu histórico de um ficheiro Excel usando o modelo incluído.</p>
             </div>
 
         </div>
@@ -894,27 +956,28 @@
         <div class="app-card">
             <h3>1. Registre Sua Leitura</h3>
             <div class="app-card-content">
-<p><strong>Camera Scan AI:</strong> Basta apontar sua camera para a ecrã do seu monitor de pressão arterial e deixar a IA extrair automáticamente os valores de sistólica, diastólica e pulso. Sem necessidade de digitação - o app le os números diretamente de monitores <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer e da maioria dos monitores digitais.</p>
-<p><strong>Entrada Manual:</strong> Prefere digitar? Insira os valores manualmente com uma interface simplificada. Leva apenas alguns segundos para registrar uma leitura.</p>
-<p><strong>Contexto Detalhado:</strong> Adicione notas detalhadas sobre o que você estava fazendo - refeicoes, medicamentos tomados, exercicios, niveis de estresse, qualidade do sono ou quaisquer fatores que possam afetar sua pressão arterial. Você também pode anexar fotos e marcar entradas com etiquetas personalizadas para fácilitar a busca posteriormente.</p>
+<p><strong>Camera Scan AI:</strong> Aponta simplesmente a câmara para o ecrã do teu monitor de pressão arterial e deixa a IA extrair automaticamente os valores de sistólica, diastólica e pulso. Sem necessidade de escrever - a app lê os números diretamente de monitores <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer, e da maioria dos monitores digitais.</p>
+<p><strong>Introdução Manual:</strong> Preferes escrever? Introduz os valores manualmente numa interface simplificada. Demora apenas segundos a registar uma leitura.</p>
+<p><strong>Contexto Detalhado:</strong> Adiciona notas detalhadas sobre o que estavas a fazer - refeições, medicação tomada, exercício, níveis de stress, qualidade do sono, ou qualquer fator que possa afetar a tua pressão arterial. Podes anexar até 8 fotos a uma leitura, e voltar a encontrar qualquer registo mais tarde diretamente na pesquisa Spotlight do iOS.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>2. Acompanhe Padrões</h3>
             <div class="app-card-content">
-<p><strong>Visualizacao em Calendario:</strong> Veja todas as suas leituras em um layout de calendario intuitivo. Cada dia mostra suas médicoes com indicadores coloridos para leituras normais, elevadas ou altas, baseados em diretrizes medicas.</p>
-<p><strong>Estatísticas Automáticas:</strong> Obtenha cálculos instantaneos de médias diarias, semanais e mensais. Visualize suas leituras mais baixas e mais altas, desvio padrao e tendencias ao longo do tempo sem precisar fazer nenhum calculo.</p>
-<p><strong>Gráficos Visuais:</strong> Gráficos bonitos mostram as tendencias da sua pressão arterial ao longo de dias, semanas, meses ou qualquer período personalizado. Identifique padrões rápidamente e veja como você esta progredindo em direção aos seus objetivos de saúde.</p>
+<p><strong>Vista de Calendário:</strong> Vê todas as tuas leituras numa disposição de calendário intuitiva. Cada dia mostra as tuas medições com indicadores codificados por cor para leituras baixas, normais, elevadas, altas ou muito altas - com base em diretrizes amplamente utilizadas, ou nos intervalos que tu próprio definires.</p>
+<p><strong>Estatísticas Automáticas:</strong> Obtém médias instantâneas em qualquer intervalo de datas, as tuas leituras mais baixas e mais altas, e uma repartição de quantas leituras caíram em cada intervalo - sem precisares de fazer contas.</p>
+<p><strong>Gráficos Visuais:</strong> Gráficos separados de sistólica, diastólica, PAM e pulso mostram as tuas tendências ao longo de dias, semanas, meses, ou qualquer intervalo de datas personalizado, cada um com o teu valor-alvo desenhado como linha de referência.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Obtenha Insights com IA</h3>
             <div class="app-card-content">
-<p><strong>Deteção de Padrões:</strong> A IA analisa suas leituras e notas para identificar correlações. Descubra quais atividades, alimentos ou situacoes consistentemente aumentam ou diminuem sua pressão arterial.</p>
-<p><strong>Recomendações Personalizadas:</strong> Receba insights específicos baseados nos seus dados. A IA pode notar padrões como "Sua PA tende a ser mais alta em dias quando você menciona 'estresse no trabalho'" ou "As leituras sao mais baixas em dias com exercicio matinal."</p>
-<p><strong>Converse com Seus Dados:</strong> Faca perguntas em linguagem natural como "Qual foi minha PA media a noite no mes passado?" ou "Mostre-me as leituras apos eu tomar meu medicamento." A IA entende o contexto e fornece respostas instantaneas.</p>
+<p><strong>Deteção de Padrões:</strong> A IA analisa as tuas leituras e notas para identificar correlações. Descobre que atividades, alimentos ou situações aumentam ou diminuem consistentemente a tua pressão arterial.</p>
+<p><strong>Recomendações Personalizadas:</strong> Recebe insights específicos com base nos teus dados. A IA pode notar padrões como "A tua pressão arterial tende a ser mais alta nos dias em que mencionas 'stress no trabalho'" ou "As leituras são mais baixas nos dias com exercício matinal."</p>
+<p><strong>Conversa com os Teus Dados:</strong> Faz perguntas em linguagem natural como "Qual foi a minha pressão arterial média ao fim da tarde no mês passado?" ou "Mostra-me as leituras depois de eu ter tomado a medicação." A IA compreende o contexto e dá-te respostas instantâneas.</p>
+<p><strong>Grátis todos os dias:</strong> Faça uma Pergunta, Chat Rápido, Resumo por Voz e um Relatório de Saúde Rápido estão incluídos para todos, com um limite diário generoso. Os relatórios mais aprofundados - Investigação Aprofundada, Detetive de Padrões, Resumo para o Médico, o Relatório PAM Pro - vêm com a subscrição Pro opcional.</p>
             </div>
         </div>
 
@@ -937,93 +1000,98 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Faca uma Pergunta</h4>
+                <h3><i class="fas fa-question-circle"></i> Faca uma Pergunta</h3>
                 <p>Perguntas e respostas rápidas sobre seus dados de pressão arterial - obtenha respostas instantaneas para suas dúvidas de saúde</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Tem conversas interativas sobre a tua saúde cardiovascular e recebe orientação personalizada. O Chat Rápido é gratuito todos os dias; o Chat Pro vai mais fundo na nossa IA mais avançada</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Resumo por Voz</h4>
+                <h3><i class="fas fa-volume-up"></i> Resumo por Voz</h3>
                 <p>Ouca resumos em audio das tendencias da sua pressão arterial - perfeito para insights em qualquer lugar</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Me Faca Rir</h4>
+                <h3><i class="fas fa-laugh"></i> Me Faca Rir</h3>
                 <p>Receba humor personalizado baseado nos seus dados de monitoramento para alegrar seu dia</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Me Acalme</h4>
-                <p>Exercicios de respiracao guiados por IA para ajudar a reduzir o estresse e descarregar a pressão arterial</p>
+                <h3><i class="fas fa-moon"></i> Me Acalme</h3>
+                <p>Exercícios de respiração e relaxamento guiados por IA para te ajudares a descontrair depois de um dia stressante</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Escaneamento por IA</h4>
-                <p>Escaneie leituras diretamente da ecrã do seu monitor - funciona com <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
+                <h3><i class="fas fa-camera"></i> Escaneamento por IA</h3>
+                <p>Digitaliza leituras diretamente do ecrã do teu monitor - funciona com <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer e a maioria dos ecrãs digitais. Grátis para todos, com um limite diário generoso</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Investigação Aprofundada <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Investigação Aprofundada <span class="ai-pro-badge">Pro</span></h3>
                 <p>Analise completa de IA dos seus dados de pressão arterial com insights detalhados</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detetive de Padrões <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detetive de Padrões <span class="ai-pro-badge">Pro</span></h3>
                 <p>Encontre correlações ocultas entre suas leituras de PA e fatores do estilo de vida</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Assistente de Metas <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Assistente de Metas <span class="ai-pro-badge">Pro</span></h3>
                 <p>Receba metas personalizadas de pressão arterial baseadas em dados e nos seus padrões</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Resumo para o Médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Resumo para o Médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Gere resumos médicos profissionais para compartilhar em consultas</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Atestado Médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Atestado Médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Atéstados médicos gerados por IA para o trabalho ou escola quando você precisar</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Gerador de Historias <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Gerador de Historias <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transforme seus dados de saúde em narrativas criativas e envolventes</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Resumo em Texto <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Resumo em Texto <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crie resumos em mensagem de texto compartilhaveis das tendencias da sua pressão arterial</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Questionário Pessoal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Questionário Pessoal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Teste seus conhecimentos com um quiz divertido de 10 perguntas gerado por IA sobre seus dados</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Texto para Fala <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Texto para Fala <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ouca seus insights e resumos de IA com reproducao de voz natural</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Relatório de Saúde Personalizado <span class="ai-pro-badge">Pro</span></h4>
-                <p>Crie documentos de saúde completos e personalizados para acompanhar seu progresso</p>
+                <h3><i class="fas fa-file-invoice"></i> Relatório de Saúde Personalizado <span class="ai-pro-badge">Pro</span></h3>
+                <p>Cria documentos de saúde abrangentes e personalizados para acompanhares o teu progresso. Um Relatório de Saúde Rápido gratuito está incluído para todos</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (no dispositivo) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (no dispositivo) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opção que dá prioridade à privacidade e executa a IA localmente no teu dispositivo com os Foundation Models da Apple — nada sai do teu iPhone, iPad ou Mac. Utilização ilimitada com uma conta paga, em dispositivos Apple Silicon compatíveis (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat por Voz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat por Voz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversas por voz, bidirecionais e sem usar as mãos, com a IA sobre os teus dados — faz perguntas e ouve as respostas sem tocar no ecrã</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-heart-pulse"></i> Relatório PAM Pro <span class="ai-pro-badge">Pro</span></h3>
+                <p>Um relatório escrito por IA sobre a tua Pressão Arterial Média: padrões de manhã versus noite, variabilidade dia a dia, e como as tuas leituras se comparam com os intervalos de PAM que definiste — incluindo um foco opcional em LVAD. Criado para entregares à tua equipa de cuidados de saúde</p>
             </div>
 
         </div>
@@ -1042,7 +1110,7 @@
 
             <div class="benefit-item">
                 <h4><i class="fas fa-heart-pulse"></i> Controle a Hipertensão</h4>
-                <p>Mantenha sua pressão arterial sob controle monitorando leituras diarias e identificando gatilhos</p>
+                <p>Cria um registo dia a dia das tuas leituras para que tu e o teu médico possam ver como os teus valores se estão realmente a comportar entre consultas</p>
             </div>
 
             <div class="benefit-item">
@@ -1087,31 +1155,31 @@
 
 
         <h3>O que e uma leitura normal de pressão arterial?</h3>
-        <p>De acordo com as diretrizes medicas, a pressão arterial normal e tipicamente abaixo de 120/80 mmHg. Leituras entre 120-129 de sistólica e abaixo de 80 de diastólica sao consideradas elevadas. Valores de 130/80 ou superiores podem indicar hipertensão. No entanto, as faixas ideais podem variar de acordo com a idade e condições de saúde, entao consulte seu médico para orientação personalizada.</p>
+        <p>De acordo com as diretrizes médicas, a pressão arterial normal é tipicamente inferior a 120/80 mmHg. Leituras entre 120-129 de sistólica e abaixo de 80 de diastólica são consideradas elevadas. Valores de 130/80 ou superiores podem indicar hipertensão. No entanto, os intervalos-alvo podem variar consoante a idade e as condições de saúde, por isso consulta o teu médico para uma orientação personalizada. O Feeltracker Pressão Arterial codifica por cor cada leitura de acordo com estes intervalos, e podes ajustar os limites tu próprio se o teu médico te tiver dado alvos diferentes.</p>
 
 
         <h3>Como funciona o Camera Scan AI?</h3>
-        <p>Basta apontar a camera do seu iPhone ou iPad para a ecrã digital do seu monitor de pressão arterial. O app usa tecnologia avancada de reconhecimento por camera com IA para ler automáticamente os números e preencher os campos de sistólica, diastólica e pulso. Isso elimina erros de digitação manual e torna o registo mais rápido. <a href="https://geni.us/B9RB" target="_blank" rel="noopener">Adquira um monitor de pressão arterial aqui</a>.</p>
+        <p>O Camera Scan AI lê os números diretamente do ecrã do teu monitor de pressão arterial: aponta a câmara do iPhone ou iPad para o ecrã, e o Feeltracker Pressão Arterial preenche os campos de sistólica, diastólica e pulso por ti. Não há emparelhamento nem configuração específica por marca — funciona com a maioria dos monitores digitais, incluindo <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife e Beurer. A digitalização é gratuita para todos, com um limite diário generoso, e demora apenas alguns segundos em vez de escreveres três números à mão.</p>
 
 
         <h3>O que e PAM e devo monitorar?</h3>
-        <p>PAM (Pressão Arterial Media) e um valor calculado que representa a pressão arterial media nas suas arterias durante um ciclo cardiaco. E calculada como: PAM = (2 x Diastólica + Sistólica) / 3. Alguns médicos consideram a PAM util para avaliar o risco cardiovascular. O app calcula automáticamente a PAM para cada leitura.</p>
+        <p>PAM (Pressão Arterial Média) é um valor calculado que representa a pressão arterial média nas tuas artérias durante um ciclo cardíaco. É calculada assim: PAM = (2 × Diastólica + Sistólica) ÷ 3. Alguns médicos consideram a PAM útil para avaliar o risco cardiovascular. O Feeltracker Pressão Arterial calcula-a automaticamente para cada leitura, representa-a graficamente junto dos teus valores de sistólica e diastólica, e pode exportar um relatório PAM em PDF dividido em vistas de manhã, noite e dia completo. Também podes definir os teus próprios intervalos de PAM, com uma opção de foco em LVAD para quem está a monitorizar com uma bomba cardíaca.</p>
 
 
         <h3>Posso importar meus dados antigos de pressão arterial?</h3>
-        <p>Sim! Se você esteve monitorando a pressão arterial no Apple Health, pode importar todas as suas leituras historicas para o app com um toque. O app também suporta importação de arquivos CSV/Excel se você tiver dados de outras fontes.</p>
+        <p>Sim — o Feeltracker Pressão Arterial consegue importar o teu histórico existente do Apple Health ou de uma folha de cálculo. Se já estavas a monitorizar no Apple Health, a app mostra-te as leituras que encontrou e importa as que selecionares, e podes ativar a importação automática para que as novas leituras do Apple Health cheguem sozinhas. Se o teu histórico estiver numa folha de cálculo, transfere o modelo Excel da app, cola os teus dados nele e importa o ficheiro. Ficheiros JSON e cópias de segurança ZIP de outro dispositivo também funcionam.</p>
 
 
         <h3>Com que frequencia devo verificar minha pressão arterial?</h3>
-        <p>Isso depende da sua condição de saúde e das recomendações do seu médico. Algumas pessoas verificam diariamente (geralmente de manha e a noite), enquanto outras verificam semanalmente. O app fácilita o monitoramento com a frequencia recomendada pelo seu médico. Você pode configurar lembretes para manter uma rotina consistente.</p>
+        <p>As orientações para monitorização em casa sugerem geralmente duas leituras por dia — uma de manhã antes da medicação e outra à noite — feitas a horas consistentes, embora o conselho do teu médico para a tua situação venha sempre em primeiro lugar. O Feeltracker Pressão Arterial permite-te registar quantas leituras quiseres por dia e definir até quatro lembretes, cada um nos dias da semana que escolheres, para que uma rotina duas vezes por dia seja fácil de manter.</p>
 
 
         <h3>Meus dados de pressão arterial sao privados?</h3>
-        <p>Com certeza. Suas leituras de pressão arterial sao armazenadas de forma criptografada no seu dispositivo e na sua conta privada do iCloud. Os dados nunca passam pelos nossos servidores e nos não podemos ver suas informações de saúde. E tao seguro quanto o app Notas ou Fotos da Apple.</p>
+        <p>As tuas leituras ficam no teu dispositivo e na tua própria conta iCloud privada — o Feeltracker Pressão Arterial não tem conta para criar, não pede um endereço de email, e não guarda nenhuma cópia do teu histórico nos nossos servidores. A única exceção são as funcionalidades de IA: quando perguntas algo à IA, as leituras necessárias para responder passam pelo nosso próprio servidor de encaminhamento até ao fornecedor de IA, para que possamos responder-te. Esse servidor não guarda nada — nenhum pedido ou resposta é alguma vez escrito em disco — e podes mudar a IA para o Apple Intelligence no dispositivo, ou desligá-la por completo, nas definições de IA da app. Tudo o resto, incluindo a sincronização com o Apple Health, fica apenas entre os teus dispositivos e a Apple.</p>
 
 
         <h3>Posso monitorar a pressão arterial de familiares?</h3>
-        <p>O app foi projetado para uso individual e sincroniza com sua conta pessoal do iCloud. Para monitorar varios familiares, cada pessoa deve usar o app no seu próprio dispositivo com seu próprio Apple ID.</p>
+        <p>O Feeltracker Pressão Arterial foi criado para as leituras de uma só pessoa, por isso o ideal é que cada membro da família monitorize no seu próprio dispositivo, com o seu próprio Apple ID e conta iCloud. Isto mantém o histórico, os gráficos e os relatórios de cada um separados, e significa que os dados de cada pessoa sincronizam apenas com os seus próprios dispositivos.</p>
 
 
         <h3>Vocês exibem anuncios ou me rastreiam?</h3>
@@ -1120,7 +1188,23 @@
 
 
         <h3>Preciso de uma assinatura?</h3>
-        <p>Não é necessária subscrição. A app é gratuita para descarregar, todo o registo, gráficos, sincronização com a Apple Saúde e exportações são gratuitos, e todos os utilizadores recebem funcionalidades de IA verdadeiras e gratuitas todos os dias — sem anúncios, sempre. Uma subscrição Pro opcional desbloqueia as funcionalidades de IA mais completas (Investigação Aprofundada, Resumo para o Médico, Detetive de Padrões, o Relatório PAM Pro, Chat Pro e mais), executa-as na nossa IA mais avançada e aumenta os generosos limites diários.</p>
+        <p>Não é necessária qualquer subscrição. A app é gratuita para transferir, todo o registo, gráficos, sincronização com o Apple Health, cópias de segurança e exportações são gratuitos, e todos os utilizadores recebem funcionalidades de IA reais e gratuitas todos os dias — Faça uma Pergunta, Chat Rápido, Resumo por Voz, um Relatório de Saúde Rápido, Me Faça Rir, Me Acalme, e Camera Scan AI — sem anúncios, nunca. Uma subscrição Pro opcional desbloqueia as funcionalidades de IA mais aprofundadas (Investigação Aprofundada, Resumo para o Médico, Detetive de Padrões, o Relatório PAM Pro, Chat Pro, e mais), executa-as na nossa IA mais avançada, e aumenta os limites diários generosos.</p>
+
+
+        <h3>Funciona com o meu monitor OMRON, Microlife ou Beurer?</h3>
+        <p>O Feeltracker Pressão Arterial funciona com qualquer monitor de pressão arterial doméstico, porque lê os números em vez de se ligar ao aparelho. Aponta a câmara para o ecrã e o Camera Scan AI preenche a sistólica, a diastólica e o pulso — isso funciona com a maioria dos monitores digitais, incluindo <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife e Beurer — ou introduz os valores tu mesmo com os seletores ou o teclado. Não há emparelhamento Bluetooth, não há lista de compatibilidade, e nada se estraga quando trocares de monitor.</p>
+
+
+        <h3>Como partilho as minhas leituras de pressão arterial com o meu médico?</h3>
+        <p>O Feeltracker Pressão Arterial consegue gerar, em poucos toques, um PDF pronto para o médico de qualquer intervalo de datas, e podes enviá-lo por email, mensagem, imprimi-lo, ou usar o AirDrop diretamente a partir da app. As exportações em PDF, CSV, Excel e JSON são todas gratuitas, tal como o relatório PAM dedicado que divide a tua Pressão Arterial Média em vistas de manhã, noite e dia completo, para um mês, trimestre, ano ou intervalo personalizado. Com o Pro, a IA também pode escrever um Resumo para o Médico em linguagem simples do mesmo período, para acompanhar os números.</p>
+
+
+        <h3>Posso definir os meus próprios objetivos e intervalos de pressão arterial?</h3>
+        <p>Sim — o Feeltracker Pressão Arterial permite-te definir valores-alvo de sistólica, diastólica e pulso, que aparecem como linhas de referência nos teus gráficos, e editar os limites de cada intervalo (Baixa, Normal, Elevada, Alta, Muito Alta) para corresponderem às indicações que realmente recebeste. Os teus gráficos, as cores do calendário e os relatórios em PDF seguem todos os intervalos que definires, não apenas os valores predefinidos. A PAM tem os seus próprios intervalos ajustáveis, incluindo uma opção de foco em LVAD.</p>
+
+
+        <h3>O Feeltracker Pressão Arterial funciona no iPad e no Mac?</h3>
+        <p>Sim — uma única transferência cobre o iPhone e o iPad, e também funciona em Macs com Apple Silicon através da Mac App Store. As tuas leituras sincronizam automaticamente entre todos eles através da tua própria conta iCloud privada, por isso uma leitura registada no teu iPhone aparece no teu iPad momentos depois. Há um widget no ecrã principal que mostra as tuas médias recentes, e os registos são indexados no Spotlight para que possas pesquisar o teu histórico a partir de qualquer lugar no iOS.</p>
 
     </section>
 
@@ -1479,22 +1563,22 @@
         <div class="related-apps-grid">
 
             <a href="/pt/daily-journal/" class="related-app-card" aria-label="Diário Pessoal">
-                <img src="/images/NT_1024.png" alt="Diário Pessoal" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Diário Pessoal" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Diário Pessoal</span>
             </a>
 
-            <a href="/pt/mental-health/" class="related-app-card" aria-label="Saúde Mental">
-                <img src="/images/FT_1024.png" alt="Saúde Mental" class="related-app-icon">
-                <span class="related-app-name">Saúde Mental</span>
+            <a href="/pt/mood-journal/" class="related-app-card" aria-label="Diário de Humor">
+                <img src="/images/FT_1024.png" alt="Diário de Humor" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Diário de Humor</span>
             </a>
 
             <a href="/pt/sleep/" class="related-app-card" aria-label="Sono">
-                <img src="/images/ST_1024.png" alt="Sono" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sono" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sono</span>
             </a>
 
             <a href="/pt/weight/" class="related-app-card" aria-label="Peso">
-                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Peso</span>
             </a>
 
@@ -1507,9 +1591,10 @@
         <h2>Comece a Monitorar Sua Pressão Arterial Hoje</h2>
         <p>Junte-se a milhares de usuários que estao assumindo o controle da sua saúde cardiovascular</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-black.svg" alt="Descarregar Pressão Arterial"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-black.svg" alt="Descarregar Pressão Arterial" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

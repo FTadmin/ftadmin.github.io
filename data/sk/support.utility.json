@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "Podpora - Feeltracker",
-   "description": "Získajte pomoc s aplikáciami Feeltracker. Kontaktujte podporu, prezerajte si FAQ a nájdite zdroje pre aplikácie Blood Pressure, Mood, Journal, Sleep a Weight.",
-   "keywords": "",
+   "title": "Podpora Feeltracker | Pomoc s našimi zdravotnými aplikáciami",
+   "description": "Získajte pomoc so zdravotnými aplikáciami Feeltracker. Napíšte na support@feeltracker.com a odpovieme do 24 hodín, alebo si prezrite FAQ, zásady ochrany osobných údajov a podmienky používania.",
+   "keywords": "podpora feeltracker, kontakt feeltracker, pomoc so zdravotnou aplikáciou, podpora aplikácie na tlak krvi, podpora sledovania nálady, podpora sledovania spánku, podpora sledovania hmotnosti",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Feeltracker Podpora",
   "contact": {
    "title": "Potrebujete pomoc?",
-   "supportText": "Pre okamžitú podporu alebo otázky nám napíšte na: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "Pre podrobnú pomoc a časté otázky navštívte našu <a href=\"../../sk/faq/\">stránku FAQ</a>."
+   "supportText": "Najrýchlejší spôsob, ako získať pomoc s akoukoľvek aplikáciou Feeltracker, je napísať e-mail na <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> — sme malý tím a zvyčajne odpovedáme do 24 hodín. Napíšte nám, ktorú aplikáciu používate a čo ste robili, keď sa problém vyskytol, a od toho sa odrazíme.",
+   "faqText": "Postupné odpovede o synchronizácii, zálohách, exporte pre lekára, AI funkciách, súkromí a predplatnom nájdete na našej <a href=\"../faq/\">stránke FAQ</a>."
   },
   "apps": {
    "title": "Naše aplikácie",
@@ -31,7 +31,7 @@
     },
     {
      "name": "Denník nálad",
-     "url": "https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999",
+     "url": "https://apps.apple.com/us/app/feeltracker-mood-journal-diary/id687448999",
      "separator": " - ",
      "description": "Monitorujte svoje emocionálne zdravie"
     },
@@ -63,8 +63,31 @@
     {
      "name": "Podmienky používania",
      "url": "../../sk/terms/"
+    },
+    {
+     "name": "O Feeltrackeri",
+     "url": "../about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Podpora Feeltracker",
+    "description": "Ako získať pomoc so zdravotnými aplikáciami Feeltracker pre iPhone, iPad a Mac: e-mailová podpora, FAQ, zásady ochrany osobných údajov a podmienky používania.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Zákaznícka podpora",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "Angličtina"
+      }
+     ]
+    }
+   }
+  ]
  }
 }

@@ -3,7 +3,7 @@
   "meta": {
    "title": "Verenpaine - #1 Verenpainemittaussovellus | Feeltracker",
    "description": "Seuraa verenpainetta Camera Scan AI:lla — #1 Isossa-Britanniassa. Seuraa systolista, diastolista, pulssia ja MAP:ia. Apple Health -synkronointi, lääkärin vientiraportit. iPhone, iPad ja Mac.",
-   "keywords": "verenpaine,sydän,syke,mittari,omron,seuranta,tarkistus,kirjaus,verenpainepäiväkirja,korkea,microlife,beurer",
+   "keywords": "verenpainesovellus, verenpaineen seurantasovellus, verenpainepäiväkirja, kohonneen verenpaineen seuranta, systolisen ja diastolisen paineen sekä pulssin seuranta, keskivaltimopaine, MAP-laskuri, verenpaineen päiväkirja, verenpainekaavio lääkärille, verenpainemittarin skanneri",
    "ogTitle": "Verenpaine | #1 Sovellus UK:ssa | Feeltracker",
    "ogDescription": "UK:n suosituin verenpainemittaussovellus. Seuraa verenpainettasi Camera Scan AI:n, Apple Health -synkronoinnin ja AI-oivallusten avulla. Vie raportit jaettavaksi lääkärillesi.",
    "twitterDescription": "UK:n suosituin verenpainemittaussovellus. Seuraa Camera Scan AI:n, Apple Health -synkronoinnin ja AI-oivallusten avulla."
@@ -60,11 +60,15 @@
     },
     {
      "title": "MAP-raportti lääkärillesi",
-     "description": "Erikoistunut raportti, joka erittelee keskimääräisen valtimopaineesi (MAP) aamu-, ilta- ja koko päivän jaksoihin valitsemasi kuukauden, kvartaalin, vuoden tai mukautetun jakson ajalta. Suunniteltu helpottamaan kliinisiä keskusteluja. Osa valinnaista Pro-tilausta."
+     "description": "Ilmainen PDF-raportti, joka erittelee keskivaltimopaineesi (MAP) aamu-, ilta- ja koko päivän jaksoihin valitsemasi kuukauden, kvartaalin, vuoden tai mukautetun jakson ajalta. Tehty helpottamaan keskusteluja lääkärin kanssa. Pro lisää tähän tekoälyn kirjoittaman Pro MAP-raportin."
     },
     {
      "title": "Omat rajasi, omalla tavallasi",
-     "description": "Säädä omat tavoitteesi ja raja-arvosi — Normaali, Kohonnut, Vaihe 1, Vaihe 2 — vastaamaan lääkäriltäsi saamaasi ohjeistusta. Kaaviot ja raportit värikoodaavat jokaisen mittauksen omien raja-arvojesi mukaan."
+     "description": "Aseta omat tavoitearvosi systoliselle ja diastoliselle paineelle sekä pulssille — ne näkyvät viitteinä kaavioissasi — ja säädä alueiden rajoja (Matala, Normaali, Kohonnut, Korkea, Erittäin korkea) vastaamaan lääkäriltäsi saamaasi ohjeistusta. Kaaviot ja raportit värikoodaavat jokaisen mittauksen omien rajojesi mukaan."
+    },
+    {
+     "title": "Historiasi turvassa",
+     "description": "Mittauksesi synkronoituvat iPhonesi, iPadisi ja Macisi välillä oman yksityisen iCloud-tilisi kautta, ja sovellus kirjoittaa automaattiset viikoittaiset varmuuskopiot, joista voit palauttaa tiedot milloin tahansa. Siirrytkö taulukkolaskennasta? Tuo historiasi Excel-tiedostosta sisäänrakennetulla mallilla."
     }
    ]
   },
@@ -74,15 +78,15 @@
    "steps": [
     {
      "title": "1. Kirjaa mittaustulos",
-     "content": "**Camera Scan AI:** Osoita vain kameraasi verenpainemittarisi näyttöä kohti ja anna AI:n poimia automaattisesti systoliset, diastoliset ja pulssisarvot. Ei kirjoittamista – sovellus lukee numerot suoraan [OMRON](https://geni.us/B9RB)-, Microlife-, Beurer- ja useimmista digitaalisista mittareista.\n\n**Manuaalinen syöttö:** Haluatko kirjoittaa itse? Syötä arvot manuaalisesti sujuvan käyttöliittymän kautta. Mittauksen kirjaaminen vie vain sekunteja.\n\n**Rikas konteksti:** Lisää yksityiskohtaisia muistiinpanoja siitä, mitä teit – ateriat, otetut lääkkeet, liikunta, stressitaso, unen laatu tai muut verenpaineeseesi mahdollisesti vaikuttavat tekijät. Voit myös liittää valokuvia ja merkitä kirjauksia mukautetuilla tunnisteilla helpompaa hakua varten."
+     "content": "**Kameraskannaava AI:** Osoita vain kameraasi verenpainemittarisi näyttöä kohti, ja anna tekoälyn poimia automaattisesti systoliset, diastoliset ja pulssiarvot. Ei kirjoittamista – sovellus lukee numerot suoraan [OMRON](https://geni.us/B9RB)-, Microlife-, Beurer- ja useimmista digitaalisista mittareista.\n\n**Manuaalinen syöttö:** Haluatko kirjoittaa itse? Syötä arvot manuaalisesti sujuvan käyttöliittymän kautta. Mittauksen kirjaaminen vie vain sekunteja.\n\n**Rikas konteksti:** Lisää yksityiskohtaisia muistiinpanoja siitä, mitä teit – syödyt ateriat, otetut lääkkeet, liikunta, stressitaso, unen laatu tai muut tekijät, jotka saattavat vaikuttaa verenpaineeseesi. Voit liittää mittaukseen jopa 8 valokuvaa, ja löydät minkä tahansa merkinnän myöhemmin suoraan iOS Spotlight -haulla."
     },
     {
      "title": "2. Seuraa malleja",
-     "content": "**Kalenterinäkymä:** Katso kaikki mittaukset intuitiivisessa kalenteriasettelussa. Jokaisena päivänä näkyvät mittauksesi värillisillä indikaattoreilla normaalille, kohonneelle tai korkealle arvolle lääketieteellisten ohjeiden perusteella.\n\n**Automaattiset tilastot:** Saat välittömästi lasketut päivittäiset, viikoittaiset ja kuukausittaiset keskiarvot. Tarkastele matalimpia ja korkeimpia lukemiasi, keskihajontaa ja pitkäaikaisia trendejä ilman laskutoimituksia.\n\n**Visuaaliset kaaviot:** Kauniit kuvaajat näyttävät verenpainetrending päivien, viikkojen, kuukausien tai minkä tahansa mukautetun aikajakson ajalta. Tunnista mallit yhdellä silmäyksellä ja seuraa edistymistäsi terveystavoitteitasi kohti."
+     "content": "**Kalenterinäkymä:** Näe kaikki mittauksesi selkeässä kalenterinäkymässä. Jokainen päivä näyttää mittauksesi värikoodattuina matalan, normaalin, kohonneen, korkean tai erittäin korkean lukeman mukaan – yleisesti käytettyjen ohjeiden tai itse asettamiesi rajojen perusteella.\n\n**Automaattiset tilastot:** Saat välittömät keskiarvot miltä tahansa aikaväliltä, matalimman ja korkeimman mittauksesi sekä erittelyn siitä, kuinka moni mittaus osui kuhunkin alueeseen – ilman laskemista.\n\n**Visuaaliset kaaviot:** Erilliset systolisen, diastolisen, MAP- ja pulssikaaviot näyttävät trendisi päivien, viikkojen, kuukausien tai minkä tahansa mukautetun aikavälin ajalta, kukin tavoitearvosi merkittynä viitteenä."
     },
     {
      "title": "3. Saa AI-oivalluksia",
-     "content": "**Mallien tunnistus:** AI analysoi mittauksesi ja muistiinpanosi löytääkseen korrelaatioita. Selvitä, mitkä aktiviteetit, ruoat tai tilanteet johdonmukaisesti nostavat tai laskevat verenpainettasi.\n\n**Henkilökohtaiset suositukset:** Saa tarkkoja oivalluksia omien tietojesi perusteella. AI saattaa esimerkiksi huomata malleja kuten \"Verenpaineesi on usein korkeampi päivinä, jolloin mainitset 'stressiä töissä'\" tai \"Lukemasi ovat matalampia päivinä, joihin liittyy aamuliikuntaa.\"\n\n**Juttele tietojesi kanssa:** Esitä kysymyksiä luonnollisella kielellä, kuten \"Mikä oli keskiveren paineeni iltaisin viime kuussa?\" tai \"Näytä mittaukset lääkkeenoton jälkeen.\" AI ymmärtää kontekstin ja antaa välittömiä vastauksia."
+     "content": "**Kaavojen tunnistus:** Tekoäly analysoi mittauksesi ja muistiinpanosi löytääkseen yhteyksiä. Selvitä, mitkä toiminnot, ruoat tai tilanteet nostavat tai laskevat verenpainettasi johdonmukaisesti.\n\n**Henkilökohtaiset suositukset:** Saat konkreettisia oivalluksia omien tietojesi perusteella. Tekoäly saattaa huomata kaavoja, kuten \"Verenpaineesi on yleensä korkeampi päivinä, jolloin mainitset olleesi 'stressaantunut töissä'\" tai \"Mittaukset ovat matalampia päivinä, joina liikut aamulla.\"\n\n**Keskustele tietojesi kanssa:** Kysy asioita luonnollisella kielellä, kuten \"Mikä oli keskimääräinen verenpaineeni iltaisin viime kuussa?\" tai \"Näytä mittaukset, jotka tein lääkkeeni ottamisen jälkeen.\" Tekoäly ymmärtää kontekstin ja antaa sinulle välittömiä vastauksia.\n\n**Ilmaista joka päivä:** Kysy kysymys, Pika-chat, Ääniyhteenveto ja Pika-terveysraportti sisältyvät kaikille anteliaalla päivittäisellä käyttömäärällä. Syvällisimmät raportit – Syvällinen tutkimus, Mallientunnistin, Lääkäriyhteenveto, Pro MAP-raportti – tulevat valinnaisen Pro-tilauksen mukana."
     },
     {
      "title": "4. Jaa lääkärisi kanssa",
@@ -114,11 +118,11 @@
     },
     {
      "title": "Rauhoittaja",
-     "description": "AI-ohjatut hengitysharjoitukset stressin vähentämiseen ja verenpaineen alentamiseen"
+     "description": "Tekoälyn ohjaamia hengitys- ja rentoutumisharjoituksia, jotka auttavat sinua rentoutumaan stressaavan päivän jälkeen"
     },
     {
      "title": "Kameraskannaava AI",
-     "description": "Skannaa mittaustulokset suoraan mittarisi näytöltä – toimii [OMRON](https://geni.us/B9RB)-, Microlife- ja Beurer-laitteiden kanssa"
+     "description": "Skannaa mittaustulokset suoraan mittarisi näytöltä – toimii [OMRON](https://geni.us/B9RB)-, Microlife-, Beurer- ja useimpien digitaalisten näyttöjen kanssa. Ilmainen kaikille, anteliaalla päivittäisellä käyttömäärällä"
     },
     {
      "title": "Syvällinen tutkimus",
@@ -158,7 +162,7 @@
     },
     {
      "title": "Räätälöity terveysraportti",
-     "description": "Luo kattavia, henkilökohtaisia terveysasiakirjoja edistymisesi seurantaan"
+     "description": "Luo kattavia, henkilökohtaisia terveysasiakirjoja seurataksesi edistymistäsi. Ilmainen Pika-terveysraportti sisältyy kaikille"
     },
     {
      "title": "Apple Intelligence (laitteella)",
@@ -167,6 +171,10 @@
     {
      "title": "Äänichat",
      "description": "Kädet vapaana käytävät, kaksisuuntaiset puhekeskustelut tekoälyn kanssa tiedoistasi – kysy kysymyksiä ja kuule vastauksia koskematta näyttöön"
+    },
+    {
+     "title": "Pro MAP-raportti",
+     "description": "Tekoälyn kirjoittama raportti keskivaltimopaineestasi (MAP): aamu- ja iltalukemien erot, päivittäinen vaihtelu ja se, miten mittauksesi sijoittuvat asettamiisi MAP-alueisiin — mukaan lukien valinnainen LVAD-painotus. Tehty annettavaksi hoitotiimillesi"
     }
    ]
   },
@@ -176,7 +184,7 @@
    "items": [
     {
      "title": "Hallitse verenpainetta",
-     "description": "Pidä verenpaineesi hallinnassa seuraamalla päivittäisiä mittauksia ja tunnistamalla laukaisevat tekijät"
+     "description": "Rakenna päivittäinen tietue mittauksistasi, jotta sinä ja lääkärisi näette, miten lukemasi todella käyttäytyvät käyntien välillä"
     },
     {
      "title": "Lääkkeiden tehokkuus",
@@ -209,31 +217,31 @@
    "items": [
     {
      "question": "Mikä on normaali verenpainelukema?",
-     "answer": "Lääketieteellisten ohjeiden mukaan normaali verenpaine on yleensä alle 120/80 mmHg. Lukemia, joissa systolinen paine on 120–129 ja diastolinen alle 80, pidetään kohonneina. Arvot 130/80 tai enemmän saattavat viitata verenpaineeseen. Tavoitearvot voivat kuitenkin vaihdella iän ja terveydentilan mukaan, joten kysy lääkäriltäsi yksilöllistä ohjausta."
+     "answer": "Lääketieteellisten ohjeiden mukaan normaali verenpaine on tyypillisesti alle 120/80 mmHg. Lukemia, joissa systolinen paine on 120–129 ja diastolinen alle 80, pidetään kohonneina. Arvot 130/80 tai enemmän voivat viitata kohonneeseen verenpaineeseen. Tavoitearvot voivat kuitenkin vaihdella iän ja terveydentilan mukaan, joten kysy lääkäriltäsi henkilökohtaista ohjeistusta. Feeltracker Verenpaine värikoodaa jokaisen mittauksen näiden rajojen mukaan, ja voit itse säätää raja-arvoja, jos lääkärisi on antanut sinulle eri tavoitteet."
     },
     {
      "question": "Miten kameraskannaava tekoäly toimii?",
-     "answer": "Osoita iPhonesi tai iPadisi kamera verenpainemittarisi digitaaliseen näyttöön. Sovellus käyttää kehittynyttä tekoälypohjaista kamerantunnistusteknologiaa lukemaan numerot automaattisesti ja täyttämään systolinen, diastolinen ja pulssikenttä. Tämä poistaa manuaaliset kirjoitusvirheet ja nopeuttaa kirjaamista. [Hanki verenpainemittari täältä](https://geni.us/B9RB)."
+     "answer": "Kameraskannaava AI lukee lukemat suoraan verenpainemittarisi näytöltä: osoita iPhonesi tai iPadisi kameralla näyttöä kohti, ja Feeltracker Verenpaine täyttää systolisen, diastolisen ja pulssikentän puolestasi. Laitteen parittamista tai merkkikohtaista asennusta ei tarvita – se toimii useimpien digitaalisten mittareiden kanssa, mukaan lukien [OMRON](https://geni.us/B9RB), Microlife ja Beurer. Skannaus on ilmainen kaikille, anteliaalla päivittäisellä käyttömäärällä, ja se vie vain pari sekuntia kolmen luvun käsin kirjoittamisen sijaan."
     },
     {
      "question": "Mikä on MAP ja kannattaako sitä seurata?",
-     "answer": "MAP (Mean Arterial Pressure eli keskivaltimopaine) on laskettu arvo, joka kuvaa keskimääräistä verenpainetta valtimoissa yhden sydämen lyöntisyklin aikana. Se lasketaan kaavalla: MAP = (2 × diastolinen + systolinen) ÷ 3. Jotkut lääkärit pitävät MAPia hyödyllisenä sydän- ja verisuonitautien riskiarvioinnissa. Sovellus laskee MAPn automaattisesti jokaiselle mittaukselle."
+     "answer": "MAP (Mean Arterial Pressure eli keskivaltimopaine) on laskettu arvo, joka kuvaa valtimoidesi keskimääräistä verenpainetta yhden sydänsyklin aikana. Se lasketaan kaavalla: MAP = (2 × diastolinen + systolinen) ÷ 3. Jotkut lääkärit pitävät MAPia hyödyllisenä sydän- ja verisuonitautien riskin arvioinnissa. Feeltracker Verenpaine laskee sen automaattisesti jokaiselle mittaukselle, piirtää sen kaavioon systolisten ja diastolisten arvojesi rinnalle ja voi viedä MAP-PDF-raportin jaettuna aamu-, ilta- ja koko päivän näkymiin. Voit myös asettaa omat MAP-alueesi, ja sydänpumppua käyttäville on tarjolla valinnainen LVAD-painotus."
     },
     {
      "question": "Voinko tuoda vanhat verenpainetietoni sovellukseen?",
-     "answer": "Kyllä! Jos olet seurannut verenpainettasi Apple Healthissa, voit tuoda kaikki aiemmat mittauksesi sovellukseen yhdellä napautuksella. Sovellus tukee myös CSV/Excel-tiedostojen tuomista, jos sinulla on tietoja muista lähteistä."
+     "answer": "Kyllä — Feeltracker Verenpaine voi tuoda olemassa olevan historiasi Apple Healthista tai taulukkolaskentatiedostosta. Jos olet seurannut verenpainettasi Apple Healthissa, sovellus näyttää löytämänsä mittaukset ja tuo ne, jotka valitset, ja voit ottaa käyttöön automaattisen tuonnin, jolloin uudet Health-mittaukset siirtyvät itsestään. Jos historiasi on taulukkolaskentatiedostossa, lataa sovelluksen Excel-malli, liitä tietosi siihen ja tuo tiedosto. Myös JSON-tiedostot ja toisen laitteen ZIP-varmuuskopiot toimivat."
     },
     {
      "question": "Kuinka usein minun pitäisi mitata verenpaineeni?",
-     "answer": "Tämä riippuu terveydentilastasi ja lääkärisi suosituksista. Jotkut mittaavat päivittäin (usein aamulla ja illalla), toiset viikoittain. Sovelluksella on helppo seurata niin usein kuin terveydenhuollon ammattilaisesi suosittelee. Voit asettaa muistutuksia säännöllisen aikataulun ylläpitämiseksi."
+     "answer": "Kotiseurannan ohjeet suosittelevat yleensä kahta mittausta päivässä – yhtä aamulla ennen lääkkeiden ottoa ja yhtä illalla – samoihin kellonaikoihin, mutta lääkärisi ohjeet omaan tilanteeseesi menevät aina näiden edelle. Feeltracker Verenpaine antaa sinun kirjata niin monta mittausta päivässä kuin haluat ja asettaa jopa neljä muistutusta, kunkin haluamillesi viikonpäiville, joten kahdesti päivässä toistuvaa rutiinia on helppo pitää yllä."
     },
     {
      "question": "Ovatko verenpainetietoni yksityisiä?",
-     "answer": "Ehdottomasti. Verenpainemittauksesi tallennetaan salattuna laitteellesi ja yksityiseen iCloud-tiliisi. Tiedot eivät koskaan kulje palvelimemme kautta, emmekä pääse näkemään terveystietojasi. Se on yhtä turvallista kuin Applen Muistiinpanot- tai Kuvat-sovellukset."
+     "answer": "Mittauksesi asuvat laitteellasi ja omassa yksityisessä iCloud-tilissäsi – Feeltracker Verenpaineessa ei tarvitse luoda tiliä, luovuttaa sähköpostiosoitetta, eikä historiastasi ole kopiota palvelimillamme. Ainoa poikkeus ovat tekoälyominaisuudet: kun kysyt tekoälyltä jotain, vastaamiseen tarvittavat mittaukset kulkevat oman välityspalvelimemme kautta tekoälyn tarjoajalle, jotta voimme vastata sinulle. Tämä välityspalvelin ei tallenna mitään – yhtäkään pyyntöä tai vastausta ei koskaan kirjoiteta levylle – ja voit vaihtaa tekoälyn laitteella toimivaan Apple Intelligenceen tai kytkeä sen kokonaan pois sovelluksen tekoälyasetuksista. Kaikki muu, myös Apple Health -synkronointi, pysyy laitteidesi ja Applen välillä."
     },
     {
      "question": "Voinko seurata perheenjäsenteni verenpainetta?",
-     "answer": "Sovellus on suunniteltu henkilökohtaiseen käyttöön ja synkronoi henkilökohtaisen iCloud-tilisi kanssa. Useiden perheenjäsenten seurantaan jokaisen henkilön tulisi käyttää sovellusta omalla laitteellaan ja omalla Apple ID:llään."
+     "answer": "Feeltracker Verenpaine on suunniteltu yhden henkilön mittauksille, joten kunkin perheenjäsenen kannattaa seurata omalla laitteellaan omalla Apple ID:llä ja iCloud-tilillä. Näin jokaisen historia, kaaviot ja raportit pysyvät erillään, ja jokaisen tiedot synkronoituvat vain hänen omiin laitteisiinsa."
     },
     {
      "question": "Näyttääkö sovellus mainoksia tai seuraako se minua?",
@@ -241,7 +249,23 @@
     },
     {
      "question": "Tarvitsenko tilauksen?",
-     "answer": "Tilausta ei tarvita. Sovellus on ilmainen ladata, kaikki seuranta, kaaviot, Apple Health -synkronointi ja vienti ovat ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Syvällinen tutkimus, Lääkäriyhteenveto, Mallientunnistin, Pro MAP-raportti, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja."
+     "answer": "Tilausta ei tarvita. Sovellus on ilmainen ladata, kaikki seuranta, kaaviot, Apple Health -synkronointi, varmuuskopiot ja vienti ovat ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä – Kysy kysymys, Pika-chat, Ääniyhteenveto, Pika-terveysraportti, Naurata minua, Rauhoita minua ja Kameraskannaava AI – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Syvällinen tutkimus, Lääkäriyhteenveto, Mallientunnistin, Pro MAP-raportti, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja."
+    },
+    {
+     "question": "Toimiiko se OMRON-, Microlife- tai Beurer-mittarini kanssa?",
+     "answer": "Feeltracker Verenpaine toimii minkä tahansa kotikäytön verenpainemittarin kanssa, koska se lukee lukemat sen sijaan, että yhdistäisi laitteeseen. Osoita kameralla näyttöä kohti, niin Kameraskannaava AI täyttää systolisen, diastolisen ja pulssin – tämä toimii useimpien digitaalisten mittareiden kanssa, mukaan lukien [OMRON](https://geni.us/B9RB), Microlife ja Beurer – tai syötä arvot itse valitsimilla tai näppäimistöllä. Bluetooth-parittamista tai yhteensopivuuslistaa ei ole, eikä mikään hajoa, kun vaihdat mittarin."
+    },
+    {
+     "question": "Miten jaan verenpainemittaukseni lääkärini kanssa?",
+     "answer": "Feeltracker Verenpaine voi tuottaa lääkärille sopivan PDF-raportin miltä tahansa aikaväliltä muutamalla napautuksella, ja voit lähettää sen sähköpostilla tai viestillä, tulostaa sen tai AirDropata sen suoraan sovelluksesta. PDF-, CSV-, Excel- ja JSON-vienti ovat kaikki ilmaisia, samoin oma MAP-raportti, joka jakaa keskivaltimopaineesi aamu-, ilta- ja koko päivän näkymiin valitsemaltasi kuukaudelta, kvartaalilta, vuodelta tai mukautetulta jaksolta. Prolla tekoäly voi myös kirjoittaa samalta ajanjaksolta selkokielisen Lääkäriyhteenvedon lukujen tueksi."
+    },
+    {
+     "question": "Voinko asettaa omat verenpainetavoitteeni ja -rajani?",
+     "answer": "Kyllä — Feeltracker Verenpaine antaa sinun asettaa tavoitearvot systoliselle ja diastoliselle paineelle sekä pulssille, ja ne näkyvät viitteinä kaavioissasi, sekä muokata jokaisen alueen rajoja (Matala, Normaali, Kohonnut, Korkea, Erittäin korkea) niin että ne vastaavat sinulle todellisuudessa annettua ohjeistusta. Kaaviosi, kalenterin värit ja PDF-raporttisi noudattavat asettamiasi rajoja, eivät vain oletuksia. MAP:lla on omat säädettävät alueensa, mukaan lukien valinnainen LVAD-painotus."
+    },
+    {
+     "question": "Toimiiko Feeltracker Verenpaine iPadilla ja Macilla?",
+     "answer": "Kyllä — yksi lataus kattaa iPhonen ja iPadin, ja se toimii myös Apple Silicon -Maceilla Mac App Storen kautta. Mittauksesi synkronoituvat automaattisesti kaikkien laitteidesi välillä oman yksityisen iCloud-tilisi kautta, joten iPhonellasi kirjattu mittaus on iPadillasi hetkeä myöhemmin. Sovelluksessa on kotinäytön widget, joka näyttää viimeaikaiset keskiarvosi, ja merkinnät on indeksoitu Spotlightiin, joten voit hakea historiaasi mistä tahansa iOS:ssa."
     }
    ]
   },
@@ -447,81 +471,27 @@
     "name": "Verenpaine",
     "applicationSubCategory": "Verenpainemonitori",
     "operatingSystem": "iOS 16.0 tai uudempi",
-    "description": "Yhdistyneen kuningaskunnan ykkönen verenpaineen seurantasovellus. Seuraa systolista ja diastolista verenpainetta, sykettä ja keskivaltimopaineetta AI-pohjaisilla havainnoilla. Sisältää Kameraskannaava AI:n, joka lukee arvot automaattisesti monitorin näytöltä, Apple Health -integraation sekä vientitoiminnon tietojen jakamiseen terveydenhuollon ammattilaisille.",
+    "description": "Ison-Britannian ykkönen verenpaineen seurantasovellus. Seuraa systolista ja diastolista verenpainetta, pulssia ja keskivaltimopainetta tekoälyn tuottamien näkemysten avulla. Sisältää Kameraskannaavan AI:n arvojen lukemiseen suoraan mittarin näytöltä, muokattavat tavoitearvot ja aluerajat, aamu-, ilta- ja koko päivän MAP-raportin, kaksisuuntaisen Apple Health -synkronoinnin, iCloud-synkronoinnin iPhonen, iPadin ja Macin välillä sekä PDF-, CSV-, Excel- ja JSON-viennit terveydenhuollon ammattilaisten kanssa jakamiseen. Ilmainen käyttää, tekoälyominaisuudet sisältyvät ilmaiseksi joka päivä ja valinnainen Pro-tilaus syvällisimpiin tekoälyraportteihin.",
     "featureList": [
      "Kameraskannaava AI automaattiseen lukemien tallentamiseen",
      "Apple Health kaksisuuntainen synkronointi",
      "AI-pohjainen kaavojen tunnistus",
-     "Vienti PDF- ja Excel-muodossa",
+     "Vienti PDF-, CSV-, Excel- ja JSON-muotoon",
      "Keskivaltimoaineen laskenta",
      "Yhteensopiva OMRON-, Microlife- ja Beurer-monitorien kanssa",
      "Useamman mittauksen kirjaaminen päivässä",
-     "Kotinäytön widgetit nopeaa kirjaamista varten",
+     "Kotinäytön widget viimeaikaisilla keskiarvoilla",
      "Kalenterinäkymä värikoodatuilla ilmaisimilla",
      "iCloud-varmuuskopiointi ja synkronointi",
-     "32 kielen tuki"
+     "32 kielen tuki",
+     "Muokattavat aluerajat ja tavoiteviivat kaavioissa",
+     "MAP-PDF-raportti aamu-, ilta- ja koko päivän erittelyllä",
+     "Automaattiset viikoittaiset varmuuskopiot palautusmahdollisuudella",
+     "Jopa neljä muistutusta valitsemillesi päiville",
+     "Ilmaiset päivittäiset tekoälyominaisuudet, valinnainen Pro-tilaus",
+     "Ei mainoksia eikä kolmannen osapuolen seurantaa"
     ],
     "award": "Britannian App Storen paras verenpaineen seurantasovellus"
-   },
-   {
-    "mainEntity": [
-     {
-      "@type": "Question",
-      "name": "Mikä on paras verenpaineen seurantasovellus?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Blood Pressure on Britannian App Storen paras verenpaineen seurantasovellus. Se tarjoaa tekoälypohjaiset analyysit, Camera Scan AI -teknologian, joka lukee arvot automaattisesti mittareiden näytöiltä (OMRON, Microlife, Beurer), Apple Health -integraation sekä vientitoiminnot lääkärille jakamista varten. Se tukee systolisen ja diastolisen verenpaineen, sykeen sekä keskivaltimopaineenkaan (MAP) seurantaa."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Miten Camera Scan AI toimii?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Camera Scan AI käyttää kehittynyttä optista merkkientunnistusta (OCR) lukeakseen verenpaineen arvot automaattisesti mittarisi digitaalinäytöltä. Osoita iPhonen tai iPadin kameraa näyttöön, jossa näkyvät systolinen, diastolinen ja sykelukemat, ja sovellus täyttää arvot automaattisesti. Tämä poistaa manuaaliset syöttövirheet ja nopeuttaa kirjaamista. Se toimii OMRON-, Microlife-, Beurer- ja useimpien digitaalisten verenpainemittareiden kanssa."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Mikä on normaali verenpainelukema?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Lääketieteellisten ohjeiden mukaan normaali verenpaine on yleensä alle 120/80 mmHg. Lukemat, joissa systolinen on 120–129 ja diastolinen alle 80, katsotaan kohonneeksi. Arvot 130/80 tai enemmän voivat viitata kohonneeseen verenpaineeseen. Tavoitearvot voivat kuitenkin vaihdella iän ja terveydentilan mukaan, joten kysy lääkäriltäsi henkilökohtaista ohjausta."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Voinko viedä verenpainetietoni lääkärille?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Kyllä, Verenpaine-sovelluksella voit viedä kattavia raportteja PDF-, CSV-, Excel- tai JSON-muodossa. Nämä ammattimaisesti muotoillut raportit sisältävät yhteenvetotilastot, trendikaaviot ja kaikki muistiinpanosi – kaiken, mitä terveydenhuollon ammattilaisesi tarvitsee yhdessä asiakirjassa. Voit helposti jakaa nämä raportit sähköpostitse tai muilla jakotavoilla."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Integroituuko sovellus Apple Healthiin?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Kyllä, Blood Pressure tarjoaa kaksisuuntaisen Apple Health -integraation. Voit tuoda aiemmat verenpainetiedot Apple Healthista, ja sovellus tallentaa uudet mittaustulokset automaattisesti HealthKitiin. Tämä luo kattavan terveyden seurantaekosysteemin kaikille Apple-laitteillesi."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Mikä on MAP verenpaineen seurannassa?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "MAP (keskivaltimopaine) on laskettu arvo, joka kuvaa valtimoiden keskimääräistä verenpainetta yhden sydämen lyöntisyklin aikana. Se lasketaan kaavalla: MAP = (2 × diastolinen + systolinen) ÷ 3. Jotkut lääkärit pitävät MAPia hyödyllisenä sydän- ja verisuoniriskin sekä elinten verenkierron arvioinnissa. Blood Pressure laskee MAP:n automaattisesti jokaiselle mittaustulokselle."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Ovatko verenpainetietoni yksityisiä?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Kyllä, verenpainelukemasi tallennetaan salattuina laitteellesi ja yksityiseen iCloud-tiliisi. Tiedot eivät kulkeudu ulkoisille palvelimille, eivätkä kehittäjät näe terveystietojasi. Ne ovat yhtä turvallisia kuin Applen Muistiinpanot tai Kuvat -sovellukset, ja ne ovat täysin GDPR:n mukaisia."
-      }
-     }
-    ]
    }
   ]
  }

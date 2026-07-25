@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Daily Journal - Notes, Photos & AI Diary | Feeltracker</title>
     <meta name="description" content="Private AI-powered daily journal. Scan objects & text for instant entries, attach photos, track sentiment and word patterns. iCloud sync. iPhone, iPad & Mac.">
-    <meta name="keywords" content="log,day,diario,lock,free,moleskine,personal,private,secret,taker,writer,journaling,my,笔记,дневник,笔记本">
+    <meta name="keywords" content="daily journal app,journaling app,private diary app,digital diary,journal app for iPhone,gratitude journal,journal with photos,AI journal app,daily reflection app,journal and notes app">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "AI Item Scanning - describes objects for journal entries",
                 "AI Text Scanning - OCR to capture text",
-                "Sentiment analysis on entries",
-                "Word frequency and theme tracking",
+                "Sentiment gauge on entries",
+                "Word cloud and word frequency analysis",
                 "Attach up to 8 photos per entry",
                 "Note templates for quick entries",
                 "Full-text search and Spotlight integration",
-                "Export to PDF and Excel",
+                "Export to PDF, Excel, CSV, and JSON",
                 "iCloud backup and sync",
                 "32 language support",
-                "Home-screen widgets for quick entry"
+                "Home-screen widgets for quick entry",
+                "Recurring entries created daily or weekly",
+                "Optional Markdown rendering in the entry list",
+                "AI Rephrase for polishing what you wrote",
+                "Word counts by day, month, and year",
+                "Excel import for older journals",
+                "Automatic weekly backups"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "Is my journal private?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Absolutely. Your entries are stored on your device and in your private iCloud account — we have no servers storing your journal and we never see your writing. Optional AI features use privacy-respecting cloud AI you can switch off at any time; with AI off, sentiment analysis runs entirely on-device using Apple's Natural Language framework, and with the Apple Intelligence option all AI runs on-device."
+                            "text": "Yes — Feeltracker Daily Journal keeps your entries on your device and in your own private iCloud account, so we have no servers holding your journal and nobody at Feeltracker can read what you write. There are no ads and no cross-app tracking. Optional AI features send the entries you ask about to a privacy-respecting cloud service, and you can switch AI off at any time; with AI off, the sentiment gauge runs entirely on-device using Apple's Natural Language framework, and with the Apple Intelligence option every AI feature runs on-device."
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "How does sentiment analysis work?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "As you write, the app analyzes the emotional tone of your entry and shows an emoji indicating whether it reads as positive, negative, or neutral. By default this uses the app's privacy-respecting AI; if you turn AI off, it switches to Apple's built-in on-device Natural Language framework instead."
+                            "text": "Feeltracker Daily Journal scores the emotional tone of each entry as you write and shows it as a color-coded gauge under the text, running from red (negative) through gray (neutral) to green and blue (positive). The gauge is optional and can be turned off in Settings. By default it uses the app's privacy-respecting AI; if you turn AI off, it switches to Apple's built-in on-device Natural Language framework instead."
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "What is word frequency analysis?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "The Trends feature analyzes all your entries to show which words and topics you write about most often. This helps you identify recurring themes, concerns, or interests in your thinking."
+                            "text": "Word frequency analysis in Feeltracker Daily Journal counts the words across all your entries and ranks the ones you use most, so the people, places, and worries that keep coming up become visible. Common filler words are filtered out in your language, the same data is also shown as a word cloud, and tapping any word opens every entry that contains it."
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "Do I need a subscription?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "No subscription is required. The app is free to download, all tracking, charts, Apple Health sync, and exports are free, and every user gets real AI features free every day — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Theme Explorer, Sentiment Timeline, Doctor Summary, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits."
+                            "text": "No — Feeltracker Daily Journal is free to download and no subscription is required. Writing, photos, templates, recurring entries, word analysis, search, charts, backups, exports, and iCloud sync are all free, and every user gets real AI features free every day (Quick Chat, Ask a Question, Voice Summary, Make Me Laugh, Calm Me Down, plus the Text and Item scanners) — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Theme Explorer, Sentiment Timeline, Doctor Summary, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Does Feeltracker Daily Journal work offline?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes — Feeltracker Daily Journal works offline for everything that matters: writing entries, attaching photos, searching, browsing your year, and viewing stats and charts all run on your device with no internet connection. Anything you write offline syncs to your other devices via iCloud the next time you go online. Cloud AI features need a connection, but if you switch on the on-device Apple Intelligence mode (Pro, on supported devices running iOS 26 or later), AI works offline too."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Can I import my old journal entries?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes — Feeltracker Daily Journal imports journal entries from an Excel spreadsheet. Download the import template from Settings, paste in a date, a time, and the text of each entry, then import the file and every row becomes a journal entry. You can also restore a previous backup, which brings back your entries and their photos together."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Can I lock my journal with Face ID?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes — you can lock Feeltracker Daily Journal with Face ID or Touch ID using the app lock built into iOS: press and hold the app icon on your Home Screen and choose Require Face ID. Settings links to the same instructions. Once it's on, nobody can open your journal without your face, fingerprint, or passcode."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "What happens to my journal if I lose my phone?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Your journal is safe: Feeltracker Daily Journal syncs every entry and photo to your private iCloud account, so signing in on a new iPhone, iPad, or Mac brings it all back automatically. The app also writes an automatic backup roughly once a week (a ZIP of your entries and photos) that you can restore or export yourself at any time, and you can make a manual backup whenever you want one."
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/daily-journal/" class="current">Daily Journal</a>
 
-            <a href="/mental-health/">Mental Health</a>
+            <a href="/mood-journal/">Mood Journal</a>
 
             <a href="/sleep/">Sleep</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Feeltracker Daily Journal — AI health and mood journaling app for iPhone" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Daily Journal — private AI journaling and diary app for iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Daily Journaling</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> No Ads · No Tracking · Privacy First
         </div>
-        <p class="hero-subtitle">Your private space for daily reflections, thoughts, and memories. Write freely with AI-powered sentiment analysis, photo attachments, and intelligent insights into your writing patterns.</p>
+        <p class="hero-subtitle">Your private space for daily reflections, thoughts, and memories. Write as often as you like, attach up to 8 photos, and see the themes you keep returning to with a sentiment gauge, word cloud, and word frequency analysis.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button store_button--lg" src="/images/appstore/en-black.svg" alt="Download Daily Journaling on App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button store_button--lg" src="/images/appstore/en-black.svg" alt="Download Daily Journaling on App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Free app with optional premium features<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Feeltracker Daily Journal app home view with entries" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Feeltracker Daily Journal app home view with entries" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Creating a journal entry with AI prompts" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="AI feedback on a journal entry in Feeltracker Daily Journal" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Weekly mood and wellness insights overview" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Writing a journal entry with date, time, and notes" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Distraction-Free Writing</h3>
-                <p>Clean, simple interface that puts your words first. No clutter, just you and your thoughts. Write as much or as little as you want each day.</p>
+                <p>A clean, plain-text editor that puts your words first, with a live word count as you type. Tap AI Rephrase to polish a paragraph, and switch on Markdown rendering if you like headings, bold, and lists in your entry list.</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Word Frequency Analysis</h3>
-                <p>Discover what's really on your mind. See which words and themes appear most often in your writing to identify patterns and recurring thoughts.</p>
+                <h3>Word Cloud & Word Frequency</h3>
+                <p>Discover what's really on your mind. A word cloud and a ranked frequency list show the words you use most, with common filler words filtered out in your language — tap any word to open every entry that mentions it.</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>Total words written by day, month, and year. Some days you'll surprise yourself — and seeing the count climb is its own kind of motivation.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Recurring Entries</h3>
+                <p>Set up entries that create themselves, daily or weekly, so your habit log, medication note, or nightly gratitude prompt is already waiting for you when you open the app.</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,9 +778,9 @@
         <div class="app-card">
             <h3>2. See Patterns Emerge</h3>
             <div class="app-card-content">
-<p><strong>Sentiment Analysis:</strong> AI automatically detects the emotional tone of your entries - positive, negative, or neutral. See your mood trends visualized over weeks and months to understand your emotional patterns.</p>
-<p><strong>Word Frequency:</strong> Discover which topics, people, or themes you write about most. The app identifies recurring words and phrases, revealing what's consistently on your mind and how your focus shifts over time.</p>
-<p><strong>Calendar View:</strong> Browse your entire journaling history in a calendar interface. Each day shows an excerpt and mood indicator. Quickly jump to any past entry to see what you were thinking on that day.</p>
+<p><strong>Sentiment Gauge:</strong> As you write, an optional color-coded gauge rates the emotional tone of the entry, from negative through neutral to positive. Pro adds a Sentiment Timeline that charts how that tone moves across weeks and months.</p>
+<p><strong>Word Frequency:</strong> Discover which topics, people, or themes you write about most. A word cloud and a ranked frequency list reveal what's consistently on your mind, and tapping a word opens every entry that uses it.</p>
+<p><strong>Year, Month, and Day Views:</strong> Browse your whole journaling history, from a year heatmap of the days you wrote down to a single day. Each day lists your entries in full, with a record and word count, so you can jump straight to what you were thinking on any date.</p>
             </div>
         </div>
 
@@ -743,7 +789,7 @@
             <div class="app-card-content">
 <p><strong>AI-Powered Insights:</strong> Ask questions about your journal: "What were my happiest days last month?" or "Show me all entries where I mentioned my goals." Get instant, thoughtful answers that help you understand your journey.</p>
 <p><strong>Personal Growth Tracking:</strong> Review how your thoughts, concerns, and aspirations evolve. See progress toward goals mentioned in past entries. Identify growth areas and celebrate how far you've come.</p>
-<p><strong>Search Everything:</strong> Powerful search finds any word, phrase, or concept across years of journaling. Filter by date, mood, or keywords. Your entire written history is instantly accessible and searchable.</p>
+<p><strong>Search Everything:</strong> Search any word across years of journaling, narrow it to a date range, and jump straight to the matching entries. Your journal is also indexed in iOS Spotlight, so a search from your Home Screen finds it too.</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Ask a Question</h4>
+                <h3><i class="fas fa-question-circle"></i> Ask a Question</h3>
                 <p>Quick Q&A about your journal entries - get instant answers about your writing</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Have interactive conversations about your journaling journey and get personalized guidance. Quick Chat is free every day; Pro Chat goes deeper on our most capable AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Voice Summary</h4>
+                <h3><i class="fas fa-volume-up"></i> Voice Summary</h3>
                 <p>Listen to audio summaries of your journal themes - perfect for on-the-go reflection</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> AI Scanning</h4>
+                <h3><i class="fas fa-barcode-scan"></i> AI Scanning</h3>
                 <p>Scan objects, documents, receipts, or text to create instant journal entries with AI descriptions</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Make Me Laugh</h4>
+                <h3><i class="fas fa-laugh"></i> Make Me Laugh</h3>
                 <p>Get personalized humor from your journal entries to brighten your day</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Calm Me Down</h4>
+                <h3><i class="fas fa-moon"></i> Calm Me Down</h3>
                 <p>AI-guided breathing and relaxation exercises to help reduce stress</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Deep Research <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Deep Research <span class="ai-pro-badge">Pro</span></h3>
                 <p>Comprehensive AI analysis of your journal with detailed insights</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Pattern Detective <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Pattern Detective <span class="ai-pro-badge">Pro</span></h3>
                 <p>Find hidden themes and patterns in your journal entries over time</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Goal Assistant <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Goal Assistant <span class="ai-pro-badge">Pro</span></h3>
                 <p>Get personalized, data-driven life goals based on your journaling patterns</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Doctor Summary <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Doctor Summary <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generate professional summaries to share at healthcare visits</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sick Note <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Sick Note <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-generated sick notes for work or school when you need them</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Story Generator <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Story Generator <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transform your journal entries into creative, engaging narratives</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Text Summary <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Text Summary <span class="ai-pro-badge">Pro</span></h3>
                 <p>Create shareable text message summaries of your journal themes</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personal Quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Personal Quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test your knowledge with a fun AI-generated 10-question quiz about your data</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Text-to-Speech <span class="ai-pro-badge">Pro</span></h4>
-                <p>Listen to your AI insights and summaries with natural voice playback</p>
+                <h3><i class="fas fa-microphone"></i> Spoken Feedback <span class="ai-pro-badge">Pro</span></h3>
+                <p>A short AI voice note after each save, reacting to what you just wrote</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Tailored Health Report <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Tailored Health Report <span class="ai-pro-badge">Pro</span></h3>
                 <p>Create comprehensive, personalized documents to track your journaling progress</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Theme Explorer <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Theme Explorer <span class="ai-pro-badge">Pro</span></h3>
                 <p>Discover recurring topics and ideas in your writing with AI-powered theme analysis</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Sentiment Timeline <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Sentiment Timeline <span class="ai-pro-badge">Pro</span></h3>
                 <p>Visualize your emotional journey over time with AI-analyzed sentiment tracking</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (On-Device) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (On-Device) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Privacy-first option that runs AI locally on your device using Apple's Foundation Models — nothing leaves your iPhone, iPad, or Mac. Unlimited use with a paid account, on supported Apple Silicon devices (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Voice Chat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Voice Chat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Hands-free, two-way spoken conversations with the AI about your data — ask questions and hear answers without touching the screen</p>
             </div>
 
@@ -939,7 +985,7 @@
         <p>Practice daily writing, capture ideas, and develop your voice. The distraction-free interface helps you focus on your craft.</p>
 
         <h3>Mental Health</h3>
-        <p>Process emotions, identify triggers, and track mood patterns through writing. Sentiment analysis provides objective feedback on emotional tone.</p>
+        <p>Write your way through a difficult day, notice what keeps coming up, and look back at how things were a month ago. The sentiment gauge gives you a simple read on each entry's emotional tone.</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>Is my journal private?</h3>
-        <p>Absolutely. Your entries are stored on your device and in your private iCloud account — we have no servers storing your journal and we never see your writing. Optional AI features use privacy-respecting cloud AI you can switch off at any time; with AI off, sentiment analysis runs entirely on-device using Apple's Natural Language framework, and with the Apple Intelligence option all AI runs on-device.</p>
+        <p>Yes — Feeltracker Daily Journal keeps your entries on your device and in your own private iCloud account, so we have no servers holding your journal and nobody at Feeltracker can read what you write. There are no ads and no cross-app tracking. Optional AI features send the entries you ask about to a privacy-respecting cloud service, and you can switch AI off at any time; with AI off, the sentiment gauge runs entirely on-device using Apple's Natural Language framework, and with the Apple Intelligence option every AI feature runs on-device.</p>
 
 
         <h3>How does sentiment analysis work?</h3>
-        <p>As you write, the app analyzes the emotional tone of your entry and shows an emoji indicating whether it reads as positive, negative, or neutral. By default this uses the app's privacy-respecting AI; if you turn AI off, it switches to Apple's built-in on-device Natural Language framework instead.</p>
+        <p>Feeltracker Daily Journal scores the emotional tone of each entry as you write and shows it as a color-coded gauge under the text, running from red (negative) through gray (neutral) to green and blue (positive). The gauge is optional and can be turned off in Settings. By default it uses the app's privacy-respecting AI; if you turn AI off, it switches to Apple's built-in on-device Natural Language framework instead.</p>
 
 
         <h3>What is word frequency analysis?</h3>
-        <p>The Trends feature analyzes all your entries to show which words and topics you write about most often. This helps you identify recurring themes, concerns, or interests in your thinking.</p>
+        <p>Word frequency analysis in Feeltracker Daily Journal counts the words across all your entries and ranks the ones you use most, so the people, places, and worries that keep coming up become visible. Common filler words are filtered out in your language, the same data is also shown as a word cloud, and tapping any word opens every entry that contains it.</p>
 
 
         <h3>Can I add photos to my journal?</h3>
@@ -987,7 +1033,23 @@
 
 
         <h3>Do I need a subscription?</h3>
-        <p>No subscription is required. The app is free to download, all tracking, charts, Apple Health sync, and exports are free, and every user gets real AI features free every day — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Theme Explorer, Sentiment Timeline, Doctor Summary, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits.</p>
+        <p>No — Feeltracker Daily Journal is free to download and no subscription is required. Writing, photos, templates, recurring entries, word analysis, search, charts, backups, exports, and iCloud sync are all free, and every user gets real AI features free every day (Quick Chat, Ask a Question, Voice Summary, Make Me Laugh, Calm Me Down, plus the Text and Item scanners) — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Theme Explorer, Sentiment Timeline, Doctor Summary, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits.</p>
+
+
+        <h3>Does Feeltracker Daily Journal work offline?</h3>
+        <p>Yes — Feeltracker Daily Journal works offline for everything that matters: writing entries, attaching photos, searching, browsing your year, and viewing stats and charts all run on your device with no internet connection. Anything you write offline syncs to your other devices via iCloud the next time you go online. Cloud AI features need a connection, but if you switch on the on-device Apple Intelligence mode (Pro, on supported devices running iOS 26 or later), AI works offline too.</p>
+
+
+        <h3>Can I import my old journal entries?</h3>
+        <p>Yes — Feeltracker Daily Journal imports journal entries from an Excel spreadsheet. Download the import template from Settings, paste in a date, a time, and the text of each entry, then import the file and every row becomes a journal entry. You can also restore a previous backup, which brings back your entries and their photos together.</p>
+
+
+        <h3>Can I lock my journal with Face ID?</h3>
+        <p>Yes — you can lock Feeltracker Daily Journal with Face ID or Touch ID using the app lock built into iOS: press and hold the app icon on your Home Screen and choose <strong>Require Face ID</strong>. Settings links to the same instructions. Once it's on, nobody can open your journal without your face, fingerprint, or passcode.</p>
+
+
+        <h3>What happens to my journal if I lose my phone?</h3>
+        <p>Your journal is safe: Feeltracker Daily Journal syncs every entry and photo to your private iCloud account, so signing in on a new iPhone, iPad, or Mac brings it all back automatically. The app also writes an automatic backup roughly once a week (a ZIP of your entries and photos) that you can restore or export yourself at any time, and you can make a manual backup whenever you want one.</p>
 
     </section>
 
@@ -1182,22 +1244,22 @@
         <div class="related-apps-grid">
 
             <a href="/blood-pressure/" class="related-app-card" aria-label="Blood Pressure">
-                <img src="/images/BPT_1024.png" alt="Blood Pressure" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Blood Pressure" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Blood Pressure</span>
             </a>
 
-            <a href="/mental-health/" class="related-app-card" aria-label="Mental Health">
-                <img src="/images/FT_1024.png" alt="Mental Health" class="related-app-icon">
-                <span class="related-app-name">Mental Health</span>
+            <a href="/mood-journal/" class="related-app-card" aria-label="Mood Journal">
+                <img src="/images/FT_1024.png" alt="Mood Journal" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Mood Journal</span>
             </a>
 
             <a href="/sleep/" class="related-app-card" aria-label="Sleep">
-                <img src="/images/ST_1024.png" alt="Sleep" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sleep" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sleep</span>
             </a>
 
             <a href="/weight/" class="related-app-card" aria-label="Weight">
-                <img src="/images/WT_1024.png" alt="Weight" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Weight" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Weight</span>
             </a>
 
@@ -1210,9 +1272,10 @@
         <h2>Start Your Journaling Practice Today</h2>
         <p>Join thousands discovering the benefits of daily reflection</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button store_button--lg" src="/images/appstore/en-black.svg" alt="Download Daily Journaling"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button store_button--lg" src="/images/appstore/en-black.svg" alt="Download Daily Journaling" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

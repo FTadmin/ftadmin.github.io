@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "Support - Feeltracker",
-   "description": "Få hjälp med Feeltracker-hälsoappar. Kontakta support, bläddra bland FAQ:er och hitta resurser för blodtrycks-, humör-, dagboks-, sömn- och viktappar.",
-   "keywords": "",
+   "title": "Feeltracker Support | Få hjälp med våra hälsoappar",
+   "description": "Få hjälp med Feeltrackers hälsoappar. Mejla support@feeltracker.com för svar inom 24 timmar, eller läs vår FAQ, integritetspolicy och användarvillkor.",
+   "keywords": "feeltracker support, kontakta feeltracker, hjälp hälsoapp, blodtrycksapp support, humörsdagbok support, sömnapp support, viktapp support",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Feeltracker Support",
   "contact": {
    "title": "Behöver du hjälp?",
-   "supportText": "För omedelbar support eller frågor, mejla oss på: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "För detaljerad hjälp och vanliga frågor, besök vår <a href=\"../faq/\">FAQ-sida</a>."
+   "supportText": "Det snabbaste sättet att få hjälp med en Feeltracker-app är att mejla <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> – vi är ett litet team och svarar vanligtvis inom 24 timmar. Berätta vilken app du använder och vad du gjorde när problemet uppstod, så tar vi det därifrån.",
+   "faqText": "För steg-för-steg-svar om synkronisering, säkerhetskopior, export till din läkare, AI-funktioner, integritet och prenumerationer, se vår <a href=\"../faq/\">FAQ-sida</a>."
   },
   "apps": {
    "title": "Våra appar",
@@ -31,7 +31,7 @@
     },
     {
      "name": "Humördagbok",
-     "url": "https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999",
+     "url": "https://apps.apple.com/us/app/feeltracker-mood-journal-diary/id687448999",
      "separator": " - ",
      "description": "Övervaka ditt emotionella välbefinnande"
     },
@@ -63,8 +63,31 @@
     {
      "name": "Användarvillkor",
      "url": "../terms/"
+    },
+    {
+     "name": "Om Feeltracker",
+     "url": "../about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Feeltracker Support",
+    "description": "Så får du hjälp med Feeltrackers hälsoappar för iPhone, iPad och Mac: mejlsupport, FAQ, integritetspolicy och användarvillkor.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Kundsupport",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "English"
+      }
+     ]
+    }
+   }
+  ]
  }
 }

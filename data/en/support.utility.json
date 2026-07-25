@@ -6,19 +6,42 @@
  "outputPath": "support/index.html",
  "data": {
   "meta": {
-   "title": "Support - Feeltracker",
-   "description": "Get help with Feeltracker health apps. Contact support, browse FAQs, and find resources for Blood Pressure, Mood, Journal, Sleep, and Weight apps.",
-   "keywords": "",
+   "title": "Feeltracker Support | Get Help With Our Health Apps",
+   "description": "Get help with Feeltracker health apps. Email support@feeltracker.com for a reply within 24 hours, or browse the FAQ, privacy policy and terms.",
+   "keywords": "feeltracker support, contact feeltracker, health app help, blood pressure app support, mood tracker support, sleep tracker support, weight tracker support",
    "ogTitle": "",
    "ogDescription": "",
    "ogImage": "https://feeltracker.com/images/feeltracker.png",
    "twitterDescription": ""
   },
+  "structuredData": [
+   {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Feeltracker Support",
+    "url": "https://feeltracker.com/support/",
+    "description": "How to get help with the Feeltracker health tracking apps for iPhone, iPad and Mac: email support, FAQ, privacy policy and terms.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "url": "https://feeltracker.com",
+     "logo": "https://feeltracker.com/images/feeltracker.png",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Customer Support",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "English"
+      }
+     ]
+    }
+   }
+  ],
   "pageTitle": "Feeltracker Support",
   "contact": {
    "title": "Need Help?",
-   "supportText": "For immediate support or questions, email us at: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "For detailed help and common questions, visit our <a href=\"../faq/\">FAQ page</a>."
+   "supportText": "The fastest way to get help with any Feeltracker app is to email <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> — we're a small team and usually reply within 24 hours. Tell us which app you're using and what you were doing when the problem happened, and we'll take it from there.",
+   "faqText": "For step-by-step answers on syncing, backups, exporting for your doctor, AI features, privacy and subscriptions, see our <a href=\"../faq/\">FAQ page</a>."
   },
   "apps": {
    "title": "Our Apps",
@@ -37,7 +60,7 @@
     },
     {
      "name": "Mood Journal",
-     "url": "https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999",
+     "url": "https://apps.apple.com/us/app/feeltracker-mood-journal-diary/id687448999",
      "separator": " - ",
      "description": "Monitor your emotional well-being"
     },
@@ -69,6 +92,10 @@
     {
      "name": "Terms of Service",
      "url": "../terms/"
+    },
+    {
+     "name": "About Feeltracker",
+     "url": "../about/"
     }
    ]
   }

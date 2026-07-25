@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>每日日记 - 笔记、照片与AI日记 | Feeltracker</title>
     <meta name="description" content="私密的AI驱动每日日记。扫描物体和文字即可快速创建条目，附加照片，追踪情感和词汇模式。通过iCloud同步。支持iPhone、iPad和Mac。">
-    <meta name="keywords" content="日记,每日,日志,个人,私密,秘密,笔记,记录,免费,加锁,写作,日记本,我的,心情,思绪">
+    <meta name="keywords" content="日记应用,写日记应用,私密日记应用,数字日记,iPhone日记应用,感恩日记,带照片的日记,AI日记应用,每日反思应用,日记与笔记应用">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/zh-Hans/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "AI物品扫描 - 为日记条目描述物品",
                 "AI文字扫描 - OCR文字识别",
-                "日记条目情感分析",
-                "词频和主题追踪",
+                "条目情绪仪表",
+                "词云与词频分析",
                 "每条最多附加8张照片",
                 "笔记模板快速记录",
                 "全文搜索和Spotlight集成",
-                "导出为PDF和Excel",
+                "导出为PDF、Excel、CSV和JSON",
                 "iCloud备份和同步",
                 "支持32种语言",
-                "用于快速记录的主屏幕小组件"
+                "用于快速记录的主屏幕小组件",
+                "每天或每周自动创建的重复记录",
+                "日记列表中可选的Markdown渲染",
+                "AI改写，润色你写的内容",
+                "按日、月、年统计字数",
+                "支持导入Excel格式的旧日记",
+                "自动每周备份"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "我的日记是私密的吗？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "当然可以。您的记录存储在您的设备和您的私人iCloud账户中 — 我们没有存储它的服务器，我们绝不会看到您写的内容。可选的AI功能使用注重隐私的云端AI，您可以随时关闭。关闭AI后，情绪分析将完全在设备端使用Apple的自然语言框架完成，而使用Apple Intelligence选项时，所有AI都会在设备端运行。"
+                            "text": "是的——Feeltracker每日日记把你的条目保存在你自己的设备和私人iCloud账户中，我们没有任何服务器保存你的日记，Feeltracker的任何人都无法读取你写的内容。没有广告，也没有跨应用追踪。可选的AI功能会把你所询问的条目发送给一项注重隐私的云端服务，你可以随时关闭AI；关闭AI后，情绪仪表会完全在设备端运行，使用Apple的自然语言框架；如果开启Apple智能选项，所有AI功能都会在设备端运行。"
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "情感分析是如何工作的？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "在您书写的过程中，应用会分析记录的情绪基调，并显示一个表情符号，表明它读起来是积极、消极还是中性。默认情况下会使用应用注重隐私的AI；如果您关闭AI，则会切换为Apple设备端的自然语言框架。"
+                            "text": "Feeltracker每日日记会在你写作的同时为每篇条目的情绪基调打分，并在文字下方以彩色仪表显示，从红色（消极）经灰色（中性）到绿色和蓝色（积极）。这个仪表是可选的，可以在设置中关闭。默认情况下它使用应用中注重隐私的AI；如果你关闭AI，它会改用Apple内置的设备端自然语言框架。"
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "什么是词频分析？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "趋势功能会分析你所有的日记条目，显示你最常写的词汇和话题。这有助于你识别思维中反复出现的主题、关注点或兴趣。"
+                            "text": "Feeltracker每日日记的词频分析会统计你所有条目中的词语，并按使用频率排序，让反复出现的人物、地点和烦恼变得一目了然。系统会按你所用的语言过滤掉常见的虚词，同样的数据也会以词云形式展示，点击任意词语即可打开包含它的所有条目。"
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "我需要订阅吗？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "无需订阅。应用可免费下载，所有记录、图表、Apple Health同步和导出功能均免费，每位用户每天都能免费使用真正的AI功能 — 永远没有广告。可选的Pro订阅可解锁最深入的AI功能（深度研究、主题探索、情绪时间线、医生总结、Pro聊天等），并在我们最强大的AI上运行，同时提高原本就很慷慨的每日限额。"
+                            "text": "不需要——Feeltracker每日日记免费下载，也不需要订阅。写作、照片、模板、重复记录、词语分析、搜索、图表、备份、导出和iCloud同步都是免费的，每位用户每天都能免费使用真正的AI功能（快速对话、提问、语音摘要、逗我笑一下、帮我冷静下来，以及文本和物品扫描器）——永远没有广告。可选的Pro订阅会解锁最深入的AI功能（深度研究、主题探索、情绪时间线、医生摘要、Pro对话等），让这些功能运行在我们能力最强的AI上，并提高每日的慷慨额度。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Feeltracker每日日记可以离线使用吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "可以——Feeltracker每日日记的核心功能都能离线使用：撰写条目、附加照片、搜索、浏览年度视图，以及查看统计和图表，全都可以在没有网络的情况下在你的设备上运行。你离线时写下的内容，会在下次联网时通过iCloud同步到你的其他设备。云端AI功能需要联网，但如果你开启设备端的Apple智能模式（Pro订阅，需运行iOS 26或更高版本的受支持设备），AI同样可以离线使用。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我可以导入我以前的日记条目吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "可以——Feeltracker每日日记可以从Excel表格导入日记条目。从设置中下载导入模板，把每条记录的日期、时间和文字粘贴进去，然后导入该文件，每一行都会变成一篇日记条目。你也可以恢复之前的备份，把条目连同照片一起找回来。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我可以用面容ID锁定我的日记吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "可以——你可以使用iOS内置的应用锁功能，用面容ID或触控ID锁定Feeltracker每日日记：按住主屏幕上的应用图标，选择要求面容ID。设置中也链接到同样的操作说明。开启后，没有你的面容、指纹或密码，任何人都无法打开你的日记。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "如果我的手机丢了，我的日记会怎么样？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "你的日记很安全：Feeltracker每日日记会把每篇条目和每张照片都同步到你的私人iCloud账户，所以在新的iPhone、iPad或Mac上登录，就能自动找回全部内容。应用还会大约每周自动写入一次备份（包含你条目和照片的ZIP文件），你可以随时自行恢复或导出，也可以随时手动创建备份。"
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/zh-Hans/daily-journal/" class="current">每日日记</a>
 
-            <a href="/zh-Hans/mental-health/">心理健康</a>
+            <a href="/zh-Hans/mood-journal/">心情日记</a>
 
             <a href="/zh-Hans/sleep/">睡眠</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="每日日记应用图标" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker每日日记——为iPhone打造的私密AI写日记应用" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>每日日记</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> 无广告 · 无追踪 · 隐私优先
         </div>
-        <p class="hero-subtitle">您的私密空间，记录每日反思、想法和回忆。自由书写，配备AI情感分析、照片附件和智能写作模式洞察。</p>
+        <p class="hero-subtitle">属于你的私密空间，用来记录每天的思考、想法和回忆。想写多少次就写多少次，最多可附加8张照片，还能通过情绪仪表、词云和词频分析，看清你反复提到的主题。</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载每日日记"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载每日日记" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">免费应用，含可选高级功能<br>iPhone、iPad和Mac · iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="每日日记截图1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="每日日记截图1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="每日日记截图2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="Feeltracker每日日记中针对一篇日记条目给出的AI反馈" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="每日日记截图3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="带有日期、时间和备注的日记条目撰写界面" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>无干扰写作</h3>
-                <p>简洁清晰的界面，让文字成为焦点。没有杂乱，只有你和你的想法。每天想写多少就写多少。</p>
+                <p>简洁的纯文本编辑器，把你的文字放在第一位，输入时实时显示字数。轻点「AI改写」即可润色一段文字，如果你喜欢在日记列表里看到标题、加粗和列表，也可以开启Markdown渲染。</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>词频分析</h3>
-                <p>发现你真正在想什么。查看哪些词汇和主题在你的写作中出现最多，识别模式和反复出现的想法。</p>
+                <h3>词云与词频</h3>
+                <p>发现你心里真正在想什么。词云和按频率排序的列表会显示你最常使用的词语，并按你所用语言过滤掉常见的虚词——点击任意词语即可打开所有提到它的条目。</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>按日、月、年统计累计写作字数。有些日子会让你大吃一惊——看着数字不断攀升，本身就是一种激励。</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>重复记录</h3>
+                <p>设置每天或每周自动生成的条目，这样当你打开应用时，习惯记录、用药提醒或每晚的感恩提示早已为你准备好。</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,18 +778,18 @@
         <div class="app-card">
             <h3>2. 发现规律</h3>
             <div class="app-card-content">
-<p><strong>情感分析：</strong> AI自动检测日记条目的情感基调——积极、消极或中性。查看数周和数月的情绪趋势可视化，了解你的情感模式。</p>
-<p><strong>词频分析：</strong> 发现你最常写的话题、人物或主题。应用识别反复出现的词汇和短语，揭示你一直在想什么以及关注点如何随时间变化。</p>
-<p><strong>日历视图：</strong> 在日历界面浏览你的全部日记历史。每天显示摘要和情绪指标。快速跳转到任何过去的日记条目，查看那天你在想什么。</p>
+<p><strong>情绪仪表：</strong>在你写作的同时，一个可选的彩色仪表会评估这篇条目的情绪基调，从负面经中性到正面。Pro版还新增情绪时间线，展示这种基调如何随周、月变化。</p>
+<p><strong>词频分析：</strong>发现你写得最多的话题、人物或主题。词云和按频率排序的列表会揭示你心里持续关注的东西，点击某个词就能打开所有用到它的条目。</p>
+<p><strong>年、月、日视图：</strong>浏览你整个写日记的历史，从展示你写下日记的天数的年度热力图，到具体某一天。每一天都会列出当天的全部条目，附带记录数和字数，让你可以直接跳到任意日期当时的想法。</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. 反思与成长</h3>
             <div class="app-card-content">
-<p><strong>AI智能洞察：</strong> 向你的日记提问："上个月我最开心的日子是哪些？"或"显示所有提到我目标的条目。"获得即时、有深度的答案，帮助你理解自己的旅程。</p>
-<p><strong>个人成长追踪：</strong> 回顾你的想法、关注点和愿望如何演变。查看过去日记中提到的目标的进展。识别成长领域并庆祝你已经走了多远。</p>
-<p><strong>搜索一切：</strong> 强大的搜索功能可以在多年的日记中找到任何词汇、短语或概念。按日期、情绪或关键词过滤。你的全部书写历史都可以即时访问和搜索。</p>
+<p><strong>AI驱动的洞察：</strong>向你的日记提问，比如「上个月我最开心的几天是哪几天？」或「显示所有提到我目标的条目」。获得即时、深思熟虑的回答，帮你理解自己的历程。</p>
+<p><strong>个人成长追踪：</strong>回顾你的想法、担忧和愿望是如何演变的。查看过往条目中提到的目标的进展。发现需要成长的地方，也为自己走了多远而庆祝。</p>
+<p><strong>全文搜索：</strong>在多年的日记中搜索任意词语，还能缩小到某个日期范围，直接跳到匹配的条目。你的日记也被收录进iOS聚焦搜索，所以从主屏幕搜索也能找到它。</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> 提问</h4>
+                <h3><i class="fas fa-question-circle"></i> 提问</h3>
                 <p>关于你日记条目的快速问答——即时获得关于你写作的答案</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> 对话</h4>
+                <h3><i class="fas fa-comments"></i> 对话</h3>
                 <p>就您的写作历程进行互动对话，获取个性化指导。快速聊天每天免费；Pro聊天在我们最强大的AI上提供更深入的对话</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> 语音摘要</h4>
+                <h3><i class="fas fa-volume-up"></i> 语音摘要</h3>
                 <p>收听日记主题的音频摘要——非常适合随时随地的反思</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> AI扫描</h4>
+                <h3><i class="fas fa-barcode-scan"></i> AI扫描</h3>
                 <p>扫描物品、文件、收据或文字，通过AI描述即时创建日记条目</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> 逗我笑</h4>
+                <h3><i class="fas fa-laugh"></i> 逗我笑</h3>
                 <p>从你的日记条目中获得个性化幽默，为你的一天增添乐趣</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> 帮我放松</h4>
+                <h3><i class="fas fa-moon"></i> 帮我放松</h3>
                 <p>AI引导的呼吸和放松练习，帮助减轻压力</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> 深度研究 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> 深度研究 <span class="ai-pro-badge">Pro</span></h3>
                 <p>对你的日记进行全面的AI分析，提供详细洞察</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> 模式侦探 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> 模式侦探 <span class="ai-pro-badge">Pro</span></h3>
                 <p>发现日记条目中随时间变化的隐藏主题和模式</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> 目标助手 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> 目标助手 <span class="ai-pro-badge">Pro</span></h3>
                 <p>基于你的日记模式获得个性化的、数据驱动的生活目标</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> 医生摘要 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> 医生摘要 <span class="ai-pro-badge">Pro</span></h3>
                 <p>生成专业摘要，便于就医时分享</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> 病假条 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> 病假条 <span class="ai-pro-badge">Pro</span></h3>
                 <p>在需要时为工作或学校生成AI病假条</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> 故事生成器 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> 故事生成器 <span class="ai-pro-badge">Pro</span></h3>
                 <p>将你的日记条目转化为富有创意的、引人入胜的叙事</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> 文字摘要 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> 文字摘要 <span class="ai-pro-badge">Pro</span></h3>
                 <p>创建可分享的日记主题文字消息摘要</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> 个人测验 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> 个人测验 <span class="ai-pro-badge">Pro</span></h3>
                 <p>通过有趣的AI生成的10题测验测试你对自己数据的了解</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> 文字转语音 <span class="ai-pro-badge">Pro</span></h4>
-                <p>用自然语音播放收听你的AI洞察和摘要</p>
+                <h3><i class="fas fa-microphone"></i> 语音反馈 <span class="ai-pro-badge">Pro</span></h3>
+                <p>每次保存后，AI都会针对你刚写的内容给出一段简短的语音回应</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> 定制健康报告 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> 定制健康报告 <span class="ai-pro-badge">Pro</span></h3>
                 <p>创建全面的、个性化的文档来追踪你的日记进度</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> 主题探索器 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> 主题探索器 <span class="ai-pro-badge">Pro</span></h3>
                 <p>通过AI驱动的主题分析发现你写作中反复出现的话题和想法</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> 情感时间线 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> 情感时间线 <span class="ai-pro-badge">Pro</span></h3>
                 <p>通过AI分析的情感追踪可视化你的情感历程</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence（本地运行） <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence（本地运行） <span class="ai-pro-badge">Pro</span></h3>
                 <p>隐私优先的选项，使用 Apple 的 Foundation Models 在您的设备上本地运行 AI——数据不会离开您的 iPhone、iPad 或 Mac。在支持的 Apple Silicon 设备（iOS 26及以上）上，付费账户可无限制使用。</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> 语音聊天 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> 语音聊天 <span class="ai-pro-badge">Pro</span></h3>
                 <p>与AI就您的数据进行免提双向语音对话 — 提问并聆听答案，无需触碰屏幕</p>
             </div>
 
@@ -939,7 +985,7 @@
         <p>练习每日写作，捕捉灵感，培养你的写作风格。无干扰的界面帮助你专注于创作。</p>
 
         <h3>心理健康</h3>
-        <p>通过写作处理情绪、识别触发因素和追踪情绪模式。情感分析为情绪基调提供客观反馈。</p>
+        <p>把艰难的一天写下来，留意反复出现的想法，再回头看看一个月前的情况如何。情绪仪表能让你简单了解每篇条目的情绪基调。</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>我的日记是私密的吗？</h3>
-        <p>当然可以。您的记录存储在您的设备和您的私人iCloud账户中 — 我们没有存储它的服务器，我们绝不会看到您写的内容。可选的AI功能使用注重隐私的云端AI，您可以随时关闭。关闭AI后，情绪分析将完全在设备端使用Apple的自然语言框架完成，而使用Apple Intelligence选项时，所有AI都会在设备端运行。</p>
+        <p>是的——Feeltracker每日日记把你的条目保存在你自己的设备和私人iCloud账户中，我们没有任何服务器保存你的日记，Feeltracker的任何人都无法读取你写的内容。没有广告，也没有跨应用追踪。可选的AI功能会把你所询问的条目发送给一项注重隐私的云端服务，你可以随时关闭AI；关闭AI后，情绪仪表会完全在设备端运行，使用Apple的自然语言框架；如果开启Apple智能选项，所有AI功能都会在设备端运行。</p>
 
 
         <h3>情感分析是如何工作的？</h3>
-        <p>在您书写的过程中，应用会分析记录的情绪基调，并显示一个表情符号，表明它读起来是积极、消极还是中性。默认情况下会使用应用注重隐私的AI；如果您关闭AI，则会切换为Apple设备端的自然语言框架。</p>
+        <p>Feeltracker每日日记会在你写作的同时为每篇条目的情绪基调打分，并在文字下方以彩色仪表显示，从红色（消极）经灰色（中性）到绿色和蓝色（积极）。这个仪表是可选的，可以在设置中关闭。默认情况下它使用应用中注重隐私的AI；如果你关闭AI，它会改用Apple内置的设备端自然语言框架。</p>
 
 
         <h3>什么是词频分析？</h3>
-        <p>趋势功能会分析你所有的日记条目，显示你最常写的词汇和话题。这有助于你识别思维中反复出现的主题、关注点或兴趣。</p>
+        <p>Feeltracker每日日记的词频分析会统计你所有条目中的词语，并按使用频率排序，让反复出现的人物、地点和烦恼变得一目了然。系统会按你所用的语言过滤掉常见的虚词，同样的数据也会以词云形式展示，点击任意词语即可打开包含它的所有条目。</p>
 
 
         <h3>我可以在日记中添加照片吗？</h3>
@@ -987,7 +1033,23 @@
 
 
         <h3>我需要订阅吗？</h3>
-        <p>无需订阅。应用可免费下载，所有记录、图表、Apple Health同步和导出功能均免费，每位用户每天都能免费使用真正的AI功能 — 永远没有广告。可选的Pro订阅可解锁最深入的AI功能（深度研究、主题探索、情绪时间线、医生总结、Pro聊天等），并在我们最强大的AI上运行，同时提高原本就很慷慨的每日限额。</p>
+        <p>不需要——Feeltracker每日日记免费下载，也不需要订阅。写作、照片、模板、重复记录、词语分析、搜索、图表、备份、导出和iCloud同步都是免费的，每位用户每天都能免费使用真正的AI功能（快速对话、提问、语音摘要、逗我笑一下、帮我冷静下来，以及文本和物品扫描器）——永远没有广告。可选的Pro订阅会解锁最深入的AI功能（深度研究、主题探索、情绪时间线、医生摘要、Pro对话等），让这些功能运行在我们能力最强的AI上，并提高每日的慷慨额度。</p>
+
+
+        <h3>Feeltracker每日日记可以离线使用吗？</h3>
+        <p>可以——Feeltracker每日日记的核心功能都能离线使用：撰写条目、附加照片、搜索、浏览年度视图，以及查看统计和图表，全都可以在没有网络的情况下在你的设备上运行。你离线时写下的内容，会在下次联网时通过iCloud同步到你的其他设备。云端AI功能需要联网，但如果你开启设备端的Apple智能模式（Pro订阅，需运行iOS 26或更高版本的受支持设备），AI同样可以离线使用。</p>
+
+
+        <h3>我可以导入我以前的日记条目吗？</h3>
+        <p>可以——Feeltracker每日日记可以从Excel表格导入日记条目。从设置中下载导入模板，把每条记录的日期、时间和文字粘贴进去，然后导入该文件，每一行都会变成一篇日记条目。你也可以恢复之前的备份，把条目连同照片一起找回来。</p>
+
+
+        <h3>我可以用面容ID锁定我的日记吗？</h3>
+        <p>可以——你可以使用iOS内置的应用锁功能，用面容ID或触控ID锁定Feeltracker每日日记：按住主屏幕上的应用图标，选择<strong>要求面容ID</strong>。设置中也链接到同样的操作说明。开启后，没有你的面容、指纹或密码，任何人都无法打开你的日记。</p>
+
+
+        <h3>如果我的手机丢了，我的日记会怎么样？</h3>
+        <p>你的日记很安全：Feeltracker每日日记会把每篇条目和每张照片都同步到你的私人iCloud账户，所以在新的iPhone、iPad或Mac上登录，就能自动找回全部内容。应用还会大约每周自动写入一次备份（包含你条目和照片的ZIP文件），你可以随时自行恢复或导出，也可以随时手动创建备份。</p>
 
     </section>
 
@@ -1184,22 +1246,22 @@
         <div class="related-apps-grid">
 
             <a href="/zh-Hans/blood-pressure/" class="related-app-card" aria-label="血压">
-                <img src="/images/BPT_1024.png" alt="血压" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="血压" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">血压</span>
             </a>
 
-            <a href="/zh-Hans/mental-health/" class="related-app-card" aria-label="心理健康">
-                <img src="/images/FT_1024.png" alt="心理健康" class="related-app-icon">
-                <span class="related-app-name">心理健康</span>
+            <a href="/zh-Hans/mood-journal/" class="related-app-card" aria-label="心情日记">
+                <img src="/images/FT_1024.png" alt="心情日记" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">心情日记</span>
             </a>
 
             <a href="/zh-Hans/sleep/" class="related-app-card" aria-label="睡眠">
-                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">睡眠</span>
             </a>
 
             <a href="/zh-Hans/weight/" class="related-app-card" aria-label="体重">
-                <img src="/images/WT_1024.png" alt="体重" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="体重" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">体重</span>
             </a>
 
@@ -1212,9 +1274,10 @@
         <h2>今天就开始你的日记之旅</h2>
         <p>加入数千名正在发现每日反思益处的人</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="下载每日日记"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="下载每日日记" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Diario Quotidiano - Note, Foto e Diario IA | Feeltracker</title>
     <meta name="description" content="Diario quotidiano privato con IA. Scansiona oggetti e testi per inserimenti istantanei, allega foto, analizza il sentiment e i pattern di parole. Sincronizzazione iCloud. iPhone, iPad e Mac.">
-    <meta name="keywords" content="diario,giornaliero,note,foto,privato,segreto,personale,journaling,appunti,registro">
+    <meta name="keywords" content="app diario giornaliero,app di journaling,app diario privato,diario digitale,app diario per iPhone,diario della gratitudine,diario con foto,app diario con IA,app riflessione quotidiana,app diario e note">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/it/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "Scansione AI degli oggetti - descrive gli oggetti per le voci del diario",
                 "Scansione AI del testo - OCR per acquisire testo",
-                "Analisi del sentiment sulle voci",
-                "Frequenza delle parole e monitoraggio dei temi",
+                "Indicatore del sentiment sulle voci",
+                "Nuvola di parole e analisi della frequenza delle parole",
                 "Allega fino a 8 foto per voce",
                 "Modelli di note per inserimenti rapidi",
                 "Ricerca full-text e integrazione Spotlight",
-                "Esportazione in PDF ed Excel",
+                "Esportazione in PDF, Excel, CSV e JSON",
                 "iCloud backup and sync",
                 "Supporto per 32 lingue",
-                "Widget nella schermata Home per l'inserimento rapido"
+                "Widget nella schermata Home per l'inserimento rapido",
+                "Voci ricorrenti create giornalmente o settimanalmente",
+                "Rendering Markdown opzionale nella lista delle voci",
+                "IA Riformula per rifinire ciò che hai scritto",
+                "Conteggio parole per giorno, mese e anno",
+                "Importazione Excel per diari precedenti",
+                "Backup settimanali automatici"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "Il mio diario è privato?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Assolutamente. Le tue voci sono conservate sul tuo dispositivo e nel tuo account iCloud privato — non abbiamo server che memorizzano il tuo diario e non vediamo mai ciò che scrivi. Le funzioni IA facoltative usano IA cloud che rispetta la privacy e che puoi disattivare in qualsiasi momento; con l'IA disattivata, l'analisi del sentimento avviene interamente sul dispositivo con il framework Natural Language di Apple, e con l'opzione Apple Intelligence tutta l'IA viene eseguita sul dispositivo."
+                            "text": "Sì — Feeltracker Daily Journal mantiene le tue voci sul tuo dispositivo e nel tuo account iCloud privato, quindi non abbiamo server che conservano il tuo diario e nessuno in Feeltracker può leggere ciò che scrivi. Non ci sono pubblicità né tracciamento tra app. Le funzionalità IA opzionali inviano le voci su cui fai domande a un servizio cloud rispettoso della privacy, e puoi disattivare l'IA in qualsiasi momento; con l'IA disattivata, l'indicatore del sentiment funziona interamente on-device usando il framework Natural Language di Apple, e con l'opzione Apple Intelligence ogni funzionalità IA funziona on-device."
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "Come funziona l'analisi del sentimento?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Mentre scrivi, l'app analizza il tono emotivo della tua voce e mostra un'emoji che indica se è positiva, negativa o neutra. Per impostazione predefinita usa l'IA dell'app che rispetta la privacy; se disattivi l'IA, passa invece al framework Natural Language integrato di Apple sul dispositivo."
+                            "text": "Feeltracker Daily Journal valuta il tono emotivo di ogni voce mentre scrivi e lo mostra come un indicatore a colori sotto il testo, che va dal rosso (negativo) al grigio (neutro) fino al verde e blu (positivo). L'indicatore è opzionale e può essere disattivato nelle Impostazioni. Per impostazione predefinita usa l'IA rispettosa della privacy dell'app; se disattivi l'IA, passa al framework Natural Language integrato e on-device di Apple."
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "Cos'e l'analisi della frequenza delle parole?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "La funzione Tendenze analizza tutte le tue voci per mostrare quali parole e argomenti scrivi più spesso. Questo ti aiuta a identificare temi, preoccupazioni o interessi ricorrenti nel tuo pensiero."
+                            "text": "L'analisi della frequenza delle parole in Feeltracker Daily Journal conta le parole in tutte le tue voci e classifica quelle che usi di più, così le persone, i luoghi e le preoccupazioni che continuano a ripresentarsi diventano visibili. Le parole comuni di riempimento vengono filtrate nella tua lingua, gli stessi dati sono mostrati anche come nuvola di parole, e toccando una parola qualsiasi si aprono tutte le voci che la contengono."
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "Ho bisogno di un abbonamento?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Non è richiesto alcun abbonamento. L'app è gratuita da scaricare, tutto il tracciamento, i grafici, la sincronizzazione con Apple Health e le esportazioni sono gratuiti, e ogni utente ha funzioni IA vere gratis ogni giorno, senza mai pubblicità. Un abbonamento Pro facoltativo sblocca le funzioni IA più complete (Ricerca Approfondita, Esploratore di Temi, Cronologia del Sentimento, Riepilogo per il Medico, Chat Pro e altro), le esegue sulla nostra IA più avanzata e aumenta i generosi limiti giornalieri."
+                            "text": "No — Feeltracker Daily Journal è gratuita da scaricare e non è richiesto alcun abbonamento. Scrittura, foto, modelli, voci ricorrenti, analisi delle parole, ricerca, grafici, backup, esportazioni e sincronizzazione iCloud sono tutti gratuiti, e ogni utente ottiene vere funzionalità IA gratuite ogni giorno (Chat Rapida, Fai una Domanda, Riepilogo Vocale, Fammi Ridere, Calmami, oltre agli scanner di Testo e Oggetti) — senza pubblicità, mai. Un abbonamento Pro opzionale sblocca le funzionalità IA più approfondite (Deep Research, Theme Explorer, Timeline del Sentiment, Doctor Summary, Pro Chat e altro), le esegue sulla nostra IA più potente, e aumenta i generosi limiti giornalieri."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Feeltracker Daily Journal funziona offline?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sì — Feeltracker Daily Journal funziona offline per tutto ciò che conta: scrivere voci, allegare foto, cercare, sfogliare il tuo anno, e visualizzare statistiche e grafici funzionano tutti sul tuo dispositivo senza alcuna connessione a internet. Tutto ciò che scrivi offline si sincronizza sui tuoi altri dispositivi tramite iCloud la prossima volta che sei online. Le funzionalità IA cloud richiedono una connessione, ma se attivi la modalità on-device Apple Intelligence (Pro, su dispositivi supportati con iOS 26 o successivo), anche l'IA funziona offline."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso importare le mie vecchie voci del diario?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sì — Feeltracker Daily Journal importa voci del diario da un foglio di calcolo Excel. Scarica il modello di importazione dalle Impostazioni, incolla una data, un'ora e il testo di ogni voce, poi importa il file e ogni riga diventa una voce del diario. Puoi anche ripristinare un backup precedente, che riporta indietro le tue voci insieme alle loro foto."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso bloccare il mio diario con Face ID?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sì — puoi bloccare Feeltracker Daily Journal con Face ID o Touch ID usando il blocco app integrato in iOS: tieni premuta l'icona dell'app sulla schermata Home e scegli Richiedi Face ID. Le Impostazioni rimandano alle stesse istruzioni. Una volta attivato, nessuno può aprire il tuo diario senza il tuo volto, la tua impronta o il codice."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cosa succede al mio diario se perdo il telefono?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Il tuo diario è al sicuro: Feeltracker Daily Journal sincronizza ogni voce e foto nel tuo account iCloud privato, quindi accedere su un nuovo iPhone, iPad o Mac lo riporta tutto indietro automaticamente. L'app scrive anche un backup automatico circa una volta a settimana (uno ZIP delle tue voci e foto) che puoi ripristinare o esportare tu stesso in qualsiasi momento, e puoi creare un backup manuale ogni volta che vuoi."
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/it/daily-journal/" class="current">Diario Giornaliero</a>
 
-            <a href="/it/mental-health/">Salute Mentale</a>
+            <a href="/it/mood-journal/">Diario dell'Umore</a>
 
             <a href="/it/sleep/">Sonno</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Icona dell'app Diario Giornaliero" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Daily Journal — app di journaling e diario privato con IA per iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Diario Giornaliero</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Nessuna Pubblicità · Nessun Tracciamento · Privacy Garantita
         </div>
-        <p class="hero-subtitle">Il tuo spazio privato per riflessioni quotidiane, pensieri e ricordi. Scrivi liberamente con analisi del sentimento basata sull'AI, allegati fotografici e analisi intelligenti dei tuoi pattern di scrittura.</p>
+        <p class="hero-subtitle">Il tuo spazio privato per riflessioni quotidiane, pensieri e ricordi. Scrivi tutte le volte che vuoi, allega fino a 8 foto, e scopri i temi a cui torni più spesso con un indicatore del sentiment, una nuvola di parole e l'analisi della frequenza delle parole.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/it-white.svg"><img class="store_button store_button--lg" src="/images/appstore/it-black.svg" alt="Scarica Diario Giornaliero sull'App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/it-white.svg"><img class="store_button store_button--lg" src="/images/appstore/it-black.svg" alt="Scarica Diario Giornaliero sull'App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuita con funzionalità premium opzionali<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Screenshot Diario Giornaliero 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Screenshot Diario Giornaliero 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Screenshot Diario Giornaliero 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="Feedback IA su una voce del diario in Feeltracker Daily Journal" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Screenshot Diario Giornaliero 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Scrittura di una voce del diario con data, ora e note" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Scrittura Senza Distrazioni</h3>
-                <p>Interfaccia pulita e semplice che mette le tue parole al primo posto. Nessun disordine, solo tu e i tuoi pensieri. Scrivi quanto vuoi ogni giorno.</p>
+                <p>Un editor di testo semplice che mette le tue parole al primo posto, con un conteggio parole in tempo reale mentre scrivi. Tocca IA Riformula per rifinire un paragrafo, e attiva il rendering Markdown se vuoi titoli, grassetto ed elenchi nella lista delle voci.</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Analisi della Frequenza delle Parole</h3>
-                <p>Scopri cosa hai davvero in mente. Vedi quali parole e temi compaiono più spesso nella tua scrittura per identificare pattern e pensieri ricorrenti.</p>
+                <h3>Nuvola di Parole e Frequenza</h3>
+                <p>Scopri cosa ti passa davvero per la testa. Una nuvola di parole e un elenco classificato per frequenza mostrano le parole che usi di più, con le parole comuni di riempimento filtrate nella tua lingua — tocca una parola per aprire ogni voce che la menziona.</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>Totale delle parole scritte per giorno, mese e anno. Alcuni giorni ti sorprenderai da solo — e vedere il contatore salire è una motivazione tutta sua.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Voci Ricorrenti</h3>
+                <p>Configura voci che si creano da sole, ogni giorno o ogni settimana, così il tuo diario delle abitudini, la nota sui farmaci o il promemoria di gratitudine serale ti aspettano già quando apri l'app.</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,18 +778,18 @@
         <div class="app-card">
             <h3>2. Vedi Emergere i Pattern</h3>
             <div class="app-card-content">
-<p><strong>Analisi del Sentimento:</strong> L'AI rileva automaticamente il tono emotivo delle tue voci - positivo, negativo o neutro. Visualizza le tendenze del tuo umore su settimane e mesi per comprendere i tuoi pattern emotivi.</p>
-<p><strong>Frequenza delle Parole:</strong> Scopri di quali argomenti, persone o temi scrivi di piu. L'app identifica parole e frasi ricorrenti, rivelando cosa hai costantemente in mente e come il tuo focus cambia nel tempo.</p>
-<p><strong>Vista Calendario:</strong> Sfoglia l'intera cronologia del tuo journaling in un'interfaccia calendario. Ogni giorno mostra un estratto e un indicatore dell'umore. Salta rapidamente a qualsiasi voce passata per vedere cosa stavi pensando quel giorno.</p>
+<p><strong>Indicatore del Sentiment:</strong> Mentre scrivi, un indicatore opzionale a colori valuta il tono emotivo della voce, dal negativo al neutro al positivo. Pro aggiunge una Timeline del Sentiment che mostra in un grafico come quel tono si muove tra settimane e mesi.</p>
+<p><strong>Frequenza delle Parole:</strong> Scopri di quali argomenti, persone o temi scrivi di più. Una nuvola di parole e un elenco classificato per frequenza rivelano cosa ti passa costantemente per la testa, e toccando una parola si aprono tutte le voci che la usano.</p>
+<p><strong>Viste Anno, Mese e Giorno:</strong> Sfoglia tutta la tua storia di journaling, da una heatmap annuale dei giorni in cui hai scritto fino a un singolo giorno. Ogni giorno elenca le tue voci per intero, con un conteggio di voci e parole, così puoi passare direttamente a cosa pensavi in una data qualsiasi.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Rifletti e Cresci</h3>
             <div class="app-card-content">
-<p><strong>Analisi Basate sull'AI:</strong> Fai domande sul tuo diario: "Quali sono stati i miei giorni più felici il mese scorso?" o "Mostrami tutte le voci in cui ho menzionato i miei obiettivi." Ottieni risposte immediate e ponderate che ti aiutano a comprendere il tuo percorso.</p>
-<p><strong>Monitoraggio della Crescita Personale:</strong> Osserva come evolvono i tuoi pensieri, preoccupazioni e aspirazioni. Vedi i progressi verso gli obiettivi menzionati nelle voci passate. Identifica le aree di crescita e celebra il cammino fatto.</p>
-<p><strong>Cerca Tutto:</strong> La ricerca potente trova qualsiasi parola, frase o concetto attraverso anni di journaling. Filtra per data, umore o parole chiave. L'intera cronologia scritta è immediatamente accessibile e ricercabile.</p>
+<p><strong>Approfondimenti Basati sull'IA:</strong> Fai domande sul tuo diario: "Quali sono stati i miei giorni più felici il mese scorso?" oppure "Mostrami tutte le voci in cui ho menzionato i miei obiettivi." Ottieni risposte immediate e ponderate che ti aiutano a capire il tuo percorso.</p>
+<p><strong>Monitoraggio della Crescita Personale:</strong> Rivedi come si evolvono i tuoi pensieri, le tue preoccupazioni e le tue aspirazioni. Vedi i progressi verso gli obiettivi menzionati nelle voci passate. Individua le aree di crescita e celebra quanta strada hai fatto.</p>
+<p><strong>Cerca Ovunque:</strong> Cerca qualsiasi parola in anni di journaling, restringi la ricerca a un intervallo di date, e passa direttamente alle voci corrispondenti. Il tuo diario è anche indicizzato in Spotlight di iOS, così una ricerca dalla schermata Home lo trova anche lì.</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Fai una Domanda</h4>
+                <h3><i class="fas fa-question-circle"></i> Fai una Domanda</h3>
                 <p>Domande e risposte rapide sulle tue voci del diario - ottieni risposte immediate sulla tua scrittura</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Fai conversazioni interattive sul tuo percorso di scrittura e ricevi consigli personalizzati. Quick Chat è gratis ogni giorno; Pro Chat va più a fondo con la nostra IA più avanzata</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Riepilogo Vocale</h4>
+                <h3><i class="fas fa-volume-up"></i> Riepilogo Vocale</h3>
                 <p>Ascolta riepiloghi audio dei temi del tuo diario - perfetti per riflettere in movimento</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> Scansione AI</h4>
+                <h3><i class="fas fa-barcode-scan"></i> Scansione AI</h3>
                 <p>Scansiona oggetti, documenti, ricevute o testi per creare voci del diario istantanee con descrizioni AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Fammi Ridere</h4>
+                <h3><i class="fas fa-laugh"></i> Fammi Ridere</h3>
                 <p>Ottieni umorismo personalizzato dalle tue voci del diario per rallegrarti la giornata</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Calmami</h4>
+                <h3><i class="fas fa-moon"></i> Calmami</h3>
                 <p>Esercizi di respirazione e rilassamento guidati dall'AI per aiutare a ridurre lo stress</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Ricerca Approfondita <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Ricerca Approfondita <span class="ai-pro-badge">Pro</span></h3>
                 <p>Analisi AI completa del tuo diario con approfondimenti dettagliati</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Investigatore di Pattern <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Investigatore di Pattern <span class="ai-pro-badge">Pro</span></h3>
                 <p>Trova temi e pattern nascosti nelle voci del tuo diario nel tempo</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Assistente Obiettivi <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Assistente Obiettivi <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ottieni obiettivi di vita personalizzati e basati sui dati in base ai tuoi pattern di journaling</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Riepilogo per il Medico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Riepilogo per il Medico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genera riepiloghi professionali da condividere durante le visite mediche</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Certificato Medico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Certificato Medico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Certificati medici generati dall'AI per lavoro o scuola quando ne hai bisogno</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generatore di Storie <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generatore di Storie <span class="ai-pro-badge">Pro</span></h3>
                 <p>Trasforma le voci del tuo diario in narrazioni creative e coinvolgenti</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Riepilogo Testuale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Riepilogo Testuale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crea riepiloghi condivisibili via messaggio dei temi del tuo diario</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Quiz Personale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Quiz Personale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Metti alla prova le tue conoscenze con un divertente quiz AI di 10 domande sui tuoi dati</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Sintesi Vocale <span class="ai-pro-badge">Pro</span></h4>
-                <p>Ascolta le analisi e i riepiloghi AI con riproduzione vocale naturale</p>
+                <h3><i class="fas fa-microphone"></i> Feedback Vocale <span class="ai-pro-badge">Pro</span></h3>
+                <p>Una breve nota vocale dell'IA dopo ogni salvataggio, che reagisce a ciò che hai appena scritto</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Report Sanitario Personalizzato <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Report Sanitario Personalizzato <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crea documenti completi e personalizzati per monitorare i progressi del tuo journaling</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Esploratore di Temi <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Esploratore di Temi <span class="ai-pro-badge">Pro</span></h3>
                 <p>Scopri argomenti e idee ricorrenti nella tua scrittura con l'analisi tematica basata sull'AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Cronologia del Sentimento <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Cronologia del Sentimento <span class="ai-pro-badge">Pro</span></h3>
                 <p>Visualizza il tuo percorso emotivo nel tempo con il monitoraggio del sentimento analizzato dall'AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (sul dispositivo) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (sul dispositivo) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opzione che mette al primo posto la privacy: esegue l'IA localmente sul tuo dispositivo usando Foundation Models di Apple — nulla lascia il tuo iPhone, iPad o Mac. Utilizzo illimitato con un account a pagamento su dispositivi Apple Silicon supportati (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat vocale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat vocale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversazioni vocali bidirezionali a mani libere con l'IA sui tuoi dati: fai domande e ascolta le risposte senza toccare lo schermo</p>
             </div>
 
@@ -938,8 +984,8 @@
         <h3>Scrittura Creativa</h3>
         <p>Pratica la scrittura quotidiana, cattura idee e sviluppa la tua voce. L'interfaccia senza distrazioni ti aiuta a concentrarti sulla tua arte.</p>
 
-        <h3>Salute Mentale</h3>
-        <p>Elabora le emozioni, identifica i fattori scatenanti e monitora i pattern dell'umore attraverso la scrittura. L'analisi del sentimento fornisce un feedback oggettivo sul tono emotivo.</p>
+        <h3>Diario dell'Umore</h3>
+        <p>Scrivi per attraversare una giornata difficile, nota cosa continua a ripresentarsi, e guarda indietro a com'era la situazione un mese fa. L'indicatore del sentiment ti dà una lettura semplice del tono emotivo di ogni voce.</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>Il mio diario è privato?</h3>
-        <p>Assolutamente. Le tue voci sono conservate sul tuo dispositivo e nel tuo account iCloud privato — non abbiamo server che memorizzano il tuo diario e non vediamo mai ciò che scrivi. Le funzioni IA facoltative usano IA cloud che rispetta la privacy e che puoi disattivare in qualsiasi momento; con l'IA disattivata, l'analisi del sentimento avviene interamente sul dispositivo con il framework Natural Language di Apple, e con l'opzione Apple Intelligence tutta l'IA viene eseguita sul dispositivo.</p>
+        <p>Sì — Feeltracker Daily Journal mantiene le tue voci sul tuo dispositivo e nel tuo account iCloud privato, quindi non abbiamo server che conservano il tuo diario e nessuno in Feeltracker può leggere ciò che scrivi. Non ci sono pubblicità né tracciamento tra app. Le funzionalità IA opzionali inviano le voci su cui fai domande a un servizio cloud rispettoso della privacy, e puoi disattivare l'IA in qualsiasi momento; con l'IA disattivata, l'indicatore del sentiment funziona interamente on-device usando il framework Natural Language di Apple, e con l'opzione Apple Intelligence ogni funzionalità IA funziona on-device.</p>
 
 
         <h3>Come funziona l'analisi del sentimento?</h3>
-        <p>Mentre scrivi, l'app analizza il tono emotivo della tua voce e mostra un'emoji che indica se è positiva, negativa o neutra. Per impostazione predefinita usa l'IA dell'app che rispetta la privacy; se disattivi l'IA, passa invece al framework Natural Language integrato di Apple sul dispositivo.</p>
+        <p>Feeltracker Daily Journal valuta il tono emotivo di ogni voce mentre scrivi e lo mostra come un indicatore a colori sotto il testo, che va dal rosso (negativo) al grigio (neutro) fino al verde e blu (positivo). L'indicatore è opzionale e può essere disattivato nelle Impostazioni. Per impostazione predefinita usa l'IA rispettosa della privacy dell'app; se disattivi l'IA, passa al framework Natural Language integrato e on-device di Apple.</p>
 
 
         <h3>Cos'e l'analisi della frequenza delle parole?</h3>
-        <p>La funzione Tendenze analizza tutte le tue voci per mostrare quali parole e argomenti scrivi più spesso. Questo ti aiuta a identificare temi, preoccupazioni o interessi ricorrenti nel tuo pensiero.</p>
+        <p>L'analisi della frequenza delle parole in Feeltracker Daily Journal conta le parole in tutte le tue voci e classifica quelle che usi di più, così le persone, i luoghi e le preoccupazioni che continuano a ripresentarsi diventano visibili. Le parole comuni di riempimento vengono filtrate nella tua lingua, gli stessi dati sono mostrati anche come nuvola di parole, e toccando una parola qualsiasi si aprono tutte le voci che la contengono.</p>
 
 
         <h3>Posso aggiungere foto al mio diario?</h3>
@@ -987,7 +1033,23 @@
 
 
         <h3>Ho bisogno di un abbonamento?</h3>
-        <p>Non è richiesto alcun abbonamento. L'app è gratuita da scaricare, tutto il tracciamento, i grafici, la sincronizzazione con Apple Health e le esportazioni sono gratuiti, e ogni utente ha funzioni IA vere gratis ogni giorno, senza mai pubblicità. Un abbonamento Pro facoltativo sblocca le funzioni IA più complete (Ricerca Approfondita, Esploratore di Temi, Cronologia del Sentimento, Riepilogo per il Medico, Chat Pro e altro), le esegue sulla nostra IA più avanzata e aumenta i generosi limiti giornalieri.</p>
+        <p>No — Feeltracker Daily Journal è gratuita da scaricare e non è richiesto alcun abbonamento. Scrittura, foto, modelli, voci ricorrenti, analisi delle parole, ricerca, grafici, backup, esportazioni e sincronizzazione iCloud sono tutti gratuiti, e ogni utente ottiene vere funzionalità IA gratuite ogni giorno (Chat Rapida, Fai una Domanda, Riepilogo Vocale, Fammi Ridere, Calmami, oltre agli scanner di Testo e Oggetti) — senza pubblicità, mai. Un abbonamento Pro opzionale sblocca le funzionalità IA più approfondite (Deep Research, Theme Explorer, Timeline del Sentiment, Doctor Summary, Pro Chat e altro), le esegue sulla nostra IA più potente, e aumenta i generosi limiti giornalieri.</p>
+
+
+        <h3>Feeltracker Daily Journal funziona offline?</h3>
+        <p>Sì — Feeltracker Daily Journal funziona offline per tutto ciò che conta: scrivere voci, allegare foto, cercare, sfogliare il tuo anno, e visualizzare statistiche e grafici funzionano tutti sul tuo dispositivo senza alcuna connessione a internet. Tutto ciò che scrivi offline si sincronizza sui tuoi altri dispositivi tramite iCloud la prossima volta che sei online. Le funzionalità IA cloud richiedono una connessione, ma se attivi la modalità on-device Apple Intelligence (Pro, su dispositivi supportati con iOS 26 o successivo), anche l'IA funziona offline.</p>
+
+
+        <h3>Posso importare le mie vecchie voci del diario?</h3>
+        <p>Sì — Feeltracker Daily Journal importa voci del diario da un foglio di calcolo Excel. Scarica il modello di importazione dalle Impostazioni, incolla una data, un'ora e il testo di ogni voce, poi importa il file e ogni riga diventa una voce del diario. Puoi anche ripristinare un backup precedente, che riporta indietro le tue voci insieme alle loro foto.</p>
+
+
+        <h3>Posso bloccare il mio diario con Face ID?</h3>
+        <p>Sì — puoi bloccare Feeltracker Daily Journal con Face ID o Touch ID usando il blocco app integrato in iOS: tieni premuta l'icona dell'app sulla schermata Home e scegli <strong>Richiedi Face ID</strong>. Le Impostazioni rimandano alle stesse istruzioni. Una volta attivato, nessuno può aprire il tuo diario senza il tuo volto, la tua impronta o il codice.</p>
+
+
+        <h3>Cosa succede al mio diario se perdo il telefono?</h3>
+        <p>Il tuo diario è al sicuro: Feeltracker Daily Journal sincronizza ogni voce e foto nel tuo account iCloud privato, quindi accedere su un nuovo iPhone, iPad o Mac lo riporta tutto indietro automaticamente. L'app scrive anche un backup automatico circa una volta a settimana (uno ZIP delle tue voci e foto) che puoi ripristinare o esportare tu stesso in qualsiasi momento, e puoi creare un backup manuale ogni volta che vuoi.</p>
 
     </section>
 
@@ -1184,22 +1246,22 @@
         <div class="related-apps-grid">
 
             <a href="/it/blood-pressure/" class="related-app-card" aria-label="Pressione Sanguigna">
-                <img src="/images/BPT_1024.png" alt="Pressione Sanguigna" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Pressione Sanguigna" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Pressione Sanguigna</span>
             </a>
 
-            <a href="/it/mental-health/" class="related-app-card" aria-label="Salute Mentale">
-                <img src="/images/FT_1024.png" alt="Salute Mentale" class="related-app-icon">
-                <span class="related-app-name">Salute Mentale</span>
+            <a href="/it/mood-journal/" class="related-app-card" aria-label="Diario dell'Umore">
+                <img src="/images/FT_1024.png" alt="Diario dell'Umore" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Diario dell'Umore</span>
             </a>
 
             <a href="/it/sleep/" class="related-app-card" aria-label="Sonno">
-                <img src="/images/ST_1024.png" alt="Sonno" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sonno" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sonno</span>
             </a>
 
             <a href="/it/weight/" class="related-app-card" aria-label="Peso">
-                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Peso</span>
             </a>
 
@@ -1212,9 +1274,10 @@
         <h2>Inizia la Tua Pratica di Journaling Oggi</h2>
         <p>Unisciti a migliaia di persone che scoprono i benefici della riflessione quotidiana</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/it-white.svg"><img class="store_button store_button--lg" src="/images/appstore/it-black.svg" alt="Scarica Diario Giornaliero"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/it-white.svg"><img class="store_button store_button--lg" src="/images/appstore/it-black.svg" alt="Scarica Diario Giornaliero" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

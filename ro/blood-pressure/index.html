@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Tensiune Arterială - Aplicație #1 pentru Monitorizare | Feeltracker</title>
     <meta name="description" content="Monitorizați tensiunea arterială cu Camera Scan AI — #1 în Regatul Unit. Urmăriți sistolica, diastolica, pulsul și TAM. Sincronizare Apple Health, rapoarte de export pentru medic. iPhone, iPad și Mac.">
-    <meta name="keywords" content="tensiune,arterială,inimă,puls,monitor,omron,urmărire,verificare,jurnal,hipertensiune,microlife,beurer">
+    <meta name="keywords" content="aplicație tensiune arterială, monitorizare tensiune arterială, jurnal tensiune arterială, urmărire hipertensiune, monitorizare sistolică diastolică puls, presiune arterială medie, calculator MAP, jurnal tensiune, grafic tensiune arterială pentru medic, scanare monitor tensiune arterială">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/ro/blood-pressure/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -149,7 +150,7 @@
           "applicationCategory": "HealthApplication",
           "applicationSubCategory": "Monitor de tensiune arterială",
           "operatingSystem": "iOS 16.0 sau ulterior",
-          "description": "Aplicație de top pentru monitorizarea tensiunii arteriale. Monitorizează tensiunea sistolică și diastolică, frecvența cardiacă și presiunea arterială medie cu informații bazate pe AI. Cu AI Camera Scan pentru capturarea automată a valorilor, integrare Apple Health și funcții de export pentru medici.",
+          "description": "Aplicația numărul 1 de urmărire a tensiunii arteriale din Regatul Unit. Monitorizează tensiunea arterială sistolică și diastolică, pulsul și Presiunea Arterială Medie cu perspective bazate pe AI. Are Scanare AI cu Camera pentru a citi valorile direct de pe afișajul unui monitor, valori țintă și praguri de interval personalizabile, un raport MAP defalcat pe dimineață, seară și zi întreagă, sincronizare bidirecțională cu Apple Health, sincronizare iCloud pe iPhone, iPad și Mac, și exporturi PDF, CSV, Excel și JSON pentru a le trimite furnizorilor de servicii medicale. Gratuit de folosit, cu funcții AI incluse gratuit în fiecare zi și un abonament opțional Pro pentru cele mai detaliate rapoarte AI.",
           "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -170,14 +171,20 @@
                 "AI Camera Scan pentru captare automată",
                 "Sincronizare bidirecțională Apple Health",
                 "Recunoaștere AI a tiparelor",
-                "Export în PDF și Excel",
+                "Export în PDF, CSV, Excel și JSON",
                 "Calculul presiunii arteriale medii",
                 "Compatibil cu monitoare OMRON, Microlife, Beurer",
                 "Măsurători multiple pe zi",
-                "Widget-uri pe ecranul de start pentru înregistrare rapidă",
+                "Widget pe ecranul principal cu mediile recente",
                 "Vizualizare calendar cu indicatori colorați",
                 "Backup și sincronizare iCloud",
-                "Suport pentru 32 de limbi"
+                "Suport pentru 32 de limbi",
+                "Praguri de interval și linii țintă personalizabile pe grafice",
+                "Raport PDF MAP cu defalcare pe dimineață, seară și zi întreagă",
+                "Backup-uri săptămânale automate, cu restaurare",
+                "Până la patru mementouri în zilele pe care le alegi",
+                "Funcții AI gratuite zilnic, cu abonament opțional Pro",
+                "Fără reclame și fără urmărire de la terți"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/bpt-1.png",
           "softwareVersion": "Latest",
@@ -634,10 +641,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Care este cea mai bună aplicație de urmărire a tensiunii arteriale?",
+                      "name": "Care este o valoare normală a tensiunii arteriale?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Tensiune Arterială este aplicația de top pentru urmărirea tensiunii. Oferă informații bazate pe AI, tehnologie AI Camera Scan pentru capturarea automată a valorilor (OMRON, Microlife, Beurer), integrare Apple Health și funcții de export pentru împărtășirea cu medicii. Suportă urmărirea tensiunii sistolice și diastolice, frecvenței cardiace și presiunii arteriale medii (PAM)."
+                            "text": "Conform ghidurilor medicale, tensiunea arterială normală este de obicei sub 120/80 mmHg. Citirile între 120-129 sistolică și sub 80 diastolică sunt considerate ridicate. Valorile de 130/80 sau mai mari pot indica hipertensiune. Totuși, intervalele țintă pot varia în funcție de vârstă și afecțiuni, așa că discută cu medicul tău pentru recomandări personalizate. Feeltracker Tensiune Arterială colorează fiecare citire în funcție de aceste intervale, iar tu poți ajusta pragurile dacă medicul tău ți-a dat ținte diferite."
                       }
                 },
                 {
@@ -645,31 +652,95 @@
                       "name": "Cum funcționează AI Camera Scan?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "AI Camera Scan folosește recunoaștere optică avansată a caracterelor (OCR) pentru a citi automat valorile tensiunii de pe afișajul monitorului. Îndreptați simplu camera iPhone-ului sau iPad-ului spre ecranul cu valorile sistolice, diastolice și puls, iar aplicația completează automat aceste câmpuri. Funcționează cu OMRON, Microlife, Beurer și majoritatea tensiometrelor digitale."
+                            "text": "Scanarea AI cu Camera citește cifrele direct de pe ecranul monitorului tău de tensiune arterială: îndreaptă camera iPhone-ului sau iPad-ului spre afișaj, iar Feeltracker Tensiune Arterială completează pentru tine câmpurile sistolică, diastolică și puls. Nu există împerechere și nicio configurare specifică unui brand - funcționează cu majoritatea monitoarelor digitale, inclusiv OMRON, Microlife și Beurer. Scanarea este gratuită pentru toată lumea, cu o limită zilnică generoasă, și durează câteva secunde în loc să scrii trei cifre de mână."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Care este o valoare normală a tensiunii arteriale?",
+                      "name": "Ce este PAM și ar trebui să îl urmăresc?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Conform ghidurilor medicale, tensiunea normală este de obicei sub 120/80 mmHg. Valorile între 120-129 sistolic și sub 80 diastolic sunt considerate ridicate. Valorile de 130/80 sau mai mari pot indica hipertensiune. Intervalele țintă pot varia în funcție de vârstă și starea de sănătate."
+                            "text": "MAP (Presiunea Arterială Medie) este o valoare calculată care reprezintă tensiunea arterială medie din arterele tale în timpul unui ciclu cardiac. Se calculează astfel: MAP = (2 × Diastolică + Sistolică) ÷ 3. Unii medici consideră MAP util pentru evaluarea riscului cardiovascular. Feeltracker Tensiune Arterială o calculează automat pentru fiecare citire, o afișează pe grafic alături de valorile sistolică și diastolică și poate exporta un raport PDF MAP împărțit pe vizualizări de dimineață, seară și întreaga zi. Poți seta și propriile tale intervale MAP, cu o opțiune de focus LVAD pentru cei care fac monitorizare cu o pompă cardiacă."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Pot exporta datele de tensiune pentru medicul meu?",
+                      "name": "Pot importa datele vechi de tensiune?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Da, Tensiune Arterială îți permite să exporți rapoarte complete în format PDF, CSV, Excel sau JSON. Aceste rapoarte formatate profesional includ statistici sumare, grafice de tendințe și toate notițele tale - tot ce are nevoie furnizorul tău de servicii medicale într-un singur document. Poți partaja ușor aceste rapoarte prin e-mail sau alte metode."
+                            "text": "Da - Feeltracker Tensiune Arterială poate importa istoricul tău existent din Apple Health sau dintr-un fișier de calcul tabelar. Dacă ai urmărit deja în Apple Health, aplicația îți arată citirile găsite și importă doar cele pe care le selectezi, iar tu poți activa importul automat ca noile citiri din Health să ajungă singure. Dacă istoricul tău e într-un fișier de calcul tabelar, descarcă șablonul Excel al aplicației, lipește-ți datele în el și importă fișierul. Funcționează și fișierele JSON și backup-urile ZIP de pe alt dispozitiv."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Se integrează aplicația cu Apple Health?",
+                      "name": "Cât de des ar trebui să îmi măsor tensiunea?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Da, Blood Pressure oferă integrare bidirecțională cu Apple Health. Poți importa date istorice de tensiune din Apple Health, iar aplicația salvează automat noile măsurători în HealthKit."
+                            "text": "Recomandările pentru monitorizarea de acasă sugerează în general două citiri pe zi - una dimineața înainte de medicație și una seara - la ore constante, deși recomandarea medicului tău pentru situația ta specifică e mereu prioritară. Feeltracker Tensiune Arterială îți permite să înregistrezi câte citiri vrei pe zi și să setezi până la patru mementouri, fiecare în zilele săptămânii pe care le alegi, ca o rutină de două ori pe zi să fie ușor de menținut."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Datele mele de tensiune sunt private?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Citirile tale rămân pe dispozitivul tău și în propriul tău cont privat de iCloud - Feeltracker Tensiune Arterială nu are cont de creat, nicio adresă de email de predat și nicio copie a istoricului tău pe serverele noastre. Singura excepție sunt funcțiile AI: când îi ceri ceva AI-ului, citirile necesare pentru răspuns trec prin propriul nostru server releu către furnizorul de AI, ca să-ți putem răspunde. Acel releu nu stochează nimic - nicio cerere sau răspuns nu e scris vreodată pe disc - iar tu poți schimba AI-ul cu Apple Intelligence, care rulează pe dispozitiv, sau îl poți dezactiva complet, din setările AI ale aplicației. Tot restul, inclusiv sincronizarea cu Apple Health, rămâne doar între dispozitivele tale și Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot urmări tensiunea pentru membrii familiei?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Tensiune Arterială este construită pentru citirile unei singure persoane, așa că fiecare membru al familiei e cel mai bine să urmărească pe propriul dispozitiv, cu propriul ID Apple și cont iCloud. Astfel istoricul, graficele și rapoartele fiecăruia rămân separate, iar datele fiecărei persoane se sincronizează doar cu propriile dispozitive."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Afișați reclame sau mă urmăriți?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu. Am eliminat complet toate reclamele din aplicație. Nu vă urmărim în alte aplicații sau site-uri web și nu vindem niciodată datele dumneavoastră agenților de publicitate. Datele sunt sincronizate prin iCloud — la fel ca Note și Fotografii Apple. Aceasta înseamnă că nu trebuie să cunoaștem adresa de e-mail, numele sau informațiile personale. Datele de tensiune arterială sunt stocate pe dispozitivele dumneavoastră și în contul iCloud și sunt complet private, indiferent dacă utilizați versiunea gratuită sau Premium."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Am nevoie de un abonament?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu este necesar niciun abonament. Aplicația e gratuită de descărcat, toată urmărirea, graficele, sincronizarea cu Apple Health, backup-urile și exporturile sunt gratuite, iar fiecare utilizator primește funcții AI reale gratuit în fiecare zi - Pune o Întrebare, Chat Rapid, Rezumat Vocal, un Raport Rapid de Sănătate, Fă-mă să Râd, Calmează-mă și Scanare AI cu Camera - fără reclame, niciodată. Un abonament opțional Pro deblochează cele mai detaliate funcții AI (Cercetare Aprofundată, Rezumatul pentru Medic, Detectivul de Tipare, Raportul MAP Pro, Chat Pro și altele), le rulează pe cel mai capabil AI al nostru și mărește limitele zilnice generoase."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Funcționează cu monitorul meu OMRON, Microlife sau Beurer?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Tensiune Arterială funcționează cu orice monitor de tensiune arterială de acasă, pentru că citește cifrele în loc să se conecteze la dispozitiv. Îndreaptă camera spre afișaj, iar Scanarea AI cu Camera completează sistolica, diastolica și pulsul - funcționează cu majoritatea monitoarelor digitale, inclusiv OMRON, Microlife și Beurer - sau introdu valorile tu însuți cu selectoarele sau tastatura. Nu există împerechere Bluetooth, nicio listă de compatibilitate și nimic care să se strice când îți schimbi monitorul."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum îmi trimit citirile de tensiune arterială medicului meu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Tensiune Arterială poate genera un PDF gata pentru medic, pentru orice interval de date, în câteva atingeri, iar tu îl poți trimite prin email, mesaj, îl poți printa sau trimite prin AirDrop direct din aplicație. Exporturile PDF, CSV, Excel și JSON sunt toate gratuite, la fel ca raportul MAP dedicat, care îți împarte Presiunea Arterială Medie în vizualizări de dimineață, seară și întreaga zi, pentru o lună, trimestru, an sau interval personalizat. Cu Pro, AI-ul poate scrie și un Rezumat pentru Medic în limbaj simplu pentru aceeași perioadă, ca să însoțească cifrele."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Îmi pot seta propriile ținte și intervale pentru tensiunea arterială?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da - Feeltracker Tensiune Arterială îți permite să setezi valori țintă pentru sistolică, diastolică și puls, care apar ca linii de referință pe grafice, și să editezi pragurile pentru fiecare interval (Scăzut, Normal, Ridicat, Mare, Foarte Mare) ca să corespundă recomandărilor primite de tine. Graficele, culorile din calendar și rapoartele PDF urmează toate intervalele setate de tine, nu doar valorile implicite. MAP are propriile intervale ajustabile, inclusiv o opțiune de focus LVAD."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Feeltracker Tensiune Arterială funcționează pe iPad și Mac?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da - o singură descărcare acoperă iPhone și iPad, iar aplicația rulează și pe Mac-uri cu Apple Silicon prin Mac App Store. Citirile tale se sincronizează automat între toate acestea prin propriul tău cont privat de iCloud, așa că o citire înregistrată pe iPhone apare pe iPad la câteva momente distanță. Există un widget pe ecranul principal care afișează mediile tale recente, iar înregistrările sunt indexate în Spotlight, ca să-ți poți căuta istoricul de oriunde din iOS."
                       }
                 }
           ]
@@ -687,7 +758,7 @@
 
             <a href="/ro/daily-journal/">Jurnal zilnic</a>
 
-            <a href="/ro/mental-health/">Sănătate mintală</a>
+            <a href="/ro/mood-journal/">Jurnal de dispoziție</a>
 
             <a href="/ro/sleep/">Somn</a>
 
@@ -772,9 +843,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Pictogramă aplicație Tensiune Arterială" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Pictogramă aplicație Tensiune Arterială" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Tensiune Arterială</h1>
 
         <div class="privacy-badge">
@@ -782,12 +854,12 @@
         </div>
         <p class="hero-subtitle">Cel mai inteligent mod de a urmări și înțelege tensiunea arterială. Scanează citirile cu AI Camera Scan, sincronizează cu Apple Health și primește informații bazate pe AI despre sănătatea cardiovasculară.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Blood Pressure din App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Blood Pressure din App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Aplicație gratuită cu funcții premium opționale<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -800,15 +872,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Screenshot Tensiune Arterială 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Screenshot Tensiune Arterială 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Screenshot Tensiune Arterială 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Screenshot Tensiune Arterială 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Screenshot Tensiune Arterială 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Screenshot Tensiune Arterială 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -858,13 +930,19 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-medical-alt"></i></div>
                 <h3>Raport MAP pentru medicul tău</h3>
-                <p>Un raport specializat care detaliază presiunea arterială medie (MAP) pe intervale de dimineață, seară și zi întreagă, pentru orice lună, trimestru, an sau interval personalizat. Creat pentru a facilita discuțiile cu medicul. Parte a abonamentului opțional Pro.</p>
+                <p>Un raport PDF gratuit care îți defalcă Presiunea Arterială Medie pe intervalele de dimineață, seară și întreaga zi, pentru orice lună, trimestru, an sau interval personalizat. Creat pentru a ușura conversațiile cu medicul. Pro adaugă un Raport MAP Pro scris de AI.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-sliders-h"></i></div>
                 <h3>Intervalele tale, cum vrei tu</h3>
-                <p>Setează-ți propriile ținte și praguri de bandă — Normal, Ridicat, Etapa 1, Etapa 2 — pentru a se potrivi cu recomandările medicului tău. Graficele și rapoartele colorează fiecare măsurătoare conform intervalelor tale.</p>
+                <p>Setează-ți propriile valori țintă pentru sistolică, diastolică și puls — apar ca linii de referință pe grafice — și ajustează pragurile intervalelor (Scăzut, Normal, Ridicat, Mare, Foarte Mare) ca să corespundă recomandărilor primite de la medicul tău. Graficele și rapoartele colorează fiecare citire în funcție de intervalele tale.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Istoricul Tău, Păstrat în Siguranță</h3>
+                <p>Citirile se sincronizează pe iPhone, iPad și Mac prin contul tău privat de iCloud, iar aplicația face automat backup-uri săptămânale de pe care poți restaura oricând. Vii dintr-un fișier Excel? Importă-ți istoricul folosind șablonul integrat.</p>
             </div>
 
         </div>
@@ -878,27 +956,28 @@
         <div class="app-card">
             <h3>1. Înregistrează măsurătoarea</h3>
             <div class="app-card-content">
-<p><strong>AI Camera Scan:</strong> Îndreptați simplu camera spre afișajul tensiometrului și lăsați AI-ul să extragă automat valorile sistolice, diastolice și pulsul. Fără tastare — aplicația citește numerele direct de pe monitoarele <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer și cele mai multe monitoare digitale.</p>
-<p><strong>Introducere manuală:</strong> Preferați să tastați? Introduceți valorile manual printr-o interfață optimizată. Înregistrarea unei măsurători durează doar câteva secunde.</p>
-<p><strong>Context detaliat:</strong> Adaugă notițe detaliate — mese, medicamente, exerciții, nivel de stres, calitatea somnului sau alți factori care ar putea influența tensiunea. Poți atașa și fotografii și eticheta intrările cu etichete personalizate pentru căutare mai ușoară.</p>
+<p><strong>Scanare AI cu Camera:</strong> Îndreaptă camera spre afișajul monitorului tău de tensiune arterială și lasă AI-ul să extragă automat valorile sistolice, diastolice și de puls. Nu trebuie să scrii nimic - aplicația citește cifrele direct de pe afișajele <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer și majoritatea monitoarelor digitale.</p>
+<p><strong>Introducere Manuală:</strong> Preferi să scrii? Introdu valorile manual, printr-o interfață simplă și rapidă. Durează doar câteva secunde să înregistrezi o citire.</p>
+<p><strong>Context Bogat:</strong> Adaugă notițe detaliate despre ce făceai - mese, medicamente luate, exerciții, nivel de stres, calitatea somnului sau orice alt factor care ar putea influența tensiunea arterială. Poți atașa până la 8 fotografii unei citiri și poți regăsi orice înregistrare mai târziu direct din căutarea Spotlight din iOS.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>2. Urmărește tipare</h3>
             <div class="app-card-content">
-<p><strong>Vizualizare calendar:</strong> Vede toate măsurătorile tale într-o reprezentare intuitivă de calendar. Fiecare zi afișează valorile cu indicatori colorați pentru valorile normale, ridicate sau înalte pe baza ghidurilor medicale.</p>
-<p><strong>Statistici automate:</strong> Primește calcule instantanee ale mediilor zilnice, săptămânale și lunare. Vede valorile cele mai mici și mai mari, deviația standard și tendințele fără calcule.</p>
-<p><strong>Grafice vizuale:</strong> Grafice clare arată tendințele tensiunii pe zile, săptămâni, luni sau orice perioadă. Identifică tipare dintr-o privire și vede progresul față de obiectivele de sănătate.</p>
+<p><strong>Vizualizare Calendar:</strong> Vezi toate citirile într-un calendar intuitiv. Fiecare zi afișează măsurătorile cu indicatori colorați pentru citiri scăzute, normale, ridicate, mari sau foarte mari - pe baza recomandărilor larg folosite sau a intervalelor pe care ți le-ai setat tu.</p>
+<p><strong>Statistici Automate:</strong> Obții instant medii pentru orice interval de date, cele mai mici și mai mari citiri și o defalcare a câte citiri au căzut în fiecare interval - fără niciun calcul manual.</p>
+<p><strong>Grafice Vizuale:</strong> Grafice separate pentru sistolică, diastolică, MAP și puls îți arată tendințele pe zile, săptămâni, luni sau orice interval personalizat, fiecare cu valoarea ta țintă trasată ca linie de referință.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Primește informații AI</h3>
             <div class="app-card-content">
-<p><strong>Recunoașterea tiparelor:</strong> AI analizează măsurătorile și notițele pentru a identifica corelații. Descoperă ce activități, alimente sau situații îți cresc sau scad constant tensiunea.</p>
-<p><strong>Recomandări personalizate:</strong> Primește informații specifice pe baza datelor tale. AI-ul ar putea observa tipare precum „Tensiunea ta este mai mare în zilele în care menționezi stres la muncă" sau „Valorile sunt mai mici în zilele cu exerciții dimineața."</p>
-<p><strong>Conversați cu datele tale:</strong> Pune întrebări în limbaj natural precum „Care a fost tensiunea mea medie seara luna trecută?" sau „Arată-mi măsurătorile după administrarea medicamentelor." AI-ul înțelege contextul și oferă răspunsuri imediate.</p>
+<p><strong>Detectarea Tiparelor:</strong> AI-ul analizează citirile și notițele tale pentru a identifica corelații. Descoperă ce activități, alimente sau situații îți cresc sau îți scad constant tensiunea arterială.</p>
+<p><strong>Recomandări Personalizate:</strong> Primești perspective concrete bazate pe datele tale. AI-ul ar putea observa tipare precum "Tensiunea ta tinde să fie mai mare în zilele în care menționezi 'stres la muncă'" sau "Citirile sunt mai mici în zilele cu exerciții de dimineață".</p>
+<p><strong>Discută cu Datele Tale:</strong> Pune întrebări în limbaj natural, precum "Care a fost tensiunea mea medie seara luna trecută?" sau "Arată-mi citirile de după ce mi-am luat medicamentul". AI-ul înțelege contextul și îți oferă răspunsuri instant.</p>
+<p><strong>Gratuit în fiecare zi:</strong> Pune o Întrebare, Chat Rapid, Rezumat Vocal și un Raport Rapid de Sănătate sunt incluse pentru toată lumea, cu o limită zilnică generoasă. Cele mai detaliate rapoarte - Cercetare Aprofundată, Detectivul de Tipare, Rezumatul pentru Medic, Raportul MAP Pro - vin cu abonamentul opțional Pro.</p>
             </div>
         </div>
 
@@ -921,93 +1000,98 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Pune o întrebare</h4>
+                <h3><i class="fas fa-question-circle"></i> Pune o întrebare</h3>
                 <p>Întrebări și răspunsuri rapide despre datele tale de tensiune — primești răspunsuri imediate la întrebările de sănătate</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Poartă conversații interactive despre sănătatea ta cardiovasculară și primește îndrumare personalizată. Chat Rapid este gratuit în fiecare zi; Chat Pro merge mai în profunzime pe cel mai performant model AI al nostru</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Rezumat vocal</h4>
+                <h3><i class="fas fa-volume-up"></i> Rezumat vocal</h3>
                 <p>Ascultă rezumate audio ale tendințelor tensiunii — perfect pentru deplasări</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Fă-mă să râd</h4>
+                <h3><i class="fas fa-laugh"></i> Fă-mă să râd</h3>
                 <p>Primește umor personalizat din datele tale de urmărire pentru a-ți însenina ziua</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Calmează-mă</h4>
-                <p>Exerciții de respirație ghidate de AI pentru reducerea stresului și scăderea tensiunii</p>
+                <h3><i class="fas fa-moon"></i> Calmează-mă</h3>
+                <p>Exerciții de respirație și relaxare ghidate de AI, ca să te destinzi după o zi stresantă</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> AI Camera Scan</h4>
-                <p>Scanează citirile direct de pe afișajul monitorului — funcționează cu <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
+                <h3><i class="fas fa-camera"></i> AI Camera Scan</h3>
+                <p>Scanează citirile direct de pe ecranul monitorului tău - funcționează cu <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer și majoritatea afișajelor digitale. Gratuit pentru toată lumea, cu o limită zilnică generoasă</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Cercetare Aprofundată <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Cercetare Aprofundată <span class="ai-pro-badge">Pro</span></h3>
                 <p>Analiză AI cuprinzătoare a datelor de tensiune cu informații detaliate</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detective de tipare <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detective de tipare <span class="ai-pro-badge">Pro</span></h3>
                 <p>Găsește corelații ascunse între valorile tensiunii și factorii de stil de viață</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistent obiective <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistent obiective <span class="ai-pro-badge">Pro</span></h3>
                 <p>Primește obiective personalizate, bazate pe date, pentru tensiunea arterială</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Rezumat pentru medic <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Rezumat pentru medic <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creează rezumate medicale profesionale pentru vizitele la medic</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Concediu Medical <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Concediu Medical <span class="ai-pro-badge">Pro</span></h3>
                 <p>Concedii medicale generate de AI pentru muncă sau școală când ai nevoie</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generator de povești <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generator de povești <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transformă datele de sănătate în narațiuni creative și captivante</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Rezumat text <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Rezumat text <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creează rezumate de mesaje text partajabile ale tendințelor tensiunii</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Chestionar Personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Chestionar Personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Testează-ți cunoștințele cu un quiz amuzant de 10 întrebări generat de AI despre datele tale</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Text-to-Speech <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Text-to-Speech <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ascultă informațiile și rezumatele AI cu redare vocală naturală</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Raport de sănătate personalizat <span class="ai-pro-badge">Pro</span></h4>
-                <p>Creează documente de sănătate complete și personalizate pentru urmărirea progresului</p>
+                <h3><i class="fas fa-file-invoice"></i> Raport de sănătate personalizat <span class="ai-pro-badge">Pro</span></h3>
+                <p>Creează documente de sănătate complete și personalizate ca să-ți urmărești progresul. Un Raport Rapid de Sănătate gratuit este inclus pentru toată lumea</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (pe dispozitiv) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (pe dispozitiv) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opțiune axată pe confidențialitate care rulează AI local pe dispozitivul tău folosind Foundation Models de la Apple — nimic nu părăsește iPhone-ul, iPad-ul sau Mac-ul tău. Utilizare nelimitată cu un cont plătit, pe dispozitivele Apple Silicon compatibile (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat Vocal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat Vocal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversații vocale, bidirecționale și hands-free cu AI despre datele tale — pune întrebări și ascultă răspunsuri fără să atingi ecranul</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-heart-pulse"></i> Raport MAP Pro <span class="ai-pro-badge">Pro</span></h3>
+                <p>Un raport scris de AI despre Presiunea Arterială Medie: tipare de dimineață versus seară, variabilitatea de la o zi la alta și cum se poziționează citirile tale față de intervalele MAP setate de tine - inclusiv o opțiune de focus LVAD. Creat pentru a fi predat unei echipe medicale</p>
             </div>
 
         </div>
@@ -1026,7 +1110,7 @@
 
             <div class="benefit-item">
                 <h4><i class="fas fa-heart-pulse"></i> Gestionează hipertensiunea</h4>
-                <p>Ține tensiunea sub control prin măsurători zilnice și identificarea factorilor declanșatori</p>
+                <p>Construiește o evidență zi de zi a citirilor tale, ca tu și medicul tău să vedeți cum se comportă de fapt cifrele între vizite</p>
             </div>
 
             <div class="benefit-item">
@@ -1071,31 +1155,31 @@
 
 
         <h3>Care este o valoare normală a tensiunii arteriale?</h3>
-        <p>Conform ghidurilor medicale, tensiunea normală este de obicei sub 120/80 mmHg. Valorile între 120-129 sistolic și sub 80 diastolic sunt considerate ridicate. Valorile de 130/80 sau mai mari pot indica hipertensiune. Intervalele țintă pot varia în funcție de vârstă și starea de sănătate, deci consultați medicul pentru sfaturi individuale.</p>
+        <p>Conform ghidurilor medicale, tensiunea arterială normală este de obicei sub 120/80 mmHg. Citirile între 120-129 sistolică și sub 80 diastolică sunt considerate ridicate. Valorile de 130/80 sau mai mari pot indica hipertensiune. Totuși, intervalele țintă pot varia în funcție de vârstă și afecțiuni, așa că discută cu medicul tău pentru recomandări personalizate. Feeltracker Tensiune Arterială colorează fiecare citire în funcție de aceste intervale, iar tu poți ajusta pragurile dacă medicul tău ți-a dat ținte diferite.</p>
 
 
         <h3>Cum funcționează AI Camera Scan?</h3>
-        <p>Îndreptați simplu camera iPhone-ului sau iPad-ului spre afișajul digital al tensiometrului. Aplicația folosește recunoaștere avansată de cameră bazată pe AI pentru a citi automat numerele și a completa câmpurile sistolic, diastolic și puls. Aceasta elimină erorile de tastare manuală și face înregistrarea mai rapidă. <a href="https://geni.us/B9RB" target="_blank" rel="noopener">Obțineți un tensiometru aici</a>.</p>
+        <p>Scanarea AI cu Camera citește cifrele direct de pe ecranul monitorului tău de tensiune arterială: îndreaptă camera iPhone-ului sau iPad-ului spre afișaj, iar Feeltracker Tensiune Arterială completează pentru tine câmpurile sistolică, diastolică și puls. Nu există împerechere și nicio configurare specifică unui brand - funcționează cu majoritatea monitoarelor digitale, inclusiv <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife și Beurer. Scanarea este gratuită pentru toată lumea, cu o limită zilnică generoasă, și durează câteva secunde în loc să scrii trei cifre de mână.</p>
 
 
         <h3>Ce este PAM și ar trebui să îl urmăresc?</h3>
-        <p>PAM (Presiunea Arterială Medie) este o valoare calculată care reprezintă presiunea medie în artere pe parcursul unui ciclu cardiac. Se calculează ca: PAM = (2 × Diastolic + Sistolic) ÷ 3. Unii medici găsesc PAM util pentru evaluarea riscului cardiovascular. Aplicația calculează automat PAM pentru fiecare măsurătoare.</p>
+        <p>MAP (Presiunea Arterială Medie) este o valoare calculată care reprezintă tensiunea arterială medie din arterele tale în timpul unui ciclu cardiac. Se calculează astfel: MAP = (2 × Diastolică + Sistolică) ÷ 3. Unii medici consideră MAP util pentru evaluarea riscului cardiovascular. Feeltracker Tensiune Arterială o calculează automat pentru fiecare citire, o afișează pe grafic alături de valorile sistolică și diastolică și poate exporta un raport PDF MAP împărțit pe vizualizări de dimineață, seară și întreaga zi. Poți seta și propriile tale intervale MAP, cu o opțiune de focus LVAD pentru cei care fac monitorizare cu o pompă cardiacă.</p>
 
 
         <h3>Pot importa datele vechi de tensiune?</h3>
-        <p>Da! Dacă ai urmărit tensiunea în Apple Health, poți importa toate măsurătorile istorice cu o singură atingere. Aplicația acceptă și importul din fișiere CSV/Excel dacă ai date din alte surse.</p>
+        <p>Da - Feeltracker Tensiune Arterială poate importa istoricul tău existent din Apple Health sau dintr-un fișier de calcul tabelar. Dacă ai urmărit deja în Apple Health, aplicația îți arată citirile găsite și importă doar cele pe care le selectezi, iar tu poți activa importul automat ca noile citiri din Health să ajungă singure. Dacă istoricul tău e într-un fișier de calcul tabelar, descarcă șablonul Excel al aplicației, lipește-ți datele în el și importă fișierul. Funcționează și fișierele JSON și backup-urile ZIP de pe alt dispozitiv.</p>
 
 
         <h3>Cât de des ar trebui să îmi măsor tensiunea?</h3>
-        <p>Aceasta depinde de starea de sănătate și recomandările medicului. Unele persoane măsoară zilnic (adesea dimineața și seara), altele săptămânal. Aplicația facilitează măsurarea la frecvența recomandată de medic. Poți seta memento-uri pentru a menține un program constant.</p>
+        <p>Recomandările pentru monitorizarea de acasă sugerează în general două citiri pe zi - una dimineața înainte de medicație și una seara - la ore constante, deși recomandarea medicului tău pentru situația ta specifică e mereu prioritară. Feeltracker Tensiune Arterială îți permite să înregistrezi câte citiri vrei pe zi și să setezi până la patru mementouri, fiecare în zilele săptămânii pe care le alegi, ca o rutină de două ori pe zi să fie ușor de menținut.</p>
 
 
         <h3>Datele mele de tensiune sunt private?</h3>
-        <p>Absolut. Măsurătorile de tensiune sunt stocate criptat pe dispozitivul tău și în contul tău privat iCloud. Datele nu sunt niciodată transmise prin serverele noastre și nu putem vedea informațiile tale de sănătate. Este la fel de sigur ca aplicațiile de Note sau Fotografii ale Apple.</p>
+        <p>Citirile tale rămân pe dispozitivul tău și în propriul tău cont privat de iCloud - Feeltracker Tensiune Arterială nu are cont de creat, nicio adresă de email de predat și nicio copie a istoricului tău pe serverele noastre. Singura excepție sunt funcțiile AI: când îi ceri ceva AI-ului, citirile necesare pentru răspuns trec prin propriul nostru server releu către furnizorul de AI, ca să-ți putem răspunde. Acel releu nu stochează nimic - nicio cerere sau răspuns nu e scris vreodată pe disc - iar tu poți schimba AI-ul cu Apple Intelligence, care rulează pe dispozitiv, sau îl poți dezactiva complet, din setările AI ale aplicației. Tot restul, inclusiv sincronizarea cu Apple Health, rămâne doar între dispozitivele tale și Apple.</p>
 
 
         <h3>Pot urmări tensiunea pentru membrii familiei?</h3>
-        <p>Aplicația este concepută pentru uz individual și se sincronizează cu contul tău personal iCloud. Pentru urmărirea mai multor membri ai familiei, fiecare persoană ar trebui să folosească aplicația pe propriul dispozitiv cu propriul Apple ID.</p>
+        <p>Feeltracker Tensiune Arterială este construită pentru citirile unei singure persoane, așa că fiecare membru al familiei e cel mai bine să urmărească pe propriul dispozitiv, cu propriul ID Apple și cont iCloud. Astfel istoricul, graficele și rapoartele fiecăruia rămân separate, iar datele fiecărei persoane se sincronizează doar cu propriile dispozitive.</p>
 
 
         <h3>Afișați reclame sau mă urmăriți?</h3>
@@ -1104,7 +1188,23 @@
 
 
         <h3>Am nevoie de un abonament?</h3>
-        <p>Nu este necesar niciun abonament. Aplicația este gratuită de descărcat, toată urmărirea, graficele, sincronizarea Apple Health și exporturile sunt gratuite, iar fiecare utilizator primește funcții AI reale și gratuite în fiecare zi — fără reclame, niciodată. Un abonament opțional Pro deblochează cele mai avansate funcții AI (Cercetare Aprofundată, Rezumat pentru Medic, Detectiv de Tipare, Raportul Pro MAP, Chat Pro și altele), le rulează pe cel mai performant model AI al nostru și mărește limitele zilnice generoase.</p>
+        <p>Nu este necesar niciun abonament. Aplicația e gratuită de descărcat, toată urmărirea, graficele, sincronizarea cu Apple Health, backup-urile și exporturile sunt gratuite, iar fiecare utilizator primește funcții AI reale gratuit în fiecare zi - Pune o Întrebare, Chat Rapid, Rezumat Vocal, un Raport Rapid de Sănătate, Fă-mă să Râd, Calmează-mă și Scanare AI cu Camera - fără reclame, niciodată. Un abonament opțional Pro deblochează cele mai detaliate funcții AI (Cercetare Aprofundată, Rezumatul pentru Medic, Detectivul de Tipare, Raportul MAP Pro, Chat Pro și altele), le rulează pe cel mai capabil AI al nostru și mărește limitele zilnice generoase.</p>
+
+
+        <h3>Funcționează cu monitorul meu OMRON, Microlife sau Beurer?</h3>
+        <p>Feeltracker Tensiune Arterială funcționează cu orice monitor de tensiune arterială de acasă, pentru că citește cifrele în loc să se conecteze la dispozitiv. Îndreaptă camera spre afișaj, iar Scanarea AI cu Camera completează sistolica, diastolica și pulsul - funcționează cu majoritatea monitoarelor digitale, inclusiv <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife și Beurer - sau introdu valorile tu însuți cu selectoarele sau tastatura. Nu există împerechere Bluetooth, nicio listă de compatibilitate și nimic care să se strice când îți schimbi monitorul.</p>
+
+
+        <h3>Cum îmi trimit citirile de tensiune arterială medicului meu?</h3>
+        <p>Feeltracker Tensiune Arterială poate genera un PDF gata pentru medic, pentru orice interval de date, în câteva atingeri, iar tu îl poți trimite prin email, mesaj, îl poți printa sau trimite prin AirDrop direct din aplicație. Exporturile PDF, CSV, Excel și JSON sunt toate gratuite, la fel ca raportul MAP dedicat, care îți împarte Presiunea Arterială Medie în vizualizări de dimineață, seară și întreaga zi, pentru o lună, trimestru, an sau interval personalizat. Cu Pro, AI-ul poate scrie și un Rezumat pentru Medic în limbaj simplu pentru aceeași perioadă, ca să însoțească cifrele.</p>
+
+
+        <h3>Îmi pot seta propriile ținte și intervale pentru tensiunea arterială?</h3>
+        <p>Da - Feeltracker Tensiune Arterială îți permite să setezi valori țintă pentru sistolică, diastolică și puls, care apar ca linii de referință pe grafice, și să editezi pragurile pentru fiecare interval (Scăzut, Normal, Ridicat, Mare, Foarte Mare) ca să corespundă recomandărilor primite de tine. Graficele, culorile din calendar și rapoartele PDF urmează toate intervalele setate de tine, nu doar valorile implicite. MAP are propriile intervale ajustabile, inclusiv o opțiune de focus LVAD.</p>
+
+
+        <h3>Feeltracker Tensiune Arterială funcționează pe iPad și Mac?</h3>
+        <p>Da - o singură descărcare acoperă iPhone și iPad, iar aplicația rulează și pe Mac-uri cu Apple Silicon prin Mac App Store. Citirile tale se sincronizează automat între toate acestea prin propriul tău cont privat de iCloud, așa că o citire înregistrată pe iPhone apare pe iPad la câteva momente distanță. Există un widget pe ecranul principal care afișează mediile tale recente, iar înregistrările sunt indexate în Spotlight, ca să-ți poți căuta istoricul de oriunde din iOS.</p>
 
     </section>
 
@@ -1463,22 +1563,22 @@
         <div class="related-apps-grid">
 
             <a href="/ro/daily-journal/" class="related-app-card" aria-label="Jurnal zilnic">
-                <img src="/images/NT_1024.png" alt="Jurnal zilnic" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Jurnal zilnic" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Jurnal zilnic</span>
             </a>
 
-            <a href="/ro/mental-health/" class="related-app-card" aria-label="Sănătate mintală">
-                <img src="/images/FT_1024.png" alt="Sănătate mintală" class="related-app-icon">
-                <span class="related-app-name">Sănătate mintală</span>
+            <a href="/ro/mood-journal/" class="related-app-card" aria-label="Jurnal de dispoziție">
+                <img src="/images/FT_1024.png" alt="Jurnal de dispoziție" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Jurnal de dispoziție</span>
             </a>
 
             <a href="/ro/sleep/" class="related-app-card" aria-label="Somn">
-                <img src="/images/ST_1024.png" alt="Somn" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Somn" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Somn</span>
             </a>
 
             <a href="/ro/weight/" class="related-app-card" aria-label="Greutate">
-                <img src="/images/WT_1024.png" alt="Greutate" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Greutate" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Greutate</span>
             </a>
 
@@ -1491,9 +1591,10 @@
         <h2>Începe monitorizarea tensiunii astăzi</h2>
         <p>Alătură-te miilor de utilizatori care preiau controlul sănătății lor cardiovasculare</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Blood Pressure"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Blood Pressure" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

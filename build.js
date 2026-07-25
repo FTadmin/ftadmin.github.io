@@ -523,14 +523,29 @@ function buildContext(site, languages, page, appCatalog) {
     // Auto-generate SEO schemas from page content where missing
     data.structuredData = Array.isArray(data.structuredData) ? [...data.structuredData] : [];
 
-    // FAQPage schema — from data.faq.items (if not already present)
-    if (data.faq && Array.isArray(data.faq.items) && data.faq.items.length > 0) {
+    // FAQPage schema — generated from whatever questions the page actually
+    // renders, so the schema can never drift from the visible content and each
+    // locale gets its own translated schema instead of inheriting EN's.
+    //
+    // Two shapes carry questions: app/index pages use data.faq.items, and the
+    // FAQ page (faq-page template) nests them under data.sections[].items[].
+    const faqSources = [];
+    if (data.faq && Array.isArray(data.faq.items)) {
+        faqSources.push(...data.faq.items);
+    }
+    if (Array.isArray(data.sections)) {
+        for (const section of data.sections) {
+            if (section && Array.isArray(section.items)) faqSources.push(...section.items);
+        }
+    }
+    const faqItems = faqSources.filter(i => i && i.question && i.answer);
+    if (faqItems.length > 0) {
         const hasFAQ = data.structuredData.some(b => b && b['@type'] === 'FAQPage');
         if (!hasFAQ) {
             data.structuredData.push({
                 '@context': 'https://schema.org',
                 '@type': 'FAQPage',
-                mainEntity: data.faq.items.map(item => ({
+                mainEntity: faqItems.map(item => ({
                     '@type': 'Question',
                     name: stripMarkdown(item.question),
                     acceptedAnswer: {

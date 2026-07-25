@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Diari diari - notes, fotos i diari AI | Feeltracker</title>
     <meta name="description" content="Diari diari privat impulsat per IA. Escaneja objectes i text per a entrades instantànies, adjunta fotos, fes un seguiment del sentiment i els patrons de paraules. Sincronització iCloud. iPhone, iPad i Mac.">
-    <meta name="keywords" content="log,day,diario,lock,free,moleskine,personal,private,secret,taker,writer,journaling,my,笔记,дневник,笔记本,diari,notes,personal,privat">
+    <meta name="keywords" content="app de diari personal, app d'escriptura de diari, diari privat, diari digital, app de diari per a l'iPhone, diari de gratitud, diari amb fotos, app de diari amb IA, app de reflexió diària, app de diari i notes">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/ca/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "Escaneig d'elements amb IA: descriu objectes per a les entrades del diari",
                 "Escaneig de text amb IA: OCR per capturar text",
-                "Anàlisi de sentiment de les entrades",
-                "Seguiment de freqüència de paraules i temes",
+                "Indicador de sentiment a les entrades",
+                "Núvol de paraules i anàlisi de freqüència de paraules",
                 "Adjunta fins a 8 fotos per entrada",
                 "Plantilles de notes per a entrades ràpides",
                 "Cerca de text complet i integració amb Spotlight",
-                "Exportació a PDF i Excel",
+                "Exportació a PDF, Excel, CSV i JSON",
                 "Còpia de seguretat i sincronització amb iCloud",
                 "Compatibilitat amb 32 idiomes",
-                "Widgets de pantalla d'inici per a un registre ràpid"
+                "Widgets de pantalla d'inici per a un registre ràpid",
+                "Entrades recurrents creades diàriament o setmanalment",
+                "Representació opcional en Markdown a la llista d'entrades",
+                "Reformulació amb IA per polir el que has escrit",
+                "Recompte de paraules per dia, mes i any",
+                "Importació d'Excel per a diaris antics",
+                "Còpies de seguretat setmanals automàtiques"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "El meu diari és privat?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sens dubte. Les teves entrades es desen al teu dispositiu i al teu compte privat d'iCloud: no tenim servidors que emmagatzemin el teu diari i mai veiem el que escrius. Les funcions d'IA opcionals utilitzen IA al núvol respectuosa amb la privadesa que pots desactivar en qualsevol moment; amb la IA desactivada, l'anàlisi de sentiment s'executa totalment al dispositiu amb el marc Natural Language d'Apple, i amb l'opció Apple Intelligence tota la IA s'executa al dispositiu."
+                            "text": "Sí — Feeltracker Diari Personal manté les teves entrades al teu dispositiu i al teu propi compte privat d'iCloud, així que no tenim cap servidor que guardi el teu diari i ningú a Feeltracker pot llegir el que escrius. No hi ha anuncis ni seguiment entre apps. Les funcions d'IA opcionals envien les entrades sobre les quals preguntes a un servei al núvol respectuós amb la privacitat, i pots desactivar la IA en qualsevol moment; amb la IA desactivada, l'indicador de sentiment funciona completament al dispositiu fent servir el framework Natural Language d'Apple, i amb l'opció Apple Intelligence totes les funcions d'IA funcionen al dispositiu."
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "Com funciona l'anàlisi de sentiment?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "A mesura que escrius, l'app analitza el to emocional de la teva entrada i mostra un emoji que indica si es llegeix com a positiu, negatiu o neutre. Per defecte, això utilitza la IA respectuosa amb la privadesa de l'app; si desactives la IA, canvia al marc Natural Language integrat d'Apple al dispositiu."
+                            "text": "Feeltracker Diari Personal puntua el to emocional de cada entrada mentre escrius i el mostra com un indicador codificat per colors sota el text, que va del vermell (negatiu) passant pel gris (neutre) fins al verd i el blau (positiu). L'indicador és opcional i es pot desactivar a Configuració. Per defecte fa servir la IA respectuosa amb la privacitat de l'app; si desactives la IA, canvia al framework Natural Language integrat d'Apple, que funciona al dispositiu."
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "Què és l'anàlisi de freqüència de paraules?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "La funció de Tendències analitza totes les vostres entrades per mostrar sobre quines paraules i temes escriviu més sovint. Això us ajuda a identificar temes recurrents, preocupacions o interessos en el vostre pensament."
+                            "text": "L'anàlisi de freqüència de paraules a Feeltracker Diari Personal compta les paraules de totes les teves entrades i classifica les que fas servir més, perquè les persones, els llocs i les preocupacions que reapareixen es facin visibles. Les paraules de farciment habituals es filtren en el teu idioma, les mateixes dades també es mostren com a núvol de paraules, i tocar qualsevol paraula obre totes les entrades que la contenen."
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "Necessito una subscripció?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "No cal cap subscripció. L'app és gratuïta per descarregar, tot el seguiment, els gràfics, la sincronització amb Apple Health i les exportacions són gratuïts, i tots els usuaris obtenen funcions d'IA de veritat gratis cada dia, sense anuncis, mai. Una subscripció Pro opcional desbloqueja les funcions d'IA més detallades (Recerca aprofundida, Explorador de temes, Línia de temps de sentiment, Resum per al metge, Xat Pro i més), les executa amb la nostra IA més capaç i augmenta els límits diaris ja generosos."
+                            "text": "No — Feeltracker Diari Personal es pot descarregar gratis i no cal cap subscripció. Escriure, les fotos, les plantilles, les entrades recurrents, l'anàlisi de paraules, la cerca, els gràfics, les còpies de seguretat, les exportacions i la sincronització amb iCloud són tots gratuïts, i cada usuari té accés a funcions d'IA reals gratuïtes cada dia (Xat, Fes una Pregunta, Resum de Veu, Fes-me Riure, Tranquil·litza'm, més els escàners de Text i d'Elements) — sense anuncis, mai. Una subscripció Pro opcional desbloqueja les funcions d'IA més profundes (Recerca Aprofundida, Explorador de Temes, Línia de Temps de Sentiment, Resum Mèdic, Xat Pro i més), les executa amb la nostra IA més potent, i augmenta els generosos límits diaris."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Funciona Feeltracker Diari Personal sense connexió?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sí — Feeltracker Diari Personal funciona sense connexió per a tot el que importa: escriure entrades, adjuntar fotos, cercar, explorar el teu any, i veure estadístiques i gràfics, tot funciona al teu dispositiu sense connexió a internet. Tot el que escriguis sense connexió se sincronitza amb els teus altres dispositius via iCloud la propera vegada que et connectis. Les funcions d'IA al núvol necessiten connexió, però si actives el mode Apple Intelligence al dispositiu (Pro, en dispositius compatibles amb iOS 26 o posterior), la IA també funciona sense connexió."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Puc importar les meves entrades de diari antigues?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sí — Feeltracker Diari Personal importa entrades de diari des d'un full de càlcul Excel. Descarrega la plantilla d'importació des de Configuració, enganxa-hi una data, una hora i el text de cada entrada, després importa el fitxer i cada fila es converteix en una entrada de diari. També pots restaurar una còpia de seguretat anterior, que recupera les teves entrades i les seves fotos juntes."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Puc bloquejar el meu diari amb Face ID?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sí — pots bloquejar Feeltracker Diari Personal amb Face ID o Touch ID fent servir el bloqueig d'app integrat a iOS: manté premuda la icona de l'app a la teva pantalla d'inici i tria Requereix Face ID. Configuració enllaça amb les mateixes instruccions. Un cop activat, ningú pot obrir el teu diari sense la teva cara, la teva empremta o el teu codi d'accés."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Què li passa al meu diari si perdo el telèfon?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "El teu diari està segur: Feeltracker Diari Personal sincronitza cada entrada i foto amb el teu compte privat d'iCloud, així que iniciar sessió en un iPhone, iPad o Mac nou ho recupera tot automàticament. L'app també crea una còpia de seguretat automàtica aproximadament un cop per setmana (un ZIP de les teves entrades i fotos) que pots restaurar o exportar tu mateix en qualsevol moment, i pots fer una còpia de seguretat manual quan vulguis."
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/ca/daily-journal/" class="current">Diari Personal</a>
 
-            <a href="/ca/mental-health/">Salut Mental</a>
+            <a href="/ca/mood-journal/">Diari de l'Ànim</a>
 
             <a href="/ca/sleep/">Son</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Icona de l'App de Diari Personal" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Diari Personal — app privada de diari i escriptura amb IA per a l'iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Diari Personal</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Sense anuncis · Sense seguiment · Privadesa primer
         </div>
-        <p class="hero-subtitle">El vostre espai privat per a reflexions diàries, pensaments i records. Escriviu lliurement amb anàlisi de sentiment amb IA, adjunts de fotos i perspectives intel·ligents sobre els vostres patrons d'escriptura.</p>
+        <p class="hero-subtitle">El teu espai privat per a reflexions diàries, pensaments i records. Escriu tantes vegades com vulguis, adjunta fins a 8 fotos, i descobreix els temes als quals tornes una i altra vegada amb un indicador de sentiment, un núvol de paraules i una anàlisi de freqüència de paraules.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarregueu el Diari Personal a l'App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarregueu el Diari Personal a l'App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuïta amb funcions premium opcionals<br>iPhone, iPad i Mac • iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Captura de pantalla del Diari Personal 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Captura de pantalla del Diari Personal 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Captura de pantalla del Diari Personal 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="Comentaris d'IA sobre una entrada de diari a Feeltracker Diari Personal" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Captura de pantalla del Diari Personal 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Escrivint una entrada de diari amb data, hora i notes" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Escriptura sense distraccions</h3>
-                <p>Interfície neta i senzilla que posa les vostres paraules en primer lloc. Sense desordre, només vosaltres i els vostres pensaments. Escriviu tant o tan poc com vulgueu cada dia.</p>
+                <p>Un editor de text senzill i net que posa les teves paraules al centre, amb un recompte de paraules en directe mentre escrius. Toca Reformulació amb IA per polir un paràgraf, i activa la representació en Markdown si t'agraden els encapçalaments, la negreta i les llistes a la teva llista d'entrades.</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Anàlisi de freqüència de paraules</h3>
-                <p>Descobriu el que realment us preocupa. Veieu quines paraules i temes apareixen més sovint en la vostra escriptura per identificar patrons i pensaments recurrents.</p>
+                <h3>Núvol de Paraules i Freqüència de Paraules</h3>
+                <p>Descobreix què tens realment al cap. Un núvol de paraules i una llista classificada per freqüència et mostren les paraules que fas servir més sovint, amb les paraules de farciment habituals filtrades en el teu idioma — toca qualsevol paraula per obrir totes les entrades que la mencionen.</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>Total de paraules escrites per dia, mes i any. Alguns dies et sorprendràs — i veure com puja el comptador és una motivació en si mateixa.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Entrades Recurrents</h3>
+                <p>Configura entrades que es creen soles, cada dia o cada setmana, perquè el teu registre d'hàbits, la nota de medicació o el recordatori de gratitud nocturn ja t'estiguin esperant quan obris l'app.</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,18 +778,18 @@
         <div class="app-card">
             <h3>2. Veieu com emergeixen els patrons</h3>
             <div class="app-card-content">
-<p><strong>Anàlisi de sentiment:</strong> La IA detecta automàticament el to emocional de les vostres entrades: positiu, negatiu o neutral. Veieu les tendències del vostre estat d'ànim visualitzades durant setmanes i mesos per entendre els vostres patrons emocionals.</p>
-<p><strong>Freqüència de paraules:</strong> Descobriu sobre quins temes, persones o assumptes escriviu més. L'app identifica paraules i frases recurrents, revelant el que constantment teniu al cap i com canvia el vostre enfocament amb el temps.</p>
-<p><strong>Vista de calendari:</strong> Navegueu per tot l'historial del vostre diari en una interfície de calendari. Cada dia mostra un extracte i un indicador d'estat d'ànim. Salteu ràpidament a qualsevol entrada passada per veure el que pensàveu aquell dia.</p>
+<p><strong>Indicador de sentiment:</strong> Mentre escrius, un indicador opcional codificat per colors valora el to emocional de l'entrada, des de negatiu, passant per neutre, fins a positiu. Pro hi afegeix una Línia de Temps de Sentiment que representa com evoluciona aquest to al llarg de setmanes i mesos.</p>
+<p><strong>Freqüència de paraules:</strong> Descobreix sobre quins temes, persones o assumptes escrius més. Un núvol de paraules i una llista classificada per freqüència revelen què tens constantment al cap, i tocar una paraula obre totes les entrades que la fan servir.</p>
+<p><strong>Vistes d'any, mes i dia:</strong> Explora tot el teu historial d'escriptura, des d'un mapa de calor anual dels dies que vas escriure fins a un sol dia. Cada dia llista les teves entrades senceres, amb el registre i el recompte de paraules, perquè puguis anar directament a què pensaves en qualsevol data.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Reflexioneu i creixeu</h3>
             <div class="app-card-content">
-<p><strong>Perspectives amb IA:</strong> Feu preguntes sobre el vostre diari: "Quins van ser els meus dies més feliços el mes passat?" o "Mostra'm totes les entrades on vaig mencionar els meus objectius." Obteniu respostes instantànies i reflexives que us ajuden a entendre el vostre camí.</p>
-<p><strong>Seguiment del creixement personal:</strong> Reviseu com evolucionen els vostres pensaments, preocupacions i aspiracions. Veieu el progrés cap als objectius esmentats en entrades passades. Identifiqueu àrees de creixement i celebreu fins on heu arribat.</p>
-<p><strong>Cerqueu-ho tot:</strong> La cerca potent troba qualsevol paraula, frase o concepte al llarg d'anys de diari. Filtreu per data, estat d'ànim o paraules clau. Tot el vostre historial escrit és instantàniament accessible i cercable.</p>
+<p><strong>Informació potenciada per IA:</strong> Fes preguntes sobre el teu diari: "Quins van ser els meus dies més feliços el mes passat?" o "Mostra'm totes les entrades on vaig mencionar els meus objectius." Obtén respostes immediates i reflexives que t'ajuden a entendre el teu camí.</p>
+<p><strong>Seguiment del creixement personal:</strong> Revisa com evolucionen els teus pensaments, preocupacions i aspiracions. Veu el progrés cap als objectius mencionats en entrades passades. Identifica àrees de creixement i celebra fins on has arribat.</p>
+<p><strong>Cerca-ho tot:</strong> Cerca qualsevol paraula al llarg d'anys d'escriptura, limita-la a un interval de dates, i salta directament a les entrades coincidents. El teu diari també està indexat a Spotlight d'iOS, així que una cerca des de la teva pantalla d'inici també el troba.</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Feu una pregunta</h4>
+                <h3><i class="fas fa-question-circle"></i> Feu una pregunta</h3>
                 <p>Preguntes i respostes ràpides sobre les vostres entrades de diari: obteniu respostes instantànies sobre la vostra escriptura</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Xat</h4>
+                <h3><i class="fas fa-comments"></i> Xat</h3>
                 <p>Tingues converses interactives sobre el teu recorregut com a diari i rep orientació personalitzada. El Xat ràpid és gratuït cada dia; el Xat Pro aprofundeix més amb la nostra IA més capaç</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Resum de veu</h4>
+                <h3><i class="fas fa-volume-up"></i> Resum de veu</h3>
                 <p>Escolteu resums d'àudio dels temes del vostre diari: perfecte per a la reflexió en moviment</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> Escaneig amb IA</h4>
+                <h3><i class="fas fa-barcode-scan"></i> Escaneig amb IA</h3>
                 <p>Escanegeu objectes, documents, rebuts o text per crear entrades de diari instantànies amb descripcions d'IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Fes-me riure</h4>
+                <h3><i class="fas fa-laugh"></i> Fes-me riure</h3>
                 <p>Obteniu humor personalitzat de les vostres entrades de diari per alegrar el vostre dia</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Tranquil·litza'm</h4>
+                <h3><i class="fas fa-moon"></i> Tranquil·litza'm</h3>
                 <p>Exercicis de respiració i relaxació guiats per IA per ajudar a reduir l'estrès</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Recerca aprofundida <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Recerca aprofundida <span class="ai-pro-badge">Pro</span></h3>
                 <p>Anàlisi d'IA completa del vostre diari amb perspectives detallades</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detectiu de patrons <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detectiu de patrons <span class="ai-pro-badge">Pro</span></h3>
                 <p>Trobeu temes i patrons ocults a les vostres entrades de diari al llarg del temps</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Assistent d'objectius <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Assistent d'objectius <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obteniu objectius de vida personalitzats i basats en dades segons els vostres patrons de diari</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Resum mèdic <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Resum mèdic <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genereu resums professionals per compartir en visites mèdiques</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Baixa mèdica <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Baixa mèdica <span class="ai-pro-badge">Pro</span></h3>
                 <p>Justificants de malaltia generats per IA per a la feina o l'escola quan els necessiteu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generador d'històries <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generador d'històries <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transformeu les vostres entrades de diari en narratives creatives i atractives</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Resum de text <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Resum de text <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creeu resums de missatges de text compartibles dels temes del vostre diari</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Qüestionari personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Qüestionari personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Poseu a prova el vostre coneixement amb un divertit qüestionari de 10 preguntes generat per IA sobre les vostres dades</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Text a veu <span class="ai-pro-badge">Pro</span></h4>
-                <p>Escolteu les vostres perspectives i resums d'IA amb reproducció de veu natural</p>
+                <h3><i class="fas fa-microphone"></i> Comentaris Parlats <span class="ai-pro-badge">Pro</span></h3>
+                <p>Una breu nota de veu d'IA després de cada desada, reaccionant al que acabes d'escriure</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Informe de salut personalitzat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Informe de salut personalitzat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creeu documents complets i personalitzats per fer un seguiment del vostre progrés en el diari</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Explorador de temes <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Explorador de temes <span class="ai-pro-badge">Pro</span></h3>
                 <p>Descobriu temes i idees recurrents en la vostra escriptura amb l'anàlisi de temes amb IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Línia de temps de sentiment <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Línia de temps de sentiment <span class="ai-pro-badge">Pro</span></h3>
                 <p>Visualitzeu el vostre recorregut emocional al llarg del temps amb el seguiment de sentiment analitzat per IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (al dispositiu) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (al dispositiu) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opció centrada en la privadesa que executa la IA localment al teu dispositiu mitjançant els Foundation Models d'Apple — res no surt del teu iPhone, iPad o Mac. Ús il·limitat amb un compte de pagament, en dispositius Apple Silicon compatibles (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Xat de veu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Xat de veu <span class="ai-pro-badge">Pro</span></h3>
                 <p>Converses de veu bidireccionals i mans lliures amb la IA sobre les teves dades: fes preguntes i escolta les respostes sense tocar la pantalla</p>
             </div>
 
@@ -939,7 +985,7 @@
         <p>Practiqueu l'escriptura diària, captureu idees i desenvolupeu la vostra veu. La interfície sense distraccions us ajuda a concentrar-vos en el vostre ofici.</p>
 
         <h3>Salut mental</h3>
-        <p>Processeu emocions, identifiqueu desencadenants i feu un seguiment dels patrons d'estat d'ànim mitjançant l'escriptura. L'anàlisi de sentiment proporciona retroalimentació objectiva sobre el to emocional.</p>
+        <p>Escriu per superar un dia difícil, adona't del que reapareix constantment, i mira enrere per veure com estaven les coses fa un mes. L'indicador de sentiment et dona una lectura senzilla del to emocional de cada entrada.</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>El meu diari és privat?</h3>
-        <p>Sens dubte. Les teves entrades es desen al teu dispositiu i al teu compte privat d'iCloud: no tenim servidors que emmagatzemin el teu diari i mai veiem el que escrius. Les funcions d'IA opcionals utilitzen IA al núvol respectuosa amb la privadesa que pots desactivar en qualsevol moment; amb la IA desactivada, l'anàlisi de sentiment s'executa totalment al dispositiu amb el marc Natural Language d'Apple, i amb l'opció Apple Intelligence tota la IA s'executa al dispositiu.</p>
+        <p>Sí — Feeltracker Diari Personal manté les teves entrades al teu dispositiu i al teu propi compte privat d'iCloud, així que no tenim cap servidor que guardi el teu diari i ningú a Feeltracker pot llegir el que escrius. No hi ha anuncis ni seguiment entre apps. Les funcions d'IA opcionals envien les entrades sobre les quals preguntes a un servei al núvol respectuós amb la privacitat, i pots desactivar la IA en qualsevol moment; amb la IA desactivada, l'indicador de sentiment funciona completament al dispositiu fent servir el framework Natural Language d'Apple, i amb l'opció Apple Intelligence totes les funcions d'IA funcionen al dispositiu.</p>
 
 
         <h3>Com funciona l'anàlisi de sentiment?</h3>
-        <p>A mesura que escrius, l'app analitza el to emocional de la teva entrada i mostra un emoji que indica si es llegeix com a positiu, negatiu o neutre. Per defecte, això utilitza la IA respectuosa amb la privadesa de l'app; si desactives la IA, canvia al marc Natural Language integrat d'Apple al dispositiu.</p>
+        <p>Feeltracker Diari Personal puntua el to emocional de cada entrada mentre escrius i el mostra com un indicador codificat per colors sota el text, que va del vermell (negatiu) passant pel gris (neutre) fins al verd i el blau (positiu). L'indicador és opcional i es pot desactivar a Configuració. Per defecte fa servir la IA respectuosa amb la privacitat de l'app; si desactives la IA, canvia al framework Natural Language integrat d'Apple, que funciona al dispositiu.</p>
 
 
         <h3>Què és l'anàlisi de freqüència de paraules?</h3>
-        <p>La funció de Tendències analitza totes les vostres entrades per mostrar sobre quines paraules i temes escriviu més sovint. Això us ajuda a identificar temes recurrents, preocupacions o interessos en el vostre pensament.</p>
+        <p>L'anàlisi de freqüència de paraules a Feeltracker Diari Personal compta les paraules de totes les teves entrades i classifica les que fas servir més, perquè les persones, els llocs i les preocupacions que reapareixen es facin visibles. Les paraules de farciment habituals es filtren en el teu idioma, les mateixes dades també es mostren com a núvol de paraules, i tocar qualsevol paraula obre totes les entrades que la contenen.</p>
 
 
         <h3>Puc afegir fotos al meu diari?</h3>
@@ -987,7 +1033,23 @@
 
 
         <h3>Necessito una subscripció?</h3>
-        <p>No cal cap subscripció. L'app és gratuïta per descarregar, tot el seguiment, els gràfics, la sincronització amb Apple Health i les exportacions són gratuïts, i tots els usuaris obtenen funcions d'IA de veritat gratis cada dia, sense anuncis, mai. Una subscripció Pro opcional desbloqueja les funcions d'IA més detallades (Recerca aprofundida, Explorador de temes, Línia de temps de sentiment, Resum per al metge, Xat Pro i més), les executa amb la nostra IA més capaç i augmenta els límits diaris ja generosos.</p>
+        <p>No — Feeltracker Diari Personal es pot descarregar gratis i no cal cap subscripció. Escriure, les fotos, les plantilles, les entrades recurrents, l'anàlisi de paraules, la cerca, els gràfics, les còpies de seguretat, les exportacions i la sincronització amb iCloud són tots gratuïts, i cada usuari té accés a funcions d'IA reals gratuïtes cada dia (Xat, Fes una Pregunta, Resum de Veu, Fes-me Riure, Tranquil·litza'm, més els escàners de Text i d'Elements) — sense anuncis, mai. Una subscripció Pro opcional desbloqueja les funcions d'IA més profundes (Recerca Aprofundida, Explorador de Temes, Línia de Temps de Sentiment, Resum Mèdic, Xat Pro i més), les executa amb la nostra IA més potent, i augmenta els generosos límits diaris.</p>
+
+
+        <h3>Funciona Feeltracker Diari Personal sense connexió?</h3>
+        <p>Sí — Feeltracker Diari Personal funciona sense connexió per a tot el que importa: escriure entrades, adjuntar fotos, cercar, explorar el teu any, i veure estadístiques i gràfics, tot funciona al teu dispositiu sense connexió a internet. Tot el que escriguis sense connexió se sincronitza amb els teus altres dispositius via iCloud la propera vegada que et connectis. Les funcions d'IA al núvol necessiten connexió, però si actives el mode Apple Intelligence al dispositiu (Pro, en dispositius compatibles amb iOS 26 o posterior), la IA també funciona sense connexió.</p>
+
+
+        <h3>Puc importar les meves entrades de diari antigues?</h3>
+        <p>Sí — Feeltracker Diari Personal importa entrades de diari des d'un full de càlcul Excel. Descarrega la plantilla d'importació des de Configuració, enganxa-hi una data, una hora i el text de cada entrada, després importa el fitxer i cada fila es converteix en una entrada de diari. També pots restaurar una còpia de seguretat anterior, que recupera les teves entrades i les seves fotos juntes.</p>
+
+
+        <h3>Puc bloquejar el meu diari amb Face ID?</h3>
+        <p>Sí — pots bloquejar Feeltracker Diari Personal amb Face ID o Touch ID fent servir el bloqueig d'app integrat a iOS: manté premuda la icona de l'app a la teva pantalla d'inici i tria <strong>Requereix Face ID</strong>. Configuració enllaça amb les mateixes instruccions. Un cop activat, ningú pot obrir el teu diari sense la teva cara, la teva empremta o el teu codi d'accés.</p>
+
+
+        <h3>Què li passa al meu diari si perdo el telèfon?</h3>
+        <p>El teu diari està segur: Feeltracker Diari Personal sincronitza cada entrada i foto amb el teu compte privat d'iCloud, així que iniciar sessió en un iPhone, iPad o Mac nou ho recupera tot automàticament. L'app també crea una còpia de seguretat automàtica aproximadament un cop per setmana (un ZIP de les teves entrades i fotos) que pots restaurar o exportar tu mateix en qualsevol moment, i pots fer una còpia de seguretat manual quan vulguis.</p>
 
     </section>
 
@@ -1184,22 +1246,22 @@
         <div class="related-apps-grid">
 
             <a href="/ca/blood-pressure/" class="related-app-card" aria-label="Pressió Arterial">
-                <img src="/images/BPT_1024.png" alt="Pressió Arterial" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Pressió Arterial" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Pressió Arterial</span>
             </a>
 
-            <a href="/ca/mental-health/" class="related-app-card" aria-label="Salut Mental">
-                <img src="/images/FT_1024.png" alt="Salut Mental" class="related-app-icon">
-                <span class="related-app-name">Salut Mental</span>
+            <a href="/ca/mood-journal/" class="related-app-card" aria-label="Diari de l'Ànim">
+                <img src="/images/FT_1024.png" alt="Diari de l'Ànim" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Diari de l'Ànim</span>
             </a>
 
             <a href="/ca/sleep/" class="related-app-card" aria-label="Son">
-                <img src="/images/ST_1024.png" alt="Son" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Son" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Son</span>
             </a>
 
             <a href="/ca/weight/" class="related-app-card" aria-label="Pes">
-                <img src="/images/WT_1024.png" alt="Pes" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Pes" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Pes</span>
             </a>
 
@@ -1212,9 +1274,10 @@
         <h2>Comenceu la vostra pràctica de diari avui</h2>
         <p>Uniu-vos a milers que descobreixen els beneficis de la reflexió diària</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarregueu el Diari Personal"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarregueu el Diari Personal" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Blodtryk - #1 Blodtryksapp i UK | Feeltracker</title>
     <meta name="description" content="Spor blodtryk med Camera Scan AI — #1 i UK. Overvåg systolisk, diastolisk, puls og MAP. Apple Health-synk, lægeeksportrapporter. iPhone, iPad og Mac.">
-    <meta name="keywords" content="blodtryk,hjerte,puls,monitor,omron,måle,tjekke,logge,arteriel,dagbog,høj,microlife,beurer">
+    <meta name="keywords" content="blodtryksapp, blodtryksmåler app, blodtrykslog, hypertension tracker, systolisk diastolisk puls tracker, middelarterielt tryk, MAP-beregner, blodtryksdagbog, blodtryksskema til lægen, blodtryksmåler scanner">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/da/blood-pressure/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -149,7 +150,7 @@
           "applicationCategory": "HealthApplication",
           "applicationSubCategory": "Blodtryksmåler",
           "operatingSystem": "iOS 16.0 eller nyere",
-          "description": "Den nr. 1 blodtryksapp i Det Forenede Kongerige. Overvåg systolisk og diastolisk blodtryk, puls og middel arterielt tryk med AI-drevne indsigter. Funktioner inkluderer Kamera Scan AI til automatisk aflæsning af værdier fra monitorskærme, Apple Health-integration og eksportmuligheder til deling med sundhedspersonale.",
+          "description": "Blodtryks-app nummer 1 i Storbritannien. Følg systolisk og diastolisk blodtryk, puls og middelarterielt tryk (MAP) med AI-drevet indsigt. Har Kamera-scanning med AI, der aflæser værdier direkte fra et apparats skærm, tilpasselige mål og intervalgrænser, en MAP-rapport opdelt i morgen, aften og heldag, tovejs Apple Health-synkronisering, iCloud-synkronisering på tværs af iPhone, iPad og Mac, samt PDF-, CSV-, Excel- og JSON-eksport til deling med sundhedspersonale. Gratis at bruge, med AI-funktioner inkluderet gratis hver dag og et valgfrit Pro-abonnement til de mest dybdegående AI-rapporter.",
           "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -170,14 +171,20 @@
                 "Kamera Scan AI til automatisk aflæsning",
                 "Tovejs synkronisering med Apple Health",
                 "AI-drevet mønstergenkendelse",
-                "Eksport til PDF og Excel",
+                "Eksport til PDF, CSV, Excel og JSON",
                 "Beregning af middel arterielt tryk",
                 "Kompatibel med OMRON, Microlife og Beurer-monitorer",
                 "Registrer flere målinger om dagen",
-                "Hjemmeskærm-widgets til hurtig registrering",
+                "Widget til hjemmeskærmen med seneste gennemsnit",
                 "Kalendervisning med farvekodede indikatorer",
                 "iCloud-sikkerhedskopiering og synkronisering",
-                "32 sprog understøttet"
+                "32 sprog understøttet",
+                "Tilpasselige intervalgrænser og målstreger på grafer",
+                "MAP PDF-rapport med opdeling i morgen, aften og heldag",
+                "Automatiske ugentlige sikkerhedskopier med gendannelse",
+                "Op til fire påmindelser på de dage, du vælger",
+                "Gratis daglige AI-funktioner, med et valgfrit Pro-abonnement",
+                "Ingen reklamer og ingen tredjeparts-sporing"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/bpt-1.png",
           "softwareVersion": "Latest",
@@ -634,10 +641,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Hvad er den bedste app til blodtryksmåling?",
+                      "name": "Hvad er et normalt blodtryksmål?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Blood Pressure er nummer 1 app til blodtryksmåling i Det Forenede Kongerige. Den tilbyder AI-drevne indsigter, Kamera-scan AI-teknologi til automatisk at aflæse værdier fra monitorskærme (OMRON, Microlife, Beurer), Apple Health-integration og eksportmuligheder til deling med læger. Den understøtter registrering af systolisk og diastolisk blodtryk, puls og Middelartærietryk (MAP)."
+                            "text": "Ifølge medicinske retningslinjer er normalt blodtryk typisk under 120/80 mmHg. Målinger mellem 120-129 systolisk og under 80 diastolisk betragtes som forhøjede. Værdier på 130/80 eller derover kan indikere forhøjet blodtryk (hypertension). Målintervaller kan dog variere med alder og helbredstilstand, så tal med din læge for personlig vejledning. Feeltracker Blodtryk farvekoder hver måling efter disse intervaller, og du kan selv justere grænserne, hvis din læge har givet dig andre mål."
                       }
                 },
                 {
@@ -645,39 +652,31 @@
                       "name": "Hvordan fungerer Kamera-scan AI?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kamera-scan AI bruger avanceret optisk tegngenkendelsesteknologi (OCR) til automatisk at aflæse blodtryksværdier fra din monitors digitale display. Peg blot kameraet på din iPhone eller iPad mod skærmen, der viser dine systoliske, diastoliske og pulsmålinger, og appen udfylder automatisk disse værdier. Det eliminerer manuelle fejl ved indtastning og gør registreringen hurtigere. Det fungerer med OMRON, Microlife, Beurer og de fleste digitale blodtryksmålere."
+                            "text": "Kamera-scanning med AI læser tallene direkte fra skærmen på dit blodtryksapparat: ret kameraet på din iPhone eller iPad mod skærmen, så udfylder Feeltracker Blodtryk felterne for systolisk, diastolisk og puls for dig. Der er ingen parring og ingen mærkespecifik opsætning - det virker med de fleste digitale apparater, herunder OMRON, Microlife og Beurer. Scanning er gratis for alle, med en gavmild daglig grænse, og det tager kun et par sekunder i stedet for at skrive tre tal ind i hånden."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Hvad er et normalt blodtryksmål?",
+                      "name": "Hvad er MAP, og bør jeg følge det?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ifølge medicinske retningslinjer er normalt blodtryk typisk under 120/80 mmHg. Målinger mellem 120-129 systolisk og under 80 diastolisk anses for forhøjede. Værdier på 130/80 eller derover kan indikere forhøjet blodtryk. Målintervaller kan dog variere afhængigt af alder og helbredstilstand, så konsulter din læge for personlig vejledning."
+                            "text": "MAP (middelarterielt tryk) er en beregnet værdi, der angiver det gennemsnitlige blodtryk i dine arterier under én hjertecyklus. Det beregnes som: MAP = (2 × diastolisk + systolisk) ÷ 3. Nogle læger bruger MAP til at vurdere den kardiovaskulære risiko. Feeltracker Blodtryk beregner det automatisk for hver måling, viser det på graf sammen med dine systoliske og diastoliske værdier, og kan eksportere en MAP PDF-rapport opdelt i morgen-, aften- og heldagsvisninger. Du kan også angive dine egne MAP-intervaller, med en valgfri LVAD-fokus til dig, der har en hjertepumpe."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Kan jeg eksportere mine blodtryksdata til min læge?",
+                      "name": "Kan jeg importere mine gamle blodtryksdata?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ja, Blodtryk lader dig eksportere omfattende rapporter i PDF-, CSV-, Excel- eller JSON-format. Disse professionelt formaterede rapporter inkluderer sammenfattende statistik, trenddiagrammer og alle dine noter – alt din sundhedsudbyder har brug for i ét dokument. Du kan nemt dele disse rapporter via e-mail eller andre delingsmetoder."
+                            "text": "Ja - Feeltracker Blodtryk kan importere din eksisterende historik fra Apple Health eller fra et regneark. Hvis du har sporet i Apple Health, viser appen dig de målinger, den har fundet, og importerer dem, du vælger, og du kan slå automatisk import til, så nye Health-målinger kommer med af sig selv. Hvis din historik ligger i et regneark, kan du downloade appens Excel-skabelon, indsætte dine data i den og importere filen. JSON-filer og ZIP-sikkerhedskopier fra en anden enhed virker også."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Integrerer appen med Apple Health?",
+                      "name": "Hvor ofte bør jeg måle mit blodtryk?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ja, Blood Pressure har tovejs Apple Health-integration. Du kan importere historiske blodtryksdata fra Apple Health, og appen gemmer automatisk nye målinger i HealthKit. Dette skaber et samlet sundhedssporingsøkosystem på tværs af alle dine Apple-enheder."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Hvad er MAP ved blodtryksmåling?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "MAP (Middelartærietryk) er en beregnet værdi, der repræsenterer det gennemsnitlige blodtryk i dine arterier i løbet af én hjertecyklus. Det beregnes som: MAP = (2 × Diastolisk + Systolisk) ÷ 3. Nogle læger finder MAP nyttigt til at vurdere hjerte-kar-risiko og organperfusion. Blood Pressure beregner automatisk MAP for hver måling."
+                            "text": "Almindelig vejledning til hjemmemåling foreslår typisk to målinger om dagen - én om morgenen før medicin og én om aftenen - taget på faste tidspunkter, men din læges råd til din situation kommer altid først. Med Feeltracker Blodtryk kan du logge lige så mange målinger om dagen, du vil, og sætte op til fire påmindelser, hver på de ugedage du selv vælger, så en to-gange-daglig rutine er let at holde fast i."
                       }
                 },
                 {
@@ -685,7 +684,63 @@
                       "name": "Er mine blodtryksdata private?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ja, dine blodtryksmålinger gemmes krypteret på din enhed og i din private iCloud-konto. Dataene passerer aldrig igennem eksterne servere, og udviklerne kan ikke se dine helbredsoplysninger. Det er lige så sikkert som Apples Notes- eller Fotos-apps og er fuldt GDPR-kompatibelt."
+                            "text": "Dine målinger ligger på din enhed og i din egen private iCloud-konto - Feeltracker Blodtryk har ingen konto, du skal oprette, ingen e-mailadresse, du skal opgive, og ingen kopi af din historik på vores servere. Den ene undtagelse er AI-funktionerne: når du spørger AI'en om noget, sendes de målinger, der skal til for at svare, gennem vores egen relæserver til AI-udbyderen, så vi kan give dig et svar. Det relæ gemmer intet - hverken forespørgsel eller svar bliver nogensinde skrevet til disk - og du kan skifte AI'en til Apple Intelligence på enheden, eller slå den helt fra, i appens AI-indstillinger. Alt andet, inklusive Apple Health-synkronisering, forbliver mellem dine enheder og Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kan jeg registrere blodtryk for familiemedlemmer?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Blodtryk er bygget til én persons målinger, så hvert familiemedlem sporer bedst på sin egen enhed med sit eget Apple-ID og sin egen iCloud-konto. Det holder alles historik, grafer og rapporter adskilt og betyder, at hver persons data kun synkroniseres til deres egne enheder."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Viser I reklamer eller sporer I mig?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nej. Vi har fjernet alle reklamer fra appen. Vi sporer dig ikke på tværs af andre apps eller websteder, og vi sælger aldrig dine data til annoncører. Dine data synkroniseres via iCloud – ligesom Apple Notes og Fotos. Det betyder, at vi ikke behøver at kende din e-mailadresse, dit navn eller andre personlige oplysninger. Dine blodtryksdata gemmes på dine enheder og i din iCloud-konto, og de er fuldstændig private uanset om du bruger gratis- eller premiumversionen."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Har jeg brug for et abonnement?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Der kræves intet abonnement. Appen er gratis at downloade, al sporing, grafer, Apple Health-synkronisering, sikkerhedskopier og eksport er gratis, og alle brugere får rigtige AI-funktioner gratis hver dag - Stil et spørgsmål, Hurtig chat, Talt resumé, en Hurtig sundhedsrapport, Gør mig glad, Berolig mig og Kamera-scanning med AI - helt uden reklamer. Et valgfrit Pro-abonnement låser op for de mest dybdegående AI-funktioner (Dybdegående research, Lægeresumé, Mønsterdetektiv, Pro MAP-rapporten, Pro Chat og mere), kører dem på vores mest avancerede AI, og hæver de gavmilde daglige grænser."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Virker det med mit OMRON-, Microlife- eller Beurer-apparat?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Blodtryk virker med ethvert blodtryksapparat til hjemmebrug, fordi det aflæser tallene i stedet for at oprette forbindelse til apparatet. Ret kameraet mod skærmen, så udfylder Kamera-scanning med AI systolisk, diastolisk og puls - det virker med de fleste digitale apparater, herunder OMRON, Microlife og Beurer - eller skriv værdierne ind selv med vælgerne eller tastaturet. Der er ingen Bluetooth-parring, ingen kompatibilitetsliste, og intet der går i stykker, når du skifter apparat."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Hvordan deler jeg mine blodtryksmålinger med min læge?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Blodtryk kan lave en lægeklar PDF for en hvilken som helst periode med få tryk, og du kan sende den med mail, besked, printe den eller AirDrop'e den direkte fra appen. PDF-, CSV-, Excel- og JSON-eksport er alle gratis, ligesom den dedikerede MAP-rapport, der opdeler dit middelarterielle tryk i morgen-, aften- og heldagsvisninger for en måned, et kvartal, et år eller en brugerdefineret periode. Med Pro kan AI'en også skrive et Lægeresumé i almindeligt sprog for samme periode, der følger tallene."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kan jeg selv angive mine blodtryksmål og -intervaller?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja - med Feeltracker Blodtryk kan du angive mål for systolisk, diastolisk og puls, som vises som referencelinjer på dine grafer, og redigere grænserne for hvert interval (Lav, Normal, Forhøjet, Høj, Meget høj), så de passer til den vejledning, du faktisk har fået. Dine grafer, kalenderfarver og PDF-rapporter følger alle de intervaller, du selv angiver, ikke bare standardværdierne. MAP har sine egne justerbare intervaller, inklusive en valgfri LVAD-fokus."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Virker Feeltracker Blodtryk på iPad og Mac?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja - én download dækker iPhone og iPad, og appen kører også på Apple Silicon Mac'er via Mac App Store. Dine målinger synkroniseres automatisk mellem dem alle via din egen private iCloud-konto, så en måling logget på din iPhone er på din iPad få øjeblikke senere. Der er en widget til hjemmeskærmen, der viser dine seneste gennemsnit, og posterne indekseres i Spotlight, så du kan søge i din historik hvor som helst i iOS."
                       }
                 }
           ]
@@ -703,7 +758,7 @@
 
             <a href="/da/daily-journal/">Dagbog</a>
 
-            <a href="/da/mental-health/">Mental Sundhed</a>
+            <a href="/da/mood-journal/">Humørdagbog</a>
 
             <a href="/da/sleep/">Søvn</a>
 
@@ -788,9 +843,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Blodtryksapp-ikon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Blodtryksapp-ikon" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Blodtryk</h1>
 
         <div class="privacy-badge">
@@ -798,12 +854,12 @@
         </div>
         <p class="hero-subtitle">Den smarteste måde at registrere og forstå dit blodtryk på. Scan aflæsninger med Camera Scan AI, synkroniser med Apple Health, og få AI-drevne indsigter i dit kardiovaskulære helbred.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Blodtryk på App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Blodtryk på App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Gratis app med valgfrie premiumfunktioner<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +872,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Blodtryk Skærmbillede 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Blodtryk Skærmbillede 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Blodtryk Skærmbillede 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Blodtryk Skærmbillede 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Blodtryk Skærmbillede 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Blodtryk Skærmbillede 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -874,13 +930,19 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-medical-alt"></i></div>
                 <h3>MAP-rapport til din læge</h3>
-                <p>En specialiseret rapport, der opdeler dit gennemsnitlige arterietryk (MAP) på morgen, aften og hele dagen over en valgfri måned, kvartal, år eller brugerdefineret periode. Bygget til at gøre kliniske samtaler lettere. Del af det valgfrie Pro-abonnement.</p>
+                <p>En gratis PDF-rapport, der opdeler dit middelarterielle tryk (MAP) i morgen-, aften- og heldagsvinduer for enhver måned, ethvert kvartal, år eller brugerdefineret periode. Lavet til at gøre samtaler med lægen nemmere. Pro tilføjer en AI-skrevet Pro MAP-rapport oveni.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-sliders-h"></i></div>
                 <h3>Dine grænser, din måde</h3>
-                <p>Indstil dine egne mål og tærskelværdier — Normal, Forhøjet, Stadie 1, Stadie 2 — så de matcher den vejledning, din læge har givet dig. Diagrammer og rapporter farvekoder hver måling efter dine egne intervaller.</p>
+                <p>Angiv dine egne mål for systolisk, diastolisk og puls — de vises som referencelinjer på dine grafer — og justér grænserne for intervallerne (Lav, Normal, Forhøjet, Høj, Meget høj), så de passer til den vejledning, din læge har givet dig. Grafer og rapporter farvekoder hver måling efter dine egne intervaller.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Din historik, trygt opbevaret</h3>
+                <p>Målinger synkroniseres på tværs af din iPhone, iPad og Mac via din egen private iCloud-konto, og appen laver automatiske ugentlige sikkerhedskopier, som du altid kan gendanne fra. Skifter du fra et regneark? Importér din historik fra en Excel-fil med den indbyggede skabelon.</p>
             </div>
 
         </div>
@@ -894,27 +956,28 @@
         <div class="app-card">
             <h3>1. Registrer din aflæsning</h3>
             <div class="app-card-content">
-<p><strong>Camera Scan AI:</strong> Peg blot kameraet mod din blodtryksmålers display, og lad AI automatisk udtrække systoliske, diastoliske og pulsværdier. Ingen indtastning nødvendig – appen aflæser tallene direkte fra <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer og de fleste digitale målere.</p>
-<p><strong>Manuel indtastning:</strong> Foretrækker du at taste? Indtast værdier manuelt via en enkel grænseflade. Det tager blot et par sekunder at logge en aflæsning.</p>
-<p><strong>Rig kontekst:</strong> Tilføj detaljerede noter om, hvad du lavede – måltider, medicin, motion, stressniveau, søvnkvalitet eller andre faktorer, der kan påvirke dit blodtryk. Du kan også vedhæfte billeder og mærke registreringer med brugerdefinerede etiketter for lettere søgning senere.</p>
+<p><strong>Kamera-scanning med AI:</strong> Ret bare kameraet mod skærmen på dit blodtryksapparat, og lad AI automatisk aflæse systolisk, diastolisk og puls. Ingen indtastning nødvendig - appen læser tallene direkte fra <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer og de fleste digitale apparater.</p>
+<p><strong>Manuel indtastning:</strong> Foretrækker du at skrive selv? Indtast værdierne manuelt med en enkel grænseflade. Det tager kun få sekunder at logge en måling.</p>
+<p><strong>Rig kontekst:</strong> Tilføj detaljerede noter om, hvad du lavede - måltider, medicin, motion, stressniveau, søvnkvalitet eller andre faktorer, der kan påvirke dit blodtryk. Du kan vedhæfte op til 8 billeder til en måling og finde en post igen senere direkte fra iOS Spotlight-søgning.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>2. Spor mønstre</h3>
             <div class="app-card-content">
-<p><strong>Kalendervisning:</strong> Se alle dine aflæsninger i et intuitivt kalenderformat. Hver dag viser dine målinger med farvekodede indikatorer for normale, forhøjede eller høje værdier baseret på medicinske retningslinjer.</p>
-<p><strong>Automatisk statistik:</strong> Få øjeblikkelige beregninger af daglige, ugentlige og månedlige gennemsnit. Se dine laveste og højeste aflæsninger, standardafvigelse og tendenser over tid – uden at du selv behøver regne.</p>
-<p><strong>Visuelle grafer:</strong> Smukke grafer viser dine blodtrykstendenser over dage, uger, måneder eller en vilkårlig datoperiode. Spot mønstre med det samme, og se hvordan du skrider frem mod dine sundhedsmål.</p>
+<p><strong>Kalendervisning:</strong> Se alle dine målinger i en overskuelig kalender. Hver dag viser dine målinger med farvekodede indikatorer for lavt, normalt, forhøjet, højt eller meget højt blodtryk - baseret på almindeligt anvendte retningslinjer eller på de intervaller, du selv har angivet.</p>
+<p><strong>Automatisk statistik:</strong> Få øjeblikkelige gennemsnit for en hvilken som helst periode, dine laveste og højeste målinger, samt en oversigt over, hvor mange målinger der lå i hvert interval - uden at du selv skal regne.</p>
+<p><strong>Visuelle grafer:</strong> Separate grafer for systolisk, diastolisk, MAP og puls viser dine tendenser over dage, uger, måneder eller en brugerdefineret periode, hver med din målværdi tegnet som en referencelinje.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Få AI-indsigter</h3>
             <div class="app-card-content">
-<p><strong>Mønstergenkendelse:</strong> AI analyserer dine aflæsninger og noter for at identificere sammenhænge. Opdag hvilke aktiviteter, fødevarer eller situationer der konsekvent hæver eller sænker dit blodtryk.</p>
-<p><strong>Personlige anbefalinger:</strong> Få specifikke indsigter baseret på dine data. AI'en kan bemærke mønstre som "Dit BT har tendens til at være højere på dage, hvor du nævner 'stresset på arbejde'" eller "Aflæsninger er lavere på dage med morgenmotion."</p>
-<p><strong>Chat med dine data:</strong> Stil spørgsmål på naturligt sprog som "Hvad var mit gennemsnitlige BT om aftenen i sidste måned?" eller "Vis mig aflæsninger efter jeg tog min medicin." AI'en forstår konteksten og giver dig øjeblikkelige svar.</p>
+<p><strong>Mønstergenkendelse:</strong> AI analyserer dine målinger og noter for at finde sammenhænge. Find ud af, hvilke aktiviteter, fødevarer eller situationer der jævnligt hæver eller sænker dit blodtryk.</p>
+<p><strong>Personlige anbefalinger:</strong> Få konkret indsigt baseret på dine egne data. AI'en kan f.eks. bemærke mønstre som „Dit blodtryk er ofte højere på dage, hvor du nævner 'stresset på arbejdet'" eller „Målingerne er lavere på dage med morgentræning."</p>
+<p><strong>Chat med dine data:</strong> Stil spørgsmål i almindeligt sprog som „Hvad var mit gennemsnitlige blodtryk om aftenen sidste måned?" eller „Vis mig målinger efter jeg tog min medicin." AI'en forstår konteksten og giver dig svar med det samme.</p>
+<p><strong>Gratis hver dag:</strong> Stil et spørgsmål, Hurtig chat, Talt resumé og en Hurtig sundhedsrapport er inkluderet for alle med en gavmild daglig grænse. De mest omfattende rapporter - Dybdegående research, Mønsterdetektiv, Lægeresumé og Pro MAP-rapporten - fås med det valgfrie Pro-abonnement.</p>
             </div>
         </div>
 
@@ -937,93 +1000,98 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Stil et spørgsmål</h4>
+                <h3><i class="fas fa-question-circle"></i> Stil et spørgsmål</h3>
                 <p>Hurtig spørgsmål og svar om dine blodtryksdata – få øjeblikkelige svar på dine sundhedsspørgsmål</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Hav interaktive samtaler om dit hjerte-kar-helbred og få personlig vejledning. Hurtig chat er gratis hver dag; Pro-chat går dybere på vores mest kompetente AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Stemmeoversigt</h4>
+                <h3><i class="fas fa-volume-up"></i> Stemmeoversigt</h3>
                 <p>Lyt til lydsammendrag af dine blodtrykstendenser – perfekt til indsigter, når du er på farten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Få mig til at grine</h4>
+                <h3><i class="fas fa-laugh"></i> Få mig til at grine</h3>
                 <p>Få personlig humor fra dine registreringsdata for at lysne din dag</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Berolig mig</h4>
-                <p>AI-guidede åndedrætsøvelser til at reducere stress og sænke blodtrykket</p>
+                <h3><i class="fas fa-moon"></i> Berolig mig</h3>
+                <p>AI-guidede vejrtræknings- og afspændingsøvelser, der hjælper dig med at slappe af efter en stressende dag</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Kamerascanning AI</h4>
-                <p>Scan aflæsninger direkte fra din målers skærm – virker med <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
+                <h3><i class="fas fa-camera"></i> Kamerascanning AI</h3>
+                <p>Scan målinger direkte fra dit apparats skærm - virker med <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer og de fleste digitale skærme. Gratis for alle, med en gavmild daglig grænse</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dybdegående forskning <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dybdegående forskning <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omfattende AI-analyse af dine blodtryksdata med detaljerede indsigter</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Mønsterdetektiv <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Mønsterdetektiv <span class="ai-pro-badge">Pro</span></h3>
                 <p>Find skjulte sammenhænge mellem dine BT-aflæsninger og livsstilsfaktorer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h3>
                 <p>Få personlige, datadrevne blodtryksmål baseret på dine mønstre</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Lægeoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Lægeoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generer professionelle medicinske sammendrag til deling ved sundhedsbesøg</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sygemelding <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Sygemelding <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-genererede sygemeldinger til arbejde eller skole, når du har brug for dem</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omsæt dine sundhedsdata til kreative, engagerende fortællinger</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opret delbare tekstbesked-resuméer af dine blodtrykstendenser</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personlig Quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Personlig Quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test din viden med en sjov AI-genereret quiz med 10 spørgsmål om dine data</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Lyt til dine AI-indsigter og resuméer med naturlig stemmegengrivelse</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Skræddersyet Sundhedsrapport <span class="ai-pro-badge">Pro</span></h4>
-                <p>Opret omfattende, personlige sundhedsdokumenter til at følge dine fremskridt</p>
+                <h3><i class="fas fa-file-invoice"></i> Skræddersyet Sundhedsrapport <span class="ai-pro-badge">Pro</span></h3>
+                <p>Skab omfattende, personlige sundhedsrapporter, der følger din udvikling. En gratis Hurtig sundhedsrapport er inkluderet for alle</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (på enheden) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (på enheden) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Privatlivsfokuseret mulighed, der kører AI lokalt på din enhed via Apples Foundation Models — intet forlader din iPhone, iPad eller Mac. Ubegrænset brug med en betalt konto på understøttede Apple Silicon-enheder (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Håndfri, tovejs talesamtaler med AI'en om dine data – stil spørgsmål og hør svar uden at røre skærmen</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-heart-pulse"></i> Pro MAP-rapport <span class="ai-pro-badge">Pro</span></h3>
+                <p>En AI-skrevet rapport om dit middelarterielle tryk (MAP): mønstre om morgenen versus aftenen, dag-til-dag-variation, og hvordan dine målinger ligger i forhold til de MAP-intervaller, du har angivet - med et valgfrit LVAD-fokus. Lavet til at give videre til dit behandlerteam</p>
             </div>
 
         </div>
@@ -1042,7 +1110,7 @@
 
             <div class="benefit-item">
                 <h4><i class="fas fa-heart-pulse"></i> Håndter Hypertension</h4>
-                <p>Hold dit blodtryk under kontrol ved at registrere daglige målinger og identificere udløsere</p>
+                <p>Byg en dag-for-dag oversigt over dine målinger, så du og din læge kan se, hvordan dine tal reelt udvikler sig mellem konsultationer</p>
             </div>
 
             <div class="benefit-item">
@@ -1087,31 +1155,31 @@
 
 
         <h3>Hvad er et normalt blodtryksmål?</h3>
-        <p>Ifølge medicinske retningslinjer er normalt blodtryk typisk under 120/80 mmHg. Målinger mellem 120-129 systolisk og under 80 diastolisk betragtes som forhøjet. Værdier på 130/80 eller højere kan indikere hypertension. Målintervaller kan dog variere efter alder og helbredstilstand, så konsultér din læge for personlig vejledning.</p>
+        <p>Ifølge medicinske retningslinjer er normalt blodtryk typisk under 120/80 mmHg. Målinger mellem 120-129 systolisk og under 80 diastolisk betragtes som forhøjede. Værdier på 130/80 eller derover kan indikere forhøjet blodtryk (hypertension). Målintervaller kan dog variere med alder og helbredstilstand, så tal med din læge for personlig vejledning. Feeltracker Blodtryk farvekoder hver måling efter disse intervaller, og du kan selv justere grænserne, hvis din læge har givet dig andre mål.</p>
 
 
         <h3>Hvordan fungerer Kamera-scan AI?</h3>
-        <p>Peg blot din iPhone- eller iPad-kamera mod dit blodtryksmonitors digitale display. Appen bruger avanceret AI-drevet kameragenkendelse til automatisk at aflæse tallene og udfylde systolisk, diastolisk og puls-felterne. Dette eliminerer manuelle indtastningsfejl og gør registreringen hurtigere. <a href="https://geni.us/B9RB" target="_blank" rel="noopener">Køb et blodtryksmåler her</a>.</p>
+        <p>Kamera-scanning med AI læser tallene direkte fra skærmen på dit blodtryksapparat: ret kameraet på din iPhone eller iPad mod skærmen, så udfylder Feeltracker Blodtryk felterne for systolisk, diastolisk og puls for dig. Der er ingen parring og ingen mærkespecifik opsætning - det virker med de fleste digitale apparater, herunder <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife og Beurer. Scanning er gratis for alle, med en gavmild daglig grænse, og det tager kun et par sekunder i stedet for at skrive tre tal ind i hånden.</p>
 
 
         <h3>Hvad er MAP, og bør jeg følge det?</h3>
-        <p>MAP (Mean Arterial Pressure – middelblodtryk) er en beregnet værdi, der repræsenterer det gennemsnitlige blodtryk i dine arterier i løbet af én hjertecyklus. Det beregnes som: MAP = (2 × diastolisk + systolisk) ÷ 3. Nogle læger finder MAP nyttigt til vurdering af hjerte-kar-risiko. Appen beregner automatisk MAP for hver måling.</p>
+        <p>MAP (middelarterielt tryk) er en beregnet værdi, der angiver det gennemsnitlige blodtryk i dine arterier under én hjertecyklus. Det beregnes som: MAP = (2 × diastolisk + systolisk) ÷ 3. Nogle læger bruger MAP til at vurdere den kardiovaskulære risiko. Feeltracker Blodtryk beregner det automatisk for hver måling, viser det på graf sammen med dine systoliske og diastoliske værdier, og kan eksportere en MAP PDF-rapport opdelt i morgen-, aften- og heldagsvisninger. Du kan også angive dine egne MAP-intervaller, med en valgfri LVAD-fokus til dig, der har en hjertepumpe.</p>
 
 
         <h3>Kan jeg importere mine gamle blodtryksdata?</h3>
-        <p>Ja! Hvis du har registreret blodtryk i Apple Health, kan du importere alle dine historiske målinger til appen med ét tryk. Appen understøtter også import fra CSV/Excel-filer, hvis du har data fra andre kilder.</p>
+        <p>Ja - Feeltracker Blodtryk kan importere din eksisterende historik fra Apple Health eller fra et regneark. Hvis du har sporet i Apple Health, viser appen dig de målinger, den har fundet, og importerer dem, du vælger, og du kan slå automatisk import til, så nye Health-målinger kommer med af sig selv. Hvis din historik ligger i et regneark, kan du downloade appens Excel-skabelon, indsætte dine data i den og importere filen. JSON-filer og ZIP-sikkerhedskopier fra en anden enhed virker også.</p>
 
 
         <h3>Hvor ofte bør jeg måle mit blodtryk?</h3>
-        <p>Det afhænger af din helbredstilstand og din læges anbefalinger. Nogle måler dagligt (ofte morgen og aften), mens andre måler ugentligt. Appen gør det nemt at registrere så hyppigt som anbefalet af din sundhedsudbyder. Du kan indstille påmindelser for at opretholde en konsekvent plan.</p>
+        <p>Almindelig vejledning til hjemmemåling foreslår typisk to målinger om dagen - én om morgenen før medicin og én om aftenen - taget på faste tidspunkter, men din læges råd til din situation kommer altid først. Med Feeltracker Blodtryk kan du logge lige så mange målinger om dagen, du vil, og sætte op til fire påmindelser, hver på de ugedage du selv vælger, så en to-gange-daglig rutine er let at holde fast i.</p>
 
 
         <h3>Er mine blodtryksdata private?</h3>
-        <p>Absolut. Dine blodtryksmålinger gemmes krypteret på din enhed og i din private iCloud-konto. Dataene passerer aldrig igennem vores servere, og vi kan ikke se dine sundhedsoplysninger. Det er lige så sikkert som Apples Notes- eller Fotos-apps.</p>
+        <p>Dine målinger ligger på din enhed og i din egen private iCloud-konto - Feeltracker Blodtryk har ingen konto, du skal oprette, ingen e-mailadresse, du skal opgive, og ingen kopi af din historik på vores servere. Den ene undtagelse er AI-funktionerne: når du spørger AI'en om noget, sendes de målinger, der skal til for at svare, gennem vores egen relæserver til AI-udbyderen, så vi kan give dig et svar. Det relæ gemmer intet - hverken forespørgsel eller svar bliver nogensinde skrevet til disk - og du kan skifte AI'en til Apple Intelligence på enheden, eller slå den helt fra, i appens AI-indstillinger. Alt andet, inklusive Apple Health-synkronisering, forbliver mellem dine enheder og Apple.</p>
 
 
         <h3>Kan jeg registrere blodtryk for familiemedlemmer?</h3>
-        <p>Appen er designet til individuel brug og synkroniserer med din personlige iCloud-konto. For at følge flere familiemedlemmer bør hver person bruge appen på deres egen enhed med deres eget Apple ID.</p>
+        <p>Feeltracker Blodtryk er bygget til én persons målinger, så hvert familiemedlem sporer bedst på sin egen enhed med sit eget Apple-ID og sin egen iCloud-konto. Det holder alles historik, grafer og rapporter adskilt og betyder, at hver persons data kun synkroniseres til deres egne enheder.</p>
 
 
         <h3>Viser I reklamer eller sporer I mig?</h3>
@@ -1120,7 +1188,23 @@
 
 
         <h3>Har jeg brug for et abonnement?</h3>
-        <p>Der kræves intet abonnement. Appen er gratis at downloade, al sporing, diagrammer, Apple Health-synk og eksport er gratis, og alle brugere får ægte AI-funktioner gratis hver dag – uden reklamer, nogensinde. Et valgfrit Pro-abonnement låser op for de mest dybdegående AI-funktioner (Dybdegående forskning, Lægeoversigt, Mønsterdetektiv, Pro MAP-rapporten, Pro-chat med mere), kører dem på vores mest kompetente AI og hæver de allerede generøse daglige grænser.</p>
+        <p>Der kræves intet abonnement. Appen er gratis at downloade, al sporing, grafer, Apple Health-synkronisering, sikkerhedskopier og eksport er gratis, og alle brugere får rigtige AI-funktioner gratis hver dag - Stil et spørgsmål, Hurtig chat, Talt resumé, en Hurtig sundhedsrapport, Gør mig glad, Berolig mig og Kamera-scanning med AI - helt uden reklamer. Et valgfrit Pro-abonnement låser op for de mest dybdegående AI-funktioner (Dybdegående research, Lægeresumé, Mønsterdetektiv, Pro MAP-rapporten, Pro Chat og mere), kører dem på vores mest avancerede AI, og hæver de gavmilde daglige grænser.</p>
+
+
+        <h3>Virker det med mit OMRON-, Microlife- eller Beurer-apparat?</h3>
+        <p>Feeltracker Blodtryk virker med ethvert blodtryksapparat til hjemmebrug, fordi det aflæser tallene i stedet for at oprette forbindelse til apparatet. Ret kameraet mod skærmen, så udfylder Kamera-scanning med AI systolisk, diastolisk og puls - det virker med de fleste digitale apparater, herunder <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife og Beurer - eller skriv værdierne ind selv med vælgerne eller tastaturet. Der er ingen Bluetooth-parring, ingen kompatibilitetsliste, og intet der går i stykker, når du skifter apparat.</p>
+
+
+        <h3>Hvordan deler jeg mine blodtryksmålinger med min læge?</h3>
+        <p>Feeltracker Blodtryk kan lave en lægeklar PDF for en hvilken som helst periode med få tryk, og du kan sende den med mail, besked, printe den eller AirDrop'e den direkte fra appen. PDF-, CSV-, Excel- og JSON-eksport er alle gratis, ligesom den dedikerede MAP-rapport, der opdeler dit middelarterielle tryk i morgen-, aften- og heldagsvisninger for en måned, et kvartal, et år eller en brugerdefineret periode. Med Pro kan AI'en også skrive et Lægeresumé i almindeligt sprog for samme periode, der følger tallene.</p>
+
+
+        <h3>Kan jeg selv angive mine blodtryksmål og -intervaller?</h3>
+        <p>Ja - med Feeltracker Blodtryk kan du angive mål for systolisk, diastolisk og puls, som vises som referencelinjer på dine grafer, og redigere grænserne for hvert interval (Lav, Normal, Forhøjet, Høj, Meget høj), så de passer til den vejledning, du faktisk har fået. Dine grafer, kalenderfarver og PDF-rapporter følger alle de intervaller, du selv angiver, ikke bare standardværdierne. MAP har sine egne justerbare intervaller, inklusive en valgfri LVAD-fokus.</p>
+
+
+        <h3>Virker Feeltracker Blodtryk på iPad og Mac?</h3>
+        <p>Ja - én download dækker iPhone og iPad, og appen kører også på Apple Silicon Mac'er via Mac App Store. Dine målinger synkroniseres automatisk mellem dem alle via din egen private iCloud-konto, så en måling logget på din iPhone er på din iPad få øjeblikke senere. Der er en widget til hjemmeskærmen, der viser dine seneste gennemsnit, og posterne indekseres i Spotlight, så du kan søge i din historik hvor som helst i iOS.</p>
 
     </section>
 
@@ -1479,22 +1563,22 @@
         <div class="related-apps-grid">
 
             <a href="/da/daily-journal/" class="related-app-card" aria-label="Dagbog">
-                <img src="/images/NT_1024.png" alt="Dagbog" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Dagbog" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Dagbog</span>
             </a>
 
-            <a href="/da/mental-health/" class="related-app-card" aria-label="Mental Sundhed">
-                <img src="/images/FT_1024.png" alt="Mental Sundhed" class="related-app-icon">
-                <span class="related-app-name">Mental Sundhed</span>
+            <a href="/da/mood-journal/" class="related-app-card" aria-label="Humørdagbog">
+                <img src="/images/FT_1024.png" alt="Humørdagbog" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Humørdagbog</span>
             </a>
 
             <a href="/da/sleep/" class="related-app-card" aria-label="Søvn">
-                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Søvn</span>
             </a>
 
             <a href="/da/weight/" class="related-app-card" aria-label="Vægt">
-                <img src="/images/WT_1024.png" alt="Vægt" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Vægt" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Vægt</span>
             </a>
 
@@ -1507,9 +1591,10 @@
         <h2>Begynd at måle dit blodtryk i dag</h2>
         <p>Slut dig til tusindvis af brugere, der tager kontrol over deres hjerte-kar-sundhed</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Blodtryk"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Blodtryk" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

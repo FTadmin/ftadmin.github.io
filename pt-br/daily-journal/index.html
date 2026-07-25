@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Diário Diário - Notas, Fotos & Diário AI | Feeltracker</title>
     <meta name="description" content="Diário diário privado com AI. Escaneie objetos e textos para entradas instantâneas, anexe fotos, rastreie sentimentos e padrões de palavras. Sincronização via iCloud. iPhone, iPad e Mac.">
-    <meta name="keywords" content="registro,dia,diario,bloqueio,gratis,moleskine,pessoal,privado,secreto,anotador,escritor,journaling,meu">
+    <meta name="keywords" content="app de diário diário,app de journaling,app de diário privado,diário digital,app de diário para iPhone,diário de gratidão,diário com fotos,app de diário com IA,app de reflexão diária,app de diário e notas">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/pt-br/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "Digitalização IA de Objetos - descreve objetos para entradas no diário",
                 "Digitalização IA de Texto - OCR para capturar texto",
-                "Análise de sentimentos nas entradas",
-                "Frequência de palavras e monitoramento de temas",
+                "Medidor de sentimento nos registros",
+                "Nuvem de palavras e análise de frequência de palavras",
                 "Anexar até 8 fotos por entrada",
                 "Modelos de notas para entradas rápidas",
                 "Pesquisa de texto completo e integração com Spotlight",
-                "Exportação para PDF e Excel",
+                "Exportação para PDF, Excel, CSV e JSON",
                 "iCloud backup and sync",
                 "Suporte para 32 idiomas",
-                "Widgets na tela inicial para registro rápido"
+                "Widgets na tela inicial para registro rápido",
+                "Registros recorrentes criados diária ou semanalmente",
+                "Renderização opcional de Markdown na lista de registros",
+                "Reescrever com IA para aprimorar o que você escreveu",
+                "Contagem de palavras por dia, mês e ano",
+                "Importação via Excel para diários antigos",
+                "Backups semanais automáticos"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "Meu diário é privado?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Com certeza. Seus registros ficam armazenados no seu dispositivo e na sua conta iCloud privada — não temos servidores armazenando seu diário e nunca vemos o que você escreve. Os recursos de IA opcionais usam IA na nuvem que respeita sua privacidade e que você pode desativar a qualquer momento; com a IA desativada, a análise de sentimento roda inteiramente no dispositivo usando o framework de Linguagem Natural da Apple, e com a opção Apple Intelligence toda a IA roda no dispositivo."
+                            "text": "Sim — o Feeltracker Diário mantém seus registros no seu aparelho e na sua própria conta privada do iCloud, então não temos nenhum servidor guardando seu diário e ninguém da Feeltracker pode ler o que você escreve. Não tem anúncios nem rastreamento entre apps. Os recursos opcionais de IA enviam os registros sobre os quais você pergunta para um serviço na nuvem que respeita sua privacidade, e você pode desativar a IA a qualquer momento; com a IA desativada, o medidor de sentimento roda totalmente no dispositivo usando o framework de Linguagem Natural da Apple, e com a opção Apple Intelligence todo recurso de IA roda no dispositivo."
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "Como funciona a análise de sentimentos?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Enquanto você escreve, o aplicativo analisa o tom emocional do seu registro e mostra um emoji indicando se ele parece positivo, negativo ou neutro. Por padrão, isso usa a IA do app que respeita sua privacidade; se você desativar a IA, ele muda para o framework de Linguagem Natural no dispositivo da Apple."
+                            "text": "O Feeltracker Diário avalia o tom emocional de cada registro enquanto você escreve e mostra isso como um medidor codificado por cor abaixo do texto, indo do vermelho (negativo) passando pelo cinza (neutro) até o verde e azul (positivo). O medidor é opcional e pode ser desativado nas Configurações. Por padrão ele usa a IA do app que respeita sua privacidade; se você desativar a IA, ele muda para o framework de Linguagem Natural no dispositivo, integrado da Apple."
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "O que é a análise de frequência de palavras?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "O recurso Tendências analisa todas as suas entradas para mostrar quais palavras e tópicos você mais escreve. Isso ajuda a identificar temas recorrentes, preocupações ou interesses no seu pensamento."
+                            "text": "A análise de frequência de palavras no Feeltracker Diário conta as palavras em todos os seus registros e classifica as que você mais usa, para que as pessoas, lugares e preocupações que sempre voltam a aparecer fiquem visíveis. Palavras de preenchimento comuns são filtradas no seu idioma, os mesmos dados também aparecem como uma nuvem de palavras, e tocar em qualquer palavra abre todos os registros que a contêm."
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "Preciso de uma assinatura?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Nenhuma assinatura é necessária. O aplicativo é gratuito para baixar, todo o monitoramento, gráficos, sincronização com Apple Health e exportações são gratuitos, e todo usuário tem acesso gratuito a recursos reais de IA todos os dias — sem anúncios, nunca. Uma assinatura Pro opcional desbloqueia os recursos de IA mais avançados (Pesquisa Aprofundada, Explorador de Temas, Linha do Tempo de Sentimentos, Resumo para o Médico, Chat Pro e mais), executa-os na nossa IA mais capaz e aumenta os limites diários generosos."
+                            "text": "Não — o Feeltracker Diário é grátis para baixar e nenhuma assinatura é necessária. Escrita, fotos, modelos, registros recorrentes, análise de palavras, busca, gráficos, backups, exportações e sincronização com iCloud são todos gratuitos, e todo usuário tem acesso gratuito a recursos reais de IA todos os dias (Chat Rápido, Faça uma Pergunta, Resumo por Voz, Me Faça Rir, Me Acalme, além dos escaneamentos de Texto e de Itens) — sem anúncios, nunca. Uma assinatura Pro opcional desbloqueia os recursos de IA mais aprofundados (Pesquisa Aprofundada, Explorador de Temas, Linha do Tempo de Sentimentos, Resumo para o Médico, Chat Pro e mais), executa-os na nossa IA mais capaz, e aumenta os limites diários generosos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "O Feeltracker Diário funciona offline?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim — o Feeltracker Diário funciona offline para tudo o que importa: escrever registros, anexar fotos, buscar, navegar pelo seu ano e ver estatísticas e gráficos, tudo isso roda no seu aparelho sem conexão com a internet. Qualquer coisa que você escrever offline sincroniza com seus outros aparelhos via iCloud na próxima vez que você ficar online. Os recursos de IA na nuvem precisam de conexão, mas se você ativar o modo Apple Intelligence no dispositivo (Pro, em aparelhos compatíveis com iOS 26 ou posterior), a IA também funciona offline."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso importar meus registros antigos de diário?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim — o Feeltracker Diário importa registros de diário de uma planilha Excel. Baixe o modelo de importação nas Configurações, cole a data, a hora e o texto de cada registro, depois importe o arquivo e cada linha vira um registro de diário. Você também pode restaurar um backup anterior, que traz de volta seus registros e as fotos juntos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso bloquear meu diário com Face ID?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim — você pode bloquear o Feeltracker Diário com Face ID ou Touch ID usando o bloqueio de apps já integrado ao iOS: toque e segure o ícone do app na sua Tela de Início e escolha Exigir Face ID. As Configurações têm um link para as mesmas instruções. Depois de ativado, ninguém consegue abrir seu diário sem seu rosto, sua digital ou sua senha."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "O que acontece com meu diário se eu perder meu celular?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Seu diário está seguro: o Feeltracker Diário sincroniza cada registro e foto com sua conta privada do iCloud, então entrar em um novo iPhone, iPad ou Mac traz tudo de volta automaticamente. O app também cria um backup automático cerca de uma vez por semana (um ZIP com seus registros e fotos) que você mesmo pode restaurar ou exportar a qualquer momento, e você pode fazer um backup manual sempre que quiser."
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/pt-br/daily-journal/" class="current">Diário Pessoal</a>
 
-            <a href="/pt-br/mental-health/">Saúde Mental</a>
+            <a href="/pt-br/mood-journal/">Diário de Humor</a>
 
             <a href="/pt-br/sleep/">Sono</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Ícone do App Diário" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Diário — app de diário privado com IA para iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Diário</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Sem Anúncios . Sem Rastreamento . Privacidade em Primeiro Lugar
         </div>
-        <p class="hero-subtitle">Seu espaço privado para reflexões diárias, pensamentos e memórias. Escreva livremente com análise de sentimentos por IA, anexo de fotos e insights inteligentes sobre seus padrões de escrita.</p>
+        <p class="hero-subtitle">Seu espaço privado para reflexões diárias, pensamentos e memórias. Escreva sempre que quiser, anexe até 8 fotos, e veja os temas aos quais você sempre volta com um medidor de sentimento, nuvem de palavras e análise de frequência de palavras.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-br-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-br-black.svg" alt="Baixar Diário na App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-br-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-br-black.svg" alt="Baixar Diário na App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuito com recursos premium opcionais<br>iPhone, iPad & Mac . iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Captura de Tela Diário 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Captura de Tela Diário 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Captura de Tela Diário 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="Feedback de IA em um registro de diário no Feeltracker Diário" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Captura de Tela Diário 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Escrevendo um registro de diário com data, hora e notas" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Escrita Sem Distrações</h3>
-                <p>Interface limpa e simples que coloca suas palavras em primeiro lugar. Sem desordem, apenas você e seus pensamentos. Escreva quanto quiser a cada dia.</p>
+                <p>Um editor de texto simples e limpo que coloca suas palavras em primeiro lugar, com contagem de palavras em tempo real enquanto você digita. Toque em Reescrever com IA para aprimorar um parágrafo, e ative a renderização de Markdown se você gosta de títulos, negrito e listas na sua lista de registros.</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Análise de Frequência de Palavras</h3>
-                <p>Descubra o que realmente está na sua mente. Veja quais palavras e temas aparecem com mais frequência na sua escrita para identificar padrões e pensamentos recorrentes.</p>
+                <h3>Nuvem de Palavras e Frequência de Palavras</h3>
+                <p>Descubra o que realmente está na sua cabeça. Uma nuvem de palavras e uma lista de frequência classificada mostram as palavras que você mais usa, com palavras de preenchimento comuns filtradas no seu idioma — toque em qualquer palavra para abrir todos os registros que a mencionam.</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>Total de palavras escritas por dia, mês e ano. Em alguns dias você vai se surpreender — e ver o contador subir é uma motivação em si.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Registros Recorrentes</h3>
+                <p>Configure registros que se criam sozinhos, diária ou semanalmente, para que seu registro de hábitos, nota de medicamento ou lembrete noturno de gratidão já estejam esperando por você quando você abrir o app.</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,18 +778,18 @@
         <div class="app-card">
             <h3>2. Veja Padrões Surgirem</h3>
             <div class="app-card-content">
-<p><strong>Análise de Sentimentos:</strong> A IA detecta automaticamente o tom emocional das suas entradas - positivo, negativo ou neutro. Veja suas tendências de humor visualizadas ao longo de semanas e meses para entender seus padrões emocionais.</p>
-<p><strong>Frequência de Palavras:</strong> Descubra sobre quais tópicos, pessoas ou temas você mais escreve. O app identifica palavras e frases recorrentes, revelando o que está consistentemente na sua mente e como seu foco muda ao longo do tempo.</p>
-<p><strong>Visualização em Calendário:</strong> Navegue por todo o seu histórico de diário em uma interface de calendário. Cada dia mostra um trecho e indicador de humor. Salte rapidamente para qualquer entrada passada para ver o que você estava pensando naquele dia.</p>
+<p><strong>Medidor de Sentimento:</strong> Enquanto você escreve, um medidor opcional codificado por cor avalia o tom emocional do registro, de negativo passando por neutro até positivo. O Pro acrescenta uma Linha do Tempo de Sentimentos que mostra em gráfico como esse tom muda ao longo das semanas e meses.</p>
+<p><strong>Frequência de Palavras:</strong> Descubra sobre quais temas, pessoas ou assuntos você mais escreve. Uma nuvem de palavras e uma lista de frequência classificada revelam o que está sempre na sua cabeça, e tocar em uma palavra abre todos os registros que a usam.</p>
+<p><strong>Visualizações de Ano, Mês e Dia:</strong> Navegue por todo o seu histórico de diário, de um mapa de calor anual dos dias em que você escreveu até um único dia. Cada dia lista seus registros por completo, com contagem de registros e de palavras, para você ir direto ao que estava pensando em qualquer data.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Reflita e Cresça</h3>
             <div class="app-card-content">
-<p><strong>Insights com IA:</strong> Faça perguntas sobre seu diário: "Quais foram meus dias mais felizes no mês passado?" ou "Mostre-me todas as entradas onde mencionei meus objetivos." Obtenha respostas instantâneas e reflexivas que ajudam você a entender sua jornada.</p>
-<p><strong>Acompanhamento de Crescimento Pessoal:</strong> Revise como seus pensamentos, preocupações e aspirações evoluem. Veja o progresso em direção a metas mencionadas em entradas anteriores. Identifique áreas de crescimento e celebre o quanto você já avançou.</p>
-<p><strong>Busque Tudo:</strong> A busca poderosa encontra qualquer palavra, frase ou conceito em anos de diário. Filtre por data, humor ou palavras-chave. Todo o seu histórico escrito está instantaneamente acessível e pesquisável.</p>
+<p><strong>Insights com IA:</strong> Faça perguntas sobre seu diário: "Quais foram meus dias mais felizes no mês passado?" ou "Me mostre todos os registros em que mencionei minhas metas." Receba respostas instantâneas e cuidadosas que te ajudam a entender sua jornada.</p>
+<p><strong>Acompanhamento de Crescimento Pessoal:</strong> Reveja como seus pensamentos, preocupações e aspirações evoluem. Veja o progresso em direção às metas mencionadas em registros passados. Identifique áreas de crescimento e celebre até onde você já chegou.</p>
+<p><strong>Busque Tudo:</strong> Busque qualquer palavra em anos de registros, restrinja a um período específico, e vá direto aos registros correspondentes. Seu diário também é indexado no Spotlight do iOS, então uma busca a partir da sua Tela de Início também o encontra.</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Faça uma Pergunta</h4>
+                <h3><i class="fas fa-question-circle"></i> Faça uma Pergunta</h3>
                 <p>Perguntas e respostas rápidas sobre suas entradas do diário - obtenha respostas instantâneas sobre sua escrita</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Tenha conversas interativas sobre sua jornada de diário e receba orientação personalizada. O Chat Rápido é gratuito todos os dias; o Chat Pro vai mais fundo na nossa IA mais capaz</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Resumo por Voz</h4>
+                <h3><i class="fas fa-volume-up"></i> Resumo por Voz</h3>
                 <p>Ouça resumos em áudio dos temas do seu diário - perfeito para reflexão em qualquer lugar</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> Escaneamento com IA</h4>
+                <h3><i class="fas fa-barcode-scan"></i> Escaneamento com IA</h3>
                 <p>Escaneie objetos, documentos, recibos ou textos para criar entradas instantâneas no diário com descrições de IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Me Faça Rir</h4>
+                <h3><i class="fas fa-laugh"></i> Me Faça Rir</h3>
                 <p>Receba humor personalizado baseado nas suas entradas do diário para alegrar seu dia</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Me Acalme</h4>
+                <h3><i class="fas fa-moon"></i> Me Acalme</h3>
                 <p>Exercícios de respiração e relaxamento guiados por IA para ajudar a reduzir o estresse</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Pesquisa Aprofundada <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Pesquisa Aprofundada <span class="ai-pro-badge">Pro</span></h3>
                 <p>Análise completa de IA do seu diário com insights detalhados</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detetive de Padrões <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detetive de Padrões <span class="ai-pro-badge">Pro</span></h3>
                 <p>Encontre temas e padrões ocultos nas suas entradas do diário ao longo do tempo</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Assistente de Metas <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Assistente de Metas <span class="ai-pro-badge">Pro</span></h3>
                 <p>Receba metas de vida personalizadas baseadas em dados e nos seus padrões de diário</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Resumo para o Médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Resumo para o Médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Gere resumos profissionais para compartilhar em consultas médicas</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Atestado Médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Atestado Médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Atestados médicos gerados por IA para o trabalho ou escola quando você precisar</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Gerador de Histórias <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Gerador de Histórias <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transforme suas entradas do diário em narrativas criativas e envolventes</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Resumo em Texto <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Resumo em Texto <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crie resumos em mensagem de texto compartilháveis dos temas do seu diário</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Quiz Pessoal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Quiz Pessoal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Teste seus conhecimentos com um quiz divertido de 10 perguntas gerado por IA sobre seus dados</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Texto para Fala <span class="ai-pro-badge">Pro</span></h4>
-                <p>Ouça seus insights e resumos de IA com reprodução de voz natural</p>
+                <h3><i class="fas fa-microphone"></i> Feedback Falado <span class="ai-pro-badge">Pro</span></h3>
+                <p>Uma pequena nota de voz por IA depois de cada registro salvo, reagindo ao que você acabou de escrever</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Relatório de Saúde Personalizado <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Relatório de Saúde Personalizado <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crie documentos completos e personalizados para acompanhar seu progresso de diário</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Explorador de Temas <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Explorador de Temas <span class="ai-pro-badge">Pro</span></h3>
                 <p>Descubra tópicos e ideias recorrentes na sua escrita com análise de temas por IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Linha do Tempo de Sentimentos <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Linha do Tempo de Sentimentos <span class="ai-pro-badge">Pro</span></h3>
                 <p>Visualize sua jornada emocional ao longo do tempo com rastreamento de sentimentos analisado por IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (No Dispositivo) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (No Dispositivo) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opção que prioriza a privacidade e executa IA localmente no seu dispositivo usando os Foundation Models da Apple — nada sai do seu iPhone, iPad ou Mac. Uso ilimitado com uma conta paga, em dispositivos Apple Silicon compatíveis (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat por Voz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat por Voz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversas faladas e bidirecionais com a IA sobre seus dados, sem usar as mãos — faça perguntas e ouça as respostas sem tocar na tela</p>
             </div>
 
@@ -939,7 +985,7 @@
         <p>Pratique a escrita diária, capture ideias e desenvolva sua voz. A interface sem distrações ajuda você a se concentrar na sua arte.</p>
 
         <h3>Saúde Mental</h3>
-        <p>Processe emoções, identifique gatilhos e acompanhe padrões de humor através da escrita. A análise de sentimentos fornece feedback objetivo sobre o tom emocional.</p>
+        <p>Escreva para processar um dia difícil, perceba o que sempre volta a aparecer, e olhe para trás para ver como as coisas estavam há um mês. O medidor de sentimento te dá uma leitura simples do tom emocional de cada registro.</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>Meu diário é privado?</h3>
-        <p>Com certeza. Seus registros ficam armazenados no seu dispositivo e na sua conta iCloud privada — não temos servidores armazenando seu diário e nunca vemos o que você escreve. Os recursos de IA opcionais usam IA na nuvem que respeita sua privacidade e que você pode desativar a qualquer momento; com a IA desativada, a análise de sentimento roda inteiramente no dispositivo usando o framework de Linguagem Natural da Apple, e com a opção Apple Intelligence toda a IA roda no dispositivo.</p>
+        <p>Sim — o Feeltracker Diário mantém seus registros no seu aparelho e na sua própria conta privada do iCloud, então não temos nenhum servidor guardando seu diário e ninguém da Feeltracker pode ler o que você escreve. Não tem anúncios nem rastreamento entre apps. Os recursos opcionais de IA enviam os registros sobre os quais você pergunta para um serviço na nuvem que respeita sua privacidade, e você pode desativar a IA a qualquer momento; com a IA desativada, o medidor de sentimento roda totalmente no dispositivo usando o framework de Linguagem Natural da Apple, e com a opção Apple Intelligence todo recurso de IA roda no dispositivo.</p>
 
 
         <h3>Como funciona a análise de sentimentos?</h3>
-        <p>Enquanto você escreve, o aplicativo analisa o tom emocional do seu registro e mostra um emoji indicando se ele parece positivo, negativo ou neutro. Por padrão, isso usa a IA do app que respeita sua privacidade; se você desativar a IA, ele muda para o framework de Linguagem Natural no dispositivo da Apple.</p>
+        <p>O Feeltracker Diário avalia o tom emocional de cada registro enquanto você escreve e mostra isso como um medidor codificado por cor abaixo do texto, indo do vermelho (negativo) passando pelo cinza (neutro) até o verde e azul (positivo). O medidor é opcional e pode ser desativado nas Configurações. Por padrão ele usa a IA do app que respeita sua privacidade; se você desativar a IA, ele muda para o framework de Linguagem Natural no dispositivo, integrado da Apple.</p>
 
 
         <h3>O que é a análise de frequência de palavras?</h3>
-        <p>O recurso Tendências analisa todas as suas entradas para mostrar quais palavras e tópicos você mais escreve. Isso ajuda a identificar temas recorrentes, preocupações ou interesses no seu pensamento.</p>
+        <p>A análise de frequência de palavras no Feeltracker Diário conta as palavras em todos os seus registros e classifica as que você mais usa, para que as pessoas, lugares e preocupações que sempre voltam a aparecer fiquem visíveis. Palavras de preenchimento comuns são filtradas no seu idioma, os mesmos dados também aparecem como uma nuvem de palavras, e tocar em qualquer palavra abre todos os registros que a contêm.</p>
 
 
         <h3>Posso adicionar fotos ao meu diário?</h3>
@@ -987,7 +1033,23 @@
 
 
         <h3>Preciso de uma assinatura?</h3>
-        <p>Nenhuma assinatura é necessária. O aplicativo é gratuito para baixar, todo o monitoramento, gráficos, sincronização com Apple Health e exportações são gratuitos, e todo usuário tem acesso gratuito a recursos reais de IA todos os dias — sem anúncios, nunca. Uma assinatura Pro opcional desbloqueia os recursos de IA mais avançados (Pesquisa Aprofundada, Explorador de Temas, Linha do Tempo de Sentimentos, Resumo para o Médico, Chat Pro e mais), executa-os na nossa IA mais capaz e aumenta os limites diários generosos.</p>
+        <p>Não — o Feeltracker Diário é grátis para baixar e nenhuma assinatura é necessária. Escrita, fotos, modelos, registros recorrentes, análise de palavras, busca, gráficos, backups, exportações e sincronização com iCloud são todos gratuitos, e todo usuário tem acesso gratuito a recursos reais de IA todos os dias (Chat Rápido, Faça uma Pergunta, Resumo por Voz, Me Faça Rir, Me Acalme, além dos escaneamentos de Texto e de Itens) — sem anúncios, nunca. Uma assinatura Pro opcional desbloqueia os recursos de IA mais aprofundados (Pesquisa Aprofundada, Explorador de Temas, Linha do Tempo de Sentimentos, Resumo para o Médico, Chat Pro e mais), executa-os na nossa IA mais capaz, e aumenta os limites diários generosos.</p>
+
+
+        <h3>O Feeltracker Diário funciona offline?</h3>
+        <p>Sim — o Feeltracker Diário funciona offline para tudo o que importa: escrever registros, anexar fotos, buscar, navegar pelo seu ano e ver estatísticas e gráficos, tudo isso roda no seu aparelho sem conexão com a internet. Qualquer coisa que você escrever offline sincroniza com seus outros aparelhos via iCloud na próxima vez que você ficar online. Os recursos de IA na nuvem precisam de conexão, mas se você ativar o modo Apple Intelligence no dispositivo (Pro, em aparelhos compatíveis com iOS 26 ou posterior), a IA também funciona offline.</p>
+
+
+        <h3>Posso importar meus registros antigos de diário?</h3>
+        <p>Sim — o Feeltracker Diário importa registros de diário de uma planilha Excel. Baixe o modelo de importação nas Configurações, cole a data, a hora e o texto de cada registro, depois importe o arquivo e cada linha vira um registro de diário. Você também pode restaurar um backup anterior, que traz de volta seus registros e as fotos juntos.</p>
+
+
+        <h3>Posso bloquear meu diário com Face ID?</h3>
+        <p>Sim — você pode bloquear o Feeltracker Diário com Face ID ou Touch ID usando o bloqueio de apps já integrado ao iOS: toque e segure o ícone do app na sua Tela de Início e escolha <strong>Exigir Face ID</strong>. As Configurações têm um link para as mesmas instruções. Depois de ativado, ninguém consegue abrir seu diário sem seu rosto, sua digital ou sua senha.</p>
+
+
+        <h3>O que acontece com meu diário se eu perder meu celular?</h3>
+        <p>Seu diário está seguro: o Feeltracker Diário sincroniza cada registro e foto com sua conta privada do iCloud, então entrar em um novo iPhone, iPad ou Mac traz tudo de volta automaticamente. O app também cria um backup automático cerca de uma vez por semana (um ZIP com seus registros e fotos) que você mesmo pode restaurar ou exportar a qualquer momento, e você pode fazer um backup manual sempre que quiser.</p>
 
     </section>
 
@@ -1184,22 +1246,22 @@
         <div class="related-apps-grid">
 
             <a href="/pt-br/blood-pressure/" class="related-app-card" aria-label="Pressão Arterial">
-                <img src="/images/BPT_1024.png" alt="Pressão Arterial" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Pressão Arterial" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Pressão Arterial</span>
             </a>
 
-            <a href="/pt-br/mental-health/" class="related-app-card" aria-label="Saúde Mental">
-                <img src="/images/FT_1024.png" alt="Saúde Mental" class="related-app-icon">
-                <span class="related-app-name">Saúde Mental</span>
+            <a href="/pt-br/mood-journal/" class="related-app-card" aria-label="Diário de Humor">
+                <img src="/images/FT_1024.png" alt="Diário de Humor" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Diário de Humor</span>
             </a>
 
             <a href="/pt-br/sleep/" class="related-app-card" aria-label="Sono">
-                <img src="/images/ST_1024.png" alt="Sono" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sono" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sono</span>
             </a>
 
             <a href="/pt-br/weight/" class="related-app-card" aria-label="Peso">
-                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Peso</span>
             </a>
 
@@ -1212,9 +1274,10 @@
         <h2>Comece Sua Prática de Diário Hoje</h2>
         <p>Junte-se a milhares descobrindo os benefícios da reflexão diária</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-br-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-br-black.svg" alt="Baixar Diário"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-br-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-br-black.svg" alt="Baixar Diário" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

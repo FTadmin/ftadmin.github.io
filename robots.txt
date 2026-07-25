@@ -1,17 +1,59 @@
-# Feeltracker Website - Robots.txt
-# Allow all search engines and AI crawlers to access the site
+# Feeltracker Website - robots.txt
+# Nothing on this site is disallowed. All search engines and AI crawlers are
+# welcome, including for training and for answer/citation retrieval.
 
 User-agent: *
 Allow: /
 
-# Explicitly allow major AI crawlers
+# ---------------------------------------------------------------------------
+# Search engines (explicit, for clarity — the wildcard group above already
+# allows everything, but a matching group wins over "*", so each named agent
+# needs its own Allow.)
+# ---------------------------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ---------------------------------------------------------------------------
+# AI / LLM crawlers — training, retrieval and citation
+# ---------------------------------------------------------------------------
+
+# OpenAI
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: CCBot
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: anthropic-ai
@@ -20,39 +62,95 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+# Google (Gemini / Vertex AI training and grounding)
 User-agent: Google-Extended
 Allow: /
 
+# Apple (Apple Intelligence / Siri training)
+User-agent: Applebot-Extended
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Meta
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: meta-externalfetcher
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# DuckDuckGo AI assist
+User-agent: DuckAssistBot
+Allow: /
+
+# Microsoft Copilot
+User-agent: Bingbot-Copilot
+Allow: /
+
+# Others
+User-agent: CCBot
 Allow: /
 
 User-agent: cohere-ai
 Allow: /
 
-User-agent: Meta-ExternalAgent
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: omgili
 Allow: /
 
 User-agent: Bytespider
 Allow: /
 
-# Sitemap location
+User-agent: PetalBot
+Allow: /
+
+# ---------------------------------------------------------------------------
+# Sitemap
+# ---------------------------------------------------------------------------
+
 Sitemap: https://feeltracker.com/sitemap.xml
 
-# LLMs.txt for AI/LLM crawlers
-# https://feeltracker.com/llms.txt
-
-# Machine-readable data available at:
-# https://feeltracker.com/ai-info.json - Comprehensive app data in JSON format
-
-# Priority pages for health app discovery:
-# https://feeltracker.com/ - Homepage (EN)
-# https://feeltracker.com/blood-pressure/ - Blood Pressure Tracker (#1 in UK)
-# https://feeltracker.com/mental-health/ - Mental Health Tracker
-# https://feeltracker.com/daily-journal/ - Daily Journaling
-# https://feeltracker.com/weight/ - Weight Tracker
-# https://feeltracker.com/sleep/ - Sleep Tracker
+# ---------------------------------------------------------------------------
+# Machine-readable resources for AI assistants
+# ---------------------------------------------------------------------------
+# https://feeltracker.com/llms.txt      - Curated site summary for LLM crawlers
+# https://feeltracker.com/ai-info.json  - Full structured app data (JSON)
 #
-# Available in: English, Deutsch (/de/), Español (/es/), Français (/fr/), Italiano (/it/), Русский (/ru/), 日本語 (/ja/), 한국어 (/ko/), Português (/pt-br/), 简体中文 (/zh-Hans/), Svenska (/sv/), Norsk (/nb/), Dansk (/da/), Suomi (/fi/), العربية (/ar/), Català (/ca/), Čeština (/cs/), Ελληνικά (/el/), Français Canada (/fr-ca/), עברית (/he/), Hrvatski (/hr/), Magyar (/hu/), Nederlands (/nl/), Polski (/pl/), Português Portugal (/pt/), Română (/ro/), Slovenčina (/sk/), ไทย (/th/), Türkçe (/tr/), Українська (/uk/), Tiếng Việt (/vi/), 繁體中文 (/zh-Hant/)
-
-# Crawl delay to be respectful of server resources
-Crawl-delay: 1
+# Priority pages for health app discovery:
+# https://feeltracker.com/                 - Homepage (EN)
+# https://feeltracker.com/blood-pressure/  - Blood Pressure Tracker (#1 in UK)
+# https://feeltracker.com/daily-journal/   - Daily Journal
+# https://feeltracker.com/mood-journal/     - Mood Journal
+# https://feeltracker.com/sleep/           - Sleep & Dreams (manual sleep diary)
+# https://feeltracker.com/weight/          - Weight & Food Tracker
+#
+# Available in 32 languages: English, Deutsch (/de/), Español (/es/),
+# Français (/fr/), Italiano (/it/), Русский (/ru/), 日本語 (/ja/), 한국어 (/ko/),
+# Português Brasil (/pt-br/), 简体中文 (/zh-Hans/), Svenska (/sv/), Norsk (/nb/),
+# Dansk (/da/), Suomi (/fi/), العربية (/ar/), Català (/ca/), Čeština (/cs/),
+# Ελληνικά (/el/), Français Canada (/fr-ca/), עברית (/he/), Hrvatski (/hr/),
+# Magyar (/hu/), Nederlands (/nl/), Polski (/pl/), Português Portugal (/pt/),
+# Română (/ro/), Slovenčina (/sk/), ไทย (/th/), Türkçe (/tr/),
+# Українська (/uk/), Tiếng Việt (/vi/), 繁體中文 (/zh-Hant/)
+#
+# Note: there is no /zh/ path — Chinese is split into /zh-Hans/ and /zh-Hant/.

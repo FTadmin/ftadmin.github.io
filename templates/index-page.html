@@ -61,6 +61,7 @@
 
 {{christmasBannerHtml}}
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
         <div class="hero-layout">
@@ -76,7 +77,7 @@
 
                 <div class="hero-features-row">
                     <div class="works-with-health">
-                        <img src="{{lang.appleHealthBadge}}" alt="Works with Apple Health" class="apple-health-badge">
+                        <img src="{{lang.appleHealthBadge}}" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
                     </div>
                     <div class="hero-features">
 {{#each hero.featureBadges}}
@@ -87,7 +88,7 @@
             </div>
             <div class="hero-app-cluster" aria-hidden="true">
 {{#each apps.items}}
-                <img src="{{iconSrc}}" alt="{{title}}">
+                <img src="{{iconSrc}}" alt="" width="92" height="92" decoding="async">
 {{/each}}
             </div>
         </div>
@@ -111,7 +112,7 @@
 {{#each asSeenIn.items}}
             <a href="{{url}}" target="_blank" rel="noopener" class="as-seen-link" aria-label="{{articleTitle}}">
 {{#if logoSrc}}
-                <img src="{{logoSrc}}" alt="{{name}}" class="as-seen-logo">
+                <img src="{{logoSrc}}" alt="{{name}}" class="as-seen-logo" loading="lazy" decoding="async">
 {{else}}
                 <span class="as-seen-name">{{name}}</span>
 {{/if}}
@@ -140,7 +141,7 @@
         <div class="app-card" style="--app-tint: {{tintColor}}; --app-glow: {{glowColor}};">
             <div class="app-card-header">
                 <a href="{{slug}}/">
-                    <img src="{{iconSrc}}" class="app-icon-large" alt="{{iconAlt}}">
+                    <img src="{{iconSrc}}" class="app-icon-large" alt="{{iconAlt}}" width="160" height="160" loading="lazy" decoding="async">
                 </a>
                 <div class="app-card-title">
                     <h3>{{title}}</h3>
@@ -160,7 +161,7 @@
                 <div class="app-card-buttons">
                     <a href="{{slug}}/" class="btn btn--ghost">{{learnMoreText}}</a>
                     <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-button" aria-label="{{downloadAlt}}">
-                        <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadAlt}}"></picture>
+                        <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadAlt}}" width="120" height="40" loading="lazy" decoding="async"></picture>
                     </a>
                 </div>
             </div>
@@ -283,14 +284,15 @@
 {{#each cta.items}}
             <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-download-item" aria-label="{{downloadAlt}}">
 {{#if iconSrc}}
-                <img src="{{iconSrc}}" alt="" class="cta-download-icon">
+                <img src="{{iconSrc}}" alt="" class="cta-download-icon" width="64" height="64" loading="lazy" decoding="async">
 {{/if}}
                 <span class="cta-download-name">{{name}}</span>
-                <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadAlt}}"></picture>
+                <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadAlt}}" width="120" height="40" loading="lazy" decoding="async"></picture>
             </a>
 {{/each}}
         </div>
     </section>
+</main>
 
     <!-- Footer -->
     <footer>

@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Pressione Sanguigna - App #1 nel Regno Unito per la Pressione | Feeltracker</title>
     <meta name="description" content="Monitora la pressione sanguigna con Camera Scan AI – n. 1 nel Regno Unito. Tieni traccia di sistolica, diastolica, polso e PAM. Sincronizzazione Apple Health, report per il medico. iPhone, iPad e Mac.">
-    <meta name="keywords" content="pressione,sanguigna,arteriosa,cuore,frequenza,cardiaca,monitoraggio,omron,tracciamento,diario,alta,microlife,beurer">
+    <meta name="keywords" content="app pressione sanguigna, monitoraggio pressione sanguigna, diario pressione sanguigna, tracker ipertensione, monitoraggio sistolica diastolica pulsazioni, pressione arteriosa media, calcolatore MAP, diario pressione arteriosa, grafico pressione per il medico, scanner monitor pressione sanguigna">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/it/blood-pressure/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -149,7 +150,7 @@
           "applicationCategory": "HealthApplication",
           "applicationSubCategory": "Blood Pressure Monitor",
           "operatingSystem": "iOS 16.0 or later",
-          "description": "L'applicazione numero 1 per il monitoraggio della pressione sanguigna nel Regno Unito. Monitora la pressione sistolica e diastolica, la frequenza cardiaca e la Pressione Arteriosa Media con analisi basate sull'intelligenza artificiale. Include Camera Scan AI per leggere automaticamente i valori dallo schermo del misuratore, integrazione con Apple Health e funzionalità di esportazione per la condivisione con i professionisti sanitari.",
+          "description": "L'app numero 1 per il monitoraggio della pressione sanguigna nel Regno Unito. Monitora pressione sistolica e diastolica, pulsazioni e Pressione Arteriosa Media con approfondimenti basati sull'IA. Include Camera Scan AI per leggere i valori direttamente dal display di un misuratore, valori target e soglie di intervallo personalizzabili, un report MAP suddiviso in mattina, sera e giornata intera, sincronizzazione bidirezionale con Apple Health, sincronizzazione iCloud tra iPhone, iPad e Mac, ed esportazioni in PDF, CSV, Excel e JSON da condividere con gli operatori sanitari. Gratuita da usare, con funzionalità IA incluse gratis ogni giorno e un abbonamento Pro opzionale per i report IA più approfonditi.",
           "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -170,14 +171,20 @@
                 "Scansione AI fotocamera per acquisizione automatica delle letture",
                 "Apple Health bidirectional sync",
                 "Rilevamento pattern con intelligenza artificiale",
-                "Esportazione in PDF ed Excel",
+                "Esportazione in PDF, CSV, Excel e JSON",
                 "Calcolo della pressione arteriosa media",
                 "Compatibile con monitor OMRON, Microlife, Beurer",
                 "Registrazione di più misurazioni al giorno",
-                "Widget nella schermata Home per l'inserimento rapido",
+                "Widget per la schermata Home con le medie recenti",
                 "Vista calendario con indicatori codificati per colore",
                 "iCloud backup and sync",
-                "Supporto per 32 lingue"
+                "Supporto per 32 lingue",
+                "Soglie di intervallo personalizzabili e linee target sui grafici",
+                "Report PDF del MAP con suddivisione in mattina, sera e giornata intera",
+                "Backup settimanali automatici con ripristino",
+                "Fino a quattro promemoria nei giorni che scegli",
+                "Funzionalità IA gratuite ogni giorno, con abbonamento Pro opzionale",
+                "Nessuna pubblicità e nessun tracciamento di terze parti"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/bpt-1.png",
           "softwareVersion": "Latest",
@@ -634,10 +641,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Qual è la migliore app per il monitoraggio della pressione sanguigna?",
+                      "name": "Qual è una lettura normale della pressione sanguigna?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Blood Pressure è l'app numero 1 per il monitoraggio della pressione sanguigna nel Regno Unito. Include analisi basate sull'IA, tecnologia Camera Scan AI per leggere automaticamente i valori dallo schermo del misuratore (OMRON, Microlife, Beurer), integrazione con Apple Health e funzionalità di esportazione per la condivisione con i medici. Supporta il monitoraggio della pressione sistolica e diastolica, della frequenza cardiaca e della Pressione Arteriosa Media (PAM)."
+                            "text": "Secondo le linee guida mediche, la pressione sanguigna normale è tipicamente sotto i 120/80 mmHg. Valori tra 120-129 di sistolica e sotto 80 di diastolica sono considerati elevati. Valori di 130/80 o superiori possono indicare ipertensione. Tuttavia, gli intervalli target possono variare in base all'età e alle condizioni di salute, quindi consulta il tuo medico per indicazioni personalizzate. Feeltracker Blood Pressure colora ogni misurazione in base a questi intervalli, e puoi modificare tu stesso le soglie se il tuo medico ti ha dato obiettivi diversi."
                       }
                 },
                 {
@@ -645,39 +652,31 @@
                       "name": "Come funziona Camera Scan AI?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Camera Scan AI utilizza una tecnologia avanzata di riconoscimento ottico dei caratteri (OCR) per leggere automaticamente i valori della pressione dal display digitale del misuratore. Basta puntare la fotocamera dell'iPhone o dell'iPad sullo schermo che mostra i valori di sistolica, diastolica e polso, e l'app compilerà automaticamente questi valori. Questo elimina gli errori di digitazione manuale e rende la registrazione più veloce. Funziona con OMRON, Microlife, Beurer e la maggior parte dei misuratori di pressione digitali."
+                            "text": "Camera Scan AI legge i numeri direttamente dallo schermo del tuo misuratore di pressione: punta la fotocamera di iPhone o iPad sul display, e Feeltracker Blood Pressure compila per te i campi di sistolica, diastolica e pulsazioni. Non serve alcun abbinamento né configurazioni specifiche per marca — funziona con la maggior parte dei misuratori digitali, tra cui OMRON, Microlife e Beurer. La scansione è gratuita per tutti, con un limite giornaliero generoso, e richiede un paio di secondi invece di digitare tre numeri a mano."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Qual è una lettura normale della pressione sanguigna?",
+                      "name": "Cos'e la PAM e dovrei monitorarla?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Secondo le linee guida mediche, la pressione sanguigna normale è generalmente inferiore a 120/80 mmHg. Letture tra 120-129 di sistolica e inferiori a 80 di diastolica sono considerate elevate. Valori di 130/80 o superiori possono indicare ipertensione. Tuttavia, gli intervalli target possono variare in base all'età e alle condizioni di salute, quindi consulta il tuo medico per indicazioni personalizzate."
+                            "text": "MAP (Pressione Arteriosa Media) è un valore calcolato che rappresenta la pressione sanguigna media nelle tue arterie durante un ciclo cardiaco. Si calcola come: MAP = (2 × Diastolica + Sistolica) ÷ 3. Alcuni medici trovano il MAP utile per valutare il rischio cardiovascolare. Feeltracker Blood Pressure lo calcola automaticamente per ogni misurazione, lo rappresenta in un grafico insieme ai tuoi valori di sistolica e diastolica, e può esportare un report PDF del MAP suddiviso in visualizzazioni mattutina, serale e sull'intera giornata. Puoi anche impostare le tue fasce MAP personalizzate, con un'opzione di focus LVAD per chi effettua il monitoraggio con un cuore artificiale."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Posso esportare i dati della pressione per il mio medico?",
+                      "name": "Posso importare i miei vecchi dati sulla pressione?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sì, Blood Pressure ti permette di esportare report completi in formato PDF, CSV, Excel o JSON. Questi report formattati professionalmente includono statistiche riassuntive, grafici delle tendenze e tutte le tue note - tutto ciò di cui il tuo medico ha bisogno in un unico documento. Puoi condividere facilmente questi report tramite email o altri metodi di condivisione."
+                            "text": "Sì — Feeltracker Blood Pressure può importare la tua storia esistente da Apple Health o da un foglio di calcolo. Se hai tenuto traccia dei dati in Apple Health, l'app ti mostra le misurazioni trovate e importa quelle che selezioni, e puoi attivare l'importazione automatica così le nuove misurazioni di Health arrivano da sole. Se la tua storia si trova in un foglio di calcolo, scarica il modello Excel dell'app, incolla i tuoi dati e importa il file. Funzionano anche file JSON e backup ZIP da un altro dispositivo."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "L'app si integra con Apple Health?",
+                      "name": "Quanto spesso dovrei misurare la pressione?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sì, Blood Pressure offre un'integrazione bidirezionale con Apple Health. Puoi importare i dati storici della pressione da Apple Health e l'app salverà automaticamente le nuove letture su HealthKit. Questo crea un ecosistema completo di monitoraggio della salute su tutti i tuoi dispositivi Apple."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Cos'è la PAM nel monitoraggio della pressione sanguigna?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "La PAM (Pressione Arteriosa Media) è un valore calcolato che rappresenta la pressione sanguigna media nelle arterie durante un ciclo cardiaco. Si calcola come: PAM = (2 × Diastolica + Sistolica) ÷ 3. Alcuni medici trovano la PAM utile per valutare il rischio cardiovascolare e la perfusione degli organi. Blood Pressure calcola automaticamente la PAM per ogni lettura."
+                            "text": "Le indicazioni per il monitoraggio a casa suggeriscono in genere due misurazioni al giorno — una al mattino prima dei farmaci e una alla sera — prese a orari costanti, anche se le indicazioni del tuo medico per la tua situazione vengono sempre prima. Feeltracker Blood Pressure ti permette di registrare tutte le misurazioni al giorno che vuoi e di impostare fino a quattro promemoria, ciascuno nei giorni della settimana che scegli, così una routine due volte al giorno è facile da mantenere."
                       }
                 },
                 {
@@ -685,7 +684,63 @@
                       "name": "I miei dati sulla pressione sono privati?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sì, le tue letture della pressione sono conservate crittografate sul tuo dispositivo e nel tuo account iCloud privato. I dati non passano mai attraverso server esterni e gli sviluppatori non possono vedere le tue informazioni sanitarie. È sicuro quanto le app Note o Foto di Apple ed è completamente conforme al GDPR."
+                            "text": "Le tue misurazioni vivono sul tuo dispositivo e nel tuo account iCloud privato — Feeltracker Blood Pressure non richiede la creazione di un account, non chiede il tuo indirizzo email, e non conserva alcuna copia della tua storia sui nostri server. L'unica eccezione sono le funzionalità IA: quando chiedi qualcosa all'IA, le misurazioni necessarie per rispondere passano attraverso il nostro server di relay verso il fornitore IA per poterti rispondere. Quel relay non memorizza nulla — nessuna richiesta o risposta viene mai scritta su disco — e puoi impostare l'IA in modalità on-device con Apple Intelligence, oppure disattivarla del tutto, nelle impostazioni IA dell'app. Tutto il resto, inclusa la sincronizzazione con Apple Health, resta tra i tuoi dispositivi e Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso monitorare la pressione dei familiari?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Blood Pressure è pensata per le misurazioni di una sola persona, quindi è meglio che ogni membro della famiglia tenga traccia sul proprio dispositivo con il proprio Apple ID e account iCloud. Questo mantiene la storia, i grafici e i report di ognuno separati, e fa sì che i dati di ogni persona si sincronizzino solo con i propri dispositivi."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mostrate pubblicità o mi tracciate?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Abbiamo completamente rimosso tutte le pubblicità dall'app. Non ti tracciamo attraverso altre app o siti web e non vendiamo mai i tuoi dati agli inserzionisti. I tuoi dati si sincronizzano tramite iCloud - proprio come Note e Foto di Apple. Questo significa che non abbiamo bisogno di conoscere il tuo indirizzo email, nome o alcuna informazione personale. I dati della tua pressione sono conservati sui tuoi dispositivi e nel tuo account iCloud, e sono completamente privati sia che tu usi la versione gratuita che quella premium."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ho bisogno di un abbonamento?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Non è richiesto alcun abbonamento. L'app è gratuita da scaricare, tutto il monitoraggio, i grafici, la sincronizzazione con Apple Health, i backup e le esportazioni sono gratuiti, e ogni utente ottiene vere funzionalità IA gratuite ogni giorno — Fai una Domanda, Chat Rapida, Riepilogo Vocale, un Quick Health Report, Fammi Ridere, Calmami e Camera Scan AI — senza pubblicità, mai. Un abbonamento Pro opzionale sblocca le funzionalità IA più approfondite (Deep Research, Doctor Summary, Pattern Detective, il Pro MAP Report, Pro Chat e altro), le esegue sulla nostra IA più potente, e aumenta i generosi limiti giornalieri."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Funziona con il mio misuratore OMRON, Microlife o Beurer?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Blood Pressure funziona con qualsiasi misuratore di pressione domestico, perché legge i numeri invece di connettersi al dispositivo. Punta la fotocamera sul display e Camera Scan AI compila sistolica, diastolica e pulsazioni — funziona con la maggior parte dei misuratori digitali, tra cui OMRON, Microlife e Beurer — oppure inserisci tu stesso i valori con i selettori o la tastiera. Non c'è alcun abbinamento Bluetooth, nessuna lista di compatibilità, e niente che si rompa quando cambi misuratore."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Come condivido le mie misurazioni di pressione con il mio medico?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Feeltracker Blood Pressure può creare un PDF pronto per il medico per qualsiasi intervallo di date in pochi tocchi, e puoi inviarlo via email, messaggio, stamparlo o condividerlo con AirDrop direttamente dall'app. Le esportazioni in PDF, CSV, Excel e JSON sono tutte gratuite, così come il report MAP dedicato che suddivide la tua Pressione Arteriosa Media in visualizzazioni mattutina, serale e sull'intera giornata per un mese, trimestre, anno o intervallo personalizzato. Con Pro, l'IA può anche scrivere un Doctor Summary in linguaggio semplice per lo stesso periodo, da affiancare ai numeri."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso impostare i miei obiettivi e intervalli di pressione personalizzati?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sì — Feeltracker Blood Pressure ti permette di impostare valori target di sistolica, diastolica e pulsazioni, che appaiono come linee di riferimento sui tuoi grafici, e di modificare le soglie di ogni fascia (Bassa, Normale, Elevata, Alta, Molto Alta) così da rispecchiare le indicazioni che ti sono state date davvero. I tuoi grafici, i colori del calendario e i report PDF seguono tutti gli intervalli che hai impostato, non solo quelli predefiniti. Il MAP ha le sue fasce regolabili, con un'opzione di focus LVAD."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Feeltracker Blood Pressure funziona su iPad e Mac?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sì — un solo download copre iPhone e iPad, e funziona anche su Mac con chip Apple Silicon tramite il Mac App Store. Le tue misurazioni si sincronizzano automaticamente tra tutti i dispositivi tramite il tuo account iCloud privato, così una misurazione registrata sul tuo iPhone è sul tuo iPad pochi istanti dopo. C'è un widget per la schermata Home che mostra le tue medie recenti, e le voci sono indicizzate in Spotlight così puoi cercare nella tua storia da qualsiasi punto di iOS."
                       }
                 }
           ]
@@ -703,7 +758,7 @@
 
             <a href="/it/daily-journal/">Diario Giornaliero</a>
 
-            <a href="/it/mental-health/">Salute Mentale</a>
+            <a href="/it/mood-journal/">Diario dell'Umore</a>
 
             <a href="/it/sleep/">Sonno</a>
 
@@ -788,9 +843,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Icona dell'app Pressione Sanguigna" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Icona dell'app Pressione Sanguigna" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Pressione Sanguigna</h1>
 
         <div class="privacy-badge">
@@ -798,12 +854,12 @@
         </div>
         <p class="hero-subtitle">Il modo più intelligente per monitorare e comprendere la tua pressione sanguigna. Scansiona le letture con Camera Scan AI, sincronizza con Apple Health e ottieni analisi basate sull'AI sulla tua salute cardiovascolare.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/it-white.svg"><img class="store_button store_button--lg" src="/images/appstore/it-black.svg" alt="Scarica Pressione Sanguigna sull'App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/it-white.svg"><img class="store_button store_button--lg" src="/images/appstore/it-black.svg" alt="Scarica Pressione Sanguigna sull'App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuita con funzionalità premium opzionali<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +872,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Screenshot Pressione Sanguigna 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Screenshot Pressione Sanguigna 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Screenshot Pressione Sanguigna 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Screenshot Pressione Sanguigna 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Screenshot Pressione Sanguigna 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Screenshot Pressione Sanguigna 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -874,13 +930,19 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-medical-alt"></i></div>
                 <h3>Report PAM per il tuo medico</h3>
-                <p>Un report specializzato che scompone la tua Pressione Arteriosa Media in fasce mattutine, serali e sull'intera giornata, per qualsiasi mese, trimestre, anno o intervallo personalizzato. Pensato per rendere più semplici i colloqui clinici. Parte dell'abbonamento Pro facoltativo.</p>
+                <p>Un report PDF gratuito che suddivide la tua Pressione Arteriosa Media in fasce mattutine, serali e sull'intera giornata, per qualsiasi mese, trimestre, anno o intervallo personalizzato. Pensato per rendere più semplici i colloqui clinici. Pro aggiunge in più un Pro MAP Report scritto dall'IA.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-sliders-h"></i></div>
                 <h3>I tuoi intervalli, a modo tuo</h3>
-                <p>Imposta i tuoi obiettivi e soglie di banda — Normale, Elevata, Stadio 1, Stadio 2 — in base alle indicazioni del tuo medico. Grafici e report colorano ogni misurazione secondo i tuoi intervalli personali.</p>
+                <p>Imposta i tuoi valori target di sistolica, diastolica e pulsazioni — appariranno come linee di riferimento sui tuoi grafici — e regola le soglie degli intervalli (Bassa, Normale, Elevata, Alta, Molto Alta) in base alle indicazioni ricevute dal tuo medico. Grafici e report colorano ogni misurazione secondo i tuoi intervalli personali.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <h3>La Tua Storia, Custodita al Sicuro</h3>
+                <p>Le misurazioni si sincronizzano tra iPhone, iPad e Mac tramite il tuo account iCloud privato, e l'app crea backup settimanali automatici da cui puoi ripristinare in qualsiasi momento. Stai passando da un foglio di calcolo? Importa la tua storia da un file Excel usando il modello integrato.</p>
             </div>
 
         </div>
@@ -894,27 +956,28 @@
         <div class="app-card">
             <h3>1. Registra la Tua Lettura</h3>
             <div class="app-card-content">
-<p><strong>Camera Scan AI:</strong> Inquadra semplicemente il display del tuo misuratore di pressione e lascia che l'AI estragga automaticamente i valori di sistolica, diastolica e polso. Nessuna digitazione necessaria - l'app legge i numeri direttamente dai monitor <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer e dalla maggior parte dei misuratori digitali.</p>
-<p><strong>Inserimento Manuale:</strong> Preferisci digitare? Inserisci i valori manualmente con un'interfaccia semplificata. Bastano pochi secondi per registrare una lettura.</p>
-<p><strong>Contesto Dettagliato:</strong> Aggiungi note dettagliate su cosa stavi facendo - pasti consumati, farmaci assunti, esercizio fisico, livelli di stress, qualità del sonno o qualsiasi fattore che potrebbe influenzare la pressione. Puoi anche allegare foto e contrassegnare le voci con etichette personalizzate per una ricerca più facile in seguito.</p>
+<p><strong>Camera Scan AI:</strong> Punta semplicemente la fotocamera sul display del tuo misuratore di pressione e lascia che l'IA estragga automaticamente i valori di sistolica, diastolica e pulsazioni. Non serve digitare nulla - l'app legge i numeri direttamente da <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer e dalla maggior parte dei misuratori digitali.</p>
+<p><strong>Inserimento Manuale:</strong> Preferisci digitare? Inserisci i valori manualmente con un'interfaccia semplice e veloce. Bastano pochi secondi per registrare una misurazione.</p>
+<p><strong>Contesto Ricco:</strong> Aggiungi note dettagliate su cosa stavi facendo - pasti consumati, farmaci assunti, attività fisica, livelli di stress, qualità del sonno o qualsiasi fattore che potrebbe influenzare la tua pressione. Puoi allegare fino a 8 foto a una misurazione, e ritrovare qualsiasi voce in seguito direttamente dalla ricerca Spotlight di iOS.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>2. Monitora i Pattern</h3>
             <div class="app-card-content">
-<p><strong>Vista Calendario:</strong> Visualizza tutte le letture in un layout calendario intuitivo. Ogni giorno mostra le misurazioni con indicatori colorati per letture normali, elevate o alte secondo le linee guida mediche.</p>
-<p><strong>Statistiche Automatiche:</strong> Ottieni calcoli istantanei delle medie giornaliere, settimanali e mensili. Visualizza le letture più basse e più alte, la deviazione standard e le tendenze nel tempo senza fare alcun calcolo.</p>
-<p><strong>Grafici Visivi:</strong> Grafici eleganti mostrano le tendenze della pressione su giorni, settimane, mesi o qualsiasi intervallo personalizzato. Individua i pattern a colpo d'occhio e vedi come stai progredendo verso i tuoi obiettivi di salute.</p>
+<p><strong>Vista Calendario:</strong> Vedi tutte le tue misurazioni in un layout a calendario intuitivo. Ogni giorno mostra le tue misurazioni con indicatori colorati per valori bassi, normali, elevati, alti o molto alti - basati su linee guida ampiamente utilizzate, oppure sugli intervalli che hai impostato tu stesso.</p>
+<p><strong>Statistiche Automatiche:</strong> Ottieni medie istantanee su qualsiasi intervallo di date, i tuoi valori più bassi e più alti, e una ripartizione di quante misurazioni rientrano in ciascun intervallo - senza fare calcoli.</p>
+<p><strong>Grafici Visivi:</strong> Grafici separati per sistolica, diastolica, MAP e pulsazioni mostrano i tuoi andamenti su giorni, settimane, mesi o qualsiasi intervallo di date personalizzato, ciascuno con il tuo valore target tracciato come linea di riferimento.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Ottieni Analisi AI</h3>
             <div class="app-card-content">
-<p><strong>Rilevamento Pattern:</strong> L'AI analizza le tue letture e le note per identificare correlazioni. Scopri quali attività, cibi o situazioni alzano o abbassano costantemente la tua pressione.</p>
-<p><strong>Raccomandazioni Personalizzate:</strong> Ottieni analisi specifiche basate sui tuoi dati. L'AI potrebbe notare pattern come "La tua pressione tende ad essere più alta nei giorni in cui menzioni 'stress al lavoro'" oppure "Le letture sono più basse nei giorni con esercizio mattutino."</p>
-<p><strong>Chatta con i Tuoi Dati:</strong> Fai domande in linguaggio naturale come "Qual era la mia pressione media nelle sere del mese scorso?" oppure "Mostrami le letture dopo aver preso il farmaco." L'AI comprende il contesto e ti da risposte immediate.</p>
+<p><strong>Rilevamento Pattern:</strong> L'IA analizza le tue misurazioni e note per identificare correlazioni. Scopri quali attività, alimenti o situazioni alzano o abbassano costantemente la tua pressione.</p>
+<p><strong>Consigli Personalizzati:</strong> Ottieni approfondimenti specifici basati sui tuoi dati. L'IA potrebbe notare pattern come "La tua pressione tende a essere più alta nei giorni in cui menzioni 'stress al lavoro'" oppure "Le misurazioni sono più basse nei giorni con attività fisica mattutina."</p>
+<p><strong>Chatta con i Tuoi Dati:</strong> Fai domande in linguaggio naturale come "Qual è stata la mia pressione media di sera il mese scorso?" oppure "Mostrami le misurazioni dopo aver preso il farmaco." L'IA comprende il contesto e ti dà risposte immediate.</p>
+<p><strong>Gratis ogni giorno:</strong> Fai una Domanda, Chat Rapida, Riepilogo Vocale e un Quick Health Report sono inclusi per tutti, con un limite giornaliero generoso. I report più approfonditi - Deep Research, Pattern Detective, Doctor Summary, il Pro MAP Report - sono inclusi con l'abbonamento opzionale Pro.</p>
             </div>
         </div>
 
@@ -937,93 +1000,98 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Fai una Domanda</h4>
+                <h3><i class="fas fa-question-circle"></i> Fai una Domanda</h3>
                 <p>Domande e risposte rapide sui dati della tua pressione - ottieni risposte immediate alle tue domande sulla salute</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Fai conversazioni interattive sulla tua salute cardiovascolare e ricevi consigli personalizzati. Quick Chat è gratis ogni giorno; Pro Chat va più a fondo con la nostra IA più avanzata</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Riepilogo Vocale</h4>
+                <h3><i class="fas fa-volume-up"></i> Riepilogo Vocale</h3>
                 <p>Ascolta riepiloghi audio delle tendenze della tua pressione - perfetti per analisi in movimento</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Fammi Ridere</h4>
+                <h3><i class="fas fa-laugh"></i> Fammi Ridere</h3>
                 <p>Ottieni umorismo personalizzato dai tuoi dati di monitoraggio per rallegrarti la giornata</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Calmami</h4>
-                <p>Esercizi di respirazione guidati dall'AI per aiutare a ridurre lo stress e abbassare la pressione</p>
+                <h3><i class="fas fa-moon"></i> Calmami</h3>
+                <p>Esercizi di respirazione e rilassamento guidati dall'IA per aiutarti a staccare dopo una giornata stressante</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Scansione Fotocamera IA</h4>
-                <p>Scansiona le letture direttamente dallo schermo del misuratore - compatibile con <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
+                <h3><i class="fas fa-camera"></i> Scansione Fotocamera IA</h3>
+                <p>Scansiona le misurazioni direttamente dallo schermo del tuo misuratore - funziona con <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer e la maggior parte dei display digitali. Gratis per tutti, con un limite giornaliero generoso</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Ricerca Approfondita <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Ricerca Approfondita <span class="ai-pro-badge">Pro</span></h3>
                 <p>Analisi AI completa dei dati della tua pressione con approfondimenti dettagliati</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Investigatore di Pattern <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Investigatore di Pattern <span class="ai-pro-badge">Pro</span></h3>
                 <p>Trova correlazioni nascoste tra le letture della pressione e i fattori dello stile di vita</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Assistente Obiettivi <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Assistente Obiettivi <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ottieni obiettivi personalizzati per la pressione basati sui tuoi dati e pattern</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Riepilogo per il Medico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Riepilogo per il Medico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genera riepiloghi medici professionali da condividere durante le visite</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Certificato Medico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Certificato Medico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Certificati medici generati dall'AI per lavoro o scuola quando ne hai bisogno</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generatore di Storie <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generatore di Storie <span class="ai-pro-badge">Pro</span></h3>
                 <p>Trasforma i tuoi dati sulla salute in narrazioni creative e coinvolgenti</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Riepilogo Testuale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Riepilogo Testuale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crea riepiloghi condivisibili via messaggio delle tendenze della tua pressione</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Quiz Personale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Quiz Personale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Metti alla prova le tue conoscenze con un divertente quiz AI di 10 domande sui tuoi dati</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Sintesi Vocale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Sintesi Vocale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ascolta le analisi e i riepiloghi AI con riproduzione vocale naturale</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Report Sanitario Personalizzato <span class="ai-pro-badge">Pro</span></h4>
-                <p>Crea documenti sanitari completi e personalizzati per monitorare i tuoi progressi</p>
+                <h3><i class="fas fa-file-invoice"></i> Report Sanitario Personalizzato <span class="ai-pro-badge">Pro</span></h3>
+                <p>Crea documenti sanitari completi e personalizzati per monitorare i tuoi progressi. Un Quick Health Report gratuito è incluso per tutti</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (sul dispositivo) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (sul dispositivo) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opzione che mette al primo posto la privacy: esegue l'IA localmente sul tuo dispositivo usando Foundation Models di Apple — nulla lascia il tuo iPhone, iPad o Mac. Utilizzo illimitato con un account a pagamento su dispositivi Apple Silicon supportati (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat vocale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat vocale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversazioni vocali bidirezionali a mani libere con l'IA sui tuoi dati: fai domande e ascolta le risposte senza toccare lo schermo</p>
+            </div>
+
+            <div class="ai-feature">
+                <h3><i class="fas fa-heart-pulse"></i> Report MAP Pro <span class="ai-pro-badge">Pro</span></h3>
+                <p>Un report scritto dall'IA sulla tua Pressione Arteriosa Media: pattern mattina contro sera, variabilità giorno per giorno, e come le tue misurazioni si collocano rispetto alle fasce MAP che hai impostato — con un focus opzionale su LVAD. Pensato per essere consegnato al tuo team di cura</p>
             </div>
 
         </div>
@@ -1042,7 +1110,7 @@
 
             <div class="benefit-item">
                 <h4><i class="fas fa-heart-pulse"></i> Gestisci l'Ipertensione</h4>
-                <p>Mantieni la pressione sotto controllo monitorando le letture giornaliere e identificando i fattori scatenanti</p>
+                <p>Costruisci un registro giorno per giorno delle tue misurazioni, così tu e il tuo medico potete vedere come si comportano davvero i tuoi valori tra un appuntamento e l'altro</p>
             </div>
 
             <div class="benefit-item">
@@ -1087,31 +1155,31 @@
 
 
         <h3>Qual è una lettura normale della pressione sanguigna?</h3>
-        <p>Secondo le linee guida mediche, la pressione sanguigna normale è generalmente inferiore a 120/80 mmHg. Letture tra 120-129 di sistolica e inferiori a 80 di diastolica sono considerate elevate. Valori di 130/80 o superiori possono indicare ipertensione. Tuttavia, gli intervalli target possono variare in base all'età e alle condizioni di salute, quindi consulta il tuo medico per indicazioni personalizzate.</p>
+        <p>Secondo le linee guida mediche, la pressione sanguigna normale è tipicamente sotto i 120/80 mmHg. Valori tra 120-129 di sistolica e sotto 80 di diastolica sono considerati elevati. Valori di 130/80 o superiori possono indicare ipertensione. Tuttavia, gli intervalli target possono variare in base all'età e alle condizioni di salute, quindi consulta il tuo medico per indicazioni personalizzate. Feeltracker Blood Pressure colora ogni misurazione in base a questi intervalli, e puoi modificare tu stesso le soglie se il tuo medico ti ha dato obiettivi diversi.</p>
 
 
         <h3>Come funziona Camera Scan AI?</h3>
-        <p>Inquadra semplicemente il display digitale del tuo misuratore di pressione con la fotocamera dell'iPhone o dell'iPad. L'app utilizza una tecnologia avanzata di riconoscimento tramite AI per leggere automaticamente i numeri e compilare i campi di sistolica, diastolica e polso. Questo elimina gli errori di digitazione manuale e rende la registrazione più veloce. <a href="https://geni.us/B9RB" target="_blank" rel="noopener">Acquista un misuratore di pressione qui</a>.</p>
+        <p>Camera Scan AI legge i numeri direttamente dallo schermo del tuo misuratore di pressione: punta la fotocamera di iPhone o iPad sul display, e Feeltracker Blood Pressure compila per te i campi di sistolica, diastolica e pulsazioni. Non serve alcun abbinamento né configurazioni specifiche per marca — funziona con la maggior parte dei misuratori digitali, tra cui <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife e Beurer. La scansione è gratuita per tutti, con un limite giornaliero generoso, e richiede un paio di secondi invece di digitare tre numeri a mano.</p>
 
 
         <h3>Cos'e la PAM e dovrei monitorarla?</h3>
-        <p>La PAM (Pressione Arteriosa Media) e un valore calcolato che rappresenta la pressione sanguigna media nelle arterie durante un ciclo cardiaco. Si calcola cosi: PAM = (2 x Diastolica + Sistolica) / 3. Alcuni medici trovano la PAM utile per valutare il rischio cardiovascolare. L'app calcola automaticamente la PAM per ogni lettura.</p>
+        <p>MAP (Pressione Arteriosa Media) è un valore calcolato che rappresenta la pressione sanguigna media nelle tue arterie durante un ciclo cardiaco. Si calcola come: MAP = (2 × Diastolica + Sistolica) ÷ 3. Alcuni medici trovano il MAP utile per valutare il rischio cardiovascolare. Feeltracker Blood Pressure lo calcola automaticamente per ogni misurazione, lo rappresenta in un grafico insieme ai tuoi valori di sistolica e diastolica, e può esportare un report PDF del MAP suddiviso in visualizzazioni mattutina, serale e sull'intera giornata. Puoi anche impostare le tue fasce MAP personalizzate, con un'opzione di focus LVAD per chi effettua il monitoraggio con un cuore artificiale.</p>
 
 
         <h3>Posso importare i miei vecchi dati sulla pressione?</h3>
-        <p>Si! Se hai monitorato la pressione in Apple Health, puoi importare tutte le letture storiche nell'app con un solo tocco. L'app supporta anche l'importazione da file CSV/Excel se hai dati da altre fonti.</p>
+        <p>Sì — Feeltracker Blood Pressure può importare la tua storia esistente da Apple Health o da un foglio di calcolo. Se hai tenuto traccia dei dati in Apple Health, l'app ti mostra le misurazioni trovate e importa quelle che selezioni, e puoi attivare l'importazione automatica così le nuove misurazioni di Health arrivano da sole. Se la tua storia si trova in un foglio di calcolo, scarica il modello Excel dell'app, incolla i tuoi dati e importa il file. Funzionano anche file JSON e backup ZIP da un altro dispositivo.</p>
 
 
         <h3>Quanto spesso dovrei misurare la pressione?</h3>
-        <p>Dipende dalle tue condizioni di salute e dalle raccomandazioni del medico. Alcune persone misurano quotidianamente (spesso mattina e sera), mentre altre settimanalmente. L'app rende facile il monitoraggio con la frequenza raccomandata dal tuo medico. Puoi impostare promemoria per mantenere una routine costante.</p>
+        <p>Le indicazioni per il monitoraggio a casa suggeriscono in genere due misurazioni al giorno — una al mattino prima dei farmaci e una alla sera — prese a orari costanti, anche se le indicazioni del tuo medico per la tua situazione vengono sempre prima. Feeltracker Blood Pressure ti permette di registrare tutte le misurazioni al giorno che vuoi e di impostare fino a quattro promemoria, ciascuno nei giorni della settimana che scegli, così una routine due volte al giorno è facile da mantenere.</p>
 
 
         <h3>I miei dati sulla pressione sono privati?</h3>
-        <p>Assolutamente. Le letture della pressione sono conservate crittografate sul tuo dispositivo e nel tuo account iCloud privato. I dati non passano mai attraverso i nostri server e non possiamo vedere le tue informazioni sanitarie. È sicuro quanto le app Note o Foto di Apple.</p>
+        <p>Le tue misurazioni vivono sul tuo dispositivo e nel tuo account iCloud privato — Feeltracker Blood Pressure non richiede la creazione di un account, non chiede il tuo indirizzo email, e non conserva alcuna copia della tua storia sui nostri server. L'unica eccezione sono le funzionalità IA: quando chiedi qualcosa all'IA, le misurazioni necessarie per rispondere passano attraverso il nostro server di relay verso il fornitore IA per poterti rispondere. Quel relay non memorizza nulla — nessuna richiesta o risposta viene mai scritta su disco — e puoi impostare l'IA in modalità on-device con Apple Intelligence, oppure disattivarla del tutto, nelle impostazioni IA dell'app. Tutto il resto, inclusa la sincronizzazione con Apple Health, resta tra i tuoi dispositivi e Apple.</p>
 
 
         <h3>Posso monitorare la pressione dei familiari?</h3>
-        <p>L'app è progettata per uso individuale e si sincronizza con il tuo account iCloud personale. Per monitorare più membri della famiglia, ogni persona dovrebbe usare l'app sul proprio dispositivo con il proprio Apple ID.</p>
+        <p>Feeltracker Blood Pressure è pensata per le misurazioni di una sola persona, quindi è meglio che ogni membro della famiglia tenga traccia sul proprio dispositivo con il proprio Apple ID e account iCloud. Questo mantiene la storia, i grafici e i report di ognuno separati, e fa sì che i dati di ogni persona si sincronizzino solo con i propri dispositivi.</p>
 
 
         <h3>Mostrate pubblicità o mi tracciate?</h3>
@@ -1120,7 +1188,23 @@
 
 
         <h3>Ho bisogno di un abbonamento?</h3>
-        <p>Non è richiesto alcun abbonamento. L'app è gratuita da scaricare, tutto il tracciamento, i grafici, la sincronizzazione con Apple Health e le esportazioni sono gratuiti, e ogni utente ha funzioni IA vere gratis ogni giorno, senza mai pubblicità. Un abbonamento Pro facoltativo sblocca le funzioni IA più complete (Ricerca Approfondita, Riepilogo per il Medico, Investigatore di Pattern, il Report PAM Pro, Chat Pro e altro), le esegue sulla nostra IA più avanzata e aumenta i generosi limiti giornalieri.</p>
+        <p>Non è richiesto alcun abbonamento. L'app è gratuita da scaricare, tutto il monitoraggio, i grafici, la sincronizzazione con Apple Health, i backup e le esportazioni sono gratuiti, e ogni utente ottiene vere funzionalità IA gratuite ogni giorno — Fai una Domanda, Chat Rapida, Riepilogo Vocale, un Quick Health Report, Fammi Ridere, Calmami e Camera Scan AI — senza pubblicità, mai. Un abbonamento Pro opzionale sblocca le funzionalità IA più approfondite (Deep Research, Doctor Summary, Pattern Detective, il Pro MAP Report, Pro Chat e altro), le esegue sulla nostra IA più potente, e aumenta i generosi limiti giornalieri.</p>
+
+
+        <h3>Funziona con il mio misuratore OMRON, Microlife o Beurer?</h3>
+        <p>Feeltracker Blood Pressure funziona con qualsiasi misuratore di pressione domestico, perché legge i numeri invece di connettersi al dispositivo. Punta la fotocamera sul display e Camera Scan AI compila sistolica, diastolica e pulsazioni — funziona con la maggior parte dei misuratori digitali, tra cui <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife e Beurer — oppure inserisci tu stesso i valori con i selettori o la tastiera. Non c'è alcun abbinamento Bluetooth, nessuna lista di compatibilità, e niente che si rompa quando cambi misuratore.</p>
+
+
+        <h3>Come condivido le mie misurazioni di pressione con il mio medico?</h3>
+        <p>Feeltracker Blood Pressure può creare un PDF pronto per il medico per qualsiasi intervallo di date in pochi tocchi, e puoi inviarlo via email, messaggio, stamparlo o condividerlo con AirDrop direttamente dall'app. Le esportazioni in PDF, CSV, Excel e JSON sono tutte gratuite, così come il report MAP dedicato che suddivide la tua Pressione Arteriosa Media in visualizzazioni mattutina, serale e sull'intera giornata per un mese, trimestre, anno o intervallo personalizzato. Con Pro, l'IA può anche scrivere un Doctor Summary in linguaggio semplice per lo stesso periodo, da affiancare ai numeri.</p>
+
+
+        <h3>Posso impostare i miei obiettivi e intervalli di pressione personalizzati?</h3>
+        <p>Sì — Feeltracker Blood Pressure ti permette di impostare valori target di sistolica, diastolica e pulsazioni, che appaiono come linee di riferimento sui tuoi grafici, e di modificare le soglie di ogni fascia (Bassa, Normale, Elevata, Alta, Molto Alta) così da rispecchiare le indicazioni che ti sono state date davvero. I tuoi grafici, i colori del calendario e i report PDF seguono tutti gli intervalli che hai impostato, non solo quelli predefiniti. Il MAP ha le sue fasce regolabili, con un'opzione di focus LVAD.</p>
+
+
+        <h3>Feeltracker Blood Pressure funziona su iPad e Mac?</h3>
+        <p>Sì — un solo download copre iPhone e iPad, e funziona anche su Mac con chip Apple Silicon tramite il Mac App Store. Le tue misurazioni si sincronizzano automaticamente tra tutti i dispositivi tramite il tuo account iCloud privato, così una misurazione registrata sul tuo iPhone è sul tuo iPad pochi istanti dopo. C'è un widget per la schermata Home che mostra le tue medie recenti, e le voci sono indicizzate in Spotlight così puoi cercare nella tua storia da qualsiasi punto di iOS.</p>
 
     </section>
 
@@ -1479,22 +1563,22 @@
         <div class="related-apps-grid">
 
             <a href="/it/daily-journal/" class="related-app-card" aria-label="Diario Giornaliero">
-                <img src="/images/NT_1024.png" alt="Diario Giornaliero" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Diario Giornaliero" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Diario Giornaliero</span>
             </a>
 
-            <a href="/it/mental-health/" class="related-app-card" aria-label="Salute Mentale">
-                <img src="/images/FT_1024.png" alt="Salute Mentale" class="related-app-icon">
-                <span class="related-app-name">Salute Mentale</span>
+            <a href="/it/mood-journal/" class="related-app-card" aria-label="Diario dell'Umore">
+                <img src="/images/FT_1024.png" alt="Diario dell'Umore" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Diario dell'Umore</span>
             </a>
 
             <a href="/it/sleep/" class="related-app-card" aria-label="Sonno">
-                <img src="/images/ST_1024.png" alt="Sonno" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sonno" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sonno</span>
             </a>
 
             <a href="/it/weight/" class="related-app-card" aria-label="Peso">
-                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Peso</span>
             </a>
 
@@ -1507,9 +1591,10 @@
         <h2>Inizia a Monitorare la Tua Pressione Oggi</h2>
         <p>Unisciti a migliaia di utenti che hanno preso il controllo della propria salute cardiovascolare</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/it-white.svg"><img class="store_button store_button--lg" src="/images/appstore/it-black.svg" alt="Scarica Pressione Sanguigna"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/it-white.svg"><img class="store_button store_button--lg" src="/images/appstore/it-black.svg" alt="Scarica Pressione Sanguigna" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

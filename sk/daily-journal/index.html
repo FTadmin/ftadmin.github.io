@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Denný denník - Poznámky, fotografie a AI denník | Feeltracker</title>
     <meta name="description" content="Súkromný denník s podporou AI. Skenujte objekty a text pre okamžité záznamy, pridávajte fotografie, sledujte náladu a vzory slov. Synchronizácia cez iCloud. iPhone, iPad a Mac.">
-    <meta name="keywords" content="denník,log,deník,súkromný,osobný,zápisník,journaling,poznámky,写日记,дневник">
+    <meta name="keywords" content="aplikácia na denník, aplikácia na písanie denníka, súkromný denník, digitálny denník, denníková aplikácia pre iPhone, denník vďačnosti, denník s fotkami, AI denníková aplikácia, aplikácia na dennú reflexiu, denník a poznámky">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/sk/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "AI skenovanie predmetov – opisuje objekty pre záznamy denníka",
                 "AI skenovanie textu – OCR na zachytenie textu",
-                "Analýza sentimentu zápisov",
-                "Sledovanie frekvencie slov a tém",
+                "Ukazovateľ nálady pri zápisoch",
+                "Oblak slov a analýza frekvencie slov",
                 "Prikladanie až 8 fotografií na záznam",
                 "Šablóny poznámok na rýchle záznamy",
                 "Fulltextové vyhľadávanie a integrácia Spotlight",
-                "Export do PDF a Excel",
+                "Export do PDF, Excel, CSV a JSON",
                 "Zálohovanie a synchronizácia cez iCloud",
                 "Podpora 32 jazykov",
-                "Widgety na ploche pre rýchly záznam"
+                "Widgety na ploche pre rýchly záznam",
+                "Opakujúce sa zápisy vytvárané denne alebo týždenne",
+                "Voliteľné zobrazovanie Markdown v zozname zápisov",
+                "AI prepis na vylepšenie toho, čo ste napísali",
+                "Počty slov podľa dňa, mesiaca a roka",
+                "Import z Excelu pre staršie denníky",
+                "Automatické týždenné zálohy"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "Je môj denník súkromný?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Rozhodne áno. Vaše záznamy sú uložené vo vašom zariadení a vo vašom súkromnom účte iCloud — nemáme žiadne servery, ktoré by uchovávali váš denník, a nikdy nevidíme vaše písanie. Voliteľné AI funkcie používajú cloudovú AI rešpektujúcu súkromie, ktorú môžete kedykoľvek vypnúť; keď je AI vypnutá, analýza sentimentu prebieha úplne v zariadení pomocou frameworku Apple Natural Language, a s možnosťou Apple Intelligence beží všetka AI priamo v zariadení."
+                            "text": "Áno — Feeltracker Denník uchováva vaše zápisy vo vašom zariadení a vo vašom súkromnom konte iCloud, takže nemáme žiadne servery, ktoré by uchovávali váš denník, a nikto vo Feeltrackeri si nemôže prečítať, čo píšete. Nie sú tu žiadne reklamy ani sledovanie naprieč aplikáciami. Voliteľné AI funkcie posielajú zápisy, na ktoré sa pýtate, do cloudovej služby rešpektujúcej súkromie, a AI môžete kedykoľvek vypnúť; keď je AI vypnutá, ukazovateľ nálady beží úplne priamo v zariadení pomocou frameworku Natural Language od Applu, a s možnosťou Apple Intelligence beží priamo v zariadení každá AI funkcia."
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "Ako funguje analýza sentimentu?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Počas písania aplikácia analyzuje emocionálny tón vášho záznamu a zobrazuje emotikonu, ktorá naznačuje, či pôsobí pozitívne, negatívne alebo neutrálne. Predvolene sa na to používa AI aplikácie rešpektujúca súkromie; ak AI vypnete, prepne sa na vstavaný framework Apple Natural Language priamo v zariadení."
+                            "text": "Feeltracker Denník ohodnotí emocionálne ladenie každého zápisu počas písania a zobrazí ho ako farebne odlíšený ukazovateľ pod textom, ktorý ide od červenej (negatívne) cez sivú (neutrálne) až po zelenú a modrú (pozitívne). Ukazovateľ je voliteľný a dá sa vypnúť v Nastaveniach. Predvolene používa AI aplikácie rešpektujúcu súkromie; ak AI vypnete, prepne sa na vstavaný framework Natural Language od Applu priamo v zariadení."
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "Čo je analýza frekvencie slov?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Funkcia Trendy analyzuje všetky záznamy, aby ukázala, o ktorých slovách a témach píšete najčastejšie. Pomáha vám identifikovať opakujúce sa témy, obavy alebo záujmy vo vašom myslení."
+                            "text": "Analýza frekvencie slov vo Feeltracker Denník počíta slová naprieč všetkými vašimi zápismi a zoraďuje tie, ktoré používate najčastejšie, takže sa ukážu ľudia, miesta a starosti, ktoré sa vám stále vracajú. Bežné výplňové slová sú vo vašom jazyku vyfiltrované, tie isté dáta sú zobrazené aj ako oblak slov, a klepnutím na ktorékoľvek slovo otvoríte každý zápis, ktorý ho obsahuje."
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "Potrebujem predplatné?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Predplatné nie je potrebné. Aplikácia je zdarma na stiahnutie, všetko sledovanie, grafy, synchronizácia s Apple Health a exporty sú zdarma a každý používateľ má skutočné AI funkcie zdarma každý deň — bez reklám, navždy. Voliteľné predplatné Pro odomkne najpodrobnejšie AI funkcie (Hĺbkový výskum, Prieskumník tém, Časová os sentimentu, Súhrn pre lekára, Pro Chat a ďalšie), spúšťa ich na našej najschopnejšej AI a zvyšuje už aj tak štedré denné limity."
+                            "text": "Nie — Feeltracker Denník je zadarmo na stiahnutie a predplatné nie je potrebné. Písanie, fotografie, šablóny, opakujúce sa zápisy, analýza slov, vyhľadávanie, grafy, zálohy, exporty a synchronizácia s iCloud sú všetky zadarmo, a každý používateľ má každý deň zadarmo aj skutočné AI funkcie (Rýchly chat, Opýtať sa, Hlasové zhrnutie, Rozosmej ma, Upokoj ma, plus skenery textu a predmetov) — bez reklám, navždy. Voliteľné predplatné Pro odomkne najpodrobnejšie AI funkcie (Hĺbkový prieskum, Prieskumník tém, Časovú os nálady, Súhrn pre lekára, Pro chat a ďalšie), spúšťa ich na našej najvýkonnejšej AI a zvyšuje veľkorysé denné limity."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Funguje Feeltracker Denník offline?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Áno — Feeltracker Denník funguje offline pre všetko podstatné: písanie zápisov, pripájanie fotografií, vyhľadávanie, prezeranie roka a zobrazovanie štatistík a grafov beží priamo vo vašom zariadení bez potreby internetového pripojenia. Všetko, čo napíšete offline, sa synchronizuje s vašimi ostatnými zariadeniami cez iCloud, hneď ako sa nabudúce pripojíte. Cloudové AI funkcie potrebujú pripojenie, ale ak zapnete režim Apple Intelligence priamo v zariadení (Pro, na podporovaných zariadeniach s iOS 26 alebo novším), AI funguje aj offline."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Môžem si importovať svoje staré zápisy z denníka?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Áno — Feeltracker Denník importuje zápisy z tabuľky Excel. Stiahnite si šablónu na import z Nastavení, vložte dátum, čas a text každého zápisu, potom súbor importujte a z každého riadku sa stane zápis v denníku. Môžete tiež obnoviť predchádzajúcu zálohu, ktorá vráti späť vaše zápisy aj ich fotografie spolu."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Môžem si zamknúť denník pomocou Face ID?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Áno — Feeltracker Denník môžete zamknúť pomocou Face ID alebo Touch ID cez zámok aplikácií zabudovaný v iOS: podržte ikonu aplikácie na ploche a zvoľte Vyžadovať Face ID. Nastavenia odkazujú na rovnaký postup. Keď je zapnutý, nikto nemôže otvoriť váš denník bez vašej tváre, odtlačku prsta alebo hesla."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Čo sa stane s mojím denníkom, ak stratím telefón?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Váš denník je v bezpečí: Feeltracker Denník synchronizuje každý zápis a fotografiu s vaším súkromným kontom iCloud, takže prihlásenie na novom iPhone, iPade alebo Macu prinesie všetko automaticky späť. Aplikácia tiež vytvára automatickú zálohu približne raz týždenne (ZIP so zápismi a fotografiami), ktorú si môžete kedykoľvek sami obnoviť alebo exportovať, a kedykoľvek si môžete vytvoriť aj manuálnu zálohu."
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/sk/daily-journal/" class="current">Denník</a>
 
-            <a href="/sk/mental-health/">Duševné zdravie</a>
+            <a href="/sk/mood-journal/">Denník nálady</a>
 
             <a href="/sk/sleep/">Spánok</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Ikona aplikácie Denný denník" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Denník — súkromná AI aplikácia na denníkové zápisy pre iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Denný denník</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Žiadne reklamy · Žiadne sledovanie · Súkromie na prvom mieste
         </div>
-        <p class="hero-subtitle">Váš súkromný priestor pre každodenné úvahy, myšlienky a spomienky. Píšte slobodne s analýzou sentimentu pomocou AI, prikladaním fotografií a inteligentnými poznatkami o vašich vzoroch písania.</p>
+        <p class="hero-subtitle">Vaše súkromné miesto na každodenné zamyslenia, myšlienky a spomienky. Píšte tak často, ako chcete, pripojte až 8 fotografií a sledujte témy, ku ktorým sa neustále vraciate, pomocou ukazovateľa nálady, oblaku slov a analýzy frekvencie slov.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sk-black.svg" alt="Stiahnuť Denný denník v App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sk-black.svg" alt="Stiahnuť Denný denník v App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Bezplatná aplikácia s voliteľnými prémiovými funkciami<br>iPhone, iPad a Mac • iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Snímka obrazovky Denný denník 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Snímka obrazovky Denný denník 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Snímka obrazovky Denný denník 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="AI spätná väzba k zápisu v denníku vo Feeltracker Denník" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Snímka obrazovky Denný denník 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Písanie zápisu do denníka s dátumom, časom a poznámkami" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Písanie bez rozptyľovania</h3>
-                <p>Čisté, jednoduché rozhranie, ktoré stavia vaše slová na prvé miesto. Žiadny chaos, len vy a vaše myšlienky. Píšte toľko alebo koľko chcete každý deň.</p>
+                <p>Prehľadný textový editor, ktorý dá vašim slovám prednosť, so živým počítadlom slov počas písania. Klepnutím na AI prepis vylepšíte odsek a zapnutím zobrazovania Markdown si v zozname zápisov vychutnáte nadpisy, tučné písmo a zoznamy.</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Analýza frekvencie slov</h3>
-                <p>Zistite, čo vám naozaj leží na mysli. Pozrite sa, ktoré slová a témy sa najčastejšie objavujú vo vašom písaní, aby ste identifikovali vzory a opakujúce sa myšlienky.</p>
+                <h3>Oblak slov a frekvencia slov</h3>
+                <p>Zistite, čo vám naozaj chodí po hlave. Oblak slov a rebríček frekvencie ukazujú slová, ktoré používate najčastejšie, pričom bežné výplňové slová sú vo vašom jazyku vyfiltrované — klepnutím na ktorékoľvek slovo otvoríte všetky zápisy, ktoré ho spomínajú.</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>Celkový počet slov napísaných za deň, mesiac a rok. Niektoré dni vás prekvapíte sami seba — a sledovanie rastúceho počtu je samo o sebe motiváciou.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Opakujúce sa zápisy</h3>
+                <p>Nastavte si zápisy, ktoré sa vytvoria samy, denne alebo týždenne, takže váš záznam návykov, poznámka o liekoch alebo večerná pripomienka vďačnosti na vás už čaká, keď otvoríte aplikáciu.</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,18 +778,18 @@
         <div class="app-card">
             <h3>2. Pozrite sa, ako vznikajú vzory</h3>
             <div class="app-card-content">
-<p><strong>Analýza sentimentu:</strong> AI automaticky detekuje emocionálny tón vašich zápisov – pozitívny, negatívny alebo neutrálny. Pozrite sa na trendy nálady vizualizované za týždne a mesiace, aby ste pochopili emocionálne vzory.</p>
-<p><strong>Frekvencia slov:</strong> Zistite, o ktorých témach, ľuďoch alebo témach píšete najčastejšie. Aplikácia identifikuje opakujúce sa slová a frázy, odhaľujúc, čo je konzistentne na vašej mysli a ako sa vaše zameranie mení v priebehu času.</p>
-<p><strong>Kalendárny pohľad:</strong> Prehliadajte celú históriu písania denníka v kalendárnom rozhraní. Každý deň zobrazuje úryvok a ukazovateľ nálady. Rýchlo prejdite na akýkoľvek minulý záznam, aby ste videli, čo ste si mysleli v ten deň.</p>
+<p><strong>Ukazovateľ nálady:</strong> Počas písania voliteľný farebne odlíšený ukazovateľ hodnotí emocionálne ladenie zápisu, od negatívneho cez neutrálne až po pozitívne. Pro pridáva Časovú os nálady, ktorá zobrazuje, ako sa toto ladenie mení počas týždňov a mesiacov.</p>
+<p><strong>Frekvencia slov:</strong> Zistite, o akých témach, ľuďoch alebo motívoch píšete najčastejšie. Oblak slov a rebríček frekvencie odhalia, čo vám neustále chodí po hlave, a klepnutím na slovo otvoríte všetky zápisy, ktoré ho používajú.</p>
+<p><strong>Zobrazenie podľa roka, mesiaca a dňa:</strong> Prezerajte si celú svoju históriu písania, od ročnej mapy dní, keď ste si písali, až po jediný deň. Každý deň zobrazuje vaše zápisy v plnom znení, spolu so záznamom a počtom slov, takže sa rovno dostanete k tomu, na čo ste v ktorýkoľvek deň mysleli.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Premýšľajte a rastite</h3>
             <div class="app-card-content">
-<p><strong>Poznatky pomocou AI:</strong> Pýtajte sa na váš denník: „Aké boli moje najšťastnejšie dni minulý mesiac?" alebo „Ukáž mi všetky záznamy, kde som spomínal ciele." Získajte okamžité, premyslené odpovede, ktoré vám pomôžu pochopiť vašu cestu.</p>
-<p><strong>Sledovanie osobného rastu:</strong> Pozrite si, ako sa vaše myšlienky, obavy a túžby vyvíjajú. Sledujte pokrok k cieľom spomínaným v minulých zápisoch. Identifikujte oblasti rastu a oslavujte, ako ďaleko ste sa dostali.</p>
-<p><strong>Vyhľadajte všetko:</strong> Výkonné vyhľadávanie nájde akékoľvek slovo, frázu alebo koncept naprieč rokmi písania denníka. Filtrujte podľa dátumu, nálady alebo kľúčových slov. Celá vaša písaná história je okamžite dostupná a prehľadávateľná.</p>
+<p><strong>AI prehľady:</strong> Pýtajte sa na svoj denník: "Aké boli moje najšťastnejšie dni minulý mesiac?" alebo "Ukáž mi všetky zápisy, kde spomínam svoje ciele." Získajte okamžité, premyslené odpovede, ktoré vám pomôžu lepšie pochopiť vašu cestu.</p>
+<p><strong>Sledovanie osobného rastu:</strong> Sledujte, ako sa vaše myšlienky, obavy a túžby vyvíjajú. Sledujte pokrok smerom k cieľom spomínaným v minulých zápisoch. Identifikujte oblasti rastu a oslávte, ako ďaleko ste sa dostali.</p>
+<p><strong>Vyhľadávajte všetko:</strong> Vyhľadajte akékoľvek slovo naprieč rokmi písania, zúžte to na konkrétne obdobie a preskočte priamo na zodpovedajúce zápisy. Váš denník je indexovaný aj v iOS Spotlight, takže ho nájdete aj vyhľadávaním z plochy.</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Položiť otázku</h4>
+                <h3><i class="fas fa-question-circle"></i> Položiť otázku</h3>
                 <p>Rýchle otázky a odpovede o zápisoch v denníku – okamžité odpovede o vašom písaní</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Veďte interaktívne rozhovory o svojej ceste písania denníka a získajte personalizované odporúčania. Quick Chat je zdarma každý deň; Pro Chat ide do hĺbky na našej najschopnejšej AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Hlasové zhrnutie</h4>
+                <h3><i class="fas fa-volume-up"></i> Hlasové zhrnutie</h3>
                 <p>Počúvajte zvukové zhrnutia tém v denníku – perfektné na reflexiu počas pohybu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> AI skenovanie</h4>
+                <h3><i class="fas fa-barcode-scan"></i> AI skenovanie</h3>
                 <p>Skenujte objekty, dokumenty, účtenky alebo text na vytváranie okamžitých zápisov s AI opismi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Rozosmi ma</h4>
+                <h3><i class="fas fa-laugh"></i> Rozosmi ma</h3>
                 <p>Získajte personalizovaný humor zo zápisov v denníku, aby ste si spríjemnili deň</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Upokojte ma</h4>
+                <h3><i class="fas fa-moon"></i> Upokojte ma</h3>
                 <p>Dychové a relaxačné cvičenia vedené AI na zníženie stresu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Hĺbkový výskum <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Hĺbkový výskum <span class="ai-pro-badge">Pro</span></h3>
                 <p>Komplexná AI analýza vášho denníka s podrobnými poznatkami</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detektív vzorov <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detektív vzorov <span class="ai-pro-badge">Pro</span></h3>
                 <p>Nájdite skryté témy a vzory v zápisoch denníka v priebehu času</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistent cieľov <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistent cieľov <span class="ai-pro-badge">Pro</span></h3>
                 <p>Získajte personalizované životné ciele na základe vašich vzoroch písania denníka</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Zhrnutie pre lekára <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Zhrnutie pre lekára <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generujte profesionálne zhrnutia na zdieľanie pri zdravotníckych návštevách</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> PN lístok <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> PN lístok <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI generované PN lístky do práce alebo školy, keď ich potrebujete</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generátor príbehov <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generátor príbehov <span class="ai-pro-badge">Pro</span></h3>
                 <p>Premeňte záznamy denníka na kreatívne, pútavé príbehy</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Textové zhrnutie <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Textové zhrnutie <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vytvorte zdieľateľné zhrnutia tém denníka v textovej správe</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Osobný kvíz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Osobný kvíz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Otestujte si vedomosti zábavným AI kvízom s 10 otázkami o vašich údajoch</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Prevod textu na reč <span class="ai-pro-badge">Pro</span></h4>
-                <p>Počúvajte AI poznatky a zhrnutia s prirozeným hlasovým prehravaním</p>
+                <h3><i class="fas fa-microphone"></i> Hovorená spätná väzba <span class="ai-pro-badge">Pro</span></h3>
+                <p>Krátka hlasová poznámka od AI po každom uložení, reagujúca na to, čo ste práve napísali</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Prispôsobená zdravotná správa <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Prispôsobená zdravotná správa <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vytvorte komplexné, personalizované dokumenty na sledovanie pokroku v denníku</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Prieskumník tém <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Prieskumník tém <span class="ai-pro-badge">Pro</span></h3>
                 <p>Objavte opakujúce sa témy a nápady vo vašom písaní pomocou AI analýzy tém</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Časová os sentimentu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Časová os sentimentu <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vizualizujte emocionálnu cestu v priebehu času so sledovaním sentimentu analyzovaným pomocou AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (na zariadení) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (na zariadení) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Súkromná možnosť, ktorá spúšťa AI lokálne vo vašom zariadení pomocou Apple Foundation Models — nič neopúšťa váš iPhone, iPad ani Mac. Neobmedzené používanie s plateným účtom na podporovaných zariadeniach s Apple Silicon (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Hlasový chat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Hlasový chat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obojsmerné hlasové rozhovory s AI o vašich údajoch bez použitia rúk — pýtajte sa otázky a počúvajte odpovede bez dotyku obrazovky</p>
             </div>
 
@@ -939,7 +985,7 @@
         <p>Precvičujte každodenné písanie, zachytávajte nápady a rozvíjajte hlas. Rozhranie bez rozptyľovania vám pomáha sústrediť sa na remeslo.</p>
 
         <h3>Duševné zdravie</h3>
-        <p>Spracujte emócie, identifikujte spúšťače a sledujte vzory nálady prostredníctvom písania. Analýza sentimentu poskytuje objektívnu spätnú väzbu o emocionálnom tóne.</p>
+        <p>Prepíšte sa cez náročný deň, všimnite si, čo sa stále opakuje, a pozrite sa späť, ako to bolo pred mesiacom. Ukazovateľ nálady vám dá jednoduchý prehľad o emocionálnom ladení každého zápisu.</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>Je môj denník súkromný?</h3>
-        <p>Rozhodne áno. Vaše záznamy sú uložené vo vašom zariadení a vo vašom súkromnom účte iCloud — nemáme žiadne servery, ktoré by uchovávali váš denník, a nikdy nevidíme vaše písanie. Voliteľné AI funkcie používajú cloudovú AI rešpektujúcu súkromie, ktorú môžete kedykoľvek vypnúť; keď je AI vypnutá, analýza sentimentu prebieha úplne v zariadení pomocou frameworku Apple Natural Language, a s možnosťou Apple Intelligence beží všetka AI priamo v zariadení.</p>
+        <p>Áno — Feeltracker Denník uchováva vaše zápisy vo vašom zariadení a vo vašom súkromnom konte iCloud, takže nemáme žiadne servery, ktoré by uchovávali váš denník, a nikto vo Feeltrackeri si nemôže prečítať, čo píšete. Nie sú tu žiadne reklamy ani sledovanie naprieč aplikáciami. Voliteľné AI funkcie posielajú zápisy, na ktoré sa pýtate, do cloudovej služby rešpektujúcej súkromie, a AI môžete kedykoľvek vypnúť; keď je AI vypnutá, ukazovateľ nálady beží úplne priamo v zariadení pomocou frameworku Natural Language od Applu, a s možnosťou Apple Intelligence beží priamo v zariadení každá AI funkcia.</p>
 
 
         <h3>Ako funguje analýza sentimentu?</h3>
-        <p>Počas písania aplikácia analyzuje emocionálny tón vášho záznamu a zobrazuje emotikonu, ktorá naznačuje, či pôsobí pozitívne, negatívne alebo neutrálne. Predvolene sa na to používa AI aplikácie rešpektujúca súkromie; ak AI vypnete, prepne sa na vstavaný framework Apple Natural Language priamo v zariadení.</p>
+        <p>Feeltracker Denník ohodnotí emocionálne ladenie každého zápisu počas písania a zobrazí ho ako farebne odlíšený ukazovateľ pod textom, ktorý ide od červenej (negatívne) cez sivú (neutrálne) až po zelenú a modrú (pozitívne). Ukazovateľ je voliteľný a dá sa vypnúť v Nastaveniach. Predvolene používa AI aplikácie rešpektujúcu súkromie; ak AI vypnete, prepne sa na vstavaný framework Natural Language od Applu priamo v zariadení.</p>
 
 
         <h3>Čo je analýza frekvencie slov?</h3>
-        <p>Funkcia Trendy analyzuje všetky záznamy, aby ukázala, o ktorých slovách a témach píšete najčastejšie. Pomáha vám identifikovať opakujúce sa témy, obavy alebo záujmy vo vašom myslení.</p>
+        <p>Analýza frekvencie slov vo Feeltracker Denník počíta slová naprieč všetkými vašimi zápismi a zoraďuje tie, ktoré používate najčastejšie, takže sa ukážu ľudia, miesta a starosti, ktoré sa vám stále vracajú. Bežné výplňové slová sú vo vašom jazyku vyfiltrované, tie isté dáta sú zobrazené aj ako oblak slov, a klepnutím na ktorékoľvek slovo otvoríte každý zápis, ktorý ho obsahuje.</p>
 
 
         <h3>Môžem pridávať fotografie do denníka?</h3>
@@ -987,7 +1033,23 @@
 
 
         <h3>Potrebujem predplatné?</h3>
-        <p>Predplatné nie je potrebné. Aplikácia je zdarma na stiahnutie, všetko sledovanie, grafy, synchronizácia s Apple Health a exporty sú zdarma a každý používateľ má skutočné AI funkcie zdarma každý deň — bez reklám, navždy. Voliteľné predplatné Pro odomkne najpodrobnejšie AI funkcie (Hĺbkový výskum, Prieskumník tém, Časová os sentimentu, Súhrn pre lekára, Pro Chat a ďalšie), spúšťa ich na našej najschopnejšej AI a zvyšuje už aj tak štedré denné limity.</p>
+        <p>Nie — Feeltracker Denník je zadarmo na stiahnutie a predplatné nie je potrebné. Písanie, fotografie, šablóny, opakujúce sa zápisy, analýza slov, vyhľadávanie, grafy, zálohy, exporty a synchronizácia s iCloud sú všetky zadarmo, a každý používateľ má každý deň zadarmo aj skutočné AI funkcie (Rýchly chat, Opýtať sa, Hlasové zhrnutie, Rozosmej ma, Upokoj ma, plus skenery textu a predmetov) — bez reklám, navždy. Voliteľné predplatné Pro odomkne najpodrobnejšie AI funkcie (Hĺbkový prieskum, Prieskumník tém, Časovú os nálady, Súhrn pre lekára, Pro chat a ďalšie), spúšťa ich na našej najvýkonnejšej AI a zvyšuje veľkorysé denné limity.</p>
+
+
+        <h3>Funguje Feeltracker Denník offline?</h3>
+        <p>Áno — Feeltracker Denník funguje offline pre všetko podstatné: písanie zápisov, pripájanie fotografií, vyhľadávanie, prezeranie roka a zobrazovanie štatistík a grafov beží priamo vo vašom zariadení bez potreby internetového pripojenia. Všetko, čo napíšete offline, sa synchronizuje s vašimi ostatnými zariadeniami cez iCloud, hneď ako sa nabudúce pripojíte. Cloudové AI funkcie potrebujú pripojenie, ale ak zapnete režim Apple Intelligence priamo v zariadení (Pro, na podporovaných zariadeniach s iOS 26 alebo novším), AI funguje aj offline.</p>
+
+
+        <h3>Môžem si importovať svoje staré zápisy z denníka?</h3>
+        <p>Áno — Feeltracker Denník importuje zápisy z tabuľky Excel. Stiahnite si šablónu na import z Nastavení, vložte dátum, čas a text každého zápisu, potom súbor importujte a z každého riadku sa stane zápis v denníku. Môžete tiež obnoviť predchádzajúcu zálohu, ktorá vráti späť vaše zápisy aj ich fotografie spolu.</p>
+
+
+        <h3>Môžem si zamknúť denník pomocou Face ID?</h3>
+        <p>Áno — Feeltracker Denník môžete zamknúť pomocou Face ID alebo Touch ID cez zámok aplikácií zabudovaný v iOS: podržte ikonu aplikácie na ploche a zvoľte <strong>Vyžadovať Face ID</strong>. Nastavenia odkazujú na rovnaký postup. Keď je zapnutý, nikto nemôže otvoriť váš denník bez vašej tváre, odtlačku prsta alebo hesla.</p>
+
+
+        <h3>Čo sa stane s mojím denníkom, ak stratím telefón?</h3>
+        <p>Váš denník je v bezpečí: Feeltracker Denník synchronizuje každý zápis a fotografiu s vaším súkromným kontom iCloud, takže prihlásenie na novom iPhone, iPade alebo Macu prinesie všetko automaticky späť. Aplikácia tiež vytvára automatickú zálohu približne raz týždenne (ZIP so zápismi a fotografiami), ktorú si môžete kedykoľvek sami obnoviť alebo exportovať, a kedykoľvek si môžete vytvoriť aj manuálnu zálohu.</p>
 
     </section>
 
@@ -1184,22 +1246,22 @@
         <div class="related-apps-grid">
 
             <a href="/sk/blood-pressure/" class="related-app-card" aria-label="Krvný tlak">
-                <img src="/images/BPT_1024.png" alt="Krvný tlak" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Krvný tlak" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Krvný tlak</span>
             </a>
 
-            <a href="/sk/mental-health/" class="related-app-card" aria-label="Duševné zdravie">
-                <img src="/images/FT_1024.png" alt="Duševné zdravie" class="related-app-icon">
-                <span class="related-app-name">Duševné zdravie</span>
+            <a href="/sk/mood-journal/" class="related-app-card" aria-label="Denník nálady">
+                <img src="/images/FT_1024.png" alt="Denník nálady" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Denník nálady</span>
             </a>
 
             <a href="/sk/sleep/" class="related-app-card" aria-label="Spánok">
-                <img src="/images/ST_1024.png" alt="Spánok" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Spánok" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Spánok</span>
             </a>
 
             <a href="/sk/weight/" class="related-app-card" aria-label="Váha">
-                <img src="/images/WT_1024.png" alt="Váha" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Váha" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Váha</span>
             </a>
 
@@ -1212,9 +1274,10 @@
         <h2>Začnite praktiku písania denníka ešte dnes</h2>
         <p>Pridajte sa k tisícom objavujúcim výhody každodennej reflexie</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sk-black.svg" alt="Stiahnuť Denný denník"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sk-black.svg" alt="Stiahnuť Denný denník" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

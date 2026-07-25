@@ -51,8 +51,9 @@
 <body>
 {{> nav}}
 
+<main>
     <section class="hero">
-        <img src="{{hero.image}}" alt="{{hero.imageAlt}}" class="hero-app-icon">
+        <img src="{{hero.image}}" alt="{{hero.imageAlt}}" class="hero-app-icon" width="120" height="120" fetchpriority="high" decoding="async">
         <h1>{{hero.title}}</h1>
         <p class="hero-subtitle">{{hero.subtitle}}</p>
     </section>
@@ -81,11 +82,12 @@
             <h2>{{cta.title}}</h2>
             <p>{{cta.subtitle}}</p>
             <a href="{{cta.appStoreUrl}}" class="cta-button">
-                <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{cta.buttonAlt}}"></picture>
+                <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{cta.buttonAlt}}" width="120" height="40" loading="lazy" decoding="async"></picture>
             </a>
             <p class="hero-platform-info">{{cta.platformInfo}}</p>
         </div>
     </section>
+</main>
 
 {{> cookie-consent}}
 <script>

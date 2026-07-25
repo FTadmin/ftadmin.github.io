@@ -38,9 +38,9 @@
     <meta name="apple-itunes-app" content="app-id=1065268459">
 
     <!-- Primary Meta Tags -->
-    <title>Uni ja unet - päiväkirja, CPAP ja AI-analyysi | Feeltracker</title>
-    <meta name="description" content="Paranna unta AI-unien analyysillä ja CPAP-seurannalla. Kirjaa nukkumisajat, seuraa kaavoja, synkronoi Apple Health -palveluun. Parempi lepo iPhone:lla, iPad:lla ja Mac:lla.">
-    <meta name="keywords" content="uni,päiväkirja,睡眠监测,seuranta,oma,apnea,monitori,unelma,loki,nokoset,cpap,睡眠,apple,laskuri,tutkimus,sueño,lucid,сон">
+    <title>Unipäiväkirja, unien päiväkirja ja CPAP-loki | Feeltracker</title>
+    <meta name="description" content="Unipäiväkirja ja unien päiväkirja iPhonelle: kirjaa nukkumaanmenoaika ja heräämisaika, saa ilmainen tekoälyn unianalyysi ja synkronoi Apple Healthin kanssa. Ei vaadi puettavaa laitetta.">
+    <meta name="keywords" content="unipäiväkirja,unien päiväkirja,unenseuranta,unikirjaus,unianalyysi,cpap-loki,uniapnea-päiväkirja,päiväunien seuranta,apple health uni,unipäiväkirjasovellus">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/fi/sleep/">
 
@@ -114,8 +114,8 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fi_FI">
     <meta property="og:url" content="https://feeltracker.com/fi/sleep/">
-    <meta property="og:title" content="Uni & Unet | Seuraa unirytmiä AI:n avulla | Feeltracker">
-    <meta property="og:description" content="Seuraa unta AI-unianalyysin, CPAP-terapiaseurannan, rentoutumistyökalujen ja Apple Health -integraation avulla.">
+    <meta property="og:title" content="Uni & Unet | Unipäiväkirja ja unien päiväkirja | Feeltracker">
+    <meta property="og:description" content="Kirjaa nukkumis- ja heräämisajat, pidä unipäiväkirjaa ja saa tekoälyn unianalyysi ilmaiseksi joka päivä. Toimii Apple Healthin kanssa. Ei vaadi puettavaa laitetta.">
     <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
 
     <meta property="og:image:width" content="1024">
@@ -125,8 +125,8 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://feeltracker.com/fi/sleep/">
-    <meta property="twitter:title" content="Uni & Unet | Seuraa unirytmiä AI:n avulla | Feeltracker">
-    <meta property="twitter:description" content="Seuraa unta AI-unianalyysin, CPAP-terapiaseurannan ja rentoutumistyökalujen avulla.">
+    <meta property="twitter:title" content="Uni & Unet | Unipäiväkirja ja unien päiväkirja | Feeltracker">
+    <meta property="twitter:description" content="Unipäiväkirja ja unien päiväkirja, jossa on ilmainen tekoälyn unianalyysi ja Apple Health -synkronointi.">
     <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
 
     <link rel="stylesheet" href="/shared.css">
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -149,7 +150,7 @@
           "applicationCategory": "HealthApplication",
           "applicationSubCategory": "Sleep Tracker",
           "operatingSystem": "iOS 16.0 tai uudempi",
-          "description": "Seuraa unikuvioita ja -laatua AI-pohjaisella unianalyyysillä, CPAP-hoidon seurannalla, rentoutustyökaluilla ja Apple Health -integraatiolla. Kirjaa nukkumis- ja heräämisajat, seuraa kestotrendejä ja selvitä, mikä vaikuttaa lepoosiisi.",
+          "description": "Manuaalinen unipäiväkirja ja unien päiväkirja: kirjaa nukkumaanmenoaika ja heräämisaika, saa unen kesto laskettuna puolestasi, säilytä unesi valokuvien kanssa ja lue ne ilmaisella tekoälyn unianalyysillä. Synkronoituu Apple Healthin kanssa ja vie PDF-, CSV-, Excel- ja JSON-muotoon.",
           "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -167,16 +168,19 @@
                 "name": "Custom Arts"
           },
           "featureList": [
-                "AI-pohjainen unien analyysi ja tulkinta",
-                "CPAP-hoidon seuranta AHI-seurannalla",
-                "Apple Health -kaksisuuntainen synkronointi",
-                "AI-pohjainen unikuvioiden tunnistus",
-                "Vienti PDF- ja Excel-muotoon",
-                "Rentoutus- ja hengitysharjoitukset",
-                "Unen keston ja laadun seuranta",
-                "Nokkaunen ja useiden unisessioiden kirjaaminen",
-                "iCloud-varmuuskopiointi ja synkronointi",
-                "32 kielen tuki",
+                "Manuaalinen nukkumaanmeno- ja heräämisajan kirjaus automaattisesti lasketulla kestolla",
+                "Unien päiväkirja merkintöjen muistiinpanoissa, valokuvaliitteillä",
+                "Pika-unianalyysi, ilmainen joka päivä",
+                "Pro-unianalyysi jungilaisilla, freudilaisilla, neurotieteellisillä tai henkisillä tulkinnoilla",
+                "CPAP-raportti (Pro): tekoälyn yhteenveto kirjaamistasi CPAP-tunneista, AHI:sta ja maskimuistiinpanoista",
+                "Apple Health -unen tuonti ja vienti, valinnaisella automaattisella tuonnilla",
+                "Unen keston, nukkumaanmenoajan ja heräämisajan kaaviot tavoiteviivalla",
+                "Sanapohjaiset unitrendit ja keskiarvot miltä tahansa aikaväliltä",
+                "Päiväunien ja useiden unijaksojen kirjaus",
+                "Vienti PDF-, CSV-, Excel- ja JSON-muotoon",
+                "Siri-pikakomento unimerkinnän lisäämiseen",
+                "iCloud-synkronointi ja viikoittaiset automaattiset varmuuskopiot",
+                "Tuki 32 kielelle",
                 "Kotinäytön widgetit nopeaa kirjaamista varten"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/st-1.png",
@@ -358,7 +362,7 @@
                       "name": "Kuinka paljon unta tarvitsen?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Useimmat aikuiset tarvitsevat 7–9 tuntia unta yössä, vaikka yksilölliset tarpeet vaihtelevat. Sovellus auttaa seuraamaan unen kestoa ja tunnistamaan henkilökohtaisen optimaalisen määräsi sen perusteella, miltä sinusta tuntuu."
+                            "text": "Useimmat aikuiset tarvitsevat 7–9 tuntia unta yössä, vaikka yksilölliset tarpeet vaihtelevat. Feeltracker Uni & Unet antaa sinun asettaa oman tavoitteesi tunteina, näyttää sen viitteenä kaavioissasi ja seuraa, kuinka lähelle kukin yö pääsee – jotta löydät määrän, joka todella saa sinut tuntemaan olosi levänneeksi."
                       }
                 },
                 {
@@ -366,7 +370,7 @@
                       "name": "Seuraaako sovellus unta automaattisesti?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ei. Toisin kuin Apple Watch tai muut puettavat laitteet, Unikirja edellyttää manuaalista kirjausta. Syötät nukkumis- ja heräämisaikasi joka aamu. Voit kuitenkin tuoda unidataa Apple Healthista, jos käytät muita automaattisia seurantalaitteita."
+                            "text": "Ei – Feeltracker Uni & Unet on manuaalinen unipäiväkirja: syötät nukkumaanmenoaikasi ja heräämisaikasi itse, ja sovellus laskee keston puolestasi. Siinä ei ole antureita, se ei kuuntele nukkuessasi eikä havaitse apneatapahtumia itsenäisesti. Jos jokin laite jo tallentaa unesi, voit tuoda nuo yöt Apple Healthista sen sijaan, että kirjoittaisit ne."
                       }
                 },
                 {
@@ -374,7 +378,7 @@
                       "name": "Voinko kirjata päiväunet?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kyllä. Voit kirjata useita unijaksoja päivässä, mukaan lukien päiväunet. Jokainen merkintä näyttää keston, ja kalenteri näyttää kaikki nukkumis- ja heräämisaikasi."
+                            "text": "Kyllä – voit kirjata niin monta unijaksoa päivässä kuin haluat Feeltracker Uni & Unet -sovelluksessa, mukaan lukien päiväunet sekä jaetut tai keskeytyneet yöt. Jokainen merkintä näyttää oman kestonsa, päivänäkymä laskee ne yhteen, ja vuorotyöläiset voivat kirjata iltapäiväunen aivan kuten yöunen."
                       }
                 },
                 {
@@ -382,7 +386,7 @@
                       "name": "Mitä eroa tällä on Apple Healthiin verrattuna?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Unikirja tarjoaa erityisen käyttöliittymän unenseurantaan ominaisuuksilla, jotka on suunniteltu erityisesti unirytmien hallintaan – muistiinpanot, AI-havainnot, trendit ja helppo manuaalinen kirjaus. Se integroituu Apple Healthiin, mutta tarjoaa yksityiskohtaisempia uneen keskittyviä ominaisuuksia."
+                            "text": "Apple Health tallentaa unilukemat; Feeltracker Uni & Unet antaa niille päiväkirjan. Saat unipäiväkirjan valokuvineen, muistiinpanot siitä, mikä muovasi kunkin yön, tekoälyn unianalyysin, sanapohjaiset trendit, unitavoiteviivan sekä PDF- tai Excel-viennit lääkärillesi. Nämä kaksi toimivat yhdessä – tuo Apple Healthista, tai lähetä merkintäsi takaisin sinne."
                       }
                 },
                 {
@@ -390,7 +394,7 @@
                       "name": "Miten AI auttaa unitietojen tulkinnassa?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kun lisäät muistiinpanoja päivästäsi (esim. \"join kahvia klo 20\" tai \"harjoittelin aamulla\"), AI analysoi näitä ajan myötä osoittaakseen korrelaatiot unesi keston ja laadun kanssa. Tämä auttaa tunnistamaan, mikä edistää tai häiritsee hyvää unta."
+                            "text": "Feeltracker Uni & Unet -sovelluksen tekoäly lukee kirjoittamasi muistiinpanot unesi ajankohtien rinnalla ja osoittaa, mitä niillä on yhteistä. Merkitse \"kahvia klo 20\" tai \"lenkki tänä aamuna\" tarpeeksi usein, niin Trendit näyttää keskimääräisen unesi kummallekin sanalle, ja tekoälyominaisuudet voivat pukea korrelaation sanoiksi – ilmainen joka päivä kysymyksille ja pikavastauksille, ja syvemmin Pron kanssa."
                       }
                 },
                 {
@@ -398,7 +402,7 @@
                       "name": "Voinko jakaa unidataa lääkärini kanssa?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kyllä. Vie unihistoriasi PDF-, CSV-, Excel- tai JSON-raportteina jaettavaksi terveydenhuollon ammattilaisten kanssa. Tämä on erityisen hyödyllistä, jos sinua tutkitaan unihäiriöiden tai unettomuuden vuoksi."
+                            "text": "Kyllä – Feeltracker Uni & Unet vie unihistoriasi PDF-, CSV-, Excel- tai JSON-muodossa, valmiina lähetettäväksi sähköpostitse tai annettavaksi tapaamisessa. Viennit sisältävät nukkumaanmenoaikasi, heräämisaikasi, yölliset kokonaismäärät ja muistiinpanot, mikä on juuri sitä, mitä unipoliklinikka tai CPAP-tarkastus yleensä pyytää sinua tuomaan."
                       }
                 },
                 {
@@ -406,7 +410,7 @@
                       "name": "Seurataanko unen laatua vai pelkästään kestoa?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sovellus seuraa ensisijaisesti unen kestoa (nukuttuja tunteja) kirjattujen nukkumis- ja heräämisaikojen perusteella. Voit lisätä muistiinpanoja unen laadusta, unista tai siitä, kuinka virkeältä tunnet olosi, mikä auttaa laadullisessa seurannassa."
+                            "text": "Feeltracker Uni & Unet seuraa kestoa tarkasti ja laatua omin sanoin. Nukkumaanmenoaika, heräämisaika ja kokonaisuni ovat lukuja, jotka se laskee; se, kuinka levänneeksi tunsit itsesi, kuinka kauan nukahtaminen kesti ja mikä häiritsi sinua, kirjoitetaan muistiinpanoihin, joista tekoäly voi ne lukea. Automaattista unipisteytystä ei ole – sovelluksessa ei ole antureita, joista sellaisen voisi laskea."
                       }
                 },
                 {
@@ -414,7 +418,7 @@
                       "name": "Onko muistutus unen kirjaamiseen?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kyllä. Voit asettaa päivittäisiä muistutuksia uniaikojesi kirjaamiseen. Monet käyttäjät asettavat aamumuistutuksen, joka kehottaa kirjaamaan edellisen yön unen."
+                            "text": "Kyllä – Feeltracker Uni & Unet voi lähettää päivittäisen muistutuksen valitsemaanasi kellonaikana, valitsemiesi viikonpäivien mukaan. Useimmat asettavat sen hieman tavanomaisen heräämisensä jälkeen, jolloin yö on vielä tuoreessa muistissa – mikä on erityisen tärkeää, jos kirjoitat unta muistiin."
                       }
                 },
                 {
@@ -422,7 +426,7 @@
                       "name": "Näytetäänkö mainoksia tai seurataanko minua?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ei. Olemme poistaneet kaikki mainokset sovelluksesta kokonaan. Emme seuraa sinua muissa sovelluksissa tai verkkosivustoilla, emmekä koskaan myy tietojasi mainostajille. Tietosi synkronoituvat iCloudin kautta – aivan kuten Apple Notes ja Kuvat. Tämä tarkoittaa, että meidän ei tarvitse tietää sähköpostiosoitettasi, nimeäsi tai mitään henkilökohtaisia tietojasi. Unidatasi tallennetaan laitteillesi ja iCloud-tilillesi, ja se on täysin yksityistä riippumatta siitä, käytätkö ilmaista vai premium-versiota."
+                            "text": "Ei. Feeltracker Uni & Unet -sovelluksessa ei ole lainkaan mainoksia. Emme seuraa sinua muissa sovelluksissa tai verkkosivuilla, emmekä koskaan myy tietojasi mainostajille. Tietosi synkronoituvat iCloudin kautta – aivan kuten Apple Notesin ja Kuvienkin. Tämä tarkoittaa, että meillä ei ole tarvetta tietää sähköpostiosoitettasi, nimeäsi tai mitään henkilökohtaisia tietojasi. Unitietosi tallennetaan laitteillesi ja iCloud-tiliisi, ja ne ovat täysin yksityisiä käytätpä ilmaisversiota tai premium-versiota."
                       }
                 },
                 {
@@ -430,7 +434,39 @@
                       "name": "Tarvitsenko tilauksen?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Tilausta ei tarvita. Sovellus on ilmainen ladata, kaikki seuranta, kaaviot, Apple Health -synkronointi ja vienti ovat ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Pro-unianalyysi, CPAP-raportti, Syvällinen tutkimus, Lääkäriyhteenveto, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja."
+                            "text": "Ei – Feeltracker Uni & Unet on ilmainen ladata, ja jokainen käyttäjä saa aidon tekoälyn ilmaiseksi joka päivä, ilman mainoksia. Kaikki unikirjaus, kaaviot, tilastot, Apple Health -synkronointi ja vienti ovat ilmaisia, samoin kuin Pika-unianalyysi, Pika-chat, Kysy kysymys, Rauhoita minua unille ja Naurata minua. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet – Pro-unianalyysin, CPAP-raportin, Syvällisen tutkimuksen, Lääkäriyhteenvedon, Kuvioetsijän, Pro-chatin ja muut – ja nostaa päivittäisiä rajoja."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Voinko tuoda unen Apple Watchistani?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kyllä – Feeltracker Uni & Unet tuo unen, jonka Apple Watchisi on tallentanut Apple Healthin kautta, joten sinun ei tarvitse kirjoittaa uudelleen öitä, jotka kellosi on jo tallentanut. Myönnä lukuoikeus kerran, niin voit tuoda historiasi, tai kytke automaattinen tuonti päälle, jolloin uudet yöt saapuvat itsestään. Kun kellosi on tallentanut kevyen, REM- ja syvän unen vaiheet, sovellus käyttää niitä selvittääkseen, mistä ja mihin kukin yö alkoi ja päättyi."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mitä tekoälyn unianalyysi oikeastaan tekee?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kirjoitat unen merkintäsi muistiinpanoihin, ja Feeltracker Uni & Unet kysyy tekoälyltä, mitä se saattaisi tarkoittaa. Pika-unianalyysi on ilmainen joka päivä ja palauttaa kolmesta viiteen keskeistä symbolia ja mahdollista merkitystä, unen tunnesävyn sekä pari pohdittavaa kysymystä – ja voit kysyä jatkokysymyksen. Pro-unianalyysi menee pidemmälle: voit valita jungilaisen, freudilaisen, neurotieteellisen tai henkisen näkökulman, ja se rakentaa henkilökohtaisen symbolisanakirjan ajan mittaan kirjaamistasi unista. Se on kirjoitettu itsereflektiota ja yleistä kiinnostusta varten, ei psykologisena neuvona."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Yhdistyykö CPAP-raportti CPAP-laitteeseeni?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ei – Feeltracker Uni & Unet -sovelluksen CPAP-raportti lukee sen, mitä kirjaat, ei laitettasi. Bluetooth-parittamista tai SD-korttituontia ei ole. Merkitset yölliseen merkintääsi luvut, jotka CPAP-laitteesi jo näyttää sinulle – käyttötunnit, AHI, maski- tai vuoto-ongelmat – vastaat kolmeen valinnaiseen kysymykseen maskin istuvuudesta, vuodoista ja siitä, kuinka levänneeksi tunnet itsesi, ja Pro-raportti muuttaa kaiken tämän yhteenvedoksi hoitomyöntyvyydestä, AHI-trendistä ja maskin istuvuudesta, jonka voit lukea tai tuoda seuraavaan tapaamiseesi."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Onko unipäiväkirjani yksityinen?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Unipäiväkirjasi pysyy laitteillasi ja omassa iCloud-tilissäsi – Feeltracker Uni & Unet -sovelluksessa ei ole tiliä luotavana, joten emme koskaan näe nimeäsi tai sähköpostiasi. Mikään ei poistu laitteeltasi ennen kuin napautat tekoälyominaisuutta, ja silloinkin vain se, mitä kyseinen ominaisuus tarvitsee: valitsemasi aikavälin merkinnät sekä profiilitiedot, jotka olet valinnut jakaa, ja jotka voit kytkeä pois tekoälyasetuksista. Voit myös ajaa tekoälyn kokonaan laitteella Apple Intelligencellä tuetulla laitteistolla, jolloin mikään ei poistu iPhonestasi, iPadistasi tai Macistasi lainkaan."
                       }
                 }
           ]
@@ -448,7 +484,7 @@
 
             <a href="/fi/daily-journal/">Päiväkirja</a>
 
-            <a href="/fi/mental-health/">Mielenterveys</a>
+            <a href="/fi/mood-journal/">Mielialapäiväkirja</a>
 
             <a href="/fi/sleep/" class="current">Uni</a>
 
@@ -533,22 +569,23 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/ST_1024.png" alt="Uni & Unet -sovelluksen kuvake" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/ST_1024.png" alt="Uni & Unet -sovelluksen kuvake" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Uni & Unet</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Ei mainoksia · Ei seurantaa · Yksityisyys ensin
         </div>
-        <p class="hero-subtitle">Seuraa unirytmiäsi ja selvitä, mikä vaikuttaa unenlaatusi. Sovelluksessa on AI-pohjainen unianalyysi, CPAP-terapiaseuranta, rentoutumistyökalut ja Apple Health -integraatio, jotka auttavat sinua nukkumaan paremmin.</p>
+        <p class="hero-subtitle">Kirjaa, milloin menit nukkumaan ja milloin heräsit, kirjoita uni muistiin, kun vielä muistat sen, ja anna tekoälyn auttaa sinua huomaamaan, mikä muovaa öitäsi. Ei vaadi puettavaa laitetta, ja se toimii Apple Healthin rinnalla.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fi-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fi-black.svg" alt="Lataa Uni & Unet App Storesta"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fi-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fi-black.svg" alt="Lataa Uni & Unet App Storesta" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Ilmainen sovellus valinnaisilla premium-ominaisuuksilla<br>iPhone, iPad ja Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -561,15 +598,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/st-1.png" alt="Uni & Unet Kuvakaappaus 1" class="screenshot-img">
+                <img src="/images/screenshots/st-1.png" alt="Feeltracker Uni & Unet -päiväkirja, joka näyttää yöllisen unen keston ja historian" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-2.png" alt="Uni & Unet Kuvakaappaus 2" class="screenshot-img">
+                <img src="/images/screenshots/st-2.png" alt="Nukkumaanmenoajan, heräämisajan ja unimerkinnän kirjaaminen Feeltracker Uni & Unet -sovelluksessa" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-3.png" alt="Uni & Unet Kuvakaappaus 3" class="screenshot-img">
+                <img src="/images/screenshots/st-3.png" alt="Tekoälyn unianalyysi ja unen keston trendikaavio Feeltracker Uni & Unet -sovelluksessa" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -595,55 +632,55 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-moon"></i></div>
                 <h3>Apple Health -integraatio</h3>
-                <p>Synkronoi Apple Healthin unitietojen kanssa. Tuo Apple Watch -kellolla tai muilla sovelluksilla seurattu uni ja tallenna manuaaliset kirjauksesi HealthKitiin.</p>
+                <p>Tuo uni, jonka Apple Watchisi tai jokin muu sovellus on jo tallentanut, ja lähetä omat merkintäsi takaisin Apple Healthiin. Kytke automaattinen tuonti päälle, niin uudet yöt saapuvat itsestään.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-robot"></i></div>
                 <h3>AI-unitiedot</h3>
-                <p>Selvitä, mikä vaikuttaa unenlaatusi. AI analysoi muistiinpanosi tunnistaakseen tekijät, kuten kofeiinin, liikunnan, ruutuajan tai stressin, jotka vaikuttavat lepoosi.</p>
+                <p>Selvitä, mikä muovaa öitäsi. Trendit ryhmittelee muistiinpanojesi sanat ja näyttää keskimääräisen unesi kullekin niistä, joten "kahvi"-yöt ja "kävely"-yöt näkyvät rinnakkain.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-brain"></i></div>
                 <h3>Unianalyysi</h3>
-                <p>AI-pohjainen unitulkinta symbolien merkityksineen, tunne-elämän oivalluksineen ja psykologisine analyyseineen. Täydellinen toistuvien unien seuraamiseen ja niiden merkityksen ymmärtämiseen.</p>
+                <p>Kirjoita uni merkintäsi muistiinpanoihin ja kysy tekoälyltä, mitä se saattaisi tarkoittaa. Pika-unianalyysi on ilmainen joka päivä; Pro-unianalyysi menee syvemmälle jungilaisilla, freudilaisilla, neurotieteellisillä tai henkisillä tulkinnoilla sekä henkilökohtaisella symbolisanakirjalla.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-lungs"></i></div>
-                <h3>CPAP-terapiatuki</h3>
-                <p>Kattava CPAP-analyysi AHI-seurannalla, maskiistuvuuden arvioinnilla, vuodonhavaitsemisella ja henkilökohtaisilla suosituksilla uniapneaterapiasi optimoimiseksi.</p>
+                <h3>CPAP-loki ja -raportti</h3>
+                <p>Merkitse muistiin yölliset CPAP-tuntisi, AHI-arvosi ja mahdolliset maski- tai vuoto-ongelmat merkintöihisi, ja anna Pro-CPAP-raportin muuttaa ne luettavaksi yhteenvedoksi hoitomyöntyvyydestä, AHI:sta ja maskin istuvuudesta. Sovellus lukee sen, mitä kirjaat — se ei yhdisty laitteeseesi.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
                 <h3>Visuaaliset unikaaviot</h3>
-                <p>Näe unirytmisi intuitiivisilla kaavioilla ja kuvaajilla. Seuraa trendejä viikkojen ja kuukausien ajan ymmärtääksesi unisyklisi.</p>
+                <p>Näe, kuinka kauan nukuit yö toisensa jälkeen, sekä keskimääräisen nukkumaanmenoaikasi ja heräämisaikasi kaavioissa, joita voit selata päivämäärän mukaan.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-file-lines"></i></div>
                 <h3>Unimuistiinpanot</h3>
-                <p>Lisää muistiinpanoja päivästäsi – mitä söit, joit tai teit ennen nukkumaanmenoa. Ne auttavat sinua tunnistamaan, mikä edistää tai häiritsee hyvää unta.</p>
+                <p>Lisää muistiinpanoja päivästäsi – mitä söit, join tai teit ennen nukkumaanmenoa – ja liitä valokuvia. Tämä on sama kenttä, jossa unipäiväkirjasi asuu, ja se, mitä tekoäly lukee etsiessään kaavoja.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-spa"></i></div>
                 <h3>Rentoutumistyökalut</h3>
-                <p>AI:n luomaa rauhoittavaa sisältöä hengitysharjoituksilla, rauhallisilla mielikuvilla ja henkilökohtaisilla rentoutumistekniikoilla, jotka auttavat sinua nukahtamaan nopeammin.</p>
+                <p>Rauhoita minua unille kirjoittaa sinulle lyhyen rauhoittumishetken: hengitystekniikan, kuten 4-7-8, rauhoittavan mielikuvaharjoituksen ja rauhoittavan ajatuksen. Ilmainen joka päivä.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
-                <h3>Nukkumaanmenoaikaa enemmän</h3>
-                <p>Kun kellosi tai laitteesi tallentaa univaiheita, sovellus lukee Core-, REM- ja Deep-vaiheet kokonaisajan ohella — niin näet paitsi kuinka kauan nukit, myös kuinka hyvin.</p>
+                <h3>Univaiheet Apple Healthista</h3>
+                <p>Kun Apple Watchisi tallentaa kevyen, REM- ja syvän unen vaiheet, Feeltracker käyttää näitä vaiheita selvittääkseen, mistä ja mihin kukin yö todellisuudessa alkoi ja päättyi, ja voit tarkastella erittelyä sovelluksen Apple Health -asetuksista.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
-                <h3>Tavoitteesi jokaisessa kaaviossa</h3>
-                <p>Aseta tavoittelemasi tuntimäärä ja näe se viiteviivana jokaisella näytöllä. Helppo havaita, minä öinä saavutit tavoitteesi — ja minä et.</p>
+                <h3>Unitavoitteesi kaaviossa</h3>
+                <p>Aseta tavoittelemasi tuntimäärä, niin se näkyy viitteenä päiväkirja- ja tilastokaavioissasi. Helppo nähdä, minä öinä saavutit tavoitteesi – ja minä et.</p>
             </div>
 
         </div>
@@ -657,36 +694,36 @@
         <div class="app-card">
             <h3>1. Kirjaa nukkumisajat</h3>
             <div class="app-card-content">
-<p><strong>Nopea kirjaus:</strong> Joka aamu kirjaa, milloin menit nukkumaan ja milloin heräsit. Sovellus laskee automaattisesti kokonaisuniaikasi, joten sinun ei tarvitse laskea itse.</p>
-<p><strong>Useita kirjauksia:</strong> Seuraa päiväunia ja useita unijaksoja päivässä. Täydellinen vuorotyöläisille, vanhemmille, joiden uni keskeytyy, tai kenelle tahansa, jolla on epätyypillinen uniaikataulu.</p>
-<p><strong>Yksityiskohtaiset muistiinpanot:</strong> Kirjaa unenlaadun arvioinnit, unet, painajaiset, heräämistunnelmat sekä lepoosi vaikuttaneet tekijät – kofeiinin saanti, liikunnan ajankohta, huoneen lämpötila, stressitaso, ruutuaika ennen nukkumaanmenoa tai lääkitys. Mitä enemmän yksityiskohtia lisäät, sitä paremmin AI pystyy tunnistamaan kaavoja.</p>
+<p><strong>Nopea kirjaus:</strong> Syötä joka aamu, milloin menit nukkumaan ja milloin heräsit. Sovellus laskee kokonaisunesi automaattisesti, joten sinun ei tarvitse laskea itse – ja Siri-pikakomento antaa sinun lisätä unimerkinnän äänellä.</p>
+<p><strong>Useita merkintöjä:</strong> Seuraa päiväunia ja useita unijaksoja päivässä. Täydellinen vuorotyöläisille, vanhemmille, joiden uni katkeilee, tai kenelle tahansa, jolla on epätavallinen unirytmi.</p>
+<p><strong>Yksityiskohtaiset muistiinpanot:</strong> Muistiinpanokenttä pitää sisällään loput: unen, jonka juuri näit, kuinka levänneeksi tunsit itsesi, ja mikä tahansa, joka on saattanut muovata yötä – kofeiini, liikunnan ajoitus, huoneen lämpötila, stressi, ruutuaika, lääkkeet tai CPAP-lukemasi. Voit liittää myös valokuvia. Mitä enemmän kirjoitat, sitä enemmän tekoälyllä on työstettävää.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>2. Tarkastele kaavoja</h3>
             <div class="app-card-content">
-<p><strong>Kalenterinäkymä:</strong> Näe koko unihistoriasi intuitiivisessa kalenterikäyttöliittymässä. Jokainen päivä näyttää unen keston värikoodatuilla indikaattoreilla, jotka kertovat, saavutitko unitavoitteesi.</p>
-<p><strong>Unitilastot:</strong> Automaattisesti laskettuihin mittareihin kuuluvat keskimääräinen unen kesto, viikoittainen kokonaisunikesto, unialijäämä tai -ylijäämä, tasaisimman unirytmin päivät ja trendit ajan myötä. Tunnista parhaat ja huonoimmat yösi yhdellä silmäyksellä.</p>
-<p><strong>Visuaaliset trendit:</strong> Kaaviot näyttävät unirytmisi päivien, viikkojen tai kuukausien ajalta. Näe, miten nukkumaanmeno- ja heräämisaikasi vaihtelevat, havaitse epäsäännölliset kaavat ja seuraa edistymistäsi kohti säännöllistä unirytmiä.</p>
+<p><strong>Kalenterinäkymä:</strong> Näe koko unihistoriasi selkeässä kalenterissa. Jokainen päivä näyttää nukkumaanmenoajan, heräämisajan ja yöllisen kokonaismäärän, sitä tummempana varjostettuna, mitä kauemmin nukuit.</p>
+<p><strong>Unitilastot:</strong> Valitse mikä tahansa aikaväli ja näe keskimääräinen unesi päivässä, keskimääräinen nukkumaanmenoaikasi ja keskimääräinen heräämisaikasi. Suodata kellonajan tai viikonpäivän mukaan vertaillaksesi arki-öitä viikonloppuihin.</p>
+<p><strong>Visuaaliset trendit:</strong> Kaaviot näyttävät unesi päivien, viikkojen tai kuukausien ajalta. Näe, miten nukkumaanmenoaikasi ja heräämisaikasi ajautuvat, huomaa epäsäännölliset jaksot ja seuraa edistymistäsi kohti tasaisempaa rytmiä.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Hanki AI-oivalluksia</h3>
             <div class="app-card-content">
-<p><strong>Kaavojen tunnistus:</strong> AI analysoi muistiinpanosi selvittääkseen, mikä vaikuttaa untesi. Löydä korrelaatioita, kuten "Nukut 45 minuuttia pidempään öinä, jolloin olet liikkunut" tai "Unenlaatu on heikompi, kun olet juonut kofeiinia kello 14:n jälkeen."</p>
-<p><strong>Henkilökohtaiset vinkit:</strong> Saa konkreettisia suosituksia tietojesi perusteella. AI saattaa ehdottaa optimaalisia nukkumaanmenoaikoja sen mukaan, milloin nukut johdonmukaisimmin parhaiten, tai nostaa esiin tekijöitä, jotka toistuvasti häiritsevät lepoasi.</p>
-<p><strong>Unichat:</strong> Esitä luonnollisen kielen kysymyksiä unitiedoistasi: "Kuinka monta tuntia nukuin keskimäärin viime viikolla?" tai "Näytä kaikki yöt, jolloin nukuin alle 6 tuntia." Saat välittömiä, keskustelumuotoisia vastauksia unihistoriastasi.</p>
+<p><strong>Kysy kysymys (ilmainen):</strong> Kysy selkokielellä – "Kuinka monta tuntia keskimäärin nukuin viime viikolla?" tai "Minä öinä nukuin alle kuusi tuntia?" – ja saat vastauksen suoraan omasta unihistoriastasi.</p>
+<p><strong>Kuvioetsijä (Pro):</strong> Tekoäly lukee muistiinpanosi unesi ajankohtien rinnalla ja nostaa esiin korrelaatioita, joita joutuisit muuten metsästämään käsin – esimerkiksi, nukkuivatko liikuntayösi todella pidempään kuin muut.</p>
+<p><strong>Tavoiteavustaja (Pro):</strong> Muuta seuraamasi tiedot realistiseksi tavoitteeksi – nukkumaanmenoajaksi, josta oikeasti pidät kiinni, sen sijaan että jatkuvasti myöhästyisit siitä.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>4. Paranna untasi</h3>
             <div class="app-card-content">
-<p><strong>Toimintakelpoinen data:</strong> Käytä näkemyksiä tehdäksesi näyttöön perustuvia muutoksia rutiiniisi. Testaa hypoteeseja, kuten "Parantaako lukeminen ennen nukkumaanmenoa unenlaatuani?", seuraamalla tuloksia ja antamalla tekoälyn havaita erot.</p>
-<p><strong>Ammattimaiset raportit:</strong> Vie PDF-, CSV-, Excel- tai JSON-raportteja unispesialisteille, lääkäreille tai CPAP-hoitokonsultaatioita varten. Raportit sisältävät unen keston kaaviot, laatutrendit, muistiinpanot unihäiriöistä ja tilastolliset yhteenvedot lääketieteellistä tarkastelua varten muotoiltuna.</p>
-<p><strong>Apple Health -synkronointi:</strong> Integroi Apple Healthin kanssa yhdistääksesi manuaaliset kirjaukset automaattiseen unenseurantaan Apple Watchista tai muista laitteista. Tuo historiallisia unitietoja tai vie kirjauksesi HealthKitiin täydellistä terveyskuvaa varten.</p>
+<p><strong>Toimintakelpoinen data:</strong> Käytä näkemääsi testataksesi muutosta rutiiniisi. Kokeile lukemista ennen nukkumaanmenoa kahden viikon ajan, ja vertaa sitten öitä Trendeissä ja Tilastoissa.</p>
+<p><strong>Ammattimaiset raportit:</strong> Vie PDF, CSV, Excel tai JSON jaettavaksi uniasiantuntijalle, lääkärillesi tai CPAP-tapaamiseen. Viennit sisältävät nukkumaanmenoaikasi, heräämisaikasi, yölliset kokonaismäärät ja muistiinpanot, joten keskustelu voi alkaa todellisista päivämääristä ja luvuista.</p>
+<p><strong>Apple Health -synkronointi:</strong> Yhdistä manuaaliset kirjauksesi Apple Watchin tai jonkin muun sovelluksen tallentamaan uneen. Tuo historiaa Feeltrackeriin, tai lähetä merkintäsi Apple Healthiin täydellistä kokonaiskuvaa varten.</p>
             </div>
         </div>
 
@@ -700,102 +737,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Kysy kysymys</h4>
+                <h3><i class="fas fa-question-circle"></i> Kysy kysymys</h3>
                 <p>Nopeat kysymykset ja vastaukset unitiedoistasi – saat välittömät vastaukset unikysymyksiisi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Käy interaktiivisia keskusteluja uniterveydestäsi ja saa henkilökohtaista ohjausta. Pika-chat on ilmainen joka päivä; Pro-chat menee syvemmälle tehokkaimmalla tekoälyllämme</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Ääniyhteenveto</h4>
+                <h3><i class="fas fa-volume-up"></i> Ääniyhteenveto</h3>
                 <p>Kuuntele ääniyhteenvetoja unitrendeistäsi – täydellinen oivalluksille liikkeellä ollessa</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Pika-unianalyysi</h4>
+                <h3><i class="fas fa-moon"></i> Pika-unianalyysi</h3>
                 <p>AI tulkitsee unesi keskeisine symboleineen, tunne-elämän oivalluksineen ja pohdintakysymyksineen</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-spa"></i> Rauhoitu nukkumaan</h4>
+                <h3><i class="fas fa-spa"></i> Rauhoitu nukkumaan</h3>
                 <p>Henkilökohtaisia rentoutumistekniikoita, hengitysharjoituksia ja rauhallisia mielikuvia, jotka auttavat sinua nukahtamaan</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Naurattaja</h4>
+                <h3><i class="fas fa-laugh"></i> Naurattaja</h3>
                 <p>Saa henkilökohtaista huumoria seurantatiedoistasi piristääksesi päivääsi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Syvällinen tutkimus <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Syvällinen tutkimus <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kattava AI-analyysi unidatastasi yksityiskohtaisine havaintoineen</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-lungs"></i> CPAP-raportti <span class="ai-pro-badge">Pro</span></h4>
-                <p>Täydellinen CPAP-terapia-analyysi AHI-seurannalla, maskin istuvuuden arvioinnilla, hoitomyönteisyyden seurannalla ja interaktiivisilla toimintakorteilla</p>
+                <h3><i class="fas fa-lungs"></i> CPAP-raportti <span class="ai-pro-badge">Pro</span></h3>
+                <p>Muuttaa kirjaamasi CPAP-tunnit, AHI-arvot ja maskimuistiinpanot raportiksi hoitomyöntyvyydestä, AHI:sta ja maskin istuvuudesta, toimintakortteineen ja jatkokysymyksineen</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-brain"></i> Pro-unianalyysi <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-brain"></i> Pro-unianalyysi <span class="ai-pro-badge">Pro</span></h3>
                 <p>Syvällinen psykologinen unien tulkinta jungilaisilla arkkityypeillä, toistuvilla symboleilla, tunnekuvioilla ja henkilökohtaisella symbolisanakirjalla</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Kuvioetsijä <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Kuvioetsijä <span class="ai-pro-badge">Pro</span></h3>
                 <p>Löydä piilotettuja korrelaatioita unesi laadun ja elämäntapatekijöiden välillä</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Tavoiteavustaja <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Tavoiteavustaja <span class="ai-pro-badge">Pro</span></h3>
                 <p>Saat henkilökohtaisia, datapohjaisia unitavoitteita omien kuvioidesi perusteella</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Lääkäriyhteenveto <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Lääkäriyhteenveto <span class="ai-pro-badge">Pro</span></h3>
                 <p>Luo ammattimaisia uniyhteenvetoja terveydenhuoltokäyntejä tai unitutkimuksia varten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sairauslomatodistus <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Sairauslomatodistus <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI:n luomat sairauslomatodistukset töihin tai kouluun tarvittaessa</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Tarinageneraattori <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Tarinageneraattori <span class="ai-pro-badge">Pro</span></h3>
                 <p>Muunna unimatkasi luoviksi, mukaansatempaaviksi kertomuksiksi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstiyhteenveto <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstiyhteenveto <span class="ai-pro-badge">Pro</span></h3>
                 <p>Luo jaettavia tekstiviestiyhteenvetoja unitrendeistäsi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Henkilökohtainen tietokilpailu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Henkilökohtainen tietokilpailu <span class="ai-pro-badge">Pro</span></h3>
                 <p>Testaa tietojasi hauskalla AI:n luomalla 10 kysymyksen visalla omasta datastasi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Teksti puheeksi <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Teksti puheeksi <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kuuntele AI-havaintosi ja yhteenvetosi luonnollisella äänellä</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Räätälöity terveysraportti <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Räätälöity terveysraportti <span class="ai-pro-badge">Pro</span></h3>
                 <p>Luo kattavia, henkilökohtaisia uniterveysasiakirjoja edistymisesi seurantaan</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (laitteella) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (laitteella) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Yksityisyyttä kunnioittava vaihtoehto, joka suorittaa tekoälyn paikallisesti laitteellasi Applen Foundation Models -mallien avulla — mikään ei poistu iPhonestasi, iPadistasi tai Macistasi. Rajoittamaton käyttö maksullisella tilillä tuetuilla Apple Silicon -laitteilla (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Äänichat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Äänichat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kädet vapaana käytävät, kaksisuuntaiset puhekeskustelut tekoälyn kanssa tiedoistasi – kysy kysymyksiä ja kuule vastauksia koskematta näyttöön</p>
             </div>
 
@@ -815,22 +852,22 @@
 
             <div class="benefit-item">
                 <h4><i class="fas fa-moon"></i> Hallitse unettomuutta</h4>
-                <p>Tunnista kuviot ja tekijät, jotka häiritsevät untasi</p>
+                <p>Huomaa tavat ja kaavat, jotka toistuvat öinä, jolloin nukut huonoiten</p>
             </div>
 
             <div class="benefit-item">
                 <h4><i class="fas fa-bolt"></i> Lisää energiaa</h4>
-                <p>Varmista, että saat riittävästi lepoa optimaalista päivittäistä suorituskykyä varten</p>
+                <p>Näe, saavutatko todella tarvitsemasi tuntimäärän yö toisensa jälkeen</p>
             </div>
 
             <div class="benefit-item">
                 <h4><i class="fas fa-bullseye"></i> Unitavoitteet</h4>
-                <p>Pyri kohti tasaisia unirytmejä ja kestötavoitteita</p>
+                <p>Aseta tavoite ja seuraa viiteviivaa kaavioissasi rakentaaksesi tasaisemman rytmin</p>
             </div>
 
             <div class="benefit-item">
                 <h4><i class="fas fa-house-medical"></i> Terveysnäkemyksiä</h4>
-                <p>Toimita unidataa lääkäreille, jotka tutkivat terveysongelmia</p>
+                <p>Tuo lääkärillesi PDF- tai Excel-vienti käsin kirjoitetun unipäiväkirjan sijaan</p>
             </div>
 
             <div class="benefit-item">
@@ -860,44 +897,60 @@
 
 
         <h3>Kuinka paljon unta tarvitsen?</h3>
-        <p>Useimmat aikuiset tarvitsevat 7–9 tuntia unta yössä, vaikka yksilölliset tarpeet vaihtelevat. Sovellus auttaa seuraamaan unen kestoa ja tunnistamaan henkilökohtaisen optimaalisen määräsi sen perusteella, miltä sinusta tuntuu.</p>
+        <p>Useimmat aikuiset tarvitsevat 7–9 tuntia unta yössä, vaikka yksilölliset tarpeet vaihtelevat. Feeltracker Uni & Unet antaa sinun asettaa oman tavoitteesi tunteina, näyttää sen viitteenä kaavioissasi ja seuraa, kuinka lähelle kukin yö pääsee – jotta löydät määrän, joka todella saa sinut tuntemaan olosi levänneeksi.</p>
 
 
         <h3>Seuraaako sovellus unta automaattisesti?</h3>
-        <p>Ei. Toisin kuin Apple Watch tai muut puettavat laitteet, Unikirja edellyttää manuaalista kirjausta. Syötät nukkumis- ja heräämisaikasi joka aamu. Voit kuitenkin tuoda unidataa Apple Healthista, jos käytät muita automaattisia seurantalaitteita.</p>
+        <p>Ei – Feeltracker Uni & Unet on manuaalinen unipäiväkirja: syötät nukkumaanmenoaikasi ja heräämisaikasi itse, ja sovellus laskee keston puolestasi. Siinä ei ole antureita, se ei kuuntele nukkuessasi eikä havaitse apneatapahtumia itsenäisesti. Jos jokin laite jo tallentaa unesi, voit tuoda nuo yöt Apple Healthista sen sijaan, että kirjoittaisit ne.</p>
 
 
         <h3>Voinko kirjata päiväunet?</h3>
-        <p>Kyllä. Voit kirjata useita unijaksoja päivässä, mukaan lukien päiväunet. Jokainen merkintä näyttää keston, ja kalenteri näyttää kaikki nukkumis- ja heräämisaikasi.</p>
+        <p>Kyllä – voit kirjata niin monta unijaksoa päivässä kuin haluat Feeltracker Uni & Unet -sovelluksessa, mukaan lukien päiväunet sekä jaetut tai keskeytyneet yöt. Jokainen merkintä näyttää oman kestonsa, päivänäkymä laskee ne yhteen, ja vuorotyöläiset voivat kirjata iltapäiväunen aivan kuten yöunen.</p>
 
 
         <h3>Mitä eroa tällä on Apple Healthiin verrattuna?</h3>
-        <p>Unikirja tarjoaa erityisen käyttöliittymän unenseurantaan ominaisuuksilla, jotka on suunniteltu erityisesti unirytmien hallintaan – muistiinpanot, AI-havainnot, trendit ja helppo manuaalinen kirjaus. Se integroituu Apple Healthiin, mutta tarjoaa yksityiskohtaisempia uneen keskittyviä ominaisuuksia.</p>
+        <p>Apple Health tallentaa unilukemat; Feeltracker Uni & Unet antaa niille päiväkirjan. Saat unipäiväkirjan valokuvineen, muistiinpanot siitä, mikä muovasi kunkin yön, tekoälyn unianalyysin, sanapohjaiset trendit, unitavoiteviivan sekä PDF- tai Excel-viennit lääkärillesi. Nämä kaksi toimivat yhdessä – tuo Apple Healthista, tai lähetä merkintäsi takaisin sinne.</p>
 
 
         <h3>Miten AI auttaa unitietojen tulkinnassa?</h3>
-        <p>Kun lisäät muistiinpanoja päivästäsi (esim. "join kahvia klo 20" tai "harjoittelin aamulla"), AI analysoi näitä ajan myötä osoittaakseen korrelaatiot unesi keston ja laadun kanssa. Tämä auttaa tunnistamaan, mikä edistää tai häiritsee hyvää unta.</p>
+        <p>Feeltracker Uni & Unet -sovelluksen tekoäly lukee kirjoittamasi muistiinpanot unesi ajankohtien rinnalla ja osoittaa, mitä niillä on yhteistä. Merkitse "kahvia klo 20" tai "lenkki tänä aamuna" tarpeeksi usein, niin Trendit näyttää keskimääräisen unesi kummallekin sanalle, ja tekoälyominaisuudet voivat pukea korrelaation sanoiksi – ilmainen joka päivä kysymyksille ja pikavastauksille, ja syvemmin Pron kanssa.</p>
 
 
         <h3>Voinko jakaa unidataa lääkärini kanssa?</h3>
-        <p>Kyllä. Vie unihistoriasi PDF-, CSV-, Excel- tai JSON-raportteina jaettavaksi terveydenhuollon ammattilaisten kanssa. Tämä on erityisen hyödyllistä, jos sinua tutkitaan unihäiriöiden tai unettomuuden vuoksi.</p>
+        <p>Kyllä – Feeltracker Uni & Unet vie unihistoriasi PDF-, CSV-, Excel- tai JSON-muodossa, valmiina lähetettäväksi sähköpostitse tai annettavaksi tapaamisessa. Viennit sisältävät nukkumaanmenoaikasi, heräämisaikasi, yölliset kokonaismäärät ja muistiinpanot, mikä on juuri sitä, mitä unipoliklinikka tai CPAP-tarkastus yleensä pyytää sinua tuomaan.</p>
 
 
         <h3>Seurataanko unen laatua vai pelkästään kestoa?</h3>
-        <p>Sovellus seuraa ensisijaisesti unen kestoa (nukuttuja tunteja) kirjattujen nukkumis- ja heräämisaikojen perusteella. Voit lisätä muistiinpanoja unen laadusta, unista tai siitä, kuinka virkeältä tunnet olosi, mikä auttaa laadullisessa seurannassa.</p>
+        <p>Feeltracker Uni & Unet seuraa kestoa tarkasti ja laatua omin sanoin. Nukkumaanmenoaika, heräämisaika ja kokonaisuni ovat lukuja, jotka se laskee; se, kuinka levänneeksi tunsit itsesi, kuinka kauan nukahtaminen kesti ja mikä häiritsi sinua, kirjoitetaan muistiinpanoihin, joista tekoäly voi ne lukea. Automaattista unipisteytystä ei ole – sovelluksessa ei ole antureita, joista sellaisen voisi laskea.</p>
 
 
         <h3>Onko muistutus unen kirjaamiseen?</h3>
-        <p>Kyllä. Voit asettaa päivittäisiä muistutuksia uniaikojesi kirjaamiseen. Monet käyttäjät asettavat aamumuistutuksen, joka kehottaa kirjaamaan edellisen yön unen.</p>
+        <p>Kyllä – Feeltracker Uni & Unet voi lähettää päivittäisen muistutuksen valitsemaanasi kellonaikana, valitsemiesi viikonpäivien mukaan. Useimmat asettavat sen hieman tavanomaisen heräämisensä jälkeen, jolloin yö on vielä tuoreessa muistissa – mikä on erityisen tärkeää, jos kirjoitat unta muistiin.</p>
 
 
         <h3>Näytetäänkö mainoksia tai seurataanko minua?</h3>
-        <p><strong>Ei.</strong> Olemme poistaneet kaikki mainokset sovelluksesta kokonaan. Emme seuraa sinua muissa sovelluksissa tai verkkosivustoilla, emmekä koskaan myy tietojasi mainostajille.</p>
-<p>Tietosi synkronoituvat iCloudin kautta – aivan kuten Apple Notes ja Kuvat. Tämä tarkoittaa, että meidän ei tarvitse tietää sähköpostiosoitettasi, nimeäsi tai mitään henkilökohtaisia tietojasi. Unidatasi tallennetaan laitteillesi ja iCloud-tilillesi, ja se on täysin yksityistä riippumatta siitä, käytätkö ilmaista vai premium-versiota.</p>
+        <p><strong>Ei.</strong> Feeltracker Uni & Unet -sovelluksessa ei ole lainkaan mainoksia. Emme seuraa sinua muissa sovelluksissa tai verkkosivuilla, emmekä koskaan myy tietojasi mainostajille.</p>
+<p>Tietosi synkronoituvat iCloudin kautta – aivan kuten Apple Notesin ja Kuvienkin. Tämä tarkoittaa, että meillä ei ole tarvetta tietää sähköpostiosoitettasi, nimeäsi tai mitään henkilökohtaisia tietojasi. Unitietosi tallennetaan laitteillesi ja iCloud-tiliisi, ja ne ovat täysin yksityisiä käytätpä ilmaisversiota tai premium-versiota.</p>
 
 
         <h3>Tarvitsenko tilauksen?</h3>
-        <p>Tilausta ei tarvita. Sovellus on ilmainen ladata, kaikki seuranta, kaaviot, Apple Health -synkronointi ja vienti ovat ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Pro-unianalyysi, CPAP-raportti, Syvällinen tutkimus, Lääkäriyhteenveto, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja.</p>
+        <p>Ei – Feeltracker Uni & Unet on ilmainen ladata, ja jokainen käyttäjä saa aidon tekoälyn ilmaiseksi joka päivä, ilman mainoksia. Kaikki unikirjaus, kaaviot, tilastot, Apple Health -synkronointi ja vienti ovat ilmaisia, samoin kuin Pika-unianalyysi, Pika-chat, Kysy kysymys, Rauhoita minua unille ja Naurata minua. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet – Pro-unianalyysin, CPAP-raportin, Syvällisen tutkimuksen, Lääkäriyhteenvedon, Kuvioetsijän, Pro-chatin ja muut – ja nostaa päivittäisiä rajoja.</p>
+
+
+        <h3>Voinko tuoda unen Apple Watchistani?</h3>
+        <p>Kyllä – Feeltracker Uni & Unet tuo unen, jonka Apple Watchisi on tallentanut Apple Healthin kautta, joten sinun ei tarvitse kirjoittaa uudelleen öitä, jotka kellosi on jo tallentanut. Myönnä lukuoikeus kerran, niin voit tuoda historiasi, tai kytke automaattinen tuonti päälle, jolloin uudet yöt saapuvat itsestään. Kun kellosi on tallentanut kevyen, REM- ja syvän unen vaiheet, sovellus käyttää niitä selvittääkseen, mistä ja mihin kukin yö alkoi ja päättyi.</p>
+
+
+        <h3>Mitä tekoälyn unianalyysi oikeastaan tekee?</h3>
+        <p>Kirjoitat unen merkintäsi muistiinpanoihin, ja Feeltracker Uni & Unet kysyy tekoälyltä, mitä se saattaisi tarkoittaa. Pika-unianalyysi on ilmainen joka päivä ja palauttaa kolmesta viiteen keskeistä symbolia ja mahdollista merkitystä, unen tunnesävyn sekä pari pohdittavaa kysymystä – ja voit kysyä jatkokysymyksen. Pro-unianalyysi menee pidemmälle: voit valita jungilaisen, freudilaisen, neurotieteellisen tai henkisen näkökulman, ja se rakentaa henkilökohtaisen symbolisanakirjan ajan mittaan kirjaamistasi unista. Se on kirjoitettu itsereflektiota ja yleistä kiinnostusta varten, ei psykologisena neuvona.</p>
+
+
+        <h3>Yhdistyykö CPAP-raportti CPAP-laitteeseeni?</h3>
+        <p>Ei – Feeltracker Uni & Unet -sovelluksen CPAP-raportti lukee sen, mitä kirjaat, ei laitettasi. Bluetooth-parittamista tai SD-korttituontia ei ole. Merkitset yölliseen merkintääsi luvut, jotka CPAP-laitteesi jo näyttää sinulle – käyttötunnit, AHI, maski- tai vuoto-ongelmat – vastaat kolmeen valinnaiseen kysymykseen maskin istuvuudesta, vuodoista ja siitä, kuinka levänneeksi tunnet itsesi, ja Pro-raportti muuttaa kaiken tämän yhteenvedoksi hoitomyöntyvyydestä, AHI-trendistä ja maskin istuvuudesta, jonka voit lukea tai tuoda seuraavaan tapaamiseesi.</p>
+
+
+        <h3>Onko unipäiväkirjani yksityinen?</h3>
+        <p>Unipäiväkirjasi pysyy laitteillasi ja omassa iCloud-tilissäsi – Feeltracker Uni & Unet -sovelluksessa ei ole tiliä luotavana, joten emme koskaan näe nimeäsi tai sähköpostiasi. Mikään ei poistu laitteeltasi ennen kuin napautat tekoälyominaisuutta, ja silloinkin vain se, mitä kyseinen ominaisuus tarvitsee: valitsemasi aikavälin merkinnät sekä profiilitiedot, jotka olet valinnut jakaa, ja jotka voit kytkeä pois tekoälyasetuksista. Voit myös ajaa tekoälyn kokonaan laitteella Apple Intelligencellä tuetulla laitteistolla, jolloin mikään ei poistu iPhonestasi, iPadistasi tai Macistasi lainkaan.</p>
 
     </section>
 
@@ -1022,22 +1075,22 @@
         <div class="related-apps-grid">
 
             <a href="/fi/blood-pressure/" class="related-app-card" aria-label="Verenpaine">
-                <img src="/images/BPT_1024.png" alt="Verenpaine" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Verenpaine" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Verenpaine</span>
             </a>
 
             <a href="/fi/daily-journal/" class="related-app-card" aria-label="Päiväkirja">
-                <img src="/images/NT_1024.png" alt="Päiväkirja" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Päiväkirja" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Päiväkirja</span>
             </a>
 
-            <a href="/fi/mental-health/" class="related-app-card" aria-label="Mielenterveys">
-                <img src="/images/FT_1024.png" alt="Mielenterveys" class="related-app-icon">
-                <span class="related-app-name">Mielenterveys</span>
+            <a href="/fi/mood-journal/" class="related-app-card" aria-label="Mielialapäiväkirja">
+                <img src="/images/FT_1024.png" alt="Mielialapäiväkirja" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Mielialapäiväkirja</span>
             </a>
 
             <a href="/fi/weight/" class="related-app-card" aria-label="Paino">
-                <img src="/images/WT_1024.png" alt="Paino" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Paino" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Paino</span>
             </a>
 
@@ -1050,9 +1103,10 @@
         <h2>Aloita unesi parantaminen tänä yönä</h2>
         <p>Parempi lepo on vain muutaman napaisen päässä</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fi-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fi-black.svg" alt="Lataa Sleep & Dreams"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fi-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fi-black.svg" alt="Lataa Sleep & Dreams" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

@@ -3,7 +3,7 @@
   "meta": {
    "title": "Kan Basıncı - İngiltere'nin 1 Numaralı Kan Basıncı Uygulaması | Feeltracker",
    "description": "Camera Scan AI ile kan basıncını takip edin — Birleşik Krallık’ta 1 numara. Sistolik, diyastolik, nabız ve MAP’ı izleyin. Apple Health senkronizasyonu, doktor için dışa aktarma raporları. iPhone, iPad ve Mac.",
-   "keywords": "kan,basıncı,kalp,nabız,monitör,omron,takip,kontrol,günlük,hipertansiyon,microlife,beurer",
+   "keywords": "kan basıncı uygulaması, kan basıncı takip uygulaması, tansiyon kayıt defteri, hipertansiyon takibi, sistolik diyastolik nabız takibi, ortalama arter basıncı, MAP hesaplayıcı, kan basıncı günlüğü, doktor için kan basıncı grafiği, tansiyon aleti tarayıcı",
    "ogTitle": "Kan Basıncı | İngiltere'de 1. Uygulama | Feeltracker",
    "ogDescription": "İngiltere'nin 1 numaralı kan basıncı uygulaması. Kamera Tarama AI, Apple Health senkronizasyonu ve AI destekli içgörülerle kan basıncınızı takip edin. Doktorunuzla paylaşmak için raporlar oluşturun.",
    "twitterDescription": "İngiltere'nin 1 numaralı kan basıncı uygulaması. Kamera Tarama AI, Apple Health senkronizasyonu ve AI destekli içgörülerle takip edin."
@@ -60,11 +60,15 @@
     },
     {
      "title": "Doktorunuz İçin MAP Raporu",
-     "description": "Ortalama Arteriyel Basıncınızı herhangi bir ay, çeyrek, yıl veya özel aralıkta sabah, akşam ve tüm gün dilimlerine göre ayrıştıran özel bir rapor. Doktor görüşmelerini kolaylaştırmak için tasarlandı. İsteğe bağlı Pro aboneliğinin bir parçasıdır."
+     "description": "Herhangi bir ay, çeyrek, yıl veya özel aralık için Ortalama Arter Basıncınızı sabah, akşam ve tüm gün pencerelerine ayıran ücretsiz bir PDF raporu. Doktor görüşmelerinizi kolaylaştırmak için tasarlandı. Pro, bunun üzerine AI tarafından yazılan bir Pro MAP Raporu ekler."
     },
     {
      "title": "Kendi Aralıklarınız, Kendi Yönteminiz",
-     "description": "Doktorunuzun size verdiği yönlendirmeye uyacak şekilde kendi hedeflerinizi ve bant eşiklerinizi — Normal, Yüksek Normal, Evre 1, Evre 2 — ayarlayın. Grafikler ve raporlar her ölçümü kendi belirlediğiniz aralıklara göre renklendirir."
+     "description": "Kendi hedef sistolik, diyastolik ve nabız değerlerinizi belirleyin — bunlar grafiklerinizde referans çizgileri olarak görünür — ve doktorunuzun size verdiği yönlendirmeye uyacak şekilde aralık eşiklerini (Düşük, Normal, Yüksek Normal, Yüksek, Çok Yüksek) ayarlayın. Grafikler ve raporlar her ölçümü kendi belirlediğiniz aralıklara göre renklendirir."
+    },
+    {
+     "title": "Geçmişiniz Güvenle Saklanır",
+     "description": "Ölçümleriniz kendi özel iCloud hesabınız üzerinden iPhone, iPad ve Mac'iniz arasında senkronize edilir ve uygulama istediğiniz zaman geri yükleyebileceğiniz otomatik haftalık yedeklemeler oluşturur. Bir elektronik tablodan mı geçiyorsunuz? Yerleşik şablonu kullanarak geçmişinizi bir Excel dosyasından içe aktarın."
     }
    ]
   },
@@ -74,15 +78,15 @@
    "steps": [
     {
      "title": "1. Ölçümünüzü Kaydedin",
-     "content": "**Kamera Tarama AI:** Kameranızı kan basıncı monitörünüzün ekranına doğrultun ve AI'nın sistolik, diyastolik ve nabız değerlerini otomatik olarak çıkarmasını sağlayın. Yazma gerekmez — uygulama değerleri doğrudan [OMRON](https://geni.us/B9RB), Microlife, Beurer ve çoğu dijital monitörden okur.\n\n**Manuel Giriş:** Yazmayı mı tercih edersiniz? Değerleri düzenlenmiş bir arayüzle manuel olarak girin. Bir ölçümü kaydetmek yalnızca birkaç saniye sürer.\n\n**Zengin Bağlam:** Yaptıklarınız, aldığınız ilaçlar, egzersiz, stres seviyeleri, uyku kalitesi veya kan basıncınızı etkileyebilecek herhangi bir faktör hakkında ayrıntılı notlar ekleyin. Ayrıca fotoğraflar ekleyebilir ve daha kolay arama için girişleri özel etiketlerle işaretleyebilirsiniz."
+     "content": "**Camera Scan AI:** Kameranızı kan basıncı monitörünüzün ekranına doğrultmanız yeterli; AI sistolik, diyastolik ve nabız değerlerini otomatik olarak okur. Yazmaya gerek yok - uygulama rakamları doğrudan [OMRON](https://geni.us/B9RB), Microlife, Beurer ve çoğu dijital monitörden okur.\n\n**Manuel Giriş:** Yazmayı mı tercih ediyorsunuz? Değerleri sade bir arayüzle elle girin. Bir ölçümü kaydetmek yalnızca birkaç saniye sürer.\n\n**Zengin Bağlam:** Ne yaptığınıza dair ayrıntılı notlar ekleyin - yediğiniz yemekler, aldığınız ilaçlar, egzersiz, stres düzeyi, uyku kalitesi veya kan basıncınızı etkileyebilecek herhangi bir etken. Bir ölçüme 8'e kadar fotoğraf ekleyebilir ve daha sonra herhangi bir kaydı doğrudan iOS Spotlight aramasından tekrar bulabilirsiniz."
     },
     {
      "title": "2. Örüntüleri Takip Edin",
-     "content": "**Takvim Görünümü:** Tüm ölçümlerinizi sezgisel bir takvim düzeninde görün. Her gün, tıbbi yönergelere göre normal, yükselen veya yüksek ölçümler için renk kodlu göstergelerle ölçümlerinizi gösterir.\n\n**Otomatik İstatistikler:** Günlük, haftalık ve aylık ortalamaların anında hesaplamalarını alın. En düşük ve en yüksek ölçümlerinizi, standart sapmayı ve zaman içindeki eğilimleri herhangi bir matematik yapmadan görün.\n\n**Görsel Grafikler:** Güzel grafikler, günler, haftalar, aylar veya herhangi bir özel tarih aralığı boyunca kan basıncı eğilimlerinizi gösterir. Örüntüleri bir bakışta fark edin ve sağlık hedeflerinize doğru nasıl ilerlediğinizi görün."
+     "content": "**Takvim Görünümü:** Tüm ölçümlerinizi sezgisel bir takvim düzeninde görün. Her gün, yaygın olarak kullanılan yönergelere veya kendi belirlediğiniz aralıklara göre düşük, normal, yüksek normal, yüksek veya çok yüksek ölçümler için renk kodlu göstergelerle ölçümlerinizi gösterir.\n\n**Otomatik İstatistikler:** Herhangi bir tarih aralığında anında ortalamalar, en düşük ve en yüksek ölçümleriniz ve her aralığa kaç ölçümün düştüğünün dökümünü alın - hesap yapmanıza gerek yok.\n\n**Görsel Grafikler:** Ayrı sistolik, diyastolik, MAP ve nabız grafikleri, hedef değerinizin referans çizgisi olarak çizildiği günler, haftalar, aylar veya herhangi bir özel tarih aralığındaki eğilimlerinizi gösterir."
     },
     {
      "title": "3. AI İçgörüleri Edinin",
-     "content": "**Örüntü Tespiti:** AI, korelasyonları belirlemek için ölçümlerinizi ve notlarınızı analiz eder. Hangi aktivitelerin, yiyeceklerin veya durumların kan basıncınızı tutarlı olarak yükselttiğini veya düşürdüğünü keşfedin.\n\n**Kişiselleştirilmiş Öneriler:** Verilerinize dayalı spesifik içgörüler edinin. AI, İşte stres yaşadığınızı belirttiğiniz günlerde KB'niz daha yüksek olma eğilimindedir” veya „Sabah egzersizli günlerde ölçümler daha düşük” gibi örüntüler fark edebilir.\n\n**Verilerinizle Sohbet Edin:** „Geçen ay akşamları ortalama KB değerim neydi?” veya „İlaçlarımı aldıktan sonraki ölçümleri göster” gibi doğal dilde sorular sorun. AI bağlamı anlar ve anında yanıtlar verir."
+     "content": "**Örüntü Tespiti:** AI, korelasyonları belirlemek için ölçümlerinizi ve notlarınızı analiz eder. Hangi etkinliklerin, yiyeceklerin veya durumların kan basıncınızı tutarlı biçimde yükselttiğini veya düşürdüğünü keşfedin.\n\n**Kişiselleştirilmiş Öneriler:** Verilerinize dayalı özel içgörüler edinin. AI, “İş yerinde stresliyim” diye not düştüğünüz günlerde tansiyonunuzun daha yüksek olma eğiliminde olduğu ya da sabah egzersizi yaptığınız günlerde ölçümlerin daha düşük olduğu gibi örüntüler fark edebilir.\n\n**Verilerinizle Sohbet Edin:** “Geçen ay akşamları ortalama tansiyonum neydi?” veya “İlacımı aldıktan sonraki ölçümleri göster” gibi doğal bir dille sorular sorun. AI bağlamı anlar ve size anında yanıt verir.\n\n**Her gün ücretsiz:** Soru Sor, Quick Chat, Sesli Özet ve bir Hızlı Sağlık Raporu, cömert bir günlük kullanım hakkıyla herkese dahildir. En derinlemesine raporlar - Derin Araştırma, Örüntü Dedektifi, Doktor Özeti, Pro MAP Raporu - isteğe bağlı Pro aboneliğiyle gelir."
     },
     {
      "title": "4. Doktorunuzla Paylaşın",
@@ -114,11 +118,11 @@
     },
     {
      "title": "Sakinleştir",
-     "description": "Stresi azaltmaya ve kan basıncını düşürmeye yardımcı AI destekli nefes egzersizleri"
+     "description": "Stresli bir günün ardından rahatlamanıza yardımcı olacak AI rehberliğinde nefes ve gevşeme egzersizleri"
     },
     {
      "title": "Kamera Tarama AI",
-     "description": "Ölçümleri doğrudan monitörünüzün ekranından tarayın — [OMRON](https://geni.us/B9RB), Microlife, Beurer ile çalışır"
+     "description": "Ölçümleri doğrudan monitörünüzün ekranından tarayın - [OMRON](https://geni.us/B9RB), Microlife, Beurer ve çoğu dijital ekranla çalışır. Cömert bir günlük kullanım hakkıyla herkes için ücretsiz"
     },
     {
      "title": "Derinlemesine Araştırma",
@@ -158,7 +162,7 @@
     },
     {
      "title": "Kişiselleştirilmiş Sağlık Raporu",
-     "description": "İlerlemenizi takip etmek için kapsamlı, kişiselleştirilmiş sağlık belgeleri oluşturun"
+     "description": "İlerlemenizi takip etmek için kapsamlı, kişiselleştirilmiş sağlık belgeleri oluşturun. Herkes için ücretsiz bir Hızlı Sağlık Raporu dahildir"
     },
     {
      "title": "Apple Intelligence (Cihaz Üzerinde)",
@@ -167,6 +171,10 @@
     {
      "title": "Sesli Sohbet",
      "description": "Verileriniz hakkında yapay zekayla eller serbest, çift yönlü sesli sohbetler — ekrana dokunmadan soru sorun ve cevapları dinleyin"
+    },
+    {
+     "title": "Pro MAP Raporu",
+     "description": "Ortalama Arter Basıncınız hakkında AI tarafından yazılan bir rapor: sabah-akşam örüntüleri, günden güne değişkenlik ve ölçümlerinizin belirlediğiniz MAP bantlarına göre nasıl konumlandığı — isteğe bağlı bir LVAD odağı dahil. Bakım ekibinize teslim etmek üzere hazırlanmıştır"
     }
    ]
   },
@@ -176,7 +184,7 @@
    "items": [
     {
      "title": "Hipertansiyonu Yönetin",
-     "description": "Günlük ölçümler yaparak ve tetikleyicileri belirleyerek kan basıncınızı kontrol altında tutun"
+     "description": "Siz ve doktorunuzun randevular arasında rakamlarınızın gerçekte nasıl seyrettiğini görebilmesi için ölçümlerinizin gün gün kaydını oluşturun"
     },
     {
      "title": "İlaç Etkinliği",
@@ -209,31 +217,31 @@
    "items": [
     {
      "question": "Normal bir kan basıncı değeri nedir?",
-     "answer": "Tıbbi yönergelere göre normal kan basıncı genellikle 120/80 mmHg'nin altındadır. 120-129 sistolik ve 80'in altında diyastolik değerler yüksek kabul edilir. 130/80 veya daha yüksek değerler hipertansiyona işaret edebilir. Hedef aralıklar yaş ve sağlık durumuna göre değişebilir, bu nedenle kişiselleştirilmiş rehberlik için doktorunuza danışın."
+     "answer": "Tıbbi yönergelere göre normal kan basıncı genellikle 120/80 mmHg'nin altındadır. Sistolik değeri 120-129 arasında ve diyastolik değeri 80'in altında olan ölçümler yüksek normal kabul edilir. 130/80 veya üzeri değerler hipertansiyona işaret edebilir. Ancak hedef aralıklar yaşa ve sağlık durumuna göre değişebileceğinden, size özel yönlendirme için doktorunuza danışın. Feeltracker Kan Basıncı, her ölçümü bu aralıklara göre renk kodlar ve doktorunuz size farklı hedefler vermişse eşikleri kendiniz ayarlayabilirsiniz."
     },
     {
      "question": "Kamera Tarama AI nasıl çalışır?",
-     "answer": "iPhone veya iPad kameranızı kan basıncı monitörünüzün dijital ekranına doğrultmanız yeterli. Uygulama, gelişmiş AI destekli kamera tanıma teknolojisini kullanarak rakamları otomatik olarak okur ve sistolik, diyastolik ve nabız alanlarını doldurur. Bu, manuel yazma hatalarını ortadan kaldırır ve kaydetmeyi daha hızlı hale getirir. [Buradan bir kan basıncı monitörü edinin](https://geni.us/B9RB)."
+     "answer": "Camera Scan AI, rakamları doğrudan kan basıncı monitörünüzün ekranından okur: iPhone veya iPad kameranızı ekrana doğrultun, Feeltracker Kan Basıncı sistolik, diyastolik ve nabız alanlarını sizin için doldursun. Eşleştirme veya markaya özel kurulum gerekmez — [OMRON](https://geni.us/B9RB), Microlife ve Beurer dahil çoğu dijital monitörle çalışır. Tarama, cömert bir günlük kullanım hakkıyla herkes için ücretsizdir ve üç rakamı elle yazmak yerine yalnızca birkaç saniye sürer."
     },
     {
      "question": "OAB nedir ve takip etmeli miyim?",
-     "answer": "OAB (Ortalama Arteriyel Basınç), bir kardiyak döngü boyunca arterlerinizdeki ortalama kan basıncını temsil eden hesaplanmış bir değerdir. Şu şekilde hesaplanır: OAB = (2 × Diyastolik + Sistolik) ÷ 3. Bazı doktorlar OAB'yi kardiyovasküler risk değerlendirmesinde faydalı bulur. Uygulama, her ölçüm için OAB'yi otomatik olarak hesaplar."
+     "answer": "MAP (Ortalama Arter Basıncı), bir kalp döngüsü boyunca atardamarlarınızdaki ortalama kan basıncını temsil eden hesaplanmış bir değerdir. Şu şekilde hesaplanır: MAP = (2 × Diyastolik + Sistolik) ÷ 3. Bazı doktorlar MAP'i kardiyovasküler riski değerlendirmek için yararlı bulur. Feeltracker Kan Basıncı bunu her ölçüm için otomatik olarak hesaplar, sistolik ve diyastolik değerlerinizin yanında grafiğe döker ve sabah, akşam ve tüm gün görünümlerine bölünmüş bir MAP PDF raporu dışa aktarabilir. Kalp pompasıyla takip eden kişiler için bir LVAD odağı seçeneğiyle kendi MAP bantlarınızı da belirleyebilirsiniz."
     },
     {
      "question": "Eski kan basıncı verilerimi içe aktarabilir miyim?",
-     "answer": "Evet! Kan basıncınızı Apple Health'te takip ettiyseniz, tek bir dokunuşla tüm geçmiş ölçümlerinizi uygulamaya aktarabilirsiniz. Uygulama ayrıca diğer kaynaklardan verileriniz varsa CSV/Excel dosyalarından içe aktarmayı da destekler."
+     "answer": "Evet — Feeltracker Kan Basıncı, mevcut geçmişinizi Apple Health'ten veya bir elektronik tablodan içe aktarabilir. Apple Health'te takip ediyorsanız uygulama bulduğu ölçümleri gösterir ve seçtiklerinizi içe aktarır; yeni Health ölçümlerinin kendiliğinden gelmesi için otomatik içe aktarmayı da açabilirsiniz. Geçmişiniz bir elektronik tabloda duruyorsa uygulamanın Excel şablonunu indirin, verilerinizi içine yapıştırın ve dosyayı içe aktarın. Başka bir cihazdan gelen JSON dosyaları ve ZIP yedekleri de çalışır."
     },
     {
      "question": "Kan basıncımı ne sıklıkla kontrol etmeliyim?",
-     "answer": "Bu, sağlık durumunuza ve doktorunuzun tavsiyelerine bağlıdır. Bazı kişiler günlük (genellikle sabah ve akşam), diğerleri ise haftalık ölçüm yapar. Uygulama, sağlık personelinizin önerdiği sıklıkta takip etmeyi kolaylaştırır. Tutarlı bir program sürdürmenize yardımcı olmak için hatırlatıcılar ayarlayabilirsiniz."
+     "answer": "Evde takip yönergeleri genellikle günde iki ölçüm önerir — biri ilaçtan önce sabah, diğeri akşam — ve tutarlı saatlerde alınır; ancak durumunuz için her zaman doktorunuzun önerisi önceliklidir. Feeltracker Kan Basıncı, günde istediğiniz kadar ölçüm kaydetmenize ve her biri seçtiğiniz haftanın günlerinde olmak üzere dörde kadar hatırlatıcı ayarlamanıza olanak tanır, böylece günde iki kez ölçüm rutinini sürdürmek kolaylaşır."
     },
     {
      "question": "Kan basıncı verilerim gizli mi?",
-     "answer": "Kesinlikle. Kan basıncı ölçümleriniz cihazınızda ve özel iCloud hesabınızda şifreli olarak saklanır. Veriler asla sunucularımızdan geçmez ve sağlık bilgilerinizi göremeyiz. Apple'ın Notlar veya Fotoğraflar uygulamaları kadar güvenlidir."
+     "answer": "Ölçümleriniz cihazınızda ve kendi özel iCloud hesabınızda tutulur — Feeltracker Kan Basıncı'nda oluşturulacak bir hesap, verilecek bir e-posta adresi veya sunucularımızda tutulan bir geçmiş kopyası yoktur. Tek istisna AI özellikleridir: AI'ya bir şey sorduğunuzda, yanıt vermek için gereken ölçümler, size cevap verebilmemiz için kendi aktarım sunucumuz üzerinden AI sağlayıcısına gider. Bu aktarım hiçbir şey saklamaz — hiçbir istek veya yanıt diske yazılmaz — ve AI'yı uygulamanın AI ayarlarından cihaz üzerinde çalışan Apple Intelligence'a geçirebilir veya tamamen kapatabilirsiniz. Apple Health senkronizasyonu dahil geri kalan her şey yalnızca cihazlarınız ve Apple arasında kalır."
     },
     {
      "question": "Aile üyelerinin kan basıncını takip edebilir miyim?",
-     "answer": "Uygulama bireysel kullanım için tasarlanmıştır ve kişisel iCloud hesabınızla senkronize olur. Birden fazla aile üyesini takip etmek için her kişinin kendi Apple kimliğiyle kendi cihazında uygulamayı kullanması gerekir."
+     "answer": "Feeltracker Kan Basıncı tek bir kişinin ölçümleri için tasarlanmıştır, bu yüzden her aile üyesinin kendi Apple ID'si ve iCloud hesabıyla kendi cihazında takip etmesi en iyisidir. Böylece herkesin geçmişi, grafikleri ve raporları ayrı kalır ve her kişinin verisi yalnızca kendi cihazlarına senkronize olur."
     },
     {
      "question": "Reklam gösteriyor musunuz veya beni takip ediyor musunuz?",
@@ -241,7 +249,23 @@
     },
     {
      "question": "Aboneliğe ihtiyacım var mı?",
-     "answer": "Abonelik gerekmez. Uygulama indirmesi ücretsizdir, tüm takip, grafikler, Apple Health senkronizasyonu ve dışa aktarımlar ücretsizdir ve her kullanıcı her gün gerçek yapay zeka özelliklerini ücretsiz kullanır — reklamsız, hep böyle kalacak. İsteğe bağlı Pro abonelik en kapsamlı yapay zeka özelliklerini (Derinlemesine Araştırma, Doktor Özeti, Örüntü Dedektifi, Pro MAP Raporu, Pro Chat ve daha fazlası) açar, bunları en yetenekli yapay zekamızda çalıştırır ve zaten cömert olan günlük limitleri yükseltir."
+     "answer": "Abonelik gerekmez. Uygulama indirmesi ücretsizdir, tüm takip, grafikler, Apple Health senkronizasyonu, yedeklemeler ve dışa aktarmalar ücretsizdir ve her kullanıcı her gün gerçek AI özelliklerini ücretsiz kullanır — Soru Sor, Quick Chat, Sesli Özet, bir Hızlı Sağlık Raporu, Beni Güldür, Beni Sakinleştir ve Camera Scan AI — hiçbir zaman reklam olmadan. İsteğe bağlı bir Pro aboneliği en derinlemesine AI özelliklerinin (Derin Araştırma, Doktor Özeti, Örüntü Dedektifi, Pro MAP Raporu, Pro Chat ve daha fazlası) kilidini açar, bunları en yetenekli AI'mızda çalıştırır ve cömert günlük limitleri yükseltir."
+    },
+    {
+     "question": "OMRON, Microlife veya Beurer tansiyon aletimle çalışır mı?",
+     "answer": "Feeltracker Kan Basıncı, cihaza bağlanmak yerine rakamları okuduğu için evde kullanılan her tansiyon aletiyle çalışır. Kameranızı ekrana doğrultun, Camera Scan AI sistolik, diyastolik ve nabzı doldursun — bu, [OMRON](https://geni.us/B9RB), Microlife ve Beurer dahil çoğu dijital monitörle çalışır — ya da değerleri seçicilerle veya klavyeyle kendiniz girin. Bluetooth eşleştirmesi yok, uyumluluk listesi yok ve tansiyon aletinizi değiştirdiğinizde bozulacak hiçbir şey yok."
+    },
+    {
+     "question": "Kan basıncı ölçümlerimi doktorumla nasıl paylaşırım?",
+     "answer": "Feeltracker Kan Basıncı, birkaç dokunuşla herhangi bir tarih aralığı için doktora hazır bir PDF oluşturabilir ve bunu uygulamadan doğrudan e-postayla, mesajla, yazdırarak veya AirDrop ile gönderebilirsiniz. PDF, CSV, Excel ve JSON dışa aktarmalarının hepsi ücretsizdir; bir ay, çeyrek, yıl veya özel aralık için Ortalama Arter Basıncınızı sabah, akşam ve tüm gün görünümlerine bölen özel MAP raporu da öyle. Pro ile AI, rakamların yanına eklemek üzere aynı dönem için sade bir dille yazılmış bir Doktor Özeti de hazırlayabilir."
+    },
+    {
+     "question": "Kendi kan basıncı hedeflerimi ve aralıklarımı belirleyebilir miyim?",
+     "answer": "Evet — Feeltracker Kan Basıncı, grafiklerinizde referans çizgileri olarak görünen hedef sistolik, diyastolik ve nabız değerlerini belirlemenize ve size gerçekten verilen yönlendirmeye uysun diye her aralık bandının (Düşük, Normal, Yüksek Normal, Yüksek, Çok Yüksek) eşiklerini düzenlemenize olanak tanır. Grafikleriniz, takvim renkleriniz ve PDF raporlarınız yalnızca varsayılanları değil, sizin belirlediğiniz aralıkları izler. MAP'in, bir LVAD odağı seçeneği de dahil olmak üzere kendi ayarlanabilir bantları vardır."
+    },
+    {
+     "question": "Feeltracker Kan Basıncı iPad ve Mac'te çalışır mı?",
+     "answer": "Evet — tek bir indirme iPhone ve iPad'i kapsar, ayrıca Mac App Store üzerinden Apple Silicon Mac'lerde de çalışır. Ölçümleriniz kendi özel iCloud hesabınız üzerinden hepsi arasında otomatik olarak senkronize olur, böylece iPhone'unuzda kaydettiğiniz bir ölçüm birkaç saniye sonra iPad'inizde olur. Son ortalamalarınızı gösteren bir ana ekran widget'ı vardır ve kayıtlar Spotlight'ta indekslenir, böylece geçmişinizi iOS'ta her yerden arayabilirsiniz."
     }
    ]
   },
@@ -445,65 +469,25 @@
   "structuredData": [
    {
     "name": "Kan Basıncı",
-    "description": "Birleşik Krallık'ın 1 numaralı kan basıncı takip uygulaması. Sistolik ve diyastolik kan basıncını, kalp hızını ve Ortalama Arteriyel Basıncı AI destekli içgörülerle izleyin. Kamera Tarama AI, Apple Health entegrasyonu ve sağlık personeli ile paylaşmak için dışa aktarma özellikleri sunar.",
+    "description": "Birleşik Krallık'ın 1 numaralı kan basıncı takip uygulaması. Sistolik ve diyastolik kan basıncını, nabzı ve Ortalama Arter Basıncını AI destekli içgörülerle izleyin. Değerleri doğrudan bir monitörün ekranından okuyan Camera Scan AI, özelleştirilebilir hedef değerler ve aralık eşikleri, sabah, akşam ve tüm gün olarak bölünmüş bir MAP raporu, iki yönlü Apple Health senkronizasyonu, iPhone, iPad ve Mac arasında iCloud senkronizasyonu ve sağlık hizmeti sağlayıcılarıyla paylaşmak için PDF, CSV, Excel ve JSON dışa aktarmaları sunar. Kullanımı ücretsizdir; AI özellikleri her gün ücretsiz dahildir ve en derinlemesine AI raporları için isteğe bağlı bir Pro aboneliği bulunur.",
     "featureList": [
      "Otomatik ölçüm yakalama için Kamera Tarama AI",
      "Apple Health çift yönlü senkronizasyon",
      "AI destekli örüntü tespiti",
-     "PDF ve Excel'e dışa aktarma",
+     "PDF, CSV, Excel ve JSON'a dışa aktarma",
      "Ortalama Arteriyel Basınç hesaplama",
      "OMRON, Microlife, Beurer monitörlerle uyumlu",
      "Günde birden fazla ölçüm takibi",
-     "Hızlı kayıt için ana ekran widget'ları",
+     "Son ortalamaları gösteren ana ekran widget'ı",
      "Renk kodlu göstergelerle takvim görünümü",
      "iCloud yedekleme ve senkronizasyon",
-     "32 dil desteği"
-    ]
-   },
-   {
-    "mainEntity": [
-     {
-      "name": "En iyi kan basıncı takip uygulaması hangisi?",
-      "acceptedAnswer": {
-       "text": "Kan Basıncı, Birleşik Krallık'ın 1 numaralı kan basıncı takip uygulamasıdır. AI destekli içgörüler, monitör ekranlarından değerleri otomatik okumak için Camera Scan AI teknolojisi (OMRON, Microlife, Beurer), Apple Health entegrasyonu ve doktorlarla paylaşmak için dışa aktarma özellikleri sunar. Sistolik ve diyastolik kan basıncı, kalp hızı ve Ortalama Arteriyel Basınç (OAB) takibini destekler."
-      }
-     },
-     {
-      "name": "Kamera Tarama AI nasıl çalışır?",
-      "acceptedAnswer": {
-       "text": "Kamera Tarama AI, monitörün dijital ekranındaki kan basıncı değerlerini otomatik olarak okumak için gelişmiş optik karakter tanıma (OCR) teknolojisi kullanır. iPhone veya iPad kameranızı sistolik, diyastolik ve nabız değerlerini gösteren ekrana doğrultun; uygulama bu değerleri otomatik olarak doldurur. OMRON, Microlife, Beurer ve çoğu dijital kan basıncı monitörüyle çalışır."
-      }
-     },
-     {
-      "name": "Normal kan basıncı ölçümü nedir?",
-      "acceptedAnswer": {
-       "text": "Tıbbi yönergelere göre, normal kan basıncı genellikle 120/80 mmHg'nin altındadır. 120-129 sistolik ve 80'in altında diyastolik arasındaki değerler yüksek olarak kabul edilir. 130/80 veya üzeri değerler hipertansiyona işaret edebilir. Ancak hedef aralıklar yaşa ve sağlık durumuna göre değişebilir; kişiselleştirilmiş rehberlik için doktorunuza danışın."
-      }
-     },
-     {
-      "name": "Kan basıncı verilerimi doktorum için dışa aktarabilir miyim?",
-      "acceptedAnswer": {
-       "text": "Evet, Blood Pressure kapsamlı raporları PDF, CSV, Excel veya JSON formatında dışa aktarmanıza olanak tanır. Bu profesyonel biçimlendirilmiş raporlar özet istatistikler, trend grafikleri ve tüm notlarınızı içerir - sağlık uzmanınızın ihtiyaç duyduğu her şey tek bir belgede. Bu raporları e-posta veya diğer paylaşım yöntemleriyle kolayca paylaşabilirsiniz."
-      }
-     },
-     {
-      "name": "Uygulama Apple Health ile entegre mi?",
-      "acceptedAnswer": {
-       "text": "Evet, Kan Basıncı uygulaması çift yönlü Apple Health entegrasyonuna sahiptir. Apple Health'ten geçmiş kan basıncı verilerini içe aktarabilir ve uygulama yeni ölçümleri otomatik olarak HealthKit'e kaydeder. Bu sayede tüm Apple cihazlarınızda kapsamlı bir sağlık takip ekosistemi oluşturulur."
-      }
-     },
-     {
-      "name": "Kan basıncı izlemede OAB nedir?",
-      "acceptedAnswer": {
-       "text": "OAB (Ortalama Arteriyel Basınç), bir kardiyak döngü süresince arterlerinizde ortalama kan basıncını temsil eden hesaplanmış bir değerdir. Şu formülle hesaplanır: OAB = (2 × Diyastolik + Sistolik) ÷ 3. Kan Basıncı uygulaması her ölçüm için OAB'ı otomatik olarak hesaplar."
-      }
-     },
-     {
-      "name": "Kan basıncı verilerim özel mi?",
-      "acceptedAnswer": {
-       "text": "Evet, kan basıncı ölçümleriniz şifreli olarak cihazınızda ve özel iCloud hesabınızda saklanır. Veriler hiçbir zaman harici sunuculardan geçmez ve geliştiriciler sağlık bilgilerinizi göremez. Apple'ın Notlar veya Fotoğraflar uygulamaları kadar güvenlidir ve tamamen GDPR uyumludur."
-      }
-     }
+     "32 dil desteği",
+     "Grafiklerde özelleştirilebilir aralık eşikleri ve hedef çizgileri",
+     "Sabah, akşam ve tüm gün dökümlü MAP PDF raporu",
+     "Geri yükleme özellikli otomatik haftalık yedeklemeler",
+     "Seçtiğiniz günlerde dörde kadar hatırlatıcı",
+     "İsteğe bağlı Pro abonelikle günlük ücretsiz AI özellikleri",
+     "Reklam yok, üçüncü taraf takibi yok"
     ]
    }
   ]

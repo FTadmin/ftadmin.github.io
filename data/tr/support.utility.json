@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "Destek - Feeltracker",
-   "description": "Feeltracker sağlık uygulamalarıyla ilgili yardım alın. Destekle iletişime geçin, FAQ'lara göz atın ve Blood Pressure, Mood, Journal, Sleep ve Weight uygulamaları için kaynakları bulun.",
-   "keywords": "",
+   "title": "Feeltracker Destek | Sağlık Uygulamalarımıza Yardım",
+   "description": "Feeltracker uygulamalarıyla ilgili yardım alın. 24 saatte yanıt için support@feeltracker.com adresine yazın veya SSS, gizlilik politikası ve koşullara göz atın.",
+   "keywords": "feeltracker destek, feeltracker ile iletişim, sağlık uygulaması yardımı, tansiyon uygulaması desteği, ruh hali takip desteği, uyku takip desteği, kilo takip desteği",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Feeltracker Destek",
   "contact": {
    "title": "Yardıma mı İhtiyacınız Var?",
-   "supportText": "Anında destek veya sorularınız için bize e-posta gönderin: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "Ayrıntılı yardım ve sık sorulan sorular için <a href=\"../../tr/faq/\">SSS sayfamızı</a> ziyaret edin."
+   "supportText": "Herhangi bir Feeltracker uygulamasıyla ilgili yardım almanın en hızlı yolu <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> adresine e-posta göndermektir — küçük bir ekibiz ve genellikle 24 saat içinde yanıt veririz. Hangi uygulamayı kullandığınızı ve sorun oluştuğunda ne yaptığınızı bize bildirin, gerisini biz hallederiz.",
+   "faqText": "Senkronizasyon, yedeklemeler, doktorunuz için dışa aktarma, yapay zeka özellikleri, gizlilik ve abonelikler hakkında adım adım yanıtlar için <a href=\"../faq/\">SSS sayfamıza</a> göz atın."
   },
   "apps": {
    "title": "Uygulamalarımız",
@@ -31,7 +31,7 @@
     },
     {
      "name": "Ruh Hali Günlüğü",
-     "url": "https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999",
+     "url": "https://apps.apple.com/us/app/feeltracker-mood-journal-diary/id687448999",
      "separator": " - ",
      "description": "Duygusal sağlığınızı izleyin"
     },
@@ -63,8 +63,31 @@
     {
      "name": "Kullanım Koşulları",
      "url": "../../tr/terms/"
+    },
+    {
+     "name": "Feeltracker Hakkında",
+     "url": "../about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Feeltracker Destek",
+    "description": "iPhone, iPad ve Mac için Feeltracker sağlık takip uygulamalarıyla ilgili nasıl yardım alınır: e-posta desteği, SSS, gizlilik politikası ve kullanım koşulları.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Müşteri Desteği",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "Türkçe"
+      }
+     ]
+    }
+   }
+  ]
  }
 }

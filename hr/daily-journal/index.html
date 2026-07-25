@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Dnevnik – Bilješke, Fotografije & AI Dnevnik | Feeltracker</title>
     <meta name="description" content="Privatni dnevnik s AI. Skenirajte predmete i tekst za trenutačne unose, priložite fotografije, pratite sentiment i obrasce riječi. Sinkronizacija putem iCloud. iPhone, iPad i Mac.">
-    <meta name="keywords" content="dnevnik,dnevno,zaključati,besplatno,osobni,privatan,tajni,pisanje,moj">
+    <meta name="keywords" content="aplikacija za dnevni dnevnik,aplikacija za pisanje dnevnika,privatni dnevnik,digitalni dnevnik,dnevnik za iPhone,dnevnik zahvalnosti,dnevnik s fotografijama,AI dnevnik,aplikacija za dnevnu refleksiju,dnevnik i bilješke">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/hr/daily-journal/">
 
@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -169,15 +170,21 @@
           "featureList": [
                 "AI analiza sentimenta on-device",
                 "Skeniranje predmeta i teksta s AI opisima",
-                "Analiza frekvencije riječi",
-                "Prilaganje fotografija (do 8 po unosu)",
+                "Analiza sentimenta na unosima",
+                "Oblak riječi i analiza učestalosti riječi",
                 "Predlošci bilješki",
                 "Pretraživanje punog teksta i Spotlight integracija",
                 "Izvoz u PDF, Excel i JSON",
-                "iCloud sinkronizacija i sinkronizacija između uređaja",
+                "Izvoz u PDF, Excel, CSV i JSON",
                 "Podrška za 32 jezika",
-                null,
-                "Widgeti na početnom zaslonu za brzi unos"
+                "32 language support",
+                "Widgeti na početnom zaslonu za brzi unos",
+                "Ponavljajući unosi koji se stvaraju dnevno ili tjedno",
+                "Neobavezni Markdown prikaz u popisu unosa",
+                "AI preformuliranje za doradu tvog teksta",
+                "Broj riječi po danu, mjesecu i godini",
+                "Excel uvoz za starije dnevnike",
+                "Automatske tjedne sigurnosne kopije"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -428,7 +435,7 @@
                       "name": "Je li moj dnevnik privatan?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Apsolutno. Vaši unosi pohranjuju se na vašem uređaju i u vašem privatnom iCloud računu — nemamo poslužitelje koji pohranjuju vaš dnevnik i nikada ne vidimo što ste napisali. Neobavezne AI značajke koriste AI u oblaku koji poštuje privatnost, a koji možete isključiti u bilo kojem trenutku; kada je AI isključen, analiza raspoloženja odvija se u potpunosti na uređaju pomoću Appleova Natural Language okvira, a uz opciju Apple Intelligence sav AI radi na uređaju."
+                            "text": "Da - Feeltracker Dnevni dnevnik čuva tvoje unose na tvom uređaju i u tvom privatnom iCloud računu, pa mi nemamo poslužitelje koji čuvaju tvoj dnevnik i nitko u Feeltrackeru ne može pročitati što pišeš. Nema oglasa ni praćenja između aplikacija. Neobavezne AI značajke šalju unose o kojima pitaš na uslugu u oblaku koja poštuje privatnost, a AI možeš isključiti u bilo kojem trenutku; kad je AI isključen, analiza sentimenta radi u potpunosti na uređaju pomoću Appleova Natural Language okvira, a uz opciju Apple Intelligence sve AI značajke rade na uređaju."
                       }
                 },
                 {
@@ -436,7 +443,7 @@
                       "name": "Kako funkcionira analiza sentimenta?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Dok pišete, aplikacija analizira emocionalni ton vašeg unosa i prikazuje emotikon koji pokazuje je li pozitivan, negativan ili neutralan. Prema zadanim postavkama za to se koristi AI aplikacije koji poštuje privatnost; ako isključite AI, prebacuje se na Appleov ugrađeni Natural Language okvir na uređaju."
+                            "text": "Feeltracker Dnevni dnevnik ocjenjuje emocionalni ton svakog unosa dok pišeš i prikazuje ga kao pokazatelj u boji ispod teksta, od crvene (negativno) preko sive (neutralno) do zelene i plave (pozitivno). Pokazatelj je neobavezan i može se isključiti u Postavkama. Prema zadanim postavkama koristi AI aplikacije koji poštuje privatnost; ako isključiš AI, prebacuje se na Appleov ugrađeni Natural Language okvir na uređaju."
                       }
                 },
                 {
@@ -444,7 +451,7 @@
                       "name": "Što je analiza frekvencije riječi?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Funkcija Trendovi analizira sve vaše unose kako bi prikazala koje riječi i teme najčešće pišete. Pomaže identificirati ponavljajuće teme."
+                            "text": "Analiza učestalosti riječi u Feeltracker Dnevnom dnevniku broji riječi u svim tvojim unosima i rangira one koje najčešće koristiš, tako da ljudi, mjesta i brige koji se stalno vraćaju postanu vidljivi. Uobičajene riječi bez značenja filtriraju se na tvom jeziku, isti se podaci prikazuju i kao oblak riječi, a dodir na bilo koju riječ otvara sve unose koji je sadrže."
                       }
                 },
                 {
@@ -500,7 +507,39 @@
                       "name": "Trebam li pretplatu?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Pretplata nije potrebna. Aplikacija se besplatno preuzima, svo praćenje, grafikoni, sinkronizacija s Apple Healthom i izvozi su besplatni, a svaki korisnik svaki dan dobiva stvarne AI značajke besplatno — bez oglasa, nikad. Neobavezna pretplata Pro otključava najdetaljnije AI značajke (Dubinsko istraživanje, Istraživač tema, Vremenska crta raspoloženja, Sažetak za liječnika, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja."
+                            "text": "Ne - Feeltracker Dnevni dnevnik besplatan je za preuzimanje i ne zahtijeva pretplatu. Pisanje, fotografije, predlošci, ponavljajući unosi, analiza riječi, pretraga, grafikoni, sigurnosne kopije, izvozi i iCloud sinkronizacija potpuno su besplatni, a svaki korisnik svaki dan dobiva prave AI značajke besplatno (Brzi chat, Postavi pitanje, Glasovni sažetak, Nasmiji me, Smiri me te skenere teksta i predmeta) - bez ikad ijednog oglasa. Neobavezna Pro pretplata otključava najdublje AI značajke (Dubinsko istraživanje, Istraživač tema, Vremenski trak sentimenta, Sažetak za liječnika, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Radi li Feeltracker Dnevni dnevnik bez interneta?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da - Feeltracker Dnevni dnevnik radi bez interneta za sve što je bitno: pisanje unosa, prilaganje fotografija, pretraga, pregled cijele godine te statistika i grafikona - sve to radi na tvom uređaju bez internetske veze. Sve što napišeš bez interneta sinkronizira se s tvojim ostalim uređajima putem iClouda čim se sljedeći put spojiš na internet. AI značajke u oblaku trebaju vezu, no ako uključiš način rada AI na uređaju (Apple Intelligence, Pro, na podržanim uređajima s iOS-om 26 ili novijim), AI radi i bez interneta."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mogu li uvesti svoje stare unose iz dnevnika?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da - Feeltracker Dnevni dnevnik uvozi unose iz Excel proračunske tablice. Preuzmi predložak za uvoz iz Postavki, zalijepi datum, vrijeme i tekst svakog unosa, a zatim uvezi datoteku - svaki redak postaje unos u dnevniku. Također možeš vratiti prethodnu sigurnosnu kopiju, koja zajedno vraća tvoje unose i njihove fotografije."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mogu li zaključati dnevnik pomoću Face ID-a?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da - Feeltracker Dnevni dnevnik možeš zaključati pomoću Face ID-a ili Touch ID-a koristeći zaključavanje aplikacija ugrađeno u iOS: pritisni i zadrži ikonu aplikacije na početnom zaslonu i odaberi Zahtijevaj Face ID. Postavke vode na iste upute. Kad je uključeno, nitko ne može otvoriti tvoj dnevnik bez tvog lica, otiska prsta ili lozinke."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Što se događa s mojim dnevnikom ako izgubim telefon?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tvoj je dnevnik siguran: Feeltracker Dnevni dnevnik sinkronizira svaki unos i fotografiju s tvojim privatnim iCloud računom, pa prijava na novom iPhoneu, iPadu ili Macu sve automatski vrati. Aplikacija također otprilike jednom tjedno automatski izrađuje sigurnosnu kopiju (ZIP tvojih unosa i fotografija) koju u bilo kojem trenutku možeš vratiti ili izvesti, a ručnu sigurnosnu kopiju možeš napraviti kad god poželiš."
                       }
                 }
           ]
@@ -518,7 +557,7 @@
 
             <a href="/hr/daily-journal/" class="current">Dnevnik</a>
 
-            <a href="/hr/mental-health/">Mentalno zdravlje</a>
+            <a href="/hr/mood-journal/">Dnevnik raspoloženja</a>
 
             <a href="/hr/sleep/">San</a>
 
@@ -603,17 +642,18 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Ikona aplikacije Dnevni dnevnik" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Dnevni dnevnik - privatna AI aplikacija za pisanje dnevnika za iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Dnevni dnevnik</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Bez reklama · Bez praćenja · Privatnost na prvom mjestu
         </div>
-        <p class="hero-subtitle">Vaš privatni prostor za dnevna razmišljanja, misli i uspomene. Pišite slobodno uz AI analizu sentimenta, prilaganje fotografija i inteligentne uvide u obrasce pisanja.</p>
+        <p class="hero-subtitle">Tvoj privatni prostor za dnevna razmišljanja, misli i uspomene. Piši onoliko često koliko želiš, priloži do 8 fotografija i otkrij teme kojima se stalno vraćaš uz analizu sentimenta, oblak riječi i analizu učestalosti riječi.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmite Dnevni dnevnik u App Storeu"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmite Dnevni dnevnik u App Storeu" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Besplatna aplikacija s opcionalnim premium funkcijama<br>iPhone, iPad i Mac • iOS 16.0+</p>
 
@@ -627,15 +667,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Snimka zaslona Dnevnog dnevnika 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Snimka zaslona Dnevnog dnevnika 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Snimka zaslona Dnevnog dnevnika 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="AI povratne informacije o unosu dnevnika u Feeltracker Dnevnom dnevniku" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Snimka zaslona Dnevnog dnevnika 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Pisanje unosa dnevnika s datumom, vremenom i bilješkama" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -649,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Pisanje bez ometanja</h3>
-                <p>Čisto, jednostavno sučelje koje stavlja vaše riječi na prvo mjesto. Bez nerede, samo vi i vaše misli.</p>
+                <p>Čist, jednostavan uređivač teksta koji tvoje riječi stavlja na prvo mjesto, uz broj riječi uživo dok pišeš. Dodirni AI preformuliranje da doradiš odlomak, i uključi Markdown prikaz ako voliš naslove, podebljano i popise u svom dnevniku.</p>
             </div>
 
             <div class="feature-box">
@@ -666,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Analiza frekvencije riječi</h3>
-                <p>Otkrijte što vam je zapravo na umu. Vidite koje se riječi i teme najčešće pojavljuju u pisanju.</p>
+                <h3>Oblak riječi i učestalost riječi</h3>
+                <p>Otkrij što ti se zapravo mota po glavi. Oblak riječi i rangirani popis učestalosti pokazuju riječi koje najčešće koristiš, uz filtrirane uobičajene riječi bez značenja na tvom jeziku - dodirni bilo koju riječ da otvoriš sve unose koji je spominju.</p>
             </div>
 
             <div class="feature-box">
@@ -712,6 +752,12 @@
                 <p>Ukupan broj napisanih riječi po danu, mjesecu i godini. Neki će vas dani iznenaditi — a gledati kako broj raste motivacija je sama po sebi.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Ponavljajući unosi</h3>
+                <p>Postavi unose koji se sami stvaraju, dnevno ili tjedno, tako da tvoj dnevnik navika, bilješka o lijekovima ili večernji podsjetnik na zahvalnost već čekaju kad otvoriš aplikaciju.</p>
+            </div>
+
         </div>
     </section>
 
@@ -732,18 +778,18 @@
         <div class="app-card">
             <h3>2. Vidite obrasce koji se pojavljuju</h3>
             <div class="app-card-content">
-<p><strong>Analiza sentimenta:</strong> AI automatski detektira emocionalni ton vaših unosa — pozitivan, negativan ili neutralan. Vidite trendove raspoloženja vizualizirane kroz tjedne i mjesece.</p>
-<p><strong>Frekvencija riječi:</strong> Otkrijte o kojim temama najčešće pišete. Aplikacija identificira ponavljajuće riječi i fraze, otkrivajući što vam je dosljedno na umu.</p>
-<p><strong>Prikaz kalendara:</strong> Pregledajte cijelu povijest pisanja dnevnika u kalendarskom sučelju.</p>
+<p><strong>Analiza sentimenta:</strong> Dok pišeš, neobavezni pokazatelj u boji ocjenjuje emocionalni ton unosa, od negativnog preko neutralnog do pozitivnog. Pro dodaje Vremenski trak sentimenta koji prikazuje kako se taj ton kreće kroz tjedne i mjesece.</p>
+<p><strong>Učestalost riječi:</strong> Otkrij o kojim temama, ljudima ili motivima najčešće pišeš. Oblak riječi i rangirani popis učestalosti otkrivaju što ti je dosljedno na umu, a dodir na riječ otvara sve unose koji je koriste.</p>
+<p><strong>Prikaz po godini, mjesecu i danu:</strong> Pregledaj cijelu povijest pisanja, od godišnje toplinske karte dana s unosima do pojedinog dana. Svaki dan navodi tvoje unose u cijelosti, sa zapisom i brojem riječi, tako da odmah možeš skočiti na svoje misli s bilo kojeg datuma.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Razmišljajte i rastite</h3>
             <div class="app-card-content">
-<p><strong>AI uvidi:</strong> Postavljajte pitanja o dnevniku kao što je koji su bili najsretniji dani prošlog mjeseca. Dobijte trenutne, promišljene odgovore.</p>
-<p><strong>Praćenje osobnog rasta:</strong> Pregledajte kako se vaše misli, brige i težnje razvijaju. Vidite napredak prema ciljevima.</p>
-<p><strong>Pretraži sve:</strong> Snažno pretraživanje pronalazi bilo koju riječ ili frazu kroz godine pisanja dnevnika.</p>
+<p><strong>AI uvidi:</strong> Postavljaj pitanja o svom dnevniku: „Koji su mi bili najsretniji dani prošlog mjeseca?” ili „Pokaži mi sve unose koji spominju moje ciljeve.” Dobij trenutne, promišljene odgovore koji ti pomažu razumjeti svoje putovanje.</p>
+<p><strong>Praćenje osobnog rasta:</strong> Pregledaj kako se tvoje misli, brige i težnje razvijaju. Vidi napredak prema ciljevima spomenutima u prošlim unosima. Prepoznaj područja rasta i proslavi svoj napredak.</p>
+<p><strong>Pretraži sve:</strong> Pretraži bilo koju riječ kroz godine pisanja dnevnika, suzi na raspon datuma i skoči izravno na odgovarajuće unose. Tvoj dnevnik je indeksiran i u iOS Spotlightu, pa ga pronađe i pretraga s početnog zaslona.</p>
             </div>
         </div>
 
@@ -766,102 +812,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Postavi pitanje</h4>
+                <h3><i class="fas fa-question-circle"></i> Postavi pitanje</h3>
                 <p>Brzi Q&A o unosima dnevnika — dobijte trenutne odgovore o pisanju</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Vodite interaktivne razgovore o svom putovanju pisanja dnevnika i dobijte personaliziranu podršku. Brzi chat besplatan je svaki dan; Pro Chat ide dublje na našoj najsposobnijoj AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Glasovni sažetak</h4>
+                <h3><i class="fas fa-volume-up"></i> Glasovni sažetak</h3>
                 <p>Slušajte audio sažetke tema dnevnika — savršeno za razmišljanje u pokretu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> AI skeniranje</h4>
+                <h3><i class="fas fa-barcode-scan"></i> AI skeniranje</h3>
                 <p>Skenirajte predmete, dokumente, račune ili tekst za trenutne unose dnevnika s AI opisima</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Nasmiji me</h4>
+                <h3><i class="fas fa-laugh"></i> Nasmiji me</h3>
                 <p>Dobijte personalizirani humor iz unosa dnevnika kako biste uljepšali dan</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Smiri me</h4>
+                <h3><i class="fas fa-moon"></i> Smiri me</h3>
                 <p>AI-vođene vježbe disanja i opuštanja za smanjenje stresa</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dubinsko istraživanje <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dubinsko istraživanje <span class="ai-pro-badge">Pro</span></h3>
                 <p>Sveobuhvatna AI analiza dnevnika s detaljnim uvidima</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detektiv obrazaca <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detektiv obrazaca <span class="ai-pro-badge">Pro</span></h3>
                 <p>Pronađite skrivene teme i obrasce u unosima dnevnika kroz vrijeme</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistent za ciljeve <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistent za ciljeve <span class="ai-pro-badge">Pro</span></h3>
                 <p>Dobijte personalizirane, podacima potkrijepljene životne ciljeve temeljene na obrascima pisanja</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Liječnički sažetak <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Liječnički sažetak <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generirajte profesionalne sažetke za zdravstvene posjete</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Potvrda o bolovanju <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Potvrda o bolovanju <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI generirane potvrde o bolovanju za posao ili školu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generator priča <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generator priča <span class="ai-pro-badge">Pro</span></h3>
                 <p>Pretvorite unose dnevnika u kreativne, zanimljive narative</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstualni sažetak <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstualni sažetak <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kreirajte tekstualne sažetke tema dnevnika koji se mogu dijeliti</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Osobni kviz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Osobni kviz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Testirajte znanje uz zabavni AI generirani kviz od 10 pitanja</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Pretvorba teksta u govor <span class="ai-pro-badge">Pro</span></h4>
-                <p>Slušajte AI uvide i sažetke s prirodnom glasovnom reprodukcijom</p>
+                <h3><i class="fas fa-microphone"></i> Glasovna povratna informacija <span class="ai-pro-badge">Pro</span></h3>
+                <p>Kratka AI glasovna bilješka nakon svakog spremanja, koja reagira na tvoj tek napisani unos</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Prilagođeno zdravstveno izvješće <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Prilagođeno zdravstveno izvješće <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kreirajte sveobuhvatne, personalizirane dokumente za praćenje napretka pisanja</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Istraživač tema <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Istraživač tema <span class="ai-pro-badge">Pro</span></h3>
                 <p>Otkrijte ponavljajuće teme i ideje u pisanju uz AI analizu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Vremenski trak sentimenta <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Vremenski trak sentimenta <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vizualizirajte emocionalno putovanje kroz vrijeme s AI analiziranim praćenjem sentimenta</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (Na Uređaju) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (Na Uređaju) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opcija koja stavlja privatnost na prvo mjesto i pokreće AI lokalno na vašem uređaju pomoću Appleovih Foundation Models — ništa ne napušta vaš iPhone, iPad ili Mac. Neograničena upotreba uz plaćeni račun, na podržanim Apple Silicon uređajima (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Glasovni chat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Glasovni chat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Dvosmjerni glasovni razgovori s AI-jem o vašim podacima bez korištenja ruku — postavljajte pitanja i slušajte odgovore bez dodirivanja zaslona</p>
             </div>
 
@@ -939,7 +985,7 @@
         <p>Vježbajte svakodnevno pisanje, hvatajte ideje i razvijajte vlastiti glas.</p>
 
         <h3>Mentalno zdravlje</h3>
-        <p>Obrađujte emocije, identificirajte okidače i pratite obrasce raspoloženja pisanjem.</p>
+        <p>Ispiši se kroz težak dan, primijeti što se stalno ponavlja i pogledaj kako je bilo prije mjesec dana. Analiza sentimenta daje ti jednostavan uvid u emocionalni ton svakog unosa.</p>
 
     </section>
 
@@ -950,15 +996,15 @@
 
 
         <h3>Je li moj dnevnik privatan?</h3>
-        <p>Apsolutno. Vaši unosi pohranjuju se na vašem uređaju i u vašem privatnom iCloud računu — nemamo poslužitelje koji pohranjuju vaš dnevnik i nikada ne vidimo što ste napisali. Neobavezne AI značajke koriste AI u oblaku koji poštuje privatnost, a koji možete isključiti u bilo kojem trenutku; kada je AI isključen, analiza raspoloženja odvija se u potpunosti na uređaju pomoću Appleova Natural Language okvira, a uz opciju Apple Intelligence sav AI radi na uređaju.</p>
+        <p>Da - Feeltracker Dnevni dnevnik čuva tvoje unose na tvom uređaju i u tvom privatnom iCloud računu, pa mi nemamo poslužitelje koji čuvaju tvoj dnevnik i nitko u Feeltrackeru ne može pročitati što pišeš. Nema oglasa ni praćenja između aplikacija. Neobavezne AI značajke šalju unose o kojima pitaš na uslugu u oblaku koja poštuje privatnost, a AI možeš isključiti u bilo kojem trenutku; kad je AI isključen, analiza sentimenta radi u potpunosti na uređaju pomoću Appleova Natural Language okvira, a uz opciju Apple Intelligence sve AI značajke rade na uređaju.</p>
 
 
         <h3>Kako funkcionira analiza sentimenta?</h3>
-        <p>Dok pišete, aplikacija analizira emocionalni ton vašeg unosa i prikazuje emotikon koji pokazuje je li pozitivan, negativan ili neutralan. Prema zadanim postavkama za to se koristi AI aplikacije koji poštuje privatnost; ako isključite AI, prebacuje se na Appleov ugrađeni Natural Language okvir na uređaju.</p>
+        <p>Feeltracker Dnevni dnevnik ocjenjuje emocionalni ton svakog unosa dok pišeš i prikazuje ga kao pokazatelj u boji ispod teksta, od crvene (negativno) preko sive (neutralno) do zelene i plave (pozitivno). Pokazatelj je neobavezan i može se isključiti u Postavkama. Prema zadanim postavkama koristi AI aplikacije koji poštuje privatnost; ako isključiš AI, prebacuje se na Appleov ugrađeni Natural Language okvir na uređaju.</p>
 
 
         <h3>Što je analiza frekvencije riječi?</h3>
-        <p>Funkcija Trendovi analizira sve vaše unose kako bi prikazala koje riječi i teme najčešće pišete. Pomaže identificirati ponavljajuće teme.</p>
+        <p>Analiza učestalosti riječi u Feeltracker Dnevnom dnevniku broji riječi u svim tvojim unosima i rangira one koje najčešće koristiš, tako da ljudi, mjesta i brige koji se stalno vraćaju postanu vidljivi. Uobičajene riječi bez značenja filtriraju se na tvom jeziku, isti se podaci prikazuju i kao oblak riječi, a dodir na bilo koju riječ otvara sve unose koji je sadrže.</p>
 
 
         <h3>Mogu li dodati fotografije u dnevnik?</h3>
@@ -986,7 +1032,23 @@
 
 
         <h3>Trebam li pretplatu?</h3>
-        <p>Pretplata nije potrebna. Aplikacija se besplatno preuzima, svo praćenje, grafikoni, sinkronizacija s Apple Healthom i izvozi su besplatni, a svaki korisnik svaki dan dobiva stvarne AI značajke besplatno — bez oglasa, nikad. Neobavezna pretplata Pro otključava najdetaljnije AI značajke (Dubinsko istraživanje, Istraživač tema, Vremenska crta raspoloženja, Sažetak za liječnika, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja.</p>
+        <p>Ne - Feeltracker Dnevni dnevnik besplatan je za preuzimanje i ne zahtijeva pretplatu. Pisanje, fotografije, predlošci, ponavljajući unosi, analiza riječi, pretraga, grafikoni, sigurnosne kopije, izvozi i iCloud sinkronizacija potpuno su besplatni, a svaki korisnik svaki dan dobiva prave AI značajke besplatno (Brzi chat, Postavi pitanje, Glasovni sažetak, Nasmiji me, Smiri me te skenere teksta i predmeta) - bez ikad ijednog oglasa. Neobavezna Pro pretplata otključava najdublje AI značajke (Dubinsko istraživanje, Istraživač tema, Vremenski trak sentimenta, Sažetak za liječnika, Pro Chat i više), pokreće ih na našoj najsposobnijoj AI i povećava velikodušna dnevna ograničenja.</p>
+
+
+        <h3>Radi li Feeltracker Dnevni dnevnik bez interneta?</h3>
+        <p>Da - Feeltracker Dnevni dnevnik radi bez interneta za sve što je bitno: pisanje unosa, prilaganje fotografija, pretraga, pregled cijele godine te statistika i grafikona - sve to radi na tvom uređaju bez internetske veze. Sve što napišeš bez interneta sinkronizira se s tvojim ostalim uređajima putem iClouda čim se sljedeći put spojiš na internet. AI značajke u oblaku trebaju vezu, no ako uključiš način rada AI na uređaju (Apple Intelligence, Pro, na podržanim uređajima s iOS-om 26 ili novijim), AI radi i bez interneta.</p>
+
+
+        <h3>Mogu li uvesti svoje stare unose iz dnevnika?</h3>
+        <p>Da - Feeltracker Dnevni dnevnik uvozi unose iz Excel proračunske tablice. Preuzmi predložak za uvoz iz Postavki, zalijepi datum, vrijeme i tekst svakog unosa, a zatim uvezi datoteku - svaki redak postaje unos u dnevniku. Također možeš vratiti prethodnu sigurnosnu kopiju, koja zajedno vraća tvoje unose i njihove fotografije.</p>
+
+
+        <h3>Mogu li zaključati dnevnik pomoću Face ID-a?</h3>
+        <p>Da - Feeltracker Dnevni dnevnik možeš zaključati pomoću Face ID-a ili Touch ID-a koristeći zaključavanje aplikacija ugrađeno u iOS: pritisni i zadrži ikonu aplikacije na početnom zaslonu i odaberi <strong>Zahtijevaj Face ID</strong>. Postavke vode na iste upute. Kad je uključeno, nitko ne može otvoriti tvoj dnevnik bez tvog lica, otiska prsta ili lozinke.</p>
+
+
+        <h3>Što se događa s mojim dnevnikom ako izgubim telefon?</h3>
+        <p>Tvoj je dnevnik siguran: Feeltracker Dnevni dnevnik sinkronizira svaki unos i fotografiju s tvojim privatnim iCloud računom, pa prijava na novom iPhoneu, iPadu ili Macu sve automatski vrati. Aplikacija također otprilike jednom tjedno automatski izrađuje sigurnosnu kopiju (ZIP tvojih unosa i fotografija) koju u bilo kojem trenutku možeš vratiti ili izvesti, a ručnu sigurnosnu kopiju možeš napraviti kad god poželiš.</p>
 
     </section>
 
@@ -1183,22 +1245,22 @@
         <div class="related-apps-grid">
 
             <a href="/hr/blood-pressure/" class="related-app-card" aria-label="Krvni tlak">
-                <img src="/images/BPT_1024.png" alt="Krvni tlak" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Krvni tlak" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Krvni tlak</span>
             </a>
 
-            <a href="/hr/mental-health/" class="related-app-card" aria-label="Mentalno zdravlje">
-                <img src="/images/FT_1024.png" alt="Mentalno zdravlje" class="related-app-icon">
-                <span class="related-app-name">Mentalno zdravlje</span>
+            <a href="/hr/mood-journal/" class="related-app-card" aria-label="Dnevnik raspoloženja">
+                <img src="/images/FT_1024.png" alt="Dnevnik raspoloženja" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Dnevnik raspoloženja</span>
             </a>
 
             <a href="/hr/sleep/" class="related-app-card" aria-label="San">
-                <img src="/images/ST_1024.png" alt="San" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="San" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">San</span>
             </a>
 
             <a href="/hr/weight/" class="related-app-card" aria-label="Težina">
-                <img src="/images/WT_1024.png" alt="Težina" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Težina" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Težina</span>
             </a>
 
@@ -1211,9 +1273,10 @@
         <h2>Počnite pisati dnevnik danas</h2>
         <p>Pridružite se tisućama koji koriste Dnevni dnevnik za razumijevanje sebe</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmite Dnevni dnevnik"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmite Dnevni dnevnik" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

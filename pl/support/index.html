@@ -35,8 +35,10 @@
 
 
     <!-- Primary Meta Tags -->
-    <title>Wsparcie - Feeltracker</title>
-    <meta name="description" content="Uzyskaj pomoc dotyczącą aplikacji zdrowotnych Feeltracker. Skontaktuj się z pomocą techniczną, przeglądaj FAQ i znajdź zasoby dotyczące aplikacji do monitorowania ciśnienia krwi, nastroju, dziennika, snu i wagi.">
+    <title>Wsparcie Feeltracker | Pomoc dla aplikacji zdrowotnych</title>
+    <meta name="description" content="Pomoc dotycząca aplikacji zdrowotnych Feeltracker. Napisz na support@feeltracker.com po odpowiedź w 24h, lub zobacz FAQ, politykę prywatności i regulamin.">
+
+    <meta name="keywords" content="wsparcie feeltracker, kontakt z feeltracker, pomoc aplikacji zdrowotnej, wsparcie aplikacji ciśnienia krwi, wsparcie trackera nastroju, wsparcie trackera snu, wsparcie trackera wagi">
 
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/pl/support/">
@@ -132,12 +134,35 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
 
 
-
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Wsparcie Feeltracker",
+          "url": "https://feeltracker.com/support/",
+          "description": "Jak uzyskać pomoc dotyczącą aplikacji zdrowotnych Feeltracker na iPhone'a, iPada i Maca: wsparcie e-mail, FAQ, polityka prywatności i regulamin.",
+          "mainEntity": {
+                "@type": "Organization",
+                "name": "Feeltracker",
+                "url": "https://feeltracker.com",
+                "logo": "https://feeltracker.com/images/feeltracker.png",
+                "contactPoint": [
+                      {
+                            "@type": "ContactPoint",
+                            "contactType": "Customer Support",
+                            "email": "support@feeltracker.com",
+                            "availableLanguage": "Polish"
+                      }
+                ]
+          }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -150,7 +175,7 @@
 
             <a href="/pl/daily-journal/">Dziennik</a>
 
-            <a href="/pl/mental-health/">Zdrowie psychiczne</a>
+            <a href="/pl/mood-journal/">Dziennik nastrojów</a>
 
             <a href="/pl/sleep/">Sen</a>
 
@@ -235,6 +260,7 @@
 </nav>
 
 
+<main>
 <article class="support-article">
     <header class="support-article-header center-text">
         <div class="callout-icon"><i class="fas fa-life-ring"></i></div>
@@ -243,8 +269,8 @@
 
     <section class="callout callout--highlight center-text">
         <h2>Potrzebujesz pomocy?</h2>
-        <p>Aby uzyskać natychmiastową pomoc lub zadać pytanie, napisz do nas: <a href="mailto:support@feeltracker.com">support@feeltracker.com</a></p>
-        <p>Aby uzyskać szczegółową pomoc i odpowiedzi na często zadawane pytania, odwiedź naszą <a href="../../pl/faq/">stronę FAQ</a>.</p>
+        <p>Najszybszym sposobem uzyskania pomocy dotyczącej dowolnej aplikacji Feeltracker jest napisanie na adres <a href="mailto:support@feeltracker.com">support@feeltracker.com</a> — jesteśmy małym zespołem i zwykle odpowiadamy w ciągu 24 godzin. Napisz nam, z której aplikacji korzystasz i co się działo, gdy pojawił się problem, a my zajmiemy się resztą.</p>
+        <p>Aby uzyskać szczegółowe odpowiedzi dotyczące synchronizacji, kopii zapasowych, eksportu dla lekarza, funkcji AI, prywatności i subskrypcji, zobacz naszą <a href="../../pl/faq/">stronę FAQ</a>.</p>
     </section>
 
     <section class="support-block">
@@ -261,7 +287,7 @@
                 <span class="support-app-desc">Śledź swoje odczyty ciśnienia krwi</span>
             </a>
 
-            <a href="https://apps.apple.com/us/app/feeltracker-mood-tracker-diary/id687448999" class="support-app-link">
+            <a href="https://apps.apple.com/us/app/feeltracker-mood-journal-diary/id687448999" class="support-app-link">
                 <span class="support-app-name">Dziennik nastrojów</span>
                 <span class="support-app-desc">Monitoruj swoje samopoczucie emocjonalne</span>
             </a>
@@ -289,9 +315,12 @@
 
             <li><a href="../../pl/terms/"><i class="fas fa-arrow-right"></i> Regulamin</a></li>
 
+            <li><a href="../../pl/about/"><i class="fas fa-arrow-right"></i> O Feeltracker</a></li>
+
         </ul>
     </section>
 </article>
+</main>
 
     <!-- Footer -->
     <footer>
