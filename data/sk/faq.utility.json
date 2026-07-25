@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "FAQ - Feeltracker",
-   "description": "Odpovede na bežné otázky o zdravotných aplikáciách Feeltracker — synchronizácia iCloud, Apple Health, funkcie AI, ochrana súkromia, predplatné a export dát.",
-   "keywords": "",
+   "title": "Feeltracker FAQ | Bezplatné vs Pro, súkromie, synchronizácia a AI odpovede",
+   "description": "Odpovede o zdravotných aplikáciách Feeltracker: čo je zadarmo, čo pridáva Pro, synchronizácia iCloud, Apple Health, exporty pre lekára, AI funkcie, súkromie a zrušenie predplatného.",
+   "keywords": "feeltracker faq, pomoc so zdravotnou aplikáciou, je feeltracker zadarmo, pomoc s aplikáciou na tlak krvi, synchronizácia icloud zdravotná aplikácia, export apple health, súkromie zdravotnej aplikácie, zrušenie predplatného",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -70,15 +70,15 @@
      },
      {
       "question": "Ako bezpečné sú moje údaje?",
-      "answer": "Vaše údaje sú pri uložení na zariadení šifrované. To znamená, že aj keď bude zariadenie odcudzené, nikto sa k nim nedostane."
+      "answer": "Feeltracker šifruje vaše údaje vo vašom zariadení, takže aj keď váš iPhone alebo iPad stratíte alebo vám ho ukradnú, nikto nemôže čítať vaše záznamy bez vášho kódu, Face ID alebo Touch ID. Údaje sú šifrované aj počas prenosu, keď sa synchronizujú s vaším účtom iCloud."
      },
      {
       "question": "Kde sú uložené moje údaje?",
-      "answer": "Na zariadení a na iCloude. Táto aplikácia používa rovnakú technológiu ako Apple Notes a Photos na ukladanie a synchronizáciu údajov naprieč zariadeniami, čo znamená, že je veľmi spoľahlivá a bezpečná."
+      "answer": "Feeltracker ukladá vaše údaje vo vašom zariadení a vo vašom vlastnom súkromnom účte iCloud — nikdy v účte na našich serveroch. Aplikácie na ukladanie a synchronizáciu záznamov medzi vašimi zariadeniami používajú rovnakú technológiu Apple ako Poznámky a Fotky (CloudKit), vďaka čomu sú spoľahlivé aj súkromné."
      },
      {
       "question": "Môže niekto iný vidieť moje súkromné údaje?",
-      "answer": "Nie. Údaje existujú výhradne na zariadení a na iCloude, ktorý beží na serveroch spravovaných spoločnosťou Apple."
+      "answer": "Nie. Nikto vo Feeltracker nemôže vidieť vaše záznamy: nachádzajú sa vo vašom zariadení a vo vašom vlastnom účte iCloud, na serveroch spravovaných spoločnosťou Apple, a my si neponechávame žiadnu kópiu.\n\nJedinou výnimkou je AI funkcia, ktorú sa rozhodnete použiť. Aby vám aplikácia mohla odpovedať, odošle údaje, ktoré táto funkcia potrebuje, spoločnosti OpenAI prostredníctvom nášho malého prenosového servera, ktorý z nich nič neukladá. Tieto požiadavky nečíta nikto vo Feeltracker. AI môžete v nastaveniach AI aplikácie prepnúť na Apple Intelligence priamo v zariadení, alebo ju úplne vypnúť — všetky podrobnosti nájdete v našich [zásadách ochrany osobných údajov](https://feeltracker.com/privacy/)."
      },
      {
       "question": "Prečo musia byť moje údaje uložené na iCloude?",
@@ -111,7 +111,7 @@
      },
      {
       "question": "Potrebujem účet na používanie tejto aplikácie?",
-      "answer": "Nie. Môžete ju začať používať ihneď bez prihlásenia alebo registrácie. Aplikácia používa iCloud účet na automatickú synchronizáciu údajov na ďalšie zariadenia pomocou infraštruktúry Apple. To znamená, že je rýchla, spoľahlivá a bezpečná."
+      "answer": "Nie. Aplikácie Feeltracker nepotrebujú žiadny účet, žiadnu registráciu ani e-mailovú adresu — stiahnite si ich a začnite sledovať hneď. Synchronizácia využíva váš existujúci účet iCloud a infraštruktúru Apple, takže je rýchla, spoľahlivá a bezpečná bez toho, aby sme kedy museli uchovávať vaše prihlasovacie údaje."
      },
      {
       "question": "Môžem túto aplikáciu používať na iPhone aj iPade?",
@@ -119,7 +119,7 @@
      },
      {
       "question": "Existuje verzia aplikácie pre Mac?",
-      "answer": "Áno. Aplikácia je dostupná pre Apple Silicon Macy (M1 a novší). V aplikácii pre Mac môžete zmeniť veľkosť okna, aby ste na väčších obrazovkách videli viac údajov. Aplikáciu pre Mac si môžete stiahnuť [tu](https://apps.apple.com/us/developer/custom-arts/id968118447) na Macu s M1 alebo novším."
+      "answer": "Áno. Aplikácie Feeltracker fungujú na Macoch s čipom Apple Silicon (M1 a novšie) a vaše záznamy sa tam automaticky synchronizujú prostredníctvom rovnakého účtu iCloud. Na Macu môžete zmeniť veľkosť okna, aby ste na väčšej obrazovke videli viac údajov. Aplikácie pre Mac si stiahnite [tu](https://apps.apple.com/us/developer/custom-arts/id968118447) z vášho Macu s čipom M1 alebo novším."
      },
      {
       "question": "Chcel by som navrhnúť funkciu alebo vylepšenie aplikácie.",
@@ -158,8 +158,8 @@
       "answer": "Nie. Aplikácie Feeltracker nezobrazujú reklamy tretích strán a nepoužívajú žiadne reklamné siete ani SDK na sledovanie reklám (ako napríklad AdMob). Tvoje osobné a zdravotné údaje nikdy nezdieľame s inzerentmi. Aplikácie sú financované výlučne voliteľnými prémiami predplatnými a jednorazovými nákupmi cez App Store."
      },
      {
-      "question": "Existuje bezplatná verzia?",
-      "answer": "Áno. Všetky základné funkcie sú zdarma pre každého — neobmedzené záznamy, grafy a trendy, synchronizácia s Apple Health, export do PDF/CSV/Excel/JSON, AI skenovanie fotoaparátom a súbor bežných AI funkcií, ktoré môžete používať zdarma každý deň. Voliteľné predplatné Pro odomkne najpodrobnejšie AI funkcie (Hĺbkový výskum, Súhrn pre lekára, Detektív vzorov, Pro Chat a ďalšie), spúšťa ich na našej najschopnejšej AI a zvyšuje už aj tak štedré denné limity."
+      "question": "Je Feeltracker zadarmo?",
+      "answer": "Áno. Každá aplikácia Feeltracker je zadarmo na stiahnutie aj na používanie, bez reklám a bez potreby účtu. Zadarmo pre každého: neobmedzený počet záznamov, všetky grafy a trendy, synchronizácia s Apple Health, export do PDF/CSV/Excel/JSON, AI Sken kamerou a skutočné AI funkcie každý deň — Rýchly chat, Opýtať sa na otázku, Hlasové zhrnutie, Rozosmej ma, Upokoj ma, a denná Rýchla verzia väčších správ.\n\nVoliteľné predplatné Pro odomkne AI funkcie v plnom rozsahu (Hĺbkový výskum, Zhrnutie pre lekára, Detektív vzorov, Asistent cieľov, Pro chat, Hlasový chat, Denné postrehy, Apple Intelligence priamo v zariadení a nástroje navrhnuté pre každú aplikáciu) a zvýši veľkorysé denné limity."
      },
      {
       "question": "Na čo platím predplatným?",
@@ -181,8 +181,8 @@
       ]
      },
      {
-      "question": "Chcem zrušiť platené predplatné",
-      "answer": "Ďakujeme za vyskúšanie aplikácie. Dajte mi vedieť, ak môžem niečo zlepšiť na [gs@feeltracker.com](mailto:gs@feeltracker.com) a pokúsim sa pomôcť. Opravy a vylepšenia na základe spätnej väzby používateľov sa často odosielú v aktualizácii aplikácie v rovnaký alebo nasledujúci deň.\n\nAk stále nie ste spokojní, predplatné môžete zrušiť [tu](https://apps.apple.com/account/subscriptions)."
+      "question": "Ako zrušiť predplatné Feeltracker?",
+      "answer": "Predplatné Feeltracker fakturuje Apple, takže ho zrušíte vo svojom účte Apple, nie v aplikácii: otvorte [Spravovať predplatné](https://apps.apple.com/account/subscriptions) (alebo prejdite do Nastavení iOS, ťuknite na svoje meno a potom na Predplatné), vyberte aplikáciu Feeltracker a ťuknite na Zrušiť predplatné. Funkcie Pro si ponecháte do konca obdobia, ktoré ste už zaplatili, a vaše záznamy zostanú vo vašom zariadení v každom prípade.\n\nSkôr než odídete, napíšte nám, čo vám nefungovalo, na [gs@feeltracker.com](mailto:gs@feeltracker.com) — opravy a vylepšenia na základe spätnej väzby od používateľov často vydávame v aktualizácii aplikácie ešte v ten istý alebo nasledujúci deň."
      },
      {
       "question": "Zbiera aplikácia moje meno, dátum narodenia alebo pohlavie?",
@@ -206,7 +206,27 @@
      },
      {
       "question": "Môžem používať AI bez odosielania dát do cloudu?",
-      "answer": "Áno. Aplikácia obsahuje možnosť **Apple Intelligence**, ktorá spúšťa AI úplne na zariadení pomocou Foundation Models od Apple — nič sa neodosiela na naše servery ani do OpenAI. Vyžaduje podporované zariadenie Apple Silicon (iPhone 15 Pro alebo séria iPhone 16 a novšie, iPad a Mac s Apple Silicon) a platený účet Feeltracker, ktorý vám poskytuje **neobmedzené** používanie AI na zariadení. Medzi AI na zariadení a cloudovou AI môžete kedykoľvek prepínať v nastaveniach AI v aplikácii."
+      "answer": "Áno. Feeltracker obsahuje režim **Apple Intelligence**, ktorý spúšťa AI úplne vo vašom zariadení pomocou modelov Apple Foundation Models — nič sa neodosiela na naše servery ani do OpenAI. Vyžaduje iOS 26 alebo novší na zariadení s podporou Apple Intelligence (iPhone 15 Pro alebo séria iPhone 16 a novšie, iPad a Mac s čipom Apple Silicon) a predplatné Feeltracker Pro, vďaka ktorému je AI priamo v zariadení **neobmedzená**. Medzi AI priamo v zariadení a cloudovou AI môžete kedykoľvek prepínať, prípadne AI úplne vypnúť, v nastaveniach AI v aplikácii."
+     },
+     {
+      "question": "Čo získam s predplatným Feeltracker Pro?",
+      "answer": "Feeltracker Pro odomkne verziu každej AI funkcie v plnom rozsahu a zvýši denné limity — samotné sledovanie je už zadarmo, takže Pro sa týka len AI.\n\nPro zahŕňa Pro zdravotnú správu, Hĺbkový výskum, Detektíva vzorov, Asistenta cieľov, Zhrnutie pre lekára, Potvrdenie o PN, Zhrnutie textu, Generovanie príbehu, Osobný kvíz, Pro chat, Hlasový chat, Hovorenú spätnú väzbu, banner Denné postrehy, súkromnú AI Apple Intelligence priamo v zariadení, pokročilé PDF správy a nástroje navrhnuté pre každú aplikáciu: Pro správa MAP (Tlak krvi); Kognitívne preformulovanie, Identifikátor spúšťačov a Časová os nálad (Denník nálady); Prieskumník tém (Denný denník); Pro analýza snov a CPAP správa (Spánok); Plánovač jedál a Plánovač cvičenia (Váha). Jedno predplatné pokrýva váš iPhone, iPad a Mac, ak používajú rovnaký účet Apple."
+     },
+     {
+      "question": "Fungujú aplikácie Feeltracker offline?",
+      "answer": "Áno. Všetko, čo skutočne sledujete, funguje offline — pridávanie a úprava záznamov, fotografie, grafy, trendy, štatistiky, zálohy a exporty do PDF, CSV, Excel a JSON prebiehajú úplne vo vašom zariadení.\n\nPripojenie na internet je potrebné len pre tri voliteľné veci: synchronizáciu s ďalšími zariadeniami cez iCloud, cloudové AI funkcie a import z Apple Health z iných aplikácií. Všetko, čo zaznamenáte offline, sa automaticky synchronizuje, keď budete znova online."
+     },
+     {
+      "question": "Ktoré modely iPhone, iPad a Mac aplikácie Feeltracker podporujú?",
+      "answer": "Aplikácie Feeltracker fungujú na iPhone a iPad s iOS 16.0 alebo novším a na Macoch s čipom Apple Silicon (M1 a novšie). Ide o univerzálne aplikácie, takže jeden nákup pokrýva všetky vaše zariadenia a vaše údaje sa medzi nimi synchronizujú prostredníctvom vášho vlastného účtu iCloud.\n\nDve funkcie vyžadujú novší hardvér: režim AI Apple Intelligence priamo v zariadení vyžaduje iOS 26 alebo novší na zariadení s podporou Apple Intelligence, a synchronizácia Mental Health (State of Mind) s Apple Health vyžaduje iOS 18 alebo novší. Všetko ostatné funguje na akomkoľvek podporovanom zariadení."
+     },
+     {
+      "question": "Ako dlho si Feeltracker ponecháva moje údaje na svojich serveroch?",
+      "answer": "Feeltracker si na svojich serveroch neponecháva vôbec žiadnu kópiu vašich zdravotných záznamov — vaše záznamy žijú iba vo vašom zariadení a vo vašom vlastnom účte iCloud, pokiaľ aplikáciu používate.\n\nKeď spustíte cloudovú AI funkciu, požiadavka prechádza cez náš prenosový server, ktorý neukladá ani požiadavku, ani odpoveď. Uchováva si však záznam o nákladoch pre každú požiadavku — dátum, aplikáciu, funkciu, AI model, počet tokenov a odhadovanú cenu, bez akýchkoľvek zdravotných údajov, textu správ či čohokoľvek, čo by vás identifikovalo — a tieto záznamy sa po 30 dňoch vymažú. OpenAI si samostatne uchováva údaje z API podľa vlastných zásad (v súčasnosti až 30 dní). Všetky podrobnosti nájdete v našich [zásadách ochrany osobných údajov](https://feeltracker.com/privacy/)."
+     },
+     {
+      "question": "Je Feeltracker dostupný v mojom jazyku?",
+      "answer": "Aplikácie Feeltracker aj táto webová stránka sú plne lokalizované v 32 jazykoch: angličtina, španielčina, francúzština, francúzština (Kanada), nemčina, taliančina, holandčina, katalánčina, portugalčina (Portugalsko aj Brazília), švédčina, nórčina, dánčina, fínčina, poľština, ruština, ukrajinčina, čeština, slovenčina, rumunčina, chorvátčina, maďarčina, gréčtina, turečtina, arabčina, hebrejčina, japončina, kórejčina, zjednodušená čínština, tradičná čínština, thajčina a vietnamčina. Arabčina a hebrejčina obsahujú kompletné rozloženie sprava doľava.\n\nAplikácie automaticky sledujú jazyk vášho iPhonu a v nastaveniach AI si môžete nezávisle od jazyka aplikácie zvoliť aj jazyk, v ktorom má AI odpovedať."
      }
     ]
    },
