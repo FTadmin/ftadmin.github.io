@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Päivittäinen päiväkirja - muistiinpanot, kuvat ja AI-päiväkirja | Feeltracker</title>
     <meta name="description" content="Yksityinen AI-pohjainen päivittäinen päiväkirja. Skannaa esineitä ja tekstiä välittömiä merkintöjä varten, liitä kuvia, seuraa tunnelmaa ja sanamalleja. iCloud-synkronointi. iPhone, iPad ja Mac.">
-    <meta name="keywords" content="päiväkirja,päivittäinen,henkilökohtainen,yksityinen,salainen,muistiinpanot,kirjoittaminen,ilmainen,lukittu,kirjoittaja,journalointi,oma,tunnelmat,ajatukset">
+    <meta name="keywords" content="päiväkirjasovellus,päiväkirjan pito,yksityinen päiväkirjasovellus,digitaalinen päiväkirja,päiväkirjasovellus iPhonelle,kiitollisuuspäiväkirja,päiväkirja kuvilla,tekoälypäiväkirja,päivittäisen pohdinnan sovellus,päiväkirja ja muistiinpanot">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/fi/daily-journal/">
 
@@ -170,15 +170,21 @@
           "featureList": [
                 "AI-esineskannaus – kuvailee esineitä päiväkirjamerkintöjä varten",
                 "AI-tekstiskannaus – OCR tekstin tallentamiseen",
-                "Merkintöjen tunneanalyysi",
-                "Sanojen esiintymistiheyden ja teemojen seuranta",
+                "Tunnesävymittari merkinnöissä",
+                "Sanapilvi ja sanafrekvenssianalyysi",
                 "Liitä enintään 8 kuvaa merkintää kohti",
                 "Muistiinpanopohjat nopeisiin merkintöihin",
                 "Kokotekstihaku ja Spotlight-integraatio",
-                "Vienti PDF- ja Excel-muotoon",
+                "Vienti PDF-, Excel-, CSV- ja JSON-muotoon",
                 "iCloud-varmuuskopiointi ja synkronointi",
                 "32 kielen tuki",
-                "Kotinäytön widgetit nopeaa kirjaamista varten"
+                "Kotinäytön widgetit nopeaa kirjaamista varten",
+                "Toistuvat merkinnät päivittäin tai viikoittain",
+                "Valinnainen Markdown-muotoilu merkintälistassa",
+                "Tekoälyn uudelleenmuotoilu kirjoittamasi hiomiseen",
+                "Sanamäärät päivittäin, kuukausittain ja vuosittain",
+                "Excel-tuonti vanhemmille päiväkirjoille",
+                "Automaattiset viikoittaiset varmuuskopiot"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -429,7 +435,7 @@
                       "name": "Onko päiväkirjani yksityinen?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ehdottomasti. Merkintäsi tallennetaan laitteellesi ja yksityiselle iCloud-tilillesi – meillä ei ole palvelimia, jotka tallentaisivat päiväkirjaasi, emmekä koskaan näe kirjoitustasi. Valinnaiset tekoälyominaisuudet käyttävät yksityisyyttä kunnioittavaa pilvitekoälyä, jonka voit sammuttaa milloin tahansa; kun tekoäly on pois päältä, tunnetila-analyysi suoritetaan kokonaan laitteella Applen Natural Language -kehyksellä, ja Apple Intelligence -vaihtoehdolla kaikki tekoäly toimii laitteella."
+                            "text": "Kyllä — Feeltracker Päiväkirja säilyttää merkintäsi laitteellasi ja omassa yksityisessä iCloud-tilissäsi, joten meillä ei ole palvelimia, joilla päiväkirjaasi säilytettäisiin, eikä kukaan Feeltrackerilla pääse lukemaan, mitä kirjoitat. Mainoksia tai sovellusten välistä seurantaa ei ole. Valinnaiset tekoälyominaisuudet lähettävät kysymäsi merkinnät yksityisyyttä kunnioittavaan pilvipalveluun, ja voit sammuttaa tekoälyn milloin tahansa; kun tekoäly on pois päältä, tunnesävymittari toimii kokonaan laitteella Applen Natural Language -kehystä käyttäen, ja Apple Intelligence -vaihtoehdolla jokainen tekoälyominaisuus toimii laitteella."
                       }
                 },
                 {
@@ -437,7 +443,7 @@
                       "name": "Miten tunneanalyysi toimii?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sitä mukaa kun kirjoitat, sovellus analysoi merkintäsi tunnesävyn ja näyttää emojin, joka osoittaa, vaikuttaako se positiiviselta, negatiiviselta vai neutraalilta. Oletuksena tämä käyttää sovelluksen yksityisyyttä kunnioittavaa tekoälyä; jos sammutat tekoälyn, se vaihtuu sen sijaan Applen sisäänrakennettuun laitteella toimivaan Natural Language -kehykseen."
+                            "text": "Feeltracker Päiväkirja arvioi jokaisen merkinnän tunnesävyn kirjoittaessasi ja näyttää sen värikoodattuna mittarina tekstin alla, punaisesta (negatiivinen) harmaan (neutraali) kautta vihreään ja siniseen (positiivinen). Mittari on valinnainen ja se voidaan sammuttaa Asetuksista. Oletuksena se käyttää sovelluksen yksityisyyttä kunnioittavaa tekoälyä; jos sammutat tekoälyn, se vaihtuu sen sijaan Applen sisäänrakennettuun laitteella toimivaan Natural Language -kehykseen."
                       }
                 },
                 {
@@ -445,7 +451,7 @@
                       "name": "Mikä on sanafrekvenssianalyysi?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Trendit-ominaisuus analysoi kaikki merkintäsi näyttääksesi, mistä sanoista ja aiheista kirjoitat useimmin. Tämä auttaa sinua tunnistamaan toistuvat teemat, huolenaiheet tai kiinnostuksen kohteet ajattelussasi."
+                            "text": "Feeltracker Päiväkirjan sanafrekvenssianalyysi laskee sanat kaikista merkinnöistäsi ja järjestää eniten käyttämäsi sanat, jolloin toistuvat ihmiset, paikat ja huolenaiheet tulevat näkyviksi. Yleiset täytesanat suodatetaan pois kielelläsi, sama data näytetään myös sanapilvenä, ja mitä tahansa sanaa napauttamalla avautuvat kaikki sen sisältävät merkinnät."
                       }
                 },
                 {
@@ -501,7 +507,39 @@
                       "name": "Tarvitsenko tilauksen?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Tilausta ei tarvita. Sovellus on ilmainen ladata, kaikki seuranta, kaaviot, Apple Health -synkronointi ja vienti ovat ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Syvällinen tutkimus, Teemaselain, Tunnetila-aikajana, Lääkäriyhteenveto, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja."
+                            "text": "Ei — Feeltracker Päiväkirja on ilmainen ladata, eikä tilausta tarvita. Kirjoittaminen, valokuvat, mallit, toistuvat merkinnät, sanaanalyysi, haku, kaaviot, varmuuskopiot, vienti ja iCloud-synkronointi ovat kaikki ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä (Pika-chat, Kysy kysymys, Ääniyhteenveto, Naurata minua, Rauhoita minua sekä teksti- ja kohdeskannerit) – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Syvällinen tutkimus, Teemaselain, Tunnetila-aikajana, Lääkäriyhteenveto, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Toimiiko Feeltracker Päiväkirja ilman internetyhteyttä?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kyllä — Feeltracker Päiväkirja toimii ilman yhteyttä kaiken olennaisen osalta: merkintöjen kirjoittaminen, valokuvien liittäminen, hakeminen, vuotesi selaaminen sekä tilastojen ja kaavioiden katselu toimivat kaikki laitteellasi ilman internetyhteyttä. Kaikki, mitä kirjoitat offline-tilassa, synkronoituu muihin laitteisiisi iCloudin kautta seuraavan kerran, kun olet verkossa. Pilvipohjaiset tekoälyominaisuudet tarvitsevat yhteyden, mutta jos otat käyttöön laitteella toimivan Apple Intelligence -tilan (Pro, tuetuilla laitteilla, joissa on iOS 26 tai uudempi), myös tekoäly toimii ilman yhteyttä."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Voinko tuoda vanhat päiväkirjamerkintäni?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kyllä — Feeltracker Päiväkirja tuo päiväkirjamerkintöjä Excel-taulukosta. Lataa tuontimalli Asetuksista, liitä siihen jokaisen merkinnän päivämäärä, kellonaika ja teksti, ja tuo sitten tiedosto — jokaisesta rivistä tulee päiväkirjamerkintä. Voit myös palauttaa aiemman varmuuskopion, joka tuo takaisin merkintäsi ja niiden valokuvat yhdessä."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Voinko lukita päiväkirjani Face ID:llä?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kyllä — voit lukita Feeltracker Päiväkirjan Face ID:llä tai Touch ID:llä käyttämällä iOS:n sisäänrakennettua sovelluslukitusta: paina pitkään sovelluskuvaketta kotinäytölläsi ja valitse Vaadi Face ID. Asetukset linkittää samoihin ohjeisiin. Kun se on päällä, kukaan ei voi avata päiväkirjaasi ilman kasvojasi, sormenjälkeäsi tai tunnuslukuasi."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mitä päiväkirjalleni tapahtuu, jos kadotan puhelimeni?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Päiväkirjasi on turvassa: Feeltracker Päiväkirja synkronoi jokaisen merkinnän ja valokuvan yksityiseen iCloud-tiliisi, joten kirjautuminen uudelle iPhonelle, iPadille tai Macille tuo kaiken automaattisesti takaisin. Sovellus kirjoittaa myös automaattisen varmuuskopion noin kerran viikossa (ZIP-tiedoston merkinnöistäsi ja valokuvistasi), jonka voit itse palauttaa tai viedä milloin tahansa, ja voit myös tehdä manuaalisen varmuuskopion aina halutessasi."
                       }
                 }
           ]
@@ -519,7 +557,7 @@
 
             <a href="/fi/daily-journal/" class="current">Päiväkirja</a>
 
-            <a href="/fi/mood-journal/">Mielenterveys</a>
+            <a href="/fi/mood-journal/">Mielialapäiväkirja</a>
 
             <a href="/fi/sleep/">Uni</a>
 
@@ -607,13 +645,13 @@
 <main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Päiväkirjasovelluksen kuvake" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Päiväkirja — yksityinen tekoälypäiväkirja iPhonelle" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Päiväkirja</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Ei mainoksia · Ei seurantaa · Yksityisyys ensin
         </div>
-        <p class="hero-subtitle">Yksityinen tilasi päivittäisille pohdinnoille, ajatuksille ja muistoille. Kirjoita vapaasti AI-pohjaisella tunneanalyysillä, kuvaliitteillä ja älykkäillä oivalluksilla kirjoituskaavioistasi.</p>
+        <p class="hero-subtitle">Yksityinen tilasi päivittäisille pohdinnoille, ajatuksille ja muistoille. Kirjoita niin usein kuin haluat, liitä jopa 8 valokuvaa ja näe teemat, joihin palaat yhä uudelleen, tunnesävymittarin, sanapilven ja sanafrekvenssianalyysin avulla.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
             <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fi-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fi-black.svg" alt="Lataa Päiväkirja App Storesta" width="120" height="40" decoding="async"></picture>
         </a>
@@ -633,11 +671,11 @@
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Päiväkirja – kuvakaappaus 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
+                <img src="/images/screenshots/nt-2.png" alt="Tekoälyn palaute päiväkirjamerkintään Feeltracker Päiväkirjassa" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Päiväkirja – kuvakaappaus 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
+                <img src="/images/screenshots/nt-3.png" alt="Päiväkirjamerkinnän kirjoittaminen päivämäärän, kellonajan ja muistiinpanojen kanssa" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -651,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Häiriötön kirjoittaminen</h3>
-                <p>Selkeä ja yksinkertainen käyttöliittymä, jossa sanasi ovat etusijalla. Ei häiriöitä – vain sinä ja ajatuksesi. Kirjoita niin paljon tai vähän kuin haluat joka päivä.</p>
+                <p>Selkeä, pelkkää tekstiä käyttävä editori, joka antaa sanoillesi etusijan, ja reaaliaikainen sanalaskuri kirjoittaessasi. Napauta Tekoälyn uudelleenmuotoilua hioaksesi kappaletta, ja kytke Markdown-muotoilu päälle, jos haluat otsikoita, lihavointia ja listoja merkintälistaasi.</p>
             </div>
 
             <div class="feature-box">
@@ -668,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Sanafrekvenssianalyysi</h3>
-                <p>Selvitä, mitä mielessäsi todella pyörii. Katso, mitkä sanat ja teemat esiintyvät kirjoituksissasi useimmin, jotta voit tunnistaa kaavoja ja toistuvia ajatuksia.</p>
+                <h3>Sanapilvi ja sanafrekvenssi</h3>
+                <p>Selvitä, mitä mielessäsi todella on. Sanapilvi ja järjestetty frekvenssilista näyttävät useimmin käyttämäsi sanat, yleiset täytesanat suodatettuna pois kielelläsi — napauta mitä tahansa sanaa avataksesi kaikki merkinnät, joissa se mainitaan.</p>
             </div>
 
             <div class="feature-box">
@@ -714,6 +752,12 @@
                 <p>Yhteensä kirjoitetut sanat päivittäin, kuukausittain ja vuosittain. Jotkut päivät yllätät itsesi — ja lukeman nouseminen on oma motivaationsa.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Toistuvat merkinnät</h3>
+                <p>Määritä merkintöjä, jotka luovat itsensä päivittäin tai viikoittain, jotta tapaseurantasi, lääkemuistiinpanosi tai iltainen kiitollisuuskehotteesi odottaa sinua jo valmiina, kun avaat sovelluksen.</p>
+            </div>
+
         </div>
     </section>
 
@@ -734,18 +778,18 @@
         <div class="app-card">
             <h3>2. Havaitse kaavat</h3>
             <div class="app-card-content">
-<p><strong>Tunneanalyysi:</strong> AI havaitsee automaattisesti merkintöjesi emotionaalisen sävyn – positiivinen, negatiivinen tai neutraali. Katso mielialasi kehitystä visualisoituna viikkojen ja kuukausien ajalta ymmärtääksesi tunnekaavasi.</p>
-<p><strong>Sanafrekvenssi:</strong> Selvitä, mistä aiheista, ihmisistä tai teemoista kirjoitat eniten. Sovellus tunnistaa toistuvat sanat ja lauseet paljastaen, mitä mielessäsi jatkuvasti pyörii ja miten huomiosi muuttuu ajan myötä.</p>
-<p><strong>Kalenterinäkymä:</strong> Selaa koko päiväkirjahistoriaasi kalenterikäyttöliittymässä. Jokaisessa päivässä näkyy ote ja mieliala-indikaattori. Siirry nopeasti mihin tahansa aiempaan merkintään nähdäksesi, mitä ajattelit sinä päivänä.</p>
+<p><strong>Tunnesävymittari:</strong> Kirjoittaessasi valinnainen värikoodattu mittari arvioi merkinnän tunnesävyn negatiivisesta neutraalin kautta positiiviseen. Pro lisää Tunneaikajanan, joka piirtää kaavioon, miten tuo sävy liikkuu viikkojen ja kuukausien ajan.</p>
+<p><strong>Sanafrekvenssi:</strong> Selvitä, mistä aiheista, ihmisistä tai teemoista kirjoitat eniten. Sanapilvi ja järjestetty frekvenssilista paljastavat, mikä on jatkuvasti mielessäsi, ja sanaa napauttamalla avautuvat kaikki merkinnät, joissa sitä käytetään.</p>
+<p><strong>Vuosi-, kuukausi- ja päivänäkymät:</strong> Selaa koko päiväkirjahistoriaasi, vuoden lämpökartasta kirjoituspäivistäsi aina yksittäiseen päivään asti. Jokainen päivä listaa merkintäsi kokonaan, tietueineen ja sanamäärineen, joten pääset suoraan siihen, mitä ajattelit minä tahansa päivänä.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Pohdi ja kasva</h3>
             <div class="app-card-content">
-<p><strong>AI-pohjaiset oivallukset:</strong> Esitä kysymyksiä päiväkirjastasi: "Mitkä olivat onnellisimmat päiväni viime kuussa?" tai "Näytä kaikki merkinnät, joissa mainitsin tavoitteeni." Saat välittömiä ja harkittuja vastauksia, jotka auttavat sinua ymmärtämään matkaasi.</p>
-<p><strong>Henkilökohtaisen kasvun seuranta:</strong> Tarkastele, kuinka ajatuksesi, huolesi ja pyrkimyksesi kehittyvät. Katso edistymistä aiemmissa merkinnöissä mainittuja tavoitteita kohti. Tunnista kasvun alueet ja juhli, kuinka pitkälle olet päässyt.</p>
-<p><strong>Etsi kaikki:</strong> Tehokas haku löytää minkä tahansa sanan, lauseen tai käsitteen vuosien päiväkirjamerkinnöistä. Suodata päivämäärän, mielialan tai avainsanojen mukaan. Koko kirjoitettu historiasi on välittömästi käytettävissä ja haettavissa.</p>
+<p><strong>Tekoälyn tuottamat oivallukset:</strong> Kysy kysymyksiä päiväkirjastasi: "Mitkä olivat onnellisimmat päiväni viime kuussa?" tai "Näytä kaikki merkinnät, joissa mainitsin tavoitteeni." Saat välittömiä, harkittuja vastauksia, jotka auttavat sinua ymmärtämään matkaasi.</p>
+<p><strong>Henkilökohtaisen kasvun seuranta:</strong> Tarkastele, miten ajatuksesi, huolenaiheesi ja pyrkimyksesi kehittyvät. Näe edistyminen kohti aiemmissa merkinnöissä mainittuja tavoitteita. Tunnista kasvualueet ja juhli, kuinka pitkälle olet päässyt.</p>
+<p><strong>Hae kaikkea:</strong> Hae mitä tahansa sanaa vuosien päiväkirjamerkinnöistä, rajaa haku aikaväliin ja siirry suoraan osuviin merkintöihin. Päiväkirjasi on indeksoitu myös iOS Spotlightiin, joten haku kotinäytöltä löytää sen myös.</p>
             </div>
         </div>
 
@@ -838,8 +882,8 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-microphone"></i> Teksti puheeksi <span class="ai-pro-badge">Pro</span></h3>
-                <p>Kuuntele AI-oivalluksesi ja yhteenvetosi luonnollisella äänentoistoominaisuudella</p>
+                <h3><i class="fas fa-microphone"></i> Puhuttu palaute <span class="ai-pro-badge">Pro</span></h3>
+                <p>Lyhyt tekoälyn ääniviesti jokaisen tallennuksen jälkeen, reagoiden juuri kirjoittamaasi</p>
             </div>
 
             <div class="ai-feature">
@@ -941,7 +985,7 @@
         <p>Harjoittele päivittäistä kirjoittamista, tallenna ideoita ja kehitä omaa ääntäsi. Häiriövapaa käyttöliittymä auttaa sinua keskittymään käsityötaitosi kehittämiseen.</p>
 
         <h3>Mielenterveys</h3>
-        <p>Käsittele tunteita, tunnista laukaisijat ja seuraa mielialatrendejä kirjoittamalla. Tunneanalyysi tarjoaa objektiivista palautetta tunnesävystä.</p>
+        <p>Kirjoita itsesi läpi vaikean päivän, huomaa mikä toistuu, ja katso taaksepäin, miltä asiat näyttivät kuukausi sitten. Tunnesävymittari antaa sinulle yksinkertaisen tulkinnan jokaisen merkinnän tunnesävystä.</p>
 
     </section>
 
@@ -952,15 +996,15 @@
 
 
         <h3>Onko päiväkirjani yksityinen?</h3>
-        <p>Ehdottomasti. Merkintäsi tallennetaan laitteellesi ja yksityiselle iCloud-tilillesi – meillä ei ole palvelimia, jotka tallentaisivat päiväkirjaasi, emmekä koskaan näe kirjoitustasi. Valinnaiset tekoälyominaisuudet käyttävät yksityisyyttä kunnioittavaa pilvitekoälyä, jonka voit sammuttaa milloin tahansa; kun tekoäly on pois päältä, tunnetila-analyysi suoritetaan kokonaan laitteella Applen Natural Language -kehyksellä, ja Apple Intelligence -vaihtoehdolla kaikki tekoäly toimii laitteella.</p>
+        <p>Kyllä — Feeltracker Päiväkirja säilyttää merkintäsi laitteellasi ja omassa yksityisessä iCloud-tilissäsi, joten meillä ei ole palvelimia, joilla päiväkirjaasi säilytettäisiin, eikä kukaan Feeltrackerilla pääse lukemaan, mitä kirjoitat. Mainoksia tai sovellusten välistä seurantaa ei ole. Valinnaiset tekoälyominaisuudet lähettävät kysymäsi merkinnät yksityisyyttä kunnioittavaan pilvipalveluun, ja voit sammuttaa tekoälyn milloin tahansa; kun tekoäly on pois päältä, tunnesävymittari toimii kokonaan laitteella Applen Natural Language -kehystä käyttäen, ja Apple Intelligence -vaihtoehdolla jokainen tekoälyominaisuus toimii laitteella.</p>
 
 
         <h3>Miten tunneanalyysi toimii?</h3>
-        <p>Sitä mukaa kun kirjoitat, sovellus analysoi merkintäsi tunnesävyn ja näyttää emojin, joka osoittaa, vaikuttaako se positiiviselta, negatiiviselta vai neutraalilta. Oletuksena tämä käyttää sovelluksen yksityisyyttä kunnioittavaa tekoälyä; jos sammutat tekoälyn, se vaihtuu sen sijaan Applen sisäänrakennettuun laitteella toimivaan Natural Language -kehykseen.</p>
+        <p>Feeltracker Päiväkirja arvioi jokaisen merkinnän tunnesävyn kirjoittaessasi ja näyttää sen värikoodattuna mittarina tekstin alla, punaisesta (negatiivinen) harmaan (neutraali) kautta vihreään ja siniseen (positiivinen). Mittari on valinnainen ja se voidaan sammuttaa Asetuksista. Oletuksena se käyttää sovelluksen yksityisyyttä kunnioittavaa tekoälyä; jos sammutat tekoälyn, se vaihtuu sen sijaan Applen sisäänrakennettuun laitteella toimivaan Natural Language -kehykseen.</p>
 
 
         <h3>Mikä on sanafrekvenssianalyysi?</h3>
-        <p>Trendit-ominaisuus analysoi kaikki merkintäsi näyttääksesi, mistä sanoista ja aiheista kirjoitat useimmin. Tämä auttaa sinua tunnistamaan toistuvat teemat, huolenaiheet tai kiinnostuksen kohteet ajattelussasi.</p>
+        <p>Feeltracker Päiväkirjan sanafrekvenssianalyysi laskee sanat kaikista merkinnöistäsi ja järjestää eniten käyttämäsi sanat, jolloin toistuvat ihmiset, paikat ja huolenaiheet tulevat näkyviksi. Yleiset täytesanat suodatetaan pois kielelläsi, sama data näytetään myös sanapilvenä, ja mitä tahansa sanaa napauttamalla avautuvat kaikki sen sisältävät merkinnät.</p>
 
 
         <h3>Voinko lisätä valokuvia päiväkirjaani?</h3>
@@ -989,7 +1033,23 @@
 
 
         <h3>Tarvitsenko tilauksen?</h3>
-        <p>Tilausta ei tarvita. Sovellus on ilmainen ladata, kaikki seuranta, kaaviot, Apple Health -synkronointi ja vienti ovat ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Syvällinen tutkimus, Teemaselain, Tunnetila-aikajana, Lääkäriyhteenveto, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja.</p>
+        <p>Ei — Feeltracker Päiväkirja on ilmainen ladata, eikä tilausta tarvita. Kirjoittaminen, valokuvat, mallit, toistuvat merkinnät, sanaanalyysi, haku, kaaviot, varmuuskopiot, vienti ja iCloud-synkronointi ovat kaikki ilmaisia, ja jokainen käyttäjä saa aidot tekoälyominaisuudet ilmaiseksi joka päivä (Pika-chat, Kysy kysymys, Ääniyhteenveto, Naurata minua, Rauhoita minua sekä teksti- ja kohdeskannerit) – ilman mainoksia, koskaan. Valinnainen Pro-tilaus avaa syvällisimmät tekoälyominaisuudet (Syvällinen tutkimus, Teemaselain, Tunnetila-aikajana, Lääkäriyhteenveto, Pro-chat ja muut), käyttää niitä tehokkaimmalla tekoälyllämme ja nostaa jo ennestään anteliaita päivittäisiä rajoja.</p>
+
+
+        <h3>Toimiiko Feeltracker Päiväkirja ilman internetyhteyttä?</h3>
+        <p>Kyllä — Feeltracker Päiväkirja toimii ilman yhteyttä kaiken olennaisen osalta: merkintöjen kirjoittaminen, valokuvien liittäminen, hakeminen, vuotesi selaaminen sekä tilastojen ja kaavioiden katselu toimivat kaikki laitteellasi ilman internetyhteyttä. Kaikki, mitä kirjoitat offline-tilassa, synkronoituu muihin laitteisiisi iCloudin kautta seuraavan kerran, kun olet verkossa. Pilvipohjaiset tekoälyominaisuudet tarvitsevat yhteyden, mutta jos otat käyttöön laitteella toimivan Apple Intelligence -tilan (Pro, tuetuilla laitteilla, joissa on iOS 26 tai uudempi), myös tekoäly toimii ilman yhteyttä.</p>
+
+
+        <h3>Voinko tuoda vanhat päiväkirjamerkintäni?</h3>
+        <p>Kyllä — Feeltracker Päiväkirja tuo päiväkirjamerkintöjä Excel-taulukosta. Lataa tuontimalli Asetuksista, liitä siihen jokaisen merkinnän päivämäärä, kellonaika ja teksti, ja tuo sitten tiedosto — jokaisesta rivistä tulee päiväkirjamerkintä. Voit myös palauttaa aiemman varmuuskopion, joka tuo takaisin merkintäsi ja niiden valokuvat yhdessä.</p>
+
+
+        <h3>Voinko lukita päiväkirjani Face ID:llä?</h3>
+        <p>Kyllä — voit lukita Feeltracker Päiväkirjan Face ID:llä tai Touch ID:llä käyttämällä iOS:n sisäänrakennettua sovelluslukitusta: paina pitkään sovelluskuvaketta kotinäytölläsi ja valitse <strong>Vaadi Face ID</strong>. Asetukset linkittää samoihin ohjeisiin. Kun se on päällä, kukaan ei voi avata päiväkirjaasi ilman kasvojasi, sormenjälkeäsi tai tunnuslukuasi.</p>
+
+
+        <h3>Mitä päiväkirjalleni tapahtuu, jos kadotan puhelimeni?</h3>
+        <p>Päiväkirjasi on turvassa: Feeltracker Päiväkirja synkronoi jokaisen merkinnän ja valokuvan yksityiseen iCloud-tiliisi, joten kirjautuminen uudelle iPhonelle, iPadille tai Macille tuo kaiken automaattisesti takaisin. Sovellus kirjoittaa myös automaattisen varmuuskopion noin kerran viikossa (ZIP-tiedoston merkinnöistäsi ja valokuvistasi), jonka voit itse palauttaa tai viedä milloin tahansa, ja voit myös tehdä manuaalisen varmuuskopion aina halutessasi.</p>
 
     </section>
 
@@ -1190,9 +1250,9 @@
                 <span class="related-app-name">Verenpaine</span>
             </a>
 
-            <a href="/fi/mood-journal/" class="related-app-card" aria-label="Mielenterveys">
-                <img src="/images/FT_1024.png" alt="Mielenterveys" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
-                <span class="related-app-name">Mielenterveys</span>
+            <a href="/fi/mood-journal/" class="related-app-card" aria-label="Mielialapäiväkirja">
+                <img src="/images/FT_1024.png" alt="Mielialapäiväkirja" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Mielialapäiväkirja</span>
             </a>
 
             <a href="/fi/sleep/" class="related-app-card" aria-label="Uni">

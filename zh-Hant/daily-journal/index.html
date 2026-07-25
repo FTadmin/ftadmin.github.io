@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>每日日記 - 筆記、照片與 AI 日記 | Feeltracker</title>
     <meta name="description" content="私人 AI 驅動每日日記。掃描物品和文字即時記錄，附加照片，追蹤情緒和用詞模式。iCloud 同步。iPhone、iPad 及 Mac。">
-    <meta name="keywords" content="日記,日誌,筆記,私密,個人,免費,日記本,記事本,寫作,日記應用,我的日記,дневник">
+    <meta name="keywords" content="每日日記應用,寫日記應用,私密日記應用,數位日記,iPhone日記應用,感恩日記,附照片的日記,AI日記應用,每日反思應用,日記與筆記應用">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/zh-Hant/daily-journal/">
 
@@ -170,15 +170,21 @@
           "featureList": [
                 "AI物品掃描 - 為日記條目描述物品",
                 "AI文字掃描 - OCR文字識別",
-                "日記條目情感分析",
-                "詞頻和主題追蹤",
+                "條目情感量表",
+                "文字雲與詞頻分析",
                 "每條最多附加8張照片",
                 "筆記模板快速記錄",
                 "全文搜尋和Spotlight整合",
-                "匯出為PDF和Excel",
+                "匯出為 PDF、Excel、CSV 和 JSON",
                 "iCloud備份和同步",
                 "支援32種語言",
-                "可快速記錄的主畫面小工具"
+                "可快速記錄的主畫面小工具",
+                "每天或每週自動建立的重複條目",
+                "條目清單中可選擇開啟 Markdown 渲染",
+                "AI 潤飾功能，修飾你寫的內容",
+                "依日、月、年顯示字數統計",
+                "匯入 Excel，找回舊日記",
+                "自動每週備份"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -429,7 +435,7 @@
                       "name": "我的日記是私密的嗎？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "絕對是。你的日記儲存在你的裝置和你私人的 iCloud 帳戶中——我們沒有伺服器儲存你的日記,也絕不會看到你寫的內容。選用的 AI 功能使用注重隱私的雲端 AI,你隨時可以關閉;關閉 AI 後,情緒分析會完全在裝置上使用 Apple 的自然語言框架執行,若啟用 Apple Intelligence 選項,則所有 AI 都會在裝置上執行。"
+                            "text": "是的——Feeltracker 每日日記會把你的條目保存在你的裝置上，以及你自己的私人 iCloud 帳戶中，所以我們沒有任何伺服器保存你的日記，Feeltracker 也沒有人能讀到你寫的內容。沒有廣告，也沒有跨應用程式追蹤。選用的 AI 功能會把你詢問的條目傳送到一個重視隱私的雲端服務，你隨時都可以關閉 AI；關閉 AI 後，情感量表會完全在裝置上運作，使用 Apple 的 Natural Language 框架，而使用 Apple Intelligence 選項時，每一項 AI 功能都會在裝置上執行。"
                       }
                 },
                 {
@@ -437,7 +443,7 @@
                       "name": "情感分析是如何工作的？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "在你書寫的同時,應用程式會分析你日記的情緒基調,並顯示表情符號標示內容偏向正面、負面或中性。預設情況下使用應用程式注重隱私的 AI;若你關閉 AI,則會改用 Apple 內建的裝置端自然語言框架。"
+                            "text": "Feeltracker 每日日記會在你書寫時為每則條目的情感基調評分，並在文字下方顯示為顏色編碼量表，從紅色（消極）經過灰色（中性）到綠色和藍色（積極）。這個量表是選用的，可以在設定中關閉。預設情況下，它使用應用程式重視隱私的 AI；如果你關閉 AI，就會改用 Apple 內建的裝置端 Natural Language 框架。"
                       }
                 },
                 {
@@ -445,7 +451,7 @@
                       "name": "什麼是詞頻分析？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "趨勢功能會分析你所有的日記條目，顯示你最常寫的詞彙和話題。這有助於你識別思維中反覆出現的主題、關注點或興趣。"
+                            "text": "Feeltracker 每日日記的詞頻分析會統計你所有條目中的詞彙，並依使用頻率排序，讓那些反覆出現的人物、地點和煩惱變得清晰可見。常見的贅字會依你的語言被過濾掉，同樣的資料也會以文字雲的方式呈現，輕點任何一個詞，就能開啟所有包含它的條目。"
                       }
                 },
                 {
@@ -501,7 +507,39 @@
                       "name": "我需要訂閱嗎？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "不需要訂閱。應用程式免費下載,所有追蹤、圖表、Apple Health 同步和匯出都是免費的,每位使用者每天都能免費使用真正的 AI 功能——永不顯示廣告。選用的 Pro 訂閱可解鎖最深入的 AI 功能(深度研究、主題探索、情緒時間軸、醫生摘要、Pro Chat 等),在我們最強大的 AI 上運行這些功能,並提高原本就很寬裕的每日額度。"
+                            "text": "不需要——Feeltracker 每日日記免費下載，不需要訂閱。書寫、照片、範本、重複條目、詞彙分析、搜尋、圖表、備份、匯出和 iCloud 同步全部免費，每位使用者每天都能免費使用真正的 AI 功能（快速對話、提問、語音摘要、逗我開心、讓我平靜，再加上文字和物品掃描器）——永遠沒有廣告。選用的 Pro 訂閱會解鎖最深入的 AI 功能（深度研究、主題探索器、情感時間軸、醫生摘要、Pro 對話等等），讓它們使用我們最強大的 AI 運作，並提高原本就很充裕的每日額度。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Feeltracker 每日日記可以離線使用嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "可以——Feeltracker 每日日記在所有重要的地方都能離線使用：撰寫條目、附加照片、搜尋、瀏覽你的年度紀錄，以及檢視統計和圖表，全都能在你的裝置上執行，不需要網路連線。任何你離線時寫的內容，只要下次連上網路，就會透過 iCloud 同步到你的其他裝置。雲端 AI 功能需要網路連線，但如果你開啟裝置端的 Apple Intelligence 模式（Pro，適用於執行 iOS 26 或以上版本的支援裝置），AI 也能離線運作。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我可以匯入舊的日記條目嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "可以——Feeltracker 每日日記可以從 Excel 試算表匯入日記條目。從設定中下載匯入範本，貼上每則條目的日期、時間和文字內容，接著匯入檔案，每一列就會變成一則日記條目。你也可以還原先前的備份，一次把條目和照片都找回來。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我可以用 Face ID 鎖定我的日記嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "可以——你可以使用 iOS 內建的應用程式鎖定功能，用 Face ID 或 Touch ID 鎖定 Feeltracker 每日日記：長按主畫面上的應用程式圖示，選擇要求 Face ID。設定中也連結到相同的說明。開啟後，沒有你的臉、指紋或密碼，任何人都無法打開你的日記。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "如果我遺失手機，我的日記會怎麼樣？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "你的日記很安全：Feeltracker 每日日記會把每則條目和照片同步到你的私人 iCloud 帳戶，所以在新的 iPhone、iPad 或 Mac 上登入時，一切都會自動找回來。應用程式也會大約每週自動寫入一次備份（你的條目和照片的 ZIP 檔），你隨時都可以自行還原或匯出，也可以隨時手動建立備份。"
                       }
                 }
           ]
@@ -519,7 +557,7 @@
 
             <a href="/zh-Hant/daily-journal/" class="current">每日日記</a>
 
-            <a href="/zh-Hant/mood-journal/">心理健康</a>
+            <a href="/zh-Hant/mood-journal/">心情日記</a>
 
             <a href="/zh-Hant/sleep/">睡眠</a>
 
@@ -607,13 +645,13 @@
 <main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="每日日記應用圖示" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker 每日日記——私密的 AI 日記與寫日記應用程式，適用於 iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>每日日記</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> 無廣告 · 無追蹤 · 隱私優先
         </div>
-        <p class="hero-subtitle">您的私密空間，記錄每日反思、想法和回憶。自由書寫，配備AI情感分析、照片附件和智慧寫作模式洞察。</p>
+        <p class="hero-subtitle">你的私密空間，記錄每日反思、想法和回憶。想寫多少就寫多少，最多可附加 8 張照片，透過情感量表、文字雲和詞頻分析，看見你不斷回到的主題。</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
             <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hant-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hant-black.svg" alt="在App Store下載每日日記" width="120" height="40" decoding="async"></picture>
         </a>
@@ -633,11 +671,11 @@
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="每日日記截圖2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
+                <img src="/images/screenshots/nt-2.png" alt="Feeltracker 每日日記中，日記條目的 AI 回饋" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="每日日記截圖3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
+                <img src="/images/screenshots/nt-3.png" alt="書寫日記條目，包含日期、時間和備註" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -651,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>無干擾寫作</h3>
-                <p>簡潔清晰的介面，讓文字成為焦點。沒有雜亂，只有你和你的想法。每天想寫多少就寫多少。</p>
+                <p>簡潔的純文字編輯器，讓你的文字成為主角，並在輸入時即時顯示字數。輕點「AI 潤飾」即可修飾段落，如果你喜歡條目清單中有標題、粗體和清單，也可以開啟 Markdown 渲染。</p>
             </div>
 
             <div class="feature-box">
@@ -668,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>詞頻分析</h3>
-                <p>發現你真正在想什麼。檢視哪些詞彙和主題在你的寫作中出現最多，識別模式和反覆出現的想法。</p>
+                <h3>文字雲與詞頻分析</h3>
+                <p>發現你心裡真正在想什麼。文字雲和排序過的詞頻清單會顯示你最常使用的詞彙，並依你的語言過濾掉常見的贅字——輕點任何一個詞，就能開啟所有提到它的條目。</p>
             </div>
 
             <div class="feature-box">
@@ -714,6 +752,12 @@
                 <p>按日、月、年統計已寫總字數。某些日子，您會對自己感到驚喜——看著數字不斷攀升，本身就是一種激勵。</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>重複條目</h3>
+                <p>設定會自動建立的條目，每天或每週皆可，這樣當你打開應用程式時，習慣紀錄、服藥備註，或每晚的感恩提示就已經在等你了。</p>
+            </div>
+
         </div>
     </section>
 
@@ -734,18 +778,18 @@
         <div class="app-card">
             <h3>2. 發現規律</h3>
             <div class="app-card-content">
-<p><strong>情感分析：</strong> AI自動檢測日記條目的情感基調——積極、消極或中性。檢視數週和數月的情緒趨勢視覺化，瞭解你的情感模式。</p>
-<p><strong>詞頻分析：</strong> 發現你最常寫的話題、人物或主題。應用識別反覆出現的詞彙和短語，揭示你一直在想什麼以及關注點如何隨時間變化。</p>
-<p><strong>日曆檢視：</strong> 在日曆介面瀏覽你的全部日記歷史。每天顯示摘要和情緒指標。快速跳轉到任何過去的日記條目，檢視那天你在想什麼。</p>
+<p><strong>情感量表：</strong> 在你書寫的同時，選用的顏色編碼量表會評估條目的情感基調，從消極、中性到積極。Pro 另外提供情感時間軸，繪製這個基調在數週和數月間的變化。</p>
+<p><strong>詞頻分析：</strong> 發現你最常寫到的主題、人物或話題。文字雲和排序過的詞頻清單會揭露你心裡持續在想什麼，輕點任何一個詞就能開啟所有使用它的條目。</p>
+<p><strong>年、月、日檢視：</strong> 瀏覽你整段寫日記的歷史，從標示你寫過的日子的年度熱力圖，到單獨的一天。每一天都會完整列出你的條目，附上紀錄和字數，讓你能直接跳到任何日期，看看當時你在想什麼。</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. 反思與成長</h3>
             <div class="app-card-content">
-<p><strong>AI智慧洞察：</strong> 向你的日記提問："上個月我最開心的日子是哪些？"或"顯示所有提到我目標的條目。"獲得即時、有深度的答案，幫助你理解自己的旅程。</p>
-<p><strong>個人成長追蹤：</strong> 回顧你的想法、關注點和願望如何演變。檢視過去日記中提到的目標的進展。識別成長領域並慶祝你已經走了多遠。</p>
-<p><strong>搜尋一切：</strong> 強大的搜尋功能可以在多年的日記中找到任何詞彙、短語或概念。按日期、情緒或關鍵詞過濾。你的全部書寫歷史都可以即時訪問和搜尋。</p>
+<p><strong>AI 驅動的洞察：</strong> 就你的日記提問：「我上個月最開心的日子是哪幾天？」或「顯示所有提到我目標的條目。」立即獲得深思熟慮的答案，幫助你了解自己的歷程。</p>
+<p><strong>個人成長追蹤：</strong> 檢視你的想法、擔憂和期望是如何演變的。查看過往條目中提到的目標進度。找出成長的領域，並為你已經走了多遠而慶祝。</p>
+<p><strong>搜尋所有內容：</strong> 搜尋橫跨多年寫日記歷史的任何詞彙，也可以縮小到特定日期範圍，直接跳到符合的條目。你的日記也會被 iOS Spotlight 索引，所以從主畫面搜尋也找得到。</p>
             </div>
         </div>
 
@@ -838,8 +882,8 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-microphone"></i> 文字轉語音 <span class="ai-pro-badge">Pro</span></h3>
-                <p>用自然語音播放收聽你的AI洞察和摘要</p>
+                <h3><i class="fas fa-microphone"></i> 語音回饋 <span class="ai-pro-badge">Pro</span></h3>
+                <p>每次儲存後，AI 都會給你一段簡短的語音回饋，針對你剛寫下的內容做出反應</p>
             </div>
 
             <div class="ai-feature">
@@ -941,7 +985,7 @@
         <p>練習每日寫作，捕捉靈感，培養你的寫作風格。無干擾的介面幫助你專注於創作。</p>
 
         <h3>心理健康</h3>
-        <p>透過寫作處理情緒、識別觸發因素和追蹤情緒模式。情感分析為情緒基調提供客觀反饋。</p>
+        <p>透過書寫走過艱難的一天，注意到反覆出現的念頭，回顧一個月前的狀況。情感量表能簡單地讓你了解每則條目的情感基調。</p>
 
     </section>
 
@@ -952,15 +996,15 @@
 
 
         <h3>我的日記是私密的嗎？</h3>
-        <p>絕對是。你的日記儲存在你的裝置和你私人的 iCloud 帳戶中——我們沒有伺服器儲存你的日記,也絕不會看到你寫的內容。選用的 AI 功能使用注重隱私的雲端 AI,你隨時可以關閉;關閉 AI 後,情緒分析會完全在裝置上使用 Apple 的自然語言框架執行,若啟用 Apple Intelligence 選項,則所有 AI 都會在裝置上執行。</p>
+        <p>是的——Feeltracker 每日日記會把你的條目保存在你的裝置上，以及你自己的私人 iCloud 帳戶中，所以我們沒有任何伺服器保存你的日記，Feeltracker 也沒有人能讀到你寫的內容。沒有廣告，也沒有跨應用程式追蹤。選用的 AI 功能會把你詢問的條目傳送到一個重視隱私的雲端服務，你隨時都可以關閉 AI；關閉 AI 後，情感量表會完全在裝置上運作，使用 Apple 的 Natural Language 框架，而使用 Apple Intelligence 選項時，每一項 AI 功能都會在裝置上執行。</p>
 
 
         <h3>情感分析是如何工作的？</h3>
-        <p>在你書寫的同時,應用程式會分析你日記的情緒基調,並顯示表情符號標示內容偏向正面、負面或中性。預設情況下使用應用程式注重隱私的 AI;若你關閉 AI,則會改用 Apple 內建的裝置端自然語言框架。</p>
+        <p>Feeltracker 每日日記會在你書寫時為每則條目的情感基調評分，並在文字下方顯示為顏色編碼量表，從紅色（消極）經過灰色（中性）到綠色和藍色（積極）。這個量表是選用的，可以在設定中關閉。預設情況下，它使用應用程式重視隱私的 AI；如果你關閉 AI，就會改用 Apple 內建的裝置端 Natural Language 框架。</p>
 
 
         <h3>什麼是詞頻分析？</h3>
-        <p>趨勢功能會分析你所有的日記條目，顯示你最常寫的詞彙和話題。這有助於你識別思維中反覆出現的主題、關注點或興趣。</p>
+        <p>Feeltracker 每日日記的詞頻分析會統計你所有條目中的詞彙，並依使用頻率排序，讓那些反覆出現的人物、地點和煩惱變得清晰可見。常見的贅字會依你的語言被過濾掉，同樣的資料也會以文字雲的方式呈現，輕點任何一個詞，就能開啟所有包含它的條目。</p>
 
 
         <h3>我可以在日記中新增照片嗎？</h3>
@@ -989,7 +1033,23 @@
 
 
         <h3>我需要訂閱嗎？</h3>
-        <p>不需要訂閱。應用程式免費下載,所有追蹤、圖表、Apple Health 同步和匯出都是免費的,每位使用者每天都能免費使用真正的 AI 功能——永不顯示廣告。選用的 Pro 訂閱可解鎖最深入的 AI 功能(深度研究、主題探索、情緒時間軸、醫生摘要、Pro Chat 等),在我們最強大的 AI 上運行這些功能,並提高原本就很寬裕的每日額度。</p>
+        <p>不需要——Feeltracker 每日日記免費下載，不需要訂閱。書寫、照片、範本、重複條目、詞彙分析、搜尋、圖表、備份、匯出和 iCloud 同步全部免費，每位使用者每天都能免費使用真正的 AI 功能（快速對話、提問、語音摘要、逗我開心、讓我平靜，再加上文字和物品掃描器）——永遠沒有廣告。選用的 Pro 訂閱會解鎖最深入的 AI 功能（深度研究、主題探索器、情感時間軸、醫生摘要、Pro 對話等等），讓它們使用我們最強大的 AI 運作，並提高原本就很充裕的每日額度。</p>
+
+
+        <h3>Feeltracker 每日日記可以離線使用嗎？</h3>
+        <p>可以——Feeltracker 每日日記在所有重要的地方都能離線使用：撰寫條目、附加照片、搜尋、瀏覽你的年度紀錄，以及檢視統計和圖表，全都能在你的裝置上執行，不需要網路連線。任何你離線時寫的內容，只要下次連上網路，就會透過 iCloud 同步到你的其他裝置。雲端 AI 功能需要網路連線，但如果你開啟裝置端的 Apple Intelligence 模式（Pro，適用於執行 iOS 26 或以上版本的支援裝置），AI 也能離線運作。</p>
+
+
+        <h3>我可以匯入舊的日記條目嗎？</h3>
+        <p>可以——Feeltracker 每日日記可以從 Excel 試算表匯入日記條目。從設定中下載匯入範本，貼上每則條目的日期、時間和文字內容，接著匯入檔案，每一列就會變成一則日記條目。你也可以還原先前的備份，一次把條目和照片都找回來。</p>
+
+
+        <h3>我可以用 Face ID 鎖定我的日記嗎？</h3>
+        <p>可以——你可以使用 iOS 內建的應用程式鎖定功能，用 Face ID 或 Touch ID 鎖定 Feeltracker 每日日記：長按主畫面上的應用程式圖示，選擇<strong>要求 Face ID</strong>。設定中也連結到相同的說明。開啟後，沒有你的臉、指紋或密碼，任何人都無法打開你的日記。</p>
+
+
+        <h3>如果我遺失手機，我的日記會怎麼樣？</h3>
+        <p>你的日記很安全：Feeltracker 每日日記會把每則條目和照片同步到你的私人 iCloud 帳戶，所以在新的 iPhone、iPad 或 Mac 上登入時，一切都會自動找回來。應用程式也會大約每週自動寫入一次備份（你的條目和照片的 ZIP 檔），你隨時都可以自行還原或匯出，也可以隨時手動建立備份。</p>
 
     </section>
 
@@ -1190,9 +1250,9 @@
                 <span class="related-app-name">血壓</span>
             </a>
 
-            <a href="/zh-Hant/mood-journal/" class="related-app-card" aria-label="心理健康">
-                <img src="/images/FT_1024.png" alt="心理健康" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
-                <span class="related-app-name">心理健康</span>
+            <a href="/zh-Hant/mood-journal/" class="related-app-card" aria-label="心情日記">
+                <img src="/images/FT_1024.png" alt="心情日記" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">心情日記</span>
             </a>
 
             <a href="/zh-Hant/sleep/" class="related-app-card" aria-label="睡眠">

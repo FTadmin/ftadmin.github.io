@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>Dziennik - Notatki, Zdjęcia i Dziennik AI | Feeltracker</title>
     <meta name="description" content="Prywatny dziennik oparty na AI. Skanuj obiekty i tekst dla szybkich wpisów, dodawaj zdjęcia, śledź nastrój i wzorce słów. Synchronizacja iCloud. iPhone, iPad i Mac.">
-    <meta name="keywords" content="dziennik,notatki,pamiętnik,prywatny,codziennik,pisanie,śledzenie,osobisty,tajny,refleksja">
+    <meta name="keywords" content="aplikacja dziennik,aplikacja do dziennikowania,prywatny pamiętnik,cyfrowy pamiętnik,aplikacja dziennik na iPhone,dziennik wdzięczności,dziennik ze zdjęciami,dziennik AI,aplikacja codzienna refleksja,dziennik i notatki">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/pl/daily-journal/">
 
@@ -170,15 +170,21 @@
           "featureList": [
                 "Skanowanie przedmiotów AI — opisuje obiekty do wpisów dziennika",
                 "Skanowanie tekstu AI — OCR do przechwytywania tekstu",
-                "Analiza nastrojów wpisów",
-                "Śledzenie częstotliwości słów i tematów",
+                "Wskaźnik nastroju przy wpisach",
+                "Chmura słów i analiza częstotliwości słów",
                 "Dołącz do 8 zdjęć na wpis",
                 "Szablony notatek do szybkich wpisów",
                 "Pełnotekstowe wyszukiwanie i integracja ze Spotlight",
-                "Eksport do PDF i Excel",
+                "Eksport do PDF, Excel, CSV i JSON",
                 "Kopia zapasowa i synchronizacja iCloud",
                 "Obsługa 32 języków",
-                "Widżety na ekranie głównym do szybkiego wprowadzania danych"
+                "Widżety na ekranie głównym do szybkiego wprowadzania danych",
+                "Powtarzające się wpisy tworzone codziennie lub co tydzień",
+                "Opcjonalne renderowanie Markdown na liście wpisów",
+                "Przeformułowanie AI do dopracowania tego, co napisałeś",
+                "Liczba słów według dnia, miesiąca i roku",
+                "Import z Excela dla starszych dzienników",
+                "Automatyczne cotygodniowe kopie zapasowe"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -429,7 +435,7 @@
                       "name": "Czy mój dziennik jest prywatny?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Absolutnie. Twoje wpisy są przechowywane na Twoim urządzeniu i na Twoim prywatnym koncie iCloud — nie mamy serwerów przechowujących Twój dziennik i nigdy nie widzimy Twoich tekstów. Opcjonalne funkcje AI korzystają z chmurowego AI dbającego o prywatność, które możesz wyłączyć w dowolnym momencie; przy wyłączonym AI analiza nastroju działa w całości na urządzeniu z użyciem frameworku Natural Language firmy Apple, a przy opcji Apple Intelligence całe AI działa na urządzeniu."
+                            "text": "Tak — Feeltracker Dziennik Codzienny przechowuje Twoje wpisy na Twoim urządzeniu i na Twoim własnym prywatnym koncie iCloud, więc nie mamy serwerów przechowujących Twój dziennik i nikt w Feeltracker nie może przeczytać tego, co piszesz. Nie ma reklam ani śledzenia między aplikacjami. Opcjonalne funkcje AI wysyłają wpisy, o które pytasz, do dbającej o prywatność usługi chmurowej, a Ty możesz w każdej chwili wyłączyć AI; gdy AI jest wyłączone, wskaźnik nastroju działa całkowicie na urządzeniu, korzystając z frameworka Natural Language firmy Apple, a z opcją Apple Intelligence każda funkcja AI działa na urządzeniu."
                       }
                 },
                 {
@@ -437,7 +443,7 @@
                       "name": "Jak działa analiza nastrojów?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "W trakcie pisania aplikacja analizuje emocjonalny ton Twojego wpisu i wyświetla emotikonę wskazującą, czy brzmi on pozytywnie, negatywnie czy neutralnie. Domyślnie wykorzystuje do tego AI aplikacji dbające o prywatność; jeśli wyłączysz AI, przełącza się na wbudowany framework Natural Language firmy Apple działający na urządzeniu."
+                            "text": "Feeltracker Dziennik Codzienny ocenia emocjonalny ton każdego wpisu podczas pisania i pokazuje go jako oznaczony kolorami wskaźnik pod tekstem, od czerwonego (negatywny) przez szary (neutralny) po zielony i niebieski (pozytywny). Wskaźnik jest opcjonalny i można go wyłączyć w Ustawieniach. Domyślnie korzysta z dbającego o prywatność AI aplikacji; jeśli wyłączysz AI, przełącza się na wbudowany, działający na urządzeniu framework Natural Language firmy Apple."
                       }
                 },
                 {
@@ -445,7 +451,7 @@
                       "name": "Co to jest analiza częstotliwości słów?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Funkcja Trendy analizuje wszystkie Twoje wpisy, aby pokazać, które słowa i tematy piszesz najczęściej. Pomaga to identyfikować powtarzające się motywy, troski lub zainteresowania w Twoim myśleniu."
+                            "text": "Analiza częstotliwości słów w Feeltracker Dziennik Codzienny liczy słowa we wszystkich Twoich wpisach i szereguje te, których używasz najczęściej, dzięki czemu widoczne stają się osoby, miejsca i zmartwienia, które wciąż powracają. Typowe słowa wypełniające są odfiltrowywane w Twoim języku, te same dane są też pokazywane jako chmura słów, a dotknięcie dowolnego słowa otwiera każdy wpis, który je zawiera."
                       }
                 },
                 {
@@ -501,7 +507,39 @@
                       "name": "Czy potrzebuję subskrypcji?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Subskrypcja nie jest wymagana. Aplikacja jest darmowa do pobrania, całe śledzenie, wykresy, synchronizacja z Apple Health i eksporty są bezpłatne, a każdy użytkownik codziennie otrzymuje prawdziwe funkcje AI za darmo — bez reklam, zawsze. Opcjonalna subskrypcja Pro odblokowuje najbardziej rozbudowane funkcje AI (Dogłębna analiza, Eksplorator tematów, Oś czasu nastroju, Podsumowanie dla lekarza, Czat Pro i inne), uruchamia je na naszym najbardziej zaawansowanym modelu AI i podnosi hojne dzienne limity."
+                            "text": "Nie — Feeltracker Dziennik Codzienny jest darmowy do pobrania i nie wymaga subskrypcji. Pisanie, zdjęcia, szablony, powtarzające się wpisy, analiza słów, wyszukiwanie, wykresy, kopie zapasowe, eksporty i synchronizacja iCloud są całkowicie bezpłatne, a każdy użytkownik codziennie otrzymuje prawdziwe funkcje AI za darmo (Czat, Zadaj pytanie, Podsumowanie głosowe, Rozśmiesz mnie, Uspokój mnie, a także skanery tekstu i przedmiotów) — bez reklam, zawsze. Opcjonalna subskrypcja Pro odblokowuje najbardziej rozbudowane funkcje AI (Dogłębna analiza, Eksplorator tematów, Oś czasu nastrojów, Podsumowanie dla lekarza, Czat Pro i inne), uruchamia je na naszym najbardziej zaawansowanym modelu AI i podnosi hojne dzienne limity."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Czy Feeltracker Dziennik Codzienny działa offline?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tak — Feeltracker Dziennik Codzienny działa offline we wszystkim, co ważne: pisanie wpisów, dołączanie zdjęć, wyszukiwanie, przeglądanie roku oraz podgląd statystyk i wykresów działają na Twoim urządzeniu bez połączenia z internetem. Wszystko, co napiszesz offline, zsynchronizuje się z innymi urządzeniami przez iCloud, gdy tylko ponownie znajdziesz się online. Funkcje AI działające w chmurze wymagają połączenia, ale jeśli włączysz działający na urządzeniu tryb Apple Intelligence (Pro, na obsługiwanych urządzeniach z iOS 26 lub nowszym), AI również działa offline."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Czy mogę zaimportować stare wpisy z dziennika?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tak — Feeltracker Dziennik Codzienny importuje wpisy dziennika z arkusza Excel. Pobierz szablon importu z Ustawień, wklej datę, godzinę i treść każdego wpisu, a następnie zaimportuj plik — każdy wiersz stanie się wpisem w dzienniku. Możesz też przywrócić wcześniejszą kopię zapasową, która przywraca Twoje wpisy razem z ich zdjęciami."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Czy mogę zablokować dziennik za pomocą Face ID?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tak — możesz zablokować Feeltracker Dziennik Codzienny za pomocą Face ID lub Touch ID, korzystając z blokady aplikacji wbudowanej w iOS: naciśnij i przytrzymaj ikonę aplikacji na ekranie głównym i wybierz Wymagaj Face ID. Ustawienia prowadzą do tych samych instrukcji. Gdy blokada jest włączona, nikt nie otworzy Twojego dziennika bez Twojej twarzy, odcisku palca lub kodu."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Co się stanie z moim dziennikiem, jeśli zgubię telefon?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Twój dziennik jest bezpieczny: Feeltracker Dziennik Codzienny synchronizuje każdy wpis i zdjęcie z Twoim prywatnym kontem iCloud, więc zalogowanie się na nowym iPhonie, iPadzie lub Macu automatycznie przywraca wszystko. Aplikacja tworzy też automatyczną kopię zapasową mniej więcej raz w tygodniu (plik ZIP z Twoimi wpisami i zdjęciami), którą możesz w każdej chwili sam przywrócić lub wyeksportować, a dodatkowo w dowolnym momencie możesz utworzyć ręczną kopię zapasową."
                       }
                 }
           ]
@@ -519,7 +557,7 @@
 
             <a href="/pl/daily-journal/" class="current">Dziennik</a>
 
-            <a href="/pl/mood-journal/">Zdrowie psychiczne</a>
+            <a href="/pl/mood-journal/">Dziennik nastrojów</a>
 
             <a href="/pl/sleep/">Sen</a>
 
@@ -607,13 +645,13 @@
 <main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Ikona aplikacji Dziennik Codzienny" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker Dziennik Codzienny — prywatna aplikacja do dziennikowania AI i pamiętnika na iPhone" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Dziennik Codzienny</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> Bez reklam · Bez śledzenia · Prywatność przede wszystkim
         </div>
-        <p class="hero-subtitle">Twoja prywatna przestrzeń na codzienne refleksje, myśli i wspomnienia. Pisz swobodnie dzięki analizie nastrojów AI, załącznikom zdjęć i inteligentnym wglądom dotyczącym wzorców pisania.</p>
+        <p class="hero-subtitle">Twoja prywatna przestrzeń na codzienne refleksje, myśli i wspomnienia. Pisz tak często, jak chcesz, dołączaj do 8 zdjęć i zobacz tematy, do których wciąż wracasz, dzięki wskaźnikowi nastroju, chmurze słów i analizie częstotliwości słów.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
             <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Dziennik Codzienny z App Store" width="120" height="40" decoding="async"></picture>
         </a>
@@ -633,11 +671,11 @@
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Zrzut ekranu Dziennika Codziennego 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
+                <img src="/images/screenshots/nt-2.png" alt="Informacja zwrotna AI dotycząca wpisu dziennika w Feeltracker Dziennik Codzienny" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Zrzut ekranu Dziennika Codziennego 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
+                <img src="/images/screenshots/nt-3.png" alt="Pisanie wpisu dziennika z datą, godziną i notatkami" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -651,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>Pisanie bez rozproszenia</h3>
-                <p>Czysty, prosty interfejs, który stawia Twoje słowa na pierwszym miejscu. Bez bałaganu, tylko Ty i Twoje myśli. Pisz tyle lub mało, ile chcesz każdego dnia.</p>
+                <p>Czysty edytor zwykłego tekstu, który stawia Twoje słowa na pierwszym miejscu, z licznikiem słów na żywo podczas pisania. Dotknij Przeformułuj z AI, aby dopracować akapit, i włącz renderowanie Markdown, jeśli lubisz nagłówki, pogrubienia i listy na liście wpisów.</p>
             </div>
 
             <div class="feature-box">
@@ -668,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Analiza częstotliwości słów</h3>
-                <p>Odkryj, co naprawdę masz na myśli. Sprawdź, które słowa i tematy pojawiają się najczęściej w Twoim pisaniu, aby identyfikować wzorce i powtarzające się myśli.</p>
+                <h3>Chmura słów i częstotliwość słów</h3>
+                <p>Odkryj, co naprawdę zaprząta Twoje myśli. Chmura słów i uszeregowana lista częstotliwości pokazują słowa, których używasz najczęściej, z odfiltrowanymi typowymi słowami wypełniającymi w Twoim języku — dotknij dowolnego słowa, aby otworzyć każdy wpis, w którym się pojawia.</p>
             </div>
 
             <div class="feature-box">
@@ -714,6 +752,12 @@
                 <p>Łączna liczba napisanych słów według dnia, miesiąca i roku. Niektóre dni zaskoczysz sam siebie — a widok rosnącej liczby jest sam w sobie motywacją.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>Powtarzające się wpisy</h3>
+                <p>Skonfiguruj wpisy, które tworzą się same, codziennie lub co tydzień, dzięki czemu Twój dziennik nawyków, notatka o lekach czy wieczorna podpowiedź wdzięczności czekają już na Ciebie, gdy otworzysz aplikację.</p>
+            </div>
+
         </div>
     </section>
 
@@ -734,18 +778,18 @@
         <div class="app-card">
             <h3>2. Obserwuj wyłaniające się wzorce</h3>
             <div class="app-card-content">
-<p><strong>Analiza nastrojów:</strong> AI automatycznie wykrywa emocjonalny ton wpisów — pozytywny, negatywny lub neutralny. Śledź trendy nastroju wizualizowane przez tygodnie i miesiące, aby zrozumieć swoje wzorce emocjonalne.</p>
-<p><strong>Częstotliwość słów:</strong> Odkryj, o jakich tematach, ludziach lub motywach piszesz najczęściej. Aplikacja identyfikuje powtarzające się słowa i frazy, ujawniając co konsekwentnie masz na myśli i jak zmienia się Twoje skupienie w czasie.</p>
-<p><strong>Widok kalendarza:</strong> Przeglądaj całą historię pisania dziennika w interfejsie kalendarza. Każdy dzień pokazuje fragment i wskaźnik nastroju. Szybko przeskocz do dowolnego poprzedniego wpisu, aby zobaczyć, o czym myślałeś tego dnia.</p>
+<p><strong>Wskaźnik nastroju:</strong> Podczas pisania opcjonalny, oznaczony kolorami wskaźnik ocenia emocjonalny ton wpisu, od negatywnego przez neutralny po pozytywny. Pro dodaje Oś czasu nastrojów, która pokazuje na wykresie, jak ten ton zmienia się w ciągu tygodni i miesięcy.</p>
+<p><strong>Częstotliwość słów:</strong> Odkryj, o jakich tematach, ludziach lub motywach piszesz najczęściej. Chmura słów i uszeregowana lista częstotliwości ujawniają, co konsekwentnie zaprząta Twoje myśli, a dotknięcie słowa otwiera każdy wpis, w którym się ono pojawia.</p>
+<p><strong>Widoki roku, miesiąca i dnia:</strong> Przeglądaj całą historię swojego dziennika, od rocznej mapy cieplnej dni, w których pisałeś, po pojedynczy dzień. Każdy dzień wyświetla Twoje wpisy w całości, wraz z zapisem i liczbą słów, dzięki czemu możesz od razu przejść do tego, o czym myślałeś danego dnia.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. Refleksja i rozwój</h3>
             <div class="app-card-content">
-<p><strong>Wglądy zasilane AI:</strong> Zadawaj pytania o swój dziennik: "Jakie były moje najszczęśliwsze dni w zeszłym miesiącu?" lub "Pokaż mi wszystkie wpisy, w których wspomniałem o moich celach." Uzyskuj natychmiastowe, przemyślane odpowiedzi, które pomagają zrozumieć swoją drogę.</p>
-<p><strong>Śledzenie osobistego rozwoju:</strong> Przeglądaj jak ewoluują Twoje myśli, troski i aspiracje. Śledź postępy w realizacji celów wspomnianych w poprzednich wpisach. Identyfikuj obszary wzrostu i świętuj jak daleko doszedłeś.</p>
-<p><strong>Szukaj wszystkiego:</strong> Potężne wyszukiwanie znajdzie dowolne słowo, frazę lub pojęcie w latach pisania dziennika. Filtruj według daty, nastroju lub słów kluczowych. Cała Twoja pisemna historia jest natychmiast dostępna i przeszukiwalna.</p>
+<p><strong>Analizy oparte na AI:</strong> Zadawaj pytania dotyczące swojego dziennika: „Jakie były moje najszczęśliwsze dni w zeszłym miesiącu?” lub „Pokaż mi wszystkie wpisy, w których wspomniałem o swoich celach”. Otrzymuj natychmiastowe, przemyślane odpowiedzi, które pomagają Ci zrozumieć Twoją drogę.</p>
+<p><strong>Śledzenie rozwoju osobistego:</strong> Sprawdzaj, jak zmieniają się Twoje myśli, obawy i aspiracje. Zobacz postępy w realizacji celów wspomnianych we wcześniejszych wpisach. Zidentyfikuj obszary rozwoju i świętuj to, jak daleko zaszedłeś.</p>
+<p><strong>Wyszukaj wszystko:</strong> Wyszukaj dowolne słowo w latach prowadzenia dziennika, zawęź je do zakresu dat i przejdź od razu do pasujących wpisów. Twój dziennik jest też indeksowany w iOS Spotlight, więc wyszukiwanie z ekranu głównego również go znajdzie.</p>
             </div>
         </div>
 
@@ -838,8 +882,8 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-microphone"></i> Tekst na mowę <span class="ai-pro-badge">Pro</span></h3>
-                <p>Słuchaj wglądów AI i podsumowań z naturalnym odtwarzaniem głosu</p>
+                <h3><i class="fas fa-microphone"></i> Informacja zwrotna głosowa <span class="ai-pro-badge">Pro</span></h3>
+                <p>Krótka głosowa notatka AI po każdym zapisie, reagująca na to, co właśnie napisałeś</p>
             </div>
 
             <div class="ai-feature">
@@ -941,7 +985,7 @@
         <p>Ćwicz codzienne pisanie, zapisuj pomysły i rozwijaj swój styl. Interfejs wolny od rozproszenia pomaga skupić się na swojej twórczości.</p>
 
         <h3>Zdrowie psychiczne</h3>
-        <p>Przetwarzaj emocje, identyfikuj wyzwalacze i śledź wzorce nastroju poprzez pisanie. Analiza nastrojów dostarcza obiektywnych informacji zwrotnych na temat tonu emocjonalnego.</p>
+        <p>Wypisz się z trudnego dnia, zauważ, co wciąż powraca, i spójrz wstecz na to, jak wyglądały sprawy miesiąc temu. Wskaźnik nastroju daje Ci prosty odczyt emocjonalnego tonu każdego wpisu.</p>
 
     </section>
 
@@ -952,15 +996,15 @@
 
 
         <h3>Czy mój dziennik jest prywatny?</h3>
-        <p>Absolutnie. Twoje wpisy są przechowywane na Twoim urządzeniu i na Twoim prywatnym koncie iCloud — nie mamy serwerów przechowujących Twój dziennik i nigdy nie widzimy Twoich tekstów. Opcjonalne funkcje AI korzystają z chmurowego AI dbającego o prywatność, które możesz wyłączyć w dowolnym momencie; przy wyłączonym AI analiza nastroju działa w całości na urządzeniu z użyciem frameworku Natural Language firmy Apple, a przy opcji Apple Intelligence całe AI działa na urządzeniu.</p>
+        <p>Tak — Feeltracker Dziennik Codzienny przechowuje Twoje wpisy na Twoim urządzeniu i na Twoim własnym prywatnym koncie iCloud, więc nie mamy serwerów przechowujących Twój dziennik i nikt w Feeltracker nie może przeczytać tego, co piszesz. Nie ma reklam ani śledzenia między aplikacjami. Opcjonalne funkcje AI wysyłają wpisy, o które pytasz, do dbającej o prywatność usługi chmurowej, a Ty możesz w każdej chwili wyłączyć AI; gdy AI jest wyłączone, wskaźnik nastroju działa całkowicie na urządzeniu, korzystając z frameworka Natural Language firmy Apple, a z opcją Apple Intelligence każda funkcja AI działa na urządzeniu.</p>
 
 
         <h3>Jak działa analiza nastrojów?</h3>
-        <p>W trakcie pisania aplikacja analizuje emocjonalny ton Twojego wpisu i wyświetla emotikonę wskazującą, czy brzmi on pozytywnie, negatywnie czy neutralnie. Domyślnie wykorzystuje do tego AI aplikacji dbające o prywatność; jeśli wyłączysz AI, przełącza się na wbudowany framework Natural Language firmy Apple działający na urządzeniu.</p>
+        <p>Feeltracker Dziennik Codzienny ocenia emocjonalny ton każdego wpisu podczas pisania i pokazuje go jako oznaczony kolorami wskaźnik pod tekstem, od czerwonego (negatywny) przez szary (neutralny) po zielony i niebieski (pozytywny). Wskaźnik jest opcjonalny i można go wyłączyć w Ustawieniach. Domyślnie korzysta z dbającego o prywatność AI aplikacji; jeśli wyłączysz AI, przełącza się na wbudowany, działający na urządzeniu framework Natural Language firmy Apple.</p>
 
 
         <h3>Co to jest analiza częstotliwości słów?</h3>
-        <p>Funkcja Trendy analizuje wszystkie Twoje wpisy, aby pokazać, które słowa i tematy piszesz najczęściej. Pomaga to identyfikować powtarzające się motywy, troski lub zainteresowania w Twoim myśleniu.</p>
+        <p>Analiza częstotliwości słów w Feeltracker Dziennik Codzienny liczy słowa we wszystkich Twoich wpisach i szereguje te, których używasz najczęściej, dzięki czemu widoczne stają się osoby, miejsca i zmartwienia, które wciąż powracają. Typowe słowa wypełniające są odfiltrowywane w Twoim języku, te same dane są też pokazywane jako chmura słów, a dotknięcie dowolnego słowa otwiera każdy wpis, który je zawiera.</p>
 
 
         <h3>Czy mogę dodawać zdjęcia do dziennika?</h3>
@@ -989,7 +1033,23 @@
 
 
         <h3>Czy potrzebuję subskrypcji?</h3>
-        <p>Subskrypcja nie jest wymagana. Aplikacja jest darmowa do pobrania, całe śledzenie, wykresy, synchronizacja z Apple Health i eksporty są bezpłatne, a każdy użytkownik codziennie otrzymuje prawdziwe funkcje AI za darmo — bez reklam, zawsze. Opcjonalna subskrypcja Pro odblokowuje najbardziej rozbudowane funkcje AI (Dogłębna analiza, Eksplorator tematów, Oś czasu nastroju, Podsumowanie dla lekarza, Czat Pro i inne), uruchamia je na naszym najbardziej zaawansowanym modelu AI i podnosi hojne dzienne limity.</p>
+        <p>Nie — Feeltracker Dziennik Codzienny jest darmowy do pobrania i nie wymaga subskrypcji. Pisanie, zdjęcia, szablony, powtarzające się wpisy, analiza słów, wyszukiwanie, wykresy, kopie zapasowe, eksporty i synchronizacja iCloud są całkowicie bezpłatne, a każdy użytkownik codziennie otrzymuje prawdziwe funkcje AI za darmo (Czat, Zadaj pytanie, Podsumowanie głosowe, Rozśmiesz mnie, Uspokój mnie, a także skanery tekstu i przedmiotów) — bez reklam, zawsze. Opcjonalna subskrypcja Pro odblokowuje najbardziej rozbudowane funkcje AI (Dogłębna analiza, Eksplorator tematów, Oś czasu nastrojów, Podsumowanie dla lekarza, Czat Pro i inne), uruchamia je na naszym najbardziej zaawansowanym modelu AI i podnosi hojne dzienne limity.</p>
+
+
+        <h3>Czy Feeltracker Dziennik Codzienny działa offline?</h3>
+        <p>Tak — Feeltracker Dziennik Codzienny działa offline we wszystkim, co ważne: pisanie wpisów, dołączanie zdjęć, wyszukiwanie, przeglądanie roku oraz podgląd statystyk i wykresów działają na Twoim urządzeniu bez połączenia z internetem. Wszystko, co napiszesz offline, zsynchronizuje się z innymi urządzeniami przez iCloud, gdy tylko ponownie znajdziesz się online. Funkcje AI działające w chmurze wymagają połączenia, ale jeśli włączysz działający na urządzeniu tryb Apple Intelligence (Pro, na obsługiwanych urządzeniach z iOS 26 lub nowszym), AI również działa offline.</p>
+
+
+        <h3>Czy mogę zaimportować stare wpisy z dziennika?</h3>
+        <p>Tak — Feeltracker Dziennik Codzienny importuje wpisy dziennika z arkusza Excel. Pobierz szablon importu z Ustawień, wklej datę, godzinę i treść każdego wpisu, a następnie zaimportuj plik — każdy wiersz stanie się wpisem w dzienniku. Możesz też przywrócić wcześniejszą kopię zapasową, która przywraca Twoje wpisy razem z ich zdjęciami.</p>
+
+
+        <h3>Czy mogę zablokować dziennik za pomocą Face ID?</h3>
+        <p>Tak — możesz zablokować Feeltracker Dziennik Codzienny za pomocą Face ID lub Touch ID, korzystając z blokady aplikacji wbudowanej w iOS: naciśnij i przytrzymaj ikonę aplikacji na ekranie głównym i wybierz <strong>Wymagaj Face ID</strong>. Ustawienia prowadzą do tych samych instrukcji. Gdy blokada jest włączona, nikt nie otworzy Twojego dziennika bez Twojej twarzy, odcisku palca lub kodu.</p>
+
+
+        <h3>Co się stanie z moim dziennikiem, jeśli zgubię telefon?</h3>
+        <p>Twój dziennik jest bezpieczny: Feeltracker Dziennik Codzienny synchronizuje każdy wpis i zdjęcie z Twoim prywatnym kontem iCloud, więc zalogowanie się na nowym iPhonie, iPadzie lub Macu automatycznie przywraca wszystko. Aplikacja tworzy też automatyczną kopię zapasową mniej więcej raz w tygodniu (plik ZIP z Twoimi wpisami i zdjęciami), którą możesz w każdej chwili sam przywrócić lub wyeksportować, a dodatkowo w dowolnym momencie możesz utworzyć ręczną kopię zapasową.</p>
 
     </section>
 
@@ -1190,9 +1250,9 @@
                 <span class="related-app-name">Ciśnienie krwi</span>
             </a>
 
-            <a href="/pl/mood-journal/" class="related-app-card" aria-label="Zdrowie psychiczne">
-                <img src="/images/FT_1024.png" alt="Zdrowie psychiczne" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
-                <span class="related-app-name">Zdrowie psychiczne</span>
+            <a href="/pl/mood-journal/" class="related-app-card" aria-label="Dziennik nastrojów">
+                <img src="/images/FT_1024.png" alt="Dziennik nastrojów" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">Dziennik nastrojów</span>
             </a>
 
             <a href="/pl/sleep/" class="related-app-card" aria-label="Sen">

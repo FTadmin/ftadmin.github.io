@@ -40,7 +40,7 @@
     <!-- Primary Meta Tags -->
     <title>데일리 저널 - 노트, 사진 & AI 다이어리 | Feeltracker</title>
     <meta name="description" content="비공개 AI 기반 데일리 저널. 물체와 텍스트를 스캔해 즉시 항목 생성, 사진 첨부, 감정 및 단어 패턴 추적. iCloud 동기화. iPhone, iPad, Mac 지원.">
-    <meta name="keywords" content="log,day,diario,lock,free,moleskine,personal,private,secret,taker,writer,journaling,my,笔记,дневник,笔记本,일기,저널,메모,노트,다이어리">
+    <meta name="keywords" content="데일리 저널 앱,일기 앱,프라이빗 다이어리 앱,디지털 다이어리,아이폰 일기 앱,감사 일기,사진 일기,AI 일기 앱,매일 성찰 앱,일기 및 메모 앱">
     <meta name="author" content="Custom Arts">
     <link rel="canonical" href="https://feeltracker.com/ko/daily-journal/">
 
@@ -170,15 +170,21 @@
           "featureList": [
                 "AI 아이템 스캔 - 일기 기록을 위해 물체를 설명",
                 "AI 텍스트 스캔 - OCR로 텍스트 캡처",
-                "기록의 감정 분석",
-                "단어 빈도 및 테마 추적",
+                "기록의 감정 게이지",
+                "워드 클라우드 및 단어 빈도 분석",
                 "기록당 최대 8장의 사진 첨부",
                 "빠른 기록을 위한 메모 템플릿",
                 "전체 텍스트 검색 및 Spotlight 연동",
-                "PDF 및 Excel로 내보내기",
+                "PDF, Excel, CSV, JSON으로 내보내기",
                 "iCloud 백업 및 동기화",
                 "32개 언어 지원",
-                "빠른 입력을 위한 홈 화면 위젯"
+                "빠른 입력을 위한 홈 화면 위젯",
+                "매일 또는 매주 자동 생성되는 반복 기록",
+                "기록 목록에서 선택 가능한 마크다운 렌더링",
+                "쓴 글을 다듬어 주는 AI 문장 다듬기",
+                "일별, 월별, 연도별 단어 수 집계",
+                "예전 일기를 위한 Excel 가져오기",
+                "매주 자동 백업"
           ],
           "screenshot": "https://feeltracker.com/images/screenshots/nt-1.png",
           "softwareVersion": "Latest",
@@ -429,7 +435,7 @@
                       "name": "제 일기는 비공개인가요?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "물론입니다. 기록은 기기와 개인 iCloud 계정에 저장됩니다 — 이를 저장하는 서버가 없으며, 우리는 절대 당신의 글을 볼 수 없습니다. 선택적 AI 기능은 프라이버시를 보호하는 클라우드 AI를 사용하며 언제든 끌 수 있습니다. AI를 끄면 감정 분석은 Apple의 Natural Language 프레임워크를 사용해 전적으로 온디바이스에서 실행되며, Apple Intelligence 옵션을 사용하면 모든 AI가 온디바이스에서 실행됩니다."
+                            "text": "네 - Feeltracker 일기는 기록을 내 기기와 나만의 개인 iCloud 계정에 보관해요. 그래서 일기를 저장하는 서버가 저희 쪽에는 없고, Feeltracker의 그 누구도 쓰신 글을 볼 수 없어요. 광고도, 앱 간 추적도 전혀 없어요. 선택적 AI 기능을 사용할 때는 질문한 내용에 해당하는 기록만 프라이버시를 보호하는 클라우드 서비스로 전송되고, AI는 언제든 끌 수 있어요. AI를 끄면 감정 게이지는 Apple의 Natural Language 프레임워크를 사용해 전적으로 온디바이스에서 실행되고, Apple Intelligence 옵션을 사용하면 모든 AI 기능이 온디바이스에서 실행돼요."
                       }
                 },
                 {
@@ -437,7 +443,7 @@
                       "name": "감정 분석은 어떻게 작동하나요?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "글을 쓰는 동안 앱이 기록의 감정 톤을 분석하고, 긍정적·부정적·중립적인지 나타내는 이모지를 보여줍니다. 기본적으로는 앱의 프라이버시를 보호하는 AI를 사용하며, AI를 끄면 Apple의 온디바이스 Natural Language 프레임워크로 전환됩니다."
+                            "text": "Feeltracker 일기는 글을 쓰는 동안 각 기록의 감정 톤을 채점해서 텍스트 아래에 색상으로 구분된 게이지로 보여줘요. 빨강(부정)에서 회색(중립)을 거쳐 초록과 파랑(긍정)까지 표시돼요. 이 게이지는 선택 사항이라 설정에서 끌 수 있어요. 기본적으로는 앱의 프라이버시를 보호하는 AI를 사용하고, AI를 끄면 Apple의 내장 온디바이스 Natural Language 프레임워크로 전환돼요."
                       }
                 },
                 {
@@ -445,7 +451,7 @@
                       "name": "단어 빈도 분석이란 무엇인가요?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "트렌드 기능이 모든 기록을 분석하여 가장 자주 쓰는 단어와 주제를 보여줍니다. 사고에서 반복되는 테마, 관심사, 흥미를 파악하는 데 도움이 됩니다."
+                            "text": "Feeltracker 일기의 단어 빈도 분석은 모든 기록에 등장하는 단어를 세어 가장 많이 쓴 순서로 보여줘서, 자꾸 등장하는 사람, 장소, 고민이 눈에 보이게 해줘요. 사용하는 언어에 맞춰 흔한 불용어는 걸러내고, 같은 데이터를 워드 클라우드로도 보여주며, 단어를 탭하면 그 단어가 포함된 모든 기록을 열어볼 수 있어요."
                       }
                 },
                 {
@@ -501,7 +507,39 @@
                       "name": "구독이 필요한가요?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "구독이 필요하지 않습니다. 앱은 무료로 다운로드할 수 있고, 모든 기록·차트·Apple Health 연동·내보내기가 무료이며, 모든 사용자가 매일 진짜 AI 기능을 무료로 이용할 수 있습니다 — 광고는 전혀 없습니다. 선택적 Pro 구독은 가장 심층적인 AI 기능(딥 리서치, 테마 탐색기, 감정 타임라인, 닥터 요약, Pro 채팅 등)을 가장 강력한 AI로 실행하고, 넉넉한 일일 한도를 높여줍니다."
+                            "text": "아니요 - Feeltracker 일기는 무료로 다운로드할 수 있고 구독은 필요하지 않아요. 글쓰기, 사진, 템플릿, 반복 기록, 단어 분석, 검색, 차트, 백업, 내보내기, iCloud 동기화가 모두 무료이고, 모든 사용자가 매일 진짜 AI 기능(퀵 채팅, 질문하기, 음성 요약, 웃겨주세요, 진정시켜 주세요, 텍스트 및 아이템 스캐너까지)을 무료로 이용할 수 있어요 — 광고는 전혀 없어요. 선택적 Pro 구독은 가장 심층적인 AI 기능(딥 리서치, 테마 탐색기, 감정 타임라인, 의사용 요약, Pro 채팅 등)을 가장 강력한 AI로 실행하고, 넉넉한 일일 한도를 높여줘요."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Feeltracker 일기는 오프라인에서도 작동하나요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "네 - Feeltracker 일기는 중요한 모든 기능을 오프라인에서도 사용할 수 있어요: 기록 작성, 사진 첨부, 검색, 연간 보기, 통계와 차트 확인까지 모두 인터넷 연결 없이 기기에서 실행돼요. 오프라인에서 쓴 내용은 다시 온라인 상태가 되면 iCloud를 통해 다른 기기에 동기화돼요. 클라우드 AI 기능은 연결이 필요하지만, 온디바이스 Apple Intelligence 모드(Pro, iOS 26 이상을 지원하는 기기)를 켜두면 AI도 오프라인에서 작동해요."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "예전 일기 기록을 가져올 수 있나요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "네 - Feeltracker 일기는 Excel 스프레드시트에서 일기 기록을 가져올 수 있어요. 설정에서 가져오기 템플릿을 내려받아 각 기록의 날짜, 시간, 본문 텍스트를 붙여넣은 뒤 파일을 가져오면 각 행이 하나의 일기 기록이 돼요. 이전 백업을 복원할 수도 있는데, 이렇게 하면 기록과 사진이 함께 되돌아와요."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Face ID로 일기를 잠글 수 있나요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "네 - iOS에 내장된 앱 잠금 기능으로 Feeltracker 일기를 Face ID나 Touch ID로 잠글 수 있어요: 홈 화면에서 앱 아이콘을 길게 누른 뒤 Face ID 요구를 선택하세요. 설정 화면에서도 같은 안내로 이동할 수 있어요. 한 번 켜두면 내 얼굴, 지문, 암호 없이는 아무도 일기를 열 수 없어요."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "휴대폰을 잃어버리면 일기는 어떻게 되나요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "일기는 안전해요: Feeltracker 일기는 모든 기록과 사진을 개인 iCloud 계정에 동기화하기 때문에, 새 iPhone, iPad, Mac에 로그인하면 자동으로 모두 되돌아와요. 앱은 약 일주일에 한 번씩 자동으로 백업(기록과 사진을 담은 ZIP 파일)을 만들어 두어서 언제든 직접 복원하거나 내보낼 수 있고, 원할 때는 수동으로 백업을 만들 수도 있어요."
                       }
                 }
           ]
@@ -519,7 +557,7 @@
 
             <a href="/ko/daily-journal/" class="current">일기</a>
 
-            <a href="/ko/mood-journal/">정신 건강</a>
+            <a href="/ko/mood-journal/">기분 일기</a>
 
             <a href="/ko/sleep/">수면</a>
 
@@ -607,13 +645,13 @@
 <main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="일기 앱 아이콘" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Feeltracker 일기 — 아이폰을 위한 프라이빗 AI 저널링 및 다이어리 앱" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>일기</h1>
 
         <div class="privacy-badge">
             <i class="fas fa-shield-alt"></i> 광고 없음 · 추적 없음 · 프라이버시 최우선
         </div>
-        <p class="hero-subtitle">일상의 성찰, 생각, 추억을 위한 나만의 공간. AI 감정 분석, 사진 첨부, 글쓰기 패턴에 대한 지능형 인사이트로 자유롭게 기록하세요.</p>
+        <p class="hero-subtitle">매일의 성찰과 생각, 추억을 위한 나만의 프라이빗 공간이에요. 원하는 만큼 자주 쓰고, 사진을 최대 8장까지 첨부하고, 감정 게이지와 워드 클라우드, 단어 빈도 분석으로 자꾸만 되돌아가는 주제를 확인해 보세요.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
             <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ko-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ko-black.svg" alt="App Store에서 일기 Feeltracker 다운로드" width="120" height="40" decoding="async"></picture>
         </a>
@@ -633,11 +671,11 @@
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="일기 앱 스크린샷 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
+                <img src="/images/screenshots/nt-2.png" alt="Feeltracker 일기에서 일기 기록에 대한 AI 피드백" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="일기 앱 스크린샷 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
+                <img src="/images/screenshots/nt-3.png" alt="날짜, 시간, 메모와 함께 일기 기록 작성하기" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -651,7 +689,7 @@
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-pen"></i></div>
                 <h3>집중할 수 있는 글쓰기 환경</h3>
-                <p>당신의 글을 최우선으로 하는 깔끔하고 심플한 인터페이스. 불필요한 요소 없이 오직 당신과 당신의 생각만. 매일 원하는 만큼 자유롭게 쓸 수 있습니다.</p>
+                <p>내 글을 최우선으로 하는 깔끔한 일반 텍스트 편집기로, 입력하는 동안 실시간 단어 수도 확인할 수 있어요. AI 문장 다듬기를 탭하면 문단을 매끄럽게 다듬어 주고, 기록 목록에 제목, 굵게, 목록 같은 서식을 쓰고 싶다면 마크다운 렌더링을 켜면 돼요.</p>
             </div>
 
             <div class="feature-box">
@@ -668,8 +706,8 @@
 
             <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>단어 빈도 분석</h3>
-                <p>당신이 정말 무엇을 생각하고 있는지 알아보세요. 글에서 가장 자주 등장하는 단어와 테마를 확인하여 패턴과 반복되는 생각을 파악할 수 있습니다.</p>
+                <h3>워드 클라우드 & 단어 빈도</h3>
+                <p>정말로 마음에 담아둔 것이 무엇인지 알아보세요. 워드 클라우드와 순위별 빈도 목록이 가장 많이 사용한 단어를 보여주고, 사용하는 언어에 맞춰 흔한 불용어는 걸러내요 — 단어를 탭하면 그 단어가 언급된 모든 기록을 열어볼 수 있어요.</p>
             </div>
 
             <div class="feature-box">
@@ -714,6 +752,12 @@
                 <p>일·월·연도별 총 작성 단어 수를 기록합니다. 어떤 날은 스스로도 놀라게 될 것이고, 숫자가 올라가는 모습이 그 자체로 동기부여가 됩니다.</p>
             </div>
 
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fas fa-repeat"></i></div>
+                <h3>반복 기록</h3>
+                <p>매일 또는 매주, 스스로 만들어지는 기록을 설정해 보세요. 습관 기록, 복약 메모, 밤마다의 감사 일기 프롬프트가 앱을 열 때마다 이미 준비되어 있을 거예요.</p>
+            </div>
+
         </div>
     </section>
 
@@ -734,18 +778,18 @@
         <div class="app-card">
             <h3>2. 패턴을 발견하세요</h3>
             <div class="app-card-content">
-<p><strong>감정 분석:</strong> AI가 기록의 감정적 톤(긍정, 부정, 중립)을 자동으로 감지합니다. 몇 주에서 몇 달에 걸친 기분 트렌드를 시각화하여 감정 패턴을 이해하세요.</p>
-<p><strong>단어 빈도:</strong> 어떤 주제, 사람, 테마에 대해 가장 많이 쓰는지 알아보세요. 앱이 반복되는 단어와 구문을 파악하여 항상 마음에 있는 것과 관심사의 변화를 보여줍니다.</p>
-<p><strong>캘린더 보기:</strong> 캘린더 인터페이스에서 전체 저널링 이력을 탐색할 수 있습니다. 각 날짜에 발췌문과 기분 표시가 나타납니다. 과거 기록으로 빠르게 이동하여 그날 무슨 생각을 했는지 돌아볼 수 있습니다.</p>
+<p><strong>감정 게이지:</strong> 글을 쓰는 동안 선택적으로 켤 수 있는 색상 게이지가 기록의 감정 톤을 부정에서 중립을 거쳐 긍정까지 평가해 줘요. Pro를 이용하면 그 톤이 몇 주, 몇 달에 걸쳐 어떻게 움직이는지 차트로 보여주는 감정 타임라인도 추가돼요.</p>
+<p><strong>단어 빈도:</strong> 어떤 주제, 사람, 테마에 대해 가장 많이 쓰는지 알아보세요. 워드 클라우드와 순위별 빈도 목록이 늘 마음에 있는 것을 꾸준히 보여주고, 단어를 탭하면 그 단어를 사용한 모든 기록을 열어볼 수 있어요.</p>
+<p><strong>연간·월간·일간 보기:</strong> 글을 쓴 날들의 연간 히트맵부터 하루 단위까지, 저널링 이력 전체를 둘러보세요. 하루마다 기록과 단어 수를 함께 전체 목록으로 보여줘서, 어떤 날짜든 그날 무슨 생각을 했는지 바로 확인할 수 있어요.</p>
             </div>
         </div>
 
         <div class="app-card">
             <h3>3. 성찰하고 성장하세요</h3>
             <div class="app-card-content">
-<p><strong>AI 기반 인사이트:</strong> 일기에 대해 질문할 수 있습니다: "지난달 가장 행복했던 날은?" 또는 "목표에 대해 쓴 기록을 모두 보여줘." 여정을 이해하는 데 도움이 되는 즉각적이고 사려 깊은 답변을 받을 수 있습니다.</p>
-<p><strong>개인 성장 추적:</strong> 생각, 관심사, 포부가 어떻게 변화해 왔는지 돌아보세요. 과거 기록에 언급된 목표의 진척 상황을 확인하세요. 성장 영역을 파악하고 지금까지 걸어온 길을 축하하세요.</p>
-<p><strong>모든 것을 검색:</strong> 강력한 검색으로 수년간의 일기에서 어떤 단어, 구문, 개념이든 찾을 수 있습니다. 날짜, 기분, 키워드로 필터링하세요. 작성한 모든 이력에 즉시 접근하고 검색할 수 있습니다.</p>
+<p><strong>AI 기반 인사이트:</strong> 일기에 대해 질문해 보세요: "지난달 가장 행복했던 날은 언제였지?" 또는 "목표를 언급한 기록을 모두 보여줘" 처럼요. 여정을 이해하는 데 도움이 되는 즉각적이고 사려 깊은 답변을 받을 수 있어요.</p>
+<p><strong>개인 성장 추적:</strong> 생각, 고민, 포부가 어떻게 변화해 왔는지 돌아보세요. 지난 기록에서 언급한 목표를 향한 진행 상황도 확인할 수 있어요. 성장한 영역을 발견하고 지금까지 걸어온 길을 축하해 보세요.</p>
+<p><strong>모든 것을 검색:</strong> 몇 년치 일기에서든 어떤 단어라도 검색하고, 날짜 범위로 좁혀서 일치하는 기록으로 바로 이동할 수 있어요. 일기는 iOS 스포트라이트에도 인덱싱되어 있어서 홈 화면에서 검색해도 찾을 수 있어요.</p>
             </div>
         </div>
 
@@ -838,8 +882,8 @@
             </div>
 
             <div class="ai-feature">
-                <h3><i class="fas fa-microphone"></i> 텍스트 음성 변환 <span class="ai-pro-badge">Pro</span></h3>
-                <p>AI 인사이트와 요약을 자연스러운 음성으로 들어보세요</p>
+                <h3><i class="fas fa-microphone"></i> 음성 피드백 <span class="ai-pro-badge">Pro</span></h3>
+                <p>기록을 저장할 때마다 방금 쓴 내용에 반응하는 짧은 AI 음성 메모를 들려드려요</p>
             </div>
 
             <div class="ai-feature">
@@ -941,7 +985,7 @@
         <p>매일 글쓰기를 연습하고, 아이디어를 기록하고, 자신만의 목소리를 발전시키세요. 집중할 수 있는 인터페이스가 창작에 몰입하도록 도와줍니다.</p>
 
         <h3>정신 건강</h3>
-        <p>글쓰기를 통해 감정을 처리하고, 트리거를 파악하고, 기분 패턴을 추적하세요. 감정 분석이 감정적 톤에 대한 객관적인 피드백을 제공합니다.</p>
+        <p>힘든 하루를 글쓰기로 헤쳐나가고, 자꾸 떠오르는 것이 무엇인지 알아차리고, 한 달 전은 어땠는지 돌아보세요. 감정 게이지가 각 기록의 감정 톤을 간단하게 알려드려요.</p>
 
     </section>
 
@@ -952,15 +996,15 @@
 
 
         <h3>제 일기는 비공개인가요?</h3>
-        <p>물론입니다. 기록은 기기와 개인 iCloud 계정에 저장됩니다 — 이를 저장하는 서버가 없으며, 우리는 절대 당신의 글을 볼 수 없습니다. 선택적 AI 기능은 프라이버시를 보호하는 클라우드 AI를 사용하며 언제든 끌 수 있습니다. AI를 끄면 감정 분석은 Apple의 Natural Language 프레임워크를 사용해 전적으로 온디바이스에서 실행되며, Apple Intelligence 옵션을 사용하면 모든 AI가 온디바이스에서 실행됩니다.</p>
+        <p>네 - Feeltracker 일기는 기록을 내 기기와 나만의 개인 iCloud 계정에 보관해요. 그래서 일기를 저장하는 서버가 저희 쪽에는 없고, Feeltracker의 그 누구도 쓰신 글을 볼 수 없어요. 광고도, 앱 간 추적도 전혀 없어요. 선택적 AI 기능을 사용할 때는 질문한 내용에 해당하는 기록만 프라이버시를 보호하는 클라우드 서비스로 전송되고, AI는 언제든 끌 수 있어요. AI를 끄면 감정 게이지는 Apple의 Natural Language 프레임워크를 사용해 전적으로 온디바이스에서 실행되고, Apple Intelligence 옵션을 사용하면 모든 AI 기능이 온디바이스에서 실행돼요.</p>
 
 
         <h3>감정 분석은 어떻게 작동하나요?</h3>
-        <p>글을 쓰는 동안 앱이 기록의 감정 톤을 분석하고, 긍정적·부정적·중립적인지 나타내는 이모지를 보여줍니다. 기본적으로는 앱의 프라이버시를 보호하는 AI를 사용하며, AI를 끄면 Apple의 온디바이스 Natural Language 프레임워크로 전환됩니다.</p>
+        <p>Feeltracker 일기는 글을 쓰는 동안 각 기록의 감정 톤을 채점해서 텍스트 아래에 색상으로 구분된 게이지로 보여줘요. 빨강(부정)에서 회색(중립)을 거쳐 초록과 파랑(긍정)까지 표시돼요. 이 게이지는 선택 사항이라 설정에서 끌 수 있어요. 기본적으로는 앱의 프라이버시를 보호하는 AI를 사용하고, AI를 끄면 Apple의 내장 온디바이스 Natural Language 프레임워크로 전환돼요.</p>
 
 
         <h3>단어 빈도 분석이란 무엇인가요?</h3>
-        <p>트렌드 기능이 모든 기록을 분석하여 가장 자주 쓰는 단어와 주제를 보여줍니다. 사고에서 반복되는 테마, 관심사, 흥미를 파악하는 데 도움이 됩니다.</p>
+        <p>Feeltracker 일기의 단어 빈도 분석은 모든 기록에 등장하는 단어를 세어 가장 많이 쓴 순서로 보여줘서, 자꾸 등장하는 사람, 장소, 고민이 눈에 보이게 해줘요. 사용하는 언어에 맞춰 흔한 불용어는 걸러내고, 같은 데이터를 워드 클라우드로도 보여주며, 단어를 탭하면 그 단어가 포함된 모든 기록을 열어볼 수 있어요.</p>
 
 
         <h3>일기에 사진을 추가할 수 있나요?</h3>
@@ -989,7 +1033,23 @@
 
 
         <h3>구독이 필요한가요?</h3>
-        <p>구독이 필요하지 않습니다. 앱은 무료로 다운로드할 수 있고, 모든 기록·차트·Apple Health 연동·내보내기가 무료이며, 모든 사용자가 매일 진짜 AI 기능을 무료로 이용할 수 있습니다 — 광고는 전혀 없습니다. 선택적 Pro 구독은 가장 심층적인 AI 기능(딥 리서치, 테마 탐색기, 감정 타임라인, 닥터 요약, Pro 채팅 등)을 가장 강력한 AI로 실행하고, 넉넉한 일일 한도를 높여줍니다.</p>
+        <p>아니요 - Feeltracker 일기는 무료로 다운로드할 수 있고 구독은 필요하지 않아요. 글쓰기, 사진, 템플릿, 반복 기록, 단어 분석, 검색, 차트, 백업, 내보내기, iCloud 동기화가 모두 무료이고, 모든 사용자가 매일 진짜 AI 기능(퀵 채팅, 질문하기, 음성 요약, 웃겨주세요, 진정시켜 주세요, 텍스트 및 아이템 스캐너까지)을 무료로 이용할 수 있어요 — 광고는 전혀 없어요. 선택적 Pro 구독은 가장 심층적인 AI 기능(딥 리서치, 테마 탐색기, 감정 타임라인, 의사용 요약, Pro 채팅 등)을 가장 강력한 AI로 실행하고, 넉넉한 일일 한도를 높여줘요.</p>
+
+
+        <h3>Feeltracker 일기는 오프라인에서도 작동하나요?</h3>
+        <p>네 - Feeltracker 일기는 중요한 모든 기능을 오프라인에서도 사용할 수 있어요: 기록 작성, 사진 첨부, 검색, 연간 보기, 통계와 차트 확인까지 모두 인터넷 연결 없이 기기에서 실행돼요. 오프라인에서 쓴 내용은 다시 온라인 상태가 되면 iCloud를 통해 다른 기기에 동기화돼요. 클라우드 AI 기능은 연결이 필요하지만, 온디바이스 Apple Intelligence 모드(Pro, iOS 26 이상을 지원하는 기기)를 켜두면 AI도 오프라인에서 작동해요.</p>
+
+
+        <h3>예전 일기 기록을 가져올 수 있나요?</h3>
+        <p>네 - Feeltracker 일기는 Excel 스프레드시트에서 일기 기록을 가져올 수 있어요. 설정에서 가져오기 템플릿을 내려받아 각 기록의 날짜, 시간, 본문 텍스트를 붙여넣은 뒤 파일을 가져오면 각 행이 하나의 일기 기록이 돼요. 이전 백업을 복원할 수도 있는데, 이렇게 하면 기록과 사진이 함께 되돌아와요.</p>
+
+
+        <h3>Face ID로 일기를 잠글 수 있나요?</h3>
+        <p>네 - iOS에 내장된 앱 잠금 기능으로 Feeltracker 일기를 Face ID나 Touch ID로 잠글 수 있어요: 홈 화면에서 앱 아이콘을 길게 누른 뒤 <strong>Face ID 요구</strong>를 선택하세요. 설정 화면에서도 같은 안내로 이동할 수 있어요. 한 번 켜두면 내 얼굴, 지문, 암호 없이는 아무도 일기를 열 수 없어요.</p>
+
+
+        <h3>휴대폰을 잃어버리면 일기는 어떻게 되나요?</h3>
+        <p>일기는 안전해요: Feeltracker 일기는 모든 기록과 사진을 개인 iCloud 계정에 동기화하기 때문에, 새 iPhone, iPad, Mac에 로그인하면 자동으로 모두 되돌아와요. 앱은 약 일주일에 한 번씩 자동으로 백업(기록과 사진을 담은 ZIP 파일)을 만들어 두어서 언제든 직접 복원하거나 내보낼 수 있고, 원할 때는 수동으로 백업을 만들 수도 있어요.</p>
 
     </section>
 
@@ -1190,9 +1250,9 @@
                 <span class="related-app-name">혈압</span>
             </a>
 
-            <a href="/ko/mood-journal/" class="related-app-card" aria-label="정신 건강">
-                <img src="/images/FT_1024.png" alt="정신 건강" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
-                <span class="related-app-name">정신 건강</span>
+            <a href="/ko/mood-journal/" class="related-app-card" aria-label="기분 일기">
+                <img src="/images/FT_1024.png" alt="기분 일기" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
+                <span class="related-app-name">기분 일기</span>
             </a>
 
             <a href="/ko/sleep/" class="related-app-card" aria-label="수면">
