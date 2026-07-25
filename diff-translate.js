@@ -93,11 +93,35 @@ function getBaseRef() {
 const BASE_REF = getBaseRef();
 
 /**
+ * Renamed files have no counterpart at the base ref, so every string in them
+ * would be reported as new and the whole page would be re-translated instead
+ * of just what changed. `--rename old.json=new.json` maps the lookup back to
+ * the old name. Repeatable.
+ */
+function getRenameMap() {
+    const map = new Map();
+    for (let i = 0; i < process.argv.length; i++) {
+        if (process.argv[i] !== '--rename') continue;
+        const spec = process.argv[i + 1] || '';
+        const eq = spec.indexOf('=');
+        if (eq === -1) continue;
+        map.set(spec.slice(eq + 1), spec.slice(0, eq));
+    }
+    return map;
+}
+
+const RENAMES = getRenameMap();
+
+/**
  * Get the committed version of a file from the base ref.
  * Returns null if the file is new (untracked/not in the base ref).
  */
 function getGitVersion(filePath) {
-    const rel = path.relative(ROOT, filePath);
+    let rel = path.relative(ROOT, filePath);
+    const base = path.basename(rel);
+    if (RENAMES.has(base)) {
+        rel = path.join(path.dirname(rel), RENAMES.get(base));
+    }
     try {
         const content = execSync(`git show ${BASE_REF}:${rel}`, {
             cwd: ROOT,
@@ -148,7 +172,7 @@ function run() {
     // Drop `--base <ref>` so it is not mistaken for a target filename.
     const positional = [];
     for (let i = 2; i < process.argv.length; i++) {
-        if (process.argv[i] === '--base') { i++; continue; }
+        if (process.argv[i] === '--base' || process.argv[i] === '--rename') { i++; continue; }
         positional.push(process.argv[i]);
     }
 
