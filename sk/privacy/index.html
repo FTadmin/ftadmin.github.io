@@ -379,10 +379,10 @@
     <section class="legal-section">
         <h2>Náš server a ako sa požiadavky AI dostávajú k OpenAI</h2>
         <div class="legal-content">
-            <p>Požiadavky AI neputujú z vášho zariadenia priamo k OpenAI. Prechádzajú cez malý server, ktorý prevádzkujeme a ktorý hostí <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> v Spojených štátoch. Ide o bezpečnostné opatrenie: znamená to, že náš kľúč OpenAI sa nachádza na tomto serveri, a nie v aplikácii, odkiaľ by ho niekto mohol vytiahnuť a zneužívať požiadavky vo vašom mene. Server overí, že požiadavka skutočne pochádza z jednej z našich aplikácií, pridá náš kľúč a odpoveď OpenAI vám okamžite streamuje späť.</p>
-<p><strong>Neukladá vaše požiadavky ani odpovede AI.</strong> Existujú iba v pamäti počas okamihu, keď sa odovzdávajú ďalej, a nikdy sa nezapisujú na disk. Nikto v Custom Arts Ltd ich nečíta.</p>
-<p>Server si vedie priebežný prehľad toho, koľko nás AI stojí. Pri každej požiadavke zaznamená dátum a čas, z ktorej aplikácie a jej verzie pochádza, ktorá funkcia a model AI sa použili, či išlo o bezplatný alebo platený účet, koľko tokenov alebo znakov sa spracovalo, a odhadované náklady. Tieto záznamy neobsahujú žiadne zdravotné údaje, žiadny text správ ani nič, čo by vás identifikovalo — žiadne konto, žiadne ID používateľa, žiadnu IP adresu — takže ich nemožno vystopovať späť ku konkrétnej osobe. <strong>V súčasnosti sa uchovávajú bez časového obmedzenia.</strong></p>
-<p>Server tiež zapisuje krátke prevádzkové záznamy pokrývajúce rovnaké údaje, plus veľkosť každej požiadavky, nikdy jej obsah. Ak OpenAI vráti chybu, táto chybová správa sa zaznamená presne tak, ako ju napísala OpenAI.</p>
+            <p>Požiadavky AI neputujú z vášho zariadenia priamo do OpenAI. Prechádzajú cez malý server, ktorý prevádzkujeme, hostovaný spoločnosťou <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> v Spojených štátoch. Ide o bezpečnostné opatrenie: znamená to, že náš kľúč OpenAI sa nachádza na tomto serveri namiesto v aplikácii, odkiaľ by ho niekto mohol vytiahnuť a odosielať požiadavky vo vašom mene. Server overí, či požiadavka skutočne pochádza z jednej z našich aplikácií, pridá náš kľúč a odpoveď OpenAI odošle priamo späť vám.</p>
+<p><strong>Server neukladá vaše požiadavky ani odpovede AI.</strong> Existujú iba v pamäti počas okamihu potrebného na ich odovzdanie a nikdy sa nezapisujú na disk. Nikto v spoločnosti Custom Arts Ltd ich nečíta.</p>
+<p>Server si vedie priebežný prehľad toho, koľko nás naša AI stojí. Pri každej požiadavke zaznamenáva dátum a čas, z ktorej aplikácie a verzie pochádzala, ktorá funkcia a model AI sa použili, či bol účet bezplatný alebo platený, koľko tokenov alebo znakov sa spracovalo, a odhadované náklady. Tieto záznamy neobsahujú žiadne zdravotné údaje, žiadny text správ ani nič, čo by vás identifikovalo — žiadny účet, žiadne ID používateľa, žiadnu IP adresu — takže ich nemožno vystopovať k jednotlivcovi. <strong>Uchovávame ich maximálne 30 dní a potom ich vymažeme.</strong></p>
+<p>Server tiež zapisuje krátke prevádzkové záznamy pokrývajúce tie isté údaje, plus veľkosť každej požiadavky, nikdy jej obsah. Ak OpenAI vráti chybu, táto chybová správa sa zaznamená presne tak, ako ju napísala OpenAI.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Ako dlho sa dáta uchovávajú</h2>
         <div class="legal-content">
-            <p>Kópie údajov vašej aplikácie neuchovávame na svojich serveroch. Vaše údaje zostávajú vo vašom zariadení a vo vašom iCloude tak dlho, kým máte aplikáciu nainštalovanú a zapnutú zálohu iCloud. Okrem toho:</p>
+            <p>Kópie údajov vašej aplikácie neuchovávame na našich serveroch. Vaše údaje zostávajú vo vašom zariadení a vo vašom iCloude, pokiaľ máte aplikáciu nainštalovanú a zapnuté zálohovanie iCloud. Okrem toho:</p>
 <ul>
- <li><strong>OpenAI</strong> — záznamy monitorovania zneužitia sa uchovávajú najviac 30 dní a odpovede Responses API sa štandardne ukladajú 30 dní. Naše aplikácie sa pri viacetapových chatoch spoliehajú na toto uloženie. Ide o predvolené nastavenia OpenAI, ktoré sa môžu zmeniť; pozrite si <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentáciu OpenAI o kontrole údajov v API</a>.</li>
- <li><strong>Náš vlastný server</strong> — neukladá sa žiadny obsah požiadaviek ani odpovedí. Záznamy o nákladoch na jednotlivé požiadavky (dátum, aplikácia, funkcia, model, počet tokenov, náklady — bez zdravotných údajov a bez identifikátora používateľa) sa v súčasnosti uchovávajú bez časového obmedzenia.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — uchováva ich Google počas predvolenej doby uchovávania nášho projektu.</li>
- <li><strong>RevenueCat</strong> — údaje o nákupoch a potvrdeniach, kým máte aktívne predplatné, a podľa požiadaviek daňových predpisov.</li>
+ <li><strong>OpenAI</strong> — protokoly monitorovania zneužitia sa uchovávajú až 30 dní a odpovede Responses API sa štandardne uchovávajú 30 dní. Naše aplikácie sa pri viackolových konverzáciách spoliehajú na toto uchovávanie. Ide o predvolené nastavenia spoločnosti OpenAI, ktoré sa môžu zmeniť; pozrite si <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentáciu OpenAI o kontrole údajov API</a>.</li>
+ <li><strong>Náš vlastný server</strong> — neukladá sa žiadny obsah požiadaviek ani odpovedí. Záznamy o nákladoch pre jednotlivé požiadavky (dátum, aplikácia, funkcia, model, počet tokenov, náklady — bez zdravotných údajov a bez identifikátora používateľa) sa uchovávajú maximálne 30 dní a potom sa vymažú.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — uchovávané spoločnosťou Google počas predvolenej doby uchovávania nášho projektu.</li>
+ <li><strong>RevenueCat</strong> — údaje o nákupoch a potvrdenkách po dobu trvania aktívneho predplatného a podľa požiadaviek daňových predpisov.</li>
 </ul>
-<p>Vypnutím funkcie alebo odinštalovaním aplikácie sa ďalšie zhromažďovanie zastaví. Keďže záznamy uchovávané na našom vlastnom serveri neobsahujú nič, čo by vás identifikovalo, nemôžeme v nich na požiadanie vyhľadať ani vymazať „vaše“ záznamy — nie je v nich nič, podľa čoho by sme vás mohli priradiť.</p>
+<p>Vypnutie funkcie alebo odstránenie aplikácie zastaví ďalšie zhromažďovanie údajov. Keďže záznamy, ktoré uchováva náš vlastný server, neobsahujú nič, čo by vás identifikovalo, nemôžeme na požiadanie vyhľadať ani vymazať „vaše“ záznamy — nie je v nich nič, na základe čoho by sme vás mohli priradiť. Samy sa v priebehu 30 dní vymažú.</p>
         </div>
     </section>
 

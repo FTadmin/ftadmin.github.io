@@ -379,10 +379,10 @@
     <section class="legal-section">
         <h2>我们的服务器以及AI请求如何到达OpenAI</h2>
         <div class="legal-content">
-            <p>AI请求不会从你的设备直接发送到OpenAI，而是会经过我们运营的一台小型服务器，该服务器由<a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a>托管在美国。这是一项安全措施：这意味着我们的OpenAI密钥保存在该服务器上，而不是保存在应用内部——否则可能有人将其提取出来，以你的名义滥发请求。该服务器会验证请求确实来自我们的某个应用，添加我们的密钥，然后将OpenAI的回复直接以流式方式返回给你。</p>
-<p><strong>它不会存储你的请求或AI的回复。</strong>它们仅在传递所需的短暂瞬间存在于内存中，绝不会被写入磁盘。Custom Arts Ltd没有任何人会读取它们。</p>
-<p>该服务器所保留的，是我们AI花费成本的持续统计记录。对于每一次请求，它会记录日期和时间、请求来自哪个应用及其版本、使用了哪个功能和AI模型、账户是免费还是付费、处理了多少令牌（token）或字符，以及估算成本。这些记录中不包含任何健康数据，不包含任何消息文本，也不包含任何能识别你身份的信息——没有账户、没有用户ID、没有IP地址——因此无法追溯到具体个人。<strong>这些记录目前会无限期保留。</strong></p>
-<p>该服务器还会写入涵盖同样内容的简短运行日志，以及每个请求的大小（而非内容）。如果OpenAI返回了错误，该错误信息会按照OpenAI给出的原样记录下来。</p>
+            <p>AI 请求不会直接从你的设备发送到 OpenAI。它们会先经过我们运营的一台小型服务器，该服务器由 <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> 在美国托管。这是一项安全措施：它让我们的 OpenAI 密钥保存在这台服务器上，而不是留在应用内部——否则密钥可能被他人提取，并以你的名义发起请求。服务器会核实请求确实来自我们的某个应用，添加我们的密钥，然后将 OpenAI 的回复原样传回给你。</p>
+<p><strong>它不会存储你的请求或 AI 的回复。</strong>这些内容仅在传递的瞬间存在于内存中，从不写入磁盘。Custom Arts Ltd 没有任何人会读取它们。</p>
+<p>服务器确实保留的是我们 AI 花费的持续统计。针对每一次请求，它会记录日期和时间、来源应用及版本、所使用的功能和 AI 模型、账户是免费还是付费、处理的 token 或字符数量，以及估算成本。这些记录中不包含健康数据、消息文本，也不含任何能识别你身份的信息——没有账户、没有用户 ID、没有 IP 地址——因此无法追溯到具体个人。<strong>我们最多保留 30 天，之后即予删除。</strong></p>
+<p>服务器还会写入简短的运维日志，记录同样的信息以及每次请求的大小，但从不记录其内容。如果 OpenAI 返回错误，该错误消息会按 OpenAI 提供的原样被记录下来。</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>数据保留期限</h2>
         <div class="legal-content">
-            <p>我们不会在自己的服务器上保留你应用数据的副本。只要你安装了应用并开启了iCloud备份，你的数据就会保留在你的设备和iCloud中。除此之外：</p>
+            <p>我们不会在服务器上保留你的应用数据副本。只要你安装了应用并开启了 iCloud 备份，你的数据就会一直保存在你的设备和你的 iCloud 中。除此之外：</p>
 <ul>
- <li><strong>OpenAI</strong>——滥用监控日志最多保留30天，Responses API的回复默认存储30天。我们的应用依赖此存储实现多轮对话。这些是OpenAI的默认设置，可能会更改；详见<a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI的API数据控制文档</a>。</li>
- <li><strong>我们自己的服务器</strong>——不存储任何请求或回复内容。按请求记录的成本数据（日期、应用、功能、模型、token数量、费用——不含健康数据，也不含用户标识符）目前会无限期保留。</li>
- <li><strong>Firebase Crashlytics / Analytics</strong>——由Google按照我们项目的默认保留期限保留。</li>
- <li><strong>RevenueCat</strong>——购买和收据数据会在你保持有效订阅期间及税法要求的期限内保留。</li>
+ <li><strong>OpenAI</strong> — 滥用监测日志最多保留 30 天，Responses API 的回复默认存储 30 天。我们的应用依赖这一存储机制来实现多轮对话。这些是 OpenAI 的默认设置，可能会发生变化；请参阅 <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI 的 API 数据控制文档</a>。</li>
+ <li><strong>我们自己的服务器</strong> — 不存储任何请求或回复内容。按请求生成的成本记录（日期、应用、功能、模型、token 数量、成本——不含健康数据，也不含用户标识符）最多保留 30 天，之后即予删除。</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — 由 Google 按我们项目的默认保留期限保存。</li>
+ <li><strong>RevenueCat</strong> — 购买及收据数据会在你的订阅有效期内保留，并按税法要求的期限保留。</li>
 </ul>
-<p>关闭某项功能或删除应用会停止进一步收集。由于我们自己服务器保留的记录中不包含任何能识别你身份的信息，我们无法应请求在其中搜索或删除“你的”条目——因为其中没有可用于匹配你身份的信息。</p>
+<p>关闭某项功能或删除应用会停止后续的数据收集。由于我们自己服务器保留的记录中不包含任何能识别你身份的信息，我们无法应请求在其中搜索或删除“你的”条目——因为记录中根本没有可以与你比对的信息。这些记录会在 30 天内自动失效清除。</p>
         </div>
     </section>
 

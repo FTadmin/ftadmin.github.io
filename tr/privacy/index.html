@@ -379,10 +379,10 @@
     <section class="legal-section">
         <h2>Sunucumuz ve AI İsteklerinin OpenAI'ye Ulaşma Şekli</h2>
         <div class="legal-content">
-            <p>AI istekleri cihazınızdan doğrudan OpenAI'ye gitmez. Bunlar, Amerika Birleşik Devletleri'nde <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> tarafından barındırılan ve bizim işlettiğimiz küçük bir sunucu üzerinden geçer. Bu bir güvenlik önlemidir: OpenAI anahtarımızın, birinin çıkarıp sizin adınıza istek gönderebileceği uygulama içinde değil, bu sunucuda bulunduğu anlamına gelir. Sunucu, isteğin gerçekten uygulamalarımızdan birinden geldiğini doğrular, anahtarımızı ekler ve OpenAI'nin yanıtını doğrudan size akıtır.</p>
-<p><strong>İsteklerinizi veya AI'nin yanıtlarını saklamaz.</strong> Bunlar yalnızca iletilmeleri için gereken an boyunca bellekte bulunur ve asla diske yazılmaz. Custom Arts Ltd'de kimse bunları okumaz.</p>
-<p>Sunucunun tuttuğu şey, AI'nin bize maliyetinin sürekli bir toplamıdır. Her istek için tarih ve saati, hangi uygulamadan ve hangi sürümden geldiğini, hangi özelliğin ve AI modelinin kullanıldığını, hesabın ücretsiz mi ücretli mi olduğunu, kaç jeton veya karakterin işlendiğini ve tahmini maliyeti kaydeder. Bu kayıtlarda sağlık verisi, mesaj metni veya sizi tanımlayan herhangi bir şey yoktur — hesap yok, kullanıcı kimliği yok, IP adresi yok — bu nedenle bir bireye geri izlenemezler. <strong>Şu anda süresiz olarak saklanmaktadırlar.</strong></p>
-<p>Sunucu ayrıca aynı konuları kapsayan kısa işlevsel günlük satırları ile her isteğin boyutunu yazar, ancak içeriğini asla yazmaz. OpenAI bir hata döndürürse, bu hata mesajı OpenAI'nin yazdığı şekliyle günlüğe kaydedilir.</p>
+            <p>Yapay zeka istekleri cihazınızdan doğrudan OpenAI'a gitmez. Bunlar, Amerika Birleşik Devletleri'nde barındırılan ve işlettiğimiz küçük bir sunucu üzerinden geçer: <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a>. Bu bir güvenlik önlemidir: OpenAI anahtarımızın uygulama içinde değil, bu sunucuda bulunması demektir; aksi halde biri anahtarı çıkarıp sizin adınıza istek gönderebilirdi. Sunucu, isteğin gerçekten uygulamalarımızdan birinden geldiğini doğrular, anahtarımızı ekler ve OpenAI'ın yanıtını doğrudan size iletir.</p>
+<p><strong>İsteklerinizi veya yapay zekanın yanıtlarını saklamaz.</strong> Bunlar yalnızca iletilirken bellekte kısa süreliğine bulunur ve hiçbir zaman diske yazılmaz. Custom Arts Ltd'de kimse bunları okumaz.</p>
+<p>Sunucunun tuttuğu tek şey, yapay zekanın bize maliyetinin bir dökümüdür. Her istek için tarih ve saat, hangi uygulama ve sürümden geldiği, hangi özellik ve yapay zeka modelinin kullanıldığı, hesabın ücretsiz mi ücretli mi olduğu, kaç token veya karakter işlendiği ve tahmini maliyet kaydedilir. Bu kayıtlarda sağlık verisi, mesaj metni veya sizi tanımlayan hiçbir şey yoktur — hesap, kullanıcı kimliği veya IP adresi bile yoktur — bu nedenle bir bireyle ilişkilendirilemezler. <strong>Bunları en fazla 30 gün saklarız, ardından sileriz.</strong></p>
+<p>Sunucu ayrıca aynı konuları kapsayan kısa işlevsel günlük satırları da yazar; buna her isteğin boyutu dahildir, ancak içeriği asla değildir. OpenAI bir hata döndürürse, bu hata mesajı OpenAI'ın yazdığı şekliyle günlüğe kaydedilir.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Veriler Ne Kadar Süre Saklanıyor</h2>
         <div class="legal-content">
-            <p>Uygulama verilerinizin kopyalarını sunucularımızda tutmuyoruz. Verileriniz, uygulama yüklüyken ve iCloud yedeklemesi açıkken cihazınızda ve iCloud'unuzda kalır. Bunun ötesinde:</p>
+            <p>Sunucularımızda uygulama verilerinizin kopyalarını tutmayız. Verileriniz, uygulama yüklü ve iCloud yedeklemesi açık olduğu sürece cihazınızda ve iCloud'unuzda kalır. Bunun ötesinde:</p>
 <ul>
- <li><strong>OpenAI</strong> — kötüye kullanım izleme günlükleri en fazla 30 gün saklanır ve Responses API yanıtları varsayılan olarak 30 gün boyunca saklanır. Uygulamalarımız çok turlu sohbetler için bu saklamaya bağlıdır. Bunlar OpenAI'nin varsayılan ayarlarıdır ve değişebilir; bkz. <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI'nin API veri kontrolleri belgeleri</a>.</li>
- <li><strong>Kendi sunucumuz</strong> — hiçbir istek veya yanıt içeriği saklanmaz. İstek başına maliyet kayıtları (tarih, uygulama, özellik, model, token sayıları, maliyet — sağlık verisi yok ve kullanıcı tanımlayıcısı yok) şu anda süresiz olarak saklanmaktadır.</li>
+ <li><strong>OpenAI</strong> — kötüye kullanım izleme günlükleri en fazla 30 gün tutulur ve Responses API yanıtları varsayılan olarak 30 gün süreyle saklanır. Uygulamalarımız, çok turlu sohbetler için bu depolamaya bağımlıdır. Bunlar OpenAI'ın varsayılan ayarlarıdır ve değişebilir; bkz. <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI'ın API veri kontrolleri belgeleri</a>.</li>
+ <li><strong>Kendi sunucumuz</strong> — istek veya yanıt içeriği saklanmaz. İstek başına maliyet kayıtları (tarih, uygulama, özellik, model, token sayıları, maliyet — sağlık verisi veya kullanıcı kimliği içermez) en fazla 30 gün tutulur ve ardından silinir.</li>
  <li><strong>Firebase Crashlytics / Analytics</strong> — Google tarafından projemizin varsayılan saklama süresi boyunca tutulur.</li>
- <li><strong>RevenueCat</strong> — aktif bir aboneliğiniz olduğu sürece ve vergi mevzuatının gerektirdiği şekilde satın alma ve makbuz verileri.</li>
+ <li><strong>RevenueCat</strong> — satın alma ve makbuz verileri, aktif bir aboneliğiniz olduğu sürece ve vergi mevzuatının gerektirdiği kadar saklanır.</li>
 </ul>
-<p>Bir özelliği kapatmak veya uygulamayı silmek, veri toplamayı durdurur. Kendi sunucumuzun tuttuğu kayıtlar sizi tanımlayan hiçbir şey içermediğinden, talep üzerine bu kayıtlardaki „sizin” girişlerinizi arayamaz veya silemeyiz — bunlarda sizinle eşleştirebileceğimiz hiçbir şey yoktur.</p>
+<p>Bir özelliği kapatmak veya uygulamayı silmek, daha fazla veri toplanmasını durdurur. Kendi sunucumuzun tuttuğu kayıtlar sizi tanımlayan hiçbir şey içermediğinden, talep üzerine bu kayıtlarda «sizin» girdilerinizi arayıp silemeyiz — sizinle eşleştirebileceğimiz hiçbir şey yoktur. Bu kayıtlar 30 gün içinde kendiliğinden zaman aşımına uğrar.</p>
         </div>
     </section>
 

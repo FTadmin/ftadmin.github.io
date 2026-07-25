@@ -381,10 +381,10 @@
     <section class="legal-section">
         <h2>O Nosso Servidor e Como os Pedidos de IA Chegam à OpenAI</h2>
         <div class="legal-content">
-            <p>Os pedidos de IA não vão diretamente do seu dispositivo para a OpenAI. Passam por um pequeno servidor que gerimos, alojado pela <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> nos Estados Unidos. Trata-se de uma medida de segurança: significa que a nossa chave da OpenAI reside nesse servidor, em vez de dentro da aplicação, onde alguém a poderia extrair e fazer pedidos em seu nome. O servidor verifica se o pedido veio genuinamente de uma das nossas aplicações, adiciona a nossa chave, e transmite a resposta da OpenAI diretamente de volta para si.</p>
-<p><strong>Não armazena os seus pedidos nem as respostas da IA.</strong> Existem apenas na memória durante o momento necessário para os transmitir, e nunca são gravados em disco. Ninguém na Custom Arts Ltd os lê.</p>
-<p>O que o servidor guarda é um registo contínuo do que a nossa IA nos custa. Para cada pedido, regista a data e a hora, de que aplicação e versão veio, que funcionalidade e modelo de IA foram utilizados, se a conta era gratuita ou paga, quantos tokens ou carateres foram processados, e o custo estimado. Não existem dados de saúde nestes registos, nem texto de mensagens, nem nada que o identifique — sem conta, sem ID de utilizador, sem endereço IP — pelo que não podem ser associados a uma pessoa. <strong>São atualmente conservados indefinidamente.</strong></p>
-<p>O servidor também escreve breves linhas de registo operacional sobre os mesmos aspetos, mais o tamanho de cada pedido, mas nunca o seu conteúdo. Se a OpenAI devolver um erro, essa mensagem de erro é registada tal como a OpenAI a escreveu.</p>
+            <p>Os pedidos de IA não vão diretamente do seu dispositivo para a OpenAI. Passam por um pequeno servidor que gerimos, alojado pela <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> nos Estados Unidos. Trata-se de uma medida de segurança: significa que a nossa chave da OpenAI reside nesse servidor em vez de estar dentro da aplicação, onde alguém a poderia retirar e fazer pedidos em seu nome. O servidor verifica se o pedido veio realmente de uma das nossas aplicações, adiciona a nossa chave e reencaminha a resposta da OpenAI diretamente para si.</p>
+<p><strong>O servidor não guarda os seus pedidos nem as respostas da IA.</strong> Existem apenas em memória durante o momento necessário para os transmitir e nunca são gravados em disco. Ninguém na Custom Arts Ltd os lê.</p>
+<p>O que o servidor efetivamente guarda é um registo contínuo do que a nossa IA nos custa. Para cada pedido, regista a data e hora, de que aplicação e versão veio, que funcionalidade e modelo de IA foram usados, se a conta era gratuita ou paga, quantos tokens ou carateres foram processados, e o custo estimado. Não há dados de saúde nestes registos, nem texto de mensagens, nem nada que o identifique — nem conta, nem ID de utilizador, nem endereço IP — pelo que não podem ser associados a um indivíduo. <strong>Guardamo-los durante um máximo de 30 dias e depois eliminamo-los.</strong></p>
+<p>O servidor também regista breves linhas de registo operacional que cobrem os mesmos aspetos, além do tamanho de cada pedido, nunca o seu conteúdo. Se a OpenAI devolver um erro, essa mensagem de erro é registada tal como a OpenAI a escreveu.</p>
         </div>
     </section>
 
@@ -428,14 +428,14 @@
     <section class="legal-section">
         <h2>Por Quanto Tempo os Dados São Mantidos</h2>
         <div class="legal-content">
-            <p>Não guardamos cópias dos dados da sua aplicação nos nossos servidores. Os seus dados permanecem no seu dispositivo e no seu iCloud enquanto tiver a aplicação instalada e a cópia de segurança do iCloud ativa. Além disso:</p>
+            <p>Não guardamos cópias dos dados da sua aplicação nos nossos servidores. Os seus dados permanecem no seu dispositivo e no seu iCloud enquanto tiver a aplicação instalada e a cópia de segurança do iCloud ativada. Além disso:</p>
 <ul>
- <li><strong>OpenAI</strong> — os registos de monitorização de abusos são conservados até 30 dias e as respostas da Responses API são armazenadas por 30 dias por predefinição. As nossas aplicações dependem desse armazenamento para conversas de várias interações. Estas são predefinições da OpenAI e estão sujeitas a alterações; consulte a <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">documentação da OpenAI sobre controlos de dados da API</a>.</li>
- <li><strong>O nosso próprio servidor</strong> — não é armazenado qualquer conteúdo de pedidos ou respostas. Os registos de custo por pedido (data, aplicação, funcionalidade, modelo, contagem de tokens, custo — sem dados de saúde e sem identificador de utilizador) são atualmente conservados indefinidamente.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — conservados pela Google durante o período de retenção predefinido do nosso projeto.</li>
- <li><strong>RevenueCat</strong> — dados de compra e de recibo enquanto tiver uma subscrição ativa e conforme exigido pela legislação fiscal.</li>
+ <li><strong>OpenAI</strong> — os registos de monitorização de abusos são guardados até 30 dias e as respostas da Responses API são armazenadas durante 30 dias por predefinição. As nossas aplicações dependem desse armazenamento para conversas com várias interações. Estas são predefinições da OpenAI e estão sujeitas a alterações; consulte a <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">documentação da OpenAI sobre controlos de dados da API</a>.</li>
+ <li><strong>O nosso próprio servidor</strong> — não é guardado qualquer conteúdo de pedidos ou respostas. Os registos de custo por pedido (data, aplicação, funcionalidade, modelo, contagem de tokens, custo — sem dados de saúde e sem identificador de utilizador) são guardados durante um máximo de 30 dias e depois eliminados.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — guardados pela Google durante o período de retenção predefinido do nosso projeto.</li>
+ <li><strong>RevenueCat</strong> — dados de compras e recibos enquanto tiver uma subscrição ativa e conforme exigido pela legislação fiscal.</li>
 </ul>
-<p>Desativar uma funcionalidade ou eliminar a aplicação interrompe a recolha adicional. Uma vez que os registos que o nosso próprio servidor conserva não contêm nada que o identifique, não conseguimos procurar nem eliminar “os seus” registos neles a pedido — não há neles nada que permita associá-los a si.</p>
+<p>Desativar uma funcionalidade ou eliminar a aplicação interrompe a recolha adicional. Uma vez que os registos que o nosso próprio servidor mantém não contêm nada que o identifique, não podemos procurar nem eliminar as "suas" entradas mediante pedido — não há neles nada com que o possamos associar a si. Desaparecem por si só no prazo de 30 dias.</p>
         </div>
     </section>
 

@@ -379,10 +379,10 @@
     <section class="legal-section">
         <h2>Náš server a jak se požadavky AI dostávají k OpenAI</h2>
         <div class="legal-content">
-            <p>Požadavky AI nejdou z vašeho zařízení přímo do OpenAI. Procházejí malým serverem, který provozujeme a který hostuje <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> ve Spojených státech. Jde o bezpečnostní opatření: znamená to, že náš klíč OpenAI je uložen na tomto serveru místo uvnitř aplikace, odkud by ho mohl někdo získat a vydávat za vás vlastní požadavky. Server ověří, že požadavek skutečně pochází z jedné z našich aplikací, přidá náš klíč a odpověď OpenAI vám ihned streamuje zpět.</p>
-<p><strong>Neukládá vaše požadavky ani odpovědi AI.</strong> Existují pouze v paměti, a to jen na okamžik potřebný k jejich předání, a nikdy nejsou zapsány na disk. Nikdo z Custom Arts Ltd si je nečte.</p>
-<p>Co server uchovává, je průběžný přehled toho, kolik nás AI stojí. U každého požadavku zaznamenává datum a čas, ze které aplikace a verze pocházel, která funkce a model AI byly použity, zda šlo o bezplatný nebo placený účet, kolik tokenů nebo znaků bylo zpracováno, a odhadované náklady. V těchto záznamech nejsou žádné zdravotní údaje, žádný text zpráv a nic, co by vás identifikovalo — žádný účet, žádné ID uživatele, žádná IP adresa — takže je nelze vystopovat zpět k jednotlivé osobě. <strong>V současné době jsou uchovávány neomezeně dlouho.</strong></p>
-<p>Server také zapisuje krátké provozní záznamy pokrývající totéž, plus velikost každého požadavku, nikdy jeho obsah. Pokud OpenAI vrátí chybu, je tato chybová zpráva zaznamenána tak, jak ji napsala OpenAI.</p>
+            <p>Požadavky AI nejdou z vašeho zařízení přímo do OpenAI. Procházejí malým serverem, který sami provozujeme a který hostuje <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> ve Spojených státech. Jde o bezpečnostní opatření: náš klíč k OpenAI díky tomu leží na tomto serveru, a ne v aplikaci, odkud by ho někdo mohl vytáhnout a posílat požadavky vaším jménem. Server ověří, že požadavek skutečně pochází z jedné z našich aplikací, přidá náš klíč a odpověď OpenAI vám pošle rovnou zpět.</p>
+<p><strong>Vaše požadavky ani odpovědi AI neukládá.</strong> Existují jen v paměti, a to pouze po dobu, kterou zabere jejich přeposlání, a nikdy se nezapisují na disk. Nikdo z Custom Arts Ltd si je nečte.</p>
+<p>Server si vede průběžný přehled toho, kolik nás naše AI stojí. U každého požadavku zaznamená datum a čas, ze které aplikace a verze přišel, kterou funkci a model AI použil, zda šlo o bezplatný nebo placený účet, kolik tokenů nebo znaků bylo zpracováno, a odhadované náklady. Tyto záznamy neobsahují žádná zdravotní data, žádný text zprávy ani nic, co by vás identifikovalo — žádný účet, žádné ID uživatele, žádnou IP adresu — takže je nelze vystopovat ke konkrétní osobě. <strong>Uchováváme je nejdéle 30 dní a poté je mažeme.</strong></p>
+<p>Server také zapisuje krátké provozní záznamy o téže věci a k tomu velikost každého požadavku, nikdy však jeho obsah. Pokud OpenAI vrátí chybu, zaznamená se tato chybová zpráva přesně tak, jak ji napsalo OpenAI.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Jak dlouho jsou data uchovávána</h2>
         <div class="legal-content">
-            <p>Kopie dat vaší aplikace neuchováváme na svých serverech. Vaše data zůstávají na vašem zařízení a ve vašem iCloudu, dokud máte aplikaci nainstalovanou a zapnuté zálohování iCloud. Kromě toho:</p>
+            <p>Na svých serverech neuchováváme kopie dat vaší aplikace. Vaše data zůstávají ve vašem zařízení a ve vašem iCloudu po celou dobu, kdy máte aplikaci nainstalovanou a zálohování iCloud zapnuté. Kromě toho:</p>
 <ul>
- <li><strong>OpenAI</strong> — protokoly pro sledování zneužití se uchovávají až 30 dní a odpovědi z Responses API se ve výchozím nastavení ukládají po dobu 30 dní. Naše aplikace se na toto uchovávání spoléhají kvůli vícekrokovým konverzacím v chatu. Jedná se o výchozí nastavení OpenAI, které se může měnit; viz <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentace OpenAI o správě dat v rámci API</a>.</li>
- <li><strong>Náš vlastní server</strong> — obsah požadavků ani odpovědí se neukládá. Záznamy o nákladech za jednotlivé požadavky (datum, aplikace, funkce, model, počet tokenů, náklady — bez zdravotních dat a bez identifikátoru uživatele) se v současnosti uchovávají po neomezenou dobu.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — uchovává Google po dobu výchozí doby uchovávání pro náš projekt.</li>
- <li><strong>RevenueCat</strong> — údaje o nákupech a účtenkách po dobu trvání aktivního předplatného a podle požadavků daňových předpisů.</li>
+ <li><strong>OpenAI</strong> — protokoly sledování zneužití se uchovávají až 30 dní a odpovědi z Responses API se ve výchozím nastavení ukládají po dobu 30 dní. Naše aplikace se na toto uložení spoléhají kvůli vícekolovým konverzacím. Jde o výchozí nastavení OpenAI, které se může měnit; viz <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentaci OpenAI ke kontrole dat v API</a>.</li>
+ <li><strong>Náš vlastní server</strong> — neukládá se žádný obsah požadavků ani odpovědí. Záznamy nákladů za jednotlivé požadavky (datum, aplikace, funkce, model, počet tokenů, náklady — bez zdravotních dat a bez identifikátoru uživatele) se uchovávají nejdéle 30 dní a poté se mažou.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — uchovává je Google po výchozí dobu uchování našeho projektu.</li>
+ <li><strong>RevenueCat</strong> — údaje o nákupu a účtenkách po dobu, kdy máte aktivní předplatné, a dále podle požadavků daňových předpisů.</li>
 </ul>
-<p>Vypnutí funkce nebo odstranění aplikace zastaví další shromažďování údajů. Protože záznamy uchovávané naším vlastním serverem neobsahují nic, co by vás identifikovalo, nemůžeme na požádání vyhledat ani odstranit „vaše" záznamy v nich — není v nich nic, s čím by vás bylo možné porovnat.</p>
+<p>Vypnutí funkce nebo odstranění aplikace zastaví další shromažďování. Protože záznamy, které uchovává náš vlastní server, neobsahují nic, co by vás identifikovalo, nemůžeme na požádání vyhledat ani smazat „vaše" záznamy v nich — není v nich nic, s čím bychom vás mohli porovnat. Samy automaticky zaniknou do 30 dní.</p>
         </div>
     </section>
 

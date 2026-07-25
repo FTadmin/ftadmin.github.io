@@ -379,10 +379,10 @@
     <section class="legal-section">
         <h2>El nostre servidor i com les sol·licituds d'IA arriben a OpenAI</h2>
         <div class="legal-content">
-            <p>Les sol·licituds d'IA no van directament del teu dispositiu a OpenAI. Passen per un petit servidor que gestionem nosaltres, allotjat per <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> als Estats Units. Això és una mesura de seguretat: significa que la nostra clau d'OpenAI resideix en aquest servidor en lloc de dins de l'aplicació, on algú podria extreure-la i fer sol·licituds en el teu nom. El servidor comprova que la sol·licitud realment prové d'una de les nostres aplicacions, hi afegeix la nostra clau, i retransmet la resposta d'OpenAI directament cap a tu.</p>
-<p><strong>No emmagatzema les teves sol·licituds ni les respostes de la IA.</strong> Només existeixen a la memòria durant el moment que triga a retransmetre-les, i mai s'escriuen al disc. Ningú a Custom Arts Ltd les llegeix.</p>
-<p>El que el servidor sí que conserva és un recompte continu del que ens costa la nostra IA. Per a cada sol·licitud, registra la data i l'hora, de quina aplicació i versió prové, quina funció i model d'IA s'han fet servir, si el compte era gratuït o de pagament, quants tokens o caràcters s'han processat, i el cost estimat. No hi ha cap dada de salut en aquests registres, cap text de missatge, ni res que t'identifiqui —cap compte, cap identificador d'usuari, cap adreça IP— de manera que no es poden rastrejar fins a una persona en concret. <strong>Actualment es conserven indefinidament.</strong></p>
-<p>El servidor també escriu breus línies de registre operatiu que cobreixen el mateix, més la mida de cada sol·licitud, mai el seu contingut. Si OpenAI retorna un error, aquest missatge d'error es registra tal com el va escriure OpenAI.</p>
+            <p>Les sol·licituds d'IA no van directament del teu dispositiu a OpenAI. Passen per un servidor petit que gestionem nosaltres mateixos, allotjat per <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> als Estats Units. Es tracta d'una mesura de seguretat: significa que la nostra clau d'OpenAI resideix en aquest servidor en lloc de dins de l'aplicació, on algú la podria extreure i fer sol·licituds en nom teu. El servidor comprova que la sol·licitud prové realment d'una de les nostres apps, hi afegeix la nostra clau i et retorna directament la resposta d'OpenAI.</p>
+<p><strong>No emmagatzema les teves sol·licituds ni les respostes de la IA.</strong> Només existeixen a la memòria durant l'instant que triguen a transmetre's, i mai s'escriuen al disc. Ningú a Custom Arts Ltd les llegeix.</p>
+<p>El que el servidor sí que conserva és un recompte continu del que ens costa la nostra IA. Per a cada sol·licitud, registra la data i l'hora, quina app i versió l'ha originat, quina funció i model d'IA s'han fet servir, si el compte era gratuït o de pagament, quants tokens o caràcters s'han processat, i el cost estimat. Aquests registres no contenen dades de salut, ni text de missatges, ni res que t'identifiqui — ni compte, ni identificador d'usuari, ni adreça IP — de manera que no es poden relacionar amb una persona concreta. <strong>Els conservem durant un màxim de 30 dies i després els eliminem.</strong></p>
+<p>El servidor també escriu línies de registre operatiu breus sobre el mateix, més la mida de cada sol·licitud, però mai el seu contingut. Si OpenAI retorna un error, aquest missatge d'error es registra tal com el va escriure OpenAI.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Durant Quant Temps Es Conserven les Dades</h2>
         <div class="legal-content">
-            <p>No conservem còpies de les dades de la teva app als nostres servidors. Les teves dades es mantenen al teu dispositiu i al teu iCloud mentre tinguis l'app instal·lada i la còpia de seguretat d'iCloud activada. Més enllà d'això:</p>
+            <p>No conservem còpies de les dades de la teva app als nostres servidors. Les teves dades es queden al teu dispositiu i al teu iCloud mentre tinguis l'app instal·lada i la còpia de seguretat d'iCloud activada. A més d'això:</p>
 <ul>
- <li><strong>OpenAI</strong> — els registres de supervisió d'abús es conserven fins a 30 dies i les respostes de la Responses API es guarden 30 dies per defecte. Les nostres apps depenen d'aquesta conservació per al xat de diversos torns. Aquests són valors predeterminats d'OpenAI i estan subjectes a canvis; consulta la <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">documentació d'OpenAI sobre els controls de dades de l'API</a>.</li>
- <li><strong>El nostre propi servidor</strong> — no es guarda el contingut de cap sol·licitud ni resposta. Els registres de cost per sol·licitud (data, app, funció, model, recompte de tokens, cost — sense dades de salut ni identificador d'usuari) es conserven actualment de manera indefinida.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — conservats per Google durant el període de retenció predeterminat del nostre projecte.</li>
- <li><strong>RevenueCat</strong> — dades de compra i rebuts mentre tinguis una subscripció activa i segons ho exigeixi la legislació fiscal.</li>
+ <li><strong>OpenAI</strong> — els registres de supervisió d'abús es conserven fins a 30 dies i les respostes de la Responses API s'emmagatzemen durant 30 dies per defecte. Les nostres apps depenen d'aquest emmagatzematge per als xats de diversos torns. Aquests són els valors predeterminats d'OpenAI i poden canviar; consulta la <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">documentació d'OpenAI sobre els controls de dades de l'API</a>.</li>
+ <li><strong>El nostre propi servidor</strong> — no s'emmagatzema cap contingut de sol·licituds ni respostes. Els registres de cost per sol·licitud (data, app, funció, model, recompte de tokens, cost — sense dades de salut ni identificador d'usuari) es conserven fins a 30 dies i després s'eliminen.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — Google els conserva durant el període de retenció predeterminat del nostre projecte.</li>
+ <li><strong>RevenueCat</strong> — dades de compra i de rebut mentre tinguis una subscripció activa, i segons ho exigeixi la legislació fiscal.</li>
 </ul>
-<p>Desactivar una funció o eliminar l'app atura la recollida addicional. Com que els registres que conserva el nostre propi servidor no contenen res que t'identifiqui, no podem cercar ni eliminar "les teves" entrades en ells a petició — no hi ha res amb què comparar-te.</p>
+<p>Desactivar una funció o eliminar l'app atura qualsevol recollida addicional. Com que els registres que conserva el nostre propi servidor no contenen res que t'identifiqui, no podem cercar ni eliminar "les teves" entrades a petició teva — no hi ha res amb què fer-hi coincidir. Desapareixen automàticament en un termini de 30 dies.</p>
         </div>
     </section>
 

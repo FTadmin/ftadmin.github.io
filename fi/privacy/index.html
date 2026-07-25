@@ -379,10 +379,10 @@
     <section class="legal-section">
         <h2>Palvelimemme ja miten tekoälypyynnöt päätyvät OpenAI:lle</h2>
         <div class="legal-content">
-            <p>Tekoälypyynnöt eivät kulje laitteeltasi suoraan OpenAI:lle. Ne kulkevat pienen palvelimen kautta, jota ylläpidämme ja jota isännöi <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> Yhdysvalloissa. Tämä on turvatoimi: se tarkoittaa, että OpenAI-avaimemme sijaitsee kyseisellä palvelimella eikä sovelluksen sisällä, josta joku voisi kaivaa sen esiin ja tehdä pyyntöjä sinun nimissäsi. Palvelin tarkistaa, että pyyntö todella tulee joltakin sovelluksistamme, lisää avaimemme ja striimaa OpenAI:n vastauksen suoraan takaisin sinulle.</p>
-<p><strong>Se ei tallenna pyyntöjäsi eikä tekoälyn vastauksia.</strong> Ne ovat olemassa vain muistissa sen hetken ajan, joka kuluu niiden välittämiseen, eikä niitä koskaan kirjoiteta levylle. Kukaan Custom Arts Ltd:llä ei lue niitä.</p>
-<p>Sen sijaan palvelin pitää kirjaa juoksevasta yhteenvedosta siitä, mitä tekoäly meille maksaa. Jokaisesta pyynnöstä se tallentaa päivämäärän ja kellonajan, mistä sovelluksesta ja versiosta se tuli, mitä ominaisuutta ja tekoälymallia käytettiin, oliko tili ilmainen vai maksullinen, kuinka monta tokenia tai merkkiä käsiteltiin, ja arvioidun kustannuksen. Näissä tietueissa ei ole terveystietoja, viestitekstiä eikä mitään sinut tunnistavaa – ei tiliä, ei käyttäjätunnusta, ei IP-osoitetta – joten niitä ei voida jäljittää yksittäiseen henkilöön. <strong>Niitä säilytetään tällä hetkellä toistaiseksi.</strong></p>
-<p>Palvelin kirjoittaa myös lyhyitä toiminnallisia lokirivejä, jotka kattavat saman asian, sekä kunkin pyynnön koon, ei koskaan sen sisältöä. Jos OpenAI palauttaa virheen, kyseinen virheilmoitus kirjataan sellaisenaan kuin OpenAI sen kirjoitti.</p>
+            <p>Tekoälypyynnöt eivät kulje laitteeltasi suoraan OpenAI:lle. Ne kulkevat pienen palvelimen kautta, jota ylläpidämme itse ja jota isännöi <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> Yhdysvalloissa. Tämä on turvatoimi: se tarkoittaa, että OpenAI-avaimemme sijaitsee kyseisellä palvelimella eikä sovelluksessa, josta joku voisi napata sen ja tehdä pyyntöjä sinun nimissäsi. Palvelin tarkistaa, että pyyntö todella tulee joltakin sovellukseltamme, lisää avaimemme ja välittää OpenAI:n vastauksen suoraan sinulle.</p>
+<p><strong>Se ei tallenna pyyntöjäsi eikä tekoälyn vastauksia.</strong> Ne ovat olemassa vain muistissa sen hetken ajan, joka niiden välittämiseen kuluu, eikä niitä koskaan kirjoiteta levylle. Kukaan Custom Arts Ltd:ssä ei lue niitä.</p>
+<p>Palvelin pitää kirjaa siitä, mitä tekoälymme meille maksaa. Jokaisesta pyynnöstä se tallentaa päivämäärän ja kellonajan, minkä sovelluksen ja version se tuli, mitä ominaisuutta ja tekoälymallia käytettiin, oliko tili ilmainen vai maksullinen, kuinka monta tokenia tai merkkiä käsiteltiin sekä arvioidun kustannuksen. Näissä tiedoissa ei ole terveystietoja, viestien tekstiä eikä mitään sinut tunnistavaa — ei tiliä, käyttäjätunnusta eikä IP-osoitetta — joten niitä ei voida jäljittää yksittäiseen henkilöön. <strong>Säilytämme niitä enintään 30 päivää ja poistamme ne sitten.</strong></p>
+<p>Palvelin kirjoittaa myös lyhyitä toiminnallisia lokirivejä samoista asioista sekä kunkin pyynnön koon, mutta ei koskaan sen sisältöä. Jos OpenAI palauttaa virheen, kyseinen virheilmoitus kirjataan lokiin sellaisena kuin OpenAI sen kirjoitti.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Kuinka kauan tietoja säilytetään</h2>
         <div class="legal-content">
-            <p>Emme säilytä kopioita sovellustiedoistasi palvelimillamme. Tietosi pysyvät laitteellasi ja iCloudissasi niin kauan kuin sovellus on asennettuna ja iCloud-varmuuskopiointi on käytössä. Tämän lisäksi:</p>
+            <p>Emme säilytä kopioita sovellustiedoistasi palvelimillamme. Tietosi pysyvät laitteellasi ja iCloudissasi niin kauan kuin sovellus on asennettuna ja iCloud-varmuuskopiointi on päällä. Tämän lisäksi:</p>
 <ul>
- <li><strong>OpenAI</strong> — väärinkäytösten valvontalokeja säilytetään enintään 30 päivää, ja Responses-rajapinnan vastauksia säilytetään oletusarvoisesti 30 päivää. Sovelluksemme ovat riippuvaisia tästä tallennuksesta monivaiheisen keskustelun mahdollistamiseksi. Nämä ovat OpenAI:n oletusarvoja ja voivat muuttua; katso <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI:n API-tiedonhallinnan dokumentaatio</a>.</li>
- <li><strong>Oma palvelimemme</strong> — pyyntöjen tai vastausten sisältöä ei tallenneta. Pyyntökohtaiset kustannustiedot (päivämäärä, sovellus, toiminto, malli, tokenmäärät, kustannus — ei terveystietoja eikä käyttäjätunnistetta) säilytetään toistaiseksi.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — Googlen säilyttämä projektimme oletussäilytysajan mukaisesti.</li>
- <li><strong>RevenueCat</strong> — osto- ja kuittitiedot niin kauan kuin sinulla on aktiivinen tilaus ja niin kuin verolainsäädäntö edellyttää.</li>
+ <li><strong>OpenAI</strong> — väärinkäytösten valvontalokeja säilytetään enintään 30 päivää, ja Responses API:n vastauksia säilytetään oletusarvoisesti 30 päivää. Sovelluksemme tarvitsevat tätä tallennusta monivaiheisia keskusteluja varten. Nämä ovat OpenAI:n oletusasetuksia ja voivat muuttua; katso <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI:n API-tietojen hallinnan dokumentaatio</a>.</li>
+ <li><strong>Oma palvelimemme</strong> — pyyntöjen tai vastausten sisältöä ei tallenneta. Pyyntökohtaiset kustannustiedot (päivämäärä, sovellus, ominaisuus, malli, tokenien määrä, kustannus — ei terveystietoja eikä käyttäjätunnistetta) säilytetään enintään 30 päivää ja poistetaan sitten.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — Google säilyttää niitä projektimme oletusarvoisen säilytysajan verran.</li>
+ <li><strong>RevenueCat</strong> — osto- ja kuittitietoja niin kauan kuin sinulla on aktiivinen tilaus, sekä verolainsäädännön edellyttämän ajan.</li>
 </ul>
-<p>Toiminnon poistaminen käytöstä tai sovelluksen poistaminen lopettaa lisätietojen keräämisen. Koska omalla palvelimellamme säilytettävät tiedot eivät sisällä mitään, joka tunnistaisi sinut, emme voi hakea tai poistaa "sinun" merkintöjäsi niistä pyynnöstä — niissä ei ole mitään, mihin sinut voisi yhdistää.</p>
+<p>Ominaisuuden poistaminen käytöstä tai sovelluksen poistaminen lopettaa lisätietojen keräämisen. Koska omalla palvelimellamme säilytettävät tiedot eivät sisällä mitään sinut tunnistavaa, emme voi etsiä tai poistaa niistä ”sinun” tietojasi pyynnöstä — niissä ei ole mitään, mihin sinut voisi yhdistää. Ne poistuvat itsestään 30 päivän kuluessa.</p>
         </div>
     </section>
 

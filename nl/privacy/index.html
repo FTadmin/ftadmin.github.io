@@ -379,10 +379,10 @@
     <section class="legal-section">
         <h2>Onze server en hoe AI-verzoeken bij OpenAI terechtkomen</h2>
         <div class="legal-content">
-            <p>AI-verzoeken gaan niet rechtstreeks van je apparaat naar OpenAI. Ze reizen via een kleine server die wij beheren, gehost door <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> in de Verenigde Staten. Dit is een beveiligingsmaatregel: het betekent dat onze OpenAI-sleutel op die server staat in plaats van in de app zelf, waar iemand hem eruit zou kunnen halen en verzoeken op jouw naam zou kunnen doen. De server controleert of het verzoek daadwerkelijk van een van onze apps afkomstig is, voegt onze sleutel toe, en streamt het antwoord van OpenAI rechtstreeks naar je terug.</p>
-<p><strong>Hij slaat je verzoeken of de antwoorden van de AI niet op.</strong> Ze bestaan alleen in het geheugen, voor het moment dat nodig is om ze door te sturen, en worden nooit naar schijf geschreven. Niemand bij Custom Arts Ltd leest ze.</p>
-<p>Wat de server wel bijhoudt, is een lopende telling van wat onze AI ons kost. Voor elk verzoek registreert deze de datum en tijd, van welke app en versie het afkomstig was, welke functie en welk AI-model werden gebruikt, of het account gratis of betaald was, hoeveel tokens of tekens werden verwerkt, en de geschatte kosten. Er staan geen gezondheidsgegevens in deze gegevens, geen berichttekst, en niets dat jou identificeert — geen account, geen gebruikers-ID, geen IP-adres — dus ze kunnen niet naar een individu worden herleid. <strong>Ze worden momenteel voor onbepaalde tijd bewaard.</strong></p>
-<p>De server schrijft ook korte operationele logregels over hetzelfde onderwerp, plus de omvang van elk verzoek, maar nooit de inhoud ervan. Als OpenAI een foutmelding teruggeeft, wordt die foutmelding gelogd zoals OpenAI die heeft geschreven.</p>
+            <p>AI-verzoeken gaan niet rechtstreeks van je toestel naar OpenAI. Ze gaan via een kleine server die wij beheren, gehost door <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> in de Verenigde Staten. Dit is een beveiligingsmaatregel: onze OpenAI-sleutel staat op die server in plaats van in de app, waar iemand hem eruit zou kunnen halen en op jouw naam verzoeken zou kunnen versturen. De server controleert of het verzoek daadwerkelijk van een van onze apps komt, voegt onze sleutel toe en stuurt het antwoord van OpenAI rechtstreeks naar je terug.</p>
+<p><strong>De server slaat je verzoeken of de antwoorden van de AI niet op.</strong> Ze bestaan alleen in het geheugen voor het moment dat nodig is om ze door te sturen, en worden nooit op schijf geschreven. Niemand bij Custom Arts Ltd leest ze.</p>
+<p>Wat de server wel bijhoudt, is een lopende telling van wat onze AI ons kost. Voor elk verzoek worden de datum en tijd geregistreerd, uit welke app en versie het kwam, welke functie en welk AI-model werden gebruikt, of het account gratis of betaald was, hoeveel tokens of tekens werden verwerkt, en de geschatte kosten. Er staan geen gezondheidsgegevens in deze gegevens, geen berichttekst, en niets dat jou identificeert — geen account, geen gebruikers-ID, geen IP-adres — dus ze kunnen niet naar een individu worden herleid. <strong>We bewaren ze maximaal 30 dagen en verwijderen ze daarna.</strong></p>
+<p>De server schrijft ook korte operationele logregels met dezelfde gegevens, plus de omvang van elk verzoek, nooit de inhoud ervan. Als OpenAI een foutmelding retourneert, wordt die foutmelding gelogd zoals OpenAI die heeft geschreven.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Hoe Lang Gegevens Worden Bewaard</h2>
         <div class="legal-content">
-            <p>Wij bewaren geen kopieën van je app-gegevens op onze servers. Je gegevens blijven op je apparaat en in je iCloud zolang je de app geïnstalleerd hebt en iCloud-back-up aan staat. Daarnaast:</p>
+            <p>We bewaren geen kopieën van je app-gegevens op onze servers. Je gegevens blijven op je toestel en in je iCloud zolang je de app hebt geïnstalleerd en iCloud-back-up hebt ingeschakeld. Daarnaast:</p>
 <ul>
- <li><strong>OpenAI</strong> — misbruikmonitoringlogs worden maximaal 30 dagen bewaard en Responses API-antwoorden worden standaard 30 dagen opgeslagen. Onze apps zijn voor meerdere-beurten-chats afhankelijk van die opslag. Dit zijn OpenAI's standaardinstellingen en kunnen wijzigen; zie <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI's documentatie over databeheer in de API</a>.</li>
- <li><strong>Onze eigen server</strong> — er wordt geen verzoek- of antwoordinhoud opgeslagen. Kostengegevens per verzoek (datum, app, functie, model, aantal tokens, kosten — geen gezondheidsgegevens en geen gebruikersidentificatie) worden momenteel voor onbepaalde tijd bewaard.</li>
+ <li><strong>OpenAI</strong> — logs voor misbruikdetectie worden tot 30 dagen bewaard en Responses API-antwoorden worden standaard 30 dagen opgeslagen. Onze apps zijn voor meerdere-beurten-chats afhankelijk van die opslag. Dit zijn de standaardinstellingen van OpenAI en kunnen wijzigen; zie <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI's documentatie over gegevensbeheer voor de API</a>.</li>
+ <li><strong>Onze eigen server</strong> — er wordt geen inhoud van verzoeken of antwoorden opgeslagen. Kostenregistraties per verzoek (datum, app, functie, model, aantal tokens, kosten — geen gezondheidsgegevens en geen gebruikersidentificatie) worden maximaal 30 dagen bewaard en daarna verwijderd.</li>
  <li><strong>Firebase Crashlytics / Analytics</strong> — bewaard door Google gedurende de standaard bewaartermijn van ons project.</li>
- <li><strong>RevenueCat</strong> — aankoop- en bewijsgegevens zolang je een actief abonnement hebt en zoals de belastingwetgeving vereist.</li>
+ <li><strong>RevenueCat</strong> — aankoop- en bongegevens zolang je een actief abonnement hebt en zoals de belastingwetgeving vereist.</li>
 </ul>
-<p>Een functie uitschakelen of de app verwijderen stopt verdere verzameling. Omdat de gegevens die onze eigen server bewaart niets bevatten dat jou identificeert, kunnen we „jouw” gegevens daarin niet opzoeken of op verzoek verwijderen — er is niets in om jou aan te koppelen.</p>
+<p>Een functie uitschakelen of de app verwijderen stopt verdere verzameling. Omdat de gegevens die onze eigen server bewaart niets bevatten dat jou identificeert, kunnen we niet zoeken naar of op verzoek "jouw" items daarin verwijderen — er staat niets in waarmee we jou kunnen matchen. Ze verdwijnen vanzelf binnen 30 dagen.</p>
         </div>
     </section>
 
