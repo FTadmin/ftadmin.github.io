@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "Suporte - Feeltracker",
-   "description": "Obtenha ajuda com as aplicações de saúde Feeltracker. Contacte o suporte, consulte as FAQ e encontre recursos para as aplicações de pressão arterial, humor, diário, sono e peso.",
-   "keywords": "",
+   "title": "Suporte Feeltracker | Ajuda com as Nossas Apps de Saúde",
+   "description": "Obtém ajuda com as apps de saúde Feeltracker. Envia um e-mail para support@feeltracker.com para resposta em 24h, ou consulta a FAQ, privacidade e termos.",
+   "keywords": "suporte feeltracker, contactar feeltracker, ajuda aplicação de saúde, suporte aplicação de pressão arterial, suporte diário de humor, suporte aplicação de sono, suporte aplicação de peso",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "Suporte Feeltracker",
   "contact": {
    "title": "Precisa de ajuda?",
-   "supportText": "Para suporte imediato ou d&uacute;vidas, envie um e-mail para: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "Para ajuda detalhada e perguntas frequentes, visite a nossa <a href=\"../../pt/faq/\">p&aacute;gina de FAQ</a>."
+   "supportText": "A forma mais rápida de obter ajuda com qualquer aplicação Feeltracker é enviar um e-mail para <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> — somos uma equipa pequena e normalmente respondemos dentro de 24 horas. Diz-nos qual aplicação estás a usar e o que estavas a fazer quando o problema aconteceu, e trataremos do resto.",
+   "faqText": "Para respostas passo a passo sobre sincronização, cópias de segurança, exportação para o teu médico, funcionalidades de IA, privacidade e subscrições, consulta a nossa <a href=\"../../pt/faq/\">página de FAQ</a>."
   },
   "apps": {
    "title": "As Nossas Aplica&ccedil;&otilde;es",
@@ -63,8 +63,31 @@
     {
      "name": "Termos de Servi&ccedil;o",
      "url": "../../pt/terms/"
+    },
+    {
+     "name": "Sobre a Feeltracker",
+     "url": "../../pt/about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "Suporte Feeltracker",
+    "description": "Como obter ajuda com as aplicações de monitorização de saúde Feeltracker para iPhone, iPad e Mac: suporte por e-mail, FAQ, política de privacidade e termos.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "Apoio ao Cliente",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "Inglês"
+      }
+     ]
+    }
+   }
+  ]
  }
 }
