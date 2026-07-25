@@ -310,6 +310,11 @@ Structured data with per-question isolation (file: `faq.utility.json`):
 3. **Translate the review** into every non-EN overlay file. Add only text fields (`title`, `content`, `author`) at the same array position. Each non-EN language must have a `reviews.disclaimer` field (see below).
 4. Run `node build.js`
 
+**Reviews are testimony — never edit what a reviewer said.** See the rule in
+"Translation tips and common pitfalls" below: translate faithfully, and never
+apply a site-wide rename, product-name change or copy edit inside
+`reviews.items[].content` or `.title`.
+
 ### Add a new language (e.g., Portuguese)
 1. **Add language config** to `data/languages.json`:
    ```json
@@ -367,7 +372,26 @@ These lessons were learned from the Simplified Chinese (zh) translation and appl
 
 9. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
 10. **Reviews disclaimer** — Every non-EN language MUST include `"disclaimer"` in the reviews section of app pages AND the index page, stating reviews were translated from English (e.g., Chinese: `"评论翻译自英文原文。最初发布在App Store上。"`).
-11. **Current languages** (32 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh-Hans), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi), العربية (ar), Català (ca), Čeština (cs), Ελληνικά (el), Français Canada (fr-ca), עברית (he), Hrvatski (hr), Magyar (hu), Nederlands (nl), Polski (pl), Português Portugal (pt), Română (ro), Slovenčina (sk), ไทย (th), Türkçe (tr), Українська (uk), Tiếng Việt (vi), 繁體中文 (zh-Hant)
+11. **Never change a reviewer's words.** `reviews.items[].content`, `.title`
+    and `.author` are real App Store testimony. They get translated — faithfully,
+    preserving meaning, tone and any wording the reviewer chose — and nothing
+    else. Do NOT apply a site-wide rename, product-name swap, terminology
+    normalization or copy edit inside a review, in EN or in any locale.
+
+    This has happened: during the Mood Journal rename, a locale pass rewrote a
+    review that said *"mental health has come to take precedence in recent
+    years"* into *"the Mood Journal has come to take precedence"* — attributing
+    to a real user a sentence they never wrote. A rename sweep matching the old
+    product name will hit reviews that merely discuss the topic, so exclude
+    `reviews.*` from every sweep by default and re-read any review a sweep
+    flags before touching it.
+
+    `author` is a real username: never translate, localize or "correct" it.
+    After any rename or bulk pass, grep every locale's `reviews.items[].content`
+    for the new product name and confirm each hit is a genuine translation of
+    what the EN review says, not an artifact of the sweep.
+
+12. **Current languages** (32 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh-Hans), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi), العربية (ar), Català (ca), Čeština (cs), Ελληνικά (el), Français Canada (fr-ca), עברית (he), Hrvatski (hr), Magyar (hu), Nederlands (nl), Polski (pl), Português Portugal (pt), Română (ro), Slovenčina (sk), ไทย (th), Türkçe (tr), Українська (uk), Tiếng Việt (vi), 繁體中文 (zh-Hant)
 
 ### Add a new app
 1. Add the app to `nav.apps[]` for each language in `data/languages.json`
