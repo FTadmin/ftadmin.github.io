@@ -348,7 +348,7 @@
     </section>
 
     <section class="legal-section">
-        <h2>Apple Intelligence（可选）</h2>
+        <h2>Apple 智能（可选）</h2>
         <div class="legal-content">
             <p>在搭载兼容版本iOS、iPadOS或macOS的较新设备上，Feeltracker应用可能会提供由Apple自带AI——Apple 智能提供支持的可选功能。这些功能仅在你在应用设置中选择将Apple 智能设为AI模式时才会运行。</p>
 <p>在此模式下，应用会调用Apple的设备端Foundation Models框架。该请求不会发送到我们的服务器，也不会发送到OpenAI：Custom Arts Ltd绝不会接收、存储或查看任何Apple 智能的请求或响应。Apple自身如何处理该请求，由Apple自己的政策规定。</p>
@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API（可选）</h2>
         <div class="legal-content">
-            <p>我们应用中的大多数AI功能由OpenAI API提供支持。云端AI是新安装时的<strong>默认模式</strong>；你可以在应用的AI设置中将应用切换为设备端的Apple 智能，或完全关闭AI。</p>
-<p><strong>发送的内容。</strong>根据功能不同，一次请求可能包含：</p>
+            <p>我们应用中大多数AI功能均由OpenAI API提供支持。云端AI是新安装时的<strong>默认模式</strong>；你可以在应用的AI设置中切换到设备端的Apple 智能，或完全关闭AI。</p>
+<p><strong>发送的内容。</strong>根据功能不同，请求可能包含：</p>
 <ul>
- <li>你在AI功能中输入的任何内容——你的问题，或你要求它处理的一段文字。</li>
- <li>该功能所涉及范围内的健康记录，以带有日期和时间的读数行形式发送。<strong>这包括附加在这些记录上的自由文本备注和日记条目。</strong></li>
- <li>如上文“个人资料信息”所述的个人资料及个性化背景信息。</li>
- <li>对于Camera Scan（拍照识别），是你为血压计或体重秤显示屏拍摄的照片。</li>
- <li>对于朗读（文本转语音）功能，是被朗读的文本，通常是关于你数据的AI回答。</li>
+ <li>你在AI功能中输入的任何内容——你的问题，或你要求处理的文字段落。</li>
+ <li>该功能范围内的健康记录，以带有日期和时间的读数行呈现。<strong>这包括附加在这些记录上的自由文本备注和日记条目。</strong></li>
+ <li>上文“个人资料信息”中所述的个人资料与个性化上下文。</li>
+ <li>对于相机扫描功能，你拍摄的显示器或体重秤屏幕照片。</li>
+ <li>对于朗读（文字转语音）功能，正在朗读的文本，通常是关于你数据的AI回答。</li>
 </ul>
-<p><strong>发送的时机。</strong>大多数AI功能只有在你打开它们并请求结果时才会运行。但也有一些例外：在云端AI开启期间，应用还会自行生成简短的个性化消息——例如每日洞察、生日或纪念日祝福、欢迎回来的问候语——为此，它会在<strong>你打开应用或其日视图时（即使你并未主动请求AI结果）</strong>，将你最近的一批记录（最多30条）和你的个人资料背景信息发送给OpenAI。关闭AI或切换到Apple 智能会停止这一行为。</p>
-<p><strong>按安装生成的标识符。</strong>每次安装都会生成一个随机标识符，并在每次请求时发送给OpenAI，作为缓存键以降低重复请求的成本。它不包含任何关于你的信息，也不与你的姓名、账户或设备ID关联，但它是固定不变的：这使得OpenAI能够将同一次安装发出的所有请求相互关联，并且该标识符会一直保留，直到应用被删除并重新安装。</p>
-<p><strong>OpenAI如何处理这些数据。</strong>根据OpenAI当前的API文档，除非你明确选择加入，否则发送到API的数据不会被用于训练或改进OpenAI的模型；滥用监控日志最多保留30天；通过Responses API创建的响应默认存储30天。我们的应用依赖这30天的存储机制，以便聊天对话能够跨轮次继续，而无需重新上传整个对话，因此<strong>你的AI请求及其回复会被OpenAI保留最长30天。</strong>这些是OpenAI自己的条款，而非我们的条款，OpenAI可以对其进行更改。</p>
+<p><strong>发送时间。</strong>大多数AI功能仅在你打开并请求结果时运行。但有些不是这样：在云端AI开启期间，应用还会自行生成简短的个性化消息——每日洞察、生日或里程碑祝福、欢迎回来的问候——为此，它会在<strong>你打开应用或其“当日”视图时（无需你请求AI结果）</strong>，将你最近的一批记录（最多30条）和个人资料上下文发送给OpenAI。关闭AI或切换到Apple 智能会停止此行为。</p>
+<p><strong>按安装生成的标识符。</strong>每次安装都会生成一个随机标识符，并随每个请求一起发送给OpenAI，作为降低重复请求成本的缓存密钥。它不包含关于你的任何信息，也不会与你的姓名、账户或设备ID关联，但它是稳定的：这使OpenAI能够将来自同一次安装的所有请求相互关联，并且它会一直保留，直到应用被删除并重新安装。</p>
+<p><strong>OpenAI如何处理这些数据。</strong>OpenAI当前的API文档指出，除非你明确选择加入，否则发送给API的数据不会用于训练或改进OpenAI模型；滥用监控日志最多保留30天；通过Responses API创建的回复默认存储30天。我们的应用依赖这30天的存储，以便对话可以跨轮次继续，而无需重新上传，因此<strong>你的AI请求及其回复会被OpenAI保留最多30天</strong>。这些是OpenAI自身的默认设置，并非我们所能控制的承诺，OpenAI可能随时更改这些设置。当前版本载于<a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI的API数据控制文档</a>。</p>
 <p>你可以在此阅读完整政策：<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI隐私政策</a>。</p>
-<p>使用AI功能即表示你同意将相关数据（包括你选择保存的任何个人资料信息）发送给OpenAI，并按照其政策进行处理。请不要在AI中输入任何你不愿意按照这些条款发送出去的内容。</p>
+<p>使用AI功能即表示你同意将相关数据（包括你选择保存的任何个人资料信息）发送给OpenAI，并依照其政策进行处理。请不要在AI中输入任何你不愿按这些条款发送的内容。</p>
         </div>
     </section>
 
@@ -401,7 +401,7 @@
  <li><strong>查看并导出您的数据。</strong>任何个人资料信息（姓名、出生日期、性别）、测量记录和日记内容都可以随时在应用内查看并导出为PDF、CSV、Excel或JSON文件。</li>
  <li><strong>修改内容。</strong>任何记录或个人资料字段都可以直接在应用内编辑。</li>
  <li><strong>删除。</strong>您可以在应用内删除任何单条记录、整个个人资料，或所有应用数据。在iOS"设置"中移除应用及其iCloud备份即可清除所有内容。由于我们不会在服务器上保留副本，因此没有其他需要我们代为删除的内容。</li>
- <li><strong>随时改变主意。</strong>可选功能 — Apple Health、Apple Intelligence、由OpenAI提供支持的AI功能，以及分析/崩溃报告 — 都可以在应用或iOS"设置"中单独关闭，不影响应用的其他部分。</li>
+ <li><strong>随时改变主意。</strong>可选功能 — Apple Health、Apple 智能、由OpenAI提供支持的AI功能，以及分析/崩溃报告 — 都可以在应用或iOS"设置"中单独关闭，不影响应用的其他部分。</li>
  <li><strong>停止处理。</strong>如果您不喜欢本政策中某项内容的运作方式，可以停止使用该功能或停止使用应用。</li>
 </ul>
 <p>这些权利适用于任何地方。它们符合欧盟/英国GDPR和加州CCPA/CPRA等法律。我们不出售您的个人信息，不在CCPA/CPRA意义上"共享"信息，也不将其用于跨站点行为广告。</p>
@@ -411,7 +411,7 @@
     <section class="legal-section">
         <h2>法律依据（欧盟/英国 GDPR）</h2>
         <div class="legal-content">
-            <p>在欧盟或英国 GDPR 适用的情况下，我们依据<strong>您的同意</strong>处理您自行开启的可选功能（Apple Health、Apple Intelligence、OpenAI 驱动的 AI 功能、用于定制 AI 的个人资料数据以及分析/崩溃报告），并依据我们维持应用正常运行、修复崩溃和防止滥用的<strong>合法利益</strong>进行相关处理。您可以随时通过关闭该功能撤回同意——此操作不影响之前已发生的处理。</p>
+            <p>在欧盟或英国 GDPR 适用的情况下，我们依据<strong>您的同意</strong>处理您自行开启的可选功能（Apple Health、Apple 智能、OpenAI 驱动的 AI 功能、用于定制 AI 的个人资料数据以及分析/崩溃报告），并依据我们维持应用正常运行、修复崩溃和防止滥用的<strong>合法利益</strong>进行相关处理。您可以随时通过关闭该功能撤回同意——此操作不影响之前已发生的处理。</p>
 <p>Custom Arts Ltd 是应用处理的个人数据的数据控制者。</p>
         </div>
     </section>
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>数据保留期限</h2>
         <div class="legal-content">
-            <p>我们不会在我们的服务器上保留你应用数据的副本。只要你安装了应用并开启了iCloud备份，你的数据就会一直保存在你的设备和iCloud中。除此之外：</p>
+            <p>我们不会在自己的服务器上保留你应用数据的副本。只要你安装了应用并开启了iCloud备份，你的数据就会保留在你的设备和iCloud中。除此之外：</p>
 <ul>
- <li><strong>OpenAI</strong> — 根据OpenAI当前的API文档，滥用监控日志最多保留30天，Responses API的响应默认存储30天。我们的应用依赖该存储机制来实现多轮对话。</li>
- <li><strong>我们自己的服务器</strong> — 不存储任何请求或回复内容。按请求记录的成本数据（日期、应用、功能、模型、令牌数量、成本——不含健康数据和用户标识符）目前会无限期保留。</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — 由Google按照我们项目的默认保留期限保存。</li>
- <li><strong>RevenueCat</strong> — 在你拥有有效订阅期间以及税法要求的期限内，保存购买和收据数据。</li>
+ <li><strong>OpenAI</strong>——滥用监控日志最多保留30天，Responses API的回复默认存储30天。我们的应用依赖此存储实现多轮对话。这些是OpenAI的默认设置，可能会更改；详见<a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI的API数据控制文档</a>。</li>
+ <li><strong>我们自己的服务器</strong>——不存储任何请求或回复内容。按请求记录的成本数据（日期、应用、功能、模型、token数量、费用——不含健康数据，也不含用户标识符）目前会无限期保留。</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong>——由Google按照我们项目的默认保留期限保留。</li>
+ <li><strong>RevenueCat</strong>——购买和收据数据会在你保持有效订阅期间及税法要求的期限内保留。</li>
 </ul>
-<p>关闭某项功能或删除应用会停止进一步的数据收集。由于我们自己服务器所保留的记录中不包含任何能识别你身份的信息，因此我们无法应请求在其中检索或删除“属于你的”条目——因为其中根本没有可以用来匹配你身份的信息。</p>
+<p>关闭某项功能或删除应用会停止进一步收集。由于我们自己服务器保留的记录中不包含任何能识别你身份的信息，我们无法应请求在其中搜索或删除“你的”条目——因为其中没有可用于匹配你身份的信息。</p>
         </div>
     </section>
 

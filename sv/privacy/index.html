@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API (valfritt)</h2>
         <div class="legal-content">
-            <p>De flesta AI-funktioner i våra appar drivs av OpenAI API. Moln-AI är <strong>standardläget</strong> vid en ny installation; du kan växla appen till Apple Intelligence på enheten, eller stänga av AI helt, i appens AI-inställningar.</p>
-<p><strong>Vad som skickas.</strong> Beroende på funktionen kan en förfrågan innehålla:</p>
+            <p>De flesta AI-funktioner i våra appar drivs av OpenAI:s API. Moln-AI är <strong>standardläget</strong> vid en nyinstallation; du kan växla appen till Apple Intelligence på enheten, eller stänga av AI helt, i appens AI-inställningar.</p>
+<p><strong>Vad som skickas.</strong> Beroende på funktionen kan en begäran innehålla:</p>
 <ul>
- <li>Allt du skriver in i en AI-funktion, din fråga eller ett textavsnitt du bad den bearbeta.</li>
- <li>De hälsoposter som omfattas av den funktionen, som rader med mätvärden tillsammans med datum och tid. <strong>Detta inkluderar de fritextanteckningar och dagboksinlägg som är kopplade till dessa poster.</strong></li>
- <li>Profil- och personaliseringskontext, som beskrivs under ”Profilinformation” ovan.</li>
- <li>För Camera Scan, ett foto du tar av en mätare eller våg.</li>
- <li>För uppläsning (text-till-tal), texten som läses upp, vilket normalt är ett AI-svar om din data.</li>
+ <li>Allt du skriver in i en AI-funktion — din fråga, eller ett stycke du bett den bearbeta.</li>
+ <li>De hälsojournaler som ingår i den funktionen, som rader med mätvärden med datum och tid. <strong>Detta inkluderar de fritextanteckningar och dagboksanteckningar som är kopplade till dessa poster.</strong></li>
+ <li>Profil- och personaliseringskontext, enligt beskrivningen under ”Profilinformation” ovan.</li>
+ <li>För kameraskanning, ett foto du tar av en mätare eller vågdisplay.</li>
+ <li>För uppläsning (text-till-tal), texten som läses upp, vilket normalt är ett AI-svar om dina data.</li>
 </ul>
-<p><strong>När det skickas.</strong> De flesta AI-funktioner körs bara när du öppnar dem och begär ett resultat. Vissa gör det inte: medan moln-AI är påslaget genererar appen även korta, personliga meddelanden på egen hand, en daglig insikt, en födelsedags- eller milstolpshälsning, ett välkommen-tillbaka-meddelande, och för att göra det skickar den en samling av dina senaste poster (upp till 30) och din profilkontext till OpenAI <strong>när du öppnar appen eller dess dagvy, utan att du bett om ett AI-resultat</strong>. Om du stänger av AI, eller växlar till Apple Intelligence, upphör detta.</p>
-<p><strong>En identifierare per installation.</strong> Varje installation genererar en slumpmässig identifierare och skickar den till OpenAI vid varje förfrågan, som en cachenyckel som håller kostnaden nere för upprepade förfrågningar. Den innehåller inget om dig och är inte kopplad till ditt namn, konto eller enhets-ID, men den är stabil: den gör att OpenAI kan koppla samman alla förfrågningar från en och samma installation, och den finns kvar tills appen tas bort och installeras om.</p>
-<p><strong>Vad OpenAI gör med den.</strong> OpenAIs nuvarande API-dokumentation anger att data som skickas till API:et inte används för att träna eller förbättra OpenAIs modeller om du inte uttryckligen väljer det, att loggar för missbruksövervakning sparas i upp till 30 dagar, och att svar som skapas via Responses API lagras i 30 dagar som standard. Våra appar förlitar sig på den 30-dagarslagringen så att en chattkonversation kan fortsätta mellan repliker utan att laddas upp på nytt, så <strong>dina AI-förfrågningar och deras svar sparas av OpenAI i upp till 30 dagar</strong>. Detta är OpenAIs villkor, inte våra, och de kan ändra dem.</p>
-<p>Du kan läsa hela policyn här: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAIs integritetspolicy</a>.</p>
-<p>Genom att använda en AI-funktion godkänner du att relevant data (inklusive eventuella profiluppgifter du valt att spara) skickas till OpenAI och behandlas enligt deras policyer. Skriv inte in något i AI:n som du inte skulle vilja skicka enligt dessa villkor.</p>
+<p><strong>När det skickas.</strong> De flesta AI-funktioner körs bara när du öppnar dem och begär ett resultat. Vissa gör inte det: medan moln-AI är på genererar appen även korta personliga meddelanden på egen hand — en daglig insikt, en födelsedags- eller milstolpshälsning, ett välkommen-tillbaka-meddelande — och för att göra det skickar den en samling av dina senaste poster (upp till 30) och din profilkontext till OpenAI <strong>när du öppnar appen eller dess dagvy, utan att du har begärt ett AI-resultat</strong>. Att stänga av AI, eller växla till Apple Intelligence, stoppar detta.</p>
+<p><strong>En identifierare per installation.</strong> Varje installation genererar en slumpmässig identifierare och skickar den till OpenAI med varje begäran, som en cachenyckel som håller nere kostnaden för upprepade förfrågningar. Den innehåller ingenting om dig och är inte kopplad till ditt namn, konto eller enhets-ID, men den är stabil: den låter OpenAI koppla samman alla begäranden från en installation med varandra, och den finns kvar tills appen tas bort och installeras om.</p>
+<p><strong>Vad OpenAI gör med det.</strong> OpenAI:s nuvarande API-dokumentation anger att data som skickas till API:et inte används för att träna eller förbättra OpenAI:s modeller om du inte uttryckligen väljer att delta, att loggar för missbruksövervakning sparas i upp till 30 dagar, och att svar som skapas via Responses API lagras i 30 dagar som standard. Våra appar förlitar sig på den 30-dagars lagringen så att en konversation kan fortsätta över flera turer utan att laddas upp på nytt, så <strong>dina AI-förfrågningar och deras svar hålls av OpenAI i upp till 30 dagar</strong>. Detta är OpenAI:s egna standardinställningar, inte åtaganden vi kontrollerar, och OpenAI kan ändra dem när som helst. Den aktuella versionen finns beskriven i <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI:s dokumentation om datakontroller för API:et</a>.</p>
+<p>Du kan läsa hela policyn här: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI:s integritetspolicy</a>.</p>
+<p>Genom att använda en AI-funktion godkänner du att relevanta data (inklusive eventuella profiluppgifter du valt att spara) skickas till OpenAI och behandlas enligt deras policyer. Skriv inte in något i AI:n som du inte skulle vara bekväm med att skicka enligt dessa villkor.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Hur länge data sparas</h2>
         <div class="legal-content">
-            <p>Vi behåller inga kopior av din appdata på våra servrar. Din data finns kvar på din enhet och i ditt iCloud så länge du har appen installerad och iCloud-säkerhetskopiering påslagen. Utöver det:</p>
+            <p>Vi behåller inga kopior av dina appdata på våra servrar. Dina data stannar på din enhet och i din iCloud så länge du har appen installerad och iCloud-säkerhetskopiering påslagen. Utöver det:</p>
 <ul>
- <li><strong>OpenAI</strong> — enligt OpenAIs nuvarande API-dokumentation sparas loggar för missbruksövervakning i upp till 30 dagar och svar från Responses API lagras i 30 dagar som standard. Våra appar är beroende av den lagringen för flerturs-chattar.</li>
- <li><strong>Vår egen server</strong> — inget förfrågnings- eller svarsinnehåll lagras. Kostnadsposter per förfrågan (datum, app, funktion, modell, tokenantal, kostnad, ingen hälsodata och ingen användaridentifierare) sparas för närvarande på obestämd tid.</li>
+ <li><strong>OpenAI</strong> — loggar för missbruksövervakning sparas i upp till 30 dagar och svar från Responses API lagras i 30 dagar som standard. Våra appar är beroende av den lagringen för konversationer med flera turer. Detta är OpenAI:s standardinställningar och kan komma att ändras; se <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI:s dokumentation om datakontroller för API:et</a>.</li>
+ <li><strong>Vår egen server</strong> — inget innehåll i förfrågningar eller svar lagras. Kostnadsposter per förfrågan (datum, app, funktion, modell, antal token, kostnad — inga hälsodata och ingen användaridentifierare) sparas för närvarande på obestämd tid.</li>
  <li><strong>Firebase Crashlytics / Analytics</strong> — sparas av Google under vårt projekts standardlagringsperiod.</li>
- <li><strong>RevenueCat</strong> — köp- och kvittodata så länge du har en aktiv prenumeration och enligt vad skattelagstiftningen kräver.</li>
+ <li><strong>RevenueCat</strong> — köp- och kvittodata så länge du har en aktiv prenumeration och så länge skattelagstiftningen kräver.</li>
 </ul>
-<p>Om du stänger av en funktion eller raderar appen upphör vidare insamling. Eftersom de poster vår egen server sparar inte innehåller något som identifierar dig, kan vi inte söka efter eller radera ”dina” poster i dem på begäran, det finns inget i dem att matcha dig mot.</p>
+<p>Att stänga av en funktion eller ta bort appen stoppar vidare insamling. Eftersom posterna som vår egen server behåller inte innehåller något som identifierar dig kan vi inte söka efter eller radera ”dina” poster i dem på begäran — det finns inget i dem att matcha dig mot.</p>
         </div>
     </section>
 

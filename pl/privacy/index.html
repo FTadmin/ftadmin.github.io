@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API (opcjonalne)</h2>
         <div class="legal-content">
-            <p>Większość funkcji AI w naszych aplikacjach jest oparta na API OpenAI. Chmurowa AI jest <strong>domyślnym trybem</strong> przy nowej instalacji; w ustawieniach AI aplikacji możesz przełączyć się na działającą na urządzeniu Apple Intelligence lub całkowicie wyłączyć AI.</p>
-<p><strong>Co jest wysyłane.</strong> W zależności od funkcji zapytanie może zawierać:</p>
+            <p>Większość funkcji AI w naszych aplikacjach działa w oparciu o OpenAI API. Chmurowa AI jest <strong>trybem domyślnym</strong> przy nowej instalacji; możesz przełączyć aplikację na Apple Intelligence działającą na urządzeniu lub całkowicie wyłączyć AI w ustawieniach AI aplikacji.</p>
+<p><strong>Co jest wysyłane.</strong> W zależności od funkcji, żądanie może zawierać:</p>
 <ul>
- <li>Wszystko, co wpiszesz w funkcji AI — Twoje pytanie lub fragment tekstu, nad którym miała popracować.</li>
- <li>Rekordy zdrowotne objęte daną funkcją, jako wiersze odczytów z datami i godzinami. <strong>Obejmuje to notatki tekstowe i wpisy z dziennika dołączone do tych rekordów.</strong></li>
- <li>Kontekst profilu i personalizacji, opisany w sekcji „Informacje o profilu” powyżej.</li>
- <li>W przypadku Camera Scan — zdjęcie wykonane przez Ciebie ekranu monitora lub wagi.</li>
- <li>W przypadku odczytywania na głos (zamiana tekstu na mowę) — czytany tekst, którym zwykle jest odpowiedź AI dotycząca Twoich danych.</li>
+ <li>Wszystko, co wpiszesz w funkcji AI — Twoje pytanie lub fragment tekstu, nad którym poprosiłeś/aś o pracę.</li>
+ <li>Dane zdrowotne objęte daną funkcją, jako wiersze odczytów z ich datami i godzinami. <strong>Obejmuje to notatki tekstowe i wpisy dziennika dołączone do tych danych.</strong></li>
+ <li>Kontekst profilu i personalizacji, opisany powyżej w sekcji „Informacje o profilu”.</li>
+ <li>Dla funkcji Camera Scan — zdjęcie, które wykonujesz ekranu monitora lub wagi.</li>
+ <li>Dla funkcji czytania na głos (zamiana tekstu na mowę) — czytany tekst, zwykle odpowiedź AI dotycząca Twoich danych.</li>
 </ul>
-<p><strong>Kiedy jest wysyłane.</strong> Większość funkcji AI działa tylko wtedy, gdy je otworzysz i poprosisz o wynik. Niektóre nie: gdy chmurowa AI jest włączona, aplikacja samodzielnie generuje również krótkie, spersonalizowane wiadomości — codzienną informację, życzenia urodzinowe lub z okazji kamienia milowego, wiadomość powitalną po powrocie — a aby to zrobić, wysyła do OpenAI paczkę Twoich najnowszych rekordów (do 30) oraz kontekst profilu, <strong>gdy otwierasz aplikację lub jej widok dnia, bez proszenia o wynik AI</strong>. Wyłączenie AI lub przełączenie na Apple Intelligence zatrzymuje to.</p>
-<p><strong>Identyfikator dla danej instalacji.</strong> Każda instalacja generuje losowy identyfikator i wysyła go do OpenAI z każdym zapytaniem, jako klucz pamięci podręcznej, który utrzymuje niższy koszt powtarzających się zapytań. Nie zawiera on żadnych informacji o Tobie i nie jest powiązany z Twoim imieniem, kontem ani identyfikatorem urządzenia, ale jest stały: pozwala OpenAI powiązać ze sobą wszystkie zapytania z jednej instalacji i pozostaje aktywny, dopóki aplikacja nie zostanie usunięta i ponownie zainstalowana.</p>
-<p><strong>Co OpenAI z tym robi.</strong> Zgodnie z aktualną dokumentacją API OpenAI dane wysyłane do API nie są wykorzystywane do trenowania ani ulepszania modeli OpenAI, chyba że wyraźnie się na to zgodzisz; dzienniki monitorowania nadużyć są przechowywane do 30 dni, a odpowiedzi utworzone za pomocą Responses API są domyślnie przechowywane przez 30 dni. Nasze aplikacje polegają na tym 30-dniowym przechowywaniu, aby rozmowa mogła być kontynuowana w kolejnych turach bez konieczności ponownego przesyłania jej całości, dlatego <strong>Twoje zapytania AI i udzielone na nie odpowiedzi są przechowywane przez OpenAI przez okres do 30 dni</strong>. Są to warunki OpenAI, a nie nasze, i mogą one ulec zmianie.</p>
+<p><strong>Kiedy jest wysyłane.</strong> Większość funkcji AI działa tylko wtedy, gdy je otworzysz i poprosisz o wynik. Niektóre nie: gdy chmurowa AI jest włączona, aplikacja sama generuje też krótkie, spersonalizowane wiadomości — codzienną refleksję, życzenia urodzinowe lub z okazji kamienia milowego, wiadomość powitalną po powrocie — i w tym celu wysyła do OpenAI paczkę Twoich najnowszych danych (do 30) oraz kontekst profilu <strong>gdy otwierasz aplikację lub jej widok dnia, bez proszenia o wynik AI</strong>. Wyłączenie AI lub przełączenie na Apple Intelligence to zatrzymuje.</p>
+<p><strong>Identyfikator instalacji.</strong> Każda instalacja generuje losowy identyfikator i wysyła go do OpenAI z każdym żądaniem, jako klucz pamięci podręcznej, który obniża koszt powtarzających się żądań. Nie zawiera on żadnych informacji o Tobie i nie jest powiązany z Twoim imieniem, kontem ani identyfikatorem urządzenia, ale jest stabilny: pozwala OpenAI powiązać ze sobą wszystkie żądania z jednej instalacji i utrzymuje się, dopóki aplikacja nie zostanie usunięta i zainstalowana ponownie.</p>
+<p><strong>Co OpenAI z tym robi.</strong> Aktualna dokumentacja API OpenAI stwierdza, że dane wysyłane do API nie są wykorzystywane do trenowania ani ulepszania modeli OpenAI, chyba że wyraźnie się na to zgodzisz, że dzienniki monitorowania nadużyć są przechowywane do 30 dni, oraz że odpowiedzi utworzone przez Responses API są domyślnie przechowywane przez 30 dni. Nasze aplikacje polegają na tym 30-dniowym przechowywaniu, aby rozmowa czatu mogła być kontynuowana bez ponownego przesyłania całej treści, dlatego <strong>Twoje żądania AI i odpowiedzi na nie są przechowywane przez OpenAI do 30 dni</strong>. Są to własne domyślne ustawienia OpenAI, a nie zobowiązania, nad którymi mamy kontrolę, i OpenAI może je zmienić w dowolnym momencie. Aktualna wersja jest opisana w <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentacji OpenAI dotyczącej kontroli danych w API</a>.</p>
 <p>Pełną politykę możesz przeczytać tutaj: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Polityka prywatności OpenAI</a>.</p>
-<p>Korzystając z funkcji AI, wyrażasz zgodę na to, że odpowiednie dane (w tym wszelkie zapisane przez Ciebie dane profilu) zostaną wysłane do OpenAI i przetworzone zgodnie z ich politykami. Prosimy, nie wpisuj w AI niczego, czego nie chciałbyś/chciałabyś wysłać na tych warunkach.</p>
+<p>Korzystając z funkcji AI, wyrażasz zgodę na to, że odpowiednie dane (w tym wszelkie dane profilu, które zdecydujesz się zapisać) zostaną wysłane do OpenAI i przetworzone zgodnie z ich zasadami. Nie wpisuj w AI niczego, czego wysłania na tych warunkach nie chciałbyś/chciałabyś się czuć komfortowo.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Jak długo przechowywane są dane</h2>
         <div class="legal-content">
-            <p>Nie przechowujemy kopii danych z Twojej aplikacji na naszych serwerach. Twoje dane pozostają na Twoim urządzeniu i w Twoim iCloud tak długo, jak masz zainstalowaną aplikację i włączoną kopię zapasową iCloud. Poza tym:</p>
+            <p>Nie przechowujemy kopii danych Twojej aplikacji na naszych serwerach. Twoje dane pozostają na Twoim urządzeniu i w Twoim iCloud tak długo, jak masz zainstalowaną aplikację i włączoną kopię zapasową iCloud. Poza tym:</p>
 <ul>
- <li><strong>OpenAI</strong> — zgodnie z aktualną dokumentacją API OpenAI dzienniki monitorowania nadużyć są przechowywane do 30 dni, a odpowiedzi z Responses API są domyślnie przechowywane przez 30 dni. Nasze aplikacje polegają na tym przechowywaniu w przypadku czatów wieloturowych.</li>
- <li><strong>Nasz własny serwer</strong> — nie przechowuje treści zapytań ani odpowiedzi. Rekordy kosztów dla poszczególnych zapytań (data, aplikacja, funkcja, model, liczba tokenów, koszt — bez danych zdrowotnych i bez identyfikatora użytkownika) są obecnie przechowywane bezterminowo.</li>
+ <li><strong>OpenAI</strong> — dzienniki monitorowania nadużyć są przechowywane do 30 dni, a odpowiedzi Responses API są domyślnie przechowywane przez 30 dni. Nasze aplikacje polegają na tym przechowywaniu w przypadku czatów wieloetapowych. Są to domyślne ustawienia OpenAI, które mogą ulec zmianie; zobacz <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentację OpenAI dotyczącą kontroli danych w API</a>.</li>
+ <li><strong>Nasz własny serwer</strong> — nie przechowujemy treści żądań ani odpowiedzi. Zapisy kosztów dla poszczególnych żądań (data, aplikacja, funkcja, model, liczba tokenów, koszt — bez danych zdrowotnych i bez identyfikatora użytkownika) są obecnie przechowywane bezterminowo.</li>
  <li><strong>Firebase Crashlytics / Analytics</strong> — przechowywane przez Google przez domyślny okres retencji naszego projektu.</li>
- <li><strong>RevenueCat</strong> — dane o zakupach i paragonach tak długo, jak masz aktywną subskrypcję, oraz zgodnie z wymogami prawa podatkowego.</li>
+ <li><strong>RevenueCat</strong> — dane zakupu i paragonów tak długo, jak masz aktywną subskrypcję, oraz zgodnie z wymogami prawa podatkowego.</li>
 </ul>
-<p>Wyłączenie funkcji lub usunięcie aplikacji zatrzymuje dalsze zbieranie danych. Ponieważ rekordy przechowywane przez nasz własny serwer nie zawierają niczego, co Cię identyfikuje, nie możemy na żądanie wyszukać ani usunąć w nich „Twoich” wpisów — nie ma w nich niczego, z czym moglibyśmy Cię dopasować.</p>
+<p>Wyłączenie funkcji lub usunięcie aplikacji zatrzymuje dalsze zbieranie danych. Ponieważ zapisy przechowywane na naszym własnym serwerze nie zawierają niczego, co Cię identyfikuje, nie możemy na żądanie wyszukać ani usunąć „Twoich” wpisów w nich — nie ma w nich niczego, co pozwoliłoby Cię dopasować.</p>
         </div>
     </section>
 

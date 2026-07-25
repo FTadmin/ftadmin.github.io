@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API (optional)</h2>
         <div class="legal-content">
-            <p>Die meisten KI-Funktionen unserer Apps basieren auf der OpenAI-API. Cloud-KI ist der <strong>Standardmodus</strong> bei einer Neuinstallation; du kannst die App in den KI-Einstellungen auf geräteinterne Apple Intelligence umstellen oder KI vollständig deaktivieren.</p>
-<p><strong>Was gesendet wird.</strong> Je nach Funktion kann eine Anfrage Folgendes enthalten:</p>
+            <p>Die meisten KI-Funktionen in unseren Apps werden von der OpenAI API angetrieben. Cloud-KI ist bei einer Neuinstallation der <strong>Standardmodus</strong>; du kannst die App in den KI-Einstellungen auf die geräteinterne Apple Intelligence umstellen oder KI vollständig deaktivieren.</p>
+<p><strong>Was wird gesendet.</strong> Je nach Funktion kann eine Anfrage Folgendes enthalten:</p>
 <ul>
- <li>Alles, was du in eine KI-Funktion eingibst — deine Frage oder einen Textabschnitt, den du bearbeiten lassen wolltest.</li>
- <li>Die für diese Funktion relevanten Gesundheitsdaten als Zeilen von Messwerten mit Datum und Uhrzeit. <strong>Dazu gehören auch die frei formulierten Notizen und Tagebucheinträge, die diesen Datensätzen angehängt sind.</strong></li>
- <li>Profil- und Personalisierungskontext, wie oben unter „Profilinformationen“ beschrieben.</li>
- <li>Bei Camera Scan ein Foto, das du von einem Monitor oder einer Waagenanzeige aufnimmst.</li>
- <li>Beim Vorlesen (Text-zu-Sprache) der vorgelesene Text, bei dem es sich normalerweise um eine KI-Antwort zu deinen Daten handelt.</li>
+ <li>Alles, was du in eine KI-Funktion eingibst — deine Frage oder einen Text, den du bearbeiten lassen möchtest.</li>
+ <li>Die für diese Funktion relevanten Gesundheitsdaten als Zeilen von Messwerten mit Datum und Uhrzeit. <strong>Dazu gehören auch die Freitextnotizen und Tagebucheinträge, die diesen Einträgen beigefügt sind.</strong></li>
+ <li>Profil- und Personalisierungskontext, wie oben unter „Profilinformationen" beschrieben.</li>
+ <li>Für Camera Scan ein Foto, das du von der Anzeige eines Messgeräts oder einer Waage aufnimmst.</li>
+ <li>Für die Vorlesefunktion (Text-zu-Sprache) der vorgelesene Text, üblicherweise eine KI-Antwort zu deinen Daten.</li>
 </ul>
-<p><strong>Wann es gesendet wird.</strong> Die meisten KI-Funktionen laufen nur, wenn du sie öffnest und ein Ergebnis anforderst. Manche nicht: Solange Cloud-KI aktiviert ist, erstellt die App auch von sich aus kurze personalisierte Nachrichten — einen täglichen Hinweis, eine Geburtstags- oder Jubiläumsgrußbotschaft, eine Willkommen-zurück-Notiz — und sendet dazu eine Reihe deiner jüngsten Datensätze (bis zu 30) sowie deinen Profilkontext an OpenAI, <strong>wenn du die App oder ihre Tagesansicht öffnest, ohne dass du ein KI-Ergebnis angefordert hast</strong>. Wenn du KI deaktivierst oder auf Apple Intelligence umstellst, wird dies gestoppt.</p>
-<p><strong>Eine installationsbezogene Kennung.</strong> Jede Installation erzeugt eine zufällige Kennung und sendet sie mit jeder Anfrage an OpenAI, als Cache-Schlüssel, der wiederholte Anfragen günstiger macht. Sie enthält nichts über dich und ist nicht mit deinem Namen, Konto oder deiner Geräte-ID verknüpft, ist aber stabil: Sie ermöglicht es OpenAI, alle Anfragen einer Installation einander zuzuordnen, und bleibt bestehen, bis die App gelöscht und neu installiert wird.</p>
-<p><strong>Was OpenAI damit macht.</strong> Laut der aktuellen API-Dokumentation von OpenAI werden an die API gesendete Daten nicht zum Training oder zur Verbesserung von OpenAI-Modellen verwendet, sofern du dem nicht ausdrücklich zustimmst; Missbrauchsüberwachungsprotokolle werden bis zu 30 Tage aufbewahrt, und über die Responses API erstellte Antworten werden standardmäßig 30 Tage gespeichert. Unsere Apps sind auf diese 30-tägige Speicherung angewiesen, damit sich ein Chat-Gespräch über mehrere Runden fortsetzen lässt, ohne es erneut hochzuladen — daher <strong>werden deine KI-Anfragen und die zugehörigen Antworten bis zu 30 Tage lang bei OpenAI aufbewahrt</strong>. Dies sind die Bedingungen von OpenAI, nicht unsere, und OpenAI kann sie ändern.</p>
-<p>Die vollständige Richtlinie findest du hier: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI-Datenschutzrichtlinie</a>.</p>
-<p>Indem du eine KI-Funktion nutzt, stimmst du zu, dass die relevanten Daten (einschließlich aller Profildetails, die du gespeichert hast) an OpenAI gesendet und gemäß deren Richtlinien verarbeitet werden. Gib bitte nichts in die KI ein, das du nicht unter diesen Bedingungen senden möchtest.</p>
+<p><strong>Wann es gesendet wird.</strong> Die meisten KI-Funktionen laufen nur, wenn du sie öffnest und ein Ergebnis anforderst. Manche nicht: Solange Cloud-KI aktiviert ist, erstellt die App auch von sich aus kurze personalisierte Nachrichten — einen täglichen Hinweis, eine Geburtstags- oder Meilenstein-Glückwunschnachricht, eine Willkommen-zurück-Notiz — und sendet dafür einen Stapel deiner letzten Einträge (bis zu 30) sowie deinen Profilkontext an OpenAI, <strong>wenn du die App oder ihre Tagesansicht öffnest, ohne dass du ein KI-Ergebnis angefordert hast</strong>. Wird KI ausgeschaltet oder auf Apple Intelligence umgestellt, stoppt dies.</p>
+<p><strong>Eine installationsbezogene Kennung.</strong> Jede Installation erzeugt eine zufällige Kennung und sendet sie bei jeder Anfrage an OpenAI, als Cache-Schlüssel, der wiederholte Anfragen günstiger macht. Sie enthält nichts über dich und ist nicht mit deinem Namen, Konto oder deiner Geräte-ID verknüpft, ist aber stabil: Sie ermöglicht es OpenAI, alle Anfragen einer Installation einander zuzuordnen, und bleibt bestehen, bis die App gelöscht und neu installiert wird.</p>
+<p><strong>Was OpenAI damit macht.</strong> Laut aktueller API-Dokumentation von OpenAI werden an die API gesendete Daten nicht zum Trainieren oder Verbessern von OpenAI-Modellen verwendet, sofern du nicht ausdrücklich zustimmst; Protokolle zur Missbrauchsüberwachung werden bis zu 30 Tage aufbewahrt, und über die Responses API erstellte Antworten werden standardmäßig 30 Tage lang gespeichert. Unsere Apps verlassen sich auf diese 30-tägige Speicherung, damit sich ein Chat-Gespräch über mehrere Runden fortsetzen lässt, ohne es erneut hochzuladen — daher werden <strong>deine KI-Anfragen und ihre Antworten bis zu 30 Tage lang bei OpenAI aufbewahrt</strong>. Dies sind OpenAIs eigene Standardeinstellungen, keine Zusagen, die wir kontrollieren, und OpenAI kann sie jederzeit ändern. Die aktuelle Fassung findest du in der <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">Dokumentation von OpenAI zu den API-Datenkontrollen</a>.</p>
+<p>Die vollständige Richtlinie kannst du hier lesen: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI-Datenschutzrichtlinie</a>.</p>
+<p>Durch die Nutzung einer KI-Funktion stimmst du zu, dass die betreffenden Daten (einschließlich aller von dir gespeicherten Profilangaben) an OpenAI gesendet und gemäß deren Richtlinien verarbeitet werden. Bitte gib nichts in die KI ein, das du nicht bereit wärst, unter diesen Bedingungen zu senden.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Wie lange Daten aufbewahrt werden</h2>
         <div class="legal-content">
-            <p>Wir bewahren keine Kopien deiner App-Daten auf unseren Servern auf. Deine Daten bleiben auf deinem Gerät und in deiner iCloud, solange du die App installiert hast und das iCloud-Backup aktiviert ist. Darüber hinaus gilt:</p>
+            <p>Wir speichern keine Kopien deiner App-Daten auf unseren Servern. Deine Daten bleiben auf deinem Gerät und in deiner iCloud, solange du die App installiert hast und das iCloud-Backup aktiviert ist. Darüber hinaus gilt:</p>
 <ul>
- <li><strong>OpenAI</strong> — gemäß der aktuellen API-Dokumentation von OpenAI werden Missbrauchsüberwachungsprotokolle bis zu 30 Tage aufbewahrt, und über die Responses API erstellte Antworten werden standardmäßig 30 Tage gespeichert. Unsere Apps sind für Chats über mehrere Runden auf diese Speicherung angewiesen.</li>
- <li><strong>Unser eigener Server</strong> — es wird kein Anfrage- oder Antwortinhalt gespeichert. Kostendatensätze pro Anfrage (Datum, App, Funktion, Modell, Token-Anzahl, Kosten — keine Gesundheitsdaten und keine Nutzerkennung) werden derzeit unbegrenzt aufbewahrt.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — von Google für die Standard-Aufbewahrungsdauer unseres Projekts gespeichert.</li>
+ <li><strong>OpenAI</strong> — Protokolle zur Missbrauchsüberwachung werden bis zu 30 Tage aufbewahrt, und Antworten der Responses API werden standardmäßig 30 Tage lang gespeichert. Unsere Apps sind für Chats mit mehreren Runden auf diese Speicherung angewiesen. Dies sind die Standardeinstellungen von OpenAI und können sich ändern; siehe die <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">Dokumentation von OpenAI zu den API-Datenkontrollen</a>.</li>
+ <li><strong>Unser eigener Server</strong> — es werden keine Anfrage- oder Antwortinhalte gespeichert. Kostendatensätze pro Anfrage (Datum, App, Funktion, Modell, Token-Anzahl, Kosten — keine Gesundheitsdaten und keine Nutzerkennung) werden derzeit unbefristet aufbewahrt.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — von Google für den Standard-Aufbewahrungszeitraum unseres Projekts gespeichert.</li>
  <li><strong>RevenueCat</strong> — Kauf- und Belegdaten, solange du ein aktives Abonnement hast und wie es das Steuerrecht vorschreibt.</li>
 </ul>
-<p>Das Deaktivieren einer Funktion oder das Löschen der App beendet die weitere Erhebung. Da die von unserem eigenen Server gespeicherten Datensätze nichts enthalten, was dich identifiziert, können wir darin auf Anfrage nicht nach „deinen“ Einträgen suchen oder sie löschen — es gibt darin nichts, womit wir dich abgleichen könnten.</p>
+<p>Das Deaktivieren einer Funktion oder das Löschen der App beendet die weitere Erfassung. Da die von unserem eigenen Server gespeicherten Datensätze nichts enthalten, das dich identifiziert, können wir auf Anfrage keine „deine" Einträge darin suchen oder löschen — es gibt darin nichts, womit wir dich abgleichen könnten.</p>
         </div>
     </section>
 

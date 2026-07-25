@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API (Tùy chọn)</h2>
         <div class="legal-content">
-            <p>Hầu hết các tính năng AI trong ứng dụng của chúng tôi được hỗ trợ bởi OpenAI API. AI trên đám mây là <strong>chế độ mặc định</strong> khi cài đặt mới; bạn có thể chuyển ứng dụng sang Apple Intelligence xử lý trên thiết bị, hoặc tắt AI hoàn toàn trong phần cài đặt AI của ứng dụng.</p>
-<p><strong>Những gì được gửi đi.</strong> Tùy thuộc vào tính năng, một yêu cầu có thể bao gồm:</p>
+            <p>Hầu hết các tính năng AI trong ứng dụng của chúng tôi được vận hành bởi OpenAI API. AI trên đám mây là <strong>chế độ mặc định</strong> khi cài đặt mới; bạn có thể chuyển ứng dụng sang Apple Intelligence xử lý trên thiết bị, hoặc tắt hoàn toàn AI, trong phần cài đặt AI của ứng dụng.</p>
+<p><strong>Những gì được gửi đi.</strong> Tùy theo tính năng, một yêu cầu có thể bao gồm:</p>
 <ul>
  <li>Bất cứ điều gì bạn nhập vào một tính năng AI — câu hỏi của bạn, hoặc một đoạn văn bản bạn yêu cầu AI xử lý.</li>
- <li>Các bản ghi sức khỏe thuộc phạm vi của tính năng đó, dưới dạng các hàng số liệu kèm ngày giờ. <strong>Điều này bao gồm cả các ghi chú văn bản tự do và mục nhật ký đính kèm với các bản ghi đó.</strong></li>
- <li>Ngữ cảnh hồ sơ và cá nhân hóa, như đã mô tả trong mục “Thông tin hồ sơ” ở trên.</li>
- <li>Đối với Camera Scan, một bức ảnh bạn chụp màn hình của một máy đo hoặc cân.</li>
- <li>Đối với tính năng đọc to (chuyển văn bản thành giọng nói), văn bản đang được đọc, thường là một câu trả lời của AI về dữ liệu của bạn.</li>
+ <li>Các bản ghi sức khỏe thuộc phạm vi của tính năng đó, dưới dạng các hàng số liệu kèm ngày giờ. <strong>Điều này bao gồm cả các ghi chú văn bản tự do và nhật ký đính kèm những bản ghi đó.</strong></li>
+ <li>Bối cảnh hồ sơ và cá nhân hóa, như đã mô tả ở phần “Thông tin hồ sơ” phía trên.</li>
+ <li>Đối với Camera Scan, một bức ảnh bạn chụp màn hình máy đo hoặc cân.</li>
+ <li>Đối với đọc to (chuyển văn bản thành giọng nói), văn bản được đọc, thường là câu trả lời của AI về dữ liệu của bạn.</li>
 </ul>
-<p><strong>Khi nào dữ liệu được gửi đi.</strong> Hầu hết các tính năng AI chỉ chạy khi bạn mở chúng và yêu cầu một kết quả. Một số thì không: trong khi AI trên đám mây đang bật, ứng dụng cũng tự tạo ra các tin nhắn cá nhân hóa ngắn — một nhận định hằng ngày, một lời chúc sinh nhật hoặc cột mốc, một ghi chú chào mừng trở lại — và để làm điều đó, ứng dụng gửi một loạt các bản ghi gần đây nhất của bạn (tối đa 30) cùng ngữ cảnh hồ sơ của bạn đến OpenAI <strong>khi bạn mở ứng dụng hoặc màn hình xem theo ngày của ứng dụng, mà không cần bạn yêu cầu một kết quả AI</strong>. Tắt AI, hoặc chuyển sang Apple Intelligence, sẽ dừng việc này.</p>
-<p><strong>Một mã định danh riêng cho từng lượt cài đặt.</strong> Mỗi lượt cài đặt tạo ra một mã định danh ngẫu nhiên và gửi nó đến OpenAI cùng với mọi yêu cầu, như một khóa bộ nhớ đệm giúp các yêu cầu lặp lại rẻ hơn. Mã này không chứa bất kỳ thông tin nào về bạn và không liên kết với tên, tài khoản, hoặc ID thiết bị của bạn, nhưng nó ổn định: nó cho phép OpenAI liên kết tất cả các yêu cầu từ một lượt cài đặt với nhau, và tồn tại cho đến khi ứng dụng bị xóa và cài đặt lại.</p>
-<p><strong>OpenAI làm gì với dữ liệu đó.</strong> Tài liệu API hiện hành của OpenAI nêu rõ dữ liệu gửi đến API không được dùng để huấn luyện hoặc cải thiện các mô hình của OpenAI trừ khi bạn chủ động cho phép, nhật ký giám sát lạm dụng được lưu giữ tối đa 30 ngày, và các phản hồi được tạo qua Responses API được lưu trữ trong 30 ngày theo mặc định. Ứng dụng của chúng tôi dựa vào việc lưu trữ 30 ngày này để một cuộc trò chuyện có thể tiếp tục qua nhiều lượt mà không cần tải lại toàn bộ, do đó <strong>các yêu cầu AI của bạn và câu trả lời của chúng được OpenAI lưu giữ tối đa 30 ngày</strong>. Đây là điều khoản của OpenAI, không phải của chúng tôi, và họ có thể thay đổi chúng.</p>
+<p><strong>Khi nào dữ liệu được gửi đi.</strong> Hầu hết các tính năng AI chỉ hoạt động khi bạn mở chúng và yêu cầu một kết quả. Một số thì không: khi AI trên đám mây đang bật, ứng dụng cũng tự động tạo ra các thông báo cá nhân hóa ngắn — một nhận định hằng ngày, lời chúc sinh nhật hoặc mốc quan trọng, một ghi chú chào mừng trở lại — và để làm việc đó, ứng dụng gửi một loạt các bản ghi gần đây nhất của bạn (tối đa 30 bản ghi) cùng bối cảnh hồ sơ của bạn tới OpenAI <strong>khi bạn mở ứng dụng hoặc màn hình xem theo ngày, mà không cần bạn yêu cầu kết quả AI</strong>. Tắt AI, hoặc chuyển sang Apple Intelligence, sẽ dừng việc này lại.</p>
+<p><strong>Một mã định danh cho mỗi lượt cài đặt.</strong> Mỗi lượt cài đặt tạo ra một mã định danh ngẫu nhiên và gửi mã đó tới OpenAI cùng mọi yêu cầu, như một khóa bộ nhớ đệm giúp các yêu cầu lặp lại rẻ hơn. Mã này không chứa bất kỳ thông tin nào về bạn và không liên kết với tên, tài khoản hay ID thiết bị của bạn, nhưng nó ổn định: nó cho phép OpenAI liên kết tất cả các yêu cầu từ một lượt cài đặt với nhau, và tồn tại cho đến khi ứng dụng bị xóa và cài đặt lại.</p>
+<p><strong>OpenAI làm gì với dữ liệu đó.</strong> Tài liệu API hiện hành của OpenAI nêu rõ rằng dữ liệu gửi tới API không được dùng để huấn luyện hay cải thiện các mô hình của OpenAI trừ khi bạn chủ động đồng ý, rằng nhật ký giám sát lạm dụng được lưu giữ tối đa 30 ngày, và rằng các phản hồi được tạo qua Responses API được lưu trữ mặc định trong 30 ngày. Ứng dụng của chúng tôi dựa vào việc lưu trữ 30 ngày đó để một cuộc trò chuyện có thể tiếp tục qua nhiều lượt mà không cần tải lại toàn bộ, vì vậy <strong>các yêu cầu AI của bạn và câu trả lời cho chúng được OpenAI lưu giữ tối đa 30 ngày</strong>. Đây là các thiết lập mặc định riêng của OpenAI, không phải cam kết mà chúng tôi kiểm soát, và OpenAI có thể thay đổi chúng bất cứ lúc nào. Phiên bản hiện hành được nêu trong <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">tài liệu về kiểm soát dữ liệu API của OpenAI</a>.</p>
 <p>Bạn có thể đọc toàn bộ chính sách tại đây: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Chính sách quyền riêng tư của OpenAI</a>.</p>
-<p>Bằng cách sử dụng một tính năng AI, bạn đồng ý rằng dữ liệu liên quan (bao gồm bất kỳ thông tin hồ sơ nào bạn đã chọn lưu) sẽ được gửi đến OpenAI và xử lý theo chính sách của họ. Vui lòng không nhập vào AI bất cứ điều gì bạn cảm thấy không thoải mái khi gửi đi theo các điều khoản đó.</p>
+<p>Khi sử dụng một tính năng AI, bạn đồng ý rằng dữ liệu liên quan (bao gồm mọi thông tin hồ sơ bạn đã chọn lưu lại) sẽ được gửi tới OpenAI và được xử lý theo chính sách của họ. Vui lòng không nhập vào AI bất cứ điều gì mà bạn sẽ không thoải mái khi gửi đi theo các điều khoản đó.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Thời gian lưu dữ liệu</h2>
         <div class="legal-content">
-            <p>Chúng tôi không giữ bản sao dữ liệu ứng dụng của bạn trên máy chủ của mình. Dữ liệu của bạn ở lại trên thiết bị của bạn và trong iCloud của bạn miễn là bạn còn cài đặt ứng dụng và bật sao lưu iCloud. Ngoài ra:</p>
+            <p>Chúng tôi không lưu giữ bản sao dữ liệu ứng dụng của bạn trên máy chủ của chúng tôi. Dữ liệu của bạn vẫn ở trên thiết bị và trong iCloud của bạn miễn là bạn còn cài đặt ứng dụng và bật sao lưu iCloud. Ngoài ra:</p>
 <ul>
- <li><strong>OpenAI</strong> — theo tài liệu API hiện hành của OpenAI, nhật ký giám sát lạm dụng được lưu giữ tối đa 30 ngày và các phản hồi Responses API được lưu trữ trong 30 ngày theo mặc định. Ứng dụng của chúng tôi phụ thuộc vào việc lưu trữ đó cho các cuộc trò chuyện nhiều lượt.</li>
- <li><strong>Máy chủ của riêng chúng tôi</strong> — không có nội dung yêu cầu hoặc câu trả lời nào được lưu trữ. Các bản ghi chi phí cho từng yêu cầu (ngày, ứng dụng, tính năng, mô hình, số lượng token, chi phí — không có dữ liệu sức khỏe và không có mã định danh người dùng) hiện được lưu giữ vô thời hạn.</li>
+ <li><strong>OpenAI</strong> — nhật ký giám sát lạm dụng được lưu giữ tối đa 30 ngày và các phản hồi Responses API được lưu trữ mặc định trong 30 ngày. Ứng dụng của chúng tôi phụ thuộc vào việc lưu trữ đó cho các cuộc trò chuyện nhiều lượt. Đây là các thiết lập mặc định của OpenAI và có thể thay đổi; xem <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">tài liệu về kiểm soát dữ liệu API của OpenAI</a>.</li>
+ <li><strong>Máy chủ riêng của chúng tôi</strong> — không lưu trữ nội dung yêu cầu hay phản hồi. Các bản ghi chi phí theo từng yêu cầu (ngày, ứng dụng, tính năng, mô hình, số lượng token, chi phí — không có dữ liệu sức khỏe và không có mã định danh người dùng) hiện được lưu giữ vô thời hạn.</li>
  <li><strong>Firebase Crashlytics / Analytics</strong> — được Google lưu giữ trong khoảng thời gian lưu trữ mặc định của dự án chúng tôi.</li>
- <li><strong>RevenueCat</strong> — dữ liệu mua hàng và biên lai trong thời gian bạn có gói đăng ký đang hoạt động, và theo yêu cầu của luật thuế.</li>
+ <li><strong>RevenueCat</strong> — dữ liệu mua hàng và biên lai trong suốt thời gian bạn có gói đăng ký đang hoạt động và theo yêu cầu của luật thuế.</li>
 </ul>
-<p>Tắt một tính năng hoặc xóa ứng dụng sẽ dừng việc thu thập thêm dữ liệu. Vì các bản ghi mà máy chủ của riêng chúng tôi lưu giữ không chứa bất kỳ điều gì nhận dạng bạn, chúng tôi không thể tìm kiếm hoặc xóa các mục “của bạn” trong đó theo yêu cầu — không có gì trong đó để đối chiếu với bạn.</p>
+<p>Tắt một tính năng hoặc xóa ứng dụng sẽ dừng việc thu thập thêm dữ liệu. Vì các bản ghi mà máy chủ riêng của chúng tôi lưu giữ không chứa bất cứ điều gì nhận diện được bạn, chúng tôi không thể tìm kiếm hay xóa các mục “của bạn” trong đó theo yêu cầu — không có gì trong đó để đối chiếu với bạn.</p>
         </div>
     </section>
 

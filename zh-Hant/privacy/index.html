@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API（選購）</h2>
         <div class="legal-content">
-            <p>我們應用程式中大多數的 AI 功能由 OpenAI API 驅動。在全新安裝時，雲端 AI 是<strong>預設模式</strong>；你可以在應用程式的 AI 設定中，將應用程式切換為裝置端的 Apple Intelligence，或完全關閉 AI。</p>
-<p><strong>傳送了什麼內容。</strong>依功能不同，一次請求可能包含：</p>
+            <p>我們應用程式中的大多數 AI 功能由 OpenAI API 提供支援。雲端 AI 是新安裝時的<strong>預設模式</strong>;你可以在應用程式的 AI 設定中,將應用程式切換為裝置端執行的 Apple Intelligence,或完全關閉 AI。</p>
+<p><strong>會傳送什麼。</strong>視功能而定,一次請求可能包含:</p>
 <ul>
- <li>你在 AI 功能中輸入的任何內容——你的提問，或你要求 AI 處理的一段文字。</li>
- <li>該功能範圍內的健康記錄，以帶有日期與時間的數值列形式呈現。<strong>這包括附加在這些記錄上的自由文字備註與日記項目。</strong></li>
- <li>個人檔案與個人化情境，如上方「個人檔案資訊」一節所述。</li>
- <li>就 Camera Scan 而言，是你拍攝的血壓計或體重計顯示畫面的照片。</li>
- <li>就朗讀（文字轉語音）而言，是正在被朗讀的文字，通常是關於你資料的 AI 回覆。</li>
+ <li>你在 AI 功能中輸入的任何內容——你的問題,或你要求它處理的一段文字。</li>
+ <li>該功能範圍內的健康紀錄,以帶有日期和時間的讀數列呈現。<strong>這包括附加在這些紀錄上的自由文字備註與日記內容。</strong></li>
+ <li>個人檔案與個人化情境資訊,如上方「個人檔案資訊」所述。</li>
+ <li>就 Camera Scan 而言,你為監測儀或體重計顯示畫面所拍攝的照片。</li>
+ <li>就朗讀(文字轉語音)而言,被朗讀的文字,通常是關於你資料的 AI 回答。</li>
 </ul>
-<p><strong>何時傳送。</strong>大多數 AI 功能只有在你開啟並要求結果時才會運作。但有些不是如此：當雲端 AI 開啟時，應用程式也會自行產生簡短的個人化訊息——每日洞察、生日或里程碑祝福、歡迎回來的訊息——為此，應用程式會在<strong>你開啟應用程式或其日檢視畫面時，在你未主動要求 AI 結果的情況下</strong>，將你最近的一批記錄（最多 30 筆）與你的個人檔案情境傳送至 OpenAI。關閉 AI 或切換至 Apple Intelligence 會停止此行為。</p>
-<p><strong>逐次安裝的識別碼。</strong>每次安裝都會產生一組隨機識別碼，並隨每次請求一併傳送給 OpenAI，作為快取金鑰，以降低重複請求的成本。此識別碼不含任何關於你的資訊，也不會與你的姓名、帳戶或裝置 ID 產生連結，但它是穩定不變的：它讓 OpenAI 能夠將來自同一次安裝的所有請求彼此關聯，並會持續存在，直到應用程式被移除並重新安裝為止。</p>
-<p><strong>OpenAI 如何處理這些資料。</strong>OpenAI 目前的 API 文件表示，除非你明確選擇加入，否則傳送至 API 的資料不會用於訓練或改進 OpenAI 的模型；濫用監控紀錄最多保留 30 天；透過 Responses API 建立的回應，預設會儲存 30 天。我們的應用程式仰賴這 30 天的儲存機制，讓對話能夠跨多輪延續，而無需重新上傳，因此<strong>你的 AI 請求及其回覆會由 OpenAI 保留最多 30 天</strong>。這些是 OpenAI 的條款，而非我們的條款，OpenAI 可能會加以變更。</p>
-<p>你可以在此閱讀完整政策：<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI 隱私權政策</a>。</p>
-<p>使用 AI 功能即表示你同意將相關資料（包括你選擇儲存的任何個人檔案細節）傳送給 OpenAI，並依其政策進行處理。請不要在 AI 中輸入任何你不願意依照上述條款傳送出去的內容。</p>
+<p><strong>何時傳送。</strong>大多數 AI 功能只有在你開啟並要求結果時才會運作。但有些不是這樣:雲端 AI 開啟時,應用程式也會自行產生簡短的個人化訊息——每日洞察、生日或里程碑祝賀、歡迎回來的訊息——為此,應用程式會<strong>在你開啟應用程式或其日檢視畫面時</strong>,將你最近的一批紀錄(最多 30 筆)與個人檔案情境資訊傳送給 OpenAI,而你並未要求任何 AI 結果。關閉 AI 或切換為 Apple Intelligence 會停止這項行為。</p>
+<p><strong>每次安裝的識別碼。</strong>每次安裝都會產生一組隨機識別碼,並在每次請求時將其傳送給 OpenAI,作為讓重複請求成本更低的快取金鑰。它不包含任何關於你的資訊,也不會與你的姓名、帳號或裝置 ID 連結,但它是穩定的:這讓 OpenAI 能將來自同一次安裝的所有請求彼此關聯,並會一直存在,直到應用程式被刪除並重新安裝為止。</p>
+<p><strong>OpenAI 如何處理這些資料。</strong>OpenAI 目前的 API 文件指出,傳送至 API 的資料不會用於訓練或改進 OpenAI 的模型,除非你明確選擇加入;濫用監控紀錄最多保留 30 天;而透過 Responses API 建立的回應,預設會儲存 30 天。我們的應用程式依賴這 30 天的儲存,讓聊天對話能跨多輪繼續進行,而不必重新上傳全部內容,因此<strong>你的 AI 請求與其回覆會由 OpenAI 保留最多 30 天</strong>。這些是 OpenAI 自身的預設值,並非我們所能掌控的承諾,OpenAI 隨時可能變更。目前版本詳見<a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI 的 API 資料控制說明文件</a>。</p>
+<p>你可以在此閱讀完整政策:<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI 隱私權政策</a>。</p>
+<p>使用 AI 功能即表示你同意將相關資料(包括你選擇儲存的任何個人檔案細節)傳送給 OpenAI,並依其政策進行處理。請不要在 AI 中輸入任何你不願意依這些條款傳送出去的內容。</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>資料保留期限</h2>
         <div class="legal-content">
-            <p>我們不會在我們的伺服器上保留你應用程式資料的副本。只要你仍安裝該應用程式且開啟 iCloud 備份，你的資料就會持續留在你的裝置與 iCloud 中。除此之外：</p>
+            <p>我們不會在自己的伺服器上保留你應用程式資料的副本。只要你仍安裝該應用程式並開啟 iCloud 備份,你的資料就會保留在你的裝置與 iCloud 中。除此之外:</p>
 <ul>
- <li><strong>OpenAI</strong>——根據 OpenAI 目前的 API 文件，濫用監控紀錄最多保留 30 天，Responses API 的回應預設會儲存 30 天。我們的應用程式在多輪對話功能上仰賴此儲存機制。</li>
- <li><strong>我們自己的伺服器</strong>——不會儲存任何請求或回覆的內容。每次請求的成本紀錄（日期、應用程式、功能、模型、token 數量、成本——不含健康資料，也不含使用者識別碼）目前會被無限期保留。</li>
- <li><strong>Firebase Crashlytics／Analytics</strong>——由 Google 依我們專案的預設保留期限保存。</li>
- <li><strong>RevenueCat</strong>——購買與收據資料會在你訂閱有效期間保留，並依稅法規定的期限保存。</li>
+ <li><strong>OpenAI</strong>——濫用監控紀錄最多保留 30 天,Responses API 的回應預設儲存 30 天。我們的應用程式依賴此儲存機制來支援多輪對話。這些是 OpenAI 的預設值,可能會有所變動;詳見<a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI 的 API 資料控制說明文件</a>。</li>
+ <li><strong>我們自己的伺服器</strong>——不會儲存任何請求或回覆內容。每次請求的成本紀錄(日期、應用程式、功能、模型、權杖數量、成本——不含健康資料,也不含使用者識別碼)目前會無限期保留。</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong>——由 Google 依我們專案的預設保留期限保存。</li>
+ <li><strong>RevenueCat</strong>——只要你仍有有效訂閱,並依稅法要求,購買與收據資料會持續保留。</li>
 </ul>
-<p>關閉某項功能或刪除應用程式，會停止進一步收集資料。由於我們自己伺服器所保留的紀錄不含任何能識別你身分的資訊，我們無法應要求在其中搜尋或刪除「你的」項目——因為當中根本沒有任何資訊可以拿來與你比對。</p>
+<p>關閉某項功能或刪除應用程式會停止進一步蒐集資料。由於我們自己伺服器保留的紀錄不含任何能識別你身分的資訊,我們無法應要求在其中搜尋或刪除「你的」項目——因為當中沒有任何可以用來比對出你的資訊。</p>
         </div>
     </section>
 

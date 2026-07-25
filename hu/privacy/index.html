@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API (opcionális)</h2>
         <div class="legal-content">
-            <p>Appjaink legtöbb AI funkcióját az OpenAI API működteti. A felhőalapú AI az <strong>alapértelmezett mód</strong> új telepítés esetén; az app AI-beállításaiban átválthatsz eszközön futó Apple Intelligence-re, vagy teljesen kikapcsolhatod az AI-t.</p>
+            <p>Alkalmazásaink legtöbb AI-funkciója az OpenAI API-t használja. A felhőalapú AI az <strong>alapértelmezett mód</strong> egy új telepítésnél; az alkalmazás AI-beállításaiban átválthatsz az eszközön futó Apple Intelligence-re, vagy teljesen kikapcsolhatod az AI-t.</p>
 <p><strong>Mi kerül elküldésre.</strong> A funkciótól függően egy kérés tartalmazhatja a következőket:</p>
 <ul>
- <li>Bármit, amit egy AI funkcióba beírsz — a kérdésedet, vagy egy szövegrészt, amellyel dolgoztatni akartad.</li>
- <li>Az adott funkció hatókörébe tartozó egészségügyi adatokat, mérési sorokként, dátummal és időponttal. <strong>Ez magában foglalja az ezekhez a rekordokhoz csatolt szabadszöveges megjegyzéseket és naplóbejegyzéseket is.</strong></li>
- <li>A profil- és személyre szabási kontextust, ahogy a fenti „Profiladatok” szakaszban leírtuk.</li>
- <li>Kamerás beolvasás esetén egy fotót, amelyet egy mérőműszer vagy mérleg kijelzőjéről készítesz.</li>
- <li>Felolvasás (szövegfelolvasás) esetén a felolvasott szöveget, ami rendszerint egy, az adataidról szóló AI-válasz.</li>
+ <li>Bármit, amit egy AI-funkcióba beírsz — a kérdésedet, vagy egy szövegrészt, amelynek feldolgozását kérted.</li>
+ <li>Az adott funkcióhoz tartozó egészségügyi adatokat, méréssorok formájában, dátummal és időponttal. <strong>Ez magában foglalja az ezekhez az adatokhoz csatolt szabad szöveges megjegyzéseket és naplóbejegyzéseket is.</strong></li>
+ <li>A profil- és személyre szabási kontextust, ahogy azt a fenti "Profilinformációk" pontban leírtuk.</li>
+ <li>Kamerás beolvasás esetén egy fényképet, amelyet egy mérőműszer vagy mérleg kijelzőjéről készítesz.</li>
+ <li>Felolvasás (szövegfelolvasás) esetén a felolvasott szöveget, amely általában az adataidra vonatkozó AI-választ tartalmazza.</li>
 </ul>
-<p><strong>Mikor kerül elküldésre.</strong> A legtöbb AI funkció csak akkor fut le, amikor megnyitod és eredményt kérsz tőle. Néhány nem így működik: amíg a felhőalapú AI be van kapcsolva, az app önmagától is generál rövid, személyre szabott üzeneteket — napi meglátást, születésnapi vagy mérföldkő-üdvözlést, „üdv újra itt” üzenetet —, és ehhez elküldi a legutóbbi rekordjaid egy kötegét (legfeljebb 30-at) és a profilkontextusodat az OpenAI-nak <strong>amikor megnyitod az appot vagy annak napi nézetét, anélkül hogy AI-eredményt kértél volna</strong>. Az AI kikapcsolása, vagy az Apple Intelligence-re való átváltás, leállítja ezt.</p>
-<p><strong>Egy telepítésenkénti azonosító.</strong> Minden telepítés generál egy véletlenszerű azonosítót, amelyet minden kéréssel elküld az OpenAI-nak, gyorsítótár-kulcsként, ami olcsóbbá teszi az ismételt kéréseket. Nem tartalmaz semmit rólad, és nincs összekapcsolva a neveddel, fiókoddal vagy készülékazonosítóddal, de állandó: lehetővé teszi az OpenAI számára, hogy egy telepítés összes kérését egymáshoz kapcsolja, és mindaddig megmarad, amíg az appot törlöd és újratelepíted.</p>
-<p><strong>Mit csinál vele az OpenAI.</strong> Az OpenAI jelenlegi API-dokumentációja szerint az API-nak küldött adatokat nem használják fel OpenAI-modellek betanítására vagy fejlesztésére, hacsak kifejezetten nem járulsz hozzá, a visszaélés-figyelési naplókat legfeljebb 30 napig őrzik meg, és a Responses API-n keresztül létrehozott válaszokat alapértelmezetten 30 napig tárolják. Az appjaink erre a 30 napos tárolásra támaszkodnak, hogy egy beszélgetés folytatódhasson a fordulók között anélkül, hogy újra fel kellene tölteni, ezért <strong>az AI-kéréseidet és azok válaszait az OpenAI legfeljebb 30 napig őrzi meg</strong>. Ezek az OpenAI feltételei, nem a mieink, és ők bármikor megváltoztathatják őket.</p>
-<p>A teljes szabályzatot itt olvashatod: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI adatvédelmi szabályzat</a>.</p>
-<p>Egy AI funkció használatával elfogadod, hogy a releváns adatok (beleértve bármely elmentett profiladatot) elküldésre kerülnek az OpenAI-nak, és az ő szabályzataik szerint kerülnek feldolgozásra. Kérjük, ne írj be az AI-ba olyat, amit nem szeretnél ezekkel a feltételekkel elküldeni.</p>
+<p><strong>Mikor kerül elküldésre.</strong> A legtöbb AI-funkció csak akkor fut, amikor megnyitod és eredményt kérsz. Néhány nem: amíg a felhőalapú AI be van kapcsolva, az alkalmazás önállóan is generál rövid, személyre szabott üzeneteket — napi meglátást, születésnapi vagy mérföldkő-üdvözletet, visszatérést köszöntő üzenetet —, és ehhez elküldi a legutóbbi bejegyzéseid egy csoportját (legfeljebb 30-at) és a profilkontextusodat az OpenAI-nak <strong>akkor, amikor megnyitod az alkalmazást vagy annak napi nézetét, anélkül hogy AI-eredményt kértél volna</strong>. Ha kikapcsolod az AI-t, vagy átváltasz az Apple Intelligence-re, ez leáll.</p>
+<p><strong>Telepítésenkénti azonosító.</strong> Minden telepítés létrehoz egy véletlenszerű azonosítót, és minden kéréssel elküldi azt az OpenAI-nak, gyorsítótár-kulcsként, amely alacsonyan tartja az ismételt kérések költségét. Nem tartalmaz rólad semmilyen adatot, és nincs kapcsolatban a neveddel, fiókoddal vagy eszközazonosítóddal, de állandó: lehetővé teszi, hogy az OpenAI egymáshoz kapcsolja az egy telepítésből érkező összes kérést, és mindaddig megmarad, amíg az alkalmazást törlöd, majd újratelepíted.</p>
+<p><strong>Mit kezd vele az OpenAI.</strong> Az OpenAI jelenlegi API-dokumentációja szerint az API-nak küldött adatokat nem használják fel az OpenAI modelljeinek betanítására vagy fejlesztésére, hacsak ehhez kifejezetten hozzá nem járulsz, a visszaélés-figyelési naplókat legfeljebb 30 napig őrzik meg, és a Responses API-n keresztül létrehozott válaszokat alapértelmezés szerint 30 napig tárolják. Alkalmazásaink erre a 30 napos tárolásra támaszkodnak, hogy egy csevegés a körök között is folytatódhasson anélkül, hogy újra fel kellene tölteni, ezért <strong>az AI-kéréseidet és az azokra adott válaszokat az OpenAI legfeljebb 30 napig őrzi meg</strong>. Ezek az OpenAI saját alapértelmezett beállításai, nem pedig olyan kötelezettségvállalások, amelyeket mi irányítunk, és az OpenAI bármikor megváltoztathatja őket. A jelenlegi verzió az <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI API-adatvezérlési dokumentációjában</a> található.</p>
+<p>A teljes szabályzatot itt olvashatod el: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI adatvédelmi szabályzat</a>.</p>
+<p>Egy AI-funkció használatával elfogadod, hogy a vonatkozó adatok (beleértve az általad mentésre kiválasztott profiladatokat is) elküldésre kerülnek az OpenAI-nak, és annak szabályzata szerint kerülnek feldolgozásra. Kérjük, ne írj be az AI-ba semmi olyat, amit nem szeretnél ilyen feltételek mellett elküldeni.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Mennyi ideig tárolódnak az adatok</h2>
         <div class="legal-content">
-            <p>Nem tárolunk másolatot az app-adataidról a szervereinken. Az adataid a készülékeden és az iCloud-odban maradnak, amíg az app telepítve van, és az iCloud-mentés be van kapcsolva. Ezen túl:</p>
+            <p>Nem tárolunk másolatot az alkalmazásod adatairól a szervereinken. Az adataid az eszközödön és az iCloudodban maradnak mindaddig, amíg az alkalmazás telepítve van, és az iCloud-mentés be van kapcsolva. Ezen túlmenően:</p>
 <ul>
- <li><strong>OpenAI</strong> — az OpenAI jelenlegi API-dokumentációja szerint a visszaélés-figyelési naplókat legfeljebb 30 napig őrzik meg, és a Responses API válaszait alapértelmezetten 30 napig tárolják. Az appjaink erre a tárolásra támaszkodnak a többfordulós beszélgetésekhez.</li>
- <li><strong>A saját szerverünk</strong> — nem tárol kérés- vagy válasz-tartalmat. A kérésenkénti költségrekordokat (dátum, app, funkció, modell, tokenszám, költség — nincs egészségügyi adat és nincs felhasználói azonosító) jelenleg határidő nélkül megőrizzük.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — a Google a projektünk alapértelmezett megőrzési időszakára tárolja.</li>
- <li><strong>RevenueCat</strong> — vásárlási és nyugtaadatok, amíg aktív előfizetésed van, és ameddig az adójogszabályok megkövetelik.</li>
+ <li><strong>OpenAI</strong> — a visszaélés-figyelési naplókat legfeljebb 30 napig őrzik meg, a Responses API válaszait pedig alapértelmezés szerint 30 napig tárolják. Alkalmazásaink erre a tárolásra támaszkodnak a több körös csevegéshez. Ezek az OpenAI alapértelmezett beállításai, és bármikor változhatnak; lásd az <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI API-adatvezérlési dokumentációját</a>.</li>
+ <li><strong>A saját szerverünk</strong> — semmilyen kérés- vagy válasz-tartalmat nem tárolunk. A kérésenkénti költségadatokat (dátum, alkalmazás, funkció, modell, tokenszám, költség — egészségügyi adat és felhasználói azonosító nélkül) jelenleg határidő nélkül megőrizzük.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — a Google a projektünkre vonatkozó alapértelmezett megőrzési időszak szerint tárolja.</li>
+ <li><strong>RevenueCat</strong> — vásárlási és nyugtaadatok, amíg aktív előfizetésed van, illetve amíg az adójogszabályok megkövetelik.</li>
 </ul>
-<p>Egy funkció kikapcsolása vagy az app törlése leállítja a további gyűjtést. Mivel a saját szerverünk által megőrzött rekordok semmi olyat nem tartalmaznak, ami azonosítana téged, nem tudunk „a te” bejegyzéseid után kutatni vagy azokat kérésre törölni bennük — nincs bennük semmi, amihez hozzád tudnánk illeszteni.</p>
+<p>Egy funkció kikapcsolása vagy az alkalmazás törlése leállítja a további adatgyűjtést. Mivel a saját szerverünk által megőrzött adatok semmi olyat nem tartalmaznak, ami azonosítana téged, kérésre sem tudjuk megkeresni vagy törölni a "saját" bejegyzéseidet bennük — nincs bennük semmi, amihez hozzád hasonlítani lehetne.</p>
         </div>
     </section>
 

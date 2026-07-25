@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API (opcional)</h2>
         <div class="legal-content">
-            <p>La mayoría de las funciones de IA en nuestras apps funcionan con la API de OpenAI. La IA en la nube es el <strong>modo predeterminado</strong> en una instalación nueva; puedes cambiar la app al modo Apple Intelligence en el dispositivo, o desactivar la IA por completo, en los ajustes de IA de la app.</p>
+            <p>La mayoría de las funciones de IA de nuestras apps funcionan con la API de OpenAI. La IA en la nube es el <strong>modo predeterminado</strong> en una instalación nueva; puedes cambiar la app a Apple Intelligence en el dispositivo, o desactivar la IA por completo, en los ajustes de IA de la app.</p>
 <p><strong>Qué se envía.</strong> Según la función, una solicitud puede incluir:</p>
 <ul>
- <li>Cualquier cosa que escribas en una función de IA: tu pregunta o un fragmento de texto que le hayas pedido que trabaje.</li>
- <li>Los registros de salud relevantes para esa función, como filas de lecturas con sus fechas y horas. <strong>Esto incluye las notas de texto libre y las entradas de diario adjuntas a esos registros.</strong></li>
- <li>El contexto de perfil y personalización, según se describe en «Información de perfil» más arriba.</li>
- <li>Para Camera Scan, una fotografía que tomas de la pantalla de un monitor o una báscula.</li>
- <li>Para la lectura en voz alta (texto a voz), el texto que se lee, que normalmente es una respuesta de IA sobre tus datos.</li>
+ <li>Todo lo que escribas en una función de IA: tu pregunta o un texto que le hayas pedido que trabaje.</li>
+ <li>Los registros de salud correspondientes a esa función, como filas de mediciones con su fecha y hora. <strong>Esto incluye las notas de texto libre y las entradas de diario adjuntas a esos registros.</strong></li>
+ <li>El contexto de perfil y personalización, tal como se describe en “Información de perfil” más arriba.</li>
+ <li>Para Camera Scan, una fotografía que tomes de la pantalla de un monitor o una báscula.</li>
+ <li>Para la lectura en voz alta (texto a voz), el texto que se lee, que normalmente es una respuesta de la IA sobre tus datos.</li>
 </ul>
-<p><strong>Cuándo se envía.</strong> La mayoría de las funciones de IA se ejecutan solo cuando las abres y solicitas un resultado. Algunas no: mientras la IA en la nube está activada, la app también genera por sí misma mensajes personalizados breves (un dato del día, un saludo de cumpleaños o de hito, una nota de bienvenida de vuelta) y, para ello, envía a OpenAI un lote de tus registros más recientes (hasta 30) y tu contexto de perfil <strong>cuando abres la app o su vista del día, sin que tú hayas pedido un resultado de IA</strong>. Desactivar la IA, o cambiar a Apple Intelligence, detiene esto.</p>
-<p><strong>Un identificador por instalación.</strong> Cada instalación genera un identificador aleatorio y lo envía a OpenAI con cada solicitud, como clave de caché que abarata las solicitudes repetidas. No contiene nada sobre ti y no está vinculado a tu nombre, cuenta o ID de dispositivo, pero es estable: permite a OpenAI asociar entre sí todas las solicitudes de una misma instalación, y persiste hasta que se elimina y se vuelve a instalar la app.</p>
-<p><strong>Qué hace OpenAI con ello.</strong> La documentación actual de la API de OpenAI indica que los datos enviados a la API no se utilizan para entrenar o mejorar los modelos de OpenAI a menos que lo autorices expresamente, que los registros de supervisión de abusos se conservan hasta 30 días, y que las respuestas creadas mediante la Responses API se almacenan durante 30 días de forma predeterminada. Nuestras apps dependen de ese almacenamiento de 30 días para que una conversación de chat pueda continuar entre turnos sin volver a subirla, por lo que <strong>tus solicitudes de IA y sus respuestas permanecen en poder de OpenAI hasta 30 días</strong>. Estos son los términos de OpenAI, no los nuestros, y pueden cambiarlos.</p>
-<p>Puedes leer la política completa aquí: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Política de Privacidad de OpenAI</a>.</p>
-<p>Al usar una función de IA, aceptas que los datos relevantes (incluidos los detalles de perfil que hayas elegido guardar) se enviarán a OpenAI y se procesarán conforme a sus políticas. Por favor, no escribas en la IA nada que no te sientas cómodo enviando bajo esos términos.</p>
+<p><strong>Cuándo se envía.</strong> La mayoría de las funciones de IA se ejecutan solo cuando las abres y pides un resultado. Algunas no: mientras la IA en la nube está activada, la app también genera por sí sola mensajes cortos y personalizados (una idea diaria, un saludo de cumpleaños o de hito, una nota de bienvenida) y, para hacerlo, envía a OpenAI un lote de tus registros más recientes (hasta 30) y tu contexto de perfil <strong>cuando abres la app o su vista del día, sin que hayas pedido un resultado de IA</strong>. Desactivar la IA, o cambiar a Apple Intelligence, detiene esto.</p>
+<p><strong>Un identificador por instalación.</strong> Cada instalación genera un identificador aleatorio y lo envía a OpenAI con cada solicitud, como clave de caché que abarata las solicitudes repetidas. No contiene nada sobre ti y no está vinculado a tu nombre, cuenta o ID de dispositivo, pero es estable: permite a OpenAI asociar entre sí todas las solicitudes de una misma instalación, y persiste hasta que se elimina y se reinstala la app.</p>
+<p><strong>Qué hace OpenAI con ello.</strong> La documentación actual de la API de OpenAI indica que los datos enviados a la API no se usan para entrenar o mejorar los modelos de OpenAI a menos que lo autorices explícitamente, que los registros de supervisión de abusos se conservan hasta 30 días, y que las respuestas creadas mediante la Responses API se almacenan 30 días de forma predeterminada. Nuestras apps dependen de ese almacenamiento de 30 días para que una conversación de chat pueda continuar entre turnos sin volver a subirla, por lo que <strong>tus solicitudes de IA y sus respuestas quedan en poder de OpenAI hasta 30 días</strong>. Estos son los valores predeterminados propios de OpenAI, no compromisos que nosotros controlemos, y OpenAI puede cambiarlos en cualquier momento. La versión vigente se detalla en la <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">documentación de OpenAI sobre los controles de datos de la API</a>.</p>
+<p>Puedes leer la política completa aquí: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Política de privacidad de OpenAI</a>.</p>
+<p>Al usar una función de IA, aceptas que los datos correspondientes (incluidos los datos de perfil que hayas decidido guardar) se envíen a OpenAI y se procesen conforme a sus políticas. Por favor, no escribas en la IA nada que no te sintieras cómodo enviando bajo esos términos.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Cuánto tiempo se conservan los datos</h2>
         <div class="legal-content">
-            <p>No conservamos copias de los datos de tu app en nuestros servidores. Tus datos permanecen en tu dispositivo y en tu iCloud mientras tengas la app instalada y la copia de seguridad de iCloud activada. Más allá de eso:</p>
+            <p>No guardamos copias de los datos de tu app en nuestros servidores. Tus datos permanecen en tu dispositivo y en tu iCloud mientras tengas la app instalada y la copia de seguridad de iCloud activada. Además de eso:</p>
 <ul>
- <li><strong>OpenAI</strong> — según la documentación actual de la API de OpenAI, los registros de supervisión de abusos se conservan hasta 30 días y las respuestas de la Responses API se almacenan durante 30 días de forma predeterminada. Nuestras apps dependen de ese almacenamiento para el chat con varios turnos.</li>
- <li><strong>Nuestro propio servidor</strong> — no se almacena el contenido de ninguna solicitud ni respuesta. Los registros de coste por solicitud (fecha, app, función, modelo, recuento de tokens, coste; sin datos de salud ni identificador de usuario) se conservan actualmente de forma indefinida.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — conservados por Google durante el período de retención predeterminado de nuestro proyecto.</li>
- <li><strong>RevenueCat</strong> — datos de compra y recibo mientras tengas una suscripción activa y según lo exija la legislación fiscal.</li>
+ <li><strong>OpenAI</strong>: los registros de supervisión de abusos se conservan hasta 30 días y las respuestas de la Responses API se almacenan 30 días de forma predeterminada. Nuestras apps dependen de ese almacenamiento para el chat de varios turnos. Estos son los valores predeterminados de OpenAI y están sujetos a cambios; consulta la <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">documentación de OpenAI sobre los controles de datos de la API</a>.</li>
+ <li><strong>Nuestro propio servidor</strong>: no se almacena ningún contenido de solicitudes ni respuestas. Los registros de coste por solicitud (fecha, app, función, modelo, recuento de tokens, coste; sin datos de salud ni identificador de usuario) se conservan actualmente de forma indefinida.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong>: conservados por Google durante el período de retención predeterminado de nuestro proyecto.</li>
+ <li><strong>RevenueCat</strong>: datos de compra y de recibo mientras tengas una suscripción activa y según lo exija la legislación fiscal.</li>
 </ul>
-<p>Desactivar una función o eliminar la app detiene toda recopilación adicional. Como los registros que conserva nuestro propio servidor no contienen nada que te identifique, no podemos buscar ni eliminar «tus» entradas en ellos a petición: no hay nada en ellos con lo que compararte.</p>
+<p>Desactivar una función o eliminar la app detiene la recopilación posterior. Como los registros que conserva nuestro propio servidor no contienen nada que te identifique, no podemos buscar ni eliminar “tus” entradas en ellos a petición: no hay nada en ellos con lo que compararte.</p>
         </div>
     </section>
 

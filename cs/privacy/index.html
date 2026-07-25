@@ -359,20 +359,20 @@
     <section class="legal-section">
         <h2>OpenAI API (volitelné)</h2>
         <div class="legal-content">
-            <p>Většina funkcí AI v našich aplikacích je poháněna OpenAI API. Cloudová AI je <strong>výchozím režimem</strong> při nové instalaci; v nastavení AI v aplikaci můžete přepnout na Apple Intelligence přímo v zařízení nebo AI zcela vypnout.</p>
+            <p>Většina funkcí AI v našich aplikacích využívá OpenAI API. Cloudová AI je <strong>výchozí režim</strong> při nové instalaci; v nastavení AI aplikace můžete přepnout na Apple Intelligence přímo v zařízení, nebo AI zcela vypnout.</p>
 <p><strong>Co se odesílá.</strong> V závislosti na funkci může požadavek obsahovat:</p>
 <ul>
- <li>Cokoli, co napíšete do funkce AI — váš dotaz nebo pasáž, se kterou jste ji požádali pracovat.</li>
- <li>Zdravotní záznamy relevantní pro danou funkci, jako řádky hodnot s jejich daty a časy. <strong>To zahrnuje poznámky ve volném textu a záznamy deníku připojené k těmto záznamům.</strong></li>
- <li>Kontext profilu a personalizace, jak je popsáno výše v části „Informace o profilu“.</li>
- <li>Pro funkci Camera Scan fotografii, kterou pořídíte z displeje monitoru nebo váhy.</li>
- <li>Pro čtení nahlas (převod textu na řeč) text, který je předčítán, což je běžně odpověď AI týkající se vašich dat.</li>
+ <li>Cokoli, co napíšete do funkce AI — váš dotaz nebo text, se kterým jste ji požádali pracovat.</li>
+ <li>Zdravotní záznamy relevantní pro danou funkci ve formě řádků naměřených hodnot s daty a časy. <strong>To zahrnuje i volné textové poznámky a deníkové záznamy připojené k těmto záznamům.</strong></li>
+ <li>Kontext profilu a personalizace, jak je popsáno výše v části „Informace o profilu".</li>
+ <li>U funkce Sken fotoaparátem fotografii, kterou pořídíte z displeje tlakoměru nebo váhy.</li>
+ <li>U předčítání (převod textu na řeč) text, který se přehrává, což je obvykle odpověď AI týkající se vašich dat.</li>
 </ul>
-<p><strong>Kdy se odesílá.</strong> Většina funkcí AI se spouští pouze tehdy, když je otevřete a požádáte o výsledek. Některé nikoli: pokud je cloudová AI zapnutá, aplikace také sama vytváří krátké personalizované zprávy — denní přehled, narozeninové nebo výroční přání, uvítací zprávu — a k tomu odesílá dávku vašich nejnovějších záznamů (až 30) a kontext vašeho profilu do OpenAI <strong>ve chvíli, kdy otevřete aplikaci nebo její denní zobrazení, aniž byste o výsledek AI požádali</strong>. Vypnutí AI nebo přepnutí na Apple Intelligence toto zastaví.</p>
-<p><strong>Identifikátor jednotlivé instalace.</strong> Každá instalace vygeneruje náhodný identifikátor a odesílá jej OpenAI s každým požadavkem jako klíč mezipaměti, který udržuje opakované požadavky levnější. Neobsahuje o vás nic a není propojen s vaším jménem, účtem ani ID zařízení, je však stabilní: umožňuje OpenAI přiřadit všechny požadavky z jedné instalace k sobě navzájem a přetrvává, dokud aplikaci neodinstalujete a znovu nenainstalujete.</p>
-<p><strong>Co s tím OpenAI dělá.</strong> Aktuální dokumentace API společnosti OpenAI uvádí, že data odeslaná do API nejsou používána k trénování ani vylepšování modelů OpenAI, pokud se k tomu výslovně nepřihlásíte, že protokoly monitorování zneužití jsou uchovávány až 30 dní a že odpovědi vytvořené prostřednictvím Responses API jsou ve výchozím nastavení uloženy po dobu 30 dní. Naše aplikace na tomto 30denním uložení závisí, aby mohla konverzace v chatu pokračovat napříč jednotlivými zprávami bez nutnosti ji znovu celou nahrávat, takže <strong>vaše požadavky AI a jejich odpovědi uchovává OpenAI až 30 dní</strong>. Jedná se o podmínky OpenAI, nikoli naše, a OpenAI je může změnit.</p>
-<p>Celé zásady si můžete přečíst zde: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Zásady ochrany osobních údajů OpenAI</a>.</p>
-<p>Použitím funkce AI souhlasíte s tím, že příslušná data (včetně veškerých údajů profilu, které jste se rozhodli uložit) budou odeslána do OpenAI a zpracována podle jejích zásad. Nepište do AI nic, co byste nechtěli odeslat za těchto podmínek.</p>
+<p><strong>Kdy se odesílá.</strong> Většina funkcí AI se spouští pouze tehdy, když je otevřete a požádáte o výsledek. Některé nikoli: pokud je cloudová AI zapnutá, aplikace si sama generuje i krátké personalizované zprávy — denní postřeh, přání k narozeninám nebo milníku, uvítací zprávu po návratu — a za tímto účelem odesílá dávku vašich nejnovějších záznamů (až 30) a kontext vašeho profilu do OpenAI <strong>ve chvíli, kdy otevřete aplikaci nebo její denní zobrazení, aniž byste o výsledek AI požádali</strong>. Vypnutí AI nebo přepnutí na Apple Intelligence toto zastaví.</p>
+<p><strong>Identifikátor jednotlivé instalace.</strong> Každá instalace vygeneruje náhodný identifikátor a odesílá jej OpenAI s každým požadavkem jako klíč mezipaměti, který udržuje opakované požadavky levné. Neobsahuje o vás žádné informace a není spojen s vaším jménem, účtem ani identifikátorem zařízení, je však stálý: umožňuje OpenAI přiřadit k sobě všechny požadavky z jedné instalace a zůstává zachován, dokud aplikaci neodstraníte a znovu nenainstalujete.</p>
+<p><strong>Co s tím OpenAI dělá.</strong> Aktuální dokumentace API společnosti OpenAI uvádí, že data odeslaná do API se nepoužívají k trénování ani zlepšování modelů OpenAI, pokud k tomu výslovně nedáte souhlas, že protokoly pro sledování zneužití se uchovávají až 30 dní a že odpovědi vytvořené prostřednictvím Responses API se ve výchozím nastavení ukládají po dobu 30 dní. Naše aplikace se na toto 30denní ukládání spoléhají, aby konverzace v chatu mohla pokračovat mezi jednotlivými kroky bez opětovného nahrávání, takže <strong>vaše požadavky na AI a jejich odpovědi jsou u OpenAI uchovávány až 30 dní</strong>. Jedná se o vlastní výchozí nastavení OpenAI, nikoli o závazky, které bychom mohli ovlivnit, a OpenAI je může kdykoli změnit. Aktuální verze je uvedena v <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentaci OpenAI o správě dat v rámci API</a>.</p>
+<p>Úplné zásady si můžete přečíst zde: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Zásady ochrany osobních údajů OpenAI</a>.</p>
+<p>Použitím funkce AI souhlasíte s tím, že příslušná data (včetně veškerých údajů profilu, které jste se rozhodli uložit) budou odeslána do OpenAI a zpracována podle jejích zásad. Nepište do AI nic, co byste nebyli ochotni odeslat za těchto podmínek.</p>
         </div>
     </section>
 
@@ -426,14 +426,14 @@
     <section class="legal-section">
         <h2>Jak dlouho jsou data uchovávána</h2>
         <div class="legal-content">
-            <p>Na svých serverech neuchováváme kopie dat vaší aplikace. Vaše data zůstávají ve vašem zařízení a ve vašem iCloud tak dlouho, dokud máte nainstalovanou aplikaci a zapnuté zálohování iCloud. Nad rámec toho:</p>
+            <p>Kopie dat vaší aplikace neuchováváme na svých serverech. Vaše data zůstávají na vašem zařízení a ve vašem iCloudu, dokud máte aplikaci nainstalovanou a zapnuté zálohování iCloud. Kromě toho:</p>
 <ul>
- <li><strong>OpenAI</strong> — podle aktuální dokumentace API společnosti OpenAI jsou protokoly monitorování zneužití uchovávány až 30 dní a odpovědi Responses API jsou ve výchozím nastavení uloženy po dobu 30 dní. Naše aplikace se na tomto uložení spoléhají pro vícekolové konverzace v chatu.</li>
- <li><strong>Náš vlastní server</strong> — neukládá se žádný obsah požadavků ani odpovědí. Záznamy nákladů na jednotlivé požadavky (datum, aplikace, funkce, model, počty tokenů, náklady — žádné zdravotní údaje a žádný identifikátor uživatele) jsou v současné době uchovávány neomezeně dlouho.</li>
- <li><strong>Firebase Crashlytics / Analytics</strong> — uchovává Google po dobu výchozí retenční lhůty pro náš projekt.</li>
- <li><strong>RevenueCat</strong> — údaje o nákupech a účtenkách po dobu, kdy máte aktivní předplatné, a podle požadavků daňového práva.</li>
+ <li><strong>OpenAI</strong> — protokoly pro sledování zneužití se uchovávají až 30 dní a odpovědi z Responses API se ve výchozím nastavení ukládají po dobu 30 dní. Naše aplikace se na toto uchovávání spoléhají kvůli vícekrokovým konverzacím v chatu. Jedná se o výchozí nastavení OpenAI, které se může měnit; viz <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentace OpenAI o správě dat v rámci API</a>.</li>
+ <li><strong>Náš vlastní server</strong> — obsah požadavků ani odpovědí se neukládá. Záznamy o nákladech za jednotlivé požadavky (datum, aplikace, funkce, model, počet tokenů, náklady — bez zdravotních dat a bez identifikátoru uživatele) se v současnosti uchovávají po neomezenou dobu.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — uchovává Google po dobu výchozí doby uchovávání pro náš projekt.</li>
+ <li><strong>RevenueCat</strong> — údaje o nákupech a účtenkách po dobu trvání aktivního předplatného a podle požadavků daňových předpisů.</li>
 </ul>
-<p>Vypnutí funkce nebo odinstalování aplikace zastaví další shromažďování. Protože záznamy, které uchovává náš vlastní server, neobsahují nic, co by vás identifikovalo, nemůžeme na požádání vyhledat ani smazat „vaše“ položky v nich — není v nich nic, podle čeho by vás bylo možné rozpoznat.</p>
+<p>Vypnutí funkce nebo odstranění aplikace zastaví další shromažďování údajů. Protože záznamy uchovávané naším vlastním serverem neobsahují nic, co by vás identifikovalo, nemůžeme na požádání vyhledat ani odstranit „vaše" záznamy v nich — není v nich nic, s čím by vás bylo možné porovnat.</p>
         </div>
     </section>
 
