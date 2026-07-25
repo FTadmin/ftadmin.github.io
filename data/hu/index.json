@@ -2,7 +2,7 @@
  "data": {
   "meta": {
    "title": "Feeltracker | AI Egészség és Wellness Naplóalkalmazások iOS-re",
-   "description": "AI egészségnapló alkalmazások iPhone-ra, iPadre és Macre — ahogy a GQ-ban is szerepelt. Kövesd a vérnyomást, hangulatot, súlyt, alvást és napi naplót. Apple Health szinkron, AI elemzések, orvosi export.",
+   "description": "Öt MI-alapú egészségnapló-alkalmazás iPhone-ra, iPadre, Macre (GQ-ban szerepelt). Kövesd a vérnyomást, hangulatot, súlyt, alvást, naplóírást Apple Health-szel.",
    "keywords": "egészségkövetó alkalmazás, vérnyomásmérő, hangulati napló, súlykövetó, alváskövetó, napi napló, MI egészségalkalmazás, Apple Health integráció",
    "ogTitle": "Feeltracker | MI-alapú Egészség- és Wellness Naplóalkalmazások",
    "ogDescription": "Kövesse nyomon egészségét könnyedén MI-alapú naplóalkalmazásokkal — ahogy a GQ-ban is szerepelt. Vérnyomás, hangulat, súly, alvás és naplóírás. Szinkronizáljon az Apple Health-szel és kapjon személyre szabott elemzéseket.",
@@ -120,8 +120,8 @@
     },
     {
      "slug": "mood-journal",
-     "iconAlt": "Hangulatkövető Alkalmazás Ikon",
-     "title": "Mentális Egészség Feeltracker",
+     "iconAlt": "Hangulatnapló Alkalmazás Ikon",
+     "title": "Hangulatnapló Feeltracker",
      "subtitle": "Bipoláris DBT CBT ADHD MI Napló",
      "badge": "",
      "description": "Kövesse nyomon érzelmi egészségét napi hangulati értékelésekkel és feljegyzésekkel. Azonosítsa a kiváltó okokat és mintákat MI-elemzéssel. Támogatja az iOS 18+ Mentális Egészség integrációt az Apple Health-szel.",
@@ -149,7 +149,7 @@
       }
      ],
      "learnMoreText": "Tudj meg többet",
-     "downloadAlt": "Töltse le a Hangulatkövető alkalmazást az App Store-ból"
+     "downloadAlt": "Hangulatnapló letöltése az App Store-ból"
     },
     {
      "slug": "weight",
@@ -209,6 +209,9 @@
       },
       {
        "text": "Vizuális alvási diagramok és statisztikák"
+      },
+      {
+       "text": "Álomnapló, ingyenes MI-alapú álomelemzéssel minden nap"
       }
      ],
      "learnMoreText": "Tudj meg többet",
@@ -352,8 +355,8 @@
      "description": "Tesztelje tudását egy szórakoztató, MI által generált 10 kérdéses kvísszel az adatairól"
     },
     {
-     "title": "Szöveg-Beszéd",
-     "description": "Hallgassa meg MI-elemzéseit és összefoglalóit természetes hanglejátszással – tökéletes akadálymentesítésre"
+     "title": "Kimondott Visszajelzés",
+     "description": "Hallgass meg egy rövid, kimondott reakciót minden alkalommal, amikor elmentesz egy bejegyzést, az általad választott hangon felolvasva - remek kéz nélküli és akadálymentes használatra"
     },
     {
      "title": "Személyre Szabott Egészségjelentés",
@@ -366,6 +369,14 @@
     {
      "title": "Hangalapú csevegés",
      "description": "Kéz nélküli, kétirányú beszélgetés az AI-val az adataidról — tegyél fel kérdéseket, és hallgasd meg a válaszokat anélkül, hogy megérintenéd a képernyőt"
+    },
+    {
+     "title": "Gyors Verziók, Minden Nap Ingyen",
+     "description": "Az ingyenes felhasználók minden nap megkapják a nagy jelentések Gyors verzióját, ugyanarra az időszakra vonatkozóan: Gyors Egészségjelentés, Gyors Kiváltó-ellenőrzés, Gyors Témafelfedező, Gyors Étkezési Ötletek és Gyors Álomelemzés a Sleep alkalmazásban"
+    },
+    {
+     "title": "Minden Alkalmazáshoz Épített Pro Eszközök",
+     "description": "Pro MAP-jelentés a Blood Pressure-ben; Kognitív Átkeretezés, Kiváltóok Azonosító és Hangulati Idővonal a Hangulatnaplóban; Témafelfedező a Daily Journaling-ben; Pro álomelemzés és CPAP-jelentés a Sleep-ben; Étrendtervező és Edzéstervező a Weight-ben"
     }
    ]
   },
@@ -486,12 +497,20 @@
    "title": "Gyakori Kérdések",
    "items": [
     {
-     "question": "Mutatnak hirdetéseket vagy követnek engem?",
-     "answer": "**Nem.** Teljesen eltávolítottuk az összes hirdetést minden Feeltracker alkalmazásból. Nem követjük Önt más alkalmazásokon vagy webhelyeken, és soha nem adjuk el adatait hirdetőknek.\n\nAdatai az iCloudon keresztül szinkronizálódnak – akárcsak az Apple Notes és a Photos. Ez azt jelenti, hogy nem kell tudnunk az e-mail-címét, nevét vagy bármilyen személyes adatát. Az egészségadatai teljesen privátak, akár az ingyenes verziót, akár a prémiumot használja."
+     "question": "Mutatnak hirdetéseket a Feeltracker alkalmazások, vagy nyomon követnek engem?",
+     "answer": "**Nem. A Feeltracker alkalmazások nem mutatnak hirdetéseket, nem használnak hirdetési hálózatokat, és soha nem adják el az adataidat.** Nem követünk téged más alkalmazásokon vagy weboldalakon (nincs IDFA vagy hasonló azonosító).\n\nA bejegyzéseid az eszközödön maradnak, és a saját iCloud-fiókodon keresztül szinkronizálódnak, ugyanúgy, mint az Apple Jegyzetek és Fotók esetében, így sosincs szükségünk a nevedre vagy az e-mail-címedre. Az egyetlen kivétel, ha úgy döntesz, hogy egy felhőalapú MI-funkciót használsz: az ehhez szükséges adatok elküldésre kerülnek az OpenAI-nak a válaszod elkészítéséhez, ahogy azt az [adatvédelmi szabályzatunk](https://feeltracker.com/privacy/) is leírja. Az MI-t átválthatod eszközön futó Apple Intelligence-re, vagy teljesen kikapcsolhatod."
     },
     {
-     "question": "Szükségem van előfizetésre?",
-     "answer": "Nincs szükség előfizetésre. Minden alkalmazás letöltése ingyenes, minden követés, grafikon, Apple Health szinkronizálás és exportálás ingyenes, és minden felhasználó minden nap valódi AI-funkciókat kap ingyen — reklám nélkül, mindig. Az opcionális Pro előfizetés feloldja a legrészletesebb AI-funkciókat (Mélyelemzés, Mintafelismerő, Orvosi összefoglaló, Pro csevegés és további funkciók), a legfejlettebb AI-modellünkön futtatja azokat, és megemeli a bőkezű napi kereteket."
+     "question": "Szükségem van előfizetésre a Feeltracker használatához?",
+     "answer": "**Nem — minden Feeltracker alkalmazás ingyenesen letölthető és ingyenesen használható, hirdetések nélkül.** Minden követés, grafikon, trend, Apple Health-szinkronizálás, kamerás beolvasás és PDF/CSV/Excel/JSON-exportálás ingyenes, és minden felhasználó valódi MI-funkciókat is kap ingyen, minden nap: Chat, Kérdés Feltevése, Hangos Összefoglaló, Nevettess meg, Nyugtass meg, és a nagyobb jelentések napi Gyors verziója.\n\nEgy opcionális Pro-előfizetés feloldja a teljes mélységű MI-funkciókat — Mélyelemzés, Mintafelismerő, Cél Asszisztens, Orvosi összefoglaló, Pro csevegés, Hangalapú csevegés, Napi Elemzés, eszközön futó Apple Intelligence, és az egyes alkalmazásokhoz épített eszközök —, és megemeli a napi kereteket."
+    },
+    {
+     "question": "Mi az öt Feeltracker alkalmazás?",
+     "answer": "**A Feeltracker öt egészségkövető alkalmazásból álló csomag iPhone-ra, iPadre és Macre, amelyet a Custom Arts készített.** Ezek: Blood Pressure (szisztolés, diasztolés, pulzus és MAP), Hangulatnapló (5 pontos hangulati skála kiváltókkal és hangulatelemzéssel), Daily Journaling (jegyzetek, fotók és visszatérő témák), Sleep (elalvási és ébredési idők, valamint álomnapló) és Weight (súly, testzsír és BMI).\n\nMinden alkalmazás önmagában is működik, ugyanazt az adatvédelmi modellt osztja, és a saját iCloud-fiókodon keresztül szinkronizál. Használhatsz egyet, vagy mind az ötöt."
+    },
+    {
+     "question": "Mely eszközökön működnek a Feeltracker alkalmazások?",
+     "answer": "**A Feeltracker alkalmazások iPhone-on és iPaden futnak iOS 16.0 vagy újabb verzióval, valamint Apple Silicon Mac-eken (M1-től felfelé).** Egyetlen vásárlás minden eszközödet lefedi, és a bejegyzéseid automatikusan szinkronizálódnak közöttük a saját iCloud-fiókodon keresztül.\n\nAz Apple Health-integráció opcionális, és az eszközön futó Apple Intelligence MI-mód olyan eszközt igényel, amely támogatja az Apple Intelligence-t iOS 26 vagy újabb verzióval."
     }
    ]
   },
@@ -508,8 +527,8 @@
      "downloadAlt": "Töltse le a Napi Naplóírás Feeltracker alkalmazást az App Store-ból"
     },
     {
-     "name": "Mentális Egészség Feeltracker",
-     "downloadAlt": "Töltse le a Mentális Egészség Feeltracker alkalmazást az App Store-ból"
+     "name": "Hangulatnapló Feeltracker",
+     "downloadAlt": "Hangulatnapló Feeltracker letöltése az App Store-ból"
     },
     {
      "name": "Súly Feeltracker",
@@ -561,7 +580,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Feeltracker",
-    "description": "MI-alapú egészség- és wellness-követő alkalmazások iOS-re"
+    "description": "A Feeltracker öt, MI-alapú egészségkövető alkalmazásból álló csomag iPhone-ra, iPadre és Macre — Blood Pressure, Hangulatnapló, Daily Journaling, Sleep és Weight —, amelyet a Custom Arts készített. Ingyenesen használható, opcionális Pro-előfizetéssel; az egészségügyi adatok a felhasználó eszközén és a saját iCloud-fiókjában maradnak."
    },
    {
     "@context": "https://schema.org",
