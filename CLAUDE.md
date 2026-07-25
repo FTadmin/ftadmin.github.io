@@ -9,7 +9,9 @@
 1. Run `node diff-translate.js` to get the change manifest (only changed strings)
 2. Batch all 31 languages into ~6 agents (5 languages each) — each agent gets only the changed strings
 3. Each agent uses `apply-translation.js` with a JSON patch (surgical update, not file rewrite)
-4. After all agents finish: `node validate.js && node build.js`
+4. After all agents finish: `node verify-translation.js <file> <paths...> && node validate.js && node build.js`
+   (`verify-translation.js` checks the translated strings; `validate.js` only checks shape. For a purely
+   textual EN change — a number, a date — add `--expect '<path>=/new value/'` or a stale translation passes.)
 
 **Token limit errors happen when agents read/rewrite whole files** — the patch-based approach avoids this entirely. An agent translating 3 strings for 5 languages makes 5 small `apply-translation.js` calls, touching zero bytes of the existing file content.
 
@@ -97,6 +99,7 @@ build.js             ← Node.js build script (zero dependencies)
 validate.js          ← Checks structural parity across languages (EN = reference)
 diff-translate.js    ← Extracts changed translatable strings from EN files (vs git HEAD)
 apply-translation.js ← Patches overlay files with translated strings at specific JSON paths
+verify-translation.js ← Checks translated STRINGS (tags, hrefs, not-English, expected values)
 extract.js           ← One-time migration tool (extracts data from existing HTML)
 split-pages.js       ← One-time migration tool (splits pages.json into per-page files)
 convert-faq.js       ← One-time migration tool (converts FAQ bodyContent → structured JSON)
@@ -112,6 +115,7 @@ migrate-translations.js ← One-time migration tool (converts complete files →
 ```bash
 node build.js                    # Regenerate all HTML pages from data/ files
 node validate.js                 # Check all languages match EN structure
+node verify-translation.js <file> <path>...   # Check the translations themselves (see --help in file)
 node diff-translate.js           # Show changed translatable strings in all modified EN files
 node diff-translate.js data/en/blood-pressure.app.json  # Show changes in one file
 node extract.js                  # Re-extract data from existing HTML (migration only)
@@ -357,80 +361,10 @@ These lessons were learned from the Simplified Chinese (zh) translation and appl
    for f in data/{lang}/*.json; do node -e "try { JSON.parse(require('fs').readFileSync('$f','utf8')); console.log('OK: $f'); } catch(e) { console.log('ERROR: $f: ' + e.message); }"; done
    ```
 5. **Sparse array risk with `apply-translation.js`** — When translating an array item at index N, all items 0..N-1 must already exist in the overlay. If they don't, `apply-translation.js` pads missing indices with `null`, which overrides the EN values on merge. Always translate all items in an array together, never selectively by index.
-6. **INSERTING an array item mid-array silently shifts every later item in all 31 overlays.** This is the most dangerous edit in the repo and `validate.js` will NOT stop it. Because the merge is *positional*, adding a section at EN index 12 means EN[12] now merges against `overlay[12]`, which still holds the translation of what used to be at 12. Every section from 12 down renders under the wrong heading with the wrong body, and the last one falls off the end entirely (overlay length wins). `validate.js` reports this only as an **array length warning and exits 0**, so `validate && build` will happily publish it.
+6. **Inserting an array item mid-array silently shifts every later item in all 31 overlays.** The most dangerous edit in this repo, and `validate.js` will NOT stop it: the merge is positional, so adding a section at EN index 12 makes EN[12] merge against `overlay[12]`, which still holds the old translation. Every later section renders under the wrong heading and the last one falls off the end (overlay length wins). `validate.js` reports it as an **array-length warning and exits 0**, so `validate && build` will publish it. Before translating, realign all 31 overlays mechanically with a `splice` script — insert **the EN object** as placeholder (never `null`, which overrides EN with nothing), guard on the expected pre-insert length so a re-run can't double-shift, then spot-check that index `AT+1` still holds what it did before and the last section survived.
+7. **Verify a fan-out mechanically — an agent's "OK" is not evidence.** Agents have self-reported success while dropping a `<strong>` pair, and have reported completion before their own sub-agents had written anything. Run `node verify-translation.js` (below) and check `git status`: a "successful" fan-out that modified no overlay file did nothing.
+8. **Brand names: match what the vendor ships in that locale, verified against their own localized site.** It varies per locale and cannot be guessed — Apple Intelligence stays English in almost every locale (verified ja, zh-Hant) but is **"Apple 智能"** in Simplified Chinese (verified on `support.apple.com/zh-cn`). The usual failure is drift: a pass updates the body but leaves the section *heading* in English, so one locale says both. Grep the whole locale file for the English form afterwards and confirm the count is zero.
 
-   **Before translating anything**, realign all 31 overlays mechanically — do not ask agents to do it, and do not insert `null` (it overrides EN with nothing on merge). Insert the EN object as a placeholder so an agent that fails leaves readable English rather than a mismatched section:
-   ```bash
-   node -e '
-   const fs=require("fs"),path=require("path");
-   const FILE="privacy.utility.json", AT=12, PRE_LEN=19;   // <-- set all three
-   const en=JSON.parse(fs.readFileSync(`data/en/${FILE}`,"utf8")).data.sections[AT];
-   for (const l of fs.readdirSync("data")) {
-     if (l==="en") continue;
-     const p=path.join("data",l,FILE); if(!fs.existsSync(p)) continue;
-     const doc=JSON.parse(fs.readFileSync(p,"utf8"));
-     const s=doc.data.sections;
-     if (s.length!==PRE_LEN) { console.log(`SKIP ${l}: ${s.length}`); continue; }  // guard: refuse if already shifted
-     s.splice(AT,0,{heading:en.heading,content:en.content});
-     fs.writeFileSync(p,JSON.stringify(doc,null,1)+"\n");
-   }'
-   ```
-   Then verify a locale's index `AT+1` still holds what it held before, and that the final section survived, before fanning out translations.
-7. **Verify agent output mechanically — a translation agent's "OK" is not evidence.** Agents have self-reported success while silently dropping a `<strong>` pair. After every fan-out, check each translated string against its EN source for: identical HTML tag *sequence*, identical `href` values, and not-equal-to-English (catches a skipped string). Tag-sequence parity doubles as a check that emphasized legal claims survived, since the EN wraps those in `<strong>`.
-   ```bash
-   node -e '
-   const fs=require("fs");
-   const FILE="privacy.utility.json";
-   const PATHS=["data.intro","data.sections.11.content"];   // <-- paths you changed
-   const get=(o,p)=>p.split(".").reduce((a,k)=>a[k],o);
-   const tags=s=>(s.match(/<\/?\w+/g)||[]).join(",");
-   const hrefs=s=>(s.match(/href="[^"]+"/g)||[]).join(",");
-   const en=JSON.parse(fs.readFileSync(`data/en/${FILE}`,"utf8"));
-   for (const l of fs.readdirSync("data")) {
-     if (l==="en") continue;
-     const p=`data/${l}/${FILE}`; if(!fs.existsSync(p)) continue;
-     const d=JSON.parse(fs.readFileSync(p,"utf8")), bad=[];
-     for (const P of PATHS) {
-       let e,v; try{e=get(en,P);v=get(d,P);}catch{bad.push(`${P}:MISSING`);continue;}
-       if(tags(v)!==tags(e))bad.push(`${P}:tags`);
-       if(hrefs(v)!==hrefs(e))bad.push(`${P}:href`);
-       if(v.trim()===e.trim())bad.push(`${P}:UNTRANSLATED`);
-     }
-     if(bad.length) console.log(l, bad.join("; "));
-   }
-   console.log("done — no lines above means clean");'
-   ```
-
-   **This check proves structure survived translation. It does NOT prove the
-   translation is current.** A purely textual edit — changing a number, a date,
-   a retention period, softening a claim — alters no tag and no `href`, and the
-   old translation is still not equal to the new English, so all three tests
-   pass on stale content. This has already produced a confident "all 31 clean"
-   report at a moment when zero locales had been patched. Whenever the EN edit
-   is textual rather than structural, add a **semantic** assertion for the thing
-   that actually changed and run it alongside:
-   ```bash
-   # e.g. the retention figure: EN section 12 went 0 -> 1 occurrences of "30",
-   # section 17 went 2 -> 4. Include non-Western digits so ar/th aren't misread.
-   node -e '
-   const fs=require("fs");
-   const WANT={12:1, 17:4};                                  // <-- min occurrences per section
-   const NUM=/30|٣٠|۳۰|๓๐/g;                                  // <-- the token that changed
-   for (const l of fs.readdirSync("data")) {
-     if (l==="en") continue;
-     const p=`data/${l}/privacy.utility.json`; if(!fs.existsSync(p)) continue;
-     const s=JSON.parse(fs.readFileSync(p,"utf8")).data.sections, bad=[];
-     for (const [i,want] of Object.entries(WANT)) {
-       const n=(s[i].content.replace(/<[^>]+>/g,"").match(NUM)||[]).length;
-       if (n<want) bad.push(`sec${i}: ${n}/${want}`);
-     }
-     if (bad.length) console.log(l, bad.join("; "));
-   }
-   console.log("done — no lines above means every locale carries the new value");'
-   ```
-   `git status` is the cheap sanity check that pairs with this: if a fan-out
-   reports success and no overlay file is modified, nothing happened.
-8. **Brand names: match what Apple actually ships in that locale, verified against Apple's own localized site.** It varies per locale and cannot be guessed. Apple Intelligence is kept in **English** in almost every locale (verified: ja, zh-Hant) but is **"Apple 智能"** in Simplified Chinese (verified on `support.apple.com/zh-cn`). The usual failure is drift: a translation pass updates the body text but leaves the section *heading* in English, so one locale says both. After any brand-touching pass, grep the whole locale file for the English form and confirm the count is zero (or matches a deliberate choice).
 9. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
 10. **Reviews disclaimer** — Every non-EN language MUST include `"disclaimer"` in the reviews section of app pages AND the index page, stating reviews were translated from English (e.g., Chinese: `"评论翻译自英文原文。最初发布在App Store上。"`).
 11. **Current languages** (32 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh-Hans), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi), العربية (ar), Català (ca), Čeština (cs), Ελληνικά (el), Français Canada (fr-ca), עברית (he), Hrvatski (hr), Magyar (hu), Nederlands (nl), Polski (pl), Português Portugal (pt), Română (ro), Slovenčina (sk), ไทย (th), Türkçe (tr), Українська (uk), Tiếng Việt (vi), 繁體中文 (zh-Hant)
