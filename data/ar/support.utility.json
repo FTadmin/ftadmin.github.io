@@ -1,9 +1,9 @@
 {
  "data": {
   "meta": {
-   "title": "الدعم - Feeltracker",
-   "description": "احصل على مساعدة في تطبيقات Feeltracker الصحية. تواصل مع الدعم وتصفح الأسئلة الشائعة وابحث عن موارد لتطبيقات Blood Pressure وMood وJournal وSleep وWeight.",
-   "keywords": "",
+   "title": "دعم Feeltracker | احصل على مساعدة بشأن تطبيقاتنا الصحية",
+   "description": "احصل على مساعدة بشأن تطبيقات Feeltracker الصحية. راسلنا على support@feeltracker.com للحصول على رد خلال 24 ساعة، أو تصفّح الأسئلة الشائعة وسياسة الخصوصية والشروط.",
+   "keywords": "دعم Feeltracker، التواصل مع Feeltracker، مساعدة تطبيقات الصحة، دعم تطبيق ضغط الدم، دعم متتبع المزاج، دعم متتبع النوم، دعم متتبع الوزن",
    "ogTitle": "",
    "ogDescription": "",
    "twitterDescription": ""
@@ -11,8 +11,8 @@
   "pageTitle": "دعم Feeltracker",
   "contact": {
    "title": "هل تحتاج مساعدة؟",
-   "supportText": "للحصول على دعم فوري أو لطرح أسئلة، راسلنا عبر البريد الإلكتروني: <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a>",
-   "faqText": "للحصول على مساعدة تفصيلية وإجابات على الأسئلة الشائعة، قم بزيارة <a href=\"../../ar/faq/\">صفحة الأسئلة الشائعة</a>."
+   "supportText": "أسرع طريقة للحصول على مساعدة بشأن أي تطبيق من تطبيقات Feeltracker هي مراسلة <a href=\"mailto:support@feeltracker.com\">support@feeltracker.com</a> — نحن فريق صغير ونردّ عادة خلال 24 ساعة. أخبرنا بالتطبيق الذي تستخدمه وما كنت تفعله عندما حدثت المشكلة، وسنتابع الأمر من هناك.",
+   "faqText": "للحصول على إجابات تفصيلية خطوة بخطوة عن المزامنة والنسخ الاحتياطي والتصدير لطبيبك وميزات الذكاء الاصطناعي والخصوصية والاشتراكات، راجع <a href=\"../faq/\">صفحة الأسئلة الشائعة</a>."
   },
   "apps": {
    "title": "تطبيقاتنا",
@@ -63,8 +63,31 @@
     {
      "name": "شروط الخدمة",
      "url": "../../ar/terms/"
+    },
+    {
+     "name": "عن Feeltracker",
+     "url": "../about/"
     }
    ]
-  }
+  },
+  "structuredData": [
+   {
+    "@type": "ContactPage",
+    "name": "دعم Feeltracker",
+    "description": "كيفية الحصول على مساعدة بشأن تطبيقات Feeltracker لتتبع الصحة لأجهزة iPhone وiPad وMac: الدعم عبر البريد الإلكتروني، والأسئلة الشائعة، وسياسة الخصوصية، والشروط.",
+    "mainEntity": {
+     "@type": "Organization",
+     "name": "Feeltracker",
+     "contactPoint": [
+      {
+       "@type": "ContactPoint",
+       "contactType": "دعم العملاء",
+       "email": "support@feeltracker.com",
+       "availableLanguage": "الإنجليزية"
+      }
+     ]
+    }
+   }
+  ]
  }
 }
