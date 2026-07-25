@@ -132,12 +132,548 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
 
 
-
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Kayıt nasıl eklerim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yeni bir kayıt eklemek için 1. güne basarak veya 2. sağ üstteki + simgesine basarak yeni bir kayıt ekleyebilirsiniz. Her iki seçenek de aşağıdaki görselde oklarla gösterilmektedir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Günde birden fazla kayıt ekleyebilir miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet. Yukarıda gösterildiği gibi günde birçok kayıt ekleyebilirsiniz. Bunu yapmak için tekrar güne veya + simgesine basın."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Bir kaydı nasıl silerim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Bir kaydı silmek için kayıt üzerinde sola kaydırıp Sil'e basabilir veya kaydın üzerine basarak açıp ekranın sol üstündeki çöp kutusu simgesine basabilirsiniz. Her iki yöntem de aşağıda gösterilmektedir:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Notlarımın üzerinde neden bir duygu puanı görüyorum? Bu özel mi?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Notlarınızı yazarken, tahmin edilen duyguyu belirtmek için üzerlerinde bir emoji görünür. Bu özellik, yazınızın aşırı olumsuz veya olumlu görünüp görünmediğini anlamanıza yardımcı olabilir veya neyin işe yarayıp yaramadığını hatırlatarak yazınıza rehberlik edebilir. Varsayılan olarak duygu, uygulamanın gizlilik odaklı yapay zekası kullanılarak hesaplanır; yapay zekayı kapatırsanız, tamamen cihazınızda Apple'ın Doğal Dil çerçevesi kullanılarak hesaplanır. İsterseniz bu özelliği Ayarlar'da Genel altından devre dışı bırakabilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Nasıl yazdırırım?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Dışa aktar düğmesine bastığınızda (aşağıda gösterildiği gibi) bir paylaşım sayfası görürsünüz. Bu sayfada aşağı kaydırın ve Yazdır'a basın (aşağıda gösterildiği gibi). iPhone veya iPad'inizden kablosuz yazdırmak için Apple AirPrint uyumlu bir kablosuz yazıcıya ihtiyacınız olacak. AirPrint uyumlu kablosuz yazıcınız yoksa buradan bir tane satın alabilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Takip ettiğim tıbbi bilgileri doktorumla paylaşabilir miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet. Uygulama bunu kolaylaştırır. Paylaş düğmesine basın (aşağıda gösterildiği gibi), PDF'yi seçin ve ardından Mail uygulamanızı seçin. PDF raporu, doktorunuza gönderebileceğiniz bir e-postaya eklenir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Günlük'teki ortalamaları veya toplamları nasıl gizlerim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ortalamaları ve toplamları aşağıda gösterildiği gibi görünüm seçeneklerinde gizleyebilirsiniz. Bu, yalnızca girilen değerlerinizi gösterir ve ortalamaları göstermez. Bu, girilen verilerinizin arasında ortalama/toplamların olması kafanızı karıştırıyorsa kullanışlı olabilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Excel veya benzer elektronik tablo yazılımına dışa aktarabilir miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet. Yukarıdaki talimatları izleyin, ancak çıktı biçimi olarak PDF yerine Excel veya CSV'yi seçin. Ardından dosyayı cihazınıza kaydedin veya kendinize e-posta ile gönderin.  Excel biçimi daha güvenilirdir, CSV ise daha geniş uyumlu olabilir — her ikisi de Excel ve Apple Numbers veya Google Sheets gibi benzer yazılımlarda açılmalıdır."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Verilerimi kime gönderebilirim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "İstediğiniz kişiye e-posta ile gönderebilirsiniz. Güvende saklamak ve yedekleme amacıyla verilerinizi periyodik olarak kendinize e-posta ile göndermek isteyebilirsiniz. PDF veya CSV dosyasını daha sonra kullanmak üzere cihazınıza da kaydedebilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ay görünümünde doğrudan bugüne nasıl kaydırırım?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ekranın altındaki sekme çubuğundaki Günlük simgesine çift dokunun."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Önceki ayların verilerini nasıl görüntülerim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Önceki bir ayın verilerini görüntülemek için (örneğin, şu an Ekim'deyken Eylül verilerini):"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Bir kaydın saatini veya tarihini nasıl değiştiririm?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Aşağıda gösterildiği gibi bir kaydı açın ve ekranın üstündeki tarih veya saate dokunun. Doğru tarihi seçebileceğiniz bir takvim görünür, ardından Kaydet'e basın. İpucu: Her zaman bugünün tarihi için kayıt oluşturmak için mevcut günün yanındaki + simgesine veya ekranın sağ üstündeki + simgesine basın. Bir kayıt yanlış bir tarihe girdiyse, bunun nedeni farklı bir günün yanındaki + simgesine basılmış olması olabilir — bazı kullanıcılar bunu geçmiş kayıtlar veya gelecek planlama için kullanır."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Verilerim ne kadar güvenli?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Verileriniz cihazınızda saklandığında şifrelenir. Bu, cihazınız çalınsa bile kimsenin erişemeyeceği anlamına gelir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Verilerim nerede saklanıyor?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cihazınızda ve iCloud'da. Bu uygulama, verilerinizi cihazlar arasında kaydetmek ve senkronize etmek için Apple Notlar ve Fotoğraflar ile aynı teknolojiyi kullanır, bu da çok güvenilir ve emniyetlidir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Başka biri özel verilerimi görebilir mi?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hayır. Veriler yalnızca cihazınızda ve Apple tarafından yönetilen sunucularda çalışan iCloud'da yaşar."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Verilerimin neden iCloud'da kaydedilmesi gerekiyor?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "iCloud, verilerinizin yedeklenmesini ve cihazlarınız arasında senkronize edilmesini sağlar. Böylece telefonunuzu kaybederseniz veya yeni bir tane alırsanız, verileriniz iCloud'dan geri yüklenebilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Neden verilerim cihazlarım arasında senkronize olmuyor?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Verileriniz otomatik olarak cihazlarınız arasında senkronize olmalıdır. Şunları kontrol edin:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Her cihaz için ayrı bir aboneliğim olması gerekiyor mu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hayır. Tek bir abonelik, aynı iCloud hesabına giriş yapılmış tüm cihazlarda premium özelliklerin kilidini açar. Premium başka bir cihazda görünmüyorsa Ayarlar > Abonelik'e (veya uygulamadaki eşdeğerine) gidin ve Satın Almayı Geri Yükle'ye basın. Her cihazın aynı iCloud hesabına giriş yapıldığından emin olun."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Yedeklemeler nasıl çalışır?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yedeklemeler varsayılan olarak her hafta otomatik olarak yapılır (ancak bunu Ayarlar'dan kapatabilirsiniz). Ayrıca Ayarlar > Veri bölümünden manuel yedeklemeler de oluşturabilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kaç yedekleme yapılıyor? Silmeli miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yapılan yedekleme sayısında bir sınır yoktur. Yedeklemeler yıllara kadar uzanabilir ve genellikle çok az yer kaplar, bu nedenle silmek cihazınızın depolamasında fazla fark yaratmaz. Yer açmanız gerekiyorsa, cihazınızdaki fotoğraf ve videolar gibi daha ağır dosyaları silmek daha iyidir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Yedeklemeler iCloud'a senkronize ediliyor mu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Şu anda yedeklemeler iCloud'da senkronize edilmiyor, ancak mevcut verileriniz senkronize oluyor. Bu, yeni bir iPhone veya iPad aldığınızda mevcut verilerinizin orada da görüneceği, ancak yedeklemelerinizin görünmeyeceği anlamına gelir; çünkü her cihaz kendi yerel yedeklemelerini saklar. Bu, örneğin iPhone'unuzdan bir kaydı silip iCloud ve telefonunuzdan gitmiş olsa bile, iPad'inize gidip eski yedekleme anlık görüntülerinden birinden geri yükleme yapabileceğiniz anlamına gelir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Bu uygulamayı kullanmak için bir hesaba ihtiyacım var mı?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hayır. Giriş yapmanıza veya kayıt olmanıza gerek kalmadan hemen kullanmaya başlayabilirsiniz. Uygulama, Apple'ın altyapısını kullanarak verilerinizi otomatik olarak diğer cihazlara senkronize etmek için iCloud hesabınızı kullanır. Bu, hızlı, güvenilir ve emniyetli olduğu anlamına gelir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Bu uygulamayı hem iPhone hem de iPad'imde kullanabilir miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet ve verileriniz, aynı iCloud hesabına giriş yapılmışsa otomatik olarak aralarında senkronize olur. iPad sürümünde notlar için daha fazla alan ve daha fazla öğe görebilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Uygulamanın Mac sürümü var mı?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet. Uygulamalar Apple Silicon Mac'lerde (M1 ve sonrası) kullanılabilir. Mac uygulamasında, daha büyük ekranlarda daha fazla veri görmek için pencereyi yeniden boyutlandırabilirsiniz. Mac uygulamasını M1 veya sonraki Mac'inizde buradan indirebilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Uygulama için bir özellik veya iyileştirme önermek istiyorum.",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Geri bildiriminizi duymaktan memnuniyet duyarız. feedback@feeltracker.com adresinden bize e-posta gönderin."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Sesi kapatabilir miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet. Ayarlar sekmesine gidin ve Ses Efektlerini Etkinleştir'in yanındaki kaydırıcıyı kapatın."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler sekmesi ne için?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Eğilimler, aklınızda ne olduğunu, neden olduğunu ve üzerinizde ne tür bir etkisi olduğunu belirlemenizi sağlar. Daha fazla ayrıntı ve Eğilimler'in uygulamanızda nasıl çalıştığına dair bazı örnekler için aşağı kaydırın."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Neden Eğilimler'de hiçbir şey göremiyorum?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Eğilimler'in çalışması için kayıt kaydederken notlar almanız gerekir. Bunu herhangi bir kaydın Notlar alanında yapabilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "İstatistikler sekmesi ne için?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Bu, şu anda 2 tarih arasındaki tüm kayıtları ve bu aralıktaki bir ortalama/toplamı gösterir. Bu, herhangi bir dönem için ortalama/toplam almanızı sağlar."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Günlük, Eğilimler ve İstatistikler arasındaki fark nedir?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Günlük, veri girmenize ve aylık/yıllık/tüm yaşam boyunca görüntülemenize, ortalama ve toplamlarla birlikte görmenize olanak tanıyan ana günlük/kayıt bölümüdür Eğilimler, harekete geçebileceğiniz örüntüleri belirlemek için Günlük'te kaydettiğiniz verilerdeki kalıpları tanımlamanızı sağlar. İstatistikler, verilerinizi kronolojik sırayla (en yeni öğe önce) aylık veya yıllık gruplandırma olmaksızın görmenizi ve herhangi iki tarih arasındaki ortalama ve toplamları görmenizi sağlar."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Telefon belleğini ve pili korumak için çıkış yapmalı veya kapatmalı mıyım?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Çıkış yapmaya hiç gerek yok — cihaz, uygulamaları/kaynakları gerektiğinde bellekten otomatik olarak kaldırır. Modern iPhone ve iPad'lerde çok fazla enerji verimli bellek bulunur, bu nedenle uygulamalar herhangi bir olumsuz etki olmaksızın uzun süre bellekte kalabilir. Bu belleğe erişim güvenlidir ve zaten Face ID, Touch ID veya şifre tarafından korunmaktadır. Yine de bir uygulamayı kapatmak istiyorsanız (örneğin yanıt vermez hale geldiyse) Apple'ın talimatlarını buradan takip edebilirsiniz. Giriş yapmaya da gerek yok, çünkü uygulama iCloud hesabınızı kullanır, bu nedenle Fotoğraflar ve Notlar uygulamasının yaptığına benzer şekilde, herhangi bir tanımlayıcı kişisel veri paylaşılmasına gerek kalmadan cihazlarınız arasında veri senkronize edebilir/yedekleyebilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Çıkış yapmazsam bu güvenli mi?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet. Normalde yaptığınız gibi cihazı kilitlemek için yan düğmeye bastığınız anda, cihaz kilitliyken kimse uygulamanıza veya verilerinize erişemez."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Uygulama reklam gösteriyor mu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hayır. Feeltracker uygulamaları üçüncü taraf reklam göstermez ve herhangi bir reklam ağı veya reklam izleme SDK'sı (AdMob gibi) kullanmaz. Kişisel ve sağlık verileriniz asla reklamverenlerle paylaşılmaz. Uygulamalar tamamen App Store üzerinden sunulan isteğe bağlı premium abonelikler ve tek seferlik satın almalar ile finanse edilmektedir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ücretsiz sürüm var mı?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet. Tüm temel özellikler herkes için ücretsizdir — sınırsız kayıt, grafikler ve trendler, Apple Health senkronizasyonu, PDF/CSV/Excel/JSON dışa aktarımı, yapay zeka Kamera Taraması ve her gün ücretsiz kullanabileceğiniz bir dizi günlük yapay zeka özelliği. İsteğe bağlı Pro abonelik en kapsamlı yapay zeka özelliklerini (Derinlemesine Araştırma, Doktor Özeti, Örüntü Dedektifi, Pro Chat ve daha fazlası) açar, bunları en yetenekli yapay zekamızda çalıştırır ve zaten cömert olan günlük limitleri yükseltir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Aboneliğim ne için ödeniyor?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Aboneliğiniz süregelen geliştirmeyi finanse eder — yeni özellikler, hata düzeltmeleri, çeviriler ve isteğe bağlı yapay zeka özellikleri için sunucu maliyetleri. Reklam yayınlamadığımızdan, abonelikler ve tek seferlik satın almalar uygulamayı finanse etmenin tek yoludur ve herkes için deneyimi temiz ve gizli tutar."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Neden abone olmalıyım? Neden bir kez ödeyemiyorum?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Küçük bir düzenli abonelik ücreti, büyük bir peşin maliyet olmadan uygulamayı denemeyi kolaylaştırır. Uzun vadede, abonelik geliri uygulamayı korumamıza ve yararlı yeni özelliklerin geliştirilmesini fonlamamıza yardımcı olur."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Bu uygulamayı desteklemek için yapabileceğim bir şey var mı?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Uygulamayı büyütmek ve yeni özellikler geliştirmeye devam etmek için iyi yorumlara güveniyoruz. Lütfen uygulamanız için bağlantıyı takip ederek yorum bırakın:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ücretli aboneliğimi iptal etmek istiyorum",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Uygulamayı denediğiniz için teşekkür ederiz. Daha iyi yapabileceğim bir şey varsa gs@feeltracker.com adresinden bana bildirin, yardımcı olmaya çalışacağım. Genellikle kullanıcı geri bildirimlerine dayalı düzeltmeler ve iyileştirmeler aynı veya ertesi gün bir uygulama güncellemesinde gönderilir. Hâlâ memnun değilseniz, aboneliğinizi buradan iptal edebilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Uygulama adımı, doğum tarihimi veya cinsiyetimi topluyor mu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yalnızca kaydetmeyi seçerseniz. Deneyimi kişiselleştirmek için isteğe bağlı olarak küçük bir profil (ad, doğum tarihi, cinsiyet) doldurabilirsiniz — bu tamamen isteğe bağlıdır ve temel takip özellikleri onsuz da çalışır. Sağlandığında, profil bilgileri cihazınızda ve kendi iCloud'unuzda kalır, asla sunucularımızda değil."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Profil bilgilerim nasıl kullanılıyor?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "İsteğe bağlı bir yapay zeka özelliği kullanırsanız (sohbet, içgörüler veya OpenAI ya da Apple Intelligence destekli özelleştirilmiş geri bildirim gibi), uygulama profilinizin ilgili bölümlerini — genellikle adınız, yaşınız (doğum tarihinizden hesaplanır) ve cinsiyetiniz — isteğe dahil edebilir; böylece yapay zeka daha ilgili yanıtlar verebilir (örneğin yaşa uygun sağlık rehberliği veya doğru zamirler). Bu yalnızca bir yapay zeka özelliğini aktif olarak kullandığınızda gerçekleşir. Profilinizi istediğiniz zaman düzenleyebilir veya temizleyebilir ya da yapay zeka özelliklerini kapatabilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Uygulama hangi yapay zeka hizmetlerini kullanıyor?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Uygulamalar üç tür yapay zeka kullanır; hepsi isteğe bağlı ve talep üzerinedir: 1. Cihaz üzerinde yapay zeka (Apple'ın Natural Language API'si) duygu puanlaması gibi şeyler için — tamamen cihazınızda çalışır, hiçbir veri dışarı çıkmaz. 2. Apple Intelligence destekli cihazlarda — mümkün olan durumlarda cihaz üzerinde, daha ağır görevler için Apple'ın Private Cloud Compute aracılığıyla işlenir. Apple verilerinizi saklamaz veya görmez ve bu veriler Apple'ın modellerini eğitmek için kullanılmaz. 3. OpenAI API sohbet, içgörüler ve özelleştirilmiş geri bildirim için — yalnızca aktif olarak tetiklediğinizde kullanılır. Yalnızca ilgili veriler (ve kaydedildiyse sınırlı profil bağlamı) gönderilir. OpenAI, API verilerini modellerini eğitmek için kullanmaz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Apple Health zorunlu mu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hayır. Apple Health entegrasyonu tamamen isteğe bağlıdır. Uygulamalar onsuz tam olarak çalışır — okumaları manuel olarak girebilir, AI Kamera Tarama kullanabilir veya CSV içe aktarabilirsiniz. Açtığınızda, uygulamanın hangi veri türlerini okuyup yazabileceğini seçebilir ve iOS Ayarları'nda erişimi istediğiniz zaman iptal edebilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Verilerimi nasıl silebilirim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kontrol sizdedir: - Bireysel girişleri üzerlerinde kaydırarak silin. - Profilinizi (ad, doğum tarihi, cinsiyet) uygulamanın profil ekranından istediğiniz zaman silin. - Tüm uygulama verilerini bir seferde uygulamanın ayarlarından silin. - Uygulamayı ve iOS Ayarları'ndaki iCloud yedeğini kaldırmak her şeyi temizler. Sunucularımızda bir kopyasını saklamadığımızdan, sizin adınıza silmemiz gereken ekstra bir şey yoktur."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Verilerimi buluta göndermeden yapay zekayı kullanabilir miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet. Uygulama, Apple'ın Foundation Models teknolojisini kullanarak yapay zekayı tamamen cihaz üzerinde çalıştıran bir Apple Intelligence seçeneği içerir — sunucularımıza veya OpenAI'ya hiçbir şey gönderilmez. Desteklenen bir Apple Silicon cihazı (iPhone 15 Pro veya iPhone 16 serisi ve sonrası, Apple Silicon'lu iPad ve Mac) ve sınırsız cihaz üzerinde yapay zeka kullanımı sağlayan ücretli bir Feeltracker hesabı gerektirir. Uygulamanın yapay zeka ayarlarından istediğiniz zaman cihaz üzerinde ve bulut tabanlı yapay zeka arasında geçiş yapabilirsiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Uygulama Bluetooth aracılığıyla kan basıncı monitörüme bağlanıyor mu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hayır, uygulama Bluetooth üzerinden tansiyon aletlerine doğrudan bağlanmaz. Bunun yerine, yapay zeka kamera tarama teknolojisiyle manuel girişi zahmetsiz hale getirmeye odaklandık. Bir ölçüm aldıktan sonra iPhone'unuzun kamerasını cihazınızın ekranına doğrultmanız yeterlidir, uygulama sayıları otomatik olarak okur. Bu, marka veya modelden bağımsız olarak dijital ekranlı hemen hemen her tansiyon aletiyle çalışır. Eşleştirme gerekmez, belirli cihaz uyumluluğu endişesi yoktur ve sadece saniyeler sürer. Kamera tarama, cömert bir günlük kullanım hakkıyla herkes için her zaman ücretsizdir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "AI Kamera Tarama nasıl çalışır?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kan basıncı ölçümünüzü aldıktan sonra uygulamayı açın ve \"+\" düğmesine dokunup \"Kamerayla Tara\"yı seçin. Telefonunuzu, ekrandaki rakamların açıkça görünür ve iyi aydınlatılmış olduğundan emin olarak monitörünüzün ekranından yaklaşık 15-30 cm uzakta sabit tutun. Uygulama sistolik, diyastolik ve nabız değerlerini otomatik olarak okuyacaktır. En iyi sonuçlar için iyi aydınlatma sağlayın ve tararken telefonunuzu sabit tutun. Bu, OMRON, Microlife ve Beurer markaları dahil çoğu dijital monitörle çalışır."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Neden yinelenen girişler görüyorum?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Bu genellikle Apple Health senkronizasyon yapılandırmasından kaynaklanır. En yaygın sorun, Apple Health için yalnızca yazma izinlerinin etkinleştirilmiş olması, ancak okuma izinlerinin etkinleştirilmemiş olmasıdır. Bunu düzeltmek için: Ayarlar > Veri > Apple Health'e gidin ve Kan Basıncı ile Kalp Hızı için HEM okuma HEM de yazma izinlerinin etkinleştirildiğinden emin olun — yalnızca yazma değil. Uygulama, Health'ten içe aktarmadan önce bir ölçümün zaten var olup olmadığını kontrol etmek için okuma iznine ihtiyaç duyar."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Birden fazla aile üyesinin ölçümlerini takip edebilir miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Birkaç ay içinde, bir cihazda birden fazla kişinin ölçümlerini takip etmenizi sağlayacak bir etiket özelliği geliyor. Her girişi bir kişinin adıyla etiketleyebilecek ve ardından her aile üyesi için ayrı raporlar oluşturabileceksiniz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Verilerim iPhone ve iPad arasında senkronize olmuyor. Neden?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Öncelikle her iki cihazda da aynı iCloud hesabına giriş yaptığınızdan emin olun. Ayarlar > [Adınız] bölümüne gidin ve Apple Kimliğini kontrol edin. İkinci olarak, iCloud Drive'ın her iki cihazda da etkin olduğunu doğrulayın (Ayarlar > [Adınız] > iCloud > iCloud Drive). Verileriniz iCloud aracılığıyla otomatik olarak senkronize olur, ancak bir internet bağlantısı gerektirir ve birkaç dakika sürebilir. Her cihazda uygulamayı açmayı ve yenilemek için aşağı çekmeyi deneyin."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Abonelik neleri kapsıyor? Ücretsiz olan neler?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tüm temel özellikler herkes için ücretsizdir — sınırsız kayıt, yapay zeka kamera tarama, tüm grafikler ve trendler, Apple Health senkronizasyonu ve PDF/CSV/Excel/JSON dışa aktarımları — ve her kullanıcı her gün Soru Sor, Quick Chat, Sesli Özet ve raporların hızlı sürümleri dahil gerçek yapay zeka özelliklerini ücretsiz kullanır. İsteğe bağlı Pro abonelik tam, en kapsamlı yapay zeka özelliklerini (Derinlemesine Araştırma, Doktor Özeti, Örüntü Dedektifi, Pro Chat, Sesli Sohbet ve daha fazlası) açar, bunları en yetenekli yapay zekamızda çalıştırır ve zaten cömert olan günlük limitleri yükseltir. Abone olsanız da olmasanız da uygulamalar hiçbir zaman reklam göstermez."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "OAB nedir ve takip etmeli miyim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "OAB (Ortalama Arteriyel Basınç), bir kardiyak döngü boyunca arterlerinizdeki ortalama basıncı temsil eder. Her ölçüm için otomatik olarak hesaplanır. OAB, LVAD (Sol Ventrikül Yardımcı Cihazı) hastaları ve belirli kardiyovasküler koşulları olan diğerleri için özellikle önemlidir. OAB ekranını etkinleştirmek için Ayarlar > Kan Basıncı > Ortalama Arteriyel Basıncı (OAB) Göster'e gidin. Özelleştirilebilir OAB aralıkları sürüm 2.8.x'te geliyor."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Zaman kazanmak için not şablonlarını nasıl kullanırım?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Bir not girerken (örneğin \"Sabah ölçümü - ilaçtan önce\"), notlar alanının sol altındaki \"Şablon\" düğmesine dokunun ve bir şablon olarak kaydedin. Bir sonraki ölçümü girdiğinizde tekrar \"Şablon\"a dokunun ve kaydedilmiş şablonlarınızdan seçin — metin anında eklenir. Bu, \"Sabah - ilaç öncesi\" veya \"Akşam - yemekten sonra\" gibi tekrarlayan notlar için harikadır."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Çok yüksek veya düşük bir kan basıncı nedir?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kan basıncınız normalde sistolik değer için 90-140 ve diyastolik değer için 60-90 arasında olmalıdır. Bu aralığın dışındaysa bir doktorla konuşmalısınız."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "İdeal kan basıncı nedir?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "NHS'e göre ideal kan basıncı 90/60 mmHg ile 120/80 mmHg arasındadır. Ancak bu, cinsiyete, yaşa ve diğer değişkenlere bağlı olarak değişebilir. Bu nedenle, kendi bireysel koşullarınıza göre kan basıncınızın doğru bir değerlendirmesi için yerel doktorunuza danışmak en iyisidir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kan basıncımı nasıl ölçerim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kan basıncı, dijital bir kan basıncı monitörü kullanılarak ölçülür. Buradan Kamera Tarama AI özelliğiyle harika çalışan kan basıncı monitörleri bulabilirsiniz. Uygulama, OMRON, Microlife ve Beurer markaları dahil çoğu dijital monitörden değerleri otomatik olarak okuyabilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler ne için?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Eğilimler ile bu uygulama verilerinizi ve notlarınızı alır, sizi nelerin etkilediğini ve nasıl etkilediğini gösterir. Örneğin, geçen yıl 20 kez meditasyon yaptığınızı ve meditasyonun kan basıncınızı düşürdüğünü görebilirsiniz. Tersine, her Bob'la buluştuğunuzda tartıştığınızı ve onun kan basıncınızı yükselttiğini görebilirsiniz. Notlar ne kadar fazla kullanılırsa, Eğilimler o kadar faydalı olabilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler'i bir örnekle açıklayabilir misiniz?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Örneğin, 10 kez koşuya gidiyorsunuz. 5 kez kan basıncınız 10 düşüyor ve diğer zamanlarda 5 düşüyor. Eğilimler, koşunun ortalama olarak kan basıncınızı yaklaşık 7,5 puan azaltmaya yardımcı olduğunu gösterecektir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler ne için?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Eğilimler ile bu uygulama verilerinizi ve notlarınızı alır, sizi nelerin etkilediğini ve nasıl etkilediğini gösterir. Örneğin, geçen yıl 20 kez Ayşe ile buluştuğunuzu ve ortalama olarak Ayşe'nin sizi çok mutlu ettiğini görebilirsiniz. Tersine, her Bob'la buluştuğunuzda tartıştığınızı ve onun sizi mutsuz ettiğini görebilirsiniz. Notlar ne kadar fazla kullanılırsa, Eğilimler o kadar faydalı olabilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler'i bir örnekle açıklayabilir misiniz?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Örneğin, Ayşe ile 10 kez buluşuyorsunuz. 5 kez sizi çok mutlu etti (+2) ve 5 kez sizi oldukça mutlu etti (+1). Eğilimler, Ayşe'nin sizi ortalama olarak oldukça (+1,5) mutlu ettiğini gösterecektir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler ne için?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Eğilimler ile bu uygulama verilerinizi ve notlarınızı alır, aklınızda en çok hangi kelimelerin olduğunu gösterir. Örneğin, geçen yıl bir kelimeyi 20 kez kullandığınızı görebilirsiniz. Tersine, başka bir kelimeyi 50 kez kullandığınızı görebilirsiniz — çok daha sık. Notlar ne kadar fazla kullanılırsa, Eğilimler o kadar faydalı olabilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler'i bir örnekle açıklayabilir misiniz?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Örneğin, notlarınızda Ayşe hakkında 120 kez yazıyorsunuz, 50 kez yazdığınız işinizden daha fazla. Bu durumda Eğilimler, aklınızdaki en önemli şeyin açıkça Ayşe olduğunu gösteriyor."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler ne için?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Eğilimler ile bu uygulama verilerinizi ve notlarınızı alır, sizi nelerin etkilediğini ve nasıl etkilediğini gösterir. Örneğin, geçen hafta çok fazla kahve içtiğinizi ve bunun nedeniyle daha az uyuduğunuzu görebilirsiniz. Tersine, her salata yediğinizde veya spor salonuna gittiğinizde daha iyi uyuduğunuzu görebilirsiniz. Notlar ne kadar fazla kullanılırsa, Eğilimler o kadar faydalı olabilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler'i bir örnekle açıklayabilir misiniz?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Örneğin, 10 kez kahve içiyorsunuz. 5 kez 2 saat az uyudunuz ve diğer 5 kez 1 saat az uyudunuz. Eğilimler, ortalama olarak kahve içmenizin 1,5 saat az uyumanıza neden olduğunu gösterecektir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler ne için?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Eğilimler ile bu uygulama verilerinizi ve notlarınızı alır, sizi nelerin etkilediğini ve nasıl etkilediğini gösterir. Örneğin, geçen yıl 20 kez fast food yediğinizi ve zaman içinde fast food yediğinizde kilo aldığınızı görebilirsiniz. Tersine, her salata yediğinizde veya spor salonuna gittiğinizde kilo verdiğinizi görebilirsiniz. Notlar ne kadar fazla kullanılırsa, Eğilimler o kadar faydalı olabilir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Eğilimler'i bir örnekle açıklayabilir misiniz?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Örneğin, 10 kez çörek yiyorsunuz. 5 kez kilonuz 0,1 kg artıyor. Diğer 5 kez kilonuz 0,3 kg artıyor. Eğilimler, ortalama olarak çörek yemenizin kilonuzu 0,2 kg artırdığını gösterecektir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Vücut yağını nasıl ölçerim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Vücut Yağı, ağırlığın yanı sıra vücut kompozisyonunu da ölçen özel olarak tasarlanmış tartılar tarafından raporlanır. Buradan Omron'dan böyle bir tartı örneği bulabilirsiniz. Diğer markalardan da başka seçenekler mevcuttur — aranacak şey tartı fonksiyonunun yanı sıra „Vücut Kompozisyonu\"dur. Ayrıca yalnızca kilo girerseniz bile, sağlıklı bir kiloda olup olmadığınıza dair genel bir gösterge sağlayan bir VKİ değeri (kilonun solunda, renk kodlu) göreceğinizi de unutmayın (yeşil iyidir, kırmızı ise fazla kilolu anlamına gelir)."
+                      }
+                }
+          ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -150,7 +686,7 @@
 
             <a href="/tr/daily-journal/">Günlük</a>
 
-            <a href="/tr/mental-health/">Ruh Sağlığı</a>
+            <a href="/tr/mood-tracker/">Ruh Sağlığı</a>
 
             <a href="/tr/sleep/">Uyku</a>
 
@@ -235,6 +771,7 @@
 </nav>
 
 
+<main>
 <h1>Sıkça Sorulan Sorular</h1>
 
 
@@ -247,7 +784,7 @@
 
     <p>
 
-        <img src="/images/add_new.jpg" class="screenshot">
+        <img src="/images/add_new.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -265,9 +802,9 @@
 
     <p>
 
-        <img src="/images/delete_swipe.jpg" class="screenshot-small padded10">
+        <img src="/images/delete_swipe.jpg" class="screenshot-small padded10" alt="" loading="lazy" decoding="async">
 
-        <img src="/images/delete_trashcan.jpg" class="screenshot-small padded10">
+        <img src="/images/delete_trashcan.jpg" class="screenshot-small padded10" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -286,7 +823,7 @@
 
     <p>
 
-        <img src="/images/printing_example_ios.jpg" class="screenshot">
+        <img src="/images/printing_example_ios.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -298,7 +835,7 @@
 
     <p>
 
-        <img src="/images/sharing_example.jpg" class="screenshot">
+        <img src="/images/sharing_example.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -310,7 +847,7 @@
 
     <p>
 
-        <img src="/images/hide_averages.jpg" class="screenshot">
+        <img src="/images/hide_averages.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -364,7 +901,7 @@
 
     <p>
 
-        <img src="/images/change_time_date.jpg" class="screenshot">
+        <img src="/images/change_time_date.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -405,7 +942,7 @@
       <li>iCloud Drive'ın tüm cihazlarda Açık olduğundan emin olun (Ayarlar > Adınız > iCloud > iCloud Drive yolunda, aşağıda gösterildiği gibi).</li>
 
 
-      <p><img src="/images/icloud_on.png" class="screenshot"></p>
+      <p><img src="/images/icloud_on.png" class="screenshot" alt="" loading="lazy" decoding="async"></p>
 
     </ul>
 
@@ -756,6 +1293,7 @@
 <p>Herhangi bir sorunuz veya öneriniz varsa <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a> adresinden bizimle iletişime geçmekten çekinmeyin.</p>
 
 
+</main>
 
     <!-- Footer -->
     <footer>

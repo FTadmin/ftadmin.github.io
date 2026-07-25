@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,22 +635,6 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "¿Cuál es la mejor app para controlar la presión arterial?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Presión Arterial es la app líder de seguimiento de presión arterial en España. Ofrece información impulsada por IA, tecnología de escaneo por cámara con IA para capturar valores automáticamente (OMRON, Microlife, Beurer), integración con Apple Health y funciones de exportación para compartir con médicos. Permite el seguimiento de la presión arterial sistólica y diastólica, la frecuencia cardíaca y la presión arterial media (PAM)."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "¿Cómo funciona el escaneo por cámara con IA?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "El escaneo por cámara con IA utiliza reconocimiento óptico de caracteres (OCR) avanzado para leer automáticamente los valores de presión arterial de la pantalla de su monitor. Simplemente apunte la cámara de su iPhone o iPad a la pantalla con sus valores sistólicos, diastólicos y de pulso, y la app completará esos valores automáticamente. Esto elimina errores de escritura manual y hace que el registro sea más rápido. Funciona con OMRON, Microlife, Beurer y la mayoría de los tensiómetros digitales."
-                      }
-                },
-                {
-                      "@type": "Question",
                       "name": "¿Cuál es un valor normal de presión arterial?",
                       "acceptedAnswer": {
                             "@type": "Answer",
@@ -658,26 +643,34 @@
                 },
                 {
                       "@type": "Question",
-                      "name": "¿Puedo exportar mis datos de presión arterial para mi médico?",
+                      "name": "¿Cómo funciona el escaneo por cámara con IA?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sí, Presión Arterial te permite exportar informes completos en formato PDF, CSV, Excel o JSON. Estos informes con formato profesional incluyen estadísticas resumidas, gráficos de tendencias y todas tus notas, todo lo que tu médico necesita en un solo documento. Puedes compartir estos informes fácilmente por correo electrónico u otros métodos."
+                            "text": "Simplemente apunte la cámara de su iPhone o iPad a la pantalla digital de su tensiómetro. La app utiliza reconocimiento avanzado de cámara impulsado por IA para leer los números automáticamente y completar los campos de valores sistólicos, diastólicos y de pulso. Esto elimina errores de escritura manual y hace que el registro sea más rápido. Consiga un tensiómetro aquí."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "¿La app se integra con Apple Health?",
+                      "name": "¿Qué es la PAM y debería controlarla?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sí, Presión Arterial ofrece integración bidireccional con Apple Health. Puede importar datos históricos de presión arterial desde Apple Health y la app almacena automáticamente las nuevas mediciones en HealthKit. Esto crea un ecosistema completo de seguimiento de salud en todos sus dispositivos Apple."
+                            "text": "La PAM (Presión Arterial Media) es un valor calculado que representa la presión arterial promedio en sus arterias durante un ciclo cardíaco. Se calcula como: PAM = (2 × Diastólica + Sistólica) ÷ 3. Algunos médicos consideran útil la PAM para evaluar el riesgo cardiovascular. La app calcula automáticamente la PAM para cada medición."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "¿Qué es la PAM en el control de la presión arterial?",
+                      "name": "¿Puedo importar mis datos antiguos de presión arterial?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "La PAM (Presión Arterial Media) es un valor calculado que representa la presión arterial promedio en sus arterias durante un ciclo cardíaco. Se calcula como: PAM = (2 × Diastólica + Sistólica) ÷ 3. Algunos médicos consideran útil la PAM para evaluar el riesgo cardiovascular y la perfusión de órganos. Presión Arterial calcula automáticamente la PAM para cada medición."
+                            "text": "¡Sí! Si ha registrado su presión arterial en Apple Health, puede importar todas las mediciones históricas a la app con un solo toque. La app también permite importar desde archivos CSV/Excel si tiene datos de otras fuentes."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "¿Con qué frecuencia debería medir mi presión arterial?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Depende de su estado de salud y las recomendaciones de su médico. Algunas personas miden diariamente (a menudo por la mañana y por la noche), otras semanalmente. La app facilita medir con la frecuencia que su médico recomiende. Puede configurar recordatorios para mantener un horario constante."
                       }
                 },
                 {
@@ -685,7 +678,31 @@
                       "name": "¿Mis datos de presión arterial son privados?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sí, sus mediciones de presión arterial se almacenan cifradas en su dispositivo y en su cuenta privada de iCloud. Los datos nunca se transmiten a través de servidores externos y los desarrolladores no pueden ver su información de salud. Es tan seguro como las apps de Notas o Fotos de Apple y cumple totalmente con el RGPD."
+                            "text": "Absolutamente. Sus mediciones de presión arterial se almacenan cifradas en su dispositivo y en su cuenta privada de iCloud. Los datos nunca se transmiten a través de nuestros servidores y no podemos ver su información de salud. Es tan seguro como las apps de Notas o Fotos de Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "¿Puedo hacer seguimiento de la presión arterial de familiares?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "La app está diseñada para uso individual y se sincroniza con su cuenta personal de iCloud. Para hacer seguimiento de varios familiares, cada persona debería usar la app en su propio dispositivo con su propia Apple ID."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "¿Muestran publicidad o me rastrean?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Hemos eliminado completamente toda la publicidad de la app. No le rastreamos a través de otras apps o sitios web y nunca vendemos sus datos a anunciantes. Sus datos se sincronizan mediante iCloud, igual que Notas y Fotos de Apple. Esto significa que no necesitamos conocer su dirección de correo electrónico, su nombre ni su información personal. Sus datos de presión arterial se almacenan en sus dispositivos y en su cuenta de iCloud, y son completamente privados, tanto si usa la versión gratuita como Premium."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "¿Necesito una suscripción?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No se requiere suscripción. La app es gratuita para descargar, todo el seguimiento, los gráficos, la sincronización con Apple Health y las exportaciones son gratis, y todos los usuarios reciben funciones de IA real gratis cada día, sin anuncios nunca. Una suscripción Pro opcional desbloquea las funciones de IA más completas (Investigación en profundidad, Resumen para el médico, Detective de patrones, el Informe PAM Pro, Chat Pro y más), las ejecuta con nuestra IA más avanzada y aumenta los generosos límites diarios."
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/es/daily-journal/">Diario</a>
 
-            <a href="/es/mental-health/">Salud Mental</a>
+            <a href="/es/mood-tracker/">Salud Mental</a>
 
             <a href="/es/sleep/">Sueño</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Icono de la app Presión Arterial" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Icono de la app Presión Arterial" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Presión Arterial</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">La forma más inteligente de controlar y comprender su presión arterial. Escanee lecturas con cámara IA, sincronice con Apple Health y obtenga información impulsada por IA sobre su salud cardiovascular.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Presión Arterial en el App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Presión Arterial en el App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuita con funciones Premium opcionales<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Captura de pantalla de Presión Arterial 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Captura de pantalla de Presión Arterial 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Captura de pantalla de Presión Arterial 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Captura de pantalla de Presión Arterial 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Captura de pantalla de Presión Arterial 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Captura de pantalla de Presión Arterial 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Hacer una pregunta</h4>
+                <h3><i class="fas fa-question-circle"></i> Hacer una pregunta</h3>
                 <p>Preguntas y respuestas rápidas sobre sus datos de presión arterial: obtenga respuestas inmediatas a sus dudas de salud</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Mantén conversaciones interactivas sobre tu salud cardiovascular y recibe asesoramiento personalizado. Quick Chat es gratis todos los días; Pro Chat profundiza más con nuestra IA más avanzada</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Resumen por voz</h4>
+                <h3><i class="fas fa-volume-up"></i> Resumen por voz</h3>
                 <p>Escuche resúmenes en audio de sus tendencias de presión arterial, perfecto para cuando está en movimiento</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Hacerle reír</h4>
+                <h3><i class="fas fa-laugh"></i> Hacerle reír</h3>
                 <p>Obtenga humor personalizado a partir de sus datos de seguimiento para alegrarle el día</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Tranquilizar</h4>
+                <h3><i class="fas fa-moon"></i> Tranquilizar</h3>
                 <p>Ejercicios de respiración guiados por IA para reducir el estrés y la presión arterial</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Escaneo por cámara con IA</h4>
+                <h3><i class="fas fa-camera"></i> Escaneo por cámara con IA</h3>
                 <p>Escanee lecturas directamente de la pantalla del monitor: funciona con <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Investigación en profundidad <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Investigación en profundidad <span class="ai-pro-badge">Pro</span></h3>
                 <p>Análisis completo por IA de sus datos de presión arterial con información detallada</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detective de patrones <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detective de patrones <span class="ai-pro-badge">Pro</span></h3>
                 <p>Encuentre correlaciones ocultas entre sus valores de presión arterial y factores de estilo de vida</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistente de objetivos <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistente de objetivos <span class="ai-pro-badge">Pro</span></h3>
                 <p>Reciba objetivos personalizados de presión arterial basados en datos y en sus patrones</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Resumen para el médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Resumen para el médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genere resúmenes médicos profesionales para sus visitas al médico</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Justificante médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Justificante médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Justificantes médicos generados por IA para el trabajo o la escuela cuando sea necesario</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generador de historias <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generador de historias <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transforme sus datos de salud en narrativas creativas y atractivas</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Resumen en texto <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Resumen en texto <span class="ai-pro-badge">Pro</span></h3>
                 <p>Cree resúmenes en formato de mensaje de texto de sus tendencias de presión arterial para compartir</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Quiz personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Quiz personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ponga a prueba sus conocimientos con un divertido quiz de 10 preguntas generado por IA sobre sus datos</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Texto a voz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Texto a voz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Escuche su información y resúmenes de IA con reproducción de voz natural</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Informe de salud personalizado <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Informe de salud personalizado <span class="ai-pro-badge">Pro</span></h3>
                 <p>Cree documentos de salud completos y personalizados para el seguimiento de su progreso</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (en el dispositivo) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (en el dispositivo) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opción que prioriza la privacidad y ejecuta la IA localmente en tu dispositivo usando Foundation Models de Apple — nada sale de tu iPhone, iPad o Mac. Uso ilimitado con una cuenta de pago en dispositivos Apple Silicon compatibles (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat de voz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat de voz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversaciones de voz bidireccionales y manos libres con la IA sobre tus datos: haz preguntas y escucha las respuestas sin tocar la pantalla</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/es/daily-journal/" class="related-app-card" aria-label="Diario">
-                <img src="/images/NT_1024.png" alt="Diario" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Diario" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Diario</span>
             </a>
 
-            <a href="/es/mental-health/" class="related-app-card" aria-label="Salud Mental">
-                <img src="/images/FT_1024.png" alt="Salud Mental" class="related-app-icon">
+            <a href="/es/mood-tracker/" class="related-app-card" aria-label="Salud Mental">
+                <img src="/images/FT_1024.png" alt="Salud Mental" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Salud Mental</span>
             </a>
 
             <a href="/es/sleep/" class="related-app-card" aria-label="Sueño">
-                <img src="/images/ST_1024.png" alt="Sueño" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sueño" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sueño</span>
             </a>
 
             <a href="/es/weight/" class="related-app-card" aria-label="Peso">
-                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Peso</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>Comience a controlar su presión arterial hoy</h2>
         <p>Únase a miles de usuarios que toman el control de su salud cardiovascular</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Presión Arterial"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Presión Arterial" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

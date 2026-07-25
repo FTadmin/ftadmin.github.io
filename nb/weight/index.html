@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -380,7 +381,7 @@
 
             <a href="/nb/daily-journal/">Dagbok</a>
 
-            <a href="/nb/mental-health/">Mental Helse</a>
+            <a href="/nb/mood-tracker/">Mental Helse</a>
 
             <a href="/nb/sleep/">Søvn</a>
 
@@ -465,9 +466,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/WT_1024.png" alt="Vekt og mat-appikon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/WT_1024.png" alt="Vekt og mat-appikon" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Vekt og mat</h1>
 
         <div class="privacy-badge">
@@ -475,12 +477,12 @@
         </div>
         <p class="hero-subtitle">Nå treningsmålene dine med intelligent vektregistrering. Skann avlesninger med Camera Scan AI, overvåk vekt, BMI og kroppsfettandel med AI-drevne innsikter som viser hva som fungerer og hva som ikke gjør det.</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nb-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nb-black.svg" alt="Last ned Vekt & Mat på App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nb-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nb-black.svg" alt="Last ned Vekt & Mat på App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Gratis app med valgfrie premiumfunksjoner<br>iPhone, iPad og Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -493,15 +495,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/wt-1.png" alt="Vekt & Mat Skjermbilde 1" class="screenshot-img">
+                <img src="/images/screenshots/wt-1.png" alt="Vekt & Mat Skjermbilde 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-2.png" alt="Vekt & Mat Skjermbilde 2" class="screenshot-img">
+                <img src="/images/screenshots/wt-2.png" alt="Vekt & Mat Skjermbilde 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-3.png" alt="Vekt & Mat Skjermbilde 3" class="screenshot-img">
+                <img src="/images/screenshots/wt-3.png" alt="Vekt & Mat Skjermbilde 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -627,102 +629,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Still et spørsmål</h4>
+                <h3><i class="fas fa-question-circle"></i> Still et spørsmål</h3>
                 <p>Rask spørsmål og svar om vektdataene dine – få øyeblikkelige svar på helsespørsmålene dine</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Ha interaktive samtaler om treningsreisen din og få personlig veiledning. Rask chat er gratis hver dag; Pro-chat går dypere på vår mest kapable AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Lydoppsummering</h4>
+                <h3><i class="fas fa-volume-up"></i> Lydoppsummering</h3>
                 <p>Lytt til lydsammendrag av vekttrendene dine – perfekt for innsikt på farten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Få meg til å le</h4>
+                <h3><i class="fas fa-laugh"></i> Få meg til å le</h3>
                 <p>Få personalisert humor fra sporingsdata som lysner opp dagen din</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Roe meg ned</h4>
+                <h3><i class="fas fa-moon"></i> Roe meg ned</h3>
                 <p>AI-guidede pusteøvelser og avslappingsteknikker for å redusere stressrelatert spising</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Kameraskann AI</h4>
+                <h3><i class="fas fa-camera"></i> Kameraskann AI</h3>
                 <p>Skann vektavlesninger fra vektens display eller mat for å få øyeblikkelig næringsanalyse</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dyptgående forskning <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dyptgående forskning <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omfattende AI-analyse av vektdataene dine med detaljerte innsikter</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Mønsterdetektiv <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Mønsterdetektiv <span class="ai-pro-badge">Pro</span></h3>
                 <p>Finn skjulte korrelasjoner mellom vekten din og livsstilsfaktorer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h3>
                 <p>Få personaliserte, datadrevne vektmål basert på mønstrene dine</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Legeoppsummering <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Legeoppsummering <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generer profesjonelle sammendrag av vektstyring for helsebesøk</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sykmelding <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Sykmelding <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-genererte sykmeldinger for jobb eller skole når du trenger dem</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h3>
                 <p>Gjør vektreisen din om til kreative, engasjerende fortellinger</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstoppsummering <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstoppsummering <span class="ai-pro-badge">Pro</span></h3>
                 <p>Lag delbare tekstmeldingsoppsummeringer av vekttrendene dine</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personlig quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Personlig quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test kunnskapen din med en morsom AI-generert quiz med 10 spørsmål om dataene dine</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Lytt til AI-innsikten og oppsummeringene dine med naturlig taleopplesning</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Skreddersydd helserapport <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Skreddersydd helserapport <span class="ai-pro-badge">Pro</span></h3>
                 <p>Lag omfattende, personlig tilpassede treningsdokumenter for å følge fremgangen din</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-utensils"></i> Måltidsplanlegger <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-utensils"></i> Måltidsplanlegger <span class="ai-pro-badge">Pro</span></h3>
                 <p>Få en personlig ukentlig måltidsplan basert på vektmålene dine og matpreferanser</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-dumbbell"></i> Treningsplanlegger <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-dumbbell"></i> Treningsplanlegger <span class="ai-pro-badge">Pro</span></h3>
                 <p>Få en personlig treningsrutine skreddersydd til ditt treningsnivå og dine mål</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (på enheten) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (på enheten) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Personvernfokusert alternativ som kjører AI lokalt på enheten din ved hjelp av Apples Foundation Models — ingenting forlater din iPhone, iPad eller Mac. Ubegrenset bruk med en betalt konto, på støttede Apple Silicon-enheter (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Håndfri, toveis talesamtaler med AI-en om dataene dine – still spørsmål og hør svar uten å røre skjermen</p>
             </div>
 
@@ -921,22 +923,22 @@
         <div class="related-apps-grid">
 
             <a href="/nb/blood-pressure/" class="related-app-card" aria-label="Blodtrykk">
-                <img src="/images/BPT_1024.png" alt="Blodtrykk" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Blodtrykk" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Blodtrykk</span>
             </a>
 
             <a href="/nb/daily-journal/" class="related-app-card" aria-label="Dagbok">
-                <img src="/images/NT_1024.png" alt="Dagbok" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Dagbok" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Dagbok</span>
             </a>
 
-            <a href="/nb/mental-health/" class="related-app-card" aria-label="Mental Helse">
-                <img src="/images/FT_1024.png" alt="Mental Helse" class="related-app-icon">
+            <a href="/nb/mood-tracker/" class="related-app-card" aria-label="Mental Helse">
+                <img src="/images/FT_1024.png" alt="Mental Helse" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Mental Helse</span>
             </a>
 
             <a href="/nb/sleep/" class="related-app-card" aria-label="Søvn">
-                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Søvn</span>
             </a>
 
@@ -949,9 +951,10 @@
         <h2>Start din vektreise i dag</h2>
         <p>Bli med tusenvis som når treningsmålene sine med Vekt & Mat</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nb-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nb-black.svg" alt="Last ned Vekt & Mat"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nb-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nb-black.svg" alt="Last ned Vekt & Mat" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

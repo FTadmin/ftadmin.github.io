@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -448,7 +449,7 @@
 
             <a href="/nb/daily-journal/">Dagbok</a>
 
-            <a href="/nb/mental-health/">Mental Helse</a>
+            <a href="/nb/mood-tracker/">Mental Helse</a>
 
             <a href="/nb/sleep/" class="current">Søvn</a>
 
@@ -533,9 +534,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/ST_1024.png" alt="Søvn og drømmer-appikon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/ST_1024.png" alt="Søvn og drømmer-appikon" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Søvn og drømmer</h1>
 
         <div class="privacy-badge">
@@ -543,12 +545,12 @@
         </div>
         <p class="hero-subtitle">Spor søvnmønstrene dine og oppdag hva som påvirker søvnkvaliteten din. Har AI-drevet drømmeanalyse, CPAP-terapimonitorering, avslapningsverktøy og Apple Health-integrasjon for å hjelpe deg å sove bedre.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nb-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nb-black.svg" alt="Last ned Søvn & Drømmer på App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nb-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nb-black.svg" alt="Last ned Søvn & Drømmer på App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Gratis app med valgfrie premiumfunksjoner<br>iPhone, iPad og Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -561,15 +563,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/st-1.png" alt="Søvn & Drømmer Skjermbilde 1" class="screenshot-img">
+                <img src="/images/screenshots/st-1.png" alt="Søvn & Drømmer Skjermbilde 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-2.png" alt="Søvn & Drømmer Skjermbilde 2" class="screenshot-img">
+                <img src="/images/screenshots/st-2.png" alt="Søvn & Drømmer Skjermbilde 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-3.png" alt="Søvn & Drømmer Skjermbilde 3" class="screenshot-img">
+                <img src="/images/screenshots/st-3.png" alt="Søvn & Drømmer Skjermbilde 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -700,102 +702,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Still et spørsmål</h4>
+                <h3><i class="fas fa-question-circle"></i> Still et spørsmål</h3>
                 <p>Rask spørsmål og svar om søvndataene dine – få umiddelbare svar på søvnspørsmålene dine</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Ha interaktive samtaler om søvnhelsen din og få personlig veiledning. Rask chat er gratis hver dag; Pro-chat går dypere på vår mest kapable AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Lydoppsummering</h4>
+                <h3><i class="fas fa-volume-up"></i> Lydoppsummering</h3>
                 <p>Lytt til lydsammendrag av søvntrendene dine – perfekt for innsikt på farten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Rask drømmeanalyse</h4>
+                <h3><i class="fas fa-moon"></i> Rask drømmeanalyse</h3>
                 <p>AI tolker drømmene dine med nøkkelsymboler, følelsesmessig innsikt og refleksjonsspørsmål</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-spa"></i> Ro meg ned for søvn</h4>
+                <h3><i class="fas fa-spa"></i> Ro meg ned for søvn</h3>
                 <p>Personlige avslapningsteknikker, pusteøvelser og fredfylte visualiseringer som hjelper deg å sovne</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Få meg til å le</h4>
+                <h3><i class="fas fa-laugh"></i> Få meg til å le</h3>
                 <p>Få personlig humor fra sporingsdata som lyser opp dagen din</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dyptgående forskning <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dyptgående forskning <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omfattende AI-analyse av søvndataene dine med detaljerte innsikter</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-lungs"></i> CPAP-rapport <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-lungs"></i> CPAP-rapport <span class="ai-pro-badge">Pro</span></h3>
                 <p>Komplett CPAP-terapianalyse med AHI-sporing, vurdering av masketilpasning, overholdelsesovervåking og interaktive handlingskort</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-brain"></i> Pro drømmeanalyse <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-brain"></i> Pro drømmeanalyse <span class="ai-pro-badge">Pro</span></h3>
                 <p>Dyp psykologisk drømmetolkning basert på jungianske arketyper, tilbakevendende symboler, emosjonelle mønstre og personlig symbolordbok</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Mønsterdetektiv <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Mønsterdetektiv <span class="ai-pro-badge">Pro</span></h3>
                 <p>Finn skjulte sammenhenger mellom søvnkvaliteten din og livsstilsfaktorer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h3>
                 <p>Få personlige, datadrevne søvnmål basert på dine mønstre</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Legeoppsummering <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Legeoppsummering <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generer profesjonelle søvnsammendrag til helsebesøk eller søvnstudier</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sykmelding <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Sykmelding <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-genererte sykemeldinger for jobb eller skole når du trenger det</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h3>
                 <p>Gjør søvnreisen din om til kreative, engasjerende fortellinger</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstoppsummering <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstoppsummering <span class="ai-pro-badge">Pro</span></h3>
                 <p>Lag delbare tekstmeldingssammendrag av søvntrendene dine</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personlig quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Personlig quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test kunnskapen din med en morsom AI-generert quiz med 10 spørsmål om dataene dine</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Hør AI-innsiktene og sammendragene dine med naturlig stemmeavspilling</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Skreddersydd helserapport <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Skreddersydd helserapport <span class="ai-pro-badge">Pro</span></h3>
                 <p>Lag omfattende, personlige søvnhelsedokumenter for å følge fremgangen din</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (på enheten) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (på enheten) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Personvernfokusert alternativ som kjører AI lokalt på enheten din ved hjelp av Apples Foundation Models — ingenting forlater din iPhone, iPad eller Mac. Ubegrenset bruk med en betalt konto, på støttede Apple Silicon-enheter (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Håndfri, toveis talesamtaler med AI-en om dataene dine – still spørsmål og hør svar uten å røre skjermen</p>
             </div>
 
@@ -1022,22 +1024,22 @@
         <div class="related-apps-grid">
 
             <a href="/nb/blood-pressure/" class="related-app-card" aria-label="Blodtrykk">
-                <img src="/images/BPT_1024.png" alt="Blodtrykk" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Blodtrykk" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Blodtrykk</span>
             </a>
 
             <a href="/nb/daily-journal/" class="related-app-card" aria-label="Dagbok">
-                <img src="/images/NT_1024.png" alt="Dagbok" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Dagbok" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Dagbok</span>
             </a>
 
-            <a href="/nb/mental-health/" class="related-app-card" aria-label="Mental Helse">
-                <img src="/images/FT_1024.png" alt="Mental Helse" class="related-app-icon">
+            <a href="/nb/mood-tracker/" class="related-app-card" aria-label="Mental Helse">
+                <img src="/images/FT_1024.png" alt="Mental Helse" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Mental Helse</span>
             </a>
 
             <a href="/nb/weight/" class="related-app-card" aria-label="Vekt">
-                <img src="/images/WT_1024.png" alt="Vekt" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Vekt" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Vekt</span>
             </a>
 
@@ -1050,9 +1052,10 @@
         <h2>Begynn å forbedre søvnen din i natt</h2>
         <p>Bedre hvile er bare noen få trykk unna</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nb-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nb-black.svg" alt="Last ned Sleep & Dreams"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nb-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nb-black.svg" alt="Last ned Sleep & Dreams" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

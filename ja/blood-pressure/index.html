@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,22 +635,6 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "最も優れた血圧記録アプリは何ですか？",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "血圧アプリはイギリスでNo.1の血圧記録アプリです。AIインサイト、モニター画面から自動で数値を読み取るカメラスキャンAI技術（OMRON、マイクロライフ、Beurer対応）、Apple Health連携、医師との共有機能を搭載。収縮期・拡張期血圧、心拍数、平均動脈圧（MAP）の記録に対応しています。"
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "カメラスキャンAIはどのように機能しますか？",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "カメラスキャンAIは高度な光学文字認識（OCR）技術を使用して、血圧計のデジタル表示から血圧値を自動的に読み取ります。iPhoneまたはiPadのカメラを収縮期、拡張期、脈拍が表示された画面に向けるだけで、アプリが自動的に数値を入力します。手入力の誤りをなくし、記録を高速化します。OMRON、マイクロライフ、Beurerなど、ほとんどのデジタル血圧計に対応しています。"
-                      }
-                },
-                {
-                      "@type": "Question",
                       "name": "正常な血圧値はどのくらいですか？",
                       "acceptedAnswer": {
                             "@type": "Answer",
@@ -658,26 +643,34 @@
                 },
                 {
                       "@type": "Question",
-                      "name": "血圧データを医師と共有できますか？",
+                      "name": "カメラスキャンAIはどのように機能しますか？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "はい、Blood PressureではPDF、CSV、Excel、JSON形式で包括的なレポートをエクスポートできます。これらのプロフェッショナルにフォーマットされたレポートには、要約統計、トレンドチャート、すべてのメモが含まれます - 医療提供者に必要なすべての情報が1つの文書にまとまります。メールなどの共有方法で簡単に共有できます。"
+                            "text": "iPhoneまたはiPadのカメラを血圧計のデジタル表示に向けるだけです。アプリはAI搭載のカメラ認識技術を使用して数値を自動的に読み取り、収縮期、拡張期、脈拍の欄に入力します。手入力の誤りをなくし、記録を高速化します。こちらで血圧計を入手できます。"
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Apple Healthと連携できますか？",
+                      "name": "MAPとは何ですか？記録すべきですか？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "はい、血圧アプリはApple Healthとの双方向連携に対応しています。Apple Healthから過去の血圧データをインポートでき、新しい記録はHealthKitに自動保存されます。すべてのAppleデバイスで包括的な健康管理が可能です。"
+                            "text": "MAP（平均動脈圧）は、1回の心拍サイクル中の動脈内の平均血圧を表す計算値です。計算式は：MAP =（2 × 拡張期 + 収縮期）÷ 3です。一部の医師はMAPを心血管リスクの評価に活用しています。アプリは各記録ごとにMAPを自動計算します。"
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "血圧モニタリングにおけるMAPとは何ですか？",
+                      "name": "過去の血圧データをインポートできますか？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "MAP（平均動脈圧）は、1回の心拍サイクル中の動脈内の平均血圧を表す計算値です。計算式は：MAP =（2 × 拡張期 + 収縮期）÷ 3です。一部の医師はMAPを心血管リスクや臓器灌流の評価に活用しています。血圧アプリは各記録ごとにMAPを自動計算します。"
+                            "text": "はい！Apple Healthで血圧を記録していた場合、ワンタップですべての過去データをアプリにインポートできます。また、他のソースからのデータがある場合は、CSV/Excelファイルからのインポートにも対応しています。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "どのくらいの頻度で血圧を測定すべきですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "健康状態や医師の推奨によって異なります。毎日（朝と夕方が多い）測定する方もいれば、週1回の方もいます。アプリでは医療機関が推奨する頻度で簡単に記録でき、一貫したスケジュールを維持するためのリマインダーも設定できます。"
                       }
                 },
                 {
@@ -685,7 +678,31 @@
                       "name": "血圧データのプライバシーは守られますか？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "はい、血圧データはデバイス上とプライベートなiCloudアカウントに暗号化されて保存されます。データが外部サーバーを経由することはなく、開発者がお客様の健康情報を閲覧することはできません。AppleのメモやPhotosアプリと同等のセキュリティを備えており、GDPRに完全準拠しています。"
+                            "text": "もちろんです。血圧データはデバイス上とプライベートなiCloudアカウントに暗号化されて保存されます。データが当社のサーバーを経由することはなく、お客様の健康情報を閲覧することはできません。AppleのメモやPhotosアプリと同等のセキュリティです。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "家族の血圧も記録できますか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "アプリは個人利用向けに設計されており、個人のiCloudアカウントと同期します。複数のご家族の記録を管理する場合は、各自のデバイスでそれぞれのApple IDを使用してアプリをご利用ください。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "広告やトラッキングはありますか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "いいえ。 アプリからすべての広告を完全に排除しています。他のアプリやウェブサイトにわたってお客様を追跡することはなく、データを広告主に販売することもありません。 データはiCloud経由で同期されます - Apple NotesやPhotosと同じ仕組みです。そのため、メールアドレスや名前などの個人情報を収集する必要がありません。血圧データはお使いのデバイスとiCloudアカウントに保存され、無料版でもプレミアム版でも完全にプライベートです。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "サブスクリプションは必要ですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "サブスクリプションは不要です。アプリは無料でダウンロードでき、記録・チャート・Apple Health連携・エクスポートはすべて無料、さらにすべてのユーザーが毎日本物のAI機能を無料でご利用いただけます — 広告は一切表示されません。オプションのProサブスクリプションでは、最も高度なAI機能（ディープリサーチ、ドクターサマリー、パターン探偵、Pro MAPレポート、Proチャットなど）が最も高性能なAIで利用でき、寛大な1日あたりの上限も引き上げられます。"
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/ja/daily-journal/">日記</a>
 
-            <a href="/ja/mental-health/">メンタルヘルス</a>
+            <a href="/ja/mood-tracker/">メンタルヘルス</a>
 
             <a href="/ja/sleep/">睡眠</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="血圧アプリのアイコン" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="血圧アプリのアイコン" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>血圧</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">血圧を記録・理解するための最もスマートな方法。カメラスキャンAIで数値を読み取り、Apple Healthと同期し、AIインサイトで心血管の健康状態を把握しましょう。</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="App Storeで血圧をダウンロード"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="App Storeで血圧をダウンロード" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">基本無料・オプションのプレミアム機能あり<br>iPhone、iPad、Mac対応 • iOS 16.0以降</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="血圧スクリーンショット1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="血圧スクリーンショット1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="血圧スクリーンショット2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="血圧スクリーンショット2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="血圧スクリーンショット3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="血圧スクリーンショット3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> 質問する</h4>
+                <h3><i class="fas fa-question-circle"></i> 質問する</h3>
                 <p>血圧データに関するQ&A - 健康に関する疑問に即座に回答</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> チャット</h4>
+                <h3><i class="fas fa-comments"></i> チャット</h3>
                 <p>心血管の健康についてインタラクティブな対話を行い、個別のアドバイスを取得。クイックチャットは毎日無料、Proチャットは最も高性能なAIでさらに深く対応</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> 音声サマリー</h4>
+                <h3><i class="fas fa-volume-up"></i> 音声サマリー</h3>
                 <p>血圧トレンドの音声要約を聴取 - 外出先でのインサイト確認に最適</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> 笑わせて</h4>
+                <h3><i class="fas fa-laugh"></i> 笑わせて</h3>
                 <p>記録データからパーソナライズされたユーモアで1日を明るく</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> リラックス</h4>
+                <h3><i class="fas fa-moon"></i> リラックス</h3>
                 <p>AI誘導の呼吸エクササイズでストレスを軽減し血圧を下げるサポート</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> カメラスキャンAI</h4>
+                <h3><i class="fas fa-camera"></i> カメラスキャンAI</h3>
                 <p>モニター画面から直接数値を読み取り - <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>、マイクロライフ、Beurerに対応</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> ディープリサーチ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> ディープリサーチ <span class="ai-pro-badge">Pro</span></h3>
                 <p>血圧データの包括的なAI分析と詳細なインサイト</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> パターン探偵 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> パターン探偵 <span class="ai-pro-badge">Pro</span></h3>
                 <p>血圧値と生活習慣要因の隠れた相関関係を発見</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> 目標アシスタント <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> 目標アシスタント <span class="ai-pro-badge">Pro</span></h3>
                 <p>パターンに基づいた、パーソナライズされたデータ駆動型の血圧目標を設定</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> 医師向けサマリー <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> 医師向けサマリー <span class="ai-pro-badge">Pro</span></h3>
                 <p>医療機関の受診時に共有するプロフェッショナルな医療要約を生成</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> 診断書 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> 診断書 <span class="ai-pro-badge">Pro</span></h3>
                 <p>必要な時にAIが生成する仕事や学校向けの診断書</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> ストーリー生成 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> ストーリー生成 <span class="ai-pro-badge">Pro</span></h3>
                 <p>健康データをクリエイティブで魅力的な物語に変換</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> テキストサマリー <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> テキストサマリー <span class="ai-pro-badge">Pro</span></h3>
                 <p>血圧トレンドの共有可能なテキストメッセージ要約を作成</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> パーソナルクイズ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> パーソナルクイズ <span class="ai-pro-badge">Pro</span></h3>
                 <p>データに関するAI生成の10問クイズで楽しく知識をテスト</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> テキスト読み上げ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> テキスト読み上げ <span class="ai-pro-badge">Pro</span></h3>
                 <p>AIインサイトとサマリーを自然な音声で聴取</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> カスタム健康レポート <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> カスタム健康レポート <span class="ai-pro-badge">Pro</span></h3>
                 <p>進捗を追跡するための包括的でパーソナライズされた健康ドキュメントを作成</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence（オンデバイス） <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence（オンデバイス） <span class="ai-pro-badge">Pro</span></h3>
                 <p>Appleのファウンデーションモデルを使用してAIをデバイス上でローカルに実行するプライバシー優先のオプション — iPhoneやiPad、Macの外にデータが出ることはありません。対応するApple Siliconデバイス（iOS 26以降）で、有料アカウントなら無制限にご利用いただけます。</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> ボイスチャット <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> ボイスチャット <span class="ai-pro-badge">Pro</span></h3>
                 <p>画面に触れずに、あなたのデータについてAIとハンズフリーで音声による対話ができます — 質問して、答えを聞くだけ</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/ja/daily-journal/" class="related-app-card" aria-label="日記">
-                <img src="/images/NT_1024.png" alt="日記" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="日記" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">日記</span>
             </a>
 
-            <a href="/ja/mental-health/" class="related-app-card" aria-label="メンタルヘルス">
-                <img src="/images/FT_1024.png" alt="メンタルヘルス" class="related-app-icon">
+            <a href="/ja/mood-tracker/" class="related-app-card" aria-label="メンタルヘルス">
+                <img src="/images/FT_1024.png" alt="メンタルヘルス" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">メンタルヘルス</span>
             </a>
 
             <a href="/ja/sleep/" class="related-app-card" aria-label="睡眠">
-                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">睡眠</span>
             </a>
 
             <a href="/ja/weight/" class="related-app-card" aria-label="体重">
-                <img src="/images/WT_1024.png" alt="体重" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="体重" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">体重</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>今日から血圧の記録を始めましょう</h2>
         <p>心血管の健康管理に取り組む数千人のユーザーに加わりましょう</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="血圧をダウンロード"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="血圧をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

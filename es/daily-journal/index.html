@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -518,7 +519,7 @@
 
             <a href="/es/daily-journal/" class="current">Diario</a>
 
-            <a href="/es/mental-health/">Salud Mental</a>
+            <a href="/es/mood-tracker/">Salud Mental</a>
 
             <a href="/es/sleep/">Sueño</a>
 
@@ -603,9 +604,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Icono de la app Diario" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Icono de la app Diario" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Diario</h1>
 
         <div class="privacy-badge">
@@ -613,7 +615,7 @@
         </div>
         <p class="hero-subtitle">Su espacio privado para reflexiones diarias, pensamientos y recuerdos. Escriba libremente con análisis de sentimientos impulsado por IA, archivos adjuntos de fotos e información inteligente sobre sus patrones de escritura.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Diario en la App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Diario en la App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuita con funciones premium opcionales<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
@@ -627,15 +629,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Captura de pantalla del Diario 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Captura de pantalla del Diario 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Captura de pantalla del Diario 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="Captura de pantalla del Diario 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Captura de pantalla del Diario 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Captura de pantalla del Diario 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -766,102 +768,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Haga una pregunta</h4>
+                <h3><i class="fas fa-question-circle"></i> Haga una pregunta</h3>
                 <p>Preguntas y respuestas rápidas sobre sus entradas de diario: obtenga respuestas instantáneas sobre su escritura</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Mantén conversaciones interactivas sobre tu proceso de escritura y recibe asesoramiento personalizado. Quick Chat es gratis todos los días; Pro Chat profundiza más con nuestra IA más avanzada</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Resumen de voz</h4>
+                <h3><i class="fas fa-volume-up"></i> Resumen de voz</h3>
                 <p>Escuche resúmenes en audio de los temas de su diario, perfecto para reflexiones sobre la marcha</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> Escaneo con IA</h4>
+                <h3><i class="fas fa-barcode-scan"></i> Escaneo con IA</h3>
                 <p>Escanee objetos, documentos, recibos o texto para crear entradas de diario instantáneas con descripciones de IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Hazme reír</h4>
+                <h3><i class="fas fa-laugh"></i> Hazme reír</h3>
                 <p>Obtenga humor personalizado a partir de sus entradas de diario para alegrar su día</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Cálmame</h4>
+                <h3><i class="fas fa-moon"></i> Cálmame</h3>
                 <p>Ejercicios de respiración y relajación guiados por IA para reducir el estrés</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Investigación en profundidad <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Investigación en profundidad <span class="ai-pro-badge">Pro</span></h3>
                 <p>Análisis completo de IA de su diario con información detallada</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detective de patrones <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detective de patrones <span class="ai-pro-badge">Pro</span></h3>
                 <p>Encuentre temas y patrones ocultos en sus entradas de diario a lo largo del tiempo</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistente de metas <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistente de metas <span class="ai-pro-badge">Pro</span></h3>
                 <p>Reciba metas de vida personalizadas y basadas en datos según los patrones de su diario</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Resumen para el médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Resumen para el médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genere resúmenes profesionales para compartir en consultas médicas</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Justificante médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Justificante médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Justificantes médicos generados por IA para el trabajo o la escuela cuando los necesite</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generador de historias <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generador de historias <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transforme sus entradas de diario en narrativas creativas y cautivadoras</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Resumen de texto <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Resumen de texto <span class="ai-pro-badge">Pro</span></h3>
                 <p>Cree resúmenes en formato de mensaje de texto de los temas de su diario para compartir</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Quiz personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Quiz personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ponga a prueba sus conocimientos con un divertido quiz de 10 preguntas generado por IA sobre sus datos</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Texto a voz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Texto a voz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Escuche sus análisis y resúmenes de IA con reproducción de voz natural</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Informe de salud personalizado <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Informe de salud personalizado <span class="ai-pro-badge">Pro</span></h3>
                 <p>Cree documentos completos y personalizados para el seguimiento del progreso de su diario</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Explorador de temas <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Explorador de temas <span class="ai-pro-badge">Pro</span></h3>
                 <p>Descubra temas e ideas recurrentes en su escritura con análisis temático impulsado por IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Línea temporal de ánimo <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Línea temporal de ánimo <span class="ai-pro-badge">Pro</span></h3>
                 <p>Visualice su viaje emocional a lo largo del tiempo con seguimiento de sentimientos analizado por IA</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (en el dispositivo) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (en el dispositivo) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opción que prioriza la privacidad y ejecuta la IA localmente en tu dispositivo usando Foundation Models de Apple — nada sale de tu iPhone, iPad o Mac. Uso ilimitado con una cuenta de pago en dispositivos Apple Silicon compatibles (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat de voz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat de voz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversaciones de voz bidireccionales y manos libres con la IA sobre tus datos: haz preguntas y escucha las respuestas sin tocar la pantalla</p>
             </div>
 
@@ -1184,22 +1186,22 @@
         <div class="related-apps-grid">
 
             <a href="/es/blood-pressure/" class="related-app-card" aria-label="Presión Arterial">
-                <img src="/images/BPT_1024.png" alt="Presión Arterial" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Presión Arterial" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Presión Arterial</span>
             </a>
 
-            <a href="/es/mental-health/" class="related-app-card" aria-label="Salud Mental">
-                <img src="/images/FT_1024.png" alt="Salud Mental" class="related-app-icon">
+            <a href="/es/mood-tracker/" class="related-app-card" aria-label="Salud Mental">
+                <img src="/images/FT_1024.png" alt="Salud Mental" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Salud Mental</span>
             </a>
 
             <a href="/es/sleep/" class="related-app-card" aria-label="Sueño">
-                <img src="/images/ST_1024.png" alt="Sueño" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sueño" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sueño</span>
             </a>
 
             <a href="/es/weight/" class="related-app-card" aria-label="Peso">
-                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Peso</span>
             </a>
 
@@ -1212,9 +1214,10 @@
         <h2>Comience hoy su práctica de diario</h2>
         <p>Únase a miles de personas que descubren los beneficios de la reflexión diaria</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Diario"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Diario" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

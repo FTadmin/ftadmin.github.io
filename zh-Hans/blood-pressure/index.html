@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,22 +635,6 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "最好的血压追踪应用是什么？",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "血压是英国排名第一的血压追踪应用。它具备AI驱动的洞察功能、Camera Scan AI技术可自动从监测仪屏幕读取数值（OMRON、Microlife、Beurer）、Apple Health集成以及与医生分享的导出功能。支持追踪收缩压和舒张压、心率及平均动脉压（MAP）。"
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Camera Scan AI是如何工作的？",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Camera Scan AI使用先进的光学字符识别（OCR）技术自动从血压监测仪的数字显示屏读取数值。只需将iPhone或iPad摄像头对准显示收缩压、舒张压和脉搏读数的屏幕，应用就会自动填充这些数值。这消除了手动输入错误，使记录更快。适用于OMRON、Microlife、Beurer及大多数数字血压监测仪。"
-                      }
-                },
-                {
-                      "@type": "Question",
                       "name": "正常血压读数是多少？",
                       "acceptedAnswer": {
                             "@type": "Answer",
@@ -658,26 +643,34 @@
                 },
                 {
                       "@type": "Question",
-                      "name": "我可以为医生导出血压数据吗？",
+                      "name": "Camera Scan AI是如何工作的？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "是的，Blood Pressure允许您导出PDF、CSV、Excel或JSON格式的综合报告。这些专业格式化的报告包含汇总统计、趋势图表以及您的所有笔记 - 医疗服务提供者所需的一切信息尽在一份文档中。您可以通过电子邮件或其他方式轻松分享这些报告。"
+                            "text": "只需将您的iPhone或iPad摄像头对准血压监测仪的数字显示屏。应用使用先进的AI驱动摄像头识别技术自动读取数字，并填充收缩压、舒张压和脉搏字段。这消除了手动输入错误，使记录更快。在此获取血压监测仪。"
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "该应用是否与Apple Health集成？",
+                      "name": "什么是MAP，我应该追踪它吗？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "是的，血压应用支持Apple Health双向集成。您可以从Apple Health导入历史血压数据，应用还会自动将新的读数保存到HealthKit。这在您所有的Apple设备上创建了一个全面的健康追踪生态系统。"
+                            "text": "MAP（平均动脉压）是一个计算值，代表一个心动周期中动脉的平均血压。计算公式为：MAP = (2 × 舒张压 + 收缩压) ÷ 3。一些医生认为MAP有助于评估心血管风险。应用会自动为每次读数计算MAP。"
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "什么是血压监测中的MAP？",
+                      "name": "我可以导入旧的血压数据吗？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "MAP（平均动脉压）是一个计算值，代表一个心动周期中动脉的平均血压。计算公式为：MAP = (2 × 舒张压 + 收缩压) ÷ 3。一些医生认为MAP有助于评估心血管风险和器官灌注。血压应用会自动为每次读数计算MAP。"
+                            "text": "可以！如果您一直在Apple Health中追踪血压，您可以一键将所有历史读数导入应用。该应用还支持从CSV/Excel文件导入，如果您有来自其他来源的数据。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我应该多久测一次血压？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "这取决于您的健康状况和医生的建议。有些人每天测量（通常早晚各一次），而有些人每周测量。该应用让您可以按照医疗服务提供者建议的频率轻松追踪。您可以设置提醒来帮助保持规律的测量计划。"
                       }
                 },
                 {
@@ -685,7 +678,31 @@
                       "name": "我的血压数据安全吗？",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "是的，您的血压读数以加密方式存储在您的设备和私人iCloud账户中。数据永远不会通过外部服务器传输，开发者无法查看您的健康信息。它与Apple的备忘录或照片应用一样安全，完全符合GDPR规定。"
+                            "text": "绝对安全。您的血压读数以加密方式存储在您的设备和私人iCloud账户中。数据永远不会通过我们的服务器传输，我们无法查看您的健康信息。它与Apple的备忘录或照片应用一样安全。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我可以为家人追踪血压吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "该应用专为个人使用而设计，与您的个人iCloud账户同步。要追踪多个家庭成员的血压，每个人应在自己的设备上使用自己的Apple ID使用该应用。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "你们是否显示广告或追踪我？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不会。 我们已完全从应用中移除所有广告。我们不会在其他应用或网站上追踪您，也永远不会将您的数据出售给广告商。 您的数据通过iCloud同步——就像Apple备忘录和照片一样。这意味着我们不需要知道您的电子邮件地址、姓名或任何个人信息。您的血压数据存储在您的设备和iCloud账户中，无论您使用免费版还是高级版，它都是完全私密的。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我需要订阅吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "无需订阅。应用可免费下载，所有记录、图表、Apple Health同步和导出功能均免费，每位用户每天都能免费使用真正的AI功能 — 永远没有广告。可选的Pro订阅可解锁最深入的AI功能（深度研究、医生总结、模式侦探、Pro版MAP报告、Pro聊天等），并在我们最强大的AI上运行，同时提高原本就很慷慨的每日限额。"
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/zh-Hans/daily-journal/">每日日记</a>
 
-            <a href="/zh-Hans/mental-health/">心理健康</a>
+            <a href="/zh-Hans/mood-tracker/">心理健康</a>
 
             <a href="/zh-Hans/sleep/">睡眠</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="血压应用图标" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="血压应用图标" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>血压</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">追踪和了解您血压的最智能方式。使用Camera Scan AI扫描读数，与Apple Health同步，获取AI驱动的心血管健康洞察。</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载血压应用"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载血压应用" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">免费应用，可选高级功能<br>iPhone、iPad和Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="血压应用截图1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="血压应用截图1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="血压应用截图2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="血压应用截图2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="血压应用截图3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="血压应用截图3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> 提问</h4>
+                <h3><i class="fas fa-question-circle"></i> 提问</h3>
                 <p>关于您血压数据的快速问答——即时获取健康问题的答案</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> 聊天</h4>
+                <h3><i class="fas fa-comments"></i> 聊天</h3>
                 <p>就您的心血管健康进行互动对话，获取个性化指导。快速聊天每天免费；Pro聊天在我们最强大的AI上提供更深入的对话</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> 语音摘要</h4>
+                <h3><i class="fas fa-volume-up"></i> 语音摘要</h3>
                 <p>收听血压趋势的音频摘要——非常适合随时随地获取洞察</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> 逗我开心</h4>
+                <h3><i class="fas fa-laugh"></i> 逗我开心</h3>
                 <p>从您的追踪数据中获取个性化幽默，为您的一天增添乐趣</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> 让我平静</h4>
+                <h3><i class="fas fa-moon"></i> 让我平静</h3>
                 <p>AI引导的呼吸练习，帮助减轻压力和降低血压</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> 相机扫描AI</h4>
+                <h3><i class="fas fa-camera"></i> 相机扫描AI</h3>
                 <p>直接从监测仪屏幕扫描读数——适用于<a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>、Microlife、Beurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> 深度研究 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> 深度研究 <span class="ai-pro-badge">Pro</span></h3>
                 <p>对您血压数据的全面AI分析，提供详细洞察</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> 规律侦探 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> 规律侦探 <span class="ai-pro-badge">Pro</span></h3>
                 <p>发现您的血压读数与生活方式因素之间的隐藏关联</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> 目标助手 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> 目标助手 <span class="ai-pro-badge">Pro</span></h3>
                 <p>基于您的规律获取个性化、数据驱动的血压目标</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> 医生摘要 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> 医生摘要 <span class="ai-pro-badge">Pro</span></h3>
                 <p>生成专业的医疗摘要，在就医时分享</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> 病假条 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> 病假条 <span class="ai-pro-badge">Pro</span></h3>
                 <p>需要时AI生成工作或学校的病假条</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> 故事生成器 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> 故事生成器 <span class="ai-pro-badge">Pro</span></h3>
                 <p>将您的健康数据转化为创意、引人入胜的叙事</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> 文字摘要 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> 文字摘要 <span class="ai-pro-badge">Pro</span></h3>
                 <p>创建可分享的血压趋势文字消息摘要</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> 个人测验 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> 个人测验 <span class="ai-pro-badge">Pro</span></h3>
                 <p>通过AI生成的关于您数据的10道趣味测验题测试您的知识</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> 文字转语音 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> 文字转语音 <span class="ai-pro-badge">Pro</span></h3>
                 <p>通过自然语音播放收听您的AI洞察和摘要</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> 定制健康报告 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> 定制健康报告 <span class="ai-pro-badge">Pro</span></h3>
                 <p>创建全面的个性化健康文档来追踪您的进展</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence（本地运行） <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence（本地运行） <span class="ai-pro-badge">Pro</span></h3>
                 <p>隐私优先的选项，使用 Apple 的 Foundation Models 在您的设备上本地运行 AI——数据不会离开您的 iPhone、iPad 或 Mac。在支持的 Apple Silicon 设备（iOS 26及以上）上，付费账户可无限制使用。</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> 语音聊天 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> 语音聊天 <span class="ai-pro-badge">Pro</span></h3>
                 <p>与AI就您的数据进行免提双向语音对话 — 提问并聆听答案，无需触碰屏幕</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/zh-Hans/daily-journal/" class="related-app-card" aria-label="每日日记">
-                <img src="/images/NT_1024.png" alt="每日日记" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="每日日记" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">每日日记</span>
             </a>
 
-            <a href="/zh-Hans/mental-health/" class="related-app-card" aria-label="心理健康">
-                <img src="/images/FT_1024.png" alt="心理健康" class="related-app-icon">
+            <a href="/zh-Hans/mood-tracker/" class="related-app-card" aria-label="心理健康">
+                <img src="/images/FT_1024.png" alt="心理健康" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">心理健康</span>
             </a>
 
             <a href="/zh-Hans/sleep/" class="related-app-card" aria-label="睡眠">
-                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">睡眠</span>
             </a>
 
             <a href="/zh-Hans/weight/" class="related-app-card" aria-label="体重">
-                <img src="/images/WT_1024.png" alt="体重" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="体重" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">体重</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>今天就开始追踪您的血压</h2>
         <p>加入数千名掌控心血管健康的用户</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="下载血压应用"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="下载血压应用" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

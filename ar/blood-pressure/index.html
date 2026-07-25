@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,22 +635,6 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "ما هو أفضل تطبيق لتتبع ضغط الدم؟",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Blood Pressure هو تطبيق تتبع ضغط الدم الرائد. يوفر رؤى مدعومة بالذكاء الاصطناعي وتقنية مسح الكاميرا بالذكاء الاصطناعي لالتقاط القراءات تلقائياً (OMRON وMicrolife وBeurer) وتكامل Apple Health وميزات التصدير للمشاركة مع الأطباء. يدعم تتبع ضغط الدم الانقباضي والانبساطي ومعدل ضربات القلب وضغط الشرايين المتوسط (MAP)."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "كيف يعمل مسح الكاميرا بالذكاء الاصطناعي؟",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "يستخدم مسح الكاميرا بالذكاء الاصطناعي التعرف الضوئي على الأحرف المتقدم (OCR) لقراءة قراءات ضغط الدم تلقائياً من شاشة جهازك. ما عليك سوى توجيه كاميرا iPhone أو iPad نحو الشاشة التي تعرض قيم الانقباض والانبساط والنبض، وسيملأ التطبيق هذه القيم تلقائياً. هذا يلغي أخطاء الكتابة اليدوية ويجعل التسجيل أسرع. يعمل مع OMRON وMicrolife وBeurer ومعظم أجهزة قياس ضغط الدم الرقمية."
-                      }
-                },
-                {
-                      "@type": "Question",
                       "name": "ما هي قراءة ضغط الدم الطبيعية؟",
                       "acceptedAnswer": {
                             "@type": "Answer",
@@ -658,26 +643,34 @@
                 },
                 {
                       "@type": "Question",
-                      "name": "هل يمكنني تصدير بيانات ضغط دمي لطبيبي؟",
+                      "name": "كيف يعمل مسح الكاميرا بالذكاء الاصطناعي؟",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "نعم، يتيح لك تطبيق ضغط الدم تصدير تقارير شاملة بصيغة PDF أو CSV أو Excel أو JSON. تتضمن هذه التقارير المنسّقة باحترافية إحصاءات موجزة ورسومًا بيانية للاتجاهات وجميع ملاحظاتك - كل ما يحتاجه مقدّم الرعاية الصحية في مستند واحد. يمكنك مشاركة هذه التقارير بسهولة عبر البريد الإلكتروني أو طرق مشاركة أخرى."
+                            "text": "ما عليك سوى توجيه كاميرا iPhone أو iPad نحو الشاشة الرقمية لجهاز قياس ضغط الدم. يستخدم التطبيق تقنية التعرف على الكاميرا بالذكاء الاصطناعي المتقدمة لقراءة الأرقام تلقائياً وملء حقول الانقباض والانبساط والنبض. هذا يلغي أخطاء الكتابة اليدوية ويجعل التسجيل أسرع. احصل على جهاز قياس ضغط الدم هنا."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "هل يتكامل التطبيق مع Apple Health؟",
+                      "name": "ما هو MAP وهل يجب أن أتتبعه؟",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "نعم، يوفر Blood Pressure تكاملاً ثنائي الاتجاه مع Apple Health. يمكنك استيراد بيانات ضغط الدم التاريخية من Apple Health ويحفظ التطبيق القراءات الجديدة تلقائياً في HealthKit. هذا يخلق نظام تتبع صحي شاملاً عبر جميع أجهزة Apple الخاصة بك."
+                            "text": "MAP (ضغط الشرايين المتوسط) هو قيمة محسوبة تمثل متوسط ضغط الدم في شرايينك خلال دورة قلبية واحدة. يُحسب كالتالي: MAP = (2 × الانبساطي + الانقباضي) ÷ 3. يجد بعض الأطباء أن MAP مفيد لتقييم مخاطر القلب والأوعية الدموية. يحسب التطبيق MAP تلقائياً لكل قراءة."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "ما هو MAP في مراقبة ضغط الدم؟",
+                      "name": "هل يمكنني استيراد بيانات ضغط الدم القديمة؟",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "MAP (ضغط الشرايين المتوسط) هو قيمة محسوبة تمثل متوسط ضغط الدم في شرايينك خلال دورة قلبية واحدة. يُحسب كالتالي: MAP = (2 × الانبساطي + الانقباضي) ÷ 3. يجد بعض الأطباء أن MAP مفيد لتقييم مخاطر القلب والأوعية الدموية وتروية الأعضاء. يحسب Blood Pressure قيمة MAP تلقائياً لكل قراءة."
+                            "text": "نعم! إذا كنت تتتبع ضغط الدم في Apple Health، يمكنك استيراد جميع قراءاتك التاريخية إلى التطبيق بنقرة واحدة. كما يدعم التطبيق الاستيراد من ملفات CSV/Excel إذا كانت لديك بيانات من مصادر أخرى."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "كم مرة يجب أن أقيس ضغط دمي؟",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "يعتمد ذلك على حالتك الصحية وتوصيات طبيبك. يقيس بعض الأشخاص يومياً (غالباً صباحاً ومساءً)، بينما يقيس آخرون أسبوعياً. يجعل التطبيق من السهل التتبع بقدر ما يوصي مزود الرعاية الصحية. يمكنك ضبط تذكيرات للمساعدة في الحفاظ على جدول منتظم."
                       }
                 },
                 {
@@ -685,7 +678,31 @@
                       "name": "هل بيانات ضغط دمي خاصة؟",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "نعم، يتم تخزين قراءات ضغط دمك مشفرة على جهازك وفي حساب iCloud الخاص بك. لا تمر البيانات عبر خوادم خارجية، ولا يستطيع المطورون الاطلاع على معلوماتك الصحية. إنها آمنة مثل تطبيقي Notes وPhotos من Apple ومتوافقة تماماً مع معايير الخصوصية."
+                            "text": "بالتأكيد. يتم تخزين قراءات ضغط دمك مشفرة على جهازك وفي حساب iCloud الخاص بك. لا تمر البيانات عبر خوادمنا، ولا يمكننا الاطلاع على معلوماتك الصحية. إنها آمنة مثل تطبيقي Notes وPhotos من Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "هل يمكنني تتبع ضغط الدم لأفراد العائلة؟",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "التطبيق مصمم للاستخدام الفردي ويتزامن مع حساب iCloud الشخصي الخاص بك. لتتبع أفراد العائلة المتعددين، يجب على كل شخص استخدام التطبيق على جهازه الخاص بمعرف Apple ID الخاص به."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "هل تعرضون إعلانات أو تتبعونني؟",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "لا. لقد أزلنا جميع الإعلانات تماماً من التطبيق. نحن لا نتتبعك عبر تطبيقات أو مواقع أخرى، ولا نبيع بياناتك أبداً للمعلنين. تتزامن بياناتك عبر iCloud - تماماً كـ Apple Notes وPhotos. هذا يعني أننا لسنا بحاجة لمعرفة بريدك الإلكتروني أو اسمك أو أي معلومات شخصية. يتم تخزين بيانات ضغط دمك على أجهزتك وفي حساب iCloud الخاص بك، وهي خاصة تماماً سواء كنت تستخدم الإصدار المجاني أو المميز."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "هل أحتاج إلى اشتراك؟",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "لا حاجة إلى اشتراك. التطبيق مجاني للتنزيل، وجميع أدوات التتبع والرسوم البيانية ومزامنة Apple Health والتصدير مجانية، ويحصل كل مستخدم على ميزات ذكاء اصطناعي حقيقية مجانًا كل يوم - دون إعلانات، أبدًا. يفتح اشتراك Pro الاختياري أعمق ميزات الذكاء الاصطناعي (بحث معمّق، ملخص الطبيب، محقق الأنماط، تقرير MAP Pro، محادثة Pro والمزيد)، ويشغّلها على أقوى نماذجنا، ويرفع الحدود اليومية السخية أصلاً."
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/ar/daily-journal/">المذكرة اليومية</a>
 
-            <a href="/ar/mental-health/">الصحة النفسية</a>
+            <a href="/ar/mood-tracker/">الصحة النفسية</a>
 
             <a href="/ar/sleep/">النوم</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="أيقونة تطبيق ضغط الدم" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="أيقونة تطبيق ضغط الدم" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>ضغط الدم</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">الطريقة الأذكى لتتبع ضغط الدم وفهمه. امسح القراءات بمسح الكاميرا بالذكاء الاصطناعي، وزامن مع Apple Health، واحصل على رؤى مدعومة بالذكاء الاصطناعي حول صحة قلبك وأوعيتك الدموية.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ar-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ar-black.svg" alt="تنزيل Blood Pressure من App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ar-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ar-black.svg" alt="تنزيل Blood Pressure من App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">تطبيق مجاني مع ميزات مميزة اختيارية<br>iPhone وiPad وMac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="لقطة شاشة ضغط الدم 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="لقطة شاشة ضغط الدم 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="لقطة شاشة ضغط الدم 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="لقطة شاشة ضغط الدم 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="لقطة شاشة ضغط الدم 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="لقطة شاشة ضغط الدم 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> اطرح سؤالاً</h4>
+                <h3><i class="fas fa-question-circle"></i> اطرح سؤالاً</h3>
                 <p>أسئلة وأجوبة سريعة حول بيانات ضغط دمك - احصل على إجابات فورية لأسئلتك الصحية</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> محادثة</h4>
+                <h3><i class="fas fa-comments"></i> محادثة</h3>
                 <p>أجرِ محادثات تفاعلية حول صحة قلبك وأوعيتك الدموية واحصل على إرشادات شخصية. المحادثة السريعة مجانية كل يوم؛ محادثة Pro تتعمّق أكثر على أقوى نماذج الذكاء الاصطناعي لدينا</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> ملخص صوتي</h4>
+                <h3><i class="fas fa-volume-up"></i> ملخص صوتي</h3>
                 <p>استمع إلى ملخصات صوتية لاتجاهات ضغط دمك - مثالية للرؤى أثناء التنقل</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> أضحكني</h4>
+                <h3><i class="fas fa-laugh"></i> أضحكني</h3>
                 <p>احصل على فكاهة مخصصة من بيانات التتبع الخاصة بك لتُبهج يومك</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> هدّئني</h4>
+                <h3><i class="fas fa-moon"></i> هدّئني</h3>
                 <p>تمارين تنفس بتوجيه الذكاء الاصطناعي للمساعدة في تقليل التوتر وخفض ضغط الدم</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> مسح الكاميرا بالذكاء الاصطناعي</h4>
+                <h3><i class="fas fa-camera"></i> مسح الكاميرا بالذكاء الاصطناعي</h3>
                 <p>مسح القراءات مباشرة من شاشة جهازك - يعمل مع <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a> وMicrolife وBeurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> بحث معمّق <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> بحث معمّق <span class="ai-pro-badge">Pro</span></h3>
                 <p>تحليل شامل بالذكاء الاصطناعي لبيانات ضغط دمك مع رؤى تفصيلية</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> محقق الأنماط <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> محقق الأنماط <span class="ai-pro-badge">Pro</span></h3>
                 <p>ابحث عن الارتباطات الخفية بين قراءات ضغط دمك وعوامل نمط حياتك</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> مساعد الأهداف <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> مساعد الأهداف <span class="ai-pro-badge">Pro</span></h3>
                 <p>احصل على أهداف مخصصة وقائمة على البيانات لضغط الدم بناءً على أنماطك</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> ملخص الطبيب <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> ملخص الطبيب <span class="ai-pro-badge">Pro</span></h3>
                 <p>إنشاء ملخصات طبية احترافية للمشاركة في زيارات الرعاية الصحية</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> إشعار المرض <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> إشعار المرض <span class="ai-pro-badge">Pro</span></h3>
                 <p>إشعارات مرض مولّدة بالذكاء الاصطناعي للعمل أو المدرسة عند الحاجة</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> مولّد القصص <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> مولّد القصص <span class="ai-pro-badge">Pro</span></h3>
                 <p>حوّل بيانات صحتك إلى روايات إبداعية وجذابة</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> ملخص نصي <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> ملخص نصي <span class="ai-pro-badge">Pro</span></h3>
                 <p>أنشئ ملخصات رسائل نصية قابلة للمشاركة حول اتجاهات ضغط دمك</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> اختبار شخصي <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> اختبار شخصي <span class="ai-pro-badge">Pro</span></h3>
                 <p>اختبر معرفتك باختبار مرح من 10 أسئلة مولّد بالذكاء الاصطناعي حول بياناتك</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> تحويل النص إلى كلام <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> تحويل النص إلى كلام <span class="ai-pro-badge">Pro</span></h3>
                 <p>استمع إلى رؤى الذكاء الاصطناعي والملخصات بتشغيل صوت طبيعي</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> تقرير صحي مخصص <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> تقرير صحي مخصص <span class="ai-pro-badge">Pro</span></h3>
                 <p>أنشئ وثائق صحية شاملة ومخصصة لتتبع تقدمك</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (على الجهاز) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (على الجهاز) <span class="ai-pro-badge">Pro</span></h3>
                 <p>خيار يركّز على الخصوصية يشغّل الذكاء الاصطناعي محليًا على جهازك باستخدام نماذج Foundation Models من Apple — لا شيء يغادر جهاز iPhone أو iPad أو Mac الخاص بك. استخدام غير محدود مع حساب مدفوع، على أجهزة Apple Silicon المدعومة (iOS 26 فأحدث).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> محادثة صوتية <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> محادثة صوتية <span class="ai-pro-badge">Pro</span></h3>
                 <p>محادثات صوتية ثنائية الاتجاه بدون استخدام اليدين مع الذكاء الاصطناعي حول بياناتك — اطرح أسئلة واستمع إلى الإجابات دون لمس الشاشة</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/ar/daily-journal/" class="related-app-card" aria-label="المذكرة اليومية">
-                <img src="/images/NT_1024.png" alt="المذكرة اليومية" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="المذكرة اليومية" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">المذكرة اليومية</span>
             </a>
 
-            <a href="/ar/mental-health/" class="related-app-card" aria-label="الصحة النفسية">
-                <img src="/images/FT_1024.png" alt="الصحة النفسية" class="related-app-icon">
+            <a href="/ar/mood-tracker/" class="related-app-card" aria-label="الصحة النفسية">
+                <img src="/images/FT_1024.png" alt="الصحة النفسية" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">الصحة النفسية</span>
             </a>
 
             <a href="/ar/sleep/" class="related-app-card" aria-label="النوم">
-                <img src="/images/ST_1024.png" alt="النوم" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="النوم" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">النوم</span>
             </a>
 
             <a href="/ar/weight/" class="related-app-card" aria-label="الوزن">
-                <img src="/images/WT_1024.png" alt="الوزن" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="الوزن" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">الوزن</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>ابدأ مراقبة ضغط دمك اليوم</h2>
         <p>انضم إلى آلاف المستخدمين الذين يتحكمون في صحة قلبهم</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ar-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ar-black.svg" alt="تنزيل Blood Pressure"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ar-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ar-black.svg" alt="تنزيل Blood Pressure" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

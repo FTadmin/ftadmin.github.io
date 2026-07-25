@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -448,7 +449,7 @@
 
             <a href="/nl/daily-journal/">Dagboek</a>
 
-            <a href="/nl/mental-health/">Geestelijke Gezondheid</a>
+            <a href="/nl/mood-tracker/">Geestelijke Gezondheid</a>
 
             <a href="/nl/sleep/" class="current">Slaap</a>
 
@@ -533,9 +534,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/ST_1024.png" alt="Slaap & Dromen App-icoon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/ST_1024.png" alt="Slaap & Dromen App-icoon" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Slaap & Dromen</h1>
 
         <div class="privacy-badge">
@@ -543,12 +545,12 @@
         </div>
         <p class="hero-subtitle">Volg je slaappatronen en ontdek wat je slaapkwaliteit beïnvloedt. Met AI-gestuurde droomanalyse, CPAP-therapiebewaking, ontspanningstechnieken en Apple Health-integratie voor een betere nachtrust.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nl-black.svg" alt="Download Slaap & Dromen in de App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nl-black.svg" alt="Download Slaap & Dromen in de App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Gratis app met optionele premiumfuncties<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -561,15 +563,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/st-1.png" alt="Slaap & Dromen Screenshot 1" class="screenshot-img">
+                <img src="/images/screenshots/st-1.png" alt="Slaap & Dromen Screenshot 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-2.png" alt="Slaap & Dromen Screenshot 2" class="screenshot-img">
+                <img src="/images/screenshots/st-2.png" alt="Slaap & Dromen Screenshot 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-3.png" alt="Slaap & Dromen Screenshot 3" class="screenshot-img">
+                <img src="/images/screenshots/st-3.png" alt="Slaap & Dromen Screenshot 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -700,102 +702,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Vraag stellen</h4>
+                <h3><i class="fas fa-question-circle"></i> Vraag stellen</h3>
                 <p>Snelle vragen en antwoorden over je slaapgegevens - ontvang directe antwoorden op je slaapvragen</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Voer interactieve gesprekken over je slaapgezondheid en krijg persoonlijk advies. Snelle Chat is elke dag gratis; Pro Chat gaat dieper met onze krachtigste AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Gesproken samenvatting</h4>
+                <h3><i class="fas fa-volume-up"></i> Gesproken samenvatting</h3>
                 <p>Luister naar audiossamenvattingen van je slaaptrends - perfect voor inzichten onderweg</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Snelle Droomanalyse</h4>
+                <h3><i class="fas fa-moon"></i> Snelle Droomanalyse</h3>
                 <p>AI interpreteert je dromen met sleutelsymbolen, emotionele inzichten en reflectievragen</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-spa"></i> Kalmeer me voor het slapen</h4>
+                <h3><i class="fas fa-spa"></i> Kalmeer me voor het slapen</h3>
                 <p>Gepersonaliseerde ontspanningstechnieken, ademhalingsoefeningen en vredige visualisaties om je in slaap te helpen vallen</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Maak me aan het lachen</h4>
+                <h3><i class="fas fa-laugh"></i> Maak me aan het lachen</h3>
                 <p>Ontvang gepersonaliseerde humor uit je trackinggegevens om je dag op te vrolijken</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Diepgaand Onderzoek <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Diepgaand Onderzoek <span class="ai-pro-badge">Pro</span></h3>
                 <p>Uitgebreide AI-analyse van je slaapgegevens met gedetailleerde inzichten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-lungs"></i> CPAP-rapport <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-lungs"></i> CPAP-rapport <span class="ai-pro-badge">Pro</span></h3>
                 <p>Volledige CPAP-therapieanalyse met AHI-tracking, maskerpassing beoordeling, therapietrouw bewaking en interactieve actiekaarten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-brain"></i> Pro Droomanalyse <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-brain"></i> Pro Droomanalyse <span class="ai-pro-badge">Pro</span></h3>
                 <p>Diepgaande psychologische droominterpretatie met Jungiaanse archetypen, terugkerende symbolen, emotionele patronen en persoonlijk symboolwoordenboek</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Patroondetective <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Patroondetective <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ontdek verborgen correlaties tussen je slaapkwaliteit en leefstijlfactoren</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Doelassistent <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Doelassistent <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ontvang gepersonaliseerde, datagestuurde slaapdoelen op basis van je patronen</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Dokterssamenvatting <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Dokterssamenvatting <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genereer professionele slaapsamenvattingen voor zorgbezoeken of slaaponderzoeken</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Ziektebriefje <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Ziektebriefje <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-gegenereerde ziekmeldingen voor werk of school wanneer je ze nodig hebt</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Verhaalgenerator <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Verhaalgenerator <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transformeer je slaapreis in creatieve, boeiende verhalen</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstsamenvatting <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstsamenvatting <span class="ai-pro-badge">Pro</span></h3>
                 <p>Maak deelbare tekstberichtssamenvattingen van je slaaptrends</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Persoonlijke Quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Persoonlijke Quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test je kennis met een leuke AI-gegenereerde quiz van 10 vragen over je gegevens</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Tekst-naar-spraak <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Tekst-naar-spraak <span class="ai-pro-badge">Pro</span></h3>
                 <p>Luister naar je AI-inzichten en samenvattingen met natuurlijke spraakweergave</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Gepersonaliseerd gezondheidsrapport <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Gepersonaliseerd gezondheidsrapport <span class="ai-pro-badge">Pro</span></h3>
                 <p>Maak uitgebreide, gepersonaliseerde slaapgezondheidsdocumenten om je voortgang bij te houden</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (op apparaat) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (op apparaat) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Privacyvriendelijke optie die AI lokaal op je apparaat draait met Apple's Foundation Models — er verlaat niets je iPhone, iPad of Mac. Onbeperkt gebruik met een betaald account, op ondersteunde Apple Silicon-apparaten (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Spraakchat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Spraakchat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Handsfree, tweerichtingsgesprekken met de AI over je gegevens — stel vragen en hoor antwoorden zonder het scherm aan te raken</p>
             </div>
 
@@ -1022,22 +1024,22 @@
         <div class="related-apps-grid">
 
             <a href="/nl/blood-pressure/" class="related-app-card" aria-label="Bloeddruk">
-                <img src="/images/BPT_1024.png" alt="Bloeddruk" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Bloeddruk" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Bloeddruk</span>
             </a>
 
             <a href="/nl/daily-journal/" class="related-app-card" aria-label="Dagboek">
-                <img src="/images/NT_1024.png" alt="Dagboek" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Dagboek" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Dagboek</span>
             </a>
 
-            <a href="/nl/mental-health/" class="related-app-card" aria-label="Geestelijke Gezondheid">
-                <img src="/images/FT_1024.png" alt="Geestelijke Gezondheid" class="related-app-icon">
+            <a href="/nl/mood-tracker/" class="related-app-card" aria-label="Geestelijke Gezondheid">
+                <img src="/images/FT_1024.png" alt="Geestelijke Gezondheid" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Geestelijke Gezondheid</span>
             </a>
 
             <a href="/nl/weight/" class="related-app-card" aria-label="Gewicht">
-                <img src="/images/WT_1024.png" alt="Gewicht" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Gewicht" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Gewicht</span>
             </a>
 
@@ -1050,9 +1052,10 @@
         <h2>Begin vanavond je slaap te verbeteren</h2>
         <p>Betere rust is slechts een paar tikken verwijderd</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nl-black.svg" alt="Download Slaap & Dromen"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/nl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/nl-black.svg" alt="Download Slaap & Dromen" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -380,7 +381,7 @@
 
             <a href="/ro/daily-journal/">Jurnal zilnic</a>
 
-            <a href="/ro/mental-health/">Sănătate mintală</a>
+            <a href="/ro/mood-tracker/">Sănătate mintală</a>
 
             <a href="/ro/sleep/">Somn</a>
 
@@ -465,9 +466,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/WT_1024.png" alt="Pictogramă aplicație Greutate & IMC: Weight & Food" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/WT_1024.png" alt="Pictogramă aplicație Greutate & IMC: Weight & Food" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Greutate & Alimentație</h1>
 
         <div class="privacy-badge">
@@ -475,12 +477,12 @@
         </div>
         <p class="hero-subtitle">Atinge obiectivele de fitness cu urmărire inteligentă a greutății. Scanează citirile cu AI Camera Scan, monitorizează greutatea, IMC și procentul de grăsime corporală cu informații bazate pe AI care arată ce funcționează și ce nu.</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Weight & Food din App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Weight & Food din App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Aplicație gratuită cu funcții premium opționale<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -493,15 +495,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/wt-1.png" alt="Screenshot Weight & Food 1" class="screenshot-img">
+                <img src="/images/screenshots/wt-1.png" alt="Screenshot Weight & Food 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-2.png" alt="Screenshot Weight & Food 2" class="screenshot-img">
+                <img src="/images/screenshots/wt-2.png" alt="Screenshot Weight & Food 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-3.png" alt="Screenshot Weight & Food 3" class="screenshot-img">
+                <img src="/images/screenshots/wt-3.png" alt="Screenshot Weight & Food 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -627,102 +629,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Pune o întrebare</h4>
+                <h3><i class="fas fa-question-circle"></i> Pune o întrebare</h3>
                 <p>Întrebări și răspunsuri rapide despre datele de greutate — primești răspunsuri imediate la întrebările de sănătate</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Poartă conversații interactive despre parcursul tău de fitness și primește îndrumare personalizată. Chat Rapid este gratuit în fiecare zi; Chat Pro merge mai în profunzime pe cel mai performant model AI al nostru</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Rezumat vocal</h4>
+                <h3><i class="fas fa-volume-up"></i> Rezumat vocal</h3>
                 <p>Ascultă rezumate audio ale tendințelor de greutate — perfect pentru deplasări</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Fă-mă să râd</h4>
+                <h3><i class="fas fa-laugh"></i> Fă-mă să râd</h3>
                 <p>Primește umor personalizat din datele de urmărire pentru a-ți însenina ziua</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Calmează-mă</h4>
+                <h3><i class="fas fa-moon"></i> Calmează-mă</h3>
                 <p>Exerciții de respirație și relaxare ghidate de AI pentru reducerea mâncatului din stres</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> AI Camera Scan</h4>
+                <h3><i class="fas fa-camera"></i> AI Camera Scan</h3>
                 <p>Scanează citirile de greutate de pe afișajul cântarului sau alimente pentru analiză nutrițională instantanee</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Cercetare Aprofundată <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Cercetare Aprofundată <span class="ai-pro-badge">Pro</span></h3>
                 <p>Analiză AI cuprinzătoare a datelor de greutate cu informații detaliate</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detective de tipare <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detective de tipare <span class="ai-pro-badge">Pro</span></h3>
                 <p>Găsește corelații ascunse între greutate și factorii de stil de viață</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistent obiective <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistent obiective <span class="ai-pro-badge">Pro</span></h3>
                 <p>Primești obiective de greutate personalizate, bazate pe date</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Rezumat pentru medic <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Rezumat pentru medic <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creează rezumate profesionale de gestionare a greutății pentru vizite medicale</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Concediu Medical <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Concediu Medical <span class="ai-pro-badge">Pro</span></h3>
                 <p>Concedii medicale generate de AI pentru muncă sau școală când ai nevoie</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generator de povești <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generator de povești <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transformă călătoria de greutate în narațiuni creative și captivante</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Rezumat text <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Rezumat text <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creează rezumate de mesaje text partajabile ale tendințelor de greutate</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Chestionar Personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Chestionar Personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Testează-ți cunoștințele cu un quiz amuzant de 10 întrebări generat de AI despre datele tale</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Text-to-Speech <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Text-to-Speech <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ascultă informațiile și rezumatele AI cu redare vocală naturală</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Raport de sănătate personalizat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Raport de sănătate personalizat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creează documente de fitness complete și personalizate pentru urmărirea progresului</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-utensils"></i> Planificator de mese <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-utensils"></i> Planificator de mese <span class="ai-pro-badge">Pro</span></h3>
                 <p>Primești un plan de mese săptămânal personalizat bazat pe obiectivele de greutate și preferințele alimentare</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-dumbbell"></i> Planificator de antrenament <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-dumbbell"></i> Planificator de antrenament <span class="ai-pro-badge">Pro</span></h3>
                 <p>Primești o rutină de antrenament personalizată adaptată nivelului de fitness și obiectivelor</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (pe dispozitiv) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (pe dispozitiv) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opțiune axată pe confidențialitate care rulează AI local pe dispozitivul tău folosind Foundation Models de la Apple — nimic nu părăsește iPhone-ul, iPad-ul sau Mac-ul tău. Utilizare nelimitată cu un cont plătit, pe dispozitivele Apple Silicon compatibile (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat Vocal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat Vocal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversații vocale, bidirecționale și hands-free cu AI despre datele tale — pune întrebări și ascultă răspunsuri fără să atingi ecranul</p>
             </div>
 
@@ -921,22 +923,22 @@
         <div class="related-apps-grid">
 
             <a href="/ro/blood-pressure/" class="related-app-card" aria-label="Tensiune arterială">
-                <img src="/images/BPT_1024.png" alt="Tensiune arterială" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Tensiune arterială" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Tensiune arterială</span>
             </a>
 
             <a href="/ro/daily-journal/" class="related-app-card" aria-label="Jurnal zilnic">
-                <img src="/images/NT_1024.png" alt="Jurnal zilnic" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Jurnal zilnic" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Jurnal zilnic</span>
             </a>
 
-            <a href="/ro/mental-health/" class="related-app-card" aria-label="Sănătate mintală">
-                <img src="/images/FT_1024.png" alt="Sănătate mintală" class="related-app-icon">
+            <a href="/ro/mood-tracker/" class="related-app-card" aria-label="Sănătate mintală">
+                <img src="/images/FT_1024.png" alt="Sănătate mintală" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sănătate mintală</span>
             </a>
 
             <a href="/ro/sleep/" class="related-app-card" aria-label="Somn">
-                <img src="/images/ST_1024.png" alt="Somn" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Somn" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Somn</span>
             </a>
 
@@ -949,9 +951,10 @@
         <h2>Începe călătoria de greutate astăzi</h2>
         <p>Alătură-te miilor care ating obiectivele de fitness cu Weight & Food</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Weight & Food"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Weight & Food" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

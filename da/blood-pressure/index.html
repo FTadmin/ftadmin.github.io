@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,10 +635,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Hvad er den bedste app til blodtryksmåling?",
+                      "name": "Hvad er et normalt blodtryksmål?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Blood Pressure er nummer 1 app til blodtryksmåling i Det Forenede Kongerige. Den tilbyder AI-drevne indsigter, Kamera-scan AI-teknologi til automatisk at aflæse værdier fra monitorskærme (OMRON, Microlife, Beurer), Apple Health-integration og eksportmuligheder til deling med læger. Den understøtter registrering af systolisk og diastolisk blodtryk, puls og Middelartærietryk (MAP)."
+                            "text": "Ifølge medicinske retningslinjer er normalt blodtryk typisk under 120/80 mmHg. Målinger mellem 120-129 systolisk og under 80 diastolisk betragtes som forhøjet. Værdier på 130/80 eller højere kan indikere hypertension. Målintervaller kan dog variere efter alder og helbredstilstand, så konsultér din læge for personlig vejledning."
                       }
                 },
                 {
@@ -645,39 +646,31 @@
                       "name": "Hvordan fungerer Kamera-scan AI?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kamera-scan AI bruger avanceret optisk tegngenkendelsesteknologi (OCR) til automatisk at aflæse blodtryksværdier fra din monitors digitale display. Peg blot kameraet på din iPhone eller iPad mod skærmen, der viser dine systoliske, diastoliske og pulsmålinger, og appen udfylder automatisk disse værdier. Det eliminerer manuelle fejl ved indtastning og gør registreringen hurtigere. Det fungerer med OMRON, Microlife, Beurer og de fleste digitale blodtryksmålere."
+                            "text": "Peg blot din iPhone- eller iPad-kamera mod dit blodtryksmonitors digitale display. Appen bruger avanceret AI-drevet kameragenkendelse til automatisk at aflæse tallene og udfylde systolisk, diastolisk og puls-felterne. Dette eliminerer manuelle indtastningsfejl og gør registreringen hurtigere. Køb et blodtryksmåler her."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Hvad er et normalt blodtryksmål?",
+                      "name": "Hvad er MAP, og bør jeg følge det?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ifølge medicinske retningslinjer er normalt blodtryk typisk under 120/80 mmHg. Målinger mellem 120-129 systolisk og under 80 diastolisk anses for forhøjede. Værdier på 130/80 eller derover kan indikere forhøjet blodtryk. Målintervaller kan dog variere afhængigt af alder og helbredstilstand, så konsulter din læge for personlig vejledning."
+                            "text": "MAP (Mean Arterial Pressure – middelblodtryk) er en beregnet værdi, der repræsenterer det gennemsnitlige blodtryk i dine arterier i løbet af én hjertecyklus. Det beregnes som: MAP = (2 × diastolisk + systolisk) ÷ 3. Nogle læger finder MAP nyttigt til vurdering af hjerte-kar-risiko. Appen beregner automatisk MAP for hver måling."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Kan jeg eksportere mine blodtryksdata til min læge?",
+                      "name": "Kan jeg importere mine gamle blodtryksdata?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ja, Blodtryk lader dig eksportere omfattende rapporter i PDF-, CSV-, Excel- eller JSON-format. Disse professionelt formaterede rapporter inkluderer sammenfattende statistik, trenddiagrammer og alle dine noter – alt din sundhedsudbyder har brug for i ét dokument. Du kan nemt dele disse rapporter via e-mail eller andre delingsmetoder."
+                            "text": "Ja! Hvis du har registreret blodtryk i Apple Health, kan du importere alle dine historiske målinger til appen med ét tryk. Appen understøtter også import fra CSV/Excel-filer, hvis du har data fra andre kilder."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Integrerer appen med Apple Health?",
+                      "name": "Hvor ofte bør jeg måle mit blodtryk?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ja, Blood Pressure har tovejs Apple Health-integration. Du kan importere historiske blodtryksdata fra Apple Health, og appen gemmer automatisk nye målinger i HealthKit. Dette skaber et samlet sundhedssporingsøkosystem på tværs af alle dine Apple-enheder."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Hvad er MAP ved blodtryksmåling?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "MAP (Middelartærietryk) er en beregnet værdi, der repræsenterer det gennemsnitlige blodtryk i dine arterier i løbet af én hjertecyklus. Det beregnes som: MAP = (2 × Diastolisk + Systolisk) ÷ 3. Nogle læger finder MAP nyttigt til at vurdere hjerte-kar-risiko og organperfusion. Blood Pressure beregner automatisk MAP for hver måling."
+                            "text": "Det afhænger af din helbredstilstand og din læges anbefalinger. Nogle måler dagligt (ofte morgen og aften), mens andre måler ugentligt. Appen gør det nemt at registrere så hyppigt som anbefalet af din sundhedsudbyder. Du kan indstille påmindelser for at opretholde en konsekvent plan."
                       }
                 },
                 {
@@ -685,7 +678,31 @@
                       "name": "Er mine blodtryksdata private?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ja, dine blodtryksmålinger gemmes krypteret på din enhed og i din private iCloud-konto. Dataene passerer aldrig igennem eksterne servere, og udviklerne kan ikke se dine helbredsoplysninger. Det er lige så sikkert som Apples Notes- eller Fotos-apps og er fuldt GDPR-kompatibelt."
+                            "text": "Absolut. Dine blodtryksmålinger gemmes krypteret på din enhed og i din private iCloud-konto. Dataene passerer aldrig igennem vores servere, og vi kan ikke se dine sundhedsoplysninger. Det er lige så sikkert som Apples Notes- eller Fotos-apps."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kan jeg registrere blodtryk for familiemedlemmer?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Appen er designet til individuel brug og synkroniserer med din personlige iCloud-konto. For at følge flere familiemedlemmer bør hver person bruge appen på deres egen enhed med deres eget Apple ID."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Viser I reklamer eller sporer I mig?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nej. Vi har fjernet alle reklamer fra appen. Vi sporer dig ikke på tværs af andre apps eller websteder, og vi sælger aldrig dine data til annoncører. Dine data synkroniseres via iCloud – ligesom Apple Notes og Fotos. Det betyder, at vi ikke behøver at kende din e-mailadresse, dit navn eller andre personlige oplysninger. Dine blodtryksdata gemmes på dine enheder og i din iCloud-konto, og de er fuldstændig private uanset om du bruger gratis- eller premiumversionen."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Har jeg brug for et abonnement?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Der kræves intet abonnement. Appen er gratis at downloade, al sporing, diagrammer, Apple Health-synk og eksport er gratis, og alle brugere får ægte AI-funktioner gratis hver dag – uden reklamer, nogensinde. Et valgfrit Pro-abonnement låser op for de mest dybdegående AI-funktioner (Dybdegående forskning, Lægeoversigt, Mønsterdetektiv, Pro MAP-rapporten, Pro-chat med mere), kører dem på vores mest kompetente AI og hæver de allerede generøse daglige grænser."
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/da/daily-journal/">Dagbog</a>
 
-            <a href="/da/mental-health/">Mental Sundhed</a>
+            <a href="/da/mood-tracker/">Mental Sundhed</a>
 
             <a href="/da/sleep/">Søvn</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Blodtryksapp-ikon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Blodtryksapp-ikon" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Blodtryk</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">Den smarteste måde at registrere og forstå dit blodtryk på. Scan aflæsninger med Camera Scan AI, synkroniser med Apple Health, og få AI-drevne indsigter i dit kardiovaskulære helbred.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Blodtryk på App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Blodtryk på App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Gratis app med valgfrie premiumfunktioner<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Blodtryk Skærmbillede 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Blodtryk Skærmbillede 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Blodtryk Skærmbillede 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Blodtryk Skærmbillede 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Blodtryk Skærmbillede 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Blodtryk Skærmbillede 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Stil et spørgsmål</h4>
+                <h3><i class="fas fa-question-circle"></i> Stil et spørgsmål</h3>
                 <p>Hurtig spørgsmål og svar om dine blodtryksdata – få øjeblikkelige svar på dine sundhedsspørgsmål</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Hav interaktive samtaler om dit hjerte-kar-helbred og få personlig vejledning. Hurtig chat er gratis hver dag; Pro-chat går dybere på vores mest kompetente AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Stemmeoversigt</h4>
+                <h3><i class="fas fa-volume-up"></i> Stemmeoversigt</h3>
                 <p>Lyt til lydsammendrag af dine blodtrykstendenser – perfekt til indsigter, når du er på farten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Få mig til at grine</h4>
+                <h3><i class="fas fa-laugh"></i> Få mig til at grine</h3>
                 <p>Få personlig humor fra dine registreringsdata for at lysne din dag</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Berolig mig</h4>
+                <h3><i class="fas fa-moon"></i> Berolig mig</h3>
                 <p>AI-guidede åndedrætsøvelser til at reducere stress og sænke blodtrykket</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Kamerascanning AI</h4>
+                <h3><i class="fas fa-camera"></i> Kamerascanning AI</h3>
                 <p>Scan aflæsninger direkte fra din målers skærm – virker med <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dybdegående forskning <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dybdegående forskning <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omfattende AI-analyse af dine blodtryksdata med detaljerede indsigter</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Mønsterdetektiv <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Mønsterdetektiv <span class="ai-pro-badge">Pro</span></h3>
                 <p>Find skjulte sammenhænge mellem dine BT-aflæsninger og livsstilsfaktorer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h3>
                 <p>Få personlige, datadrevne blodtryksmål baseret på dine mønstre</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Lægeoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Lægeoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generer professionelle medicinske sammendrag til deling ved sundhedsbesøg</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sygemelding <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Sygemelding <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-genererede sygemeldinger til arbejde eller skole, når du har brug for dem</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omsæt dine sundhedsdata til kreative, engagerende fortællinger</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opret delbare tekstbesked-resuméer af dine blodtrykstendenser</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personlig Quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Personlig Quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test din viden med en sjov AI-genereret quiz med 10 spørgsmål om dine data</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Lyt til dine AI-indsigter og resuméer med naturlig stemmegengrivelse</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Skræddersyet Sundhedsrapport <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Skræddersyet Sundhedsrapport <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opret omfattende, personlige sundhedsdokumenter til at følge dine fremskridt</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (på enheden) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (på enheden) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Privatlivsfokuseret mulighed, der kører AI lokalt på din enhed via Apples Foundation Models — intet forlader din iPhone, iPad eller Mac. Ubegrænset brug med en betalt konto på understøttede Apple Silicon-enheder (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Håndfri, tovejs talesamtaler med AI'en om dine data – stil spørgsmål og hør svar uden at røre skærmen</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/da/daily-journal/" class="related-app-card" aria-label="Dagbog">
-                <img src="/images/NT_1024.png" alt="Dagbog" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Dagbog" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Dagbog</span>
             </a>
 
-            <a href="/da/mental-health/" class="related-app-card" aria-label="Mental Sundhed">
-                <img src="/images/FT_1024.png" alt="Mental Sundhed" class="related-app-icon">
+            <a href="/da/mood-tracker/" class="related-app-card" aria-label="Mental Sundhed">
+                <img src="/images/FT_1024.png" alt="Mental Sundhed" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Mental Sundhed</span>
             </a>
 
             <a href="/da/sleep/" class="related-app-card" aria-label="Søvn">
-                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Søvn</span>
             </a>
 
             <a href="/da/weight/" class="related-app-card" aria-label="Vægt">
-                <img src="/images/WT_1024.png" alt="Vægt" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Vægt" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Vægt</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>Begynd at måle dit blodtryk i dag</h2>
         <p>Slut dig til tusindvis af brugere, der tager kontrol over deres hjerte-kar-sundhed</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Blodtryk"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Blodtryk" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

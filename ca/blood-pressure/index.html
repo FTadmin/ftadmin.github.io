@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,22 +635,6 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Quina és la millor app de seguiment de tensió arterial?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Tensió Arterial és l'aplicació de seguiment de tensió arterial número 1. Ofereix insights basats en IA, tecnologia d'escaneig per càmera amb IA per capturar automàticament les lectures (OMRON, Microlife, Beurer), integració amb Apple Health i funcions d'exportació per compartir amb els metges. Admet el seguiment de la tensió arterial sistòlica i diastòlica, la freqüència cardíaca i la pressió arterial mitja (PAM)."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Com funciona l'escaneig per càmera amb IA?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "L'escaneig per càmera amb IA utilitza reconeixement òptic de caràcters (OCR) avançat per llegir automàticament les lectures de tensió arterial de la pantalla del teu monitor. Simplement apunta la càmera del teu iPhone o iPad a la pantalla amb els teus valors sistòlics, diastòlics i de pols, i l'app omple automàticament aquests valors. Això elimina els errors d'escriptura manual i fa que el registre sigui més ràpid. Funciona amb OMRON, Microlife, Beurer i la majoria de tensiòmetres digitals."
-                      }
-                },
-                {
-                      "@type": "Question",
                       "name": "Quina és una lectura de tensió arterial normal?",
                       "acceptedAnswer": {
                             "@type": "Answer",
@@ -658,26 +643,34 @@
                 },
                 {
                       "@type": "Question",
-                      "name": "Puc exportar les meves dades de tensió arterial per al meu metge?",
+                      "name": "Com funciona l'escaneig per càmera amb IA?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sí, Pressió Arterial et permet exportar informes complets en format PDF, CSV, Excel o JSON. Aquests informes formatats professionalment inclouen estadístiques resumides, gràfics de tendències i totes les teves notes: tot el que necessita el teu professional sanitari en un sol document. Pots compartir fàcilment aquests informes per correu electrònic o altres mètodes."
+                            "text": "Simplement apunta la càmera del teu iPhone o iPad a la pantalla digital del teu tensió-metre. L'app utilitza tecnologia avançada de reconeixement de càmera basada en IA per llegir automàticament els números i omplir els camps sistòlic, diastòlic i de pols. Això elimina els errors d'escriptura manual i fa que el registre sigui més ràpid. Obtén un tensió-metre aquí."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "S'integra l'app amb Apple Health?",
+                      "name": "Què és la PAM i hauria de fer-ne un seguiment?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sí, Tensió Arterial ofereix integració bidireccional amb Apple Health. Pots importar dades de tensió arterial historials d'Apple Health i l'app desa automàticament les noves lectures a HealthKit. Això crea un ecosistema de seguiment de salut complet a tots els teus dispositius Apple."
+                            "text": "La PAM (Pressió Arterial Mitja) és un valor calculat que representa la pressió arterial mitjana a les teves artèries durant un cicle cardíac. Es calcula com: PAM = (2 × Diastòlica + Sistòlica) ÷ 3. Alguns metges troben la PAM útil per avaluar el risc cardiovascular. L'app calcula automàticament la PAM per a cada lectura."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Què és la PAM en el monitoratge de tensió arterial?",
+                      "name": "Puc importar les meves dades antigues de tensió arterial?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "La PAM (Pressió Arterial Mitja) és un valor calculat que representa la pressió arterial mitjana a les teves artèries durant un cicle cardíac. Es calcula com: PAM = (2 × Diastòlica + Sistòlica) ÷ 3. Alguns metges troben la PAM útil per avaluar el risc cardiovascular i la perfusió d'òrgans. Tensió Arterial calcula automàticament la PAM per a cada lectura."
+                            "text": "Sí! Si has estat fent un seguiment de la tensió arterial a Apple Health, pots importar totes les teves lectures historials a l'app amb un sol toc. L'app també admet la importació de fitxers CSV/Excel si tens dades d'altres fonts."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Amb quina freqüència hauria de mesurar la meva tensió arterial?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Depèn de la teva condició de salut i de les recomanacions del teu metge. Algunes persones ho mesuren diàriament (sovint al matí i al vespre), mentre que d'altres ho fan setmanalment. L'app facilita el seguiment amb la freqüència que recomani el teu proveïdor de salut. Pots configurar recordatoris per mantenir un horari consistent."
                       }
                 },
                 {
@@ -685,7 +678,31 @@
                       "name": "Les meves dades de tensió arterial són privades?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sí, les teves lectures de tensió arterial s'emmagatzemen xifrades al teu dispositiu i al teu compte privat d'iCloud. Les dades mai passen per servidors externs i els desenvolupadors no poden veure la teva informació de salut. És tan segur com les apps Notes o Fotos d'Apple i completament compatible amb les lleis de privacitat."
+                            "text": "Absolutament. Les teves lectures de tensió arterial s'emmagatzemen xifrades al teu dispositiu i al teu compte privat d'iCloud. Les dades mai passen pels nostres servidors i no podem veure la teva informació de salut. És tan segur com les apps Notes o Fotos d'Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Puc fer un seguiment de la tensió arterial per a membres de la família?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "L'app està dissenyada per a ús individual i es sincronitza amb el teu compte personal d'iCloud. Per fer un seguiment de múltiples membres de la família, cada persona hauria d'usar l'app al seu propi dispositiu amb el seu propi Apple ID."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mostreu anuncis o em feu un seguiment?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Hem eliminat completament tots els anuncis de l'app. No et fem un seguiment a través d'altres apps o llocs web, i mai venem les teves dades als anunciants. Les teves dades es sincronitzen via iCloud, igual que Apple Notes i Fotos. Això significa que no necessitem saber la teva adreça de correu electrònic, nom o cap informació personal. Les teves dades de tensió arterial s'emmagatzemen als teus dispositius i al teu compte d'iCloud, i són completament privades tant si uses la versió gratuïta com la premium."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Necessito una subscripció?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No cal cap subscripció. L'app és gratuïta per descarregar, tot el seguiment, els gràfics, la sincronització amb Apple Health i les exportacions són gratuïts, i tots els usuaris obtenen funcions d'IA de veritat gratis cada dia, sense anuncis, mai. Una subscripció Pro opcional desbloqueja les funcions d'IA més detallades (Recerca aprofundida, Resum per al metge, Detective de patrons, l'Informe MAP Pro, Xat Pro i més), les executa amb la nostra IA més capaç i augmenta els límits diaris ja generosos."
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/ca/daily-journal/">Diari Personal</a>
 
-            <a href="/ca/mental-health/">Salut Mental</a>
+            <a href="/ca/mood-tracker/">Salut Mental</a>
 
             <a href="/ca/sleep/">Son</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Icona de l'app Tensió Arterial" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Icona de l'app Tensió Arterial" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Tensió Arterial</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">La manera més intel·ligent de fer un seguiment i comprendre la teva tensió arterial. Escaneja lectures amb l'IA d'escaneig per càmera, sincronitza amb Apple Health i obté insights basats en IA sobre la teva salut cardiovascular.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Tensió Arterial a l'App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Tensió Arterial a l'App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuïta amb funcions premium opcionals<br>iPhone, iPad i Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Captura de pantalla de Tensió Arterial 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Captura de pantalla de Tensió Arterial 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Captura de pantalla de Tensió Arterial 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Captura de pantalla de Tensió Arterial 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Captura de pantalla de Tensió Arterial 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Captura de pantalla de Tensió Arterial 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Fes una pregunta</h4>
+                <h3><i class="fas fa-question-circle"></i> Fes una pregunta</h3>
                 <p>Preguntes i respostes ràpides sobre les teves dades de tensió arterial: obtén respostes immediates a les teves preguntes de salut</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Xat</h4>
+                <h3><i class="fas fa-comments"></i> Xat</h3>
                 <p>Tingues converses interactives sobre la teva salut cardiovascular i rep orientació personalitzada. El Xat ràpid és gratuït cada dia; el Xat Pro aprofundeix més amb la nostra IA més capaç</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Resum de veu</h4>
+                <h3><i class="fas fa-volume-up"></i> Resum de veu</h3>
                 <p>Escolta resums d'àudio de les teves tendències de tensió arterial: perfecte per a insights en moviment</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Fes-me riure</h4>
+                <h3><i class="fas fa-laugh"></i> Fes-me riure</h3>
                 <p>Obtén humor personalitzat de les teves dades de seguiment per alegrar el teu dia</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Tranquil·litza'm</h4>
+                <h3><i class="fas fa-moon"></i> Tranquil·litza'm</h3>
                 <p>Exercicis de respiració guiats per IA per ajudar a reduir l'estrès i baixar la tensió arterial</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Escaneig per càmera amb IA</h4>
+                <h3><i class="fas fa-camera"></i> Escaneig per càmera amb IA</h3>
                 <p>Escaneja lectures directament de la pantalla del teu monitor; funciona amb <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Recerca aprofundida <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Recerca aprofundida <span class="ai-pro-badge">Pro</span></h3>
                 <p>Anàlisi d'IA completa de les teves dades de tensió arterial amb insights detallats</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detective de patrons <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detective de patrons <span class="ai-pro-badge">Pro</span></h3>
                 <p>Troba correlacions ocultes entre les teves lectures de TA i els factors d'estil de vida</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Assistent d'objectius <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Assistent d'objectius <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obtén objectius de tensió arterial personalitzats i basats en dades segons els teus patrons</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Resum per al metge <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Resum per al metge <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genera resums mèdics professionals per compartir a les visites de salut</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Baixa mèdica <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Baixa mèdica <span class="ai-pro-badge">Pro</span></h3>
                 <p>Baixes mèdiques generades per IA per a la feina o l'escola quan les necessites</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generador d'històries <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generador d'històries <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transforma les teves dades de salut en narracions creatives i atractives</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Resum de text <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Resum de text <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crea resums de missatge de text compartibles de les teves tendències de tensió arterial</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Qüestionari personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Qüestionari personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Posa a prova els teus coneixements amb un divertit quiz de 10 preguntes generat per IA sobre les teves dades</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Text a veu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Text a veu <span class="ai-pro-badge">Pro</span></h3>
                 <p>Escolta els teus insights d'IA i resums amb reproducció de veu natural</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Informe de salut personalitzat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Informe de salut personalitzat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crea documents de salut complets i personalitzats per fer un seguiment del teu progrés</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (al dispositiu) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (al dispositiu) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opció centrada en la privadesa que executa la IA localment al teu dispositiu mitjançant els Foundation Models d'Apple — res no surt del teu iPhone, iPad o Mac. Ús il·limitat amb un compte de pagament, en dispositius Apple Silicon compatibles (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Xat de veu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Xat de veu <span class="ai-pro-badge">Pro</span></h3>
                 <p>Converses de veu bidireccionals i mans lliures amb la IA sobre les teves dades: fes preguntes i escolta les respostes sense tocar la pantalla</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/ca/daily-journal/" class="related-app-card" aria-label="Diari Personal">
-                <img src="/images/NT_1024.png" alt="Diari Personal" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Diari Personal" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Diari Personal</span>
             </a>
 
-            <a href="/ca/mental-health/" class="related-app-card" aria-label="Salut Mental">
-                <img src="/images/FT_1024.png" alt="Salut Mental" class="related-app-icon">
+            <a href="/ca/mood-tracker/" class="related-app-card" aria-label="Salut Mental">
+                <img src="/images/FT_1024.png" alt="Salut Mental" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Salut Mental</span>
             </a>
 
             <a href="/ca/sleep/" class="related-app-card" aria-label="Son">
-                <img src="/images/ST_1024.png" alt="Son" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Son" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Son</span>
             </a>
 
             <a href="/ca/weight/" class="related-app-card" aria-label="Pes">
-                <img src="/images/WT_1024.png" alt="Pes" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Pes" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Pes</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>Comença a monitorar la teva tensió arterial avui</h2>
         <p>Uneix-te a milers d'usuaris que prenen el control de la seva salut cardíaca</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Tensió Arterial"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Tensió Arterial" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

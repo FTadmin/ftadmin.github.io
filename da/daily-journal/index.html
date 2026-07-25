@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -518,7 +519,7 @@
 
             <a href="/da/daily-journal/" class="current">Dagbog</a>
 
-            <a href="/da/mental-health/">Mental Sundhed</a>
+            <a href="/da/mood-tracker/">Mental Sundhed</a>
 
             <a href="/da/sleep/">Søvn</a>
 
@@ -603,9 +604,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="Daglig dagbog-app ikon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="Daglig dagbog-app ikon" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Daglig dagbog</h1>
 
         <div class="privacy-badge">
@@ -613,7 +615,7 @@
         </div>
         <p class="hero-subtitle">Dit private rum til daglige refleksioner, tanker og minder. Skriv frit med AI-drevet sentimentanalyse, vedhæftede fotos og intelligent indsigt i dine skrivevanemønstre.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Daglig dagbog i App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Daglig dagbog i App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Gratis app med valgfrie premium-funktioner<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
@@ -627,15 +629,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="Daglig dagbog skærmbillede 1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="Daglig dagbog skærmbillede 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="Daglig dagbog skærmbillede 2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="Daglig dagbog skærmbillede 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="Daglig dagbog skærmbillede 3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="Daglig dagbog skærmbillede 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -766,102 +768,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Stil et spørgsmål</h4>
+                <h3><i class="fas fa-question-circle"></i> Stil et spørgsmål</h3>
                 <p>Hurtig spørgsmål og svar om dine dagbogsindlæg – få øjeblikkelige svar om din skrivning</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Hav interaktive samtaler om din dagbogsrejse og få personlig vejledning. Hurtig chat er gratis hver dag; Pro-chat går dybere på vores mest kompetente AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Stemmeoversigt</h4>
+                <h3><i class="fas fa-volume-up"></i> Stemmeoversigt</h3>
                 <p>Lyt til lydopsummeringer af dine dagbogstemaer – perfekt til refleksion på farten</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> AI Scanning</h4>
+                <h3><i class="fas fa-barcode-scan"></i> AI Scanning</h3>
                 <p>Scan objekter, dokumenter, kvitteringer eller tekst for at oprette øjeblikkelige dagbogsindlæg med AI-beskrivelser</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Få mig til at grine</h4>
+                <h3><i class="fas fa-laugh"></i> Få mig til at grine</h3>
                 <p>Få personlig humor fra dine dagbogsindlæg til at lysne din dag</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Berolig mig</h4>
+                <h3><i class="fas fa-moon"></i> Berolig mig</h3>
                 <p>AI-guidede vejrtræknings- og afslapningsøvelser til at hjælpe med at reducere stress</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dybdegående forskning <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dybdegående forskning <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omfattende AI-analyse af din dagbog med detaljeret indsigt</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Mønsterdetektor <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Mønsterdetektor <span class="ai-pro-badge">Pro</span></h3>
                 <p>Find skjulte temaer og mønstre i dine dagbogsposter over tid</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Målassistent <span class="ai-pro-badge">Pro</span></h3>
                 <p>Få personaliserede, datadrevne livsmål baseret på dine dagbogsmønstre</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Lægeoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Lægeoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generer professionelle resuméer til deling ved sundhedsbesøg</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Sygemelding <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Sygemelding <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI-genererede sygemeldinger til arbejde eller skole, når du har brug for dem</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Historiegenerator <span class="ai-pro-badge">Pro</span></h3>
                 <p>Omsæt dine dagbogsposter til kreative, engagerende fortællinger</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Tekstoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Tekstoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opret delbare tekstbeskedresuméer af dine dagbogstemaer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Personlig Quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Personlig Quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Test din viden med en sjov AI-genereret quiz med 10 spørgsmål om dine data</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Tekst-til-tale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Lyt til dine AI-indsigter og resuméer med naturlig stemmeafspilning</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Skræddersyet Sundhedsrapport <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Skræddersyet Sundhedsrapport <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opret omfattende, personaliserede dokumenter til at følge din dagbogsudvikling</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> Temaudforskeren <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> Temaudforskeren <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opdag tilbagevendende emner og idéer i din skrivning med AI-drevet temaanalyse</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> Stemningsoversigt <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> Stemningsoversigt <span class="ai-pro-badge">Pro</span></h3>
                 <p>Visualiser din følelsesmæssige rejse over tid med AI-analyseret stemningssporing</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (på enheden) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (på enheden) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Privatlivsfokuseret mulighed, der kører AI lokalt på din enhed via Apples Foundation Models — intet forlader din iPhone, iPad eller Mac. Ubegrænset brug med en betalt konto på understøttede Apple Silicon-enheder (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Talechat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Håndfri, tovejs talesamtaler med AI'en om dine data – stil spørgsmål og hør svar uden at røre skærmen</p>
             </div>
 
@@ -1184,22 +1186,22 @@
         <div class="related-apps-grid">
 
             <a href="/da/blood-pressure/" class="related-app-card" aria-label="Blodtryk">
-                <img src="/images/BPT_1024.png" alt="Blodtryk" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Blodtryk" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Blodtryk</span>
             </a>
 
-            <a href="/da/mental-health/" class="related-app-card" aria-label="Mental Sundhed">
-                <img src="/images/FT_1024.png" alt="Mental Sundhed" class="related-app-icon">
+            <a href="/da/mood-tracker/" class="related-app-card" aria-label="Mental Sundhed">
+                <img src="/images/FT_1024.png" alt="Mental Sundhed" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Mental Sundhed</span>
             </a>
 
             <a href="/da/sleep/" class="related-app-card" aria-label="Søvn">
-                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Søvn" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Søvn</span>
             </a>
 
             <a href="/da/weight/" class="related-app-card" aria-label="Vægt">
-                <img src="/images/WT_1024.png" alt="Vægt" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Vægt" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Vægt</span>
             </a>
 
@@ -1212,9 +1214,10 @@
         <h2>Start din dagbogspraksis i dag</h2>
         <p>Bliv en del af tusindvis, der opdager fordelene ved daglig refleksion</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Daglig Dagbog"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/da-white.svg"><img class="store_button store_button--lg" src="/images/appstore/da-black.svg" alt="Download Daglig Dagbog" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

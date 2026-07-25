@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,10 +635,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Która aplikacja do monitorowania ciśnienia krwi jest najlepsza?",
+                      "name": "Jaki jest prawidłowy odczyt ciśnienia krwi?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Blood Pressure to aplikacja numer 1 do monitorowania ciśnienia krwi w Wielkiej Brytanii. Oferuje analizy oparte na sztucznej inteligencji, technologię Camera Scan AI do automatycznego odczytu wartości z wyświetlaczy ciśnieniomierzy (OMRON, Microlife, Beurer), integrację z Apple Health oraz możliwości eksportu do udostępniania lekarzom. Obsługuje śledzenie ciśnienia skurczowego i rozkurczowego, tętna oraz średniego ciśnienia tętniczego (MAP)."
+                            "text": "Według wytycznych medycznych prawidłowe ciśnienie krwi wynosi zazwyczaj poniżej 120/80 mmHg. Odczyty między 120-129 skurczowym i poniżej 80 rozkurczowym są uznawane za podwyższone. Wartości 130/80 lub wyższe mogą wskazywać na nadciśnienie. Zakresy docelowe mogą się różnić w zależności od wieku i stanu zdrowia, dlatego skonsultuj się z lekarzem, aby uzyskać spersonalizowane wskazówki."
                       }
                 },
                 {
@@ -645,47 +646,63 @@
                       "name": "Jak działa Camera Scan AI?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Camera Scan AI wykorzystuje zaawansowaną technologię optycznego rozpoznawania znaków (OCR) do automatycznego odczytu wartości ciśnienia krwi z cyfrowego wyświetlacza ciśnieniomierza. Wystarczy skierować aparat iPhone'a lub iPada na ekran pokazujący wartości skurczowe, rozkurczowe i tętno, a aplikacja automatycznie je wypełni. Eliminuje to błędy ręcznego wprowadzania danych i przyspiesza rejestrowanie. Działa z urządzeniami OMRON, Microlife, Beurer i większością cyfrowych ciśnieniomierzy."
+                            "text": "Po prostu skieruj aparat iPhone lub iPad na cyfrowy wyświetlacz ciśnieniomierza. Aplikacja używa zaawansowanej technologii rozpoznawania obrazu AI, aby automatycznie odczytać liczby i wypełnić pola skurczowe, rozkurczowe i tętno. Eliminuje to błędy ręcznego wprowadzania i przyspiesza rejestrowanie. Kup ciśnieniomierz tutaj."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Jakie jest prawidłowe ciśnienie krwi?",
+                      "name": "Czym jest MAP i czy powinienem je śledzić?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Zgodnie z wytycznymi medycznymi prawidłowe ciśnienie krwi wynosi zazwyczaj poniżej 120/80 mmHg. Wartości między 120–129 skurczowego i poniżej 80 rozkurczowego są uznawane za podwyższone. Wartości 130/80 lub wyższe mogą wskazywać na nadciśnienie. Jednak docelowe zakresy mogą się różnić w zależności od wieku i stanu zdrowia, dlatego skonsultuj się z lekarzem w celu uzyskania indywidualnych wskazówek."
+                            "text": "MAP (średnie ciśnienie tętnicze) to obliczona wartość reprezentująca średnie ciśnienie krwi w tętnicach podczas jednego cyklu pracy serca. Oblicza się jako: MAP = (2 × rozkurczowe + skurczowe) ÷ 3. Niektórzy lekarze uważają MAP za przydatne do oceny ryzyka sercowo-naczyniowego. Aplikacja automatycznie oblicza MAP dla każdego odczytu."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Czy mogę wyeksportować dane o ciśnieniu krwi dla lekarza?",
+                      "name": "Czy mogę zaimportować stare dane ciśnienia krwi?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Tak, aplikacja Ciśnienie Krwi pozwala eksportować kompleksowe raporty w formacie PDF, CSV, Excel lub JSON. Te profesjonalnie sformatowane raporty zawierają statystyki podsumowujące, wykresy trendów i wszystkie Twoje notatki - wszystko, czego potrzebuje Twój lekarz, w jednym dokumencie. Możesz łatwo udostępnić te raporty przez e-mail lub inne metody."
+                            "text": "Tak! Jeśli śledziłeś ciśnienie krwi w Apple Health, możesz zaimportować wszystkie historyczne odczyty do aplikacji jednym dotknięciem. Aplikacja obsługuje również importowanie z plików CSV/Excel, jeśli masz dane z innych źródeł."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Czy aplikacja integruje się z Apple Health?",
+                      "name": "Jak często powinienem mierzyć ciśnienie krwi?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Tak, aplikacja Blood Pressure oferuje dwukierunkową integrację z Apple Health. Możesz importować historyczne dane o ciśnieniu krwi z Apple Health, a aplikacja będzie automatycznie zapisywać nowe odczyty do HealthKit. Tworzy to kompleksowy ekosystem śledzenia zdrowia na wszystkich urządzeniach Apple."
+                            "text": "Zależy to od Twojego stanu zdrowia i zaleceń lekarza. Niektórzy sprawdzają codziennie (często rano i wieczorem), inni co tydzień. Aplikacja ułatwia śledzenie tak często, jak zaleca lekarz. Możesz ustawić przypomnienia, aby utrzymać stały harmonogram."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Czym jest MAP w monitorowaniu ciśnienia krwi?",
+                      "name": "Czy moje dane ciśnienia krwi są prywatne?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "MAP (średnie ciśnienie tętnicze) to wyliczona wartość reprezentująca średnie ciśnienie krwi w tętnicach podczas jednego cyklu sercowego. Jest obliczane jako: MAP = (2 x rozkurczowe + skurczowe) / 3. Niektórzy lekarze uważają MAP za przydatne do oceny ryzyka sercowo-naczyniowego i perfuzji narządów. Aplikacja Blood Pressure automatycznie oblicza MAP dla każdego odczytu."
+                            "text": "Absolutnie. Odczyty ciśnienia krwi są przechowywane zaszyfrowane na urządzeniu i na prywatnym koncie iCloud. Dane nigdy nie przechodzą przez nasze serwery i nie możemy zobaczyć Twoich informacji zdrowotnych. Jest tak samo bezpieczne jak aplikacje Apple Notes lub Zdjęcia."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Czy moje dane o ciśnieniu krwi są prywatne?",
+                      "name": "Czy mogę śledzić ciśnienie krwi dla członków rodziny?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Tak, Twoje odczyty ciśnienia krwi są przechowywane zaszyfrowane na urządzeniu i na Twoim prywatnym koncie iCloud. Dane nigdy nie przechodzą przez zewnętrzne serwery, a deweloperzy nie mogą zobaczyć Twoich informacji zdrowotnych. Jest to tak samo bezpieczne jak aplikacje Notatki lub Zdjęcia Apple i jest w pełni zgodne z GDPR."
+                            "text": "Aplikacja jest przeznaczona do użytku indywidualnego i synchronizuje się z osobistym kontem iCloud. Do śledzenia wielu członków rodziny każda osoba powinna używać aplikacji na własnym urządzeniu ze swoim Apple ID."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Czy wyświetlacie reklamy lub śledzicie mnie?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nie. Całkowicie usunęliśmy wszystkie reklamy z aplikacji. Nie śledzimy Cię między innymi aplikacjami ani stronami internetowymi i nigdy nie sprzedajemy Twoich danych reklamodawcom. Twoje dane synchronizują się przez iCloud — tak jak Apple Notes i Zdjęcia. Oznacza to, że nie potrzebujemy znać Twojego adresu e-mail, imienia ani żadnych danych osobowych. Dane ciśnienia krwi są przechowywane na Twoich urządzeniach i na Twoim koncie iCloud i są całkowicie prywatne, niezależnie od wersji bezpłatnej lub premium."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Czy potrzebuję subskrypcji?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Subskrypcja nie jest wymagana. Aplikacja jest darmowa do pobrania, całe śledzenie, wykresy, synchronizacja z Apple Health i eksporty są bezpłatne, a każdy użytkownik codziennie otrzymuje prawdziwe funkcje AI za darmo — bez reklam, zawsze. Opcjonalna subskrypcja Pro odblokowuje najbardziej rozbudowane funkcje AI (Dogłębna analiza, Podsumowanie dla lekarza, Detektyw wzorców, raport Pro MAP, Czat Pro i inne), uruchamia je na naszym najbardziej zaawansowanym modelu AI i podnosi hojne dzienne limity."
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/pl/daily-journal/">Dziennik</a>
 
-            <a href="/pl/mental-health/">Zdrowie psychiczne</a>
+            <a href="/pl/mood-tracker/">Zdrowie psychiczne</a>
 
             <a href="/pl/sleep/">Sen</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Ikona aplikacji Ciśnienie Krwi" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Ikona aplikacji Ciśnienie Krwi" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Ciśnienie Krwi</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">Najinteligentniejszy sposób na śledzenie i rozumienie ciśnienia krwi. Skanuj odczyty z Camera Scan AI, synchronizuj z Apple Health i uzyskuj wglądy AI dotyczące zdrowia układu krążenia.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Ciśnienie Krwi z App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Ciśnienie Krwi z App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Bezpłatna aplikacja z opcjonalnymi funkcjami premium<br>iPhone, iPad i Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Zrzut ekranu Ciśnienia Krwi 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Zrzut ekranu Ciśnienia Krwi 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Zrzut ekranu Ciśnienia Krwi 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Zrzut ekranu Ciśnienia Krwi 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Zrzut ekranu Ciśnienia Krwi 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Zrzut ekranu Ciśnienia Krwi 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Zadaj pytanie</h4>
+                <h3><i class="fas fa-question-circle"></i> Zadaj pytanie</h3>
                 <p>Szybkie pytania i odpowiedzi o danych ciśnienia krwi — uzyskuj natychmiastowe odpowiedzi na pytania zdrowotne</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Czat</h4>
+                <h3><i class="fas fa-comments"></i> Czat</h3>
                 <p>Prowadź interaktywne rozmowy o swoim zdrowiu sercowo-naczyniowym i otrzymuj spersonalizowane wskazówki. Szybki Czat jest darmowy każdego dnia; Czat Pro sięga głębiej dzięki naszemu najbardziej zaawansowanemu modelowi AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Podsumowanie głosowe</h4>
+                <h3><i class="fas fa-volume-up"></i> Podsumowanie głosowe</h3>
                 <p>Słuchaj podsumowań audio trendów ciśnienia krwi — idealne do wglądów w podróży</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Rozśmiesz mnie</h4>
+                <h3><i class="fas fa-laugh"></i> Rozśmiesz mnie</h3>
                 <p>Uzyskuj spersonalizowany humor z danych śledzenia, aby rozjaśnić swój dzień</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Uspokój mnie</h4>
+                <h3><i class="fas fa-moon"></i> Uspokój mnie</h3>
                 <p>Ćwiczenia oddechowe prowadzone przez AI, pomagające redukować stres i obniżać ciśnienie krwi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Camera Scan AI</h4>
+                <h3><i class="fas fa-camera"></i> Camera Scan AI</h3>
                 <p>Skanuj odczyty bezpośrednio z ekranu monitora — działa z <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dogłębna analiza <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dogłębna analiza <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kompleksowa analiza AI danych ciśnienia krwi ze szczegółowymi wglądami</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detektyw wzorców <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detektyw wzorców <span class="ai-pro-badge">Pro</span></h3>
                 <p>Wykrywaj ukryte korelacje między odczytami ciśnienia krwi a czynnikami stylu życia</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asystent celów <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asystent celów <span class="ai-pro-badge">Pro</span></h3>
                 <p>Uzyskuj spersonalizowane, oparte na danych cele ciśnienia krwi na podstawie Twoich wzorców</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Podsumowanie dla lekarza <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Podsumowanie dla lekarza <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generuj profesjonalne podsumowania medyczne do udostępnienia na wizytach lekarskich</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Zwolnienie lekarskie <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Zwolnienie lekarskie <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generowane przez AI zwolnienia lekarskie do pracy lub szkoły, gdy są potrzebne</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generator historii <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generator historii <span class="ai-pro-badge">Pro</span></h3>
                 <p>Przekształcaj dane zdrowotne w kreatywne, angażujące narracje</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Podsumowanie tekstowe <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Podsumowanie tekstowe <span class="ai-pro-badge">Pro</span></h3>
                 <p>Twórz udostępnialne podsumowania SMS trendów ciśnienia krwi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Osobisty quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Osobisty quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Sprawdź swoją wiedzę zabawnym quizem generowanym przez AI z 10 pytaniami o Twoje dane</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Tekst na mowę <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Tekst na mowę <span class="ai-pro-badge">Pro</span></h3>
                 <p>Słuchaj wglądów AI i podsumowań z naturalnym odtwarzaniem głosu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Dostosowany raport zdrowotny <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Dostosowany raport zdrowotny <span class="ai-pro-badge">Pro</span></h3>
                 <p>Twórz kompleksowe, spersonalizowane dokumenty zdrowotne do śledzenia postępów</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (na urządzeniu) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (na urządzeniu) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opcja stawiająca na prywatność, która uruchamia AI lokalnie na Twoim urządzeniu za pomocą modeli Apple Foundation Models — nic nie opuszcza Twojego iPhone'a, iPada ani Maca. Nieograniczone użycie z płatnym kontem, na obsługiwanych urządzeniach z Apple Silicon (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Czat głosowy <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Czat głosowy <span class="ai-pro-badge">Pro</span></h3>
                 <p>Rozmowy głosowe z AI o Twoich danych, prowadzone bez użycia rąk, w obie strony — zadawaj pytania i słuchaj odpowiedzi bez dotykania ekranu</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/pl/daily-journal/" class="related-app-card" aria-label="Dziennik">
-                <img src="/images/NT_1024.png" alt="Dziennik" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Dziennik" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Dziennik</span>
             </a>
 
-            <a href="/pl/mental-health/" class="related-app-card" aria-label="Zdrowie psychiczne">
-                <img src="/images/FT_1024.png" alt="Zdrowie psychiczne" class="related-app-icon">
+            <a href="/pl/mood-tracker/" class="related-app-card" aria-label="Zdrowie psychiczne">
+                <img src="/images/FT_1024.png" alt="Zdrowie psychiczne" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Zdrowie psychiczne</span>
             </a>
 
             <a href="/pl/sleep/" class="related-app-card" aria-label="Sen">
-                <img src="/images/ST_1024.png" alt="Sen" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sen" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sen</span>
             </a>
 
             <a href="/pl/weight/" class="related-app-card" aria-label="Waga">
-                <img src="/images/WT_1024.png" alt="Waga" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Waga" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Waga</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>Zacznij śledzić ciśnienie krwi już dziś</h2>
         <p>Dołącz do tysięcy użytkowników przejmujących kontrolę nad zdrowiem układu krążenia</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Ciśnienie Krwi"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Ciśnienie Krwi" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -448,7 +449,7 @@
 
             <a href="/es/daily-journal/">Diario</a>
 
-            <a href="/es/mental-health/">Salud Mental</a>
+            <a href="/es/mood-tracker/">Salud Mental</a>
 
             <a href="/es/sleep/" class="current">Sueño</a>
 
@@ -533,9 +534,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/ST_1024.png" alt="Icono de la app Sueño y Sueños" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/ST_1024.png" alt="Icono de la app Sueño y Sueños" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Sueño y Sueños</h1>
 
         <div class="privacy-badge">
@@ -543,12 +545,12 @@
         </div>
         <p class="hero-subtitle">Rastree sus patrones de sueño y descubra qué afecta la calidad de su descanso. Con análisis de sueños impulsado por IA, monitorización de terapia CPAP, herramientas de relajación e integración con Apple Health para dormir mejor.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Sleep & Dreams en la App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Sleep & Dreams en la App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuita con funciones premium opcionales<br>iPhone, iPad y Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -561,15 +563,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/st-1.png" alt="Captura de pantalla de Sleep & Dreams 1" class="screenshot-img">
+                <img src="/images/screenshots/st-1.png" alt="Captura de pantalla de Sleep & Dreams 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-2.png" alt="Captura de pantalla de Sleep & Dreams 2" class="screenshot-img">
+                <img src="/images/screenshots/st-2.png" alt="Captura de pantalla de Sleep & Dreams 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-3.png" alt="Captura de pantalla de Sleep & Dreams 3" class="screenshot-img">
+                <img src="/images/screenshots/st-3.png" alt="Captura de pantalla de Sleep & Dreams 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -700,102 +702,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Hacer una pregunta</h4>
+                <h3><i class="fas fa-question-circle"></i> Hacer una pregunta</h3>
                 <p>Preguntas y respuestas rápidas sobre sus datos de sueño: obtenga respuestas instantáneas a sus dudas sobre el sueño</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Mantén conversaciones interactivas sobre tu salud del sueño y recibe asesoramiento personalizado. Quick Chat es gratis todos los días; Pro Chat profundiza más con nuestra IA más avanzada</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Resumen por voz</h4>
+                <h3><i class="fas fa-volume-up"></i> Resumen por voz</h3>
                 <p>Escuche resúmenes en audio de sus tendencias de sueño, perfecto para cuando está en movimiento</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Análisis de sueños rápido</h4>
+                <h3><i class="fas fa-moon"></i> Análisis de sueños rápido</h3>
                 <p>La IA interpreta sus sueños con símbolos clave, perspectivas emocionales y preguntas de reflexión</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-spa"></i> Relajación para dormir</h4>
+                <h3><i class="fas fa-spa"></i> Relajación para dormir</h3>
                 <p>Técnicas de relajación personalizadas, ejercicios de respiración y visualizaciones tranquilas para ayudarle a conciliar el sueño</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Hacerle reír</h4>
+                <h3><i class="fas fa-laugh"></i> Hacerle reír</h3>
                 <p>Obtenga humor personalizado a partir de sus datos de seguimiento para alegrar su día</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Investigación en profundidad <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Investigación en profundidad <span class="ai-pro-badge">Pro</span></h3>
                 <p>Análisis completo de IA de sus datos de sueño con información detallada</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-lungs"></i> Informe CPAP <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-lungs"></i> Informe CPAP <span class="ai-pro-badge">Pro</span></h3>
                 <p>Análisis completo de terapia CPAP con seguimiento de AHI, evaluación del ajuste de mascarilla, monitorización de adherencia y tarjetas de acción interactivas</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-brain"></i> Análisis de sueños Pro <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-brain"></i> Análisis de sueños Pro <span class="ai-pro-badge">Pro</span></h3>
                 <p>Interpretación psicológica profunda de sueños usando arquetipos junguianos, símbolos recurrentes, patrones emocionales y diccionario de símbolos personal</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detective de patrones <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detective de patrones <span class="ai-pro-badge">Pro</span></h3>
                 <p>Encuentre correlaciones ocultas entre la calidad de su sueño y factores de estilo de vida</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistente de objetivos <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistente de objetivos <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obtenga objetivos de sueño personalizados y basados en datos según sus patrones</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Resumen para el médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Resumen para el médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genere resúmenes profesionales de sueño para visitas al médico o estudios del sueño</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Justificante médico <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Justificante médico <span class="ai-pro-badge">Pro</span></h3>
                 <p>Justificantes médicos generados por IA para el trabajo o la escuela cuando los necesite</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generador de historias <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generador de historias <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transforme su recorrido de sueño en narrativas creativas y cautivadoras</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Resumen de texto <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Resumen de texto <span class="ai-pro-badge">Pro</span></h3>
                 <p>Cree resúmenes de mensajes de texto compartibles sobre sus tendencias de sueño</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Quiz personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Quiz personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ponga a prueba su conocimiento con un divertido quiz de 10 preguntas generado por IA sobre sus datos</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Texto a voz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Texto a voz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Escuche sus perspectivas y resúmenes de IA con reproducción de voz natural</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Informe de salud personalizado <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Informe de salud personalizado <span class="ai-pro-badge">Pro</span></h3>
                 <p>Cree documentos completos y personalizados de salud del sueño para rastrear su progreso</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (en el dispositivo) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (en el dispositivo) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opción que prioriza la privacidad y ejecuta la IA localmente en tu dispositivo usando Foundation Models de Apple — nada sale de tu iPhone, iPad o Mac. Uso ilimitado con una cuenta de pago en dispositivos Apple Silicon compatibles (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat de voz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat de voz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversaciones de voz bidireccionales y manos libres con la IA sobre tus datos: haz preguntas y escucha las respuestas sin tocar la pantalla</p>
             </div>
 
@@ -1022,22 +1024,22 @@
         <div class="related-apps-grid">
 
             <a href="/es/blood-pressure/" class="related-app-card" aria-label="Presión Arterial">
-                <img src="/images/BPT_1024.png" alt="Presión Arterial" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Presión Arterial" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Presión Arterial</span>
             </a>
 
             <a href="/es/daily-journal/" class="related-app-card" aria-label="Diario">
-                <img src="/images/NT_1024.png" alt="Diario" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Diario" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Diario</span>
             </a>
 
-            <a href="/es/mental-health/" class="related-app-card" aria-label="Salud Mental">
-                <img src="/images/FT_1024.png" alt="Salud Mental" class="related-app-icon">
+            <a href="/es/mood-tracker/" class="related-app-card" aria-label="Salud Mental">
+                <img src="/images/FT_1024.png" alt="Salud Mental" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Salud Mental</span>
             </a>
 
             <a href="/es/weight/" class="related-app-card" aria-label="Peso">
-                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Peso" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Peso</span>
             </a>
 
@@ -1050,9 +1052,10 @@
         <h2>Comience a mejorar su sueño esta noche</h2>
         <p>Un mejor descanso está a solo unos toques de distancia</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Sleep & Dreams"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Sleep & Dreams" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

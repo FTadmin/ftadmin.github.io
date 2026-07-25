@@ -132,12 +132,548 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
 
 
-
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Cum adaug o intrare?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Poți adăuga o intrare nouă fie 1. atingând ziua, fie 2. atingând + din dreapta sus. Ambele opțiuni sunt indicate prin săgețile din imaginea de mai jos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot înregistra de mai multe ori pe zi?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da. Poți adăuga mai multe intrări pe zi, după cum se arată mai sus. Atingeți din nou ziua sau + pentru a face asta."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum șterg o intrare?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pentru a șterge o intrare, poți glisa spre stânga pe intrare și atinge Șterge, sau atinge intrarea pentru a o deschide și apasă pictograma coș din stânga sus a ecranului. Ambele metode sunt prezentate mai jos:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "De ce văd o evaluare a dispoziției deasupra notițelor? Este privat?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pe măsură ce îți scrii notițele, un emoji apare deasupra lor pentru a indica sentimentul prezis. Această funcție te poate ajuta să înțelegi dacă scrierea ta pare prea negativă sau pozitivă, sau te poate aminti ce funcționează și ce nu, servind drept ghid pentru scrierea ta. În mod implicit, sentimentul folosește AI-ul aplicației care respectă confidențialitatea; dacă dezactivezi AI, acesta este calculat complet pe dispozitivul tău folosind framework-ul Natural Language de la Apple. Dacă preferi, poți dezactiva această funcție din Setări, la General."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum imprim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Când atingi Export (după cum se arată mai jos), vei vedea o foaie de partajare. Derulează acolo și atinge Imprimă (după cum se arată mai jos). Ai nevoie de o imprimantă wireless compatibilă Apple AirPrint pentru a imprima wireless de pe iPhone sau iPad. Dacă nu ai o imprimantă wireless compatibilă AirPrint, poți cumpăra una aici."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot împărtăși informațiile medicale pe care le urmăresc cu medicul?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da. Aplicația facilitează acest lucru. Atinge butonul Partajare (după cum se arată mai jos), alege PDF și apoi aplicația de e-mail. Raportul PDF va fi atașat la un e-mail pe care îl poți trimite medicului."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum pot ascunde mediile sau totalurile în jurnal?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Poți ascunde mediile și totalurile în opțiunile de vizualizare, după cum se arată mai jos. Atunci vor fi afișate doar valorile introduse și nicio medie. Aceasta poate fi utilă dacă găsești mediile/totalurile dintre datele introduse confuze."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot exporta în Excel sau software similar de calcul tabelar?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da. Urmează instrucțiunile de mai sus, dar alege Excel sau CSV în loc de PDF ca format de ieșire. Apoi salvează fișierul pe dispozitiv sau trimite-ți-l prin e-mail.  Formatul Excel este mai fiabil, în timp ce CSV poate fi mai compatibil — ambele ar trebui să se deschidă în Excel și software similar precum Apple Numbers sau Google Sheets."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cui pot trimite datele?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Poți trimite prin e-mail oricui dorești. Poate doriți să vă trimiteți datele regulat pentru stocare și backup. Poți salva și fișierul PDF sau CSV pe dispozitiv pentru utilizare ulterioară."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum derulați direct la ziua curentă în vizualizarea lunară?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Atingeți de două ori pictograma Jurnal din bara de file din partea de jos a ecranului."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum vizualizez datele din lunile anterioare?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pentru a vizualiza datele dintr-o lună anterioară (de ex. date din septembrie când ești în octombrie):"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum schimb ora sau data unei intrări?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Deschide o intrare și atinge data sau ora din partea de sus a ecranului, după cum se arată mai jos. Va apărea un calendar în care poți selecta data corectă. Apasă apoi Salvează. Sfat: Pentru a crea întotdeauna o intrare pentru data de astăzi, apasă + lângă ziua curentă sau + din dreapta sus a ecranului. Dacă o intrare a ajuns pe data greșită, s-ar putea să fi apăsat + lângă o altă zi — unii utilizatori fac asta pentru intrări istorice sau planificare viitoare."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cât de securizate sunt datele mele?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Datele sunt stocate criptat pe dispozitivul tău. Aceasta înseamnă că, chiar dacă dispozitivul este furat, nimeni nu poate accesa datele."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Unde sunt stocate datele mele?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pe dispozitivul tău și în iCloud. Această aplicație folosește aceeași tehnologie ca Note și Fotografii Apple pentru a stoca și sincroniza datele pe dispozitive, ceea ce înseamnă că este foarte fiabilă și sigură."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Poate altcineva să vadă datele mele private?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu. Datele se află exclusiv pe dispozitivul tău și în iCloud, care rulează pe servere gestionate de Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "De ce trebuie stocate datele în iCloud?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "iCloud permite backup-ul datelor și sincronizarea între dispozitive. Dacă pierzi telefonul sau obții unul nou, datele pot fi restaurate din iCloud."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "De ce nu se sincronizează datele între dispozitivele mele?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Datele ar trebui să se sincronizeze automat între dispozitive. Asigurați-vă că:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Am nevoie de un abonament pentru fiecare dispozitiv?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu. Un abonament deblochează funcțiile premium pe toate dispozitivele conectate la același cont iCloud. Dacă premiumul nu apare pe alt dispozitiv, mergi la Setări > Abonament (sau echivalentul din aplicație) și apasă Restaurare achiziție. Asigură-te că fiecare dispozitiv este conectat la același cont iCloud."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum funcționează backup-urile?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Backup-urile sunt create automat implicit o dată pe săptămână (deși le poți dezactiva în setări). Poți crea și backup-uri manuale în Setări > Date."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Câte backup-uri sunt create? Ar trebui să le șterg?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu există limită pentru numărul de backup-uri create. Backup-urile pot data din urmă cu ani și de obicei ocupă foarte puțin spațiu, deci ștergerea lor nu va face o mare diferență pentru stocarea dispozitivului. Dacă trebuie să eliberezi spațiu, este mai bine să ștergi fișiere mai mari de pe dispozitiv, cum ar fi fotografii și videoclipuri."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Backup-urile se sincronizează cu iCloud?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "În prezent backup-urile nu se sincronizează prin iCloud, dar datele curente o fac. Aceasta înseamnă că dacă obții un nou iPhone sau iPad, datele curente vor apărea acolo, dar nu backup-urile, deoarece fiecare dispozitiv îți păstrează propriile backup-uri locale. Aceasta înseamnă, de exemplu, că dacă ștergi o intrare pe iPhone și a dispărut din iCloud și din telefon, poți totuși merge pe iPad și restaura dintr-un instantaneu de backup mai vechi."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Am nevoie de un cont pentru a folosi această aplicație?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu. O poți folosi imediat fără autentificare sau înregistrare. Aplicația folosește contul iCloud pentru a sincroniza automat datele cu alte dispozitive, folosind infrastructura Apple. Aceasta înseamnă că este rapidă, fiabilă și sigură."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot folosi această aplicație atât pe iPhone cât și pe iPad?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da, și datele se vor sincroniza automat între ele când ești autentificat cu același cont iCloud. Pe versiunea iPad ai mai mult spațiu pentru notițe și poți vedea mai multe intrări."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Există o versiune Mac a aplicației?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da. Aplicația este disponibilă pentru Mac-urile Apple Silicon (M1 și mai noi). În aplicația Mac poți mări fereastra pentru a vedea mai multe date pe ecrane mai mari. Poți descărca aplicația Mac aici pe Mac-ul M1 sau mai nou."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Vreau să sugerez o funcție sau îmbunătățire pentru aplicație.",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Apreciem feedback-ul tău. Scrie-ne la feedback@feeltracker.com."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot opri sunetul?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da. Mergi la fila Setări și dezactivează cursorul de lângă Activează efecte sonore."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "La ce folosește fila Tendințe?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tendințe te ajută să înțelegi ce te preocupă, de ce și ce impact are asupra ta. Derulează în jos pentru mai multe detalii și câteva exemple despre cum funcționează Tendințe în aplicația ta."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "De ce nu văd nimic în Tendințe?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pentru ca Tendințe să funcționeze, trebuie să faci notițe când salvezi intrări. Poți face asta în câmpul de notițe al fiecărei intrări."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "La ce folosește fila Statistici?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Aceasta îți arată în prezent toate intrările între 2 date și o medie/total în acea perioadă. Astfel poți obține o medie/total pentru orice perioadă dorești."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Care este diferența dintre Jurnal, Tendințe și Statistici?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Jurnalul este zona principală jurnal/registru unde introduci date și le poți vizualiza lunar/anual/pe viață cu medii și totaluri. Tendințe te ajută să înțelegi tipare în datele pe care le înregistrezi în Jurnal, astfel poți acționa în consecință. Statistici îți arată datele în ordine cronologică (ultima intrare prima) fără grupare lunară sau anuală și îți permite să vezi medii și totaluri între oricare două date."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ar trebui să mă deconectez sau să opresc dispozitivul pentru a economisi memorie și baterie?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu este deloc necesar să te deconectezi — dispozitivul descarcă automat aplicațiile/resursele din memorie când este necesar. IPhone-urile și iPad-urile moderne au memorie foarte eficientă energetic, deci aplicațiile pot rămâne în memorie mult timp fără efecte negative. Accesarea acelei memorii este sigură și deja protejată de Face ID, Touch ID sau cod de acces. Dacă totuși vrei să închizi o aplicație (de exemplu dacă nu mai răspunde), poți urma instrucțiunile Apple aici. Nu este nici necesar să te autentifici, deoarece aplicația folosește contul iCloud și poate sincroniza/face backup datelor pe dispozitive similar cu aplicațiile Fotografii și Note, fără a partaja date de identificare personală."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Este sigur dacă nu mă deconectez?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da. Odată ce apeși butonul lateral al dispozitivului pentru a-l bloca ca de obicei, nimeni nu poate accesa aplicația sau datele cât timp este blocat."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Aplicația afișează reclame?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu. Aplicațiile Feeltracker nu afișează reclame de la terți și nu folosesc rețele de publicitate sau SDK-uri de urmărire a reclamelor (precum AdMob). Datele tale personale și de sănătate nu sunt niciodată partajate cu agenții de publicitate. Aplicațiile sunt finanțate exclusiv prin abonamente premium opționale și achiziții unice prin App Store."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Există o versiune gratuită?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da. Toate funcțiile de bază sunt gratuite pentru toată lumea — notițe nelimitate, grafice și tendințe, sincronizare Apple Health, export PDF/CSV/Excel/JSON, Scanare Cameră AI, și un set de funcții AI zilnice pe care le poți folosi gratuit în fiecare zi. Un abonament opțional Pro deblochează cele mai avansate funcții AI (Cercetare Aprofundată, Rezumat pentru Medic, Detectiv de Tipare, Chat Pro și altele), le rulează pe cel mai performant model AI al nostru și mărește limitele zilnice generoase."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pentru ce plătesc cu abonamentul meu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Abonamentul tău finanțează dezvoltarea continuă — funcții noi, remedieri de erori, traduceri și costurile serverului pentru funcțiile AI opționale. Deoarece nu rulăm reclame, abonamentele și achizițiile unice sunt singurul mod în care finanțăm aplicația, și mențin experiența curată și privată pentru toți."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "De ce ar trebui să mă abonez? De ce nu pot plăti o singură dată?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "O mică taxă recurentă de abonament face aplicația mai ușor de încercat fără costuri inițiale mari. Pe termen lung, veniturile din abonament ne ajută să menținem aplicația și să finanțăm dezvoltarea de funcții noi utile."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot face ceva pentru a susține această aplicație?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ne bazăm pe recenzii bune pentru a răspândi aplicația și a dezvolta funcții noi. Lasă o recenzie prin link-ul pentru aplicația ta:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Vreau să anulez abonamentul plătit",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mulțumesc că ai încercat aplicația. Spune-mi dacă pot face ceva mai bine la gs@feeltracker.com și voi încerca să ajut. Adesea corecțiile și îmbunătățirile bazate pe feedback-ul utilizatorilor sunt livrate în aceeași zi sau a doua zi într-o actualizare a aplicației. Dacă tot nu ești mulțumit, poți anula abonamentul aici."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Aplicația colectează numele meu, data nașterii sau genul?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Doar dacă alegi să le salvezi. Poți completa opțional un profil scurt (nume, data nașterii, sex) pentru a personaliza experiența — este complet opțional, iar funcțiile de bază de urmărire funcționează și fără el. Când sunt furnizate, detaliile profilului rămân pe dispozitivul tău și în propriul tău iCloud, niciodată pe serverele noastre."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum sunt folosite detaliile mele de profil?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Dacă folosești o funcție AI opțională (precum chat, perspective sau feedback personalizat), aplicația poate include părțile relevante ale profilului tău — de obicei prenumele, vârsta (calculată din data nașterii) și genul — cu solicitarea, astfel încât AI să îți poată oferi răspunsuri mai relevante (de exemplu, ghidare medicală adecvată vârstei sau pronumele corecte). Acest lucru se întâmplă doar când folosești activ o funcție AI. Poți edita sau șterge profilul sau dezactiva funcțiile AI oricând."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ce servicii AI folosește aplicația?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Aplicațiile folosesc trei tipuri de AI, toate opționale și la cerere: 1. AI pe dispozitiv (API-ul Natural Language de la Apple) pentru lucruri precum scorarea sentimentelor — rulează complet pe dispozitivul tău, niciun dat nu îl părăsește. 2. Apple Intelligence pe dispozitive compatibile — procesată pe dispozitiv unde este posibil și prin Apple Private Cloud Compute pentru sarcini mai grele. Apple nu stochează sau vede datele tale și nu sunt folosite pentru a antrena modelele Apple. 3. API OpenAI pentru chat, perspective și feedback personalizat — folosit doar când îl activezi activ. Doar datele relevante (și, dacă sunt salvate, context limitat de profil) sunt trimise. OpenAI nu folosește datele API pentru a-și antrena modelele."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Este necesar Apple Health?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu. Integrarea Apple Health este complet opțională. Aplicațiile funcționează complet fără ea — poți introduce citiri manual, folosi AI Camera Scan sau importa CSV-uri. Când o activezi, poți alege ce tipuri de date poate citi sau scrie aplicația și poți revoca accesul oricând din Setări iOS."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum îmi șterg datele?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tu ești în control: - Șterge înregistrări individuale prin glisare. - Șterge-ți profilul (nume, dată de naștere, gen) oricând din ecranul de profil al aplicației. - Șterge toate datele aplicației dintr-o dată din setările aplicației. - Eliminarea aplicației și a copiei de rezervă iCloud din Setările iOS șterge totul. Deoarece nu păstrăm o copie pe serverele noastre, nu există nimic în plus pentru noi de șters în numele tău."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot folosi AI fără să trimit datele mele în cloud?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da. Aplicația include o opțiune Apple Intelligence care rulează AI în întregime pe dispozitiv folosind Foundation Models de la Apple — nimic nu este trimis către serverele noastre sau către OpenAI. Necesită un dispozitiv Apple Silicon compatibil (iPhone 15 Pro sau seria iPhone 16 și ulterior, iPad și Mac cu Apple Silicon) și un cont Feeltracker plătit, care îți oferă utilizare nelimitată a AI pe dispozitiv. Poți comuta oricând între AI pe dispozitiv și AI în cloud din setările AI ale aplicației."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Se conectează aplicația prin Bluetooth cu tensiometrul meu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nu, aplicația nu se conectează direct la monitoarele de tensiune arterială prin Bluetooth. În schimb, ne-am concentrat pe a face notarea manuală fără efort prin tehnologia de scanare cu camera bazată pe AI. Pur și simplu îndreaptă camera iPhone-ului spre afișajul monitorului tău după ce faci o măsurătoare, iar aplicația citește automat cifrele. Acest lucru funcționează cu aproape orice monitor de tensiune arterială cu afișaj digital, indiferent de marcă sau model. Nu este necesară nicio asociere, nicio compatibilitate specifică a dispozitivului de care să-ți faci griji, și durează doar câteva secunde. Scanarea cu camera este întotdeauna gratuită și nelimitată pentru toată lumea, cu o alocare zilnică generoasă."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum funcționează AI Camera Scan?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "După măsurătoarea de tensiune, deschide aplicația și atinge butonul \"+\", apoi alege \"Scanează cu camera\". Ține telefonul nemișcat la aproximativ 15-30 cm de afișajul tensiometrului, asigurându-te că numerele sunt clar vizibile și bine iluminate. Aplicația citește automat valorile sistolice, diastolice și puls. Pentru cele mai bune rezultate, asigurați iluminare bună și mențineți telefonul nemișcat la scanare. Funcționează cu cele mai multe monitoare digitale, inclusiv OMRON, Microlife și Beurer."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "De ce văd intrări duplicate?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Aceasta este de obicei cauzată de configurația sincronizării Apple Health. Cea mai frecventă problemă este că sunt activate numai permisiunile de scriere pentru Apple Health, dar nu și cele de citire. Pentru a remedia: Mergi la Setări > Date > Apple Health și asigurați-vă că ATÂT permisiunile de citire CÂT ȘI de scriere sunt activate pentru Tensiune Arterială și Frecvență Cardiacă — nu doar scrierea. Aplicația are nevoie de permisiunea de citire pentru a verifica dacă o măsurătoare există deja înainte de a o importa din Health."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pot înregistra măsurători pentru mai mulți membri ai familiei?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "O funcție de etichete vine în lunile următoare, permițând înregistrarea măsurătorilor pentru mai multe persoane pe un dispozitiv. Poți eticheta fiecare intrare cu numele unei persoane și apoi genera rapoarte individuale pentru fiecare membru al familiei."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Datele nu se sincronizează între iPhone și iPad. De ce?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mai întâi, asigurați-vă că ești autentificat cu același cont iCloud pe ambele dispozitive. Mergi la Setări > [Numele tău] și verifică Apple ID-ul. Apoi, verifică dacă iCloud Drive este activat pe ambele dispozitive (Setări > [Numele tău] > iCloud > iCloud Drive). Datele se sincronizează automat prin iCloud, dar au nevoie de conexiune internet și poate dura câteva minute. Încearcă să deschizi aplicația pe fiecare dispozitiv și să tragi în jos pentru a actualiza."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ce include abonamentul? Ce este gratuit?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Toate funcțiile de bază sunt gratuite pentru toată lumea — notițe nelimitate, scanare cu camera AI, toate graficele și tendințele, sincronizare Apple Health, și exporturi PDF/CSV/Excel/JSON — iar fiecare utilizator primește funcții AI reale și gratuite în fiecare zi, inclusiv Pune o Întrebare, Chat Rapid, Rezumat Vocal și versiuni rapide ale rapoartelor. Abonamentul opțional Pro deblochează funcțiile AI complete, cele mai avansate (Cercetare Aprofundată, Rezumat pentru Medic, Detectiv de Tipare, Chat Pro, Chat Vocal și altele), le rulează pe cel mai performant model AI al nostru și mărește limitele zilnice generoase. Aplicațiile nu afișează niciodată reclame, indiferent dacă te abonezi sau nu."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ce este PAM și ar trebui să îl urmăresc?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "PAM (Presiunea Arterială Medie) reprezintă presiunea medie în artere pe parcursul unui ciclu cardiac. Este calculat automat pentru fiecare măsurătoare. PAM este deosebit de important pentru pacienții cu LVAD (Dispozitiv de Asistare Ventriculară Stângă) și altele cu anumite afecțiuni cardiovasculare. Pentru a activa afișajul PAM, mergi la Setări > Tensiune Arterială > Afișează Presiunea Arterială Medie (PAM). Intervale PAM personalizabile vin în versiunea 2.8.x."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum folosesc șabloanele de notițe pentru a economisi timp?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Când introduci o notiță (cum ar fi \"Măsurătoare de dimineață — înainte de medicație\"), atinge butonul \"Șablon\" din stânga jos a câmpului de notițe și salvează-l ca șablon. Data viitoare când introduci o măsurătoare, atinge din nou \"Șablon\" și alege din șabloanele salvate — textul va fi inserat imediat. Aceasta este ideal pentru notițe recurente precum \"Dimineața — înainte de medicație\" sau \"Seara — după cină\"."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ce tensiune este prea mare sau prea mică?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tensiunea arterială ar trebui de obicei să fie între 90-140 pentru valoarea sistolică și 60-90 pentru valoarea diastolică. Dacă este în afara acestui interval, ar trebui să consultați un medic."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Care este tensiunea arterială ideală?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Conform NHS, tensiunea arterială ideală este între 90/60 mmHg și 120/80 mmHg. Totuși, aceasta poate varia în funcție de sex, vârstă și alte variabile. Prin urmare, este cel mai bine să consultați medicul de familie pentru o evaluare precisă a tensiunii pe baza circumstanțelor individuale."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum îmi măsor tensiunea arterială?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tensiunea arterială este măsurată cu un tensiometru digital. Aici găsești tensiometre care funcționează excelent cu funcția AI Camera Scan. Aplicația poate citi automat valorile de pe cele mai multe monitoare digitale, inclusiv OMRON, Microlife și Beurer."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "La ce servește Tendințe?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cu Tendințe, această aplicație preia datele și notițele și arată ce lucruri te influențează și cum. De exemplu, ai putea vedea că ai meditat de 20 de ori anul trecut și că meditația îți scade tensiunea. Invers, ai putea vedea că de fiecare dată când te întâlnești cu Bob, te certi și el îți crește tensiunea. Cu cât folosești mai mult notițele, cu atât Tendințe poate fi mai utilă."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Poți explica Tendințe cu un exemplu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De exemplu, alergi de 10 ori. De 5 ori tensiunea scade cu 10 și de celelalte ori scade cu 5. Tendințe arată că alergatul ajută în medie să îți scadă tensiunea cu aproximativ 7,5 puncte."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "La ce servește Tendințe?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cu Tendințe, această aplicație preia datele și notițele și arată ce lucruri te influențează și cum. De exemplu, ai putea vedea că te-ai întâlnit cu Jane de 20 de ori anul trecut și că Jane te face în medie foarte fericit. Invers, ai putea vedea că de fiecare dată când te întâlnești cu Bob, te certi și el te face nefericit. Cu cât folosești mai mult notițele, cu atât Tendințe poate fi mai utilă."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Poți explica Tendințe cu un exemplu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De exemplu, te întâlnești cu Jane de 10 ori. De 5 ori te-a făcut foarte fericit (+2) și de 5 ori te-a făcut destul de fericit (+1). Tendințe arată că Jane te face în medie destul de (+1,5) fericit."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "La ce servește Tendințe?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cu Tendințe, această aplicație preia datele și notițele și arată ce cuvinte te preocupă cel mai mult. De exemplu, ai putea vedea că ai folosit un cuvânt de 20 de ori anul trecut. Invers, ai putea vedea că ai folosit un alt cuvânt de 50 de ori — mult mai frecvent. Cu cât folosești mai mult notițele, cu atât Tendințe poate fi mai utilă."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Poți explica Tendințe cu un exemplu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De exemplu, scrii despre Jane de 120 de ori în notițe, mai mult decât despre serviciu, despre care scrii de 50 de ori. Tendințe arată în acest caz că Jane a fost clar subiectul principal din mintea ta."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "La ce servește Tendințe?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cu Tendințe, această aplicație preia datele și notițele și arată ce lucruri te influențează și cum. De exemplu, ai putea vedea că ai băut mult cafea săptămâna trecută și că din această cauză ai dormit mai puțin. Invers, ai putea vedea că de fiecare dată când mănânci salată sau mergi la sală, dormi mai bine. Cu cât folosești mai mult notițele, cu atât Tendințe poate fi mai utilă."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Poți explica Tendințe cu un exemplu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De exemplu, bei cafea de 10 ori. De 5 ori ai dormit cu 2 ore mai puțin, iar de celelalte 5 ori ai dormit cu 1 oră mai puțin. Tendințe arată că băutul cafelei duce în medie la dormit cu 1,5 ore mai puțin."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "La ce servește Tendințe?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cu Tendințe, această aplicație preia datele și notițele și arată ce lucruri te influențează și cum. De exemplu, ai putea vedea că ai mâncat fast food de 20 de ori anul trecut și că te îngrași în timp când mănânci fast food. Invers, ai putea vedea că de fiecare dată când mănânci salată sau mergi la sală, slăbești. Cu cât folosești mai mult notițele, cu atât Tendințe poate fi mai utilă."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Poți explica Tendințe cu un exemplu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De exemplu, mănânci gogoși de 10 ori. De 5 ori greutatea crește cu 0,1 kg. De celelalte 5 ori greutatea crește cu 0,3 kg. Tendințe arată că mâncatul gogoșilor îți crește greutatea în medie cu 0,2 kg."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Cum măsor grăsimea corporală?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Grăsimea corporală este măsurată de cântare special concepute care măsoară atât greutatea cât și compoziția corporală. Iată un exemplu de un astfel de cântar de la Omron. Există și alte opțiuni de la alte mărci — ce trebuie să cauți este \"compoziție corporală\" plus cântar. Rețineți că, chiar dacă introduceți doar greutatea, veți vedea totuși o valoare IMC (la stânga greutății, codificată cu culori) care dă o indicație generală dacă aveți o greutate sănătoasă (verde este bine și roșu înseamnă suprapondere)."
+                      }
+                }
+          ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -150,7 +686,7 @@
 
             <a href="/ro/daily-journal/">Jurnal zilnic</a>
 
-            <a href="/ro/mental-health/">Sănătate mintală</a>
+            <a href="/ro/mood-tracker/">Sănătate mintală</a>
 
             <a href="/ro/sleep/">Somn</a>
 
@@ -235,6 +771,7 @@
 </nav>
 
 
+<main>
 <h1>Întrebări frecvente</h1>
 
 
@@ -247,7 +784,7 @@
 
     <p>
 
-        <img src="/images/add_new.jpg" class="screenshot">
+        <img src="/images/add_new.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -265,9 +802,9 @@
 
     <p>
 
-        <img src="/images/delete_swipe.jpg" class="screenshot-small padded10">
+        <img src="/images/delete_swipe.jpg" class="screenshot-small padded10" alt="" loading="lazy" decoding="async">
 
-        <img src="/images/delete_trashcan.jpg" class="screenshot-small padded10">
+        <img src="/images/delete_trashcan.jpg" class="screenshot-small padded10" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -286,7 +823,7 @@
 
     <p>
 
-        <img src="/images/printing_example_ios.jpg" class="screenshot">
+        <img src="/images/printing_example_ios.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -298,7 +835,7 @@
 
     <p>
 
-        <img src="/images/sharing_example.jpg" class="screenshot">
+        <img src="/images/sharing_example.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -310,7 +847,7 @@
 
     <p>
 
-        <img src="/images/hide_averages.jpg" class="screenshot">
+        <img src="/images/hide_averages.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -364,7 +901,7 @@
 
     <p>
 
-        <img src="/images/change_time_date.jpg" class="screenshot">
+        <img src="/images/change_time_date.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -405,7 +942,7 @@
       <li>iCloud Drive este activat pe toate dispozitivele (în Setări > Numele tău > iCloud > iCloud Drive, după cum se arată mai jos).</li>
 
 
-      <p><img src="/images/icloud_on.png" class="screenshot"></p>
+      <p><img src="/images/icloud_on.png" class="screenshot" alt="" loading="lazy" decoding="async"></p>
 
     </ul>
 
@@ -756,6 +1293,7 @@
 <p>Dacă ai întrebări sau sugestii, nu ezitați să ne contactați la <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a>.</p>
 
 
+</main>
 
     <!-- Footer -->
     <footer>

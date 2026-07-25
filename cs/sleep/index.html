@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -448,7 +449,7 @@
 
             <a href="/cs/daily-journal/">Deník</a>
 
-            <a href="/cs/mental-health/">Duševní zdraví</a>
+            <a href="/cs/mood-tracker/">Duševní zdraví</a>
 
             <a href="/cs/sleep/" class="current">Spánek</a>
 
@@ -533,9 +534,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/ST_1024.png" alt="Ikona aplikace Spánek a sny" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/ST_1024.png" alt="Ikona aplikace Spánek a sny" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Spánek a sny</h1>
 
         <div class="privacy-badge">
@@ -543,12 +545,12 @@
         </div>
         <p class="hero-subtitle">Sledujte vzorce spánku a zjistěte, co ovlivňuje kvalitu vašeho spánku. Funkce AI analýzy snů, monitorování CPAP terapie, relaxační nástroje a integrace Apple Health pro lepší odpočinek.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/cs-white.svg"><img class="store_button store_button--lg" src="/images/appstore/cs-black.svg" alt="Stáhnout Spánek a sny v App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/cs-white.svg"><img class="store_button store_button--lg" src="/images/appstore/cs-black.svg" alt="Stáhnout Spánek a sny v App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Bezplatná aplikace s volitelnými prémiovými funkcemi<br>iPhone, iPad a Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -561,15 +563,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/st-1.png" alt="Snímek obrazovky Spánek a sny 1" class="screenshot-img">
+                <img src="/images/screenshots/st-1.png" alt="Snímek obrazovky Spánek a sny 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-2.png" alt="Snímek obrazovky Spánek a sny 2" class="screenshot-img">
+                <img src="/images/screenshots/st-2.png" alt="Snímek obrazovky Spánek a sny 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-3.png" alt="Snímek obrazovky Spánek a sny 3" class="screenshot-img">
+                <img src="/images/screenshots/st-3.png" alt="Snímek obrazovky Spánek a sny 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -700,102 +702,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Položit otázku</h4>
+                <h3><i class="fas fa-question-circle"></i> Položit otázku</h3>
                 <p>Rychlé Q&A o datech spánku – okamžité odpovědi na dotazy o spánku</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Veďte interaktivní konverzace o svém spánkovém zdraví a získejte personalizované rady. Rychlý chat je zdarma každý den; Pro Chat jde do hloubky na naší nejschopnější AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Hlasové shrnutí</h4>
+                <h3><i class="fas fa-volume-up"></i> Hlasové shrnutí</h3>
                 <p>Poslouchejte zvukové přehledy trendů spánku – ideální pro přehledy na cestách</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Rychlá analýza snů</h4>
+                <h3><i class="fas fa-moon"></i> Rychlá analýza snů</h3>
                 <p>AI interpretuje vaše sny s klíčovými symboly, emocionálními přehledy a otázkami k zamyšlení</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-spa"></i> Uklidni mě pro spánek</h4>
+                <h3><i class="fas fa-spa"></i> Uklidni mě pro spánek</h3>
                 <p>Personalizované relaxační techniky, dechová cvičení a poklidné vizualizace pro rychlejší usínání</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Rozesměj mě</h4>
+                <h3><i class="fas fa-laugh"></i> Rozesměj mě</h3>
                 <p>Získejte personalizovaný humor ze svých sledovacích dat pro rozjasnění dne</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Hloubkový výzkum <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Hloubkový výzkum <span class="ai-pro-badge">Pro</span></h3>
                 <p>Komplexní analýza dat spánku pomocí AI s podrobnými přehledy</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-lungs"></i> CPAP zpráva <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-lungs"></i> CPAP zpráva <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kompletní analýza CPAP terapie s sledováním AHI, hodnocením přilnavosti masky, monitorováním adherence a interaktivními akčními kartami</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-brain"></i> Pro analýza snů <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-brain"></i> Pro analýza snů <span class="ai-pro-badge">Pro</span></h3>
                 <p>Hloubková psychologická interpretace snů pomocí jungianských archetypů, opakujících se symbolů, emocionálních vzorců a osobního slovníku symbolů</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detektiv vzorců <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detektiv vzorců <span class="ai-pro-badge">Pro</span></h3>
                 <p>Najděte skryté korelace mezi kvalitou spánku a faktory životního stylu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistent cílů <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistent cílů <span class="ai-pro-badge">Pro</span></h3>
                 <p>Získejte personalizované spánkové cíle řízené daty na základě vašich vzorců</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Souhrn pro lékaře <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Souhrn pro lékaře <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generujte profesionální souhrny spánku pro zdravotní návštěvy nebo spánkové studie</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Potvrzení o nemoci <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Potvrzení o nemoci <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI generované nemocenské lístky pro práci nebo školu, když je potřebujete</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generátor příběhů <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generátor příběhů <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transformujte svou spánkovou cestu do kreativních, poutavých příběhů</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Textové shrnutí <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Textové shrnutí <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vytvářejte sdílitelné textové souhrny trendů spánku</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Osobní kvíz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Osobní kvíz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Otestujte své znalosti se zábavným kvízem s 10 otázkami generovaným AI o vašich datech</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Převod textu na řeč <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Převod textu na řeč <span class="ai-pro-badge">Pro</span></h3>
                 <p>Poslouchejte přehledy AI a souhrny s přirozeným hlasovým přehráváním</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Přizpůsobená zdravotní zpráva <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Přizpůsobená zdravotní zpráva <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vytvářejte komplexní, personalizované dokumenty zdraví spánku pro sledování pokroku</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (na zařízení) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (na zařízení) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Možnost zaměřená na soukromí, která spouští AI lokálně na vašem zařízení pomocí Apple Foundation Models — nic neopouští váš iPhone, iPad ani Mac. Neomezené použití s placeným účtem na podporovaných zařízeních s Apple Silicon (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Hlasový chat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Hlasový chat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obousměrné hlasové konverzace s AI o vašich datech bez použití rukou — ptejte se a poslouchejte odpovědi, aniž byste se dotkli obrazovky</p>
             </div>
 
@@ -1022,22 +1024,22 @@
         <div class="related-apps-grid">
 
             <a href="/cs/blood-pressure/" class="related-app-card" aria-label="Krevní tlak">
-                <img src="/images/BPT_1024.png" alt="Krevní tlak" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Krevní tlak" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Krevní tlak</span>
             </a>
 
             <a href="/cs/daily-journal/" class="related-app-card" aria-label="Deník">
-                <img src="/images/NT_1024.png" alt="Deník" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Deník" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Deník</span>
             </a>
 
-            <a href="/cs/mental-health/" class="related-app-card" aria-label="Duševní zdraví">
-                <img src="/images/FT_1024.png" alt="Duševní zdraví" class="related-app-icon">
+            <a href="/cs/mood-tracker/" class="related-app-card" aria-label="Duševní zdraví">
+                <img src="/images/FT_1024.png" alt="Duševní zdraví" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Duševní zdraví</span>
             </a>
 
             <a href="/cs/weight/" class="related-app-card" aria-label="Váha">
-                <img src="/images/WT_1024.png" alt="Váha" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Váha" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Váha</span>
             </a>
 
@@ -1050,9 +1052,10 @@
         <h2>Začněte zlepšovat svůj spánek dnes večer</h2>
         <p>Lepší odpočinek je jen pár klepnutí daleko</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/cs-white.svg"><img class="store_button store_button--lg" src="/images/appstore/cs-black.svg" alt="Stáhnout Spánek a sny"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/cs-white.svg"><img class="store_button store_button--lg" src="/images/appstore/cs-black.svg" alt="Stáhnout Spánek a sny" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

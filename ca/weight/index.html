@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -380,7 +381,7 @@
 
             <a href="/ca/daily-journal/">Diari Personal</a>
 
-            <a href="/ca/mental-health/">Salut Mental</a>
+            <a href="/ca/mood-tracker/">Salut Mental</a>
 
             <a href="/ca/sleep/">Son</a>
 
@@ -465,9 +466,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/WT_1024.png" alt="Icona de l'app Pes i Alimentació" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/WT_1024.png" alt="Icona de l'app Pes i Alimentació" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Pes i Alimentació</h1>
 
         <div class="privacy-badge">
@@ -475,12 +477,12 @@
         </div>
         <p class="hero-subtitle">Assoleix els teus objectius de forma física amb un seguiment intel·ligent del pes. Escaneja les lectures amb la IA d'Escaneig de Càmera, monitoritza el pes, l'IMC i el percentatge de greix corporal amb informació potenciada per IA que mostra el que funciona i el que no.</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Pes i Alimentació a l'App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Pes i Alimentació a l'App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">App gratuïta amb funcions premium opcionals<br>iPhone, iPad i Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -493,15 +495,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/wt-1.png" alt="Captura de pantalla 1 de Pes i Alimentació" class="screenshot-img">
+                <img src="/images/screenshots/wt-1.png" alt="Captura de pantalla 1 de Pes i Alimentació" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-2.png" alt="Captura de pantalla 2 de Pes i Alimentació" class="screenshot-img">
+                <img src="/images/screenshots/wt-2.png" alt="Captura de pantalla 2 de Pes i Alimentació" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-3.png" alt="Captura de pantalla 3 de Pes i Alimentació" class="screenshot-img">
+                <img src="/images/screenshots/wt-3.png" alt="Captura de pantalla 3 de Pes i Alimentació" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -627,102 +629,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Fes una pregunta</h4>
+                <h3><i class="fas fa-question-circle"></i> Fes una pregunta</h3>
                 <p>Preguntes i respostes ràpides sobre les teves dades de pes: obté respostes instantànies a les teves preguntes de salut</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Xat</h4>
+                <h3><i class="fas fa-comments"></i> Xat</h3>
                 <p>Tingues converses interactives sobre el teu recorregut de fitness i rep orientació personalitzada. El Xat ràpid és gratuït cada dia; el Xat Pro aprofundeix més amb la nostra IA més capaç</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Resum de veu</h4>
+                <h3><i class="fas fa-volume-up"></i> Resum de veu</h3>
                 <p>Escolta resums en àudio de les teves tendències de pes: perfecte per obtenir informació quan vas de camí</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Fes-me riure</h4>
+                <h3><i class="fas fa-laugh"></i> Fes-me riure</h3>
                 <p>Obté humor personalitzat de les teves dades de seguiment per alegrar el teu dia</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Calma'm</h4>
+                <h3><i class="fas fa-moon"></i> Calma'm</h3>
                 <p>Exercicis de respiració i relaxació guiats per IA per ajudar a reduir el menjar per estrès</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> IA d'Escaneig de Càmera</h4>
+                <h3><i class="fas fa-camera"></i> IA d'Escaneig de Càmera</h3>
                 <p>Escaneja lectures de pes de la pantalla de la teva bàscula o aliments per obtenir anàlisis nutricionals instantànies</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Recerca aprofundida <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Recerca aprofundida <span class="ai-pro-badge">Pro</span></h3>
                 <p>Anàlisi d'IA completa de les teves dades de pes amb informació detallada</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detectiu de patrons <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detectiu de patrons <span class="ai-pro-badge">Pro</span></h3>
                 <p>Troba correlacions ocultes entre el teu pes i els factors d'estil de vida</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Assistent d'objectius <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Assistent d'objectius <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obté objectius de pes personalitzats i basats en dades a partir dels teus patrons</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Resum per al metge <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Resum per al metge <span class="ai-pro-badge">Pro</span></h3>
                 <p>Genera resums professionals de gestió del pes per a visites mèdiques</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Baixa mèdica <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Baixa mèdica <span class="ai-pro-badge">Pro</span></h3>
                 <p>Baixes mèdiques generades per IA per a la feina o l'escola quan les necessites</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generador d'històries <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generador d'històries <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transforma el teu recorregut de pes en narratives creatives i atractives</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Resum de text <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Resum de text <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crea resums de missatges de text compartibles de les teves tendències de pes</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Qüestionari personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Qüestionari personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Posa a prova els teus coneixements amb un divertit qüestionari de 10 preguntes generat per IA sobre les teves dades</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Text a veu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Text a veu <span class="ai-pro-badge">Pro</span></h3>
                 <p>Escolta la teva informació i resums d'IA amb reproducció de veu natural</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Informe de salut personalitzat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Informe de salut personalitzat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Crea documents de forma física complets i personalitzats per fer un seguiment del teu progrés</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-utensils"></i> Planificador de menjars <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-utensils"></i> Planificador de menjars <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obté un pla de menjars setmanal personalitzat basat en els teus objectius de pes i preferències dietètiques</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-dumbbell"></i> Planificador d'exercicis <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-dumbbell"></i> Planificador d'exercicis <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obté una rutina d'entrenament personalitzada adaptada al teu nivell de forma física i objectius</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (al dispositiu) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (al dispositiu) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opció centrada en la privadesa que executa la IA localment al teu dispositiu mitjançant els Foundation Models d'Apple — res no surt del teu iPhone, iPad o Mac. Ús il·limitat amb un compte de pagament, en dispositius Apple Silicon compatibles (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Xat de veu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Xat de veu <span class="ai-pro-badge">Pro</span></h3>
                 <p>Converses de veu bidireccionals i mans lliures amb la IA sobre les teves dades: fes preguntes i escolta les respostes sense tocar la pantalla</p>
             </div>
 
@@ -921,22 +923,22 @@
         <div class="related-apps-grid">
 
             <a href="/ca/blood-pressure/" class="related-app-card" aria-label="Pressió Arterial">
-                <img src="/images/BPT_1024.png" alt="Pressió Arterial" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Pressió Arterial" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Pressió Arterial</span>
             </a>
 
             <a href="/ca/daily-journal/" class="related-app-card" aria-label="Diari Personal">
-                <img src="/images/NT_1024.png" alt="Diari Personal" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Diari Personal" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Diari Personal</span>
             </a>
 
-            <a href="/ca/mental-health/" class="related-app-card" aria-label="Salut Mental">
-                <img src="/images/FT_1024.png" alt="Salut Mental" class="related-app-icon">
+            <a href="/ca/mood-tracker/" class="related-app-card" aria-label="Salut Mental">
+                <img src="/images/FT_1024.png" alt="Salut Mental" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Salut Mental</span>
             </a>
 
             <a href="/ca/sleep/" class="related-app-card" aria-label="Son">
-                <img src="/images/ST_1024.png" alt="Son" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Son" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Son</span>
             </a>
 
@@ -949,9 +951,10 @@
         <h2>Comença el teu recorregut de pes avui</h2>
         <p>Uneix-te a milers de persones que assoleixen els seus objectius de forma física amb Pes i Alimentació</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Pes i Alimentació"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Pes i Alimentació" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

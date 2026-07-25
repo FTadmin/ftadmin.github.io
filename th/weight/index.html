@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -380,7 +381,7 @@
 
             <a href="/th/daily-journal/">ไดอารี่ประจำวัน</a>
 
-            <a href="/th/mental-health/">สุขภาพจิต</a>
+            <a href="/th/mood-tracker/">สุขภาพจิต</a>
 
             <a href="/th/sleep/">การนอน</a>
 
@@ -465,9 +466,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/WT_1024.png" alt="ไอคอนแอป Weight & Food" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/WT_1024.png" alt="ไอคอนแอป Weight & Food" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Weight & Food</h1>
 
         <div class="privacy-badge">
@@ -475,12 +477,12 @@
         </div>
         <p class="hero-subtitle">บรรลุเป้าหมายสุขภาพด้วยการติดตามน้ำหนักอย่างชาญฉลาด สแกนค่าด้วย Camera Scan AI ตรวจสอบน้ำหนัก BMI และเปอร์เซ็นต์ไขมันพร้อม AI insights ที่บอกว่าอะไรได้ผลและอะไรไม่ได้ผล</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/th-white.svg"><img class="store_button store_button--lg" src="/images/appstore/th-black.svg" alt="ดาวน์โหลด Weight & Food บน App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/th-white.svg"><img class="store_button store_button--lg" src="/images/appstore/th-black.svg" alt="ดาวน์โหลด Weight & Food บน App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">แอปฟรีพร้อมฟีเจอร์พรีเมียมเสริม<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -493,15 +495,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/wt-1.png" alt="ภาพหน้าจอ Weight & Food 1" class="screenshot-img">
+                <img src="/images/screenshots/wt-1.png" alt="ภาพหน้าจอ Weight & Food 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-2.png" alt="ภาพหน้าจอ Weight & Food 2" class="screenshot-img">
+                <img src="/images/screenshots/wt-2.png" alt="ภาพหน้าจอ Weight & Food 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-3.png" alt="ภาพหน้าจอ Weight & Food 3" class="screenshot-img">
+                <img src="/images/screenshots/wt-3.png" alt="ภาพหน้าจอ Weight & Food 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -627,102 +629,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> ถามคำถาม</h4>
+                <h3><i class="fas fa-question-circle"></i> ถามคำถาม</h3>
                 <p>ถาม-ตอบด่วนเกี่ยวกับข้อมูลน้ำหนัก รับคำตอบทันที</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> แชท</h4>
+                <h3><i class="fas fa-comments"></i> แชท</h3>
                 <p>พูดคุยแบบโต้ตอบเกี่ยวกับเส้นทางฟิตเนสของคุณ และรับคำแนะนำที่ปรับให้เหมาะกับคุณ Quick Chat ใช้ฟรีทุกวัน; Pro Chat เจาะลึกยิ่งขึ้นบน AI ที่มีความสามารถสูงสุดของเรา</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> สรุปเสียง</h4>
+                <h3><i class="fas fa-volume-up"></i> สรุปเสียง</h3>
                 <p>ฟังสรุปแนวโน้มน้ำหนัก เหมาะสำหรับการรับ insights ระหว่างเดินทาง</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> ทำให้ฉันหัวเราะ</h4>
+                <h3><i class="fas fa-laugh"></i> ทำให้ฉันหัวเราะ</h3>
                 <p>รับอารมณ์ขันส่วนตัวจากข้อมูลของคุณ</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> ผ่อนคลาย</h4>
+                <h3><i class="fas fa-moon"></i> ผ่อนคลาย</h3>
                 <p>การหายใจและผ่อนคลายด้วย AI เพื่อลดการกินจากความเครียด</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Camera Scan AI</h4>
+                <h3><i class="fas fa-camera"></i> Camera Scan AI</h3>
                 <p>สแกนน้ำหนักจากหน้าจอตาชั่งหรืออาหารเพื่อวิเคราะห์โภชนาการทันที</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> การวิจัยเชิงลึก <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> การวิจัยเชิงลึก <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI วิเคราะห์ข้อมูลน้ำหนักอย่างครบถ้วนพร้อม insights เชิงลึก</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> นักสืบรูปแบบ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> นักสืบรูปแบบ <span class="ai-pro-badge">Pro</span></h3>
                 <p>ค้นหาความสัมพันธ์ที่ซ่อนอยู่ระหว่างน้ำหนักกับปัจจัยวิถีชีวิต</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> ผู้ช่วยเป้าหมาย <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> ผู้ช่วยเป้าหมาย <span class="ai-pro-badge">Pro</span></h3>
                 <p>รับเป้าหมายน้ำหนักส่วนตัวที่ขับเคลื่อนด้วยข้อมูล</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> สรุปสำหรับแพทย์ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> สรุปสำหรับแพทย์ <span class="ai-pro-badge">Pro</span></h3>
                 <p>สร้างสรุปการจัดการน้ำหนักมืออาชีพสำหรับการพบแพทย์</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> ใบลาป่วย <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> ใบลาป่วย <span class="ai-pro-badge">Pro</span></h3>
                 <p>ใบรับรองป่วย AI สำหรับงานหรือโรงเรียน</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> ผู้สร้างเรื่องราว <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> ผู้สร้างเรื่องราว <span class="ai-pro-badge">Pro</span></h3>
                 <p>เปลี่ยนการเดินทางน้ำหนักเป็นเรื่องราวสร้างสรรค์</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> สรุปข้อความ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> สรุปข้อความ <span class="ai-pro-badge">Pro</span></h3>
                 <p>สร้างสรุปแนวโน้มน้ำหนักแบบส่งต่อได้</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> แบบทดสอบส่วนตัว <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> แบบทดสอบส่วนตัว <span class="ai-pro-badge">Pro</span></h3>
                 <p>ทดสอบความรู้ด้วยแบบทดสอบ 10 ข้อที่ AI สร้าง</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> อ่านออกเสียง <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> อ่านออกเสียง <span class="ai-pro-badge">Pro</span></h3>
                 <p>ฟัง AI insights ด้วยเสียงธรรมชาติ</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> รายงานสุขภาพเฉพาะบุคคล <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> รายงานสุขภาพเฉพาะบุคคล <span class="ai-pro-badge">Pro</span></h3>
                 <p>สร้างเอกสารสุขภาพสำหรับออกกำลังกายครบถ้วนและส่วนตัว</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-utensils"></i> แผนมื้ออาหาร <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-utensils"></i> แผนมื้ออาหาร <span class="ai-pro-badge">Pro</span></h3>
                 <p>รับแผนมื้ออาหารส่วนตัวรายสัปดาห์ตามเป้าหมายน้ำหนักและความชอบด้านอาหาร</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-dumbbell"></i> แผนออกกำลังกาย <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-dumbbell"></i> แผนออกกำลังกาย <span class="ai-pro-badge">Pro</span></h3>
                 <p>รับกิจวัตรออกกำลังกายส่วนตัวที่เหมาะกับระดับสมรรถภาพและเป้าหมาย</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (บนอุปกรณ์) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (บนอุปกรณ์) <span class="ai-pro-badge">Pro</span></h3>
                 <p>ตัวเลือกที่เน้นความเป็นส่วนตัว ประมวลผล AI บนอุปกรณ์ของคุณโดยตรงด้วย Apple Foundation Models — ไม่มีข้อมูลใดออกจาก iPhone, iPad หรือ Mac ของคุณ ใช้งานได้ไม่จำกัดสำหรับบัญชีที่ชำระเงินแล้ว บนอุปกรณ์ Apple Silicon ที่รองรับ (iOS 26 ขึ้นไป)</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> แชทด้วยเสียง <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> แชทด้วยเสียง <span class="ai-pro-badge">Pro</span></h3>
                 <p>สนทนาด้วยเสียงแบบสองทางกับ AI เกี่ยวกับข้อมูลของคุณโดยไม่ต้องใช้มือ — ถามคำถามและฟังคำตอบโดยไม่ต้องแตะหน้าจอ</p>
             </div>
 
@@ -921,22 +923,22 @@
         <div class="related-apps-grid">
 
             <a href="/th/blood-pressure/" class="related-app-card" aria-label="ความดันโลหิต">
-                <img src="/images/BPT_1024.png" alt="ความดันโลหิต" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="ความดันโลหิต" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">ความดันโลหิต</span>
             </a>
 
             <a href="/th/daily-journal/" class="related-app-card" aria-label="ไดอารี่ประจำวัน">
-                <img src="/images/NT_1024.png" alt="ไดอารี่ประจำวัน" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="ไดอารี่ประจำวัน" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">ไดอารี่ประจำวัน</span>
             </a>
 
-            <a href="/th/mental-health/" class="related-app-card" aria-label="สุขภาพจิต">
-                <img src="/images/FT_1024.png" alt="สุขภาพจิต" class="related-app-icon">
+            <a href="/th/mood-tracker/" class="related-app-card" aria-label="สุขภาพจิต">
+                <img src="/images/FT_1024.png" alt="สุขภาพจิต" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">สุขภาพจิต</span>
             </a>
 
             <a href="/th/sleep/" class="related-app-card" aria-label="การนอน">
-                <img src="/images/ST_1024.png" alt="การนอน" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="การนอน" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">การนอน</span>
             </a>
 
@@ -949,9 +951,10 @@
         <h2>เริ่มการเดินทางน้ำหนักวันนี้</h2>
         <p>ร่วมกับผู้ใช้หลายพันคนที่บรรลุเป้าหมายสุขภาพด้วย Weight & Food</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/th-white.svg"><img class="store_button store_button--lg" src="/images/appstore/th-black.svg" alt="ดาวน์โหลด Weight & Food"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/th-white.svg"><img class="store_button store_button--lg" src="/images/appstore/th-black.svg" alt="ดาวน์โหลด Weight & Food" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

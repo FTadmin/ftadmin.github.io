@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,58 +635,74 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Mi a legjobb vérnyomás-nyomkövető alkalmazás?",
+                      "name": "Mi a normális vérnyomás?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "A Vérnyomás az Egyesült Királyság legjobb vérnyomás-nyomkövető alkalmazása. Mesterséges intelligencián alapuló elemzéseket, Kamera Szkenner AI technológiát kínál, amely automatikusan leolvassa az értékeket a monitor kijelzőjéről (OMRON, Microlife, Beurer), Apple Health integrációval és exportálási lehetőségekkel rendelkezik az orvosokkal való megosztáshoz. Támogatja a szisztolés és diasztolés vérnyomás, a pulzusszám és a közepes artériás nyomás (MAP) nyomon követését."
+                            "text": "Az orvosi irányelvek szerint a normális vérnyomás általában 120/80 Hgmm alatti. A 120-129 szisztolés és 80 alatti diasztolés értékek emelkedettnek számítanak. A 130/80 vagy magasabb értékek magas vérnyomásra utalhatnak. A célértékek azonban az életkortól és egészségi állapottól függően változhatnak, ezért kérje orvosa személyre szabott útmutatását."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Hogyan működik a Kamera Szkenner AI?",
+                      "name": "Hogyan működik a Kamerás Scan MI?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "A Kamera Szkenner AI fejlett optikai karakterfelismerési (OCR) technológiát használ, hogy automatikusan leolvassa a vérnyomásértékeket a monitor digitális kijelzőjéről. Egyszerűen irányítsa iPhone vagy iPad kameráját a szisztolés, diasztolés és pulzusértékeket mutató képernyőre, és az alkalmazás automatikusan kitölti ezeket az értékeket. Ez kiküszöböli a kézi beviteli hibákat és gyorsabbá teszi a naplózást. Működik OMRON, Microlife, Beurer és legtöbb digitális vérnyomásmérővel."
+                            "text": "Egyszerűen irányítsa iPhone vagy iPad kameráját a vérnyomásmérő digitális kijelzőjére. Az alkalmazás fejlett MI-alapú kamerafelismerő technológiát használ a számok automatikus leolvasásához és a szisztolés, diasztolés és pulzusmezők kitöltéséhez. Ez kiküszöböli a manuális beviteli hibákat és gyorsabbá teszi a naplózást. Vérnyomásmérőt itt találhat."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Mi számít normális vérnyomásértéknek?",
+                      "name": "Mi a MAP és érdemes-e követni?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Az orvosi irányelvek szerint a normális vérnyomás általában 120/80 Hgmm alatt van. A 120-129 szisztolés és 80 alatti diasztolés értékek emelkedettnek számítanak. A 130/80 vagy magasabb értékek magas vérnyomásra utalhatnak. Az ideális értéktartományok azonban kortól és egészségi állapottól függően változhatnak, ezért kérjen személyre szabott tanácsot orvosától."
+                            "text": "A MAP (Középarányos Artériás Nyomás) egy kiszámított érték, amely az artériákban lévő átlagos vérnyomást képviseli egy szívciklus alatt. Kiszámítása: MAP = (2 × Diasztolés + Szisztolés) ÷ 3. Egyes orvosok a MAP-ot hasznosnak találják a szív- és érrendszeri kockázat felmérésére. Az alkalmazás minden leolvasáshoz automatikusan kiszámítja a MAP-ot."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Exportálhatom a vérnyomásadataimat az orvosomnak?",
+                      "name": "Importálhatom a régi vérnyomásadataimat?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Igen, a Vérnyomás lehetővé teszi, hogy átfogó jelentéseket exportálj PDF, CSV, Excel vagy JSON formátumban. Ezek a professzionálisan formázott jelentések tartalmazzák az összefoglaló statisztikákat, trendgrafikonokat és minden jegyzetedet — mindent, amire az egészségügyi szolgáltatódnak szüksége van egyetlen dokumentumban. Ezeket a jelentéseket könnyedén megoszthatod e-mailben vagy más módon."
+                            "text": "Igen! Ha az Apple Health-ben rögzítette a vérnyomásadatait, egyetlen koppintással importálhatja az összes korábbi leolvasást az alkalmazásba. Az alkalmazás támogatja a CSV/Excel fájlokból való importálást is."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Integrálódik az alkalmazás az Apple Health-tel?",
+                      "name": "Milyen gyakran mérjem a vérnyomásomat?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Igen, a Vérnyomás alkalmazás kétirányú Apple Health integrációval rendelkezik. Importálhat korábbi vérnyomásadatokat az Apple Health-ből, és az alkalmazás automatikusan menti az új méréseket a HealthKit-be. Ez átfogó egészségnyomkövető ökoszisztémát teremt az összes Apple-eszközén."
+                            "text": "Ez az egészségi állapotától és orvosa ajánlásától függ. Egyesek naponta (általában reggel és este) ellenőrzik, mások hetente. Az alkalmazás megkönnyíti az egészségügyi szolgáltatója által javasolt gyakorisággal való nyomon követést. Emlékeztetőket állíthat be a következetes menetrend fenntartásához."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Mi a MAP a vérnyomás-monitorozásban?",
+                      "name": "Magánjellegűek a vérnyomásadataim?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "A MAP (közepes artériás nyomás) egy számított érték, amely az artériákban lévő átlagos vérnyomást jelöli egyetlen szívciklus alatt. Kiszámítása: MAP = (2 × diasztolés + szisztolés) ÷ 3. Egyes orvosok a MAP-ot hasznosnak találják a szív- és érrendszeri kockázat és a szervperfúzió felmérésére. A Vérnyomás alkalmazás automatikusan kiszámítja a MAP-ot minden méréshez."
+                            "text": "Abszolút. A vérnyomási leolvasások titkosítottak az eszközén és a privát iCloud-fiókjában tárolódnak. Az adatok soha nem haladnak át a szervereinken, és nem látjuk az egészségügyi adatait. Ugyanolyan biztonságos, mint az Apple Notes vagy Photos alkalmazás."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Biztonságosak a vérnyomásadataim?",
+                      "name": "Követhetem a vérnyomást több családtagnak?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Igen, a vérnyomásmérési adatai titkosítva vannak tárolva az eszközén és a privát iCloud-fiókjában. Az adatok soha nem kerülnek külső szervereken át, és a fejlesztők nem láthatják az egészségügyi adatait. Ugyanolyan biztonságos, mint az Apple Jegyzetek vagy Fotók alkalmazása, és teljes mértékben megfelel a GDPR követelményeinek."
+                            "text": "Az alkalmazás egyéni használatra készült és a személyes iCloud-fiókjával szinkronizálódik. Több családtag nyomon követéséhez minden személynek saját eszközön, saját Apple ID-vel kell használnia az alkalmazást."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mutatnak hirdetéseket vagy követnek engem?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nem. Teljesen eltávolítottuk az összes hirdetést az alkalmazásból. Nem követjük Önt más alkalmazásokon vagy webhelyeken, és soha nem adjuk el adatait hirdetőknek. Adatai az iCloudon keresztül szinkronizálódnak – akárcsak az Apple Notes és a Photos. Ez azt jelenti, hogy nem kell tudnunk az e-mail-címét, nevét vagy bármilyen személyes adatát. A vérnyomásadatai teljesen privátak, akár az ingyenes verziót, akár a prémiumot használja."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Szükségem van előfizetésre?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nincs szükség előfizetésre. Az alkalmazás letöltése ingyenes, minden követés, grafikon, Apple Health szinkronizálás és exportálás ingyenes, és minden felhasználó minden nap valódi AI-funkciókat kap ingyen — reklám nélkül, mindig. Az opcionális Pro előfizetés feloldja a legrészletesebb AI-funkciókat (Mélyelemzés, Orvosi összefoglaló, Mintafelismerő, Pro MAP-jelentés, Pro csevegés és további funkciók), a legfejlettebb AI-modellünkön futtatja azokat, és megemeli a bőkezű napi kereteket."
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/hu/daily-journal/">Napló</a>
 
-            <a href="/hu/mental-health/">Mentális egészség</a>
+            <a href="/hu/mood-tracker/">Mentális egészség</a>
 
             <a href="/hu/sleep/">Alvás</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Vérnyomás Alkalmazás Ikon" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Vérnyomás Alkalmazás Ikon" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Vérnyomás</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">A legokosabb módszer a vérnyomás nyomon követésére és megértésére. Olvassa le az értékeket Kamerás Scan MI-vel, szinkronizáljon az Apple Health-szel, és kapjon MI-alapú elemzéseket a szív- és érrendszeri egészségéről.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Töltse le a Vérnyomást az App Store-ból"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Töltse le a Vérnyomást az App Store-ból" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Ingyenes alkalmazás opcionális prémium funkciókkal<br>iPhone, iPad és Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Feeltracker Blood Pressure app home dashboard with recent readings" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Feeltracker Blood Pressure app home dashboard with recent readings" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Logging a blood pressure reading with AI camera scan" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Logging a blood pressure reading with AI camera scan" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Blood pressure trends chart and AI health insights" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Blood pressure trends chart and AI health insights" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Kérdés Feltevése</h4>
+                <h3><i class="fas fa-question-circle"></i> Kérdés Feltevése</h3>
                 <p>Gyors kérdés-felelet a vérnyomásadatokról – azonnali válaszok egészségügyi kérdéseire</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Folytass interaktív beszélgetéseket a szív- és érrendszeri egészségedről, és kapj személyre szabott útmutatást. A Gyors csevegés minden nap ingyenes; a Pro csevegés mélyebbre megy a legfejlettebb AI-modellünkön</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Hangos Összefoglaló</h4>
+                <h3><i class="fas fa-volume-up"></i> Hangos Összefoglaló</h3>
                 <p>Hallgassa meg a vérnyomási trendek hangos összefoglalóit – tökéletes menetközben</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Nevettess meg</h4>
+                <h3><i class="fas fa-laugh"></i> Nevettess meg</h3>
                 <p>Személyre szabott humor a követési adatokból a nap felvidítéséhez</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Nyugtass meg</h4>
+                <h3><i class="fas fa-moon"></i> Nyugtass meg</h3>
                 <p>MI-vezérelt légzőgyakorlatok a stressz csökkentéséhez és a vérnyomás csökkentéséhez</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Kamerás Scan MI</h4>
+                <h3><i class="fas fa-camera"></i> Kamerás Scan MI</h3>
                 <p>Olvassa le az értékeket közvetlenül a mérő képernyőjéről – működik <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer készülékekkel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Mélyelemzés <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Mélyelemzés <span class="ai-pro-badge">Pro</span></h3>
                 <p>Átfogó MI-elemzés a vérnyomásadatokról részletes elemzésekkel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Minta Detektív <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Minta Detektív <span class="ai-pro-badge">Pro</span></h3>
                 <p>Rejtett összefüggések felkutatása a vérnyomási értékek és életmódbeli tényezők között</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Cél Asszisztens <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Cél Asszisztens <span class="ai-pro-badge">Pro</span></h3>
                 <p>Személyre szabott, adatvezérelt vérnyomási célok a mintái alapján</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Orvosi Összefoglaló <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Orvosi Összefoglaló <span class="ai-pro-badge">Pro</span></h3>
                 <p>Professzionális orvosi összefoglalók generálása egészségügyi látogatásokhoz</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Betegigazolás <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Betegigazolás <span class="ai-pro-badge">Pro</span></h3>
                 <p>MI által generált betegszabadság-igazolások munkához vagy iskolához</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Történet Generátor <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Történet Generátor <span class="ai-pro-badge">Pro</span></h3>
                 <p>Alakítsa át egészségadatait kreatív, lebilincselő elbeszélésekké</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Szöveges Összefoglaló <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Szöveges Összefoglaló <span class="ai-pro-badge">Pro</span></h3>
                 <p>Hozzon létre megosztható szöveges összefoglalókat a vérnyomási trendekről</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Személyes kvíz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Személyes kvíz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Tesztelje tudását egy szórakoztató, MI által generált 10 kérdéses kvísszel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Szöveg-Beszéd <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Szöveg-Beszéd <span class="ai-pro-badge">Pro</span></h3>
                 <p>Hallgassa meg MI-elemzéseit és összefoglalóit természetes hanglejátszással</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Személyre Szabott Egészségjelentés <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Személyre Szabott Egészségjelentés <span class="ai-pro-badge">Pro</span></h3>
                 <p>Hozzon létre átfogó, személyre szabott egészségügyi dokumentumokat a fejlődéséről</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (eszközön) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (eszközön) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Adatvédelem-központú opció, amely az AI-t helyben, az eszközödön futtatja az Apple Foundation Models technológiájával — semmi nem hagyja el az iPhone-odat, iPadedet vagy Macedet. Korlátlan használat fizetős fiókkal, támogatott Apple Silicon eszközökön (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Hangalapú csevegés <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Hangalapú csevegés <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kéz nélküli, kétirányú beszélgetés az AI-val az adataidról — tegyél fel kérdéseket, és hallgasd meg a válaszokat anélkül, hogy megérintenéd a képernyőt</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/hu/daily-journal/" class="related-app-card" aria-label="Napló">
-                <img src="/images/NT_1024.png" alt="Napló" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Napló" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Napló</span>
             </a>
 
-            <a href="/hu/mental-health/" class="related-app-card" aria-label="Mentális egészség">
-                <img src="/images/FT_1024.png" alt="Mentális egészség" class="related-app-icon">
+            <a href="/hu/mood-tracker/" class="related-app-card" aria-label="Mentális egészség">
+                <img src="/images/FT_1024.png" alt="Mentális egészség" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Mentális egészség</span>
             </a>
 
             <a href="/hu/sleep/" class="related-app-card" aria-label="Alvás">
-                <img src="/images/ST_1024.png" alt="Alvás" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Alvás" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Alvás</span>
             </a>
 
             <a href="/hu/weight/" class="related-app-card" aria-label="Súly">
-                <img src="/images/WT_1024.png" alt="Súly" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Súly" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Súly</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>Kezdje el a Vérnyomás Követését Ma</h2>
         <p>Csatlakozzon több ezer felhasználóhoz, akik kézben tartják a szív- és érrendszeri egészségüket</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Töltse le a Vérnyomás alkalmazást"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Töltse le a Vérnyomás alkalmazást" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

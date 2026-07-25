@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -631,10 +632,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Která aplikace pro sledování krevního tlaku je nejlepší?",
+                      "name": "Jaký je normální krevní tlak?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Blood Pressure je aplikace číslo 1 pro sledování krevního tlaku ve Spojeném království. Nabízí přehledy s podporou umělé inteligence, technologii Camera Scan AI pro automatické načítání hodnot z displejů měřičů (OMRON, Microlife, Beurer), integraci s Apple Health a možnosti exportu pro sdílení s lékaři. Podporuje sledování systolického a diastolického krevního tlaku, tepové frekvence a středního arteriálního tlaku (MAP)."
+                            "text": "Podle lékařských pokynů je normální krevní tlak obvykle pod 120/80 mmHg. Hodnoty 130/80 nebo vyšší mohou naznačovat hypertenzi. Cílové hodnoty se mohou lišit podle věku a zdravotního stavu, proto konzultujte svého lékaře."
                       }
                 },
                 {
@@ -642,47 +643,63 @@
                       "name": "Jak funguje Camera Scan AI?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Camera Scan AI využívá pokročilou technologii optického rozpoznávání znaků (OCR) k automatickému načítání hodnot krevního tlaku z digitálního displeje měřiče. Stačí namířit fotoaparát iPhonu nebo iPadu na displej zobrazující systolické, diastolické a pulzní hodnoty a aplikace je automaticky vyplní. Tím se eliminují chyby při ručním zadávání a záznam je rychlejší. Funguje s přístroji OMRON, Microlife, Beurer a většinou digitálních měřičů krevního tlaku."
+                            "text": "Jednoduše namierte kameru iPhone nebo iPad na digitální displej monitoru krevního tlaku. Aplikace automaticky přečte čísla a vyplní pole pro systolický, diastolický tlak a pulz. Pořiďte si monitor krevního tlaku zde."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Jaké jsou normální hodnoty krevního tlaku?",
+                      "name": "Co je MAP a mám ho sledovat?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Podle lékařských doporučení je normální krevní tlak obvykle pod 120/80 mmHg. Hodnoty mezi 120–129 systolickými a pod 80 diastolickými jsou považovány za zvýšené. Hodnoty 130/80 nebo vyšší mohou naznačovat hypertenzi. Cílové rozsahy se však mohou lišit v závislosti na věku a zdravotním stavu, proto se o individuálních hodnotách poraďte se svým lékařem."
+                            "text": "MAP (střední arteriální tlak) je průměrný krevní tlak ve vašich tepnách během jednoho srdečního cyklu. Vypočítává se jako: MAP = (2 × diastolický + systolický) ÷ 3. Aplikace automaticky vypočítá MAP pro každou hodnotu."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Mohu exportovat data o krevním tlaku pro svého lékaře?",
+                      "name": "Mohu importovat stará data krevního tlaku?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ano, Blood Pressure vám umožňuje exportovat komplexní reporty ve formátu PDF, CSV, Excel nebo JSON. Tyto profesionálně formátované reporty obsahují souhrnné statistiky, grafy trendů a všechny vaše poznámky – vše, co váš poskytovatel zdravotní péče potřebuje v jednom dokumentu. Tyto reporty můžete snadno sdílet e-mailem nebo jinými způsoby sdílení."
+                            "text": "Ano! Pokud jste sledovali krevní tlak v Apple Health, můžete importovat všechna historická data jedním klepnutím. Aplikace také podporuje import ze souborů CSV/Excel."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Je aplikace integrována s Apple Health?",
+                      "name": "Jak často bych měl měřit krevní tlak?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ano, aplikace Blood Pressure nabízí obousměrnou integraci s Apple Health. Můžete importovat historická data o krevním tlaku z Apple Health a aplikace bude automaticky ukládat nové záznamy do HealthKit. Tím vzniká komplexní ekosystém sledování zdraví napříč všemi vašimi zařízeními Apple."
+                            "text": "Záleží na vašem zdravotním stavu a doporučeních lékaře. Někteří lidé měří denně, jiní týdně. Aplikace umožňuje sledovat tak často, jak doporučuje váš poskytovatel zdravotní péče."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Co je MAP při měření krevního tlaku?",
+                      "name": "Jsou moje data krevního tlaku soukromá?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "MAP (střední arteriální tlak) je vypočtená hodnota představující průměrný krevní tlak v tepnách během jednoho srdečního cyklu. Vypočítává se jako: MAP = (2 × diastolický + systolický) ÷ 3. Někteří lékaři považují MAP za užitečný ukazatel při hodnocení kardiovaskulárního rizika a perfuze orgánů. Aplikace Blood Pressure automaticky vypočítává MAP pro každý záznam."
+                            "text": "Rozhodně. Vaše hodnoty jsou uloženy šifrovaně na vašem zařízení a ve vašem soukromém účtu iCloud. Data nikdy neprocházejí přes naše servery."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Jsou moje data o krevním tlaku v bezpečí?",
+                      "name": "Mohu sledovat krevní tlak pro členy rodiny?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ano, vaše záznamy o krevním tlaku jsou uloženy šifrovaně na vašem zařízení a ve vašem soukromém účtu iCloud. Data nikdy neprocházejí externími servery a vývojáři nemohou vidět vaše zdravotní informace. Je to stejně bezpečné jako aplikace Poznámky nebo Fotky od Apple a je plně v souladu s GDPR."
+                            "text": "Aplikace je navržena pro individuální použití. Pro sledování více členů rodiny by každá osoba měla používat aplikaci na svém vlastním zařízení s vlastním Apple ID."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Zobrazujete reklamy nebo mě sledujete?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ne. Úplně jsme odstranili všechny reklamy z aplikace. Nesledujeme vás v jiných aplikacích ani webech a nikdy neprodáváme vaše data inzerentům. Vaše data se synchronizují přes iCloud – stejně jako Apple Notes a Fotky. Vaše data krevního tlaku jsou zcela soukromá."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Potřebuji předplatné?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Není nutné žádné předplatné. Aplikace je zdarma ke stažení, veškeré sledování, grafy, synchronizace s Apple Health a exporty jsou zdarma a každý uživatel má denně k dispozici skutečné AI funkce zdarma — bez reklam, nikdy. Volitelné předplatné Pro odemyká nejpodrobnější AI funkce (Hloubkový výzkum, Souhrn pro lékaře, Detektiv vzorců, Pro MAP report, Pro Chat a další), spouští je na naší nejschopnější AI a zvyšuje velkorysé denní limity."
                       }
                 }
           ]
@@ -700,7 +717,7 @@
 
             <a href="/cs/daily-journal/">Deník</a>
 
-            <a href="/cs/mental-health/">Duševní zdraví</a>
+            <a href="/cs/mood-tracker/">Duševní zdraví</a>
 
             <a href="/cs/sleep/">Spánek</a>
 
@@ -785,9 +802,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Ikona aplikace Krevní tlak" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Ikona aplikace Krevní tlak" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Krevní tlak</h1>
 
         <div class="privacy-badge">
@@ -795,12 +813,12 @@
         </div>
         <p class="hero-subtitle">Nejchytřejší způsob sledování a pochopení vašeho krevního tlaku. Skenujte hodnoty pomocí Camera Scan AI, synchronizujte s Apple Health a získejte přehledy AI o vašem kardiovaskulárním zdraví.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/cs-white.svg"><img class="store_button store_button--lg" src="/images/appstore/cs-black.svg" alt="Stáhnout Krevní tlak v App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/cs-white.svg"><img class="store_button store_button--lg" src="/images/appstore/cs-black.svg" alt="Stáhnout Krevní tlak v App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Bezplatná aplikace s volitelnými prémiovými funkcemi<br>iPhone, iPad a Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -813,15 +831,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Snímek obrazovky Krevní tlak 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Snímek obrazovky Krevní tlak 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Snímek obrazovky Krevní tlak 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Snímek obrazovky Krevní tlak 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Snímek obrazovky Krevní tlak 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Snímek obrazovky Krevní tlak 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -934,92 +952,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Položit otázku</h4>
+                <h3><i class="fas fa-question-circle"></i> Položit otázku</h3>
                 <p>Rychlé Q&A o datech krevního tlaku – okamžité odpovědi na vaše zdravotní dotazy</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Veďte interaktivní konverzace o svém kardiovaskulárním zdraví a získejte personalizované rady. Rychlý chat je zdarma každý den; Pro Chat jde do hloubky na naší nejschopnější AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Hlasové shrnutí</h4>
+                <h3><i class="fas fa-volume-up"></i> Hlasové shrnutí</h3>
                 <p>Poslouchejte zvukové přehledy trendů krevního tlaku – ideální pro přehledy na cestách</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Rozesměj mě</h4>
+                <h3><i class="fas fa-laugh"></i> Rozesměj mě</h3>
                 <p>Získejte personalizovaný humor ze svých sledovacích dat pro rozjasnění dne</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Uklidni mě</h4>
+                <h3><i class="fas fa-moon"></i> Uklidni mě</h3>
                 <p>Dechová cvičení s vedením AI pro snížení stresu a krevního tlaku</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Camera Scan AI</h4>
+                <h3><i class="fas fa-camera"></i> Camera Scan AI</h3>
                 <p>Skenujte hodnoty přímo z displeje monitoru – funguje s <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Hloubkový výzkum <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Hloubkový výzkum <span class="ai-pro-badge">Pro</span></h3>
                 <p>Komplexní analýza dat krevního tlaku pomocí AI s podrobnými přehledy</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detektiv vzorců <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detektiv vzorců <span class="ai-pro-badge">Pro</span></h3>
                 <p>Najděte skryté korelace mezi hodnotami TK a faktory životního stylu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistent cílů <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistent cílů <span class="ai-pro-badge">Pro</span></h3>
                 <p>Získejte personalizované cíle krevního tlaku řízené daty na základě vašich vzorců</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Souhrn pro lékaře <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Souhrn pro lékaře <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generujte profesionální lékařské souhrny ke sdílení při zdravotních návštěvách</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Potvrzení o nemoci <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Potvrzení o nemoci <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI generované nemocenské lístky pro práci nebo školu, když je potřebujete</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generátor příběhů <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generátor příběhů <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transformujte svá zdravotní data do kreativních, poutavých příběhů</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Textové shrnutí <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Textové shrnutí <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vytvářejte sdílitelné textové souhrny trendů krevního tlaku</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Osobní kvíz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Osobní kvíz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Otestujte své znalosti se zábavným kvízem s 10 otázkami generovaným AI o vašich datech</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Převod textu na řeč <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Převod textu na řeč <span class="ai-pro-badge">Pro</span></h3>
                 <p>Poslouchejte přehledy AI a souhrny s přirozeným hlasovým přehráváním</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Přizpůsobená zdravotní zpráva <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Přizpůsobená zdravotní zpráva <span class="ai-pro-badge">Pro</span></h3>
                 <p>Vytvářejte komplexní, personalizované zdravotní dokumenty pro sledování pokroku</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (na zařízení) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (na zařízení) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Možnost zaměřená na soukromí, která spouští AI lokálně na vašem zařízení pomocí Apple Foundation Models — nic neopouští váš iPhone, iPad ani Mac. Neomezené použití s placeným účtem na podporovaných zařízeních s Apple Silicon (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Hlasový chat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Hlasový chat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obousměrné hlasové konverzace s AI o vašich datech bez použití rukou — ptejte se a poslouchejte odpovědi, aniž byste se dotkli obrazovky</p>
             </div>
 
@@ -1476,22 +1494,22 @@
         <div class="related-apps-grid">
 
             <a href="/cs/daily-journal/" class="related-app-card" aria-label="Deník">
-                <img src="/images/NT_1024.png" alt="Deník" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Deník" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Deník</span>
             </a>
 
-            <a href="/cs/mental-health/" class="related-app-card" aria-label="Duševní zdraví">
-                <img src="/images/FT_1024.png" alt="Duševní zdraví" class="related-app-icon">
+            <a href="/cs/mood-tracker/" class="related-app-card" aria-label="Duševní zdraví">
+                <img src="/images/FT_1024.png" alt="Duševní zdraví" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Duševní zdraví</span>
             </a>
 
             <a href="/cs/sleep/" class="related-app-card" aria-label="Spánek">
-                <img src="/images/ST_1024.png" alt="Spánek" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Spánek" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Spánek</span>
             </a>
 
             <a href="/cs/weight/" class="related-app-card" aria-label="Váha">
-                <img src="/images/WT_1024.png" alt="Váha" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Váha" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Váha</span>
             </a>
 
@@ -1504,9 +1522,10 @@
         <h2>Začněte sledovat krevní tlak ještě dnes</h2>
         <p>Připojte se k tisícům uživatelů, kteří přebírají kontrolu nad svým kardiovaskulárním zdravím</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/cs-white.svg"><img class="store_button store_button--lg" src="/images/appstore/cs-black.svg" alt="Stáhnout Krevní tlak"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/cs-white.svg"><img class="store_button store_button--lg" src="/images/appstore/cs-black.svg" alt="Stáhnout Krevní tlak" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

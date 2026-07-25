@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,10 +635,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "En iyi kan basıncı takip uygulaması hangisi?",
+                      "name": "Normal bir kan basıncı değeri nedir?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kan Basıncı, Birleşik Krallık'ın 1 numaralı kan basıncı takip uygulamasıdır. AI destekli içgörüler, monitör ekranlarından değerleri otomatik okumak için Camera Scan AI teknolojisi (OMRON, Microlife, Beurer), Apple Health entegrasyonu ve doktorlarla paylaşmak için dışa aktarma özellikleri sunar. Sistolik ve diyastolik kan basıncı, kalp hızı ve Ortalama Arteriyel Basınç (OAB) takibini destekler."
+                            "text": "Tıbbi yönergelere göre normal kan basıncı genellikle 120/80 mmHg'nin altındadır. 120-129 sistolik ve 80'in altında diyastolik değerler yüksek kabul edilir. 130/80 veya daha yüksek değerler hipertansiyona işaret edebilir. Hedef aralıklar yaş ve sağlık durumuna göre değişebilir, bu nedenle kişiselleştirilmiş rehberlik için doktorunuza danışın."
                       }
                 },
                 {
@@ -645,47 +646,63 @@
                       "name": "Kamera Tarama AI nasıl çalışır?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Kamera Tarama AI, monitörün dijital ekranındaki kan basıncı değerlerini otomatik olarak okumak için gelişmiş optik karakter tanıma (OCR) teknolojisi kullanır. iPhone veya iPad kameranızı sistolik, diyastolik ve nabız değerlerini gösteren ekrana doğrultun; uygulama bu değerleri otomatik olarak doldurur. OMRON, Microlife, Beurer ve çoğu dijital kan basıncı monitörüyle çalışır."
+                            "text": "iPhone veya iPad kameranızı kan basıncı monitörünüzün dijital ekranına doğrultmanız yeterli. Uygulama, gelişmiş AI destekli kamera tanıma teknolojisini kullanarak rakamları otomatik olarak okur ve sistolik, diyastolik ve nabız alanlarını doldurur. Bu, manuel yazma hatalarını ortadan kaldırır ve kaydetmeyi daha hızlı hale getirir. Buradan bir kan basıncı monitörü edinin."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Normal kan basıncı ölçümü nedir?",
+                      "name": "OAB nedir ve takip etmeli miyim?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Tıbbi yönergelere göre, normal kan basıncı genellikle 120/80 mmHg'nin altındadır. 120-129 sistolik ve 80'in altında diyastolik arasındaki değerler yüksek olarak kabul edilir. 130/80 veya üzeri değerler hipertansiyona işaret edebilir. Ancak hedef aralıklar yaşa ve sağlık durumuna göre değişebilir; kişiselleştirilmiş rehberlik için doktorunuza danışın."
+                            "text": "OAB (Ortalama Arteriyel Basınç), bir kardiyak döngü boyunca arterlerinizdeki ortalama kan basıncını temsil eden hesaplanmış bir değerdir. Şu şekilde hesaplanır: OAB = (2 × Diyastolik + Sistolik) ÷ 3. Bazı doktorlar OAB'yi kardiyovasküler risk değerlendirmesinde faydalı bulur. Uygulama, her ölçüm için OAB'yi otomatik olarak hesaplar."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Kan basıncı verilerimi doktorum için dışa aktarabilir miyim?",
+                      "name": "Eski kan basıncı verilerimi içe aktarabilir miyim?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Evet, Blood Pressure kapsamlı raporları PDF, CSV, Excel veya JSON formatında dışa aktarmanıza olanak tanır. Bu profesyonel biçimlendirilmiş raporlar özet istatistikler, trend grafikleri ve tüm notlarınızı içerir - sağlık uzmanınızın ihtiyaç duyduğu her şey tek bir belgede. Bu raporları e-posta veya diğer paylaşım yöntemleriyle kolayca paylaşabilirsiniz."
+                            "text": "Evet! Kan basıncınızı Apple Health'te takip ettiyseniz, tek bir dokunuşla tüm geçmiş ölçümlerinizi uygulamaya aktarabilirsiniz. Uygulama ayrıca diğer kaynaklardan verileriniz varsa CSV/Excel dosyalarından içe aktarmayı da destekler."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Uygulama Apple Health ile entegre mi?",
+                      "name": "Kan basıncımı ne sıklıkla kontrol etmeliyim?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Evet, Kan Basıncı uygulaması çift yönlü Apple Health entegrasyonuna sahiptir. Apple Health'ten geçmiş kan basıncı verilerini içe aktarabilir ve uygulama yeni ölçümleri otomatik olarak HealthKit'e kaydeder. Bu sayede tüm Apple cihazlarınızda kapsamlı bir sağlık takip ekosistemi oluşturulur."
+                            "text": "Bu, sağlık durumunuza ve doktorunuzun tavsiyelerine bağlıdır. Bazı kişiler günlük (genellikle sabah ve akşam), diğerleri ise haftalık ölçüm yapar. Uygulama, sağlık personelinizin önerdiği sıklıkta takip etmeyi kolaylaştırır. Tutarlı bir program sürdürmenize yardımcı olmak için hatırlatıcılar ayarlayabilirsiniz."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Kan basıncı izlemede OAB nedir?",
+                      "name": "Kan basıncı verilerim gizli mi?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "OAB (Ortalama Arteriyel Basınç), bir kardiyak döngü süresince arterlerinizde ortalama kan basıncını temsil eden hesaplanmış bir değerdir. Şu formülle hesaplanır: OAB = (2 × Diyastolik + Sistolik) ÷ 3. Kan Basıncı uygulaması her ölçüm için OAB'ı otomatik olarak hesaplar."
+                            "text": "Kesinlikle. Kan basıncı ölçümleriniz cihazınızda ve özel iCloud hesabınızda şifreli olarak saklanır. Veriler asla sunucularımızdan geçmez ve sağlık bilgilerinizi göremeyiz. Apple'ın Notlar veya Fotoğraflar uygulamaları kadar güvenlidir."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Kan basıncı verilerim özel mi?",
+                      "name": "Aile üyelerinin kan basıncını takip edebilir miyim?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Evet, kan basıncı ölçümleriniz şifreli olarak cihazınızda ve özel iCloud hesabınızda saklanır. Veriler hiçbir zaman harici sunuculardan geçmez ve geliştiriciler sağlık bilgilerinizi göremez. Apple'ın Notlar veya Fotoğraflar uygulamaları kadar güvenlidir ve tamamen GDPR uyumludur."
+                            "text": "Uygulama bireysel kullanım için tasarlanmıştır ve kişisel iCloud hesabınızla senkronize olur. Birden fazla aile üyesini takip etmek için her kişinin kendi Apple kimliğiyle kendi cihazında uygulamayı kullanması gerekir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Reklam gösteriyor musunuz veya beni takip ediyor musunuz?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hayır. Uygulamadan tüm reklamları tamamen kaldırdık. Sizi diğer uygulama veya web sitelerinde takip etmiyor ve verilerinizi hiçbir zaman reklamcılara satmıyoruz. Verileriniz iCloud aracılığıyla senkronize olur — tıpkı Apple Notlar ve Fotoğraflar gibi. Bu, e-posta adresinizi, adınızı veya herhangi bir kişisel bilginizi bilmemize gerek olmadığı anlamına gelir. Kan basıncı verileriniz cihazlarınızda ve iCloud hesabınızda saklanır ve ücretsiz veya premium sürümü kullansanız da tamamen özeldir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Aboneliğe ihtiyacım var mı?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Abonelik gerekmez. Uygulama indirmesi ücretsizdir, tüm takip, grafikler, Apple Health senkronizasyonu ve dışa aktarımlar ücretsizdir ve her kullanıcı her gün gerçek yapay zeka özelliklerini ücretsiz kullanır — reklamsız, hep böyle kalacak. İsteğe bağlı Pro abonelik en kapsamlı yapay zeka özelliklerini (Derinlemesine Araştırma, Doktor Özeti, Örüntü Dedektifi, Pro MAP Raporu, Pro Chat ve daha fazlası) açar, bunları en yetenekli yapay zekamızda çalıştırır ve zaten cömert olan günlük limitleri yükseltir."
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/tr/daily-journal/">Günlük</a>
 
-            <a href="/tr/mental-health/">Ruh Sağlığı</a>
+            <a href="/tr/mood-tracker/">Ruh Sağlığı</a>
 
             <a href="/tr/sleep/">Uyku</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Kan Basıncı Uygulama Simgesi" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Kan Basıncı Uygulama Simgesi" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Kan Basıncı</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">Kan basıncınızı takip etmenin ve anlamanın en akıllı yolu. Kamera Tarama AI ile değerleri tarayın, Apple Health ile senkronize edin ve kardiyovasküler sağlığınız hakkında AI destekli içgörüler edinin.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/tr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/tr-black.svg" alt="Kan Basıncı Uygulamasını App Store'dan İndirin"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/tr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/tr-black.svg" alt="Kan Basıncı Uygulamasını App Store'dan İndirin" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">İsteğe bağlı premium özelliklerle ücretsiz uygulama<br>iPhone, iPad ve Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Kan Basıncı Ekran Görüntüsü 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Kan Basıncı Ekran Görüntüsü 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Kan Basıncı Ekran Görüntüsü 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Kan Basıncı Ekran Görüntüsü 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Kan Basıncı Ekran Görüntüsü 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Kan Basıncı Ekran Görüntüsü 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Soru Sor</h4>
+                <h3><i class="fas fa-question-circle"></i> Soru Sor</h3>
                 <p>Kan basıncı verileriniz hakkında hızlı soru-cevap — sağlık sorularınıza anında yanıtlar alın</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Sohbet</h4>
+                <h3><i class="fas fa-comments"></i> Sohbet</h3>
                 <p>Kardiyovasküler sağlığınız hakkında etkileşimli sohbetler yapın ve kişiselleştirilmiş rehberlik alın. Quick Chat her gün ücretsizdir; Pro Chat en yetenekli yapay zekamızda daha derine iner</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Sesli Özet</h4>
+                <h3><i class="fas fa-volume-up"></i> Sesli Özet</h3>
                 <p>Kan basıncı eğilimlerinizin sesli özetlerini dinleyin — hareket halinde içgörüler için mükemmel</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Beni Güldür</h4>
+                <h3><i class="fas fa-laugh"></i> Beni Güldür</h3>
                 <p>Takip verilerinizden kişiselleştirilmiş mizah alın ve gününüzü aydınlatın</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Sakinleştir</h4>
+                <h3><i class="fas fa-moon"></i> Sakinleştir</h3>
                 <p>Stresi azaltmaya ve kan basıncını düşürmeye yardımcı AI destekli nefes egzersizleri</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Kamera Tarama AI</h4>
+                <h3><i class="fas fa-camera"></i> Kamera Tarama AI</h3>
                 <p>Ölçümleri doğrudan monitörünüzün ekranından tarayın — <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer ile çalışır</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Derinlemesine Araştırma <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Derinlemesine Araştırma <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ayrıntılı içgörülerle kan basıncı verilerinizin kapsamlı AI analizi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Örüntü Dedektifi <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Örüntü Dedektifi <span class="ai-pro-badge">Pro</span></h3>
                 <p>KB ölçümleriniz ile yaşam tarzı faktörleri arasındaki gizli korelasyonları bulun</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Hedef Asistanı <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Hedef Asistanı <span class="ai-pro-badge">Pro</span></h3>
                 <p>Örüntülerinize dayalı kişiselleştirilmiş, veri odaklı kan basıncı hedefleri edinin</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Doktor Özeti <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Doktor Özeti <span class="ai-pro-badge">Pro</span></h3>
                 <p>Sağlık ziyaretleri için paylaşmak üzere profesyonel tıbbi özetler oluşturun</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Rapor Belgesi <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Rapor Belgesi <span class="ai-pro-badge">Pro</span></h3>
                 <p>İhtiyaç duyduğunuzda iş veya okul için AI tarafından oluşturulan hastalık belgesi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Hikaye Oluşturucu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Hikaye Oluşturucu <span class="ai-pro-badge">Pro</span></h3>
                 <p>Sağlık verilerinizi yaratıcı, ilgi çekici anlatılara dönüştürün</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Metin Özeti <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Metin Özeti <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kan basıncı eğilimlerinizin paylaşılabilir kısa mesaj özetlerini oluşturun</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Kişisel Test <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Kişisel Test <span class="ai-pro-badge">Pro</span></h3>
                 <p>Verileriniz hakkında AI tarafından oluşturulan eğlenceli 10 soruluk bir testle bilginizi sınayın</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Metinden Konuşmaya <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Metinden Konuşmaya <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI içgörülerinizi ve özetlerinizi doğal ses oynatmayla dinleyin</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Kişiselleştirilmiş Sağlık Raporu <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Kişiselleştirilmiş Sağlık Raporu <span class="ai-pro-badge">Pro</span></h3>
                 <p>İlerlemenizi takip etmek için kapsamlı, kişiselleştirilmiş sağlık belgeleri oluşturun</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (Cihaz Üzerinde) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (Cihaz Üzerinde) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Apple'ın Foundation Models teknolojisini kullanarak yapay zekayı doğrudan cihazınızda yerel olarak çalıştıran gizlilik odaklı seçenek — hiçbir şey iPhone, iPad veya Mac'inizden dışarı çıkmaz. Desteklenen Apple Silicon cihazlarda ücretli hesapla sınırsız kullanım (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Sesli Sohbet <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Sesli Sohbet <span class="ai-pro-badge">Pro</span></h3>
                 <p>Verileriniz hakkında yapay zekayla eller serbest, çift yönlü sesli sohbetler — ekrana dokunmadan soru sorun ve cevapları dinleyin</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/tr/daily-journal/" class="related-app-card" aria-label="Günlük">
-                <img src="/images/NT_1024.png" alt="Günlük" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Günlük" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Günlük</span>
             </a>
 
-            <a href="/tr/mental-health/" class="related-app-card" aria-label="Ruh Sağlığı">
-                <img src="/images/FT_1024.png" alt="Ruh Sağlığı" class="related-app-icon">
+            <a href="/tr/mood-tracker/" class="related-app-card" aria-label="Ruh Sağlığı">
+                <img src="/images/FT_1024.png" alt="Ruh Sağlığı" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Ruh Sağlığı</span>
             </a>
 
             <a href="/tr/sleep/" class="related-app-card" aria-label="Uyku">
-                <img src="/images/ST_1024.png" alt="Uyku" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Uyku" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Uyku</span>
             </a>
 
             <a href="/tr/weight/" class="related-app-card" aria-label="Kilo">
-                <img src="/images/WT_1024.png" alt="Kilo" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Kilo" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Kilo</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>Kan Basıncınızı Bugün Takip Etmeye Başlayın</h2>
         <p>Kardiyovasküler sağlıklarını kontrol altına alan binlerce kullanıcıya katılın</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/tr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/tr-black.svg" alt="Kan Basıncı Uygulamasını İndirin"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/tr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/tr-black.svg" alt="Kan Basıncı Uygulamasını İndirin" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

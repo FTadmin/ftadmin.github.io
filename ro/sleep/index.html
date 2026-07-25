@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -448,7 +449,7 @@
 
             <a href="/ro/daily-journal/">Jurnal zilnic</a>
 
-            <a href="/ro/mental-health/">Sănătate mintală</a>
+            <a href="/ro/mood-tracker/">Sănătate mintală</a>
 
             <a href="/ro/sleep/" class="current">Somn</a>
 
@@ -533,9 +534,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/ST_1024.png" alt="Pictogramă aplicație Somn & Vise" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/ST_1024.png" alt="Pictogramă aplicație Somn & Vise" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Somn & Vise</h1>
 
         <div class="privacy-badge">
@@ -543,12 +545,12 @@
         </div>
         <p class="hero-subtitle">Urmărește tiparele de somn și descoperă ce influențează calitatea somnului. Cu analiză AI a viselor, monitorizare terapie CPAP, instrumente de relaxare și integrare Apple Health pentru un somn mai bun.</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Sleep & Dreams din App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Sleep & Dreams din App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Aplicație gratuită cu funcții premium opționale<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -561,15 +563,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/st-1.png" alt="Screenshot Somn & Vise 1" class="screenshot-img">
+                <img src="/images/screenshots/st-1.png" alt="Screenshot Somn & Vise 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-2.png" alt="Screenshot Somn & Vise 2" class="screenshot-img">
+                <img src="/images/screenshots/st-2.png" alt="Screenshot Somn & Vise 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/st-3.png" alt="Screenshot Somn & Vise 3" class="screenshot-img">
+                <img src="/images/screenshots/st-3.png" alt="Screenshot Somn & Vise 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -700,102 +702,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Pune o întrebare</h4>
+                <h3><i class="fas fa-question-circle"></i> Pune o întrebare</h3>
                 <p>Întrebări și răspunsuri rapide despre datele de somn — primești răspunsuri imediate la întrebările despre somn</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Poartă conversații interactive despre sănătatea somnului tău și primește îndrumare personalizată. Chat Rapid este gratuit în fiecare zi; Chat Pro merge mai în profunzime pe cel mai performant model AI al nostru</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Rezumat vocal</h4>
+                <h3><i class="fas fa-volume-up"></i> Rezumat vocal</h3>
                 <p>Ascultă rezumate audio ale tendințelor de somn — perfect pentru deplasări</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Analiză Rapidă a Viselor</h4>
+                <h3><i class="fas fa-moon"></i> Analiză Rapidă a Viselor</h3>
                 <p>AI interpretează visele cu simboluri cheie, informații emoționale și întrebări de reflecție</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-spa"></i> Calmare pentru adormire</h4>
+                <h3><i class="fas fa-spa"></i> Calmare pentru adormire</h3>
                 <p>Tehnici de relaxare personalizate, exerciții de respirație și vizualizări liniștitoare pentru a adormi</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Fă-mă să râd</h4>
+                <h3><i class="fas fa-laugh"></i> Fă-mă să râd</h3>
                 <p>Primește umor personalizat din datele de urmărire pentru a-ți însenina ziua</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Cercetare Aprofundată <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Cercetare Aprofundată <span class="ai-pro-badge">Pro</span></h3>
                 <p>Analiză AI cuprinzătoare a datelor de somn cu informații detaliate</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-lungs"></i> Raport CPAP <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-lungs"></i> Raport CPAP <span class="ai-pro-badge">Pro</span></h3>
                 <p>Analiză completă a terapiei CPAP cu urmărire IAH, evaluarea măștii, monitorizarea aderenței și carduri de acțiune interactive</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-brain"></i> Analiză Pro a Viselor <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-brain"></i> Analiză Pro a Viselor <span class="ai-pro-badge">Pro</span></h3>
                 <p>Interpretare psihologică profundă a viselor folosind arhetipuri jungiene, simboluri recurente, tipare emoționale și dicționar personal de simboluri</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detective de tipare <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detective de tipare <span class="ai-pro-badge">Pro</span></h3>
                 <p>Găsește corelații ascunse între calitatea somnului și factorii de stil de viață</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asistent obiective <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asistent obiective <span class="ai-pro-badge">Pro</span></h3>
                 <p>Primești obiective de somn personalizate, bazate pe date</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Rezumat pentru medic <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Rezumat pentru medic <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creează rezumate profesionale de somn pentru vizite medicale sau studii de somn</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Concediu Medical <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Concediu Medical <span class="ai-pro-badge">Pro</span></h3>
                 <p>Concedii medicale generate de AI pentru muncă sau școală când ai nevoie</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generator de povești <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generator de povești <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transformă călătoria de somn în narațiuni creative și captivante</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Rezumat text <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Rezumat text <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creează rezumate de mesaje text partajabile ale tendințelor de somn</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Chestionar Personal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Chestionar Personal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Testează-ți cunoștințele cu un quiz amuzant de 10 întrebări generat de AI despre datele tale</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Text-to-Speech <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Text-to-Speech <span class="ai-pro-badge">Pro</span></h3>
                 <p>Ascultă informațiile și rezumatele AI cu redare vocală naturală</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Raport de sănătate personalizat <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Raport de sănătate personalizat <span class="ai-pro-badge">Pro</span></h3>
                 <p>Creează documente complete și personalizate de sănătate a somnului pentru urmărirea progresului</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (pe dispozitiv) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (pe dispozitiv) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opțiune axată pe confidențialitate care rulează AI local pe dispozitivul tău folosind Foundation Models de la Apple — nimic nu părăsește iPhone-ul, iPad-ul sau Mac-ul tău. Utilizare nelimitată cu un cont plătit, pe dispozitivele Apple Silicon compatibile (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat Vocal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat Vocal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversații vocale, bidirecționale și hands-free cu AI despre datele tale — pune întrebări și ascultă răspunsuri fără să atingi ecranul</p>
             </div>
 
@@ -1022,22 +1024,22 @@
         <div class="related-apps-grid">
 
             <a href="/ro/blood-pressure/" class="related-app-card" aria-label="Tensiune arterială">
-                <img src="/images/BPT_1024.png" alt="Tensiune arterială" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Tensiune arterială" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Tensiune arterială</span>
             </a>
 
             <a href="/ro/daily-journal/" class="related-app-card" aria-label="Jurnal zilnic">
-                <img src="/images/NT_1024.png" alt="Jurnal zilnic" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Jurnal zilnic" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Jurnal zilnic</span>
             </a>
 
-            <a href="/ro/mental-health/" class="related-app-card" aria-label="Sănătate mintală">
-                <img src="/images/FT_1024.png" alt="Sănătate mintală" class="related-app-icon">
+            <a href="/ro/mood-tracker/" class="related-app-card" aria-label="Sănătate mintală">
+                <img src="/images/FT_1024.png" alt="Sănătate mintală" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sănătate mintală</span>
             </a>
 
             <a href="/ro/weight/" class="related-app-card" aria-label="Greutate">
-                <img src="/images/WT_1024.png" alt="Greutate" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Greutate" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Greutate</span>
             </a>
 
@@ -1050,9 +1052,10 @@
         <h2>Începe să îți îmbunătățești somnul în această noapte</h2>
         <p>Odihna mai bună este la câteva atingeri distanță</p>
         <a target="_blank" href="https://apps.apple.com/app/id1065268459" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Sleep & Dreams"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ro-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ro-black.svg" alt="Descarcă Sleep & Dreams" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

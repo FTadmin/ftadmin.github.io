@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,22 +635,6 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "Quelle est la meilleure application de suivi de tension artérielle ?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Tension Artérielle est l'application de suivi de tension artérielle numéro 1 en France. Elle offre des analyses alimentées par l'IA, la technologie de scan par caméra IA pour capturer automatiquement les valeurs (OMRON, Microlife, Beurer), l'intégration Apple Health et des fonctions d'exportation pour partager avec les médecins. Elle permet le suivi de la tension artérielle systolique et diastolique, de la fréquence cardiaque et de la pression artérielle moyenne (PAM)."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Comment fonctionne le scan par caméra IA ?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Le scan par caméra IA utilise la reconnaissance optique de caractères (OCR) avancée pour lire automatiquement les valeurs de tension artérielle sur l'écran de votre tensiomètre. Pointez simplement la caméra de votre iPhone ou iPad vers l'écran affichant vos valeurs systoliques, diastoliques et de pouls, et l'application remplira automatiquement ces champs. Cela élimine les erreurs de saisie manuelle et accélère l'enregistrement. Compatible avec OMRON, Microlife, Beurer et la plupart des tensiomètres numériques."
-                      }
-                },
-                {
-                      "@type": "Question",
                       "name": "Qu'est-ce qu'une tension artérielle normale ?",
                       "acceptedAnswer": {
                             "@type": "Answer",
@@ -658,26 +643,34 @@
                 },
                 {
                       "@type": "Question",
-                      "name": "Puis-je exporter mes données de tension artérielle pour mon médecin ?",
+                      "name": "Comment fonctionne le scan par caméra IA ?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Oui, Tension Artérielle vous permet d'exporter des rapports complets aux formats PDF, CSV, Excel ou JSON. Ces rapports au format professionnel incluent des statistiques récapitulatives, des graphiques de tendances et toutes vos notes — tout ce dont votre médecin a besoin dans un seul document. Vous pouvez facilement partager ces rapports par e-mail ou d'autres méthodes."
+                            "text": "Pointez simplement la caméra de votre iPhone ou iPad vers l'écran numérique de votre tensiomètre. L'application utilise une technologie avancée de reconnaissance par caméra alimentée par l'IA pour lire automatiquement les chiffres et remplir les champs systolique, diastolique et pouls. Cela élimine les erreurs de saisie manuelle et accélère l'enregistrement. Procurez-vous un tensiomètre ici."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "L'application s'intègre-t-elle avec Apple Health ?",
+                      "name": "Qu'est-ce que la PAM et dois-je la suivre ?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Oui, Tension Artérielle offre une intégration bidirectionnelle avec Apple Health. Vous pouvez importer vos données historiques de tension artérielle depuis Apple Health et l'application enregistre automatiquement les nouvelles mesures dans HealthKit. Cela crée un écosystème complet de suivi de santé sur tous vos appareils Apple."
+                            "text": "La PAM (Pression Artérielle Moyenne) est une valeur calculée qui représente la pression artérielle moyenne dans vos artères pendant un cycle cardiaque. Elle se calcule ainsi : PAM = (2 × Diastolique + Systolique) ÷ 3. Certains médecins trouvent la PAM utile pour évaluer le risque cardiovasculaire. L'application calcule automatiquement la PAM pour chaque mesure."
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "Qu'est-ce que la PAM dans le suivi de la tension artérielle ?",
+                      "name": "Puis-je importer mes anciennes données de tension artérielle ?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "La PAM (Pression Artérielle Moyenne) est une valeur calculée qui représente la pression artérielle moyenne dans vos artères pendant un cycle cardiaque. Elle se calcule ainsi : PAM = (2 × Diastolique + Systolique) ÷ 3. Certains médecins trouvent la PAM utile pour évaluer le risque cardiovasculaire et la perfusion des organes. Tension Artérielle calcule automatiquement la PAM pour chaque mesure."
+                            "text": "Oui ! Si vous avez suivi votre tension artérielle dans Apple Health, vous pouvez importer toutes vos mesures historiques dans l'application en un seul geste. L'application prend également en charge l'importation depuis des fichiers CSV/Excel si vous avez des données provenant d'autres sources."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "À quelle fréquence dois-je mesurer ma tension artérielle ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cela dépend de votre état de santé et des recommandations de votre médecin. Certaines personnes la mesurent quotidiennement (souvent le matin et le soir), d'autres hebdomadairement. L'application facilite un suivi aussi fréquent que celui recommandé par votre professionnel de santé. Vous pouvez configurer des rappels pour maintenir un rythme régulier."
                       }
                 },
                 {
@@ -685,7 +678,31 @@
                       "name": "Mes données de tension artérielle sont-elles privées ?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Oui, vos mesures de tension artérielle sont stockées de manière chiffrée sur votre appareil et dans votre compte iCloud privé. Les données ne transitent jamais par des serveurs externes et les développeurs ne peuvent pas voir vos informations de santé. C'est aussi sécurisé que les applications Notes ou Photos d'Apple et entièrement conforme au RGPD."
+                            "text": "Absolument. Vos mesures de tension artérielle sont stockées de manière chiffrée sur votre appareil et dans votre compte iCloud privé. Les données ne transitent jamais par nos serveurs et nous ne pouvons pas voir vos informations de santé. C'est aussi sécurisé que les applications Notes ou Photos d'Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Puis-je suivre la tension artérielle de membres de ma famille ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "L'application est conçue pour une utilisation individuelle et se synchronise avec votre compte iCloud personnel. Pour suivre plusieurs membres de la famille, chaque personne devrait utiliser l'application sur son propre appareil avec son propre identifiant Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Affichez-vous de la publicité ou me pistez-vous ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Non. Nous avons entièrement supprimé toute publicité de l'application. Nous ne vous pistons pas sur d'autres applications ou sites web, et nous ne vendons jamais vos données à des annonceurs. Vos données sont synchronisées via iCloud — tout comme Apple Notes et Photos. Cela signifie que nous n'avons pas besoin de connaître votre adresse e-mail, votre nom ou toute information personnelle. Vos données de tension artérielle sont stockées sur vos appareils et dans votre compte iCloud, et elles sont entièrement privées que vous utilisiez la version gratuite ou Premium."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ai-je besoin d'un abonnement ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Aucun abonnement n'est requis. L'application est gratuite à télécharger, le suivi, les graphiques, la synchronisation Apple Health et les exports sont gratuits, et chaque utilisateur bénéficie de vraies fonctionnalités d'IA gratuites chaque jour — sans jamais de publicité. Un abonnement Pro facultatif débloque les fonctionnalités d'IA les plus complètes (Recherche approfondie, Résumé pour le médecin, Détective de tendances, le rapport PAM Pro, Chat Pro et plus), les exécute sur notre IA la plus performante et augmente les généreuses limites quotidiennes."
                       }
                 }
           ]
@@ -703,7 +720,7 @@
 
             <a href="/fr/daily-journal/">Journal Intime</a>
 
-            <a href="/fr/mental-health/">Santé Mentale</a>
+            <a href="/fr/mood-tracker/">Santé Mentale</a>
 
             <a href="/fr/sleep/">Sommeil</a>
 
@@ -788,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="Icône de l'application Tension Artérielle" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="Icône de l'application Tension Artérielle" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Tension Artérielle</h1>
 
         <div class="privacy-badge">
@@ -798,12 +816,12 @@
         </div>
         <p class="hero-subtitle">La manière la plus intelligente de suivre et de comprendre votre tension artérielle. Scannez vos mesures avec la caméra IA, synchronisez avec Apple Health et obtenez des analyses alimentées par l'IA sur votre santé cardiovasculaire.</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fr-black.svg" alt="Télécharger Tension Artérielle sur l'App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fr-black.svg" alt="Télécharger Tension Artérielle sur l'App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Application gratuite avec fonctionnalités Premium optionnelles<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/fr.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/fr.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -816,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="Capture d'écran Tension Artérielle 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="Capture d'écran Tension Artérielle 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="Capture d'écran Tension Artérielle 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="Capture d'écran Tension Artérielle 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="Capture d'écran Tension Artérielle 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="Capture d'écran Tension Artérielle 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -937,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Poser une question</h4>
+                <h3><i class="fas fa-question-circle"></i> Poser une question</h3>
                 <p>Questions-réponses rapides sur vos données de tension artérielle — obtenez des réponses instantanées à vos questions de santé</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <h3><i class="fas fa-comments"></i> Chat</h3>
                 <p>Échangez de manière interactive sur votre santé cardiovasculaire et recevez des conseils personnalisés. Quick Chat est gratuit chaque jour ; Pro Chat va plus loin avec notre IA la plus performante</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Résumé vocal</h4>
+                <h3><i class="fas fa-volume-up"></i> Résumé vocal</h3>
                 <p>Écoutez des résumés audio de vos tendances de tension artérielle — parfait pour les analyses en déplacement</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Faites-moi rire</h4>
+                <h3><i class="fas fa-laugh"></i> Faites-moi rire</h3>
                 <p>Recevez de l'humour personnalisé à partir de vos données de suivi pour égayer votre journée</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Apaisez-moi</h4>
+                <h3><i class="fas fa-moon"></i> Apaisez-moi</h3>
                 <p>Exercices de respiration guidés par l'IA pour réduire le stress et faire baisser la tension artérielle</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Scan par caméra IA</h4>
+                <h3><i class="fas fa-camera"></i> Scan par caméra IA</h3>
                 <p>Scannez les mesures directement depuis l'écran de votre tensiomètre — compatible avec <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Recherche approfondie <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Recherche approfondie <span class="ai-pro-badge">Pro</span></h3>
                 <p>Analyse IA complète de vos données de tension artérielle avec des informations détaillées</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Détective de tendances <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Détective de tendances <span class="ai-pro-badge">Pro</span></h3>
                 <p>Trouvez des corrélations cachées entre vos mesures de tension artérielle et vos facteurs de mode de vie</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Assistant d'objectifs <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Assistant d'objectifs <span class="ai-pro-badge">Pro</span></h3>
                 <p>Obtenez des objectifs de tension artérielle personnalisés et basés sur vos données en fonction de vos tendances</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Résumé pour le médecin <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Résumé pour le médecin <span class="ai-pro-badge">Pro</span></h3>
                 <p>Générez des résumés médicaux professionnels à partager lors de vos consultations</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Certificat médical <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Certificat médical <span class="ai-pro-badge">Pro</span></h3>
                 <p>Certificats médicaux générés par l'IA pour le travail ou l'école en cas de besoin</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Générateur d'histoires <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Générateur d'histoires <span class="ai-pro-badge">Pro</span></h3>
                 <p>Transformez vos données de santé en récits créatifs et captivants</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Résumé texte <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Résumé texte <span class="ai-pro-badge">Pro</span></h3>
                 <p>Créez des résumés par message texte de vos tendances de tension artérielle à partager</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Quiz personnel <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Quiz personnel <span class="ai-pro-badge">Pro</span></h3>
                 <p>Testez vos connaissances avec un quiz ludique de 10 questions généré par l'IA sur vos données</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Synthèse vocale <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Synthèse vocale <span class="ai-pro-badge">Pro</span></h3>
                 <p>Écoutez vos analyses et résumés IA avec une lecture vocale naturelle</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Rapport de santé sur mesure <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Rapport de santé sur mesure <span class="ai-pro-badge">Pro</span></h3>
                 <p>Créez des documents de santé complets et personnalisés pour suivre vos progrès</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (sur l'appareil) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (sur l'appareil) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Option axée sur la confidentialité qui exécute l'IA localement sur votre appareil à l'aide des Foundation Models d'Apple — rien ne quitte votre iPhone, iPad ou Mac. Utilisation illimitée avec un compte payant sur les appareils Apple Silicon compatibles (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Chat vocal <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Chat vocal <span class="ai-pro-badge">Pro</span></h3>
                 <p>Conversations vocales bidirectionnelles et mains libres avec l'IA à propos de vos données — posez des questions et écoutez les réponses sans toucher l'écran</p>
             </div>
 
@@ -1479,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/fr/daily-journal/" class="related-app-card" aria-label="Journal Intime">
-                <img src="/images/NT_1024.png" alt="Journal Intime" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Journal Intime" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Journal Intime</span>
             </a>
 
-            <a href="/fr/mental-health/" class="related-app-card" aria-label="Santé Mentale">
-                <img src="/images/FT_1024.png" alt="Santé Mentale" class="related-app-icon">
+            <a href="/fr/mood-tracker/" class="related-app-card" aria-label="Santé Mentale">
+                <img src="/images/FT_1024.png" alt="Santé Mentale" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Santé Mentale</span>
             </a>
 
             <a href="/fr/sleep/" class="related-app-card" aria-label="Sommeil">
-                <img src="/images/ST_1024.png" alt="Sommeil" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sommeil" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sommeil</span>
             </a>
 
             <a href="/fr/weight/" class="related-app-card" aria-label="Poids">
-                <img src="/images/WT_1024.png" alt="Poids" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="Poids" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Poids</span>
             </a>
 
@@ -1507,9 +1525,10 @@
         <h2>Commencez à suivre votre tension artérielle dès aujourd'hui</h2>
         <p>Rejoignez des milliers d'utilisateurs qui prennent en main leur santé cardiovasculaire</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fr-black.svg" alt="Télécharger Tension Artérielle"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fr-black.svg" alt="Télécharger Tension Artérielle" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -634,10 +635,10 @@
           "mainEntity": [
                 {
                       "@type": "Question",
-                      "name": "แอปติดตามความดันโลหิตที่ดีที่สุดคืออะไร?",
+                      "name": "ค่าความดันโลหิตปกติคือเท่าไหร่?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Blood Pressure คือแอปติดตามความดันอันดับ 1 ในสหราชอาณาจักร มี AI insights, Camera Scan AI เพื่ออ่านค่าอัตโนมัติ, เชื่อมต่อ Apple Health และส่งออกข้อมูลให้แพทย์ รองรับการติดตาม Systolic, Diastolic, อัตราการเต้นของหัวใจ และ MAP"
+                            "text": "ตามแนวทางทางการแพทย์ ความดันปกติมักต่ำกว่า 120/80 mmHg ค่า Systolic 120-129 ที่ Diastolic ต่ำกว่า 80 ถือว่าสูงเล็กน้อย ค่า 130/80 ขึ้นไปอาจบ่งชี้ความดันสูง แต่ค่าเป้าหมายอาจแตกต่างตามอายุและสภาวะสุขภาพ โปรดปรึกษาแพทย์"
                       }
                 },
                 {
@@ -645,23 +646,63 @@
                       "name": "Camera Scan AI ทำงานอย่างไร?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Camera Scan AI ใช้ OCR ขั้นสูงอ่านค่าความดันจากหน้าจอมอนิเตอร์อัตโนมัติ เพียงชี้กล้อง iPhone หรือ iPad ไปที่หน้าจอ แอปจะกรอกค่า Systolic, Diastolic และชีพจรอัตโนมัติ รองรับ OMRON, Microlife, Beurer และเครื่องดิจิทัลส่วนใหญ่"
+                            "text": "เพียงชี้กล้อง iPhone หรือ iPad ไปที่หน้าจอดิจิทัลของเครื่องวัดความดัน แอปใช้ AI ขั้นสูงอ่านตัวเลขและกรอกค่า Systolic, Diastolic และชีพจรอัตโนมัติ ขจัดข้อผิดพลาดจากการพิมพ์ รับเครื่องวัดความดันที่นี่"
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "ค่าความดันโลหิตปกติคือเท่าไหร่?",
+                      "name": "MAP คืออะไร และควรติดตามหรือไม่?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "ตามแนวทางทางการแพทย์ ความดันปกติมักต่ำกว่า 120/80 mmHg ค่า Systolic 120-129 ที่ Diastolic ต่ำกว่า 80 ถือว่าสูงเล็กน้อย ค่า 130/80 ขึ้นไปอาจบ่งชี้ความดันสูง ค่าเป้าหมายอาจแตกต่างตามอายุและสภาวะสุขภาพ"
+                            "text": "MAP (Mean Arterial Pressure) คือค่าที่คำนวณแทนความดันเฉลี่ยในหลอดเลือดแดงในหนึ่งรอบหัวใจ คำนวณจาก MAP = (2 × Diastolic + Systolic) ÷ 3 แพทย์บางคนใช้ MAP ประเมินความเสี่ยงหัวใจและหลอดเลือด แอปคำนวณ MAP อัตโนมัติสำหรับทุกค่า"
                       }
                 },
                 {
                       "@type": "Question",
-                      "name": "ส่งออกข้อมูลความดันให้แพทย์ได้หรือไม่?",
+                      "name": "นำเข้าข้อมูลความดันเก่าได้หรือไม่?",
                       "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "ใช่ Blood Pressure ให้คุณส่งออกรายงานฉบับสมบูรณ์เป็น PDF, CSV, Excel หรือ JSON ได้ รายงานที่จัดรูปแบบอย่างมืออาชีพเหล่านี้ประกอบด้วยสถิติสรุป กราฟแนวโน้ม และบันทึกทั้งหมดของคุณ — ทุกสิ่งที่แพทย์ผู้ดูแลของคุณต้องการอยู่ในเอกสารเดียว คุณสามารถแชร์รายงานเหล่านี้ผ่านอีเมลหรือวิธีอื่นๆ ได้อย่างง่ายดาย"
+                            "text": "ได้! หากติดตามความดันใน Apple Health คุณสามารถนำเข้าค่าทั้งหมดด้วยการแตะครั้งเดียว แอปรองรับการนำเข้าจาก CSV/Excel ด้วยหากมีข้อมูลจากแหล่งอื่น"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "ควรวัดความดันบ่อยแค่ไหน?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ขึ้นอยู่กับสภาวะสุขภาพและคำแนะนำของแพทย์ บางคนวัดทุกวัน (เช้าและเย็น) บางคนวัดทุกสัปดาห์ แอปทำให้ง่ายต่อการติดตามตามความถี่ที่แพทย์แนะนำ"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "ข้อมูลความดันของฉันเป็นส่วนตัวหรือไม่?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "แน่นอน ค่าความดันถูกเข้ารหัสและเก็บบนอุปกรณ์และใน iCloud ส่วนตัว ข้อมูลไม่เคยผ่านเซิร์ฟเวอร์ของเรา และเราไม่สามารถดูข้อมูลสุขภาพของคุณ ปลอดภัยเหมือน Notes หรือ Photos ของ Apple"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "ติดตามความดันสำหรับสมาชิกในครอบครัวได้หรือไม่?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "แอปออกแบบสำหรับใช้งานส่วนตัวและซิงค์กับ iCloud ส่วนตัว สำหรับติดตามหลายคน แต่ละคนควรใช้แอปบนอุปกรณ์ของตัวเองพร้อม Apple ID ของตัวเอง"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "มีโฆษณาหรือติดตามฉันหรือไม่?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ไม่มี เราลบโฆษณาทั้งหมดออกจากแอปแล้ว เราไม่ติดตามคุณในแอปหรือเว็บไซต์อื่น และไม่เคยขายข้อมูลของคุณ ข้อมูลซิงค์ผ่าน iCloud เหมือน Apple Notes และ Photos หมายความว่าเราไม่จำเป็นต้องรู้อีเมล ชื่อ หรือข้อมูลส่วนตัวใดๆ ข้อมูลความดันเก็บบนอุปกรณ์และใน iCloud เป็นส่วนตัวทั้งในเวอร์ชันฟรีและพรีเมียม"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "ต้องสมัครสมาชิกหรือไม่?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ไม่จำเป็นต้องสมัครสมาชิก แอปดาวน์โหลดฟรี การติดตาม กราฟ การซิงค์ Apple Health และการส่งออกทั้งหมดฟรี และผู้ใช้ทุกคนได้ใช้ฟีเจอร์ AI จริงฟรีทุกวัน — ไม่มีโฆษณาเลย สมาชิก Pro แบบเสริมจะปลดล็อกฟีเจอร์ AI เชิงลึกที่สุด (การวิจัยเชิงลึก สรุปสำหรับแพทย์ นักสืบรูปแบบ รายงาน MAP แบบ Pro, Pro Chat และอื่นๆ) ประมวลผลบน AI ที่มีความสามารถสูงสุดของเรา และเพิ่มโควตารายวันที่มากอยู่แล้วให้มากขึ้นไปอีก"
                       }
                 }
           ]
@@ -679,7 +720,7 @@
 
             <a href="/th/daily-journal/">ไดอารี่ประจำวัน</a>
 
-            <a href="/th/mental-health/">สุขภาพจิต</a>
+            <a href="/th/mood-tracker/">สุขภาพจิต</a>
 
             <a href="/th/sleep/">การนอน</a>
 
@@ -764,9 +805,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/BPT_1024.png" alt="ไอคอนแอป Blood Pressure" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/BPT_1024.png" alt="ไอคอนแอป Blood Pressure" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Blood Pressure</h1>
 
         <div class="privacy-badge">
@@ -774,12 +816,12 @@
         </div>
         <p class="hero-subtitle">วิธีที่ฉลาดที่สุดในการติดตามและทำความเข้าใจความดันโลหิตของคุณ สแกนค่าด้วย Camera Scan AI ซิงค์กับ Apple Health และรับ AI insights เกี่ยวกับสุขภาพหัวใจและหลอดเลือด</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/th-white.svg"><img class="store_button store_button--lg" src="/images/appstore/th-black.svg" alt="ดาวน์โหลด Blood Pressure บน App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/th-white.svg"><img class="store_button store_button--lg" src="/images/appstore/th-black.svg" alt="ดาวน์โหลด Blood Pressure บน App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">แอปฟรีพร้อมฟีเจอร์พรีเมียมเสริม<br>iPhone, iPad & Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -792,15 +834,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/bpt-1.png" alt="ภาพหน้าจอ Blood Pressure 1" class="screenshot-img">
+                <img src="/images/screenshots/bpt-1.png" alt="ภาพหน้าจอ Blood Pressure 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-2.png" alt="ภาพหน้าจอ Blood Pressure 2" class="screenshot-img">
+                <img src="/images/screenshots/bpt-2.png" alt="ภาพหน้าจอ Blood Pressure 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/bpt-3.png" alt="ภาพหน้าจอ Blood Pressure 3" class="screenshot-img">
+                <img src="/images/screenshots/bpt-3.png" alt="ภาพหน้าจอ Blood Pressure 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -913,92 +955,92 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> ถามคำถาม</h4>
+                <h3><i class="fas fa-question-circle"></i> ถามคำถาม</h3>
                 <p>ถาม-ตอบด่วนเกี่ยวกับข้อมูลความดัน รับคำตอบทันที</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> แชท</h4>
+                <h3><i class="fas fa-comments"></i> แชท</h3>
                 <p>พูดคุยแบบโต้ตอบเกี่ยวกับสุขภาพหัวใจและหลอดเลือดของคุณ และรับคำแนะนำที่ปรับให้เหมาะกับคุณ Quick Chat ใช้ฟรีทุกวัน; Pro Chat เจาะลึกยิ่งขึ้นบน AI ที่มีความสามารถสูงสุดของเรา</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> สรุปเสียง</h4>
+                <h3><i class="fas fa-volume-up"></i> สรุปเสียง</h3>
                 <p>ฟังสรุปแนวโน้มความดัน เหมาะสำหรับการรับ insights ระหว่างเดินทาง</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> ทำให้ฉันหัวเราะ</h4>
+                <h3><i class="fas fa-laugh"></i> ทำให้ฉันหัวเราะ</h3>
                 <p>รับอารมณ์ขันส่วนตัวจากข้อมูลของคุณเพื่อให้วันสดใส</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> ผ่อนคลาย</h4>
+                <h3><i class="fas fa-moon"></i> ผ่อนคลาย</h3>
                 <p>การหายใจด้วย AI เพื่อลดความเครียดและลดความดัน</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Camera Scan AI</h4>
+                <h3><i class="fas fa-camera"></i> Camera Scan AI</h3>
                 <p>สแกนค่าจากหน้าจอมอนิเตอร์โดยตรง รองรับ <a href="https://geni.us/B9RB" target="_blank" rel="noopener">OMRON</a>, Microlife, Beurer</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> การวิจัยเชิงลึก <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> การวิจัยเชิงลึก <span class="ai-pro-badge">Pro</span></h3>
                 <p>AI วิเคราะห์ข้อมูลความดันอย่างละเอียดพร้อม insights เชิงลึก</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> นักสืบรูปแบบ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> นักสืบรูปแบบ <span class="ai-pro-badge">Pro</span></h3>
                 <p>ค้นหาความสัมพันธ์ที่ซ่อนอยู่ระหว่างค่าความดันกับปัจจัยวิถีชีวิต</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> ผู้ช่วยเป้าหมาย <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> ผู้ช่วยเป้าหมาย <span class="ai-pro-badge">Pro</span></h3>
                 <p>รับเป้าหมายความดันโลหิตส่วนตัวที่ขับเคลื่อนด้วยข้อมูล</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> สรุปสำหรับแพทย์ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> สรุปสำหรับแพทย์ <span class="ai-pro-badge">Pro</span></h3>
                 <p>สร้างสรุปทางการแพทย์มืออาชีพสำหรับการพบแพทย์</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> ใบลาป่วย <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> ใบลาป่วย <span class="ai-pro-badge">Pro</span></h3>
                 <p>ใบรับรองป่วย AI สำหรับงานหรือโรงเรียนเมื่อต้องการ</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> ผู้สร้างเรื่องราว <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> ผู้สร้างเรื่องราว <span class="ai-pro-badge">Pro</span></h3>
                 <p>เปลี่ยนข้อมูลสุขภาพเป็นเรื่องราวสร้างสรรค์</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> สรุปข้อความ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> สรุปข้อความ <span class="ai-pro-badge">Pro</span></h3>
                 <p>สร้างสรุปแนวโน้มความดันแบบส่งต่อได้</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> แบบทดสอบส่วนตัว <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> แบบทดสอบส่วนตัว <span class="ai-pro-badge">Pro</span></h3>
                 <p>ทดสอบความรู้ด้วยแบบทดสอบ 10 ข้อที่ AI สร้างจากข้อมูลของคุณ</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> อ่านออกเสียง <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> อ่านออกเสียง <span class="ai-pro-badge">Pro</span></h3>
                 <p>ฟัง AI insights และสรุปด้วยเสียงธรรมชาติ</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> รายงานสุขภาพเฉพาะบุคคล <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> รายงานสุขภาพเฉพาะบุคคล <span class="ai-pro-badge">Pro</span></h3>
                 <p>สร้างเอกสารสุขภาพครบถ้วนและส่วนตัวเพื่อติดตามความคืบหน้า</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (บนอุปกรณ์) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (บนอุปกรณ์) <span class="ai-pro-badge">Pro</span></h3>
                 <p>ตัวเลือกที่เน้นความเป็นส่วนตัว ประมวลผล AI บนอุปกรณ์ของคุณโดยตรงด้วย Apple Foundation Models — ไม่มีข้อมูลใดออกจาก iPhone, iPad หรือ Mac ของคุณ ใช้งานได้ไม่จำกัดสำหรับบัญชีที่ชำระเงินแล้ว บนอุปกรณ์ Apple Silicon ที่รองรับ (iOS 26 ขึ้นไป)</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> แชทด้วยเสียง <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> แชทด้วยเสียง <span class="ai-pro-badge">Pro</span></h3>
                 <p>สนทนาด้วยเสียงแบบสองทางกับ AI เกี่ยวกับข้อมูลของคุณโดยไม่ต้องใช้มือ — ถามคำถามและฟังคำตอบโดยไม่ต้องแตะหน้าจอ</p>
             </div>
 
@@ -1455,22 +1497,22 @@
         <div class="related-apps-grid">
 
             <a href="/th/daily-journal/" class="related-app-card" aria-label="ไดอารี่ประจำวัน">
-                <img src="/images/NT_1024.png" alt="ไดอารี่ประจำวัน" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="ไดอารี่ประจำวัน" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">ไดอารี่ประจำวัน</span>
             </a>
 
-            <a href="/th/mental-health/" class="related-app-card" aria-label="สุขภาพจิต">
-                <img src="/images/FT_1024.png" alt="สุขภาพจิต" class="related-app-icon">
+            <a href="/th/mood-tracker/" class="related-app-card" aria-label="สุขภาพจิต">
+                <img src="/images/FT_1024.png" alt="สุขภาพจิต" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">สุขภาพจิต</span>
             </a>
 
             <a href="/th/sleep/" class="related-app-card" aria-label="การนอน">
-                <img src="/images/ST_1024.png" alt="การนอน" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="การนอน" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">การนอน</span>
             </a>
 
             <a href="/th/weight/" class="related-app-card" aria-label="น้ำหนัก">
-                <img src="/images/WT_1024.png" alt="น้ำหนัก" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="น้ำหนัก" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">น้ำหนัก</span>
             </a>
 
@@ -1483,9 +1525,10 @@
         <h2>เริ่มติดตามความดันโลหิตวันนี้</h2>
         <p>ร่วมกับผู้ใช้หลายพันคนที่ควบคุมสุขภาพหัวใจและหลอดเลือดของตนเอง</p>
         <a target="_blank" href="https://apps.apple.com/app/id794542324" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/th-white.svg"><img class="store_button store_button--lg" src="/images/appstore/th-black.svg" alt="ดาวน์โหลด Blood Pressure"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/th-white.svg"><img class="store_button store_button--lg" src="/images/appstore/th-black.svg" alt="ดาวน์โหลด Blood Pressure" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

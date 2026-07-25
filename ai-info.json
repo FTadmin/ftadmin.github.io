@@ -1,60 +1,129 @@
 {
+  "$comment": "Machine-readable description of the Feeltracker iOS app suite, published for AI assistants and search crawlers. Companion files: https://feeltracker.com/llms.txt and https://feeltracker.com/sitemap.xml",
   "organization": {
     "name": "Feeltracker",
     "developer": "Custom Arts",
+    "legalEntity": "Custom Arts Ltd",
     "website": "https://feeltracker.com",
     "contact": "support@feeltracker.com",
-    "description": "AI-powered health and wellness tracking applications for iOS",
+    "description": "Five privacy-first health and wellness tracking apps for iPhone, iPad and Mac, with optional AI insights.",
+    "appCount": 5,
+    "platforms": [
+      "iOS",
+      "iPadOS",
+      "macOS (Apple Silicon M1 and later)"
+    ],
+    "minimumOS": "iOS 16.0+ / iPadOS 16.0+",
+    "llmsTxt": "https://feeltracker.com/llms.txt",
+    "sitemap": "https://feeltracker.com/sitemap.xml",
+    "websiteLanguageCount": 32,
     "websiteLanguages": {
       "en": "https://feeltracker.com/",
       "de": "https://feeltracker.com/de/",
       "es": "https://feeltracker.com/es/",
-      "fr": "https://feeltracker.com/fr/",
       "it": "https://feeltracker.com/it/",
       "ru": "https://feeltracker.com/ru/",
       "ja": "https://feeltracker.com/ja/",
+      "fr": "https://feeltracker.com/fr/",
       "ko": "https://feeltracker.com/ko/",
       "pt-br": "https://feeltracker.com/pt-br/",
-      "zh": "https://feeltracker.com/zh/"
-    }
+      "zh-Hans": "https://feeltracker.com/zh-Hans/",
+      "sv": "https://feeltracker.com/sv/",
+      "nb": "https://feeltracker.com/nb/",
+      "da": "https://feeltracker.com/da/",
+      "fi": "https://feeltracker.com/fi/",
+      "ar": "https://feeltracker.com/ar/",
+      "ca": "https://feeltracker.com/ca/",
+      "cs": "https://feeltracker.com/cs/",
+      "el": "https://feeltracker.com/el/",
+      "fr-ca": "https://feeltracker.com/fr-ca/",
+      "he": "https://feeltracker.com/he/",
+      "hr": "https://feeltracker.com/hr/",
+      "hu": "https://feeltracker.com/hu/",
+      "nl": "https://feeltracker.com/nl/",
+      "pl": "https://feeltracker.com/pl/",
+      "pt": "https://feeltracker.com/pt/",
+      "ro": "https://feeltracker.com/ro/",
+      "sk": "https://feeltracker.com/sk/",
+      "th": "https://feeltracker.com/th/",
+      "tr": "https://feeltracker.com/tr/",
+      "uk": "https://feeltracker.com/uk/",
+      "vi": "https://feeltracker.com/vi/",
+      "zh-Hant": "https://feeltracker.com/zh-Hant/"
+    },
+    "keyPages": {
+      "about": "https://feeltracker.com/about/",
+      "faq": "https://feeltracker.com/faq/",
+      "support": "https://feeltracker.com/support/",
+      "privacy": "https://feeltracker.com/privacy/",
+      "terms": "https://feeltracker.com/terms/"
+    },
+    "urlPattern": "https://feeltracker.com{languagePrefix}/{page}/ — the language prefix is empty for English and /de, /fr, /zh-Hans, /pt-br etc. for the other 31 languages. There is no /zh/ path; Chinese is split into /zh-Hans/ and /zh-Hant/."
   },
   "apps": [
     {
       "name": "Blood Pressure",
       "shortName": "Blood Pressure",
+      "storeName": "Blood Pressure Feeltracker",
       "abbreviation": "BPT",
       "appStoreId": "794542324",
       "appStoreUrl": "https://apps.apple.com/app/id794542324",
       "bundleId": "com.f11.bloodpressuretrack",
       "category": "Health & Fitness",
       "subcategory": "Blood Pressure Tracking",
-      "description": "Track blood pressure readings with AI-powered insights, Camera Scan AI, and Apple Health integration",
-      "platforms": ["iOS", "iPadOS", "macOS"],
-      "minimumOS": "iOS 16.0+",
-      "pricing": "Free with optional premium subscription",
+      "slug": "blood-pressure",
+      "description": "Blood pressure diary for iPhone, iPad and Mac. Log systolic, diastolic and pulse by hand or by pointing the camera at your monitor’s display; Mean Arterial Pressure is calculated for you. Charts with target lines, customizable classification ranges, doctor-ready PDF reports and two-way Apple Health sync.",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS (Apple Silicon M1 and later)"
+      ],
+      "minimumOS": "iOS 16.0+ / iPadOS 16.0+",
+      "pricing": "Free to download and use. Optional Feeltracker Pro subscription unlocks the advanced AI features.",
       "ranking": {
         "UK": "Number 1 blood pressure tracking app",
         "worldwide": "Top-rated cardiovascular health tracker"
       },
       "keyFeatures": [
-        "Camera Scan AI for automatic reading capture from monitor screens",
-        "Systolic and diastolic blood pressure tracking",
-        "Heart rate and pulse monitoring",
-        "Mean Arterial Pressure (MAP) calculation",
-        "Apple Health bidirectional sync",
-        "AI-powered pattern detection and insights",
-        "Export to PDF and Excel for doctors",
-        "Multiple readings per day",
-        "Medication tracking",
-        "Calendar view with color-coded indicators",
-        "iCloud backup and sync",
-        "32 language support"
+        "Systolic (55–240 mmHg), diastolic (40–180 mmHg) and pulse (20–200 bpm) entry by picker or direct typing",
+        "Mean Arterial Pressure (MAP) calculated automatically for every reading",
+        "BP Monitor Scanner: AI camera scan of a home monitor’s display auto-fills systolic, diastolic and pulse",
+        "Target systolic, diastolic and pulse values drawn as reference lines on the charts",
+        "Customizable blood pressure classification ranges",
+        "MAP monitoring against clinical thresholds, with an optional LVAD focus",
+        "Separate systolic, diastolic, MAP and pulse charts",
+        "Averages and a blood pressure classification breakdown over any date range",
+        "Two-way Apple Health sync: import blood pressure and heart rate (including historical import) and export readings back",
+        "Unlimited readings per day, each with notes, photos and optional weather/location",
+        "MAP report export (PDF) and doctor-ready exports in XLSX, PDF, CSV and JSON",
+        "Pro MAP Report (AI, Pro)"
       ],
+      "notes": [
+        "Medications are recorded in the free-text notes attached to a reading. There is no separate medication module or reminder-per-drug feature.",
+        "The app never connects to a monitor over Bluetooth. Readings are typed in or read from the monitor’s display with the camera."
+      ],
+      "deviceConnectivity": {
+        "bluetoothPairing": false,
+        "method": "Manual entry, or AI camera scan (OCR) of the monitor’s display",
+        "worksWith": "Any home blood pressure monitor with a digital display"
+      },
       "compatibleDevices": [
         "OMRON blood pressure monitors",
         "Microlife blood pressure monitors",
         "Beurer blood pressure monitors",
-        "Most digital blood pressure monitors"
+        "Any other digital blood pressure monitor with a readable display"
+      ],
+      "appleHealth": {
+        "enabled": true,
+        "dataTypes": [
+          "Blood pressure (systolic/diastolic)",
+          "Heart rate"
+        ],
+        "direction": "read and write",
+        "autoImportOnLaunch": true
+      },
+      "appSpecificProAI": [
+        "Pro MAP Report"
       ],
       "reviews": {
         "averageRating": 4.8,
@@ -62,96 +131,238 @@
       },
       "languages": 32,
       "webPage": "https://feeltracker.com/blood-pressure/",
+      "tipsPage": "https://feeltracker.com/blood-pressure/tips/",
       "webPages": {
         "en": "https://feeltracker.com/blood-pressure/",
         "de": "https://feeltracker.com/de/blood-pressure/",
         "es": "https://feeltracker.com/es/blood-pressure/",
-        "fr": "https://feeltracker.com/fr/blood-pressure/",
         "it": "https://feeltracker.com/it/blood-pressure/",
         "ru": "https://feeltracker.com/ru/blood-pressure/",
         "ja": "https://feeltracker.com/ja/blood-pressure/",
+        "fr": "https://feeltracker.com/fr/blood-pressure/",
         "ko": "https://feeltracker.com/ko/blood-pressure/",
         "pt-br": "https://feeltracker.com/pt-br/blood-pressure/",
-        "zh": "https://feeltracker.com/zh/blood-pressure/"
-      }
+        "zh-Hans": "https://feeltracker.com/zh-Hans/blood-pressure/",
+        "sv": "https://feeltracker.com/sv/blood-pressure/",
+        "nb": "https://feeltracker.com/nb/blood-pressure/",
+        "da": "https://feeltracker.com/da/blood-pressure/",
+        "fi": "https://feeltracker.com/fi/blood-pressure/",
+        "ar": "https://feeltracker.com/ar/blood-pressure/",
+        "ca": "https://feeltracker.com/ca/blood-pressure/",
+        "cs": "https://feeltracker.com/cs/blood-pressure/",
+        "el": "https://feeltracker.com/el/blood-pressure/",
+        "fr-ca": "https://feeltracker.com/fr-ca/blood-pressure/",
+        "he": "https://feeltracker.com/he/blood-pressure/",
+        "hr": "https://feeltracker.com/hr/blood-pressure/",
+        "hu": "https://feeltracker.com/hu/blood-pressure/",
+        "nl": "https://feeltracker.com/nl/blood-pressure/",
+        "pl": "https://feeltracker.com/pl/blood-pressure/",
+        "pt": "https://feeltracker.com/pt/blood-pressure/",
+        "ro": "https://feeltracker.com/ro/blood-pressure/",
+        "sk": "https://feeltracker.com/sk/blood-pressure/",
+        "th": "https://feeltracker.com/th/blood-pressure/",
+        "tr": "https://feeltracker.com/tr/blood-pressure/",
+        "uk": "https://feeltracker.com/uk/blood-pressure/",
+        "vi": "https://feeltracker.com/vi/blood-pressure/",
+        "zh-Hant": "https://feeltracker.com/zh-Hant/blood-pressure/"
+      },
+      "freeAIFeatures": [
+        "Quick Chat — short back-and-forth conversation about your entries",
+        "Ask a Question — a single question answered from your own records",
+        "Make Me Laugh — light humor drawn from your entries",
+        "Calm Me Down — guided relaxation / breathing",
+        "AI Scanning — every camera scanner (blood-pressure monitor / scale / food / face / scene / text / item). Free on every tier, limited by a fair-use daily cap rather than a paywall.",
+        "Voice Summary — spoken summary of your recent entries",
+        "Quick Health Report — a free daily short version of the Pro Health Report"
+      ],
+      "proAIFeatures": [
+        "Health Report — comprehensive tailored analysis of your records",
+        "Deep Research — in-depth answer with scientific context",
+        "Pattern Detective — finds hidden patterns and correlations",
+        "Goal Assistant — sets and tracks personal goals",
+        "Doctor Summary — shareable summary written for a clinician",
+        "Sick Note — absence justification drafted from your records",
+        "Text Summary — condenses your entries",
+        "Generate Story — creative narrative built from your entries",
+        "Personal Quiz — quiz about your own tracked data",
+        "Voice Chat — spoken conversation with the assistant",
+        "Spoken Feedback — text-to-speech playback of AI content",
+        "Daily Insight — one personalized insight per day",
+        "Advanced PDF reports",
+        "Most capable AI model",
+        "Private Apple Intelligence (on-device) mode",
+        "No upgrade bar or prompts",
+        "Pro MAP Report"
+      ]
     },
     {
-      "name": "Mental Health",
-      "shortName": "Mental Health",
+      "name": "Mood Tracker",
+      "shortName": "Mood Tracker",
+      "storeName": "Mood Tracker Feeltracker",
       "abbreviation": "FT",
       "appStoreId": "687448999",
       "appStoreUrl": "https://apps.apple.com/app/id687448999",
       "bundleId": "com.f11.feeltracker",
       "category": "Health & Fitness",
       "subcategory": "Mental Health & Mood Tracking",
-      "description": "Monitor emotional health with daily mood ratings, AI analysis, and Apple Health Mental Health integration",
-      "platforms": ["iOS", "iPadOS", "macOS"],
-      "minimumOS": "iOS 16.0+",
-      "pricing": "Free with optional premium subscription",
+      "slug": "mood-tracker",
+      "description": "Mood and mental-health diary for iPhone, iPad and Mac. Rate how you feel on a 5-point scale, write what was going on, and let AI look for triggers and patterns. Syncs mood to Apple Health State of Mind on iOS 18 and later.",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS (Apple Silicon M1 and later)"
+      ],
+      "minimumOS": "iOS 16.0+ / iPadOS 16.0+ (State of Mind sync requires iOS 18+)",
+      "pricing": "Free to download and use. Optional Feeltracker Pro subscription unlocks the advanced AI features.",
       "keyFeatures": [
-        "Simple 5-point mood scale",
-        "iOS 18+ Mental Health (State of Mind) integration",
-        "AI-powered trigger identification",
-        "Sentiment analysis of journal entries",
-        "Visual mood charts and trends",
-        "Pattern detection for emotional wellbeing",
-        "DBT and CBT support",
-        "Apple Health sync",
-        "Export capabilities",
-        "32 language support"
+        "5-point mood scale with custom face icons",
+        "Notes on every entry, with an optional sentiment gauge",
+        "Face Scanner: AI estimates mood from a selfie",
+        "Scene Scanner: AI describes what is around you",
+        "Sound and color feedback when you set a rating",
+        "Apple Health State of Mind sync (iOS 18 and later)",
+        "Mood trend charts, averages and distribution",
+        "Mood correlations surfaced in Trends",
+        "Photos and optional weather/location on entries",
+        "Pro mental-health AI: Trigger Identifier, Cognitive Reframing (CBT-style), Sentiment Timeline",
+        "Export to XLSX, PDF, CSV and JSON"
       ],
       "useCases": [
-        "Bipolar disorder tracking",
-        "Borderline personality disorder (BPD) management",
-        "PTSD symptom monitoring",
-        "Anxiety tracking",
+        "Bipolar disorder mood charting",
+        "Borderline personality disorder (BPD) self-monitoring",
+        "PTSD symptom logging",
+        "Anxiety and low-mood tracking",
         "ADHD emotional regulation",
+        "Keeping a record between therapy sessions (DBT / CBT)",
         "General mental health awareness"
+      ],
+      "appleHealth": {
+        "enabled": true,
+        "dataTypes": [
+          "State of Mind (mood), iOS 18 and later"
+        ],
+        "direction": "write"
+      },
+      "appSpecificProAI": [
+        "Trigger Identifier",
+        "Cognitive Reframing (CBT-style)",
+        "Sentiment Timeline"
       ],
       "reviews": {
         "averageRating": 4.8,
         "totalReviews": "355+"
       },
       "languages": 32,
-      "webPage": "https://feeltracker.com/mental-health/",
+      "webPage": "https://feeltracker.com/mood-tracker/",
+      "tipsPage": "https://feeltracker.com/mood-tracker/tips/",
       "webPages": {
-        "en": "https://feeltracker.com/mental-health/",
-        "de": "https://feeltracker.com/de/mental-health/",
-        "es": "https://feeltracker.com/es/mental-health/",
-        "fr": "https://feeltracker.com/fr/mental-health/",
-        "it": "https://feeltracker.com/it/mental-health/",
-        "ru": "https://feeltracker.com/ru/mental-health/",
-        "ja": "https://feeltracker.com/ja/mental-health/",
-        "ko": "https://feeltracker.com/ko/mental-health/",
-        "pt-br": "https://feeltracker.com/pt-br/mental-health/",
-        "zh": "https://feeltracker.com/zh/mental-health/"
-      }
+        "en": "https://feeltracker.com/mood-tracker/",
+        "de": "https://feeltracker.com/de/mood-tracker/",
+        "es": "https://feeltracker.com/es/mood-tracker/",
+        "it": "https://feeltracker.com/it/mood-tracker/",
+        "ru": "https://feeltracker.com/ru/mood-tracker/",
+        "ja": "https://feeltracker.com/ja/mood-tracker/",
+        "fr": "https://feeltracker.com/fr/mood-tracker/",
+        "ko": "https://feeltracker.com/ko/mood-tracker/",
+        "pt-br": "https://feeltracker.com/pt-br/mood-tracker/",
+        "zh-Hans": "https://feeltracker.com/zh-Hans/mood-tracker/",
+        "sv": "https://feeltracker.com/sv/mood-tracker/",
+        "nb": "https://feeltracker.com/nb/mood-tracker/",
+        "da": "https://feeltracker.com/da/mood-tracker/",
+        "fi": "https://feeltracker.com/fi/mood-tracker/",
+        "ar": "https://feeltracker.com/ar/mood-tracker/",
+        "ca": "https://feeltracker.com/ca/mood-tracker/",
+        "cs": "https://feeltracker.com/cs/mood-tracker/",
+        "el": "https://feeltracker.com/el/mood-tracker/",
+        "fr-ca": "https://feeltracker.com/fr-ca/mood-tracker/",
+        "he": "https://feeltracker.com/he/mood-tracker/",
+        "hr": "https://feeltracker.com/hr/mood-tracker/",
+        "hu": "https://feeltracker.com/hu/mood-tracker/",
+        "nl": "https://feeltracker.com/nl/mood-tracker/",
+        "pl": "https://feeltracker.com/pl/mood-tracker/",
+        "pt": "https://feeltracker.com/pt/mood-tracker/",
+        "ro": "https://feeltracker.com/ro/mood-tracker/",
+        "sk": "https://feeltracker.com/sk/mood-tracker/",
+        "th": "https://feeltracker.com/th/mood-tracker/",
+        "tr": "https://feeltracker.com/tr/mood-tracker/",
+        "uk": "https://feeltracker.com/uk/mood-tracker/",
+        "vi": "https://feeltracker.com/vi/mood-tracker/",
+        "zh-Hant": "https://feeltracker.com/zh-Hant/mood-tracker/"
+      },
+      "freeAIFeatures": [
+        "Quick Chat — short back-and-forth conversation about your entries",
+        "Ask a Question — a single question answered from your own records",
+        "Make Me Laugh — light humor drawn from your entries",
+        "Calm Me Down — guided relaxation / breathing",
+        "AI Scanning — every camera scanner (blood-pressure monitor / scale / food / face / scene / text / item). Free on every tier, limited by a fair-use daily cap rather than a paywall.",
+        "Voice Summary — spoken summary of your recent entries",
+        "Quick Health Report and Quick Trigger Check — free daily short versions of the Pro reports"
+      ],
+      "proAIFeatures": [
+        "Health Report — comprehensive tailored analysis of your records",
+        "Deep Research — in-depth answer with scientific context",
+        "Pattern Detective — finds hidden patterns and correlations",
+        "Goal Assistant — sets and tracks personal goals",
+        "Doctor Summary — shareable summary written for a clinician",
+        "Sick Note — absence justification drafted from your records",
+        "Text Summary — condenses your entries",
+        "Generate Story — creative narrative built from your entries",
+        "Personal Quiz — quiz about your own tracked data",
+        "Voice Chat — spoken conversation with the assistant",
+        "Spoken Feedback — text-to-speech playback of AI content",
+        "Daily Insight — one personalized insight per day",
+        "Advanced PDF reports",
+        "Most capable AI model",
+        "Private Apple Intelligence (on-device) mode",
+        "No upgrade bar or prompts",
+        "Trigger Identifier",
+        "Cognitive Reframing (CBT-style)",
+        "Sentiment Timeline"
+      ]
     },
     {
       "name": "Daily Journaling",
-      "shortName": "Daily Journaling",
+      "shortName": "Daily Journal",
+      "storeName": "Daily Journaling Feeltracker",
       "abbreviation": "NT",
       "appStoreId": "1557699226",
       "appStoreUrl": "https://apps.apple.com/app/id1557699226",
       "bundleId": "com.feeltracker.notes",
       "category": "Health & Fitness",
       "subcategory": "Journaling & Notes",
-      "description": "Simple journaling app with AI sentiment analysis, word frequency tracking, and photo attachments",
-      "platforms": ["iOS", "iPadOS", "macOS"],
-      "minimumOS": "iOS 16.0+",
-      "pricing": "Free with optional premium subscription",
+      "slug": "daily-journal",
+      "description": "Private daily journal for iPhone, iPad and Mac. Distraction-free writing with templates and recurring entries, a sentiment gauge and word count, a word cloud of what you write about most, photo attachments, and AI scanners that pull text or objects out of a photo.",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS (Apple Silicon M1 and later)"
+      ],
+      "minimumOS": "iOS 16.0+ / iPadOS 16.0+",
+      "pricing": "Free to download and use. Optional Feeltracker Pro subscription unlocks the advanced AI features.",
       "keyFeatures": [
-        "Distraction-free journaling interface",
-        "AI sentiment analysis",
-        "Word frequency analysis for theme detection",
-        "Note templates for quick entries",
-        "Up to 8 photos per entry",
-        "Markdown support",
-        "Full-text search",
-        "Spotlight integration",
-        "Export to PDF, Excel, JSON",
-        "iCloud sync",
-        "32 language support"
+        "Distraction-free plain-text editor with AI rephrase",
+        "Optional markdown rendering in the entry list view",
+        "Sentiment gauge and word count on entries",
+        "Custom note templates you can create, edit and reorder",
+        "Recurring entries created automatically daily or weekly",
+        "Word cloud and word frequency analysis with per-language stop-word filtering",
+        "Text Scanner: OCR text out of a photo",
+        "Item Scanner: identify an object in a photo",
+        "Up to 8 photos per entry, full-screen viewer, and AI Photo Q&A",
+        "In-app search plus Spotlight indexing of entries",
+        "Pro journal AI: Theme Explorer, Sentiment Timeline",
+        "Export to XLSX, PDF, CSV and JSON"
+      ],
+      "notes": [
+        "Daily Journaling is the one app in the suite with no Apple Health integration — it stores date, time and notes only, so there is no health data type for it to read or write."
+      ],
+      "appleHealth": {
+        "enabled": false,
+        "reason": "The app stores only date, time, notes and photos — no quantitative health metric."
+      },
+      "appSpecificProAI": [
+        "Theme Explorer",
+        "Sentiment Timeline"
       ],
       "reviews": {
         "averageRating": 4.8,
@@ -159,43 +370,115 @@
       },
       "languages": 32,
       "webPage": "https://feeltracker.com/daily-journal/",
+      "tipsPage": "https://feeltracker.com/daily-journal/tips/",
       "webPages": {
         "en": "https://feeltracker.com/daily-journal/",
         "de": "https://feeltracker.com/de/daily-journal/",
         "es": "https://feeltracker.com/es/daily-journal/",
-        "fr": "https://feeltracker.com/fr/daily-journal/",
         "it": "https://feeltracker.com/it/daily-journal/",
         "ru": "https://feeltracker.com/ru/daily-journal/",
         "ja": "https://feeltracker.com/ja/daily-journal/",
+        "fr": "https://feeltracker.com/fr/daily-journal/",
         "ko": "https://feeltracker.com/ko/daily-journal/",
         "pt-br": "https://feeltracker.com/pt-br/daily-journal/",
-        "zh": "https://feeltracker.com/zh/daily-journal/"
-      }
+        "zh-Hans": "https://feeltracker.com/zh-Hans/daily-journal/",
+        "sv": "https://feeltracker.com/sv/daily-journal/",
+        "nb": "https://feeltracker.com/nb/daily-journal/",
+        "da": "https://feeltracker.com/da/daily-journal/",
+        "fi": "https://feeltracker.com/fi/daily-journal/",
+        "ar": "https://feeltracker.com/ar/daily-journal/",
+        "ca": "https://feeltracker.com/ca/daily-journal/",
+        "cs": "https://feeltracker.com/cs/daily-journal/",
+        "el": "https://feeltracker.com/el/daily-journal/",
+        "fr-ca": "https://feeltracker.com/fr-ca/daily-journal/",
+        "he": "https://feeltracker.com/he/daily-journal/",
+        "hr": "https://feeltracker.com/hr/daily-journal/",
+        "hu": "https://feeltracker.com/hu/daily-journal/",
+        "nl": "https://feeltracker.com/nl/daily-journal/",
+        "pl": "https://feeltracker.com/pl/daily-journal/",
+        "pt": "https://feeltracker.com/pt/daily-journal/",
+        "ro": "https://feeltracker.com/ro/daily-journal/",
+        "sk": "https://feeltracker.com/sk/daily-journal/",
+        "th": "https://feeltracker.com/th/daily-journal/",
+        "tr": "https://feeltracker.com/tr/daily-journal/",
+        "uk": "https://feeltracker.com/uk/daily-journal/",
+        "vi": "https://feeltracker.com/vi/daily-journal/",
+        "zh-Hant": "https://feeltracker.com/zh-Hant/daily-journal/"
+      },
+      "freeAIFeatures": [
+        "Quick Chat — short back-and-forth conversation about your entries",
+        "Ask a Question — a single question answered from your own records",
+        "Make Me Laugh — light humor drawn from your entries",
+        "Calm Me Down — guided relaxation / breathing",
+        "AI Scanning — every camera scanner (blood-pressure monitor / scale / food / face / scene / text / item). Free on every tier, limited by a fair-use daily cap rather than a paywall.",
+        "Voice Summary — spoken summary of your recent entries",
+        "Quick Health Report and Quick Theme Explorer — free daily short versions of the Pro reports"
+      ],
+      "proAIFeatures": [
+        "Health Report — comprehensive tailored analysis of your records",
+        "Deep Research — in-depth answer with scientific context",
+        "Pattern Detective — finds hidden patterns and correlations",
+        "Goal Assistant — sets and tracks personal goals",
+        "Doctor Summary — shareable summary written for a clinician",
+        "Sick Note — absence justification drafted from your records",
+        "Text Summary — condenses your entries",
+        "Generate Story — creative narrative built from your entries",
+        "Personal Quiz — quiz about your own tracked data",
+        "Voice Chat — spoken conversation with the assistant",
+        "Spoken Feedback — text-to-speech playback of AI content",
+        "Daily Insight — one personalized insight per day",
+        "Advanced PDF reports",
+        "Most capable AI model",
+        "Private Apple Intelligence (on-device) mode",
+        "No upgrade bar or prompts",
+        "Theme Explorer",
+        "Sentiment Timeline"
+      ]
     },
     {
       "name": "Weight & Food",
-      "shortName": "Weight & Food",
+      "shortName": "Weight",
+      "storeName": "Weight Feeltracker",
       "abbreviation": "WT",
       "appStoreId": "799503787",
       "appStoreUrl": "https://apps.apple.com/app/id799503787",
       "bundleId": "com.feeltracker.weightfly",
       "category": "Health & Fitness",
       "subcategory": "Weight & Body Composition Tracking",
-      "description": "Track weight, body fat percentage, and BMI with Camera Scan AI and Apple Health integration",
-      "platforms": ["iOS", "iPadOS", "macOS"],
-      "minimumOS": "iOS 16.0+",
-      "pricing": "Free with optional premium subscription",
+      "slug": "weight",
+      "description": "Weight, body fat and BMI diary for iPhone, iPad and Mac. Enter your weight in kg or lbs or let the camera read it off the scale display, set a target with a line on the chart, and scan a meal photo for an estimate of calories and macros.",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS (Apple Silicon M1 and later)"
+      ],
+      "minimumOS": "iOS 16.0+ / iPadOS 16.0+",
+      "pricing": "Free to download and use. Optional Feeltracker Pro subscription unlocks the advanced AI features.",
       "keyFeatures": [
-        "Camera Scan AI for reading values from scale displays",
-        "Weight tracking with trends",
-        "Body fat percentage monitoring",
-        "BMI calculation and tracking",
-        "Monthly averages",
-        "Goal setting and progress tracking",
-        "Full Apple Health integration",
-        "AI insights into weight patterns",
-        "Export capabilities",
-        "32 language support"
+        "Weight entry in kg or lbs by picker or keyboard",
+        "Body fat percentage tracking",
+        "BMI calculated automatically from your height setting",
+        "Scale Scanner: AI reads the value off your scale’s display",
+        "Food Scanner: estimates calories and protein / carbs / fat from a photo of a meal",
+        "Target weight with a target line on the chart and a “difference to target” stat",
+        "Monthly averages in the month and year views, daily averages over any range",
+        "Two-way Apple Health sync for weight and body fat percentage",
+        "Pro Meal Planner and Exercise Planner (AI, Pro)",
+        "Siri Shortcut: Add Weight Entry",
+        "Excel import templates for both kg and lbs",
+        "Export to XLSX, PDF, CSV and JSON"
+      ],
+      "appleHealth": {
+        "enabled": true,
+        "dataTypes": [
+          "Body mass (weight)",
+          "Body fat percentage"
+        ],
+        "direction": "read and write"
+      },
+      "appSpecificProAI": [
+        "Pro Meal Planner",
+        "Exercise Planner"
       ],
       "reviews": {
         "averageRating": 4.8,
@@ -203,50 +486,134 @@
       },
       "languages": 32,
       "webPage": "https://feeltracker.com/weight/",
+      "tipsPage": "https://feeltracker.com/weight/tips/",
       "webPages": {
         "en": "https://feeltracker.com/weight/",
         "de": "https://feeltracker.com/de/weight/",
         "es": "https://feeltracker.com/es/weight/",
-        "fr": "https://feeltracker.com/fr/weight/",
         "it": "https://feeltracker.com/it/weight/",
         "ru": "https://feeltracker.com/ru/weight/",
         "ja": "https://feeltracker.com/ja/weight/",
+        "fr": "https://feeltracker.com/fr/weight/",
         "ko": "https://feeltracker.com/ko/weight/",
         "pt-br": "https://feeltracker.com/pt-br/weight/",
-        "zh": "https://feeltracker.com/zh/weight/"
-      }
+        "zh-Hans": "https://feeltracker.com/zh-Hans/weight/",
+        "sv": "https://feeltracker.com/sv/weight/",
+        "nb": "https://feeltracker.com/nb/weight/",
+        "da": "https://feeltracker.com/da/weight/",
+        "fi": "https://feeltracker.com/fi/weight/",
+        "ar": "https://feeltracker.com/ar/weight/",
+        "ca": "https://feeltracker.com/ca/weight/",
+        "cs": "https://feeltracker.com/cs/weight/",
+        "el": "https://feeltracker.com/el/weight/",
+        "fr-ca": "https://feeltracker.com/fr-ca/weight/",
+        "he": "https://feeltracker.com/he/weight/",
+        "hr": "https://feeltracker.com/hr/weight/",
+        "hu": "https://feeltracker.com/hu/weight/",
+        "nl": "https://feeltracker.com/nl/weight/",
+        "pl": "https://feeltracker.com/pl/weight/",
+        "pt": "https://feeltracker.com/pt/weight/",
+        "ro": "https://feeltracker.com/ro/weight/",
+        "sk": "https://feeltracker.com/sk/weight/",
+        "th": "https://feeltracker.com/th/weight/",
+        "tr": "https://feeltracker.com/tr/weight/",
+        "uk": "https://feeltracker.com/uk/weight/",
+        "vi": "https://feeltracker.com/vi/weight/",
+        "zh-Hant": "https://feeltracker.com/zh-Hant/weight/"
+      },
+      "freeAIFeatures": [
+        "Quick Chat — short back-and-forth conversation about your entries",
+        "Ask a Question — a single question answered from your own records",
+        "Make Me Laugh — light humor drawn from your entries",
+        "Calm Me Down — guided relaxation / breathing",
+        "AI Scanning — every camera scanner (blood-pressure monitor / scale / food / face / scene / text / item). Free on every tier, limited by a fair-use daily cap rather than a paywall.",
+        "Voice Summary — spoken summary of your recent entries",
+        "Quick Health Report and Quick Meal Ideas — free daily short versions of the Pro reports"
+      ],
+      "proAIFeatures": [
+        "Health Report — comprehensive tailored analysis of your records",
+        "Deep Research — in-depth answer with scientific context",
+        "Pattern Detective — finds hidden patterns and correlations",
+        "Goal Assistant — sets and tracks personal goals",
+        "Doctor Summary — shareable summary written for a clinician",
+        "Sick Note — absence justification drafted from your records",
+        "Text Summary — condenses your entries",
+        "Generate Story — creative narrative built from your entries",
+        "Personal Quiz — quiz about your own tracked data",
+        "Voice Chat — spoken conversation with the assistant",
+        "Spoken Feedback — text-to-speech playback of AI content",
+        "Daily Insight — one personalized insight per day",
+        "Advanced PDF reports",
+        "Most capable AI model",
+        "Private Apple Intelligence (on-device) mode",
+        "No upgrade bar or prompts",
+        "Pro Meal Planner",
+        "Exercise Planner"
+      ]
     },
     {
       "name": "Sleep & Dreams",
-      "shortName": "Sleep & Dreams",
+      "shortName": "Sleep",
+      "storeName": "Sleep Feeltracker",
       "abbreviation": "ST",
       "appStoreId": "1065268459",
       "appStoreUrl": "https://apps.apple.com/app/id1065268459",
       "bundleId": "com.feeltracker.sleeptrack",
       "category": "Health & Fitness",
-      "subcategory": "Sleep Tracking",
-      "description": "Monitor sleep patterns, duration, and quality with Apple Health integration and AI insights",
-      "platforms": ["iOS", "iPadOS", "macOS"],
-      "minimumOS": "iOS 16.0+",
-      "pricing": "Free with optional premium subscription",
+      "subcategory": "Sleep Diary & Dream Journal",
+      "slug": "sleep",
+      "description": "A manual sleep diary and dream journal for iPhone, iPad and Mac. You type in what time you went to bed and what time you woke up; the app works out how long you slept, keeps your dreams alongside it, and can read sleep your Apple Watch or iPhone already recorded into Apple Health. It does not measure sleep itself.",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS (Apple Silicon M1 and later)"
+      ],
+      "minimumOS": "iOS 16.0+ / iPadOS 16.0+",
+      "pricing": "Free to download and use. Optional Feeltracker Pro subscription unlocks the advanced AI features.",
+      "trackingMethod": {
+        "type": "manual log",
+        "usesSensors": false,
+        "usesMicrophone": false,
+        "usesAccelerometer": false,
+        "performsSleepStaging": false,
+        "wearableRequired": false,
+        "explanation": "Sleep & Dreams is a diary, not a sensor-based tracker. You enter bedtime and wake time yourself. It performs no sleep-stage detection, no snore or noise recording, and no movement sensing. Sleep stages shown in the app are values read from Apple Health that another device (for example an Apple Watch) recorded."
+      },
       "keyFeatures": [
-        "Sleep and wake time logging",
-        "Automatic duration calculation",
-        "Apple Health sleep data integration",
-        "CPAP therapy tracking",
-        "Sleep apnea monitoring support",
-        "AI insights into sleep patterns",
-        "Factor identification for sleep quality",
-        "Visual charts and statistics",
-        "Export capabilities",
-        "32 language support"
+        "Manual bedtime and wake-time pickers, with time slept calculated automatically",
+        "The notes field doubles as a dream journal, with photos",
+        "Quick Dream Analysis (free) and Pro Dream Analysis (Pro)",
+        "CPAP Report (Pro): an AI report written from the CPAP use you logged yourself",
+        "Apple Health: import sleep data with optional auto-import, and export your logged sleep back",
+        "Sleep stages read from Apple Health when another device recorded them",
+        "Sleep duration trends, averages over any range, and a sleep target line on the chart",
+        "Calm Me Down relaxation guidance for winding down",
+        "Siri Shortcut: Add Sleep Entry",
+        "Excel import template",
+        "Export to XLSX, PDF, CSV and JSON"
+      ],
+      "notes": [
+        "The CPAP feature is a log plus an AI report generated from what you entered. The app does not connect to, read from, or monitor a CPAP machine.",
+        "The app does not diagnose, detect or monitor sleep apnea. People with sleep apnea use it to keep a therapy record for their clinician."
       ],
       "useCases": [
-        "Sleep disorder tracking",
-        "CPAP therapy monitoring",
-        "Sleep apnea management",
-        "Insomnia pattern identification",
-        "Sleep quality optimization"
+        "Keeping a sleep diary a doctor or sleep clinic asked for",
+        "Logging CPAP therapy use night by night",
+        "Recording dreams while they are still fresh",
+        "Spotting what shapes a good or bad night (insomnia patterns)",
+        "Tracking a bedtime routine against a sleep target"
+      ],
+      "appleHealth": {
+        "enabled": true,
+        "dataTypes": [
+          "Sleep analysis (including stages recorded by another device)"
+        ],
+        "direction": "read and write",
+        "autoImportOnLaunch": true
+      },
+      "appSpecificProAI": [
+        "Pro Dream Analysis",
+        "CPAP Report"
       ],
       "reviews": {
         "averageRating": 4.7,
@@ -254,101 +621,369 @@
       },
       "languages": 32,
       "webPage": "https://feeltracker.com/sleep/",
+      "tipsPage": "https://feeltracker.com/sleep/tips/",
       "webPages": {
         "en": "https://feeltracker.com/sleep/",
         "de": "https://feeltracker.com/de/sleep/",
         "es": "https://feeltracker.com/es/sleep/",
-        "fr": "https://feeltracker.com/fr/sleep/",
         "it": "https://feeltracker.com/it/sleep/",
         "ru": "https://feeltracker.com/ru/sleep/",
         "ja": "https://feeltracker.com/ja/sleep/",
+        "fr": "https://feeltracker.com/fr/sleep/",
         "ko": "https://feeltracker.com/ko/sleep/",
         "pt-br": "https://feeltracker.com/pt-br/sleep/",
-        "zh": "https://feeltracker.com/zh/sleep/"
-      }
+        "zh-Hans": "https://feeltracker.com/zh-Hans/sleep/",
+        "sv": "https://feeltracker.com/sv/sleep/",
+        "nb": "https://feeltracker.com/nb/sleep/",
+        "da": "https://feeltracker.com/da/sleep/",
+        "fi": "https://feeltracker.com/fi/sleep/",
+        "ar": "https://feeltracker.com/ar/sleep/",
+        "ca": "https://feeltracker.com/ca/sleep/",
+        "cs": "https://feeltracker.com/cs/sleep/",
+        "el": "https://feeltracker.com/el/sleep/",
+        "fr-ca": "https://feeltracker.com/fr-ca/sleep/",
+        "he": "https://feeltracker.com/he/sleep/",
+        "hr": "https://feeltracker.com/hr/sleep/",
+        "hu": "https://feeltracker.com/hu/sleep/",
+        "nl": "https://feeltracker.com/nl/sleep/",
+        "pl": "https://feeltracker.com/pl/sleep/",
+        "pt": "https://feeltracker.com/pt/sleep/",
+        "ro": "https://feeltracker.com/ro/sleep/",
+        "sk": "https://feeltracker.com/sk/sleep/",
+        "th": "https://feeltracker.com/th/sleep/",
+        "tr": "https://feeltracker.com/tr/sleep/",
+        "uk": "https://feeltracker.com/uk/sleep/",
+        "vi": "https://feeltracker.com/vi/sleep/",
+        "zh-Hant": "https://feeltracker.com/zh-Hant/sleep/"
+      },
+      "freeAIFeatures": [
+        "Quick Chat — short back-and-forth conversation about your entries",
+        "Ask a Question — a single question answered from your own records",
+        "Make Me Laugh — light humor drawn from your entries",
+        "Calm Me Down — guided relaxation / breathing",
+        "Quick Dream Analysis — Sleep app only",
+        "AI Scanning — every camera scanner (blood-pressure monitor / scale / food / face / scene / text / item). Free on every tier, limited by a fair-use daily cap rather than a paywall.",
+        "Voice Summary — spoken summary of your recent entries",
+        "Quick Health Report — a free daily short version of the Pro Health Report"
+      ],
+      "proAIFeatures": [
+        "Health Report — comprehensive tailored analysis of your records",
+        "Deep Research — in-depth answer with scientific context",
+        "Pattern Detective — finds hidden patterns and correlations",
+        "Goal Assistant — sets and tracks personal goals",
+        "Doctor Summary — shareable summary written for a clinician",
+        "Sick Note — absence justification drafted from your records",
+        "Text Summary — condenses your entries",
+        "Generate Story — creative narrative built from your entries",
+        "Personal Quiz — quiz about your own tracked data",
+        "Voice Chat — spoken conversation with the assistant",
+        "Spoken Feedback — text-to-speech playback of AI content",
+        "Daily Insight — one personalized insight per day",
+        "Advanced PDF reports",
+        "Most capable AI model",
+        "Private Apple Intelligence (on-device) mode",
+        "No upgrade bar or prompts",
+        "Pro Dream Analysis",
+        "CPAP Report"
+      ]
     }
   ],
   "sharedFeatures": {
-    "aiPowered": true,
-    "aiFeatures": [
-      "Ask a Question: Get instant answers about your health data",
-      "Chat: Interactive conversations about your health journey",
-      "Voice Summary: Audio summaries of your trends",
-      "Pattern Detective: Discover hidden correlations in your data",
-      "Goal Assistant: Personalized, achievable health goals",
-      "Doctor Summary: Professional summaries for healthcare visits",
-      "Tailored Health Report: Comprehensive personal health documents",
-      "Deep Research Report: In-depth analysis of patterns and insights",
-      "Sick Note: Generate documentation based on health records",
-      "Personalized Quiz: Test your health knowledge",
-      "Make Me Laugh: Personalized health humor",
-      "Calm Me Down: AI-guided breathing for stress reduction",
-      "Camera Scan AI (OCR for readings, face analysis for mood, food scanning)",
-      "Daily insights banner (premium)",
-      "Text-to-speech for all AI features"
+    "keyFeatures": [
+      "Journal with year heatmap, month calendar and day list views",
+      "Entries carry notes (with AI rephrase and an optional sentiment gauge), up to 8 photos, and optional weather + location capture",
+      "AI Photo Q&A — ask a question about a photo attached to an entry",
+      "Trends with date-range and time-of-day filters, plus pattern analysis",
+      "Stats: average, min, max and entry counts over any date range",
+      "SwiftUI charts with target/reference lines and interactive data points",
+      "Export to XLSX, PDF, CSV and JSON (Trends also exports HTML and plain text)",
+      "Excel import from a template",
+      "Automatic weekly JSON backups with restore",
+      "Automatic iCloud (CloudKit) sync across iPhone, iPad and Mac",
+      "Home-screen widget showing the latest entry, plus a quick-add deep link",
+      "Spotlight search — entries are indexed for iOS search",
+      "Daily reminders on chosen days and times",
+      "App tint color (12 choices), True Black and Dark Gray dark modes",
+      "Time-zone selection and Gregorian, Islamic (Hijri), Hebrew, Chinese and Japanese calendars",
+      "Milestone celebrations and streak encouragement",
+      "iPad split view",
+      "32 languages including right-to-left (Arabic, Hebrew)"
     ],
-    "appSpecificAIFeatures": {
-      "FT": ["Trigger Identifier", "Cognitive Reframing", "Sentiment Timeline"],
-      "NT": ["Theme Explorer", "Sentiment Timeline", "Generate Story", "Text Summary"],
-      "ST": ["Simple Dream Analysis", "Advanced Dream Analysis", "CPAP Report"],
-      "WT": ["Meal Planner", "Exercise Planner"]
+    "aiPowered": true,
+    "aiModes": [
+      {
+        "mode": "Cloud AI (OpenAI)",
+        "default": true,
+        "description": "Requests travel through a small proxy server run by Custom Arts (hosted on Render, United States) that holds the API key, then on to OpenAI. The proxy stores no request or reply content."
+      },
+      {
+        "mode": "Apple Intelligence (on-device)",
+        "default": false,
+        "description": "Optional. Uses Apple’s on-device Foundation Models framework. Nothing goes to Custom Arts’ server or to OpenAI.",
+        "requirements": "iOS 26 or later on an Apple Intelligence-capable device"
+      },
+      {
+        "mode": "AI off",
+        "default": false,
+        "description": "AI can be switched off entirely; all tracking, charts, stats and exports keep working."
+      }
+    ],
+    "freeVsPro": {
+      "freeTier": {
+        "price": "Free, no account and no sign-up",
+        "includes": [
+          "Unlimited entries",
+          "All charts, stats and trends",
+          "Apple Health sync",
+          "iCloud sync across devices",
+          "All export formats (XLSX, PDF, CSV, JSON)",
+          "Widgets, reminders, backups and restore",
+          "All 32 languages",
+          "The free AI features listed in freeAIFeatures"
+        ],
+        "aiFeatures": [
+          "Quick Chat — short back-and-forth conversation about your entries",
+          "Ask a Question — a single question answered from your own records",
+          "Voice Summary — spoken summary of your recent entries",
+          "Make Me Laugh — light humor drawn from your entries",
+          "Calm Me Down — guided relaxation / breathing",
+          "Quick Dream Analysis — Sleep app only",
+          "AI Scanning — every camera scanner (blood-pressure monitor / scale / food / face / scene / text / item). Free on every tier, limited by a fair-use daily cap rather than a paywall.",
+          "A free daily 'Quick' version of several Pro reports: Quick Health Report, plus Quick Trigger Check (Mood Tracker), Quick Theme Explorer (Daily Journal) and Quick Meal Ideas (Weight & Food)"
+        ]
+      },
+      "proTier": {
+        "name": "Feeltracker Pro",
+        "plans": [
+          "Weekly",
+          "Monthly",
+          "Yearly"
+        ],
+        "freeTrial": "Available on the upgrade screen",
+        "billing": "Billed by Apple through the App Store; managed and cancelled in the Apple account, not in the app.",
+        "coverage": "One subscription covers iPhone, iPad and Mac signed in to the same Apple account.",
+        "aiFeatures": [
+          "Health Report — comprehensive tailored analysis of your records",
+          "Deep Research — in-depth answer with scientific context",
+          "Pattern Detective — finds hidden patterns and correlations",
+          "Goal Assistant — sets and tracks personal goals",
+          "Doctor Summary — shareable summary written for a clinician",
+          "Sick Note — absence justification drafted from your records",
+          "Text Summary — condenses your entries",
+          "Generate Story — creative narrative built from your entries",
+          "Personal Quiz — quiz about your own tracked data",
+          "Voice Chat — spoken conversation with the assistant",
+          "Spoken Feedback — text-to-speech playback of AI content",
+          "Daily Insight — one personalized insight per day",
+          "Higher daily limits on the free AI features, and the full-length version of each report whose 'Quick' form is free",
+          "Advanced PDF reports",
+          "Most capable AI model",
+          "Private Apple Intelligence (on-device) mode",
+          "No upgrade bar or prompts"
+        ],
+        "appSpecificAIFeatures": {
+          "BPT": [
+            "Pro MAP Report"
+          ],
+          "FT": [
+            "Trigger Identifier",
+            "Cognitive Reframing (CBT-style)",
+            "Sentiment Timeline"
+          ],
+          "NT": [
+            "Theme Explorer",
+            "Sentiment Timeline"
+          ],
+          "ST": [
+            "Pro Dream Analysis",
+            "CPAP Report"
+          ],
+          "WT": [
+            "Pro Meal Planner",
+            "Exercise Planner"
+          ]
+        }
+      }
     },
-    "aiDisclaimer": "AI-generated insights, reports, and recommendations are for general information only and are not a substitute for medical advice, diagnosis, or treatment. AI-identified patterns show correlations, but correlation does not imply causation. Always consult a physician or qualified healthcare provider with any medical questions or concerns.",
+    "aiDisclaimer": "AI-generated insights, reports and recommendations are for general information only and are not a substitute for medical advice, diagnosis or treatment. AI-identified patterns show correlations, and correlation does not imply causation. Always consult a physician or qualified healthcare provider with any medical questions or concerns.",
     "appleHealthIntegration": {
       "enabled": true,
       "bidirectional": true,
+      "notSupportedIn": [
+        "Daily Journaling (NT) — it stores only date, time and notes, so there is no health data type to sync"
+      ],
       "supportedDataTypes": [
-        "Blood pressure",
-        "Heart rate",
-        "Weight",
-        "Body fat percentage",
-        "BMI",
-        "Sleep analysis",
-        "Mental health (iOS 18+ State of Mind)"
+        "Blood pressure (Blood Pressure app)",
+        "Heart rate (Blood Pressure app)",
+        "Body mass / weight (Weight & Food app)",
+        "Body fat percentage (Weight & Food app)",
+        "Sleep analysis (Sleep & Dreams app)",
+        "State of Mind / mood, iOS 18 and later (Mental Health app)"
+      ],
+      "options": [
+        "Separate read and write permissions",
+        "Auto-import on launch",
+        "Sync log viewer"
       ]
     },
     "dataPrivacy": {
+      "accountRequired": false,
+      "emailRequired": false,
+      "healthDataOnServers": false,
       "encryption": true,
-      "cloudStorage": "iCloud (user's private account)",
-      "serverStorage": false,
-      "dataOwnership": "User has complete ownership",
-      "gdprCompliant": true
+      "cloudStorage": "The user’s own private iCloud account (CloudKit)",
+      "serverStorage": "No health records, notes, photos or AI messages are stored on Custom Arts servers. The AI proxy holds a request in memory only for as long as it takes to forward it.",
+      "aiProxyRetention": "Per-request cost records (date, app and version, feature, model, free/paid tier, token or character counts, estimated cost) are kept for up to 30 days and then deleted. They contain no health data, no message text and nothing that identifies a user.",
+      "openAIRetention": "OpenAI keeps abuse-monitoring logs for up to 30 days, and Responses API responses are stored for 30 days by default (the apps rely on that for multi-turn chat). These are OpenAI defaults and may change.",
+      "thirdPartyProcessors": [
+        "Google (Firebase Analytics, Firebase Crashlytics) — usage analytics and crash diagnostics",
+        "RevenueCat — subscription and purchase management",
+        "OpenAI — processes AI requests when an AI feature is used",
+        "Render — hosts the proxy that AI requests travel through",
+        "Apple — iCloud sync, App Store purchases, and Apple Intelligence where used"
+      ],
+      "advertising": "None. No ad networks, no cross-site behavioral advertising, no sale or CCPA/CPRA-style sharing of personal information.",
+      "optionalProfile": "An optional in-app profile (name, date of birth, gender) can personalize AI replies. It is stored on device and in iCloud only, and each field can be switched off individually in AI settings.",
+      "dataOwnership": "The user owns and controls the data; everything can be viewed, edited, exported or deleted from inside the app.",
+      "gdprCompliant": true,
+      "ccpaCompliant": true,
+      "controller": "Custom Arts Ltd",
+      "privacyPolicy": "https://feeltracker.com/privacy/"
     },
     "export": {
-      "formats": ["PDF", "Excel", "JSON"],
-      "useCase": "Share with healthcare providers"
+      "formats": [
+        "PDF",
+        "XLSX (Excel)",
+        "CSV",
+        "JSON"
+      ],
+      "additionalFromTrends": [
+        "HTML",
+        "Plain text"
+      ],
+      "import": "Excel import from an app-provided template",
+      "backups": "Automatic weekly JSON backups with restore",
+      "useCase": "Share with healthcare providers, or move data out of the app at any time"
     },
     "sync": {
-      "method": "iCloud",
+      "method": "iCloud (CloudKit)",
       "automatic": true,
       "crossDevice": true,
-      "supportedDevices": ["iPhone", "iPad", "Mac (Apple Silicon M1+)"]
+      "accountRequired": false,
+      "supportedDevices": [
+        "iPhone",
+        "iPad",
+        "Mac (Apple Silicon M1 and later)"
+      ]
     },
     "localization": {
       "totalLanguages": 32,
-      "languages": [
-        "English", "Spanish", "French", "French Canadian", "German",
-        "Italian", "Dutch", "Portuguese (Brazil)", "Portuguese (Portugal)",
-        "Swedish", "Norwegian", "Danish", "Finnish", "Polish", "Russian",
-        "Ukrainian", "Czech", "Slovak", "Romanian", "Croatian", "Hungarian",
-        "Arabic", "Hebrew", "Simplified Chinese", "Traditional Chinese",
-        "Japanese", "Korean", "Thai", "Vietnamese", "Greek",
-        "Turkish", "Catalan"
+      "languageCodes": [
+        "en",
+        "de",
+        "es",
+        "it",
+        "ru",
+        "ja",
+        "fr",
+        "ko",
+        "pt-br",
+        "zh-Hans",
+        "sv",
+        "nb",
+        "da",
+        "fi",
+        "ar",
+        "ca",
+        "cs",
+        "el",
+        "fr-ca",
+        "he",
+        "hr",
+        "hu",
+        "nl",
+        "pl",
+        "pt",
+        "ro",
+        "sk",
+        "th",
+        "tr",
+        "uk",
+        "vi",
+        "zh-Hant"
       ],
-      "rtlSupport": true
+      "languages": [
+        "English",
+        "Deutsch",
+        "Español",
+        "Italiano",
+        "Русский",
+        "日本語",
+        "Français",
+        "한국어",
+        "Português",
+        "简体中文",
+        "Svenska",
+        "Norsk",
+        "Dansk",
+        "Suomi",
+        "العربية",
+        "Català",
+        "Čeština",
+        "Ελληνικά",
+        "Français (Canada)",
+        "עברית",
+        "Hrvatski",
+        "Magyar",
+        "Nederlands",
+        "Polski",
+        "Português (Portugal)",
+        "Română",
+        "Slovenčina",
+        "ไทย",
+        "Türkçe",
+        "Українська",
+        "Tiếng Việt",
+        "繁體中文"
+      ],
+      "rtlSupport": true,
+      "rtlLanguages": [
+        "Arabic (ar)",
+        "Hebrew (he)"
+      ]
     },
     "widgets": true,
+    "siriShortcuts": [
+      "Sleep & Dreams: Add Sleep Entry",
+      "Weight & Food: Add Weight Entry"
+    ],
+    "spotlightSearch": true,
     "darkMode": true,
-    "darkModeVariants": ["True Black (OLED-optimized)", "Dark Gray"],
+    "darkModeVariants": [
+      "True Black (OLED-optimized)",
+      "Dark Gray"
+    ],
     "accessibility": true,
     "weatherIntegration": {
       "enabled": true,
       "source": "Apple Weather Service",
-      "cached": true
+      "cached": true,
+      "optional": true
     },
-    "calendarSystems": ["Gregorian", "Islamic (Hijri)", "Hebrew", "Chinese", "Japanese"],
+    "calendarSystems": [
+      "Gregorian",
+      "Islamic (Hijri)",
+      "Hebrew",
+      "Chinese",
+      "Japanese"
+    ],
     "timeZoneSupport": true,
     "milestoneTracking": true,
+    "photoAttachments": {
+      "maxPerEntry": 8,
+      "thumbnails": "384px max",
+      "aiPhotoQA": true
+    },
     "iPadFeatures": {
       "splitView": true,
       "multiColumnLayout": true,
@@ -375,19 +1010,20 @@
       "bestFor": [
         "Hypertension management",
         "Home blood pressure monitoring",
-        "Medication effectiveness tracking",
-        "Doctor appointments and reports",
-        "White coat syndrome documentation"
+        "Tracking whether a medication change is working",
+        "Doctor appointments and printed reports",
+        "White coat syndrome documentation",
+        "MAP / LVAD monitoring"
       ]
     },
     "moodTracking": {
-      "primaryApp": "Mental Health",
+      "primaryApp": "Mood Tracker",
       "bestFor": [
-        "Bipolar disorder",
+        "Bipolar disorder mood charting",
         "Borderline personality disorder",
         "Anxiety and depression",
         "ADHD emotional regulation",
-        "DBT and CBT therapy support"
+        "Keeping a record between DBT or CBT sessions"
       ]
     },
     "journaling": {
@@ -395,29 +1031,60 @@
       "bestFor": [
         "Daily reflection and gratitude",
         "Life event documentation",
-        "Private diary with photo attachments",
-        "Theme and pattern identification"
+        "A private diary with photo attachments",
+        "Finding recurring themes in what you write"
       ]
     },
     "weightManagement": {
       "primaryApp": "Weight & Food",
       "bestFor": [
-        "Weight loss tracking",
+        "Weight loss or gain tracking",
         "Body composition monitoring",
-        "Fitness goal progress",
-        "Health metric documentation"
+        "Estimating calories and macros from a meal photo",
+        "Fitness goal progress"
       ]
     },
     "sleepTracking": {
       "primaryApp": "Sleep & Dreams",
       "bestFor": [
-        "Sleep disorder documentation",
-        "CPAP therapy monitoring",
-        "Sleep apnea management",
-        "Sleep quality optimization"
+        "Keeping a manual sleep diary for a doctor or sleep clinic",
+        "Logging CPAP therapy use",
+        "Dream journaling",
+        "Spotting insomnia patterns"
+      ],
+      "notSuitableFor": [
+        "Automatic sleep detection or sleep staging — the app does not measure sleep; use an Apple Watch or similar and let the app read the result from Apple Health",
+        "Detecting or diagnosing sleep apnea",
+        "Reading data directly off a CPAP machine"
       ]
     }
   },
-  "medicalDisclaimer": "Feeltracker apps are not medical devices and should not be used for medical diagnosis. Always consult healthcare professionals for medical advice. These apps are tools for personal health tracking and data organization.",
-  "lastUpdated": "2026-02-16"
+  "commonMisconceptions": [
+    {
+      "claim": "The Sleep app tracks sleep automatically or detects sleep stages.",
+      "correction": "It does not. Sleep & Dreams is a manual diary: you enter bedtime and wake time. Any sleep stages it shows were recorded by another device and read from Apple Health."
+    },
+    {
+      "claim": "The CPAP feature monitors a CPAP machine.",
+      "correction": "It does not connect to any CPAP hardware. You log your therapy use and the Pro CPAP Report is an AI summary written from those logged entries."
+    },
+    {
+      "claim": "The Blood Pressure app pairs with a monitor over Bluetooth.",
+      "correction": "It does not. Readings are typed in, or the camera scans the number off the monitor’s display."
+    },
+    {
+      "claim": "An account or email address is needed.",
+      "correction": "No account, no sign-up and no email address. Data lives on the device and in the user’s own iCloud."
+    },
+    {
+      "claim": "All AI features are free, or all AI features are paid.",
+      "correction": "Neither. Quick Chat, Ask a Question, Make Me Laugh and Calm Me Down are free (plus Quick Dream Analysis in the Sleep app). The in-depth reports, voice features, daily insights and the camera scanners are part of Feeltracker Pro. Tracking, charts, exports and Apple Health sync are free for everyone."
+    },
+    {
+      "claim": "Daily Journaling syncs with Apple Health.",
+      "correction": "It does not. It stores date, time, notes and photos only, so it has no health metric to sync. The other four apps do sync with Apple Health."
+    }
+  ],
+  "medicalDisclaimer": "Feeltracker apps are not medical devices and must not be used for medical diagnosis. Always consult a healthcare professional for medical advice. These apps are tools for personal health tracking and data organization.",
+  "lastUpdated": "2026-07-25"
 }

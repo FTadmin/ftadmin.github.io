@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -380,7 +381,7 @@
 
             <a href="/pl/daily-journal/">Dziennik</a>
 
-            <a href="/pl/mental-health/">Zdrowie psychiczne</a>
+            <a href="/pl/mood-tracker/">Zdrowie psychiczne</a>
 
             <a href="/pl/sleep/">Sen</a>
 
@@ -465,9 +466,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/WT_1024.png" alt="Ikona aplikacji Waga i Jedzenie" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/WT_1024.png" alt="Ikona aplikacji Waga i Jedzenie" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>Waga i Jedzenie</h1>
 
         <div class="privacy-badge">
@@ -475,12 +477,12 @@
         </div>
         <p class="hero-subtitle">Osiągnij cele fitness dzięki inteligentnemu śledzeniu wagi. Skanuj odczyty Camera Scan AI, monitoruj wagę, BMI i procent tkanki tłuszczowej z wglądami opartymi na AI, które pokazują, co działa, a co nie.</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Waga i Jedzenie z App Store"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Waga i Jedzenie z App Store" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">Bezpłatna aplikacja z opcjonalnymi funkcjami premium<br>iPhone, iPad i Mac • iOS 16.0+</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -493,15 +495,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/wt-1.png" alt="Zrzut ekranu Wagi i Jedzenia 1" class="screenshot-img">
+                <img src="/images/screenshots/wt-1.png" alt="Zrzut ekranu Wagi i Jedzenia 1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-2.png" alt="Zrzut ekranu Wagi i Jedzenia 2" class="screenshot-img">
+                <img src="/images/screenshots/wt-2.png" alt="Zrzut ekranu Wagi i Jedzenia 2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-3.png" alt="Zrzut ekranu Wagi i Jedzenia 3" class="screenshot-img">
+                <img src="/images/screenshots/wt-3.png" alt="Zrzut ekranu Wagi i Jedzenia 3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -627,102 +629,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> Zadaj pytanie</h4>
+                <h3><i class="fas fa-question-circle"></i> Zadaj pytanie</h3>
                 <p>Szybkie pytania i odpowiedzi o danych wagowych — uzyskaj natychmiastowe odpowiedzi na pytania zdrowotne</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> Czat</h4>
+                <h3><i class="fas fa-comments"></i> Czat</h3>
                 <p>Prowadź interaktywne rozmowy o swojej drodze fitness i otrzymuj spersonalizowane wskazówki. Szybki Czat jest darmowy każdego dnia; Czat Pro sięga głębiej dzięki naszemu najbardziej zaawansowanemu modelowi AI</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> Podsumowanie głosowe</h4>
+                <h3><i class="fas fa-volume-up"></i> Podsumowanie głosowe</h3>
                 <p>Słuchaj dźwiękowych podsumowań trendów wagowych — idealne do wglądów w ruchu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> Rozśmiesz mnie</h4>
+                <h3><i class="fas fa-laugh"></i> Rozśmiesz mnie</h3>
                 <p>Uzyskaj spersonalizowany humor z danych śledzenia, aby rozjaśnić dzień</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> Uspokój mnie</h4>
+                <h3><i class="fas fa-moon"></i> Uspokój mnie</h3>
                 <p>Ćwiczenia oddechowe i relaksacyjne prowadzone przez AI pomagające zmniejszyć stres i emocjonalne jedzenie</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> Camera Scan AI</h4>
+                <h3><i class="fas fa-camera"></i> Camera Scan AI</h3>
                 <p>Skanuj odczyty wagi z wyświetlacza wagi lub jedzenie, aby uzyskać natychmiastową analizę odżywczą</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> Dogłębna analiza <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> Dogłębna analiza <span class="ai-pro-badge">Pro</span></h3>
                 <p>Kompleksowa analiza AI danych wagowych ze szczegółowymi wglądami</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> Detektyw wzorców <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> Detektyw wzorców <span class="ai-pro-badge">Pro</span></h3>
                 <p>Znajdź ukryte korelacje między wagą a czynnikami stylu życia</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> Asystent celów <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> Asystent celów <span class="ai-pro-badge">Pro</span></h3>
                 <p>Uzyskaj spersonalizowane, oparte na danych cele wagowe na podstawie swoich wzorców</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> Podsumowanie dla lekarza <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> Podsumowanie dla lekarza <span class="ai-pro-badge">Pro</span></h3>
                 <p>Generuj profesjonalne podsumowania zarządzania wagą na wizyty medyczne</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> Zwolnienie lekarskie <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> Zwolnienie lekarskie <span class="ai-pro-badge">Pro</span></h3>
                 <p>Zwolnienia lekarskie generowane przez AI dla pracy lub szkoły, gdy ich potrzebujesz</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> Generator historii <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> Generator historii <span class="ai-pro-badge">Pro</span></h3>
                 <p>Przekształć podróż wagową w kreatywne, angażujące narracje</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> Podsumowanie tekstowe <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> Podsumowanie tekstowe <span class="ai-pro-badge">Pro</span></h3>
                 <p>Twórz podsumowania wiadomości do udostępniania trendów wagowych</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> Osobisty quiz <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> Osobisty quiz <span class="ai-pro-badge">Pro</span></h3>
                 <p>Sprawdź swoją wiedzę zabawnym quizem AI z 10 pytaniami dotyczącymi Twoich danych</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> Zamiana tekstu na mowę <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> Zamiana tekstu na mowę <span class="ai-pro-badge">Pro</span></h3>
                 <p>Słuchaj wglądów AI i podsumowań z naturalnym odtwarzaniem głosu</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> Dostosowany raport zdrowotny <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> Dostosowany raport zdrowotny <span class="ai-pro-badge">Pro</span></h3>
                 <p>Twórz kompleksowe, spersonalizowane dokumenty fitness do śledzenia postępów</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-utensils"></i> Planer posiłków <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-utensils"></i> Planer posiłków <span class="ai-pro-badge">Pro</span></h3>
                 <p>Uzyskaj spersonalizowany tygodniowy plan posiłków oparty na celach wagowych i preferencjach żywieniowych</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-dumbbell"></i> Planer ćwiczeń <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-dumbbell"></i> Planer ćwiczeń <span class="ai-pro-badge">Pro</span></h3>
                 <p>Uzyskaj spersonalizowany plan treningowy dostosowany do poziomu fitness i celów</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence (na urządzeniu) <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence (na urządzeniu) <span class="ai-pro-badge">Pro</span></h3>
                 <p>Opcja stawiająca na prywatność, która uruchamia AI lokalnie na Twoim urządzeniu za pomocą modeli Apple Foundation Models — nic nie opuszcza Twojego iPhone'a, iPada ani Maca. Nieograniczone użycie z płatnym kontem, na obsługiwanych urządzeniach z Apple Silicon (iOS 26+).</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> Czat głosowy <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> Czat głosowy <span class="ai-pro-badge">Pro</span></h3>
                 <p>Rozmowy głosowe z AI o Twoich danych, prowadzone bez użycia rąk, w obie strony — zadawaj pytania i słuchaj odpowiedzi bez dotykania ekranu</p>
             </div>
 
@@ -921,22 +923,22 @@
         <div class="related-apps-grid">
 
             <a href="/pl/blood-pressure/" class="related-app-card" aria-label="Ciśnienie krwi">
-                <img src="/images/BPT_1024.png" alt="Ciśnienie krwi" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="Ciśnienie krwi" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Ciśnienie krwi</span>
             </a>
 
             <a href="/pl/daily-journal/" class="related-app-card" aria-label="Dziennik">
-                <img src="/images/NT_1024.png" alt="Dziennik" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="Dziennik" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Dziennik</span>
             </a>
 
-            <a href="/pl/mental-health/" class="related-app-card" aria-label="Zdrowie psychiczne">
-                <img src="/images/FT_1024.png" alt="Zdrowie psychiczne" class="related-app-icon">
+            <a href="/pl/mood-tracker/" class="related-app-card" aria-label="Zdrowie psychiczne">
+                <img src="/images/FT_1024.png" alt="Zdrowie psychiczne" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Zdrowie psychiczne</span>
             </a>
 
             <a href="/pl/sleep/" class="related-app-card" aria-label="Sen">
-                <img src="/images/ST_1024.png" alt="Sen" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="Sen" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">Sen</span>
             </a>
 
@@ -949,9 +951,10 @@
         <h2>Zacznij podróż wagową już dziś</h2>
         <p>Dołącz do tysięcy osiągających cele fitness z Wagą i Jedzeniem</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Wagę i Jedzenie"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Wagę i Jedzenie" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

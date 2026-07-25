@@ -134,12 +134,548 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
 
 
-
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Como adiciono um registo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Você pode adicionar um novo registo de duas formas: 1. premindo o dia ou 2. premindo + no canto superior direito. Ambas as opções são mostradas pelas setas na imagem abaixo."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso registrar várias vezes por dia?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. Você pode adicionar vários registos por dia, como mostrado acima. Basta pressionar o dia novamente, ou o +, para fazer isso."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como excluo um registo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Para excluir um registo, você pode deslizar para a esquerda no registo e pressionar Excluir, ou pressionar o registo para abri-lo e pressionar o ícone da lixeira no canto superior esquerdo da ecrã. Ambos os métodos são mostrados abaixo:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Por que vejo uma pontuação de sentimento acima das minhas notas? Isso é privado?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "À medida que escreves as tuas notas, um emoji aparece por cima delas para indicar o sentimento previsto. Esta funcionalidade pode ajudar-te a perceber se a tua escrita transmite algo demasiado negativo ou positivo, ou lembrar-te do que está ou não a funcionar, servindo de guia para a tua escrita. Por predefinição, o sentimento usa a IA da app que respeita a privacidade; se desligares a IA, é calculado totalmente no teu dispositivo através da framework Natural Language da Apple. Se preferires, podes desativar esta funcionalidade em Definições, em Geral."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como faço para imprimir?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Quando você pressiona exportar (como mostrado abaixo), verá uma ecrã de compartilhamento. Nela, role para baixo e prima Imprimir (como mostrado abaixo). Você precisará de uma impressora sem fio compatível com Apple AirPrint para imprimir sem fio do seu iPhone ou iPad. Se você não tiver uma impressora sem fio compatível com AirPrint, pode comprar uma aqui."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso compartilhar informações médicas que estou monitorando com meu médico?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. O aplicação facilita isso. Prima o botão de compartilhar (como mostrado abaixo), selecione PDF e depois escolha seu aplicação de e-mail. O relatório em PDF será anexado a um e-mail que você pode enviar ao seu médico."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como posso ocultar médias ou totais no Diário?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Você pode ocultar médias e totais nas opções de visualização, como mostrado abaixo. Isso mostrará apenas seus valores inseridos, sem médias. Isso pode ser útil se você achar confuso ter as médias/totais entre seus dados inseridos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso exportar para Excel ou software de planilha similar?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. Siga as instruções acima, mas selecione Excel ou CSV em vez de PDF como formato de saída. Depois, salve o arquivo no seu dispositivo ou envie por e-mail para você mesmo.  O formato Excel é mais confiável, enquanto o CSV pode ser mais amplamente compatível - ambos devem abrir no Excel e em softwares similares, como Apple Numbers ou Google Sheets."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para quem posso enviar meus dados?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Você pode enviá-los por e-mail para quem quiser. Você pode querer enviar seus dados periodicamente para você mesmo para salvaguarda e backup. Você também pode salvar o arquivo PDF ou CSV no seu dispositivo para uso posterior."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como volto direto para o dia atual na visualização mensal?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Toque duas vezes no ícone do Diário na barra de abas na parte inferior da ecrã."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como visualizo dados de meses anteriores?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Para visualizar dados de um mês anterior (por exemplo, dados de setembro quando você está em outubro):"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como altero a hora ou data de um registo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Abra um registo e toque na data ou hora na parte superior da ecrã, como mostrado abaixo. Um calendário aparecerá onde você pode selecionar a data correta e depois pressionar Salvar. Dica: Para sempre criar um registo com a data de hoje, prima o + ao lado do dia atual, ou prima o + no canto superior direito da ecrã. Se um registo ficou na data errada, pode ser porque o + foi pressionado ao lado de um dia diferente — alguns usuários usam isso para registos históricos ou planejamento futuro."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Meus dados estão seguros?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Seus dados são criptografados quando armazenados no seu dispositivo. Isso significa que mesmo se seu dispositivo for roubado, ninguém poderá acessá-los."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Onde meus dados são armazenados?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No seu dispositivo e no iCloud. Esta aplicação usa a mesma tecnologia do Apple Notas e Fotos para salvar e sincronizar seus dados entre dispositivos, o que significa que é muito confiável e seguro."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Alguém mais pode ver meus dados privados?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. Os dados vivem apenas no seu dispositivo e no iCloud, que funciona em servidores gerenciados pela Apple."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Por que meus dados precisam ser salvos no iCloud?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "O iCloud permite que seus dados sejam armazenados em backup e sincronizados entre seus dispositivos. Assim, se você perder seu telefone ou trocar por um novo, seus dados podem ser restaurados do iCloud."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Por que meus dados não estão sincronizando entre meus dispositivos?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Seus dados devem ser sincronizados automaticamente entre seus dispositivos. Certifique-se de que:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Preciso de uma assinatura para cada dispositivo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. Uma subscrição desbloqueia as funcionalidades premium em todos os dispositivos com sessão iniciada na mesma conta iCloud. Se o premium não aparecer noutro dispositivo, vá a Definições > Subscrição (ou o equivalente na aplicação) e prima Restaurar Compra. Certifique-se de que todos os dispositivos têm sessão iniciada na mesma conta iCloud."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como funcionam os Backups?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Os backups são feitos automaticamente toda semana por padrão (embora você possa desativar isso nas Definições). Você também pode criar backups manuais em Definições > Dados."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Quantos backups são feitos? Devo excluí-los?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não há limite para o número de backups feitos. Os backups podem acumular anos e geralmente ocupam muito pouco espaço, então excluí-los não fará muita diferença no armazenamento do seu dispositivo. Se você precisar liberar espaço, é melhor excluir arquivos mais pesados no seu dispositivo, como fotos e vídeos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Os backups são sincronizados com o iCloud?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Atualmente, os backups não são sincronizados no iCloud, mas seus dados atuais sim. Isso significa que se você comprar um novo iPhone ou iPad, seus dados atuais aparecerão lá também, mas não seus backups, pois cada dispositivo mantém seus próprios backups locais. Isso significa que, por exemplo, se você excluir um registo no seu iPhone e ele sumir do iCloud e do seu telefone, você ainda poderia ir ao seu iPad e restaurar a partir de um dos snapshots de backup mais antigos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Preciso de uma conta para usar esta aplicação?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. Você pode usá-lo imediatamente sem precisar fazer login ou cadastro. O aplicação usa sua conta do iCloud para sincronizar automaticamente seus dados com outros dispositivos, usando a infraestrutura da Apple. Isso significa que é rápido, confiável e seguro."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso usar esta aplicação tanto no meu iPhone quanto no iPad?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim, e seus dados são sincronizados automaticamente entre eles se estiverem conectados à mesma conta do iCloud. Na versão para iPad, você tem mais espaço para notas e pode ver mais itens."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Existe uma versão para Mac da aplicação?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. O aplicação está disponível para Macs com Apple Silicon (M1 em diante). Na aplicação para Mac, você pode redimensionar a janela para ver mais dados em ecrãs maiores. Você pode descarregar a aplicação para Mac aqui no seu Mac M1 ou posterior."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Gostaria de sugerir um recurso ou melhoria para a aplicação.",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Adoraríamos ouvir seu feedback. Envie um e-mail para feedback@feeltracker.com."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso desligar o som?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. Vá para a aba Definições e desative o controle deslizante ao lado de Ativar Efeitos Sonoros."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para que serve a aba Tendências?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tendências permite que você identifique o que está na sua mente, por quê e o efeito que está tendo em você. Role para baixo para mais detalhes e alguns exemplos de como as Tendências funcionam no seu aplicação."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Por que não vejo nada em Tendências?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Para que as Tendências funcionem, você precisa fazer anotações quando salvar registos. Você pode fazer isso em qualquer registo no campo Notas."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para que serve a aba Estatísticas?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Atualmente, mostra todos os registos entre 2 datas e uma média/total nesse intervalo. Isso permite que você obtenha uma média/total para qualquer período."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Qual é a diferença entre Diário, Tendências e Estatísticas?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Diário é a seção principal de registo que permite inserir dados e visualizá-los mensalmente/anualmente/por toda a vida, com médias e totais. Tendências permite identificar padrões nos dados que você está registrando no Diário para que você possa agir sobre eles. Estatísticas permite ver seus dados em ordem cronológica (item mais recente primeiro) sem agrupamento mensal ou anual, e permite ver médias e totais entre quaisquer duas datas."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Devo fazer logout ou desligar para economizar memória e bateria do telefone?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não há necessidade de fazer logout — o dispositivo automaticamente descarrega aplicações/recursos da memória conforme necessário. iPhones e iPads modernos têm muita memória eficiente em termos de energia, então as aplicações podem permanecer na memória por muito tempo sem efeitos adversos. O acesso a esta memória é seguro e já está protegido por Face ID, Touch ID ou código de acesso. Se você quiser fechar uma aplicação mesmo assim (por exemplo, se ele ficou sem responder), pode seguir as instruções da Apple aqui. Também não há necessidade de fazer login, pois a aplicação usa sua conta do iCloud para sincronizar/fazer backup de dados entre seus dispositivos automaticamente, semelhante ao funcionamento das aplicações Fotos e Notas, sem exigir que dados pessoais identificáveis sejam compartilhados."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Se eu não fizer logout, é seguro?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. Assim que você pressionar o botão lateral do dispositivo para bloqueá-lo como normalmente faz, ninguém poderá acessar seu aplicação ou dados enquanto estiver bloqueado."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "A aplicação mostra anúncios?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. As aplicações Feeltracker não mostram anúncios de terceiros e não utilizam redes de publicidade nem SDKs de rastreamento de anúncios (como o AdMob). Os seus dados pessoais e de saúde nunca são partilhados com anunciantes. As aplicações são financiadas inteiramente por subscrições premium opcionais e compras avulsas na App Store."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Existe uma versão gratuita?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. Todas as funcionalidades principais são gratuitas para todos — entradas ilimitadas, gráficos e tendências, sincronização com a Apple Saúde, exportação PDF/CSV/Excel/JSON, Digitalização por IA, e um conjunto de funcionalidades de IA para uso diário que podes usar gratuitamente todos os dias. Uma subscrição Pro opcional desbloqueia as funcionalidades de IA mais completas (Investigação Aprofundada, Resumo para o Médico, Detetive de Padrões, Chat Pro e mais), executa-as na nossa IA mais avançada e aumenta os generosos limites diários."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para que serve a minha subscrição?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A sua subscrição financia o desenvolvimento contínuo — novas funcionalidades, correções de erros, traduções e custos de servidor para funcionalidades opcionais de IA. Como não mostramos anúncios, as subscrições e compras avulsas são a única forma de financiarmos a aplicação, e mantêm a experiência limpa e privada para todos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Por que devo assinar? Por que não posso pagar apenas uma vez?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Uma pequena taxa de assinatura regular torna a aplicação mais fácil de experimentar sem um grande custo inicial. A longo prazo, a receita de assinaturas nos ajuda a manter a aplicação e financia o desenvolvimento de novos recursos úteis."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Há algo que eu possa fazer para apoiar esta aplicação?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Dependemos de boas avaliações para expandir a aplicação e continuar desenvolvendo novos recursos. Por favor, deixe uma avaliação seguindo o link do seu aplicação:"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Quero cancelar minha assinatura paga",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Obrigado por experimentar a aplicação. Me avise se há algo que eu possa melhorar em gs@feeltracker.com e tentarei ajudar. Frequentemente, correções e melhorias baseadas no feedback dos usuários são enviadas em uma atualização da aplicação no mesmo dia ou no dia seguinte. Se ainda não estiver satisfeito, você pode cancelar sua assinatura aqui."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "A aplicação recolhe o meu nome, data de nascimento ou género?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Só se optares por guardá-los. Podes preencher opcionalmente um pequeno perfil (nome, data de nascimento, género) para personalizar a experiência — é totalmente opcional e as funcionalidades principais de registo funcionam sem ele. Quando fornecidos, os dados do perfil ficam no teu dispositivo e na tua própria iCloud, nunca nos nossos servidores."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como são utilizados os dados do meu perfil?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Se utilizar uma funcionalidade de IA opcional (como chat, insights ou feedback personalizado), a aplicação pode incluir as partes relevantes do seu perfil com o pedido — normalmente o seu primeiro nome, idade (calculada a partir da data de nascimento) e género — para que a IA possa fornecer respostas mais relevantes (por exemplo, orientações de saúde adequadas à idade ou os pronomes corretos). Isto só acontece quando utiliza ativamente uma funcionalidade de IA. Pode editar ou limpar o seu perfil, ou desativar as funcionalidades de IA, a qualquer momento."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Que serviços de IA utiliza a aplicação?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "As aplicações utilizam três tipos de IA, todos opcionais e a pedido: 1. IA no dispositivo (Natural Language API da Apple) para coisas como pontuação de sentimentos — funciona inteiramente no seu dispositivo, sem enviar dados. 2. Apple Intelligence em dispositivos compatíveis — processada no dispositivo sempre que possível, e via Private Cloud Compute da Apple para tarefas mais pesadas. A Apple não armazena nem vê os seus dados, e estes não são utilizados para treinar os modelos da Apple. 3. OpenAI API para chat, insights e feedback personalizado — utilizada apenas quando a aciona ativamente. Apenas os dados relevantes (e, se guardados, um contexto limitado do perfil) são enviados. A OpenAI não utiliza dados da API para treinar os seus modelos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "O Apple Health é obrigatório?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não. A integração com o Apple Health é completamente opcional. As aplicações funcionam totalmente sem ele — pode introduzir leituras manualmente, usar a Digitalização por Câmara com IA ou importar CSVs. Quando o ativar, pode escolher que tipos de dados a aplicação pode ler ou escrever e revogar o acesso a qualquer momento nas Definições do iOS."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como elimino os meus dados?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tem o controlo: - Elimine entradas individuais deslizando sobre elas. - Elimine o seu perfil (nome, data de nascimento, género) a qualquer momento no ecrã de perfil da aplicação. - Elimine todos os dados da aplicação de uma vez nas definições da aplicação. - Remover a aplicação e a sua cópia de segurança do iCloud nas Definições do iOS apaga tudo. Como não guardamos uma cópia nos nossos servidores, não há nada extra para eliminarmos por si."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso utilizar a IA sem enviar os meus dados para a nuvem?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. A aplicação inclui uma opção Apple Intelligence que executa a IA inteiramente no dispositivo utilizando os Foundation Models da Apple — nada é enviado para os nossos servidores nem para o OpenAI. Requer um dispositivo Apple Silicon suportado (iPhone 15 Pro ou série iPhone 16 e posteriores, iPad e Mac com Apple Silicon) e uma conta Feeltracker paga, que lhe dá utilização ilimitada de IA no dispositivo. Pode alternar entre IA no dispositivo e IA na nuvem nas definições de IA da aplicação a qualquer momento."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "O aplicação se conecta ao meu monitor de pressão arterial via Bluetooth?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não, a app não se liga diretamente a monitores de pressão arterial via Bluetooth. Em vez disso, concentrámo-nos em tornar o registo manual sem esforço através da tecnologia de digitalização por IA com a câmara. Basta apontar a câmara do iPhone para o ecrã do teu monitor depois de fazeres uma leitura, e a app lê automaticamente os números. Isto funciona com praticamente qualquer monitor de pressão arterial com ecrã digital, independentemente da marca ou modelo. Não é necessário emparelhamento, não precisas de te preocupar com a compatibilidade de dispositivos específicos, e demora apenas alguns segundos. A digitalização por câmara é sempre gratuita e ilimitada para todos, com um subsídio diário generoso."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como funciona o Escaneamento por Câmera com IA?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Após fazer sua leitura de pressão arterial, abra a aplicação e toque no botão \"+\", depois selecione \"Escanear com Câmera\". Segure seu telefone firme a cerca de 15-30 cm de distância da ecrã do seu monitor, certificando-se de que os números estejam claramente visíveis e bem iluminados. O aplicação lerá automaticamente os valores sistólico, diastólico e de pulso. Para melhores resultados, garanta boa iluminação e mantenha o telefone firme durante o escaneamento. Isso funciona com a maioria dos monitores digitais, incluindo as marcas OMRON, Microlife e Beurer."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Por que estou vendo entradas duplicadas?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Isso geralmente é causado pela configuração de sincronização com o Apple Health. O problema mais comum é ter apenas permissões de escrita habilitadas para o Apple Health, mas não permissões de leitura. Para corrigir: Vá para Ajustes > Dados > Apple Health e certifique-se de que AMBAS as permissões de leitura E escrita estejam habilitadas para Pressão Arterial e Frequência Cardíaca - não apenas escrita. O aplicação precisa da permissão de leitura para verificar se uma leitura já existe antes de importar do Health."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Posso monitorar leituras de vários membros da família?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Um recurso de etiquetas está chegando nos próximos meses que permitirá monitorar leituras de várias pessoas em um único dispositivo. Você poderá etiquetar cada entrada com o nome de uma pessoa e depois gerar relatórios individuais para cada membro da família."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Meus dados não estão sincronizando entre meu iPhone e iPad. Por quê?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Primeiro, certifique-se de que você está conectado à mesma conta do iCloud em ambos os dispositivos. Vá para Ajustes > [Seu Nome] e verifique o Apple ID. Segundo, verifique se o iCloud Drive está habilitado em ambos os dispositivos (Ajustes > [Seu Nome] > iCloud > iCloud Drive). Seus dados são sincronizados automaticamente pelo iCloud, mas isso requer uma conexão com a internet e pode levar alguns minutos. Tente abrir a aplicação em cada dispositivo e puxar para baixo para atualizar."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "O que a assinatura inclui? O que é gratuito?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Todas as funcionalidades principais são gratuitas para todos — entradas ilimitadas, digitalização por IA com a câmara, todos os gráficos e tendências, sincronização com a Apple Saúde, e exportações PDF/CSV/Excel/JSON — e todos os utilizadores recebem funcionalidades de IA verdadeiras e gratuitas todos os dias, incluindo Faz uma Pergunta, Chat Rápido, Resumo por Voz e versões rápidas dos relatórios. A subscrição Pro opcional desbloqueia as funcionalidades de IA completas e mais aprofundadas (Investigação Aprofundada, Resumo para o Médico, Detetive de Padrões, Chat Pro, Chat por Voz e mais), executa-as na nossa IA mais avançada e aumenta os generosos limites diários. As apps nunca mostram anúncios, quer subscrevas ou não."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "O que é PAM e devo monitorá-la?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "PAM (Pressão Arterial Média) representa a pressão média nas suas artérias durante um ciclo cardíaco. É calculada automaticamente para cada leitura. A PAM é particularmente importante para pacientes com DAVA (Dispositivo de Assistência Ventricular Esquerda) e outros com condições cardiovasculares específicas. Para habilitar a exibição da PAM, vá para Ajustes > Pressão Arterial > Mostrar Pressão Arterial Média (PAM). Faixas personalizáveis de PAM estão chegando na versão 2.8.x."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como uso modelos de notas para economizar tempo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ao inserir uma nota (como \"Leitura matinal - antes da medicação\"), toque no botão \"Modelo\" no canto inferior esquerdo do campo de notas e salve-a como modelo. Na próxima vez que fizer uma leitura, toque em \"Modelo\" novamente e selecione entre seus modelos salvos - o texto é inserido instantaneamente. Isso é ótimo para notas recorrentes como \"Manhã - pré-medicação\" ou \"Noite - após o jantar\"."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Qual pressão arterial é alta ou baixa demais?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sua pressão arterial normalmente deve estar entre 90-140 para o valor sistólico e 60-90 para o valor diastólico. Se estiver fora dessa faixa, você deve consultar um médico."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Qual é a pressão arterial ideal?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De acordo com o NHS, a pressão arterial ideal está entre 90/60 mmHg e 120/80 mmHg. No entanto, isso pode variar dependendo do sexo, idade e outras variáveis. Portanto, é melhor consultar seu médico local para uma avaliação precisa da sua pressão arterial com base nas suas circunstâncias individuais."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como meço minha pressão arterial?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A pressão arterial é medida usando um monitor digital de pressão arterial. Aqui você encontra monitores de pressão arterial que funcionam muito bem com o recurso Camera Scan AI. O aplicação pode ler automaticamente os valores da maioria dos monitores digitais, incluindo as marcas OMRON, Microlife e Beurer."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para que servem as Tendências?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Com as Tendências, esta aplicação pega seus dados e notas e mostra o que afeta você e como. Por exemplo, você poderia ver que meditou 20 vezes no último ano e que a meditação diminui sua pressão arterial. Por outro lado, você poderia ver que toda vez que encontra o Roberto, vocês discutem, e ele aumenta sua pressão arterial. Quanto mais você usar notas, mais úteis as Tendências podem ser."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pode explicar as Tendências com um exemplo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Por exemplo, você corre 10 vezes. 5 vezes, sua pressão arterial cai 10 pontos, e nas outras vezes cai 5. As Tendências mostrarão que, em média, correr ajuda a reduzir sua pressão arterial em cerca de 7,5 pontos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para que servem as Tendências?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Com as Tendências, esta aplicação pega seus dados e notas e mostra o que afeta você e como. Por exemplo, você poderia ver que encontrou a Maria 20 vezes no último ano e que, em média, a Maria te faz muito feliz. Por outro lado, você poderia ver que toda vez que encontra o Roberto, vocês discutem, e ele te faz infeliz. Quanto mais você usar notas, mais úteis as Tendências podem ser."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pode explicar as Tendências com um exemplo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Por exemplo, você encontra a Maria 10 vezes. 5 vezes ela te fez muito feliz (+2) e 5 vezes ela te fez relativamente feliz (+1). As Tendências mostrarão que, em média, a Maria te faz bastante (+1,5) feliz."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para que servem as Tendências?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Com as Tendências, esta aplicação pega seus dados e notas e mostra quais palavras estão mais na sua mente. Por exemplo, você poderia ver que usou uma palavra 20 vezes no último ano. Por outro lado, você poderia ver que usou outra palavra 50 vezes - com muito mais frequência. Quanto mais você usar notas, mais úteis as Tendências podem ser."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pode explicar as Tendências com um exemplo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Por exemplo, você escreve sobre a Maria 120 vezes nas suas notas, mais do que sobre seu trabalho, sobre o qual você escreve 50 vezes. Nesse caso, as Tendências mostram que claramente a principal coisa na sua mente era a Maria."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para que servem as Tendências?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Com as Tendências, esta aplicação pega seus dados e notas e mostra o que afeta você e como. Por exemplo, você poderia ver que bebeu muito café na última semana e que por causa disso dormiu menos. Por outro lado, você poderia ver que toda vez que come salada ou vai à academia, você dorme melhor. Quanto mais você usar notas, mais úteis as Tendências podem ser."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pode explicar as Tendências com um exemplo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Por exemplo, você bebe café 10 vezes. 5 dessas vezes, dormiu 2 horas a menos, e nas outras 5 dormiu 1 hora a menos. As Tendências mostrarão que, em média, beber café faz com que você durma 1,5 hora a menos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Para que servem as Tendências?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Com as Tendências, esta aplicação pega seus dados e notas e mostra o que afeta você e como. Por exemplo, você poderia ver que comeu fast food 20 vezes no último ano e que, ao longo do tempo, você ganha peso quando come fast food. Por outro lado, você poderia ver que toda vez que come salada ou vai à academia, você perde peso. Quanto mais você usar notas, mais úteis as Tendências podem ser."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Pode explicar as Tendências com um exemplo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Por exemplo, você come donuts 10 vezes. 5 vezes, seu peso sobe 0,1kg. Nas outras 5 vezes, seu peso sobe 0,3kg. As Tendências mostrarão que, em média, comer donuts faz seu peso subir 0,2kg."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Como meço a gordura corporal?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A Gordura Corporal é medida por balanças especiais que medem a composição corporal, além do peso. Aqui está um exemplo de uma dessas balanças, da Omron. Haverá outras opções disponíveis de outras marcas - o que procurar é \"Composição Corporal\" além de balança. Observe também que mesmo se você inserir apenas o peso, ainda verá um valor de IMC (à esquerda do peso, com código de cores), que dará uma indicação ampla de se você está com um peso saudável (onde verde é bom e vermelho é acima do peso)."
+                      }
+                }
+          ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -152,7 +688,7 @@
 
             <a href="/pt/daily-journal/">Diário Pessoal</a>
 
-            <a href="/pt/mental-health/">Saúde Mental</a>
+            <a href="/pt/mood-tracker/">Saúde Mental</a>
 
             <a href="/pt/sleep/">Sono</a>
 
@@ -237,6 +773,7 @@
 </nav>
 
 
+<main>
 <h1>Perguntas Frequentes</h1>
 
 
@@ -249,7 +786,7 @@
 
     <p>
 
-        <img src="/images/add_new.jpg" class="screenshot">
+        <img src="/images/add_new.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -267,9 +804,9 @@
 
     <p>
 
-        <img src="/images/delete_swipe.jpg" class="screenshot-small padded10">
+        <img src="/images/delete_swipe.jpg" class="screenshot-small padded10" alt="" loading="lazy" decoding="async">
 
-        <img src="/images/delete_trashcan.jpg" class="screenshot-small padded10">
+        <img src="/images/delete_trashcan.jpg" class="screenshot-small padded10" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -288,7 +825,7 @@
 
     <p>
 
-        <img src="/images/printing_example_ios.jpg" class="screenshot">
+        <img src="/images/printing_example_ios.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -300,7 +837,7 @@
 
     <p>
 
-        <img src="/images/sharing_example.jpg" class="screenshot">
+        <img src="/images/sharing_example.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -312,7 +849,7 @@
 
     <p>
 
-        <img src="/images/hide_averages.jpg" class="screenshot">
+        <img src="/images/hide_averages.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -366,7 +903,7 @@
 
     <p>
 
-        <img src="/images/change_time_date.jpg" class="screenshot">
+        <img src="/images/change_time_date.jpg" class="screenshot" alt="" loading="lazy" decoding="async">
 
     </p>
 
@@ -407,7 +944,7 @@
       <li>O iCloud Drive está Ativado em todos os dispositivos (em Ajustes > Seu Nome > iCloud > iCloud Drive, como mostrado abaixo.</li>
 
 
-      <p><img src="/images/icloud_on.png" class="screenshot"></p>
+      <p><img src="/images/icloud_on.png" class="screenshot" alt="" loading="lazy" decoding="async"></p>
 
     </ul>
 
@@ -758,6 +1295,7 @@
 <p>Se você tiver quaisquer dúvidas ou sugestões, não hesite em nos contatar em <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a>.</p>
 
 
+</main>
 
     <!-- Footer -->
     <footer>

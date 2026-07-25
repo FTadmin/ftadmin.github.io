@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -380,7 +381,7 @@
 
             <a href="/ja/daily-journal/">日記</a>
 
-            <a href="/ja/mental-health/">メンタルヘルス</a>
+            <a href="/ja/mood-tracker/">メンタルヘルス</a>
 
             <a href="/ja/sleep/">睡眠</a>
 
@@ -465,9 +466,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/WT_1024.png" alt="体重＆食事アプリアイコン" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/WT_1024.png" alt="体重＆食事アプリアイコン" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>体重＆食事</h1>
 
         <div class="privacy-badge">
@@ -475,12 +477,12 @@
         </div>
         <p class="hero-subtitle">インテリジェントな体重管理でフィットネス目標を達成しましょう。カメラスキャンAIで体重計の数値を読み取り、体重、BMI、体脂肪率をAIインサイトで管理。何が効果的で何がそうでないかを可視化します。</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="App Storeで体重＆食事をダウンロード"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="App Storeで体重＆食事をダウンロード" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">基本機能無料（プレミアム機能はオプション）<br>iPhone、iPad、Mac対応 • iOS 16.0以降</p>
 
         <div class="works-with-health works-with-health--hero">
-            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="/images/apple-health/en.svg" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 
     </section>
@@ -493,15 +495,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/wt-1.png" alt="体重＆食事 スクリーンショット1" class="screenshot-img">
+                <img src="/images/screenshots/wt-1.png" alt="体重＆食事 スクリーンショット1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-2.png" alt="体重＆食事 スクリーンショット2" class="screenshot-img">
+                <img src="/images/screenshots/wt-2.png" alt="体重＆食事 スクリーンショット2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/wt-3.png" alt="体重＆食事 スクリーンショット3" class="screenshot-img">
+                <img src="/images/screenshots/wt-3.png" alt="体重＆食事 スクリーンショット3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -627,102 +629,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> 質問する</h4>
+                <h3><i class="fas fa-question-circle"></i> 質問する</h3>
                 <p>体重データについてのクイックQ&A — 健康に関する質問に即座に回答</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> チャット</h4>
+                <h3><i class="fas fa-comments"></i> チャット</h3>
                 <p>フィットネスの旅について、インタラクティブな対話と個別のアドバイスを受けられます。クイックチャットは毎日無料、Proチャットは最も高性能なAIでさらに深く対応</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> 音声サマリー</h4>
+                <h3><i class="fas fa-volume-up"></i> 音声サマリー</h3>
                 <p>体重トレンドの音声サマリーを聴取 — 移動中のインサイト確認に最適</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> 笑わせて</h4>
+                <h3><i class="fas fa-laugh"></i> 笑わせて</h3>
                 <p>記録データからパーソナライズされたユーモアで気分をリフレッシュ</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> リラックス</h4>
+                <h3><i class="fas fa-moon"></i> リラックス</h3>
                 <p>ストレスによる過食を軽減するためのAIガイド呼吸法とリラクゼーションエクササイズ</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-camera"></i> カメラスキャンAI</h4>
+                <h3><i class="fas fa-camera"></i> カメラスキャンAI</h3>
                 <p>体重計のディスプレイや食事をスキャンして即座に栄養分析を取得</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> ディープリサーチ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> ディープリサーチ <span class="ai-pro-badge">Pro</span></h3>
                 <p>体重データの包括的なAI分析と詳細なインサイト</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> パターン探偵 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> パターン探偵 <span class="ai-pro-badge">Pro</span></h3>
                 <p>体重とライフスタイル要因の隠れた相関関係を発見</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> 目標アシスタント <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> 目標アシスタント <span class="ai-pro-badge">Pro</span></h3>
                 <p>パターンに基づいたパーソナライズされたデータ駆動型の体重目標を取得</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> 医師向けサマリー <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> 医師向けサマリー <span class="ai-pro-badge">Pro</span></h3>
                 <p>医療機関受診用のプロフェッショナルな体重管理サマリーを生成</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> 診断書 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> 診断書 <span class="ai-pro-badge">Pro</span></h3>
                 <p>必要に応じた職場・学校向けのAI生成診断書</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> ストーリージェネレーター <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> ストーリージェネレーター <span class="ai-pro-badge">Pro</span></h3>
                 <p>あなたの体重管理の旅をクリエイティブで魅力的なストーリーに変換</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> テキストサマリー <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> テキストサマリー <span class="ai-pro-badge">Pro</span></h3>
                 <p>体重トレンドの共有可能なテキストメッセージサマリーを作成</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> パーソナルクイズ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> パーソナルクイズ <span class="ai-pro-badge">Pro</span></h3>
                 <p>データに基づいたAI生成の10問クイズで楽しく知識をテスト</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> テキスト読み上げ <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> テキスト読み上げ <span class="ai-pro-badge">Pro</span></h3>
                 <p>AIインサイトとサマリーを自然な音声で聴取</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> カスタム健康レポート <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> カスタム健康レポート <span class="ai-pro-badge">Pro</span></h3>
                 <p>進捗を追跡するための包括的でパーソナライズされたフィットネス文書を作成</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-utensils"></i> 食事プランナー <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-utensils"></i> 食事プランナー <span class="ai-pro-badge">Pro</span></h3>
                 <p>体重目標と食事の好みに基づいたパーソナライズされた週間食事プランを取得</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-dumbbell"></i> エクササイズプランナー <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-dumbbell"></i> エクササイズプランナー <span class="ai-pro-badge">Pro</span></h3>
                 <p>フィットネスレベルと目標に合わせたパーソナライズされたワークアウトルーティンを取得</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence（オンデバイス） <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence（オンデバイス） <span class="ai-pro-badge">Pro</span></h3>
                 <p>Appleのファウンデーションモデルを使用してAIをデバイス上でローカルに実行するプライバシー優先のオプション — iPhoneやiPad、Macの外にデータが出ることはありません。対応するApple Siliconデバイス（iOS 26以降）で、有料アカウントなら無制限にご利用いただけます。</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> ボイスチャット <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> ボイスチャット <span class="ai-pro-badge">Pro</span></h3>
                 <p>画面に触れずに、あなたのデータについてAIとハンズフリーで音声による対話ができます — 質問して、答えを聞くだけ</p>
             </div>
 
@@ -921,22 +923,22 @@
         <div class="related-apps-grid">
 
             <a href="/ja/blood-pressure/" class="related-app-card" aria-label="血圧">
-                <img src="/images/BPT_1024.png" alt="血圧" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="血圧" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">血圧</span>
             </a>
 
             <a href="/ja/daily-journal/" class="related-app-card" aria-label="日記">
-                <img src="/images/NT_1024.png" alt="日記" class="related-app-icon">
+                <img src="/images/NT_1024.png" alt="日記" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">日記</span>
             </a>
 
-            <a href="/ja/mental-health/" class="related-app-card" aria-label="メンタルヘルス">
-                <img src="/images/FT_1024.png" alt="メンタルヘルス" class="related-app-icon">
+            <a href="/ja/mood-tracker/" class="related-app-card" aria-label="メンタルヘルス">
+                <img src="/images/FT_1024.png" alt="メンタルヘルス" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">メンタルヘルス</span>
             </a>
 
             <a href="/ja/sleep/" class="related-app-card" aria-label="睡眠">
-                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">睡眠</span>
             </a>
 
@@ -949,9 +951,10 @@
         <h2>今日から体重管理を始めよう</h2>
         <p>体重＆食事でフィットネス目標を達成している数千人の仲間に加わりましょう</p>
         <a target="_blank" href="https://apps.apple.com/app/id799503787" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="体重＆食事をダウンロード"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="体重＆食事をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">

@@ -135,6 +135,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/nav.js"></script>
@@ -518,7 +519,7 @@
 
             <a href="/zh-Hant/daily-journal/" class="current">每日日記</a>
 
-            <a href="/zh-Hant/mental-health/">心理健康</a>
+            <a href="/zh-Hant/mood-tracker/">心理健康</a>
 
             <a href="/zh-Hant/sleep/">睡眠</a>
 
@@ -603,9 +604,10 @@
 </nav>
 
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="/images/NT_1024.png" alt="每日日記應用圖示" width="150" height="150" class="hero-logo app-icon">
+        <img src="/images/NT_1024.png" alt="每日日記應用圖示" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>每日日記</h1>
 
         <div class="privacy-badge">
@@ -613,7 +615,7 @@
         </div>
         <p class="hero-subtitle">您的私密空間，記錄每日反思、想法和回憶。自由書寫，配備AI情感分析、照片附件和智慧寫作模式洞察。</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hant-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hant-black.svg" alt="在App Store下載每日日記"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hant-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hant-black.svg" alt="在App Store下載每日日記" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">免費應用，含可選高階功能<br>iPhone、iPad和Mac · iOS 16.0+</p>
 
@@ -627,15 +629,15 @@
         <div class="screenshots-grid">
 
             <div>
-                <img src="/images/screenshots/nt-1.png" alt="每日日記截圖1" class="screenshot-img">
+                <img src="/images/screenshots/nt-1.png" alt="每日日記截圖1" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-2.png" alt="每日日記截圖2" class="screenshot-img">
+                <img src="/images/screenshots/nt-2.png" alt="每日日記截圖2" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
             <div>
-                <img src="/images/screenshots/nt-3.png" alt="每日日記截圖3" class="screenshot-img">
+                <img src="/images/screenshots/nt-3.png" alt="每日日記截圖3" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -766,102 +768,102 @@
         <div class="ai-features-grid">
 
             <div class="ai-feature">
-                <h4><i class="fas fa-question-circle"></i> 提問</h4>
+                <h3><i class="fas fa-question-circle"></i> 提問</h3>
                 <p>關於你日記條目的快速問答——即時獲得關於你寫作的答案</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comments"></i> 對話</h4>
+                <h3><i class="fas fa-comments"></i> 對話</h3>
                 <p>就你的寫日記歷程進行互動對話,獲得個人化建議。Quick Chat 每天免費;Pro Chat 在我們最強大的 AI 上深入探討</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-volume-up"></i> 語音摘要</h4>
+                <h3><i class="fas fa-volume-up"></i> 語音摘要</h3>
                 <p>收聽日記主題的音訊摘要——非常適合隨時隨地的反思</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-barcode-scan"></i> AI掃描</h4>
+                <h3><i class="fas fa-barcode-scan"></i> AI掃描</h3>
                 <p>掃描物品、檔案、收據或文字，透過AI描述即時建立日記條目</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-laugh"></i> 逗我笑</h4>
+                <h3><i class="fas fa-laugh"></i> 逗我笑</h3>
                 <p>從你的日記條目中獲得個性化幽默，為你的一天增添樂趣</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-moon"></i> 幫我放鬆</h4>
+                <h3><i class="fas fa-moon"></i> 幫我放鬆</h3>
                 <p>AI引導的呼吸和放鬆練習，幫助減輕壓力</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical-alt"></i> 深度研究 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical-alt"></i> 深度研究 <span class="ai-pro-badge">Pro</span></h3>
                 <p>對你的日記進行全面的AI分析，提供詳細洞察</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-search"></i> 模式偵探 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-search"></i> 模式偵探 <span class="ai-pro-badge">Pro</span></h3>
                 <p>發現日記條目中隨時間變化的隱藏主題和模式</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-bullseye"></i> 目標助手 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-bullseye"></i> 目標助手 <span class="ai-pro-badge">Pro</span></h3>
                 <p>基於你的日記模式獲得個性化的、資料驅動的生活目標</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-user-md"></i> 醫生摘要 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-user-md"></i> 醫生摘要 <span class="ai-pro-badge">Pro</span></h3>
                 <p>生成專業摘要，便於就醫時分享</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-medical"></i> 請假證明 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-medical"></i> 請假證明 <span class="ai-pro-badge">Pro</span></h3>
                 <p>在需要時為工作或學校生成AI病假條</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-book"></i> 故事生成器 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-book"></i> 故事生成器 <span class="ai-pro-badge">Pro</span></h3>
                 <p>將你的日記條目轉化為富有創意的、引人入勝的敘事</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-comment-alt"></i> 文字摘要 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-comment-alt"></i> 文字摘要 <span class="ai-pro-badge">Pro</span></h3>
                 <p>建立可分享的日記主題文字訊息摘要</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-graduation-cap"></i> 個人測驗 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-graduation-cap"></i> 個人測驗 <span class="ai-pro-badge">Pro</span></h3>
                 <p>透過有趣的AI生成的10題測驗測試你對自己資料的瞭解</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microphone"></i> 文字轉語音 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microphone"></i> 文字轉語音 <span class="ai-pro-badge">Pro</span></h3>
                 <p>用自然語音播放收聽你的AI洞察和摘要</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-file-invoice"></i> 定製健康報告 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-file-invoice"></i> 定製健康報告 <span class="ai-pro-badge">Pro</span></h3>
                 <p>建立全面的、個性化的文件來追蹤你的日記進度</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-tags"></i> 主題探索器 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-tags"></i> 主題探索器 <span class="ai-pro-badge">Pro</span></h3>
                 <p>透過AI驅動的主題分析發現你寫作中反覆出現的話題和想法</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-chart-line"></i> 情感時間線 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-chart-line"></i> 情感時間線 <span class="ai-pro-badge">Pro</span></h3>
                 <p>透過AI分析的情感追蹤視覺化你的情感歷程</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-microchip"></i> Apple Intelligence（裝置端） <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-microchip"></i> Apple Intelligence（裝置端） <span class="ai-pro-badge">Pro</span></h3>
                 <p>注重隱私的選項,使用 Apple 的 Foundation Models 在你的裝置上本機執行 AI——完全不離開你的 iPhone、iPad 或 Mac。付費帳戶在支援的 Apple Silicon 裝置上可無限使用(iOS 26 以上)。</p>
             </div>
 
             <div class="ai-feature">
-                <h4><i class="fas fa-headset"></i> 語音對話 <span class="ai-pro-badge">Pro</span></h4>
+                <h3><i class="fas fa-headset"></i> 語音對話 <span class="ai-pro-badge">Pro</span></h3>
                 <p>免動手、雙向的語音對話,就你的數據與 AI 交流——提出問題並聽取回答,完全不用觸碰螢幕</p>
             </div>
 
@@ -1184,22 +1186,22 @@
         <div class="related-apps-grid">
 
             <a href="/zh-Hant/blood-pressure/" class="related-app-card" aria-label="血壓">
-                <img src="/images/BPT_1024.png" alt="血壓" class="related-app-icon">
+                <img src="/images/BPT_1024.png" alt="血壓" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">血壓</span>
             </a>
 
-            <a href="/zh-Hant/mental-health/" class="related-app-card" aria-label="心理健康">
-                <img src="/images/FT_1024.png" alt="心理健康" class="related-app-icon">
+            <a href="/zh-Hant/mood-tracker/" class="related-app-card" aria-label="心理健康">
+                <img src="/images/FT_1024.png" alt="心理健康" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">心理健康</span>
             </a>
 
             <a href="/zh-Hant/sleep/" class="related-app-card" aria-label="睡眠">
-                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon">
+                <img src="/images/ST_1024.png" alt="睡眠" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">睡眠</span>
             </a>
 
             <a href="/zh-Hant/weight/" class="related-app-card" aria-label="體重">
-                <img src="/images/WT_1024.png" alt="體重" class="related-app-icon">
+                <img src="/images/WT_1024.png" alt="體重" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">體重</span>
             </a>
 
@@ -1212,9 +1214,10 @@
         <h2>今天就開始你的日記之旅</h2>
         <p>加入數千名正在發現每日反思益處的人</p>
         <a target="_blank" href="https://apps.apple.com/app/id1557699226" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hant-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hant-black.svg" alt="下載每日日記"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hant-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hant-black.svg" alt="下載每日日記" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
     <!-- Footer -->
     <footer>
         <div class="footer-links">
