@@ -7,7 +7,7 @@
   "data": {
     "meta": {
       "title": "Feeltracker | AI Health & Wellness Journal Apps for iOS",
-      "description": "AI health diary apps for iPhone, iPad & Mac — as featured in GQ. Track blood pressure, mood, weight, sleep & daily journal. Apple Health sync, AI insights, export for your doctor.",
+      "description": "Five AI health diary apps for iPhone, iPad and Mac, as featured in GQ. Track blood pressure, mood, weight, sleep and journaling with Apple Health sync.",
       "keywords": "health tracker app, blood pressure monitor, mood diary, weight tracker, sleep tracker, daily journal, AI health app, Apple Health integration, health diary, wellness tracker, mental health app, blood pressure app, weight loss app, sleep monitoring, journal app",
       "ogTitle": "Feeltracker | AI-Powered Health & Wellness Journal Apps",
       "ogDescription": "Track your health effortlessly with AI-powered diary apps — as featured in GQ. Blood pressure, mood, weight, sleep, and journaling. Sync with Apple Health and get personalized insights.",
@@ -288,6 +288,10 @@
             {
               "icon": "fas fa-chart-bar",
               "text": "Visual sleep charts and statistics"
+            },
+            {
+              "icon": "fas fa-cloud-moon",
+              "text": "Dream journal with free AI dream analysis every day"
             }
           ],
           "learnMoreText": "Learn More",
@@ -552,7 +556,8 @@
         {
           "icon": "fas fa-lightbulb",
           "title": "Daily Insights Banner",
-          "description": "Wake up to personalized AI-generated daily tips based on your last 30 entries - smart 10-15 word insights that help you understand your health patterns"
+          "description": "Wake up to personalized AI-generated daily tips based on your last 30 entries - smart 10-15 word insights that help you understand your health patterns",
+          "pro": true
         },
         {
           "icon": "fas fa-file-medical-alt",
@@ -604,8 +609,8 @@
         },
         {
           "icon": "fas fa-microphone",
-          "title": "Text-to-Speech",
-          "description": "Listen to your AI insights and summaries with natural voice playback - perfect for accessibility",
+          "title": "Spoken Feedback",
+          "description": "Hear a short spoken reaction each time you save an entry, read in the voice you choose - great for hands-free and accessible use",
           "pro": true
         },
         {
@@ -624,6 +629,17 @@
           "icon": "fas fa-headset",
           "title": "Voice Chat",
           "description": "Hands-free, two-way spoken conversations with the AI about your data — ask questions and hear answers without touching the screen",
+          "pro": true
+        },
+        {
+          "icon": "fas fa-bolt",
+          "title": "Quick Versions, Free Every Day",
+          "description": "Free users get a Quick version of the big reports every day, over the same data range: Quick Health Report, Quick Trigger Check, Quick Theme Explorer, Quick Meal Ideas, and Quick Dream Analysis in the Sleep app"
+        },
+        {
+          "icon": "fas fa-layer-group",
+          "title": "Pro Tools Built for Each App",
+          "description": "Pro MAP Report in Blood Pressure; Cognitive Reframing, Trigger Identifier and Sentiment Timeline in Mental Health; Theme Explorer in Daily Journaling; Pro Dream Analysis and CPAP Report in Sleep; Meal Planner and Exercise Planner in Weight",
           "pro": true
         }
       ]
@@ -748,12 +764,20 @@
       "title": "Common Questions",
       "items": [
         {
-          "question": "Do you show ads or track me?",
-          "answer": "**No.** We've completely removed all advertisements from all Feeltracker apps. We don't track you across other apps or websites, and we never sell your data to advertisers.\n\nYour data syncs via iCloud - just like Apple Notes and Photos. This means we don't need to know your email address, name, or any personal information. Your health data is stored on your devices and in your iCloud account, and it's completely private whether you use the free version or premium."
+          "question": "Do Feeltracker apps show ads or track me?",
+          "answer": "**No. Feeltracker apps show no ads, use no ad networks, and never sell your data.** We don't track you across other apps or websites (no IDFA or similar identifiers).\n\nYour entries stay on your device and sync through your own iCloud account, just like Apple Notes and Photos, so we never need your name or email address. The one exception is if you choose to use a cloud AI feature: the data that feature needs is sent to OpenAI to produce your answer, as explained in our [privacy policy](https://feeltracker.com/privacy/). You can switch AI to on-device Apple Intelligence or turn it off entirely."
         },
         {
-          "question": "Do I need a subscription?",
-          "answer": "No subscription is required. Every app is free to download, all tracking, charts, Apple Health sync, and exports are free, and every user gets real AI features free every day — with no ads, ever. An optional Pro subscription unlocks the most in-depth AI features (Deep Research, Pattern Detective, Doctor Summary, Pro Chat, and more), runs them on our most capable AI, and raises the generous daily limits."
+          "question": "Do I need a subscription to use Feeltracker?",
+          "answer": "**No — every Feeltracker app is free to download and free to use, with no ads.** All tracking, charts, trends, Apple Health sync, camera scanning, and PDF/CSV/Excel/JSON exports are free, and every user also gets real AI features free every day: Quick Chat, Ask a Question, Voice Summary, Make Me Laugh, Calm Me Down, and a daily Quick version of the bigger reports.\n\nAn optional Pro subscription unlocks the full-depth AI features — Deep Research, Pattern Detective, Goal Assistant, Doctor Summary, Pro Chat, Voice Chat, Daily Insights, on-device Apple Intelligence, and the tools built for each app — and raises the daily limits."
+        },
+        {
+          "question": "What are the five Feeltracker apps?",
+          "answer": "**Feeltracker is a suite of five health-tracking apps for iPhone, iPad, and Mac, made by Custom Arts.** They are Blood Pressure (systolic, diastolic, pulse, and MAP), Mental Health (a 5-point mood scale with triggers and sentiment), Daily Journaling (notes, photos, and recurring themes), Sleep (sleep and wake times, plus a dream journal), and Weight (weight, body fat, and BMI).\n\nEach app works on its own, shares the same privacy model, and syncs through your own iCloud account. Use one or use all five."
+        },
+        {
+          "question": "Which devices do Feeltracker apps work on?",
+          "answer": "**Feeltracker apps run on iPhone and iPad with iOS 16.0 or later, and on Apple Silicon Macs (M1 and newer).** One purchase covers all your devices, and your entries sync automatically between them through your own iCloud account.\n\nApple Health integration is optional, and the on-device Apple Intelligence AI mode needs a device that supports Apple Intelligence on iOS 26 or later."
         }
       ]
     },
@@ -836,9 +860,10 @@
         "name": "Feeltracker",
         "url": "https://feeltracker.com",
         "logo": "https://feeltracker.com/images/feeltracker.png",
-        "description": "AI-powered health and wellness tracking apps for iOS",
+        "description": "Feeltracker is a suite of five AI-powered health tracking apps for iPhone, iPad and Mac — Blood Pressure, Mental Health, Daily Journaling, Sleep and Weight — made by Custom Arts. Free to use, with an optional Pro subscription; health data stays on the user's device and in their own iCloud account.",
         "sameAs": [
-          "https://x.com/feeltracker"
+          "https://x.com/feeltracker",
+          "https://apps.apple.com/developer/gaurav-sharma/id687448998"
         ],
         "contactPoint": {
           "@type": "ContactPoint",

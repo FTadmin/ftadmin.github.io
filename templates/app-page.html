@@ -47,9 +47,10 @@
 <body>
 {{> nav}}
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
-        <img src="{{hero.image}}" alt="{{hero.imageAlt}}" width="150" height="150" class="hero-logo app-icon">
+        <img src="{{hero.image}}" alt="{{hero.imageAlt}}" width="150" height="150" fetchpriority="high" decoding="async" class="hero-logo app-icon">
         <h1>{{hero.title}}</h1>
 {{#if hero.badge}}
         <p class="hero-badge">{{hero.badge}}</p>
@@ -59,12 +60,12 @@
         </div>
         <p class="hero-subtitle">{{hero.subtitle}}</p>
         <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{hero.ctaAlt}}"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{hero.ctaAlt}}" width="120" height="40" decoding="async"></picture>
         </a>
         <p class="hero-platform-info">{{mdi hero.platformInfo}}</p>
 {{#if supportsAppleHealth}}
         <div class="works-with-health works-with-health--hero">
-            <img src="{{lang.appleHealthBadge}}" alt="Works with Apple Health" class="apple-health-badge">
+            <img src="{{lang.appleHealthBadge}}" alt="Works with Apple Health" class="apple-health-badge" width="123" height="34" decoding="async">
         </div>
 {{/if}}
     </section>
@@ -84,7 +85,7 @@
         <div class="screenshots-grid">
 {{#each screenshots.items}}
             <div>
-                <img src="{{src}}" alt="{{alt}}" class="screenshot-img">
+                <img src="{{src}}" alt="{{alt}}" class="screenshot-img" width="1242" height="2688" loading="lazy" decoding="async">
             </div>
 {{/each}}
         </div>
@@ -126,7 +127,7 @@
         <div class="ai-features-grid">
 {{#each aiFeatures.items}}
             <div class="ai-feature">
-                <h4><i class="{{icon}}"></i> {{title}}{{#if pro}} <span class="ai-pro-badge">Pro</span>{{/if}}</h4>
+                <h3><i class="{{icon}}"></i> {{title}}{{#if pro}} <span class="ai-pro-badge">Pro</span>{{/if}}</h3>
                 <p>{{mdi description}}</p>
             </div>
 {{/each}}
@@ -219,7 +220,7 @@
         <div class="related-apps-grid">
 {{#each relatedApps}}
             <a href="{{url}}" class="related-app-card" aria-label="{{name}}">
-                <img src="{{iconSrc}}" alt="{{name}}" class="related-app-icon">
+                <img src="{{iconSrc}}" alt="{{name}}" class="related-app-icon" width="72" height="72" loading="lazy" decoding="async">
                 <span class="related-app-name">{{name}}</span>
             </a>
 {{/each}}
@@ -232,9 +233,10 @@
         <h2>{{cta.title}}</h2>
         <p>{{cta.subtitle}}</p>
         <a target="_blank" href="https://apps.apple.com/app/id{{appId}}" class="cta-button">
-            <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{cta.buttonAlt}}"></picture>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button store_button--lg" src="{{lang.appStoreBadge.black}}" alt="{{cta.buttonAlt}}" width="120" height="40" loading="lazy" decoding="async"></picture>
         </a>
     </section>
+</main>
 {{> footer}}
 
 {{> cookie-consent}}

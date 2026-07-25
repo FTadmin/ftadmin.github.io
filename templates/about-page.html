@@ -45,6 +45,7 @@
 <body>
 {{> nav}}
 
+<main>
     <!-- Hero Section -->
     <section class="hero center-text">
         <div class="hero-logo">{{hero.logoText}}</div>
@@ -88,7 +89,7 @@
 {{#each applications.apps}}
         <article class="about-app">
             <header class="about-app-header">
-                <img src="{{iconSrc}}" alt="{{name}}" class="about-app-icon">
+                <img src="{{iconSrc}}" alt="{{name}}" class="about-app-icon" width="80" height="80" loading="lazy" decoding="async">
                 <div class="about-app-title">
                     <h3>{{name}}</h3>
                     <div class="about-app-meta">
@@ -111,7 +112,7 @@
             <div class="about-app-cta">
                 <a href="{{learnMoreUrl}}" class="btn btn--ghost">{{learnMoreText}}</a>
                 <a target="_blank" href="https://apps.apple.com/app/id{{appStoreId}}" class="cta-button" aria-label="{{downloadText}}">
-                    <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadText}}"></picture>
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="{{lang.appStoreBadge.white}}"><img class="store_button" src="{{lang.appStoreBadge.black}}" alt="{{downloadText}}" width="120" height="40" loading="lazy" decoding="async"></picture>
                 </a>
             </div>
         </article>
@@ -223,6 +224,7 @@
     </section>
 
     </div>
+</main>
 
 {{> footer}}
 
