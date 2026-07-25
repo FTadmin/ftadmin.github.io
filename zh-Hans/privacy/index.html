@@ -240,9 +240,10 @@
         <h1>隐私政策</h1>
     </header>
     <div class="legal-intro">
-        <p>Custom Arts Ltd 将 Feeltracker 应用构建为一款免费增值应用。本服务由 Custom Arts Ltd 免费提供，旨在按原样使用。</p>
-<p>本页面用于告知访客我们在收集、使用和披露信息方面的政策（如有人决定使用我们的服务）。</p>
-<p>如果您选择使用我们的服务，则表示您同意按照本政策收集和使用相关信息。但是，Feeltracker 应用不会在我们的服务器上收集或存储任何个人身份信息（PII）。应用生成的所有数据均存储在您的设备本地或与您的个人 iCloud 账户同步。我们无法访问这些数据。</p>
+        <p>Custom Arts Ltd 将 Feeltracker 应用打造为一款免费增值（Freemium）应用。本SERVICE由Custom Arts Ltd免费提供，且按现状（as is）供使用。</p>
+<p>如果有人决定使用我们的服务，本页面旨在向访问者说明我们在信息收集、使用和披露方面的政策。</p>
+<p>如果你选择使用我们的服务，即表示你同意按照本政策收集和使用相关信息。不过，Feeltracker应用不会在我们的服务器上收集或存储任何可识别个人身份的信息（PII）。应用生成的所有数据都保存在你的设备本地，或与你的个人iCloud账户同步。我们无法访问这些数据。</p>
+<p>但有一个例外，而且很重要：如果你使用某项AI功能，该功能所需的数据会离开你的设备，并由OpenAI处理。云端AI在新安装时默认开启。下方的“OpenAI API”和“我们的服务器以及AI请求如何到达OpenAI”两节，准确说明了发送了什么内容、何时发送，以及保留多长时间。</p>
     </div>
 
 
@@ -271,7 +272,9 @@
     <section class="legal-section">
         <h2>日志数据</h2>
         <div class="legal-content">
-            <p>在应用发生错误或崩溃时，我们会通过 Firebase Crashlytics 等第三方服务收集日志数据。这些日志数据不包含个人身份信息，仅用于诊断和修复错误以提高应用性能。</p>
+            <p>当应用发生错误或崩溃时，诊断日志会发送给Firebase Crashlytics（Google），以便我们查找并修复故障。这些日志由应用本身写入，记录的是应用当时<em>在做什么</em>：打开了哪个屏幕、某次操作涉及多少条记录、一段文本有多长、哪一步出了问题。</p>
+<p><strong>这些日志不包含你的健康读数、日记文本，或你输入的任何其他内容。</strong>当某条日志需要引用你的内容时，它只会记录该内容的长度，仅此而已。原本可能包含个人细节的日志行，在离开设备之前会被编辑处理（去除相关信息）。</p>
+<p>崩溃报告还包含Crashlytics自动收集的技术信息，例如设备型号、操作系统版本，以及崩溃发生在我们代码中的位置。你可以在应用设置中关闭崩溃报告和分析功能，这将完全停止发送这些日志。</p>
         </div>
     </section>
 
@@ -285,14 +288,22 @@
     <section class="legal-section">
         <h2>服务提供商</h2>
         <div class="legal-content">
-            <p>我们可能会出于以下原因聘用第三方公司和个人：</p>
+            <p>出于以下原因，我们可能会聘用第三方公司和个人：</p>
 <ul>
- <li>协助提供我们的服务；</li>
- <li>代表我们提供服务；</li>
- <li>执行与服务相关的服务；或</li>
- <li>协助我们分析服务的使用方式。</li>
+ <li>为了促成我们的服务；</li>
+ <li>为了代表我们提供服务；</li>
+ <li>为了执行与服务相关的工作；或</li>
+ <li>为了协助我们分析我们的服务是如何被使用的。</li>
 </ul>
-<p>如上所述，这些第三方服务可能会收集非个人身份信息，但他们有义务不将这些信息披露或用于任何其他目的。</p>
+<p>我们使用的处理方包括：</p>
+<ul>
+ <li><strong>Google（Firebase Analytics、Firebase Crashlytics）</strong> — 使用情况分析与崩溃诊断。</li>
+ <li><strong>RevenueCat</strong> — 订阅与购买管理。</li>
+ <li><strong>OpenAI</strong> — 在你使用AI功能时处理AI请求（详见下方“OpenAI API”）。</li>
+ <li><strong>Render</strong> — 托管AI请求在到达OpenAI途中所经过的服务器（详见下方“我们的服务器以及AI请求如何到达OpenAI”）。</li>
+ <li><strong>Apple</strong> — iCloud同步、App Store购买，以及你使用时的Apple 智能。</li>
+</ul>
+<p>这些第三方服务受与我们签订的协议约束，不得将信息用于任何其他目的。</p>
         </div>
     </section>
 
@@ -321,9 +332,9 @@
     <section class="legal-section">
         <h2>个人资料信息（可选）</h2>
         <div class="legal-content">
-            <p>您可以选择在应用中保存一个包含您的<strong>姓名、出生日期和性别</strong>的简单个人资料。这完全是可选的——所有核心追踪功能无需它也能正常工作，您随时可以在应用内编辑或删除个人资料。</p>
-<p>个人资料信息的存储方式与其他数据相同：保存在您的设备上，如果您使用 iCloud，则保存在您的私人 iCloud 账户中。我们绝不会将其上传到服务器，也绝不会出于广告或营销目的与任何人共享。</p>
-<p>如果您选择使用 AI 功能（例如由 OpenAI 或 Apple Intelligence 提供支持的聊天、洞察或定制反馈），应用可能会将您个人资料的相关部分——通常是您的名字、年龄（根据出生日期推算）和性别——包含在请求中，以便 AI 提供更相关的回答，例如符合年龄的健康指导或正确的代词。这仅在您实际使用 AI 功能时发生，且只发送该请求所需的个人资料字段。您可以随时关闭 AI 功能或清除个人资料来停止此操作。</p>
+            <p>你可以选择在应用中保存一个简单的个人资料，包含你的<strong>姓名、出生日期和性别</strong>。这完全是可选的——所有核心记录功能在没有这些信息的情况下也能正常使用，你可以随时在应用内编辑或删除你的个人资料。</p>
+<p>个人资料信息的存储方式与你的其他数据相同：保存在你的设备上，如果你使用iCloud，则保存在你的私人iCloud账户中。我们绝不会将其上传到我们的服务器，也绝不会出于广告或营销目的与任何人共享。</p>
+<p>当某项AI功能运行时，应用会在请求中包含你个人资料的部分信息，以便AI能够调整其回复。<strong>如果你已保存姓名、（根据出生日期计算得出的）年龄和性别这些字段，发送这些信息的选项默认是开启的；</strong>你可以在应用的AI设置中分别单独关闭每一项。另外两个上下文选项——本地天气和你的睡眠时间表——默认<strong>关闭</strong>，只有在你主动开启后才会发送。如果你填写了自由文本形式的“附加背景信息”备注，只要该字段内容未清空，它就会随每次AI请求一同发送；清空该字段即可停止发送。</p>
         </div>
     </section>
 
@@ -337,22 +348,41 @@
     </section>
 
     <section class="legal-section">
-        <h2>Apple Intelligence（可选）</h2>
+        <h2>Apple 智能（可选）</h2>
         <div class="legal-content">
-            <p>在搭载兼容版本 iOS、iPadOS 或 macOS 的近期设备上，Feeltracker 应用可能会提供由 Apple Intelligence——Apple 内置 AI——支持的可选功能。这些功能仅在您选择使用时才会运行。</p>
-<p>Apple Intelligence 尽可能在您的设备上运行，较重的请求则使用 Apple 的 Private Cloud Compute 处理。在这两种情况下，Apple 表示您的数据不会被存储，Apple 无法查看，也不会用于训练 Apple 的模型。Custom Arts Ltd 不会接收、存储或查看任何 Apple Intelligence 请求或响应。</p>
-<p>有关详情，请参阅 <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apple 隐私政策</a>。</p>
+            <p>在搭载兼容版本iOS、iPadOS或macOS的较新设备上，Feeltracker应用可能会提供由Apple自带AI——Apple 智能提供支持的可选功能。这些功能仅在你在应用设置中选择将Apple 智能设为AI模式时才会运行。</p>
+<p>在此模式下，应用会调用Apple的设备端Foundation Models框架。该请求不会发送到我们的服务器，也不会发送到OpenAI：Custom Arts Ltd绝不会接收、存储或查看任何Apple 智能的请求或响应。Apple自身如何处理该请求，由Apple自己的政策规定。</p>
+<p>详情请参阅<a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apple隐私政策</a>。</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>OpenAI API（可选）</h2>
         <div class="legal-content">
-            <p>我们应用中的部分 AI 功能由 OpenAI API 可选驱动，可以分析您输入的内容（例如您向 AI 提出的问题、日记条目或特定数据）并返回反馈、建议或洞察。这些功能完全采用自愿加入制——您必须主动选择使用，并可以随时在应用内关闭。</p>
-<p>使用 AI 功能时，只有该请求所需的内容才会发送给 OpenAI：(a) 您的提示或问题；(b) 您询问的具体数据（例如您想要解释的血压或情绪数据）；(c) 如果您已保存个人资料，则会发送少量背景信息——通常是您的名字、年龄（根据出生日期推算）和性别——以便 AI 定制其回复（例如，适当的代词或与年龄相关的指导）。</p>
-<p>根据 OpenAI 的 API 政策，通过 API 发送的数据不会用于训练其模型，且仅为滥用检查保留短暂时间。我们不会在服务器上保留您的 AI 提示或响应——它们仅存在于您的设备上。</p>
-<p>您可以在此处阅读完整政策：<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI 隐私政策</a>。</p>
-<p>使用 AI 功能即表示您同意相关数据（包括您选择保存的任何个人资料详情）将被发送给 OpenAI 并依据其政策处理。请不要向 AI 输入任何您不愿意在这些条款下发送的内容。</p>
+            <p>我们应用中大多数AI功能均由OpenAI API提供支持。云端AI是新安装时的<strong>默认模式</strong>；你可以在应用的AI设置中切换到设备端的Apple 智能，或完全关闭AI。</p>
+<p><strong>发送的内容。</strong>根据功能不同，请求可能包含：</p>
+<ul>
+ <li>你在AI功能中输入的任何内容——你的问题，或你要求处理的文字段落。</li>
+ <li>该功能范围内的健康记录，以带有日期和时间的读数行呈现。<strong>这包括附加在这些记录上的自由文本备注和日记条目。</strong></li>
+ <li>上文“个人资料信息”中所述的个人资料与个性化上下文。</li>
+ <li>对于相机扫描功能，你拍摄的显示器或体重秤屏幕照片。</li>
+ <li>对于朗读（文字转语音）功能，正在朗读的文本，通常是关于你数据的AI回答。</li>
+</ul>
+<p><strong>发送时间。</strong>大多数AI功能仅在你打开并请求结果时运行。但有些不是这样：在云端AI开启期间，应用还会自行生成简短的个性化消息——每日洞察、生日或里程碑祝福、欢迎回来的问候——为此，它会在<strong>你打开应用或其“当日”视图时（无需你请求AI结果）</strong>，将你最近的一批记录（最多30条）和个人资料上下文发送给OpenAI。关闭AI或切换到Apple 智能会停止此行为。</p>
+<p><strong>按安装生成的标识符。</strong>每次安装都会生成一个随机标识符，并随每个请求一起发送给OpenAI，作为降低重复请求成本的缓存密钥。它不包含关于你的任何信息，也不会与你的姓名、账户或设备ID关联，但它是稳定的：这使OpenAI能够将来自同一次安装的所有请求相互关联，并且它会一直保留，直到应用被删除并重新安装。</p>
+<p><strong>OpenAI如何处理这些数据。</strong>OpenAI当前的API文档指出，除非你明确选择加入，否则发送给API的数据不会用于训练或改进OpenAI模型；滥用监控日志最多保留30天；通过Responses API创建的回复默认存储30天。我们的应用依赖这30天的存储，以便对话可以跨轮次继续，而无需重新上传，因此<strong>你的AI请求及其回复会被OpenAI保留最多30天</strong>。这些是OpenAI自身的默认设置，并非我们所能控制的承诺，OpenAI可能随时更改这些设置。当前版本载于<a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI的API数据控制文档</a>。</p>
+<p>你可以在此阅读完整政策：<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI隐私政策</a>。</p>
+<p>使用AI功能即表示你同意将相关数据（包括你选择保存的任何个人资料信息）发送给OpenAI，并依照其政策进行处理。请不要在AI中输入任何你不愿按这些条款发送的内容。</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>我们的服务器以及AI请求如何到达OpenAI</h2>
+        <div class="legal-content">
+            <p>AI 请求不会直接从你的设备发送到 OpenAI。它们会先经过我们运营的一台小型服务器，该服务器由 <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> 在美国托管。这是一项安全措施：它让我们的 OpenAI 密钥保存在这台服务器上，而不是留在应用内部——否则密钥可能被他人提取，并以你的名义发起请求。服务器会核实请求确实来自我们的某个应用，添加我们的密钥，然后将 OpenAI 的回复原样传回给你。</p>
+<p><strong>它不会存储你的请求或 AI 的回复。</strong>这些内容仅在传递的瞬间存在于内存中，从不写入磁盘。Custom Arts Ltd 没有任何人会读取它们。</p>
+<p>服务器确实保留的是我们 AI 花费的持续统计。针对每一次请求，它会记录日期和时间、来源应用及版本、所使用的功能和 AI 模型、账户是免费还是付费、处理的 token 或字符数量，以及估算成本。这些记录中不包含健康数据、消息文本，也不含任何能识别你身份的信息——没有账户、没有用户 ID、没有 IP 地址——因此无法追溯到具体个人。<strong>我们最多保留 30 天，之后即予删除。</strong></p>
+<p>服务器还会写入简短的运维日志，记录同样的信息以及每次请求的大小，但从不记录其内容。如果 OpenAI 返回错误，该错误消息会按 OpenAI 提供的原样被记录下来。</p>
         </div>
     </section>
 
@@ -371,7 +401,7 @@
  <li><strong>查看并导出您的数据。</strong>任何个人资料信息（姓名、出生日期、性别）、测量记录和日记内容都可以随时在应用内查看并导出为PDF、CSV、Excel或JSON文件。</li>
  <li><strong>修改内容。</strong>任何记录或个人资料字段都可以直接在应用内编辑。</li>
  <li><strong>删除。</strong>您可以在应用内删除任何单条记录、整个个人资料，或所有应用数据。在iOS"设置"中移除应用及其iCloud备份即可清除所有内容。由于我们不会在服务器上保留副本，因此没有其他需要我们代为删除的内容。</li>
- <li><strong>随时改变主意。</strong>可选功能 — Apple Health、Apple Intelligence、由OpenAI提供支持的AI功能，以及分析/崩溃报告 — 都可以在应用或iOS"设置"中单独关闭，不影响应用的其他部分。</li>
+ <li><strong>随时改变主意。</strong>可选功能 — Apple Health、Apple 智能、由OpenAI提供支持的AI功能，以及分析/崩溃报告 — 都可以在应用或iOS"设置"中单独关闭，不影响应用的其他部分。</li>
  <li><strong>停止处理。</strong>如果您不喜欢本政策中某项内容的运作方式，可以停止使用该功能或停止使用应用。</li>
 </ul>
 <p>这些权利适用于任何地方。它们符合欧盟/英国GDPR和加州CCPA/CPRA等法律。我们不出售您的个人信息，不在CCPA/CPRA意义上"共享"信息，也不将其用于跨站点行为广告。</p>
@@ -381,7 +411,7 @@
     <section class="legal-section">
         <h2>法律依据（欧盟/英国 GDPR）</h2>
         <div class="legal-content">
-            <p>在欧盟或英国 GDPR 适用的情况下，我们依据<strong>您的同意</strong>处理您自行开启的可选功能（Apple Health、Apple Intelligence、OpenAI 驱动的 AI 功能、用于定制 AI 的个人资料数据以及分析/崩溃报告），并依据我们维持应用正常运行、修复崩溃和防止滥用的<strong>合法利益</strong>进行相关处理。您可以随时通过关闭该功能撤回同意——此操作不影响之前已发生的处理。</p>
+            <p>在欧盟或英国 GDPR 适用的情况下，我们依据<strong>您的同意</strong>处理您自行开启的可选功能（Apple Health、Apple 智能、OpenAI 驱动的 AI 功能、用于定制 AI 的个人资料数据以及分析/崩溃报告），并依据我们维持应用正常运行、修复崩溃和防止滥用的<strong>合法利益</strong>进行相关处理。您可以随时通过关闭该功能撤回同意——此操作不影响之前已发生的处理。</p>
 <p>Custom Arts Ltd 是应用处理的个人数据的数据控制者。</p>
         </div>
     </section>
@@ -389,14 +419,21 @@
     <section class="legal-section">
         <h2>数据存储地点</h2>
         <div class="legal-content">
-            <p>您的个人数据和健康数据存储在您的设备上和您自己的 iCloud 账户中——由您自行管理。我们使用的部分可选第三方服务（Firebase、RevenueCat、OpenAI）由总部位于美国的提供商运营，可能会在那里处理部分数据。在需要时，它们依靠标准合同条款和/或欧盟-美国数据隐私框架将个人数据从欧盟/英国转移出去。如果您不希望任何数据被转移，可以关闭相应的可选功能。</p>
+            <p>你的个人数据和健康数据保存在你的设备以及你自己的iCloud账户中——由你自己掌控。我们使用的可选第三方服务（Firebase、RevenueCat、OpenAI）以及我们的AI请求所经过的服务器（由Render托管），均由总部位于美国的服务提供商运营，数据可能在当地被处理。在必要时，这些服务商会依据标准合同条款（SCC）和/或欧盟-美国数据隐私框架，将个人数据转移出欧盟/英国。如果你希望完全不转移你的任何数据，可以关闭相应的可选功能。</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>数据保留期限</h2>
         <div class="legal-content">
-            <p>我们不在服务器上保留应用数据的副本。您的数据在您安装应用且 iCloud 备份开启期间存储在您的设备和 iCloud 中。Firebase Crashlytics/Analytics 数据由 Google 按我们项目的默认保留期限保留；RevenueCat 在您拥有活跃订阅期间及税法要求的期限内保留购买/收据数据；OpenAI 按照其 API 数据使用政策保留 API 请求数据。关闭功能或删除应用将停止进一步收集。</p>
+            <p>我们不会在服务器上保留你的应用数据副本。只要你安装了应用并开启了 iCloud 备份，你的数据就会一直保存在你的设备和你的 iCloud 中。除此之外：</p>
+<ul>
+ <li><strong>OpenAI</strong> — 滥用监测日志最多保留 30 天，Responses API 的回复默认存储 30 天。我们的应用依赖这一存储机制来实现多轮对话。这些是 OpenAI 的默认设置，可能会发生变化；请参阅 <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI 的 API 数据控制文档</a>。</li>
+ <li><strong>我们自己的服务器</strong> — 不存储任何请求或回复内容。按请求生成的成本记录（日期、应用、功能、模型、token 数量、成本——不含健康数据，也不含用户标识符）最多保留 30 天，之后即予删除。</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> — 由 Google 按我们项目的默认保留期限保存。</li>
+ <li><strong>RevenueCat</strong> — 购买及收据数据会在你的订阅有效期内保留，并按税法要求的期限保留。</li>
+</ul>
+<p>关闭某项功能或删除应用会停止后续的数据收集。由于我们自己服务器保留的记录中不包含任何能识别你身份的信息，我们无法应请求在其中搜索或删除“你的”条目——因为记录中根本没有可以与你比对的信息。这些记录会在 30 天内自动失效清除。</p>
         </div>
     </section>
 

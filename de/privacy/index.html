@@ -240,9 +240,10 @@
         <h1>Datenschutzrichtlinie</h1>
     </header>
     <div class="legal-intro">
-        <p>Custom Arts Ltd hat die Feeltracker-App als Freemium-App entwickelt. Dieser DIENST wird von Custom Arts Ltd kostenlos bereitgestellt und ist zur Nutzung in der vorliegenden Form bestimmt.</p>
-<p>Diese Seite dient dazu, Besucher über unsere Richtlinien bezüglich der Erhebung, Nutzung und Offenlegung von Informationen zu informieren, falls sich jemand entscheidet, unseren Dienst zu nutzen.</p>
-<p>Wenn Sie sich entscheiden, unseren Dienst zu nutzen, stimmen Sie der Erhebung und Nutzung von Informationen im Zusammenhang mit dieser Richtlinie zu. Die Feeltracker-App erhebt oder speichert jedoch keine personenbezogenen Daten (PII) auf unseren Servern. Alle von der App generierten Daten werden lokal auf Ihrem Gerät gespeichert oder mit Ihrem persönlichen iCloud-Konto synchronisiert. Wir haben keinen Zugriff auf diese Daten.</p>
+        <p>Custom Arts Ltd hat die App Feeltracker als Freemium-App entwickelt. Dieser SERVICE wird von Custom Arts Ltd kostenlos zur Verfügung gestellt und ist zur Nutzung „wie besehen“ gedacht.</p>
+<p>Diese Seite dient dazu, Besucher über unsere Richtlinien zur Erhebung, Nutzung und Weitergabe von Informationen zu informieren, falls sich jemand für die Nutzung unseres Service entscheidet.</p>
+<p>Wenn du dich für die Nutzung unseres Service entscheidest, stimmst du der Erhebung und Nutzung von Informationen im Zusammenhang mit dieser Richtlinie zu. Die App Feeltracker erhebt oder speichert jedoch keinerlei personenbezogene Daten (PII) auf unseren Servern. Alle von der App erzeugten Daten werden lokal auf deinem Gerät gespeichert oder mit deinem persönlichen iCloud-Konto synchronisiert. Wir haben keinen Zugriff auf diese Daten.</p>
+<p>Es gibt eine Ausnahme, und sie ist wichtig: Wenn du eine KI-Funktion nutzt, verlassen die dafür benötigten Daten dein Gerät und werden von OpenAI verarbeitet. Cloud-KI ist bei einer Neuinstallation standardmäßig aktiviert. Die Abschnitte „OpenAI API“ und „Unser Server und wie KI-Anfragen OpenAI erreichen“ weiter unten legen genau fest, was gesendet wird, wann und wie lange es aufbewahrt wird.</p>
     </div>
 
 
@@ -271,7 +272,9 @@
     <section class="legal-section">
         <h2>Protokolldaten</h2>
         <div class="legal-content">
-            <p>Im Falle eines Fehlers oder Absturzes in der App erheben wir Protokolldaten über Drittanbieter-Dienste wie Firebase Crashlytics. Diese Protokolldaten enthalten keine personenbezogenen Informationen und werden ausschließlich zur Diagnose und Behebung von Fehlern verwendet, um die Leistung der App zu verbessern.</p>
+            <p>Wenn in der App ein Fehler auftritt oder sie abstürzt, werden Diagnoseprotokolle an Firebase Crashlytics (Google) gesendet, damit wir den Fehler finden und beheben können. Diese Protokolle werden von der App selbst erstellt und beschreiben, was die App gerade <em>tat</em>: welcher Bildschirm geöffnet war, wie viele Datensätze ein Vorgang betraf, wie lang ein Textabschnitt war, welcher Schritt fehlgeschlagen ist.</p>
+<p><strong>Sie enthalten weder deine Gesundheitswerte noch deinen Tagebuchtext oder irgendetwas anderes, was du eingegeben hast.</strong> Muss eine Protokollzeile sich auf deine Inhalte beziehen, wird nur deren Länge erfasst, sonst nichts. Protokollzeilen, die andernfalls persönliche Details enthalten würden, werden vor dem Verlassen des Geräts geschwärzt.</p>
+<p>Absturzberichte enthalten außerdem technische Informationen, die Crashlytics automatisch erfasst, etwa das Gerätemodell, die Betriebssystemversion und die Stelle in unserem Code, an der der Absturz aufgetreten ist. Du kannst Absturzberichte und Analysen in den Einstellungen der App deaktivieren, wodurch das Senden dieser Protokolle vollständig gestoppt wird.</p>
         </div>
     </section>
 
@@ -287,12 +290,20 @@
         <div class="legal-content">
             <p>Wir können Drittunternehmen und Einzelpersonen aus folgenden Gründen beauftragen:</p>
 <ul>
- <li>Um unseren Dienst zu erleichtern;</li>
- <li>Um den Dienst in unserem Auftrag bereitzustellen;</li>
- <li>Um dienstbezogene Leistungen zu erbringen; oder</li>
- <li>Um uns bei der Analyse der Nutzung unseres Dienstes zu unterstützen.</li>
+ <li>Um unseren Service zu erleichtern;</li>
+ <li>Um den Service in unserem Auftrag bereitzustellen;</li>
+ <li>Um Service-bezogene Dienstleistungen zu erbringen; oder</li>
+ <li>Um uns bei der Analyse der Nutzung unseres Service zu unterstützen.</li>
 </ul>
-<p>Diese Drittanbieter-Dienste können nicht personenbezogene Informationen wie oben beschrieben erheben, sind jedoch verpflichtet, die Informationen nicht für andere Zwecke offenzulegen oder zu verwenden.</p>
+<p>Die von uns eingesetzten Auftragsverarbeiter sind:</p>
+<ul>
+ <li><strong>Google (Firebase Analytics, Firebase Crashlytics)</strong> — Nutzungsanalyse und Absturzdiagnose.</li>
+ <li><strong>RevenueCat</strong> — Verwaltung von Abonnements und Käufen.</li>
+ <li><strong>OpenAI</strong> — verarbeitet KI-Anfragen, wenn du eine KI-Funktion nutzt (siehe „OpenAI API“ unten).</li>
+ <li><strong>Render</strong> — hostet den Server, über den KI-Anfragen auf ihrem Weg zu OpenAI laufen (siehe „Unser Server und wie KI-Anfragen OpenAI erreichen“ unten).</li>
+ <li><strong>Apple</strong> — iCloud-Synchronisierung, App-Store-Käufe und Apple Intelligence, sofern du es nutzt.</li>
+</ul>
+<p>Diese Drittanbieter-Dienste sind vertraglich an uns gebunden, die Informationen nicht für andere Zwecke zu verwenden.</p>
         </div>
     </section>
 
@@ -321,9 +332,9 @@
     <section class="legal-section">
         <h2>Profilinformationen (optional)</h2>
         <div class="legal-content">
-            <p>Du kannst optional ein kleines Profil in der App mit deinem <strong>Namen, Geburtsdatum und Geschlecht</strong> speichern. Das ist vollständig optional – alle wesentlichen Tracking-Funktionen funktionieren ohne, und du kannst dein Profil jederzeit in der App bearbeiten oder löschen.</p>
-<p>Profildetails werden genauso wie deine anderen Daten gespeichert: auf deinem Gerät und, wenn du iCloud verwendest, in deinem privaten iCloud-Konto. Wir laden sie niemals auf unsere Server hoch und geben sie niemals zu Werbe- oder Marketingzwecken weiter.</p>
-<p>Wenn du eine KI-Funktion nutzt (z. B. Chat, Einblicke oder personalisiertes Feedback von OpenAI oder Apple Intelligence), kann die App die relevanten Teile deines Profils mit der Anfrage senden – in der Regel deinen Vornamen, dein Alter (berechnet aus deinem Geburtsdatum) und dein Geschlecht –, damit die KI relevantere Antworten geben kann, z. B. altersgerechte Gesundheitshinweise oder die richtigen Pronomen. Dies geschieht nur, wenn du tatsächlich eine KI-Funktion nutzt, und es werden nur die für diese Anfrage benötigten Profilfelder gesendet. Du kannst KI-Funktionen deaktivieren oder dein Profil jederzeit löschen, um dies zu stoppen.</p>
+            <p>Du kannst optional ein kleines Profil in der App mit deinem <strong>Namen, Geburtsdatum und Geschlecht</strong> speichern. Das ist völlig freiwillig — alle zentralen Tracking-Funktionen funktionieren auch ohne, und du kannst dein Profil jederzeit in der App bearbeiten oder löschen.</p>
+<p>Profildaten werden genauso gespeichert wie deine übrigen Daten: auf deinem Gerät und, falls du iCloud nutzt, in deinem privaten iCloud-Konto. Wir laden sie niemals auf unsere Server hoch und geben sie nie zu Werbe- oder Marketingzwecken an Dritte weiter.</p>
+<p>Wenn eine KI-Funktion ausgeführt wird, bezieht die App Teile deines Profils in die Anfrage ein, damit die KI ihre Antwort anpassen kann. <strong>Das Senden deines Namens, Alters (berechnet aus deinem Geburtsdatum) und Geschlechts ist standardmäßig aktiviert</strong>, sofern du diese Felder gespeichert hast; du kannst jedes davon einzeln in den KI-Einstellungen der App deaktivieren. Zwei weitere Kontextoptionen — lokales Wetter und dein Schlafrhythmus — sind standardmäßig <strong>deaktiviert</strong> und werden nur gesendet, wenn du sie aktivierst. Ein frei formulierter „zusätzlicher Kontext“-Hinweis wird, falls du einen schreibst, mit jeder KI-Anfrage gesendet, solange das Feld ausgefüllt ist; leere das Feld, um das Senden zu stoppen.</p>
         </div>
     </section>
 
@@ -339,20 +350,39 @@
     <section class="legal-section">
         <h2>Apple Intelligence (optional)</h2>
         <div class="legal-content">
-            <p>Auf neueren Geräten mit einer kompatiblen Version von iOS, iPadOS oder macOS können die Feeltracker-Apps optionale Funktionen anbieten, die von Apple Intelligence – Apples integrierter KI – angetrieben werden. Diese laufen nur, wenn du sie nutzen möchtest.</p>
-<p>Apple Intelligence läuft soweit möglich auf deinem Gerät und verwendet Apples Private Cloud Compute für aufwendigere Anfragen. In beiden Fällen erklärt Apple, dass deine Daten nicht gespeichert werden, für Apple nicht sichtbar sind und nicht zum Training von Apples Modellen verwendet werden. Custom Arts Ltd empfängt, speichert oder sieht keine Apple Intelligence-Anfragen oder -Antworten.</p>
-<p>Weitere Details findest du in der <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinie von Apple</a>.</p>
+            <p>Auf aktuellen Geräten mit einer kompatiblen Version von iOS, iPadOS oder macOS bieten die Feeltracker-Apps möglicherweise optionale Funktionen, die auf Apple Intelligence basieren — Apples integrierter KI. Diese laufen nur, wenn du Apple Intelligence als KI-Modus in den Einstellungen der App auswählst.</p>
+<p>In diesem Modus ruft die App Apples geräteinternes Foundation-Models-Framework auf. Die Anfrage geht weder an unsere Server noch an OpenAI: Custom Arts Ltd erhält, speichert oder sieht niemals eine Apple-Intelligence-Anfrage oder -Antwort. Wie Apple selbst mit der Anfrage umgeht, regeln Apples eigene Richtlinien.</p>
+<p>Details findest du in <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apples Datenschutzrichtlinie</a>.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>OpenAI API (optional)</h2>
         <div class="legal-content">
-            <p>Einige KI-Funktionen in unserer App werden optional von der OpenAI API betrieben, die analysieren kann, was du eingibst (z. B. eine Frage an die KI, ein Tagebucheintrag oder bestimmte Messwerte), und Feedback, Vorschläge oder Einblicke zurücksendet. Diese Funktionen sind streng opt-in – du musst aktiv wählen, sie zu nutzen, und kannst sie jederzeit in der App deaktivieren.</p>
-<p>Wenn du eine KI-Funktion nutzt, wird nur das Notwendige für diese Anfrage an OpenAI gesendet: (a) deine Eingabe oder Frage; (b) die spezifischen Daten, über die du fragst (z. B. die Blutdruck- oder Stimmungswerte, die erklärt werden sollen); und (c) wenn du ein Profil gespeichert hast, ein bisschen Kontext – in der Regel dein Vorname, dein Alter (berechnet aus deinem Geburtsdatum) und dein Geschlecht –, damit die KI ihre Antwort anpassen kann (z. B. passende Pronomen oder altersrelevante Informationen).</p>
-<p>Gemäß den API-Richtlinien von OpenAI werden über die API gesendete Daten nicht zum Training ihrer Modelle verwendet und nur für kurze Zeit zur Missbrauchsprüfung aufbewahrt. Wir bewahren deine KI-Anfragen oder -Antworten nicht auf unseren Servern auf – sie leben nur auf deinem Gerät.</p>
-<p>Die vollständige Richtlinie findest du hier: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI-Datenschutzrichtlinie</a>.</p>
-<p>Durch die Nutzung einer KI-Funktion stimmst du zu, dass die relevanten Daten (einschließlich aller von dir gespeicherten Profildetails) an OpenAI gesendet und gemäß ihren Richtlinien verarbeitet werden. Bitte gib nichts in die KI ein, was du unter diesen Bedingungen nicht gerne senden würdest.</p>
+            <p>Die meisten KI-Funktionen in unseren Apps werden von der OpenAI API angetrieben. Cloud-KI ist bei einer Neuinstallation der <strong>Standardmodus</strong>; du kannst die App in den KI-Einstellungen auf die geräteinterne Apple Intelligence umstellen oder KI vollständig deaktivieren.</p>
+<p><strong>Was wird gesendet.</strong> Je nach Funktion kann eine Anfrage Folgendes enthalten:</p>
+<ul>
+ <li>Alles, was du in eine KI-Funktion eingibst — deine Frage oder einen Text, den du bearbeiten lassen möchtest.</li>
+ <li>Die für diese Funktion relevanten Gesundheitsdaten als Zeilen von Messwerten mit Datum und Uhrzeit. <strong>Dazu gehören auch die Freitextnotizen und Tagebucheinträge, die diesen Einträgen beigefügt sind.</strong></li>
+ <li>Profil- und Personalisierungskontext, wie oben unter „Profilinformationen" beschrieben.</li>
+ <li>Für Camera Scan ein Foto, das du von der Anzeige eines Messgeräts oder einer Waage aufnimmst.</li>
+ <li>Für die Vorlesefunktion (Text-zu-Sprache) der vorgelesene Text, üblicherweise eine KI-Antwort zu deinen Daten.</li>
+</ul>
+<p><strong>Wann es gesendet wird.</strong> Die meisten KI-Funktionen laufen nur, wenn du sie öffnest und ein Ergebnis anforderst. Manche nicht: Solange Cloud-KI aktiviert ist, erstellt die App auch von sich aus kurze personalisierte Nachrichten — einen täglichen Hinweis, eine Geburtstags- oder Meilenstein-Glückwunschnachricht, eine Willkommen-zurück-Notiz — und sendet dafür einen Stapel deiner letzten Einträge (bis zu 30) sowie deinen Profilkontext an OpenAI, <strong>wenn du die App oder ihre Tagesansicht öffnest, ohne dass du ein KI-Ergebnis angefordert hast</strong>. Wird KI ausgeschaltet oder auf Apple Intelligence umgestellt, stoppt dies.</p>
+<p><strong>Eine installationsbezogene Kennung.</strong> Jede Installation erzeugt eine zufällige Kennung und sendet sie bei jeder Anfrage an OpenAI, als Cache-Schlüssel, der wiederholte Anfragen günstiger macht. Sie enthält nichts über dich und ist nicht mit deinem Namen, Konto oder deiner Geräte-ID verknüpft, ist aber stabil: Sie ermöglicht es OpenAI, alle Anfragen einer Installation einander zuzuordnen, und bleibt bestehen, bis die App gelöscht und neu installiert wird.</p>
+<p><strong>Was OpenAI damit macht.</strong> Laut aktueller API-Dokumentation von OpenAI werden an die API gesendete Daten nicht zum Trainieren oder Verbessern von OpenAI-Modellen verwendet, sofern du nicht ausdrücklich zustimmst; Protokolle zur Missbrauchsüberwachung werden bis zu 30 Tage aufbewahrt, und über die Responses API erstellte Antworten werden standardmäßig 30 Tage lang gespeichert. Unsere Apps verlassen sich auf diese 30-tägige Speicherung, damit sich ein Chat-Gespräch über mehrere Runden fortsetzen lässt, ohne es erneut hochzuladen — daher werden <strong>deine KI-Anfragen und ihre Antworten bis zu 30 Tage lang bei OpenAI aufbewahrt</strong>. Dies sind OpenAIs eigene Standardeinstellungen, keine Zusagen, die wir kontrollieren, und OpenAI kann sie jederzeit ändern. Die aktuelle Fassung findest du in der <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">Dokumentation von OpenAI zu den API-Datenkontrollen</a>.</p>
+<p>Die vollständige Richtlinie kannst du hier lesen: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI-Datenschutzrichtlinie</a>.</p>
+<p>Durch die Nutzung einer KI-Funktion stimmst du zu, dass die betreffenden Daten (einschließlich aller von dir gespeicherten Profilangaben) an OpenAI gesendet und gemäß deren Richtlinien verarbeitet werden. Bitte gib nichts in die KI ein, das du nicht bereit wärst, unter diesen Bedingungen zu senden.</p>
+        </div>
+    </section>
+
+    <section class="legal-section">
+        <h2>Unser Server und wie KI-Anfragen OpenAI erreichen</h2>
+        <div class="legal-content">
+            <p>KI-Anfragen gehen nicht direkt von deinem Gerät zu OpenAI. Sie laufen über einen kleinen Server, den wir betreiben und der von <a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer">Render</a> in den Vereinigten Staaten gehostet wird. Das ist eine Sicherheitsmaßnahme: Sie sorgt dafür, dass unser OpenAI-Schlüssel auf diesem Server liegt statt in der App, wo ihn jemand auslesen und in deinem Namen Anfragen stellen könnte. Der Server prüft, dass die Anfrage tatsächlich von einer unserer Apps stammt, fügt unseren Schlüssel hinzu und leitet die Antwort von OpenAI direkt an dich zurück.</p>
+<p><strong>Er speichert weder deine Anfragen noch die Antworten der KI.</strong> Sie existieren nur für den Moment der Weiterleitung im Arbeitsspeicher und werden nie auf die Festplatte geschrieben. Niemand bei Custom Arts Ltd liest sie.</p>
+<p>Was der Server speichert, ist eine laufende Aufstellung dessen, was uns unsere KI kostet. Für jede Anfrage werden Datum und Uhrzeit, App und Version, Feature und KI-Modell, ob das Konto kostenlos oder kostenpflichtig war, die Anzahl der verarbeiteten Tokens oder Zeichen sowie die geschätzten Kosten erfasst. Diese Datensätze enthalten keine Gesundheitsdaten, keinen Nachrichtentext und nichts, das dich identifiziert – kein Konto, keine Nutzer-ID, keine IP-Adresse –, sodass sie sich nicht auf eine bestimmte Person zurückführen lassen. <strong>Wir bewahren sie bis zu 30 Tage lang auf und löschen sie dann.</strong></p>
+<p>Der Server schreibt außerdem kurze Betriebsprotokollzeilen mit denselben Angaben sowie der Größe jeder Anfrage, niemals ihren Inhalt. Gibt OpenAI einen Fehler zurück, wird diese Fehlermeldung so protokolliert, wie OpenAI sie ausgegeben hat.</p>
         </div>
     </section>
 
@@ -389,14 +419,21 @@
     <section class="legal-section">
         <h2>Wo deine Daten gespeichert sind</h2>
         <div class="legal-content">
-            <p>Deine persönlichen und Gesundheitsdaten befinden sich auf deinem Gerät und in deinem eigenen iCloud-Konto – du hast die Kontrolle darüber. Einige optionale Drittanbieterdienste, die wir nutzen (Firebase, RevenueCat, OpenAI), werden von Anbietern mit Sitz in den USA betrieben und können einige Daten dort verarbeiten. Soweit erforderlich, stützen sie sich auf die Standardvertragsklauseln und/oder den EU-US-Datenschutzrahmen, um personenbezogene Daten aus der EU/UK zu übermitteln. Wenn du keine Datenübertragung möchtest, kannst du die entsprechenden optionalen Funktionen deaktivieren.</p>
+            <p>Deine persönlichen Daten und Gesundheitsdaten befinden sich auf deinem Gerät und in deinem eigenen iCloud-Konto — du hast die Kontrolle darüber. Die optionalen Drittanbieterdienste, die wir nutzen (Firebase, RevenueCat, OpenAI), sowie der Server, über den unsere KI-Anfragen laufen (gehostet von Render), werden von Anbietern mit Sitz in den Vereinigten Staaten betrieben und können Daten dort verarbeiten. Wo nötig, stützen sie sich auf die Standardvertragsklauseln und/oder das EU-US Data Privacy Framework, um personenbezogene Daten aus der EU/dem UK zu übermitteln. Wenn du lieber keine deiner Daten übertragen haben möchtest, kannst du die entsprechenden optionalen Funktionen deaktivieren.</p>
         </div>
     </section>
 
     <section class="legal-section">
         <h2>Wie lange Daten aufbewahrt werden</h2>
         <div class="legal-content">
-            <p>Wir bewahren keine Kopien deiner App-Daten auf unseren Servern auf. Deine Daten verbleiben so lange auf deinem Gerät und in deiner iCloud, wie du die App installiert und iCloud-Backup aktiviert hast. Firebase Crashlytics/Analytics-Daten werden von Google für den Standard-Aufbewahrungszeitraum unseres Projekts aufbewahrt; RevenueCat bewahrt Kauf-/Belegdaten so lange auf, wie du ein aktives Abonnement hast, und wie es das Steuerrecht erfordert; OpenAI bewahrt API-Anfragedaten gemäß seiner API-Datenverwendungsrichtlinie auf. Das Deaktivieren einer Funktion oder das Löschen der App stoppt die weitere Erfassung.</p>
+            <p>Wir bewahren keine Kopien deiner App-Daten auf unseren Servern auf. Deine Daten bleiben auf deinem Gerät und in deiner iCloud, solange du die App installiert und das iCloud-Backup aktiviert hast. Darüber hinaus:</p>
+<ul>
+ <li><strong>OpenAI</strong> – Missbrauchsüberwachungsprotokolle werden bis zu 30 Tage aufbewahrt, und Antworten der Responses API werden standardmäßig 30 Tage lang gespeichert. Unsere Apps sind auf diese Speicherung für Unterhaltungen mit mehreren Zügen angewiesen. Dies sind die Standardwerte von OpenAI und können sich ändern; siehe <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAIs Dokumentation zu Datenkontrollen der API</a>.</li>
+ <li><strong>Unser eigener Server</strong> – es werden keine Anfrage- oder Antwortinhalte gespeichert. Kostendatensätze pro Anfrage (Datum, App, Feature, Modell, Token-Anzahl, Kosten – keine Gesundheitsdaten und keine Nutzerkennung) werden bis zu 30 Tage aufbewahrt und dann gelöscht.</li>
+ <li><strong>Firebase Crashlytics / Analytics</strong> – von Google für die Standard-Aufbewahrungsdauer unseres Projekts gespeichert.</li>
+ <li><strong>RevenueCat</strong> – Kauf- und Belegdaten, solange du ein aktives Abonnement hast, sowie so lange, wie es das Steuerrecht vorschreibt.</li>
+</ul>
+<p>Wenn du ein Feature abschaltest oder die App löschst, wird die weitere Erfassung gestoppt. Da die Datensätze auf unserem eigenen Server nichts enthalten, das dich identifiziert, können wir „deine“ Einträge darin auf Anfrage nicht suchen oder löschen – es gibt darin nichts, womit wir dich abgleichen könnten. Sie laufen von selbst innerhalb von 30 Tagen aus.</p>
         </div>
     </section>
 
