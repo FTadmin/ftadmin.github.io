@@ -357,9 +357,53 @@ These lessons were learned from the Simplified Chinese (zh) translation and appl
    for f in data/{lang}/*.json; do node -e "try { JSON.parse(require('fs').readFileSync('$f','utf8')); console.log('OK: $f'); } catch(e) { console.log('ERROR: $f: ' + e.message); }"; done
    ```
 5. **Sparse array risk with `apply-translation.js`** — When translating an array item at index N, all items 0..N-1 must already exist in the overlay. If they don't, `apply-translation.js` pads missing indices with `null`, which overrides the EN values on merge. Always translate all items in an array together, never selectively by index.
-6. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
-6. **Reviews disclaimer** — Every non-EN language MUST include `"disclaimer"` in the reviews section of app pages AND the index page, stating reviews were translated from English (e.g., Chinese: `"评论翻译自英文原文。最初发布在App Store上。"`).
-7. **Current languages** (32 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh-Hans), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi), العربية (ar), Català (ca), Čeština (cs), Ελληνικά (el), Français Canada (fr-ca), עברית (he), Hrvatski (hr), Magyar (hu), Nederlands (nl), Polski (pl), Português Portugal (pt), Română (ro), Slovenčina (sk), ไทย (th), Türkçe (tr), Українська (uk), Tiếng Việt (vi), 繁體中文 (zh-Hant)
+6. **INSERTING an array item mid-array silently shifts every later item in all 31 overlays.** This is the most dangerous edit in the repo and `validate.js` will NOT stop it. Because the merge is *positional*, adding a section at EN index 12 means EN[12] now merges against `overlay[12]`, which still holds the translation of what used to be at 12. Every section from 12 down renders under the wrong heading with the wrong body, and the last one falls off the end entirely (overlay length wins). `validate.js` reports this only as an **array length warning and exits 0**, so `validate && build` will happily publish it.
+
+   **Before translating anything**, realign all 31 overlays mechanically — do not ask agents to do it, and do not insert `null` (it overrides EN with nothing on merge). Insert the EN object as a placeholder so an agent that fails leaves readable English rather than a mismatched section:
+   ```bash
+   node -e '
+   const fs=require("fs"),path=require("path");
+   const FILE="privacy.utility.json", AT=12, PRE_LEN=19;   // <-- set all three
+   const en=JSON.parse(fs.readFileSync(`data/en/${FILE}`,"utf8")).data.sections[AT];
+   for (const l of fs.readdirSync("data")) {
+     if (l==="en") continue;
+     const p=path.join("data",l,FILE); if(!fs.existsSync(p)) continue;
+     const doc=JSON.parse(fs.readFileSync(p,"utf8"));
+     const s=doc.data.sections;
+     if (s.length!==PRE_LEN) { console.log(`SKIP ${l}: ${s.length}`); continue; }  // guard: refuse if already shifted
+     s.splice(AT,0,{heading:en.heading,content:en.content});
+     fs.writeFileSync(p,JSON.stringify(doc,null,1)+"\n");
+   }'
+   ```
+   Then verify a locale's index `AT+1` still holds what it held before, and that the final section survived, before fanning out translations.
+7. **Verify agent output mechanically — a translation agent's "OK" is not evidence.** Agents have self-reported success while silently dropping a `<strong>` pair. After every fan-out, check each translated string against its EN source for: identical HTML tag *sequence*, identical `href` values, and not-equal-to-English (catches a skipped string). Tag-sequence parity doubles as a check that emphasized legal claims survived, since the EN wraps those in `<strong>`.
+   ```bash
+   node -e '
+   const fs=require("fs");
+   const FILE="privacy.utility.json";
+   const PATHS=["data.intro","data.sections.11.content"];   // <-- paths you changed
+   const get=(o,p)=>p.split(".").reduce((a,k)=>a[k],o);
+   const tags=s=>(s.match(/<\/?\w+/g)||[]).join(",");
+   const hrefs=s=>(s.match(/href="[^"]+"/g)||[]).join(",");
+   const en=JSON.parse(fs.readFileSync(`data/en/${FILE}`,"utf8"));
+   for (const l of fs.readdirSync("data")) {
+     if (l==="en") continue;
+     const p=`data/${l}/${FILE}`; if(!fs.existsSync(p)) continue;
+     const d=JSON.parse(fs.readFileSync(p,"utf8")), bad=[];
+     for (const P of PATHS) {
+       let e,v; try{e=get(en,P);v=get(d,P);}catch{bad.push(`${P}:MISSING`);continue;}
+       if(tags(v)!==tags(e))bad.push(`${P}:tags`);
+       if(hrefs(v)!==hrefs(e))bad.push(`${P}:href`);
+       if(v.trim()===e.trim())bad.push(`${P}:UNTRANSLATED`);
+     }
+     if(bad.length) console.log(l, bad.join("; "));
+   }
+   console.log("done — no lines above means clean");'
+   ```
+8. **Brand names: match what Apple actually ships in that locale, verified against Apple's own localized site.** It varies per locale and cannot be guessed. Apple Intelligence is kept in **English** in almost every locale (verified: ja, zh-Hant) but is **"Apple 智能"** in Simplified Chinese (verified on `support.apple.com/zh-cn`). The usual failure is drift: a translation pass updates the body text but leaves the section *heading* in English, so one locale says both. After any brand-touching pass, grep the whole locale file for the English form and confirm the count is zero (or matches a deliberate choice).
+9. **Sitemap update script** — For adding a new language's hreflang to all existing entries, use a Node.js script rather than manual editing. The sitemap has 2500+ lines and every `<url>` entry needs a new `<xhtml:link>` for the new language.
+10. **Reviews disclaimer** — Every non-EN language MUST include `"disclaimer"` in the reviews section of app pages AND the index page, stating reviews were translated from English (e.g., Chinese: `"评论翻译自英文原文。最初发布在App Store上。"`).
+11. **Current languages** (32 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh-Hans), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi), العربية (ar), Català (ca), Čeština (cs), Ελληνικά (el), Français Canada (fr-ca), עברית (he), Hrvatski (hr), Magyar (hu), Nederlands (nl), Polski (pl), Português Portugal (pt), Română (ro), Slovenčina (sk), ไทย (th), Türkçe (tr), Українська (uk), Tiếng Việt (vi), 繁體中文 (zh-Hant)
 
 ### Add a new app
 1. Add the app to `nav.apps[]` for each language in `data/languages.json`
