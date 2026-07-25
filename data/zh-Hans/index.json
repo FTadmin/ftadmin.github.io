@@ -2,7 +2,7 @@
  "data": {
   "meta": {
    "title": "Feeltracker | iOS AI健康与健身日记应用",
-   "description": "适用于iPhone、iPad和Mac的AI健康日记应用 — GQ杂志推荐。记录血压、情绪、体重、睡眠和每日日记。与Apple Health同步，AI洞察，导出给医生。",
+   "description": "五款适用于 iPhone、iPad 和 Mac 的 AI 健康日记应用,GQ杂志推荐。追踪血压、情绪、体重、睡眠和日记,支持 Apple Health 同步。",
    "keywords": "健康追踪应用, 血压监测, 情绪日记, 体重记录, 睡眠追踪, 日记应用, AI健康应用, Apple Health集成, 健康日记, 养生追踪, 心理健康应用, 血压应用, 减重应用, 睡眠监测, 日记本应用",
    "ogTitle": "Feeltracker | AI驱动的健康与养生日记应用",
    "ogDescription": "使用AI驱动的日记应用轻松追踪健康 — GQ杂志推荐。记录血压、情绪、体重、睡眠和日记，与Apple Health同步，获取个性化分析洞察。",
@@ -121,8 +121,8 @@
     },
     {
      "slug": "mood-journal",
-     "iconAlt": "情绪追踪应用图标",
-     "title": "心理健康 Feeltracker",
+     "iconAlt": "心情日记应用图标",
+     "title": "心情日记 Feeltracker",
      "subtitle": "双相情感 DBT CBT ADHD AI日记",
      "badge": "",
      "description": "通过每日情绪评分和笔记监测您的心理健康。AI帮助识别触发因素和情绪模式。支持iOS 18+心理健康功能与Apple Health集成。",
@@ -150,7 +150,7 @@
       }
      ],
      "learnMoreText": "了解更多",
-     "downloadAlt": "在App Store下载心理健康 Feeltracker"
+     "downloadAlt": "在App Store下载心情日记"
     },
     {
      "slug": "weight",
@@ -210,6 +210,9 @@
       },
       {
        "text": "可视化睡眠图表与统计数据"
+      },
+      {
+       "text": "梦境日记,每天免费获得 AI 梦境分析"
       }
      ],
      "learnMoreText": "了解更多",
@@ -353,8 +356,8 @@
      "description": "用有趣的AI生成10题测验来测试您对自己数据的了解"
     },
     {
-     "title": "文字转语音",
-     "description": "以自然语音播放AI分析洞察和摘要 - 非常适合无障碍使用"
+     "title": "语音反馈",
+     "description": "每次保存条目时,都能听到一段简短的语音反应,由你选择的声音朗读——非常适合免提和无障碍使用"
     },
     {
      "title": "定制健康报告",
@@ -367,6 +370,14 @@
     {
      "title": "语音聊天",
      "description": "与AI就您的数据进行免提双向语音对话 — 提问并聆听答案，无需触碰屏幕"
+    },
+    {
+     "title": "快速版本,每天免费",
+     "description": "免费用户每天都能获得大报告的快速版,覆盖相同的数据范围:快速健康报告、快速触发因素检查、快速主题探索、快速膳食建议,以及睡眠应用中的快速梦境分析"
+    },
+    {
+     "title": "为每款应用打造的 Pro 工具",
+     "description": "血压应用的 Pro MAP 报告;心情日记的认知重构、触发因素识别和情感时间线;每日日记的主题探索;睡眠应用的专业梦境分析和 CPAP 报告;体重应用的膳食计划和运动计划"
     }
    ]
   },
@@ -487,12 +498,20 @@
    "title": "常见问题",
    "items": [
     {
-     "question": "你们会显示广告或追踪用户吗？",
-     "answer": "**不会。** 我们已从所有Feeltracker应用中完全移除了广告。我们不会在其他应用或网站间追踪您，也绝不会将您的数据出售给广告商。\n\n您的数据通过iCloud同步 - 就像Apple自带的备忘录和照片一样。这意味着我们不需要知道您的电子邮件地址、姓名或任何个人信息。您的健康数据存储在您的设备和iCloud账户中，无论使用免费版还是高级版，都是完全私密的。"
+     "question": "Feeltracker 应用会显示广告或追踪我吗?",
+     "answer": "**不会。Feeltracker 应用不显示广告,不使用任何广告网络,也绝不出售你的数据。** 我们不会跨其他应用或网站追踪你(没有 IDFA 或类似的标识符)。\n\n你的条目留在你的设备上,并通过你自己的 iCloud 账户同步,就像 Apple 备忘录和照片一样,所以我们永远不需要你的姓名或电子邮件地址。唯一的例外是,如果你选择使用云端 AI 功能:该功能所需的数据会被发送给 OpenAI 以生成你的答案,详见我们的[隐私政策](https://feeltracker.com/privacy/)。你可以把 AI 切换为设备端的 Apple 智能,或完全关闭它。"
     },
     {
-     "question": "需要订阅吗？",
-     "answer": "无需订阅。所有应用均可免费下载，所有记录、图表、Apple Health同步和导出功能均免费，每位用户每天都能免费使用真正的AI功能 — 永远没有广告。可选的Pro订阅可解锁最深入的AI功能（深度研究、模式侦探、医生总结、Pro聊天等），并在我们最强大的AI上运行，同时提高原本就很慷慨的每日限额。"
+     "question": "使用 Feeltracker 需要订阅吗?",
+     "answer": "**不需要——每一款 Feeltracker 应用都可以免费下载、免费使用,没有广告。** 所有追踪功能、图表、趋势、Apple Health 同步、相机扫描,以及 PDF/CSV/Excel/JSON 导出都是免费的,每位用户每天还能免费使用真正的 AI 功能:快速聊天、提问、语音摘要、逗我笑、让我平静,以及各类大报告的每日快速版。\n\n可选的 Pro 订阅可解锁全深度 AI 功能——深度研究、模式侦探、目标助手、医生总结、Pro 聊天、语音聊天、每日洞察、设备端 Apple 智能,以及为每款应用打造的专属工具——并提高每日额度。"
+    },
+    {
+     "question": "Feeltracker 的五款应用分别是什么?",
+     "answer": "**Feeltracker 是由 Custom Arts 打造、面向 iPhone、iPad 和 Mac 的五款健康追踪应用套件。** 分别是血压(收缩压、舒张压、心率和 MAP)、心情日记(带触发因素和情感分析的 5 分制情绪量表)、每日日记(笔记、照片和反复出现的主题)、睡眠(入睡和醒来时间,以及梦境日记)和体重(体重、体脂和 BMI)。\n\n每款应用都可以独立使用,共享同一套隐私模型,并通过你自己的 iCloud 账户同步。你可以只用其中一款,也可以五款都用。"
+    },
+    {
+     "question": "Feeltracker 应用支持哪些设备?",
+     "answer": "**Feeltracker 应用可在搭载 iOS 16.0 或更高版本的 iPhone 和 iPad 上运行,也可在 Apple Silicon Mac(M1 及以上)上运行。** 一次购买即可覆盖你的所有设备,你的条目会通过你自己的 iCloud 账户在设备间自动同步。\n\nApple Health 集成是可选的,设备端 Apple 智能 AI 模式需要一台在 iOS 26 或更高版本上支持 Apple 智能的设备。"
     }
    ]
   },
@@ -509,8 +528,8 @@
      "downloadAlt": "在App Store下载每日日记 Feeltracker"
     },
     {
-     "name": "心理健康 Feeltracker",
-     "downloadAlt": "在App Store下载心理健康 Feeltracker"
+     "name": "心情日记 Feeltracker",
+     "downloadAlt": "在App Store下载心情日记 Feeltracker"
     },
     {
      "name": "体重 Feeltracker",
@@ -560,7 +579,7 @@
   "structuredData": [
    {
     "name": "Feeltracker",
-    "description": "iOS平台AI驱动的健康与养生追踪应用"
+    "description": "Feeltracker 是一套由 Custom Arts 打造、面向 iPhone、iPad 和 Mac 的五款 AI 健康追踪应用——血压、心情日记、每日日记、睡眠和体重。免费使用,可选 Pro 订阅;健康数据只保存在用户自己的设备和自己的 iCloud 账户中。"
    },
    {
     "name": "Feeltracker 健康与养生应用",
