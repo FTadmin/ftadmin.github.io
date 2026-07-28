@@ -44,6 +44,21 @@
     <link rel="canonical" href="https://feeltracker.com/blood-pressure/normal-range/">
 
 
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/blood-pressure/normal-range/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/blood-pressure/normal-range/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/blood-pressure/normal-range/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/blood-pressure/normal-range/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/blood-pressure/normal-range/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/blood-pressure/normal-range/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/blood-pressure/normal-range/">
+
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
@@ -200,21 +215,21 @@
 
                 <a href="/blood-pressure/normal-range/" class="active" data-lang-choose><span class="flag">🇺🇸</span> English</a>
 
-                <a href="/de/blood-pressure/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+                <a href="/de/blood-pressure/normal-range/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
 
-                <a href="/es/blood-pressure/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+                <a href="/es/blood-pressure/normal-range/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
 
-                <a href="/it/blood-pressure/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+                <a href="/it/blood-pressure/normal-range/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
 
                 <a href="/ru/blood-pressure/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
 
                 <a href="/ja/blood-pressure/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
 
-                <a href="/fr/blood-pressure/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+                <a href="/fr/blood-pressure/normal-range/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
 
                 <a href="/ko/blood-pressure/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
 
-                <a href="/pt-br/blood-pressure/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+                <a href="/pt-br/blood-pressure/normal-range/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
 
                 <a href="/zh-Hans/blood-pressure/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
 
@@ -451,6 +466,22 @@ iPhone, iPad & Mac • iOS 16.0+</p>
     });
     </script>
 
+
+<script>
+(function(){
+  if(document.documentElement.lang!=="en")return;
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=[["pt-br","/pt-br"],["de","/de"],["es","/es"],["it","/it"],["fr","/fr"]];
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(map[i][1]+window.location.pathname+window.location.search);
+      return;
+    }
+  }
+})();
+</script>
 
 </body>
 </html>
