@@ -188,6 +188,7 @@ function validate() {
         const targetKeys = new Set(Object.keys(targetByKey));
 
         for (const key of refKeys) {
+            if (refByKey[key].enOnly) continue; // EN-only page — no translations expected
             if (!targetKeys.has(key)) {
                 console.warn(`  ✗ ${lang}: missing page "${key}"`);
                 missingPages++;
@@ -203,6 +204,7 @@ function validate() {
 
         // Compare data shape for each shared page
         for (const key of refKeys) {
+            if (refByKey[key].enOnly) continue; // EN-only page — no translations expected
             if (!targetKeys.has(key)) continue;
 
             const refPage = refByKey[key];

@@ -454,10 +454,15 @@ function buildContext(site, languages, page, appCatalog) {
     const pagePath = page.path || '';
 
     // Build language switcher entries
+    // EN-only pages (page.enOnly) have no translated counterparts, so other
+    // languages point at page.fallbackPath (e.g. the parent app page) instead
+    // of a URL that would 404.
     const langSwitcher = Object.keys(languages).map(code => {
         const l = languages[code];
         let url;
-        if (pagePath === '') {
+        if (page.enOnly && code !== page.lang) {
+            url = (l.prefix || '') + '/' + (page.fallbackPath ? page.fallbackPath + '/' : '');
+        } else if (pagePath === '') {
             url = code === Object.keys(languages)[0] ? '/' : l.prefix + '/';
         } else {
             url = (l.prefix || '') + '/' + pagePath + '/';
@@ -477,7 +482,9 @@ function buildContext(site, languages, page, appCatalog) {
     const navApps = (lang.nav && lang.nav.apps) ? lang.nav.apps.map(app => ({
         ...app,
         url: (lang.prefix || '') + '/' + app.slug + '/',
-        isCurrent: app.slug === page.slug
+        // page.appSlug lets sub-pages (e.g. blood-pressure guides) highlight
+        // their parent app in the nav
+        isCurrent: app.slug === (page.appSlug || page.slug)
     })) : [];
 
     // Footer home link
@@ -596,6 +603,38 @@ function buildContext(site, languages, page, appCatalog) {
         }
     }
 
+    // Guide pages (EN-only SEO articles) — BreadcrumbList + Article schema
+    if (page.template === 'guide-page') {
+        const langPrefix = lang.prefix || '';
+        if (data.breadcrumb && !data.structuredData.some(b => b && b['@type'] === 'BreadcrumbList')) {
+            data.structuredData.push({
+                '@context': 'https://schema.org',
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url + (langPrefix ? langPrefix + '/' : '/') },
+                    { '@type': 'ListItem', position: 2, name: data.breadcrumb.app, item: site.url + langPrefix + data.breadcrumb.appUrl },
+                    { '@type': 'ListItem', position: 3, name: data.breadcrumb.current, item: canonicalUrl }
+                ]
+            });
+        }
+        if (!data.structuredData.some(b => b && b['@type'] === 'Article')) {
+            data.structuredData.push({
+                '@context': 'https://schema.org',
+                '@type': 'Article',
+                headline: (data.hero && data.hero.title) || (data.meta && data.meta.title),
+                description: data.meta && data.meta.description,
+                image: data.meta && data.meta.ogImage,
+                datePublished: data.datePublished,
+                dateModified: data.dateModified || data.datePublished,
+                inLanguage: 'en',
+                author: { '@type': 'Organization', name: site.author, url: site.url },
+                publisher: { '@type': 'Organization', name: site.author, url: site.url,
+                    logo: { '@type': 'ImageObject', url: site.url + '/images/feeltracker-icon.png' } },
+                mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl }
+            });
+        }
+    }
+
     // Related apps — cross-link from app pages to the other apps
     if (page.template === 'app-page' && appCatalog && lang.nav && lang.nav.apps) {
         const langPrefix = lang.prefix || '';
@@ -637,9 +676,15 @@ function buildContext(site, languages, page, appCatalog) {
         privacyUrl,
         ogLocale,
         hasGame,
+        enOnly: !!page.enOnly,
+        // True only when rendering the reference (EN) language — lets templates
+        // show EN-only sections (e.g. links to untranslated guide pages).
+        isRefLang: page.lang === Object.keys(languages)[0],
         ...data,
         // Computed after ...data so it always wins over any stale field.
-        langRedirectScript: langRedirectScript(languages, { home: page.template === 'index-page' })
+        // EN-only pages get no browser-language redirect: the localized URL for
+        // the same path does not exist, so redirecting would 404.
+        langRedirectScript: page.enOnly ? '' : langRedirectScript(languages, { home: page.template === 'index-page' })
     };
 }
 
