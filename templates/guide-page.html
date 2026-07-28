@@ -14,9 +14,8 @@
 {{/if}}
     <meta name="author" content="{{site.author}}">
     <link rel="canonical" href="{{canonicalUrl}}">
-{{#if enOnly}}
-{{else}}
-{{#each langSwitcher}}
+{{#if pageHreflangs}}
+{{#each pageHreflangs}}
     <link rel="alternate" hreflang="{{hreflang}}" href="{{fullUrl}}">
 {{/each}}
     <link rel="alternate" hreflang="x-default" href="{{xDefaultUrl}}">
@@ -60,8 +59,8 @@
 
     <header class="guide-article-header">
         <h1>{{hero.title}}</h1>
-{{#if dateModifiedDisplay}}
-        <p class="guide-updated">Last updated: {{dateModifiedDisplay}}</p>
+{{#if updatedText}}
+        <p class="guide-updated">{{updatedText}}</p>
 {{/if}}
     </header>
 
@@ -140,5 +139,10 @@
 {{> footer}}
 
 {{> cookie-consent}}
+{{#if langRedirectScript}}
+<script>
+{{langRedirectScript}}
+</script>
+{{/if}}
 </body>
 </html>

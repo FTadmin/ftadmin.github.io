@@ -212,8 +212,8 @@
             </a>
         </div>
     </section>
-{{#if isRefLang}}{{#if guides}}
-    <!-- Guides (EN-only SEO articles) -->
+{{#if guides}}
+    <!-- Guides (only the ones available in this page's language; build.js filters) -->
     <section class="guide-links-section">
         <h2>{{guides.title}}</h2>
         <p>{{guides.subtitle}}</p>
@@ -226,7 +226,7 @@
 {{/each}}
         </div>
     </section>
-{{/if}}{{/if}}
+{{/if}}
 {{#if relatedApps}}
     <!-- Related Apps -->
     <section class="related-apps center-text">
