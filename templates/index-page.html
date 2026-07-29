@@ -86,9 +86,9 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-app-cluster" aria-hidden="true">
+            <div class="hero-app-cluster">
 {{#each apps.items}}
-                <img src="{{iconSrc}}" alt="" width="92" height="92" decoding="async">
+                <a href="{{slug}}/" aria-label="{{title}}"><img src="{{iconSrc}}" alt="" width="92" height="92" decoding="async"></a>
 {{/each}}
             </div>
         </div>

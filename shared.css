@@ -65,7 +65,7 @@
     --font-brand: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --fs-h1: clamp(2rem, 4vw, 3rem);
     /* Sized for the bold sans heading face — heavier than the old serif, so smaller. */
-    --fs-h1-display: clamp(2.4rem, 5vw, 3.75rem);
+    --fs-h1-display: clamp(2.2rem, 4.5vw, 3.25rem);
     --fs-h2: clamp(1.6rem, 3vw, 2.2rem);
     --fs-h2-display: clamp(2rem, 4vw, 3rem);
     --fs-h3: 1.25rem;
@@ -430,13 +430,20 @@ a:hover {
     -webkit-backface-visibility: hidden;
 }
 
-.hero-app-cluster img:nth-child(1) { transform: rotate(-6deg) translateZ(0); }
-.hero-app-cluster img:nth-child(2) { transform: rotate(2deg) translateY(-6px) translateZ(0); }
-.hero-app-cluster img:nth-child(3) { transform: rotate(7deg) translateZ(0); }
-.hero-app-cluster img:nth-child(4) { transform: rotate(4deg) translateY(4px) translateZ(0); }
-.hero-app-cluster img:nth-child(5) { transform: rotate(-5deg) translateZ(0); grid-column: 2; }
+.hero-app-cluster a {
+    display: block;
+    border-radius: 22%;
+}
 
-.hero-app-cluster img:hover {
+.hero-app-cluster a:nth-child(1) img { transform: rotate(-6deg) translateZ(0); }
+.hero-app-cluster a:nth-child(2) img { transform: rotate(2deg) translateY(-6px) translateZ(0); }
+.hero-app-cluster a:nth-child(3) img { transform: rotate(7deg) translateZ(0); }
+.hero-app-cluster a:nth-child(4) img { transform: rotate(4deg) translateY(4px) translateZ(0); }
+.hero-app-cluster a:nth-child(5) { grid-column: 2; }
+.hero-app-cluster a:nth-child(5) img { transform: rotate(-5deg) translateZ(0); }
+
+.hero-app-cluster a:hover img,
+.hero-app-cluster a:focus-visible img {
     transform: scale(1.08) rotate(0) translateZ(0);
     filter: drop-shadow(0 20px 36px rgba(43, 123, 211, 0.32));
     z-index: 2;
