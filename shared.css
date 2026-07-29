@@ -69,6 +69,20 @@
     --fs-h2-display: clamp(2rem, 4vw, 3rem);
     --fs-h3: 1.25rem;
     --fs-h4: 1.1rem;
+    /* Optical weight grading — weight goes DOWN as size goes up.
+         --fw-display (600): anything rendering at ~32px+ — h1, .hero h1, the
+           article headers on support/legal/guide pages, app-grid card titles.
+         --fw-heading (700): section headings and below, where 700 still reads
+           as bold rather than as a slab.
+       At 52px, 700 closes up the counters in a/e/o and the headline reads
+       blocky. It's worse off-Apple: the stack is SF Pro Display → Inter, and
+       Inter's bold is chunkier than SF Pro at the same nominal weight, so most
+       Windows/Android traffic sees the heaviest version of all.
+       New display-scale rules should take a token, not a literal.
+       Neither token applies to the brand wordmark, which is locked at 700 —
+       see CLAUDE.md. */
+    --fw-display: 600;
+    --fw-heading: 700;
 
     /* Secondary accent (warm) */
     --color-warm: #f97066;
@@ -129,7 +143,7 @@
 .hero-logo,
 .hero h1 {
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: var(--fw-display);
     letter-spacing: -0.02em;
     line-height: 1.05;
 }
@@ -303,7 +317,7 @@ h1 {
     color: var(--color-text-strong);
     margin-top: 0.5em;
     margin-bottom: 0.3em;
-    font-weight: 700;
+    font-weight: var(--fw-display);
     letter-spacing: -0.03em;
     line-height: 1.15;
 }
@@ -314,7 +328,7 @@ h2 {
     color: var(--color-text-strong);
     margin-top: 0;
     margin-bottom: 0.6em;
-    font-weight: 700;
+    font-weight: var(--fw-heading);
     letter-spacing: -0.02em;
     line-height: 1.2;
 }
@@ -481,7 +495,9 @@ a:hover {
     font-size: var(--fs-h1-display);
     margin: 0 0 var(--space-4);
     line-height: 1.02;
-    letter-spacing: -0.035em;
+    /* Eased from -0.035em with the drop to 600 — lighter stems need less
+       negative tracking before the word shapes start to crowd. */
+    letter-spacing: -0.03em;
 }
 
 .hero-logo {
@@ -618,7 +634,7 @@ a:hover {
 .apps-section .app-card-title h3 {
     font-family: var(--font-heading);
     font-size: clamp(1.6rem, 2.6vw, 2.1rem);
-    font-weight: 700;
+    font-weight: var(--fw-display);
     letter-spacing: -0.02em;
     line-height: 1.15;
     color: var(--color-text-strong);
@@ -1453,7 +1469,7 @@ footer {
 .support-article-header h1 {
     font-family: var(--font-heading);
     font-size: clamp(2.4rem, 5vw, 4rem);
-    font-weight: 700;
+    font-weight: var(--fw-display);
     line-height: 1.05;
     letter-spacing: -0.025em;
     margin: var(--space-3) 0 0;
@@ -1467,7 +1483,7 @@ footer {
 .support-block h2 {
     font-family: var(--font-heading);
     font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: 700;
+    font-weight: var(--fw-heading);
     letter-spacing: -0.015em;
     text-align: center;
     margin: 0 0 var(--space-6);
@@ -1571,7 +1587,7 @@ footer {
 .legal-article-header h1 {
     font-family: var(--font-heading);
     font-size: clamp(2.4rem, 5vw, 4rem);
-    font-weight: 700;
+    font-weight: var(--fw-display);
     line-height: 1.05;
     letter-spacing: -0.025em;
     margin: 0;
@@ -1602,7 +1618,7 @@ footer {
 .legal-section h2 {
     font-family: var(--font-heading);
     font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: 700;
+    font-weight: var(--fw-heading);
     letter-spacing: -0.015em;
     line-height: 1.2;
     margin: 0 0 var(--space-4);
@@ -2943,7 +2959,7 @@ th, td {
     color: var(--color-text-strong);
     font-size: 1.3rem;
     margin-bottom: var(--space-4);
-    font-weight: 700;
+    font-weight: var(--fw-heading);
 }
 
 .tip-card p {
@@ -3459,7 +3475,7 @@ th, td {
 .guide-article-header h1 {
     font-family: var(--font-heading);
     font-size: clamp(2.2rem, 4.5vw, 3.4rem);
-    font-weight: 700;
+    font-weight: var(--fw-display);
     line-height: 1.08;
     letter-spacing: -0.02em;
     margin: 0;
@@ -3495,7 +3511,7 @@ th, td {
 .guide-section h2 {
     font-family: var(--font-heading);
     font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: 700;
+    font-weight: var(--fw-heading);
     letter-spacing: -0.015em;
     line-height: 1.2;
     margin: 0 0 var(--space-4);
@@ -3613,7 +3629,7 @@ th, td {
 
 .guide-app-cta-body h2 {
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: var(--fw-heading);
     font-size: 1.5rem;
     margin: 0 0 var(--space-2);
     color: var(--color-text-strong);
