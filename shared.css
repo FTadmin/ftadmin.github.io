@@ -160,12 +160,11 @@
 
 .numbered-sections > section > h2::before {
     counter-increment: about-section;
-    content: "0" counter(about-section) "  —  ";
+    content: "0" counter(about-section) " ";
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 0.55em;
+    font-size: 1em;
     color: var(--color-primary);
-    letter-spacing: 0.04em;
     vertical-align: baseline;
     margin-right: 0.35em;
 }
@@ -1615,7 +1614,7 @@ footer {
     display: inline-block;
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 0.55em;
+    font-size: 1em;
     color: var(--color-primary);
     margin-right: 0.6em;
     vertical-align: baseline;
@@ -1674,11 +1673,6 @@ footer {
     gap: var(--space-2);
 }
 
-.hero-ribbon-item + .hero-ribbon-item::before {
-    content: '·';
-    color: var(--color-text-faint);
-    margin-right: var(--space-3);
-}
 
 .hero-ribbon-item strong {
     font-family: var(--font-heading);
