@@ -64,7 +64,8 @@
        Used only for .hero-logo and .nav-row-brand .brand-logo. Do not substitute. */
     --font-brand: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --fs-h1: clamp(2rem, 4vw, 3rem);
-    --fs-h1-display: clamp(2.6rem, 6vw, 5rem);
+    /* Sized for the bold sans heading face — heavier than the old serif, so smaller. */
+    --fs-h1-display: clamp(2.4rem, 5vw, 3.75rem);
     --fs-h2: clamp(1.6rem, 3vw, 2.2rem);
     --fs-h2-display: clamp(2rem, 4vw, 3rem);
     --fs-h3: 1.25rem;
