@@ -212,7 +212,21 @@
             </a>
         </div>
     </section>
-
+{{#if guides}}
+    <!-- Guides (only the ones available in this page's language; build.js filters) -->
+    <section class="guide-links-section">
+        <h2>{{guides.title}}</h2>
+        <p>{{guides.subtitle}}</p>
+        <div class="guide-links-grid">
+{{#each guides.items}}
+            <a href="{{url}}" class="guide-link-card">
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </a>
+{{/each}}
+        </div>
+    </section>
+{{/if}}
 {{#if relatedApps}}
     <!-- Related Apps -->
     <section class="related-apps center-text">

@@ -188,6 +188,7 @@ function validate() {
         const targetKeys = new Set(Object.keys(targetByKey));
 
         for (const key of refKeys) {
+            if (refByKey[key].enOnly) continue; // EN-only page — no translations expected
             if (!targetKeys.has(key)) {
                 console.warn(`  ✗ ${lang}: missing page "${key}"`);
                 missingPages++;
@@ -201,7 +202,9 @@ function validate() {
             }
         }
 
-        // Compare data shape for each shared page
+        // Compare data shape for each shared page. EN-only (guide) pages are
+        // optional per language, but an overlay that DOES exist is still
+        // shape-checked (targetKeys only has it when the overlay file exists).
         for (const key of refKeys) {
             if (!targetKeys.has(key)) continue;
 

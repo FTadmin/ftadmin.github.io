@@ -410,22 +410,26 @@ const LANG_REDIRECT_ALIASES = [['no', '/nb'], ['nn', '/nb']];
  * their base language, otherwise a 'pt-br' browser locale matches the 'pt'
  * entry first (via startsWith). Aliases are appended last (no collisions).
  */
-function buildLangRedirectMap(languages) {
+function buildLangRedirectMap(languages, allowedLangs) {
     const entries = Object.keys(languages)
         .filter(code => code !== 'en' && languages[code].prefix)
+        .filter(code => !allowedLangs || allowedLangs.has(code))
         .map(code => [code, languages[code].prefix]);
     const regional = entries.filter(e => e[0].includes('-'));
     const base = entries.filter(e => !e[0].includes('-'));
-    return [...regional, ...base, ...LANG_REDIRECT_ALIASES];
+    const aliases = LANG_REDIRECT_ALIASES.filter(([, prefix]) =>
+        !allowedLangs || allowedLangs.has(prefix.slice(1)));
+    return [...regional, ...base, ...aliases];
 }
 
 /**
  * Generate the client-side language-redirect IIFE.
  * home=true  -> homepage variant (redirects to the language home, no lang guard)
  * home=false -> content-page variant (guards on lang==="en", preserves the path)
+ * allowedLangs -> optional Set restricting the map (partially translated pages)
  */
-function langRedirectScript(languages, { home } = {}) {
-    const mapLiteral = '[' + buildLangRedirectMap(languages)
+function langRedirectScript(languages, { home, allowedLangs } = {}) {
+    const mapLiteral = '[' + buildLangRedirectMap(languages, allowedLangs)
         .map(([k, v]) => `["${k}","${v}"]`).join(',') + ']';
     const guard = home ? '' : '\n  if(document.documentElement.lang!=="en")return;';
     const target = home
@@ -449,15 +453,22 @@ function langRedirectScript(languages, { home } = {}) {
  * Build the full context object for rendering a page.
  * Merges: site globals + language data + page-specific data
  */
-function buildContext(site, languages, page, appCatalog) {
+function buildContext(site, languages, page, appCatalog, guideAvailability) {
     const lang = languages[page.lang];
     const pagePath = page.path || '';
 
     // Build language switcher entries
+    // Guide pages (page.enOnly) exist only in the locales that have an overlay
+    // file (page.availableLangs, computed in build()). Locales without one
+    // point at page.fallbackPath (e.g. the parent app page) instead of a URL
+    // that would 404. Untranslated guides degrade to EN-only automatically.
+    const availSet = page.enOnly ? new Set(page.availableLangs || [page.lang]) : null;
     const langSwitcher = Object.keys(languages).map(code => {
         const l = languages[code];
         let url;
-        if (pagePath === '') {
+        if (availSet && !availSet.has(code)) {
+            url = (l.prefix || '') + '/' + (page.fallbackPath ? page.fallbackPath + '/' : '');
+        } else if (pagePath === '') {
             url = code === Object.keys(languages)[0] ? '/' : l.prefix + '/';
         } else {
             url = (l.prefix || '') + '/' + pagePath + '/';
@@ -473,11 +484,20 @@ function buildContext(site, languages, page, appCatalog) {
         };
     });
 
+    // hreflang cluster for guide pages: only the locales the page actually
+    // exists in, and only once there is more than one (a lone self-referencing
+    // EN link is pointless). Non-guide templates keep their full loop.
+    const pageHreflangs = (availSet && availSet.size > 1)
+        ? langSwitcher.filter(e => availSet.has(e.code))
+        : null;
+
     // Build nav app links with "current" marker
     const navApps = (lang.nav && lang.nav.apps) ? lang.nav.apps.map(app => ({
         ...app,
         url: (lang.prefix || '') + '/' + app.slug + '/',
-        isCurrent: app.slug === page.slug
+        // page.appSlug lets sub-pages (e.g. blood-pressure guides) highlight
+        // their parent app in the nav
+        isCurrent: app.slug === (page.appSlug || page.slug)
     })) : [];
 
     // Footer home link
@@ -511,6 +531,25 @@ function buildContext(site, languages, page, appCatalog) {
 
     // Generate structuredDataHtml from structuredData JSON array (if present)
     const data = { ...page.data };
+
+    // Guides section (app pages): keep only the guides that exist in this
+    // page's language and prefix their URLs. Locales with no translated
+    // guides lose the whole section; EN always shows all of them.
+    if (data.guides && Array.isArray(data.guides.items) && guideAvailability) {
+        const langPrefix = lang.prefix || '';
+        const items = data.guides.items
+            .filter(item => {
+                const guidePath = (item.url || '').replace(/^\//, '').replace(/\/$/, '');
+                const avail = guideAvailability[guidePath];
+                return avail && avail.has(page.lang);
+            })
+            .map(item => ({ ...item, url: langPrefix + item.url }));
+        if (items.length > 0) {
+            data.guides = { ...data.guides, items };
+        } else {
+            delete data.guides;
+        }
+    }
 
     // Auto-detect og:image dimensions for social card meta tags
     if (data.meta && data.meta.ogImage && !data.meta.ogImageWidth) {
@@ -596,6 +635,38 @@ function buildContext(site, languages, page, appCatalog) {
         }
     }
 
+    // Guide pages (EN-only SEO articles) — BreadcrumbList + Article schema
+    if (page.template === 'guide-page') {
+        const langPrefix = lang.prefix || '';
+        if (data.breadcrumb && !data.structuredData.some(b => b && b['@type'] === 'BreadcrumbList')) {
+            data.structuredData.push({
+                '@context': 'https://schema.org',
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    { '@type': 'ListItem', position: 1, name: 'Home', item: site.url + (langPrefix ? langPrefix + '/' : '/') },
+                    { '@type': 'ListItem', position: 2, name: data.breadcrumb.app, item: site.url + langPrefix + data.breadcrumb.appUrl },
+                    { '@type': 'ListItem', position: 3, name: data.breadcrumb.current, item: canonicalUrl }
+                ]
+            });
+        }
+        if (!data.structuredData.some(b => b && b['@type'] === 'Article')) {
+            data.structuredData.push({
+                '@context': 'https://schema.org',
+                '@type': 'Article',
+                headline: (data.hero && data.hero.title) || (data.meta && data.meta.title),
+                description: data.meta && data.meta.description,
+                image: data.meta && data.meta.ogImage,
+                datePublished: data.datePublished,
+                dateModified: data.dateModified || data.datePublished,
+                inLanguage: 'en',
+                author: { '@type': 'Organization', name: site.author, url: site.url },
+                publisher: { '@type': 'Organization', name: site.author, url: site.url,
+                    logo: { '@type': 'ImageObject', url: site.url + '/images/feeltracker-icon.png' } },
+                mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl }
+            });
+        }
+    }
+
     // Related apps — cross-link from app pages to the other apps
     if (page.template === 'app-page' && appCatalog && lang.nav && lang.nav.apps) {
         const langPrefix = lang.prefix || '';
@@ -637,9 +708,20 @@ function buildContext(site, languages, page, appCatalog) {
         privacyUrl,
         ogLocale,
         hasGame,
+        enOnly: !!page.enOnly,
+        pageHreflangs,
+        // True only when rendering the reference (EN) language — lets templates
+        // show EN-only sections.
+        isRefLang: page.lang === Object.keys(languages)[0],
         ...data,
         // Computed after ...data so it always wins over any stale field.
-        langRedirectScript: langRedirectScript(languages, { home: page.template === 'index-page' })
+        // Guide pages redirect only to locales the guide exists in (empty map
+        // = no script); a redirect to an untranslated locale would 404.
+        langRedirectScript: page.enOnly
+            ? ((page.lang === Object.keys(languages)[0] && availSet.size > 1)
+                ? langRedirectScript(languages, { home: false, allowedLangs: availSet })
+                : '')
+            : langRedirectScript(languages, { home: page.template === 'index-page' })
     };
 }
 
@@ -712,6 +794,22 @@ function build() {
         enPagesByFile[file] = page;
     }
 
+    // EN-only (guide) pages: detect which locales have a translation overlay.
+    // A guide goes live in a locale simply by its overlay file existing —
+    // hreflang, language switcher, redirect map, and the app-page guides
+    // section all follow this availability automatically.
+    const langDirs = fs.readdirSync(DATA_DIR).filter(entry =>
+        entry !== REF_LANG &&
+        languages[entry] &&
+        fs.statSync(path.join(DATA_DIR, entry)).isDirectory());
+    const guideAvailability = {}; // page path → Set of language codes
+    for (const [file, page] of Object.entries(enPagesByFile)) {
+        if (!page.enOnly) continue;
+        page.availableLangs = [REF_LANG, ...langDirs.filter(entry =>
+            fs.existsSync(path.join(DATA_DIR, entry, file)))];
+        guideAvailability[page.path] = new Set(page.availableLangs);
+    }
+
     // Build app catalog (slug → { iconSrc, appId }) from EN .app.json files
     // for cross-linking between related app pages
     const appCatalog = {};
@@ -761,6 +859,11 @@ function build() {
                     path: enPage.path,
                     outputPath,
                     appId: enPage.appId,
+                    // Guide-page fields (undefined for normal pages)
+                    enOnly: enPage.enOnly,
+                    appSlug: enPage.appSlug,
+                    fallbackPath: enPage.fallbackPath,
+                    availableLangs: enPage.availableLangs,
                     data: mergedData
                 });
             }
@@ -787,7 +890,7 @@ function build() {
         }
 
         try {
-            const context = buildContext(site, languages, page, appCatalog);
+            const context = buildContext(site, languages, page, appCatalog, guideAvailability);
             const html = render(template, context, partials);
             const outputFile = path.join(ROOT, page.outputPath);
             ensureDir(outputFile);

@@ -393,6 +393,48 @@ These lessons were learned from the Simplified Chinese (zh) translation and appl
 
 12. **Current languages** (32 total): English (en), Deutsch (de), Español (es), Français (fr), Italiano (it), Русский (ru), 日本語 (ja), 한국어 (ko), Português Brasil (pt-br), 简体中文 (zh-Hans), Svenska (sv), Norsk (nb), Dansk (da), Suomi (fi), العربية (ar), Català (ca), Čeština (cs), Ελληνικά (el), Français Canada (fr-ca), עברית (he), Hrvatski (hr), Magyar (hu), Nederlands (nl), Polski (pl), Português Portugal (pt), Română (ro), Slovenčina (sk), ไทย (th), Türkçe (tr), Українська (uk), Tiếng Việt (vi), 繁體中文 (zh-Hant)
 
+### Guide pages (EN-first SEO articles, e.g. /blood-pressure/chart-by-age/)
+
+Guide pages are long-form SEO articles that live under an app page's path.
+Files: `data/en/{slug}.guide.json`, `template: "guide-page"`. EN files carry
+three extra top-level fields: `"enOnly": true`, `"appSlug"` (which nav app to
+highlight), and `"fallbackPath"` (where locales without a translation land,
+e.g. the parent app page).
+
+**Per-locale availability is automatic.** A guide exists in a locale **iff the
+overlay file exists** (`data/de/chart-by-age.guide.json`). `build.js` derives
+everything from that: hreflang tags (only available locales, plus x-default,
+only once >1), language-switcher targets (available → the guide, unavailable →
+`fallbackPath`), the browser-language redirect map (available locales only),
+and the "Guides" section on app pages (each locale lists only its own
+available guides, URLs language-prefixed). `validate.js` treats guides as
+optional per language but still shape-checks any overlay that exists. There is
+no partial-broken state: an untranslated guide simply stays EN-only.
+
+**To translate a guide into a locale:**
+1. Create the overlay with `apply-translation.js` (never Edit), translating:
+   `meta`, `updatedText`, `breadcrumb` (home/app/current labels), `hero`
+   (title + `lead` HTML), `sections[].heading` + `sections[].html`, `appCta`
+   (title/text/learnMoreText), `faq` (title + items), `related` (title +
+   items incl. `description`), `disclaimerTitle`/`disclaimerText`, `cta`.
+2. **Internal links inside `lead`, `sections[].html`, FAQ answers, and
+   `related.items[].url` must use language-prefixed paths**
+   (`/de/blood-pressure/how-to-measure/`) — and should only point at guides
+   that exist in that locale; link the EN path's fallback (the app page)
+   otherwise. Structural fields (`iconSrc`, `appStoreUrl`, dates) are
+   inherited — don't include them.
+3. Translate the `guides` block in that locale's `blood-pressure.app.json`
+   overlay (title, subtitle, and **all 10 items positionally** — build.js
+   filters out unavailable ones per locale, but positions must align with EN).
+4. Run `node update-sitemap-guides.js` — regenerates the guide block in
+   `sitemap.xml` (between `<!-- guides:start/end -->` markers) from overlay
+   availability, hreflang clusters included. Never hand-edit that block.
+5. `node validate.js && node build.js`, and JSON-parse the new overlays.
+
+Adding a **new guide**: create the EN file (copy an existing one's shape),
+add it to the EN `blood-pressure.app.json` `guides.items`, run
+`node update-sitemap-guides.js`, and add it to `llms.txt`.
+
 ### Add a new app
 1. Add the app to `nav.apps[]` for each language in `data/languages.json`
 2. Create `{slug}.app.json` and `{slug}.tips.json` in each `data/{lang}/` directory
@@ -607,3 +649,4 @@ After translation agents complete:
 - All utility pages (about, support, privacy, terms, faq) use **structured JSON templates** — NOT raw `bodyContent`. Edit the structured fields (`contentSections`, `sections`, `contact`, etc.) in the `.utility.json` files.
 - The FAQ page (`faq.utility.json`) uses structured JSON with `template: "faq-page"` — edit individual questions/answers as markdown, not raw HTML
 - **16 files per language** = 5 app (`blood-pressure`, `daily-journal`, `mental-health`, `sleep`, `weight`) + 5 tips (same slugs) + 5 utility (`about`, `faq`, `privacy`, `support`, `terms`) + 1 `index`
+- **Plus guide pages** (`{slug}.guide.json`, EN-first, optional per locale) — see "Guide pages" in Common Tasks
