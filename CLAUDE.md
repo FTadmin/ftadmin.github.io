@@ -627,7 +627,43 @@ Group 6: sk, th, tr, uk, vi, zh-Hant
 - **Template changes** — one agent only
 - **EN source file edits** — edit first, then fan out translations
 
-### Post-translation checklist
+### Durability rules for large fan-outs (learned the hard way)
+
+A guide-translation fan-out (10 guides × 31 locales per app) ran through a
+session usage limit AND a container recycle in one evening. The limit kills
+every running agent at once mid-write; the recycle wipes the working tree
+and the scratchpad. Origin is the only durable store. Rules that kept the
+loss to a relaunch rather than a replay:
+
+1. **Commit and push gated work after every agent completion — never batch.**
+   Anything uncommitted when the environment dies is gone. The cost of a
+   commit is nothing; the cost of re-translating a locale is ~200k tokens.
+2. **Gate mechanically before staging; agent self-reports are not evidence**
+   (see pitfall 7 above). The gate that caught real defects checks: JSON
+   parse, exactly one top-level `data` key, no structural leaks (`ogImage`,
+   `appStoreUrl`, `iconSrc`, dates), no nulls anywhere (sparse-array
+   damage), section/faq/related array lengths equal EN, every internal link
+   locale-prefixed, and **per-file HTML tag counts equal EN** — the
+   tag-count diff caught a locale that silently dropped three `<strong>`
+   pairs after every other check passed.
+3. **Overlays are written atomically per guide** (apply-translation.js), so
+   a killed agent loses only its unwritten guides. Relaunch with a
+   completion prompt — "skip existing files, create missing ones, patch the
+   guides block if absent" — never re-run the full locale.
+4. **The subagent concurrency cap is 20.** Queue the remaining locales and
+   launch one as each completes; launching 31 at once silently fails the
+   last 11.
+5. **Keep the launch queue, spec files, and recovery recipe in files** and
+   re-create them from the conversation if the scratchpad dies. Recovery
+   after a recycle: `git fetch origin <branch> && git checkout -B <branch>
+   origin/<branch>`, census which overlays exist per locale, relaunch
+   completion agents for the gaps.
+6. **Commit a checkpoint before any risky boundary** (end of a session
+   window, large wave launch). A known-defective-but-parseable file is
+   worth committing with the defect noted: a three-tag repair patch is
+   cheaper than a lost translation.
+
+
 
 After translation agents complete:
 1. Validate JSON syntax for affected languages:
