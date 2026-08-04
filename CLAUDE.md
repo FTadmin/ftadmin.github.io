@@ -591,7 +591,9 @@ Rules:
 
 ### Agent model selection
 
-**Use the `sonnet` model for translation agents.** Translation work is high-volume but low-reasoning — sonnet is faster and cheaper. Set `model: "sonnet"` when launching translation agents. Reserve opus for structural changes, build system work, and complex debugging.
+**Use `opus` at LOW reasoning effort for translation agents** — `model: "opus"` with `effort: "low"`. Translation is high-volume but low-reasoning: it needs a strong grasp of the target language, not deep deliberation. Opus at low effort gives the better linguistic quality without paying for reasoning the task doesn't use, and is meaningfully faster than opus at default effort.
+
+Do NOT drop translation agents to sonnet. Localized copy is user-facing and ships in 31 languages where nobody on the team can proofread most of them — the model's command of the language is exactly the thing not to economize on. Reserve full-effort opus for structural changes, build system work, and complex debugging.
 
 ### Parallelization strategy
 
