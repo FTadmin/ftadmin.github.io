@@ -863,10 +863,16 @@
 
 <main>
 <h1>Často kladené otázky</h1>
+<div class="faq-search">
+    <input type="search" id="faq-search-input" placeholder="Search FAQs…" autocomplete="off" aria-label="Search FAQs…">
+</div>
+<p id="faq-no-results" class="faq-no-results" hidden>No matching questions. Try different words, or email us at support@feeltracker.com.</p>
+
+<section class="faq-section">
 
 
 
-
+<div class="faq-item">
     <h3>Ako pridám záznam?</h3>
     <p>Nový záznam môžete pridať buď 1. stlačením na deň alebo 2. stlačením + v pravom hornom rohu. Obe možnosti sú znázornené šípkami na obrázku nižšie.</p>
 
@@ -878,13 +884,17 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Môžem zaznamenávať viackrát za deň?</h3>
     <p>Áno. Za deň môžete pridať viacero záznamov, ako je uvedené vyššie. Stačí znova stlačiť na deň alebo na +.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako vymazem záznam?</h3>
     <p>Ak chcete vymazať záznam, môžete potiahnuť doľava na záznam a stlačiť Vymazať, alebo stlačiť na záznam, aby ste ho otvorili, a stlačiť ikonu koša v ľavom hornom rohu obrazovky. Obe metódy sú znázornené nižšie:</p>
 
@@ -898,13 +908,17 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Prečo vidím skóre sentimentu nad poznámkami? Je to súkromné?</h3>
     <p>Počas písania poznámok sa nad nimi zobrazí emotikona, ktorá naznačuje predpokladaný sentiment. Táto funkcia vám pomáha pochopiť, či vaše písanie pôsobí príliš negatívne alebo pozitívne, alebo vám pripomína, čo funguje a čo nie, a slúži ako vodítko pri písaní. Predvolene sentiment používa AI aplikácie rešpektujúcu súkromie; ak AI vypnete, počíta sa úplne vo vašom zariadení pomocou frameworku Apple Natural Language. Ak chcete, môžete túto funkciu vypnúť v Nastaveniach v časti Všeobecné.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako tlačím?</h3>
     <p>Keď stlačíte export (ako je znázornené nižšie), zobrazí sa hárok zdieľania. Na ňom posuňte nadol a stlačte Tlačiť (ako je znázornené nižšie). Na bezdrôtové tlačenie z iPhone alebo iPad potrebujete bezdrôtovú tlačiareň kompatibilnú s Apple AirPrint.</p>
 <p>Ak nemáte bezdrôtovú tlačiareň kompatibilnú s AirPrint, môžete si ju kúpiť <a href="https://geni.us/airprint_printer" target="_blank" rel="noopener">tu</a>.</p>
@@ -917,7 +931,9 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Môžem zdieľať lekárske informácie, ktoré sledujem, s lekárom?</h3>
     <p>Áno. Aplikácia to uľahčuje. Stlačte tlačidlo zdieľania (ako je znázornené nižšie), vyberte PDF a potom zvoľte mailovú aplikáciu. PDF správa bude priložená k e-mailu, ktorý potom môžete odoslať lekárovi.</p>
 
@@ -929,7 +945,9 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Ako môžem skryť priemery alebo súčty v denníku?</h3>
     <p>Priemery a súčty môžete skryť v možnostiach zobrazenia, ako je znázornené nižšie. Potom sa zobrazia iba zadané hodnoty a nie priemery. Môže to byť užitočné, ak považujete priemery/súčty medzi zadanými hodnotami za mätúce.</p>
 
@@ -941,26 +959,34 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Môžem exportovať do programu Excel alebo podobného tabuľkového softvéru?</h3>
     <p>Áno. Postupujte podľa pokynov vyššie, ale namiesto PDF zvoľte Excel alebo CSV ako výstupný formát. Potom buď uložte súbor na zariadenie, alebo si ho e-mailom pošlite.</p>
 <p>Formát Excel je spoľahlivejší, zatiaľ čo CSV môže byť kompatibilnejší – oba by sa mali otvoriť v Exceli a podobnom softvéri, ako je Apple Numbers alebo Google Sheets.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Komu môžem posielať údaje?</h3>
     <p>Môžete ich e-mailom poslať komukoľvek. Možno budete chcieť pravidelne posielať e-mailom vlastné údaje pre ich uchovanie a účely zálohovania. PDF alebo CSV súbor môžete tiež uložiť na zariadenie na neskoršie použitie.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako sa dostanem priamo na aktuálny deň v mesačnom zobrazení?</h3>
     <p>Dvakrát ťuknite na ikonu Denník na paneli kariet v dolnej časti obrazovky.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako zobrazím údaje z predchádzajúcich mesiacov?</h3>
     <p>Zobrazenie údajov z predchádzajúceho mesiaca (napríklad septembra, keď ste práve v októbri):</p>
 
@@ -982,7 +1008,9 @@
 <p><strong>Ak stále nevidíte údaje po kontrole mesačného zobrazenia:</strong> Prejdite do Nastavení > Údaje > Spravovať zálohy a hľadajte zálohy z mesiaca, ktorý sa snažíte zobraziť (alebo začiatkom nasledujúceho mesiaca). Ak nájdete zálohu z tohto časového obdobia, môžete z nej obnoviť a získať späť údaje.</p>
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako zmením čas alebo dátum záznamu?</h3>
     <p>Otvorte záznam a ťuknite na dátum alebo čas v hornej časti obrazovky, ako je znázornené nižšie. Zobrazí sa kalendár, kde môžete vybrať správny dátum, potom stlačte Uložiť.</p>
 <p><strong>Tip:</strong> Ak chcete vždy vytvoriť záznam pre dnešný deň, stlačte + vedľa aktuálneho dňa alebo stlačte + v pravom hornom rohu obrazovky. Ak záznam skončil na nesprávnom dátume, môže to byť preto, lebo + bol stlačený vedľa iného dňa – niektorí používatelia to používajú pre historické záznamy alebo budúce plánovanie.</p>
@@ -995,32 +1023,42 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Ako bezpečné sú moje údaje?</h3>
     <p>Feeltracker šifruje vaše údaje vo vašom zariadení, takže aj keď váš iPhone alebo iPad stratíte alebo vám ho ukradnú, nikto nemôže čítať vaše záznamy bez vášho kódu, Face ID alebo Touch ID. Údaje sú šifrované aj počas prenosu, keď sa synchronizujú s vaším účtom iCloud.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Kde sú uložené moje údaje?</h3>
     <p>Feeltracker ukladá vaše údaje vo vašom zariadení a vo vašom vlastnom súkromnom účte iCloud — nikdy v účte na našich serveroch. Aplikácie na ukladanie a synchronizáciu záznamov medzi vašimi zariadeniami používajú rovnakú technológiu Apple ako Poznámky a Fotky (CloudKit), vďaka čomu sú spoľahlivé aj súkromné.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môže niekto iný vidieť moje súkromné údaje?</h3>
     <p>Nie. Nikto vo Feeltracker nemôže vidieť vaše záznamy: nachádzajú sa vo vašom zariadení a vo vašom vlastnom účte iCloud, na serveroch spravovaných spoločnosťou Apple, a my si neponechávame žiadnu kópiu.</p>
 <p>Jedinou výnimkou je AI funkcia, ktorú sa rozhodnete použiť. Aby vám aplikácia mohla odpovedať, odošle údaje, ktoré táto funkcia potrebuje, spoločnosti OpenAI prostredníctvom nášho malého prenosového servera, ktorý z nich nič neukladá. Tieto požiadavky nečíta nikto vo Feeltracker. AI môžete v nastaveniach AI aplikácie prepnúť na Apple Intelligence priamo v zariadení, alebo ju úplne vypnúť — všetky podrobnosti nájdete v našich <a href="https://feeltracker.com/privacy/" target="_blank" rel="noopener">zásadách ochrany osobných údajov</a>.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Prečo musia byť moje údaje uložené na iCloude?</h3>
     <p>iCloud umožňuje zálohovanie údajov a ich synchronizáciu medzi zariadeniami. Keď stratíte telefón alebo si kúpite nový, údaje možno obnoviť z iCloudu.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Prečo sa moje údaje nesynchronizujú naprieč zariadeniami?</h3>
     <p>Vaše údaje by sa mali automaticky synchronizovať naprieč zariadeniami. Uistite sa, že:</p>
 
@@ -1039,80 +1077,106 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Musím mať predplatné pre každé zariadenie?</h3>
     <p>Nie. Jedno predplatné odomkne prémiové funkcie na všetkých zariadeniach prihlásených do rovnakého účtu iCloud. Ak sa prémium na inom zariadení nezobrazí, prejdi do Nastavenia > Predplatné (alebo do ekvivalentu v aplikácii) a stlač Obnoviť nákup. Uisti sa, že každé zariadenie je prihlásené do rovnakého účtu iCloud.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako fungujú zálohy?</h3>
     <p>Zálohy sa vytvárajú automaticky každý týždeň (aj keď to môžete vypnúť v Nastaveniach). Manuálne zálohy môžete tiež vytvoriť v Nastaveniach > Údaje.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Koľko záčoh sa vytvára? Mám ich mazať?</h3>
     <p>Počet vytváranych záčoh nie je obmedzený. Zálohy môžu siahať roky späť a všeobecne zaberajú veľmi málo miesta, takže ich mazanie výrazne neovplyvní úložisko zariadenia. Ak potrebujete uvoľniť miesto, je lepšie odstrániť väčšie súbory na zariadení, ako sú fotografie a videá.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Sú zálohy synchronizované na iCloude?</h3>
     <p>Zálohy sa momentálne nesynchronizujú na iCloude, ale aktuálne údaje áno. To znamená, že ak si kúpite nový iPhone alebo iPad, aktuálne údaje sa tam objavia, ale nie zálohy, pretože každé zariadenie si uchováva vlastné lokálne zálohy.</p>
 <p>To znamená, napríklad, ak vymažete záznam na iPhone a zmizne z iCloudu a telefónu, na iPade stále môžete prejsť späť a obnoviť ho z jednej zo starších záložných snímok.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Potrebujem účet na používanie tejto aplikácie?</h3>
     <p>Nie. Aplikácie Feeltracker nepotrebujú žiadny účet, žiadnu registráciu ani e-mailovú adresu — stiahnite si ich a začnite sledovať hneď. Synchronizácia využíva váš existujúci účet iCloud a infraštruktúru Apple, takže je rýchla, spoľahlivá a bezpečná bez toho, aby sme kedy museli uchovávať vaše prihlasovacie údaje.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžem túto aplikáciu používať na iPhone aj iPade?</h3>
     <p>Áno, a vaše údaje sa automaticky synchronizujú medzi nimi, ak ste prihlásení do rovnakého iCloud účtu. Na verzii pre iPad máte viac priestoru pre poznámky a môžete vidieť viac položiek.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Existuje verzia aplikácie pre Mac?</h3>
     <p>Áno. Aplikácie Feeltracker fungujú na Macoch s čipom Apple Silicon (M1 a novšie) a vaše záznamy sa tam automaticky synchronizujú prostredníctvom rovnakého účtu iCloud. Na Macu môžete zmeniť veľkosť okna, aby ste na väčšej obrazovke videli viac údajov. Aplikácie pre Mac si stiahnite <a href="https://apps.apple.com/us/developer/custom-arts/id968118447" target="_blank" rel="noopener">tu</a> z vášho Macu s čipom M1 alebo novším.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Chcel by som navrhnúť funkciu alebo vylepšenie aplikácie.</h3>
     <p>Radi by sme počuli vašu spätnú väzbu. Pošlite nám e-mail na <a href="mailto:feedback@feeltracker.com" target="_blank" rel="noopener">feedback@feeltracker.com</a>.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžem vypnúť zvuk?</h3>
     <p>Áno. Prejdite na kartu Nastavenia a vypnite posúvač vedľa Povoliť zvukové efekty.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Na čo slúži karta Trendy?</h3>
     <p>Trendy vám umožňujú identifikovať, čo máte na mysli, prečo a aký to má vplyv na vás. Posuňte nadol pre viac detailov a niekoľko príkladov, ako Trendy fungujú vo vašej aplikácii.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Prečo nevidím nič v Trendoch?</h3>
     <p>Aby Trendy fungovali, musíte pri ukladaní záznamov robiť poznámky. Môžete to urobiť na akomkoľvek zázname v poli Poznámky.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Na čo slúži karta Štatistiky?</h3>
     <p>Momentálne zobrazuje všetky záznamy medzi 2 dátumami a priemer/súčet v danom rozsahu. To vám umožňuje získať priemer/súčet za akékoľvek obdobie.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Aký je rozdiel medzi Denníkom, Trendmi a Štatistikami?</h3>
     <p>Denník je hlavná sekcia denníka/záznamu, ktorá vám umožňuje zadávať údaje a prezerať ich na mesačnom/ročnom/celoživotnom základe s priemermi a súčtami</p>
 <p>Trendy vám umožňujú identifikovať vzory v údajoch zaznamenaných v Denníku, aby ste mohli konať.</p>
@@ -1120,7 +1184,9 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Mám sa odhlásiť alebo vypnúť, aby som ušetril pamäť telefónu a batériu?</h3>
     <p>Nie je vôbec potrebné odhlásiť sa – zariadenie automaticky uvoľní aplikácie/zdroje z pamäti podľa potreby.</p>
 <p>Moderné iPhony a iPady majú veľa energeticky efektívnej pamäti, takže aplikácie môžu zostať v pamäti dlho bez akýchkoľvek negatívnych účinkov. Prístup k tejto pamäti je bezpečný a je už chránený Face ID, Touch ID alebo prístupovým kódom.</p>
@@ -1129,38 +1195,50 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ak sa neodhlásim, je to bezpečné?</h3>
     <p>Áno. Akonáhle stlačíte bočné tlačidlo na zariadení, aby ste ho zamkli, nikto sa nemôže dostať do vašej aplikácie alebo údajov, kým je zariadenie zamknuté.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Zobrazuje aplikácia reklamy?</h3>
     <p>Nie. Aplikácie Feeltracker nezobrazujú reklamy tretích strán a nepoužívajú žiadne reklamné siete ani SDK na sledovanie reklám (ako napríklad AdMob). Tvoje osobné a zdravotné údaje nikdy nezdieľame s inzerentmi. Aplikácie sú financované výlučne voliteľnými prémiami predplatnými a jednorazovými nákupmi cez App Store.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Je Feeltracker zadarmo?</h3>
     <p>Áno. Každá aplikácia Feeltracker je zadarmo na stiahnutie aj na používanie, bez reklám a bez potreby účtu. Zadarmo pre každého: neobmedzený počet záznamov, všetky grafy a trendy, synchronizácia s Apple Health, export do PDF/CSV/Excel/JSON, AI Sken kamerou a skutočné AI funkcie každý deň — Rýchly chat, Opýtať sa na otázku, Hlasové zhrnutie, Rozosmej ma, Upokoj ma, a denná Rýchla verzia väčších správ.</p>
 <p>Voliteľné predplatné Pro odomkne AI funkcie v plnom rozsahu (Hĺbkový výskum, Zhrnutie pre lekára, Detektív vzorov, Asistent cieľov, Pro chat, Hlasový chat, Denné postrehy, Apple Intelligence priamo v zariadení a nástroje navrhnuté pre každú aplikáciu) a zvýši veľkorysé denné limity.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Na čo platím predplatným?</h3>
     <p>Tvoje predplatné financuje priebežný vývoj — nové funkcie, opravy chýb, preklady a náklady na server pre voliteľné funkcie AI. Keďže neprevádzkujeme reklamy, predplatné a jednorazové nákupy sú jediný spôsob, ako financujeme aplikáciu, a udržiavajú zážitok čistý a súkromný pre každého.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Prečo by som si mal predplatiť? Prečo nemôžem zaplatiť len raz?</h3>
     <p>Malý pravidelný poplatok za predplatné uľahčuje vyskúšanie aplikácie bez veľkých počiatočných nákladov — a ročné predplatné Pro teraz zahŕňa bezplatnú 1-mesačnú skúšobnú verziu, takže si môžete všetko preskúmať skôr, než za čokoľvek zaplatíte. Z dlhodobého hľadiska nám príjmy z predplatného pomáhajú udržiavať aplikáciu a financujú vývoj užitočných nových funkcií.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Je niečo, čo môžem urobiť na podporu tejto aplikácie?</h3>
     <p>Spoliehame sa na dobré recenzie na rast aplikácie a budovanie nových funkcií. Zanechajte prosím recenziu kliknutím na odkaz pre vašu aplikáciu:</p>
 
@@ -1181,7 +1259,9 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako zrušiť predplatné Feeltracker?</h3>
     <p>Predplatné Feeltracker fakturuje Apple, takže ho zrušíte vo svojom účte Apple, nie v aplikácii: otvorte <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Spravovať predplatné</a> (alebo prejdite do Nastavení iOS, ťuknite na svoje meno a potom na Predplatné), vyberte aplikáciu Feeltracker a ťuknite na Zrušiť predplatné. Funkcie Pro si ponecháte do konca už zaplateného obdobia a vaše záznamy zostanú vo vašom zariadení tak či tak — bezplatná verzia so všetkými základnými funkciami bude naďalej fungovať ako predtým.</p>
 <p>Ak máte bezplatnú 1-mesačnú skúšobnú verziu (súčasť ročného predplatného), zrušením pred jej koncom nezaplatíte vôbec nič. A ak ste sa predplatili omylom, zrušte ho podľa vyššie uvedeného postupu a požiadajte Apple o vrátenie peňazí na <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> — nedávne nákupy sa väčšinou spracujú rýchlo.</p>
@@ -1189,105 +1269,137 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Zbiera aplikácia moje meno, dátum narodenia alebo pohlavie?</h3>
     <p>Iba ak sa rozhodnete ich uložiť. Voliteľne môžete vyplniť malý profil (meno, dátum narodenia, pohlavie), aby ste si prispôsobili používanie aplikácie — je to úplne dobrovoľné a základné funkcie sledovania fungujú aj bez toho. Ak ich zadáte, údaje profilu zostávajú vo vašom zariadení a vo vašom vlastnom iCloud, nikdy na našich serveroch.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako sa používajú moje profilové údaje?</h3>
     <p>Ak používaš voliteľnú funkciu AI (ako chat, prehľady alebo prispôsobenú spätnú väzbu), aplikácia môže zahrnúť relevantné časti tvojho profilu — zvyčajne krstné meno, vek (vypočítaný z dátumu narodenia) a pohlavie — do žiadosti, aby AI mohla poskytnúť relevantnejšie odpovede (napríklad zdravotné usmernenia vhodné pre vek alebo správne zámenná). Toto sa deje iba vtedy, keď aktívne používaš funkciu AI. Profil môžeš kedykoľvek upraviť alebo vymazať, alebo vypnúť funkcie AI.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Aké služby AI aplikácia používa?</h3>
     <p>Aplikácie používajú tri druhy AI, všetky voliteľné a na vyžiadanie:</p>
 <p>1. <strong>AI na zariadení</strong> (Apple Natural Language API) pre veci ako skórovanie sentimentu — beží úplne na tvojom zariadení, žiadne dáta ho neopúšťajú.<br>2. <strong>Apple Intelligence</strong> na podporovaných zariadeniach — spracúvaná na zariadení tam, kde je to možné, a prostredníctvom Apple Private Cloud Compute pre náročnejšie úlohy. Apple neukladá ani nevidí tvoje dáta a nepoužívajú sa na tréning modelov Apple.<br>3. <strong>OpenAI API</strong> pre chat, prehľady a prispôsobenú spätnú väzbu — používa sa iba vtedy, keď ho aktívne spustíš. Odosielajú sa iba relevantné dáta (a, ak sú uložené, obmedzený kontext profilu). OpenAI nepoužíva dáta API na tréning svojich modelov.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Je Apple Health povinný?</h3>
     <p>Nie. Integrácia Apple Health je úplne voliteľná. Aplikácie fungujú úplne aj bez neho — môžeš zadávať údaje manuálne, používať AI Camera Scan alebo importovať CSV súbory. Keď ho zapneš, môžeš si vybrať, ktoré typy dát môže aplikácia čítať alebo zapisovať, a prístup môžeš kedykoľvek odvolať v Nastaveniach iOS.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako vymazat moje dáta?</h3>
     <p>Máš nad tým kontrolu:</p>
 <p>- Vymaž jednotlivé záznamy potiahnutím.<br>- Vymaž svoj profil (meno, dátum narodenia, pohlavie) kedykoľvek na obrazovke profilu v aplikácii.<br>- Vymaž všetky dáta aplikácie naraz z nastavení aplikácie.<br>- Odstránenie aplikácie a jej zálohy iCloud v Nastaveniach iOS vymaže všetko. Keďže neuchovávame kópiu na našich serveroch, nie je nič navyše, čo by sme za teba mali vymazať.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžem používať AI bez odosielania dát do cloudu?</h3>
     <p>Áno. Feeltracker obsahuje režim <strong>Apple Intelligence</strong>, ktorý spúšťa AI úplne vo vašom zariadení pomocou modelov Apple Foundation Models — nič sa neodosiela na naše servery ani do OpenAI. Vyžaduje iOS 26 alebo novší na zariadení s podporou Apple Intelligence (iPhone 15 Pro alebo séria iPhone 16 a novšie, iPad a Mac s čipom Apple Silicon) a predplatné Feeltracker Pro, vďaka ktorému je AI priamo v zariadení <strong>neobmedzená</strong>. Medzi AI priamo v zariadení a cloudovou AI môžete kedykoľvek prepínať, prípadne AI úplne vypnúť, v nastaveniach AI v aplikácii.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Čo získam s predplatným Feeltracker Pro?</h3>
     <p>Feeltracker Pro odomkne verziu každej AI funkcie v plnom rozsahu a zvýši denné limity — samotné sledovanie je už zadarmo, takže Pro sa týka len AI.</p>
 <p>Pro zahŕňa Pro zdravotnú správu, Hĺbkový výskum, Detektíva vzorov, Asistenta cieľov, Zhrnutie pre lekára, Potvrdenie o PN, Zhrnutie textu, Generovanie príbehu, Osobný kvíz, Pro chat, Hlasový chat, Hovorenú spätnú väzbu, banner Denné postrehy, súkromnú AI Apple Intelligence priamo v zariadení, pokročilé PDF správy a nástroje navrhnuté pre každú aplikáciu: Pro správa MAP (Tlak krvi); Kognitívne preformulovanie, Identifikátor spúšťačov a Časová os nálad (Denník nálady); Prieskumník tém (Denný denník); Pro analýza snov a CPAP správa (Spánok); Plánovač jedál a Plánovač cvičenia (Váha). Jedno predplatné pokrýva váš iPhone, iPad a Mac, ak používajú rovnaký účet Apple.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Fungujú aplikácie Feeltracker offline?</h3>
     <p>Áno. Všetko, čo skutočne sledujete, funguje offline — pridávanie a úprava záznamov, fotografie, grafy, trendy, štatistiky, zálohy a exporty do PDF, CSV, Excel a JSON prebiehajú úplne vo vašom zariadení.</p>
 <p>Pripojenie na internet je potrebné len pre tri voliteľné veci: synchronizáciu s ďalšími zariadeniami cez iCloud, cloudové AI funkcie a import z Apple Health z iných aplikácií. Všetko, čo zaznamenáte offline, sa automaticky synchronizuje, keď budete znova online.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ktoré modely iPhone, iPad a Mac aplikácie Feeltracker podporujú?</h3>
     <p>Aplikácie Feeltracker fungujú na iPhone a iPad s iOS 16.0 alebo novším a na Macoch s čipom Apple Silicon (M1 a novšie). Ide o univerzálne aplikácie, takže jeden nákup pokrýva všetky vaše zariadenia a vaše údaje sa medzi nimi synchronizujú prostredníctvom vášho vlastného účtu iCloud.</p>
 <p>Dve funkcie vyžadujú novší hardvér: režim AI Apple Intelligence priamo v zariadení vyžaduje iOS 26 alebo novší na zariadení s podporou Apple Intelligence, a synchronizácia Mental Health (State of Mind) s Apple Health vyžaduje iOS 18 alebo novší. Všetko ostatné funguje na akomkoľvek podporovanom zariadení.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako dlho si Feeltracker ponecháva moje údaje na svojich serveroch?</h3>
     <p>Feeltracker si na svojich serveroch neponecháva vôbec žiadnu kópiu vašich zdravotných záznamov — vaše záznamy žijú iba vo vašom zariadení a vo vašom vlastnom účte iCloud, pokiaľ aplikáciu používate.</p>
 <p>Keď spustíte cloudovú AI funkciu, požiadavka prechádza cez náš prenosový server, ktorý neukladá ani požiadavku, ani odpoveď. Uchováva si však záznam o nákladoch pre každú požiadavku — dátum, aplikáciu, funkciu, AI model, počet tokenov a odhadovanú cenu, bez akýchkoľvek zdravotných údajov, textu správ či čohokoľvek, čo by vás identifikovalo — a tieto záznamy sa po 30 dňoch vymažú. OpenAI si samostatne uchováva údaje z API podľa vlastných zásad (v súčasnosti až 30 dní). Všetky podrobnosti nájdete v našich <a href="https://feeltracker.com/privacy/" target="_blank" rel="noopener">zásadách ochrany osobných údajov</a>.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Je Feeltracker dostupný v mojom jazyku?</h3>
     <p>Aplikácie Feeltracker aj táto webová stránka sú plne lokalizované v 32 jazykoch: angličtina, španielčina, francúzština, francúzština (Kanada), nemčina, taliančina, holandčina, katalánčina, portugalčina (Portugalsko aj Brazília), švédčina, nórčina, dánčina, fínčina, poľština, ruština, ukrajinčina, čeština, slovenčina, rumunčina, chorvátčina, maďarčina, gréčtina, turečtina, arabčina, hebrejčina, japončina, kórejčina, zjednodušená čínština, tradičná čínština, thajčina a vietnamčina. Arabčina a hebrejčina obsahujú kompletné rozloženie sprava doľava.</p>
 <p>Aplikácie automaticky sledujú jazyk vášho iPhonu a v nastaveniach AI si môžete nezávisle od jazyka aplikácie zvoliť aj jazyk, v ktorom má AI odpovedať.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Prídem o svoje údaje, ak odstránim appku alebo si kúpim nový iPhone?</h3>
     <p>Nie — pokiaľ ste prihlásení v rovnakom účte iCloud, vaše údaje sa vrátia automaticky. Vaše záznamy sa synchronizujú do vášho súkromného iCloudu, takže preinštalovanie appky alebo nastavenie nového iPhonu či iPadu všetko obnoví samo.</p>
 <p>Pred prechodom alebo preinštalovaním sa oplatí skontrolovať, či je zapnutý iCloud Drive (Nastavenia iOS > vaše meno > iCloud > iCloud Drive) a či sa vaše najnovšie záznamy zobrazujú aj na ostatných zariadeniach. Appka navyše automaticky vytvára miestne zálohy (Nastavenia > Údaje > Spravovať zálohy) ako ďalšiu poistku.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako získam vrátenie peňazí alebo zmením fakturačné údaje?</h3>
     <p>Všetky platby, faktúry a vrátenia peňazí vybavuje Apple, nie my — vaše platobné údaje nikdy nevidíme, takže vás nemôžeme účtovať priamo, sami vybaviť vrátenie peňazí ani upraviť údaje na faktúre.</p>
 <p>O vrátenie peňazí požiadate na stránke <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> — prihláste sa svojím účtom Apple a vyberte svoj nákup Feeltracker. Apple zvyčajne rozhodne do jedného až dvoch dní. Fakturačné údaje (napríklad adresu) spravujete v nastaveniach svojho účtu Apple. Ak sa s nákupom niečo pokazilo, napíšte nám aj na <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a> — vždy sa pokúsime pomôcť.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Existuje bezplatná skúšobná verzia?</h3>
     <p>Áno. Ročné predplatné Pro obsahuje bezplatnú 1-mesačnú skúšobnú verziu. Ak predplatné zrušíte počas skúšobného obdobia v <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Spravovať predplatné</a>, nebude vám nič účtované.</p>
 <p>A pamätajte: základné funkcie na sledovanie sú navždy zdarma, takže skúšobná verzia na ne netreba. Slúži len na to, aby ste si pred rozhodnutím vyskúšali plnohodnotné AI funkcie Pro.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Aplikácia Krvný tlak</h2>
 
 
+<div class="faq-item">
     <h3>Pripája sa aplikácia k monitoru krvného tlaku cez Bluetooth?</h3>
     <p>Aplikácia sa nepáruje s monitormi cez Bluetooth – to však neznamená, že musíte všetko zadávať ručne. Namerané hodnoty môžete do aplikácie zadať tromi spôsobmi:</p>
 <p><strong>Skenovanie kamerou s AI</strong> (najjednoduchšie): po nameraní namierte kameru iPhonu na displej monitora a aplikácia automaticky prečíta čísla. Funguje takmer s akýmkoľvek monitorom s digitálnym displejom, bez ohľadu na značku či model – bez párovania, bez nastavovania, a trvá to len pár sekúnd. Skenovanie kamerou je bezplatné pre všetkých, s veľkorysým denným limitom.</p>
@@ -1296,177 +1408,267 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako funguje AI skenovanie kamerou?</h3>
     <p>Po odčítaní krvného tlaku otvorte aplikáciu a ťuknite na tlačidlo „+", potom vyberte „Skenovať kamerou". Podržte telefón stabilne asi 15-30 cm od displeja monitora, pričom sa uistite, že čísla sú jasne viditeľné a dobre osvetlené. Aplikácia automaticky načíta systolické, diastolické a pulzové hodnoty. Pre najlepšie výsledky zabezpečte dobré osvetlenie a držte telefón stabilne počas skenovania. Funguje s väčšinou digitálnych monitorov vrátane značiek OMRON, Microlife a Beurer.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Prečo vidím duplicitné záznamy?</h3>
     <p>Zvyčajne to spôsobuje konfigurácia synchronizácie Apple Health. Najčastejší problém je mať povolené iba oprávnenia na zápis pre Apple Health, ale nie na čítanie. Ak to chcete opraviť: Prejdite do Nastavenia > Údaje > Apple Health a uistite sa, že sú povolené oprávnenia na ČÍTANIE aj ZÁPIS pre Krvný tlak a Srdcová frekvencia – nielen zápis. Aplikácia potrebuje oprávnenie na čítanie, aby pred importom z Health skontrolovala, či odčítanie už existuje.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžem sledovať odčítania pre viacerých členov rodiny?</h3>
     <p>Funkcia štítkov prichádza v priebehu niekoľkých mesiacov, ktorá vám umožní sledovať odčítania pre viacero ľudí na jednom zariadení. Budete môcť označiť každý záznam menom osoby a potom generovať individuálne správy pre každého člena rodiny.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Moje údaje sa nesynchronizujú medzi iPhone a iPad. Prečo?</h3>
     <p>Najprv sa uistite, že ste prihlásení do rovnakého iCloud účtu na oboch zariadeniach. Prejdite do Nastavenia > [Vaše meno] a skontrolujte Apple ID. Druhý, overte, či je iCloud Drive povolený na oboch zariadeniach (Nastavenia > [Vaše meno] > iCloud > iCloud Drive). Údaje sa synchronizujú automaticky cez iCloud, ale vyžaduje to internetové pripojenie a môže to trvať niekoľko minút. Skúste otvoriť aplikáciu na každom zariadení a potiahnuť nadol na obnovenie.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Čo zahŕňa predplatné? Čo je zadarmo?</h3>
     <p>Všetky základné funkcie sú zdarma pre každého — neobmedzené záznamy, AI skenovanie fotoaparátom, všetky grafy a trendy, synchronizácia s Apple Health a exporty do PDF/CSV/Excel/JSON — a každý používateľ má skutočné AI funkcie zdarma každý deň, vrátane Opýtať sa otázku, Quick Chat, Hlasový súhrn a rýchlych verzií správ. Voliteľné predplatné Pro odomkne plné, najpodrobnejšie AI funkcie (Hĺbkový výskum, Súhrn pre lekára, Detektív vzorov, Pro Chat, Hlasový chat a ďalšie), spúšťa ich na našej najschopnejšej AI a zvyšuje už aj tak štedré denné limity. Aplikácie nikdy nezobrazujú reklamy, bez ohľadu na to, či máte predplatné alebo nie.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Čo je MAP a mám ho sledovať?</h3>
     <p>MAP (stredný arteriálny tlak) predstavuje priemerný tlak vo vašich tepnách počas jedného srdcového cyklu. Vypočíta sa automaticky pre každé odčítanie. MAP je obzvlášť dôležitý pre pacientov s LVAD (ľavostranné ventrikulárne asistenčné zariadenie) a ďalšie s konkrétnymi kardiovaskulárnymi stavmi. Ak chcete povoliť zobrazenie MAP, prejdite do Nastavenia > Krvný tlak > Zobraziť stredný arteriálny tlak (MAP).</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako používam šablóny poznámok na úsporu času?</h3>
     <p>Pri zadávaní poznámky (napríklad „Ranné odčítanie – pred liekmi“) ťuknite na tlačidlo „Šablóna“ v ľavom dolnom rohu poľa poznámok a uložte ju ako šablónu. Nabudúce, keď zadáte odčítanie, znova ťuknite na „Šablóna“ a vyberte zo uložených šablón – text sa okamžite vloží. Je to skvelé pre opakujúce sa poznámky ako „Ráno – pred liekmi“ alebo „Večer – po večeri“.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Aký krvný tlak je príliš vysoký alebo nízky?</h3>
     <p>Váš krvný tlak by mal byť normálne medzi 90-140 pre systolickú hodnotu a 60-90 pre diastolickú hodnotu. Ak je mimo tohto rozsahu, mali by ste sa poradiť s lekárom.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Aký je ideálny krvný tlak?</h3>
     <p>Podľa NHS je ideálny krvný tlak medzi 90/60 mmHg a 120/80 mmHg. Môže sa však líšiť v závislosti od pohlavia, veku a iných premenných. Preto je najlepšie konzultovať s miestnym lekárom pre presné posúdenie krvného tlaku na základe individuálnych okolností.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako meriam krvný tlak?</h3>
     <p>Krvný tlak sa meria pomocou digitálneho monitora krvného tlaku. <a href="https://geni.us/B9RB" target="_blank" rel="noopener">Tu</a> nájdete monitory krvného tlaku, ktoré skvele fungujú s funkciou Camera Scan AI. Aplikácia dokáže automaticky čítať hodnoty z väčšiny digitálnych monitorov vrátane značiek OMRON, Microlife a Beurer.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Na čo sú Trendy?</h3>
     <p>S Trendmi táto aplikácia berie vaše údaje a poznámky a ukazuje, čo vás ovplyvňuje a ako. Napríklad môžete vidieť, že ste meditovali 20-krát minulý rok a že meditácia znižuje váš krvný tlak. Naopak, môžete vidieť, že vždy, keď sa stretnete s Bobom, sa hádate a on zvyšuje váš krvný tlak. Čím viac poznámok používate, tým užitočnejšie môžu byť Trendy.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžete vysvetliť Trendy na príklade?</h3>
     <p>Napríklad idete behať 10-krát. 5-krát vám krvný tlak klesne o 10 a ostatné krát klesne o 5. Trendy ukážu, že v priemere beh pomáha znižovať krvný tlak o asi 7,5 bodov.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Dokáže môj iPhone alebo iPad zmerať krvný tlak sám?</h3>
     <p>Nie. Žiadny telefón ani tablet nedokáže sám zmerať krvný tlak — to je hardvérové obmedzenie každého smartfónu, nielen tejto appky. Na samotné meranie potrebujete tlakomer s manžetou.</p>
 <p>Appka vám uľahčuje zaznamenávanie a pochopenie výsledkov: namierite kameru na displej tlakomera a skenovanie kamerou s AI za vás zadá hodnoty, potom appka všetko sleduje, zobrazuje v grafoch a analyzuje v čase a premieňa to na správy, ktoré môžete zdieľať so svojím lekárom.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Normálna hodnota sa zobrazuje ako „vysoká“ — dá sa zmeniť rozsah krvného tlaku?</h3>
     <p>Áno. Prejdite do Nastavenia > Krvný tlak > Prispôsobiť rozsahy krvného tlaku a nastavte presne, kde každé farebné pásmo začína a končí, aby appka zodpovedala odporúčaniam vášho lekára.</p>
 <p>Toto sa hodí aj vtedy, keď vám lekár určí osobné ciele — napríklad udržiavať systolický tlak nad 100 kvôli ochoreniu obličiek alebo srdca. Vaše vlastné rozsahy sa potom uplatnia všade: v denníku, grafoch aj správach.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Naskenoval(a) som hodnotu a stlačil(a) Uložiť, ale v appke ju nevidím. Kam sa podela?</h3>
     <p>Takmer vždy sa hodnota uložila — len pod iným dátumom, než ste čakali. Nový záznam sa vytvorí pre deň, ktorý ste mali vybratý pred otvorením skenera, takže ak ste stlačili + pri inom dni, hodnota sa uloží tam.</p>
 <p>Skontrolujte dni okolo dnešného v Denníku a tiež sa uistite, že všetky možnosti zobrazenia sú nastavené na „Zobraziť“ (tlačidlo možností denníka hore). Ak ju stále nenájdete, napíšte nám na <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a> priamo z Nastavení appky, radi pomôžeme.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Aplikácia Feeltracker Denník nálady</h2>
 
 
+<div class="faq-item">
     <h3>Na čo sú Trendy?</h3>
     <p>S Trendmi táto aplikácia berie vaše údaje a poznámky a ukazuje, čo vás ovplyvňuje a ako. Napríklad môžete vidieť, že ste sa stretli s Janou 20-krát minulý rok a že vás Jana v priemere veľmi teší. Naopak, môžete vidieť, že vždy, keď sa stretnete s Bobom, sa hádate a on vás robí nešťastným. Čím viac poznámok používate, tým užitočnejšie môžu byť Trendy.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžete vysvetliť Trendy na príklade?</h3>
     <p>Napríklad stretnete Janu 10-krát. 5-krát vás urobila veľmi šťastným (+2) a 5-krát vás urobila dosť šťastným (+1). Trendy ukážu, že Jana vás v priemere dosť (+1,5) teší.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Aplikácia Denné poznámky</h2>
 
 
+<div class="faq-item">
     <h3>Na čo sú Trendy?</h3>
     <p>S Trendmi táto aplikácia berie vaše údaje a poznámky a ukazuje, ktoré slová máte najviac na mysli. Napríklad môžete vidieť, že ste použili nejaké slovo 20-krát minulý rok. Naopak, môžete vidieť, že ste použili iné slovo 50-krát – oveľa viac. Čím viac poznámok používate, tým užitočnejšie môžu byť Trendy.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžete vysvetliť Trendy na príklade?</h3>
     <p>Napríklad píšete o Jane 120-krát v poznámkach, viac ako o práci, o ktorej píšete 50-krát. Trendy v tomto prípade jasne ukazujú, že Jana bola najdôležitejšou témou na vašej mysli.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Aplikácia Spánkový denník</h2>
 
 
+<div class="faq-item">
     <h3>Na čo sú Trendy?</h3>
     <p>S Trendmi táto aplikácia berie vaše údaje a poznámky a ukazuje, čo vás ovplyvňuje a ako. Napríklad môžete vidieť, že ste minulý týždeň pili veľa kávy a preto ste mali menej spánku. Naopak, môžete vidieť, že vždy, keď jete šalát alebo idete do posilňovne, lepšie spíte. Čím viac poznámok používate, tým užitočnejšie môžu byť Trendy.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžete vysvetliť Trendy na príklade?</h3>
     <p>Napríklad pijete kávu 10-krát. 5-krát spíte o 2 hodiny menej a ostatných 5-krát spíte o 1 hodinu menej. Trendy ukážu, že v priemere pitie kávy spôsobuje, že spíte o 1,5 hodiny menej.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Aplikácia Denník hmotnosti a telesného tuku</h2>
 
 
+<div class="faq-item">
     <h3>Na čo sú Trendy?</h3>
     <p>S Trendmi táto aplikácia berie vaše údaje a poznámky a ukazuje, čo vás ovplyvňuje a ako. Napríklad môžete vidieť, že ste jedli rýchle občerstvenie 20-krát minulý rok a že v priebehu času priberiete, keď jete rýchle občerstvenie. Naopak, môžete vidieť, že vždy, keď jete šalát alebo idete do posilňovne, chudnete. Čím viac poznámok používate, tým užitočnejšie môžu byť Trendy.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Môžete vysvetliť Trendy na príklade?</h3>
     <p>Napríklad jete šišky 10-krát. 5-krát vaša hmotnosť stúpne o 0,1 kg. Ostatných 5-krát vaša hmotnosť stúpne o 0,3 kg. Trendy ukážu, že v priemere jedenie šišiek zvyšuje vašu hmotnosť o 0,2 kg.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ako meriam telesný tuk?</h3>
     <p>Telesný tuk uvádza špeciálne navrhnutá váha, ktorá meria zloženie tela, ako aj hmotnosť. <a href="https://geni.us/PQXEb" target="_blank" rel="noopener">Tu</a> je príklad takejto váhy od Omronu. Dostupné budú aj ďalšie možnosti od iných značiek – hľadajte „Zloženie tela“ spolu s váhami.</p>
 <p>Všimnite si tiež, že aj keď zadáte iba hmotnosť, uvidíte hodnotu BMI (naľavo od hmotnosti, farebne kódovaná), ktorá poskytne hrubý indikátor, či ste zdravej hmotnosti (kde zelená je dobrá a červená je nadváha).</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Kontaktujte nás</h2>
 <p>Ak máte akékoľvek otázky alebo návrhy, neváhajte nás kontaktovať na <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a>.</p>
 
+</section>
 
 </main>
+
+<script>
+(function () {
+    var input = document.getElementById('faq-search-input');
+    var noResults = document.getElementById('faq-no-results');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.faq-section'));
+    if (!input) return;
+    var norm = function (s) { return s.toLowerCase(); };
+    input.addEventListener('input', function () {
+        var q = norm(input.value.trim());
+        var any = false;
+        sections.forEach(function (section) {
+            var items = Array.prototype.slice.call(section.querySelectorAll('.faq-item'));
+            if (items.length) {
+                var visible = 0;
+                items.forEach(function (item) {
+                    var show = !q || norm(item.textContent).indexOf(q) !== -1;
+                    item.hidden = !show;
+                    if (show) visible++;
+                });
+                section.hidden = visible === 0;
+            } else {
+                section.hidden = !!q && norm(section.textContent).indexOf(q) === -1;
+            }
+            if (!section.hidden) any = true;
+        });
+        noResults.hidden = any;
+    });
+})();
+</script>
 
     <!-- Footer -->
     <footer>

@@ -863,10 +863,16 @@
 
 <main>
 <h1>Häufig gestellte Fragen</h1>
+<div class="faq-search">
+    <input type="search" id="faq-search-input" placeholder="Search FAQs…" autocomplete="off" aria-label="Search FAQs…">
+</div>
+<p id="faq-no-results" class="faq-no-results" hidden>No matching questions. Try different words, or email us at support@feeltracker.com.</p>
+
+<section class="faq-section">
 
 
 
-
+<div class="faq-item">
     <h3>Wie füge ich einen Eintrag hinzu?</h3>
     <p>Sie können einen neuen Eintrag hinzufügen, indem Sie entweder 1. auf den Tag tippen oder 2. auf + oben rechts tippen. Beide Optionen werden Ihnen durch die Pfeile im Bild unten gezeigt.</p>
 
@@ -878,13 +884,17 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Kann ich mehrmals am Tag etwas aufzeichnen?</h3>
     <p>Ja. Sie können viele Einträge pro Tag hinzufügen, wie oben gezeigt. Tippen Sie einfach erneut auf den Tag oder auf +, um dies zu tun.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie lösche ich einen Eintrag?</h3>
     <p>Um einen Eintrag zu löschen, können Sie auf dem Eintrag nach links wischen und auf Löschen tippen, oder auf den Eintrag tippen, um ihn zu öffnen, und das Papierkorb-Symbol oben links auf dem Bildschirm drücken. Beide Methoden werden unten gezeigt:</p>
 
@@ -898,13 +908,17 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Warum sehe ich eine Stimmungsbewertung über meinen Notizen? Ist das privat?</h3>
     <p>Während du deine Notizen schreibst, erscheint ein Emoji darüber, das die vorhergesagte Stimmung anzeigt. Diese Funktion kann dir helfen zu verstehen, ob dein Text übermäßig negativ oder positiv wirkt, oder dich daran erinnern, was funktioniert und was nicht, als Leitfaden für dein Schreiben. Standardmäßig nutzt die Stimmungsanalyse die datenschutzfreundliche KI der App; wenn du KI ausschaltest, wird sie stattdessen vollständig auf deinem Gerät mit Apples Natural-Language-Framework berechnet. Wenn du möchtest, kannst du diese Funktion in den Einstellungen unter Allgemein deaktivieren.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie drucke ich?</h3>
     <p>Wenn Sie auf Exportieren tippen (wie unten gezeigt), sehen Sie ein Freigabeblatt. Scrollen Sie dort nach unten und tippen Sie auf Drucken (wie unten gezeigt). Sie benötigen einen Apple AirPrint-kompatiblen kabellosen Drucker, um drahtlos von Ihrem iPhone oder iPad zu drucken.</p>
 <p>Wenn Sie keinen AirPrint-kompatiblen kabellosen Drucker haben, können Sie einen <a href="https://geni.us/airprint_printer" target="_blank" rel="noopener">hier</a> kaufen.</p>
@@ -917,7 +931,9 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Kann ich medizinische Informationen, die ich verfolge, mit meinem Arzt teilen?</h3>
     <p>Ja. Die App macht dies einfach. Tippen Sie auf die Teilen-Schaltfläche (wie unten gezeigt), wählen Sie PDF und dann Ihre Mail-App. Der PDF-Bericht wird an eine E-Mail angehängt, die Sie dann an Ihren Arzt senden können.</p>
 
@@ -929,7 +945,9 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Wie kann ich Durchschnittswerte oder Summen im Journal ausblenden?</h3>
     <p>Sie können Durchschnittswerte und Summen in den Ansichtsoptionen ausblenden, wie unten gezeigt. Dann werden nur Ihre eingegebenen Werte angezeigt und keine Durchschnittswerte. Dies kann nützlich sein, wenn Sie die Durchschnittswerte/Summen zwischen Ihren eingegebenen Daten als verwirrend empfinden.</p>
 
@@ -941,26 +959,34 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Kann ich nach Excel oder ähnliche Tabellenkalkulationssoftware exportieren?</h3>
     <p>Ja. Folgen Sie den obigen Anweisungen, wählen Sie jedoch Excel oder CSV anstelle von PDF als Ausgabeformat. Speichern Sie die Datei dann entweder auf Ihrem Gerät oder senden Sie sie sich per E-Mail.</p>
 <p>Das Excel-Format ist zuverlässiger, während CSV möglicherweise weiter kompatibel ist - beide sollten sich in Excel und ähnlicher Software wie Apple Numbers oder Google Sheets öffnen lassen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>An wen kann ich meine Daten senden?</h3>
     <p>Sie können sie per E-Mail an jeden senden, den Sie möchten. Sie möchten vielleicht Ihre Daten regelmäßig zur Aufbewahrung und Sicherung an sich selbst senden. Sie können die PDF- oder CSV-Datei auch auf Ihrem Gerät zur späteren Verwendung speichern.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie scrolle ich in der Monatsansicht direkt zum aktuellen Tag?</h3>
     <p>Tippen Sie doppelt auf das Journal-Symbol in der Tab-Leiste am unteren Bildschirmrand.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie zeige ich Daten aus früheren Monaten an?</h3>
     <p>Um Daten aus einem früheren Monat anzuzeigen (z. B. September-Daten, wenn Sie sich gerade im Oktober befinden):</p>
 
@@ -982,7 +1008,9 @@
 <p><strong>Wenn Sie Ihre Daten nach Überprüfung der Monatsansicht immer noch nicht sehen:</strong> Gehen Sie zu Einstellungen > Daten > Backups verwalten und suchen Sie nach Backups aus dem Monat, den Sie ansehen möchten (oder vom Anfang des Folgemonats). Wenn Sie ein Backup aus diesem Zeitraum finden, können Sie es wiederherstellen, um Ihre Daten zurückzubekommen. Dies kann helfen, wenn Sie die App neu installiert haben oder wenn es ein Synchronisierungsproblem gab.</p>
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie ändere ich die Uhrzeit oder das Datum eines Eintrags?</h3>
     <p>Öffnen Sie einen Eintrag und tippen Sie auf das Datum oder die Uhrzeit oben auf dem Bildschirm, wie unten gezeigt. Ein Kalender wird angezeigt, in dem Sie das richtige Datum auswählen können. Drücken Sie dann auf Sichern.</p>
 <p><strong>Tipp:</strong> Um immer einen Eintrag für das heutige Datum zu erstellen, drücken Sie das + neben dem aktuellen Tag oder das + oben rechts auf dem Bildschirm. Wenn ein Eintrag auf dem falschen Datum gelandet ist, wurde möglicherweise das + neben einem anderen Tag gedrückt — manche Benutzer verwenden dies für historische Einträge oder zukünftige Planungen.</p>
@@ -995,32 +1023,42 @@
 
     </p>
 
+</div>
 
+<div class="faq-item">
     <h3>Wie sicher sind meine Daten?</h3>
     <p>Feeltracker verschlüsselt deine Daten auf deinem Gerät, sodass niemand deine Einträge ohne deinen Code, Face ID oder Touch ID lesen kann, selbst wenn dein iPhone oder iPad verloren geht oder gestohlen wird. Die Daten werden auch während der Übertragung verschlüsselt, wenn sie mit deinem iCloud-Konto synchronisiert werden.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wo werden meine Daten gespeichert?</h3>
     <p>Feeltracker speichert deine Daten auf deinem Gerät und in deinem eigenen privaten iCloud-Konto – niemals in einem Konto auf unseren Servern. Die Apps nutzen dieselbe Apple-Technologie wie Notizen und Fotos (CloudKit), um Einträge geräteübergreifend zu speichern und zu synchronisieren, was sie sowohl zuverlässig als auch privat macht.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Kann jemand anderes meine privaten Daten sehen?</h3>
     <p>Nein. Niemand bei Feeltracker kann deine Einträge sehen: Sie liegen auf deinem Gerät und in deinem eigenen iCloud-Konto, auf von Apple verwalteten Servern, und wir behalten keine Kopie.</p>
 <p>Die einzige Ausnahme ist eine KI-Funktion, die du selbst nutzt. Um dir zu antworten, sendet die App die dafür benötigten Daten über einen kleinen Relay-Server von uns an OpenAI, der nichts davon speichert. Niemand bei Feeltracker liest diese Anfragen. Du kannst KI jederzeit in den KI-Einstellungen der App auf On-Device Apple Intelligence umstellen oder komplett ausschalten – alle Details findest du in unserer <a href="https://feeltracker.com/privacy/" target="_blank" rel="noopener">Datenschutzrichtlinie</a>.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Warum müssen meine Daten in iCloud gespeichert werden?</h3>
     <p>iCloud ermöglicht es, Ihre Daten zu sichern und zwischen Ihren Geräten zu synchronisieren. Wenn Sie Ihr Telefon verlieren oder ein neues bekommen, können Ihre Daten aus iCloud wiederhergestellt werden.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Warum werden meine Daten nicht zwischen meinen Geräten synchronisiert?</h3>
     <p>Ihre Daten sollten automatisch zwischen Ihren Geräten synchronisiert werden. Stellen Sie sicher, dass:</p>
 
@@ -1039,80 +1077,106 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Benötige ich ein Abonnement für jedes Gerät?</h3>
     <p>Nein. Ein Abonnement schaltet Premium-Funktionen auf allen Geräten frei, die am selben iCloud-Konto angemeldet sind. Falls Premium auf einem anderen Gerät nicht angezeigt wird, gehe zu Einstellungen > Abonnement (oder dem entsprechenden Bereich in der App) und tippe auf „Kauf wiederherstellen“. Stelle sicher, dass alle Geräte am selben iCloud-Konto angemeldet sind.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie funktionieren Backups?</h3>
     <p>Backups werden standardmäßig automatisch jede Woche erstellt (obwohl Sie dies in den Einstellungen deaktivieren können). Sie können auch manuelle Backups unter Einstellungen > Daten erstellen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie viele Backups werden erstellt? Sollte ich sie löschen?</h3>
     <p>Es gibt keine Begrenzung für die Anzahl der erstellten Backups. Backups können Jahre zurückreichen und nehmen in der Regel sehr wenig Speicherplatz ein, sodass das Löschen keinen großen Unterschied für den Speicher Ihres Geräts macht. Wenn Sie Speicherplatz freigeben müssen, ist es besser, größere Dateien auf Ihrem Gerät wie Fotos und Videos zu löschen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Werden Backups mit iCloud synchronisiert?</h3>
     <p>Derzeit werden Backups nicht über iCloud synchronisiert, aber Ihre aktuellen Daten schon. Das bedeutet, wenn Sie ein neues iPhone oder iPad bekommen, erscheinen dort auch Ihre aktuellen Daten, aber nicht Ihre Backups, da jedes Gerät seine eigenen lokalen Backups behält.</p>
 <p>Das bedeutet zum Beispiel, wenn Sie einen Eintrag auf Ihrem iPhone löschen und er aus iCloud und Ihrem Telefon verschwunden ist, könnten Sie immer noch auf Ihr iPad gehen und von einem seiner älteren Backup-Snapshots wiederherstellen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Brauche ich ein Konto, um diese App zu nutzen?</h3>
     <p>Nein. Feeltracker-Apps benötigen kein Konto, keine Anmeldung und keine E-Mail-Adresse – lade die App herunter und starte sofort mit dem Tracken. Die Synchronisierung nutzt dein bestehendes iCloud-Konto und Apples Infrastruktur, sodass sie schnell, zuverlässig und sicher ist, ohne dass wir jemals einen Login für dich speichern.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Kann ich diese App sowohl auf meinem iPhone als auch auf meinem iPad verwenden?</h3>
     <p>Ja, und Ihre Daten werden automatisch zwischen ihnen synchronisiert, wenn Sie mit demselben iCloud-Konto angemeldet sind. Auf der iPad-Version haben Sie mehr Platz für Notizen und können mehr Einträge sehen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Gibt es eine Mac-Version der App?</h3>
     <p>Ja. Feeltracker-Apps laufen auf Apple-Silicon-Macs (M1 und neuer), und deine Einträge werden dort automatisch über dasselbe iCloud-Konto synchronisiert. Auf dem Mac kannst du das Fenster vergrößern, um mehr Daten auf einem größeren Bildschirm zu sehen. Lade die Mac-Apps <a href="https://apps.apple.com/us/developer/custom-arts/id968118447" target="_blank" rel="noopener">hier</a> auf deinem M1 oder neueren Mac herunter.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ich möchte eine Funktion oder Verbesserung für die App vorschlagen.</h3>
     <p>Wir freuen uns über Ihr Feedback. Schreiben Sie uns an <a href="mailto:feedback@feeltracker.com" target="_blank" rel="noopener">feedback@feeltracker.com</a>.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Kann ich den Ton ausschalten?</h3>
     <p>Ja. Gehen Sie zum Einstellungen-Tab und deaktivieren Sie den Schieberegler neben Soundeffekte aktivieren.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wofür ist der Trends-Tab?</h3>
     <p>Trends hilft Ihnen zu erkennen, was Sie beschäftigt, warum und welche Auswirkungen es auf Sie hat. Scrollen Sie nach unten für mehr Details und einige Beispiele, wie Trends in Ihrer App funktioniert.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Warum sehe ich nichts in Trends?</h3>
     <p>Damit Trends funktioniert, müssen Sie beim Speichern von Einträgen Notizen machen. Sie können dies bei jedem Eintrag im Notizfeld tun.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wofür ist der Statistik-Tab?</h3>
     <p>Dieser zeigt Ihnen derzeit alle Einträge zwischen 2 Daten und einen Durchschnitt/eine Summe in diesem Zeitraum. So können Sie einen Durchschnitt/eine Summe für jeden beliebigen Zeitraum erhalten.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Was ist der Unterschied zwischen Journal, Trends und Statistik?</h3>
     <p>Journal ist der Hauptbereich für Tagebuch/Protokoll, in dem Sie Daten eingeben und auf monatlicher/jährlicher/lebenslanger Basis mit Durchschnittswerten und Summen anzeigen können.</p>
 <p>Trends hilft Ihnen, Muster in den Daten zu erkennen, die Sie im Journal aufzeichnen, damit Sie darauf reagieren können.</p>
@@ -1120,7 +1184,9 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Sollte ich mich abmelden oder das Gerät herunterfahren, um Speicher und Akku zu sparen?</h3>
     <p>Es ist überhaupt nicht nötig, sich abzumelden - das Gerät entlädt Apps/Ressourcen automatisch aus dem Speicher, wenn nötig.</p>
 <p>Moderne iPhones und iPads haben viel energieeffizienten Speicher, sodass Apps lange im Speicher bleiben können, ohne negative Auswirkungen. Der Zugriff auf diesen Speicher ist sicher und bereits durch Face ID, Touch ID oder einen Passcode geschützt.</p>
@@ -1129,38 +1195,50 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ist es sicher, wenn ich mich nicht abmelde?</h3>
     <p>Ja. Sobald Sie die Seitentaste am Gerät drücken, um es wie gewohnt zu sperren, kann niemand auf Ihre App oder Daten zugreifen, solange es gesperrt ist.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Zeigt die App Werbung?</h3>
     <p>Nein. Die Feeltracker-Apps zeigen keine Werbung von Drittanbietern und verwenden keine Werbenetzwerke oder Werbe-Tracking-SDKs (wie AdMob). Deine persönlichen und Gesundheitsdaten werden niemals mit Werbetreibenden geteilt. Die Apps werden ausschließlich durch optionale Premium-Abonnements und Einmalkäufe über den App Store finanziert.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ist Feeltracker kostenlos?</h3>
     <p>Ja. Jede Feeltracker-App ist kostenlos herunterladbar und kostenlos nutzbar, ganz ohne Werbung und ohne benötigtes Konto. Kostenlos für alle: unbegrenzte Einträge, alle Diagramme und Trends, Apple-Health-Synchronisierung, PDF-/CSV-/Excel-/JSON-Export, KI-Kamera-Scan und echte KI-Funktionen jeden Tag – Quick Chat, Eine Frage stellen, Sprachzusammenfassung, Bring mich zum Lachen, Beruhige mich, sowie eine tägliche Quick-Version der großen Berichte.</p>
 <p>Ein optionales Pro-Abo schaltet die umfangreichsten KI-Funktionen frei (Tiefgehende Forschung, Arztzusammenfassung, Musterdetektiv, Zielassistent, Pro Chat, Sprachchat, Tägliche Einblicke, On-Device Apple Intelligence und die für jede App entwickelten Tools) und erhöht die großzügigen Tageslimits.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wofür wird mein Abonnement verwendet?</h3>
     <p>Dein Abonnement finanziert die laufende Entwicklung – neue Funktionen, Fehlerbehebungen, Übersetzungen und Serverkosten für optionale KI-Funktionen. Da wir keine Werbung schalten, sind Abonnements und Einmalkäufe die einzige Möglichkeit, die App zu finanzieren, und sie halten die Erfahrung für alle sauber und privat.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Warum sollte ich abonnieren? Warum kann ich nicht einmalig bezahlen?</h3>
     <p>Eine kleine, regelmäßige Abo-Gebühr macht es einfacher, die App auszuprobieren, ohne hohe Vorabkosten – und das jährliche Pro-Abo enthält jetzt eine kostenlose 1-monatige Testphase, sodass du alles ausprobieren kannst, bevor du etwas bezahlst. Langfristig hilft uns der Abo-Umsatz, die App zu pflegen und die Entwicklung nützlicher neuer Funktionen zu finanzieren.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Kann ich etwas tun, um diese App zu unterstützen?</h3>
     <p>Wir sind auf gute Bewertungen angewiesen, um die App zu verbreiten und neue Funktionen zu entwickeln. Bitte hinterlassen Sie eine Bewertung über den Link für Ihre App:</p>
 
@@ -1181,7 +1259,9 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie kündige ich mein Feeltracker-Abo?</h3>
     <p>Feeltracker-Abos werden von Apple abgerechnet, du kündigst sie also in deinem Apple-Account, nicht in der App: Öffne <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Abos verwalten</a> (oder gehe zu den iOS-Einstellungen, tippe auf deinen Namen und dann auf Abonnements), wähle die Feeltracker-App aus und tippe auf Abo kündigen. Du behältst die Pro-Funktionen bis zum Ende des bereits bezahlten Zeitraums, und deine Einträge bleiben in jedem Fall auf deinem Gerät – die kostenlose Version mit allen Kernfunktionen funktioniert wie gewohnt weiter.</p>
 <p>Wenn du dich in der kostenlosen 1-monatigen Testphase befindest (im Jahresabo enthalten), zahlst du nichts, wenn du vor Ablauf der Testphase kündigst. Und falls du versehentlich abonniert hast, kündige wie oben beschrieben und beantrage bei Apple eine Rückerstattung unter <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> – aktuelle Käufe werden meist schnell bearbeitet.</p>
@@ -1189,105 +1269,137 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Erhebt die App meinen Namen, mein Geburtsdatum oder mein Geschlecht?</h3>
     <p>Nur wenn du sie speichern möchtest. Du kannst optional ein kleines Profil ausfüllen (Name, Geburtsdatum, Geschlecht), um das Erlebnis zu personalisieren – das ist völlig optional, und die wesentlichen Tracking-Funktionen funktionieren auch ohne. Wenn angegeben, bleiben Profildetails auf deinem Gerät und in deiner eigenen iCloud, niemals auf unseren Servern.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie werden meine Profildaten verwendet?</h3>
     <p>Wenn du eine optionale KI-Funktion nutzt (z. B. Chat, Einblicke oder personalisiertes Feedback), kann die App die relevanten Teile deines Profils – in der Regel deinen Vornamen, dein Alter (berechnet aus deinem Geburtsdatum) und dein Geschlecht – mit der Anfrage senden, damit die KI relevantere Antworten geben kann (z. B. altersgerechte Gesundheitshinweise oder die richtigen Pronomen). Dies geschieht nur, wenn du aktiv eine KI-Funktion verwendest. Du kannst dein Profil jederzeit bearbeiten oder löschen oder KI-Funktionen deaktivieren.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Welche KI-Dienste verwendet die App?</h3>
     <p>Die Apps verwenden drei Arten von KI, alle optional und auf Abruf:</p>
 <p>1. <strong>Geräte-KI</strong> (Apples Natural Language API) für Dinge wie Sentiment-Analyse – läuft vollständig auf deinem Gerät, keine Daten verlassen es.<br>2. <strong>Apple Intelligence</strong> auf unterstützten Geräten – soweit möglich auf dem Gerät verarbeitet und über Apples Private Cloud Compute für aufwendigere Aufgaben. Apple speichert oder sieht deine Daten nicht, und sie werden nicht zum Training von Apples Modellen verwendet.<br>3. <strong>OpenAI API</strong> für Chat, Einblicke und personalisiertes Feedback – wird nur verwendet, wenn du es aktiv auslöst. Nur die relevanten Daten (und, falls gespeichert, begrenzter Profilkontext) werden gesendet. OpenAI nutzt API-Daten nicht zum Training seiner Modelle.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ist Apple Health erforderlich?</h3>
     <p>Nein. Die Apple Health-Integration ist vollständig optional. Die Apps funktionieren auch ohne – du kannst Werte manuell eingeben, den KI-Kamera-Scan verwenden oder CSVs importieren. Wenn du sie einschaltest, kannst du auswählen, welche Datentypen die App lesen oder schreiben darf, und den Zugriff jederzeit in den iOS-Einstellungen widerrufen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie lösche ich meine Daten?</h3>
     <p>Du hast die Kontrolle:</p>
 <p>- Lösche einzelne Einträge durch Wischen.<br>- Lösche dein Profil (Name, Geburtsdatum, Geschlecht) jederzeit im Profilbereich der App.<br>- Lösche alle App-Daten auf einmal in den App-Einstellungen.<br>- Das Entfernen der App und ihrer iCloud-Sicherung in deinen iOS-Einstellungen löscht alles. Da wir keine Kopie auf unseren Servern aufbewahren, gibt es nichts Weiteres, das wir für dich löschen müssen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Kann ich KI nutzen, ohne meine Daten in die Cloud zu senden?</h3>
     <p>Ja. Feeltracker enthält einen <strong>Apple Intelligence</strong>-Modus, der KI vollständig auf deinem Gerät mit Apples Foundation Models ausführt – nichts wird an unsere Server oder an OpenAI gesendet. Dafür sind iOS 26 oder neuer auf einem Apple-Intelligence-fähigen Gerät (iPhone 15 Pro oder iPhone 16-Serie und neuer, iPad und Mac mit Apple Silicon) sowie ein Feeltracker-Pro-Abo erforderlich, das On-Device-KI <strong>unbegrenzt</strong> macht. Du kannst jederzeit in den KI-Einstellungen der App zwischen On-Device- und Cloud-KI wechseln oder KI komplett ausschalten.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Was bekomme ich mit einem Feeltracker-Pro-Abo?</h3>
     <p>Feeltracker Pro schaltet die volle Tiefe jeder KI-Funktion frei und erhöht die Tageslimits – das Tracking selbst ist bereits kostenlos, Pro dreht sich also ausschließlich um die KI.</p>
 <p>Pro umfasst den Pro-Gesundheitsbericht, Tiefgehende Forschung, Musterdetektiv, Zielassistent, Arztzusammenfassung, Krankmeldung, Textzusammenfassung, Story-Generator, Persönliches Quiz, Pro Chat, Sprachchat, Gesprochenes Feedback, das Banner Tägliche Einblicke, private On-Device Apple Intelligence, erweiterte PDF-Berichte und die für jede App entwickelten Tools: Pro-MAP-Bericht (Blutdruck); Kognitives Reframing, Auslöser-Identifikator und Stimmungs-Zeitlinie (Stimmungstagebuch); Themen-Explorer (Tagebuch); Pro-Traumanalyse und CPAP-Bericht (Schlaf); Essensplaner und Trainingsplaner (Gewicht). Ein Abo deckt dein iPhone, iPad und Mac ab, wenn sie dasselbe Apple-Konto verwenden.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Funktionieren Feeltracker-Apps offline?</h3>
     <p>Ja. Alles, was du tatsächlich trackst, funktioniert offline – das Hinzufügen und Bearbeiten von Einträgen, Fotos, Diagramme, Trends, Statistiken, Backups sowie PDF-, CSV-, Excel- und JSON-Exporte laufen vollständig auf deinem Gerät.</p>
 <p>Eine Internetverbindung wird nur für drei optionale Dinge benötigt: die Synchronisierung mit deinen anderen Geräten über iCloud, die Cloud-KI-Funktionen und Apple-Health-Importe aus anderen Apps. Alles, was du offline aufzeichnest, wird automatisch synchronisiert, sobald du wieder online bist.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Welche iPhone-, iPad- und Mac-Modelle unterstützen Feeltracker-Apps?</h3>
     <p>Feeltracker-Apps laufen auf iPhone und iPad mit iOS 16.0 oder neuer sowie auf Apple-Silicon-Macs (M1 und neuer). Es sind universelle Apps, sodass ein einziger Kauf alle deine Geräte abdeckt und deine Daten über dein eigenes iCloud-Konto zwischen ihnen synchronisiert werden.</p>
 <p>Zwei Funktionen benötigen neuere Hardware: Der On-Device-Apple-Intelligence-KI-Modus erfordert iOS 26 oder neuer auf einem Apple-Intelligence-fähigen Gerät, und die Synchronisierung der psychischen Gesundheit (Gemütszustand) mit Apple Health erfordert iOS 18 oder neuer. Alles andere funktioniert auf jedem unterstützten Gerät.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie lange speichert Feeltracker meine Daten auf seinen Servern?</h3>
     <p>Feeltracker behält überhaupt keine Kopie deiner Gesundheitsdaten auf seinen Servern – deine Einträge liegen ausschließlich auf deinem Gerät und in deinem eigenen iCloud-Konto, solange du die App behältst.</p>
 <p>Wenn du eine Cloud-KI-Funktion nutzt, läuft die Anfrage über unseren Relay-Server, der weder die Anfrage noch die Antwort speichert. Er führt aber einen Kostendatensatz für jede Anfrage – Datum, App, Funktion, KI-Modell, Token-Anzahl und geschätzte Kosten, ohne Gesundheitsdaten, ohne Nachrichtentext und ohne alles, was dich identifiziert – und diese Datensätze werden nach 30 Tagen gelöscht. OpenAI speichert API-Daten separat nach seinen eigenen Richtlinien (derzeit bis zu 30 Tage). Alle Details findest du in unserer <a href="https://feeltracker.com/privacy/" target="_blank" rel="noopener">Datenschutzrichtlinie</a>.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ist Feeltracker in meiner Sprache verfügbar?</h3>
     <p>Feeltracker-Apps und diese Website sind vollständig in 32 Sprachen lokalisiert: Englisch, Spanisch, Französisch, Französisch (Kanada), Deutsch, Italienisch, Niederländisch, Katalanisch, Portugiesisch (Portugal und Brasilien), Schwedisch, Norwegisch, Dänisch, Finnisch, Polnisch, Russisch, Ukrainisch, Tschechisch, Slowakisch, Rumänisch, Kroatisch, Ungarisch, Griechisch, Türkisch, Arabisch, Hebräisch, Japanisch, Koreanisch, Vereinfachtes Chinesisch, Traditionelles Chinesisch, Thailändisch und Vietnamesisch. Arabisch und Hebräisch verfügen über vollständige Rechts-nach-links-Layouts.</p>
 <p>Die Apps folgen automatisch der Sprache deines iPhones, und du kannst in den KI-Einstellungen auch wählen, in welcher Sprache die KI antwortet, unabhängig von der Sprache der App.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Verliere ich meine Daten, wenn ich die App lösche oder ein neues iPhone bekomme?</h3>
     <p>Nein — solange du mit demselben iCloud-Account angemeldet bist, kommen deine Daten automatisch zurück. Deine Einträge werden mit deiner eigenen privaten iCloud synchronisiert, sodass eine Neuinstallation der App oder die Einrichtung eines neuen iPhone oder iPad alles von selbst wiederherstellt.</p>
 <p>Bevor du wechselst oder neu installierst, lohnt sich ein kurzer Check, ob iCloud Drive aktiviert ist (Einstellungen > dein Name > iCloud > iCloud-Drive) und ob deine neuesten Einträge auf deinen anderen Geräten erscheinen. Die App legt außerdem automatisch lokale Backups an (Einstellungen > Daten > Backups verwalten) als zusätzliches Sicherheitsnetz.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie bekomme ich eine Rückerstattung oder ändere meine Rechnungsdaten?</h3>
     <p>Alle Zahlungen, Rechnungen und Rückerstattungen werden von Apple abgewickelt, nicht von uns — wir sehen deine Zahlungsdaten nie, deshalb können wir dich weder direkt belasten noch selbst Rückerstattungen ausstellen oder Rechnungsdetails bearbeiten.</p>
 <p>Um eine Rückerstattung zu beantragen, gehe zu <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, melde dich mit deinem Apple-Account an und wähle deinen Feeltracker-Kauf aus — Apple entscheidet meist innerhalb von ein bis zwei Tagen. Zahlungs- und Rechnungsdetails (z. B. deine Adresse) verwaltest du in deinen Apple-Account-Einstellungen. Falls bei deinem Kauf etwas schiefgelaufen ist, schreib uns zusätzlich an <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a> — wir helfen dir gerne.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Gibt es eine kostenlose Testphase?</h3>
     <p>Ja. Das jährliche Pro-Abo enthält eine kostenlose 1-monatige Testphase. Wenn du während der Testphase in <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Abos verwalten</a> kündigst, wird dir nichts berechnet.</p>
 <p>Und denk daran: Die zentralen Tracking-Funktionen sind ohnehin für immer kostenlos — keine Testphase nötig. Die Testphase dient nur dazu, die vollen Pro-KI-Funktionen auszuprobieren, bevor du dich entscheidest.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Blutdruck-App</h2>
 
 
+<div class="faq-item">
     <h3>Verbindet sich die App über Bluetooth mit meinem Blutdruckmessgerät?</h3>
     <p>Die App verbindet sich nicht über Bluetooth mit Messgeräten – das heißt aber nicht, dass du alles per Hand eintippen musst. Es gibt drei Wege, Messwerte in die App zu bekommen:</p>
 <p><strong>KI-Kamera-Scan</strong> (am einfachsten): Richte nach der Messung einfach die Kamera deines iPhones auf das Display deines Messgeräts, und die App liest die Werte automatisch aus. Das funktioniert mit praktisch jedem Messgerät mit digitalem Display, unabhängig von Marke oder Modell – keine Kopplung, keine Einrichtung, und es dauert nur Sekunden. Der Kamera-Scan ist für alle kostenlos, mit einem großzügigen täglichen Kontingent.</p>
@@ -1296,177 +1408,267 @@
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie funktioniert das KI-Kamerascanning?</h3>
     <p>Öffnen Sie nach Ihrer Blutdruckmessung die App und tippen Sie auf die "+"-Schaltfläche, dann wählen Sie "Mit Kamera scannen". Halten Sie Ihr Telefon ruhig etwa 15-30 cm vom Display Ihres Messgeräts entfernt und stellen Sie sicher, dass die Zahlen deutlich sichtbar und gut beleuchtet sind. Die App liest automatisch die systolischen, diastolischen und Pulswerte ab. Für beste Ergebnisse sorgen Sie für gute Beleuchtung und halten Sie Ihr Telefon beim Scannen ruhig. Dies funktioniert mit den meisten digitalen Messgeräten, einschließlich OMRON, Microlife und Beurer.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Warum sehe ich doppelte Einträge?</h3>
     <p>Dies wird normalerweise durch die Apple Health-Synchronisierungskonfiguration verursacht. Das häufigste Problem ist, dass nur Schreibberechtigungen für Apple Health aktiviert sind, aber keine Leseberechtigungen. Um dies zu beheben: Gehen Sie zu Einstellungen > Daten > Apple Health und stellen Sie sicher, dass SOWOHL Lese- ALS AUCH Schreibberechtigungen für Blutdruck und Herzfrequenz aktiviert sind - nicht nur Schreiben. Die App benötigt eine Leseberechtigung, um zu prüfen, ob eine Messung bereits vorhanden ist, bevor sie aus Health importiert wird.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Kann ich Messungen für mehrere Familienmitglieder erfassen?</h3>
     <p>Eine Tags-Funktion kommt in den nächsten Monaten, mit der Sie Messungen für mehrere Personen auf einem Gerät erfassen können. Sie können jeden Eintrag mit dem Namen einer Person versehen und dann individuelle Berichte für jedes Familienmitglied erstellen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Meine Daten werden nicht zwischen meinem iPhone und iPad synchronisiert. Warum?</h3>
     <p>Stellen Sie zunächst sicher, dass Sie auf beiden Geräten mit demselben iCloud-Konto angemeldet sind. Gehen Sie zu Einstellungen > [Ihr Name] und überprüfen Sie die Apple-ID. Zweitens überprüfen Sie, ob iCloud Drive auf beiden Geräten aktiviert ist (Einstellungen > [Ihr Name] > iCloud > iCloud Drive). Ihre Daten werden automatisch über iCloud synchronisiert, benötigen aber eine Internetverbindung und können einige Minuten dauern. Versuchen Sie, die App auf jedem Gerät zu öffnen und nach unten zu ziehen, um zu aktualisieren.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Was beinhaltet das Abonnement? Was ist kostenlos?</h3>
     <p>Alle Kernfunktionen sind für alle kostenlos – unbegrenzte Einträge, KI-Kamera-Scan, alle Diagramme und Trends, Apple-Health-Synchronisierung sowie PDF-/CSV-/Excel-/JSON-Exporte – und jeder Nutzer bekommt jeden Tag echte KI-Funktionen kostenlos, darunter „Frage stellen“, Quick Chat, Sprachzusammenfassung und schnelle Versionen der Berichte. Das optionale Pro-Abo schaltet die vollständigen, umfangreichsten KI-Funktionen frei (Tiefgehende Forschung, Arztzusammenfassung, Musterdetektiv, Pro Chat, Sprachchat und mehr), führt sie mit unserer leistungsstärksten KI aus und erhöht die großzügigen Tageslimits. Die Apps zeigen niemals Werbung, egal ob mit oder ohne Abo.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Was ist MAP und sollte ich es verfolgen?</h3>
     <p>MAP (Mittlerer Arterieller Druck) stellt den durchschnittlichen Druck in Ihren Arterien während eines Herzzyklus dar. Er wird automatisch für jede Messung berechnet. MAP ist besonders wichtig für LVAD-Patienten (Linksventrikuläres Herzunterstützungssystem) und andere mit bestimmten Herz-Kreislauf-Erkrankungen. Um die MAP-Anzeige zu aktivieren, gehen Sie zu Einstellungen > Blutdruck > Mittleren Arteriellen Druck (MAP) anzeigen. Anpassbare MAP-Bereiche kommen in Version 2.8.x.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie verwende ich Notizvorlagen, um Zeit zu sparen?</h3>
     <p>Wenn Sie eine Notiz eingeben (wie "Morgenmessung - vor der Medikation"), tippen Sie auf die "Vorlage"-Schaltfläche unten links im Notizfeld und speichern Sie sie als Vorlage. Beim nächsten Mal, wenn Sie eine Messung eingeben, tippen Sie erneut auf "Vorlage" und wählen Sie aus Ihren gespeicherten Vorlagen - der Text wird sofort eingefügt. Dies ist ideal für wiederkehrende Notizen wie "Morgens - vor Medikation" oder "Abends - nach dem Abendessen".</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Was ist ein zu hoher oder zu niedriger Blutdruck?</h3>
     <p>Ihr Blutdruck sollte normalerweise zwischen 90-140 für den systolischen Wert und 60-90 für den diastolischen Wert liegen. Wenn er außerhalb dieses Bereichs liegt, sollten Sie einen Arzt aufsuchen.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Was ist der ideale Blutdruck?</h3>
     <p>Laut dem NHS liegt der ideale Blutdruck zwischen 90/60 mmHg und 120/80 mmHg. Dies kann jedoch je nach Geschlecht, Alter und anderen Variablen variieren. Daher ist es am besten, Ihren Hausarzt für eine genaue Beurteilung Ihres Blutdrucks basierend auf Ihren individuellen Umständen zu konsultieren.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie messe ich meinen Blutdruck?</h3>
     <p>Der Blutdruck wird mit einem digitalen Blutdruckmessgerät gemessen. <a href="https://geni.us/B9RB" target="_blank" rel="noopener">Hier</a> finden Sie Blutdruckmessgeräte, die hervorragend mit der Kamera-Scan-KI-Funktion funktionieren. Die App kann automatisch Werte von den meisten digitalen Messgeräten ablesen, einschließlich OMRON, Microlife und Beurer.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wofür ist Trends?</h3>
     <p>Mit Trends nimmt diese App Ihre Daten und Notizen und zeigt, welche Dinge Sie beeinflussen und wie. Zum Beispiel könnten Sie sehen, dass Sie letztes Jahr 20 Mal meditiert haben und dass Meditation Ihren Blutdruck senkt. Umgekehrt könnten Sie sehen, dass Sie jedes Mal, wenn Sie Bob treffen, streiten und er Ihren Blutdruck erhöht. Je mehr Sie Notizen verwenden, desto nützlicher kann Trends sein.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Können Sie Trends mit einem Beispiel erklären?</h3>
     <p>Zum Beispiel gehen Sie 10 Mal laufen. 5 Mal sinkt Ihr Blutdruck um 10 und die anderen Male sinkt er um 5. Trends zeigt, dass Laufen im Durchschnitt hilft, Ihren Blutdruck um etwa 7,5 Punkte zu senken.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Kann mein iPhone oder iPad den Blutdruck von selbst messen?</h3>
     <p>Nein. Kein Smartphone oder Tablet kann Blutdruck von selbst messen — das ist eine Hardware-Einschränkung jedes Smartphones, nicht nur dieser App. Du brauchst ein Blutdruckmessgerät mit Manschette, um die eigentliche Messung durchzuführen.</p>
 <p>Was die App macht: Sie macht das Erfassen und Verstehen dieser Messwerte mühelos. Richte deine Kamera auf das Display des Messgeräts, und der KI-Kamera-Scan trägt die Werte für dich ein. Anschließend verfolgt, visualisiert und analysiert die App alles im Zeitverlauf und erstellt daraus Berichte, die du mit deinem Arzt teilen kannst.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ein normaler Messwert wird als „hoch“ angezeigt — kann ich die Blutdruckbereiche ändern?</h3>
     <p>Ja. Gehe zu Einstellungen > Blutdruck > Blutdruckbereiche anpassen, um genau festzulegen, wo jeder Farbbereich beginnt und endet, damit die App den Richtlinien deines Arztes entspricht.</p>
 <p>Das ist auch nützlich, wenn dein Arzt dir persönliche Zielwerte gibt — zum Beispiel den systolischen Wert wegen einer Nieren- oder Herzerkrankung über 100 zu halten. Deine benutzerdefinierten Bereiche gelten dann überall: im Journal, in den Diagrammen und in den Berichten.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Ich habe einen Messwert gescannt und auf Speichern getippt, sehe ihn aber nicht in der App. Wo ist er hin?</h3>
     <p>Fast immer wurde der Messwert gespeichert — nur an einem anderen Datum als erwartet. Ein neuer Eintrag wird für den Tag erstellt, den du vor dem Öffnen des Scanners ausgewählt hast. Wenn du also bei einem anderen Tag auf + getippt hast, landet der Messwert dort.</p>
 <p>Schau in den Tagen rund um heute im Journal nach und stelle außerdem sicher, dass alle Anzeigeoptionen auf „Anzeigen“ gesetzt sind (Journal-Optionen-Button oben). Wenn du ihn immer noch nicht findest, schreib uns von den Einstellungen der App aus an <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a>, damit wir helfen können.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Feeltracker Stimmungstagebuch-App</h2>
 
 
+<div class="faq-item">
     <h3>Wofür ist Trends?</h3>
     <p>Mit Trends nimmt diese App Ihre Daten und Notizen und zeigt, welche Dinge Sie beeinflussen und wie. Zum Beispiel könnten Sie sehen, dass Sie Jane letztes Jahr 20 Mal getroffen haben und dass Jane Sie im Durchschnitt sehr glücklich macht. Umgekehrt könnten Sie sehen, dass Sie jedes Mal, wenn Sie Bob treffen, streiten und er Sie unglücklich macht. Je mehr Sie Notizen verwenden, desto nützlicher kann Trends sein.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Können Sie Trends mit einem Beispiel erklären?</h3>
     <p>Zum Beispiel treffen Sie Jane 10 Mal. 5 Mal hat sie Sie sehr glücklich gemacht (+2) und 5 Mal hat sie Sie ziemlich glücklich gemacht (+1). Trends zeigt, dass Jane Sie im Durchschnitt recht (+1,5) glücklich macht.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Tägliches Tagebuch-App</h2>
 
 
+<div class="faq-item">
     <h3>Wofür ist Trends?</h3>
     <p>Mit Trends nimmt diese App Ihre Daten und Notizen und zeigt, welche Wörter Sie am meisten beschäftigen. Zum Beispiel könnten Sie sehen, dass Sie ein Wort letztes Jahr 20 Mal verwendet haben. Umgekehrt könnten Sie sehen, dass Sie ein anderes Wort 50 Mal verwendet haben - viel häufiger. Je mehr Sie Notizen verwenden, desto nützlicher kann Trends sein.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Können Sie Trends mit einem Beispiel erklären?</h3>
     <p>Zum Beispiel schreiben Sie in Ihren Notizen 120 Mal über Jane, mehr als über Ihren Job, über den Sie 50 Mal schreiben. Trends zeigt in diesem Fall, dass Jane eindeutig das Hauptthema in Ihrem Kopf war.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Schlaftagebuch-App</h2>
 
 
+<div class="faq-item">
     <h3>Wofür ist Trends?</h3>
     <p>Mit Trends nimmt diese App Ihre Daten und Notizen und zeigt, welche Dinge Sie beeinflussen und wie. Zum Beispiel könnten Sie sehen, dass Sie letzte Woche viel Kaffee getrunken haben und dass Sie deshalb weniger geschlafen haben. Umgekehrt könnten Sie sehen, dass Sie jedes Mal, wenn Sie Salat essen oder ins Fitnessstudio gehen, besser schlafen. Je mehr Sie Notizen verwenden, desto nützlicher kann Trends sein.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Können Sie Trends mit einem Beispiel erklären?</h3>
     <p>Zum Beispiel trinken Sie 10 Mal Kaffee. 5 Mal davon haben Sie 2 Stunden zu wenig geschlafen, und die anderen 5 Mal haben Sie 1 Stunde zu wenig geschlafen. Trends zeigt, dass Kaffeetrinken im Durchschnitt dazu führt, dass Sie 1,5 Stunden zu wenig schlafen.</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Gewichts- und Körperfett-Ernährungstagebuch-App</h2>
 
 
+<div class="faq-item">
     <h3>Wofür ist Trends?</h3>
     <p>Mit Trends nimmt diese App Ihre Daten und Notizen und zeigt, welche Dinge Sie beeinflussen und wie. Zum Beispiel könnten Sie sehen, dass Sie letztes Jahr 20 Mal Fast Food gegessen haben und dass Sie im Laufe der Zeit zunehmen, wenn Sie Fast Food essen. Umgekehrt könnten Sie sehen, dass Sie jedes Mal, wenn Sie Salat essen oder ins Fitnessstudio gehen, abnehmen. Je mehr Sie Notizen verwenden, desto nützlicher kann Trends sein.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Können Sie Trends mit einem Beispiel erklären?</h3>
     <p>Zum Beispiel essen Sie 10 Mal Donuts. 5 Mal steigt Ihr Gewicht um 0,1 kg. Die anderen 5 Mal steigt Ihr Gewicht um 0,3 kg. Trends zeigt, dass Donuts essen Ihr Gewicht im Durchschnitt um 0,2 kg erhöht.</p>
 
 
 
+</div>
 
+<div class="faq-item">
     <h3>Wie messe ich Körperfett?</h3>
     <p>Körperfett wird von speziell entwickelten Waagen gemessen, die neben dem Gewicht auch die Körperzusammensetzung messen. <a href="https://geni.us/PQXEb" target="_blank" rel="noopener">Hier</a> ist ein Beispiel für eine solche Waage von Omron. Es gibt auch andere Optionen von anderen Marken - worauf Sie achten sollten, ist "Körperzusammensetzung" sowie Waage.</p>
 <p>Beachten Sie auch, dass selbst wenn Sie nur das Gewicht eingeben, Sie dennoch einen BMI-Wert sehen (links neben dem Gewicht, farbcodiert), der einen allgemeinen Hinweis darauf gibt, ob Sie ein gesundes Gewicht haben (wobei grün gut und rot Übergewicht bedeutet).</p>
 
 
 
+</div>
 
+</section>
 
+<section class="faq-section">
 <h2>Kontakt</h2>
 <p>Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht, uns unter <a href="mailto:support@feeltracker.com" target="_blank" rel="noopener">support@feeltracker.com</a> zu kontaktieren.</p>
 
+</section>
 
 </main>
+
+<script>
+(function () {
+    var input = document.getElementById('faq-search-input');
+    var noResults = document.getElementById('faq-no-results');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.faq-section'));
+    if (!input) return;
+    var norm = function (s) { return s.toLowerCase(); };
+    input.addEventListener('input', function () {
+        var q = norm(input.value.trim());
+        var any = false;
+        sections.forEach(function (section) {
+            var items = Array.prototype.slice.call(section.querySelectorAll('.faq-item'));
+            if (items.length) {
+                var visible = 0;
+                items.forEach(function (item) {
+                    var show = !q || norm(item.textContent).indexOf(q) !== -1;
+                    item.hidden = !show;
+                    if (show) visible++;
+                });
+                section.hidden = visible === 0;
+            } else {
+                section.hidden = !!q && norm(section.textContent).indexOf(q) === -1;
+            }
+            if (!section.hidden) any = true;
+        });
+        noResults.hidden = any;
+    });
+})();
+</script>
 
     <!-- Footer -->
     <footer>
