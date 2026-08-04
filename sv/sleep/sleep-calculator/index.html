@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Sömnkalkylator: när du bör gå och lägga dig | Feeltracker</title>
+    <meta name="description" content="En sömnkalkylator som räknar baklänges från din uppvakningstid. Läggtidstabeller för vanliga väckningstider med 90-minuterscykler, plus varför cykellängden varierar mellan personer.">
+
+    <meta name="keywords" content="sömnkalkylator, när ska jag gå och lägga mig, läggtidskalkylator, sömncykelkalkylator, när ska jag sova för att vakna 06:00, 90 minuters sömncykler">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/sv/sleep/sleep-calculator/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:url" content="https://feeltracker.com/sv/sleep/sleep-calculator/">
+    <meta property="og:title" content="Sömnkalkylator: när du bör gå och lägga dig">
+    <meta property="og:description" content="Läggtidstabeller uträknade baklänges från vanliga uppvakningstider i 90-minuterscykler — och en ärlig titt på hur mycket matematiken egentligen är värd.">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/sv/sleep/sleep-calculator/">
+    <meta property="twitter:title" content="Sömnkalkylator: när du bör gå och lägga dig">
+    <meta property="twitter:description" content="Sömnkalkylator: läggtider uträknade baklänges från din uppvakningstid med 90-minuters sömncykler.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "När ska jag gå och lägga mig för att vakna klockan 06:00?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "22:15 för fem cykler (7,5 timmars sömn) eller 20:45 för sex (9 timmar), båda med 15 minuter för att somna. Om du regelbundet sover för lite, prova den tidigare i en vecka och känn efter hur morgnarna blir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Är sömnkalkylatorer träffsäkra?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ungefärligt. De utgår från en 90-minuterscykel; verkliga cykler löper på cirka 70–120 minuter och förändras under natten, så räkna med att uppskattningen glider 20–30 minuter. Användbar för att välja mellan två realistiska läggtider; inget skäl att stanna uppe längre."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Är det bättre att sova 6 timmar eller 7,5 timmar?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "7,5 timmar, utan tvekan. Sex timmar är fyra cykler och hamnar under det rekommenderade intervallet för nästan varje vuxen — se hur mycket sömn du behöver. Offra aldrig total sömn för att cykelmatematiken ska gå jämnt ut."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Hur lång tid bör det ta att somna?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "10–20 minuter är typiskt och friskt. Under fem minuter signalerar oftast sömnskuld. Regelbundet över 30 minuter är värt att ta itu med — börja med hur du somnar snabbare."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ska jag ha samma läggtid på helgerna?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja, så nära du kan — och skydda framför allt uppvakningstiden. En förskjutning på två timmar under helgen ger en jetlagliknande effekt som gör söndagskvällen svår och måndagen värre. Behöver du extra sömn kostar en sovmorgon på under en timme betydligt mindre."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/sv/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Sömn",
+                      "item": "https://feeltracker.com/sv/sleep/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Sömnkalkylator",
+                      "item": "https://feeltracker.com/sv/sleep/sleep-calculator/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Sömnkalkylator: när du bör gå och lägga dig",
+          "description": "En sömnkalkylator som räknar baklänges från din uppvakningstid. Läggtidstabeller för vanliga väckningstider med 90-minuterscykler, plus varför cykellängden varierar mellan personer.",
+          "image": "https://feeltracker.com/images/ST_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/sv/sleep/sleep-calculator/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/sv/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/sv/blood-pressure/">Blodtryck</a>
+
+            <a href="/sv/daily-journal/">Dagbok</a>
+
+            <a href="/sv/mood-journal/">Humörsdagbok</a>
+
+            <a href="/sv/sleep/" class="current">Sömn</a>
+
+            <a href="/sv/weight/">Vikt</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇸🇪</span>
+                <span class="lang-name">Svenska</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/sleep/sleep-calculator/" class="active" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/sv/">Hem</a>
+        <span aria-hidden="true">›</span>
+        <a href="/sv/sleep/">Sömn</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Sömnkalkylator</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Sömnkalkylator: när du bör gå och lägga dig</h1>
+
+        <p class="guide-updated">Senast uppdaterad: augusti 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Idén är enkel. Din hjärna rör sig genom <a href="/sv/sleep/sleep-cycles/">sömncykler</a> på ungefär 90 minuter, och att vakna i slutet av en — i lätt sömn — känns långt bättre än att bli uppdragen ur mitten. Lås fast din uppvakningstid, räkna baklänges i 90-minutersblock, lägg till 15 minuter för insomnandet: det är din läggtid.</p><p>Nedan: tabeller för vanliga väckningstider, plus det de flesta kalkylatorer utelämnar — cykellängden är ett genomsnitt, och total sömn betyder mer än smart tajmning. Börja med siffrorna; låt två veckors egna anteckningar utse vinnaren.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Så fungerar uträkningen</h2>
+        <div class="guide-content">
+            <p>Tre ingredienser, varav bara en är exakt:</p><ol><li><strong>Din uppvakningstid</strong> — väckarklockan du inte kan flytta.</li><li><strong>Cykellängden.</strong> Standarduppskattningen är 90 minuter; verkliga cykler löper på cirka 70–120 och varierar inom en natt.</li><li><strong>Insomningstiden</strong> — hur lång tid du behöver för att somna. Friskt är 10–20 minuter; tabellerna räknar med <strong>15</strong>.</li></ol><p>Alltså: <em>läggtid = uppvakningstid − (90 minuter × cykler) − 15 minuter</em>. Fem cykler är 7,5 timmar, sex är 9 — båda inom det rekommenderade <a href="/sv/sleep/how-much-sleep-do-you-need/">intervallet på 7–9 timmar för vuxna</a>. Fyra cykler är 6 timmar, för lite för nästan alla — en nödlösning, inte en plan.</p><p>Behöver du regelmässigt mer än 20 minuter? Höj marginalen — eller ännu hellre, titta på <a href="/sv/sleep/how-to-fall-asleep-faster/">varför det tar så lång tid</a> — en lång insomningstid är i sig värd att åtgärda.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Läggtidstabeller efter uppvakningstid</h2>
+        <div class="guide-content">
+            <p>Hitta din väckarklocka i vänsterkolumnen. Kolumnerna <strong>6 cykler</strong> och <strong>5 cykler</strong> är det verkliga valet; 4 cykler är för nätter som redan är förlorade.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Uppvakningstid</th><th>6 cykler (9 tim sömn)</th><th>5 cykler (7,5 tim sömn)</th><th>4 cykler (6 tim sömn)</th></tr></thead><tbody><tr><td>05:00</td><td>19:45</td><td>21:15</td><td>22:45</td></tr><tr><td>05:30</td><td>20:15</td><td>21:45</td><td>23:15</td></tr><tr><td>06:00</td><td>20:45</td><td>22:15</td><td>23:45</td></tr><tr><td>06:30</td><td>21:15</td><td>22:45</td><td>00:15</td></tr><tr><td>07:00</td><td>21:45</td><td>23:15</td><td>00:45</td></tr><tr><td>07:30</td><td>22:15</td><td>23:45</td><td>01:15</td></tr><tr><td>08:00</td><td>22:45</td><td>00:15</td><td>01:45</td></tr><tr><td>08:30</td><td>23:15</td><td>00:45</td><td>02:15</td></tr></tbody></table></div><p>Den fungerar åt båda hållen: ligger du redan i sängen och ska välja väckningstid, lägg till 15 minuter plus 7,5 eller 9 timmar från nu.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Släckt lampa</th><th>Vakna efter 5 cykler</th><th>Vakna efter 6 cykler</th></tr></thead><tbody><tr><td>21:30</td><td>05:15</td><td>06:45</td></tr><tr><td>22:00</td><td>05:45</td><td>07:15</td></tr><tr><td>22:30</td><td>06:15</td><td>07:45</td></tr><tr><td>23:00</td><td>06:45</td><td>08:15</td></tr><tr><td>23:30</td><td>07:15</td><td>08:45</td></tr><tr><td>00:00</td><td>07:45</td><td>09:15</td></tr></tbody></table></div>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Varför 90-minuterssiffran inte är exakt</h2>
+        <div class="guide-content">
+            <p>Alla kalkylatorer använder 90 minuter — populationens genomsnitt. Din kan ligga närmare 75 eller 110, cyklerna blir längre under natten, och normala uppvaknanden plus en insomningstid som skiftar med stress och koffein drar uträkningen tjugo eller trettio minuter fel. I praktiken:</p><ul><li><strong>Byt aldrig bort total sömn mot cykelanpassning.</strong> Att stanna uppe 45 minuter för att matematiken ska landa på en hel cykel offrar verklig sömn för ett avrundningsfel.</li><li><strong>Använd den för att bryta ett dödläge</strong> mellan två rimliga läggtider.</li><li><strong>Räkna med att justera.</strong> Om 7,5 timmar konsekvent gör dig groggy medan 8 jämnt känns bra, är dina cykler inte 90 minuter. Din erfarenhet slår formeln.</li><li><strong>Regelbundenhet slår precision.</strong> Samma läggtid varje natt, helger inkluderade, gör mer för klockan 07 än någon uträkning.</li></ul><p>Sömntröghet — dimman efter en illa tajmad väckarklocka — är verklig och kan hålla i sig en halvtimme, så tanken är sund. Den decimalsäkra självsäkerheten är det inte.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Att få en ny läggtid att faktiskt hålla</h2>
+        <div class="guide-content">
+            <p>De flesta misslyckas inte med att veta sin läggtid; de misslyckas med att nå den. Det som tillförlitligt hjälper:</p><ul><li><strong>Flytta i steg om 15 minuter.</strong> En timme tidigare på en enda natt betyder en timme vaken i sängen. Håll varje steg i tre eller fyra nätter.</li><li><strong>Förankra uppvakningstiden först.</strong> Morgonljuset ställer din inre klocka betydligt starkare än när lampan släcks. Lås fast uppvakningstiden, varje dag, så tenderar läggtiden att följa efter.</li><li><strong>Ställ påminnelsen på nedvarvningen, inte på läggtiden.</strong> En påminnelse 30–45 minuter före släckt lampa förändrar beteendet; en vid läggdags talar bara om att du är sen.</li><li><strong>Skydda den sista timmen.</strong> Starka skärmar, hård träning, tunga måltider och alkohol skjuter alla insomnandet framåt — se <a href="/sv/sleep/sleep-hygiene/">sömnhygien</a>.</li><li><strong>Ligg inte kvar i sängen och gruva dig.</strong> Fortfarande vaken efter cirka 20 minuter? Gå upp, gör något tråkigt i dämpat ljus och gå tillbaka när du blir sömnig.</li></ul>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Anteckningsbok eller app: en ärlig jämförelse</h2>
+        <div class="guide-content">
+            <p>En kalkylator ger dig en hypotes; bara dina egna anteckningar testar den. Två veckor där du noterar läggtid, uppvakningstid och hur du kände dig slår vilken tabell som helst — den här inkluderad. En anteckningsbok klarar det utmärkt. Där papper går bet är på huvudräkningen: att beräkna genomsnittet av elva nätter, eller att upptäcka att dina bästa morgnar alla följde på släckt lampa klockan 23, kräver att man adderar nedklottrade tider för hand — så ingen gör det.</p><p>Feeltracker Sömn &amp; Drömmar sköter den delen: sänggående och uppvaknande med sovtiden uträknad, ett kvalitetsbetyg med fält för drömmar och anteckningar, och trender över valfri period, så att sambandet mellan läggtid och morgon blir synligt. Påminnelser hjälper det nya schemat att sätta sig; lägg till synk med Apple Health, CPAP-loggning och iCloud-synk utan konto eller e-post. AI-insikter kan sammanfatta din egen historik, och allt går att exportera till PDF, XLSX, CSV eller JSON för läkaren. Det är en manuell dagbok, inte en automatisk sömnstadiemätare — den gissar inte när du somnade och låtsas inte känna till din cykellängd. Den gör bara anteckningarna tillräckligt enkla för att du ska fortsätta med dem.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/ST_1024.png" alt="Appikon för Sömn & Drömmar" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Testa din läggtid mot verkliga data</h2>
+            <p>Feeltracker Sömn & Drömmar loggar när du somnade och vaknade, räknar ut sovtiden och visar hur dina kvalitetsbetyg följer läggtiden — så att du hittar läggtiden som fungerar för dig, inte för genomsnittspersonen. Kostnadsfri, privat, inget konto behövs.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sv-white.svg"><img class="store_button" src="/images/appstore/sv-black.svg" alt="Ladda ner Sömn & Drömmar på App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/sv/sleep/" class="guide-app-cta-learn">Läs mer om appen <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Vanliga frågor</h2>
+
+        <div class="guide-faq-item">
+            <h3>När ska jag gå och lägga mig för att vakna klockan 06:00?</h3>
+            <p><strong>22:15</strong> för fem cykler (7,5 timmars sömn) eller <strong>20:45</strong> för sex (9 timmar), båda med 15 minuter för att somna. Om du regelbundet sover för lite, prova den tidigare i en vecka och känn efter hur morgnarna blir.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Är sömnkalkylatorer träffsäkra?</h3>
+            <p>Ungefärligt. De utgår från en 90-minuterscykel; verkliga cykler löper på cirka 70–120 minuter och förändras under natten, så räkna med att uppskattningen glider 20–30 minuter. Användbar för att välja mellan två realistiska läggtider; inget skäl att stanna uppe längre.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Är det bättre att sova 6 timmar eller 7,5 timmar?</h3>
+            <p>7,5 timmar, utan tvekan. Sex timmar är fyra cykler och hamnar under det rekommenderade intervallet för nästan varje vuxen — se <a href="/sv/sleep/how-much-sleep-do-you-need/" target="_blank" rel="noopener">hur mycket sömn du behöver</a>. Offra aldrig total sömn för att cykelmatematiken ska gå jämnt ut.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Hur lång tid bör det ta att somna?</h3>
+            <p><strong>10–20 minuter</strong> är typiskt och friskt. Under fem minuter signalerar oftast sömnskuld. Regelbundet över 30 minuter är värt att ta itu med — börja med <a href="/sv/sleep/how-to-fall-asleep-faster/" target="_blank" rel="noopener">hur du somnar snabbare</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Ska jag ha samma läggtid på helgerna?</h3>
+            <p>Ja, så nära du kan — och skydda framför allt <strong>uppvakningstiden</strong>. En förskjutning på två timmar under helgen ger en jetlagliknande effekt som gör söndagskvällen svår och måndagen värre. Behöver du extra sömn kostar en sovmorgon på under en timme betydligt mindre.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Fortsätt läsa</h2>
+        <div class="guide-related-grid">
+
+            <a href="/sv/sleep/sleep-cycles/" class="guide-related-card">
+                <h3>Sömncykler och sömnstadier förklarade</h3>
+                <p>Vad 90-minuterscykeln består av, och hur den förändras under natten.</p>
+            </a>
+
+            <a href="/sv/sleep/how-to-fall-asleep-faster/" class="guide-related-card">
+                <h3>Så somnar du snabbare</h3>
+                <p>Vad du gör när läggtiden är rätt men sömnen inte kommer.</p>
+            </a>
+
+            <a href="/sv/sleep/how-much-sleep-do-you-need/" class="guide-related-card">
+                <h3>Hur mycket sömn behöver du?</h3>
+                <p>Rekommenderat antal timmar efter ålder, och hur du hittar din egen siffra.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Medicinsk ansvarsfriskrivning</h2>
+        <p>Den här artikeln är endast avsedd som allmän information och utgör inte medicinsk rådgivning, diagnos eller behandling. Sömncykelns längd och sömnbehovet varierar mellan individer, så betrakta varje uträknad läggtid som en utgångspunkt — följ alltid din läkares eller vårdgivares vägledning. Kontakta vården om du konsekvent behöver mer än 30 minuter för att somna, vaknar outvilad efter en hel natt, somnar ofrivilligt under dagen, eller om en partner berättar om kraftiga snarkningar, flämtningar eller andningsuppehåll.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Hitta läggtiden som fungerar för dig</h2>
+        <p>Ladda ner den kostnadsfria appen Sömn & Drömmar — logga dina nätter, ställ in påminnelser, följ trenden</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sv-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sv-black.svg" alt="Ladda ner Sömn & Drömmar på App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Kostnadsfri app med valfria premiumfunktioner
+iPhone, iPad och Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/sv/sleep/sleep-calculator/">Hem</a>
+            <a href="/sv/about/">Om oss</a>
+            <a href="mailto:support@feeltracker.com">E-postsupport</a>
+            <a href="/sv/support/">Support</a>
+            <a href="/sv/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Följ på X</a>
+            <a href="/sv/privacy/">Integritetspolicy</a>
+            <a href="/sv/terms/">Villkor</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Alla rättigheter förbehållna.</p>
+        <p class="footer-tagline">En del av Feeltracker-familjen av hälsoövervakningsappar</p>
+        <p class="footer-disclaimer">Dina hälsodata lagras på din enhet och i iCloud — vi får aldrig åtkomst till eller säljer dina data. Feeltracker-appar är inte medicintekniska produkter. Endast i informationssyfte, ersätter inte professionell medicinsk rådgivning, diagnos eller behandling.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Vi värnar om din integritet</strong></p>
+                <p>Vi använder cookies för analys för att förbättra vår webbplats och app. Inga reklamcookies används. Se vår <a href="/sv/privacy/">Integritetspolicy</a> för mer information.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Avvisa</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Acceptera</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

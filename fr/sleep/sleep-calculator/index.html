@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Calculateur de sommeil : à quelle heure se coucher | Feeltracker</title>
+    <meta name="description" content="Un calculateur de sommeil qui remonte depuis votre heure de réveil. Tableaux des heures de coucher pour les réveils courants en cycles de 90 minutes, et pourquoi la durée d'un cycle varie.">
+
+    <meta name="keywords" content="calculateur de sommeil, à quelle heure me coucher, calcul heure de coucher, calculateur de cycles de sommeil, quand dormir pour se lever à 6 h, cycles de sommeil de 90 minutes">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/fr/sleep/sleep-calculator/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://feeltracker.com/fr/sleep/sleep-calculator/">
+    <meta property="og:title" content="Calculateur de sommeil : à quelle heure se coucher">
+    <meta property="og:description" content="Des tableaux d'heures de coucher calculées à rebours depuis les réveils courants, en cycles de 90 minutes — et un regard honnête sur la valeur réelle de ce calcul.">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/fr/sleep/sleep-calculator/">
+    <meta property="twitter:title" content="Calculateur de sommeil : à quelle heure se coucher">
+    <meta property="twitter:description" content="Calculateur de sommeil : des heures de coucher calculées à rebours depuis votre réveil, en cycles de 90 minutes.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "À quelle heure dois-je me coucher pour me réveiller à 6 h ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "22 h 15 pour cinq cycles (7 h 30 de sommeil) ou 20 h 45 pour six (9 heures), les deux prévoyant 15 minutes pour s'endormir. Si vous manquez régulièrement de sommeil, essayez la plus tôt pendant une semaine et observez vos matinées."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Les calculateurs de sommeil sont-ils fiables ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Approximativement. Ils partent d'un cycle de 90 minutes ; les cycles réels durent environ 70 à 120 minutes et évoluent au fil de la nuit, il faut donc s'attendre à un écart de 20 à 30 minutes. Utiles pour choisir entre deux heures de coucher réalistes ; jamais une raison de veiller plus tard."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Vaut-il mieux dormir 6 heures ou 7 h 30 ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "7 h 30, sans hésiter. Six heures représentent quatre cycles et passent sous la fourchette recommandée pour presque tous les adultes — voir de combien de sommeil vous avez besoin. Ne sacrifiez jamais du temps de sommeil total pour que le calcul des cycles tombe juste."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Combien de temps faut-il pour s'endormir ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "10 à 20 minutes, c'est typique et sain. Moins de cinq minutes signale généralement une dette de sommeil. Dépasser régulièrement 30 minutes mérite d'être traité — commencez par comment s'endormir plus vite."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Dois-je garder la même heure de coucher le week-end ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Oui, aussi proche que possible — et protégez surtout l'heure de réveil. Un décalage de deux heures le week-end produit un effet semblable au décalage horaire qui rend le dimanche soir difficile et le lundi pire encore. Si vous avez besoin de sommeil supplémentaire, une grasse matinée de moins d'une heure coûte bien moins cher."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/fr/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Sommeil",
+                      "item": "https://feeltracker.com/fr/sleep/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Calculateur de sommeil",
+                      "item": "https://feeltracker.com/fr/sleep/sleep-calculator/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Calculateur de sommeil : à quelle heure se coucher",
+          "description": "Un calculateur de sommeil qui remonte depuis votre heure de réveil. Tableaux des heures de coucher pour les réveils courants en cycles de 90 minutes, et pourquoi la durée d'un cycle varie.",
+          "image": "https://feeltracker.com/images/ST_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/fr/sleep/sleep-calculator/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/fr/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/fr/blood-pressure/">Tension Artérielle</a>
+
+            <a href="/fr/daily-journal/">Journal Intime</a>
+
+            <a href="/fr/mood-journal/">Journal d'Humeur</a>
+
+            <a href="/fr/sleep/" class="current">Sommeil</a>
+
+            <a href="/fr/weight/">Poids</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇫🇷</span>
+                <span class="lang-name">Français</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/sleep/sleep-calculator/" class="active" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/fr/">Accueil</a>
+        <span aria-hidden="true">›</span>
+        <a href="/fr/sleep/">Sommeil</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Calculateur de sommeil</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Calculateur de sommeil : à quelle heure se coucher</h1>
+
+        <p class="guide-updated">Dernière mise à jour : août 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>L'idée est simple. Votre cerveau enchaîne des <a href="/fr/sleep/sleep-cycles/">cycles de sommeil</a> d'environ 90 minutes, et se réveiller à la fin de l'un d'eux — en sommeil léger — est bien plus agréable que d'être arraché à son milieu. Fixez votre heure de réveil, comptez à rebours par blocs de 90 minutes, ajoutez 15 minutes pour l'endormissement : voilà votre heure de coucher.</p><p>Ci-dessous : les tableaux pour les heures de réveil les plus courantes, et ce que la plupart des calculateurs omettent — la durée d'un cycle est une moyenne, et le temps de sommeil total compte plus qu'un timing astucieux. Partez des chiffres ; laissez deux semaines de vos propres relevés désigner le gagnant.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Comment fonctionne le calcul</h2>
+        <div class="guide-content">
+            <p>Trois ingrédients, dont un seul est précis :</p><ol><li><strong>Votre heure de réveil</strong> — le réveil que vous ne pouvez pas déplacer.</li><li><strong>La durée d'un cycle.</strong> L'estimation standard est de 90 minutes ; les cycles réels durent environ 70 à 120 minutes et varient au sein d'une même nuit.</li><li><strong>La latence d'endormissement</strong> — le temps qu'il vous faut pour vous endormir. Entre 10 et 20 minutes, c'est sain ; les tableaux retiennent <strong>15 minutes</strong>.</li></ol><p>Donc : <em>heure de coucher = heure de réveil − (90 minutes × cycles) − 15 minutes</em>. Cinq cycles font 7 h 30, six en font 9 — les deux se situent dans la <a href="/fr/sleep/how-much-sleep-do-you-need/">fourchette adulte recommandée de 7 à 9 heures</a>. Quatre cycles font 6 heures, trop peu pour presque tout le monde — un dernier recours, pas un plan.</p><p>Il vous faut régulièrement plus de 20 minutes pour vous endormir ? Augmentez la marge — ou mieux, cherchez <a href="/fr/sleep/how-to-fall-asleep-faster/">pourquoi c'est si long</a> : une latence élevée mérite en soi d'être corrigée.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Tableaux des heures de coucher selon l'heure de réveil</h2>
+        <div class="guide-content">
+            <p>Trouvez votre réveil dans la colonne de gauche. Les colonnes <strong>6 cycles</strong> et <strong>5 cycles</strong> constituent le vrai choix ; 4 cycles est réservé aux nuits déjà perdues.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Heure de réveil</th><th>6 cycles (9 h de sommeil)</th><th>5 cycles (7 h 30 de sommeil)</th><th>4 cycles (6 h de sommeil)</th></tr></thead><tbody><tr><td>5 h 00</td><td>19 h 45</td><td>21 h 15</td><td>22 h 45</td></tr><tr><td>5 h 30</td><td>20 h 15</td><td>21 h 45</td><td>23 h 15</td></tr><tr><td>6 h 00</td><td>20 h 45</td><td>22 h 15</td><td>23 h 45</td></tr><tr><td>6 h 30</td><td>21 h 15</td><td>22 h 45</td><td>0 h 15</td></tr><tr><td>7 h 00</td><td>21 h 45</td><td>23 h 15</td><td>0 h 45</td></tr><tr><td>7 h 30</td><td>22 h 15</td><td>23 h 45</td><td>1 h 15</td></tr><tr><td>8 h 00</td><td>22 h 45</td><td>0 h 15</td><td>1 h 45</td></tr><tr><td>8 h 30</td><td>23 h 15</td><td>0 h 45</td><td>2 h 15</td></tr></tbody></table></div><p>Le tableau se lit dans les deux sens : si vous êtes déjà au lit et que vous choisissez votre réveil, ajoutez 15 minutes puis 7 h 30 ou 9 h à l'heure qu'il est.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Extinction des lumières à</th><th>Réveil après 5 cycles</th><th>Réveil après 6 cycles</th></tr></thead><tbody><tr><td>21 h 30</td><td>5 h 15</td><td>6 h 45</td></tr><tr><td>22 h 00</td><td>5 h 45</td><td>7 h 15</td></tr><tr><td>22 h 30</td><td>6 h 15</td><td>7 h 45</td></tr><tr><td>23 h 00</td><td>6 h 45</td><td>8 h 15</td></tr><tr><td>23 h 30</td><td>7 h 15</td><td>8 h 45</td></tr><tr><td>0 h 00</td><td>7 h 45</td><td>9 h 15</td></tr></tbody></table></div>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Pourquoi le chiffre de 90 minutes n'est pas exact</h2>
+        <div class="guide-content">
+            <p>Tous les calculateurs retiennent 90 minutes — la moyenne de la population. Les vôtres tournent peut-être plutôt autour de 75 ou de 110 minutes, les cycles s'allongent au fil de la nuit, et les réveils normaux ainsi qu'une latence qui varie avec le stress et la caféine décalent le calcul de vingt à trente minutes. En pratique :</p><ul><li><strong>Ne sacrifiez jamais du temps de sommeil total à l'alignement des cycles.</strong> Veiller 45 minutes de plus pour que le calcul tombe sur un cycle entier, c'est perdre du vrai sommeil au profit d'une erreur d'arrondi.</li><li><strong>Servez-vous-en pour départager</strong> deux heures de coucher plausibles.</li><li><strong>Attendez-vous à ajuster.</strong> Si 7 h 30 vous laisse systématiquement dans le brouillard alors que 8 heures pile vous conviennent, vos cycles ne durent pas 90 minutes. Votre expérience l'emporte sur la formule.</li><li><strong>La régularité prime sur la précision.</strong> La même heure de coucher chaque nuit, week-ends compris, fait bien plus pour un réveil à 7 h que n'importe quel calcul.</li></ul><p>L'inertie du sommeil — le brouillard qui suit un réveil mal calé — est bien réelle et peut durer une demi-heure : le principe est donc valable. C'est la confiance à la minute près qui ne l'est pas.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Faire tenir une nouvelle heure de coucher dans la durée</h2>
+        <div class="guide-content">
+            <p>Le problème n'est presque jamais de connaître son heure de coucher ; c'est de l'atteindre. Ce qui aide vraiment :</p><ul><li><strong>Avancez par paliers de 15 minutes.</strong> Une heure plus tôt d'un coup, c'est une heure à rester éveillé. Tenez chaque palier trois ou quatre nuits.</li><li><strong>Fixez d'abord l'heure de réveil.</strong> La lumière du matin règle votre horloge biologique bien plus fortement que l'heure d'extinction de la lampe. Verrouillez l'heure de réveil, tous les jours, et l'heure de coucher a tendance à suivre.</li><li><strong>Réglez le rappel sur la mise en veille, pas sur le coucher.</strong> Une alerte 30 à 45 minutes avant l'extinction des lumières change le comportement ; une alerte à l'heure du coucher se contente de vous annoncer que vous êtes en retard.</li><li><strong>Protégez la dernière heure.</strong> Écrans lumineux, sport intense, repas lourds et alcool repoussent tous l'endormissement — voir l'<a href="/fr/sleep/sleep-hygiene/">hygiène du sommeil</a>.</li><li><strong>Ne restez pas au lit à ruminer.</strong> Toujours éveillé après une vingtaine de minutes ? Levez-vous, faites quelque chose d'ennuyeux dans une lumière tamisée, revenez quand le sommeil arrive.</li></ul>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Carnet ou application : la comparaison honnête</h2>
+        <div class="guide-content">
+            <p>Un calculateur vous donne une hypothèse ; seul votre propre relevé la met à l'épreuve. Deux semaines à noter l'heure du coucher, l'heure du réveil et votre ressenti valent mieux que n'importe quel tableau — y compris celui-ci. Un carnet fait très bien l'affaire. Là où le papier coince, c'est sur les calculs : faire la moyenne de onze nuits, ou remarquer que vos meilleures matinées ont toutes suivi une extinction des lumières à 23 h, suppose d'additionner à la main des horaires griffonnés — alors personne ne le fait.</p><p>Feeltracker Sommeil &amp; Rêves s'occupe de cette partie : heures de coucher et de réveil avec le temps de sommeil calculé, une note de qualité avec des champs rêve et notes, et des tendances sur la période de votre choix, pour rendre visible le lien entre l'heure du coucher et la matinée. Les rappels aident le nouveau rythme à s'installer ; ajoutez-y la synchronisation avec Apple Santé, le suivi CPAP et la synchronisation iCloud sans compte ni adresse e-mail. Les analyses IA peuvent résumer votre propre historique, et tout s'exporte en PDF, XLSX, CSV ou JSON pour votre médecin. C'est un journal manuel, pas un traqueur automatique de stades de sommeil : il ne devinera pas à quel moment vous vous êtes assoupi et ne prétendra pas connaître la durée de vos cycles. Il rend simplement le relevé assez facile pour que vous le teniez.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/ST_1024.png" alt="Icône de l'application Sommeil & Rêves" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Confrontez votre heure de coucher à de vraies données</h2>
+            <p>Feeltracker Sommeil & Rêves enregistre vos heures de coucher et de réveil, calcule le temps dormi et montre comment vos notes de qualité évoluent avec l'heure du coucher — pour que vous trouviez l'heure qui vous convient, à vous, et pas à la moyenne des gens. Gratuit, confidentiel, sans compte.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fr-white.svg"><img class="store_button" src="/images/appstore/fr-black.svg" alt="Télécharger Sommeil & Rêves sur l'App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/fr/sleep/" class="guide-app-cta-learn">En savoir plus sur l'application <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Questions fréquentes</h2>
+
+        <div class="guide-faq-item">
+            <h3>À quelle heure dois-je me coucher pour me réveiller à 6 h ?</h3>
+            <p><strong>22 h 15</strong> pour cinq cycles (7 h 30 de sommeil) ou <strong>20 h 45</strong> pour six (9 heures), les deux prévoyant 15 minutes pour s'endormir. Si vous manquez régulièrement de sommeil, essayez la plus tôt pendant une semaine et observez vos matinées.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Les calculateurs de sommeil sont-ils fiables ?</h3>
+            <p>Approximativement. Ils partent d'un cycle de 90 minutes ; les cycles réels durent environ 70 à 120 minutes et évoluent au fil de la nuit, il faut donc s'attendre à un écart de 20 à 30 minutes. Utiles pour choisir entre deux heures de coucher réalistes ; jamais une raison de veiller plus tard.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Vaut-il mieux dormir 6 heures ou 7 h 30 ?</h3>
+            <p>7 h 30, sans hésiter. Six heures représentent quatre cycles et passent sous la fourchette recommandée pour presque tous les adultes — voir <a href="/fr/sleep/how-much-sleep-do-you-need/" target="_blank" rel="noopener">de combien de sommeil vous avez besoin</a>. Ne sacrifiez jamais du temps de sommeil total pour que le calcul des cycles tombe juste.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Combien de temps faut-il pour s'endormir ?</h3>
+            <p><strong>10 à 20 minutes</strong>, c'est typique et sain. Moins de cinq minutes signale généralement une dette de sommeil. Dépasser régulièrement 30 minutes mérite d'être traité — commencez par <a href="/fr/sleep/how-to-fall-asleep-faster/" target="_blank" rel="noopener">comment s'endormir plus vite</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Dois-je garder la même heure de coucher le week-end ?</h3>
+            <p>Oui, aussi proche que possible — et protégez surtout l'heure de <strong>réveil</strong>. Un décalage de deux heures le week-end produit un effet semblable au décalage horaire qui rend le dimanche soir difficile et le lundi pire encore. Si vous avez besoin de sommeil supplémentaire, une grasse matinée de moins d'une heure coûte bien moins cher.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>À lire aussi</h2>
+        <div class="guide-related-grid">
+
+            <a href="/fr/sleep/sleep-cycles/" class="guide-related-card">
+                <h3>Les cycles et stades du sommeil expliqués</h3>
+                <p>De quoi se compose le cycle de 90 minutes, et comment il évolue au fil de la nuit.</p>
+            </a>
+
+            <a href="/fr/sleep/how-to-fall-asleep-faster/" class="guide-related-card">
+                <h3>Comment s'endormir plus vite</h3>
+                <p>Que faire quand l'heure du coucher est la bonne mais que le sommeil ne vient pas.</p>
+            </a>
+
+            <a href="/fr/sleep/how-much-sleep-do-you-need/" class="guide-related-card">
+                <h3>De combien de sommeil avez-vous besoin ?</h3>
+                <p>Les heures recommandées par âge, et comment trouver votre propre chiffre.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Avertissement médical</h2>
+        <p>Cet article est fourni à titre d'information générale uniquement et ne constitue ni un avis médical, ni un diagnostic, ni un traitement. La durée des cycles et le besoin de sommeil varient d'une personne à l'autre : considérez toute heure de coucher calculée comme un point de départ et suivez toujours les recommandations de votre médecin ou professionnel de santé. Consultez un professionnel si vous mettez systématiquement plus de 30 minutes à vous endormir, si vous vous réveillez non reposé après une nuit complète, si vous vous endormez involontairement dans la journée, ou si votre partenaire signale des ronflements bruyants, des suffocations ou des pauses respiratoires.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Trouvez l'heure de coucher qui vous convient</h2>
+        <p>Téléchargez l'application gratuite Sommeil & Rêves — notez vos nuits, réglez des rappels, observez la tendance</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fr-black.svg" alt="Télécharger Sommeil & Rêves sur l'App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Application gratuite avec fonctionnalités premium en option
+iPhone, iPad et Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/fr/sleep/sleep-calculator/">Accueil</a>
+            <a href="/fr/about/">À propos</a>
+            <a href="mailto:support@feeltracker.com">Support par e-mail</a>
+            <a href="/fr/support/">Support</a>
+            <a href="/fr/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Suivre sur X</a>
+            <a href="/fr/privacy/">Politique de confidentialité</a>
+            <a href="/fr/terms/">Conditions d'utilisation</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Tous droits réservés.</p>
+        <p class="footer-tagline">Fait partie de la famille Feeltracker d'applications de suivi de santé</p>
+        <p class="footer-disclaimer">Vos données de santé restent sur votre appareil et dans iCloud — nous n'y accédons jamais et ne les vendons pas. Les applications Feeltracker ne sont pas des dispositifs médicaux. À titre informatif uniquement, ne remplacent pas un avis, un diagnostic ou un traitement médical professionnel.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Nous respectons votre vie privée</strong></p>
+                <p>Nous utilisons des cookies d'analyse pour améliorer notre site web et notre application. Aucun cookie publicitaire n'est utilisé. Consultez notre <a href="/fr/privacy/">Politique de confidentialité</a> pour plus de détails.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Refuser</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accepter</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

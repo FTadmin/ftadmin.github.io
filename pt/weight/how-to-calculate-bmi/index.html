@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Como Calcular o IMC: Fórmula e Exemplos Resolvidos | Feeltracker</title>
+    <meta name="description" content="Como calcular o IMC à mão com a fórmula métrica ou imperial, com exemplos resolvidos, os erros mais comuns e os casos em que o número do IMC induz em erro.">
+
+    <meta name="keywords" content="como calcular o imc, fórmula do imc, calcular imc manualmente, equação do imc, fórmula imperial do imc, fórmula métrica do imc">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:url" content="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+    <meta property="og:title" content="Como Calcular o IMC: Fórmula e Exemplos Resolvidos">
+    <meta property="og:description" content="As fórmulas métrica e imperial do IMC, exemplos resolvidos passo a passo e um olhar honesto sobre o que o IMC não te consegue dizer.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+    <meta property="twitter:title" content="Como Calcular o IMC: Fórmula e Exemplos Resolvidos">
+    <meta property="twitter:description" content="Como calcular o IMC em unidades métricas ou imperiais, com exemplos resolvidos e limitações honestas.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Qual é a fórmula do IMC?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No sistema métrico: peso em kg ÷ (altura em m)². No sistema imperial: (peso em lb × 703) ÷ (altura em pol.)². As duas dão o mesmo resultado — o 703 limita-se a converter libras e polegadas no equivalente métrico."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Porque se usa o 703 na fórmula imperial do IMC?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "É a conversão de unidades incorporada na equação: um metro tem 39,37 polegadas, um quilograma tem 2,2046 libras, e 39,37² ÷ 2,2046 dá aproximadamente 703."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "O IMC calcula-se de forma diferente para homens e mulheres?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Não — a fórmula e as categorias para adultos são idênticas, apesar de as mulheres terem mais gordura corporal essencial com o mesmo IMC. Para uma medida específica por sexo, usa a percentagem de gordura corporal, que tem intervalos distintos."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Qual é o rigor do IMC em atletas?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Fraco. O músculo pesa mais do que a gordura para o mesmo volume, pelo que os atletas treinados caem regularmente nas categorias de excesso de peso ou de obesidade sendo extremamente magros. Para quem faz treino de resistência a sério, a medição da cintura e as estimativas de gordura corporal são muito mais informativas."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Tenho de recalcular o IMC sempre que me peso?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Manualmente, não. A tua altura raramente muda, pelo que o IMC acompanha o peso passo a passo. Verificar o valor uma vez por mês é mais do que suficiente, e uma app recalcula-o automaticamente de qualquer forma."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/pt/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Peso",
+                      "item": "https://feeltracker.com/pt/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Como Calcular o IMC",
+                      "item": "https://feeltracker.com/pt/weight/how-to-calculate-bmi/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Como Calcular o IMC",
+          "description": "Como calcular o IMC à mão com a fórmula métrica ou imperial, com exemplos resolvidos, os erros mais comuns e os casos em que o número do IMC induz em erro.",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/pt/weight/how-to-calculate-bmi/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/pt/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/pt/blood-pressure/">Pressão Arterial</a>
+
+            <a href="/pt/daily-journal/">Diário Pessoal</a>
+
+            <a href="/pt/mood-journal/">Diário de Humor</a>
+
+            <a href="/pt/sleep/">Sono</a>
+
+            <a href="/pt/weight/" class="current">Peso</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇵🇹</span>
+                <span class="lang-name">Português (Portugal)</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/how-to-calculate-bmi/" class="active" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/pt/">Início</a>
+        <span aria-hidden="true">›</span>
+        <a href="/pt/weight/">Peso</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Como Calcular o IMC</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Como Calcular o IMC</h1>
+
+        <p class="guide-updated">Última atualização: agosto de 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>O índice de massa corporal é o teu peso a dividir pelo quadrado da tua altura. Uma divisão, uma multiplicação — a razão pela qual este número sobreviveu quase duzentos anos. Fá-lo no teclado do telemóvel em dez segundos.</p><p>As duas fórmulas estão em baixo, resolvidas com números reais, mais a parte que a maioria das calculadoras salta: onde o resultado induz em erro. Assim que tiveres o teu valor, a <a href="/pt/weight/bmi-chart/">tabela de IMC</a> diz-te em que categoria se enquadra.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>A fórmula métrica: quilogramas e metros</h2>
+        <div class="guide-content">
+            <p><strong>IMC = peso em quilogramas ÷ (altura em metros × altura em metros)</strong></p><p>A única armadilha está na unidade: <em>metros</em>, não centímetros. 175 cm são 1,75 m — se usares 175, obténs um IMC de 0,0025.</p><h3>Exemplo resolvido</h3><p>78 kg com 175 cm:</p><ol><li>Converte: 175 cm = <strong>1,75 m</strong></li><li>Eleva ao quadrado: 1,75 × 1,75 = <strong>3,0625</strong></li><li>Divide: 78 ÷ 3,0625 = <strong>25,5</strong></li></ol><p>Isso fica logo à entrada do excesso de peso, que começa em 25,0 — a cerca de 1,5 kg da faixa saudável. Nunca trates como definitivo um resultado que esteja a menos de um ponto de um limite: as <a href="/pt/weight/weight-fluctuation/">oscilações diárias normais do peso</a> podem fazer-te atravessar a linha e voltar atrás numa semana.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>A fórmula imperial: libras e polegadas</h2>
+        <div class="guide-content">
+            <p><strong>IMC = (peso em libras × 703) ÷ (altura em polegadas × altura em polegadas)</strong></p><p>O 703 converte libras por polegada quadrada em quilogramas por metro quadrado — 39,37 polegadas por metro, ao quadrado, a dividir por 2,2046 libras por quilograma — pelo que as duas fórmulas dão a mesma resposta.</p><h3>Exemplo resolvido</h3><p>172 lb com 5 pés e 9 polegadas:</p><ol><li>Altura em polegadas: (5 × 12) + 9 = <strong>69 pol.</strong></li><li>Eleva ao quadrado: 69 × 69 = <strong>4761</strong></li><li>Peso × 703: 172 × 703 = <strong>120 916</strong></li><li>Divide: 120 916 ÷ 4761 = <strong>25,4</strong></li></ol><p>A mesma pessoa do exemplo métrico, a mesma resposta. O erro clássico: deixar os pés e as polegadas separados e elevar ao quadrado apenas as polegadas.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Consulta rápida: o que significa o teu resultado</h2>
+        <div class="guide-content">
+            <p>Para adultos com 20 anos ou mais, homens e mulheres por igual:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>IMC</th><th>Categoria</th><th>Exemplo com 175 cm / 5 pés e 9 pol.</th></tr></thead><tbody><tr><td>Abaixo de 18,5</td><td>Baixo peso</td><td>Menos de 57 kg / 125 lb</td></tr><tr><td>18,5 – 24,9</td><td>Peso saudável</td><td>57 – 76 kg / 125 – 168 lb</td></tr><tr><td>25,0 – 29,9</td><td>Excesso de peso</td><td>77 – 91 kg / 169 – 201 lb</td></tr><tr><td>30,0 – 34,9</td><td>Obesidade de classe 1</td><td>92 – 107 kg / 202 – 236 lb</td></tr><tr><td>35,0 – 39,9</td><td>Obesidade de classe 2</td><td>107 – 122 kg / 237 – 269 lb</td></tr><tr><td>40,0 ou mais</td><td>Obesidade de classe 3</td><td>123 kg / 270 lb ou mais</td></tr></tbody></table></div><p>Se fores de ascendência do sul da Ásia, chinesa ou de outras origens asiáticas, várias entidades de saúde aplicam limiares mais baixos — excesso de peso a partir de cerca de 23, obesidade a partir de cerca de 27,5 — porque o risco metabólico sobe mais cedo. O retrato completo, incluindo uma tabela altura a altura, está no <a href="/pt/weight/bmi-chart/">guia da tabela de IMC</a>.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Onde o número corre mal</h2>
+        <div class="guide-content">
+            <p>A aritmética é simples, por isso os IMC errados vêm dos dados que introduzes.</p><ul><li><strong>Altura estimada.</strong> A maioria dos adultos tem menos um ou dois centímetros do que diz a carta de condução, e a altura diminui com a idade. Com 175 cm, 1 cm faz variar o IMC em cerca de 0,3 — o suficiente para atravessar um limite. Mede-te descalço encostado a uma parede, uma vez, e reutiliza esse valor.</li><li><strong>Pesagens inconsistentes.</strong> Podes estar 1 a 2 kg mais pesado à noite. Pesa-te ao acordar, antes de comer.</li><li><strong>Unidades misturadas, peso elevado ao quadrado, arredondamentos excessivos.</strong> Quilogramas com polegadas dão disparates, e arredondar a altura aos 5 cm mais próximos pode deslocar o resultado um ponto inteiro. Quando duas calculadoras discordam, é quase sempre por uma destas razões.</li></ul><p>Depois há o que a fórmula não consegue ver. O músculo é mais denso do que a gordura, pelo que um remador bem treinado pode apresentar um IMC de 28 a 30 com uma gordura corporal de um só dígito — se treinas a sério com pesos, considera o IMC praticamente irrelevante e usa antes a <a href="/pt/weight/body-fat-percentage/">percentagem de gordura corporal</a>. O inverso também é verdade: alguém sedentário com um IMC de 23 pode ter gordura abdominal suficiente para aumentar o risco metabólico. O risco começa em IMC diferentes consoante as populações, o mesmo IMC aos 60 anos corresponde a mais gordura do que aos 30, as mulheres têm mais gordura essencial do que os homens, o IMC não é válido na gravidez e as crianças usam tabelas de percentis. A solução mais barata é uma fita métrica: o <a href="/pt/weight/waist-to-height-ratio/">rácio cintura-altura</a> demora trinta segundos e vê a distribuição de gordura que o IMC não consegue ver.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Fazer as contas à mão ou deixar uma app fazê-las</h2>
+        <div class="guide-content">
+            <p>Calcular o IMC uma vez é trivial. Calculá-lo em cada pesagem durante um ano, e depois ver o que a tendência fez — é aí que fazê-lo à mão se desmorona silenciosamente.</p><p>A app gratuita Feeltracker Peso e IMC elimina esse passo: introduzes a tua altura uma vez e o IMC é calculado em cada registo, representado num gráfico com linhas de tendência ao lado do teu peso e do objetivo que definires. Também regista a percentagem de gordura corporal, sincroniza com o Apple Health e entre os teus dispositivos através do iCloud, sem conta nem e-mail, e exporta para PDF, XLSX, CSV ou JSON para levares às consultas. As análises de IA opcionais resumem o teu histórico.</p><p>Sigas o caminho que seguires, a fórmula acima é tudo o que há. O valor está em verificar de vez em quando, não em três casas decimais.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="Ícone da app Peso e IMC" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Dispensa a aritmética</h2>
+            <p>A Feeltracker Peso e IMC calcula o teu IMC a partir de cada pesagem, em quilogramas ou em libras, e representa-o num gráfico ao lado do teu peso para veres a tendência, e não um número isolado. Gratuita, privada, sem necessidade de conta.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-white.svg"><img class="store_button" src="/images/appstore/pt-black.svg" alt="Transferir Peso e IMC na App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/pt/weight/" class="guide-app-cta-learn">Saber mais sobre a app <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Perguntas frequentes</h2>
+
+        <div class="guide-faq-item">
+            <h3>Qual é a fórmula do IMC?</h3>
+            <p>No sistema métrico: <strong>peso em kg ÷ (altura em m)²</strong>. No sistema imperial: <strong>(peso em lb × 703) ÷ (altura em pol.)²</strong>. As duas dão o mesmo resultado — o 703 limita-se a converter libras e polegadas no equivalente métrico.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Porque se usa o 703 na fórmula imperial do IMC?</h3>
+            <p>É a conversão de unidades incorporada na equação: um metro tem 39,37 polegadas, um quilograma tem 2,2046 libras, e 39,37² ÷ 2,2046 dá aproximadamente 703.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>O IMC calcula-se de forma diferente para homens e mulheres?</h3>
+            <p>Não — a fórmula e as categorias para adultos são idênticas, apesar de as mulheres terem mais gordura corporal essencial com o mesmo IMC. Para uma medida específica por sexo, usa a <a href="/pt/weight/body-fat-percentage/" target="_blank" rel="noopener">percentagem de gordura corporal</a>, que tem intervalos distintos.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Qual é o rigor do IMC em atletas?</h3>
+            <p>Fraco. O músculo pesa mais do que a gordura para o mesmo volume, pelo que os atletas treinados caem regularmente nas categorias de excesso de peso ou de obesidade sendo extremamente magros. Para quem faz treino de resistência a sério, a medição da cintura e as estimativas de gordura corporal são muito mais informativas.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Tenho de recalcular o IMC sempre que me peso?</h3>
+            <p>Manualmente, não. A tua altura raramente muda, pelo que o IMC acompanha o peso passo a passo. Verificar o valor uma vez por mês é mais do que suficiente, e uma app recalcula-o automaticamente de qualquer forma.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Continua a ler</h2>
+        <div class="guide-related-grid">
+
+            <a href="/pt/weight/bmi-chart/" class="guide-related-card">
+                <h3>Tabela de IMC para Adultos</h3>
+                <p>Todas as categorias, mais uma tabela de consulta por altura e peso.</p>
+            </a>
+
+            <a href="/pt/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>Peso Saudável para a Tua Altura</h3>
+                <p>O intervalo-alvo para a tua altura em kg e em libras.</p>
+            </a>
+
+            <a href="/pt/weight/body-fat-percentage/" class="guide-related-card">
+                <h3>A Percentagem de Gordura Corporal Explicada</h3>
+                <p>O que o IMC não vê, e como medi-lo em alternativa.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Aviso de saúde</h2>
+        <p>Este artigo destina-se apenas a informação geral e não constitui aconselhamento médico, diagnóstico ou tratamento. O IMC é um valor de rastreio que não permite, por si só, avaliar a saúde de uma pessoa — fala sempre sobre o teu peso, e sobre qualquer plano para o alterar, com o teu médico ou profissional de saúde. Procura aconselhamento médico com prontidão se estiveres a perder ou a ganhar peso sem intenção, ou se a alteração de peso vier acompanhada de sintomas como cansaço persistente, falta de ar ou perda de apetite.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Deixa o teu IMC calcular-se sozinho</h2>
+        <p>Transfere a app gratuita Peso e IMC — introduz a tua altura uma vez e cada pesagem faz o resto</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pt-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pt-black.svg" alt="Transferir Peso e IMC na App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">App gratuita com funcionalidades premium opcionais
+iPhone, iPad e Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/pt/weight/how-to-calculate-bmi/">Início</a>
+            <a href="/pt/about/">Sobre</a>
+            <a href="mailto:support@feeltracker.com">Suporte por E-mail</a>
+            <a href="/pt/support/">Suporte</a>
+            <a href="/pt/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Seguir no X</a>
+            <a href="/pt/privacy/">Política de Privacidade</a>
+            <a href="/pt/terms/">Termos e Condições</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Todos os direitos reservados.</p>
+        <p class="footer-tagline">Parte da família Feeltracker de aplicações de monitorização de saúde</p>
+        <p class="footer-disclaimer">Os seus dados de saúde ficam armazenados no seu dispositivo e no iCloud — nunca acedemos ou vendemos os seus dados. As aplicações Feeltracker não são dispositivos médicos. Apenas para fins informativos, não substitui aconselhamento médico profissional, diagnóstico ou tratamento.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Valorizamos a sua privacidade</strong></p>
+                <p>Utilizamos cookies de análise para melhorar o nosso site e aplicação. Nenhum cookie publicitário é utilizado. Consulte a nossa <a href="/pt/privacy/">Política de Privacidade</a> para mais detalhes.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Rejeitar</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

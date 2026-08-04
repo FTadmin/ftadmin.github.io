@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>気分チャートの読み方：ベースライン・振れ幅・周期 | Feeltracker</title>
+    <meta name="description" content="気分チャートを正しく読むために。自分のベースラインを見つけ、振れ幅を見極め、週ごと・季節ごとの周期に気づき、本当の要因とただの偶然を見分ける方法を解説します。">
+
+    <meta name="keywords" content="気分チャート, 気分記録 グラフ, ムードグラフ, 気分チャート 読み方, 気分のパターン, 気分の傾向">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:url" content="https://feeltracker.com/ja/mood-journal/mood-chart/">
+    <meta property="og:title" content="気分チャートの読み方">
+    <meta property="og:description" content="ベースライン、振れ幅、周期、要因との相関 — 数週間分の気分データから本当の答えを引き出す方法を、実例つきで解説します。">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ja/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="気分チャートの読み方">
+    <meta property="twitter:description" content="気分チャートの読み方：ベースライン、振れ幅、周期、そして本当の要因とただの偶然の見分け方。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "チャートが役に立つようになるまで、何週間分のデータが必要ですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "週ごとのリズムや睡眠のような影響の大きい単独の要因なら3〜4週間、月ごとの周期なら2〜3か月、季節のかたちをつかむにはほぼ1年です。1〜2週間でも、自分のベースラインとどのくらい変動するかはわかります — それだけでも十分に持つ価値があります。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "チャートがまったくバラバラに見えます。やり方が間違っているのでしょうか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "たぶん間違っていません。本当にばらつきの大きいチャートもありますし、散らばったままの図も、ひとつの事実を語っています。つまり、あなたの気分を支配している単独の要因はない、ということです。記録を曜日ごとに並べ替えてみて、同じ日ではなく翌日への影響を確認してみてください — 時間差のあるパターンは、見えているのに気づかれないものです。2か月経ってもやはりバラバラでしょうか。それもひとつの答えです。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "チャートに低い点があるのは、どこか悪いということですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "いいえ。誰のチャートにも低い点はありますし、つらい1日は診断ではありません。注目すべきなのは「続く長さ」と「向き」です。1日の大半を占める落ち込みが2週間以上続いている場合や、ベースラインが何か月もかけて下がり続けている場合。これらは医師やセラピストと話す価値があります — チャートを持っていきましょう。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "気分の評価は平均をとったほうがいいですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "月ごとの平均は、ベースラインのまずまず妥当な要約になります。ただし平均をとると振れ幅が消えてしまいます — 物語のうち、しばしばそちらのほうが面白い半分です。平均とばらつきは一緒に見てください。気分の波のガイドで解説しています。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "気分チャートをセラピストに見せてもいいですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "はい、たいていのセラピストは歓迎してくれます。日付と要因タグの入ったチャートがあると、ぼんやりした要約が、一緒に取り組める具体的なものに変わります。きれいにまとまった形ならPDF、元の数値ならCSV／XLSXで書き出せます。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ja/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "気分日記",
+                      "item": "https://feeltracker.com/ja/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "気分チャート",
+                      "item": "https://feeltracker.com/ja/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "気分チャートの読み方",
+          "description": "気分チャートを正しく読むために。自分のベースラインを見つけ、振れ幅を見極め、週ごと・季節ごとの周期に気づき、本当の要因とただの偶然を見分ける方法を解説します。",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ja/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ja/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ja/blood-pressure/">血圧</a>
+
+            <a href="/ja/daily-journal/">日記</a>
+
+            <a href="/ja/mood-journal/" class="current">気分日記</a>
+
+            <a href="/ja/sleep/">睡眠</a>
+
+            <a href="/ja/weight/">体重</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇯🇵</span>
+                <span class="lang-name">日本語</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ja/mood-journal/">気分日記</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">気分チャート</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>気分チャートの読み方</h1>
+
+        <p class="guide-updated">最終更新：2026年8月</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>気分チャートは、毎日の評価を時間軸に沿って並べたものです。ぱっと見の印象は、たいていミスリードを招きます。目は真っ先にいちばん低い点へ向かい、「ああ、この日がつらかった日だ」と読んで、そこで止まってしまうからです。きちんと読めば、チャートはもっといい問いに答えてくれます。自分の気分はふだんどのあたりにあるのか、どのくらい大きく振れるのか、決まったリズムで動いているのか、そして何が一緒に動いているのか。</p><p>このガイドでは、4つの読み方 — ベースライン、振れ幅、周期、要因 — を実例つきでたどります。まだ記録を始めていない方は、<a href="/ja/mood-journal/how-to-track-your-mood/">気分の記録のつけ方</a>から始めて、2週間後にまたお越しください。</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>読む前に：どのくらいのデータが必要？</h2>
+        <div class="guide-content">
+            <p>5日分のチャートは「そのときの気分」であって、パターンではありません。おおよその目安はこうです。</p><ul><li><strong>1〜2週間：</strong> 自分のベースラインと、どのくらい変動するか — 原因についてはまだ何もわかりません。</li><li><strong>3〜6週間：</strong> 週ごとのリズムと、影響の大きい単独の要因。たいてい最初に見えてくるのは睡眠です。</li><li><strong>2〜3か月：</strong> 月単位・ホルモン周期のリズムと、ゆっくりとした変化。</li><li><strong>6〜12か月：</strong> 季節のかたち、そして「去年より良くなっているか？」という問いへの正直な答え。</li></ul><p>抜けがあっても大丈夫です — 空白の1週間は正直な記録です。記憶から再構成した1週間は、あなたがすでに信じている物語のほうへチャートを書き換えてしまいます。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. ベースラインを見つける</h2>
+        <div class="guide-content">
+            <p>ベースラインとは、なんでもない1日にあなたの気分が落ち着いているところ — 線が何度も戻ってくる帯のことです。5段階の尺度なら、多くの方は3と4のあいだで暮らしています。</p><p>ここでいちばん役に立つ数字がこれです。ふだん4のところにいる人の「3」と、2のところにいる人の「3」は意味が違いますし、ベースラインはゆっくりとしか動かないので、その移動には「火曜日がひどかった」以上の意味があります。2か月かけてベースラインが4から3へ滑り落ちていることのほうが、どんな単発の落ち込みよりも重要です — 内側からはいちばん見えにくい変化だからです。</p><p>両端の極端な点を親指で隠して、線の大部分がどこにあるかを見て、今月と先月を比べてみましょう。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. 振れ幅を見極める</h2>
+        <div class="guide-content">
+            <p>振れ幅とは、そのベースラインのまわりで気分がどのくらい動くかです。ベースラインが同じ3.5でも、3と4のあいだで動く人もいれば、1と5のあいだを行き来する人もいます。3つの問いを立ててみましょう。</p><ul><li><strong>ふつうの1週間で、どのくらい幅がある？</strong> 1段階なら普通の範囲。3〜4段階が繰り返し起きているなら、注目する価値があります。</li><li><strong>変化はどのくらい速い？</strong> 2週間かけてゆるやかに下がるのと、同じ日のうちに5から1へ落ちるのとは、別の現象です。</li><li><strong>低い状態はどのくらい続く？</strong> 1日だけの落ち込みと、2週間ずっと底にいるのとでは意味が違います。</li></ul><p>振れ幅そのものが主題になっているなら、<a href="/ja/mood-journal/mood-swings/">気分の波のガイド</a>で、要因と専門家に相談すべきタイミングを扱っています。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. 周期を探す</h2>
+        <div class="guide-content">
+            <p>周期がわかると、「ときどき理由もなく調子が悪い」が、あらかじめ備えられるものに変わります。確認したい周期は4つです。</p><ul><li><strong>1日の中で。</strong> 1日1回以上の記録が必要です — 朝のほうが重い、あるいは夜遅くに落ち込む、など。</li><li><strong>週ごと。</strong> いちばんよく見つかるパターンです：日曜の夜、水曜の谷、金曜の本物の高揚。</li><li><strong>月ごと。</strong> ホルモン周期は気分データの中でもとくにはっきり出るパターンのひとつです。2〜3か月分は見てみましょう。</li><li><strong>季節ごと。</strong> ゆっくりしていて、そのとき起きていた他のことのせいにしてしまいがちです — <a href="/ja/mood-journal/seasonal-mood-changes/">季節による気分の変化</a>をご覧ください。</li></ul><p>長い記録には、本物かどうかにかかわらず周期らしきものが現れます。信じていいのは、3回繰り返して現れ、しかももっともらしい仕組みの説明がつくものです。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. 要因：実例で読んでみる</h2>
+        <div class="guide-content">
+            <p>ここからチャートは「描写」をやめて「説明」を始めます — そして、自分をだましやすくなるのもここからです。2週間分の記録を見てみましょう。</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>曜日</th><th>気分（1〜5）</th><th>睡眠</th><th>メモ</th></tr></thead><tbody><tr><td>月</td><td>3</td><td>6時間</td><td>慌ただしい出だし</td></tr><tr><td>火</td><td>2</td><td>5時間</td><td>前夜に夜ふかし</td></tr><tr><td>水</td><td>2</td><td>5時間30分</td><td>理由もなく気分が平坦</td></tr><tr><td>木</td><td>4</td><td>8時間</td><td>寝坊した</td></tr><tr><td>金</td><td>4</td><td>7時間30分</td><td>散歩、友人に会った</td></tr><tr><td>土</td><td>5</td><td>9時間</td><td>—</td></tr><tr><td>日</td><td>3</td><td>8時間</td><td>来週が憂うつ</td></tr><tr><td>月</td><td>2</td><td>6時間</td><td>締め切り</td></tr><tr><td>火</td><td>2</td><td>5時間</td><td>締め切り、散歩なし</td></tr><tr><td>水</td><td>3</td><td>7時間</td><td>締め切り終了</td></tr><tr><td>木</td><td>4</td><td>8時間</td><td>ジム</td></tr><tr><td>金</td><td>4</td><td>7時間</td><td>—</td></tr><tr><td>土</td><td>4</td><td>8時間30分</td><td>静かな1日</td></tr><tr><td>日</td><td>3</td><td>8時間</td><td>また日曜特有の感じ</td></tr></tbody></table></div><p><strong>この記録が支持していること：</strong> ベースラインは3あたり、振れ幅は2から5、日曜の落ち込みが繰り返し現れていること、そして睡眠が6時間を切った夜と気分「2」とのあいだに強いつながりがあること。</p><p><strong>この記録が証明していないこと：</strong> 睡眠不足が気分の落ち込みを<em>引き起こした</em>ということ。どちらの週にも締め切りがあり、締め切りはそれ自体で睡眠を削り、気分を平坦にします。また気分の落ち込みは睡眠を乱すので、矢印は逆向きかもしれません。そして日曜の落ち込みは睡眠のせいではありません — 日曜の睡眠は2週とも問題なかったのですから。</p><p>相関を信じてよいか確かめるには：例外を数えること（半分の場面でしか当てはまらない要因は、宣伝上手なだけの偶然です）、時間差を確認すること（睡眠とアルコールは翌日に効いてきます）、両方を動かしている第3の要因を探すこと（締め切り、体調不良、旅行）、そして一度に1つずつ変えて試すことです。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>紙のチャートかアプリか：正直な比較</h2>
+        <div class="guide-content">
+            <p>方眼紙でも描けますし、表計算ソフトなら曜日で並べ替えもできます。どちらにも共通する代償は「続かないこと」です — 毎月、表計算を要因ごとに並べ替え直す人はいません。アプリ側の利点はこうです。</p><ul><li><strong>記録するそばからチャートが描かれる</strong>。どの期間でも表示でき、トレンドは常に最新です。</li><li><strong>要因ごとに気分を内訳表示</strong> — 上で見たような比較が、計算なしでできます。</li><li><strong>すべての点にメモや写真がひもづく</strong> — 落ち込みから、その理由までワンタップ。</li><li><strong>Appleヘルスケア連携</strong> — 睡眠のデータは自動で入ってきます。</li><li><strong>PDF、XLSX、CSV、JSONへの書き出し</strong> — 受診のときにも、自分で分析するときにも。</li><li><strong>あなた自身の記録をもとにしたAIインサイト</strong>。基本無料・オプションのプレミアム機能あり — アドバイスではなく、もうひとつの読み方です。</li></ul><p>誰がチャートを描こうと、解釈するのはあなた自身です — これはセルフトラッキングのツールであって、診断のための道具ではありません。気になることがあれば、チャートを持って医師やセラピストに相談してください。記憶に頼るより、はるかに具体的な話ができます。</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="気分日記 BPDアプリのアイコン" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>記録するそばから描かれる、あなたのチャート</h2>
+            <p>Feeltracker気分日記は、好きな期間で評価をグラフにし、タグ付けした要因ごとに気分を分解して見せ、すべてのメモと写真をその点にひもづけて保管します。全体像はワンタップでPDFに書き出せます。無料、プライベート、アカウント不要。</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button" src="/images/appstore/ja-black.svg" alt="App Storeで気分日記をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ja/mood-journal/" class="guide-app-cta-learn">アプリについて詳しく見る <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>よくある質問</h2>
+
+        <div class="guide-faq-item">
+            <h3>チャートが役に立つようになるまで、何週間分のデータが必要ですか？</h3>
+            <p>週ごとのリズムや睡眠のような影響の大きい単独の要因なら<strong>3〜4週間</strong>、月ごとの周期なら<strong>2〜3か月</strong>、季節のかたちをつかむには<strong>ほぼ1年</strong>です。1〜2週間でも、自分のベースラインとどのくらい変動するかはわかります — それだけでも十分に持つ価値があります。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>チャートがまったくバラバラに見えます。やり方が間違っているのでしょうか？</h3>
+            <p>たぶん間違っていません。本当にばらつきの大きいチャートもありますし、散らばったままの図も、ひとつの事実を語っています。つまり、あなたの気分を支配している単独の要因はない、ということです。記録を曜日ごとに並べ替えてみて、同じ日ではなく翌日への影響を確認してみてください — 時間差のあるパターンは、見えているのに気づかれないものです。2か月経ってもやはりバラバラでしょうか。それもひとつの答えです。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>チャートに低い点があるのは、どこか悪いということですか？</h3>
+            <p>いいえ。誰のチャートにも低い点はありますし、つらい1日は診断ではありません。注目すべきなのは「続く長さ」と「向き」です。1日の大半を占める落ち込みが2週間以上続いている場合や、ベースラインが何か月もかけて下がり続けている場合。これらは医師やセラピストと話す価値があります — チャートを持っていきましょう。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>気分の評価は平均をとったほうがいいですか？</h3>
+            <p>月ごとの平均は、ベースラインのまずまず妥当な要約になります。ただし平均をとると振れ幅が消えてしまいます — 物語のうち、しばしばそちらのほうが面白い半分です。平均とばらつきは一緒に見てください。<a href="/ja/mood-journal/mood-swings/" target="_blank" rel="noopener">気分の波のガイド</a>で解説しています。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>気分チャートをセラピストに見せてもいいですか？</h3>
+            <p>はい、たいていのセラピストは歓迎してくれます。日付と要因タグの入ったチャートがあると、ぼんやりした要約が、一緒に取り組める具体的なものに変わります。きれいにまとまった形ならPDF、元の数値ならCSV／XLSXで書き出せます。</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>あわせて読みたい</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ja/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>気分の記録のつけ方</h3>
+                <p>何を記録するか、どのくらいの頻度でつけるか、タグ付けする価値のある要因。</p>
+            </a>
+
+            <a href="/ja/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>気分の波：原因とパターン</h3>
+                <p>振れ幅を大きくしがちなものと、相談したほうがいいタイミング。</p>
+            </a>
+
+            <a href="/ja/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>季節による気分の変化</h3>
+                <p>チャートの中でいちばんゆっくりした周期と、その見つけ方。</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>こころの健康についてのご注意</h2>
+        <p>この記事は一般的な情報提供のみを目的としており、医学的な助言、診断、治療にかわるものではありません。気分チャートはセルフトラッキングのためのツールであり、診断のための道具ではありません — そこに見えるパターンは、医師やセラピストと話し始めるためのよい出発点であって、専門家に代わるものでは決してありません。1日の大半を占める気分の落ち込みが2週間以上続く場合や、睡眠・食欲・日々をこなす力に持続的な変化が見られる場合は、医療の専門家にご相談ください。自分を傷つけたいという考えがある場合は、すぐにお住まいの地域の緊急通報番号、またはお住まいの国のいのちの電話などの相談窓口にご連絡ください — 支援は今すぐ受けられます。</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>自分のパターンを見つけよう</h2>
+        <p>無料の気分日記アプリをダウンロード — 数秒で記録すれば、チャートはひとりでに描かれていきます</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="App Storeで気分日記をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">オプションのプレミアム機能付き無料アプリ
+iPhone、iPad、Mac対応 • iOS 16.0以降</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ja/mood-journal/mood-chart/">ホーム</a>
+            <a href="/ja/about/">概要</a>
+            <a href="mailto:support@feeltracker.com">メールサポート</a>
+            <a href="/ja/support/">サポート</a>
+            <a href="/ja/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Xでフォロー</a>
+            <a href="/ja/privacy/">プライバシーポリシー</a>
+            <a href="/ja/terms/">利用規約</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Feeltrackerヘルストラッキングアプリファミリーの一員</p>
+        <p class="footer-disclaimer">健康データはお使いのデバイスとiCloudに保存されます。私たちがデータにアクセスしたり販売したりすることはありません。Feeltrackerアプリは医療機器ではありません。情報提供のみを目的としており、専門的な医療アドバイス、診断、治療の代わりとなるものではありません。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>プライバシーを大切にしています</strong></p>
+                <p>ウェブサイトとアプリの改善のため、分析用Cookieを使用しています。広告Cookieは使用していません。詳しくは <a href="/ja/privacy/">プライバシーポリシー</a> をご覧ください。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒否</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">同意</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

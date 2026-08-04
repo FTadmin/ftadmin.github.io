@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Sleep Calculator: When to Go to Bed | Feeltracker</title>
+    <meta name="description" content="A sleep calculator that works backwards from your wake time. Bedtime tables for common alarms using 90-minute cycles, plus why cycle length varies per person.">
+
+    <meta name="keywords" content="sleep calculator, what time should i go to bed, bedtime calculator, sleep cycle calculator, when to sleep to wake up at 6am, 90 minute sleep cycles">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://feeltracker.com/sleep/sleep-calculator/">
+    <meta property="og:title" content="Sleep Calculator: When to Go to Bed">
+    <meta property="og:description" content="Bedtime tables worked backwards from common wake times in 90-minute cycles — and an honest look at how much the math is worth.">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/sleep/sleep-calculator/">
+    <meta property="twitter:title" content="Sleep Calculator: When to Go to Bed">
+    <meta property="twitter:description" content="Sleep calculator: bedtimes worked backwards from your wake time using 90-minute sleep cycles.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "What time should I go to bed to wake up at 6 am?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "10:15 pm for five cycles (7½ hours of sleep) or 8:45 pm for six (9 hours), both allowing 15 minutes to fall asleep. If you're regularly short on sleep, try the earlier one for a week and see how the mornings feel."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Are sleep calculators accurate?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Roughly. They assume a 90-minute cycle; real cycles run about 70–120 minutes and change through the night, so expect the estimate to drift by 20–30 minutes. Useful for choosing between two realistic bedtimes; not a reason to stay up later."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Is it better to sleep 6 hours or 7½ hours?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "7½ hours, without question. Six hours is four cycles and falls below the recommended range for almost every adult — see how much sleep you need. Never sacrifice total sleep to make the cycle math come out even."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "How long should it take to fall asleep?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "10–20 minutes is typical and healthy. Under five minutes usually signals sleep debt. Regularly over 30 minutes is worth addressing — start with how to fall asleep faster."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Should I use the same bedtime on weekends?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, as close as you can — and protect the wake time especially. A two-hour weekend shift produces a jetlag-like effect that makes Sunday night hard and Monday worse. If you need extra sleep, a lie-in of under an hour costs far less."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Sleep",
+                      "item": "https://feeltracker.com/sleep/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Sleep Calculator",
+                      "item": "https://feeltracker.com/sleep/sleep-calculator/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Sleep Calculator: When to Go to Bed",
+          "description": "A sleep calculator that works backwards from your wake time. Bedtime tables for common alarms using 90-minute cycles, plus why cycle length varies per person.",
+          "image": "https://feeltracker.com/images/ST_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/sleep/sleep-calculator/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/blood-pressure/">Blood Pressure</a>
+
+            <a href="/daily-journal/">Daily Journal</a>
+
+            <a href="/mood-journal/">Mood Journal</a>
+
+            <a href="/sleep/" class="current">Sleep</a>
+
+            <a href="/weight/">Weight</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇺🇸</span>
+                <span class="lang-name">English</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/sleep/sleep-calculator/" class="active" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <a href="/sleep/">Sleep</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Sleep Calculator</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Sleep Calculator: When to Go to Bed</h1>
+
+        <p class="guide-updated">Last updated: August 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>The idea is simple. Your brain moves through <a href="/sleep/sleep-cycles/">sleep cycles</a> of roughly 90 minutes, and waking at the end of one — in light sleep — feels far better than being pulled out of the middle. Fix your wake time, count back in 90-minute blocks, add 15 minutes for falling asleep: that's your bedtime.</p><p>Below: tables for common alarm times, plus what most calculators leave out — cycle length is an average, and total sleep matters more than clever timing. Start with the numbers; let two weeks of your own records pick the winner.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>How the calculation works</h2>
+        <div class="guide-content">
+            <p>Three ingredients, only one of them precise:</p><ol><li><strong>Your wake time</strong> — the alarm you can't move.</li><li><strong>Cycle length.</strong> The standard estimate is 90 minutes; real cycles run roughly 70–120 and vary within a night.</li><li><strong>Sleep latency</strong> — how long you take to fall asleep. Healthy is 10–20 minutes; the tables assume <strong>15</strong>.</li></ol><p>So: <em>bedtime = wake time − (90 minutes × cycles) − 15 minutes</em>. Five cycles is 7.5 hours, six is 9 — both inside the recommended <a href="/sleep/how-much-sleep-do-you-need/">7–9 hour adult range</a>. Four cycles is 6 hours, short for almost everyone — a last resort, not a plan.</p><p>Routinely need more than 20 minutes? Raise the allowance — or better, look at <a href="/sleep/how-to-fall-asleep-faster/">why it's taking so long</a> — a long latency is itself worth fixing.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Bedtime tables by wake time</h2>
+        <div class="guide-content">
+            <p>Find your alarm in the left column. The <strong>6-cycle</strong> and <strong>5-cycle</strong> columns are the real choice; 4 cycles is for nights already lost.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Wake time</th><th>6 cycles (9h sleep)</th><th>5 cycles (7½h sleep)</th><th>4 cycles (6h sleep)</th></tr></thead><tbody><tr><td>5:00 am</td><td>7:45 pm</td><td>9:15 pm</td><td>10:45 pm</td></tr><tr><td>5:30 am</td><td>8:15 pm</td><td>9:45 pm</td><td>11:15 pm</td></tr><tr><td>6:00 am</td><td>8:45 pm</td><td>10:15 pm</td><td>11:45 pm</td></tr><tr><td>6:30 am</td><td>9:15 pm</td><td>10:45 pm</td><td>12:15 am</td></tr><tr><td>7:00 am</td><td>9:45 pm</td><td>11:15 pm</td><td>12:45 am</td></tr><tr><td>7:30 am</td><td>10:15 pm</td><td>11:45 pm</td><td>1:15 am</td></tr><tr><td>8:00 am</td><td>10:45 pm</td><td>12:15 am</td><td>1:45 am</td></tr><tr><td>8:30 am</td><td>11:15 pm</td><td>12:45 am</td><td>2:15 am</td></tr></tbody></table></div><p>It reads both ways: in bed and choosing an alarm, add 15 minutes plus 7½ or 9 hours to now.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Lights out at</th><th>Wake after 5 cycles</th><th>Wake after 6 cycles</th></tr></thead><tbody><tr><td>9:30 pm</td><td>5:15 am</td><td>6:45 am</td></tr><tr><td>10:00 pm</td><td>5:45 am</td><td>7:15 am</td></tr><tr><td>10:30 pm</td><td>6:15 am</td><td>7:45 am</td></tr><tr><td>11:00 pm</td><td>6:45 am</td><td>8:15 am</td></tr><tr><td>11:30 pm</td><td>7:15 am</td><td>8:45 am</td></tr><tr><td>12:00 am</td><td>7:45 am</td><td>9:15 am</td></tr></tbody></table></div>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Why the 90-minute number isn't exact</h2>
+        <div class="guide-content">
+            <p>Every calculator uses 90 minutes — the population average. Yours may run nearer 75 or 110, cycles lengthen through the night, and normal awakenings plus a latency that shifts with stress and caffeine drift the math by twenty or thirty minutes. In practice:</p><ul><li><strong>Never trade total sleep for cycle alignment.</strong> Staying up 45 minutes so the math lands on a whole cycle loses real sleep to a rounding error.</li><li><strong>Use it to break a tie</strong> between two plausible bedtimes.</li><li><strong>Expect to adjust.</strong> If 7½ hours consistently leaves you groggy but 8 flat feels fine, your cycles aren't 90 minutes. Your experience beats the formula.</li><li><strong>Consistency outranks precision.</strong> The same bedtime every night, weekends included, does more for 7 am than any calculation.</li></ul><p>Sleep inertia — the fog after a badly timed alarm — is real and can last half an hour, so the idea is sound. The decimal-place confidence isn't.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Making a new bedtime actually stick</h2>
+        <div class="guide-content">
+            <p>Most people don't fail at knowing their bedtime; they fail at reaching it. What reliably helps:</p><ul><li><strong>Move in 15-minute steps.</strong> An hour earlier in one night means an hour lying awake. Hold each step three or four nights.</li><li><strong>Anchor the wake time first.</strong> Morning light sets your body clock far more strongly than lamp-off time. Fix the wake time, every day, and the bedtime tends to follow.</li><li><strong>Set the reminder for the wind-down, not the bedtime.</strong> A prompt 30–45 minutes before lights out changes behavior; one at bedtime just tells you you're late.</li><li><strong>Protect the last hour.</strong> Bright screens, hard exercise, heavy meals and alcohol all push sleep onset later — see <a href="/sleep/sleep-hygiene/">sleep hygiene</a>.</li><li><strong>Don't lie in bed frustrated.</strong> Still awake after about 20 minutes? Get up, do something dull in dim light, return when sleepy.</li></ul>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Notebook vs app: an honest comparison</h2>
+        <div class="guide-content">
+            <p>A calculator gives you a hypothesis; only your own record tests it. Two weeks of noting bedtime, wake time and how you felt beats any table — including this one. A notebook does that fine. Where paper falls down is arithmetic: averaging eleven nights, or spotting that your best mornings all followed an 11pm lights-out, means adding scribbled times by hand — so nobody does.</p><p>Feeltracker Sleep &amp; CPAP handles that part: sleep and wake times with time slept computed, a quality rating with dream and note fields, and trends over any period, so the bedtime–morning link becomes visible. Reminders help the new schedule stick; add Apple Health sync, CPAP logging, and iCloud sync with no account or email. AI insights can summarize your own history, and everything exports to PDF, XLSX, CSV or JSON for a doctor. It's a manual diary, not an automatic sleep-stage tracker — it won't guess when you drifted off or pretend to know your cycle length. It just makes the record easy enough that you keep it.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/ST_1024.png" alt="Sleep & CPAP app icon" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Test your bedtime against real data</h2>
+            <p>Feeltracker Sleep & CPAP logs your sleep and wake times, computes time slept, and charts how your quality ratings track with bedtime — so you find the bedtime that works for you, not the average person. Free, private, no account needed.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button" src="/images/appstore/en-black.svg" alt="Download Sleep & CPAP on App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/sleep/" class="guide-app-cta-learn">Learn more about the app <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="guide-faq-item">
+            <h3>What time should I go to bed to wake up at 6 am?</h3>
+            <p><strong>10:15 pm</strong> for five cycles (7½ hours of sleep) or <strong>8:45 pm</strong> for six (9 hours), both allowing 15 minutes to fall asleep. If you're regularly short on sleep, try the earlier one for a week and see how the mornings feel.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Are sleep calculators accurate?</h3>
+            <p>Roughly. They assume a 90-minute cycle; real cycles run about 70–120 minutes and change through the night, so expect the estimate to drift by 20–30 minutes. Useful for choosing between two realistic bedtimes; not a reason to stay up later.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Is it better to sleep 6 hours or 7½ hours?</h3>
+            <p>7½ hours, without question. Six hours is four cycles and falls below the recommended range for almost every adult — see <a href="/sleep/how-much-sleep-do-you-need/" target="_blank" rel="noopener">how much sleep you need</a>. Never sacrifice total sleep to make the cycle math come out even.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>How long should it take to fall asleep?</h3>
+            <p><strong>10–20 minutes</strong> is typical and healthy. Under five minutes usually signals sleep debt. Regularly over 30 minutes is worth addressing — start with <a href="/sleep/how-to-fall-asleep-faster/" target="_blank" rel="noopener">how to fall asleep faster</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Should I use the same bedtime on weekends?</h3>
+            <p>Yes, as close as you can — and protect the <strong>wake</strong> time especially. A two-hour weekend shift produces a jetlag-like effect that makes Sunday night hard and Monday worse. If you need extra sleep, a lie-in of under an hour costs far less.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Keep reading</h2>
+        <div class="guide-related-grid">
+
+            <a href="/sleep/sleep-cycles/" class="guide-related-card">
+                <h3>Sleep Cycles and Stages Explained</h3>
+                <p>What the 90-minute cycle is made of, and how it changes across the night.</p>
+            </a>
+
+            <a href="/sleep/how-to-fall-asleep-faster/" class="guide-related-card">
+                <h3>How to Fall Asleep Faster</h3>
+                <p>What to do when the bedtime is right but sleep won't come.</p>
+            </a>
+
+            <a href="/sleep/how-much-sleep-do-you-need/" class="guide-related-card">
+                <h3>How Much Sleep Do You Need?</h3>
+                <p>Recommended hours by age, and how to find your own number.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Medical disclaimer</h2>
+        <p>This article is for general information only and is not medical advice, diagnosis, or treatment. Sleep cycle length and sleep need vary between individuals, so treat any calculated bedtime as a starting point — always follow the guidance of your doctor or healthcare provider. See a clinician if you consistently take more than 30 minutes to fall asleep, wake unrefreshed after a full night, fall asleep unintentionally during the day, or if a partner reports loud snoring, gasping, or pauses in your breathing.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Find the bedtime that works for you</h2>
+        <p>Download the free Sleep & CPAP app — log your nights, set reminders, watch the trend</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button store_button--lg" src="/images/appstore/en-black.svg" alt="Download Sleep & CPAP on App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Free app with optional premium features
+iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/sleep/sleep-calculator/">Home</a>
+            <a href="/about/">About</a>
+            <a href="mailto:support@feeltracker.com">Email Support</a>
+            <a href="/support/">Support</a>
+            <a href="/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Follow on X</a>
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms and Conditions</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Part of the Feeltracker family of health tracking apps</p>
+        <p class="footer-disclaimer">Your health data is stored on your device and iCloud — we never access or sell your data. Feeltracker apps are not medical devices. For informational purposes only, not a substitute for professional medical advice, diagnosis, or treatment.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>We value your privacy</strong></p>
+                <p>We use cookies for analytics to improve our website and app. No advertising cookies are used. See our <a href="/privacy/">Privacy Policy</a> for details.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Reject</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+<script>
+(function(){
+  if(document.documentElement.lang!=="en")return;
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=[["pt-br","/pt-br"],["zh-Hans","/zh-Hans"],["fr-ca","/fr-ca"],["zh-Hant","/zh-Hant"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["ja","/ja"],["fr","/fr"],["ko","/ko"],["sv","/sv"],["nb","/nb"],["da","/da"],["fi","/fi"],["ar","/ar"],["ca","/ca"],["cs","/cs"],["el","/el"],["he","/he"],["hr","/hr"],["hu","/hu"],["nl","/nl"],["pl","/pl"],["pt","/pt"],["ro","/ro"],["sk","/sk"],["th","/th"],["tr","/tr"],["uk","/uk"],["vi","/vi"],["no","/nb"],["nn","/nb"]];
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(map[i][1]+window.location.pathname+window.location.search);
+      return;
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

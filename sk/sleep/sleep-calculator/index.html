@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Kalkulačka spánku: kedy ísť spať | Feeltracker</title>
+    <meta name="description" content="Kalkulačka spánku, ktorá počíta spätne od času vstávania. Tabuľky časov uľahnutia pre bežné budíky podľa 90-minútových cyklov a prečo sa dĺžka cyklu líši.">
+
+    <meta name="keywords" content="kalkulačka spánku, kedy mám ísť spať, kalkulačka času uľahnutia, kalkulačka spánkových cyklov, kedy ísť spať aby som vstal o 6, 90-minútové spánkové cykly">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/sk/sleep/sleep-calculator/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="sk_SK">
+    <meta property="og:url" content="https://feeltracker.com/sk/sleep/sleep-calculator/">
+    <meta property="og:title" content="Kalkulačka spánku: kedy ísť spať">
+    <meta property="og:description" content="Tabuľky časov uľahnutia vypočítané spätne od bežných časov vstávania v 90-minútových cykloch – a úprimný pohľad na to, akú hodnotu ten výpočet má.">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/sk/sleep/sleep-calculator/">
+    <meta property="twitter:title" content="Kalkulačka spánku: kedy ísť spať">
+    <meta property="twitter:description" content="Kalkulačka spánku: časy uľahnutia vypočítané spätne od času vstávania pomocou 90-minútových spánkových cyklov.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "O koľkej mám ísť spať, ak chcem vstávať o 6:00?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "O 22:15 pri piatich cykloch (7,5 hodiny spánku) alebo o 20:45 pri šiestich (9 hodín), oboje s 15 minútami na zaspatie. Ak vám spánok pravidelne chýba, skúste týždeň ten skorší čas a všímajte si, aké sú rána."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Sú kalkulačky spánku presné?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Približne. Predpokladajú 90-minútový cyklus; skutočné cykly trvajú asi 70 – 120 minút a počas noci sa menia, takže rátajte s odchýlkou 20 – 30 minút. Sú užitočné pri výbere medzi dvoma reálnymi časmi uľahnutia, nie ako dôvod zostať hore dlhšie."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Je lepšie spať 6 hodín alebo 7,5 hodiny?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "7,5 hodiny, bez debaty. Šesť hodín sú štyri cykly a je to pod odporúčaným rozsahom pre takmer každého dospelého – pozrite si koľko spánku potrebujete. Nikdy neobetujte celkový spánok len preto, aby výpočet cyklov vyšiel presne."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ako dlho by malo trvať zaspávanie?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Typické a zdravé je 10 – 20 minút. Menej než päť minút zvyčajne signalizuje spánkový dlh. Pravidelne viac než 30 minút sa oplatí riešiť – začnite článkom ako zaspať rýchlejšie."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mám chodiť spať v rovnakom čase aj cez víkend?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Áno, čo najbližšie – a chráňte si najmä čas vstávania. Dvojhodinový víkendový posun vyvolá efekt podobný pásmovej chorobe, ktorý sťaží nedeľnú noc a ešte viac pondelok. Ak potrebujete spánok navyše, pospanie kratšie než hodinu stojí oveľa menej."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/sk/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Spánok",
+                      "item": "https://feeltracker.com/sk/sleep/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Kalkulačka spánku",
+                      "item": "https://feeltracker.com/sk/sleep/sleep-calculator/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Kalkulačka spánku: kedy ísť spať",
+          "description": "Kalkulačka spánku, ktorá počíta spätne od času vstávania. Tabuľky časov uľahnutia pre bežné budíky podľa 90-minútových cyklov a prečo sa dĺžka cyklu líši.",
+          "image": "https://feeltracker.com/images/ST_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/sk/sleep/sleep-calculator/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/sk/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/sk/blood-pressure/">Krvný tlak</a>
+
+            <a href="/sk/daily-journal/">Denník</a>
+
+            <a href="/sk/mood-journal/">Denník nálady</a>
+
+            <a href="/sk/sleep/" class="current">Spánok</a>
+
+            <a href="/sk/weight/">Váha</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇸🇰</span>
+                <span class="lang-name">Slovenčina</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/sleep/sleep-calculator/" class="active" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/sk/">Domov</a>
+        <span aria-hidden="true">›</span>
+        <a href="/sk/sleep/">Spánok</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Kalkulačka spánku</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Kalkulačka spánku: kedy ísť spať</h1>
+
+        <p class="guide-updated">Naposledy aktualizované: august 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Myšlienka je jednoduchá. Váš mozog prechádza <a href="/sk/sleep/sleep-cycles/">spánkovými cyklami</a> dlhými približne 90 minút a prebudenie na konci cyklu – v ľahkom spánku – je oveľa príjemnejšie než vytiahnutie z jeho stredu. Určite si čas vstávania, odpočítajte 90-minútové bloky, pridajte 15 minút na zaspávanie: a máte čas uľahnutia.</p><p>Nižšie nájdete tabuľky pre bežné časy budenia a k tomu to, čo väčšina kalkulačiek vynecháva – dĺžka cyklu je priemer a celkový spánok je dôležitejší než šikovné načasovanie. Začnite s číslami; víťaza nech vyberú dva týždne vašich vlastných záznamov.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Ako výpočet funguje</h2>
+        <div class="guide-content">
+            <p>Tri zložky, presná je len jedna:</p><ol><li><strong>Váš čas vstávania</strong> – budík, ktorý sa nedá posunúť.</li><li><strong>Dĺžka cyklu.</strong> Štandardný odhad je 90 minút; skutočné cykly trvajú približne 70 – 120 minút a menia sa aj počas noci.</li><li><strong>Latencia zaspávania</strong> – ako dlho vám trvá zaspať. Zdravé je 10 – 20 minút; tabuľky počítajú s <strong>15</strong>.</li></ol><p>Teda: <em>čas uľahnutia = čas vstávania − (90 minút × počet cyklov) − 15 minút</em>. Päť cyklov je 7,5 hodiny, šesť je 9 – oboje v odporúčanom <a href="/sk/sleep/how-much-sleep-do-you-need/">rozsahu 7 – 9 hodín pre dospelých</a>. Štyri cykly sú 6 hodín, pre takmer každého málo – posledná možnosť, nie plán.</p><p>Potrebujete pravidelne viac než 20 minút? Zvýšte rezervu – alebo ešte lepšie, pozrite sa na to, <a href="/sk/sleep/how-to-fall-asleep-faster/">prečo vám to trvá tak dlho</a> – dlhá latencia je sama osebe niečo, čo sa oplatí riešiť.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Tabuľky času uľahnutia podľa času vstávania</h2>
+        <div class="guide-content">
+            <p>Nájdite svoj budík v ľavom stĺpci. Skutočnou voľbou sú stĺpce <strong>6 cyklov</strong> a <strong>5 cyklov</strong>; 4 cykly sú pre noci, ktoré sú už aj tak stratené.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Čas vstávania</th><th>6 cyklov (9 h spánku)</th><th>5 cyklov (7,5 h spánku)</th><th>4 cykly (6 h spánku)</th></tr></thead><tbody><tr><td>5:00</td><td>19:45</td><td>21:15</td><td>22:45</td></tr><tr><td>5:30</td><td>20:15</td><td>21:45</td><td>23:15</td></tr><tr><td>6:00</td><td>20:45</td><td>22:15</td><td>23:45</td></tr><tr><td>6:30</td><td>21:15</td><td>22:45</td><td>0:15</td></tr><tr><td>7:00</td><td>21:45</td><td>23:15</td><td>0:45</td></tr><tr><td>7:30</td><td>22:15</td><td>23:45</td><td>1:15</td></tr><tr><td>8:00</td><td>22:45</td><td>0:15</td><td>1:45</td></tr><tr><td>8:30</td><td>23:15</td><td>0:45</td><td>2:15</td></tr></tbody></table></div><p>Dá sa čítať aj naopak: ak už ležíte v posteli a vyberáte si budík, pripočítajte k aktuálnemu času 15 minút plus 7,5 alebo 9 hodín.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Zhasnutie svetla o</th><th>Prebudenie po 5 cykloch</th><th>Prebudenie po 6 cykloch</th></tr></thead><tbody><tr><td>21:30</td><td>5:15</td><td>6:45</td></tr><tr><td>22:00</td><td>5:45</td><td>7:15</td></tr><tr><td>22:30</td><td>6:15</td><td>7:45</td></tr><tr><td>23:00</td><td>6:45</td><td>8:15</td></tr><tr><td>23:30</td><td>7:15</td><td>8:45</td></tr><tr><td>0:00</td><td>7:45</td><td>9:15</td></tr></tbody></table></div>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Prečo číslo 90 minút nie je presné</h2>
+        <div class="guide-content">
+            <p>Každá kalkulačka používa 90 minút – populačný priemer. Ten váš môže byť bližšie k 75 alebo 110 minútam, cykly sa počas noci predlžujú a bežné prebudenia plus latencia meniaca sa so stresom a kofeínom posunú výpočet o dvadsať či tridsať minút. V praxi:</p><ul><li><strong>Nikdy nevymieňajte celkový spánok za zarovnanie na cyklus.</strong> Zostať hore o 45 minút dlhšie, aby výpočet vyšiel na celý cyklus, znamená obetovať skutočný spánok kvôli zaokrúhľovacej chybe.</li><li><strong>Použite to na rozhodnutie</strong> medzi dvoma reálnymi časmi uľahnutia.</li><li><strong>Počítajte s úpravou.</strong> Ak sa po 7,5 hodinách trvalo cítite otupení, ale po rovných 8 hodinách vám je dobre, vaše cykly nemajú 90 minút. Vaša skúsenosť má prednosť pred vzorcom.</li><li><strong>Pravidelnosť je dôležitejšia než presnosť.</strong> Rovnaký čas uľahnutia každú noc vrátane víkendov urobí pre vstávanie o 7:00 viac než akýkoľvek výpočet.</li></ul><p>Spánková zotrvačnosť – hmla po zle načasovanom budíku – je skutočná a môže trvať pol hodiny, takže myšlienka je správna. Presnosť na desatinné miesta už nie.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Ako nový čas uľahnutia naozaj udržať</h2>
+        <div class="guide-content">
+            <p>Väčšina ľudí nezlyhá na tom, že nevie, kedy má ísť spať; zlyhá na tom, že sa k tomu nedostane. Čo spoľahlivo pomáha:</p><ul><li><strong>Posúvajte sa po 15 minútach.</strong> O hodinu skôr za jednu noc znamená hodinu preležanú v bdení. Každý krok podržte tri až štyri noci.</li><li><strong>Najprv ukotvite čas vstávania.</strong> Ranné svetlo nastavuje vaše vnútorné hodiny oveľa silnejšie než čas zhasnutia lampy. Zafixujte si čas vstávania každý deň a čas uľahnutia sa zvyčajne prispôsobí sám.</li><li><strong>Nastavte si pripomienku na upokojenie, nie na uľahnutie.</strong> Upozornenie 30 – 45 minút pred zhasnutím svetla zmení správanie; upozornenie v čase uľahnutia vám len oznámi, že meškáte.</li><li><strong>Chráňte si poslednú hodinu.</strong> Jasné obrazovky, náročné cvičenie, ťažké jedlá aj alkohol posúvajú zaspávanie neskôr – pozrite si <a href="/sk/sleep/sleep-hygiene/">spánkovú hygienu</a>.</li><li><strong>Neležte v posteli frustrovaní.</strong> Stále bdiete po približne 20 minútach? Vstaňte, robte pri tlmenom svetle niečo nudné a vráťte sa, keď budete ospalí.</li></ul>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Zošit verzus aplikácia: úprimné porovnanie</h2>
+        <div class="guide-content">
+            <p>Kalkulačka vám dá hypotézu; overiť ju môže len váš vlastný záznam. Dva týždne zapisovania času uľahnutia, času vstávania a toho, ako ste sa cítili, prekonajú akúkoľvek tabuľku – vrátane tejto. Zošit to zvládne. Papier zlyháva pri počítaní: spriemerovať jedenásť nocí alebo si všimnúť, že po vašich najlepších ránach vždy predchádzalo zhasnutie svetla o 23:00, znamená ručne sčítavať naškrabané časy – a preto to nikto nerobí.</p><p>Feeltracker Spánok a sny sa o túto časť postará: časy uľahnutia a prebudenia s vypočítanou dĺžkou spánku, hodnotenie kvality s poľami na sny a poznámky a trendy za ľubovoľné obdobie, takže súvislosť medzi časom uľahnutia a ránom sa stane viditeľnou. Pripomienky pomôžu nový režim udržať; pridajte synchronizáciu s Apple Health, evidenciu CPAP a synchronizáciu cez iCloud bez konta či e-mailu. AI prehľady dokážu zhrnúť vašu vlastnú históriu a všetko sa dá exportovať do PDF, XLSX, CSV alebo JSON pre lekára. Je to manuálny denník, nie automatický sledovač fáz spánku – nebude hádať, kedy ste odplávali, ani predstierať, že pozná dĺžku vášho cyklu. Len urobí zapisovanie natoľko jednoduchým, že pri ňom vydržíte.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/ST_1024.png" alt="Ikona aplikácie Spánok a sny" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Overte si svoj čas uľahnutia na skutočných dátach</h2>
+            <p>Feeltracker Spánok a sny zaznamená časy uľahnutia a prebudenia, vypočíta dĺžku spánku a zobrazí, ako vaše hodnotenia kvality súvisia s časom uľahnutia – takže nájdete čas, ktorý vyhovuje vám, nie priemernému človeku. Zadarmo, súkromne, bez konta.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button" src="/images/appstore/sk-black.svg" alt="Stiahnuť Spánok a sny z App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/sk/sleep/" class="guide-app-cta-learn">Zistiť viac o aplikácii <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Často kladené otázky</h2>
+
+        <div class="guide-faq-item">
+            <h3>O koľkej mám ísť spať, ak chcem vstávať o 6:00?</h3>
+            <p>O <strong>22:15</strong> pri piatich cykloch (7,5 hodiny spánku) alebo o <strong>20:45</strong> pri šiestich (9 hodín), oboje s 15 minútami na zaspatie. Ak vám spánok pravidelne chýba, skúste týždeň ten skorší čas a všímajte si, aké sú rána.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Sú kalkulačky spánku presné?</h3>
+            <p>Približne. Predpokladajú 90-minútový cyklus; skutočné cykly trvajú asi 70 – 120 minút a počas noci sa menia, takže rátajte s odchýlkou 20 – 30 minút. Sú užitočné pri výbere medzi dvoma reálnymi časmi uľahnutia, nie ako dôvod zostať hore dlhšie.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Je lepšie spať 6 hodín alebo 7,5 hodiny?</h3>
+            <p>7,5 hodiny, bez debaty. Šesť hodín sú štyri cykly a je to pod odporúčaným rozsahom pre takmer každého dospelého – pozrite si <a href="/sk/sleep/how-much-sleep-do-you-need/" target="_blank" rel="noopener">koľko spánku potrebujete</a>. Nikdy neobetujte celkový spánok len preto, aby výpočet cyklov vyšiel presne.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Ako dlho by malo trvať zaspávanie?</h3>
+            <p>Typické a zdravé je <strong>10 – 20 minút</strong>. Menej než päť minút zvyčajne signalizuje spánkový dlh. Pravidelne viac než 30 minút sa oplatí riešiť – začnite článkom <a href="/sk/sleep/how-to-fall-asleep-faster/" target="_blank" rel="noopener">ako zaspať rýchlejšie</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Mám chodiť spať v rovnakom čase aj cez víkend?</h3>
+            <p>Áno, čo najbližšie – a chráňte si najmä čas <strong>vstávania</strong>. Dvojhodinový víkendový posun vyvolá efekt podobný pásmovej chorobe, ktorý sťaží nedeľnú noc a ešte viac pondelok. Ak potrebujete spánok navyše, pospanie kratšie než hodinu stojí oveľa menej.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Čítajte ďalej</h2>
+        <div class="guide-related-grid">
+
+            <a href="/sk/sleep/sleep-cycles/" class="guide-related-card">
+                <h3>Spánkové cykly a fázy vysvetlené</h3>
+                <p>Z čoho sa 90-minútový cyklus skladá a ako sa počas noci mení.</p>
+            </a>
+
+            <a href="/sk/sleep/how-to-fall-asleep-faster/" class="guide-related-card">
+                <h3>Ako zaspať rýchlejšie</h3>
+                <p>Čo robiť, keď je čas uľahnutia správny, ale spánok neprichádza.</p>
+            </a>
+
+            <a href="/sk/sleep/how-much-sleep-do-you-need/" class="guide-related-card">
+                <h3>Koľko spánku potrebujete?</h3>
+                <p>Odporúčaný počet hodín podľa veku a ako nájsť svoje vlastné číslo.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Lekárske upozornenie</h2>
+        <p>Tento článok slúži len na všeobecné informačné účely a nie je lekárskou radou, diagnózou ani liečbou. Dĺžka spánkového cyklu aj potreba spánku sa u jednotlivcov líšia, preto berte akýkoľvek vypočítaný čas uľahnutia len ako východisko – vždy sa riaďte pokynmi svojho lekára alebo zdravotníckeho pracovníka. Vyhľadajte lekára, ak vám zaspávanie trvale trvá viac než 30 minút, ak sa po celej noci budíte neoddýchnutí, ak počas dňa nechcene zaspávate, alebo ak partner či partnerka hlási hlasné chrápanie, lapanie po dychu či zástavy dýchania.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Nájdite čas uľahnutia, ktorý funguje práve vám</h2>
+        <p>Stiahnite si bezplatnú aplikáciu Spánok a sny – zapisujte si noci, nastavte pripomienky, sledujte trend</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sk-black.svg" alt="Stiahnuť Spánok a sny z App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Bezplatná aplikácia s voliteľnými prémiovými funkciami
+iPhone, iPad a Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/sk/sleep/sleep-calculator/">Domov</a>
+            <a href="/sk/about/">O nás</a>
+            <a href="mailto:support@feeltracker.com">E-mailová podpora</a>
+            <a href="/sk/support/">Podpora</a>
+            <a href="/sk/faq/">Časté otázky</a>
+            <a href="https://x.com/feeltracker">Sledujte na X</a>
+            <a href="/sk/privacy/">Zásady ochrany súkromia</a>
+            <a href="/sk/terms/">Podmienky používania</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Všetky práva vyhradené.</p>
+        <p class="footer-tagline">Súčasť rodiny zdravotných aplikácií Feeltracker</p>
+        <p class="footer-disclaimer">Vaše zdravotné údaje sú uložené vo vašom zariadení a v iCloude — nikdy k nim nepristupujeme ani ich nepredávame. Aplikácie Feeltracker nie sú zdravotnícke pomôcky. Len na informatívne účely, nenahrádzajú odborné lekárske poradenstvo, diagnózu alebo liečbu.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Vážime si vaše súkromie</strong></p>
+                <p>Používame analytické cookies na zlepšenie našej webovej stránky a aplikácie. Reklamné cookies nepoužívame. Pozrite si naše <a href="/sk/privacy/">Zásady ochrany súkromia</a> pre podrobnosti.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Odmietnuť</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Prijať</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

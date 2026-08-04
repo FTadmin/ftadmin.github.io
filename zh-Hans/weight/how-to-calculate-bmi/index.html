@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>如何计算BMI：公式与实例演算 | Feeltracker</title>
+    <meta name="description" content="如何用公制或英制公式手动计算BMI，附实例演算、常见错误，以及BMI这个数字会在哪些地方误导你。">
+
+    <meta name="keywords" content="如何计算bmi, bmi公式, 手动计算bmi, bmi计算方法, 英制bmi公式, 公制bmi公式">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:url" content="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+    <meta property="og:title" content="如何计算BMI：公式与实例演算">
+    <meta property="og:description" content="公制与英制BMI公式、逐步演算的实例，以及关于BMI无法告诉你什么的坦诚说明。">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+    <meta property="twitter:title" content="如何计算BMI：公式与实例演算">
+    <meta property="twitter:description" content="如何用公制或英制单位计算BMI，附实例演算和坦诚的局限说明。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "BMI的公式是什么？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "公制：体重（公斤）÷（身高（米））²。英制：（体重（磅）× 703）÷（身高（英寸））²。两者结果相同 — 703只是把磅和英寸换算成公制的等价单位。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "英制BMI公式里为什么要用703？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "它是嵌进公式里的单位换算系数：一米等于39.37英寸，一公斤等于2.2046磅，而39.37² ÷ 2.2046约等于703。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "男性和女性的BMI计算方式不同吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不 — 公式和成人分类完全相同，尽管在相同BMI下女性拥有更多必需体脂。如果需要区分性别的指标，请使用体脂率，它有各自独立的范围。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "BMI对运动员准确吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "很不准确。相同体积下肌肉比脂肪重，所以训练有素的运动员常常落进超重甚至肥胖分类，而实际上他们非常精瘦。对于任何认真进行抗阻训练的人，腰围测量和体脂估算的参考价值要大得多。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "每次称重都需要重新算BMI吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不需要手动算。你的身高很少变化，所以BMI会随体重同步变动。每月看一次数值就足够了，而且应用本来就会自动帮你重新计算。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/zh-Hans/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "体重",
+                      "item": "https://feeltracker.com/zh-Hans/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "如何计算BMI",
+                      "item": "https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "如何计算BMI",
+          "description": "如何用公制或英制公式手动计算BMI，附实例演算、常见错误，以及BMI这个数字会在哪些地方误导你。",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/zh-Hans/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/zh-Hans/blood-pressure/">血压</a>
+
+            <a href="/zh-Hans/daily-journal/">每日日记</a>
+
+            <a href="/zh-Hans/mood-journal/">心情日记</a>
+
+            <a href="/zh-Hans/sleep/">睡眠</a>
+
+            <a href="/zh-Hans/weight/" class="current">体重</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇨🇳</span>
+                <span class="lang-name">简体中文</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/how-to-calculate-bmi/" class="active" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/zh-Hans/">首页</a>
+        <span aria-hidden="true">›</span>
+        <a href="/zh-Hans/weight/">体重</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">如何计算BMI</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>如何计算BMI</h1>
+
+        <p class="guide-updated">最近更新：2026年8月</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>身体质量指数就是体重除以身高的平方。一次除法、一次乘法 — 这正是这个数字能沿用近两百年的全部原因。你在手机键盘上十秒钟就能算完。</p><p>下面给出两种公式，用真实数字逐步演算，还包括大多数计算器会跳过的部分：这个结果会在哪里误导人。算出数值之后，<a href="/zh-Hans/weight/bmi-chart/">BMI对照表</a>会告诉你它落在哪个分类里。</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>公制公式：公斤与米</h2>
+        <div class="guide-content">
+            <p><strong>BMI = 体重（公斤）÷（身高（米）× 身高（米））</strong></p><p>唯一的陷阱是单位：是<em>米</em>，不是厘米。175 cm等于1.75 m — 如果直接用175，你算出的BMI会是0.0025。</p><h3>实例演算</h3><p>身高175 cm、体重78 kg：</p><ol><li>换算：175 cm = <strong>1.75 m</strong></li><li>平方：1.75 × 1.75 = <strong>3.0625</strong></li><li>相除：78 ÷ 3.0625 = <strong>25.5</strong></li></ol><p>这刚好落进超重区间，超重从25.0开始 — 距离健康区间约1.5公斤。永远不要把落在界限一个点以内的结果当作定论：正常的<a href="/zh-Hans/weight/weight-fluctuation/">每日体重波动</a>足以让你在一周之内跨过这条线又跨回来。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>英制公式：磅与英寸</h2>
+        <div class="guide-content">
+            <p><strong>BMI =（体重（磅）× 703）÷（身高（英寸）× 身高（英寸））</strong></p><p>703这个系数把「每平方英寸多少磅」换算成「每平方米多少公斤」 — 每米39.37英寸，取平方，再除以每公斤2.2046磅 — 所以两种公式得到的答案相同。</p><h3>实例演算</h3><p>身高5 ft 9 in、体重172 lb：</p><ol><li>身高换成英寸：(5 × 12) + 9 = <strong>69 in</strong></li><li>平方：69 × 69 = <strong>4,761</strong></li><li>体重 × 703：172 × 703 = <strong>120,916</strong></li><li>相除：120,916 ÷ 4,761 = <strong>25.4</strong></li></ol><p>和公制例子里是同一个人，答案也相同。最典型的错误是：把英尺和英寸分开处理，只对英寸取平方。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>速查：你的结果意味着什么</h2>
+        <div class="guide-content">
+            <p>适用于20岁及以上的成年人，男女通用：</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>BMI</th><th>分类</th><th>以175 cm / 5 ft 9 in为例</th></tr></thead><tbody><tr><td>低于18.5</td><td>体重过轻</td><td>低于57 kg / 125 lb</td></tr><tr><td>18.5 – 24.9</td><td>健康体重</td><td>57 – 76 kg / 125 – 168 lb</td></tr><tr><td>25.0 – 29.9</td><td>超重</td><td>77 – 91 kg / 169 – 201 lb</td></tr><tr><td>30.0 – 34.9</td><td>肥胖1级</td><td>92 – 107 kg / 202 – 236 lb</td></tr><tr><td>35.0 – 39.9</td><td>肥胖2级</td><td>107 – 122 kg / 237 – 269 lb</td></tr><tr><td>40.0及以上</td><td>肥胖3级</td><td>123 kg / 270 lb及以上</td></tr></tbody></table></div><p>如果你是南亚、中国或其他亚洲血统人群，多个卫生机构会采用更低的界限值 — 超重约从23开始，肥胖约从27.5开始 — 因为这些人群的代谢风险上升得更早。完整情况（包括逐一身高对照表）请见<a href="/zh-Hans/weight/bmi-chart/">BMI对照表指南</a>。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>这个数字会在哪里出错</h2>
+        <div class="guide-content">
+            <p>算术本身很简单，所以错误的BMI都来自输入的数据。</p><ul><li><strong>估出来的身高。</strong>多数成年人比驾照上写的矮一两厘米，而且身高会随年龄缩水。在175 cm上，1厘米会让BMI变动约0.3 — 足以跨过一条界限。请光脚靠墙认真量一次，之后一直沿用这个数值。</li><li><strong>称重条件不一致。</strong>晚上的体重可能比早上重1到2公斤。请在起床后、进食前称重。</li><li><strong>单位混用、对体重取平方、四舍五入过度。</strong>公斤配英寸只会得出荒谬结果，而把身高四舍五入到最接近的5厘米可能让结果整整偏差一个点。两个计算器结果不一致，几乎总是上面某一条造成的。</li></ul><p>此外还有公式看不到的东西。肌肉比脂肪密度大，所以训练有素的赛艇运动员可能在体脂率只有个位数的情况下算出28到30的BMI — 如果你认真进行力量训练，就把BMI当作几乎没有意义，改用<a href="/zh-Hans/weight/body-fat-percentage/">体脂率</a>。反过来也成立：一个久坐不动、BMI只有23的人，腹部脂肪也可能多到足以抬高代谢风险。不同人群的风险起点对应不同的BMI；60岁时同样的BMI比30岁时含有更多脂肪；女性的必需脂肪比男性多；BMI不适用于孕期；儿童则使用百分位曲线。最省钱的补救办法是一把软尺：<a href="/zh-Hans/weight/waist-to-height-ratio/">腰高比</a>只要三十秒，就能看到BMI看不到的脂肪分布。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>手动计算 vs 交给应用</h2>
+        <div class="guide-content">
+            <p>算一次BMI很轻松。但要为一整年的每一次称重都算一遍，再看出趋势走向 — 手动计算就是在这里悄悄崩溃的。</p><p>免费的Feeltracker体重与BMI应用省去了这一步：身高只需填一次，之后每条记录都会自动算出BMI，并与你的体重和你设定的目标一起绘制成带趋势线的图表。它同样可以记录体脂率，能与Apple Health同步，并通过iCloud在你的各台设备之间同步，无需账号也无需邮箱，还能导出为PDF、XLSX、CSV或JSON，方便就诊时使用。可选的AI洞察会为你总结历史记录。</p><p>无论你选哪条路，上面的公式就是全部内容。价值在于偶尔查看一下，而不在于小数点后三位。</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="体重与BMI应用图标" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>把算术这一步省掉</h2>
+            <p>Feeltracker体重与BMI应用会根据每一次称重算出BMI（公斤或磅均可），并把它与你的体重并排绘制成图，让你看到的是趋势，而不是一个孤立的数字。免费、私密，无需账号。</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载体重与BMI应用" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/zh-Hans/weight/" class="guide-app-cta-learn">了解更多应用信息 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>常见问题</h2>
+
+        <div class="guide-faq-item">
+            <h3>BMI的公式是什么？</h3>
+            <p>公制：<strong>体重（公斤）÷（身高（米））²</strong>。英制：<strong>（体重（磅）× 703）÷（身高（英寸））²</strong>。两者结果相同 — 703只是把磅和英寸换算成公制的等价单位。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>英制BMI公式里为什么要用703？</h3>
+            <p>它是嵌进公式里的单位换算系数：一米等于39.37英寸，一公斤等于2.2046磅，而39.37² ÷ 2.2046约等于703。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>男性和女性的BMI计算方式不同吗？</h3>
+            <p>不 — 公式和成人分类完全相同，尽管在相同BMI下女性拥有更多必需体脂。如果需要区分性别的指标，请使用<a href="/zh-Hans/weight/body-fat-percentage/" target="_blank" rel="noopener">体脂率</a>，它有各自独立的范围。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>BMI对运动员准确吗？</h3>
+            <p>很不准确。相同体积下肌肉比脂肪重，所以训练有素的运动员常常落进超重甚至肥胖分类，而实际上他们非常精瘦。对于任何认真进行抗阻训练的人，腰围测量和体脂估算的参考价值要大得多。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>每次称重都需要重新算BMI吗？</h3>
+            <p>不需要手动算。你的身高很少变化，所以BMI会随体重同步变动。每月看一次数值就足够了，而且应用本来就会自动帮你重新计算。</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>继续阅读</h2>
+        <div class="guide-related-grid">
+
+            <a href="/zh-Hans/weight/bmi-chart/" class="guide-related-card">
+                <h3>成人BMI对照表</h3>
+                <p>所有分类，另附身高体重速查表。</p>
+            </a>
+
+            <a href="/zh-Hans/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>适合你身高的健康体重</h3>
+                <p>你的身高对应的目标区间，公斤和磅两种单位。</p>
+            </a>
+
+            <a href="/zh-Hans/weight/body-fat-percentage/" class="guide-related-card">
+                <h3>体脂率详解</h3>
+                <p>BMI遗漏了什么，以及该如何改用体脂率来衡量。</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>健康免责声明</h2>
+        <p>本文仅供一般信息参考，不构成医疗建议、诊断或治疗。BMI是一个筛查数字，无法单独评估个人的健康状况 — 请务必就你的体重以及任何改变体重的计划咨询医生或医疗保健提供者。如果你在没有刻意尝试的情况下体重下降或上升，或体重变化伴随持续疲劳、呼吸急促或食欲减退等症状，请及时就医。</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>让BMI自己算出来</h2>
+        <p>下载免费的体重与BMI应用 — 身高填一次，之后每次称重都会自动完成剩下的事</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载体重与BMI应用" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">免费应用，可选购高级功能
+iPhone、iPad和Mac • iOS 16.0以上</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/zh-Hans/weight/how-to-calculate-bmi/">首页</a>
+            <a href="/zh-Hans/about/">关于</a>
+            <a href="mailto:support@feeltracker.com">邮件支持</a>
+            <a href="/zh-Hans/support/">支持</a>
+            <a href="/zh-Hans/faq/">常见问题</a>
+            <a href="https://x.com/feeltracker">在X上关注</a>
+            <a href="/zh-Hans/privacy/">隐私政策</a>
+            <a href="/zh-Hans/terms/">使用条款</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. 保留所有权利。</p>
+        <p class="footer-tagline">Feeltracker 健康追踪应用系列</p>
+        <p class="footer-disclaimer">您的健康数据存储在您的设备和iCloud中——我们绝不会访问或出售您的数据。Feeltracker应用不是医疗设备。仅供参考，不能替代专业的医疗建议、诊断或治疗。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>我们重视您的隐私</strong></p>
+                <p>我们使用分析Cookie来改善我们的网站和应用。不使用广告Cookie。请查阅我们的 <a href="/zh-Hans/privacy/">隐私政策</a> 了解详情。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒绝</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">接受</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

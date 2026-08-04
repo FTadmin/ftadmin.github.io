@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>睡眠计算器：几点该上床睡觉 | Feeltracker</title>
+    <meta name="description" content="从起床时间倒推的睡眠计算器。按90分钟周期给出常见闹钟时间对应的就寝时刻表，并说明为什么每个人的周期长度并不相同。">
+
+    <meta name="keywords" content="睡眠计算器, 我该几点上床睡觉, 就寝时间计算器, 睡眠周期计算器, 早上6点起床几点睡, 90分钟睡眠周期">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:url" content="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+    <meta property="og:title" content="睡眠计算器：几点该上床睡觉">
+    <meta property="og:description" content="按90分钟周期从常见起床时间倒推的就寝时刻表 — 以及对这套算术究竟值多少的坦诚评估。">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+    <meta property="twitter:title" content="睡眠计算器：几点该上床睡觉">
+    <meta property="twitter:description" content="睡眠计算器：按90分钟睡眠周期，从你的起床时间倒推出就寝时间。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "想早上6点起床，我该几点上床？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "五个周期（睡7.5小时）对应晚上10:15，六个周期（睡9小时）对应晚上8:45，两者都留出了15分钟的入睡时间。如果你长期睡眠不足，不妨先按较早的那个试一周，看看早晨的感觉如何。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "睡眠计算器准确吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "大致准确。它们假定周期为90分钟；而实际周期约在70–120分钟之间，并且会随夜晚推移变化，所以估算结果偏差20–30分钟是正常的。它适合用来在两个现实可行的就寝时间之间做选择，而不是熬夜的理由。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "睡6小时和睡7.5小时哪个更好？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "毫无疑问是7.5小时。六小时只有四个周期，低于几乎所有成年人的推荐范围 — 参见你需要睡多久。绝不要为了让周期算得整齐而牺牲总睡眠时长。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "入睡应该需要多长时间？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "10–20分钟是典型且健康的。少于五分钟通常意味着有睡眠债。如果经常超过30分钟，就值得认真对待 — 可以从如何更快入睡开始。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "周末也要保持相同的就寝时间吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "是的，尽量接近 — 尤其要守住起床时间。周末作息偏移两小时会产生类似倒时差的效果，让周日晚上难以入睡，周一更加难受。如果你确实需要补觉，把赖床控制在一小时以内，代价会小得多。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/zh-Hans/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "睡眠",
+                      "item": "https://feeltracker.com/zh-Hans/sleep/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "睡眠计算器",
+                      "item": "https://feeltracker.com/zh-Hans/sleep/sleep-calculator/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "睡眠计算器：几点该上床睡觉",
+          "description": "从起床时间倒推的睡眠计算器。按90分钟周期给出常见闹钟时间对应的就寝时刻表，并说明为什么每个人的周期长度并不相同。",
+          "image": "https://feeltracker.com/images/ST_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/zh-Hans/sleep/sleep-calculator/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/zh-Hans/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/zh-Hans/blood-pressure/">血压</a>
+
+            <a href="/zh-Hans/daily-journal/">每日日记</a>
+
+            <a href="/zh-Hans/mood-journal/">心情日记</a>
+
+            <a href="/zh-Hans/sleep/" class="current">睡眠</a>
+
+            <a href="/zh-Hans/weight/">体重</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇨🇳</span>
+                <span class="lang-name">简体中文</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/sleep/sleep-calculator/" class="active" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/zh-Hans/">首页</a>
+        <span aria-hidden="true">›</span>
+        <a href="/zh-Hans/sleep/">睡眠</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">睡眠计算器</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>睡眠计算器：几点该上床睡觉</h1>
+
+        <p class="guide-updated">最近更新：2026年8月</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>道理很简单。你的大脑会经历大约90分钟一轮的<a href="/zh-Hans/sleep/sleep-cycles/">睡眠周期</a>，而在一个周期结束时 — 处于浅睡眠中 — 醒来，感觉要比从周期中途被拽出来好得多。固定你的起床时间，按90分钟一段往回数，再加上15分钟的入睡时间：这就是你的就寝时间。</p><p>下面是常见闹钟时间对应的时刻表，以及大多数计算器不会告诉你的部分 — 周期长度只是平均值，而总睡眠时长比精巧的时机计算更重要。先从这些数字开始，再用你自己两周的记录选出真正的赢家。</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>这套计算是怎么来的</h2>
+        <div class="guide-content">
+            <p>三个要素，其中只有一个是精确的：</p><ol><li><strong>你的起床时间</strong> — 那个你没法挪动的闹钟。</li><li><strong>周期长度。</strong>标准估算值是90分钟；实际周期大致在70–120分钟之间，同一夜中也会变化。</li><li><strong>入睡潜伏期</strong> — 你需要多久才能睡着。健康的范围是10–20分钟；下面的表格按<strong>15</strong>分钟计算。</li></ol><p>所以：<em>就寝时间 = 起床时间 −（90分钟 × 周期数）− 15分钟</em>。五个周期是7.5小时，六个周期是9小时 — 都在推荐的<a href="/zh-Hans/sleep/how-much-sleep-do-you-need/">成人7–9小时范围</a>之内。四个周期是6小时，对几乎所有人来说都太短 — 那是万不得已的选择，不是计划。</p><p>如果你经常需要超过20分钟才能睡着？那就把这个余量调大 — 或者更好的做法是，先弄清<a href="/zh-Hans/sleep/how-to-fall-asleep-faster/">为什么会拖这么久</a> — 过长的入睡潜伏期本身就值得解决。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>按起床时间查就寝时刻表</h2>
+        <div class="guide-content">
+            <p>在左栏找到你的闹钟时间。真正需要在其中做选择的是<strong>6个周期</strong>和<strong>5个周期</strong>两栏；4个周期是留给那些已经耽误了的夜晚的。</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>起床时间</th><th>6个周期（睡9小时）</th><th>5个周期（睡7.5小时）</th><th>4个周期（睡6小时）</th></tr></thead><tbody><tr><td>早上5:00</td><td>晚上7:45</td><td>晚上9:15</td><td>晚上10:45</td></tr><tr><td>早上5:30</td><td>晚上8:15</td><td>晚上9:45</td><td>晚上11:15</td></tr><tr><td>早上6:00</td><td>晚上8:45</td><td>晚上10:15</td><td>晚上11:45</td></tr><tr><td>早上6:30</td><td>晚上9:15</td><td>晚上10:45</td><td>凌晨12:15</td></tr><tr><td>早上7:00</td><td>晚上9:45</td><td>晚上11:15</td><td>凌晨12:45</td></tr><tr><td>早上7:30</td><td>晚上10:15</td><td>晚上11:45</td><td>凌晨1:15</td></tr><tr><td>早上8:00</td><td>晚上10:45</td><td>凌晨12:15</td><td>凌晨1:45</td></tr><tr><td>早上8:30</td><td>晚上11:15</td><td>凌晨12:45</td><td>凌晨2:15</td></tr></tbody></table></div><p>这张表反过来也能用：如果你已经躺在床上、正要定闹钟，就在当前时间上加15分钟，再加7.5或9小时。</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>熄灯时间</th><th>5个周期后醒来</th><th>6个周期后醒来</th></tr></thead><tbody><tr><td>晚上9:30</td><td>早上5:15</td><td>早上6:45</td></tr><tr><td>晚上10:00</td><td>早上5:45</td><td>早上7:15</td></tr><tr><td>晚上10:30</td><td>早上6:15</td><td>早上7:45</td></tr><tr><td>晚上11:00</td><td>早上6:45</td><td>早上8:15</td></tr><tr><td>晚上11:30</td><td>早上7:15</td><td>早上8:45</td></tr><tr><td>凌晨12:00</td><td>早上7:45</td><td>早上9:15</td></tr></tbody></table></div>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>为什么90分钟这个数字并不精确</h2>
+        <div class="guide-content">
+            <p>每一个计算器都用90分钟 — 那是人群平均值。你的周期可能接近75分钟或110分钟，周期还会随着夜晚推移而变长，再加上正常的中途醒来，以及会随压力和咖啡因变化的入睡潜伏期，整套算术很容易偏差二三十分钟。实际操作中：</p><ul><li><strong>绝不要为了对齐周期而牺牲总睡眠时长。</strong>多熬45分钟只为让算式落在整周期上，等于用真实的睡眠去换一个四舍五入的误差。</li><li><strong>用它在两个都说得通的就寝时间之间做决断。</strong></li><li><strong>预期需要调整。</strong>如果7.5小时总让你昏昏沉沉，而整整8小时就感觉不错，那说明你的周期不是90分钟。你的亲身体验胜过公式。</li><li><strong>规律性比精确度更重要。</strong>每晚（包括周末）都在同一时间上床，对早上7点起床的帮助超过任何计算。</li></ul><p>睡眠惯性 — 被安排不当的闹钟叫醒后的那种迷糊 — 是真实存在的，可能持续半小时，所以这个思路本身是站得住脚的。站不住的是那种精确到小数点后的自信。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>如何让新的就寝时间真正坚持下来</h2>
+        <div class="guide-content">
+            <p>大多数人失败的不是不知道自己该几点睡，而是做不到。真正有帮助的做法：</p><ul><li><strong>每次只提前15分钟。</strong>一晚上就提前一小时，只会换来一小时躺着睁眼。每一档保持三到四晚再往前挪。</li><li><strong>先把起床时间固定下来。</strong>晨光对生物钟的作用远强于关灯的时刻。每天固定起床时间，就寝时间往往会自己跟上。</li><li><strong>把提醒设在放松准备阶段，而不是就寝时刻。</strong>熄灯前30–45分钟的提示才能改变行为；设在就寝时间的提醒只是在通知你已经晚了。</li><li><strong>守住睡前最后一小时。</strong>明亮的屏幕、高强度运动、大餐和酒精都会推迟入睡 — 参见<a href="/zh-Hans/sleep/sleep-hygiene/">睡眠卫生</a>。</li><li><strong>不要带着焦躁躺在床上。</strong>大约20分钟后还没睡着？那就起床，在昏暗的光线下做点无聊的事，等困意上来再回床上。</li></ul>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>笔记本还是应用：客观对比</h2>
+        <div class="guide-content">
+            <p>计算器给你的是一个假设，只有你自己的记录才能检验它。连续两周记下就寝时间、起床时间和自己的感受，胜过任何表格 — 包括本文这张。一本笔记本完全能胜任。纸质记录的短板在于算术：要算十一晚的平均值，或者要发现你状态最好的那些早晨都跟着晚上11点熄灯，就得手工把一堆潦草的时间加起来 — 于是没人真的会去做。</p><p>Feeltracker睡眠与梦境会替你处理这部分：记录入睡和起床时间并自动算出睡眠时长，提供质量评分以及梦境和备注字段，还有任意时段的趋势图，让就寝时间与第二天早晨状态之间的关联变得一目了然。提醒功能帮助新作息坚持下来；此外还有Apple Health同步、CPAP记录，以及无需账号或邮箱的iCloud同步。AI洞察可以为你总结自己的历史记录，所有内容都能导出为PDF、XLSX、CSV或JSON交给医生。它是一本手动日记，而不是自动的睡眠阶段追踪器 — 它不会去猜你什么时候睡着，也不会假装知道你的周期有多长。它只是把记录这件事做得足够简单，让你愿意坚持下去。</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/ST_1024.png" alt="睡眠与梦境应用图标" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>用真实数据检验你的就寝时间</h2>
+            <p>Feeltracker睡眠与梦境会记录你的入睡和起床时间，自动算出睡眠时长，并绘制质量评分与就寝时间之间的关系曲线 — 这样你找到的是适合你自己的就寝时间，而不是适合平均值的那个。免费、私密，无需账号。</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载睡眠与梦境" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/zh-Hans/sleep/" class="guide-app-cta-learn">了解更多应用信息 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>常见问题</h2>
+
+        <div class="guide-faq-item">
+            <h3>想早上6点起床，我该几点上床？</h3>
+            <p>五个周期（睡7.5小时）对应<strong>晚上10:15</strong>，六个周期（睡9小时）对应<strong>晚上8:45</strong>，两者都留出了15分钟的入睡时间。如果你长期睡眠不足，不妨先按较早的那个试一周，看看早晨的感觉如何。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>睡眠计算器准确吗？</h3>
+            <p>大致准确。它们假定周期为90分钟；而实际周期约在70–120分钟之间，并且会随夜晚推移变化，所以估算结果偏差20–30分钟是正常的。它适合用来在两个现实可行的就寝时间之间做选择，而不是熬夜的理由。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>睡6小时和睡7.5小时哪个更好？</h3>
+            <p>毫无疑问是7.5小时。六小时只有四个周期，低于几乎所有成年人的推荐范围 — 参见<a href="/zh-Hans/sleep/how-much-sleep-do-you-need/" target="_blank" rel="noopener">你需要睡多久</a>。绝不要为了让周期算得整齐而牺牲总睡眠时长。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>入睡应该需要多长时间？</h3>
+            <p><strong>10–20分钟</strong>是典型且健康的。少于五分钟通常意味着有睡眠债。如果经常超过30分钟，就值得认真对待 — 可以从<a href="/zh-Hans/sleep/how-to-fall-asleep-faster/" target="_blank" rel="noopener">如何更快入睡</a>开始。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>周末也要保持相同的就寝时间吗？</h3>
+            <p>是的，尽量接近 — 尤其要守住<strong>起床</strong>时间。周末作息偏移两小时会产生类似倒时差的效果，让周日晚上难以入睡，周一更加难受。如果你确实需要补觉，把赖床控制在一小时以内，代价会小得多。</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>继续阅读</h2>
+        <div class="guide-related-grid">
+
+            <a href="/zh-Hans/sleep/sleep-cycles/" class="guide-related-card">
+                <h3>睡眠周期与阶段详解</h3>
+                <p>90分钟周期由什么构成，以及它如何在整夜中变化。</p>
+            </a>
+
+            <a href="/zh-Hans/sleep/how-to-fall-asleep-faster/" class="guide-related-card">
+                <h3>如何更快入睡</h3>
+                <p>当就寝时间没问题、睡意却迟迟不来时该怎么办。</p>
+            </a>
+
+            <a href="/zh-Hans/sleep/how-much-sleep-do-you-need/" class="guide-related-card">
+                <h3>你需要睡多久？</h3>
+                <p>各年龄段的推荐时长，以及如何找到属于你自己的数字。</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>医疗免责声明</h2>
+        <p>本文仅供一般信息参考，不构成医疗建议、诊断或治疗。睡眠周期长度和睡眠需求因人而异，因此请把任何计算出的就寝时间当作起点 — 请始终遵循你的医生或医疗保健提供者的指导。如果你持续需要超过30分钟才能入睡、睡足一整夜后仍然醒来疲惫、白天会不由自主地睡着，或伴侣反映你有响亮的鼾声、喘息或呼吸暂停，请就医。</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>找到真正适合你的就寝时间</h2>
+        <p>下载免费的睡眠与梦境应用 — 记录每一夜，设置提醒，看清趋势</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载睡眠与梦境" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">免费应用，可选购高级功能
+iPhone、iPad和Mac • iOS 16.0以上</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/zh-Hans/sleep/sleep-calculator/">首页</a>
+            <a href="/zh-Hans/about/">关于</a>
+            <a href="mailto:support@feeltracker.com">邮件支持</a>
+            <a href="/zh-Hans/support/">支持</a>
+            <a href="/zh-Hans/faq/">常见问题</a>
+            <a href="https://x.com/feeltracker">在X上关注</a>
+            <a href="/zh-Hans/privacy/">隐私政策</a>
+            <a href="/zh-Hans/terms/">使用条款</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. 保留所有权利。</p>
+        <p class="footer-tagline">Feeltracker 健康追踪应用系列</p>
+        <p class="footer-disclaimer">您的健康数据存储在您的设备和iCloud中——我们绝不会访问或出售您的数据。Feeltracker应用不是医疗设备。仅供参考，不能替代专业的医疗建议、诊断或治疗。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>我们重视您的隐私</strong></p>
+                <p>我们使用分析Cookie来改善我们的网站和应用。不使用广告Cookie。请查阅我们的 <a href="/zh-Hans/privacy/">隐私政策</a> 了解详情。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒绝</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">接受</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

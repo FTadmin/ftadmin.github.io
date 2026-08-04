@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>BMI 계산하는 방법: 공식과 계산 예시 | Feeltracker</title>
+    <meta name="description" content="미터법과 야드파운드법 공식으로 BMI를 직접 계산하는 방법이에요. 계산 예시, 사람들이 흔히 하는 실수, 그리고 BMI 숫자가 오해를 부르는 지점까지 알려드려요.">
+
+    <meta name="keywords" content="BMI 계산법, BMI 공식, BMI 직접 계산, BMI 계산식, 파운드 인치 BMI 공식, 미터법 BMI 공식">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+    <meta property="og:title" content="BMI 계산하는 방법: 공식과 계산 예시">
+    <meta property="og:description" content="미터법과 야드파운드법 BMI 공식, 단계별 계산 예시, 그리고 BMI가 알려줄 수 없는 것에 대한 솔직한 이야기예요.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+    <meta property="twitter:title" content="BMI 계산하는 방법: 공식과 계산 예시">
+    <meta property="twitter:description" content="미터법 또는 야드파운드법으로 BMI를 계산하는 방법과 계산 예시, 그리고 솔직한 한계예요.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "BMI 공식은 무엇인가요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "미터법으로는 체중(kg) ÷ (키(m))²이고, 야드파운드법으로는 (체중(lb) × 703) ÷ (키(in))²이에요. 두 공식은 같은 결과를 주는데, 703은 파운드와 인치를 미터법 값으로 바꿔주는 역할을 할 뿐이에요."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "야드파운드법 BMI 공식에는 왜 703을 쓰나요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "공식에 녹아 있는 단위 변환값이에요: 1미터는 39.37인치, 1킬로그램은 2.2046파운드이고, 39.37² ÷ 2.2046이 대략 703이 돼요."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "BMI는 남성과 여성이 다르게 계산되나요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "아니요 — 공식도 성인 분류 기준도 동일해요. 같은 BMI에서도 여성이 필수 체지방을 더 많이 가지고 있는데도 그렇죠. 성별을 반영한 지표가 필요하다면 남녀 범위가 따로 있는 체지방률을 쓰세요."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "운동선수에게 BMI는 얼마나 정확한가요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "정확하지 않아요. 같은 부피라면 근육이 지방보다 무겁기 때문에, 훈련된 선수들은 매우 마른 몸인데도 과체중이나 비만 분류에 들어가는 경우가 흔해요. 근력 운동을 진지하게 한다면 허리둘레 측정과 체지방 추정치가 훨씬 유익해요."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "체중을 잴 때마다 BMI를 다시 계산해야 하나요?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "직접 할 필요는 없어요. 키는 거의 변하지 않으니 BMI는 체중을 그대로 따라 움직여요. 한 달에 한 번 확인하면 충분하고, 앱을 쓰면 어차피 자동으로 다시 계산돼요."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ko/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "체중",
+                      "item": "https://feeltracker.com/ko/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "BMI 계산하는 방법",
+                      "item": "https://feeltracker.com/ko/weight/how-to-calculate-bmi/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "BMI 계산하는 방법",
+          "description": "미터법과 야드파운드법 공식으로 BMI를 직접 계산하는 방법이에요. 계산 예시, 사람들이 흔히 하는 실수, 그리고 BMI 숫자가 오해를 부르는 지점까지 알려드려요.",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ko/weight/how-to-calculate-bmi/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ko/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ko/blood-pressure/">혈압</a>
+
+            <a href="/ko/daily-journal/">일기</a>
+
+            <a href="/ko/mood-journal/">기분 일기</a>
+
+            <a href="/ko/sleep/">수면</a>
+
+            <a href="/ko/weight/" class="current">체중</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇰🇷</span>
+                <span class="lang-name">한국어</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/how-to-calculate-bmi/" class="active" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ko/">홈</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ko/weight/">체중</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">BMI 계산하는 방법</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>BMI 계산하는 방법</h1>
+
+        <p class="guide-updated">마지막 업데이트: 2026년 8월</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>체질량지수(BMI)는 체중을 키의 제곱으로 나눈 값이에요. 나눗셈 한 번, 곱셈 한 번 — 이 숫자가 거의 200년 동안 살아남은 이유가 바로 이 단순함이에요. 휴대폰 계산기로 10초면 끝나요.</p><p>아래에 두 가지 공식을 실제 숫자로 풀어서 설명하고, 대부분의 계산기가 건너뛰는 부분도 다뤄요: 결과가 오해를 부르는 지점이요. 숫자를 구했다면 <a href="/ko/weight/bmi-chart/">BMI 차트</a>에서 어느 분류에 해당하는지 확인하세요.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>미터법 공식: 킬로그램과 미터</h2>
+        <div class="guide-content">
+            <p><strong>BMI = 체중(kg) ÷ (키(m) × 키(m))</strong></p><p>유일한 함정은 단위예요: 센티미터가 아니라 <em>미터</em>예요. 175 cm는 1.75 m이고, 175를 그대로 넣으면 BMI가 0.0025로 나와요.</p><h3>계산 예시</h3><p>키 175 cm에 체중 78 kg인 경우:</p><ol><li>변환: 175 cm = <strong>1.75 m</strong></li><li>제곱: 1.75 × 1.75 = <strong>3.0625</strong></li><li>나누기: 78 ÷ 3.0625 = <strong>25.5</strong></li></ol><p>25.0부터 시작되는 과체중 구간에 막 들어선 값으로, 건강 체중 구간까지 약 1.5 kg 차이예요. 경계선에서 1점 이내의 결과는 확정으로 받아들이지 마세요: 정상적인 <a href="/ko/weight/weight-fluctuation/">하루하루의 체중 변동</a>만으로도 일주일 사이에 선을 넘었다 돌아올 수 있어요.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>야드파운드법 공식: 파운드와 인치</h2>
+        <div class="guide-content">
+            <p><strong>BMI = (체중(lb) × 703) ÷ (키(in) × 키(in))</strong></p><p>703은 제곱인치당 파운드를 제곱미터당 킬로그램으로 바꿔주는 값이에요 — 1미터당 39.37인치를 제곱한 뒤 킬로그램당 2.2046파운드로 나눈 것이죠 — 그래서 두 공식이 같은 답을 줘요.</p><h3>계산 예시</h3><p>키 5 ft 9 in에 체중 172 lb인 경우:</p><ol><li>키를 인치로: (5 × 12) + 9 = <strong>69 in</strong></li><li>제곱: 69 × 69 = <strong>4,761</strong></li><li>체중 × 703: 172 × 703 = <strong>120,916</strong></li><li>나누기: 120,916 ÷ 4,761 = <strong>25.4</strong></li></ol><p>미터법 예시와 같은 사람, 같은 답이에요. 흔한 실수는 피트와 인치를 따로 둔 채 인치만 제곱하는 거예요.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>빠른 참고: 내 결과가 의미하는 것</h2>
+        <div class="guide-content">
+            <p>만 20세 이상 성인 기준으로, 남녀 모두 동일해요:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>BMI</th><th>분류</th><th>키 175 cm / 5 ft 9 in 기준 예시</th></tr></thead><tbody><tr><td>18.5 미만</td><td>저체중</td><td>57 kg / 125 lb 미만</td></tr><tr><td>18.5 – 24.9</td><td>건강 체중</td><td>57 – 76 kg / 125 – 168 lb</td></tr><tr><td>25.0 – 29.9</td><td>과체중</td><td>77 – 91 kg / 169 – 201 lb</td></tr><tr><td>30.0 – 34.9</td><td>비만 1단계</td><td>92 – 107 kg / 202 – 236 lb</td></tr><tr><td>35.0 – 39.9</td><td>비만 2단계</td><td>107 – 122 kg / 237 – 269 lb</td></tr><tr><td>40.0 이상</td><td>비만 3단계</td><td>123 kg / 270 lb 이상</td></tr></tbody></table></div><p>남아시아계, 중국계 등 아시아계라면 여러 보건 기관이 더 낮은 기준을 적용해요 — 과체중 약 23부터, 비만 약 27.5부터 — 대사 위험이 더 일찍 올라가기 때문이에요. 키별 표를 포함한 전체 내용은 <a href="/ko/weight/bmi-chart/">BMI 차트 가이드</a>에 있어요.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>숫자가 어긋나는 지점</h2>
+        <div class="guide-content">
+            <p>계산 자체는 단순하기 때문에, 잘못된 BMI는 거의 입력값에서 나와요.</p><ul><li><strong>어림잡은 키.</strong> 대부분의 성인은 신분증에 적힌 것보다 1~2 cm 작고, 나이가 들면 키가 줄어요. 키 175 cm에서 1 cm는 BMI를 약 0.3 움직이는데, 경계선을 넘기기에 충분한 차이예요. 맨발로 벽에 기대 한 번 정확히 재고 그 값을 계속 쓰세요.</li><li><strong>들쭉날쭉한 측정.</strong> 저녁에는 1~2 kg 더 무거울 수 있어요. 아침에 일어난 뒤, 뭔가 먹기 전에 재세요.</li><li><strong>단위 혼용, 체중 제곱, 과한 반올림.</strong> 킬로그램과 인치를 섞으면 말이 안 되는 값이 나오고, 키를 5 cm 단위로 반올림하면 결과가 1점이나 달라질 수 있어요. 계산기 두 개가 다른 값을 준다면 대개 이 중 하나가 원인이에요.</li></ul><p>그리고 공식이 볼 수 없는 것도 있어요. 근육은 지방보다 밀도가 높아서, 잘 훈련된 조정 선수는 체지방률이 한 자릿수인데도 BMI가 28~30으로 나올 수 있어요 — 웨이트 트레이닝을 진지하게 한다면 BMI는 거의 의미 없다고 보고 <a href="/ko/weight/body-fat-percentage/">체지방률</a>을 대신 쓰세요. 반대도 마찬가지예요: 앉아서 지내는 사람은 BMI 23에서도 대사 위험을 높일 만큼 복부 지방을 가지고 있을 수 있어요. 위험이 시작되는 BMI는 인구 집단마다 다르고, 같은 BMI라도 60세의 몸은 30세였을 때보다 지방이 더 많고, 여성은 남성보다 필수 지방이 많으며, 임신 중에는 BMI가 적용되지 않고, 어린이는 백분위 차트를 써요. 가장 저렴한 보완책은 줄자예요: <a href="/ko/weight/waist-to-height-ratio/">허리둘레-키 비율</a>은 30초면 되고, BMI가 볼 수 없는 지방 분포를 보여줘요.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>직접 계산하기 vs 앱에 맡기기</h2>
+        <div class="guide-content">
+            <p>BMI를 한 번 계산하는 건 아주 쉬워요. 1년 동안 잴 때마다 계산하고 그 추세가 어떻게 흘러갔는지 확인하는 것 — 손으로 하는 방식이 조용히 무너지는 지점이 바로 여기예요.</p><p>무료 체중과 식단 Feeltracker 앱은 그 단계를 없애줘요: 키를 한 번만 입력하면 모든 기록마다 BMI가 계산되고, 체중과 나란히 추세선으로, 내가 정한 목표와 함께 차트에 표시돼요. 체지방률도 기록하고, Apple Health와 연동되며, 계정이나 이메일 없이 iCloud로 기기 간에 동기화돼요. 진료 때 쓸 수 있도록 PDF, XLSX, CSV, JSON으로 내보낼 수도 있어요. 선택 사항인 AI 인사이트는 내 기록을 요약해 줘요.</p><p>어떤 방법을 택하든 위의 공식이 전부예요. 중요한 건 가끔씩 확인하는 것이지, 소수점 셋째 자리가 아니에요.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="체중과 식단 앱 아이콘" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>계산은 건너뛰세요</h2>
+            <p>체중과 식단 Feeltracker는 킬로그램이든 파운드든 측정할 때마다 BMI를 계산하고, 체중과 나란히 차트로 보여줘서 하나의 숫자가 아니라 추세를 보게 해줘요. 무료이고, 프라이빗하며, 계정도 필요 없어요.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ko-white.svg"><img class="store_button" src="/images/appstore/ko-black.svg" alt="App Store에서 체중과 식단 다운로드" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ko/weight/" class="guide-app-cta-learn">앱에 대해 더 알아보기 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>자주 묻는 질문</h2>
+
+        <div class="guide-faq-item">
+            <h3>BMI 공식은 무엇인가요?</h3>
+            <p>미터법으로는 <strong>체중(kg) ÷ (키(m))²</strong>이고, 야드파운드법으로는 <strong>(체중(lb) × 703) ÷ (키(in))²</strong>이에요. 두 공식은 같은 결과를 주는데, 703은 파운드와 인치를 미터법 값으로 바꿔주는 역할을 할 뿐이에요.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>야드파운드법 BMI 공식에는 왜 703을 쓰나요?</h3>
+            <p>공식에 녹아 있는 단위 변환값이에요: 1미터는 39.37인치, 1킬로그램은 2.2046파운드이고, 39.37² ÷ 2.2046이 대략 703이 돼요.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>BMI는 남성과 여성이 다르게 계산되나요?</h3>
+            <p>아니요 — 공식도 성인 분류 기준도 동일해요. 같은 BMI에서도 여성이 필수 체지방을 더 많이 가지고 있는데도 그렇죠. 성별을 반영한 지표가 필요하다면 남녀 범위가 따로 있는 <a href="/ko/weight/body-fat-percentage/" target="_blank" rel="noopener">체지방률</a>을 쓰세요.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>운동선수에게 BMI는 얼마나 정확한가요?</h3>
+            <p>정확하지 않아요. 같은 부피라면 근육이 지방보다 무겁기 때문에, 훈련된 선수들은 매우 마른 몸인데도 과체중이나 비만 분류에 들어가는 경우가 흔해요. 근력 운동을 진지하게 한다면 허리둘레 측정과 체지방 추정치가 훨씬 유익해요.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>체중을 잴 때마다 BMI를 다시 계산해야 하나요?</h3>
+            <p>직접 할 필요는 없어요. 키는 거의 변하지 않으니 BMI는 체중을 그대로 따라 움직여요. 한 달에 한 번 확인하면 충분하고, 앱을 쓰면 어차피 자동으로 다시 계산돼요.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>함께 읽으면 좋아요</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ko/weight/bmi-chart/" class="guide-related-card">
+                <h3>성인 BMI 차트</h3>
+                <p>모든 분류와 키·체중 조회표를 함께 담았어요.</p>
+            </a>
+
+            <a href="/ko/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>내 키에 맞는 건강 체중</h3>
+                <p>내 키에 맞는 목표 범위를 kg과 파운드로 알려드려요.</p>
+            </a>
+
+            <a href="/ko/weight/body-fat-percentage/" class="guide-related-card">
+                <h3>체지방률 알아보기</h3>
+                <p>BMI가 놓치는 것과 그것을 대신 측정하는 방법이에요.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>건강 고지 사항</h2>
+        <p>이 글은 일반 정보 제공을 목적으로 하며 의학적 조언, 진단 또는 치료를 대신하지 않아요. BMI는 선별용 수치일 뿐 그 자체로 개인의 건강 상태를 평가할 수 없으므로, 체중과 체중을 바꾸려는 계획은 항상 담당 의사나 의료 전문가와 상의하세요. 노력하지 않았는데 체중이 줄거나 늘고 있다면, 또는 체중 변화와 함께 지속적인 피로감, 호흡곤란, 식욕 저하 같은 증상이 있다면 지체 없이 진료를 받으세요.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>BMI는 알아서 계산되게 하세요</h2>
+        <p>무료 체중과 식단 앱을 다운로드하세요 — 키는 한 번만 입력하면 나머지는 측정할 때마다 알아서 처리돼요</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ko-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ko-black.svg" alt="App Store에서 체중과 식단 다운로드" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">기본 무료 · 선택적 프리미엄 기능
+iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ko/weight/how-to-calculate-bmi/">홈</a>
+            <a href="/ko/about/">소개</a>
+            <a href="mailto:support@feeltracker.com">이메일 지원</a>
+            <a href="/ko/support/">지원</a>
+            <a href="/ko/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">X에서 팔로우</a>
+            <a href="/ko/privacy/">개인정보 처리방침</a>
+            <a href="/ko/terms/">이용약관</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Feeltracker 건강 트래킹 앱 패밀리의 일원</p>
+        <p class="footer-disclaimer">건강 데이터는 사용자의 기기와 iCloud에 저장됩니다. 저희는 데이터에 접근하거나 판매하지 않습니다. Feeltracker 앱은 의료기기가 아닙니다. 정보 제공 목적으로만 사용되며, 전문적인 의료 조언, 진단 또는 치료를 대체하지 않습니다.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>개인정보를 소중히 여깁니다</strong></p>
+                <p>웹사이트와 앱 개선을 위해 분석용 쿠키를 사용합니다. 광고 쿠키는 사용하지 않습니다. 자세한 내용은 <a href="/ko/privacy/">개인정보 처리방침</a> 을 참조하세요.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">거부</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">동의</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

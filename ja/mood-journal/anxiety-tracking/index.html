@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>不安の記録：何を書き、そこから何が見えるか | Feeltracker</title>
+    <meta name="description" content="不安を記録するための実践ガイド。身体の症状と考えの症状の違い、きっかけを見つけるために記録すべきこと、そして記録がセラピーをより役立つものにする理由を解説します。">
+
+    <meta name="keywords" content="不安 記録, 不安 日記, 不安のきっかけ, 不安 症状, 不安 ログ, 不安トラッカー アプリ">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ja/mood-journal/anxiety-tracking/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/anxiety-tracking/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:url" content="https://feeltracker.com/ja/mood-journal/anxiety-tracking/">
+    <meta property="og:title" content="不安の記録：何を書き、そこから何が見えるか">
+    <meta property="og:description" content="身体面と考えの面に現れる不安の症状、きっかけを見つけるために記録したい数個の項目、そして1か月分の記録を実りある対話に変える方法。">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ja/mood-journal/anxiety-tracking/">
+    <meta property="twitter:title" content="不安の記録：何を書き、そこから何が見えるか">
+    <meta property="twitter:description" content="不安を記録するとき何を書くか — きっかけが見つかる項目と、記録がセラピーでの対話をどう助けるか。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "不安はどのくらいの頻度で記録すればいいですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "毎日決まった時刻に2回、それに加えて何かが跳ね上がったときに1回です。決まった時刻のチェックインが記録を正直に保ってくれます — 急上昇したときだけ記録すると、どの記録もつらいものばかりになり、実際のひと月よりずっと悪く見えてしまいます。記録すること自体が強迫的に感じられてきたら、1日1回に減らしましょう。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "パターンが見えてくるまで、どのくらいかかりますか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "たいてい2〜4週間です。時間帯のパターンがいちばん早く現れ、2週間ほどで見えてくることも多いです。要因のパターンはもう少し時間がかかります — 比べるには、その要因があった日となかった日が十分な数だけ必要なので、月に2回しか起きないきっかけについて何か言えるようになるには、2か月ほどかかります。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "記録すると、不安が悪化しませんか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "多くの方にとっては、そうはなりません — 書き留めることは、それを小さく、具体的にしてくれる働きがあります。ただ一部の方では、頻繁に自分を評価すること自体が別の形の確認行為になり、不安はそれを糧にします。どんどん頻繁に記録する、記録するのが怖くなる、安心を求めてチャートを見返す。そうなっているなら、頻度を減らすか、いったん休んで、セラピストに伝えてください。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "不安とパニック発作は何が違いますか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不安はより長く続く、強度の低い状態です。パニック発作は、強い恐怖が突然押し寄せ、激しい身体症状 — 動悸、息苦しさ、めまい、現実感のなさ — を伴い、たいてい10分ほどでピークに達します。続いた時間とピークの強さを記録しておくと、臨床家が見分ける助けになります。急上昇への標準的な最初の対応はグラウンディング技法です。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "記録を医師に見せたほうがいいですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "抵抗がなければ、ぜひ — 持っていけるものの中でもとくに役に立つものです。直近3か月のチャート、繰り返し現れるきっかけ、そして試したこと。それだけで、短い診察が具体的な対話に変わります。ただし、処方された薬を自分のデータだけを根拠に調整するのは絶対にやめてください。記録を持っていって、一緒に決めましょう。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ja/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "気分日記",
+                      "item": "https://feeltracker.com/ja/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "不安の記録",
+                      "item": "https://feeltracker.com/ja/mood-journal/anxiety-tracking/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "不安の記録",
+          "description": "不安を記録するための実践ガイド。身体の症状と考えの症状の違い、きっかけを見つけるために記録すべきこと、そして記録がセラピーをより役立つものにする理由を解説します。",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ja/mood-journal/anxiety-tracking/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ja/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ja/blood-pressure/">血圧</a>
+
+            <a href="/ja/daily-journal/">日記</a>
+
+            <a href="/ja/mood-journal/" class="current">気分日記</a>
+
+            <a href="/ja/sleep/">睡眠</a>
+
+            <a href="/ja/weight/">体重</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇯🇵</span>
+                <span class="lang-name">日本語</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/anxiety-tracking/" class="active" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ja/mood-journal/">気分日記</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">不安の記録</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>不安の記録</h1>
+
+        <p class="guide-updated">最終更新：2026年8月</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>不安には説得力があります。渦のただ中にいるときは、この1週間ずっとこんなに悪かったし、これからもずっとそうだ、と思えてきます。そして過ぎ去ったあとは、何がきっかけだったのか不思議なほど思い出せません。どちらも記憶が仕掛けるいたずらで、そしてどちらも、書かれた記録が正してくれるものです。</p><p>記録することは、自分をもっと細かく監視することではありません — 不安の強い方は、たいていすでに十分すぎるほどそうしています。1日にいくつかの正直なデータを残すことで、パターンが外側から見えるようになるのです。決まって調子の悪い木曜の夜。感覚だけでは決して報告してくれない、ゆっくりとした改善。以下では、何を記録するか、そして1か月分の記録が、どうやって医療者に見せられる対話になるかをご紹介します。</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>身体と考え：同じものの2つの側面</h2>
+        <div class="guide-content">
+            <p>不安は、体と心の両方に同時に現れます。どちらの側面に気づきやすいかは人によって違います。両方を記録しましょう。身体のサインは、考えが追いつく1時間ほど前に現れることが多く、その1時間こそがスキルの出番だからです。</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>身体面</th><th>考えと行動の面</th></tr></thead><tbody><tr><td>心臓が速く打つ、ドキドキする</td><td>考えが駆けめぐる、抜け出せないループにはまる</td></tr><tr><td>胸が締めつけられる、浅く速い呼吸</td><td>破局的に考える — 最悪の結末に飛びついてしまう</td></tr><tr><td>お腹の不調、吐き気、食欲の変化</td><td>集中しにくい。同じ行を二度読んでしまう</td></tr><tr><td>筋肉のこわばり：あご、肩、首</td><td>自分でも驚くほど短気になる</td></tr><tr><td>落ち着かない、そわそわする、歩き回る</td><td>電話、メール、場所、人を避ける</td></tr><tr><td>汗、震え、めまい、ほてりや冷え</td><td>安心を求める、確認を繰り返す、準備しすぎる</td></tr><tr><td>寝つけない、午前3時に目が覚める</td><td>対象のはっきりしない恐れ</td></tr></tbody></table></div><p>不安の身体症状は、本当に体で起きている出来事です — 気のせいではなく、実際の警報反応です。いくつかは甲状腺の問題、不整脈、貧血、薬の副作用とも重なります。あなたの症状が新しく出てきたもの、主に身体的なもの、あるいは心理的な何かと連動していないものなら、まず医師に診てもらってください。不安をあおるためではなく、ありふれた原因を除外するためです。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>何を記録するか</h2>
+        <div class="guide-content">
+            <p>凝った表計算は飛ばしましょう — つらい日にもちゃんと書ける記録のほうが、2週目で投げ出す完璧なものより役に立ちます。項目は5つです。</p><ul><li><strong>強さ</strong> — 毎回同じシンプルな尺度で。測定ではなく、動きを見るためのものです。</li><li><strong>いつ</strong> — 時間帯は、もっとも強く出る発見のひとつです。朝の急上昇、寝る前のループ。</li><li><strong>要因</strong> — 睡眠、カフェイン、アルコール、仕事量、対立、ホルモン。同じタグを使い回しましょう。</li><li><strong>そのとき何が起きていたか</strong> — ひと言で。「チームの通話の前」のほうが、3週間後に読む気持ちの長文より役に立ちます。</li><li><strong>何をしたか、そしてそれは効いたか</strong> — 誰もが飛ばす項目であり、いちばん見返りの大きい項目です。</li></ul><p>毎日決まった時刻に2回、それに加えて何かが跳ね上がったときに1回記録しましょう — 決まった時刻の記録が穏やかな時間もすくい上げてくれます。跳ね上がったときだけの記録は、最悪の瞬間ばかりを集めたハイライト映像になってしまいます。記録が不安からくる点検作業のように感じられてきたら、1日1回に減らして、一緒に取り組んでいる人に伝えてください — <a href="/ja/mood-journal/how-to-track-your-mood/">毎日の気分の記録</a>の習慣にも、同じ心配りが当てはまります。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>自分のデータからきっかけを見つける</h2>
+        <div class="guide-content">
+            <p>きっかけは、思い当たりやすいものであることはめったにありません。仕事や特定の人だろうと予想していたのに、見つかるのはもっと構造的なもの — 6時間を切る夜が2晩続いたこと、午後2時以降の2杯目のコーヒー、人と会った<em>翌</em>日 — だったりします。読み方は3つ。</p><ol><li><strong>要因ごとにまとめる。</strong> 「睡眠不足」の日の不安の平均を、それ以外の日と比べてみましょう。差があればそれはてこになりますし、差がなければその要因を除外できます — これも同じくらい役に立ちます。</li><li><strong>時間帯を見る。</strong> 朝7時や夜11時に固まっているなら、実践的な打ち手 — 寝る前のルーティン、予定の移動 — が見えてきます。</li><li><strong>時間差を探す。</strong> アルコールが典型例です。金曜は楽しく、土曜の朝は不安。今日の評価を、昨日のタグと突き合わせてみてください。</li></ol><p>ここで組み立てているのは仮説であって、証明ではありません — ひとつだけ変えて2週間、評価の動きを見てみましょう。それでもやってくる急上昇に備えて、<a href="/ja/mood-journal/grounding-techniques/">グラウンディング技法</a>をいくつか用意しておいてください。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>記録をセラピストや医師のところへ持っていく</h2>
+        <div class="guide-content">
+            <p>「不安の調子はいかがでしたか」と聞かれると、ほとんどの方は直近の48時間から答えますし、ひどい朝がひと月の印象を塗り替えてしまいます。臨床家は口をそろえて、記録を持ってくる患者さんとのセッションのほうが実りが大きいと言います。持っていきたいのは、チャート、繰り返し現れる要因の組み合わせ、いちばんつらかったエピソードの頻度と時間帯（全般性不安とパニックを区別する助けになります）、そして自分がすでに試したこと — 3月に除外したことを、また提案されずにすみます。</p><p>とりわけ大切なのは、治療が変わるときです。新しいセラピーや薬の調整の前後の評価は、「なんとなく少し良くなった気がします」よりずっと役に立ちますし、悪化を早い段階で浮かび上がらせてくれます。処方された薬を、自分の記録だけを根拠に変更したり中止したりは決してしないでください — 記録を持っていって、一緒に決めましょう。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>紙かアプリか：正直な比較</h2>
+        <div class="guide-content">
+            <p>ノートは、不安の記録手段としてまったく申し分ありません。手書きには、タップにはない鎮める力がありますし、午前3時に端末を手にとらずにすみます。自分に合っているなら、それを使ってください。</p><p>紙が力尽きるのは分析の場面 — つまり、いちばんの目的のところ — です。6週間分の記録を手で集計する人はいません。アプリはその部分を引き受けます。5秒で終わる記録は、急上昇のさなかでも間に合う速さです。チャートは要因ごとに不安を分解し、リマインダーは穏やかな日も記録に残し、メモと写真はひと言では収まらないものを保ち、PDF・XLSX・CSV・JSONへの書き出しは受診の場に持っていけます。設計からしてプライベートです：アカウントもメールアドレスも不要のiCloud同期、オプションのAppleヘルスケア連携、そして記述にとどまり決して診断はしないAIインサイト。</p><p>Feeltracker気分日記 BPDはセルフトラッキングのためのツールであり、セラピーでも診断のための道具でもありません — あなたに不安症があるかどうかを告げることはありません。このアプリがするのは、あなたと、力になれる誰かが、実際のひと月を一緒に見られるようにすることです。</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="気分日記 BPDアプリのアイコン" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>パニックだけでなく、パターンを捉える</h2>
+            <p>Feeltracker気分日記 BPDなら、不安な瞬間を5秒ほどで記録できます — シンプルな尺度、そのまわりにあった要因、メモと写真 — そしてそれをグラフにして、きっかけと傾向を見えるようにします。次の受診用にPDFで書き出せます。無料、プライベート、アカウント不要。</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button" src="/images/appstore/ja-black.svg" alt="App Storeで気分日記をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ja/mood-journal/" class="guide-app-cta-learn">アプリについて詳しく見る <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>よくある質問</h2>
+
+        <div class="guide-faq-item">
+            <h3>不安はどのくらいの頻度で記録すればいいですか？</h3>
+            <p>毎日決まった時刻に2回、それに加えて何かが跳ね上がったときに1回です。決まった時刻のチェックインが記録を正直に保ってくれます — 急上昇したときだけ記録すると、どの記録もつらいものばかりになり、実際のひと月よりずっと悪く見えてしまいます。記録すること自体が強迫的に感じられてきたら、1日1回に減らしましょう。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>パターンが見えてくるまで、どのくらいかかりますか？</h3>
+            <p>たいてい2〜4週間です。時間帯のパターンがいちばん早く現れ、2週間ほどで見えてくることも多いです。要因のパターンはもう少し時間がかかります — 比べるには、その要因があった日となかった日が十分な数だけ必要なので、月に2回しか起きないきっかけについて何か言えるようになるには、2か月ほどかかります。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>記録すると、不安が悪化しませんか？</h3>
+            <p>多くの方にとっては、そうはなりません — 書き留めることは、それを小さく、具体的にしてくれる働きがあります。ただ一部の方では、頻繁に自分を評価すること自体が別の形の<strong>確認行為</strong>になり、不安はそれを糧にします。どんどん頻繁に記録する、記録するのが怖くなる、安心を求めてチャートを見返す。そうなっているなら、頻度を減らすか、いったん休んで、セラピストに伝えてください。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>不安とパニック発作は何が違いますか？</h3>
+            <p>不安はより長く続く、強度の低い状態です。パニック発作は、強い恐怖が突然押し寄せ、激しい身体症状 — 動悸、息苦しさ、めまい、現実感のなさ — を伴い、たいてい10分ほどでピークに達します。続いた時間とピークの強さを記録しておくと、臨床家が見分ける助けになります。急上昇への標準的な最初の対応は<a href="/ja/mood-journal/grounding-techniques/" target="_blank" rel="noopener">グラウンディング技法</a>です。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>記録を医師に見せたほうがいいですか？</h3>
+            <p>抵抗がなければ、ぜひ — 持っていけるものの中でもとくに役に立つものです。直近3か月のチャート、繰り返し現れるきっかけ、そして試したこと。それだけで、短い診察が具体的な対話に変わります。ただし、処方された薬を自分のデータだけを根拠に調整するのは絶対にやめてください。記録を持っていって、一緒に決めましょう。</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>あわせて読みたい</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ja/mood-journal/grounding-techniques/" class="guide-related-card">
+                <h3>グラウンディング技法</h3>
+                <p>不安が跳ね上がった、その瞬間にできること。</p>
+            </a>
+
+            <a href="/ja/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>気分の記録のつけ方</h3>
+                <p>どんなパターンも見えるようにする、5秒の毎日の習慣。</p>
+            </a>
+
+            <a href="/ja/mood-journal/mood-chart/" class="guide-related-card">
+                <h3>気分チャートの読み方</h3>
+                <p>数週間分の記録を、行動に移せるものに変える方法。</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>ケアについてのご注意</h2>
+        <p>この記事は一般的な情報提供のみを目的としており、医学的な助言、診断、治療にかわるものではありません。セルフトラッキングは専門的なケアを支えるものであって、それに代わるものではなく、あなたに不安症があるかどうかを告げることもできません。不安が日常生活のさまたげになっている場合、症状が主に身体的、あるいは新しく現れたものである場合 — 胸の痛み、息苦しさ、動悸、めまいは、いずれも医師の診察を受ける価値があります — また処方された薬について何かを変える前には、医師にご相談ください。自分を傷つけたい、あるいは死にたいという考えがある場合は、すぐにお住まいの地域の緊急通報番号、またはお住まいの国のいのちの電話などの相談窓口にご連絡ください。</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>今日から記録を始めよう</h2>
+        <p>無料の気分日記 BPDアプリをダウンロード — 不安な瞬間を数秒で記録して、パターンが現れるのを見てみましょう</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="App Storeで気分日記をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">オプションのプレミアム機能付き無料アプリ
+iPhone、iPad、Mac対応 • iOS 16.0以降</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ja/mood-journal/anxiety-tracking/">ホーム</a>
+            <a href="/ja/about/">概要</a>
+            <a href="mailto:support@feeltracker.com">メールサポート</a>
+            <a href="/ja/support/">サポート</a>
+            <a href="/ja/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Xでフォロー</a>
+            <a href="/ja/privacy/">プライバシーポリシー</a>
+            <a href="/ja/terms/">利用規約</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Feeltrackerヘルストラッキングアプリファミリーの一員</p>
+        <p class="footer-disclaimer">健康データはお使いのデバイスとiCloudに保存されます。私たちがデータにアクセスしたり販売したりすることはありません。Feeltrackerアプリは医療機器ではありません。情報提供のみを目的としており、専門的な医療アドバイス、診断、治療の代わりとなるものではありません。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>プライバシーを大切にしています</strong></p>
+                <p>ウェブサイトとアプリの改善のため、分析用Cookieを使用しています。広告Cookieは使用していません。詳しくは <a href="/ja/privacy/">プライバシーポリシー</a> をご覧ください。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒否</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">同意</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

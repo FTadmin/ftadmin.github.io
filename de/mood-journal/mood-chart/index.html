@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Stimmungsverlauf lesen: Ausgangsniveau, Bandbreite, Zyklen | Feeltracker</title>
+    <meta name="description" content="So liest du einen Stimmungsverlauf richtig: dein Ausgangsniveau finden, die Bandbreite einschätzen, Wochen- und Jahreszyklen erkennen und echte Faktoren von Zufall unterscheiden.">
+
+    <meta name="keywords" content="stimmungsverlauf, stimmungsdiagramm, stimmungskurve, stimmungsverlauf lesen, stimmungsmuster, stimmungstrends">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:url" content="https://feeltracker.com/de/mood-journal/mood-chart/">
+    <meta property="og:title" content="Wie du deinen Stimmungsverlauf liest">
+    <meta property="og:description" content="Ausgangsniveau, Bandbreite, Zyklen und Faktoren – wie du aus ein paar Wochen Stimmungsdaten echte Antworten ziehst, mit durchgerechnetem Beispiel.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/de/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="Wie du deinen Stimmungsverlauf liest">
+    <meta property="twitter:description" content="Stimmungsverlauf lesen: Ausgangsniveau, Bandbreite, Zyklen – und echte Faktoren von Zufall unterscheiden.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Wie viele Wochen Daten brauche ich, bis der Verlauf nützlich ist?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Drei bis vier Wochen für Wochenrhythmen und starke Einzelfaktoren wie Schlaf; zwei bis drei Monate für monatliche Zyklen; den größten Teil eines Jahres für die saisonale Form. Ein bis zwei Wochen zeigen dein Ausgangsniveau und wie stark du schwankst – das ist schon etwas wert."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mein Verlauf sieht völlig zufällig aus. Mache ich etwas falsch?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Wahrscheinlich nicht. Manche Verläufe sind tatsächlich unruhig, und eine flache Streuung sagt trotzdem etwas Echtes: Kein einzelner Faktor dominiert deine Stimmung. Sortiere die Einträge nach Wochentag und prüfe Effekte am Folgetag statt am selben Tag – verzögerte Muster verstecken sich in aller Offenheit. Nach zwei Monaten immer noch zufällig? Auch das ist eine Antwort."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Bedeutet ein Tiefpunkt in meinem Verlauf, dass etwas nicht stimmt?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nein. Jeder Verlauf hat Tiefpunkte, und ein schlechter Tag ist keine Diagnose. Aufmerksamkeit verdienen Dauer und Richtung: ein Tief, das länger als zwei Wochen den größten Teil des Tages anhält, oder ein Ausgangsniveau, das über Monate nach unten driftet. Darüber lohnt es sich, mit einer Ärztin, einem Arzt oder in der Therapie zu sprechen – nimm den Verlauf mit."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Soll ich meine Stimmungsbewertungen mitteln?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ein Monatsdurchschnitt ist eine faire Zusammenfassung des Ausgangsniveaus, aber Mitteln wirft die Bandbreite weg – oft die interessantere Hälfte der Geschichte. Schau dir Durchschnitt und Streuung gemeinsam an, wie im Ratgeber zu Stimmungsschwankungen beschrieben."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Kann ich meinen Stimmungsverlauf in der Therapie zeigen?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja, und die meisten freuen sich darüber. Ein datierter Verlauf mit Faktor-Tags macht aus einer vagen Zusammenfassung etwas Konkretes, mit dem sich arbeiten lässt. Exportiere ein PDF für eine saubere Fassung oder CSV/XLSX für die zugrunde liegenden Zahlen."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/de/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Stimmungstagebuch",
+                      "item": "https://feeltracker.com/de/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Stimmungsverlauf",
+                      "item": "https://feeltracker.com/de/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Deinen Stimmungsverlauf lesen",
+          "description": "So liest du einen Stimmungsverlauf richtig: dein Ausgangsniveau finden, die Bandbreite einschätzen, Wochen- und Jahreszyklen erkennen und echte Faktoren von Zufall unterscheiden.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/de/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/de/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/de/blood-pressure/">Blutdruck</a>
+
+            <a href="/de/daily-journal/">Tagebuch</a>
+
+            <a href="/de/mood-journal/" class="current">Stimmungstagebuch</a>
+
+            <a href="/de/sleep/">Schlaf</a>
+
+            <a href="/de/weight/">Gewicht</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇩🇪</span>
+                <span class="lang-name">Deutsch</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/de/">Start</a>
+        <span aria-hidden="true">›</span>
+        <a href="/de/mood-journal/">Stimmungstagebuch</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Stimmungsverlauf</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Deinen Stimmungsverlauf lesen</h1>
+
+        <p class="guide-updated">Zuletzt aktualisiert: August 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Ein Stimmungsverlauf sind deine täglichen Bewertungen, aufgetragen über die Zeit. Der erste Blick täuscht fast immer: Das Auge springt direkt zum tiefsten Punkt, liest „da ist der schlechte Tag“ und hört auf. Richtig gelesen beantwortet er bessere Fragen: Wo liegt meine Stimmung normalerweise, wie weit schwankt sie, folgt sie einem Rhythmus – und was geht mit ihr einher?</p><p>Dieser Ratgeber geht die vier Lesarten durch – Ausgangsniveau, Bandbreite, Zyklen, Faktoren – mit einem durchgerechneten Beispiel. Du trackst noch nicht? Fang mit <a href="/de/mood-journal/how-to-track-your-mood/">wie du deine Stimmung trackst</a> an und komm in zwei Wochen wieder.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Vorab: Wie viele Daten brauchst du?</h2>
+        <div class="guide-content">
+            <p>Ein Verlauf über fünf Tage ist eine Stimmung, kein Muster. Grob:</p><ul><li><strong>1–2 Wochen:</strong> dein Ausgangsniveau und wie stark du schwankst – nichts über Ursachen.</li><li><strong>3–6 Wochen:</strong> Wochenrhythmen und starke Einzelfaktoren – Schlaf ist meist der erste.</li><li><strong>2–3 Monate:</strong> monatliche und hormonelle Zyklen sowie langsame Verschiebungen.</li><li><strong>6–12 Monate:</strong> die saisonale Form und eine ehrliche Antwort auf „geht es mir besser als letztes Jahr?“</li></ul><p>Lücken sind in Ordnung – eine leere Woche ist ehrlich. Eine aus dem Gedächtnis rekonstruierte Woche schreibt den Verlauf zu der Geschichte hin um, die du ohnehin schon glaubst.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. Finde dein Ausgangsniveau</h2>
+        <div class="guide-content">
+            <p>Dein Ausgangsniveau ist der Punkt, an dem deine Stimmung an einem gewöhnlichen Tag liegt – das Band, zu dem die Linie immer wieder zurückkehrt. Auf einer 5-Punkte-Skala leben die meisten Menschen zwischen 3 und 4.</p><p>Es ist die nützlichste Zahl hier: Eine 3 bedeutet für jemanden mit Ausgangsniveau 4 etwas anderes als für jemanden bei 2, und sie verändert sich langsam – eine Verschiebung sagt also mehr als ein schlechter Dienstag. Ein Ausgangsniveau, das über zwei Monate von 4 auf 3 rutscht, wiegt schwerer als jeder einzelne Tiefpunkt – genau die Veränderung, die man von innen nicht sieht.</p><p>Deck die Extreme mit dem Daumen ab, schau, wo der Großteil der Linie liegt, und vergleiche diesen Monat mit dem letzten.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. Schätze die Bandbreite ein</h2>
+        <div class="guide-content">
+            <p>Die Bandbreite beschreibt, wie weit sich deine Stimmung um dieses Ausgangsniveau bewegt. Zwei Menschen teilen sich ein Niveau von 3,5: Die eine bewegt sich zwischen 3 und 4, die andere springt zwischen 1 und 5. Drei Fragen:</p><ul><li><strong>Wie breit ist eine typische Woche?</strong> Ein Punkt ist normal; drei oder vier, immer wieder, verdienen Aufmerksamkeit.</li><li><strong>Wie schnell sind die Übergänge?</strong> Ein langsamer Abstieg über zwei Wochen und ein Sturz von 5 auf 1 am selben Tag sind verschiedene Phänomene.</li><li><strong>Wie lange hält ein Tief an?</strong> Ein Tag im Tief unterscheidet sich von zwei Wochen ganz unten.</li></ul><p>Wenn die Schwankungen die Hauptgeschichte sind, behandelt der <a href="/de/mood-journal/mood-swings/">Ratgeber zu Stimmungsschwankungen</a> mögliche Auslöser und wann du fachliche Hilfe suchen solltest.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. Halte nach Zyklen Ausschau</h2>
+        <div class="guide-content">
+            <p>Zyklen machen aus „manchmal einfach schlecht“ etwas, um das du planen kannst. Vier, die du prüfen solltest:</p><ul><li><strong>Täglich.</strong> Braucht mehr als einen Eintrag pro Tag – schwerere Vormittage oder ein Tief am späten Abend.</li><li><strong>Wöchentlich.</strong> Der häufigste Fund: Sonntagabende, ein Mittwochstief, ein echter Freitagsauftrieb.</li><li><strong>Monatlich.</strong> Hormonelle Zyklen gehören zu den klarsten Mustern in Stimmungsdaten; gib ihnen zwei oder drei Monate.</li><li><strong>Saisonal.</strong> Langsam und leicht auf alles andere zu schieben, was gerade los war – siehe <a href="/de/mood-journal/seasonal-mood-changes/">saisonale Stimmungsschwankungen</a>.</li></ul><p>Zyklen tauchen in jeder langen Aufzeichnung auf, echt oder nicht – vertrau einem, der sich dreimal wiederholt und einen plausiblen Mechanismus hat.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. Faktoren: ein durchgerechnetes Beispiel</h2>
+        <div class="guide-content">
+            <p>Hier hört der Verlauf auf zu beschreiben und fängt an zu erklären – und sich selbst zu täuschen wird leicht. Zwei Wochen Einträge:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Tag</th><th>Stimmung (1–5)</th><th>Schlaf</th><th>Notiz</th></tr></thead><tbody><tr><td>Mo</td><td>3</td><td>6 Std.</td><td>Hektischer Start</td></tr><tr><td>Di</td><td>2</td><td>5 Std.</td><td>Abend davor spät geworden</td></tr><tr><td>Mi</td><td>2</td><td>5,5 Std.</td><td>Flach, ohne Grund</td></tr><tr><td>Do</td><td>4</td><td>8 Std.</td><td>Ausgeschlafen</td></tr><tr><td>Fr</td><td>4</td><td>7,5 Std.</td><td>Spaziergang, Freunde getroffen</td></tr><tr><td>Sa</td><td>5</td><td>9 Std.</td><td>—</td></tr><tr><td>So</td><td>3</td><td>8 Std.</td><td>Bange vor der Woche</td></tr><tr><td>Mo</td><td>2</td><td>6 Std.</td><td>Deadline</td></tr><tr><td>Di</td><td>2</td><td>5 Std.</td><td>Deadline, kein Spaziergang</td></tr><tr><td>Mi</td><td>3</td><td>7 Std.</td><td>Deadline geschafft</td></tr><tr><td>Do</td><td>4</td><td>8 Std.</td><td>Sport</td></tr><tr><td>Fr</td><td>4</td><td>7 Std.</td><td>—</td></tr><tr><td>Sa</td><td>4</td><td>8,5 Std.</td><td>Ruhiger Tag</td></tr><tr><td>So</td><td>3</td><td>8 Std.</td><td>Wieder das Sonntagsgefühl</td></tr></tbody></table></div><p><strong>Was das stützt:</strong> ein Ausgangsniveau um 3, eine Bandbreite von 2 bis 5, ein wiederkehrendes Sonntagstief und ein starker Zusammenhang zwischen Nächten unter sechs Stunden und einer Stimmung von 2.</p><p><strong>Was es nicht beweist:</strong> dass kurzer Schlaf die gedrückte Stimmung <em>verursacht</em> hat. In beiden Wochen gab es Deadlines, die den Schlaf verkürzen und die Stimmung unabhängig davon abflachen; gedrückte Stimmung stört außerdem den Schlaf, der Pfeil kann also andersherum zeigen. Und das Sonntagstief liegt nicht am Schlaf – der war an beiden Sonntagen gut.</p><p>Damit du einem Zusammenhang trauen kannst: Zähl die Ausnahmen (ein Faktor, der nur die Hälfte der Zeit passt, ist ein Zufall mit guter PR), prüfe die Verzögerung (Schlaf und Alkohol kommen am nächsten Tag an), such nach einem dritten Ding, das beides antreibt – Deadlines, Krankheit, Reisen – und ändere immer nur eine Sache auf einmal.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Papierdiagramm oder App: ein ehrlicher Vergleich</h2>
+        <div class="guide-content">
+            <p>Millimeterpapier funktioniert, und eine Tabelle kann nach Wochentag sortieren. Beides kostet Durchhaltevermögen – niemand sortiert jeden Monat eine Tabelle neu nach Faktoren. Die App-Seite des Handels:</p><ul><li><strong>Diagramme entstehen beim Eintragen</strong>, über jeden Zeitraum – der Trend ist immer aktuell.</li><li><strong>Stimmung nach Faktoren aufgeschlüsselt</strong> – die Vergleiche von oben, ohne Rechnerei.</li><li><strong>Jeder Punkt hängt an seiner Notiz oder seinem Foto</strong> – ein Tief ist einen Tipp von seinem Grund entfernt.</li><li><strong>Apple Health-Sync</strong> – der Schlaf kommt von allein.</li><li><strong>Export als PDF, XLSX, CSV oder JSON</strong> – für Termine oder deine eigene Auswertung.</li><li><strong>KI-Erkenntnisse aus deiner eigenen Historie</strong>, kostenlos mit optionalem Premium – eine zweite Lesart, kein Ratschlag.</li></ul><p>Wer auch immer den Verlauf zeichnet: Die Deutung bleibt deine – das hier ist ein Werkzeug zur Selbstbeobachtung, kein Diagnoseinstrument. Wenn dich etwas beunruhigt, nimm den Verlauf mit zu einer Ärztin, einem Arzt oder in die Therapie – viel konkreter als Erinnerung.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Stimmungstagebuch BPS App-Symbol" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Dein Verlauf, gezeichnet im Vorbeigehen</h2>
+            <p>Das Feeltracker Stimmungstagebuch trägt deine Bewertungen über jeden Zeitraum auf, schlüsselt die Stimmung nach den von dir getaggten Faktoren auf und hält jede Notiz und jedes Foto an seinem Punkt fest. Ein Tipp exportiert das ganze Bild als PDF. Kostenlos, privat, ohne Konto.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/de-white.svg"><img class="store_button" src="/images/appstore/de-black.svg" alt="Stimmungstagebuch im App Store herunterladen" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/de/mood-journal/" class="guide-app-cta-learn">Mehr über die App erfahren <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Häufig gestellte Fragen</h2>
+
+        <div class="guide-faq-item">
+            <h3>Wie viele Wochen Daten brauche ich, bis der Verlauf nützlich ist?</h3>
+            <p><strong>Drei bis vier Wochen</strong> für Wochenrhythmen und starke Einzelfaktoren wie Schlaf; <strong>zwei bis drei Monate</strong> für monatliche Zyklen; <strong>den größten Teil eines Jahres</strong> für die saisonale Form. Ein bis zwei Wochen zeigen dein Ausgangsniveau und wie stark du schwankst – das ist schon etwas wert.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Mein Verlauf sieht völlig zufällig aus. Mache ich etwas falsch?</h3>
+            <p>Wahrscheinlich nicht. Manche Verläufe sind tatsächlich unruhig, und eine flache Streuung sagt trotzdem etwas Echtes: Kein einzelner Faktor dominiert deine Stimmung. Sortiere die Einträge nach Wochentag und prüfe Effekte am Folgetag statt am selben Tag – verzögerte Muster verstecken sich in aller Offenheit. Nach zwei Monaten immer noch zufällig? Auch das ist eine Antwort.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Bedeutet ein Tiefpunkt in meinem Verlauf, dass etwas nicht stimmt?</h3>
+            <p>Nein. Jeder Verlauf hat Tiefpunkte, und ein schlechter Tag ist keine Diagnose. Aufmerksamkeit verdienen Dauer und Richtung: ein Tief, das länger als zwei Wochen den größten Teil des Tages anhält, oder ein Ausgangsniveau, das über Monate nach unten driftet. Darüber lohnt es sich, mit einer Ärztin, einem Arzt oder in der Therapie zu sprechen – nimm den Verlauf mit.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Soll ich meine Stimmungsbewertungen mitteln?</h3>
+            <p>Ein Monatsdurchschnitt ist eine faire Zusammenfassung des Ausgangsniveaus, aber Mitteln wirft die Bandbreite weg – oft die interessantere Hälfte der Geschichte. Schau dir Durchschnitt und Streuung gemeinsam an, wie im <a href="/de/mood-journal/mood-swings/" target="_blank" rel="noopener">Ratgeber zu Stimmungsschwankungen</a> beschrieben.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Kann ich meinen Stimmungsverlauf in der Therapie zeigen?</h3>
+            <p>Ja, und die meisten freuen sich darüber. Ein datierter Verlauf mit Faktor-Tags macht aus einer vagen Zusammenfassung etwas Konkretes, mit dem sich arbeiten lässt. Exportiere ein PDF für eine saubere Fassung oder CSV/XLSX für die zugrunde liegenden Zahlen.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Weiterlesen</h2>
+        <div class="guide-related-grid">
+
+            <a href="/de/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Wie du deine Stimmung trackst</h3>
+                <p>Was du festhalten solltest, wie oft und welche Faktoren sich lohnen.</p>
+            </a>
+
+            <a href="/de/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>Stimmungsschwankungen: Ursachen und Muster</h3>
+                <p>Was eine große Bandbreite oft antreibt und wann du sie ansprechen solltest.</p>
+            </a>
+
+            <a href="/de/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>Saisonale Stimmungsschwankungen</h3>
+                <p>Der langsamste Zyklus in deinem Verlauf und wie du ihn erkennst.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Ein Hinweis zum Wohlbefinden</h2>
+        <p>Dieser Artikel dient ausschließlich der allgemeinen Information und ist keine medizinische Beratung, Diagnose oder Behandlung. Ein Stimmungsverlauf ist ein Werkzeug zur Selbstbeobachtung, kein Diagnoseinstrument – Muster darin sind ein guter Ausgangspunkt für ein Gespräch mit einer Ärztin, einem Arzt oder einer Therapeutin bzw. einem Therapeuten, niemals ein Ersatz dafür. Wenn gedrückte Stimmung länger als zwei Wochen den größten Teil des Tages anhält oder du anhaltende Veränderungen bei Schlaf, Appetit oder deiner Fähigkeit bemerkst, den Alltag zu bewältigen, sprich bitte mit einer medizinischen Fachperson. Wenn du Gedanken hast, dir selbst etwas anzutun, wende dich sofort an den Notruf in deinem Land oder an eine Krisen-Hotline (in Deutschland z. B. die Telefonseelsorge unter 0800 111 0 111) – es gibt jetzt Hilfe.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Sieh dein eigenes Muster</h2>
+        <p>Lade die kostenlose Stimmungstagebuch-App herunter – in Sekunden eintragen und den Verlauf sich selbst zeichnen lassen</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/de-white.svg"><img class="store_button store_button--lg" src="/images/appstore/de-black.svg" alt="Stimmungstagebuch im App Store herunterladen" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Kostenlose App mit optionalen Premium-Funktionen
+iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/de/mood-journal/mood-chart/">Startseite</a>
+            <a href="/de/about/">Über uns</a>
+            <a href="mailto:support@feeltracker.com">E-Mail-Support</a>
+            <a href="/de/support/">Support</a>
+            <a href="/de/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Folgen auf X</a>
+            <a href="/de/privacy/">Datenschutzrichtlinie</a>
+            <a href="/de/terms/">Nutzungsbedingungen</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Alle Rechte vorbehalten.</p>
+        <p class="footer-tagline">Teil der Feeltracker-Familie von Gesundheits-Tracking-Apps</p>
+        <p class="footer-disclaimer">Ihre Gesundheitsdaten bleiben auf Ihrem Gerät und in iCloud — wir greifen niemals darauf zu und verkaufen sie nicht. Feeltracker-Apps sind keine Medizinprodukte. Nur zu Informationszwecken, kein Ersatz für professionelle medizinische Beratung, Diagnose oder Behandlung.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Wir schätzen Ihre Privatsphäre</strong></p>
+                <p>Wir verwenden Cookies für Analysen, um unsere Website und App zu verbessern. Es werden keine Werbe-Cookies verwendet. Siehe unsere <a href="/de/privacy/">Datenschutzerklärung</a> für Details.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Ablehnen</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

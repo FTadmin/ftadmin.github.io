@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Så räknar du ut BMI: formel och räkneexempel | Feeltracker</title>
+    <meta name="description" content="Så räknar du ut BMI för hand med den metriska eller den imperiska formeln, med räkneexempel, vanliga misstag och där BMI-siffran vilseleder.">
+
+    <meta name="keywords" content="räkna ut bmi, bmi-formel, beräkna bmi manuellt, bmi-ekvation, imperisk bmi-formel, metrisk bmi-formel">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:url" content="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+    <meta property="og:title" content="Så räknar du ut BMI: formel och räkneexempel">
+    <meta property="og:description" content="De metriska och imperiska BMI-formlerna, räkneexempel steg för steg och en ärlig genomgång av vad BMI inte kan berätta.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+    <meta property="twitter:title" content="Så räknar du ut BMI: formel och räkneexempel">
+    <meta property="twitter:description" content="Så räknar du ut BMI i metriska eller imperiska enheter, med räkneexempel och ärliga begränsningar.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Vad är BMI-formeln?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Metriskt: vikt i kg ÷ (längd i m)². Imperiskt: (vikt i lb × 703) ÷ (längd i tum)². Båda ger samma resultat — talet 703 räknar helt enkelt om pund och tum till den metriska motsvarigheten."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Varför används 703 i den imperiska BMI-formeln?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Det är enhetsomräkningen inbakad i ekvationen: en meter är 39,37 tum, ett kilogram är 2,2046 pund, och 39,37² ÷ 2,2046 blir ungefär 703."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Räknas BMI olika för män och kvinnor?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nej — formeln och kategorierna för vuxna är identiska, trots att kvinnor har mer essentiellt kroppsfett vid samma BMI. För ett könsspecifikt mått, använd kroppsfettprocent, som har separata intervall."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Hur träffsäkert är BMI för idrottare?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Dåligt. Muskler väger mer än fett vid samma volym, så tränade idrottare hamnar rutinmässigt i kategorierna övervikt eller fetma trots att de är extremt vältränade. För alla som tränar styrka på allvar är midjemått och uppskattningar av kroppsfett betydligt mer informativa."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Måste jag räkna om BMI varje gång jag väger mig?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Inte för hand. Din längd förändras sällan, så BMI rör sig i takt med vikten. Att kolla siffran en gång i månaden räcker gott, och en app räknar om den automatiskt ändå."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/sv/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Vikt",
+                      "item": "https://feeltracker.com/sv/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Så räknar du ut BMI",
+                      "item": "https://feeltracker.com/sv/weight/how-to-calculate-bmi/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Så räknar du ut BMI",
+          "description": "Så räknar du ut BMI för hand med den metriska eller den imperiska formeln, med räkneexempel, vanliga misstag och där BMI-siffran vilseleder.",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/sv/weight/how-to-calculate-bmi/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/sv/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/sv/blood-pressure/">Blodtryck</a>
+
+            <a href="/sv/daily-journal/">Dagbok</a>
+
+            <a href="/sv/mood-journal/">Humörsdagbok</a>
+
+            <a href="/sv/sleep/">Sömn</a>
+
+            <a href="/sv/weight/" class="current">Vikt</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇸🇪</span>
+                <span class="lang-name">Svenska</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/how-to-calculate-bmi/" class="active" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/sv/">Hem</a>
+        <span aria-hidden="true">›</span>
+        <a href="/sv/weight/">Vikt</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Så räknar du ut BMI</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Så räknar du ut BMI</h1>
+
+        <p class="guide-updated">Senast uppdaterad: augusti 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Body mass index är din vikt delad med din längd i kvadrat. En division, en multiplikation — hela anledningen till att siffran har överlevt i nästan tvåhundra år. Du klarar det på en mobilknappsats på tio sekunder.</p><p>Båda formlerna finns nedan, genomräknade med riktiga siffror, plus den del som de flesta kalkylatorer hoppar över: där resultatet vilseleder. När du väl har din siffra talar <a href="/sv/weight/bmi-chart/">BMI-tabellen</a> om vilken kategori den hamnar i.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Den metriska formeln: kilogram och meter</h2>
+        <div class="guide-content">
+            <p><strong>BMI = vikt i kilogram ÷ (längd i meter × längd i meter)</strong></p><p>Den enda fällan är enheten: <em>meter</em>, inte centimeter. 175 cm är 1,75 m — använder du 175 får du ett BMI på 0,0025.</p><h3>Räkneexempel</h3><p>78 kg vid 175 cm:</p><ol><li>Räkna om: 175 cm = <strong>1,75 m</strong></li><li>Kvadrera: 1,75 × 1,75 = <strong>3,0625</strong></li><li>Dividera: 78 ÷ 3,0625 = <strong>25,5</strong></li></ol><p>Det ligger precis inom övervikt, som börjar vid 25,0 — omkring 1,5 kg från det hälsosamma spannet. Betrakta aldrig ett resultat inom en enhet från en gräns som fast: normala <a href="/sv/weight/weight-fluctuation/">dagliga viktvariationer</a> kan flytta dig över gränsen och tillbaka inom en vecka.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Den imperiska formeln: pund och tum</h2>
+        <div class="guide-content">
+            <p><strong>BMI = (vikt i pund × 703) ÷ (längd i tum × längd i tum)</strong></p><p>Talet 703 räknar om pund per kvadrattum till kilogram per kvadratmeter — 39,37 tum per meter, i kvadrat, delat med 2,2046 pund per kilogram — så båda formlerna ger samma svar.</p><h3>Räkneexempel</h3><p>172 lb vid 5 ft 9 in:</p><ol><li>Längd i tum: (5 × 12) + 9 = <strong>69 in</strong></li><li>Kvadrera: 69 × 69 = <strong>4 761</strong></li><li>Vikt × 703: 172 × 703 = <strong>120 916</strong></li><li>Dividera: 120 916 ÷ 4 761 = <strong>25,4</strong></li></ol><p>Samma person som i det metriska exemplet, samma svar. Det klassiska misstaget: att hålla fot och tum åtskilda och bara kvadrera tummen.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Snabbguide: vad ditt resultat betyder</h2>
+        <div class="guide-content">
+            <p>För vuxna från 20 år och uppåt, män som kvinnor:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>BMI</th><th>Kategori</th><th>Exempel vid 175 cm / 5 ft 9 in</th></tr></thead><tbody><tr><td>Under 18,5</td><td>Undervikt</td><td>Under 57 kg / 125 lb</td></tr><tr><td>18,5 – 24,9</td><td>Hälsosam vikt</td><td>57 – 76 kg / 125 – 168 lb</td></tr><tr><td>25,0 – 29,9</td><td>Övervikt</td><td>77 – 91 kg / 169 – 201 lb</td></tr><tr><td>30,0 – 34,9</td><td>Fetma klass 1</td><td>92 – 107 kg / 202 – 236 lb</td></tr><tr><td>35,0 – 39,9</td><td>Fetma klass 2</td><td>107 – 122 kg / 237 – 269 lb</td></tr><tr><td>40,0 och högre</td><td>Fetma klass 3</td><td>123 kg / 270 lb och högre</td></tr></tbody></table></div><p>Om du har sydasiatiskt, kinesiskt eller annat asiatiskt ursprung tillämpar flera hälsomyndigheter lägre gränsvärden — övervikt från cirka 23, fetma från cirka 27,5 — eftersom den metabola risken stiger tidigare. Hela bilden, inklusive en tabell längd för längd, finns i <a href="/sv/weight/bmi-chart/">guiden om BMI-tabellen</a>.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Där siffran blir fel</h2>
+        <div class="guide-content">
+            <p>Räknandet är enkelt, så felaktiga BMI-värden kommer från indata.</p><ul><li><strong>Gissad längd.</strong> De flesta vuxna är en eller två centimeter kortare än vad körkortet säger, och längden krymper med åldern. Vid 175 cm flyttar 1 cm BMI med cirka 0,3 — nog för att korsa en gräns. Mät barfota mot en vägg, en gång, och återanvänd siffran.</li><li><strong>Ojämna vägningar.</strong> Du kan väga 1 till 2 kg mer på kvällen. Väg dig efter uppvaknandet, före frukost.</li><li><strong>Blandade enheter, kvadrerad vikt, för mycket avrundning.</strong> Kilogram med tum ger nonsens, och att avrunda längden till närmaste 5 cm kan flytta resultatet en hel enhet. När två kalkylatorer inte är överens beror det nästan alltid på något av detta.</li></ul><p>Sedan finns det som formeln inte kan se. Muskler är tätare än fett, så en vältränad roddare kan hamna på ett BMI på 28 till 30 med ensiffrig kroppsfettprocent — tränar du styrka på allvar är BMI nästan meningslöst, använd <a href="/sv/weight/body-fat-percentage/">kroppsfettprocent</a> i stället. Det omvända gäller också: en stillasittande person med BMI 23 kan bära på tillräckligt med bukfett för att höja den metabola risken. Risken börjar vid olika BMI i olika befolkningar, samma BMI vid 60 rymmer mer fett än vid 30, kvinnor har mer essentiellt fett än män, BMI gäller inte under graviditet, och för barn används percentilkurvor. Den billigaste lösningen är ett måttband: <a href="/sv/weight/waist-to-height-ratio/">midja-längd-kvoten</a> tar trettio sekunder och ser den fettfördelning som BMI inte kan se.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Räkna för hand eller låta en app göra det</h2>
+        <div class="guide-content">
+            <p>Att räkna ut BMI en gång är enkelt. Att räkna ut det för varje vägning under ett år och sedan se vad trenden gjorde — det är där handräkningen tyst faller isär.</p><p>Den kostnadsfria appen Feeltracker Vikt &amp; Mat tar bort steget: ange din längd en gång så räknas BMI ut för varje registrering och ritas upp med trendlinjer bredvid din vikt och ett mål du sätter. Den registrerar även kroppsfettprocent, synkar med Apple Health och mellan dina enheter via iCloud utan konto eller e-post, och exporterar till PDF, XLSX, CSV eller JSON inför läkarbesök. Valfria AI-insikter sammanfattar din historik.</p><p>Vilken väg du än väljer är formeln ovan hela saken. Värdet ligger i att kontrollera då och då, inte i tre decimaler.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="Appikon för Vikt & Mat" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Slipp räknandet</h2>
+            <p>Feeltracker Vikt & Mat räknar ut ditt BMI från varje vägning, i kilogram eller pund, och ritar upp det bredvid din vikt så att du ser trenden, inte en enstaka siffra. Kostnadsfri, privat och utan konto.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sv-white.svg"><img class="store_button" src="/images/appstore/sv-black.svg" alt="Ladda ner Vikt & Mat på App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/sv/weight/" class="guide-app-cta-learn">Läs mer om appen <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Vanliga frågor</h2>
+
+        <div class="guide-faq-item">
+            <h3>Vad är BMI-formeln?</h3>
+            <p>Metriskt: <strong>vikt i kg ÷ (längd i m)²</strong>. Imperiskt: <strong>(vikt i lb × 703) ÷ (längd i tum)²</strong>. Båda ger samma resultat — talet 703 räknar helt enkelt om pund och tum till den metriska motsvarigheten.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Varför används 703 i den imperiska BMI-formeln?</h3>
+            <p>Det är enhetsomräkningen inbakad i ekvationen: en meter är 39,37 tum, ett kilogram är 2,2046 pund, och 39,37² ÷ 2,2046 blir ungefär 703.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Räknas BMI olika för män och kvinnor?</h3>
+            <p>Nej — formeln och kategorierna för vuxna är identiska, trots att kvinnor har mer essentiellt kroppsfett vid samma BMI. För ett könsspecifikt mått, använd <a href="/sv/weight/body-fat-percentage/" target="_blank" rel="noopener">kroppsfettprocent</a>, som har separata intervall.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Hur träffsäkert är BMI för idrottare?</h3>
+            <p>Dåligt. Muskler väger mer än fett vid samma volym, så tränade idrottare hamnar rutinmässigt i kategorierna övervikt eller fetma trots att de är extremt vältränade. För alla som tränar styrka på allvar är midjemått och uppskattningar av kroppsfett betydligt mer informativa.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Måste jag räkna om BMI varje gång jag väger mig?</h3>
+            <p>Inte för hand. Din längd förändras sällan, så BMI rör sig i takt med vikten. Att kolla siffran en gång i månaden räcker gott, och en app räknar om den automatiskt ändå.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Fortsätt läsa</h2>
+        <div class="guide-related-grid">
+
+            <a href="/sv/weight/bmi-chart/" class="guide-related-card">
+                <h3>BMI-tabell för vuxna</h3>
+                <p>Alla kategorier plus en uppslagstabell för längd och vikt.</p>
+            </a>
+
+            <a href="/sv/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>Hälsosam vikt för din längd</h3>
+                <p>Målintervallet för din längd i kg och pund.</p>
+            </a>
+
+            <a href="/sv/weight/body-fat-percentage/" class="guide-related-card">
+                <h3>Kroppsfettprocent förklarad</h3>
+                <p>Det BMI missar, och hur du mäter det i stället.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Hälsofriskrivning</h2>
+        <p>Den här artikeln är endast avsedd som allmän information och utgör inte medicinsk rådgivning, diagnos eller behandling. BMI är en screeningsiffra som inte kan bedöma en enskild persons hälsa på egen hand — diskutera alltid din vikt, och alla planer på att förändra den, med din läkare eller vårdgivare. Sök medicinsk rådgivning omgående om du går ner eller upp i vikt utan att försöka, eller om viktförändringen kommer med symtom som ihållande trötthet, andfåddhet eller aptitlöshet.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Låt ditt BMI räkna ut sig självt</h2>
+        <p>Ladda ner den kostnadsfria appen Vikt & Mat — ange din längd en gång så sköter varje vägning resten</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sv-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sv-black.svg" alt="Ladda ner Vikt & Mat på App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Kostnadsfri app med valfria premiumfunktioner
+iPhone, iPad och Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/sv/weight/how-to-calculate-bmi/">Hem</a>
+            <a href="/sv/about/">Om oss</a>
+            <a href="mailto:support@feeltracker.com">E-postsupport</a>
+            <a href="/sv/support/">Support</a>
+            <a href="/sv/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Följ på X</a>
+            <a href="/sv/privacy/">Integritetspolicy</a>
+            <a href="/sv/terms/">Villkor</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Alla rättigheter förbehållna.</p>
+        <p class="footer-tagline">En del av Feeltracker-familjen av hälsoövervakningsappar</p>
+        <p class="footer-disclaimer">Dina hälsodata lagras på din enhet och i iCloud — vi får aldrig åtkomst till eller säljer dina data. Feeltracker-appar är inte medicintekniska produkter. Endast i informationssyfte, ersätter inte professionell medicinsk rådgivning, diagnos eller behandling.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Vi värnar om din integritet</strong></p>
+                <p>Vi använder cookies för analys för att förbättra vår webbplats och app. Inga reklamcookies används. Se vår <a href="/sv/privacy/">Integritetspolicy</a> för mer information.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Avvisa</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Acceptera</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

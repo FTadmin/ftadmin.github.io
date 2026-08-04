@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Отслеживание тревожности: что записывать и что это показывает | Feeltracker</title>
+    <meta name="description" content="Практическое руководство по дневнику тревожности: телесные и мыслительные симптомы, что именно записывать, чтобы найти триггеры, и как записи делают терапию полезнее.">
+
+    <meta name="keywords" content="отслеживание тревожности, дневник тревоги, триггеры тревожности, симптомы тревоги, трекер тревожности, как справиться с тревогой">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ru/mood-journal/anxiety-tracking/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/anxiety-tracking/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://feeltracker.com/ru/mood-journal/anxiety-tracking/">
+    <meta property="og:title" content="Отслеживание тревожности: что записывать и что это показывает">
+    <meta property="og:description" content="Телесные и мыслительные симптомы тревоги, несколько полей, которые стоит записывать, чтобы найти триггеры, и как превратить месяц записей в полезный разговор.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ru/mood-journal/anxiety-tracking/">
+    <meta property="twitter:title" content="Отслеживание тревожности: что записывать и что это показывает">
+    <meta property="twitter:description" content="Что записывать, отслеживая тревожность: поля, которые находят триггеры, и как записи помогают разговору с психотерапевтом.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Как часто записывать уровень тревожности?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Дважды в день в фиксированное время плюс один раз при резком всплеске. Постоянные отметки сохраняют честность записей: если записывать только пики, каждая запись окажется плохой, и месяц будет выглядеть куда хуже, чем он был. Если само ведение записей начинает ощущаться навязчивым, перейдите на один раз в день."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Через сколько времени станет заметна закономерность?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Обычно через две-четыре недели. Быстрее всего проявляются закономерности по времени суток — часто уже за пару недель. Связи с факторами требуют больше времени: нужно достаточно дней с фактором и без него, чтобы их сравнить, поэтому о триггере, который случается дважды в месяц, что-то можно будет сказать лишь через пару месяцев."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Не усилит ли ведение записей мою тревожность?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "У большинства людей нет: записанное обычно становится меньше и конкретнее. Но у некоторых частые самооценки превращаются в очередную форму перепроверок, которыми тревога и питается: записи всё чаще, страх перед самой записью, разглядывание графиков ради успокоения. Если так происходит, снизьте частоту или сделайте паузу и скажите об этом психотерапевту."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Чем тревога отличается от панической атаки?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Тревога — более длительное состояние меньшей интенсивности; паническая атака — внезапная волна сильного страха с выраженными телесными симптомами (колотящееся сердце, нехватка воздуха, головокружение, чувство нереальности), которая обычно достигает пика примерно за десять минут. Записывая длительность и пиковую интенсивность, вы помогаете специалисту их различить. Стандартный первый ответ на такую волну — техники заземления."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Стоит ли показывать записи врачу?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Да, если вам это комфортно: это одна из самых полезных вещей, которые можно принести. График за последние три месяца, повторяющиеся триггеры и то, что вы уже пробовали, превращают короткий приём в предметный разговор. Только никогда не корректируйте назначенные препараты на основании собственных данных: принесите записи и решайте вместе."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ru/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Дневник настроения",
+                      "item": "https://feeltracker.com/ru/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Отслеживание тревожности",
+                      "item": "https://feeltracker.com/ru/mood-journal/anxiety-tracking/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Отслеживание тревожности",
+          "description": "Практическое руководство по дневнику тревожности: телесные и мыслительные симптомы, что именно записывать, чтобы найти триггеры, и как записи делают терапию полезнее.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ru/mood-journal/anxiety-tracking/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ru/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ru/blood-pressure/">Артериальное давление</a>
+
+            <a href="/ru/daily-journal/">Ежедневник</a>
+
+            <a href="/ru/mood-journal/" class="current">Дневник настроения</a>
+
+            <a href="/ru/sleep/">Сон</a>
+
+            <a href="/ru/weight/">Вес</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇷🇺</span>
+                <span class="lang-name">Русский</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/anxiety-tracking/" class="active" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ru/">Главная</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ru/mood-journal/">Дневник настроения</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Отслеживание тревожности</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Отслеживание тревожности</h1>
+
+        <p class="guide-updated">Обновлено: август 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Тревога умеет убеждать. Посреди накрутки кажется, что вся неделя была такой же тяжёлой и всегда такой останется; а потом почему-то трудно вспомнить, с чего всё началось. И то и другое — фокусы памяти, и именно это исправляют письменные записи.</p><p>Отслеживать — не значит следить за собой ещё пристальнее: тревожные люди и так делают этого более чем достаточно. Речь о нескольких честных отметках в день, чтобы закономерности стали видны со стороны: четверговые вечера, которые стабильно тяжелее, или медленное улучшение, о котором одни ощущения никогда не сообщат. Ниже — что записывать и как месяц записей превращается в разговор, готовый для специалиста.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Тело и мысли: две половины одного и того же</h2>
+        <div class="guide-content">
+            <p>Тревога проявляется в теле и в голове одновременно, но люди по-разному замечают эти половины. Отслеживайте обе: телесные признаки часто появляются за час до того, как подтянутся мысли, — и как раз в этот час можно применить навык.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Телесные</th><th>Мыслительные и поведенческие</th></tr></thead><tbody><tr><td>Учащённое или колотящееся сердцебиение</td><td>Скачущие мысли, петля, из которой не выйти</td></tr><tr><td>Сжатие в груди, поверхностное или частое дыхание</td><td>Катастрофизация — мгновенный прыжок к худшему исходу</td></tr><tr><td>Проблемы с желудком, тошнота, изменения аппетита</td><td>Трудно сосредоточиться; одна и та же строка читается дважды</td></tr><tr><td>Мышечное напряжение: челюсть, плечи, шея</td><td>Неожиданно короткий запал: срываетесь быстрее обычного</td></tr><tr><td>Беспокойство, суетливость, хождение из угла в угол</td><td>Избегание звонка, письма, места, человека</td></tr><tr><td>Потливость, дрожь, головокружение, приливы жара или холода</td><td>Поиск успокоения у других, перепроверки, избыточная подготовка</td></tr><tr><td>Трудности с засыпанием; пробуждения в три часа ночи</td><td>Дурное предчувствие без конкретного предмета</td></tr></tbody></table></div><p>Телесные симптомы тревоги — это настоящие физические события, реальная реакция тревоги организма, а не воображение. Некоторые из них пересекаются с проблемами щитовидной железы, нарушениями ритма сердца, анемией и побочными эффектами лекарств: если ваши симптомы новые, преимущественно телесные или не совпадают ни с чем психологическим, сначала обратитесь к врачу. Это не нагнетание, а исключение обычных причин.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Что записывать</h2>
+        <div class="guide-content">
+            <p>Забудьте про сложную таблицу: дневник, который вы заполните в плохой день, лучше идеального, брошенного на второй неделе. Пять полей:</p><ul><li><strong>Уровень</strong> — каждый раз одна и та же простая шкала; важно движение, а не точность измерения.</li><li><strong>Когда</strong> — время суток входит в число самых сильных находок: утренний всплеск, предсонная петля.</li><li><strong>Факторы</strong> — сон, кофеин, алкоголь, нагрузка, конфликт, гормоны. Используйте одни и те же метки.</li><li><strong>Что происходило</strong> — одна строка. «Перед созвоном с командой» полезнее абзаца о чувствах, написанного три недели спустя.</li><li><strong>Что вы сделали и помогло ли это</strong> — поле, которое все пропускают, и именно оно окупается больше всего.</li></ul><p>Записывайте в две фиксированные точки в день плюс один раз, когда что-то резко подскакивает: фиксированные точки фиксируют и спокойные часы, а записи только на пиках превращаются в нарезку худших моментов. Если ведение записей начинает походить на тревожную ревизию, перейдите на один раз в день и скажите об этом тому, с кем вы работаете, — та же осторожность касается любой привычки <a href="/ru/mood-journal/how-to-track-your-mood/">ежедневно отслеживать настроение</a>.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Как найти триггеры в собственных данных</h2>
+        <div class="guide-content">
+            <p>Триггер редко оказывается очевидной вещью. Люди ждут работу или конкретного человека, а находят что-то структурное: две ночи меньше шести часов, вторая чашка кофе после двух дня, день <em>после</em> общественного мероприятия. Три способа прочтения:</p><ol><li><strong>Сгруппируйте по фактору.</strong> Сравните среднюю тревожность в дни «плохо спал» со всеми остальными. Разрыв — это рычаг; отсутствие разницы исключает фактор, что не менее полезно.</li><li><strong>Посмотрите на время суток.</strong> Скопления в семь утра или в одиннадцать вечера подсказывают практическое решение: ритуал завершения дня, перенесённая задача.</li><li><strong>Ищите задержку.</strong> Классика — алкоголь: приятная пятница и тревожное субботнее утро. Сравнивайте сегодняшнюю оценку со вчерашними метками.</li></ol><p>Вы строите гипотезу, а не доказательство: измените что-то одно на две недели и наблюдайте за оценками. И держите наготове пару <a href="/ru/mood-journal/grounding-techniques/">техник заземления</a> для всплеска, который всё равно случится.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Как принести записи психотерапевту или врачу</h2>
+        <div class="guide-content">
+            <p>На вопрос «как у вас с тревогой?» большинство отвечает исходя из последних сорока восьми часов, и одно тяжёлое утро способно переопределить весь месяц. Специалисты в один голос говорят: приём проходит продуктивнее с тем, кто пришёл с записями. Возьмите с собой график, повторяющиеся сочетания факторов, частоту и время самых тяжёлых эпизодов (это помогает отличить генерализованную тревогу от панических атак) и то, что вы уже пробовали, — чтобы вам не предложили заново то, что вы отмели ещё в марте.</p><p>Особенно это важно при изменении лечения: оценки до и после новой терапии или скорректированного лекарства говорят больше, чем «кажется, стало немного получше?», и раньше выявляют ухудшение. Никогда не меняйте и не отменяйте назначенный препарат на основании собственных наблюдений — принесите записи и решайте вместе с врачом.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Бумага или приложение: честное сравнение</h2>
+        <div class="guide-content">
+            <p>Блокнот — вполне хороший дневник тревожности: письмо от руки успокаивает так, как не успокаивают касания экрана, и в три часа ночи рядом нет никакого устройства. Если вам так удобно — ведите блокнот.</p><p>Бумага проседает на анализе, а он и есть весь смысл. Никто не подсчитывает вручную шесть недель записей. Эту часть берёт на себя приложение: запись за пять секунд — достаточно быстро, чтобы сделать её прямо во время всплеска; графики с разбивкой тревожности по факторам; напоминания, благодаря которым записываются и спокойные дни; заметки и фотографии для того, что не помещается в одну строку; и экспорт в PDF, XLSX, CSV или JSON к приёму. Конфиденциальность по умолчанию: синхронизация через iCloud без аккаунта и электронной почты, при желании синхронизация с Apple Health, а ИИ-аналитика остаётся описательной и никогда не диагностической.</p><p>Feeltracker Дневник настроения — инструмент самонаблюдения, а не терапия и не диагностический метод: он не скажет вам, есть ли у вас тревожное расстройство. Он лишь следит за тем, чтобы вы и тот, кто может помочь, смотрели на настоящий месяц.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Значок приложения Дневник настроения" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Поймайте закономерность, а не только панику</h2>
+            <p>Feeltracker Дневник настроения записывает тревожный момент примерно за пять секунд — простая шкала, окружающие факторы, заметки и фотографии — и строит график, на котором становятся видны триггеры и тренды. Экспортируйте PDF к следующему приёму. Бесплатно, конфиденциально, без регистрации.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ru-white.svg"><img class="store_button" src="/images/appstore/ru-black.svg" alt="Скачать Дневник настроения в App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ru/mood-journal/" class="guide-app-cta-learn">Подробнее о приложении <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Часто задаваемые вопросы</h2>
+
+        <div class="guide-faq-item">
+            <h3>Как часто записывать уровень тревожности?</h3>
+            <p>Дважды в день в фиксированное время плюс один раз при резком всплеске. Постоянные отметки сохраняют честность записей: если записывать только пики, каждая запись окажется плохой, и месяц будет выглядеть куда хуже, чем он был. Если само ведение записей начинает ощущаться навязчивым, перейдите на один раз в день.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Через сколько времени станет заметна закономерность?</h3>
+            <p>Обычно через две-четыре недели. Быстрее всего проявляются закономерности по времени суток — часто уже за пару недель. Связи с факторами требуют больше времени: нужно достаточно дней с фактором и без него, чтобы их сравнить, поэтому о триггере, который случается дважды в месяц, что-то можно будет сказать лишь через пару месяцев.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Не усилит ли ведение записей мою тревожность?</h3>
+            <p>У большинства людей нет: записанное обычно становится меньше и конкретнее. Но у некоторых частые самооценки превращаются в очередную форму <strong>перепроверок</strong>, которыми тревога и питается: записи всё чаще, страх перед самой записью, разглядывание графиков ради успокоения. Если так происходит, снизьте частоту или сделайте паузу и скажите об этом психотерапевту.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Чем тревога отличается от панической атаки?</h3>
+            <p>Тревога — более длительное состояние меньшей интенсивности; паническая атака — внезапная волна сильного страха с выраженными телесными симптомами (колотящееся сердце, нехватка воздуха, головокружение, чувство нереальности), которая обычно достигает пика примерно за десять минут. Записывая длительность и пиковую интенсивность, вы помогаете специалисту их различить. Стандартный первый ответ на такую волну — <a href="/ru/mood-journal/grounding-techniques/" target="_blank" rel="noopener">техники заземления</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Стоит ли показывать записи врачу?</h3>
+            <p>Да, если вам это комфортно: это одна из самых полезных вещей, которые можно принести. График за последние три месяца, повторяющиеся триггеры и то, что вы уже пробовали, превращают короткий приём в предметный разговор. Только никогда не корректируйте назначенные препараты на основании собственных данных: принесите записи и решайте вместе.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Читайте также</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ru/mood-journal/grounding-techniques/" class="guide-related-card">
+                <h3>Техники заземления</h3>
+                <p>Что делать в момент, когда тревога резко подскакивает.</p>
+            </a>
+
+            <a href="/ru/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Как отслеживать настроение</h3>
+                <p>Пятисекундная ежедневная привычка, которая делает видимой любую закономерность.</p>
+            </a>
+
+            <a href="/ru/mood-journal/mood-chart/" class="guide-related-card">
+                <h3>Как читать график настроения</h3>
+                <p>Как превратить недели записей в то, с чем можно что-то сделать.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Несколько слов о помощи</h2>
+        <p>Эта статья носит исключительно информационный характер и не является медицинской консультацией, диагнозом или назначением лечения. Самонаблюдение дополняет помощь специалиста, а не заменяет её, и оно не может сказать вам, есть ли у вас тревожное расстройство. Обратитесь к врачу, если тревога мешает вашей повседневной жизни, если симптомы преимущественно телесные или появились недавно — боль в груди, нехватка воздуха, сердцебиение и головокружение требуют медицинской проверки, — а также прежде чем что-либо менять в назначенном лечении. Если у вас есть мысли о причинении себе вреда или о суициде, немедленно свяжитесь со службой экстренной помощи в вашем регионе или с телефоном доверия в вашей стране.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Начните вести записи сегодня</h2>
+        <p>Скачайте бесплатное приложение «Дневник настроения» — записывайте тревожный момент за секунды и наблюдайте, как проявляется закономерность</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ru-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ru-black.svg" alt="Скачать Дневник настроения в App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Бесплатное приложение с дополнительными премиум-функциями
+iPhone, iPad и Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ru/mood-journal/anxiety-tracking/">Главная</a>
+            <a href="/ru/about/">О нас</a>
+            <a href="mailto:support@feeltracker.com">Поддержка по эл. почте</a>
+            <a href="/ru/support/">Поддержка</a>
+            <a href="/ru/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Подписаться в X</a>
+            <a href="/ru/privacy/">Политика конфиденциальности</a>
+            <a href="/ru/terms/">Условия использования</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Все права защищены.</p>
+        <p class="footer-tagline">Часть семейства приложений Feeltracker для отслеживания здоровья</p>
+        <p class="footer-disclaimer">Ваши данные о здоровье хранятся на вашем устройстве и в iCloud — мы никогда не получаем к ним доступ и не продаём их. Приложения Feeltracker не являются медицинскими устройствами. Только для информационных целей, не заменяют профессиональную медицинскую консультацию, диагностику или лечение.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Мы ценим вашу конфиденциальность</strong></p>
+                <p>Мы используем файлы cookie для аналитики, чтобы улучшить наш сайт и приложение. Рекламные cookie не используются. Ознакомьтесь с нашей <a href="/ru/privacy/">Политикой конфиденциальности</a> для подробностей.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Отклонить</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Принять</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

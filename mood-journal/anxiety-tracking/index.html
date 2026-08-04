@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Tracking Anxiety: What to Log and What It Reveals | Feeltracker</title>
+    <meta name="description" content="A practical guide to tracking anxiety: physical vs cognitive symptoms, exactly what to log to find your triggers, and how a record makes therapy more useful.">
+
+    <meta name="keywords" content="tracking anxiety, anxiety journal, anxiety triggers, anxiety symptoms, anxiety log, anxiety tracker app">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/mood-journal/anxiety-tracking/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/anxiety-tracking/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/anxiety-tracking/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://feeltracker.com/mood-journal/anxiety-tracking/">
+    <meta property="og:title" content="Tracking Anxiety: What to Log and What It Reveals">
+    <meta property="og:description" content="Physical and cognitive anxiety symptoms, the handful of fields worth logging to find your triggers, and how to turn a month of entries into a useful conversation.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/mood-journal/anxiety-tracking/">
+    <meta property="twitter:title" content="Tracking Anxiety: What to Log and What It Reveals">
+    <meta property="twitter:description" content="What to log when tracking anxiety — the fields that find triggers, and how a record helps a therapy conversation.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "How often should I log my anxiety?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Twice a day at fixed times, plus once when something spikes. Fixed check-ins keep the record honest — spike-only logging makes every entry a bad one, and the record looks far worse than your month was. If logging itself starts feeling compulsive, drop to once a day."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "How long before I see a pattern?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Usually two to four weeks. Time-of-day patterns show up fastest, often within a fortnight. Factor patterns need longer — you need enough days with and without the factor to compare, so a trigger that occurs twice a month takes a couple of months to say anything about."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Will tracking make my anxiety worse?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "For most people, no — writing something down tends to make it smaller and more concrete. For some, frequent self-rating becomes another form of checking, which anxiety feeds on: logging more and more often, dreading the entry, reviewing charts for reassurance. If that's happening, reduce frequency or pause, and tell your therapist."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "What's the difference between anxiety and a panic attack?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Anxiety is a longer, lower-grade state; a panic attack is a sudden surge of intense fear with strong physical symptoms — pounding heart, breathlessness, dizziness, a sense of unreality — usually peaking within about ten minutes. Logging duration and peak intensity helps a clinician tell them apart. Grounding techniques are the standard first response to a surge."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Should I show my tracking to my doctor?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, if you're comfortable — it's one of the most useful things you can bring. A chart of the last three months, your repeat triggers, and what you've tried turns a short appointment into a specific conversation. Just never adjust prescribed medication on the strength of your own data; bring it and decide together."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Mood Journal",
+                      "item": "https://feeltracker.com/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Tracking Anxiety",
+                      "item": "https://feeltracker.com/mood-journal/anxiety-tracking/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Tracking Anxiety",
+          "description": "A practical guide to tracking anxiety: physical vs cognitive symptoms, exactly what to log to find your triggers, and how a record makes therapy more useful.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/mood-journal/anxiety-tracking/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/blood-pressure/">Blood Pressure</a>
+
+            <a href="/daily-journal/">Daily Journal</a>
+
+            <a href="/mood-journal/" class="current">Mood Journal</a>
+
+            <a href="/sleep/">Sleep</a>
+
+            <a href="/weight/">Weight</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇺🇸</span>
+                <span class="lang-name">English</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/anxiety-tracking/" class="active" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/anxiety-tracking/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <a href="/mood-journal/">Mood Journal</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Tracking Anxiety</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Tracking Anxiety</h1>
+
+        <p class="guide-updated">Last updated: August 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Anxiety is convincing. Mid-spiral, the whole week has been this bad and always will be; afterwards, it's oddly hard to remember what set it off. Both are memory playing tricks — and both are what a written record fixes.</p><p>Tracking isn't monitoring yourself more closely; most anxious people already do plenty of that. It's a few honest data points a day, so patterns become visible from outside: the Thursday evenings that are reliably worse, the slow improvement feeling alone would never report. Below: what to log, and how a month of entries becomes a clinician-ready conversation.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Physical and cognitive: two halves of the same thing</h2>
+        <div class="guide-content">
+            <p>Anxiety shows up in the body and the mind at once; people vary in which half they notice. Track both: the physical signs often appear an hour before the thoughts catch up, and that hour is where a skill can go.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Physical</th><th>Cognitive and behavioral</th></tr></thead><tbody><tr><td>Racing or pounding heart</td><td>Racing thoughts, a loop you can't step out of</td></tr><tr><td>Tight chest, shallow or fast breathing</td><td>Catastrophizing — jumping to the worst outcome</td></tr><tr><td>Stomach trouble, nausea, appetite changes</td><td>Difficulty concentrating; reading the same line twice</td></tr><tr><td>Muscle tension: jaw, shoulders, neck</td><td>A short fuse that surprises you</td></tr><tr><td>Restlessness, fidgeting, pacing</td><td>Avoiding a call, an email, a place, a person</td></tr><tr><td>Sweating, trembling, dizziness, hot or cold flushes</td><td>Reassurance-seeking, checking, over-preparing</td></tr><tr><td>Trouble falling asleep; waking at 3am</td><td>Dread with no identifiable subject</td></tr></tbody></table></div><p>Physical anxiety symptoms are real physical events — a genuine alarm response, not imagination. Several also overlap with thyroid problems, heart rhythm disturbances, anemia and medication side effects: if yours are new, mostly physical, or don't track with anything psychological, see a doctor first. Not alarmism — ruling out the ordinary.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>What to log</h2>
+        <div class="guide-content">
+            <p>Skip the elaborate spreadsheet — the tracker you complete on a bad day beats the perfect one you abandon in week two. Five fields:</p><ul><li><strong>Level</strong> — the same simple scale every time; movement, not measurement.</li><li><strong>When</strong> — time of day is among the strongest findings: the morning spike, the pre-sleep loop.</li><li><strong>Factors</strong> — sleep, caffeine, alcohol, workload, conflict, hormones. Reuse the same tags.</li><li><strong>What was happening</strong> — one line. "Before the team call" beats a paragraph of feelings three weeks later.</li><li><strong>What you did, and whether it helped</strong> — the field everyone skips, and the one that pays off most.</li></ul><p>Log at two fixed points daily, plus once when something spikes — fixed points capture the calm hours; spike-only logging is a highlight reel of your worst moments. If logging starts to feel like an anxious audit, cut to once a day and tell whoever you're working with — the same care applies to any <a href="/mood-journal/how-to-track-your-mood/">daily mood tracking</a> habit.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Finding triggers in your own data</h2>
+        <div class="guide-content">
+            <p>A trigger is rarely the obvious thing. People expect work or a specific person and find something structural: two nights under six hours, the second coffee after 2pm, the day <em>after</em> a social event. Three reads:</p><ol><li><strong>Group by factor.</strong> Compare average anxiety on "poor sleep" days against the rest. A gap is a lever; flat rules the factor out — just as useful.</li><li><strong>Look at time of day.</strong> Clusters at 7am or 11pm point to a practical fix — a wind-down routine, a moved task.</li><li><strong>Look for lag.</strong> Alcohol is the classic — pleasant Friday, anxious Saturday morning — so check today's rating against yesterday's tags.</li></ol><p>You're building a hypothesis, not a proof — change one thing for two weeks and watch the ratings. And keep a couple of <a href="/mood-journal/grounding-techniques/">grounding techniques</a> ready for the spike that arrives anyway.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Bringing a record to a therapist or doctor</h2>
+        <div class="guide-content">
+            <p>Asked "how has your anxiety been?", most people answer from the last forty-eight hours, and a bad morning can redefine the month. Clinicians consistently say the patient who arrives with a record has the more productive session. Bring the chart, your repeat factor pairings, the frequency and timing of the worst episodes (they help distinguish generalized anxiety from panic), and what you've tried — so nobody re-suggests what you ruled out in March.</p><p>It matters most around a treatment change: ratings from before and after a new therapy or adjusted medication beat "I think maybe it's a bit better?", and they surface a worsening early. Never change or stop a prescribed medication based on your own tracking — bring the record and decide together.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Paper vs app: an honest comparison</h2>
+        <div class="guide-content">
+            <p>A notebook is a perfectly good anxiety tracker — longhand calms in a way tapping doesn't, and there's no device at 3am. If it suits you, use it.</p><p>Paper falls down on the analysis — the whole point. Nobody hand-tallies six weeks of entries. The app does that part: a five-second entry — fast enough to log during the spike — charts break anxiety down by factor, reminders keep calm days recorded, notes and photos hold what one line can't, and PDF, XLSX, CSV or JSON export for the appointment. Private by design: iCloud sync with no account or email, optional Apple Health sync, and AI insights that stay descriptive, never diagnostic.</p><p>Feeltracker Mood &amp; BPD is a self-tracking tool, not therapy and not a diagnostic instrument — it won't tell you whether you have an anxiety disorder. It makes sure you and someone who can help are looking at the real month.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Mood & BPD app icon" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Catch the pattern, not just the panic</h2>
+            <p>Feeltracker Mood & BPD logs an anxious moment in about five seconds — a simple scale, the factors around it, notes and photos — then charts it so triggers and trends become visible. Export a PDF for your next appointment. Free, private, no account needed.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button" src="/images/appstore/en-black.svg" alt="Download Mood & BPD on App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/mood-journal/" class="guide-app-cta-learn">Learn more about the app <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="guide-faq-item">
+            <h3>How often should I log my anxiety?</h3>
+            <p>Twice a day at fixed times, plus once when something spikes. Fixed check-ins keep the record honest — spike-only logging makes every entry a bad one, and the record looks far worse than your month was. If logging itself starts feeling compulsive, drop to once a day.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>How long before I see a pattern?</h3>
+            <p>Usually two to four weeks. Time-of-day patterns show up fastest, often within a fortnight. Factor patterns need longer — you need enough days with and without the factor to compare, so a trigger that occurs twice a month takes a couple of months to say anything about.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Will tracking make my anxiety worse?</h3>
+            <p>For most people, no — writing something down tends to make it smaller and more concrete. For some, frequent self-rating becomes another form of <strong>checking</strong>, which anxiety feeds on: logging more and more often, dreading the entry, reviewing charts for reassurance. If that's happening, reduce frequency or pause, and tell your therapist.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>What's the difference between anxiety and a panic attack?</h3>
+            <p>Anxiety is a longer, lower-grade state; a panic attack is a sudden surge of intense fear with strong physical symptoms — pounding heart, breathlessness, dizziness, a sense of unreality — usually peaking within about ten minutes. Logging duration and peak intensity helps a clinician tell them apart. <a href="/mood-journal/grounding-techniques/" target="_blank" rel="noopener">Grounding techniques</a> are the standard first response to a surge.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Should I show my tracking to my doctor?</h3>
+            <p>Yes, if you're comfortable — it's one of the most useful things you can bring. A chart of the last three months, your repeat triggers, and what you've tried turns a short appointment into a specific conversation. Just never adjust prescribed medication on the strength of your own data; bring it and decide together.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Keep reading</h2>
+        <div class="guide-related-grid">
+
+            <a href="/mood-journal/grounding-techniques/" class="guide-related-card">
+                <h3>Grounding Techniques</h3>
+                <p>What to do in the moment when anxiety spikes.</p>
+            </a>
+
+            <a href="/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>How to Track Your Mood</h3>
+                <p>The five-second daily habit that makes any pattern visible.</p>
+            </a>
+
+            <a href="/mood-journal/mood-chart/" class="guide-related-card">
+                <h3>Reading Your Mood Chart</h3>
+                <p>How to turn weeks of entries into something you can act on.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>A note on care</h2>
+        <p>This article is for general information only and is not medical advice, diagnosis, or treatment. Self-tracking supports professional care rather than replacing it, and it cannot tell you whether you have an anxiety disorder. See a doctor if anxiety is interfering with your daily life, if symptoms are mainly physical or new — chest pain, breathlessness, palpitations and dizziness all deserve a medical check — or before changing anything about a prescribed medication. If you are having thoughts of harming yourself or of suicide, please contact your local emergency services or a crisis line in your country right away.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Start tracking today</h2>
+        <p>Download the free Mood & BPD app — log an anxious moment in seconds and watch the pattern emerge</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button store_button--lg" src="/images/appstore/en-black.svg" alt="Download Mood & BPD on App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Free app with optional premium features
+iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/mood-journal/anxiety-tracking/">Home</a>
+            <a href="/about/">About</a>
+            <a href="mailto:support@feeltracker.com">Email Support</a>
+            <a href="/support/">Support</a>
+            <a href="/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Follow on X</a>
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms and Conditions</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Part of the Feeltracker family of health tracking apps</p>
+        <p class="footer-disclaimer">Your health data is stored on your device and iCloud — we never access or sell your data. Feeltracker apps are not medical devices. For informational purposes only, not a substitute for professional medical advice, diagnosis, or treatment.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>We value your privacy</strong></p>
+                <p>We use cookies for analytics to improve our website and app. No advertising cookies are used. See our <a href="/privacy/">Privacy Policy</a> for details.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Reject</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+<script>
+(function(){
+  if(document.documentElement.lang!=="en")return;
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=[["pt-br","/pt-br"],["zh-Hans","/zh-Hans"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["ja","/ja"],["fr","/fr"],["ko","/ko"]];
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(map[i][1]+window.location.pathname+window.location.search);
+      return;
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Hogyan Számold Ki a BMI-t: Képlet és Kidolgozott Példák | Feeltracker</title>
+    <meta name="description" content="Hogyan számold ki a BMI-t kézzel a metrikus vagy az angolszász képlettel, kidolgozott példákkal, a leggyakoribb hibákkal, és azzal, hol téveszt meg a BMI-szám.">
+
+    <meta name="keywords" content="hogyan számold ki a bmi-t, bmi képlet, bmi kiszámítása kézzel, bmi egyenlet, angolszász bmi képlet, metrikus bmi képlet">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="hu_HU">
+    <meta property="og:url" content="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+    <meta property="og:title" content="Hogyan Számold Ki a BMI-t: Képlet és Kidolgozott Példák">
+    <meta property="og:description" content="A metrikus és az angolszász BMI-képlet, lépésről lépésre kidolgozott példákkal, és őszinte pillantás arra, amit a BMI nem árul el.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+    <meta property="twitter:title" content="Hogyan Számold Ki a BMI-t: Képlet és Kidolgozott Példák">
+    <meta property="twitter:description" content="Hogyan számold ki a BMI-t metrikus vagy angolszász egységekkel, kidolgozott példákkal és őszinte korlátokkal.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Mi a BMI képlete?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Metrikus egységekben: testsúly kg-ban ÷ (magasság m-ben)². Angolszász egységekben: (testsúly lb-ban × 703) ÷ (magasság in-ben)². Mindkettő ugyanazt az eredményt adja — a 703 pusztán a fontot és a hüvelyket váltja át a metrikus megfelelőre."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Miért 703-mal számol az angolszász BMI-képlet?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ez az egyenletbe beépített átváltás: egy méter 39,37 hüvelyk, egy kilogramm 2,2046 font, és a 39,37² ÷ 2,2046 nagyjából 703-at ad."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Máshogy számolják a BMI-t férfiaknál és nőknél?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nem — a képlet és a felnőtt kategóriák azonosak, noha a nők ugyanakkora BMI mellett több esszenciális testzsírt hordoznak. Nemre szabott mutatóhoz használd a testzsírszázalékot, amelynek külön tartományai vannak."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mennyire pontos a BMI sportolóknál?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Gyenge. Az izom azonos térfogat mellett többet nyom a zsírnál, így az edzett sportolók rendszeresen a túlsúlyos vagy elhízott kategóriába esnek, miközben rendkívül szálkásak. Bárkinél, aki komolyan erősít, a derékbőség és a testzsírbecslés sokkal többet mond."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Minden méréskor újra ki kell számolnom a BMI-t?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kézzel nem. A magasságod ritkán változik, így a BMI együtt mozog a testsúllyal. Havonta ellenőrizni bőven elég, egy alkalmazás pedig amúgy is automatikusan újraszámolja."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/hu/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Súly",
+                      "item": "https://feeltracker.com/hu/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Hogyan számold ki a BMI-t",
+                      "item": "https://feeltracker.com/hu/weight/how-to-calculate-bmi/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Hogyan Számold Ki a BMI-t",
+          "description": "Hogyan számold ki a BMI-t kézzel a metrikus vagy az angolszász képlettel, kidolgozott példákkal, a leggyakoribb hibákkal, és azzal, hol téveszt meg a BMI-szám.",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/hu/weight/how-to-calculate-bmi/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/hu/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/hu/blood-pressure/">Vérnyomás</a>
+
+            <a href="/hu/daily-journal/">Napló</a>
+
+            <a href="/hu/mood-journal/">Hangulatnapló</a>
+
+            <a href="/hu/sleep/">Alvás</a>
+
+            <a href="/hu/weight/" class="current">Súly</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇭🇺</span>
+                <span class="lang-name">Magyar</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/how-to-calculate-bmi/" class="active" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/hu/">Kezdőlap</a>
+        <span aria-hidden="true">›</span>
+        <a href="/hu/weight/">Súly</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Hogyan számold ki a BMI-t</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Hogyan Számold Ki a BMI-t</h1>
+
+        <p class="guide-updated">Utolsó frissítés: 2026. augusztus</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>A testtömegindex a testsúlyod osztva a magasságod négyzetével. Egy osztás, egy szorzás — pontosan ezért él túl ez a szám csaknem kétszáz éve. Tíz másodperc alatt megvan a telefonod számológépén.</p><p>Alább mindkét képlet szerepel, valós számokkal kidolgozva, plusz az a rész, amit a legtöbb kalkulátor kihagy: hol téveszt meg az eredmény. Ha megvan az értéked, a <a href="/hu/weight/bmi-chart/">BMI táblázat</a> megmutatja, melyik kategóriába esik.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>A metrikus képlet: kilogramm és méter</h2>
+        <div class="guide-content">
+            <p><strong>BMI = testsúly kilogrammban ÷ (magasság méterben × magasság méterben)</strong></p><p>Az egyetlen buktató a mértékegység: <em>méter</em>, nem centiméter. A 175 cm az 1,75 m — ha 175-tel számolsz, 0,0025-ös BMI-t kapsz.</p><h3>Kidolgozott példa</h3><p>78 kg 175 cm-nél:</p><ol><li>Átváltás: 175 cm = <strong>1,75 m</strong></li><li>Négyzetre emelés: 1,75 × 1,75 = <strong>3,0625</strong></li><li>Osztás: 78 ÷ 3,0625 = <strong>25,5</strong></li></ol><p>Ez éppen a túlsúly tartományba esik, ami 25,0-nál kezdődik — nagyjából 1,5 kg-ra az egészséges sávtól. Soha ne vedd készpénznek azt az eredményt, amely egy ponton belül van egy határértéktől: a szokásos <a href="/hu/weight/weight-fluctuation/">napi testsúlyingadozás</a> egy héten belül át- és visszavihet a határon.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Az angolszász képlet: font és hüvelyk</h2>
+        <div class="guide-content">
+            <p><strong>BMI = (testsúly fontban × 703) ÷ (magasság hüvelykben × magasság hüvelykben)</strong></p><p>A 703-as szorzó a font per négyzethüvelyket váltja át kilogramm per négyzetméterre — 39,37 hüvelyk méterenként, négyzetre emelve, elosztva 2,2046 font per kilogrammal —, így mindkét képlet ugyanazt az eredményt adja.</p><h3>Kidolgozott példa</h3><p>172 lb 5 ft 9 in magasságnál:</p><ol><li>Magasság hüvelykben: (5 × 12) + 9 = <strong>69 in</strong></li><li>Négyzetre emelés: 69 × 69 = <strong>4761</strong></li><li>Testsúly × 703: 172 × 703 = <strong>120 916</strong></li><li>Osztás: 120 916 ÷ 4761 = <strong>25,4</strong></li></ol><p>Ugyanaz az ember, mint a metrikus példában, ugyanaz az eredmény. A klasszikus hiba: a lábat és a hüvelyket külön hagyni, és csak a hüvelyket négyzetre emelni.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Gyors áttekintés: mit jelent az eredményed</h2>
+        <div class="guide-content">
+            <p>20 éves és idősebb felnőttekre, férfiakra és nőkre egyaránt:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>BMI</th><th>Kategória</th><th>Példa 175 cm / 5 ft 9 in magasságnál</th></tr></thead><tbody><tr><td>18,5 alatt</td><td>Alulsúly</td><td>57 kg / 125 lb alatt</td></tr><tr><td>18,5 – 24,9</td><td>Egészséges testsúly</td><td>57 – 76 kg / 125 – 168 lb</td></tr><tr><td>25,0 – 29,9</td><td>Túlsúly</td><td>77 – 91 kg / 169 – 201 lb</td></tr><tr><td>30,0 – 34,9</td><td>1. fokú elhízás</td><td>92 – 107 kg / 202 – 236 lb</td></tr><tr><td>35,0 – 39,9</td><td>2. fokú elhízás</td><td>107 – 122 kg / 237 – 269 lb</td></tr><tr><td>40,0 és felette</td><td>3. fokú elhízás</td><td>123 kg / 270 lb és felette</td></tr></tbody></table></div><p>Ha dél-ázsiai, kínai vagy más ázsiai származású vagy, több egészségügyi szervezet alacsonyabb határértékeket alkalmaz — túlsúly nagyjából 23-tól, elhízás nagyjából 27,5-től —, mert az anyagcsere-kockázat korábban emelkedik. A teljes kép, magasság szerinti táblázattal együtt, a <a href="/hu/weight/bmi-chart/">BMI táblázat útmutatóban</a> található.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Hol romlik el a szám</h2>
+        <div class="guide-content">
+            <p>Az aritmetika egyszerű, ezért a hibás BMI szinte mindig a bemenetekből ered.</p><ul><li><strong>Megtippelt magasság.</strong> A legtöbb felnőtt egy-két centivel alacsonyabb, mint amit a jogosítványa mond, és a testmagasság a korral csökken. 175 cm-nél 1 cm nagyjából 0,3-mal mozdítja a BMI-t — ennyi elég egy határ átlépéséhez. Mérd meg egyszer mezítláb, falnak dőlve, és utána használd ugyanazt az értéket.</li><li><strong>Következetlen mérések.</strong> Este 1–2 kg-mal nehezebb lehetsz. Ébredés után, evés előtt mérj.</li><li><strong>Kevert mértékegységek, négyzetre emelt testsúly, túl durva kerekítés.</strong> A kilogramm hüvelykkel keverve értelmetlen eredményt ad, a magasság legközelebbi 5 cm-re kerekítése pedig egy teljes ponttal is elmozdíthatja az értéket. Ha két kalkulátor mást mond, szinte mindig ezek egyike a magyarázat.</li></ul><p>Aztán ott van az, amit a képlet nem lát. Az izom sűrűbb a zsírnál, így egy jól edzett evezős akár 28–30-as BMI-t is felmutathat egyszámjegyű testzsírszázalék mellett — ha komolyan súlyzózol, tekintsd a BMI-t szinte semmitmondónak, és használd inkább a <a href="/hu/weight/body-fat-percentage/">testzsírszázalékot</a>. Fordítva is igaz: egy mozgásszegény életet élő ember 23-as BMI-vel is hordozhat annyi hasi zsírt, ami emeli az anyagcsere-kockázatot. A kockázat különböző népességekben eltérő BMI-nél kezdődik, ugyanaz a BMI 60 évesen több zsírt takar, mint 30 évesen, a nők több esszenciális zsírt hordoznak, mint a férfiak, a BMI terhesség alatt nem érvényes, a gyerekeknél pedig percentilis táblázatokat használnak. A legolcsóbb megoldás egy mérőszalag: a <a href="/hu/weight/waist-to-height-ratio/">derék-magasság arány</a> harminc másodperc, és látja azt a zsíreloszlást, amit a BMI nem.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Kézzel számolni vagy hagyni, hogy egy alkalmazás csinálja</h2>
+        <div class="guide-content">
+            <p>Egyszer kiszámolni a BMI-t semmiség. Minden méréshez kiszámolni egy éven át, majd megnézni, mit csinált a trend — na, itt omlik össze csendben a kézi számolás.</p><p>Az ingyenes Feeltracker Súly és BMI alkalmazás megspórolja ezt a lépést: a magasságodat egyszer adod meg, és onnantól minden bejegyzéshez kiszámolja a BMI-t, trendvonalakkal ábrázolva a testsúlyod és az általad kitűzött cél mellett. Rögzíti a testzsírszázalékot is, szinkronizál az Apple Health-szel és az eszközeid között iCloudon keresztül, fiók és e-mail nélkül, valamint PDF-be, XLSX-be, CSV-be vagy JSON-ba exportál a vizitekre. Az opcionális MI-elemzések összefoglalják az előzményeidet.</p><p>Bármelyik utat választod, a fenti képlet az egész tudomány. Az érték az alkalmankénti ellenőrzésben van, nem három tizedesjegyben.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="Súly és BMI alkalmazás ikonja" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Hagyd ki a számolást</h2>
+            <p>A Feeltracker Súly és BMI minden méréshez kiszámolja a BMI-det, kilogrammban vagy fontban, és a testsúlyod mellé rajzolja, hogy a trendet lásd, ne egyetlen számot. Ingyenes, privát, fiók nélkül.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button" src="/images/appstore/hu-black.svg" alt="Súly és BMI letöltése az App Store-ból" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/hu/weight/" class="guide-app-cta-learn">Tudj meg többet az alkalmazásról <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Gyakran ismételt kérdések</h2>
+
+        <div class="guide-faq-item">
+            <h3>Mi a BMI képlete?</h3>
+            <p>Metrikus egységekben: <strong>testsúly kg-ban ÷ (magasság m-ben)²</strong>. Angolszász egységekben: <strong>(testsúly lb-ban × 703) ÷ (magasság in-ben)²</strong>. Mindkettő ugyanazt az eredményt adja — a 703 pusztán a fontot és a hüvelyket váltja át a metrikus megfelelőre.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Miért 703-mal számol az angolszász BMI-képlet?</h3>
+            <p>Ez az egyenletbe beépített átváltás: egy méter 39,37 hüvelyk, egy kilogramm 2,2046 font, és a 39,37² ÷ 2,2046 nagyjából 703-at ad.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Máshogy számolják a BMI-t férfiaknál és nőknél?</h3>
+            <p>Nem — a képlet és a felnőtt kategóriák azonosak, noha a nők ugyanakkora BMI mellett több esszenciális testzsírt hordoznak. Nemre szabott mutatóhoz használd a <a href="/hu/weight/body-fat-percentage/" target="_blank" rel="noopener">testzsírszázalékot</a>, amelynek külön tartományai vannak.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Mennyire pontos a BMI sportolóknál?</h3>
+            <p>Gyenge. Az izom azonos térfogat mellett többet nyom a zsírnál, így az edzett sportolók rendszeresen a túlsúlyos vagy elhízott kategóriába esnek, miközben rendkívül szálkásak. Bárkinél, aki komolyan erősít, a derékbőség és a testzsírbecslés sokkal többet mond.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Minden méréskor újra ki kell számolnom a BMI-t?</h3>
+            <p>Kézzel nem. A magasságod ritkán változik, így a BMI együtt mozog a testsúllyal. Havonta ellenőrizni bőven elég, egy alkalmazás pedig amúgy is automatikusan újraszámolja.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Olvass tovább</h2>
+        <div class="guide-related-grid">
+
+            <a href="/hu/weight/bmi-chart/" class="guide-related-card">
+                <h3>BMI Táblázat Felnőtteknek</h3>
+                <p>Minden kategória, plusz egy magasság-súly kereső tábla.</p>
+            </a>
+
+            <a href="/hu/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>A Magasságodhoz Tartozó Egészséges Testsúly</h3>
+                <p>A magasságodhoz tartozó céltartomány kg-ban és fontban.</p>
+            </a>
+
+            <a href="/hu/weight/body-fat-percentage/" class="guide-related-card">
+                <h3>A Testzsírszázalék Magyarázata</h3>
+                <p>Amit a BMI nem lát, és hogyan mérd meg helyette.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Egészségügyi nyilatkozat</h2>
+        <p>Ez a cikk kizárólag általános tájékoztatásra szolgál, és nem minősül orvosi tanácsnak, diagnózisnak vagy kezelésnek. A BMI olyan szűrőérték, amely önmagában nem alkalmas egy ember egészségi állapotának megítélésére — a testsúlyodat és minden ezzel kapcsolatos tervedet mindig beszéld meg az orvosoddal vagy egészségügyi szolgáltatóddal. Mielőbb fordulj orvoshoz, ha akaratlanul fogysz vagy hízol, vagy ha a testsúlyváltozáshoz olyan tünetek társulnak, mint a tartós fáradtság, a légszomj vagy az étvágytalanság.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Hagyd, hogy a BMI-d magát számolja</h2>
+        <p>Töltsd le az ingyenes Súly és BMI alkalmazást — a magasságodat egyszer adod meg, a többit minden mérés elintézi</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hu-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hu-black.svg" alt="Súly és BMI letöltése az App Store-ból" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Ingyenes alkalmazás opcionális prémium funkciókkal
+iPhone, iPad és Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/hu/weight/how-to-calculate-bmi/">Kezdőlap</a>
+            <a href="/hu/about/">Rólunk</a>
+            <a href="mailto:support@feeltracker.com">E-mail támogatás</a>
+            <a href="/hu/support/">Támogatás</a>
+            <a href="/hu/faq/">GYIK</a>
+            <a href="https://x.com/feeltracker">Kövess az X-en</a>
+            <a href="/hu/privacy/">Adatvédelmi irányelvek</a>
+            <a href="/hu/terms/">Felhasználási feltételek</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Minden jog fenntartva.</p>
+        <p class="footer-tagline">A Feeltracker egészségkövetö alkalmazások családjának tagja</p>
+        <p class="footer-disclaimer">Egészségügyi adatai az eszközén és az iCloudban tárolódnak — soha nem férünk hozzájuk és nem adjuk el őket. A Feeltracker alkalmazások nem orvostechnikai eszközök. Csak tájékoztató jellegűek, nem helyettesítik a szakorvosi tanácsot, diagnózist vagy kezelést.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Értékeljük az Ön magánéletét</strong></p>
+                <p>Elemzési sütiket használunk weboldalunk és alkalmazásunk fejlesztéséhez. Reklám sütiket nem használunk. Lásd <a href="/hu/privacy/">Adatvédelmi irányelvek</a> a részletekért.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Elutasítás</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Elfogadás</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

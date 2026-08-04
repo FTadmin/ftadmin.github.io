@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>How to Calculate BMI: Formula and Worked Examples | Feeltracker</title>
+    <meta name="description" content="How to calculate BMI by hand using the metric or imperial formula, with worked examples, the mistakes people make, and where the BMI number misleads.">
+
+    <meta name="keywords" content="how to calculate bmi, bmi formula, calculate bmi manually, bmi equation, imperial bmi formula, metric bmi formula">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://feeltracker.com/weight/how-to-calculate-bmi/">
+    <meta property="og:title" content="How to Calculate BMI: Formula and Worked Examples">
+    <meta property="og:description" content="The metric and imperial BMI formulas, step-by-step worked examples, and an honest look at what BMI can't tell you.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/weight/how-to-calculate-bmi/">
+    <meta property="twitter:title" content="How to Calculate BMI: Formula and Worked Examples">
+    <meta property="twitter:description" content="How to calculate BMI in metric or imperial units, with worked examples and honest limitations.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "What is the BMI formula?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "In metric: weight in kg ÷ (height in m)². In imperial: (weight in lb × 703) ÷ (height in in)². Both give the same result — the 703 simply converts pounds and inches into the metric equivalent."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Why is 703 used in the imperial BMI formula?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "It is the unit conversion baked into the equation: one meter is 39.37 inches, one kilogram is 2.2046 pounds, and 39.37² ÷ 2.2046 comes out at roughly 703."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Is BMI calculated differently for men and women?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No — the formula and the adult categories are identical, even though women carry more essential body fat at the same BMI. For a sex-specific measure, use body fat percentage, which has separate ranges."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "How accurate is BMI for athletes?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Poor. Muscle weighs more than fat for the same volume, so trained athletes routinely land in the overweight or obese categories while being extremely lean. For anyone doing serious resistance training, waist measurement and body fat estimates are far more informative."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Do I need to recalculate BMI every time I weigh myself?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Not manually. Your height rarely changes, so BMI moves in lockstep with weight. Checking the figure monthly is plenty, and an app recalculates it automatically anyway."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Weight",
+                      "item": "https://feeltracker.com/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "How to Calculate BMI",
+                      "item": "https://feeltracker.com/weight/how-to-calculate-bmi/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "How to Calculate BMI",
+          "description": "How to calculate BMI by hand using the metric or imperial formula, with worked examples, the mistakes people make, and where the BMI number misleads.",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/weight/how-to-calculate-bmi/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/blood-pressure/">Blood Pressure</a>
+
+            <a href="/daily-journal/">Daily Journal</a>
+
+            <a href="/mood-journal/">Mood Journal</a>
+
+            <a href="/sleep/">Sleep</a>
+
+            <a href="/weight/" class="current">Weight</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇺🇸</span>
+                <span class="lang-name">English</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/how-to-calculate-bmi/" class="active" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <a href="/weight/">Weight</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">How to Calculate BMI</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>How to Calculate BMI</h1>
+
+        <p class="guide-updated">Last updated: August 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Body mass index is your weight divided by your height squared. One division, one multiplication — the whole reason the number has survived nearly two hundred years. You can do it on a phone keypad in ten seconds.</p><p>Both formulas are below, worked through with real numbers, plus the part most calculators skip: where the result misleads. Once you have your figure, the <a href="/weight/bmi-chart/">BMI chart</a> tells you which category it falls into.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>The metric formula: kilograms and meters</h2>
+        <div class="guide-content">
+            <p><strong>BMI = weight in kilograms ÷ (height in meters × height in meters)</strong></p><p>The only trap is the unit: <em>meters</em>, not centimeters. 175 cm is 1.75 m — use 175 and you get a BMI of 0.0025.</p><h3>Worked example</h3><p>78 kg at 175 cm:</p><ol><li>Convert: 175 cm = <strong>1.75 m</strong></li><li>Square: 1.75 × 1.75 = <strong>3.0625</strong></li><li>Divide: 78 ÷ 3.0625 = <strong>25.5</strong></li></ol><p>That is just inside overweight, which begins at 25.0 — about 1.5 kg from the healthy band. Never treat a result within a point of a boundary as firm: normal <a href="/weight/weight-fluctuation/">daily weight fluctuation</a> can move you across the line and back within a week.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>The imperial formula: pounds and inches</h2>
+        <div class="guide-content">
+            <p><strong>BMI = (weight in pounds × 703) ÷ (height in inches × height in inches)</strong></p><p>The 703 converts pounds per square inch into kilograms per square meter — 39.37 inches per meter, squared, divided by 2.2046 pounds per kilogram — so both formulas give the same answer.</p><h3>Worked example</h3><p>172 lb at 5 ft 9 in:</p><ol><li>Height in inches: (5 × 12) + 9 = <strong>69 in</strong></li><li>Square: 69 × 69 = <strong>4,761</strong></li><li>Weight × 703: 172 × 703 = <strong>120,916</strong></li><li>Divide: 120,916 ÷ 4,761 = <strong>25.4</strong></li></ol><p>Same person as the metric example, same answer. The classic mistake: leaving feet and inches separate and squaring only the inches.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Quick reference: what your result means</h2>
+        <div class="guide-content">
+            <p>For adults aged 20 and over, men and women alike:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>BMI</th><th>Category</th><th>Example at 175 cm / 5 ft 9 in</th></tr></thead><tbody><tr><td>Below 18.5</td><td>Underweight</td><td>Under 57 kg / 125 lb</td></tr><tr><td>18.5 – 24.9</td><td>Healthy weight</td><td>57 – 76 kg / 125 – 168 lb</td></tr><tr><td>25.0 – 29.9</td><td>Overweight</td><td>77 – 91 kg / 169 – 201 lb</td></tr><tr><td>30.0 – 34.9</td><td>Obesity class 1</td><td>92 – 107 kg / 202 – 236 lb</td></tr><tr><td>35.0 – 39.9</td><td>Obesity class 2</td><td>107 – 122 kg / 237 – 269 lb</td></tr><tr><td>40.0 and above</td><td>Obesity class 3</td><td>123 kg / 270 lb and above</td></tr></tbody></table></div><p>If you are of South Asian, Chinese, or other Asian ancestry, several health bodies apply lower thresholds — overweight from about 23, obesity from about 27.5 — because metabolic risk rises earlier. The full picture, including a height-by-height table, is in the <a href="/weight/bmi-chart/">BMI chart guide</a>.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Where the number goes wrong</h2>
+        <div class="guide-content">
+            <p>The arithmetic is simple, so wrong BMIs come from the inputs.</p><ul><li><strong>Guessed height.</strong> Most adults are a centimeter or two shorter than their license says, and height shrinks with age. At 175 cm, 1 cm moves BMI by about 0.3 — enough to cross a boundary. Measure barefoot against a wall, once, and reuse the figure.</li><li><strong>Inconsistent weigh-ins.</strong> You can be 1 to 2 kg heavier in the evening. Weigh after waking, before eating.</li><li><strong>Mixed units, squared weight, over-rounding.</strong> Kilograms with inches produce nonsense, and rounding height to the nearest 5 cm can shift the result a full point. Two calculators disagreeing is almost always one of these.</li></ul><p>Then there is what the formula cannot see. Muscle is denser than fat, so a well-trained rower can post a BMI of 28 to 30 at single-digit body fat — if you lift seriously, treat BMI as close to meaningless and use <a href="/weight/body-fat-percentage/">body fat percentage</a> instead. The reverse holds: someone sedentary at BMI 23 can carry enough abdominal fat to raise metabolic risk. Risk begins at different BMIs in different populations, the same BMI at 60 holds more fat than it did at 30, women carry more essential fat than men, BMI is not valid in pregnancy, and children use percentile charts. The cheapest fix is a tape measure: <a href="/weight/waist-to-height-ratio/">waist-to-height ratio</a> takes thirty seconds and sees the fat distribution BMI cannot.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Doing it by hand vs letting an app do it</h2>
+        <div class="guide-content">
+            <p>Calculating BMI once is trivial. Calculating it for every weigh-in for a year, then seeing what the trend did — that is where doing it by hand quietly falls apart.</p><p>The free Weight &amp; BMI Feeltracker app removes the step: enter your height once and BMI is calculated for every entry, charted with trend lines next to your weight and a goal you set. It records body fat percentage too, syncs with Apple Health and across your devices via iCloud with no account or email, and exports to PDF, XLSX, CSV, or JSON for appointments. Optional AI insights summarize your history.</p><p>Whichever route you take, the formula above is the whole of it. The value is in checking occasionally, not in three decimal places.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="Weight & BMI app icon" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Skip the arithmetic</h2>
+            <p>Weight & BMI Feeltracker works out your BMI from every weigh-in, in kilograms or pounds, and charts it next to your weight so you see the trend, not a single number. Free, private, no account needed.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button" src="/images/appstore/en-black.svg" alt="Download Weight & BMI on App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/weight/" class="guide-app-cta-learn">Learn more about the app <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="guide-faq-item">
+            <h3>What is the BMI formula?</h3>
+            <p>In metric: <strong>weight in kg ÷ (height in m)²</strong>. In imperial: <strong>(weight in lb × 703) ÷ (height in in)²</strong>. Both give the same result — the 703 simply converts pounds and inches into the metric equivalent.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Why is 703 used in the imperial BMI formula?</h3>
+            <p>It is the unit conversion baked into the equation: one meter is 39.37 inches, one kilogram is 2.2046 pounds, and 39.37² ÷ 2.2046 comes out at roughly 703.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Is BMI calculated differently for men and women?</h3>
+            <p>No — the formula and the adult categories are identical, even though women carry more essential body fat at the same BMI. For a sex-specific measure, use <a href="/weight/body-fat-percentage/" target="_blank" rel="noopener">body fat percentage</a>, which has separate ranges.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>How accurate is BMI for athletes?</h3>
+            <p>Poor. Muscle weighs more than fat for the same volume, so trained athletes routinely land in the overweight or obese categories while being extremely lean. For anyone doing serious resistance training, waist measurement and body fat estimates are far more informative.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Do I need to recalculate BMI every time I weigh myself?</h3>
+            <p>Not manually. Your height rarely changes, so BMI moves in lockstep with weight. Checking the figure monthly is plenty, and an app recalculates it automatically anyway.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Keep reading</h2>
+        <div class="guide-related-grid">
+
+            <a href="/weight/bmi-chart/" class="guide-related-card">
+                <h3>BMI Chart for Adults</h3>
+                <p>Every category plus a height-and-weight lookup table.</p>
+            </a>
+
+            <a href="/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>Healthy Weight for Your Height</h3>
+                <p>The target range for your height in kg and pounds.</p>
+            </a>
+
+            <a href="/weight/body-fat-percentage/" class="guide-related-card">
+                <h3>Body Fat Percentage Explained</h3>
+                <p>What BMI misses, and how to measure it instead.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Health disclaimer</h2>
+        <p>This article is for general information only and is not medical advice, diagnosis, or treatment. BMI is a screening figure that cannot assess an individual's health on its own — always discuss your weight, and any plan to change it, with your doctor or healthcare provider. Seek medical advice promptly if you are losing or gaining weight without trying, or if weight change comes with symptoms such as persistent fatigue, breathlessness, or loss of appetite.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Let your BMI calculate itself</h2>
+        <p>Download the free Weight & BMI app — enter your height once and every weigh-in does the rest</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button store_button--lg" src="/images/appstore/en-black.svg" alt="Download Weight & BMI on App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Free app with optional premium features
+iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/weight/how-to-calculate-bmi/">Home</a>
+            <a href="/about/">About</a>
+            <a href="mailto:support@feeltracker.com">Email Support</a>
+            <a href="/support/">Support</a>
+            <a href="/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Follow on X</a>
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms and Conditions</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Part of the Feeltracker family of health tracking apps</p>
+        <p class="footer-disclaimer">Your health data is stored on your device and iCloud — we never access or sell your data. Feeltracker apps are not medical devices. For informational purposes only, not a substitute for professional medical advice, diagnosis, or treatment.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>We value your privacy</strong></p>
+                <p>We use cookies for analytics to improve our website and app. No advertising cookies are used. See our <a href="/privacy/">Privacy Policy</a> for details.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Reject</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+<script>
+(function(){
+  if(document.documentElement.lang!=="en")return;
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=[["pt-br","/pt-br"],["zh-Hans","/zh-Hans"],["fr-ca","/fr-ca"],["zh-Hant","/zh-Hant"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["ja","/ja"],["fr","/fr"],["ko","/ko"],["sv","/sv"],["nb","/nb"],["da","/da"],["fi","/fi"],["ar","/ar"],["ca","/ca"],["cs","/cs"],["el","/el"],["he","/he"],["hr","/hr"],["hu","/hu"],["nl","/nl"],["pl","/pl"],["pt","/pt"],["ro","/ro"],["sk","/sk"],["th","/th"],["tr","/tr"],["uk","/uk"],["vi","/vi"],["no","/nb"],["nn","/nb"]];
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(map[i][1]+window.location.pathname+window.location.search);
+      return;
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

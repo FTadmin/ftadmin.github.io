@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Lire une courbe d'humeur : niveau de base, amplitude, cycles | Feeltracker</title>
+    <meta name="description" content="Comment bien lire une courbe d'humeur : trouver votre niveau de base, juger l'amplitude, repérer les cycles hebdomadaires et saisonniers, et distinguer un vrai facteur d'une coïncidence.">
+
+    <meta name="keywords" content="courbe d'humeur, graphique d'humeur, suivi de l'humeur graphique, lire une courbe d'humeur, tendances de l'humeur, variations de l'humeur">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://feeltracker.com/fr/mood-journal/mood-chart/">
+    <meta property="og:title" content="Comment lire une courbe d'humeur">
+    <meta property="og:description" content="Niveau de base, amplitude, cycles et corrélation avec les facteurs — comment tirer de vraies réponses de quelques semaines de données, avec un exemple détaillé.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/fr/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="Comment lire une courbe d'humeur">
+    <meta property="twitter:description" content="Comment lire une courbe d'humeur : niveau de base, amplitude, cycles, et distinguer un vrai facteur d'une coïncidence.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Combien de semaines de données faut-il pour que la courbe soit utile ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Trois à quatre semaines pour les rythmes hebdomadaires et les facteurs isolés puissants comme le sommeil ; deux à trois mois pour les cycles mensuels ; presque une année pour la forme saisonnière. Une ou deux semaines montrent déjà votre niveau de base et votre degré de variation — c'est déjà précieux."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Ma courbe semble complètement aléatoire. Est-ce que je m'y prends mal ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Probablement pas. Certaines courbes sont réellement bruitées, et un nuage de points plat dit quand même quelque chose de vrai : aucun facteur isolé ne domine votre humeur. Triez les entrées par jour de la semaine, et vérifiez les effets du lendemain plutôt que ceux du jour même — les tendances décalées se cachent en pleine vue. Toujours aléatoire au bout de deux mois ? C'est une réponse aussi."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Un point bas sur ma courbe signifie-t-il que quelque chose ne va pas ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Non. La courbe de tout le monde comporte des points bas, et une mauvaise journée n'est pas un diagnostic. Ce qui mérite attention, c'est la durée et la direction : une humeur basse qui persiste la majeure partie de la journée pendant plus de deux semaines, ou un niveau de base qui dérive vers le bas pendant des mois. Cela vaut la peine d'en parler à un médecin ou à un thérapeute — apportez la courbe."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Faut-il faire la moyenne de mes notes d'humeur ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Une moyenne mensuelle résume correctement le niveau de base, mais faire une moyenne fait disparaître l'amplitude — souvent la moitié la plus intéressante de l'histoire. Regardez la moyenne et la dispersion ensemble, comme l'explique le guide des sautes d'humeur."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Puis-je montrer ma courbe d'humeur à un thérapeute ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Oui, et la plupart l'accueilleront volontiers. Une courbe datée avec des étiquettes de facteurs transforme un résumé vague en matière de travail précise. Exportez un PDF pour une version propre, ou un CSV/XLSX pour les chiffres bruts."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/fr/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Journal d'Humeur",
+                      "item": "https://feeltracker.com/fr/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Courbe d'humeur",
+                      "item": "https://feeltracker.com/fr/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Lire votre courbe d'humeur",
+          "description": "Comment bien lire une courbe d'humeur : trouver votre niveau de base, juger l'amplitude, repérer les cycles hebdomadaires et saisonniers, et distinguer un vrai facteur d'une coïncidence.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/fr/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/fr/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/fr/blood-pressure/">Tension Artérielle</a>
+
+            <a href="/fr/daily-journal/">Journal Intime</a>
+
+            <a href="/fr/mood-journal/" class="current">Journal d'Humeur</a>
+
+            <a href="/fr/sleep/">Sommeil</a>
+
+            <a href="/fr/weight/">Poids</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇫🇷</span>
+                <span class="lang-name">Français</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/fr/">Accueil</a>
+        <span aria-hidden="true">›</span>
+        <a href="/fr/mood-journal/">Journal d'Humeur</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Courbe d'humeur</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Lire votre courbe d'humeur</h1>
+
+        <p class="guide-updated">Dernière mise à jour : août 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Une courbe d'humeur, ce sont vos notes quotidiennes reportées dans le temps. Le premier coup d'œil est presque toujours trompeur : l'œil va droit au point le plus bas, se dit « voilà la mauvaise journée », et s'arrête là. Bien lue, elle répond à de meilleures questions : où mon humeur se situe-t-elle habituellement, de combien varie-t-elle, suit-elle un calendrier, et qu'est-ce qui l'accompagne ?</p><p>Ce guide déroule les quatre lectures — niveau de base, amplitude, cycles, facteurs — avec un exemple détaillé. Vous ne notez pas encore ? Commencez par <a href="/fr/mood-journal/how-to-track-your-mood/">comment suivre son humeur</a> et revenez dans deux semaines.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Avant de lire : combien de données faut-il ?</h2>
+        <div class="guide-content">
+            <p>Une courbe de cinq jours, c'est une humeur, pas une tendance. En gros :</p><ul><li><strong>1–2 semaines :</strong> votre niveau de base et votre degré de variation — rien sur les causes.</li><li><strong>3–6 semaines :</strong> les rythmes hebdomadaires, et les facteurs isolés puissants — le sommeil arrive généralement en premier.</li><li><strong>2–3 mois :</strong> les cycles mensuels et hormonaux, et les dérives lentes.</li><li><strong>6–12 mois :</strong> la forme saisonnière, et une réponse honnête à « est-ce que je vais mieux que l'an dernier ? »</li></ul><p>Les trous ne posent pas de problème — une semaine vide est honnête. Une semaine reconstituée de mémoire réécrit la courbe dans le sens de l'histoire que vous croyez déjà.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. Trouvez votre niveau de base</h2>
+        <div class="guide-content">
+            <p>Votre niveau de base, c'est là où se situe votre humeur un jour ordinaire — la bande vers laquelle la courbe revient sans cesse. Sur une échelle en 5 points, la plupart des gens vivent entre 3 et 4.</p><p>C'est le chiffre le plus utile ici : un 3 ne signifie pas la même chose pour quelqu'un qui vit à 4 que pour quelqu'un qui vit à 2, et il bouge lentement, donc une dérive veut dire davantage qu'un mauvais mardi. Un niveau de base qui glisse de 4 à 3 en deux mois pèse plus lourd que n'importe quel point bas isolé — c'est le changement invisible de l'intérieur.</p><p>Masquez les extrêmes avec le pouce, regardez où se concentre l'essentiel de la courbe, et comparez ce mois-ci au précédent.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. Jugez l'amplitude</h2>
+        <div class="guide-content">
+            <p>L'amplitude, c'est la distance que parcourt votre humeur autour de ce niveau de base. Deux personnes partagent un niveau de base de 3,5 : l'une oscille entre 3 et 4, l'autre rebondit entre 1 et 5. Trois questions :</p><ul><li><strong>Quelle est l'ampleur d'une semaine typique ?</strong> Un point, c'est ordinaire ; trois ou quatre, de façon répétée, mérite attention.</li><li><strong>À quelle vitesse se font les transitions ?</strong> Une pente lente sur deux semaines et une chute de 5 à 1 dans la même journée sont deux phénomènes différents.</li><li><strong>Combien de temps dure un point bas ?</strong> Une baisse d'une journée n'a rien à voir avec deux semaines au fond.</li></ul><p>Si les oscillations sont l'essentiel de l'histoire, <a href="/fr/mood-journal/mood-swings/">le guide des sautes d'humeur</a> traite de leurs causes et du moment où consulter un professionnel.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. Cherchez les cycles</h2>
+        <div class="guide-content">
+            <p>Les cycles transforment « parfois ça va mal, au hasard » en quelque chose que vous pouvez anticiper. Quatre à vérifier :</p><ul><li><strong>Quotidien.</strong> Demande plus d'une entrée par jour — des matinées plus lourdes, ou une baisse en fin de soirée.</li><li><strong>Hebdomadaire.</strong> L'observation la plus fréquente : les dimanches soir, un creux du mercredi, un vrai regain le vendredi.</li><li><strong>Mensuel.</strong> Les cycles hormonaux comptent parmi les tendances les plus nettes dans les données d'humeur ; laissez-leur deux ou trois mois.</li><li><strong>Saisonnier.</strong> Lent, et facile à mettre sur le compte de ce qui se passait par ailleurs — voir <a href="/fr/mood-journal/seasonal-mood-changes/">les variations saisonnières de l'humeur</a>.</li></ul><p>Des cycles apparaissent dans tout relevé long, réels ou non — faites confiance à celui qui se répète trois fois avec un mécanisme plausible.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. Les facteurs : un exemple détaillé</h2>
+        <div class="guide-content">
+            <p>C'est ici que la courbe cesse de décrire et commence à expliquer — et qu'il devient facile de se leurrer. Deux semaines d'entrées :</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Jour</th><th>Humeur (1–5)</th><th>Sommeil</th><th>Note</th></tr></thead><tbody><tr><td>Lun</td><td>3</td><td>6 h</td><td>Début chargé</td></tr><tr><td>Mar</td><td>2</td><td>5 h</td><td>Couché tard la veille</td></tr><tr><td>Mer</td><td>2</td><td>5 h 30</td><td>Terne, sans raison</td></tr><tr><td>Jeu</td><td>4</td><td>8 h</td><td>Grasse matinée</td></tr><tr><td>Ven</td><td>4</td><td>7 h 30</td><td>Marche, vu des amis</td></tr><tr><td>Sam</td><td>5</td><td>9 h</td><td>—</td></tr><tr><td>Dim</td><td>3</td><td>8 h</td><td>Appréhension de la semaine</td></tr><tr><td>Lun</td><td>2</td><td>6 h</td><td>Échéance</td></tr><tr><td>Mar</td><td>2</td><td>5 h</td><td>Échéance, pas de marche</td></tr><tr><td>Mer</td><td>3</td><td>7 h</td><td>Échéance terminée</td></tr><tr><td>Jeu</td><td>4</td><td>8 h</td><td>Salle de sport</td></tr><tr><td>Ven</td><td>4</td><td>7 h</td><td>—</td></tr><tr><td>Sam</td><td>4</td><td>8 h 30</td><td>Journée calme</td></tr><tr><td>Dim</td><td>3</td><td>8 h</td><td>À nouveau l'effet du dimanche</td></tr></tbody></table></div><p><strong>Ce que cela appuie :</strong> un niveau de base autour de 3, une amplitude de 2 à 5, une baisse répétée le dimanche, et un lien fort entre les nuits de moins de six heures et une humeur à 2.</p><p><strong>Ce que cela ne prouve pas :</strong> que le manque de sommeil a <em>causé</em> l'humeur basse. Les deux semaines comportaient des échéances, qui raccourcissent le sommeil et ternissent l'humeur indépendamment ; une humeur basse perturbe aussi le sommeil, donc la flèche peut aller dans l'autre sens. Et la baisse du dimanche n'est pas liée au sommeil — le sommeil du dimanche était bon les deux semaines.</p><p>Pour faire confiance à une corrélation : comptez les exceptions (un facteur qui tient une fois sur deux est une coïncidence bien vendue), vérifiez le décalage (le sommeil et l'alcool se paient le lendemain), cherchez une troisième cause commune — échéances, maladie, voyages — et testez un changement à la fois.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Courbe papier ou application : comparaison honnête</h2>
+        <div class="guide-content">
+            <p>Le papier millimétré fonctionne, et un tableur peut trier par jour de la semaine. Ce que les deux coûtent, c'est la persévérance — personne ne retrie un tableur par facteur tous les mois. Ce que l'application apporte en échange :</p><ul><li><strong>Des graphiques tracés au fil de vos entrées</strong>, sur n'importe quelle période — la tendance est toujours à jour.</li><li><strong>L'humeur ventilée par facteur</strong> — les comparaisons ci-dessus, sans calcul.</li><li><strong>Chaque point relié à sa note ou à sa photo</strong> — une baisse est à un appui de son explication.</li><li><strong>Synchronisation avec Apple Santé</strong> — le sommeil arrive tout seul.</li><li><strong>Export en PDF, XLSX, CSV ou JSON</strong> — pour les rendez-vous ou votre propre analyse.</li><li><strong>Analyses IA sur votre propre historique</strong>, gratuites avec des options premium — une seconde lecture, pas un conseil.</li></ul><p>Quel que soit ce qui trace la courbe, l'interprétation reste la vôtre — c'est un outil de suivi personnel, pas un outil de diagnostic. Si quelque chose vous inquiète, apportez la courbe à un médecin ou à un thérapeute — c'est bien plus concret que la mémoire.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Icône de l'application Journal d'Humeur" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Votre courbe, tracée au fil de l'eau</h2>
+            <p>Feeltracker Journal d'Humeur reporte vos notes sur la période de votre choix, ventile l'humeur selon les facteurs que vous avez marqués, et garde chaque note et chaque photo attachées à leur point. Un appui exporte l'ensemble en PDF. Gratuit, confidentiel, sans compte.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fr-white.svg"><img class="store_button" src="/images/appstore/fr-black.svg" alt="Télécharger Journal d'Humeur sur l'App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/fr/mood-journal/" class="guide-app-cta-learn">En savoir plus sur l'application <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Questions fréquentes</h2>
+
+        <div class="guide-faq-item">
+            <h3>Combien de semaines de données faut-il pour que la courbe soit utile ?</h3>
+            <p><strong>Trois à quatre semaines</strong> pour les rythmes hebdomadaires et les facteurs isolés puissants comme le sommeil ; <strong>deux à trois mois</strong> pour les cycles mensuels ; <strong>presque une année</strong> pour la forme saisonnière. Une ou deux semaines montrent déjà votre niveau de base et votre degré de variation — c'est déjà précieux.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Ma courbe semble complètement aléatoire. Est-ce que je m'y prends mal ?</h3>
+            <p>Probablement pas. Certaines courbes sont réellement bruitées, et un nuage de points plat dit quand même quelque chose de vrai : aucun facteur isolé ne domine votre humeur. Triez les entrées par jour de la semaine, et vérifiez les effets du lendemain plutôt que ceux du jour même — les tendances décalées se cachent en pleine vue. Toujours aléatoire au bout de deux mois ? C'est une réponse aussi.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Un point bas sur ma courbe signifie-t-il que quelque chose ne va pas ?</h3>
+            <p>Non. La courbe de tout le monde comporte des points bas, et une mauvaise journée n'est pas un diagnostic. Ce qui mérite attention, c'est la durée et la direction : une humeur basse qui persiste la majeure partie de la journée pendant plus de deux semaines, ou un niveau de base qui dérive vers le bas pendant des mois. Cela vaut la peine d'en parler à un médecin ou à un thérapeute — apportez la courbe.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Faut-il faire la moyenne de mes notes d'humeur ?</h3>
+            <p>Une moyenne mensuelle résume correctement le niveau de base, mais faire une moyenne fait disparaître l'amplitude — souvent la moitié la plus intéressante de l'histoire. Regardez la moyenne et la dispersion ensemble, comme l'explique <a href="/fr/mood-journal/mood-swings/" target="_blank" rel="noopener">le guide des sautes d'humeur</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Puis-je montrer ma courbe d'humeur à un thérapeute ?</h3>
+            <p>Oui, et la plupart l'accueilleront volontiers. Une courbe datée avec des étiquettes de facteurs transforme un résumé vague en matière de travail précise. Exportez un PDF pour une version propre, ou un CSV/XLSX pour les chiffres bruts.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>À lire aussi</h2>
+        <div class="guide-related-grid">
+
+            <a href="/fr/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Comment suivre son humeur</h3>
+                <p>Quoi noter, à quelle fréquence, et les facteurs qui méritent une étiquette.</p>
+            </a>
+
+            <a href="/fr/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>Sautes d'humeur : causes et tendances</h3>
+                <p>Ce qui provoque souvent une large amplitude, et quand en parler.</p>
+            </a>
+
+            <a href="/fr/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>Variations saisonnières de l'humeur</h3>
+                <p>Le cycle le plus lent de votre courbe, et comment le repérer.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Une note sur votre bien-être</h2>
+        <p>Cet article est fourni à titre d'information générale uniquement et ne constitue ni un avis médical, ni un diagnostic, ni un traitement. Une courbe d'humeur est un outil de suivi personnel, pas un instrument diagnostique — les tendances qu'elle révèle sont un bon point de départ pour une conversation avec un médecin ou un thérapeute, jamais un substitut à celle-ci. Si une humeur basse persiste la majeure partie de la journée pendant plus de deux semaines, ou si vous constatez des changements durables du sommeil, de l'appétit ou de votre capacité à gérer le quotidien, parlez-en à un professionnel de santé. Si vous avez des pensées de vous faire du mal, contactez immédiatement les services d'urgence de votre pays ou une ligne d'écoute de crise — de l'aide est disponible dès maintenant.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Découvrez votre propre tendance</h2>
+        <p>Téléchargez l'application gratuite Journal d'Humeur — notez en quelques secondes, et laissez la courbe se tracer toute seule</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/fr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/fr-black.svg" alt="Télécharger Journal d'Humeur sur l'App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Application gratuite avec fonctionnalités premium en option
+iPhone, iPad et Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/fr/mood-journal/mood-chart/">Accueil</a>
+            <a href="/fr/about/">À propos</a>
+            <a href="mailto:support@feeltracker.com">Support par e-mail</a>
+            <a href="/fr/support/">Support</a>
+            <a href="/fr/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Suivre sur X</a>
+            <a href="/fr/privacy/">Politique de confidentialité</a>
+            <a href="/fr/terms/">Conditions d'utilisation</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Tous droits réservés.</p>
+        <p class="footer-tagline">Fait partie de la famille Feeltracker d'applications de suivi de santé</p>
+        <p class="footer-disclaimer">Vos données de santé restent sur votre appareil et dans iCloud — nous n'y accédons jamais et ne les vendons pas. Les applications Feeltracker ne sont pas des dispositifs médicaux. À titre informatif uniquement, ne remplacent pas un avis, un diagnostic ou un traitement médical professionnel.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Nous respectons votre vie privée</strong></p>
+                <p>Nous utilisons des cookies d'analyse pour améliorer notre site web et notre application. Aucun cookie publicitaire n'est utilisé. Consultez notre <a href="/fr/privacy/">Politique de confidentialité</a> pour plus de détails.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Refuser</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accepter</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

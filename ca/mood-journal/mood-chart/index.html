@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Com Llegir un Gràfic d'Ànim: Línia Base, Rang i Cicles | Feeltracker</title>
+    <meta name="description" content="Com llegir bé un gràfic d'ànim: troba la teva línia base, valora el rang, detecta els cicles setmanals i estacionals, i distingeix un factor real d'una coincidència.">
+
+    <meta name="keywords" content="gràfic d'ànim, gràfic de seguiment de l'ànim, gràfica d'estat d'ànim, llegir un gràfic d'ànim, patrons d'ànim, tendències d'ànim">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ca_ES">
+    <meta property="og:url" content="https://feeltracker.com/ca/mood-journal/mood-chart/">
+    <meta property="og:title" content="Com Llegir un Gràfic d'Ànim">
+    <meta property="og:description" content="Línia base, rang, cicles i correlació amb factors: com treure respostes reals d'unes setmanes de dades d'ànim, amb un exemple resolt.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ca/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="Com Llegir un Gràfic d'Ànim">
+    <meta property="twitter:description" content="Com llegir un gràfic d'ànim: línia base, rang, cicles, i distingir un factor real d'una coincidència.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Quantes setmanes de dades em calen perquè el gràfic sigui útil?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De tres a quatre setmanes per als ritmes setmanals i els factors únics forts com el son; de dos a tres mesos per als cicles mensuals; gairebé un any sencer per a la forma estacional. Una o dues setmanes ja mostren la teva línia base i quant varies, cosa que ja val la pena tenir."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "El meu gràfic sembla completament aleatori. Ho estic fent malament?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Segurament no. Hi ha gràfics genuïnament sorollosos, i una dispersió plana també diu alguna cosa real: cap factor únic domina el teu ànim. Ordena les entrades per dia de la setmana, i comprova els efectes de l'endemà en comptes dels del mateix dia: els patrons desfasats s'amaguen a plena vista. Continua sent aleatori al cap de dos mesos? Això també és una resposta."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Un punt baix al meu gràfic vol dir que hi ha alguna cosa que no va bé?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. El gràfic de tothom té punts baixos, i un mal dia no és un diagnòstic. El que mereix atenció és la durada i la direcció: una baixada que persisteix la major part del dia durant més de dues setmanes, o una línia base que deriva cap avall durant mesos. Això sí que val la pena comentar-ho amb un metge o terapeuta: porta-hi el gràfic."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Hauria de fer la mitjana de les meves valoracions d'ànim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Una mitjana mensual és un resum just de la línia base, però fer la mitjana llença el rang, sovint la meitat més interessant de la història. Mira la mitjana i la dispersió alhora, tal com s'explica a la guia sobre els canvis d'humor."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Puc ensenyar el meu gràfic d'ànim a un terapeuta?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sí, i la majoria ho agrairan. Un gràfic datat amb etiquetes de factors converteix un resum vague en alguna cosa concreta a partir de la qual treballar. Exporta un PDF per tenir una versió neta, o CSV/XLSX per als números de base."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ca/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Diari de l'Ànim",
+                      "item": "https://feeltracker.com/ca/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Gràfic d'Ànim",
+                      "item": "https://feeltracker.com/ca/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Com Llegir el Teu Gràfic d'Ànim",
+          "description": "Com llegir bé un gràfic d'ànim: troba la teva línia base, valora el rang, detecta els cicles setmanals i estacionals, i distingeix un factor real d'una coincidència.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ca/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ca/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ca/blood-pressure/">Pressió Arterial</a>
+
+            <a href="/ca/daily-journal/">Diari Personal</a>
+
+            <a href="/ca/mood-journal/" class="current">Diari de l'Ànim</a>
+
+            <a href="/ca/sleep/">Son</a>
+
+            <a href="/ca/weight/">Pes</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🏴</span>
+                <span class="lang-name">Català</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ca/">Inici</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ca/mood-journal/">Diari de l'Ànim</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Gràfic d'Ànim</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Com Llegir el Teu Gràfic d'Ànim</h1>
+
+        <p class="guide-updated">Última actualització: agost de 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Un gràfic d'ànim són les teves valoracions diàries dibuixades al llarg del temps. La primera mirada gairebé sempre enganya: l'ull va directe al punt més baix, llegeix «aquí hi ha el mal dia» i s'atura. Ben llegit, respon preguntes millors: on se situa habitualment el meu ànim, quant oscil·la, es mou seguint un calendari, i què l'acompanya?</p><p>Aquesta guia recorre les quatre lectures (línia base, rang, cicles i factors) amb un exemple resolt. Encara no registres res? Comença per <a href="/ca/mood-journal/how-to-track-your-mood/">com fer un seguiment del teu estat d'ànim</a> i torna d'aquí a dues setmanes.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Abans de llegir: quantes dades et calen?</h2>
+        <div class="guide-content">
+            <p>Un gràfic de cinc dies és un estat d'ànim, no un patró. A grans trets:</p><ul><li><strong>1–2 setmanes:</strong> la teva línia base i quant varies; res sobre causes.</li><li><strong>3–6 setmanes:</strong> ritmes setmanals i factors únics forts; el son sol ser el primer.</li><li><strong>2–3 mesos:</strong> cicles mensuals i hormonals, i derives lentes.</li><li><strong>6–12 mesos:</strong> la forma estacional, i una resposta honesta a «estic millor que l'any passat?».</li></ul><p>Els buits no són cap problema: una setmana en blanc és honesta. Una setmana reconstruïda de memòria reescriu el gràfic cap a la història que ja et creus.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. Troba la teva línia base</h2>
+        <div class="guide-content">
+            <p>La teva línia base és on se situa el teu ànim un dia corrent: la franja a la qual la línia torna sempre. En una escala de 5 punts, la majoria de gent viu entre el 3 i el 4.</p><p>És el número més útil de tots: un 3 vol dir una cosa diferent per a algú que viu al 4 que per a algú que viu al 2, i es mou lentament, així que una deriva significa més que un mal dimarts. Una línia base que llisca del 4 al 3 en dos mesos pesa més que qualsevol punt baix aïllat: és el canvi que des de dins no es veu.</p><p>Tapa els extrems amb el polze, mira on se situa el gruix de la línia, i compara aquest mes amb l'anterior.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. Valora el rang</h2>
+        <div class="guide-content">
+            <p>El rang és fins on viatja el teu ànim al voltant d'aquesta línia base. Dues persones comparteixen una línia base de 3,5: una es mou entre el 3 i el 4, l'altra rebota entre l'1 i el 5. Tres preguntes:</p><ul><li><strong>Com d'ample és una setmana típica?</strong> Un punt és normal; tres o quatre, de manera repetida, mereix atenció.</li><li><strong>Com de ràpides són les transicions?</strong> Un pendent lent de dues setmanes i una caiguda del 5 a l'1 en un mateix dia són fenòmens diferents.</li><li><strong>Quant dura una baixada?</strong> Un sotrac d'un dia no és el mateix que dues setmanes tocant fons.</li></ul><p>Si les oscil·lacions són el tema principal, la <a href="/ca/mood-journal/mood-swings/">guia sobre els canvis d'humor</a> parla de les causes i de quan cal consultar un professional.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. Busca cicles</h2>
+        <div class="guide-content">
+            <p>Els cicles converteixen «a vegades estic malament sense motiu» en alguna cosa que pots preveure. Quatre per comprovar:</p><ul><li><strong>Diari.</strong> Cal més d'un registre al dia: matins que pesen més, o una baixada a última hora del vespre.</li><li><strong>Setmanal.</strong> La troballa més habitual: els diumenges al vespre, una vall el dimecres, una revifada real el divendres.</li><li><strong>Mensual.</strong> Els cicles hormonals són dels patrons més clars a les dades d'ànim; dona'ls dos o tres mesos.</li><li><strong>Estacional.</strong> Lent, i fàcil d'atribuir a qualsevol altra cosa que estigués passant: mira els <a href="/ca/mood-journal/seasonal-mood-changes/">canvis d'ànim estacionals</a>.</li></ul><p>En qualsevol registre llarg apareixen cicles, siguin reals o no: fia't del que es repeteix tres vegades i té un mecanisme plausible.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. Factors: un exemple resolt</h2>
+        <div class="guide-content">
+            <p>Aquí el gràfic deixa de descriure i comença a explicar, i enganyar-se un mateix es fa fàcil. Dues setmanes d'entrades:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Dia</th><th>Ànim (1–5)</th><th>Son</th><th>Nota</th></tr></thead><tbody><tr><td>dl.</td><td>3</td><td>6h</td><td>Inici atrafegat</td></tr><tr><td>dt.</td><td>2</td><td>5h</td><td>La nit abans, tard</td></tr><tr><td>dc.</td><td>2</td><td>5h30</td><td>Pla, sense motiu</td></tr><tr><td>dj.</td><td>4</td><td>8h</td><td>He dormit fins tard</td></tr><tr><td>dv.</td><td>4</td><td>7h30</td><td>Passejada, he vist amics</td></tr><tr><td>ds.</td><td>5</td><td>9h</td><td>—</td></tr><tr><td>dg.</td><td>3</td><td>8h</td><td>Temor a la setmana que ve</td></tr><tr><td>dl.</td><td>2</td><td>6h</td><td>Termini de lliurament</td></tr><tr><td>dt.</td><td>2</td><td>5h</td><td>Termini, sense passejada</td></tr><tr><td>dc.</td><td>3</td><td>7h</td><td>Termini enllestit</td></tr><tr><td>dj.</td><td>4</td><td>8h</td><td>Gimnàs</td></tr><tr><td>dv.</td><td>4</td><td>7h</td><td>—</td></tr><tr><td>ds.</td><td>4</td><td>8h30</td><td>Dia tranquil</td></tr><tr><td>dg.</td><td>3</td><td>8h</td><td>Un altre cop la sensació de diumenge</td></tr></tbody></table></div><p><strong>Què avala això:</strong> una línia base al voltant de 3, un rang del 2 al 5, una baixada repetida els diumenges, i una relació forta entre les nits de menys de sis hores i un ànim de 2.</p><p><strong>Què no demostra:</strong> que dormir poc <em>causés</em> l'ànim baix. Les dues setmanes tenien terminis de lliurament, que escurcen el son i aplanen l'ànim de manera independent; l'ànim baix també altera el son, així que la fletxa pot anar al revés. I la baixada del diumenge no és el son: el son del diumenge va anar bé les dues setmanes.</p><p>Per fiar-te d'una correlació: compta les excepcions (un factor que es compleix la meitat de les vegades és una coincidència amb bona premsa), mira el desfasament (el son i l'alcohol es noten l'endemà), busca una tercera cosa que mogui totes dues (terminis, malaltia, viatges) i prova un canvi cada vegada.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Gràfic de paper o app: una comparació honesta</h2>
+        <div class="guide-content">
+            <p>El paper mil·limetrat funciona, i un full de càlcul pot ordenar per dia de la setmana. El que costen totes dues opcions és la continuïtat: ningú reordena un full de càlcul per factor cada mes. La part de l'app en aquest intercanvi:</p><ul><li><strong>Gràfics dibuixats mentre registres</strong>, en qualsevol període: la tendència sempre està al dia.</li><li><strong>L'ànim desglossat per factor</strong>: les comparacions de més amunt, sense aritmètica.</li><li><strong>Cada punt lligat a la seva nota o foto</strong>: una baixada és a un toc del seu motiu.</li><li><strong>Sincronització amb Apple Health</strong>: el son arriba tot sol.</li><li><strong>Exportació a PDF, XLSX, CSV o JSON</strong>: per a visites o per a la teva pròpia anàlisi.</li><li><strong>Anàlisis amb IA sobre el teu propi historial</strong>, gratuïtes amb premium opcional: una segona lectura, no un consell.</li></ul><p>Dibuixi qui dibuixi el gràfic, la interpretació continua sent teva: això és una eina d'autoseguiment, no de diagnòstic. Si alguna cosa et preocupa, porta el gràfic a un metge o terapeuta: és molt més concret que la memòria.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Icona de l'app Diari de l'Ànim Feeltracker" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>El teu gràfic, dibuixat sobre la marxa</h2>
+            <p>El Diari de l'Ànim Feeltracker dibuixa les teves valoracions en qualsevol període, desglossa l'ànim segons els factors que has etiquetat, i manté cada nota i cada foto lligada al seu punt. Amb un sol toc exportes tot el conjunt en PDF. Gratuït, privat i sense necessitat de compte.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button" src="/images/appstore/ca-black.svg" alt="Descarrega Diari de l'Ànim a l'App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ca/mood-journal/" class="guide-app-cta-learn">Més informació sobre l'app <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Preguntes freqüents</h2>
+
+        <div class="guide-faq-item">
+            <h3>Quantes setmanes de dades em calen perquè el gràfic sigui útil?</h3>
+            <p><strong>De tres a quatre setmanes</strong> per als ritmes setmanals i els factors únics forts com el son; <strong>de dos a tres mesos</strong> per als cicles mensuals; <strong>gairebé un any sencer</strong> per a la forma estacional. Una o dues setmanes ja mostren la teva línia base i quant varies, cosa que ja val la pena tenir.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>El meu gràfic sembla completament aleatori. Ho estic fent malament?</h3>
+            <p>Segurament no. Hi ha gràfics genuïnament sorollosos, i una dispersió plana també diu alguna cosa real: cap factor únic domina el teu ànim. Ordena les entrades per dia de la setmana, i comprova els efectes de l'endemà en comptes dels del mateix dia: els patrons desfasats s'amaguen a plena vista. Continua sent aleatori al cap de dos mesos? Això també és una resposta.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Un punt baix al meu gràfic vol dir que hi ha alguna cosa que no va bé?</h3>
+            <p>No. El gràfic de tothom té punts baixos, i un mal dia no és un diagnòstic. El que mereix atenció és la durada i la direcció: una baixada que persisteix la major part del dia durant més de dues setmanes, o una línia base que deriva cap avall durant mesos. Això sí que val la pena comentar-ho amb un metge o terapeuta: porta-hi el gràfic.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Hauria de fer la mitjana de les meves valoracions d'ànim?</h3>
+            <p>Una mitjana mensual és un resum just de la línia base, però fer la mitjana llença el rang, sovint la meitat més interessant de la història. Mira la mitjana i la dispersió alhora, tal com s'explica a la <a href="/ca/mood-journal/mood-swings/" target="_blank" rel="noopener">guia sobre els canvis d'humor</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Puc ensenyar el meu gràfic d'ànim a un terapeuta?</h3>
+            <p>Sí, i la majoria ho agrairan. Un gràfic datat amb etiquetes de factors converteix un resum vague en alguna cosa concreta a partir de la qual treballar. Exporta un PDF per tenir una versió neta, o CSV/XLSX per als números de base.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Continua llegint</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ca/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Com Fer un Seguiment del Teu Estat d'Ànim</h3>
+                <p>Què registrar, amb quina freqüència, i els factors que val la pena etiquetar.</p>
+            </a>
+
+            <a href="/ca/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>Canvis d'Humor: Causes i Patrons</h3>
+                <p>Què sol provocar un rang ampli, i quan val la pena comentar-ho.</p>
+            </a>
+
+            <a href="/ca/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>Canvis d'Ànim Estacionals</h3>
+                <p>El cicle més lent del teu gràfic, i com detectar-lo.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Una nota sobre el benestar</h2>
+        <p>Aquest article és només informació general i no és un consell mèdic, ni un diagnòstic ni un tractament. Un gràfic d'ànim és una eina d'autoseguiment, no un instrument de diagnòstic: els patrons que hi apareixen són un bon punt de partida per a una conversa amb un metge o terapeuta, mai un substitut d'aquesta conversa. Si l'ànim baix persisteix la major part del dia durant més de dues setmanes, o notes canvis persistents en el son, la gana o la teva capacitat per gestionar el dia a dia, parla amb un professional sanitari. Si tens pensaments de fer-te mal, contacta immediatament amb els serveis d'emergència del teu país o amb una línia d'atenció a la crisi: hi ha ajuda disponible ara mateix.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Descobreix el teu propi patró</h2>
+        <p>Descarrega l'app gratuïta Diari de l'Ànim: registra en segons i deixa que el gràfic es dibuixi sol</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ca-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ca-black.svg" alt="Descarrega Diari de l'Ànim a l'App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">App gratuïta amb funcions premium opcionals
+iPhone, iPad i Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ca/mood-journal/mood-chart/">Inici</a>
+            <a href="/ca/about/">Sobre nosaltres</a>
+            <a href="mailto:support@feeltracker.com">Suport per correu</a>
+            <a href="/ca/support/">Suport</a>
+            <a href="/ca/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Segueix-nos a X</a>
+            <a href="/ca/privacy/">Política de privacitat</a>
+            <a href="/ca/terms/">Termes i condicions</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Tots els drets reservats.</p>
+        <p class="footer-tagline">Part de la família Feeltracker d'aplicacions de seguiment de salut</p>
+        <p class="footer-disclaimer">Les vostres dades de salut es guarden al vostre dispositiu i a iCloud — mai hi accedim ni les venem. Les aplicacions Feeltracker no són dispositius mèdics. Només amb finalitats informatives, no substitueixen el consell, diagnòstic o tractament mèdic professional.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Valorem la vostra privacitat</strong></p>
+                <p>Utilitzem galetes d'anàlisi per millorar el nostre lloc web i aplicació. No s'utilitzen galetes publicitàries. Consulteu la nostra <a href="/ca/privacy/">Política de privacitat</a> per a més detalls.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Rebutjar</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Acceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Ako vypočítať BMI: vzorec a vyriešené príklady | Feeltracker</title>
+    <meta name="description" content="Ako si vypočítať BMI ručne pomocou metrického alebo imperiálneho vzorca, s vyriešenými príkladmi, najčastejšími chybami a tým, kde číslo BMI zavádza.">
+
+    <meta name="keywords" content="ako vypočítať BMI, vzorec BMI, výpočet BMI ručne, rovnica BMI, imperiálny vzorec BMI, metrický vzorec BMI">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="sk_SK">
+    <meta property="og:url" content="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+    <meta property="og:title" content="Ako vypočítať BMI: vzorec a vyriešené príklady">
+    <meta property="og:description" content="Metrický a imperiálny vzorec BMI, vyriešené príklady krok za krokom a úprimný pohľad na to, čo vám BMI nepovie.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+    <meta property="twitter:title" content="Ako vypočítať BMI: vzorec a vyriešené príklady">
+    <meta property="twitter:description" content="Ako vypočítať BMI v metrických alebo imperiálnych jednotkách, s vyriešenými príkladmi a úprimnými obmedzeniami.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Aký je vzorec pre BMI?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "V metrických jednotkách: hmotnosť v kg ÷ (výška v m)². V imperiálnych: (hmotnosť v lb × 703) ÷ (výška v palcoch)². Oba dávajú rovnaký výsledok – číslo 703 jednoducho prevádza libry a palce na metrický ekvivalent."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Prečo sa v imperiálnom vzorci BMI používa číslo 703?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Je to prevod jednotiek zabudovaný do rovnice: jeden meter má 39.37 palca, jeden kilogram má 2.2046 libry a 39.37² ÷ 2.2046 vyjde približne 703."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Počíta sa BMI inak pre mužov a ženy?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nie – vzorec aj kategórie pre dospelých sú rovnaké, hoci ženy majú pri rovnakom BMI viac esenciálneho telesného tuku. Ak chcete ukazovateľ zohľadňujúci pohlavie, použite percento telesného tuku, ktoré má samostatné rozsahy."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Aké presné je BMI u športovcov?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Slabé. Sval váži pri rovnakom objeme viac než tuk, takže trénovaní športovci sa bežne dostanú do kategórie nadváhy či obezity, hoci sú extrémne vychudnutí. Pre každého, kto vážne posilňuje, je meranie pásu a odhad telesného tuku oveľa výpovednejší."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Musím prepočítať BMI zakaždým, keď sa odvážim?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ručne nie. Vaša výška sa mení len zriedka, takže BMI sa hýbe presne s hmotnosťou. Kontrola raz mesačne úplne stačí a aplikácia ho aj tak prepočíta automaticky."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/sk/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Váha",
+                      "item": "https://feeltracker.com/sk/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Ako vypočítať BMI",
+                      "item": "https://feeltracker.com/sk/weight/how-to-calculate-bmi/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Ako vypočítať BMI",
+          "description": "Ako si vypočítať BMI ručne pomocou metrického alebo imperiálneho vzorca, s vyriešenými príkladmi, najčastejšími chybami a tým, kde číslo BMI zavádza.",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/sk/weight/how-to-calculate-bmi/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/sk/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/sk/blood-pressure/">Krvný tlak</a>
+
+            <a href="/sk/daily-journal/">Denník</a>
+
+            <a href="/sk/mood-journal/">Denník nálady</a>
+
+            <a href="/sk/sleep/">Spánok</a>
+
+            <a href="/sk/weight/" class="current">Váha</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇸🇰</span>
+                <span class="lang-name">Slovenčina</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/how-to-calculate-bmi/" class="active" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/sk/">Domov</a>
+        <span aria-hidden="true">›</span>
+        <a href="/sk/weight/">Váha</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Ako vypočítať BMI</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Ako vypočítať BMI</h1>
+
+        <p class="guide-updated">Naposledy aktualizované: august 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Index telesnej hmotnosti je vaša hmotnosť vydelená druhou mocninou vašej výšky. Jedno delenie, jedno násobenie – práve preto toto číslo prežilo takmer dvesto rokov. Na klávesnici telefónu to zvládnete za desať sekúnd.</p><p>Nižšie nájdete oba vzorce, prepočítané so skutočnými číslami, plus to, čo väčšina kalkulačiek vynecháva: kde výsledok zavádza. Keď máte svoje číslo, <a href="/sk/weight/bmi-chart/">tabuľka BMI</a> vám povie, do ktorej kategórie patrí.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Metrický vzorec: kilogramy a metre</h2>
+        <div class="guide-content">
+            <p><strong>BMI = hmotnosť v kilogramoch ÷ (výška v metroch × výška v metroch)</strong></p><p>Jediná pasca je jednotka: <em>metre</em>, nie centimetre. 175 cm je 1.75 m – ak použijete 175, vyjde vám BMI 0.0025.</p><h3>Vyriešený príklad</h3><p>78 kg pri výške 175 cm:</p><ol><li>Prepočet: 175 cm = <strong>1.75 m</strong></li><li>Druhá mocnina: 1.75 × 1.75 = <strong>3.0625</strong></li><li>Delenie: 78 ÷ 3.0625 = <strong>25.5</strong></li></ol><p>To je tesne v pásme nadváhy, ktoré začína pri 25.0 – asi 1.5 kg od zdravého pásma. Nikdy neberte výsledok v rozmedzí jedného bodu od hranice ako definitívny: bežné <a href="/sk/weight/weight-fluctuation/">denné kolísanie hmotnosti</a> vás môže počas jedného týždňa preniesť cez hranicu a späť.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Imperiálny vzorec: libry a palce</h2>
+        <div class="guide-content">
+            <p><strong>BMI = (hmotnosť v librách × 703) ÷ (výška v palcoch × výška v palcoch)</strong></p><p>Číslo 703 prevádza libry na štvorcový palec na kilogramy na štvorcový meter – 39.37 palca na meter, umocnené na druhú, vydelené 2.2046 librami na kilogram – takže oba vzorce dávajú rovnaký výsledok.</p><h3>Vyriešený príklad</h3><p>172 lb pri výške 5 ft 9 in:</p><ol><li>Výška v palcoch: (5 × 12) + 9 = <strong>69 in</strong></li><li>Druhá mocnina: 69 × 69 = <strong>4 761</strong></li><li>Hmotnosť × 703: 172 × 703 = <strong>120 916</strong></li><li>Delenie: 120 916 ÷ 4 761 = <strong>25.4</strong></li></ol><p>Ten istý človek ako v metrickom príklade, ten istý výsledok. Klasická chyba: nechať stopy a palce oddelene a umocniť len palce.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Rýchly prehľad: čo znamená váš výsledok</h2>
+        <div class="guide-content">
+            <p>Pre dospelých od 20 rokov, mužov aj ženy rovnako:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>BMI</th><th>Kategória</th><th>Príklad pri 175 cm / 5 ft 9 in</th></tr></thead><tbody><tr><td>Pod 18.5</td><td>Podváha</td><td>Menej než 57 kg / 125 lb</td></tr><tr><td>18.5 – 24.9</td><td>Zdravá hmotnosť</td><td>57 – 76 kg / 125 – 168 lb</td></tr><tr><td>25.0 – 29.9</td><td>Nadváha</td><td>77 – 91 kg / 169 – 201 lb</td></tr><tr><td>30.0 – 34.9</td><td>Obezita 1. stupňa</td><td>92 – 107 kg / 202 – 236 lb</td></tr><tr><td>35.0 – 39.9</td><td>Obezita 2. stupňa</td><td>107 – 122 kg / 237 – 269 lb</td></tr><tr><td>40.0 a viac</td><td>Obezita 3. stupňa</td><td>123 kg / 270 lb a viac</td></tr></tbody></table></div><p>Ak ste juhoázijského, čínskeho alebo iného ázijského pôvodu, viaceré zdravotnícke organizácie uplatňujú nižšie hranice – nadváha približne od 23, obezita približne od 27.5 – pretože metabolické riziko stúpa skôr. Celý obraz vrátane tabuľky podľa výšky nájdete v <a href="/sk/weight/bmi-chart/">článku o tabuľke BMI</a>.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Kde sa číslo pokazí</h2>
+        <div class="guide-content">
+            <p>Výpočet je jednoduchý, takže nesprávne BMI pochádza zo vstupných údajov.</p><ul><li><strong>Odhadnutá výška.</strong> Väčšina dospelých je o centimeter či dva nižšia, než uvádza ich občiansky preukaz, a výška s vekom klesá. Pri 175 cm posunie 1 cm hodnotu BMI asi o 0.3 – dosť na prekročenie hranice. Zmerajte sa raz naboso pri stene a toto číslo používajte ďalej.</li><li><strong>Nekonzistentné váženie.</strong> Večer môžete byť o 1 až 2 kg ťažší. Vážte sa po prebudení, pred jedlom.</li><li><strong>Zmiešané jednotky, umocnená hmotnosť, prílišné zaokrúhľovanie.</strong> Kilogramy s palcami dávajú nezmysel a zaokrúhlenie výšky na najbližších 5 cm môže posunúť výsledok o celý bod. Ak sa dve kalkulačky nezhodujú, takmer vždy je to jedna z týchto príčin.</li></ul><p>A potom je tu to, čo vzorec nevidí. Sval je hustejší než tuk, takže dobre trénovaný veslár môže mať BMI 28 až 30 pri jednocifernom percente telesného tuku – ak vážne posilňujete, považujte BMI za takmer bezvýznamné a použite radšej <a href="/sk/weight/body-fat-percentage/">percento telesného tuku</a>. Platí to aj naopak: človek so sedavým režimom pri BMI 23 môže mať dosť brušného tuku na to, aby sa jeho metabolické riziko zvýšilo. Riziko začína pri rôznych hodnotách BMI v rôznych populáciách, rovnaké BMI vo veku 60 rokov obsahuje viac tuku než vo veku 30, ženy majú viac esenciálneho tuku než muži, BMI neplatí v tehotenstve a u detí sa používajú percentilové grafy. Najlacnejším riešením je krajčírsky meter: <a href="/sk/weight/waist-to-height-ratio/">pomer pásu k výške</a> zaberie tridsať sekúnd a odhalí rozloženie tuku, ktoré BMI nevidí.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Ručný výpočet verzus aplikácia</h2>
+        <div class="guide-content">
+            <p>Vypočítať BMI raz je triviálne. Vypočítavať ho pri každom vážení celý rok a potom vidieť, čo urobil trend – práve tam sa ručný postup potichu rozpadne.</p><p>Bezplatná aplikácia Weight &amp; BMI Feeltracker tento krok odstráni: výšku zadáte raz a BMI sa vypočíta pre každý záznam, vykreslené s trendovými čiarami vedľa vašej hmotnosti a cieľa, ktorý si nastavíte. Zaznamenáva aj percento telesného tuku, synchronizuje sa s Apple Health a medzi vašimi zariadeniami cez iCloud bez účtu či e-mailu a exportuje do PDF, XLSX, CSV alebo JSON na návštevu lekára. Voliteľné AI poznatky vám zhrnú vašu históriu.</p><p>Nech si zvolíte ktorúkoľvek cestu, vyššie uvedený vzorec je všetko, čo potrebujete. Hodnota je v občasnej kontrole, nie v troch desatinných miestach.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="Ikona aplikácie Weight & BMI" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Vynechajte počítanie</h2>
+            <p>Weight & BMI Feeltracker vypočíta vaše BMI z každého váženia, v kilogramoch alebo librách, a vykreslí ho vedľa vašej hmotnosti, takže vidíte trend, nie jedno číslo. Zadarmo, súkromne, bez potreby účtu.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button" src="/images/appstore/sk-black.svg" alt="Stiahnuť Weight & BMI z App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/sk/weight/" class="guide-app-cta-learn">Zistiť viac o aplikácii <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Často kladené otázky</h2>
+
+        <div class="guide-faq-item">
+            <h3>Aký je vzorec pre BMI?</h3>
+            <p>V metrických jednotkách: <strong>hmotnosť v kg ÷ (výška v m)²</strong>. V imperiálnych: <strong>(hmotnosť v lb × 703) ÷ (výška v palcoch)²</strong>. Oba dávajú rovnaký výsledok – číslo 703 jednoducho prevádza libry a palce na metrický ekvivalent.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Prečo sa v imperiálnom vzorci BMI používa číslo 703?</h3>
+            <p>Je to prevod jednotiek zabudovaný do rovnice: jeden meter má 39.37 palca, jeden kilogram má 2.2046 libry a 39.37² ÷ 2.2046 vyjde približne 703.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Počíta sa BMI inak pre mužov a ženy?</h3>
+            <p>Nie – vzorec aj kategórie pre dospelých sú rovnaké, hoci ženy majú pri rovnakom BMI viac esenciálneho telesného tuku. Ak chcete ukazovateľ zohľadňujúci pohlavie, použite <a href="/sk/weight/body-fat-percentage/" target="_blank" rel="noopener">percento telesného tuku</a>, ktoré má samostatné rozsahy.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Aké presné je BMI u športovcov?</h3>
+            <p>Slabé. Sval váži pri rovnakom objeme viac než tuk, takže trénovaní športovci sa bežne dostanú do kategórie nadváhy či obezity, hoci sú extrémne vychudnutí. Pre každého, kto vážne posilňuje, je meranie pásu a odhad telesného tuku oveľa výpovednejší.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Musím prepočítať BMI zakaždým, keď sa odvážim?</h3>
+            <p>Ručne nie. Vaša výška sa mení len zriedka, takže BMI sa hýbe presne s hmotnosťou. Kontrola raz mesačne úplne stačí a aplikácia ho aj tak prepočíta automaticky.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Čítajte ďalej</h2>
+        <div class="guide-related-grid">
+
+            <a href="/sk/weight/bmi-chart/" class="guide-related-card">
+                <h3>Tabuľka BMI pre dospelých</h3>
+                <p>Všetky kategórie plus vyhľadávacia tabuľka podľa výšky a hmotnosti.</p>
+            </a>
+
+            <a href="/sk/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>Zdravá hmotnosť pre vašu výšku</h3>
+                <p>Cieľový rozsah pre vašu výšku v kg a librách.</p>
+            </a>
+
+            <a href="/sk/weight/body-fat-percentage/" class="guide-related-card">
+                <h3>Percento telesného tuku vysvetlené</h3>
+                <p>Čo BMI prehliada a ako to merať namiesto neho.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Zdravotné upozornenie</h2>
+        <p>Tento článok slúži len na všeobecné informačné účely a nie je lekárskou radou, diagnózou ani liečbou. BMI je skríningová hodnota, ktorá sama osebe nedokáže posúdiť zdravie jednotlivca – o svojej hmotnosti a o akomkoľvek pláne, ako ju zmeniť, sa vždy poraďte so svojím lekárom alebo zdravotníckym pracovníkom. Bezodkladne vyhľadajte lekársku pomoc, ak chudnete alebo priberáte bez toho, aby ste sa o to snažili, alebo ak zmenu hmotnosti sprevádzajú príznaky, ako je pretrvávajúca únava, dýchavičnosť alebo strata chuti do jedla.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Nechajte svoje BMI, nech sa vypočíta samo</h2>
+        <p>Stiahnite si bezplatnú aplikáciu Weight & BMI – výšku zadáte raz a o zvyšok sa postará každé váženie</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sk-black.svg" alt="Stiahnuť Weight & BMI z App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Bezplatná aplikácia s voliteľnými prémiovými funkciami
+iPhone, iPad a Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/sk/weight/how-to-calculate-bmi/">Domov</a>
+            <a href="/sk/about/">O nás</a>
+            <a href="mailto:support@feeltracker.com">E-mailová podpora</a>
+            <a href="/sk/support/">Podpora</a>
+            <a href="/sk/faq/">Časté otázky</a>
+            <a href="https://x.com/feeltracker">Sledujte na X</a>
+            <a href="/sk/privacy/">Zásady ochrany súkromia</a>
+            <a href="/sk/terms/">Podmienky používania</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Všetky práva vyhradené.</p>
+        <p class="footer-tagline">Súčasť rodiny zdravotných aplikácií Feeltracker</p>
+        <p class="footer-disclaimer">Vaše zdravotné údaje sú uložené vo vašom zariadení a v iCloude — nikdy k nim nepristupujeme ani ich nepredávame. Aplikácie Feeltracker nie sú zdravotnícke pomôcky. Len na informatívne účely, nenahrádzajú odborné lekárske poradenstvo, diagnózu alebo liečbu.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Vážime si vaše súkromie</strong></p>
+                <p>Používame analytické cookies na zlepšenie našej webovej stránky a aplikácie. Reklamné cookies nepoužívame. Pozrite si naše <a href="/sk/privacy/">Zásady ochrany súkromia</a> pre podrobnosti.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Odmietnuť</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Prijať</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>
