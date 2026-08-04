@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Υπολογιστής Ύπνου: Πότε να Πάτε για Ύπνο | Feeltracker</title>
+    <meta name="description" content="Ένας υπολογιστής ύπνου που υπολογίζει αντίστροφα από την ώρα αφύπνισης. Πίνακες με ώρες κατάκλισης για συνηθισμένα ξυπνητήρια με κύκλους 90 λεπτών, και γιατί ο κύκλος διαφέρει.">
+
+    <meta name="keywords" content="υπολογιστής ύπνου, τι ώρα να κοιμηθώ, υπολογιστής ώρας κατάκλισης, υπολογιστής κύκλων ύπνου, πότε να κοιμηθώ για να ξυπνήσω στις 6, κύκλοι ύπνου 90 λεπτών">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/el/sleep/sleep-calculator/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="el_GR">
+    <meta property="og:url" content="https://feeltracker.com/el/sleep/sleep-calculator/">
+    <meta property="og:title" content="Υπολογιστής Ύπνου: Πότε να Πάτε για Ύπνο">
+    <meta property="og:description" content="Πίνακες ωρών κατάκλισης υπολογισμένοι αντίστροφα από συνηθισμένες ώρες αφύπνισης σε κύκλους 90 λεπτών — και μια ειλικρινής ματιά στο πόσο αξίζουν οι υπολογισμοί.">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/el/sleep/sleep-calculator/">
+    <meta property="twitter:title" content="Υπολογιστής Ύπνου: Πότε να Πάτε για Ύπνο">
+    <meta property="twitter:description" content="Υπολογιστής ύπνου: ώρες κατάκλισης υπολογισμένες αντίστροφα από την ώρα αφύπνισης με κύκλους ύπνου 90 λεπτών.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Τι ώρα πρέπει να κοιμηθώ για να ξυπνήσω στις 06:00;",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "22:15 για πέντε κύκλους (7½ ώρες ύπνου) ή 20:45 για έξι (9 ώρες), και στις δύο περιπτώσεις με περιθώριο 15 λεπτών για να αποκοιμηθείτε. Αν υστερείτε τακτικά σε ύπνο, δοκιμάστε τη νωρίτερη επιλογή για μία εβδομάδα και δείτε πώς είναι τα πρωινά."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Είναι ακριβείς οι υπολογιστές ύπνου;",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Κατά προσέγγιση. Υποθέτουν κύκλο 90 λεπτών· οι πραγματικοί κύκλοι διαρκούν περίπου 70–120 λεπτά και αλλάζουν μέσα στη νύχτα, οπότε περιμένετε απόκλιση 20–30 λεπτών. Χρήσιμοι για να επιλέξετε ανάμεσα σε δύο ρεαλιστικές ώρες κατάκλισης· όχι δικαιολογία για να μείνετε ξύπνιοι περισσότερο."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Είναι καλύτερα να κοιμηθώ 6 ώρες ή 7½ ώρες;",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "7½ ώρες, αναμφίβολα. Οι έξι ώρες είναι τέσσερις κύκλοι και πέφτουν κάτω από το συνιστώμενο εύρος για σχεδόν κάθε ενήλικα — δείτε πόσο ύπνο χρειάζεστε. Μη θυσιάζετε ποτέ συνολικό ύπνο για να βγει στρογγυλός ο υπολογισμός των κύκλων."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Πόση ώρα πρέπει να μου παίρνει για να αποκοιμηθώ;",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Τα 10–20 λεπτά είναι το τυπικό και υγιές. Κάτω από πέντε λεπτά συνήθως δείχνει χρέος ύπνου. Αν ξεπερνάτε τακτικά τα 30 λεπτά, αξίζει να το αντιμετωπίσετε — ξεκινήστε από το πώς να αποκοιμηθείτε πιο γρήγορα."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Πρέπει να κρατώ την ίδια ώρα κατάκλισης και τα Σαββατοκύριακα;",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ναι, όσο πιο κοντά μπορείτε — και προστατέψτε ιδίως την ώρα αφύπνισης. Μια μετατόπιση δύο ωρών το Σαββατοκύριακο προκαλεί ένα φαινόμενο σαν jetlag που κάνει την Κυριακή το βράδυ δύσκολη και τη Δευτέρα χειρότερη. Αν χρειάζεστε επιπλέον ύπνο, ένας ύπνος παράτασης κάτω της μίας ώρας κοστίζει πολύ λιγότερο."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/el/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Ύπνος",
+                      "item": "https://feeltracker.com/el/sleep/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Υπολογιστής Ύπνου",
+                      "item": "https://feeltracker.com/el/sleep/sleep-calculator/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Υπολογιστής Ύπνου: Πότε να Πάτε για Ύπνο",
+          "description": "Ένας υπολογιστής ύπνου που υπολογίζει αντίστροφα από την ώρα αφύπνισης. Πίνακες με ώρες κατάκλισης για συνηθισμένα ξυπνητήρια με κύκλους 90 λεπτών, και γιατί ο κύκλος διαφέρει.",
+          "image": "https://feeltracker.com/images/ST_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/el/sleep/sleep-calculator/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/el/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/el/blood-pressure/">Αρτηριακή Πίεση</a>
+
+            <a href="/el/daily-journal/">Ημερολόγιο</a>
+
+            <a href="/el/mood-journal/">Ημερολόγιο Διάθεσης</a>
+
+            <a href="/el/sleep/" class="current">Ύπνος</a>
+
+            <a href="/el/weight/">Βάρος</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇬🇷</span>
+                <span class="lang-name">Ελληνικά</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/sleep/sleep-calculator/" class="active" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/sleep/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/sleep/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/sleep/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/sleep/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/sleep/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/el/">Αρχική</a>
+        <span aria-hidden="true">›</span>
+        <a href="/el/sleep/">Ύπνος</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Υπολογιστής Ύπνου</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Υπολογιστής Ύπνου: Πότε να Πάτε για Ύπνο</h1>
+
+        <p class="guide-updated">Τελευταία ενημέρωση: Αύγουστος 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Η ιδέα είναι απλή. Ο εγκέφαλός σας περνά από <a href="/el/sleep/sleep-cycles/">κύκλους ύπνου</a> περίπου 90 λεπτών, και το ξύπνημα στο τέλος ενός κύκλου — σε ελαφρύ ύπνο — είναι πολύ πιο ευχάριστο από το να σας τραβήξουν έξω από τη μέση του. Καθορίστε την ώρα αφύπνισης, μετρήστε αντίστροφα σε μπλοκ των 90 λεπτών, προσθέστε 15 λεπτά για να αποκοιμηθείτε: αυτή είναι η ώρα κατάκλισής σας.</p><p>Παρακάτω: πίνακες για συνηθισμένες ώρες ξυπνητηριού, και αυτό που οι περισσότεροι υπολογιστές παραλείπουν — η διάρκεια του κύκλου είναι μέσος όρος, και ο συνολικός ύπνος μετράει περισσότερο από τον έξυπνο χρονισμό. Ξεκινήστε από τους αριθμούς· αφήστε δύο εβδομάδες δικών σας καταγραφών να βγάλουν τον νικητή.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Πώς γίνεται ο υπολογισμός</h2>
+        <div class="guide-content">
+            <p>Τρία συστατικά, από τα οποία μόνο το ένα είναι ακριβές:</p><ol><li><strong>Η ώρα αφύπνισής σας</strong> — το ξυπνητήρι που δεν μπορείτε να μετακινήσετε.</li><li><strong>Η διάρκεια του κύκλου.</strong> Η τυπική εκτίμηση είναι 90 λεπτά· οι πραγματικοί κύκλοι διαρκούν περίπου 70–120 και ποικίλλουν μέσα στη νύχτα.</li><li><strong>Ο χρόνος επέλευσης του ύπνου</strong> — πόσο χρειάζεστε για να αποκοιμηθείτε. Το υγιές είναι 10–20 λεπτά· οι πίνακες υποθέτουν <strong>15</strong>.</li></ol><p>Άρα: <em>ώρα κατάκλισης = ώρα αφύπνισης − (90 λεπτά × κύκλοι) − 15 λεπτά</em>. Πέντε κύκλοι είναι 7,5 ώρες, έξι είναι 9 — και τα δύο μέσα στο συνιστώμενο <a href="/el/sleep/how-much-sleep-do-you-need/">εύρος 7–9 ωρών για ενήλικες</a>. Τέσσερις κύκλοι είναι 6 ώρες, λίγες για σχεδόν όλους — έσχατη λύση, όχι σχέδιο.</p><p>Χρειάζεστε συστηματικά πάνω από 20 λεπτά; Αυξήστε το περιθώριο — ή, καλύτερα, δείτε <a href="/el/sleep/how-to-fall-asleep-faster/">γιατί αργεί τόσο</a> — ένας μεγάλος χρόνος επέλευσης αξίζει από μόνος του να διορθωθεί.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Πίνακες ώρας κατάκλισης ανά ώρα αφύπνισης</h2>
+        <div class="guide-content">
+            <p>Βρείτε το ξυπνητήρι σας στην αριστερή στήλη. Οι στήλες με <strong>6 κύκλους</strong> και <strong>5 κύκλους</strong> είναι η πραγματική επιλογή· οι 4 κύκλοι αφορούν νύχτες που έχουν ήδη χαθεί.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Ώρα αφύπνισης</th><th>6 κύκλοι (9ω ύπνου)</th><th>5 κύκλοι (7½ω ύπνου)</th><th>4 κύκλοι (6ω ύπνου)</th></tr></thead><tbody><tr><td>05:00</td><td>19:45</td><td>21:15</td><td>22:45</td></tr><tr><td>05:30</td><td>20:15</td><td>21:45</td><td>23:15</td></tr><tr><td>06:00</td><td>20:45</td><td>22:15</td><td>23:45</td></tr><tr><td>06:30</td><td>21:15</td><td>22:45</td><td>00:15</td></tr><tr><td>07:00</td><td>21:45</td><td>23:15</td><td>00:45</td></tr><tr><td>07:30</td><td>22:15</td><td>23:45</td><td>01:15</td></tr><tr><td>08:00</td><td>22:45</td><td>00:15</td><td>01:45</td></tr><tr><td>08:30</td><td>23:15</td><td>00:45</td><td>02:15</td></tr></tbody></table></div><p>Διαβάζεται και από τις δύο πλευρές: αν είστε ήδη στο κρεβάτι και διαλέγετε ξυπνητήρι, προσθέστε 15 λεπτά συν 7½ ή 9 ώρες από τώρα.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Σβήσιμο φώτων στις</th><th>Αφύπνιση μετά από 5 κύκλους</th><th>Αφύπνιση μετά από 6 κύκλους</th></tr></thead><tbody><tr><td>21:30</td><td>05:15</td><td>06:45</td></tr><tr><td>22:00</td><td>05:45</td><td>07:15</td></tr><tr><td>22:30</td><td>06:15</td><td>07:45</td></tr><tr><td>23:00</td><td>06:45</td><td>08:15</td></tr><tr><td>23:30</td><td>07:15</td><td>08:45</td></tr><tr><td>00:00</td><td>07:45</td><td>09:15</td></tr></tbody></table></div>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Γιατί ο αριθμός των 90 λεπτών δεν είναι ακριβής</h2>
+        <div class="guide-content">
+            <p>Κάθε υπολογιστής χρησιμοποιεί τα 90 λεπτά — τον μέσο όρο του πληθυσμού. Ο δικός σας μπορεί να πλησιάζει τα 75 ή τα 110, οι κύκλοι μακραίνουν μέσα στη νύχτα, και τα φυσιολογικά ξυπνήματα μαζί με έναν χρόνο επέλευσης που μεταβάλλεται με το άγχος και την καφεΐνη μετατοπίζουν τους υπολογισμούς κατά είκοσι ή τριάντα λεπτά. Στην πράξη:</p><ul><li><strong>Μην ανταλλάσσετε ποτέ συνολικό ύπνο με ευθυγράμμιση κύκλων.</strong> Το να μείνετε ξύπνιοι 45 λεπτά για να πέσει ο υπολογισμός σε ολόκληρο κύκλο χαρίζει πραγματικό ύπνο σε ένα σφάλμα στρογγυλοποίησης.</li><li><strong>Χρησιμοποιήστε τον για να λύσετε την ισοπαλία</strong> ανάμεσα σε δύο εύλογες ώρες κατάκλισης.</li><li><strong>Περιμένετε ότι θα κάνετε προσαρμογές.</strong> Αν οι 7½ ώρες σάς αφήνουν σταθερά ζαλισμένους ενώ οι 8 ακριβώς σας βολεύουν, οι κύκλοι σας δεν είναι 90 λεπτά. Η εμπειρία σας υπερισχύει του τύπου.</li><li><strong>Η συνέπεια υπερτερεί της ακρίβειας.</strong> Η ίδια ώρα κατάκλισης κάθε βράδυ, Σαββατοκύριακα συμπεριλαμβανομένων, κάνει περισσότερα για τις 07:00 από οποιονδήποτε υπολογισμό.</li></ul><p>Η αδράνεια ύπνου — η θολούρα μετά από ένα κακοχρονισμένο ξυπνητήρι — είναι υπαρκτή και μπορεί να κρατήσει μισή ώρα, οπότε η ιδέα είναι σωστή. Η βεβαιότητα στο δεύτερο δεκαδικό ψηφίο δεν είναι.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Πώς να εδραιώσετε πραγματικά μια νέα ώρα κατάκλισης</h2>
+        <div class="guide-content">
+            <p>Οι περισσότεροι άνθρωποι δεν αποτυγχάνουν στο να γνωρίζουν την ώρα κατάκλισής τους· αποτυγχάνουν στο να την τηρήσουν. Τι βοηθά αξιόπιστα:</p><ul><li><strong>Προχωρήστε με βήματα των 15 λεπτών.</strong> Μία ώρα νωρίτερα μέσα σε ένα βράδυ σημαίνει μία ώρα ξαπλωμένοι ξύπνιοι. Κρατήστε κάθε βήμα τρία ή τέσσερα βράδια.</li><li><strong>Σταθεροποιήστε πρώτα την ώρα αφύπνισης.</strong> Το πρωινό φως ρυθμίζει το βιολογικό σας ρολόι πολύ ισχυρότερα από την ώρα που σβήνει η λάμπα. Καθορίστε την ώρα αφύπνισης, κάθε μέρα, και η ώρα κατάκλισης τείνει να ακολουθεί.</li><li><strong>Βάλτε την υπενθύμιση για το ξεκούρασμα πριν τον ύπνο, όχι για την ώρα κατάκλισης.</strong> Μια ειδοποίηση 30–45 λεπτά πριν σβήσουν τα φώτα αλλάζει τη συμπεριφορά· μια ειδοποίηση την ώρα της κατάκλισης απλώς σας λέει ότι αργήσατε.</li><li><strong>Προστατέψτε την τελευταία ώρα.</strong> Οι φωτεινές οθόνες, η έντονη άσκηση, τα βαριά γεύματα και το αλκοόλ σπρώχνουν όλα την έναρξη του ύπνου αργότερα — δείτε την <a href="/el/sleep/sleep-hygiene/">υγιεινή του ύπνου</a>.</li><li><strong>Μην μένετε στο κρεβάτι εκνευρισμένοι.</strong> Ακόμη ξύπνιοι μετά από περίπου 20 λεπτά; Σηκωθείτε, κάντε κάτι βαρετό σε χαμηλό φωτισμό και επιστρέψτε όταν νυστάξετε.</li></ul>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Σημειωματάριο ή εφαρμογή: μια ειλικρινής σύγκριση</h2>
+        <div class="guide-content">
+            <p>Ένας υπολογιστής σάς δίνει μια υπόθεση· μόνο το δικό σας αρχείο την ελέγχει. Δύο εβδομάδες καταγραφής της ώρας κατάκλισης, της ώρας αφύπνισης και του πώς νιώσατε αξίζουν περισσότερο από οποιονδήποτε πίνακα — συμπεριλαμβανομένου αυτού εδώ. Ένα σημειωματάριο τα καταφέρνει μια χαρά. Εκεί που το χαρτί υστερεί είναι στους υπολογισμούς: για να βγάλετε τον μέσο όρο έντεκα νυχτών, ή για να παρατηρήσετε ότι τα καλύτερα πρωινά σας ακολούθησαν όλα ένα σβήσιμο φώτων στις 23:00, πρέπει να προσθέσετε στο χέρι πρόχειρα γραμμένες ώρες — οπότε κανείς δεν το κάνει.</p><p>Η εφαρμογή Feeltracker Ύπνος &amp; Όνειρα αναλαμβάνει αυτό το κομμάτι: ώρες κατάκλισης και αφύπνισης με αυτόματο υπολογισμό του χρόνου ύπνου, αξιολόγηση ποιότητας με πεδία για όνειρα και σημειώσεις, και τάσεις για οποιαδήποτε περίοδο, ώστε η σύνδεση ώρας κατάκλισης–πρωινού να γίνει ορατή. Οι υπενθυμίσεις βοηθούν να εδραιωθεί το νέο πρόγραμμα· προσθέστε συγχρονισμό με το Apple Health, καταγραφή CPAP και συγχρονισμό iCloud χωρίς λογαριασμό ή email. Οι πληροφορίες AI μπορούν να συνοψίσουν το δικό σας ιστορικό, και όλα εξάγονται σε PDF, XLSX, CSV ή JSON για τον γιατρό. Είναι χειροκίνητο ημερολόγιο, όχι αυτόματος ανιχνευτής σταδίων ύπνου — δεν θα μαντέψει πότε αποκοιμηθήκατε ούτε θα προσποιηθεί ότι ξέρει τη διάρκεια του κύκλου σας. Απλώς κάνει την καταγραφή αρκετά εύκολη ώστε να τη συνεχίζετε.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/ST_1024.png" alt="Εικονίδιο εφαρμογής Ύπνος & Όνειρα" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Ελέγξτε την ώρα κατάκλισής σας με πραγματικά δεδομένα</h2>
+            <p>Η εφαρμογή Feeltracker Ύπνος & Όνειρα καταγράφει τις ώρες κατάκλισης και αφύπνισης, υπολογίζει τον χρόνο ύπνου και απεικονίζει πώς οι αξιολογήσεις ποιότητας συμβαδίζουν με την ώρα κατάκλισης — ώστε να βρείτε την ώρα που δουλεύει για εσάς, όχι για τον μέσο άνθρωπο. Δωρεάν, ιδιωτική, χωρίς λογαριασμό.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/el-white.svg"><img class="store_button" src="/images/appstore/el-black.svg" alt="Λήψη του Ύπνος & Όνειρα στο App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/el/sleep/" class="guide-app-cta-learn">Μάθετε περισσότερα για την εφαρμογή <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Συχνές ερωτήσεις</h2>
+
+        <div class="guide-faq-item">
+            <h3>Τι ώρα πρέπει να κοιμηθώ για να ξυπνήσω στις 06:00;</h3>
+            <p><strong>22:15</strong> για πέντε κύκλους (7½ ώρες ύπνου) ή <strong>20:45</strong> για έξι (9 ώρες), και στις δύο περιπτώσεις με περιθώριο 15 λεπτών για να αποκοιμηθείτε. Αν υστερείτε τακτικά σε ύπνο, δοκιμάστε τη νωρίτερη επιλογή για μία εβδομάδα και δείτε πώς είναι τα πρωινά.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Είναι ακριβείς οι υπολογιστές ύπνου;</h3>
+            <p>Κατά προσέγγιση. Υποθέτουν κύκλο 90 λεπτών· οι πραγματικοί κύκλοι διαρκούν περίπου 70–120 λεπτά και αλλάζουν μέσα στη νύχτα, οπότε περιμένετε απόκλιση 20–30 λεπτών. Χρήσιμοι για να επιλέξετε ανάμεσα σε δύο ρεαλιστικές ώρες κατάκλισης· όχι δικαιολογία για να μείνετε ξύπνιοι περισσότερο.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Είναι καλύτερα να κοιμηθώ 6 ώρες ή 7½ ώρες;</h3>
+            <p>7½ ώρες, αναμφίβολα. Οι έξι ώρες είναι τέσσερις κύκλοι και πέφτουν κάτω από το συνιστώμενο εύρος για σχεδόν κάθε ενήλικα — δείτε <a href="/el/sleep/how-much-sleep-do-you-need/" target="_blank" rel="noopener">πόσο ύπνο χρειάζεστε</a>. Μη θυσιάζετε ποτέ συνολικό ύπνο για να βγει στρογγυλός ο υπολογισμός των κύκλων.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Πόση ώρα πρέπει να μου παίρνει για να αποκοιμηθώ;</h3>
+            <p>Τα <strong>10–20 λεπτά</strong> είναι το τυπικό και υγιές. Κάτω από πέντε λεπτά συνήθως δείχνει χρέος ύπνου. Αν ξεπερνάτε τακτικά τα 30 λεπτά, αξίζει να το αντιμετωπίσετε — ξεκινήστε από το <a href="/el/sleep/how-to-fall-asleep-faster/" target="_blank" rel="noopener">πώς να αποκοιμηθείτε πιο γρήγορα</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Πρέπει να κρατώ την ίδια ώρα κατάκλισης και τα Σαββατοκύριακα;</h3>
+            <p>Ναι, όσο πιο κοντά μπορείτε — και προστατέψτε ιδίως την ώρα <strong>αφύπνισης</strong>. Μια μετατόπιση δύο ωρών το Σαββατοκύριακο προκαλεί ένα φαινόμενο σαν jetlag που κάνει την Κυριακή το βράδυ δύσκολη και τη Δευτέρα χειρότερη. Αν χρειάζεστε επιπλέον ύπνο, ένας ύπνος παράτασης κάτω της μίας ώρας κοστίζει πολύ λιγότερο.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Συνεχίστε το διάβασμα</h2>
+        <div class="guide-related-grid">
+
+            <a href="/el/sleep/sleep-cycles/" class="guide-related-card">
+                <h3>Οι Κύκλοι και τα Στάδια του Ύπνου</h3>
+                <p>Από τι αποτελείται ο κύκλος των 90 λεπτών, και πώς αλλάζει μέσα στη νύχτα.</p>
+            </a>
+
+            <a href="/el/sleep/how-to-fall-asleep-faster/" class="guide-related-card">
+                <h3>Πώς να Αποκοιμηθείτε πιο Γρήγορα</h3>
+                <p>Τι να κάνετε όταν η ώρα κατάκλισης είναι σωστή αλλά ο ύπνος δεν έρχεται.</p>
+            </a>
+
+            <a href="/el/sleep/how-much-sleep-do-you-need/" class="guide-related-card">
+                <h3>Πόσο Ύπνο Χρειάζεστε;</h3>
+                <p>Συνιστώμενες ώρες κατά ηλικία, και πώς να βρείτε τον δικό σας αριθμό.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Ιατρική αποποίηση ευθύνης</h2>
+        <p>Αυτό το άρθρο προορίζεται μόνο για γενική ενημέρωση και δεν αποτελεί ιατρική συμβουλή, διάγνωση ή θεραπεία. Η διάρκεια του κύκλου ύπνου και η ανάγκη ύπνου διαφέρουν από άτομο σε άτομο, οπότε αντιμετωπίστε κάθε υπολογισμένη ώρα κατάκλισης ως αφετηρία — ακολουθείτε πάντα τις οδηγίες του γιατρού ή του παρόχου υγειονομικής περίθαλψής σας. Απευθυνθείτε σε κλινικό γιατρό αν χρειάζεστε σταθερά πάνω από 30 λεπτά για να αποκοιμηθείτε, αν ξυπνάτε χωρίς να έχετε ξεκουραστεί μετά από ολόκληρη νύχτα, αν αποκοιμιέστε ακούσια στη διάρκεια της ημέρας, ή αν ο/η σύντροφός σας αναφέρει δυνατό ροχαλητό, λαχάνιασμα ή παύσεις στην αναπνοή σας.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Βρείτε την ώρα κατάκλισης που σας ταιριάζει</h2>
+        <p>Κατεβάστε τη δωρεάν εφαρμογή Ύπνος & Όνειρα — καταγράψτε τις νύχτες σας, βάλτε υπενθυμίσεις, παρακολουθήστε την τάση</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/el-white.svg"><img class="store_button store_button--lg" src="/images/appstore/el-black.svg" alt="Λήψη του Ύπνος & Όνειρα στο App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Δωρεάν εφαρμογή με προαιρετικές premium λειτουργίες
+iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/el/sleep/sleep-calculator/">Αρχική</a>
+            <a href="/el/about/">Σχετικά</a>
+            <a href="mailto:support@feeltracker.com">Υποστήριξη μέσω email</a>
+            <a href="/el/support/">Υποστήριξη</a>
+            <a href="/el/faq/">Συχνές ερωτήσεις</a>
+            <a href="https://x.com/feeltracker">Ακολουθήστε στο X</a>
+            <a href="/el/privacy/">Πολιτική απορρήτου</a>
+            <a href="/el/terms/">Όροι χρήσης</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Με επιφύλαξη παντός δικαιώματος.</p>
+        <p class="footer-tagline">Μέρος της οικογένειας εφαρμογών υγείας Feeltracker</p>
+        <p class="footer-disclaimer">Τα δεδομένα υγείας σας αποθηκεύονται στη συσκευή σας και στο iCloud — δεν έχουμε ποτέ πρόσβαση ούτε τα πουλάμε. Οι εφαρμογές Feeltracker δεν είναι ιατρικές συσκευές. Μόνο για ενημερωτικούς σκοπούς, δεν υποκαθιστούν επαγγελματική ιατρική συμβουλή, διάγνωση ή θεραπεία.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Εκτιμούμε το απόρρητό σας</strong></p>
+                <p>Χρησιμοποιούμε cookies ανάλυσης για τη βελτίωση του ιστότοπου και της εφαρμογής μας. Δεν χρησιμοποιούνται cookies διαφήμισης. Δείτε την <a href="/el/privacy/">Πολιτική απορρήτου</a> για λεπτομέρειες.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Απόρριψη</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Αποδοχή</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

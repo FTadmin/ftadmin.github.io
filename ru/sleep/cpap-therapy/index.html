@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>CPAP-терапия: привыкание и учёт использования | Feeltracker</title>
+    <meta name="description" content="Практическое руководство по CPAP-терапии: какими на самом деле бывают первые недели, что делать при утечке маски, сухости во рту, вздутии и клаустрофобии.">
+
+    <meta name="keywords" content="CPAP-терапия, привыкание к CPAP, утечка маски CPAP, сухость во рту от CPAP, аэрофагия CPAP, приверженность CPAP, учёт часов CPAP">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ru/sleep/cpap-therapy/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/sleep/cpap-therapy/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/cpap-therapy/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://feeltracker.com/ru/sleep/cpap-therapy/">
+    <meta property="og:title" content="CPAP-терапия: привыкание и учёт">
+    <meta property="og:description" content="Проблемы первых недель и их решения — утечка маски, сухость во рту, вздутие, клаустрофобия — и почему ночные часы важны вашей клинике и страховой.">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ru/sleep/cpap-therapy/">
+    <meta property="twitter:title" content="CPAP-терапия: привыкание и учёт">
+    <meta property="twitter:description" content="CPAP-терапия: как решать проблемы первых недель и зачем считать ночные часы использования.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Сколько времени нужно, чтобы привыкнуть к CPAP?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Большинству нужно от двух до шести недель. Носить маску час бодрствуя, использовать её каждую ночь целиком, а не наполовину, и рано попросить о повторном подборе — всё это заметно сокращает срок. Всё ещё боретесь через месяц? Это повод позвонить поставщику, а не бросить."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Сколько часов за ночь нужно им пользоваться?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Цель — всю ночь и каждую ночь: апноэ возвращается в тот момент, когда давление прекращается. Страховые компании обычно задают на пробном этапе документально подтверждаемый минимум (часто около четырёх часов в большинство ночей), но это порог для оплаты, а не цель для здоровья. Точное правило зависит от страны, страховой и поставщика."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Почему от CPAP появляются вздутие и отрыжка?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Это аэрофагия — воздух уходит в пищевод, а не в дыхательные пути. Часто это означает, что давление выше, чем вам сейчас нужно. Спросите врача о пересмотре давления или настройках облегчения выдоха; помогает также сон на боку или с приподнятым изголовьем. Не меняйте назначенные настройки самостоятельно."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Можно ли прекратить CPAP, когда стало лучше?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Нет: улучшение — это работа терапии, а не исчезновение апноэ. Прекращение возвращает остановки дыхания в ту же ночь. Если снижение веса, операция или изменившиеся обстоятельства заставляют задуматься, нужен ли CPAP по-прежнему, это вопрос о повторном обследовании к вашему врачу, а не решение, которое принимают дома."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Есть ли альтернатива CPAP?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Иногда. Индивидуальные внутриротовые устройства (выдвигающие нижнюю челюсть) подходят многим при лёгком и среднем апноэ, позиционная терапия помогает, когда апноэ в основном возникает при сне на спине, снижение веса способно существенно уменьшить тяжесть, а операция решает вопросы конкретной анатомии. Что подходит именно вам, зависит от результатов вашего исследования сна и оценки врача."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ru/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Сон",
+                      "item": "https://feeltracker.com/ru/sleep/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "CPAP-терапия",
+                      "item": "https://feeltracker.com/ru/sleep/cpap-therapy/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "CPAP-терапия: привыкание и учёт",
+          "description": "Практическое руководство по CPAP-терапии: какими на самом деле бывают первые недели, что делать при утечке маски, сухости во рту, вздутии и клаустрофобии.",
+          "image": "https://feeltracker.com/images/ST_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ru/sleep/cpap-therapy/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ru/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ru/blood-pressure/">Артериальное давление</a>
+
+            <a href="/ru/daily-journal/">Ежедневник</a>
+
+            <a href="/ru/mood-journal/">Дневник настроения</a>
+
+            <a href="/ru/sleep/" class="current">Сон</a>
+
+            <a href="/ru/weight/">Вес</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇷🇺</span>
+                <span class="lang-name">Русский</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/sleep/cpap-therapy/" class="active" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/sleep/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/sleep/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/sleep/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/sleep/cpap-therapy/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/sleep/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/sleep/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/sleep/cpap-therapy/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/sleep/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/sleep/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/sleep/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/sleep/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/sleep/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/sleep/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/sleep/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/sleep/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/sleep/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/sleep/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/sleep/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/sleep/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/sleep/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ru/">Главная</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ru/sleep/">Сон</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">CPAP-терапия</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>CPAP-терапия: привыкание и учёт</h1>
+
+        <p class="guide-updated">Обновлено: август 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>CPAP — постоянное положительное давление в дыхательных путях — это стандартное лечение обструктивного <a href="/ru/sleep/sleep-apnea-signs/">апноэ сна</a>: тихий компрессор подаёт воздух под давлением через шланг и маску, распирая дыхательные пути изнутри, чтобы они не спадались. Ни лекарств, ни операции, и эффект наступает сразу в те ночи, когда вы им пользуетесь.</p><p>Загвоздка человеческая: терапия крайне эффективна, а оборудование легко забросить. Большинство бросающих останавливаются в первые недели из-за проблем, у которых есть простые решения, — вот они, а заодно объяснение, почему клиника и страховая следят за вашими ночными часами.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Какими на самом деле бывают первые недели</h2>
+        <div class="guide-content">
+            <p>Меньшинство хорошо спит уже первую ночь; большинству нужно от двух до шести недель, прежде чем маска перестанет ощущаться чужеродной. Сократить этот срок помогают три вещи:</p><ul><li><strong>Носите маску бодрствуя.</strong> Час на диване с работающим аппаратом разрывает связку «маска — тревога» быстрее всего остального.</li><li><strong>Используйте её каждую ночь и всю ночь.</strong> Половинчатые ночи оставляют вас уставшим, аппарат начинает казаться бессмысленным — это дорога к отказу.</li><li><strong>Звоните поставщику рано.</strong> Посадка маски, режим нарастания давления и увлажнение — всё это настраивается; поставщики заранее рассчитывают на замену масок в первый месяц. Молча мучиться — самая частая ошибка.</li></ul><p>Отдача часто наступает быстро: более ясные утра уже через несколько дней. Если нет — скажите врачу: это информация, а не повод прекращать.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Частые проблемы и что их решает</h2>
+        <div class="guide-content">
+            <p>Почти любая ранняя проблема есть в этой таблице, и почти все они решаемы. Всё, что касается <em>настроек давления</em>, относится к компетенции вашего врача.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Проблема</th><th>Почему возникает</th><th>Что обычно помогает</th></tr></thead><tbody><tr><td><strong>Утечка из маски</strong> — воздух свистит, дует в глаза, вы просыпаетесь от съехавшей маски</td><td>Неподходящий размер или тип, перетянутые ремни, изношенная подушечка, повороты во сне</td><td>Подберите маску заново — размер отличается у разных моделей; примеряйте лёжа. Затягивайте <em>слабее</em>: перетяжка деформирует подушечку. Меняйте подушечки по графику; часто помогает тканевая прокладка или другой тип (носовые канюли, носовая или полнолицевая маска).</td></tr><tr><td><strong>Сухость во рту и горле</strong></td><td>Обычно из-за дыхания ртом ночью</td><td>Увеличьте нагрев увлажнителя; подогреваемый шланг избавит от конденсата. Спросите про подбородочный ремень или полнолицевую маску и вылечите заложенность, из-за которой приходится дышать ртом.</td></tr><tr><td><strong>Аэрофагия</strong> — заглатывание воздуха, вздутие, отрыжка</td><td>Воздух уходит в пищевод, часто из-за давления выше, чем вам сейчас нужно</td><td>Спросите о пересмотре давления, настройках облегчения выдоха (EPR/flex) или автоматическом режиме; помогает сон на боку. Сообщите об этом, а не терпите.</td></tr><tr><td><strong>Клаустрофобия и тревога от маски</strong></td><td>Естественная реакция на предмет, пристёгнутый к лицу</td><td>Дневная десенсибилизация: маска без ремней, потом с ремнями, потом с работающим аппаратом, ношение бодрствуя. Попробуйте носовые канюли с минимальным контактом; используйте режим нарастания давления. Стойкая тревога хорошо отвечает на несколько сессий поведенческой терапии — спросите об этом.</td></tr><tr><td><strong>Заложенность носа, чихание, насморк</strong></td><td>Поток воздуха сушит и раздражает слизистую носа</td><td>Увлажнение, промывание солевым раствором перед сном и разговор с врачом про аллергию или искривлённую перегородку.</td></tr><tr><td><strong>Следы на коже, потёртости, покраснение на переносице</strong></td><td>Слишком тугие ремни или маска каждую ночь на одном и том же месте</td><td>Ослабляйте до тех пор, пока герметичность едва держится; мойте подушечку ежедневно (кожный жир нарушает прилегание). Прокладки или другой тип маски перераспределяют давление.</td></tr><tr><td><strong>Шум, натяжение шланга, разбуженный партнёр</strong></td><td>Шланг тянет маску и нарушает прилегание; воздух из клапана дует в сторону партнёра</td><td>Держатель шланга или прокладка его через изголовье избавляют от утечек при поворотах; внезапно зашумевший аппарат требует замены фильтра или имеет утечку.</td></tr></tbody></table></div><p>Две вещи, которые делать самостоятельно <strong>нельзя</strong>: менять назначенные настройки давления и прекращать терапию, потому что стало лучше. Апноэ сна возвращается в ту же ночь, когда вы останавливаетесь.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Кратко об уходе и замене деталей</h2>
+        <div class="guide-content">
+            <p>Две минуты в день: протирайте подушечку маски мягким мылом и водой — кожный жир и вызывает ту самую классическую медленную утечку, — раз в неделю мойте подушечку, оголовье и шланг, заливайте в увлажнитель дистиллированную воду, раз в месяц проверяйте фильтр и меняйте детали по графику поставщика. Озоновые и ультрафиолетовые «очистители» лучше не использовать, если их не одобрил ваш поставщик: производители рекомендуют мыло и воду.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Зачем ведут учёт ночных часов</h2>
+        <div class="guide-content">
+            <p>Любой современный аппарат записывает, сколько времени он работал, и это число важно по трём причинам.</p><p><strong>Ваша клиника</strong> в первую очередь смотрит на часы использования, когда терапия не работает: есть ли эти часы и совпадают ли пропущенные ночи с простудой, поездкой или неудачной посадкой маски. Часы плюс ваши заметки превращают «мне не помогает» во что-то поправимое.</p><p><strong>Страховые компании и системы здравоохранения</strong> нередко увязывают продолжение оплаты с документально подтверждённой приверженностью на пробном этапе — часто это четыре и более часов в большинство ночей. Правила различаются, но сама схема почти универсальна.</p><p><strong>Для вас</strong> ценность в сочетании: часы работы аппарата плюс <a href="/ru/sleep/sleep-diary/">дневник сна</a> с тем, как вы спали и как себя чувствовали, отвечают на главный вопрос — работает ли это? И помните: CPAP лечит дыхательные пути, а не привычку ложиться в два часа ночи; привычки из нашего <a href="/ru/sleep/sleep-hygiene/">руководства по гигиене сна</a> по-прежнему делают свою часть работы.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Как вести записи: данные аппарата, бумага или приложение</h2>
+        <div class="guide-content">
+            <p>Приложение вашего аппарата хранит часы, но не человеческую половину — насколько отдохнувшим вы себя чувствовали, ту ночь, когда вы сдались в три часа ночи, и почему, — и запирает записи в экосистеме одного производителя. Блокнот работает; регулярность важнее изощрённости. <strong>«Сон и сновидения» от Feeltracker</strong> держит обе половины в одном месте: это ручной дневник — без подключения к аппарату и без измерения дыхания — где использование CPAP идёт рядом со временем засыпания и подъёма, оценкой качества и заметками, графиками и трендами, экспортом в PDF, XLSX, CSV или JSON для визитов в клинику, напоминаниями, виджетами, синхронизацией с Apple Health, синхронизацией через iCloud без аккаунта и ИИ-подсказками (бесплатно, с дополнительными премиум-функциями).</p><p>Записывайте каждую ночь первый месяц — это тот отрезок, когда поправимую проблему заметить проще всего и когда большинство людей тихо бросает.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/ST_1024.png" alt="Значок приложения «Сон и сновидения»" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Записывайте ночи и часы CPAP вместе</h2>
+            <p>«Сон и сновидения» от Feeltracker хранит в одной истории время сна, качество, заметки и использование CPAP, строит график тренда и выгружает аккуратный PDF к визиту в клинику. Бесплатно, приватно, без регистрации.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ru-white.svg"><img class="store_button" src="/images/appstore/ru-black.svg" alt="Скачать «Сон и сновидения» в App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ru/sleep/" class="guide-app-cta-learn">Подробнее о приложении <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Часто задаваемые вопросы</h2>
+
+        <div class="guide-faq-item">
+            <h3>Сколько времени нужно, чтобы привыкнуть к CPAP?</h3>
+            <p>Большинству нужно от двух до шести недель. Носить маску час бодрствуя, использовать её каждую ночь целиком, а не наполовину, и рано попросить о повторном подборе — всё это заметно сокращает срок. Всё ещё боретесь через месяц? Это повод позвонить поставщику, а не бросить.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Сколько часов за ночь нужно им пользоваться?</h3>
+            <p>Цель — всю ночь и каждую ночь: апноэ возвращается в тот момент, когда давление прекращается. Страховые компании обычно задают на пробном этапе документально подтверждаемый минимум (часто около <strong>четырёх часов в большинство ночей</strong>), но это порог для оплаты, а не цель для здоровья. Точное правило зависит от страны, страховой и поставщика.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Почему от CPAP появляются вздутие и отрыжка?</h3>
+            <p>Это <strong>аэрофагия</strong> — воздух уходит в пищевод, а не в дыхательные пути. Часто это означает, что давление выше, чем вам сейчас нужно. Спросите врача о пересмотре давления или настройках облегчения выдоха; помогает также сон на боку или с приподнятым изголовьем. Не меняйте назначенные настройки самостоятельно.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Можно ли прекратить CPAP, когда стало лучше?</h3>
+            <p>Нет: улучшение — это работа терапии, а не исчезновение апноэ. Прекращение возвращает остановки дыхания в ту же ночь. Если снижение веса, операция или изменившиеся обстоятельства заставляют задуматься, нужен ли CPAP по-прежнему, это вопрос о повторном обследовании к вашему врачу, а не решение, которое принимают дома.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Есть ли альтернатива CPAP?</h3>
+            <p>Иногда. Индивидуальные внутриротовые устройства (выдвигающие нижнюю челюсть) подходят многим при лёгком и среднем апноэ, позиционная терапия помогает, когда апноэ в основном возникает при сне на спине, снижение веса способно существенно уменьшить тяжесть, а операция решает вопросы конкретной анатомии. Что подходит именно вам, зависит от <a href="/ru/sleep/sleep-apnea-signs/" target="_blank" rel="noopener">результатов вашего исследования сна</a> и оценки врача.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Читайте также</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ru/sleep/sleep-apnea-signs/" class="guide-related-card">
+                <h3>Признаки и симптомы апноэ сна</h3>
+                <p>Ночные и дневные признаки и то, как апноэ диагностируют.</p>
+            </a>
+
+            <a href="/ru/sleep/sleep-diary/" class="guide-related-card">
+                <h3>Шаблон дневника сна</h3>
+                <p>Что записывать каждое утро и правило двух недель.</p>
+            </a>
+
+            <a href="/ru/sleep/sleep-hygiene/" class="guide-related-card">
+                <h3>Гигиена сна: привычки, которые работают</h3>
+                <p>Привычки, которые важны и после начала терапии.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Медицинский дисклеймер</h2>
+        <p>Эта статья носит исключительно информационный характер и не является медицинской консультацией, диагнозом или назначением лечения. CPAP — назначаемая терапия: никогда не меняйте настройки давления, не меняйте оборудование и не прекращайте пользоваться аппаратом без разговора с врачом, который его назначил. Всегда следуйте рекомендациям своего врача, сомнологической клиники или поставщика оборудования. Немедленно обратитесь за медицинской помощью, если у вас появились боль в груди, выраженная одышка, повторяющиеся носовые кровотечения или глазная инфекция, которую вы связываете с утечкой из маски.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Ведите записи, которые попросит ваша клиника</h2>
+        <p>Скачайте бесплатное приложение «Сон и сновидения» — ночные часы использования, качество сна и заметки, выгрузка в одно касание</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ru-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ru-black.svg" alt="Скачать «Сон и сновидения» в App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Бесплатное приложение с дополнительными Premium-функциями
+iPhone, iPad и Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ru/sleep/cpap-therapy/">Главная</a>
+            <a href="/ru/about/">О нас</a>
+            <a href="mailto:support@feeltracker.com">Поддержка по эл. почте</a>
+            <a href="/ru/support/">Поддержка</a>
+            <a href="/ru/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Подписаться в X</a>
+            <a href="/ru/privacy/">Политика конфиденциальности</a>
+            <a href="/ru/terms/">Условия использования</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Все права защищены.</p>
+        <p class="footer-tagline">Часть семейства приложений Feeltracker для отслеживания здоровья</p>
+        <p class="footer-disclaimer">Ваши данные о здоровье хранятся на вашем устройстве и в iCloud — мы никогда не получаем к ним доступ и не продаём их. Приложения Feeltracker не являются медицинскими устройствами. Только для информационных целей, не заменяют профессиональную медицинскую консультацию, диагностику или лечение.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Мы ценим вашу конфиденциальность</strong></p>
+                <p>Мы используем файлы cookie для аналитики, чтобы улучшить наш сайт и приложение. Рекламные cookie не используются. Ознакомьтесь с нашей <a href="/ru/privacy/">Политикой конфиденциальности</a> для подробностей.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Отклонить</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Принять</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

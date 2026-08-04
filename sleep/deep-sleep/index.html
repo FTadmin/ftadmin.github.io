@@ -44,6 +44,33 @@
     <link rel="canonical" href="https://feeltracker.com/sleep/deep-sleep/">
 
 
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/deep-sleep/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/deep-sleep/">
+
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
@@ -208,27 +235,27 @@
 
                 <a href="/sleep/deep-sleep/" class="active" data-lang-choose><span class="flag">🇺🇸</span> English</a>
 
-                <a href="/de/sleep/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+                <a href="/de/sleep/deep-sleep/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
 
-                <a href="/es/sleep/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+                <a href="/es/sleep/deep-sleep/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
 
-                <a href="/it/sleep/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+                <a href="/it/sleep/deep-sleep/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
 
-                <a href="/ru/sleep/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+                <a href="/ru/sleep/deep-sleep/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
 
-                <a href="/ja/sleep/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+                <a href="/ja/sleep/deep-sleep/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
 
-                <a href="/fr/sleep/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+                <a href="/fr/sleep/deep-sleep/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
 
-                <a href="/ko/sleep/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+                <a href="/ko/sleep/deep-sleep/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
 
-                <a href="/pt-br/sleep/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+                <a href="/pt-br/sleep/deep-sleep/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
 
-                <a href="/zh-Hans/sleep/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+                <a href="/zh-Hans/sleep/deep-sleep/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
 
-                <a href="/sv/sleep/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+                <a href="/sv/sleep/deep-sleep/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
 
-                <a href="/nb/sleep/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+                <a href="/nb/sleep/deep-sleep/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
 
                 <a href="/da/sleep/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
 
@@ -471,6 +498,22 @@ iPhone, iPad & Mac • iOS 16.0+</p>
     });
     </script>
 
+
+<script>
+(function(){
+  if(document.documentElement.lang!=="en")return;
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=[["pt-br","/pt-br"],["zh-Hans","/zh-Hans"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["ja","/ja"],["fr","/fr"],["ko","/ko"],["sv","/sv"],["nb","/nb"],["no","/nb"],["nn","/nb"]];
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(map[i][1]+window.location.pathname+window.location.search);
+      return;
+    }
+  }
+})();
+</script>
 
 </body>
 </html>

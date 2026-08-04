@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>睡眠時間計算ツール：何時に寝るべきか | Feeltracker</title>
+    <meta name="description" content="起床時刻から逆算する睡眠時間計算ツール。よくあるアラーム時刻ごとの就寝時刻表を90分サイクルで示し、サイクルの長さに個人差がある理由も解説します。">
+
+    <meta name="keywords" content="睡眠時間 計算, 何時に寝るべきか, 就寝時刻 計算, 睡眠サイクル 計算, 6時に起きるには何時に寝る, 90分 睡眠サイクル">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ja/sleep/sleep-calculator/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/sleep/sleep-calculator/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/sleep/sleep-calculator/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:url" content="https://feeltracker.com/ja/sleep/sleep-calculator/">
+    <meta property="og:title" content="睡眠時間計算ツール：何時に寝るべきか">
+    <meta property="og:description" content="よくある起床時刻から90分サイクルで逆算した就寝時刻表と、その計算がどこまで役に立つのかについての率直な話。">
+    <meta property="og:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ja/sleep/sleep-calculator/">
+    <meta property="twitter:title" content="睡眠時間計算ツール：何時に寝るべきか">
+    <meta property="twitter:description" content="睡眠時間計算ツール：90分の睡眠サイクルを使い、起床時刻から逆算した就寝時刻。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/ST_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "朝6時に起きるには何時に寝ればいいですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "5サイクル（睡眠7時間半）なら22:15、6サイクル（睡眠9時間）なら20:45です。どちらも寝つきに15分を見込んでいます。慢性的に睡眠が足りていないなら、まず早いほうを1週間試して、朝の調子を確かめてみてください。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "睡眠時間計算ツールは正確ですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "おおまかには正確です。90分サイクルを前提にしていますが、実際のサイクルは約70〜120分で夜のうちに変化するため、20〜30分のずれは見込んでください。現実的な2つの就寝時刻から選ぶには役立ちますが、夜更かしの理由にはなりません。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "6時間と7時間半では、どちらが良いですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "間違いなく7時間半です。6時間は4サイクルで、ほぼすべての成人にとって推奨範囲を下回ります — 必要な睡眠時間をご覧ください。サイクルの計算をきれいに割り切るために、合計睡眠時間を犠牲にしてはいけません。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "寝つくまでにどのくらいかかるのが普通ですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "10〜20分が一般的で健康的です。5分未満はたいてい睡眠負債のサインです。いつも30分以上かかる場合は対処する価値があります — まずは早く眠りにつく方法から。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "週末も同じ就寝時刻にすべきですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "はい、できるだけ近づけてください。特に起床時刻を守りましょう。週末に2時間ずれると時差ぼけのような状態になり、日曜の夜は寝つきにくく、月曜はさらにつらくなります。睡眠を足したいときは、1時間未満の寝坊にとどめれば代償はずっと小さくなります。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ja/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "睡眠",
+                      "item": "https://feeltracker.com/ja/sleep/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "睡眠時間計算ツール",
+                      "item": "https://feeltracker.com/ja/sleep/sleep-calculator/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "睡眠時間計算ツール：何時に寝るべきか",
+          "description": "起床時刻から逆算する睡眠時間計算ツール。よくあるアラーム時刻ごとの就寝時刻表を90分サイクルで示し、サイクルの長さに個人差がある理由も解説します。",
+          "image": "https://feeltracker.com/images/ST_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ja/sleep/sleep-calculator/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ja/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ja/blood-pressure/">血圧</a>
+
+            <a href="/ja/daily-journal/">日記</a>
+
+            <a href="/ja/mood-journal/">気分日記</a>
+
+            <a href="/ja/sleep/" class="current">睡眠</a>
+
+            <a href="/ja/weight/">体重</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇯🇵</span>
+                <span class="lang-name">日本語</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/sleep/sleep-calculator/" class="active" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/sleep/sleep-calculator/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/sleep/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/sleep/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/sleep/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/sleep/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/sleep/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ja/sleep/">睡眠</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">睡眠時間計算ツール</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>睡眠時間計算ツール：何時に寝るべきか</h1>
+
+        <p class="guide-updated">最終更新：2026年8月</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>考え方はシンプルです。脳はおよそ90分の<a href="/ja/sleep/sleep-cycles/">睡眠サイクル</a>をめぐっており、その終わり — 眠りが浅くなったところ — で目覚めるほうが、途中で引きずり出されるよりずっと快適です。起床時刻を決め、90分単位でさかのぼり、寝つきの時間として15分を足す。それがあなたの就寝時刻です。</p><p>以下では、よくあるアラーム時刻ごとの表に加えて、多くの計算ツールが触れないことも紹介します。サイクルの長さは平均値にすぎず、巧みなタイミングより合計睡眠時間のほうが大切だということです。まず数字から始めて、2週間の自分の記録に答えを選ばせましょう。</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>計算のしくみ</h2>
+        <div class="guide-content">
+            <p>材料は3つ。そのうち正確なのは1つだけです。</p><ol><li><strong>起床時刻</strong> — 動かせないアラームの時刻。</li><li><strong>サイクルの長さ。</strong> 標準的な推定値は90分ですが、実際のサイクルはおよそ70〜120分で、一晩の中でも変動します。</li><li><strong>入眠潜時</strong> — 眠りにつくまでの時間。健康的なのは10〜20分で、この表では<strong>15分</strong>を想定しています。</li></ol><p>つまり、<em>就寝時刻 ＝ 起床時刻 −（90分 × サイクル数）− 15分</em>です。5サイクルで7時間半、6サイクルで9時間。どちらも推奨される<a href="/ja/sleep/how-much-sleep-do-you-need/">成人の7〜9時間の範囲</a>に収まります。4サイクルは6時間で、ほとんどの人には足りません。計画ではなく、最後の手段と考えてください。</p><p>いつも20分以上かかるという方は、想定時間を増やしましょう。あるいはそれより、<a href="/ja/sleep/how-to-fall-asleep-faster/">なぜそんなに時間がかかるのか</a>を見直すほうが得策です。入眠に時間がかかること自体、改善する価値があります。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>起床時刻別の就寝時刻表</h2>
+        <div class="guide-content">
+            <p>左の列で自分のアラーム時刻を探してください。実際に選ぶことになるのは<strong>6サイクル</strong>と<strong>5サイクル</strong>の列です。4サイクルは、すでに手遅れになった夜のためのものです。</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>起床時刻</th><th>6サイクル（睡眠9時間）</th><th>5サイクル（睡眠7時間半）</th><th>4サイクル（睡眠6時間）</th></tr></thead><tbody><tr><td>5:00</td><td>19:45</td><td>21:15</td><td>22:45</td></tr><tr><td>5:30</td><td>20:15</td><td>21:45</td><td>23:15</td></tr><tr><td>6:00</td><td>20:45</td><td>22:15</td><td>23:45</td></tr><tr><td>6:30</td><td>21:15</td><td>22:45</td><td>0:15</td></tr><tr><td>7:00</td><td>21:45</td><td>23:15</td><td>0:45</td></tr><tr><td>7:30</td><td>22:15</td><td>23:45</td><td>1:15</td></tr><tr><td>8:00</td><td>22:45</td><td>0:15</td><td>1:45</td></tr><tr><td>8:30</td><td>23:15</td><td>0:45</td><td>2:15</td></tr></tbody></table></div><p>逆向きにも使えます。すでに床に就いていてアラームを決めたいなら、いまの時刻に15分と、7時間半または9時間を足してください。</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>消灯時刻</th><th>5サイクル後の起床</th><th>6サイクル後の起床</th></tr></thead><tbody><tr><td>21:30</td><td>5:15</td><td>6:45</td></tr><tr><td>22:00</td><td>5:45</td><td>7:15</td></tr><tr><td>22:30</td><td>6:15</td><td>7:45</td></tr><tr><td>23:00</td><td>6:45</td><td>8:15</td></tr><tr><td>23:30</td><td>7:15</td><td>8:45</td></tr><tr><td>0:00</td><td>7:45</td><td>9:15</td></tr></tbody></table></div>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>「90分」がぴったりではない理由</h2>
+        <div class="guide-content">
+            <p>どの計算ツールも90分 — 集団の平均値 — を使います。あなたのサイクルは75分に近いかもしれないし110分かもしれません。サイクルは夜が進むにつれて長くなりますし、正常な中途覚醒に加えてストレスやカフェインで揺れる入眠潜時が、計算を20〜30分ずらします。実践上のポイントはこうです。</p><ul><li><strong>サイクルを合わせるために合計睡眠時間を犠牲にしない。</strong> 計算がきれいに割り切れるように45分夜更かしするのは、丸め誤差のために本物の睡眠を失う行為です。</li><li><strong>甲乙つけがたい2つの就寝時刻を選ぶときに使う。</strong></li><li><strong>調整する前提で。</strong> 7時間半だといつも頭が重いのに、きっかり8時間だと調子がいいなら、あなたのサイクルは90分ではありません。公式よりあなたの実感が優先です。</li><li><strong>正確さより一貫性。</strong> 週末も含めて毎晩同じ時刻に寝ることのほうが、どんな計算より朝7時のあなたを助けてくれます。</li></ul><p>睡眠慣性 — タイミングの悪いアラームのあとの頭の霧 — は実在し、30分ほど続くこともあるので、この考え方自体は理にかなっています。小数点以下まで信じ込むことが、そうではないのです。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>新しい就寝時刻を本当に定着させるには</h2>
+        <div class="guide-content">
+            <p>多くの人がつまずくのは、就寝時刻を知らないことではなく、その時刻にたどり着けないことです。確実に助けになるのは次の点です。</p><ul><li><strong>15分ずつ動かす。</strong> 一晩で1時間早めても、1時間目を開けて横になるだけです。1段階ごとに3〜4晩は続けましょう。</li><li><strong>まず起床時刻を固定する。</strong> 朝の光は、消灯時刻よりはるかに強く体内時計を整えます。毎日の起床時刻を固定すれば、就寝時刻は自然とついてきます。</li><li><strong>リマインダーは就寝時刻ではなく、その前の「巻き取り」時間に設定する。</strong> 消灯の30〜45分前の通知は行動を変えますが、就寝時刻ちょうどの通知は「もう遅い」と告げるだけです。</li><li><strong>寝る前の1時間を守る。</strong> 明るい画面、激しい運動、重い食事、アルコールは、どれも入眠を後ろにずらします — <a href="/ja/sleep/sleep-hygiene/">睡眠衛生</a>をご覧ください。</li><li><strong>いらいらしながら横になり続けない。</strong> 20分ほど経っても眠れないなら、いったん起きて薄暗い明かりで退屈なことをし、眠気が来たら戻りましょう。</li></ul>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>ノートとアプリ：正直な比較</h2>
+        <div class="guide-content">
+            <p>計算ツールが与えてくれるのは仮説だけで、それを検証できるのはあなた自身の記録だけです。就寝時刻、起床時刻、そのときの体調を2週間書き留めるほうが、どんな表よりも — この記事の表よりも — 役に立ちます。ノートでも十分できます。紙が弱いのは計算のところです。11晩分を平均する、あるいは調子の良かった朝がすべて23時消灯の翌日だったと気づく、といった作業には、走り書きの時刻を手で足していく必要があります。だから、誰もやらなくなるのです。</p><p>睡眠＆夢Feeltrackerはその部分を引き受けます。就寝・起床時刻の記録と睡眠時間の自動計算、睡眠の質の評価に夢とメモの欄、そして任意の期間のトレンド。就寝時刻と朝の調子のつながりが目に見えるようになります。リマインダーが新しいスケジュールの定着を助け、さらにApple Health連携、CPAPの記録、アカウントもメールアドレスも不要のiCloud同期。AIインサイトはあなた自身の履歴を要約でき、すべてPDF・XLSX・CSV・JSONに書き出して医師に渡せます。これは手動の日記であって、睡眠段階の自動トラッカーではありません。いつ眠りに落ちたかを推測したり、あなたのサイクルの長さを知っているふりをしたりはしません。ただ、続けられるくらい記録を簡単にするだけです。</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/ST_1024.png" alt="睡眠＆夢アプリのアイコン" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>自分の就寝時刻を、実際のデータで検証しよう</h2>
+            <p>睡眠＆夢Feeltrackerは、就寝・起床時刻を記録して睡眠時間を計算し、睡眠の質の評価が就寝時刻とどう連動しているかをグラフ化します。平均的な人ではなく、あなたに合う就寝時刻が見つかります。無料、プライベート、アカウント不要。</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button" src="/images/appstore/ja-black.svg" alt="App Storeで睡眠＆夢をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ja/sleep/" class="guide-app-cta-learn">アプリについて詳しく見る <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>よくある質問</h2>
+
+        <div class="guide-faq-item">
+            <h3>朝6時に起きるには何時に寝ればいいですか？</h3>
+            <p>5サイクル（睡眠7時間半）なら<strong>22:15</strong>、6サイクル（睡眠9時間）なら<strong>20:45</strong>です。どちらも寝つきに15分を見込んでいます。慢性的に睡眠が足りていないなら、まず早いほうを1週間試して、朝の調子を確かめてみてください。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>睡眠時間計算ツールは正確ですか？</h3>
+            <p>おおまかには正確です。90分サイクルを前提にしていますが、実際のサイクルは約70〜120分で夜のうちに変化するため、20〜30分のずれは見込んでください。現実的な2つの就寝時刻から選ぶには役立ちますが、夜更かしの理由にはなりません。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>6時間と7時間半では、どちらが良いですか？</h3>
+            <p>間違いなく7時間半です。6時間は4サイクルで、ほぼすべての成人にとって推奨範囲を下回ります — <a href="/ja/sleep/how-much-sleep-do-you-need/" target="_blank" rel="noopener">必要な睡眠時間</a>をご覧ください。サイクルの計算をきれいに割り切るために、合計睡眠時間を犠牲にしてはいけません。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>寝つくまでにどのくらいかかるのが普通ですか？</h3>
+            <p><strong>10〜20分</strong>が一般的で健康的です。5分未満はたいてい睡眠負債のサインです。いつも30分以上かかる場合は対処する価値があります — まずは<a href="/ja/sleep/how-to-fall-asleep-faster/" target="_blank" rel="noopener">早く眠りにつく方法</a>から。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>週末も同じ就寝時刻にすべきですか？</h3>
+            <p>はい、できるだけ近づけてください。特に<strong>起床</strong>時刻を守りましょう。週末に2時間ずれると時差ぼけのような状態になり、日曜の夜は寝つきにくく、月曜はさらにつらくなります。睡眠を足したいときは、1時間未満の寝坊にとどめれば代償はずっと小さくなります。</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>あわせて読みたい</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ja/sleep/sleep-cycles/" class="guide-related-card">
+                <h3>睡眠サイクルと睡眠段階の解説</h3>
+                <p>90分サイクルは何でできているのか、そして一晩でどう変わるのか。</p>
+            </a>
+
+            <a href="/ja/sleep/how-to-fall-asleep-faster/" class="guide-related-card">
+                <h3>早く眠りにつく方法</h3>
+                <p>就寝時刻は合っているのに眠気が来ないとき、何をすればいいか。</p>
+            </a>
+
+            <a href="/ja/sleep/how-much-sleep-do-you-need/" class="guide-related-card">
+                <h3>睡眠は何時間必要？</h3>
+                <p>年齢別の推奨睡眠時間と、自分に必要な時間の見つけ方。</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>医療免責事項</h2>
+        <p>この記事は一般的な情報提供のみを目的としており、医学的な助言、診断、治療にかわるものではありません。睡眠サイクルの長さや必要な睡眠時間には個人差があるため、計算で出た就寝時刻はあくまで出発点として扱ってください — 必ず主治医や医療提供者の指導に従ってください。寝つくまでにいつも30分以上かかる場合、一晩しっかり眠っても目覚めがすっきりしない場合、日中に意図せず眠り込んでしまう場合、あるいはパートナーから大きないびき、あえぐような呼吸、呼吸の停止を指摘された場合は、医療機関を受診してください。</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>自分に合う就寝時刻を見つけよう</h2>
+        <p>無料の睡眠＆夢アプリをダウンロード — 夜を記録し、リマインダーを設定し、トレンドを見守る</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/sleep-cpap-feeltracker-st/id1065268459" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="App Storeで睡眠＆夢をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">基本無料・オプションのプレミアム機能あり
+iPhone、iPad、Mac対応 • iOS 16.0以降</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ja/sleep/sleep-calculator/">ホーム</a>
+            <a href="/ja/about/">概要</a>
+            <a href="mailto:support@feeltracker.com">メールサポート</a>
+            <a href="/ja/support/">サポート</a>
+            <a href="/ja/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Xでフォロー</a>
+            <a href="/ja/privacy/">プライバシーポリシー</a>
+            <a href="/ja/terms/">利用規約</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Feeltrackerヘルストラッキングアプリファミリーの一員</p>
+        <p class="footer-disclaimer">健康データはお使いのデバイスとiCloudに保存されます。私たちがデータにアクセスしたり販売したりすることはありません。Feeltrackerアプリは医療機器ではありません。情報提供のみを目的としており、専門的な医療アドバイス、診断、治療の代わりとなるものではありません。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>プライバシーを大切にしています</strong></p>
+                <p>ウェブサイトとアプリの改善のため、分析用Cookieを使用しています。広告Cookieは使用していません。詳しくは <a href="/ja/privacy/">プライバシーポリシー</a> をご覧ください。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒否</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">同意</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

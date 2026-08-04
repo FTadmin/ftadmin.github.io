@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Kako izračunati BMI: formula i riješeni primjeri | Feeltracker</title>
+    <meta name="description" content="Kako ručno izračunati BMI metričkom ili imperijalnom formulom, uz riješene primjere, najčešće pogreške i objašnjenje gdje BMI vrijednost zavarava.">
+
+    <meta name="keywords" content="kako izračunati bmi, bmi formula, ručni izračun bmi, jednadžba za bmi, imperijalna bmi formula, metrička bmi formula">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/weight/how-to-calculate-bmi/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/weight/how-to-calculate-bmi/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="hr_HR">
+    <meta property="og:url" content="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+    <meta property="og:title" content="Kako izračunati BMI: formula i riješeni primjeri">
+    <meta property="og:description" content="Metrička i imperijalna BMI formula, riješeni primjeri korak po korak i iskren pogled na ono što ti BMI ne može reći.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/hr/weight/how-to-calculate-bmi/">
+    <meta property="twitter:title" content="Kako izračunati BMI: formula i riješeni primjeri">
+    <meta property="twitter:description" content="Kako izračunati BMI u metričkim ili imperijalnim jedinicama, uz riješene primjere i iskrena ograničenja.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Koja je formula za BMI?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Metrički: težina u kg ÷ (visina u m)². Imperijalno: (težina u lb × 703) ÷ (visina u in)². Obje daju isti rezultat — 703 samo pretvara funte i inče u metrički ekvivalent."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Zašto se u imperijalnoj BMI formuli koristi 703?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "To je pretvorba jedinica ugrađena u jednadžbu: jedan metar ima 39,37 inča, jedan kilogram ima 2,2046 funti, a 39,37² ÷ 2,2046 daje otprilike 703."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Računa li se BMI drukčije za muškarce i žene?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ne — formula i kategorije za odrasle jednake su, iako žene pri istom BMI-ju imaju više esencijalne tjelesne masti. Za mjeru koja uzima spol u obzir koristi postotak tjelesne masti, koji ima zasebne raspone."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Koliko je BMI točan za sportaše?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Slabo. Mišić pri istom volumenu teži više od masti, pa utrenirani sportaši redovito završe u kategoriji prekomjerne težine ili pretilosti iako su iznimno mršavi. Za svakoga tko ozbiljno trenira s opterećenjem, opseg struka i procjena tjelesne masti daleko su informativniji."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Moram li ponovno izračunati BMI svaki put kad se izvažem?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ne ručno. Tvoja se visina rijetko mijenja, pa se BMI kreće usporedo s težinom. Mjesečna provjera brojke sasvim je dovoljna, a aplikacija ga ionako preračunava automatski."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/hr/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Težina",
+                      "item": "https://feeltracker.com/hr/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Kako izračunati BMI",
+                      "item": "https://feeltracker.com/hr/weight/how-to-calculate-bmi/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Kako izračunati BMI",
+          "description": "Kako ručno izračunati BMI metričkom ili imperijalnom formulom, uz riješene primjere, najčešće pogreške i objašnjenje gdje BMI vrijednost zavarava.",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/hr/weight/how-to-calculate-bmi/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/hr/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/hr/blood-pressure/">Krvni tlak</a>
+
+            <a href="/hr/daily-journal/">Dnevnik</a>
+
+            <a href="/hr/mood-journal/">Dnevnik raspoloženja</a>
+
+            <a href="/hr/sleep/">San</a>
+
+            <a href="/hr/weight/" class="current">Težina</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇭🇷</span>
+                <span class="lang-name">Hrvatski</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/how-to-calculate-bmi/" class="active" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/how-to-calculate-bmi/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/hr/">Početna</a>
+        <span aria-hidden="true">›</span>
+        <a href="/hr/weight/">Težina</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Kako izračunati BMI</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Kako izračunati BMI</h1>
+
+        <p class="guide-updated">Zadnje ažurirano: kolovoz 2026.</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Indeks tjelesne mase je tvoja težina podijeljena s kvadratom visine. Jedno dijeljenje, jedno množenje — upravo zato je taj broj preživio gotovo dvjesto godina. Možeš ga izračunati na tipkovnici mobitela u deset sekundi.</p><p>Obje formule slijede u nastavku, provedene kroz stvarne brojke, uz dio koji većina kalkulatora preskače: gdje rezultat zavarava. Kad dobiješ svoju brojku, <a href="/hr/weight/bmi-chart/">BMI tablica</a> reći će ti u koju kategoriju spada.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Metrička formula: kilogrami i metri</h2>
+        <div class="guide-content">
+            <p><strong>BMI = težina u kilogramima ÷ (visina u metrima × visina u metrima)</strong></p><p>Jedina zamka je jedinica: <em>metri</em>, ne centimetri. 175 cm je 1,75 m — uvrstiš li 175, dobit ćeš BMI od 0,0025.</p><h3>Riješeni primjer</h3><p>78 kg pri 175 cm:</p><ol><li>Pretvori: 175 cm = <strong>1,75 m</strong></li><li>Kvadriraj: 1,75 × 1,75 = <strong>3,0625</strong></li><li>Podijeli: 78 ÷ 3,0625 = <strong>25,5</strong></li></ol><p>To je tek unutar prekomjerne težine, koja počinje na 25,0 — otprilike 1,5 kg od zdravog raspona. Nikad rezultat koji je unutar jednog boda od granice ne shvaćaj kao konačan: normalne <a href="/hr/weight/weight-fluctuation/">dnevne oscilacije težine</a> mogu te unutar tjedan dana prebaciti preko crte i natrag.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Imperijalna formula: funte i inči</h2>
+        <div class="guide-content">
+            <p><strong>BMI = (težina u funtama × 703) ÷ (visina u inčima × visina u inčima)</strong></p><p>Broj 703 pretvara funte po kvadratnom inču u kilograme po kvadratnom metru — 39,37 inča po metru, kvadrirano, podijeljeno s 2,2046 funti po kilogramu — pa obje formule daju isti rezultat.</p><h3>Riješeni primjer</h3><p>172 lb pri 5 ft 9 in:</p><ol><li>Visina u inčima: (5 × 12) + 9 = <strong>69 in</strong></li><li>Kvadriraj: 69 × 69 = <strong>4.761</strong></li><li>Težina × 703: 172 × 703 = <strong>120.916</strong></li><li>Podijeli: 120.916 ÷ 4.761 = <strong>25,4</strong></li></ol><p>Ista osoba kao u metričkom primjeru, isti rezultat. Klasična pogreška: ostaviti stope i inče odvojene i kvadrirati samo inče.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Brzi pregled: što tvoj rezultat znači</h2>
+        <div class="guide-content">
+            <p>Za odrasle od 20 godina naviše, jednako za muškarce i žene:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>BMI</th><th>Kategorija</th><th>Primjer pri 175 cm / 5 ft 9 in</th></tr></thead><tbody><tr><td>Ispod 18,5</td><td>Pothranjenost</td><td>Ispod 57 kg / 125 lb</td></tr><tr><td>18,5 – 24,9</td><td>Zdrava težina</td><td>57 – 76 kg / 125 – 168 lb</td></tr><tr><td>25,0 – 29,9</td><td>Prekomjerna težina</td><td>77 – 91 kg / 169 – 201 lb</td></tr><tr><td>30,0 – 34,9</td><td>Pretilost 1. stupnja</td><td>92 – 107 kg / 202 – 236 lb</td></tr><tr><td>35,0 – 39,9</td><td>Pretilost 2. stupnja</td><td>107 – 122 kg / 237 – 269 lb</td></tr><tr><td>40,0 i više</td><td>Pretilost 3. stupnja</td><td>123 kg / 270 lb i više</td></tr></tbody></table></div><p>Ako si južnoazijskog, kineskog ili drugog azijskog podrijetla, nekoliko zdravstvenih tijela primjenjuje niže granice — prekomjerna težina od otprilike 23, pretilost od otprilike 27,5 — jer metabolički rizik raste ranije. Cijela slika, uključujući tablicu po visinama, nalazi se u <a href="/hr/weight/bmi-chart/">vodiču kroz BMI tablicu</a>.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Gdje broj pogriješi</h2>
+        <div class="guide-content">
+            <p>Računica je jednostavna, pa pogrešni BMI-jevi dolaze iz ulaznih podataka.</p><ul><li><strong>Procijenjena visina.</strong> Većina odraslih niža je centimetar ili dva od onoga što piše u osobnoj, a visina se s godinama smanjuje. Pri 175 cm jedan centimetar mijenja BMI za otprilike 0,3 — dovoljno da prijeđeš granicu. Izmjeri se bos uza zid, jednom, i tu brojku dalje koristi.</li><li><strong>Nedosljedna vaganja.</strong> Navečer možeš biti 1 do 2 kg teži. Važi se nakon buđenja, prije jela.</li><li><strong>Pomiješane jedinice, kvadrirana težina, prekomjerno zaokruživanje.</strong> Kilogrami s inčima daju besmislicu, a zaokruživanje visine na najbližih 5 cm može pomaknuti rezultat za cijeli bod. Kad se dva kalkulatora ne slažu, gotovo je uvijek riječ o jednom od ovoga.</li></ul><p>Tu je i ono što formula ne može vidjeti. Mišić je gušći od masti, pa dobro utreniran veslač može imati BMI od 28 do 30 uz jednoznamenkasti postotak tjelesne masti — ako ozbiljno dižeš utege, shvati BMI kao gotovo beskorisan i umjesto njega koristi <a href="/hr/weight/body-fat-percentage/">postotak tjelesne masti</a>. Vrijedi i obrnuto: sjedilačka osoba s BMI-jem 23 može nositi dovoljno trbušne masnoće da joj metabolički rizik poraste. Rizik počinje pri različitim BMI vrijednostima u različitim populacijama, isti BMI u 60. godini krije više masti nego u 30., žene imaju više esencijalne masti od muškaraca, BMI ne vrijedi u trudnoći, a za djecu se koriste percentilne krivulje. Najjeftinije rješenje je krojački metar: <a href="/hr/weight/waist-to-height-ratio/">omjer struka i visine</a> traje trideset sekundi i vidi raspored masnoće koji BMI ne može.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Ručni izračun ili aplikacija</h2>
+        <div class="guide-content">
+            <p>Izračunati BMI jednom je trivijalno. Izračunavati ga za svako vaganje tijekom godine dana, a onda vidjeti što je trend napravio — tu se ručni pristup tiho raspada.</p><p>Besplatna aplikacija Feeltracker Težina i hrana uklanja taj korak: unesi visinu jednom i BMI se izračunava za svaki unos te prikazuje na grafikonu s linijama trenda uz tvoju težinu i cilj koji si postavio. Bilježi i postotak tjelesne masti, sinkronizira se s Apple Healthom i među tvojim uređajima putem iClouda bez računa i e-pošte, a izvozi u PDF, XLSX, CSV ili JSON za preglede. Neobavezni AI uvidi sažimaju tvoju povijest.</p><p>Kojim god putem krenuo, gornja formula je sve što treba. Vrijednost je u povremenoj provjeri, a ne u tri decimale.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="Ikona aplikacije Težina i hrana" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Preskoči računicu</h2>
+            <p>Feeltracker Težina i hrana izračunava tvoj BMI iz svakog vaganja, u kilogramima ili funtama, i prikazuje ga uz tvoju težinu tako da vidiš trend, a ne pojedinačan broj. Besplatno, privatno, bez potrebe za računom.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button" src="/images/appstore/hr-black.svg" alt="Preuzmi Težinu i hranu na App Storeu" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/hr/weight/" class="guide-app-cta-learn">Saznaj više o aplikaciji <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Često postavljana pitanja</h2>
+
+        <div class="guide-faq-item">
+            <h3>Koja je formula za BMI?</h3>
+            <p>Metrički: <strong>težina u kg ÷ (visina u m)²</strong>. Imperijalno: <strong>(težina u lb × 703) ÷ (visina u in)²</strong>. Obje daju isti rezultat — 703 samo pretvara funte i inče u metrički ekvivalent.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Zašto se u imperijalnoj BMI formuli koristi 703?</h3>
+            <p>To je pretvorba jedinica ugrađena u jednadžbu: jedan metar ima 39,37 inča, jedan kilogram ima 2,2046 funti, a 39,37² ÷ 2,2046 daje otprilike 703.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Računa li se BMI drukčije za muškarce i žene?</h3>
+            <p>Ne — formula i kategorije za odrasle jednake su, iako žene pri istom BMI-ju imaju više esencijalne tjelesne masti. Za mjeru koja uzima spol u obzir koristi <a href="/hr/weight/body-fat-percentage/" target="_blank" rel="noopener">postotak tjelesne masti</a>, koji ima zasebne raspone.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Koliko je BMI točan za sportaše?</h3>
+            <p>Slabo. Mišić pri istom volumenu teži više od masti, pa utrenirani sportaši redovito završe u kategoriji prekomjerne težine ili pretilosti iako su iznimno mršavi. Za svakoga tko ozbiljno trenira s opterećenjem, opseg struka i procjena tjelesne masti daleko su informativniji.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Moram li ponovno izračunati BMI svaki put kad se izvažem?</h3>
+            <p>Ne ručno. Tvoja se visina rijetko mijenja, pa se BMI kreće usporedo s težinom. Mjesečna provjera brojke sasvim je dovoljna, a aplikacija ga ionako preračunava automatski.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Nastavi čitati</h2>
+        <div class="guide-related-grid">
+
+            <a href="/hr/weight/bmi-chart/" class="guide-related-card">
+                <h3>BMI tablica za odrasle</h3>
+                <p>Sve kategorije uz tablicu za očitanje prema visini i težini.</p>
+            </a>
+
+            <a href="/hr/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>Zdrava težina za tvoju visinu</h3>
+                <p>Ciljni raspon za tvoju visinu u kilogramima i funtama.</p>
+            </a>
+
+            <a href="/hr/weight/body-fat-percentage/" class="guide-related-card">
+                <h3>Objašnjenje postotka tjelesne masti</h3>
+                <p>Što BMI promaši i kako to umjesto njega izmjeriti.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Zdravstvena napomena</h2>
+        <p>Ovaj članak služi samo za opće informiranje i ne predstavlja medicinski savjet, dijagnozu ili liječenje. BMI je brojka za probir koja sama po sebi ne može procijeniti nečije zdravlje — o svojoj težini i o svakom planu njezine promjene uvijek razgovaraj sa svojim liječnikom ili zdravstvenim djelatnikom. Odmah potraži liječnički savjet ako gubiš ili dobivaš na težini bez namjere ili ako promjenu težine prate simptomi poput trajnog umora, otežanog disanja ili gubitka apetita.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Neka se tvoj BMI izračuna sam</h2>
+        <p>Preuzmi besplatnu aplikaciju Težina i hrana — unesi visinu jednom, a svako vaganje odradi ostalo</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmi Težinu i hranu na App Storeu" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Besplatna aplikacija s dodatnim premium značajkama
+iPhone, iPad i Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/hr/weight/how-to-calculate-bmi/">Početna</a>
+            <a href="/hr/about/">O nama</a>
+            <a href="mailto:support@feeltracker.com">Podrška putem e-pošte</a>
+            <a href="/hr/support/">Podrška</a>
+            <a href="/hr/faq/">Česta pitanja</a>
+            <a href="https://x.com/feeltracker">Pratite na X</a>
+            <a href="/hr/privacy/">Pravila privatnosti</a>
+            <a href="/hr/terms/">Uvjeti korištenja</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Sva prava pridržana.</p>
+        <p class="footer-tagline">Dio obitelji Feeltracker aplikacija za praćenje zdravlja</p>
+        <p class="footer-disclaimer">Vaši zdravstveni podaci pohranjeni su na vašem uređaju i u iCloudu — nikada im ne pristupamo niti ih prodajemo. Feeltracker aplikacije nisu medicinski uređaji. Samo u informativne svrhe, ne zamjenjuju profesionalni medicinski savjet, dijagnozu ili liječenje.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Cijenimo vašu privatnost</strong></p>
+                <p>Koristimo analitičke kolačiće za poboljšanje naše web stranice i aplikacije. Reklamni kolačići se ne koriste. Pogledajte našu <a href="/hr/privacy/">Pravila privatnosti</a> za detalje.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Odbij</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Prihvati</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>
