@@ -47,10 +47,16 @@
 
 <main>
 <h1>{{pageTitle}}</h1>
+<div class="faq-search">
+    <input type="search" id="faq-search-input" placeholder="{{searchPlaceholder}}" autocomplete="off" aria-label="{{searchPlaceholder}}">
+</div>
+<p id="faq-no-results" class="faq-no-results" hidden>{{searchNoResults}}</p>
 {{#each sections}}
+<section class="faq-section">
 {{#if title}}<h2>{{title}}</h2>{{/if}}
 {{#if content}}{{md content}}{{/if}}
 {{#each items}}
+<div class="faq-item">
     <h3>{{question}}</h3>
     {{md answer}}
 {{#if listItems}}
@@ -73,9 +79,41 @@
 {{/each}}
     </p>
 {{/if}}
+</div>
 {{/each}}
+</section>
 {{/each}}
 </main>
+
+<script>
+(function () {
+    var input = document.getElementById('faq-search-input');
+    var noResults = document.getElementById('faq-no-results');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.faq-section'));
+    if (!input) return;
+    var norm = function (s) { return s.toLowerCase(); };
+    input.addEventListener('input', function () {
+        var q = norm(input.value.trim());
+        var any = false;
+        sections.forEach(function (section) {
+            var items = Array.prototype.slice.call(section.querySelectorAll('.faq-item'));
+            if (items.length) {
+                var visible = 0;
+                items.forEach(function (item) {
+                    var show = !q || norm(item.textContent).indexOf(q) !== -1;
+                    item.hidden = !show;
+                    if (show) visible++;
+                });
+                section.hidden = visible === 0;
+            } else {
+                section.hidden = !!q && norm(section.textContent).indexOf(q) === -1;
+            }
+            if (!section.hidden) any = true;
+        });
+        noResults.hidden = any;
+    });
+})();
+</script>
 
 {{> footer}}
 

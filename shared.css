@@ -3781,3 +3781,34 @@ th, td {
     font-size: 0.9em;
     color: var(--color-text-muted);
 }
+
+/* FAQ quick search (faq-page template) */
+.faq-search {
+    margin: 24px 0 8px;
+}
+.faq-search input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    outline: none;
+}
+.faq-search input:focus {
+    border-color: var(--color-primary);
+}
+.faq-search input::placeholder {
+    color: var(--color-text-faint);
+}
+.faq-no-results {
+    color: var(--color-text-subtle);
+}
+.faq-section[hidden],
+.faq-item[hidden],
+.faq-no-results[hidden] {
+    display: none;
+}
