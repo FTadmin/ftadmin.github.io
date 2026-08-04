@@ -3785,15 +3785,16 @@ th, td {
 /* FAQ quick search (faq-page template) */
 .faq-search {
     position: relative;
-    max-width: 480px;
+    max-width: 440px;
     margin: var(--space-4) 0 var(--space-6);
 }
 .faq-search-icon {
     position: absolute;
-    inset-inline-start: 18px;
+    inset-inline-start: 15px;
     top: 50%;
+    width: 16px;
+    height: 16px;
     transform: translateY(-50%);
-    font-size: 0.9rem;
     color: var(--color-text-faint);
     pointer-events: none;
 }
@@ -3802,10 +3803,11 @@ th, td {
     appearance: none;
     width: 100%;
     box-sizing: border-box;
-    padding: 13px 20px;
-    padding-inline-start: 46px;
+    height: 48px;
+    padding: 0 42px;
     font-size: 1rem;
     font-family: inherit;
+    line-height: normal;
     color: var(--color-text);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -3820,9 +3822,40 @@ th, td {
 }
 .faq-search input::placeholder {
     color: var(--color-text-faint);
+    opacity: 1;
 }
-.faq-search input::-webkit-search-decoration {
+.faq-search input::-webkit-search-decoration,
+.faq-search input::-webkit-search-cancel-button {
     -webkit-appearance: none;
+    display: none;
+}
+.faq-search-clear {
+    position: absolute;
+    inset-inline-end: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--color-text-faint);
+    cursor: pointer;
+}
+.faq-search-clear svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+.faq-search-clear:hover {
+    color: var(--color-text-subtle);
+}
+.faq-search-clear[hidden] {
+    display: none;
 }
 .faq-no-results {
     color: var(--color-text-subtle);
