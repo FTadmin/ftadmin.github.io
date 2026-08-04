@@ -627,6 +627,17 @@ Group 6: sk, th, tr, uk, vi, zh-Hant
 - **Template changes** — one agent only
 - **EN source file edits** — edit first, then fan out translations
 
+### Crisis-line numbers in guide content (owner decision, 2026-08-04)
+
+Guides that touch mental-health crises MAY name well-known national crisis
+lines, **each clearly labeled with its country** (e.g. German pages: "in
+Deutschland: Telefonseelsorge 0800 111 0 111") — a labeled number is useful
+even though locale pages serve several countries. Rules: only numbers that
+are well-established and verified (a wrong crisis number is worse than
+none), always labeled with the country, and the generic "emergency services
+or a crisis line in your country" sentence stays as the base. Never strip
+an existing labeled number on consistency grounds.
+
 ### Durability rules for large fan-outs (learned the hard way)
 
 A guide-translation fan-out (10 guides × 31 locales per app) ran through a
