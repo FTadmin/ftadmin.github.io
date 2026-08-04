@@ -3784,25 +3784,78 @@ th, td {
 
 /* FAQ quick search (faq-page template) */
 .faq-search {
-    margin: 24px 0 8px;
+    position: relative;
+    max-width: 440px;
+    margin: var(--space-4) 0 var(--space-6);
+}
+.faq-search-icon {
+    position: absolute;
+    inset-inline-start: 15px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    color: var(--color-text-faint);
+    pointer-events: none;
 }
 .faq-search input {
+    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     box-sizing: border-box;
-    padding: 12px 16px;
+    height: 48px;
+    padding: 0 42px;
     font-size: 1rem;
     font-family: inherit;
+    line-height: normal;
     color: var(--color-text);
-    background: var(--color-bg);
+    background: var(--color-surface);
     border: 1px solid var(--color-border);
-    border-radius: 12px;
+    border-radius: var(--radius-pill);
     outline: none;
+    transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 .faq-search input:focus {
     border-color: var(--color-primary);
+    background: var(--color-bg);
+    box-shadow: 0 0 0 3px var(--color-primary-tint);
 }
 .faq-search input::placeholder {
     color: var(--color-text-faint);
+    opacity: 1;
+}
+.faq-search input::-webkit-search-decoration,
+.faq-search input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    display: none;
+}
+.faq-search-clear {
+    position: absolute;
+    inset-inline-end: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--color-text-faint);
+    cursor: pointer;
+}
+.faq-search-clear svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+.faq-search-clear:hover {
+    color: var(--color-text-subtle);
+}
+.faq-search-clear[hidden] {
+    display: none;
 }
 .faq-no-results {
     color: var(--color-text-subtle);

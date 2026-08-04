@@ -864,7 +864,9 @@
 <main>
 <h1>Häufig gestellte Fragen</h1>
 <div class="faq-search">
+    <svg class="faq-search-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="7" r="4.75"/><path d="M10.6 10.6 14 14"/></svg>
     <input type="search" id="faq-search-input" placeholder="FAQs durchsuchen…" autocomplete="off" aria-label="FAQs durchsuchen…">
+    <button type="button" id="faq-search-clear" class="faq-search-clear" aria-label="Suche löschen" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="currentColor"/><path d="M5.4 5.4l5.2 5.2M10.6 5.4l-5.2 5.2" stroke="var(--color-bg)" stroke-width="1.6" stroke-linecap="round"/></svg></button>
 </div>
 <p id="faq-no-results" class="faq-no-results" hidden>Keine passenden Fragen gefunden. Versuch es mit anderen Wörtern oder schreib uns an support@feeltracker.com.</p>
 
@@ -1643,12 +1645,14 @@
 <script>
 (function () {
     var input = document.getElementById('faq-search-input');
+    var clear = document.getElementById('faq-search-clear');
     var noResults = document.getElementById('faq-no-results');
     var sections = Array.prototype.slice.call(document.querySelectorAll('.faq-section'));
     if (!input) return;
     var norm = function (s) { return s.toLowerCase(); };
-    input.addEventListener('input', function () {
+    var applyFilter = function () {
         var q = norm(input.value.trim());
+        clear.hidden = input.value === '';
         var any = false;
         sections.forEach(function (section) {
             var items = Array.prototype.slice.call(section.querySelectorAll('.faq-item'));
@@ -1666,6 +1670,12 @@
             if (!section.hidden) any = true;
         });
         noResults.hidden = any;
+    };
+    input.addEventListener('input', applyFilter);
+    clear.addEventListener('click', function () {
+        input.value = '';
+        applyFilter();
+        input.focus();
     });
 })();
 </script>
