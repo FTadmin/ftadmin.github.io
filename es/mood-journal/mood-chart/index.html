@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Cómo Leer un Gráfico de Ánimo: Línea Base, Rango y Ciclos | Feeltracker</title>
+    <meta name="description" content="Cómo leer bien un gráfico de ánimo: encuentra tu línea base, valora el rango, detecta los ciclos semanales y estacionales, y distingue un factor real de una coincidencia.">
+
+    <meta name="keywords" content="gráfico de ánimo, gráfico de estado de ánimo, leer un gráfico de ánimo, patrones del estado de ánimo, tendencias del ánimo, seguimiento del ánimo">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://feeltracker.com/es/mood-journal/mood-chart/">
+    <meta property="og:title" content="Cómo Leer un Gráfico de Ánimo">
+    <meta property="og:description" content="Línea base, rango, ciclos y correlación de factores: cómo sacar respuestas reales de unas semanas de datos de ánimo, con un ejemplo resuelto.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/es/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="Cómo Leer un Gráfico de Ánimo">
+    <meta property="twitter:description" content="Cómo leer un gráfico de ánimo: línea base, rango, ciclos y cómo distinguir un factor real de una coincidencia.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "¿Cuántas semanas de datos necesito para que el gráfico sea útil?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De tres a cuatro semanas para los ritmos semanales y factores únicos fuertes como el sueño; de dos a tres meses para los ciclos mensuales; casi un año para la forma estacional. Una o dos semanas ya muestran tu línea base y cuánto varías, y eso ya merece la pena."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mi gráfico parece completamente aleatorio. ¿Lo estoy haciendo mal?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Probablemente no. Algunos gráficos son genuinamente ruidosos, y una nube plana también dice algo real: ningún factor único domina tu ánimo. Ordena las entradas por día de la semana y comprueba los efectos del día siguiente en lugar de los del mismo día: los patrones desfasados se esconden a plena vista. ¿Sigue pareciendo aleatorio después de dos meses? Eso también es una respuesta."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "¿Un punto bajo en mi gráfico significa que algo va mal?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Todos los gráficos tienen puntos bajos, y un mal día no es un diagnóstico. Lo que merece atención es la duración y la dirección: un ánimo bajo que persiste la mayor parte del día durante más de dos semanas, o una línea base que lleva meses cayendo. Eso sí conviene comentarlo con un médico o terapeuta: lleva el gráfico."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "¿Debería sacar la media de mis valoraciones?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Una media mensual es un buen resumen de la línea base, pero promediar tira a la basura el rango, que a menudo es la mitad más interesante de la historia. Mira juntas la media y la dispersión, como se explica en la guía sobre los cambios de humor."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "¿Puedo enseñarle mi gráfico de ánimo a mi terapeuta?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sí, y la mayoría lo agradecerá. Un gráfico fechado con etiquetas de factores convierte un resumen vago en algo concreto sobre lo que trabajar. Exporta un PDF para una versión limpia, o CSV/XLSX para los números de fondo."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/es/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Diario del Ánimo",
+                      "item": "https://feeltracker.com/es/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Gráfico de Ánimo",
+                      "item": "https://feeltracker.com/es/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Cómo Leer tu Gráfico de Ánimo",
+          "description": "Cómo leer bien un gráfico de ánimo: encuentra tu línea base, valora el rango, detecta los ciclos semanales y estacionales, y distingue un factor real de una coincidencia.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/es/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/es/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/es/blood-pressure/">Presión Arterial</a>
+
+            <a href="/es/daily-journal/">Diario</a>
+
+            <a href="/es/mood-journal/" class="current">Diario del Ánimo</a>
+
+            <a href="/es/sleep/">Sueño</a>
+
+            <a href="/es/weight/">Peso</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇪🇸</span>
+                <span class="lang-name">Español</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/es/">Inicio</a>
+        <span aria-hidden="true">›</span>
+        <a href="/es/mood-journal/">Diario del Ánimo</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Gráfico de Ánimo</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Cómo Leer tu Gráfico de Ánimo</h1>
+
+        <p class="guide-updated">Última actualización: agosto de 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Un gráfico de ánimo son tus valoraciones diarias representadas a lo largo del tiempo. La primera mirada casi siempre engaña: el ojo va directo al punto más bajo, piensa «ahí está el mal día» y se detiene. Bien leído, responde a preguntas mejores: ¿dónde suele situarse mi ánimo, cuánto oscila, se mueve siguiendo un calendario y qué lo acompaña?</p><p>Esta guía recorre las cuatro lecturas — línea base, rango, ciclos y factores — con un ejemplo resuelto. ¿Aún no apuntas nada? Empieza por <a href="/es/mood-journal/how-to-track-your-mood/">cómo registrar tu estado de ánimo</a> y vuelve dentro de dos semanas.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Antes de leer: ¿cuántos datos necesitas?</h2>
+        <div class="guide-content">
+            <p>Un gráfico de cinco días es un estado de ánimo, no un patrón. A grandes rasgos:</p><ul><li><strong>1–2 semanas:</strong> tu línea base y cuánto varías; nada sobre las causas.</li><li><strong>3–6 semanas:</strong> ritmos semanales y factores únicos fuertes — el sueño suele ser el primero.</li><li><strong>2–3 meses:</strong> ciclos mensuales y hormonales, y derivas lentas.</li><li><strong>6–12 meses:</strong> la forma estacional, y una respuesta honesta a «¿estoy mejor que el año pasado?».</li></ul><p>Los huecos no pasa nada — una semana en blanco es honesta. Una semana reconstruida de memoria reescribe el gráfico hacia la historia que ya te creías.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. Encuentra tu línea base</h2>
+        <div class="guide-content">
+            <p>Tu línea base es donde se sitúa tu ánimo en un día corriente: la franja a la que la línea siempre vuelve. En una escala de 5 puntos, la mayoría vive entre el 3 y el 4.</p><p>Es el número más útil de todos: un 3 significa algo distinto para quien vive en el 4 que para quien vive en el 2, y se mueve despacio, así que una deriva dice más que un martes malo. Una línea base que baja de 4 a 3 a lo largo de dos meses pesa más que cualquier punto bajo aislado: es el cambio que resulta invisible desde dentro.</p><p>Tapa los extremos con el pulgar, mira dónde se concentra el grueso de la línea y compara este mes con el anterior.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. Valora el rango</h2>
+        <div class="guide-content">
+            <p>El rango es cuánto viaja tu ánimo alrededor de esa línea base. Dos personas comparten una línea base de 3,5: una se mueve entre 3 y 4, la otra rebota entre 1 y 5. Tres preguntas:</p><ul><li><strong>¿Cómo de amplia es una semana típica?</strong> Un punto es lo normal; tres o cuatro, de forma repetida, merecen atención.</li><li><strong>¿Cómo de rápidas son las transiciones?</strong> Una pendiente lenta de dos semanas y una caída de 5 a 1 en el mismo día son fenómenos distintos.</li><li><strong>¿Cuánto dura un bajón?</strong> Un bache de un día no es lo mismo que dos semanas en el fondo.</li></ul><p>Si las oscilaciones son lo principal, la <a href="/es/mood-journal/mood-swings/">guía sobre los cambios de humor</a> cubre sus causas y cuándo consultar a un profesional.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. Busca ciclos</h2>
+        <div class="guide-content">
+            <p>Los ciclos convierten el «a veces estoy mal sin más» en algo con lo que puedes planificar. Cuatro que conviene mirar:</p><ul><li><strong>Diario.</strong> Necesita más de una entrada al día: mañanas más pesadas, o un bajón a última hora de la tarde.</li><li><strong>Semanal.</strong> El hallazgo más habitual: los domingos por la tarde, un valle el miércoles, un subidón real el viernes.</li><li><strong>Mensual.</strong> Los ciclos hormonales están entre los patrones más claros en los datos de ánimo; dales dos o tres meses.</li><li><strong>Estacional.</strong> Lento, y fácil de achacar a cualquier otra cosa que estuviera pasando — mira los <a href="/es/mood-journal/seasonal-mood-changes/">cambios estacionales del ánimo</a>.</li></ul><p>En cualquier registro largo aparecen ciclos, reales o no: fíate del que se repite tres veces y tiene un mecanismo plausible.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. Factores: un ejemplo resuelto</h2>
+        <div class="guide-content">
+            <p>Aquí el gráfico deja de describir y empieza a explicar, y engañarse a uno mismo se vuelve fácil. Dos semanas de entradas:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Día</th><th>Ánimo (1–5)</th><th>Sueño</th><th>Nota</th></tr></thead><tbody><tr><td>Lun</td><td>3</td><td>6h</td><td>Arranque ajetreado</td></tr><tr><td>Mar</td><td>2</td><td>5h</td><td>Me acosté tarde</td></tr><tr><td>Mié</td><td>2</td><td>5h30</td><td>Plano, sin motivo</td></tr><tr><td>Jue</td><td>4</td><td>8h</td><td>Dormí hasta tarde</td></tr><tr><td>Vie</td><td>4</td><td>7h30</td><td>Paseo, vi a amigos</td></tr><tr><td>Sáb</td><td>5</td><td>9h</td><td>—</td></tr><tr><td>Dom</td><td>3</td><td>8h</td><td>Temiendo la semana</td></tr><tr><td>Lun</td><td>2</td><td>6h</td><td>Fecha de entrega</td></tr><tr><td>Mar</td><td>2</td><td>5h</td><td>Entrega, sin paseo</td></tr><tr><td>Mié</td><td>3</td><td>7h</td><td>Entrega terminada</td></tr><tr><td>Jue</td><td>4</td><td>8h</td><td>Gimnasio</td></tr><tr><td>Vie</td><td>4</td><td>7h</td><td>—</td></tr><tr><td>Sáb</td><td>4</td><td>8h30</td><td>Día tranquilo</td></tr><tr><td>Dom</td><td>3</td><td>8h</td><td>Otra vez la sensación de domingo</td></tr></tbody></table></div><p><strong>Lo que esto respalda:</strong> una línea base alrededor de 3, un rango de 2 a 5, un bajón dominical repetido y una relación fuerte entre las noches de menos de seis horas y un ánimo de 2.</p><p><strong>Lo que no demuestra:</strong> que dormir poco <em>causara</em> el ánimo bajo. Las dos semanas tuvieron fechas de entrega, que acortan el sueño y aplanan el ánimo por su cuenta; además, el ánimo bajo también altera el sueño, así que la flecha podría ir al revés. Y el bajón del domingo no es cuestión de sueño: el domingo se durmió bien las dos semanas.</p><p>Para fiarte de una correlación: cuenta las excepciones (un factor que se cumple la mitad de las veces es una coincidencia con buena prensa), comprueba el desfase (el sueño y el alcohol se pagan al día siguiente), busca una tercera cosa que empuje a las dos — entregas, enfermedad, viajes — y prueba un cambio cada vez.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Gráfico en papel o app: una comparación honesta</h2>
+        <div class="guide-content">
+            <p>El papel milimetrado funciona, y una hoja de cálculo puede ordenar por día de la semana. Lo que ambos cuestan es constancia: nadie reordena una hoja de cálculo por factor todos los meses. La parte que aporta la app:</p><ul><li><strong>Gráficos dibujados mientras apuntas</strong>, en cualquier periodo: la tendencia siempre está al día.</li><li><strong>Ánimo desglosado por factor</strong>: las comparaciones de arriba, sin hacer cuentas.</li><li><strong>Cada punto unido a su nota o foto</strong>: un bajón está a un toque de su motivo.</li><li><strong>Sincronización con Apple Health</strong>: el sueño llega solo.</li><li><strong>Exportación a PDF, XLSX, CSV o JSON</strong>: para las citas médicas o tu propio análisis.</li><li><strong>Análisis con IA sobre tu propio historial</strong>, gratis y con premium opcional: una segunda lectura, no un consejo.</li></ul><p>Dibuje quien dibuje el gráfico, la interpretación sigue siendo tuya: esta es una herramienta de autorregistro, no de diagnóstico. Si algo te preocupa, lleva el gráfico a un médico o terapeuta: es mucho más concreto que la memoria.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Icono de la app Diario del Ánimo" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Tu gráfico, dibujado sobre la marcha</h2>
+            <p>Feeltracker Diario del Ánimo representa tus valoraciones en cualquier periodo, desglosa el ánimo según los factores que etiquetaste y mantiene cada nota y cada foto unidas a su punto. Con un toque exportas todo el panorama en PDF. Gratis, privado y sin necesidad de cuenta.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button" src="/images/appstore/es-black.svg" alt="Descargar Diario del Ánimo en App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/es/mood-journal/" class="guide-app-cta-learn">Más información sobre la app <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="guide-faq-item">
+            <h3>¿Cuántas semanas de datos necesito para que el gráfico sea útil?</h3>
+            <p><strong>De tres a cuatro semanas</strong> para los ritmos semanales y factores únicos fuertes como el sueño; <strong>de dos a tres meses</strong> para los ciclos mensuales; <strong>casi un año</strong> para la forma estacional. Una o dos semanas ya muestran tu línea base y cuánto varías, y eso ya merece la pena.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Mi gráfico parece completamente aleatorio. ¿Lo estoy haciendo mal?</h3>
+            <p>Probablemente no. Algunos gráficos son genuinamente ruidosos, y una nube plana también dice algo real: ningún factor único domina tu ánimo. Ordena las entradas por día de la semana y comprueba los efectos del día siguiente en lugar de los del mismo día: los patrones desfasados se esconden a plena vista. ¿Sigue pareciendo aleatorio después de dos meses? Eso también es una respuesta.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>¿Un punto bajo en mi gráfico significa que algo va mal?</h3>
+            <p>No. Todos los gráficos tienen puntos bajos, y un mal día no es un diagnóstico. Lo que merece atención es la duración y la dirección: un ánimo bajo que persiste la mayor parte del día durante más de dos semanas, o una línea base que lleva meses cayendo. Eso sí conviene comentarlo con un médico o terapeuta: lleva el gráfico.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>¿Debería sacar la media de mis valoraciones?</h3>
+            <p>Una media mensual es un buen resumen de la línea base, pero promediar tira a la basura el rango, que a menudo es la mitad más interesante de la historia. Mira juntas la media y la dispersión, como se explica en la <a href="/es/mood-journal/mood-swings/" target="_blank" rel="noopener">guía sobre los cambios de humor</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>¿Puedo enseñarle mi gráfico de ánimo a mi terapeuta?</h3>
+            <p>Sí, y la mayoría lo agradecerá. Un gráfico fechado con etiquetas de factores convierte un resumen vago en algo concreto sobre lo que trabajar. Exporta un PDF para una versión limpia, o CSV/XLSX para los números de fondo.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Sigue leyendo</h2>
+        <div class="guide-related-grid">
+
+            <a href="/es/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Cómo Registrar tu Estado de Ánimo</h3>
+                <p>Qué anotar, con qué frecuencia y los factores que vale la pena etiquetar.</p>
+            </a>
+
+            <a href="/es/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>Cambios de Humor: Causas y Patrones</h3>
+                <p>Qué suele provocar un rango amplio y cuándo conviene comentarlo.</p>
+            </a>
+
+            <a href="/es/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>Cambios Estacionales del Ánimo</h3>
+                <p>El ciclo más lento de tu gráfico y cómo detectarlo.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Una nota sobre tu bienestar</h2>
+        <p>Este artículo tiene únicamente fines informativos generales y no constituye asesoramiento médico, diagnóstico ni tratamiento. Un gráfico de ánimo es una herramienta de autorregistro, no un instrumento de diagnóstico: los patrones que muestre son un buen punto de partida para una conversación con un médico o terapeuta, nunca un sustituto de ella. Si el ánimo bajo persiste la mayor parte del día durante más de dos semanas, o notas cambios duraderos en el sueño, el apetito o tu capacidad para llevar el día a día, habla por favor con un profesional sanitario. Si tienes pensamientos de hacerte daño, contacta ahora mismo con los servicios de emergencia de tu zona o con una línea de crisis de tu país: hay ayuda disponible en este momento.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Descubre tu propio patrón</h2>
+        <p>Descarga la app gratuita Diario del Ánimo: apunta en segundos y deja que el gráfico se dibuje solo</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/es-white.svg"><img class="store_button store_button--lg" src="/images/appstore/es-black.svg" alt="Descargar Diario del Ánimo en App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">App gratuita con funciones premium opcionales
+iPhone, iPad y Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/es/mood-journal/mood-chart/">Inicio</a>
+            <a href="/es/about/">Sobre nosotros</a>
+            <a href="mailto:support@feeltracker.com">Soporte por email</a>
+            <a href="/es/support/">Soporte</a>
+            <a href="/es/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Seguir en X</a>
+            <a href="/es/privacy/">Política de privacidad</a>
+            <a href="/es/terms/">Términos de uso</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Todos los derechos reservados.</p>
+        <p class="footer-tagline">Parte de la familia Feeltracker de apps de seguimiento de salud</p>
+        <p class="footer-disclaimer">Sus datos de salud permanecen en su dispositivo y en iCloud — nunca accedemos a ellos ni los vendemos. Las apps de Feeltracker no son dispositivos médicos. Solo con fines informativos, no sustituyen el consejo, diagnóstico o tratamiento médico profesional.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Valoramos su privacidad</strong></p>
+                <p>Usamos cookies de análisis para mejorar nuestro sitio web y aplicación. No se usan cookies publicitarias. Consulte nuestra <a href="/es/privacy/">Política de Privacidad</a> para más detalles.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Rechazar</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Как читать график настроения: базовый уровень, размах, циклы | Feeltracker</title>
+    <meta name="description" content="Как правильно читать график настроения: найти свой базовый уровень, оценить размах, заметить недельные и сезонные циклы и отличить настоящий фактор от совпадения.">
+
+    <meta name="keywords" content="график настроения, диаграмма настроения, как читать график настроения, закономерности настроения, тренды настроения, отслеживание настроения">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://feeltracker.com/ru/mood-journal/mood-chart/">
+    <meta property="og:title" content="Как читать график настроения">
+    <meta property="og:description" content="Базовый уровень, размах, циклы и связь с факторами — как получить настоящие ответы из нескольких недель данных, на разобранном примере.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ru/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="Как читать график настроения">
+    <meta property="twitter:description" content="Как читать график настроения: базовый уровень, размах, циклы и как отличить настоящий фактор от совпадения.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Сколько недель данных нужно, чтобы график стал полезным?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Три-четыре недели для недельных ритмов и сильных одиночных факторов вроде сна; два-три месяца для месячных циклов; почти год для сезонного рисунка. Одна-две недели уже показывают ваш базовый уровень и размах колебаний — и это тоже ценно."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Мой график выглядит совершенно хаотично. Я что-то делаю не так?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Скорее всего, нет. Некоторые графики действительно «шумные», и ровный разброс тоже кое-что говорит: ни один фактор не доминирует над вашим настроением. Отсортируйте записи по дням недели и проверяйте эффекты следующего дня, а не того же самого, — запаздывающие связи прячутся у всех на виду. Всё ещё хаос через два месяца? Это тоже ответ."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Значит ли низкая точка на графике, что со мной что-то не так?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Нет. Низкие точки есть на графике у каждого, и плохой день — не диагноз. Внимания заслуживают длительность и направление: подавленность, которая держится большую часть дня дольше двух недель, или базовый уровень, месяцами сползающий вниз. Вот это стоит обсудить с врачом или психотерапевтом — возьмите график с собой."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Стоит ли усреднять оценки настроения?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Среднее за месяц — честная сводка базового уровня, но усреднение выбрасывает размах, а он часто и есть более интересная половина истории. Смотрите на среднее и разброс вместе, как описано в руководстве о перепадах настроения."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Можно ли показать график настроения психотерапевту?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Да, и большинство специалистов этому только обрадуются. Датированный график с метками факторов превращает расплывчатый рассказ в конкретный материал для работы. Экспортируйте PDF для аккуратной версии или CSV/XLSX для исходных чисел."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ru/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Дневник настроения",
+                      "item": "https://feeltracker.com/ru/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "График настроения",
+                      "item": "https://feeltracker.com/ru/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Как читать график настроения",
+          "description": "Как правильно читать график настроения: найти свой базовый уровень, оценить размах, заметить недельные и сезонные циклы и отличить настоящий фактор от совпадения.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ru/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ru/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ru/blood-pressure/">Артериальное давление</a>
+
+            <a href="/ru/daily-journal/">Ежедневник</a>
+
+            <a href="/ru/mood-journal/" class="current">Дневник настроения</a>
+
+            <a href="/ru/sleep/">Сон</a>
+
+            <a href="/ru/weight/">Вес</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇷🇺</span>
+                <span class="lang-name">Русский</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ru/">Главная</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ru/mood-journal/">Дневник настроения</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">График настроения</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Как читать график настроения</h1>
+
+        <p class="guide-updated">Обновлено: август 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>График настроения — это ваши ежедневные оценки, отложенные по времени. Первый взгляд почти всегда обманчив: глаз сразу идёт к самой нижней точке, отмечает «вот он, плохой день» — и на этом всё. Если читать график правильно, он отвечает на более важные вопросы: где обычно находится моё настроение, насколько далеко оно отклоняется, движется ли по расписанию и что идёт с ним рядом?</p><p>В этом руководстве — четыре шага чтения: базовый уровень, размах, циклы, факторы, с разобранным примером. Ещё не ведёте записи? Начните с руководства <a href="/ru/mood-journal/how-to-track-your-mood/">как отслеживать настроение</a> и возвращайтесь через две недели.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Прежде чем читать: сколько нужно данных?</h2>
+        <div class="guide-content">
+            <p>График за пять дней — это настроение, а не закономерность. Примерные ориентиры:</p><ul><li><strong>1–2 недели:</strong> ваш базовый уровень и то, насколько сильно вы колеблетесь, — о причинах пока ничего.</li><li><strong>3–6 недель:</strong> недельные ритмы и сильные одиночные факторы; сон обычно проявляется первым.</li><li><strong>2–3 месяца:</strong> месячные и гормональные циклы, а также медленные сдвиги.</li><li><strong>6–12 месяцев:</strong> сезонный рисунок и честный ответ на вопрос «стало ли мне лучше, чем год назад?».</li></ul><p>Пропуски — это нормально: пустая неделя честна. А неделя, восстановленная по памяти, подгоняет график под ту историю, в которую вы и так верите.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. Найдите свой базовый уровень</h2>
+        <div class="guide-content">
+            <p>Базовый уровень — это то, где находится ваше настроение в обычный день, полоса, к которой линия постоянно возвращается. На пятибалльной шкале большинство людей живёт между 3 и 4.</p><p>Это самое полезное число здесь: тройка значит разное для того, кто живёт на четвёрке, и для того, кто живёт на двойке. Базовый уровень меняется медленно, поэтому его сдвиг говорит больше, чем один тяжёлый вторник. Базовый уровень, сползающий с 4 до 3 за два месяца, весомее любой отдельной низкой точки — и как раз этой перемены изнутри не видно.</p><p>Закройте крайние точки большим пальцем, посмотрите, где лежит основная масса линии, и сравните этот месяц с прошлым.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. Оцените размах</h2>
+        <div class="guide-content">
+            <p>Размах — это то, насколько далеко настроение уходит от базового уровня. У двух человек одинаковый базовый уровень 3,5: один движется между 3 и 4, другой скачет от 1 до 5. Три вопроса:</p><ul><li><strong>Насколько широка типичная неделя?</strong> Один балл — обычное дело; три-четыре, и раз за разом, — повод присмотреться.</li><li><strong>Насколько быстры переходы?</strong> Медленный двухнедельный спуск и падение с 5 до 1 за один день — разные явления.</li><li><strong>Как долго держится спад?</strong> Спад на день — это не то же самое, что две недели на дне.</li></ul><p>Если главная история — именно перепады, то <a href="/ru/mood-journal/mood-swings/">руководство о перепадах настроения</a> разбирает их причины и то, когда стоит обратиться к специалисту.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. Ищите циклы</h2>
+        <div class="guide-content">
+            <p>Циклы превращают «иногда бывает плохо, непонятно почему» в то, под что можно планировать жизнь. Четыре цикла, которые стоит проверить:</p><ul><li><strong>Суточный.</strong> Нужна больше чем одна запись в день: более тяжёлое утро или спад поздним вечером.</li><li><strong>Недельный.</strong> Самая частая находка: воскресные вечера, провал в среду, настоящий подъём в пятницу.</li><li><strong>Месячный.</strong> Гормональные циклы — одна из самых чётких закономерностей в данных о настроении; дайте им два-три месяца.</li><li><strong>Сезонный.</strong> Медленный, и его легко списать на всё, что происходило параллельно, — см. <a href="/ru/mood-journal/seasonal-mood-changes/">сезонные изменения настроения</a>.</li></ul><p>Циклы находятся в любых длинных данных, настоящие они или нет. Доверяйте тому, который повторился трижды и у которого есть правдоподобное объяснение.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. Факторы: разбор примера</h2>
+        <div class="guide-content">
+            <p>Здесь график перестаёт описывать и начинает объяснять — и здесь же легче всего обмануть себя. Две недели записей:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>День</th><th>Настроение (1–5)</th><th>Сон</th><th>Заметка</th></tr></thead><tbody><tr><td>Пн</td><td>3</td><td>6 ч</td><td>Напряжённое начало</td></tr><tr><td>Вт</td><td>2</td><td>5 ч</td><td>Накануне лёг поздно</td></tr><tr><td>Ср</td><td>2</td><td>5 ч 30 мин</td><td>Никак, без причины</td></tr><tr><td>Чт</td><td>4</td><td>8 ч</td><td>Выспался</td></tr><tr><td>Пт</td><td>4</td><td>7 ч 30 мин</td><td>Прогулка, встреча с друзьями</td></tr><tr><td>Сб</td><td>5</td><td>9 ч</td><td>—</td></tr><tr><td>Вс</td><td>3</td><td>8 ч</td><td>Тревога перед рабочей неделей</td></tr><tr><td>Пн</td><td>2</td><td>6 ч</td><td>Дедлайн</td></tr><tr><td>Вт</td><td>2</td><td>5 ч</td><td>Дедлайн, без прогулки</td></tr><tr><td>Ср</td><td>3</td><td>7 ч</td><td>Дедлайн сдан</td></tr><tr><td>Чт</td><td>4</td><td>8 ч</td><td>Спортзал</td></tr><tr><td>Пт</td><td>4</td><td>7 ч</td><td>—</td></tr><tr><td>Сб</td><td>4</td><td>8 ч 30 мин</td><td>Спокойный день</td></tr><tr><td>Вс</td><td>3</td><td>8 ч</td><td>Снова воскресное чувство</td></tr></tbody></table></div><p><strong>Что эти данные подтверждают:</strong> базовый уровень около 3, размах от 2 до 5, повторяющийся спад по воскресеньям и заметную связь между ночами короче шести часов и настроением на 2.</p><p><strong>Чего они не доказывают:</strong> что короткий сон <em>вызвал</em> плохое настроение. Обе недели были с дедлайнами, а они и сокращают сон, и сами по себе давят на настроение; к тому же подавленность нарушает сон, так что стрелка может указывать в обратную сторону. А воскресный спад — точно не про сон: в оба воскресенья сон был нормальным.</p><p>Чтобы довериться связи: посчитайте исключения (фактор, который срабатывает в половине случаев, — это совпадение с хорошим пиаром), проверьте задержку (сон и алкоголь отзываются на следующий день), поищите третью причину, которая двигает обе вещи, — дедлайны, болезнь, поездки, — и меняйте что-то одно за раз.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>График на бумаге или приложение: честное сравнение</h2>
+        <div class="guide-content">
+            <p>Миллиметровка работает, а таблица умеет сортировать по дням недели. И то и другое стоит вам последовательности: никто не пересортировывает таблицу по факторам каждый месяц. Что даёт приложение:</p><ul><li><strong>Графики строятся по ходу записей</strong> за любой период — тренд всегда актуален.</li><li><strong>Настроение в разбивке по факторам</strong> — те самые сравнения, но без арифметики.</li><li><strong>Каждая точка связана со своей заметкой или фотографией</strong> — от спада до его причины одно касание.</li><li><strong>Синхронизация с Apple Health</strong> — данные о сне подтягиваются сами.</li><li><strong>Экспорт в PDF, XLSX, CSV или JSON</strong> — для приёма у врача или собственного анализа.</li><li><strong>ИИ-аналитика по вашей собственной истории</strong>, бесплатно и с дополнительными премиум-функциями, — второй взгляд, а не совет.</li></ul><p>Чем бы ни рисовался график, толкование остаётся за вами: это инструмент самонаблюдения, а не диагностики. Если что-то вас тревожит, покажите график врачу или психотерапевту — это куда конкретнее, чем воспоминания.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Значок приложения Дневник настроения" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Ваш график, который строится сам</h2>
+            <p>Feeltracker Дневник настроения строит график ваших оценок за любой период, показывает настроение в разбивке по отмеченным факторам и хранит каждую заметку и фотографию рядом с её точкой. Одно касание — и вся картина выгружается в PDF. Бесплатно, конфиденциально, без регистрации.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ru-white.svg"><img class="store_button" src="/images/appstore/ru-black.svg" alt="Скачать Дневник настроения в App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ru/mood-journal/" class="guide-app-cta-learn">Подробнее о приложении <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Часто задаваемые вопросы</h2>
+
+        <div class="guide-faq-item">
+            <h3>Сколько недель данных нужно, чтобы график стал полезным?</h3>
+            <p><strong>Три-четыре недели</strong> для недельных ритмов и сильных одиночных факторов вроде сна; <strong>два-три месяца</strong> для месячных циклов; <strong>почти год</strong> для сезонного рисунка. Одна-две недели уже показывают ваш базовый уровень и размах колебаний — и это тоже ценно.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Мой график выглядит совершенно хаотично. Я что-то делаю не так?</h3>
+            <p>Скорее всего, нет. Некоторые графики действительно «шумные», и ровный разброс тоже кое-что говорит: ни один фактор не доминирует над вашим настроением. Отсортируйте записи по дням недели и проверяйте эффекты следующего дня, а не того же самого, — запаздывающие связи прячутся у всех на виду. Всё ещё хаос через два месяца? Это тоже ответ.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Значит ли низкая точка на графике, что со мной что-то не так?</h3>
+            <p>Нет. Низкие точки есть на графике у каждого, и плохой день — не диагноз. Внимания заслуживают длительность и направление: подавленность, которая держится большую часть дня дольше двух недель, или базовый уровень, месяцами сползающий вниз. Вот это стоит обсудить с врачом или психотерапевтом — возьмите график с собой.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Стоит ли усреднять оценки настроения?</h3>
+            <p>Среднее за месяц — честная сводка базового уровня, но усреднение выбрасывает размах, а он часто и есть более интересная половина истории. Смотрите на среднее и разброс вместе, как описано в <a href="/ru/mood-journal/mood-swings/" target="_blank" rel="noopener">руководстве о перепадах настроения</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Можно ли показать график настроения психотерапевту?</h3>
+            <p>Да, и большинство специалистов этому только обрадуются. Датированный график с метками факторов превращает расплывчатый рассказ в конкретный материал для работы. Экспортируйте PDF для аккуратной версии или CSV/XLSX для исходных чисел.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Читайте также</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ru/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Как отслеживать настроение</h3>
+                <p>Что записывать, как часто и какие факторы стоит отмечать.</p>
+            </a>
+
+            <a href="/ru/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>Перепады настроения: причины и закономерности</h3>
+                <p>Что обычно вызывает широкий размах и когда об этом стоит рассказать врачу.</p>
+            </a>
+
+            <a href="/ru/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>Сезонные изменения настроения</h3>
+                <p>Самый медленный цикл на вашем графике и как его заметить.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Несколько слов о вашем благополучии</h2>
+        <p>Эта статья носит исключительно информационный характер и не является медицинской консультацией, диагнозом или назначением лечения. График настроения — инструмент самонаблюдения, а не диагностический метод: найденные закономерности хороши как отправная точка для разговора с врачом или психотерапевтом, но никогда не заменяют его. Если подавленное настроение держится большую часть дня дольше двух недель или вы замечаете стойкие изменения сна, аппетита или способности справляться с повседневными делами, обратитесь к специалисту. Если у вас есть мысли о причинении себе вреда, немедленно свяжитесь со службой экстренной помощи в вашем регионе или с телефоном доверия в вашей стране — помощь доступна прямо сейчас.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Увидьте свою закономерность</h2>
+        <p>Скачайте бесплатное приложение «Дневник настроения» — записывайте за секунды, а график построится сам</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ru-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ru-black.svg" alt="Скачать Дневник настроения в App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Бесплатное приложение с дополнительными премиум-функциями
+iPhone, iPad и Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ru/mood-journal/mood-chart/">Главная</a>
+            <a href="/ru/about/">О нас</a>
+            <a href="mailto:support@feeltracker.com">Поддержка по эл. почте</a>
+            <a href="/ru/support/">Поддержка</a>
+            <a href="/ru/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Подписаться в X</a>
+            <a href="/ru/privacy/">Политика конфиденциальности</a>
+            <a href="/ru/terms/">Условия использования</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Все права защищены.</p>
+        <p class="footer-tagline">Часть семейства приложений Feeltracker для отслеживания здоровья</p>
+        <p class="footer-disclaimer">Ваши данные о здоровье хранятся на вашем устройстве и в iCloud — мы никогда не получаем к ним доступ и не продаём их. Приложения Feeltracker не являются медицинскими устройствами. Только для информационных целей, не заменяют профессиональную медицинскую консультацию, диагностику или лечение.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Мы ценим вашу конфиденциальность</strong></p>
+                <p>Мы используем файлы cookie для аналитики, чтобы улучшить наш сайт и приложение. Рекламные cookie не используются. Ознакомьтесь с нашей <a href="/ru/privacy/">Политикой конфиденциальности</a> для подробностей.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Отклонить</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Принять</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

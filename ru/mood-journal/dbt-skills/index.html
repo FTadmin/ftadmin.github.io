@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Навыки ДБТ: четыре модуля простым языком | Feeltracker</title>
+    <meta name="description" content="Навыки ДБТ простым языком: четыре модуля с объяснениями, живые примеры вроде TIPP, противоположного действия и DEAR MAN, и как ежедневные записи их поддерживают.">
+
+    <meta name="keywords" content="навыки ДБТ, диалектическая поведенческая терапия, модули ДБТ, навык TIPP, противоположное действие, DEAR MAN, навыки переносимости дистресса">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ru/mood-journal/dbt-skills/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/dbt-skills/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/dbt-skills/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://feeltracker.com/ru/mood-journal/dbt-skills/">
+    <meta property="og:title" content="Навыки ДБТ: четыре модуля простым языком">
+    <meta property="og:description" content="Осознанность, переносимость дистресса, регуляция эмоций и межличностная эффективность — зачем нужен каждый модуль и по одному навыку из каждого, которым можно пользоваться.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ru/mood-journal/dbt-skills/">
+    <meta property="twitter:title" content="Навыки ДБТ: четыре модуля простым языком">
+    <meta property="twitter:description" content="Четыре модуля ДБТ простым языком и по одному конкретному навыку из каждого: TIPP, противоположное действие, DEAR MAN.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Можно ли освоить навыки ДБТ самостоятельно?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Многие — да: навыки преподаются открыто, и рабочие тетради существуют именно для этого. Чего нельзя обеспечить себе самому — это остальной части программы: терапевта, который знает вашу историю, группы для практики, поддержки в моменте. Считайте самостоятельное обучение полезным началом, но не заменой помощи, если эмоции регулярно вас захлёстывают."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Чем ДБТ отличается от КПТ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ДБТ выросла из КПТ и разделяет её практичный подход, где на первом месте навыки. КПТ сосредоточена на исследовании и изменении неполезных мыслей; ДБТ добавляет к работе над изменениями большую половину, посвящённую принятию, — переносимость дистресса, осознанность, валидацию, — а также чёткую программу навыков и групповой формат."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Нужен ли диагноз ПРЛ, чтобы пользоваться навыками ДБТ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Нет. ДБТ разрабатывалась с прицелом на пограничное расстройство личности, но сами навыки универсальны и сегодня применяются при множестве других трудностей: масса людей без всякого диагноза находят TIPP и противоположное действие полезными. Если вы читаете это, потому что что-то показалось знакомым, наше руководство ПРЛ и дневник настроения — более мягкая отправная точка, чем список симптомов."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Сколько длится полная программа ДБТ?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Стандартная группа навыков проходит все четыре модуля примерно за полгода, и многие программы рекомендуют два полных цикла — около года, параллельно с еженедельной индивидуальной терапией. Всё чаще встречаются и более короткие группы, посвящённые только навыкам; что реалистично в вашем регионе, подскажет специалист."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Что записывать между сессиями?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Классическую дневниковую карточку: ежедневную оценку настроения, окружающие факторы, любые импульсы и то, какие навыки вы использовали и помогли ли они. Держите её достаточно короткой, чтобы она пережила плохой день, — вариант, занимающий около пяти секунд, описан в как отслеживать настроение."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ru/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Дневник настроения",
+                      "item": "https://feeltracker.com/ru/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Навыки ДБТ",
+                      "item": "https://feeltracker.com/ru/mood-journal/dbt-skills/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Навыки ДБТ: руководство простым языком",
+          "description": "Навыки ДБТ простым языком: четыре модуля с объяснениями, живые примеры вроде TIPP, противоположного действия и DEAR MAN, и как ежедневные записи их поддерживают.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ru/mood-journal/dbt-skills/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ru/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ru/blood-pressure/">Артериальное давление</a>
+
+            <a href="/ru/daily-journal/">Ежедневник</a>
+
+            <a href="/ru/mood-journal/" class="current">Дневник настроения</a>
+
+            <a href="/ru/sleep/">Сон</a>
+
+            <a href="/ru/weight/">Вес</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇷🇺</span>
+                <span class="lang-name">Русский</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/dbt-skills/" class="active" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/dbt-skills/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ru/">Главная</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ru/mood-journal/">Дневник настроения</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Навыки ДБТ</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Навыки ДБТ: руководство простым языком</h1>
+
+        <p class="guide-updated">Обновлено: август 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Диалектическая поведенческая терапия (ДБТ) — это терапия, построенная на навыках и созданная для эмоций, которые приходят быстро и бьют сильно. Она не ограничивается разговорами о чувствах, а обучает конкретным именованным навыкам, к которым можно обратиться в два часа ночи, когда одних добрых намерений мало.</p><p>Здесь — четыре модуля простым языком и по одному применимому навыку из каждого. Это объяснение, а не курс: настоящая ДБТ проводится обученными психотерапевтами и состоит из индивидуальных сессий плюс еженедельной группы навыков. Самостоятельно можно освоить словарь, потренировать более простые навыки и с помощью ежедневного <a href="/ru/mood-journal/how-to-track-your-mood/">дневника настроения</a> выяснить, какие из них помогают именно вам.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Что такое ДБТ — и чем она не является</h2>
+        <div class="guide-content">
+            <p>Психолог Марша Линехан создала ДБТ в 1980-х годах для работы с сильными эмоциональными перепадами и импульсами к самоповреждению; сегодня её применяют при <a href="/ru/mood-journal/bpd-symptoms/">пограничном расстройстве личности</a>, расстройствах пищевого поведения, зависимостях, хронической суицидальности — и просто когда эмоции у человека идут «на высоких оборотах».</p><p>Слово <em>диалектическая</em> отражает главную идею: две противоположные вещи могут быть верны одновременно. Вы делаете лучшее, на что сейчас способны, <em>и</em> вы можете научиться действовать иначе.</p><p>Полная программа состоит из четырёх частей: еженедельная индивидуальная терапия, группа навыков, телефонная поддержка в моменте и супервизорская команда для самих терапевтов. Статья — это не то же самое. Если эмоции регулярно вас захлёстывают, направление к ДБТ-терапевту и есть тот шаг, который меняет ситуацию.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Четыре модуля в общих чертах</h2>
+        <div class="guide-content">
+            <p>Два модуля учат принимать реальность такой, какая она есть (осознанность, переносимость дистресса), а два — менять её (регуляция эмоций, межличностная эффективность). Осознанность идёт первой: остальные не работают, если вы не замечаете происходящее вовремя, чтобы ими воспользоваться.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Модуль</th><th>Для чего он</th><th>Пример навыка</th><th>Как это выглядит</th></tr></thead><tbody><tr><td><strong>Осознанность</strong></td><td>Замечать, что вы чувствуете, не бросаясь сразу действовать</td><td>Мудрый разум</td><td>Середина между чистой эмоцией и холодной логикой</td></tr><tr><td><strong>Переносимость дистресса</strong></td><td>Пережить кризис, не сделав его хуже</td><td>TIPP</td><td>Холод, движение, дыхание — химия тела вместо силы воли</td></tr><tr><td><strong>Регуляция эмоций</strong></td><td>Сделать так, чтобы сильные эмоции приходили реже и проходили быстрее</td><td>Противоположное действие</td><td>Сделать обратное тому, к чему толкает эмоция, и сделать это до конца</td></tr><tr><td><strong>Межличностная эффективность</strong></td><td>Просить и отказывать, не разрушая ни отношения, ни самоуважение</td><td>DEAR MAN</td><td>Сценарий из семи шагов для разговора, которого вы боитесь</td></tr></tbody></table></div>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Четыре навыка подробнее</h2>
+        <div class="guide-content">
+            <h3>Мудрый разум (осознанность)</h3><p>ДБТ различает три состояния: <em>эмоциональный разум</em>, где решают чувства; <em>рациональный разум</em> — одни факты и никакого тепла; и <em>мудрый разум</em> — их пересечение, где вы знаете что-то спокойно и целиком. Сделайте паузу, подышите, задайте себе вопрос и дождитесь ответа, который ощущается устойчивым, а не срочным: срочность обычно говорит голосом эмоционального разума.</p><h3>TIPP (переносимость дистресса)</h3><p>Когда дистресс на девятке-десятке, TIPP обходит рассуждения и работает с физиологией: <strong>T</strong>emperature — температура: холодная вода или холодный компресс на лицо; нырятельный рефлекс замедляет сердце. <strong>I</strong>ntense exercise — интенсивная нагрузка: десять минут в полную силу. <strong>P</strong>aced breathing — размеренное дыхание: выдох длиннее вдоха. <strong>P</strong>aired muscle relaxation — парная мышечная релаксация: напряжение на вдохе, расслабление на выдохе. Холод и нагрузка намеренно меняют частоту сердечных сокращений, поэтому сначала посоветуйтесь с врачом, если у вас есть заболевание сердца или расстройство пищевого поведения, если вы беременны или принимаете препараты, влияющие на пульс. Некоторые из этих приёмов одновременно являются <a href="/ru/mood-journal/grounding-techniques/">техниками заземления</a>.</p><h3>Противоположное действие (регуляция эмоций)</h3><p>За каждой эмоцией стоит импульс: страх велит избегать, стыд — прятаться, злость — нападать. Когда импульс не соответствует фактам, следование ему только усиливает эмоцию на будущее. Проверьте факты, а затем сделайте противоположное <em>до конца</em>: отправьте пугающее сообщение, и по-доброму; останьтесь в комнате; выпрямитесь.</p><h3>DEAR MAN (межличностная эффективность)</h3><p>Сценарий для важного разговора: <strong>D</strong>escribe — опишите факты, <strong>E</strong>xpress — выразите свои чувства, <strong>A</strong>ssert — прямо скажите, чего хотите, <strong>R</strong>einforce — покажите, что получит собеседник; затем <strong>M</strong>indful — помните о своей цели, <strong>A</strong>ppear confident — держитесь уверенно, <strong>N</strong>egotiate — договаривайтесь там, где это возможно. Дополняющие наборы GIVE и FAST берегут отношения и ваше самоуважение.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Дневниковая карточка: собственная привычка ДБТ к записям</h2>
+        <div class="guide-content">
+            <p>Именно эта деталь закрепляет навыки — дневниковая карточка. Клиенты ДБТ заполняют её ежедневно: оценка эмоций, отмеченные импульсы, использованные навыки и то, помогли ли они. И сессия начинается с того, что терапевт читает неделю, а не спрашивает «ну как дела?».</p><p>Позаимствуйте эту идею и без программы. Одна запись в день: оценка, действовавшие факторы, любые импульсы, какой навык вы попробовали — и то поле, которое все пропускают: помог ли он. Через месяц именно этот столбец удивляет сильнее всего: почти ни у кого список не совпадает с ожиданиями. Назвать то, что вы оцениваете, поможет <a href="/ru/mood-journal/emotion-wheel/">колесо эмоций</a>.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Бумажная карточка или приложение: честное сравнение</h2>
+        <div class="guide-content">
+            <p>У распечатанной карточки есть весомые доводы: она бесплатна, работает, когда телефон не работает, а письмо от руки располагает к размышлению. Если ваш терапевт хочет бумажную карточку — ведите бумажную карточку.</p><p>Слабость бумаги проявляется на второй месяц. Разрозненные листы никогда не складываются во что-то, на что можно посмотреть целиком, а карточки никогда не оказывается в кармане в момент, когда приходит импульс. Приложение закрывает этот разрыв: запись за пять секунд, графики, показывающие, какие факторы идут рядом с худшими днями, напоминания, заметки и фотографии, экспорт в PDF, XLSX, CSV или JSON — три месяца для вашего терапевта вместо трёх дней. Конфиденциальность по умолчанию: синхронизация через iCloud, без аккаунта и электронной почты, при желании синхронизация с Apple Health.</p><p>Feeltracker Дневник настроения — инструмент самонаблюдения, а не терапия и не диагностический метод: он не выставляет вам баллы и не сообщает, что означают ваши оценки.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Значок приложения Дневник настроения" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Дневниковая карточка, которая помещается в карман</h2>
+            <p>Feeltracker Дневник настроения — это та же дневниковая карточка, только быстрее: пятибалльная шкала, факторы каждого дня, заметки и фотографии, графики, показывающие закономерность, и экспорт в PDF к следующей сессии. Бесплатно, конфиденциально, без регистрации.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ru-white.svg"><img class="store_button" src="/images/appstore/ru-black.svg" alt="Скачать Дневник настроения в App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ru/mood-journal/" class="guide-app-cta-learn">Подробнее о приложении <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Часто задаваемые вопросы</h2>
+
+        <div class="guide-faq-item">
+            <h3>Можно ли освоить навыки ДБТ самостоятельно?</h3>
+            <p>Многие — да: навыки преподаются открыто, и рабочие тетради существуют именно для этого. Чего нельзя обеспечить себе самому — это остальной части программы: терапевта, который знает вашу историю, группы для практики, поддержки в моменте. Считайте самостоятельное обучение полезным началом, но не заменой помощи, если эмоции регулярно вас захлёстывают.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Чем ДБТ отличается от КПТ?</h3>
+            <p>ДБТ выросла из КПТ и разделяет её практичный подход, где на первом месте навыки. КПТ сосредоточена на исследовании и изменении неполезных мыслей; ДБТ добавляет к работе над изменениями большую половину, посвящённую <strong>принятию</strong>, — переносимость дистресса, осознанность, валидацию, — а также чёткую программу навыков и групповой формат.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Нужен ли диагноз ПРЛ, чтобы пользоваться навыками ДБТ?</h3>
+            <p>Нет. ДБТ разрабатывалась с прицелом на пограничное расстройство личности, но сами навыки универсальны и сегодня применяются при множестве других трудностей: масса людей без всякого диагноза находят TIPP и противоположное действие полезными. Если вы читаете это, потому что что-то показалось знакомым, наше руководство <a href="/ru/mood-journal/bpd-symptoms/" target="_blank" rel="noopener">ПРЛ и дневник настроения</a> — более мягкая отправная точка, чем список симптомов.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Сколько длится полная программа ДБТ?</h3>
+            <p>Стандартная группа навыков проходит все четыре модуля примерно за полгода, и многие программы рекомендуют два полных цикла — около года, параллельно с еженедельной индивидуальной терапией. Всё чаще встречаются и более короткие группы, посвящённые только навыкам; что реалистично в вашем регионе, подскажет специалист.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Что записывать между сессиями?</h3>
+            <p>Классическую дневниковую карточку: ежедневную оценку настроения, окружающие факторы, любые импульсы и то, какие навыки вы использовали и помогли ли они. Держите её достаточно короткой, чтобы она пережила плохой день, — вариант, занимающий около пяти секунд, описан в <a href="/ru/mood-journal/how-to-track-your-mood/" target="_blank" rel="noopener">как отслеживать настроение</a>.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Читайте также</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ru/mood-journal/bpd-symptoms/" class="guide-related-card">
+                <h3>ПРЛ и дневник настроения</h3>
+                <p>Девять критериев простым языком и почему ежедневные записи помогают.</p>
+            </a>
+
+            <a href="/ru/mood-journal/grounding-techniques/" class="guide-related-card">
+                <h3>Техники заземления</h3>
+                <p>Работающие приёмы для моментов, когда напряжение резко подскакивает.</p>
+            </a>
+
+            <a href="/ru/mood-journal/emotion-wheel/" class="guide-related-card">
+                <h3>Колесо эмоций</h3>
+                <p>Словарь, чтобы назвать то, что вы на самом деле чувствуете.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Несколько слов о помощи</h2>
+        <p>Эта статья носит исключительно информационный характер и не является терапией, медицинской консультацией, диагнозом или назначением лечения. Читать о навыках ДБТ — не то же самое, что проходить ДБТ: полную программу проводят обученные специалисты. Если ваши эмоции регулярно кажутся неуправляемыми, спросите врача или специалиста по психическому здоровью о направлении. Если у вас есть мысли о причинении себе вреда или о суициде, немедленно свяжитесь со службой экстренной помощи в вашем регионе или с телефоном доверия в вашей стране — вы заслуживаете поддержки прямо сейчас, а не через шесть недель.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Заведите свою карточку уже сегодня</h2>
+        <p>Скачайте бесплатное приложение «Дневник настроения» — оценивайте день за секунды, видите закономерность и делитесь ею с психотерапевтом</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ru-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ru-black.svg" alt="Скачать Дневник настроения в App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Бесплатное приложение с дополнительными премиум-функциями
+iPhone, iPad и Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ru/mood-journal/dbt-skills/">Главная</a>
+            <a href="/ru/about/">О нас</a>
+            <a href="mailto:support@feeltracker.com">Поддержка по эл. почте</a>
+            <a href="/ru/support/">Поддержка</a>
+            <a href="/ru/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Подписаться в X</a>
+            <a href="/ru/privacy/">Политика конфиденциальности</a>
+            <a href="/ru/terms/">Условия использования</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Все права защищены.</p>
+        <p class="footer-tagline">Часть семейства приложений Feeltracker для отслеживания здоровья</p>
+        <p class="footer-disclaimer">Ваши данные о здоровье хранятся на вашем устройстве и в iCloud — мы никогда не получаем к ним доступ и не продаём их. Приложения Feeltracker не являются медицинскими устройствами. Только для информационных целей, не заменяют профессиональную медицинскую консультацию, диагностику или лечение.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Мы ценим вашу конфиденциальность</strong></p>
+                <p>Мы используем файлы cookie для аналитики, чтобы улучшить наш сайт и приложение. Рекламные cookie не используются. Ознакомьтесь с нашей <a href="/ru/privacy/">Политикой конфиденциальности</a> для подробностей.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Отклонить</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Принять</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>
