@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>BMI Chart for Adults: Categories and Weight Ranges | Feeltracker</title>
+    <meta name="description" content="A clear BMI chart for adults with every category, plus a height and weight table showing the healthy range for your height in kg and pounds.">
+
+    <meta name="keywords" content="bmi chart, bmi chart for adults, bmi table, bmi categories, bmi range chart, healthy bmi">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/weight/bmi-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://feeltracker.com/weight/bmi-chart/">
+    <meta property="og:title" content="BMI Chart for Adults: Categories and Weight Ranges">
+    <meta property="og:description" content="Every BMI category in one chart, plus the healthy weight range for your height in both kilograms and pounds.">
+    <meta property="og:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/weight/bmi-chart/">
+    <meta property="twitter:title" content="BMI Chart for Adults: Categories and Weight Ranges">
+    <meta property="twitter:description" content="The adult BMI chart, plus the healthy weight range for your height in kg and pounds.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/WT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "What is a good BMI for an adult?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Anything from 18.5 to 24.9 is classified as a healthy weight, and there is no meaningful difference in risk across that range. Rather than aiming for a specific figure, aim to sit comfortably inside the band for your height — see the table in healthy weight for your height."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Is the BMI chart different for men and women?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. The adult categories are identical for both, even though women naturally carry a higher percentage of body fat at the same BMI. That is one of the chart's known limitations, and one reason body fat percentage uses separate ranges for men and women."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Does the BMI chart work for children?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Children and teenagers are assessed using age- and sex-specific percentile charts, because healthy body composition changes throughout growth. A child's BMI is compared to other children of the same age rather than to the adult thresholds above."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Can you be healthy with a BMI over 25?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, and many people are — particularly if the extra weight is muscle, your waist measurement is under half your height, and your blood pressure, blood sugar, and cholesterol are all normal. BMI is a screening tool, not a diagnosis. Those other markers are what your doctor will actually act on."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "How often should I check my BMI?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Monthly is plenty for most people. BMI only moves when weight moves meaningfully, and checking daily just exposes you to normal day-to-day fluctuation that has nothing to do with body composition."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Weight",
+                      "item": "https://feeltracker.com/weight/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "BMI Chart",
+                      "item": "https://feeltracker.com/weight/bmi-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "BMI Chart for Adults",
+          "description": "A clear BMI chart for adults with every category, plus a height and weight table showing the healthy range for your height in kg and pounds.",
+          "image": "https://feeltracker.com/images/WT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/weight/bmi-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/blood-pressure/">Blood Pressure</a>
+
+            <a href="/daily-journal/">Daily Journal</a>
+
+            <a href="/mood-journal/">Mood Journal</a>
+
+            <a href="/sleep/">Sleep</a>
+
+            <a href="/weight/" class="current">Weight</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇺🇸</span>
+                <span class="lang-name">English</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/weight/bmi-chart/" class="active" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/weight/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/weight/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/weight/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/weight/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/weight/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/weight/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/weight/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/weight/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/weight/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/weight/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/weight/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/weight/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/weight/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/weight/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/weight/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/weight/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/weight/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/weight/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/weight/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/weight/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/weight/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/weight/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/weight/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/weight/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/weight/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/weight/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/weight/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/weight/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/weight/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/weight/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/weight/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <a href="/weight/">Weight</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">BMI Chart</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>BMI Chart for Adults</h1>
+
+        <p class="guide-updated">Last updated: August 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Body mass index is a single number that compares your weight to your height. It takes two seconds to look up on a chart and it is the first screening figure almost every clinician reaches for — not because it is precise, but because it is quick, free, and roughly predictive across large groups of people.</p><p>Below is the full adult BMI chart, a height-and-weight table so you can find your range without any math, and an honest account of what the number does and does not tell you about your health. If you would rather work it out yourself, see <a href="/weight/how-to-calculate-bmi/">how to calculate BMI</a>.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>The adult BMI chart</h2>
+        <div class="guide-content">
+            <p>These categories apply to adults aged 20 and over, of any sex. They are the World Health Organization thresholds, used more or less unchanged by health services worldwide.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Category</th><th>BMI range</th><th>What it generally indicates</th></tr></thead><tbody><tr><td>Underweight</td><td>Below 18.5</td><td>May signal undernutrition, illness, or simply a naturally light frame</td></tr><tr><td>Healthy weight</td><td>18.5 – 24.9</td><td>The range associated with the lowest average health risk</td></tr><tr><td>Overweight</td><td>25.0 – 29.9</td><td>Slightly raised average risk; body composition matters a lot here</td></tr><tr><td>Obesity class 1</td><td>30.0 – 34.9</td><td>Raised risk of type 2 diabetes, high blood pressure, joint problems</td></tr><tr><td>Obesity class 2</td><td>35.0 – 39.9</td><td>Substantially raised risk; worth a conversation with a doctor</td></tr><tr><td>Obesity class 3</td><td>40.0 and above</td><td>Highest risk category; medical support is usually recommended</td></tr></tbody></table></div><p>Two important footnotes. First, the boundaries are conventions, not cliffs — 24.9 and 25.1 are the same body. Second, several health bodies use lower thresholds for people of South Asian, Chinese, and other Asian ancestry, where the risk of type 2 diabetes and heart disease rises at a lower BMI: overweight from about 23 and obesity from about 27.5. Ask your doctor which set of cutoffs applies to you.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>BMI chart by height and weight</h2>
+        <div class="guide-content">
+            <p>If you would rather not calculate anything, find your height in the table and read across. The middle columns show the weight range that puts you in the healthy BMI band of 18.5 to 24.9; the last column shows where the overweight category begins for that height.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Height</th><th>Height (ft/in)</th><th>Healthy weight (kg)</th><th>Healthy weight (lb)</th><th>Overweight from</th></tr></thead><tbody><tr><td>150 cm</td><td>4 ft 11 in</td><td>42 – 56 kg</td><td>92 – 123 lb</td><td>56 kg / 124 lb</td></tr><tr><td>155 cm</td><td>5 ft 1 in</td><td>44 – 60 kg</td><td>98 – 132 lb</td><td>60 kg / 132 lb</td></tr><tr><td>160 cm</td><td>5 ft 3 in</td><td>47 – 64 kg</td><td>104 – 140 lb</td><td>64 kg / 141 lb</td></tr><tr><td>165 cm</td><td>5 ft 5 in</td><td>50 – 68 kg</td><td>111 – 149 lb</td><td>68 kg / 150 lb</td></tr><tr><td>170 cm</td><td>5 ft 7 in</td><td>53 – 72 kg</td><td>118 – 159 lb</td><td>72 kg / 159 lb</td></tr><tr><td>175 cm</td><td>5 ft 9 in</td><td>57 – 76 kg</td><td>125 – 168 lb</td><td>77 kg / 169 lb</td></tr><tr><td>180 cm</td><td>5 ft 11 in</td><td>60 – 81 kg</td><td>132 – 178 lb</td><td>81 kg / 179 lb</td></tr><tr><td>185 cm</td><td>6 ft 1 in</td><td>63 – 85 kg</td><td>140 – 188 lb</td><td>86 kg / 189 lb</td></tr><tr><td>190 cm</td><td>6 ft 3 in</td><td>67 – 90 kg</td><td>147 – 198 lb</td><td>90 kg / 199 lb</td></tr></tbody></table></div><p>Notice how wide each band is: at 170 cm, the healthy range spans nearly 20 kg. That is deliberate. There is no single correct weight for a given height, only a range within which most people do well — which is also why a <a href="/weight/healthy-weight-for-height/">healthy weight for your height</a> is better thought of as a target zone than a target number.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>What your category actually means</h2>
+        <div class="guide-content">
+            <p>A BMI category is a starting point for a conversation, not a verdict. Here is the honest reading of each one.</p><ul><li><strong>Underweight.</strong> Worth investigating rather than celebrating. Unintentional weight loss, low appetite, or a BMI that keeps drifting down deserves a doctor's attention — it can point to thyroid problems, malabsorption, or an eating disorder. Some people are simply built light and perfectly healthy.</li><li><strong>Healthy weight.</strong> Statistically the lowest-risk band, but it is not a guarantee. Someone with very little muscle and a lot of abdominal fat can sit at BMI 23 and still carry meaningful metabolic risk — sometimes called normal-weight obesity.</li><li><strong>Overweight.</strong> The category where BMI is least informative for an individual. A muscular person and a sedentary person can share a BMI of 27 with completely different health profiles. This is where <a href="/weight/waist-to-height-ratio/">waist-to-height ratio</a> earns its keep.</li><li><strong>Obesity classes 1 to 3.</strong> As BMI rises, the odds of misclassifying a healthy body fall sharply, because very few people carry enough muscle to reach BMI 35 without excess fat. Risk of type 2 diabetes, hypertension, sleep apnea, and joint pain rises with each class.</li></ul><p>Across every category, the direction of travel matters more than the snapshot. A BMI drifting up 0.5 points a year is a more useful signal than any single reading, and it is the thing a chart alone can never show you.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Where the BMI chart falls short</h2>
+        <div class="guide-content">
+            <p>BMI was devised in the 19th century to describe populations, not to assess individuals. It divides weight by height squared and nothing else — so it cannot see any of the following.</p><ul><li><strong>Muscle versus fat.</strong> Muscle is denser than fat. Rugby players, sprinters, and serious lifters routinely land in the overweight or obese categories with single-digit body fat.</li><li><strong>Where the fat sits.</strong> Fat around the organs is far more metabolically harmful than fat on the hips and thighs, and BMI treats both identically.</li><li><strong>Age.</strong> Adults lose muscle and gain fat with age at a steady BMI, so an older adult at BMI 24 may carry noticeably more fat than they did at 30.</li><li><strong>Sex.</strong> Women naturally carry a higher proportion of body fat than men at the same BMI, and the chart makes no distinction.</li><li><strong>Ancestry.</strong> Health risk begins at different BMI values in different populations, which is why several countries publish adjusted cutoffs.</li><li><strong>Special cases.</strong> BMI is not valid during pregnancy, and children and teenagers are assessed with age-and-sex percentile charts instead of these adult categories.</li></ul><p>None of this makes BMI useless — it makes it one input. Pair it with a tape measure and, if you want the fullest picture, an estimate of your <a href="/weight/body-fat-percentage/">body fat percentage</a>. Two numbers that disagree tell you more than one number that seems definitive.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Tracking BMI over time: notebook vs app</h2>
+        <div class="guide-content">
+            <p>Looking your BMI up once is useful. Watching it move over months is far more useful, because that is the part a chart on a webpage cannot do. A notebook works fine for this: weigh yourself at the same time of day, write down the number, and recalculate BMI every few weeks. Plenty of people have done exactly that for years.</p><p>The friction shows up later. Daily weight bounces around by a kilogram or two for reasons that have nothing to do with fat, so a column of handwritten numbers is genuinely hard to read — the signal is a trend line, and trend lines are not something anyone draws by hand twice. That is the boring part software is good at.</p><p>The free Weight &amp; BMI Feeltracker app does this specific job: log your weight in kilograms or pounds, and it calculates BMI for you, plots weight and BMI together over any period with a trend line through the noise, and shows how far you are from a goal weight you set. It syncs with Apple Health, syncs across iPhone, iPad, and Mac through iCloud with no account or email address required, and exports to PDF, XLSX, CSV, or JSON when you want to hand something to a doctor or keep your own copy. There are optional AI insights that read your own history and tell you what has actually been happening.</p><p>Either way, the habit is what counts. A chart tells you where you are today; a record tells you where you are heading.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/WT_1024.png" alt="Weight & BMI app icon" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>See your BMI without doing the math</h2>
+            <p>Weight & BMI Feeltracker calculates BMI from every weigh-in, charts it alongside your weight with a trend line, and tracks progress toward a goal. Free, private, and no account needed.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button" src="/images/appstore/en-black.svg" alt="Download Weight & BMI on App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/weight/" class="guide-app-cta-learn">Learn more about the app <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="guide-faq-item">
+            <h3>What is a good BMI for an adult?</h3>
+            <p>Anything from <strong>18.5 to 24.9</strong> is classified as a healthy weight, and there is no meaningful difference in risk across that range. Rather than aiming for a specific figure, aim to sit comfortably inside the band for your height — see the table in <a href="/weight/healthy-weight-for-height/" target="_blank" rel="noopener">healthy weight for your height</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Is the BMI chart different for men and women?</h3>
+            <p>No. The adult categories are identical for both, even though women naturally carry a higher percentage of body fat at the same BMI. That is one of the chart's known limitations, and one reason <a href="/weight/body-fat-percentage/" target="_blank" rel="noopener">body fat percentage</a> uses separate ranges for men and women.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Does the BMI chart work for children?</h3>
+            <p>No. Children and teenagers are assessed using age- and sex-specific percentile charts, because healthy body composition changes throughout growth. A child's BMI is compared to other children of the same age rather than to the adult thresholds above.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Can you be healthy with a BMI over 25?</h3>
+            <p>Yes, and many people are — particularly if the extra weight is muscle, your waist measurement is under half your height, and your blood pressure, blood sugar, and cholesterol are all normal. BMI is a screening tool, not a diagnosis. Those other markers are what your doctor will actually act on.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>How often should I check my BMI?</h3>
+            <p>Monthly is plenty for most people. BMI only moves when weight moves meaningfully, and checking daily just exposes you to normal <a href="/weight/weight-fluctuation/" target="_blank" rel="noopener">day-to-day fluctuation</a> that has nothing to do with body composition.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Keep reading</h2>
+        <div class="guide-related-grid">
+
+            <a href="/weight/how-to-calculate-bmi/" class="guide-related-card">
+                <h3>How to Calculate BMI</h3>
+                <p>Both formulas, worked examples, and where the math misleads.</p>
+            </a>
+
+            <a href="/weight/healthy-weight-for-height/" class="guide-related-card">
+                <h3>Healthy Weight for Your Height</h3>
+                <p>Full ranges in cm and kg, feet and pounds.</p>
+            </a>
+
+            <a href="/weight/waist-to-height-ratio/" class="guide-related-card">
+                <h3>Waist-to-Height Ratio</h3>
+                <p>The one-tape-measure check that catches what BMI misses.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Health disclaimer</h2>
+        <p>This article is for general information only and is not medical advice, diagnosis, or treatment. BMI is a screening tool and cannot assess an individual's health on its own — always discuss your weight, and any plan to change it, with your doctor or healthcare provider. Seek medical advice promptly if you are losing or gaining weight without trying, or if weight change comes with symptoms such as persistent fatigue, breathlessness, or loss of appetite.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Know your number, and where it's heading</h2>
+        <p>Download the free Weight & BMI app and see your BMI calculated from every weigh-in</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/weight-bmi-feeltracker-wt/id799503787" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/en-white.svg"><img class="store_button store_button--lg" src="/images/appstore/en-black.svg" alt="Download Weight & BMI on App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Free app with optional premium features
+iPhone, iPad & Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/weight/bmi-chart/">Home</a>
+            <a href="/about/">About</a>
+            <a href="mailto:support@feeltracker.com">Email Support</a>
+            <a href="/support/">Support</a>
+            <a href="/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Follow on X</a>
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms and Conditions</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Part of the Feeltracker family of health tracking apps</p>
+        <p class="footer-disclaimer">Your health data is stored on your device and iCloud — we never access or sell your data. Feeltracker apps are not medical devices. For informational purposes only, not a substitute for professional medical advice, diagnosis, or treatment.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>We value your privacy</strong></p>
+                <p>We use cookies for analytics to improve our website and app. No advertising cookies are used. See our <a href="/privacy/">Privacy Policy</a> for details.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Reject</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>
