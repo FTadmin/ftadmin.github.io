@@ -44,6 +44,25 @@
     <link rel="canonical" href="https://feeltracker.com/daily-journal/gratitude-journal/">
 
 
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/daily-journal/gratitude-journal/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/daily-journal/gratitude-journal/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/daily-journal/gratitude-journal/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/daily-journal/gratitude-journal/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/daily-journal/gratitude-journal/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/daily-journal/gratitude-journal/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/daily-journal/gratitude-journal/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/daily-journal/gratitude-journal/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/daily-journal/gratitude-journal/">
+
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
@@ -208,21 +227,21 @@
 
                 <a href="/daily-journal/gratitude-journal/" class="active" data-lang-choose><span class="flag">🇺🇸</span> English</a>
 
-                <a href="/de/daily-journal/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+                <a href="/de/daily-journal/gratitude-journal/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
 
-                <a href="/es/daily-journal/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+                <a href="/es/daily-journal/gratitude-journal/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
 
-                <a href="/it/daily-journal/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+                <a href="/it/daily-journal/gratitude-journal/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
 
-                <a href="/ru/daily-journal/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+                <a href="/ru/daily-journal/gratitude-journal/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
 
                 <a href="/ja/daily-journal/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
 
-                <a href="/fr/daily-journal/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+                <a href="/fr/daily-journal/gratitude-journal/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
 
                 <a href="/ko/daily-journal/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
 
-                <a href="/pt-br/daily-journal/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+                <a href="/pt-br/daily-journal/gratitude-journal/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
 
                 <a href="/zh-Hans/daily-journal/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
 
@@ -242,7 +261,7 @@
 
                 <a href="/el/daily-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
 
-                <a href="/fr-ca/daily-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+                <a href="/fr-ca/daily-journal/gratitude-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
 
                 <a href="/he/daily-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
 
@@ -478,6 +497,22 @@ iPhone, iPad & Mac • iOS 16.0+</p>
     });
     </script>
 
+
+<script>
+(function(){
+  if(document.documentElement.lang!=="en")return;
+  if(document.cookie.indexOf("lang-chosen=1")!==-1)return;
+  var map=[["pt-br","/pt-br"],["fr-ca","/fr-ca"],["de","/de"],["es","/es"],["it","/it"],["ru","/ru"],["fr","/fr"]];
+  var lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+  for(var i=0;i<map.length;i++){
+    if(lang===map[i][0]||lang.startsWith(map[i][0]+"-")){
+      document.cookie="lang-chosen=1;path=/;max-age=31536000";
+      window.location.replace(map[i][1]+window.location.pathname+window.location.search);
+      return;
+    }
+  }
+})();
+</script>
 
 </body>
 </html>
