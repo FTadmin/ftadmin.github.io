@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>子弹笔记：真正的系统详解 | Feeltracker</title>
+    <meta name="description" content="详解子弹笔记：快速记录、符号表与标记符、四种核心日志，以及迁移——外加如何在没有那些装饰性排版的前提下用起来。">
+
+    <meta name="keywords" content="子弹笔记, bullet journal, 子弹笔记符号表, 快速记录, 赖德·卡罗尔 子弹笔记, 电子子弹笔记">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/zh-Hans/daily-journal/bullet-journal/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/daily-journal/bullet-journal/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:url" content="https://feeltracker.com/zh-Hans/daily-journal/bullet-journal/">
+    <meta property="og:title" content="子弹笔记：真正的系统详解">
+    <meta property="og:description" content="快速记录、标记符、四种核心日志和迁移——赖德·卡罗尔的原本方法，去掉装饰性排版。">
+    <meta property="og:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/zh-Hans/daily-journal/bullet-journal/">
+    <meta property="twitter:title" content="子弹笔记：真正的系统详解">
+    <meta property="twitter:description" content="详解子弹笔记——快速记录、符号表、四种日志和迁移。不需要任何装饰性排版。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "开始写子弹笔记需要准备什么？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "一本笔记本和一支笔。这就是全部清单。点阵本很受欢迎，因为它既适合写字也适合偶尔画个表格，但横线本或空白本效果完全一样。在你把这套系统跑满一个月之前，一分钱都别花——新手最常见的错误，就是在习惯养成之前先把装备买齐。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "子弹笔记和日记有什么区别？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "日记用散文记录发生了什么。子弹笔记是一套任务和信息捕捉系统：简短的条目行、一套固定的记法，以及一次每月迁移，把你不再在乎的东西过滤掉。很多人两者都写——用一份每日日记模板是把两者合起来的简便办法。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "写子弹笔记每天要花多长时间？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "在它原本的形态里，大约十到十五分钟——早上花两分钟看一遍当天的日志，晚上花两分钟更新它，中间随手快速记录。每月迁移大概需要20到30分钟。如果你的要花上好几个小时，那是装饰的那一层，不是方法本身。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "子弹笔记可以做成电子版吗？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "可以，而且这套记法能干净地迁移过去——项目符号、用加粗表示优先、用删除线表示放弃的任务。你会得到搜索（它直接取代了索引）、照片，以及“它永远在你身边”；你会失去手写重抄任务带来的那份阻力。只要坚持手动做每月迁移，你就保住了最有价值的部分。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "那些我一直没做完的任务怎么办？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "月末由你来决定。任何仍然值得做的，重新抄进新的一个月；任何你躲了四个星期的，通常就直接划掉。这种有意识的删除，正是这套系统的意义所在——它让子弹笔记不至于变成一堆不断增长的负罪感。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/zh-Hans/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "每日日记",
+                      "item": "https://feeltracker.com/zh-Hans/daily-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "子弹笔记",
+                      "item": "https://feeltracker.com/zh-Hans/daily-journal/bullet-journal/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "子弹笔记",
+          "description": "详解子弹笔记：快速记录、符号表与标记符、四种核心日志，以及迁移——外加如何在没有那些装饰性排版的前提下用起来。",
+          "image": "https://feeltracker.com/images/NT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/zh-Hans/daily-journal/bullet-journal/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/zh-Hans/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/zh-Hans/blood-pressure/">血压</a>
+
+            <a href="/zh-Hans/daily-journal/" class="current">每日日记</a>
+
+            <a href="/zh-Hans/mood-journal/">心情日记</a>
+
+            <a href="/zh-Hans/sleep/">睡眠</a>
+
+            <a href="/zh-Hans/weight/">体重</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇨🇳</span>
+                <span class="lang-name">简体中文</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/daily-journal/bullet-journal/" class="active" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/daily-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/daily-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/daily-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/daily-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/daily-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/daily-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/daily-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/daily-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/daily-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/zh-Hans/">首页</a>
+        <span aria-hidden="true">›</span>
+        <a href="/zh-Hans/daily-journal/">每日日记</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">子弹笔记</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>子弹笔记</h1>
+
+        <p class="guide-updated">最近更新：2026年8月</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>子弹笔记是一套记录与任务管理系统，由简短的条目、一组固定的符号，以及一次每月复盘构成——那次复盘会悄悄删掉你其实并不在乎的东西。它由赖德·卡罗尔设计，并写在<em>《子弹笔记》</em>一书中——“数字时代的模拟方法”。它最初的形态只需要一本笔记本、一支笔，每天十到十五分钟。</p><p>而大多数人最先见到的那些东西——手写花体标题、水彩打卡表、三小时的排版——是长在这套系统之上的一种爱好，而不是系统本身。下面是它真正的方法，以及如何用电子方式运行它——如果你从没写过日记，<a href="/zh-Hans/daily-journal/how-to-start-journaling/">如何开始写日记</a>是更温和的起点。</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>快速记录：核心思路</h2>
+        <div class="guide-content">
+            <p>一切都是一条简短的带符号的行，绝不写成段落。卡罗尔称之为快速记录，它解决的是一个具体的问题：长篇的日记写起来太慢，忙碌的日子就会被跳过——而那些日子恰恰最值得被记下来。</p><p>每一行要么是一个<strong>任务</strong>（圆点），要么是一个<strong>事件</strong>（圆圈——写“看牙医”，而不是一整段关于看牙医的文字），要么是一条<strong>笔记</strong>（短横）。这套纪律的要点是简短：几个词，够你日后认出它就行。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>符号表：条目符号、状态与标记符</h2>
+        <div class="guide-content">
+            <p>整套记法可以写在一页纸上——传统上就写在笔记本的第一页：</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>符号</th><th>含义</th><th>什么时候用</th></tr></thead><tbody><tr><td><strong>&bull;</strong></td><td>任务</td><td>有一件事需要去做</td></tr><tr><td><strong>&times;</strong></td><td>任务已完成</td><td>把圆点划成一个叉</td></tr><tr><td><strong>&gt;</strong></td><td>任务已迁移</td><td>被移到本月的月度日志或某个集子里</td></tr><tr><td><strong>&lt;</strong></td><td>任务已排期</td><td>被移进未来日志，留到之后的某个月</td></tr><tr><td><s>&bull; 任务</s></td><td>任务已作废</td><td>你决定不做了——划掉，然后往前走</td></tr><tr><td><strong>&#9675;</strong></td><td>事件</td><td>已经发生的事，或有确定日期的事</td></tr><tr><td><strong>&ndash;</strong></td><td>笔记</td><td>一个事实或想法，没有要做的事</td></tr><tr><td><strong>*</strong></td><td>标记符：优先</td><td>写在今天最重要的那些条目左边</td></tr><tr><td><strong>!</strong></td><td>标记符：灵感</td><td>写在值得回头再看的想法左边</td></tr></tbody></table></div><p>标记符写在页边空白处，所以一行可以既是任务又是优先项。你也可以自己添加——这套系统唯一不能容忍的，是一堆到了二月中旬你自己都记不住的符号。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>四种核心日志</h2>
+        <div class="guide-content">
+            <p>快速记录是语法；日志则是这些条目落脚的地方。</p><p><strong>索引</strong>——最前面几页，先留空。每一个跨页都有一个页码，并在这里记上一行。它让一本纸质笔记本可以被手动检索——这一步新手最容易跳过，事后最容易后悔。</p><p><strong>未来日志</strong>——按月分块，用来放所有更远的日程：九月的婚礼、三月的续费。它是一个停车场，让当前这个月保持清爽。</p><p><strong>月度日志</strong>——左右对开两页：左边是日期和约定，右边是这个月的任务。不需要任何颜色标记。</p><p><strong>每日日志</strong>——写上今天的日期，然后随着这一天的推进往下记条目。要<em>当天</em>再建立它，绝不要提前：提前把一整周画好，正是人们最后得到一堆半空的页面和一种挫败感的原因。</p><p>其余的一切都叫<strong>集子</strong>——读过的书、某个项目的计划——都要起标题并记入索引。这就是全部的架构；如果你不想用这套记法，一份<a href="/zh-Hans/daily-journal/daily-journal-template/">可复用的每日模板</a>就能覆盖每日日志的大部分功能。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>迁移：真正起作用的那一步</h2>
+        <div class="guide-content">
+            <p>每到月末，建立新的月度日志，并逐一面对所有仍标着未完成圆点的任务：依然重要 → 往前重写一遍（<strong>&gt;</strong>）；以后再说 → 放进未来日志（<strong>&lt;</strong>）；不重要了 → 划掉，别有负罪感。</p><p>这份阻力正是它的功能所在。因为迁移意味着要用手把任务重新抄一遍，任何你已经躲了四个星期的事，都必须第五次证明自己值得占一个位置——而大多数事情做不到。卡罗尔认为，这才是这套系统真正的价值：不是记下更多，而是持续过滤掉那些你本来就不会去做的事。而一个会自动把任务顺延下去的电子清单，给你的恰恰相反——一份只会越来越长的待办清单。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>装饰性开销的问题</h2>
+        <div class="guide-content">
+            <p>那些手写花体横幅和水彩打卡表是一种可爱的爱好——而它们没有一样属于这套系统。它们带来了两种失败模式：<strong>建立成本</strong>（一次要花两小时的月度排版，早晚会变成“这个月算了”）和<strong>对页面的畏惧</strong>（一旦一个跨页看起来像艺术品，写歪一行就像在破坏它）。一本让你不敢打开的子弹笔记，在它唯一的任务上已经失败了。</p><p>卡罗尔自己的笔记本朴素得出了名。可靠的检验标准是：在走廊里只有40秒空档时，你会翻开它吗？如果不会，那它就太金贵了。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>用电子方式运行子弹笔记</h2>
+        <div class="guide-content">
+            <p>先承认这几点：手写迁移会逼你正面面对一件被躲开的任务，而笔记本不会给你推送通知。原教旨主义者说得没错，手机确实是一个更差的思考场所。但纸的代价会累积：没法搜索，于是索引成了一件手工苦差事；没法放照片；一本写满的笔记本会让去年的索引变成孤儿；而且只有它在身边时你才记得下来。</p><p>Feeltracker每日日记并不是一个带现成排版的子弹笔记应用——它是一本朴素、快速的日记，去掉了这套记法的额外开销：为每日日志准备的可复用模板；富文本——项目符号、加粗表示优先、删除线，都是普通的排版功能；用搜索取代索引；用日历浏览取代月度跨页；照片；为每日反思设置的提醒；无需账号的iCloud同步；以及导出为PDF/XLSX/CSV/JSON。</p><p>把每月的迁移留成手动的——重读、决定、把幸存下来的重新打一遍；这是唯一一个一旦自动化就不再起作用的环节。更完整的比较见<a href="/zh-Hans/daily-journal/digital-vs-paper-journal/">电子日记与纸质日记</a>。</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/NT_1024.png" alt="每日日记应用图标" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>只要记录，不要画线和写花体字</h2>
+            <p>Feeltracker每日日记提供可复用的模板、富文本、照片，以及对你写过的一切的搜索——于是索引、页码和每月排版都不再是苦差事。私密的iCloud同步，无需账号。</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/daily-journal-feeltracker-nt/id1557699226" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载每日日记" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/zh-Hans/daily-journal/" class="guide-app-cta-learn">了解更多应用信息 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>常见问题</h2>
+
+        <div class="guide-faq-item">
+            <h3>开始写子弹笔记需要准备什么？</h3>
+            <p><strong>一本笔记本和一支笔。</strong>这就是全部清单。点阵本很受欢迎，因为它既适合写字也适合偶尔画个表格，但横线本或空白本效果完全一样。在你把这套系统跑满一个月之前，一分钱都别花——新手最常见的错误，就是在习惯养成之前先把装备买齐。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>子弹笔记和日记有什么区别？</h3>
+            <p>日记用散文记录发生了什么。子弹笔记是一套任务和信息捕捉系统：简短的条目行、一套固定的记法，以及一次每月迁移，把你不再在乎的东西过滤掉。很多人两者都写——用一份<a href="/zh-Hans/daily-journal/daily-journal-template/" target="_blank" rel="noopener">每日日记模板</a>是把两者合起来的简便办法。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>写子弹笔记每天要花多长时间？</h3>
+            <p>在它原本的形态里，<strong>大约十到十五分钟</strong>——早上花两分钟看一遍当天的日志，晚上花两分钟更新它，中间随手快速记录。每月迁移大概需要20到30分钟。如果你的要花上好几个小时，那是装饰的那一层，不是方法本身。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>子弹笔记可以做成电子版吗？</h3>
+            <p>可以，而且这套记法能干净地迁移过去——项目符号、用加粗表示优先、用删除线表示放弃的任务。你会得到搜索（它直接取代了索引）、照片，以及“它永远在你身边”；你会失去手写重抄任务带来的那份阻力。只要坚持手动做每月迁移，你就保住了最有价值的部分。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>那些我一直没做完的任务怎么办？</h3>
+            <p>月末由你来决定。任何仍然值得做的，重新抄进新的一个月；任何你躲了四个星期的，通常就直接划掉。这种有意识的删除，正是这套系统的意义所在——它让子弹笔记不至于变成一堆不断增长的负罪感。</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>继续阅读</h2>
+        <div class="guide-related-grid">
+
+            <a href="/zh-Hans/daily-journal/daily-journal-template/" class="guide-related-card">
+                <h3>每日日记模板</h3>
+                <p>如果整套记法显得太复杂，这是一种简单、可重复的版式。</p>
+            </a>
+
+            <a href="/zh-Hans/daily-journal/digital-vs-paper-journal/" class="guide-related-card">
+                <h3>电子日记与纸质日记</h3>
+                <p>在搜索、隐私、保存年限和手感上的诚实比较。</p>
+            </a>
+
+            <a href="/zh-Hans/daily-journal/journaling-habit/" class="guide-related-card">
+                <h3>如何养成写日记的习惯</h3>
+                <p>让每天的反思挺过第一个月。</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>关于身心健康的提醒</h2>
+        <p>本文仅供一般信息参考，不构成医疗或心理方面的建议。写日记和各种规划系统有助于身心健康和专注，但不能替代专业的心理健康服务。如果记日记持续让你感到痛苦，或者情绪低落、焦虑一直不消退，请与医生或心理治疗师谈一谈。如果你正处于危机之中，或有伤害自己的念头，请立即拨打当地的急救电话或心理危机干预热线。</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>今天就开始记录</h2>
+        <p>下载免费的每日日记应用——模板、富文本、照片、搜索，以及私密的iCloud同步</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/daily-journal-feeltracker-nt/id1557699226" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hans-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hans-black.svg" alt="在App Store下载每日日记" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">免费应用，含可选高级功能
+iPhone、iPad和Mac • iOS 16.0以上</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/zh-Hans/daily-journal/bullet-journal/">首页</a>
+            <a href="/zh-Hans/about/">关于</a>
+            <a href="mailto:support@feeltracker.com">邮件支持</a>
+            <a href="/zh-Hans/support/">支持</a>
+            <a href="/zh-Hans/faq/">常见问题</a>
+            <a href="https://x.com/feeltracker">在X上关注</a>
+            <a href="/zh-Hans/privacy/">隐私政策</a>
+            <a href="/zh-Hans/terms/">使用条款</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. 保留所有权利。</p>
+        <p class="footer-tagline">Feeltracker 健康追踪应用系列</p>
+        <p class="footer-disclaimer">您的健康数据存储在您的设备和iCloud中——我们绝不会访问或出售您的数据。Feeltracker应用不是医疗设备。仅供参考，不能替代专业的医疗建议、诊断或治疗。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>我们重视您的隐私</strong></p>
+                <p>我们使用分析Cookie来改善我们的网站和应用。不使用广告Cookie。请查阅我们的 <a href="/zh-Hans/privacy/">隐私政策</a> 了解详情。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒绝</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">接受</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

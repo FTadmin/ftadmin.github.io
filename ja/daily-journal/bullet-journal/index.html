@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>バレットジャーナル：本来のやり方を解説 | Feeltracker</title>
+    <meta name="description" content="バレットジャーナルを解説。高速ロギング、キーと識別子、4つの基本ログ、そしてマイグレーション。装飾的な手間をかけずに運用する方法もあわせて。">
+
+    <meta name="keywords" content="バレットジャーナル, バレットジャーナル やり方, バレットジャーナル キー, 高速ロギング, ライダー・キャロル, デジタル バレットジャーナル">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/ja/daily-journal/bullet-journal/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/daily-journal/bullet-journal/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/daily-journal/bullet-journal/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:url" content="https://feeltracker.com/ja/daily-journal/bullet-journal/">
+    <meta property="og:title" content="バレットジャーナル：本来のやり方を解説">
+    <meta property="og:description" content="高速ロギング、識別子、4つの基本ログ、マイグレーション — ライダー・キャロルの実際の方法から、装飾ページを引いたもの。">
+    <meta property="og:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/ja/daily-journal/bullet-journal/">
+    <meta property="twitter:title" content="バレットジャーナル：本来のやり方を解説">
+    <meta property="twitter:description" content="バレットジャーナルを解説 — 高速ロギング、キー、4つのログ、マイグレーション。装飾ページは不要です。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/NT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "バレットジャーナルを始めるのに何が必要ですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ノート1冊とペン1本。必要なものはこれで全部です。ドット方眼が人気なのは、文章にも、ときどき作る表にも合うからですが、罫線でも無地でも同じように使えます。1か月この仕組みを回してみるまでは、何も買わないでください。初心者の定番の失敗は、習慣より先に道具をそろえることです。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "バレットジャーナルとふつうの日記の違いは何ですか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ふつうの日記は、何があったかを文章で記録します。バレットジャーナルはタスクと記録の仕組みです。箇条書きの短い行、決まった記法、そしてもう気にかけていないものをふるい落とす月次のマイグレーション。両方を並行させている人もたくさんいて、日記テンプレートは2つを組み合わせる手軽な方法です。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "バレットジャーナルは1日にどのくらい時間がかかりますか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "本来の形では1日10〜15分ほどです。朝にその日のログを見るのに数分、夜に更新するのに数分、その間に高速ロギング。月次のマイグレーションは20〜30分といったところ。もし何時間もかかっているなら、それは装飾の層であって、方法そのものではありません。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "バレットジャーナルはデジタルでもできますか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "できますし、記法もきれいに移せます。箇条書き、優先は太字、やめたタスクは取り消し線。得られるのは検索（インデックスをまるごと置き換えます）、写真、そして常に手元にあること。失うのは、タスクを手で書き直すという面倒さです。月次のマイグレーションを手作業で続けていれば、いちばん価値のある部分は残ります。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "結局終わらなかったタスクはどうなりますか？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "月末に自分で決めます。まだやる値打ちがあるものは新しい月へ書き写し、4週間避けてきたものは、たいてい線を引いて消すことになります。その意識的な削除こそがこの仕組みの狙いです。バレットジャーナルが、増え続ける罪悪感の山になるのを止めてくれます。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/ja/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "日記",
+                      "item": "https://feeltracker.com/ja/daily-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "バレットジャーナル",
+                      "item": "https://feeltracker.com/ja/daily-journal/bullet-journal/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "バレットジャーナル",
+          "description": "バレットジャーナルを解説。高速ロギング、キーと識別子、4つの基本ログ、そしてマイグレーション。装飾的な手間をかけずに運用する方法もあわせて。",
+          "image": "https://feeltracker.com/images/NT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/ja/daily-journal/bullet-journal/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/ja/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/ja/blood-pressure/">血圧</a>
+
+            <a href="/ja/daily-journal/" class="current">日記</a>
+
+            <a href="/ja/mood-journal/">気分日記</a>
+
+            <a href="/ja/sleep/">睡眠</a>
+
+            <a href="/ja/weight/">体重</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇯🇵</span>
+                <span class="lang-name">日本語</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/daily-journal/bullet-journal/" class="active" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/daily-journal/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/daily-journal/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/daily-journal/bullet-journal/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/daily-journal/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/daily-journal/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/daily-journal/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/daily-journal/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/daily-journal/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/daily-journal/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/daily-journal/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">›</span>
+        <a href="/ja/daily-journal/">日記</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">バレットジャーナル</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>バレットジャーナル</h1>
+
+        <p class="guide-updated">最終更新：2026年8月</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>バレットジャーナルとは、短い記述、決まった記号のセット、そして「本当は気にかけていないこと」を静かに削っていく月次の見直しからなる、メモとタスクの仕組みです。考案したのはライダー・キャロルで、『<em>バレットジャーナル 人生を変えるノート術</em>（The Bullet Journal Method）』にまとめられています — 「デジタル時代のアナログな方法」。本来の形に必要なのは、ノート1冊、ペン1本、1日10〜15分です。</p><p>多くの人が最初に出会うもの — 手描きの見出し、水彩のトラッカー、3時間かかるセットアップ — は、この仕組みの上に育った趣味であって、仕組みそのものではありません。ここでは実際の方法と、デジタルでの運用の仕方をお伝えします。日記をつけたことがないなら、<a href="/ja/daily-journal/how-to-start-journaling/">日記の始め方</a>のほうが穏やかな出発点です。</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>高速ロギング：中心にある考え方</h2>
+        <div class="guide-content">
+            <p>すべては箇条書きの短い1行で、決して段落にはしません。キャロルはこれを高速ロギング（ラピッド・ロギング）と呼び、ある具体的な問題を解決します。長文の日記は、忙しい日には飛ばされるくらい時間がかかる — そして、まさにその日こそ記録する値打ちがあるのです。</p><p>1行はそれぞれ、<strong>タスク</strong>（点）、<strong>イベント</strong>（丸 — 歯医者について語る段落ではなく「歯医者」）、<strong>メモ</strong>（ダッシュ）のいずれかです。守るべきは簡潔さ。数語で、あとから自分が思い出せれば十分です。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>キー：バレット、状態、識別子</h2>
+        <div class="guide-content">
+            <p>記法の全体は1ページに収まります。伝統的には、ノートの最初のページです。</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>記号</th><th>意味</th><th>使うとき</th></tr></thead><tbody><tr><td><strong>&bull;</strong></td><td>タスク</td><td>やる必要があること</td></tr><tr><td><strong>&times;</strong></td><td>タスク完了</td><td>点に線を重ねて×にする</td></tr><tr><td><strong>&gt;</strong></td><td>タスク移動</td><td>今月のログかコレクションへ先送りした</td></tr><tr><td><strong>&lt;</strong></td><td>タスク予定化</td><td>先の月のためにフューチャーログへ移した</td></tr><tr><td><s>&bull; タスク</s></td><td>タスク不要</td><td>やらないと決めた — 線を引いて、次へ</td></tr><tr><td><strong>&#9675;</strong></td><td>イベント</td><td>起きたこと、または日付のあること</td></tr><tr><td><strong>&ndash;</strong></td><td>メモ</td><td>やることのない事実やアイデア</td></tr><tr><td><strong>*</strong></td><td>識別子：優先</td><td>今日いちばん大事なバレットの左に</td></tr><tr><td><strong>!</strong></td><td>識別子：ひらめき</td><td>あとで戻る値打ちのあるアイデアの左に</td></tr></tbody></table></div><p>識別子は余白に置くので、1行が「タスクかつ優先」であることもできます。自分なりの記号を足してもかまいません。この仕組みが許さないのは、2月半ばには思い出せなくなっている十数個の記号です。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4つの基本ログ</h2>
+        <div class="guide-content">
+            <p>高速ロギングが文法だとすれば、ログは記述が住む場所です。</p><p><strong>インデックス</strong> — 最初の数ページを空けておきます。作ったページにはページ番号をつけ、ここに1行足します。これがあるおかげで、ノートを手で検索できるようになります。初心者が飛ばして、あとで後悔する部分です。</p><p><strong>フューチャーログ</strong> — もっと先の日付があるもののための、月ごとの枠です。9月の結婚式、3月の更新手続き。今月をすっきり保つための駐車場です。</p><p><strong>マンスリーログ</strong> — 見開き2ページ。左に日付と予定、右に今月のタスク。色分けは必要ありません。</p><p><strong>デイリーログ</strong> — 今日の日付を書き、あとは1日が進むにつれてバレットを足していきます。用意するのは<em>その日</em>で、前もって作ってはいけません。1週間分をあらかじめ線引きしておくと、半分空白のページと挫折感が残ります。</p><p>それ以外はすべて<strong>コレクション</strong>です。読んだ本、プロジェクトの計画など、タイトルをつけてインデックスに載せます。構造はこれで全部です。記法を省きたいなら、<a href="/ja/daily-journal/daily-journal-template/">くり返し使えるデイリーテンプレート</a>でデイリーログのほとんどをまかなえます。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>マイグレーション：本当に効いている部分</h2>
+        <div class="guide-content">
+            <p>月末に、新しいマンスリーログを用意し、点のまま残っているタスクを1つずつ突きつけられます。まだ大事 → 書き写して先へ送る（<strong>&gt;</strong>）。あとで大事 → フューチャーログへ（<strong>&lt;</strong>）。大事ではない → 線を引いて消す。罪悪感は不要です。</p><p>この面倒さこそが機能です。移すことは、そのタスクを物理的に書き直すことを意味します。だから4週間避け続けてきたことは、5回目にもう一度その席を勝ち取らなければなりません — そして、たいていのものは勝ち取れません。キャロルによれば、それがこの仕組みの本当の価値です。より多く記録することではなく、そもそもやるつもりのなかったことを、絶えずふるい落としていくこと。タスクを自動的に翌日へ繰り越すデジタルのリストは、その逆をもたらします。増え続けるだけのToDoリストです。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>装飾という手間の問題</h2>
+        <div class="guide-content">
+            <p>手描きのバナーや水彩のトラッカーは、すてきな趣味です — そして、そのどれも仕組みではありません。装飾は2つのつまずき方を持ち込みます。<strong>準備のコスト</strong>（2時間かかる月のセットアップは、いつか行われなくなります）と、<strong>ページへの恐れ</strong>（見開きが作品に見え始めた瞬間、汚い1行を書くことが破壊行為のように感じられます）。あなたを萎縮させるバレットジャーナルは、唯一の仕事に失敗しています。</p><p>キャロル本人のノートが飾り気のないことは、よく知られています。確実な判定法はこうです。廊下で40秒の空きができたとき、それを開けるか？ 開けないなら、大事にしすぎです。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>バレットジャーナルをデジタルで運用する</h2>
+        <div class="guide-content">
+            <p>これだけは認めましょう。手書きのマイグレーションは、避けてきたタスクと正面から向き合わせてくれますし、ノートに通知は来ません。「考える場所としてスマホは劣る」という原理主義者の指摘は正しい。ただ、紙のコストは積み重なります。検索できないのでインデックスは手作業になり、写真は入らず、1冊書き終えると去年のインデックスは孤立し、そして持っているときにしか記録できません。</p><p>Feeltracker日記は、既製の見開きが入ったバレットジャーナル専用アプリではありません。記法の手間を取り除く、素朴で速い日記アプリです。デイリーログ用のくり返し使えるテンプレート、リッチテキスト（箇条書き、優先の太字、取り消し線を、ふつうの書式として）、インデックスの代わりになる検索、マンスリーの見開きの代わりになるカレンダー閲覧、写真、1日の振り返りのためのリマインダー、アカウント不要のiCloud同期、そしてPDF・XLSX・CSV・JSONへの書き出し。</p><p>月次のマイグレーションだけは手作業のままにしておきましょう。読み返し、判断し、生き残ったものを打ち直す。自動化した瞬間に働かなくなるのは、そこだけです。より詳しい比較は<a href="/ja/daily-journal/digital-vs-paper-journal/">デジタルと紙の日記</a>にあります。</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/NT_1024.png" alt="日記アプリのアイコン" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>記録の部分だけを、線引きと手書き文字なしで</h2>
+            <p>Feeltracker日記は、くり返し使えるテンプレート、リッチテキスト、写真、そしてこれまで書いたすべてを横断する検索を提供します。インデックスも、ページ番号も、月のセットアップも、面倒ごとではなくなります。プライベートなiCloud同期、アカウント不要。</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/daily-journal-feeltracker-nt/id1557699226" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button" src="/images/appstore/ja-black.svg" alt="App Storeで日記をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/ja/daily-journal/" class="guide-app-cta-learn">アプリについて詳しく見る <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>よくある質問</h2>
+
+        <div class="guide-faq-item">
+            <h3>バレットジャーナルを始めるのに何が必要ですか？</h3>
+            <p><strong>ノート1冊とペン1本。</strong>必要なものはこれで全部です。ドット方眼が人気なのは、文章にも、ときどき作る表にも合うからですが、罫線でも無地でも同じように使えます。1か月この仕組みを回してみるまでは、何も買わないでください。初心者の定番の失敗は、習慣より先に道具をそろえることです。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>バレットジャーナルとふつうの日記の違いは何ですか？</h3>
+            <p>ふつうの日記は、何があったかを文章で記録します。バレットジャーナルはタスクと記録の仕組みです。箇条書きの短い行、決まった記法、そしてもう気にかけていないものをふるい落とす月次のマイグレーション。両方を並行させている人もたくさんいて、<a href="/ja/daily-journal/daily-journal-template/" target="_blank" rel="noopener">日記テンプレート</a>は2つを組み合わせる手軽な方法です。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>バレットジャーナルは1日にどのくらい時間がかかりますか？</h3>
+            <p>本来の形では<strong>1日10〜15分ほど</strong>です。朝にその日のログを見るのに数分、夜に更新するのに数分、その間に高速ロギング。月次のマイグレーションは20〜30分といったところ。もし何時間もかかっているなら、それは装飾の層であって、方法そのものではありません。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>バレットジャーナルはデジタルでもできますか？</h3>
+            <p>できますし、記法もきれいに移せます。箇条書き、優先は太字、やめたタスクは取り消し線。得られるのは検索（インデックスをまるごと置き換えます）、写真、そして常に手元にあること。失うのは、タスクを手で書き直すという面倒さです。月次のマイグレーションを手作業で続けていれば、いちばん価値のある部分は残ります。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>結局終わらなかったタスクはどうなりますか？</h3>
+            <p>月末に自分で決めます。まだやる値打ちがあるものは新しい月へ書き写し、4週間避けてきたものは、たいてい線を引いて消すことになります。その意識的な削除こそがこの仕組みの狙いです。バレットジャーナルが、増え続ける罪悪感の山になるのを止めてくれます。</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>あわせて読みたい</h2>
+        <div class="guide-related-grid">
+
+            <a href="/ja/daily-journal/daily-journal-template/" class="guide-related-card">
+                <h3>日記テンプレート</h3>
+                <p>本格的な記法は大げさに感じるときの、くり返し使えるシンプルな型。</p>
+            </a>
+
+            <a href="/ja/daily-journal/digital-vs-paper-journal/" class="guide-related-card">
+                <h3>デジタルと紙の日記</h3>
+                <p>検索、プライバシー、長持ちのしかた、手ざわりを正直に比較。</p>
+            </a>
+
+            <a href="/ja/daily-journal/journaling-habit/" class="guide-related-card">
+                <h3>日記を習慣にする方法</h3>
+                <p>毎日の振り返りを、最初の1か月より先まで生き延びさせる。</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>心の健康についてのご案内</h2>
+        <p>この記事は一般的な情報提供のみを目的としており、医学的・心理学的な助言ではありません。日記や計画の仕組みは、心の健康や集中を支えてくれますが、専門的なメンタルヘルスケアの代わりにはなりません。日記をつけることで繰り返しつらい気持ちになる場合や、気分の落ち込みや不安が続く場合は、医師やセラピストに相談してください。危機的な状況にある場合、または自分を傷つけることを考えている場合は、すぐにお住まいの地域の緊急通報番号か、相談窓口に連絡してください。</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>今日から記録を始めよう</h2>
+        <p>無料の日記アプリをダウンロード — テンプレート、リッチテキスト、写真、検索、そしてプライベートなiCloud同期</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/daily-journal-feeltracker-nt/id1557699226" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/ja-white.svg"><img class="store_button store_button--lg" src="/images/appstore/ja-black.svg" alt="App Storeで日記をダウンロード" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">基本無料・オプションのプレミアム機能あり
+iPhone、iPad、Mac対応 • iOS 16.0以降</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/ja/daily-journal/bullet-journal/">ホーム</a>
+            <a href="/ja/about/">概要</a>
+            <a href="mailto:support@feeltracker.com">メールサポート</a>
+            <a href="/ja/support/">サポート</a>
+            <a href="/ja/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Xでフォロー</a>
+            <a href="/ja/privacy/">プライバシーポリシー</a>
+            <a href="/ja/terms/">利用規約</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. All rights reserved.</p>
+        <p class="footer-tagline">Feeltrackerヘルストラッキングアプリファミリーの一員</p>
+        <p class="footer-disclaimer">健康データはお使いのデバイスとiCloudに保存されます。私たちがデータにアクセスしたり販売したりすることはありません。Feeltrackerアプリは医療機器ではありません。情報提供のみを目的としており、専門的な医療アドバイス、診断、治療の代わりとなるものではありません。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>プライバシーを大切にしています</strong></p>
+                <p>ウェブサイトとアプリの改善のため、分析用Cookieを使用しています。広告Cookieは使用していません。詳しくは <a href="/ja/privacy/">プライバシーポリシー</a> をご覧ください。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒否</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">同意</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>
