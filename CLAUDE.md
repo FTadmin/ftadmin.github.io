@@ -627,6 +627,23 @@ Group 6: sk, th, tr, uk, vi, zh-Hant
 - **Template changes** — one agent only
 - **EN source file edits** — edit first, then fan out translations
 
+### App product names are not finalized (owner decision, 2026-08-04)
+
+Locale app names are **deliberately inconsistent for now** and that is fine.
+Several locales' hero titles still render an older name (weight: "Gewicht &
+Ernährung", "Vikt & Mat", "体重与饮食"; sleep: "Schlaf & Träume", "Sonno e
+Sogni"), while the same files and some guide overlays carry the current
+English name ("Weight & BMI", "Sleep & CPAP"). Mood Journal is uniformly
+localized; Blood Pressure and Daily Journal vary in whether the product
+name is localized inside alt text and FAQ answers.
+
+**Do not run a normalization sweep and do not flag this as a defect.** The
+names are still being decided. When translating, keep following the
+locale's own established usage (its `<app>.app.json` hero title and
+existing overlays) so each locale stays internally coherent; cross-locale
+consistency comes later, once the names are settled, as one mechanical
+find-and-replace pass.
+
 ### Crisis-line numbers in guide content (owner decision, 2026-08-04)
 
 Guides that touch mental-health crises MAY name well-known national crisis
