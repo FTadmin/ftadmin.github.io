@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Jak czytać wykres nastroju: poziom bazowy, rozpiętość, cykle | Feeltracker</title>
+    <meta name="description" content="Jak poprawnie czytać wykres nastroju: znajdź swój poziom bazowy, oceń rozpiętość, wypatrz cykle tygodniowe i sezonowe oraz odróżnij prawdziwy czynnik od przypadku.">
+
+    <meta name="keywords" content="wykres nastroju, wykres śledzenia nastroju, graf nastroju, czytanie wykresu nastroju, wzorce nastroju, trendy nastroju">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/pl/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:url" content="https://feeltracker.com/pl/mood-journal/mood-chart/">
+    <meta property="og:title" content="Jak czytać wykres nastroju">
+    <meta property="og:description" content="Poziom bazowy, rozpiętość, cykle i korelacja z czynnikami — jak wyciągnąć prawdziwe odpowiedzi z kilku tygodni danych o nastroju, z omówionym przykładem.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/pl/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="Jak czytać wykres nastroju">
+    <meta property="twitter:description" content="Jak czytać wykres nastroju: poziom bazowy, rozpiętość, cykle i odróżnianie prawdziwego czynnika od przypadku.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Ile tygodni danych potrzebuję, zanim wykres stanie się użyteczny?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Trzy do czterech tygodni na rytmy tygodniowe i silne pojedyncze czynniki, takie jak sen; dwa do trzech miesięcy na cykle miesięczne; większa część roku na kształt sezonowy. Jeden lub dwa tygodnie pokazują Twój poziom bazowy i to, jak bardzo się wahasz — już to warto mieć."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mój wykres wygląda zupełnie losowo. Czy robię to źle?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Raczej nie. Niektóre wykresy naprawdę są zaszumione, a płaski rozrzut i tak mówi coś prawdziwego: żaden pojedynczy czynnik nie dominuje Twojego nastroju. Posortuj wpisy według dnia tygodnia i sprawdź efekty następnego dnia zamiast tego samego — opóźnione wzorce kryją się na widoku. Nadal losowo po dwóch miesiącach? To też jest odpowiedź."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Czy dołek na wykresie oznacza, że coś jest nie tak?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nie. Każdy wykres ma dołki, a zły dzień to nie diagnoza. Na uwagę zasługują czas trwania i kierunek: obniżenie utrzymujące się przez większą część dnia dłużej niż dwa tygodnie albo poziom bazowy dryfujący w dół przez miesiące. To warto omówić z lekarzem lub terapeutą — weź ze sobą wykres."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Czy powinnam uśredniać oceny nastroju?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Średnia miesięczna to uczciwe podsumowanie poziomu bazowego, ale uśrednianie gubi rozpiętość — często ciekawszą połowę historii. Patrz na średnią i rozrzut razem, tak jak opisuje to przewodnik o wahaniach nastroju."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Czy mogę pokazać wykres nastroju terapeucie?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tak i większość specjalistów to doceni. Datowany wykres z tagami czynników zamienia ogólnikowe podsumowanie w konkret, na którym da się pracować. Wyeksportuj PDF, żeby uzyskać czytelną wersję, albo CSV/XLSX po liczby źródłowe."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/pl/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Dziennik nastrojów",
+                      "item": "https://feeltracker.com/pl/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Wykres nastroju",
+                      "item": "https://feeltracker.com/pl/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Jak czytać wykres nastroju",
+          "description": "Jak poprawnie czytać wykres nastroju: znajdź swój poziom bazowy, oceń rozpiętość, wypatrz cykle tygodniowe i sezonowe oraz odróżnij prawdziwy czynnik od przypadku.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/pl/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/pl/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/pl/blood-pressure/">Ciśnienie krwi</a>
+
+            <a href="/pl/daily-journal/">Dziennik</a>
+
+            <a href="/pl/mood-journal/" class="current">Dziennik nastrojów</a>
+
+            <a href="/pl/sleep/">Sen</a>
+
+            <a href="/pl/weight/">Waga</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇵🇱</span>
+                <span class="lang-name">Polski</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/pl/">Strona główna</a>
+        <span aria-hidden="true">›</span>
+        <a href="/pl/mood-journal/">Dziennik nastrojów</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Wykres nastroju</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Jak czytać wykres nastroju</h1>
+
+        <p class="guide-updated">Ostatnia aktualizacja: sierpień 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Wykres nastroju to Twoje codzienne oceny naniesione na oś czasu. Pierwsze spojrzenie prawie zawsze wprowadza w błąd: oko biegnie od razu do najniższego punktu, stwierdza „o, tu był zły dzień” i na tym poprzestaje. Czytany właściwie, odpowiada na lepsze pytania: gdzie zwykle mieści się mój nastrój, jak daleko się waha, czy zmienia się według jakiegoś rozkładu i co mu towarzyszy?</p><p>Ten przewodnik przechodzi przez cztery odczyty — poziom bazowy, rozpiętość, cykle, czynniki — na omówionym przykładzie. Jeszcze nie zapisujesz? Zacznij od <a href="/pl/mood-journal/how-to-track-your-mood/">tego, jak śledzić swój nastrój</a> i wróć tu za dwa tygodnie.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Zanim zaczniesz czytać: ile danych potrzebujesz?</h2>
+        <div class="guide-content">
+            <p>Wykres z pięciu dni to nastrój, a nie wzorzec. Z grubsza:</p><ul><li><strong>1–2 tygodnie:</strong> Twój poziom bazowy i to, jak bardzo się wahasz — nic o przyczynach.</li><li><strong>3–6 tygodni:</strong> rytmy tygodniowe i silne pojedyncze czynniki — sen zwykle jako pierwszy.</li><li><strong>2–3 miesiące:</strong> cykle miesięczne i hormonalne oraz powolne dryfy.</li><li><strong>6–12 miesięcy:</strong> kształt sezonowy i uczciwa odpowiedź na pytanie „czy jest mi lepiej niż rok temu?”.</li></ul><p>Luki są w porządku — pusty tydzień jest uczciwy. Tydzień odtworzony z pamięci przepisuje wykres w stronę historii, w którą już wierzysz.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. Znajdź swój poziom bazowy</h2>
+        <div class="guide-content">
+            <p>Poziom bazowy to miejsce, w którym Twój nastrój mieści się w zwykły dzień — pas, do którego linia wciąż wraca. W skali 5-stopniowej większość osób żyje między 3 a 4.</p><p>To najbardziej użyteczna liczba na tym wykresie: trójka znaczy coś innego dla kogoś, kto żyje na czwórce, niż dla kogoś na dwójce, a przesuwa się powoli, więc dryf mówi więcej niż jeden zły wtorek. Poziom bazowy schodzący z 4 do 3 w ciągu dwóch miesięcy waży więcej niż dowolny pojedynczy dołek — to zmiana niewidoczna od środka.</p><p>Zasłoń kciukiem skrajności, zobacz, gdzie leży główna część linii, i porównaj ten miesiąc z poprzednim.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. Oceń rozpiętość</h2>
+        <div class="guide-content">
+            <p>Rozpiętość to zasięg wahań nastroju wokół poziomu bazowego. Dwie osoby mają ten sam poziom bazowy 3,5: jedna porusza się między 3 a 4, druga skacze od 1 do 5. Trzy pytania:</p><ul><li><strong>Jak szeroki jest typowy tydzień?</strong> Jeden punkt to norma; trzy albo cztery, i to wielokrotnie, zasługują na uwagę.</li><li><strong>Jak szybkie są przejścia?</strong> Powolne dwutygodniowe zsuwanie się i spadek z 5 na 1 tego samego dnia to różne zjawiska.</li><li><strong>Jak długo trwa dołek?</strong> Jednodniowy spadek to co innego niż dwa tygodnie na dnie.</li></ul><p>Jeśli głównym wątkiem są wahania, <a href="/pl/mood-journal/mood-swings/">przewodnik o wahaniach nastroju</a> omawia ich przyczyny i to, kiedy zgłosić się do specjalisty.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. Szukaj cykli</h2>
+        <div class="guide-content">
+            <p>Cykle zamieniają „czasem jest losowo źle” w coś, co da się zaplanować. Cztery warte sprawdzenia:</p><ul><li><strong>Dobowy.</strong> Wymaga więcej niż jednego wpisu dziennie — cięższe poranki albo spadek późnym wieczorem.</li><li><strong>Tygodniowy.</strong> Najczęstsze odkrycie: niedzielne wieczory, środowy dołek, prawdziwe piątkowe uniesienie.</li><li><strong>Miesięczny.</strong> Cykle hormonalne należą do najwyraźniejszych wzorców w danych o nastroju; daj im dwa lub trzy miesiące.</li><li><strong>Sezonowy.</strong> Powolny i łatwy do zrzucenia na to, co akurat się działo — zobacz <a href="/pl/mood-journal/seasonal-mood-changes/">sezonowe zmiany nastroju</a>.</li></ul><p>Cykle pojawiają się w każdym długim zapisie, prawdziwe czy nie — zaufaj takiemu, który powtórzy się trzy razy i ma wiarygodny mechanizm.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. Czynniki: omówiony przykład</h2>
+        <div class="guide-content">
+            <p>Tu wykres przestaje opisywać, a zaczyna wyjaśniać — i łatwo dać się nabrać samemu sobie. Dwa tygodnie wpisów:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Dzień</th><th>Nastrój (1–5)</th><th>Sen</th><th>Notatka</th></tr></thead><tbody><tr><td>Pon</td><td>3</td><td>6 godz.</td><td>Intensywny początek</td></tr><tr><td>Wt</td><td>2</td><td>5 godz.</td><td>Późna noc wcześniej</td></tr><tr><td>Śr</td><td>2</td><td>5 godz. 30</td><td>Płasko, bez powodu</td></tr><tr><td>Czw</td><td>4</td><td>8 godz.</td><td>Pospałam dłużej</td></tr><tr><td>Pt</td><td>4</td><td>7 godz. 30</td><td>Spacer, spotkanie ze znajomymi</td></tr><tr><td>Sob</td><td>5</td><td>9 godz.</td><td>—</td></tr><tr><td>Nd</td><td>3</td><td>8 godz.</td><td>Strach przed tygodniem</td></tr><tr><td>Pon</td><td>2</td><td>6 godz.</td><td>Termin oddania</td></tr><tr><td>Wt</td><td>2</td><td>5 godz.</td><td>Termin, bez spaceru</td></tr><tr><td>Śr</td><td>3</td><td>7 godz.</td><td>Termin zamknięty</td></tr><tr><td>Czw</td><td>4</td><td>8 godz.</td><td>Siłownia</td></tr><tr><td>Pt</td><td>4</td><td>7 godz.</td><td>—</td></tr><tr><td>Sob</td><td>4</td><td>8 godz. 30</td><td>Spokojny dzień</td></tr><tr><td>Nd</td><td>3</td><td>8 godz.</td><td>Znów niedzielne uczucie</td></tr></tbody></table></div><p><strong>Co to potwierdza:</strong> poziom bazowy w okolicach 3, rozpiętość od 2 do 5, powtarzający się niedzielny spadek i silny związek między nocami poniżej sześciu godzin a nastrojem na poziomie 2.</p><p><strong>Czego to nie dowodzi:</strong> że krótki sen <em>spowodował</em> obniżony nastrój. W obu tygodniach były terminy, które skracają sen i spłaszczają nastrój niezależnie od siebie; obniżony nastrój także zaburza sen, więc strzałka może biec w drugą stronę. A niedzielny spadek to nie sen — w obie niedziele sen był w porządku.</p><p>Żeby zaufać korelacji: policz wyjątki (czynnik, który zgadza się w połowie przypadków, to przypadek z dobrym PR-em), sprawdź opóźnienie (sen i alkohol odbijają się następnego dnia), poszukaj trzeciej rzeczy napędzającej oba zjawiska — terminów, choroby, podróży — i testuj po jednej zmianie naraz.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Wykres na papierze kontra aplikacja: uczciwe porównanie</h2>
+        <div class="guide-content">
+            <p>Papier w kratkę działa, a arkusz kalkulacyjny potrafi posortować dane według dnia tygodnia. Kosztem obu jest wytrwałość — nikt nie sortuje arkusza według czynników co miesiąc. Co w zamian daje aplikacja:</p><ul><li><strong>Wykresy rysowane w miarę zapisywania</strong>, dla dowolnego okresu — trend jest zawsze aktualny.</li><li><strong>Nastrój w podziale na czynniki</strong> — porównania z góry, bez liczenia.</li><li><strong>Każdy punkt powiązany ze swoją notatką lub zdjęciem</strong> — od spadku do jego przyczyny dzieli Cię jedno dotknięcie.</li><li><strong>Synchronizacja z Apple Health</strong> — sen trafia tam sam.</li><li><strong>Eksport do PDF, XLSX, CSV lub JSON</strong> — na wizytę albo do własnych analiz.</li><li><strong>Analizy AI na podstawie Twojej własnej historii</strong>, bezpłatnie, z opcjonalnym premium — drugie spojrzenie, a nie porada.</li></ul><p>Cokolwiek rysuje wykres, interpretacja pozostaje Twoja — to narzędzie do samoobserwacji, a nie do diagnozy. Jeśli coś Cię niepokoi, zabierz wykres do lekarza lub terapeuty — jest o wiele bardziej konkretny niż pamięć.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Ikona aplikacji Dziennik nastrojów BPD" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Twój wykres, rysowany na bieżąco</h2>
+            <p>Feeltracker Dziennik nastrojów nanosi Twoje oceny na dowolny okres, rozkłada nastrój na oznaczone przez Ciebie czynniki i trzyma każdą notatkę i zdjęcie przy odpowiednim punkcie. Jedno dotknięcie eksportuje cały obraz do PDF. Bezpłatnie, prywatnie, bez konta.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button" src="/images/appstore/pl-black.svg" alt="Pobierz Dziennik nastrojów w App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/pl/mood-journal/" class="guide-app-cta-learn">Dowiedz się więcej o aplikacji <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Najczęściej zadawane pytania</h2>
+
+        <div class="guide-faq-item">
+            <h3>Ile tygodni danych potrzebuję, zanim wykres stanie się użyteczny?</h3>
+            <p><strong>Trzy do czterech tygodni</strong> na rytmy tygodniowe i silne pojedyncze czynniki, takie jak sen; <strong>dwa do trzech miesięcy</strong> na cykle miesięczne; <strong>większa część roku</strong> na kształt sezonowy. Jeden lub dwa tygodnie pokazują Twój poziom bazowy i to, jak bardzo się wahasz — już to warto mieć.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Mój wykres wygląda zupełnie losowo. Czy robię to źle?</h3>
+            <p>Raczej nie. Niektóre wykresy naprawdę są zaszumione, a płaski rozrzut i tak mówi coś prawdziwego: żaden pojedynczy czynnik nie dominuje Twojego nastroju. Posortuj wpisy według dnia tygodnia i sprawdź efekty następnego dnia zamiast tego samego — opóźnione wzorce kryją się na widoku. Nadal losowo po dwóch miesiącach? To też jest odpowiedź.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Czy dołek na wykresie oznacza, że coś jest nie tak?</h3>
+            <p>Nie. Każdy wykres ma dołki, a zły dzień to nie diagnoza. Na uwagę zasługują czas trwania i kierunek: obniżenie utrzymujące się przez większą część dnia dłużej niż dwa tygodnie albo poziom bazowy dryfujący w dół przez miesiące. To warto omówić z lekarzem lub terapeutą — weź ze sobą wykres.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Czy powinnam uśredniać oceny nastroju?</h3>
+            <p>Średnia miesięczna to uczciwe podsumowanie poziomu bazowego, ale uśrednianie gubi rozpiętość — często ciekawszą połowę historii. Patrz na średnią i rozrzut razem, tak jak opisuje to <a href="/pl/mood-journal/mood-swings/" target="_blank" rel="noopener">przewodnik o wahaniach nastroju</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Czy mogę pokazać wykres nastroju terapeucie?</h3>
+            <p>Tak i większość specjalistów to doceni. Datowany wykres z tagami czynników zamienia ogólnikowe podsumowanie w konkret, na którym da się pracować. Wyeksportuj PDF, żeby uzyskać czytelną wersję, albo CSV/XLSX po liczby źródłowe.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Czytaj dalej</h2>
+        <div class="guide-related-grid">
+
+            <a href="/pl/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Jak śledzić swój nastrój</h3>
+                <p>Co zapisywać, jak często i które czynniki warto oznaczać.</p>
+            </a>
+
+            <a href="/pl/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>Wahania nastroju: przyczyny i wzorce</h3>
+                <p>Co zwykle stoi za dużą rozpiętością i kiedy o tym powiedzieć.</p>
+            </a>
+
+            <a href="/pl/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>Sezonowe zmiany nastroju</h3>
+                <p>Najwolniejszy cykl na Twoim wykresie i jak go rozpoznać.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Uwaga o dobrostanie</h2>
+        <p>Ten artykuł ma charakter wyłącznie ogólnoinformacyjny i nie stanowi porady medycznej, diagnozy ani leczenia. Wykres nastroju to narzędzie do samoobserwacji, a nie narzędzie diagnostyczne — widoczne na nim wzorce są dobrym punktem wyjścia do rozmowy z lekarzem lub terapeutą, nigdy jej zamiennikiem. Jeśli obniżony nastrój utrzymuje się przez większą część dnia dłużej niż dwa tygodnie albo zauważasz trwałe zmiany snu, apetytu lub zdolności radzenia sobie na co dzień, porozmawiaj ze specjalistą ochrony zdrowia. Jeśli masz myśli o zrobieniu sobie krzywdy, natychmiast skontaktuj się z lokalnymi służbami ratunkowymi lub telefonem zaufania w swoim kraju (w Polsce: całodobowe Centrum Wsparcia dla osób w kryzysie psychicznym 800 70 2222, a dla dzieci i młodzieży 116 111) — pomoc jest dostępna już teraz.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Zobacz swój własny wzorzec</h2>
+        <p>Pobierz bezpłatną aplikację Dziennik nastrojów — zapisuj w sekundy i pozwól, by wykres narysował się sam</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/pl-white.svg"><img class="store_button store_button--lg" src="/images/appstore/pl-black.svg" alt="Pobierz Dziennik nastrojów w App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Bezpłatna aplikacja z opcjonalnymi funkcjami premium
+iPhone, iPad i Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/pl/mood-journal/mood-chart/">Strona główna</a>
+            <a href="/pl/about/">O nas</a>
+            <a href="mailto:support@feeltracker.com">Wsparcie e-mail</a>
+            <a href="/pl/support/">Wsparcie</a>
+            <a href="/pl/faq/">FAQ</a>
+            <a href="https://x.com/feeltracker">Śledź na X</a>
+            <a href="/pl/privacy/">Polityka prywatności</a>
+            <a href="/pl/terms/">Regulamin</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Wszelkie prawa zastrzeżone.</p>
+        <p class="footer-tagline">Część rodziny aplikacji zdrowotnych Feeltracker</p>
+        <p class="footer-disclaimer">Twoje dane zdrowotne są przechowywane na Twoim urządzeniu i w iCloud — nigdy nie uzyskujemy do nich dostępu ani ich nie sprzedajemy. Aplikacje Feeltracker nie są wyrobami medycznymi. Wyłącznie w celach informacyjnych, nie zastępują profesjonalnej porady medycznej, diagnozy lub leczenia.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Cenimy Twoją prywatność</strong></p>
+                <p>Używamy analitycznych plików cookie, aby ulepszyć naszą stronę internetową i aplikację. Nie używamy reklamowych plików cookie. Zobacz naszą <a href="/pl/privacy/">Politykę prywatności</a> po szczegóły.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Odrzuć</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Akceptuj</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

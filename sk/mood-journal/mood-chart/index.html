@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Ako čítať graf nálady: východisková hladina, rozpätie, cykly | Feeltracker</title>
+    <meta name="description" content="Ako správne čítať graf nálady: nájdite si východiskovú hladinu, posúďte rozpätie, odhaľte týždenné a sezónne cykly a odlíšte skutočný faktor od náhody.">
+
+    <meta name="keywords" content="graf nálady, graf sledovania nálady, krivka nálady, čítanie grafu nálady, vzorce nálady, trendy nálady">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/sk/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="sk_SK">
+    <meta property="og:url" content="https://feeltracker.com/sk/mood-journal/mood-chart/">
+    <meta property="og:title" content="Ako čítať graf nálady">
+    <meta property="og:description" content="Východisková hladina, rozpätie, cykly a súvislosť s faktormi – ako z niekoľkých týždňov údajov o nálade dostať skutočné odpovede, na konkrétnom príklade.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/sk/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="Ako čítať graf nálady">
+    <meta property="twitter:description" content="Ako čítať graf nálady: východisková hladina, rozpätie, cykly a odlíšenie skutočného faktora od náhody.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Koľko týždňov údajov potrebujem, aby bol graf užitočný?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tri až štyri týždne pri týždenných rytmoch a výrazných jednotlivých faktoroch, ako je spánok; dva až tri mesiace pri mesačných cykloch; väčšinu roka pri sezónnom tvare. Jeden či dva týždne ukážu vašu východiskovú hladinu a to, ako veľmi kolíšete – a to už stojí za to."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Môj graf vyzerá úplne náhodne. Robím niečo zle?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pravdepodobne nie. Niektoré grafy sú naozaj rozkolísané a ani rovnomerný rozptyl nehovorí nič: znamená, že vašej nálade nedominuje žiadny jediný faktor. Zoraďte si záznamy podľa dňa v týždni a sledujte skôr účinky nasledujúceho dňa než toho istého – oneskorené vzorce sa skrývajú priamo pred očami. Stále náhodné aj po dvoch mesiacoch? Aj to je odpoveď."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Znamená nízky bod v grafe, že je niečo v neporiadku?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nie. Nízke body má graf každého a zlý deň nie je diagnóza. Pozornosť si zaslúži trvanie a smer: pokles, ktorý pretrváva väčšinu dňa dlhšie ako dva týždne, alebo východisková hladina, ktorá sa mesiace posúva nadol. O tom sa oplatí porozprávať s lekárom alebo terapeutom – vezmite si graf so sebou."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mám si hodnotenia nálady spriemerovať?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mesačný priemer je slušným zhrnutím východiskovej hladiny, ale priemerovaním zahodíte rozpätie – často tú zaujímavejšiu polovicu príbehu. Pozerajte sa na priemer a rozptyl spolu, ako to popisuje článok o výkyvoch nálady."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Môžem svoj graf nálady ukázať terapeutovi?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Áno a väčšina ho privíta. Datovaný graf so značkami faktorov premení vágne zhrnutie na niečo konkrétne, z čoho sa dá vychádzať. Exportujte PDF pre prehľadnú verziu alebo CSV/XLSX pre čísla v pozadí."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/sk/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Denník nálady",
+                      "item": "https://feeltracker.com/sk/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Graf nálady",
+                      "item": "https://feeltracker.com/sk/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Čítanie grafu nálady",
+          "description": "Ako správne čítať graf nálady: nájdite si východiskovú hladinu, posúďte rozpätie, odhaľte týždenné a sezónne cykly a odlíšte skutočný faktor od náhody.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/sk/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/sk/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/sk/blood-pressure/">Krvný tlak</a>
+
+            <a href="/sk/daily-journal/">Denník</a>
+
+            <a href="/sk/mood-journal/" class="current">Denník nálady</a>
+
+            <a href="/sk/sleep/">Spánok</a>
+
+            <a href="/sk/weight/">Váha</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇸🇰</span>
+                <span class="lang-name">Slovenčina</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/sk/">Domov</a>
+        <span aria-hidden="true">›</span>
+        <a href="/sk/mood-journal/">Denník nálady</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Graf nálady</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Čítanie grafu nálady</h1>
+
+        <p class="guide-updated">Naposledy aktualizované: august 2026</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Graf nálady sú vaše denné hodnotenia vynesené v čase. Prvý pohľad býva takmer vždy zavádzajúci: oko ide rovno na najnižší bod, prečíta si „tu bol ten zlý deň“ a skončí. Keď ho čítate poriadne, odpovedá na lepšie otázky: kde sa moja nálada zvyčajne pohybuje, ako ďaleko sa vychyľuje, mení sa podľa nejakého rozvrhu a čo sa s ňou objavuje spolu?</p><p>Tento článok vás prevedie štyrmi spôsobmi čítania – východisková hladina, rozpätie, cykly, faktory – na konkrétnom príklade. Ešte si nezapisujete? Začnite článkom <a href="/sk/mood-journal/how-to-track-your-mood/">ako sledovať svoju náladu</a> a vráťte sa o dva týždne.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Než začnete čítať: koľko údajov potrebujete?</h2>
+        <div class="guide-content">
+            <p>Graf za päť dní je nálada, nie vzorec. Zhruba:</p><ul><li><strong>1 – 2 týždne:</strong> vaša východisková hladina a to, ako veľmi kolíšete – o príčinách nič.</li><li><strong>3 – 6 týždňov:</strong> týždenné rytmy a výrazné jednotlivé faktory – spánok býva prvý.</li><li><strong>2 – 3 mesiace:</strong> mesačné a hormonálne cykly a pomalé posuny.</li><li><strong>6 – 12 mesiacov:</strong> sezónny tvar a úprimná odpoveď na otázku „som na tom lepšie ako vlani?“</li></ul><p>Medzery sú v poriadku – prázdny týždeň je úprimný. Týždeň zrekonštruovaný z pamäti prepíše graf smerom k príbehu, ktorému už aj tak veríte.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. Nájdite si východiskovú hladinu</h2>
+        <div class="guide-content">
+            <p>Východisková hladina je miesto, kde sa vaša nálada nachádza v bežný deň – pásmo, do ktorého sa krivka stále vracia. Na päťbodovej škále sa väčšina ľudí pohybuje medzi 3 a 4.</p><p>Je to tu najužitočnejšie číslo: trojka znamená niečo iné pre človeka, ktorý žije na štvorke, než pre toho na dvojke, a mení sa pomaly, takže posun znamená viac než jeden zlý utorok. Východisková hladina, ktorá za dva mesiace skĺzne zo 4 na 3, váži viac než ktorýkoľvek jednotlivý prepad – je to zmena, ktorá je zvnútra neviditeľná.</p><p>Zakryte si palcom extrémy, pozrite sa, kde leží väčšina krivky, a porovnajte tento mesiac s minulým.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. Posúďte rozpätie</h2>
+        <div class="guide-content">
+            <p>Rozpätie hovorí, ako ďaleko sa vaša nálada od tejto hladiny vzďaľuje. Dvaja ľudia majú rovnakú východiskovú hladinu 3,5: jeden sa pohybuje medzi 3 a 4, druhý skáče medzi 1 a 5. Tri otázky:</p><ul><li><strong>Aké široké je typické rozpätie za týždeň?</strong> Jeden bod je bežný; opakovane tri alebo štyri si zaslúžia pozornosť.</li><li><strong>Ako rýchle sú prechody?</strong> Pomalý dvojtýždňový zostup a pád z 5 na 1 v jeden deň sú rozdielne javy.</li><li><strong>Ako dlho trvá pokles?</strong> Jednodňový výkyv je niečo iné než dva týždne na dne.</li></ul><p>Ak sú hlavným príbehom výkyvy, ich príčinami a tým, kedy vyhľadať odborníka, sa zaoberá <a href="/sk/mood-journal/mood-swings/">článok o výkyvoch nálady</a>.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. Hľadajte cykly</h2>
+        <div class="guide-content">
+            <p>Cykly premenia „občas je mi náhodne zle“ na niečo, s čím sa dá počítať. Štyri, ktoré stojí za to preveriť:</p><ul><li><strong>Denný.</strong> Vyžaduje viac než jeden záznam denne – ťažšie rána alebo neskorý večerný pokles.</li><li><strong>Týždenný.</strong> Najčastejší nález: nedeľné večery, stredajšie dno, skutočné piatkové pozdvihnutie.</li><li><strong>Mesačný.</strong> Hormonálne cykly patria medzi najzreteľnejšie vzorce v údajoch o nálade; doprajte im dva až tri mesiace.</li><li><strong>Sezónny.</strong> Pomalý a ľahko sa zvalí na čokoľvek iné, čo sa práve dialo – pozrite si <a href="/sk/mood-journal/seasonal-mood-changes/">sezónne zmeny nálady</a>.</li></ul><p>Cykly sa objavia v každom dlhom zázname, skutočné aj nie – verte tomu, ktorý sa zopakuje trikrát a má vierohodné vysvetlenie.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. Faktory: konkrétny príklad</h2>
+        <div class="guide-content">
+            <p>Tu graf prestáva opisovať a začína vysvetľovať – a klamať samého seba je zrazu ľahké. Dva týždne záznamov:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Deň</th><th>Nálada (1 – 5)</th><th>Spánok</th><th>Poznámka</th></tr></thead><tbody><tr><td>Po</td><td>3</td><td>6 h</td><td>Rušný začiatok</td></tr><tr><td>Ut</td><td>2</td><td>5 h</td><td>Deň predtým dlho hore</td></tr><tr><td>St</td><td>2</td><td>5 h 30</td><td>Bez nálady, bez dôvodu</td></tr><tr><td>Št</td><td>4</td><td>8 h</td><td>Pospal/a som si</td></tr><tr><td>Pi</td><td>4</td><td>7 h 30</td><td>Prechádzka, stretnutie s priateľmi</td></tr><tr><td>So</td><td>5</td><td>9 h</td><td>—</td></tr><tr><td>Ne</td><td>3</td><td>8 h</td><td>Obavy z nového týždňa</td></tr><tr><td>Po</td><td>2</td><td>6 h</td><td>Termín</td></tr><tr><td>Ut</td><td>2</td><td>5 h</td><td>Termín, bez prechádzky</td></tr><tr><td>St</td><td>3</td><td>7 h</td><td>Termín splnený</td></tr><tr><td>Št</td><td>4</td><td>8 h</td><td>Posilňovňa</td></tr><tr><td>Pi</td><td>4</td><td>7 h</td><td>—</td></tr><tr><td>So</td><td>4</td><td>8 h 30</td><td>Pokojný deň</td></tr><tr><td>Ne</td><td>3</td><td>8 h</td><td>Opäť ten nedeľný pocit</td></tr></tbody></table></div><p><strong>Čo to podporuje:</strong> východiskovú hladinu okolo 3, rozpätie od 2 do 5, opakovaný nedeľný pokles a silnú súvislosť medzi nocami pod šesť hodín a náladou na úrovni 2.</p><p><strong>Čo to nedokazuje:</strong> že krátky spánok zlú náladu <em>spôsobil</em>. Oba týždne mali termíny, ktoré skracujú spánok aj zhoršujú náladu nezávisle od seba; zlá nálada zároveň narúša spánok, takže šípka môže smerovať opačne. A nedeľný pokles nie je o spánku – v nedeľu bol spánok v oboch týždňoch v poriadku.</p><p>Ako súvislosti uveriť: spočítajte výnimky (faktor, ktorý platí v polovici prípadov, je náhoda s dobrým PR), preverte oneskorenie (spánok a alkohol sa prejavia nasledujúci deň), hľadajte tretiu vec, ktorá poháňa oboje – termíny, chorobu, cestovanie – a testujte vždy len jednu zmenu naraz.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Papierový graf verzus aplikácia: úprimné porovnanie</h2>
+        <div class="guide-content">
+            <p>Milimetrový papier funguje a tabuľka sa dá zoradiť podľa dňa v týždni. Oboje stojí vytrvalosť – nikto si tabuľku nezoraďuje podľa faktorov každý mesiac. Čo ponúka aplikácia:</p><ul><li><strong>Grafy kreslené priebežne pri zapisovaní</strong>, za ľubovoľné obdobie – trend je vždy aktuálny.</li><li><strong>Nálada rozdelená podľa faktorov</strong> – porovnania z tohto článku bez počítania.</li><li><strong>Každý bod prepojený so svojou poznámkou alebo fotkou</strong> – pokles je na jedno ťuknutie od svojho dôvodu.</li><li><strong>Synchronizácia s Apple Health</strong> – spánok sa doplní sám.</li><li><strong>Export do PDF, XLSX, CSV alebo JSON</strong> – na návštevu u lekára alebo na vlastnú analýzu.</li><li><strong>Poznatky z AI nad vašou vlastnou históriou</strong>, zadarmo s voliteľnými prémiovými funkciami – druhé čítanie, nie rada.</li></ul><p>Nech graf kreslí čokoľvek, výklad zostáva na vás – je to nástroj na sledovanie seba samého, nie na diagnostiku. Ak vás niečo znepokojuje, prineste graf lekárovi alebo terapeutovi – je oveľa konkrétnejší než spomienky.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Ikona aplikácie Denník nálady" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Váš graf, kreslený priebežne</h2>
+            <p>Feeltracker Denník nálady vynáša vaše hodnotenia za ľubovoľné obdobie, rozdeľuje náladu podľa faktorov, ktoré ste označili, a pri každom bode drží jeho poznámku aj fotku. Jedno ťuknutie exportuje celý obraz do PDF. Zadarmo, súkromne, bez účtu.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button" src="/images/appstore/sk-black.svg" alt="Stiahnuť Denník nálady v App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/sk/mood-journal/" class="guide-app-cta-learn">Zistiť viac o aplikácii <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Často kladené otázky</h2>
+
+        <div class="guide-faq-item">
+            <h3>Koľko týždňov údajov potrebujem, aby bol graf užitočný?</h3>
+            <p><strong>Tri až štyri týždne</strong> pri týždenných rytmoch a výrazných jednotlivých faktoroch, ako je spánok; <strong>dva až tri mesiace</strong> pri mesačných cykloch; <strong>väčšinu roka</strong> pri sezónnom tvare. Jeden či dva týždne ukážu vašu východiskovú hladinu a to, ako veľmi kolíšete – a to už stojí za to.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Môj graf vyzerá úplne náhodne. Robím niečo zle?</h3>
+            <p>Pravdepodobne nie. Niektoré grafy sú naozaj rozkolísané a ani rovnomerný rozptyl nehovorí nič: znamená, že vašej nálade nedominuje žiadny jediný faktor. Zoraďte si záznamy podľa dňa v týždni a sledujte skôr účinky nasledujúceho dňa než toho istého – oneskorené vzorce sa skrývajú priamo pred očami. Stále náhodné aj po dvoch mesiacoch? Aj to je odpoveď.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Znamená nízky bod v grafe, že je niečo v neporiadku?</h3>
+            <p>Nie. Nízke body má graf každého a zlý deň nie je diagnóza. Pozornosť si zaslúži trvanie a smer: pokles, ktorý pretrváva väčšinu dňa dlhšie ako dva týždne, alebo východisková hladina, ktorá sa mesiace posúva nadol. O tom sa oplatí porozprávať s lekárom alebo terapeutom – vezmite si graf so sebou.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Mám si hodnotenia nálady spriemerovať?</h3>
+            <p>Mesačný priemer je slušným zhrnutím východiskovej hladiny, ale priemerovaním zahodíte rozpätie – často tú zaujímavejšiu polovicu príbehu. Pozerajte sa na priemer a rozptyl spolu, ako to popisuje <a href="/sk/mood-journal/mood-swings/" target="_blank" rel="noopener">článok o výkyvoch nálady</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Môžem svoj graf nálady ukázať terapeutovi?</h3>
+            <p>Áno a väčšina ho privíta. Datovaný graf so značkami faktorov premení vágne zhrnutie na niečo konkrétne, z čoho sa dá vychádzať. Exportujte PDF pre prehľadnú verziu alebo CSV/XLSX pre čísla v pozadí.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Čítajte ďalej</h2>
+        <div class="guide-related-grid">
+
+            <a href="/sk/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Ako sledovať svoju náladu</h3>
+                <p>Čo si zapisovať, ako často a ktoré faktory sa oplatí označovať.</p>
+            </a>
+
+            <a href="/sk/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>Výkyvy nálady: príčiny a vzorce</h3>
+                <p>Čo býva za širokým rozpätím a kedy to spomenúť odborníkovi.</p>
+            </a>
+
+            <a href="/sk/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>Sezónne zmeny nálady</h3>
+                <p>Najpomalší cyklus vo vašom grafe a ako ho rozpoznať.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Poznámka k duševnej pohode</h2>
+        <p>Tento článok slúži len na všeobecné informačné účely a nie je lekárskou radou, diagnózou ani liečbou. Graf nálady je nástroj na sledovanie seba samého, nie diagnostický nástroj – vzorce v ňom sú dobrým východiskom pre rozhovor s lekárom alebo terapeutom, nikdy nie jeho náhradou. Ak zlá nálada pretrváva väčšinu dňa dlhšie ako dva týždne, alebo si všimnete pretrvávajúce zmeny spánku, chuti do jedla či schopnosti zvládať bežný deň, obráťte sa na zdravotníckeho odborníka. Ak máte myšlienky na ublíženie si, okamžite kontaktujte miestnu tiesňovú linku alebo krízovú linku vo svojej krajine – pomoc je dostupná teraz.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Uvidíte svoj vlastný vzorec</h2>
+        <p>Stiahnite si bezplatnú aplikáciu Denník nálady – zapisujte za pár sekúnd a nechajte graf, nech sa nakreslí sám</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/sk-white.svg"><img class="store_button store_button--lg" src="/images/appstore/sk-black.svg" alt="Stiahnuť Denník nálady v App Store" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Bezplatná aplikácia s voliteľnými prémiovými funkciami
+iPhone, iPad a Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/sk/mood-journal/mood-chart/">Domov</a>
+            <a href="/sk/about/">O nás</a>
+            <a href="mailto:support@feeltracker.com">E-mailová podpora</a>
+            <a href="/sk/support/">Podpora</a>
+            <a href="/sk/faq/">Časté otázky</a>
+            <a href="https://x.com/feeltracker">Sledujte na X</a>
+            <a href="/sk/privacy/">Zásady ochrany súkromia</a>
+            <a href="/sk/terms/">Podmienky používania</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Všetky práva vyhradené.</p>
+        <p class="footer-tagline">Súčasť rodiny zdravotných aplikácií Feeltracker</p>
+        <p class="footer-disclaimer">Vaše zdravotné údaje sú uložené vo vašom zariadení a v iCloude — nikdy k nim nepristupujeme ani ich nepredávame. Aplikácie Feeltracker nie sú zdravotnícke pomôcky. Len na informatívne účely, nenahrádzajú odborné lekárske poradenstvo, diagnózu alebo liečbu.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Vážime si vaše súkromie</strong></p>
+                <p>Používame analytické cookies na zlepšenie našej webovej stránky a aplikácie. Reklamné cookies nepoužívame. Pozrite si naše <a href="/sk/privacy/">Zásady ochrany súkromia</a> pre podrobnosti.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Odmietnuť</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Prijať</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

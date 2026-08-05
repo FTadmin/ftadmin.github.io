@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Kako čitati grafikon raspoloženja: osnovica, raspon, ciklusi | Feeltracker</title>
+    <meta name="description" content="Kako ispravno čitati grafikon raspoloženja: pronađi svoju osnovicu, procijeni raspon, uoči tjedne i sezonske cikluse i razlikuj stvaran čimbenik od slučajnosti.">
+
+    <meta name="keywords" content="grafikon raspoloženja, graf raspoloženja, čitanje grafikona raspoloženja, obrasci raspoloženja, trendovi raspoloženja, praćenje raspoloženja grafikon">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/hr/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="hr_HR">
+    <meta property="og:url" content="https://feeltracker.com/hr/mood-journal/mood-chart/">
+    <meta property="og:title" content="Kako čitati grafikon raspoloženja">
+    <meta property="og:description" content="Osnovica, raspon, ciklusi i povezanost s čimbenicima — kako iz nekoliko tjedana podataka o raspoloženju dobiti prave odgovore, uz razrađen primjer.">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/hr/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="Kako čitati grafikon raspoloženja">
+    <meta property="twitter:description" content="Kako čitati grafikon raspoloženja: osnovica, raspon, ciklusi i razlikovanje stvarnog čimbenika od slučajnosti.">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Koliko tjedana podataka trebam da grafikon postane koristan?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tri do četiri tjedna za tjedne ritmove i snažne pojedinačne čimbenike poput sna; dva do tri mjeseca za mjesečne cikluse; veći dio godine za sezonski oblik. Jedan ili dva tjedna pokazuju tvoju osnovicu i koliko variraš — što je već vrijedno imati."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Moj grafikon izgleda potpuno nasumično. Radim li nešto krivo?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Vjerojatno ne. Neki grafikoni doista su šumoviti, a ravnomjerna raspršenost i dalje govori nešto stvarno: nijedan pojedinačni čimbenik ne dominira tvojim raspoloženjem. Posloži zapise po danu u tjednu i provjeravaj učinke na sljedeći dan, a ne na isti — obrasci s odmakom kriju se naočigled. I dalje nasumično nakon dva mjeseca? I to je odgovor."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Znači li niska točka na grafikonu da nešto nije u redu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ne. Svačiji grafikon ima niske točke, a loš dan nije dijagnoza. Pažnju zaslužuju trajanje i smjer: pad koji se zadržava veći dio dana dulje od dva tjedna ili osnovica koja mjesecima klizi prema dolje. O tome vrijedi razgovarati s liječnikom ili terapeutom — ponesi grafikon."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Trebam li izračunavati prosjek svojih ocjena raspoloženja?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mjesečni prosjek pošten je sažetak osnovice, ali prosjek odbacuje raspon — često zanimljiviju polovicu priče. Gledaj prosjek i rasap zajedno, kako je opisano u vodiču o promjenama raspoloženja."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Mogu li grafikon raspoloženja pokazati terapeutu?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da, i većina će to pozdraviti. Datirani grafikon s oznakama čimbenika pretvara nejasan sažetak u nešto konkretno s čime se može raditi. Izvezi PDF za pregledniju verziju ili CSV/XLSX za brojke u pozadini."
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/hr/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Dnevnik raspoloženja",
+                      "item": "https://feeltracker.com/hr/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Grafikon raspoloženja",
+                      "item": "https://feeltracker.com/hr/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Čitanje grafikona raspoloženja",
+          "description": "Kako ispravno čitati grafikon raspoloženja: pronađi svoju osnovicu, procijeni raspon, uoči tjedne i sezonske cikluse i razlikuj stvaran čimbenik od slučajnosti.",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/hr/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/hr/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/hr/blood-pressure/">Krvni tlak</a>
+
+            <a href="/hr/daily-journal/">Dnevnik</a>
+
+            <a href="/hr/mood-journal/" class="current">Dnevnik raspoloženja</a>
+
+            <a href="/hr/sleep/">San</a>
+
+            <a href="/hr/weight/">Težina</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇭🇷</span>
+                <span class="lang-name">Hrvatski</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/hr/">Početna</a>
+        <span aria-hidden="true">›</span>
+        <a href="/hr/mood-journal/">Dnevnik raspoloženja</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Grafikon raspoloženja</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>Čitanje grafikona raspoloženja</h1>
+
+        <p class="guide-updated">Zadnje ažurirano: kolovoz 2026.</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>Grafikon raspoloženja tvoje su dnevne ocjene prikazane kroz vrijeme. Prvi pogled gotovo je uvijek varljiv: oko ide ravno na najnižu točku, pročita „eto lošeg dana" i stane. Kad se čita kako treba, odgovara na bolja pitanja: gdje mi se raspoloženje obično nalazi, koliko snažno se njiše, kreće li se po nekom rasporedu i što ide uz njega?</p><p>Ovaj vodič prolazi kroz četiri čitanja — osnovica, raspon, ciklusi, čimbenici — uz razrađen primjer. Još ne bilježiš? Počni s <a href="/hr/mood-journal/how-to-track-your-mood/">time kako pratiti raspoloženje</a> pa se vrati za dva tjedna.</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>Prije čitanja: koliko podataka trebaš?</h2>
+        <div class="guide-content">
+            <p>Grafikon od pet dana prikazuje raspoloženje, a ne obrazac. Otprilike:</p><ul><li><strong>1–2 tjedna:</strong> tvoja osnovica i koliko variraš — ništa o uzrocima.</li><li><strong>3–6 tjedana:</strong> tjedni ritmovi i snažni pojedinačni čimbenici — san je obično prvi.</li><li><strong>2–3 mjeseca:</strong> mjesečni i hormonalni ciklusi te spori pomaci.</li><li><strong>6–12 mjeseci:</strong> sezonski oblik i pošten odgovor na pitanje „jesam li bolje nego lani?"</li></ul><p>Praznine su u redu — prazan tjedan je pošten. Tjedan rekonstruiran po sjećanju prepisuje grafikon u smjeru priče u koju ionako već vjeruješ.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. Pronađi svoju osnovicu</h2>
+        <div class="guide-content">
+            <p>Osnovica je ono gdje ti raspoloženje stoji na običan dan — pojas kojem se linija stalno vraća. Na ljestvici od 5 stupnjeva većina ljudi živi između 3 i 4.</p><p>To je ovdje najkorisniji broj: trojka znači nešto drugo nekome tko živi na 4 nego nekome tko živi na 2, a mijenja se polako, pa pomak znači više od jednog lošeg utorka. Osnovica koja u dva mjeseca sklizne s 4 na 3 važnija je od bilo koje pojedinačne niske točke — to je promjena koja je iznutra nevidljiva.</p><p>Prekrij ekstreme palcem, pogledaj gdje leži glavnina linije i usporedi ovaj mjesec s prošlim.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. Procijeni raspon</h2>
+        <div class="guide-content">
+            <p>Raspon je koliko daleko tvoje raspoloženje putuje oko te osnovice. Dvoje ljudi dijeli osnovicu od 3,5: jedno se kreće između 3 i 4, drugo poskakuje između 1 i 5. Tri pitanja:</p><ul><li><strong>Koliko je širok tipičan tjedan?</strong> Jedan stupanj je uobičajen; tri ili četiri, opetovano, zaslužuju pažnju.</li><li><strong>Koliko su brzi prijelazi?</strong> Spor dvotjedni pad i pad s 5 na 1 u istom danu različite su pojave.</li><li><strong>Koliko dugo traje pad?</strong> Jednodnevni pad razlikuje se od dva tjedna na dnu.</li></ul><p>Ako su njihanja glavna priča, <a href="/hr/mood-journal/mood-swings/">vodič o promjenama raspoloženja</a> obrađuje uzroke i kada se javiti stručnjaku.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. Traži cikluse</h2>
+        <div class="guide-content">
+            <p>Ciklusi pretvaraju „ponekad je nasumično loše" u nešto oko čega možeš planirati. Četiri koja vrijedi provjeriti:</p><ul><li><strong>Dnevni.</strong> Traži više od jednog zapisa dnevno — teža jutra ili pad u kasnu večer.</li><li><strong>Tjedni.</strong> Najčešći nalaz: nedjeljne večeri, pad u srijedu, stvaran uzlet u petak.</li><li><strong>Mjesečni.</strong> Hormonalni ciklusi među najjasnijim su obrascima u podacima o raspoloženju; daj im dva ili tri mjeseca.</li><li><strong>Sezonski.</strong> Spor i lako ga je pripisati svemu drugom što se događalo — pogledaj <a href="/hr/mood-journal/seasonal-mood-changes/">sezonske promjene raspoloženja</a>.</li></ul><p>Ciklusi se pojavljuju u svakom dugom zapisu, stvarni ili ne — vjeruj onome koji se ponovi tri puta i ima uvjerljiv mehanizam.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. Čimbenici: razrađen primjer</h2>
+        <div class="guide-content">
+            <p>Ovdje grafikon prestaje opisivati i počinje objašnjavati — a zavaravanje sebe postaje lako. Dva tjedna zapisa:</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Dan</th><th>Raspoloženje (1–5)</th><th>San</th><th>Bilješka</th></tr></thead><tbody><tr><td>Pon</td><td>3</td><td>6 h</td><td>Užurban početak</td></tr><tr><td>Uto</td><td>2</td><td>5 h</td><td>Kasno legao/la</td></tr><tr><td>Sri</td><td>2</td><td>5 h 30</td><td>Ravno, bez razloga</td></tr><tr><td>Čet</td><td>4</td><td>8 h</td><td>Odspavao/la dulje</td></tr><tr><td>Pet</td><td>4</td><td>7 h 30</td><td>Šetnja, druženje s prijateljima</td></tr><tr><td>Sub</td><td>5</td><td>9 h</td><td>—</td></tr><tr><td>Ned</td><td>3</td><td>8 h</td><td>Strah od tjedna koji dolazi</td></tr><tr><td>Pon</td><td>2</td><td>6 h</td><td>Rok</td></tr><tr><td>Uto</td><td>2</td><td>5 h</td><td>Rok, bez šetnje</td></tr><tr><td>Sri</td><td>3</td><td>7 h</td><td>Rok gotov</td></tr><tr><td>Čet</td><td>4</td><td>8 h</td><td>Teretana</td></tr><tr><td>Pet</td><td>4</td><td>7 h</td><td>—</td></tr><tr><td>Sub</td><td>4</td><td>8 h 30</td><td>Miran dan</td></tr><tr><td>Ned</td><td>3</td><td>8 h</td><td>Opet nedjeljni osjećaj</td></tr></tbody></table></div><p><strong>Što ovo potkrepljuje:</strong> osnovicu oko 3, raspon od 2 do 5, ponovljen nedjeljni pad i snažnu vezu između noći kraćih od šest sati i raspoloženja na 2.</p><p><strong>Što ne dokazuje:</strong> da je kratak san <em>uzrokovao</em> loše raspoloženje. Oba tjedna imala su rokove, koji neovisno skraćuju san i spljoštavaju raspoloženje; loše raspoloženje također remeti san, pa strelica možda ide u suprotnom smjeru. A nedjeljni pad nije san — nedjeljni san bio je dobar oba tjedna.</p><p>Da bi vjerovao/la korelaciji: prebroji iznimke (čimbenik koji vrijedi u pola slučajeva slučajnost je s dobrim PR-om), provjeri odmak (san i alkohol stižu sutradan), potraži treću stvar koja pokreće oboje — rokove, bolest, putovanja — i mijenjaj po jednu stvar odjednom.</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>Papirnati grafikon ili aplikacija: poštena usporedba</h2>
+        <div class="guide-content">
+            <p>Milimetarski papir funkcionira, a proračunska tablica može sortirati po danu u tjednu. Ono što oboje košta jest ustrajnost — nitko ne presortira tablicu po čimbeniku svaki mjesec. Što aplikacija donosi:</p><ul><li><strong>Grafikoni se crtaju dok bilježiš</strong>, za bilo koje razdoblje — trend je uvijek aktualan.</li><li><strong>Raspoloženje razloženo po čimbenicima</strong> — usporedbe odozgo, bez računanja.</li><li><strong>Svaka točka povezana sa svojom bilješkom ili fotografijom</strong> — pad je jedan dodir udaljen od svog razloga.</li><li><strong>Sinkronizacija s Apple Health</strong> — san stiže sam od sebe.</li><li><strong>Izvoz u PDF, XLSX, CSV ili JSON</strong> — za preglede ili vlastitu analizu.</li><li><strong>AI uvidi nad tvojom vlastitom poviješću</strong>, besplatno uz opcionalni premium — drugo čitanje, a ne savjet.</li></ul><p>Tko god crtao grafikon, tumačenje ostaje tvoje — ovo je alat za samopraćenje, a ne dijagnostički alat. Ako te nešto zabrinjava, ponesi grafikon liječniku ili terapeutu — mnogo je konkretniji od sjećanja.</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="Ikona aplikacije Dnevnik raspoloženja BPD" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>Tvoj grafikon, crta se usput</h2>
+            <p>Feeltracker Dnevnik raspoloženja prikazuje tvoje ocjene kroz bilo koje razdoblje, razlaže raspoloženje po čimbenicima koje si označio/la i uz svaku točku čuva bilješku i fotografiju. Jednim dodirom izvezeš cijelu sliku kao PDF. Besplatno, privatno, bez potrebe za računom.</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button" src="/images/appstore/hr-black.svg" alt="Preuzmi Dnevnik raspoloženja BPD na App Storeu" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/hr/mood-journal/" class="guide-app-cta-learn">Saznaj više o aplikaciji <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>Često postavljana pitanja</h2>
+
+        <div class="guide-faq-item">
+            <h3>Koliko tjedana podataka trebam da grafikon postane koristan?</h3>
+            <p><strong>Tri do četiri tjedna</strong> za tjedne ritmove i snažne pojedinačne čimbenike poput sna; <strong>dva do tri mjeseca</strong> za mjesečne cikluse; <strong>veći dio godine</strong> za sezonski oblik. Jedan ili dva tjedna pokazuju tvoju osnovicu i koliko variraš — što je već vrijedno imati.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Moj grafikon izgleda potpuno nasumično. Radim li nešto krivo?</h3>
+            <p>Vjerojatno ne. Neki grafikoni doista su šumoviti, a ravnomjerna raspršenost i dalje govori nešto stvarno: nijedan pojedinačni čimbenik ne dominira tvojim raspoloženjem. Posloži zapise po danu u tjednu i provjeravaj učinke na sljedeći dan, a ne na isti — obrasci s odmakom kriju se naočigled. I dalje nasumično nakon dva mjeseca? I to je odgovor.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Znači li niska točka na grafikonu da nešto nije u redu?</h3>
+            <p>Ne. Svačiji grafikon ima niske točke, a loš dan nije dijagnoza. Pažnju zaslužuju trajanje i smjer: pad koji se zadržava veći dio dana dulje od dva tjedna ili osnovica koja mjesecima klizi prema dolje. O tome vrijedi razgovarati s liječnikom ili terapeutom — ponesi grafikon.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Trebam li izračunavati prosjek svojih ocjena raspoloženja?</h3>
+            <p>Mjesečni prosjek pošten je sažetak osnovice, ali prosjek odbacuje raspon — često zanimljiviju polovicu priče. Gledaj prosjek i rasap zajedno, kako je opisano u <a href="/hr/mood-journal/mood-swings/" target="_blank" rel="noopener">vodiču o promjenama raspoloženja</a>.</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>Mogu li grafikon raspoloženja pokazati terapeutu?</h3>
+            <p>Da, i većina će to pozdraviti. Datirani grafikon s oznakama čimbenika pretvara nejasan sažetak u nešto konkretno s čime se može raditi. Izvezi PDF za pregledniju verziju ili CSV/XLSX za brojke u pozadini.</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>Nastavi čitati</h2>
+        <div class="guide-related-grid">
+
+            <a href="/hr/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>Kako pratiti svoje raspoloženje</h3>
+                <p>Što bilježiti, koliko često i koje čimbenike vrijedi označiti.</p>
+            </a>
+
+            <a href="/hr/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>Promjene raspoloženja: uzroci i obrasci</h3>
+                <p>Što obično stoji iza širokog raspona i kada to spomenuti.</p>
+            </a>
+
+            <a href="/hr/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>Sezonske promjene raspoloženja</h3>
+                <p>Najsporiji ciklus na tvom grafikonu i kako ga uočiti.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>Napomena o dobrobiti</h2>
+        <p>Ovaj članak služi samo za opće informiranje i ne predstavlja medicinski savjet, dijagnozu ili liječenje. Grafikon raspoloženja alat je za samopraćenje, a ne dijagnostički instrument — obrasci u njemu dobra su polazna točka za razgovor s liječnikom ili terapeutom, ali nikad zamjena za njega. Ako loše raspoloženje traje veći dio dana dulje od dva tjedna ili primijetiš trajne promjene u snu, apetitu ili sposobnosti da funkcioniraš iz dana u dan, obrati se zdravstvenom djelatniku. Ako imaš misli o samoozljeđivanju, odmah nazovi hitne službe ili liniju za krizne situacije u svojoj zemlji — pomoć je dostupna sada.</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>Vidi svoj obrazac</h2>
+        <p>Preuzmi besplatnu aplikaciju Dnevnik raspoloženja — bilježi u nekoliko sekundi i pusti grafikon da se sam nacrta</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/hr-white.svg"><img class="store_button store_button--lg" src="/images/appstore/hr-black.svg" alt="Preuzmi Dnevnik raspoloženja BPD na App Storeu" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">Besplatna aplikacija s dodatnim premium značajkama
+iPhone, iPad i Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/hr/mood-journal/mood-chart/">Početna</a>
+            <a href="/hr/about/">O nama</a>
+            <a href="mailto:support@feeltracker.com">Podrška putem e-pošte</a>
+            <a href="/hr/support/">Podrška</a>
+            <a href="/hr/faq/">Česta pitanja</a>
+            <a href="https://x.com/feeltracker">Pratite na X</a>
+            <a href="/hr/privacy/">Pravila privatnosti</a>
+            <a href="/hr/terms/">Uvjeti korištenja</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. Sva prava pridržana.</p>
+        <p class="footer-tagline">Dio obitelji Feeltracker aplikacija za praćenje zdravlja</p>
+        <p class="footer-disclaimer">Vaši zdravstveni podaci pohranjeni su na vašem uređaju i u iCloudu — nikada im ne pristupamo niti ih prodajemo. Feeltracker aplikacije nisu medicinski uređaji. Samo u informativne svrhe, ne zamjenjuju profesionalni medicinski savjet, dijagnozu ili liječenje.</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>Cijenimo vašu privatnost</strong></p>
+                <p>Koristimo analitičke kolačiće za poboljšanje naše web stranice i aplikacije. Reklamni kolačići se ne koriste. Pogledajte našu <a href="/hr/privacy/">Pravila privatnosti</a> za detalje.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">Odbij</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">Prihvati</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>

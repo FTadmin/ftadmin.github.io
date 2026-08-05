@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cookie Consent & Conditional Analytics Loading -->
+    <script>
+    (function() {
+        window.dataLayer = window.dataLayer || [];
+        var consent = localStorage.getItem('cookie_consent');
+
+        function loadGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WV9HJBSD');
+
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L718GV41LN';
+            document.head.appendChild(gaScript);
+            gaScript.onload = function() {
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L718GV41LN');
+            };
+        }
+
+        if (consent === 'accepted') { loadGTM(); }
+        window.loadGTM = loadGTM;
+    })();
+    </script>
+
+
+    <!-- Primary Meta Tags -->
+    <title>如何解讀心情圖表：基準線、起伏範圍與週期 | Feeltracker</title>
+    <meta name="description" content="如何正確解讀心情圖表：找出你的基準線、判斷起伏範圍、看出每週與季節性的週期，並分辨真正的影響因素與純屬巧合。">
+
+    <meta name="keywords" content="心情圖表, 情緒追蹤圖表, 心情曲線圖, 解讀心情圖表, 情緒規律, 心情趨勢">
+
+    <meta name="author" content="Custom Arts">
+    <link rel="canonical" href="https://feeltracker.com/zh-Hant/mood-journal/mood-chart/">
+
+
+    <link rel="alternate" hreflang="en" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="de" href="https://feeltracker.com/de/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="es" href="https://feeltracker.com/es/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="it" href="https://feeltracker.com/it/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ru" href="https://feeltracker.com/ru/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ja" href="https://feeltracker.com/ja/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr" href="https://feeltracker.com/fr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ko" href="https://feeltracker.com/ko/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt-BR" href="https://feeltracker.com/pt-br/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://feeltracker.com/zh-Hans/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sv" href="https://feeltracker.com/sv/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nb" href="https://feeltracker.com/nb/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="da" href="https://feeltracker.com/da/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fi" href="https://feeltracker.com/fi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ar" href="https://feeltracker.com/ar/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ca" href="https://feeltracker.com/ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="cs" href="https://feeltracker.com/cs/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="el" href="https://feeltracker.com/el/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="fr-CA" href="https://feeltracker.com/fr-ca/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="he" href="https://feeltracker.com/he/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="hr" href="https://feeltracker.com/hr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="hu" href="https://feeltracker.com/hu/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="nl" href="https://feeltracker.com/nl/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pl" href="https://feeltracker.com/pl/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="pt" href="https://feeltracker.com/pt/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="ro" href="https://feeltracker.com/ro/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="sk" href="https://feeltracker.com/sk/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="th" href="https://feeltracker.com/th/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="tr" href="https://feeltracker.com/tr/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="uk" href="https://feeltracker.com/uk/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="vi" href="https://feeltracker.com/vi/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="zh-Hant" href="https://feeltracker.com/zh-Hant/mood-journal/mood-chart/">
+
+    <link rel="alternate" hreflang="x-default" href="https://feeltracker.com/mood-journal/mood-chart/">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:url" content="https://feeltracker.com/zh-Hant/mood-journal/mood-chart/">
+    <meta property="og:title" content="如何解讀心情圖表">
+    <meta property="og:description" content="基準線、起伏範圍、週期與因素相關性——如何從幾週的心情資料中得到真正的答案，附完整範例。">
+    <meta property="og:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feeltracker.com/zh-Hant/mood-journal/mood-chart/">
+    <meta property="twitter:title" content="如何解讀心情圖表">
+    <meta property="twitter:description" content="如何解讀心情圖表：基準線、起伏範圍、週期，以及如何分辨真正的因素與巧合。">
+    <meta property="twitter:image" content="https://feeltracker.com/images/FT_1024.png">
+
+    <link rel="stylesheet" href="/shared.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/feeltracker-icon.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/FT_1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/nav.js"></script>
+
+
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "要累積幾週的資料，圖表才會有用？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "三到四週可以看出每週節奏和像睡眠這類影響力強的單一因素；兩到三個月能看出月週期；大半年才會浮現季節性的整體形狀。一兩週能顯示你的基準線和變動幅度——這本身就已經很值得了。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我的圖表看起來完全雜亂無章。是我做錯了嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "應該不是。有些圖表確實就是很雜亂，而一片散落的分布仍然說明了某件真實的事：沒有單一因素在主導你的心情。試著把紀錄依星期幾排序，並檢查「隔天」而不是「當天」的影響——有時間差的規律往往就藏在眼前。兩個月後還是很隨機？那也是一個答案。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "圖表上的一個低點，是不是代表哪裡出了問題？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "不是。每個人的圖表上都有低點，而糟糕的一天並不是診斷。真正值得留意的是持續時間和方向：低落幾乎佔據一天的大部分時間並持續超過兩週，或是基準線在幾個月間持續往下漂移。這些都值得和醫生或心理師討論——記得把圖表帶上。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我應該把心情評分平均起來嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "每月平均是對基準線相當公允的摘要，但取平均會丟掉起伏範圍——而那往往是故事中比較有意思的那一半。請同時看平均值和分布幅度，就像情緒起伏指南裡說明的那樣。"
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "我可以把心情圖表拿給心理師看嗎？",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "可以，而且大多數人都會很歡迎。一張標好日期、帶有因素標籤的圖表，能把含糊的描述變成可以具體著手的內容。匯出 PDF 得到乾淨的版本，或匯出 CSV／XLSX 取得背後的數據。"
+                      }
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://feeltracker.com/zh-Hant/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "心情日記",
+                      "item": "https://feeltracker.com/zh-Hant/mood-journal/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "心情圖表",
+                      "item": "https://feeltracker.com/zh-Hant/mood-journal/mood-chart/"
+                }
+          ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "解讀你的心情圖表",
+          "description": "如何正確解讀心情圖表：找出你的基準線、判斷起伏範圍、看出每週與季節性的週期，並分辨真正的影響因素與純屬巧合。",
+          "image": "https://feeltracker.com/images/FT_1024.png",
+          "datePublished": "2026-08-04",
+          "dateModified": "2026-08-04",
+          "inLanguage": "en",
+          "author": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com"
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Custom Arts",
+                "url": "https://feeltracker.com",
+                "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://feeltracker.com/images/feeltracker-icon.png"
+                }
+          },
+          "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://feeltracker.com/zh-Hant/mood-journal/mood-chart/"
+          }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/zh-Hant/" class="brand-logo">feeltracker</a>
+        <div class="nav-row-apps">
+
+            <a href="/zh-Hant/blood-pressure/">血壓</a>
+
+            <a href="/zh-Hant/daily-journal/">每日日記</a>
+
+            <a href="/zh-Hant/mood-journal/" class="current">心情日記</a>
+
+            <a href="/zh-Hant/sleep/">睡眠</a>
+
+            <a href="/zh-Hant/weight/">體重</a>
+
+        </div>
+        <div class="language-selector" id="langSelector">
+            <div class="language-current" data-lang-toggle>
+                <span class="flag">🇹🇼</span>
+                <span class="lang-name">繁體中文</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="language-dropdown">
+
+                <a href="/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇸</span> English</a>
+
+                <a href="/de/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇪</span> Deutsch</a>
+
+                <a href="/es/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇪🇸</span> Español</a>
+
+                <a href="/it/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇹</span> Italiano</a>
+
+                <a href="/ru/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇺</span> Русский</a>
+
+                <a href="/ja/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇯🇵</span> 日本語</a>
+
+                <a href="/fr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇷</span> Français</a>
+
+                <a href="/ko/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇰🇷</span> 한국어</a>
+
+                <a href="/pt-br/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇧🇷</span> Português</a>
+
+                <a href="/zh-Hans/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇳</span> 简体中文</a>
+
+                <a href="/sv/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇪</span> Svenska</a>
+
+                <a href="/nb/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇴</span> Norsk</a>
+
+                <a href="/da/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇩🇰</span> Dansk</a>
+
+                <a href="/fi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇫🇮</span> Suomi</a>
+
+                <a href="/ar/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇦</span> العربية</a>
+
+                <a href="/ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🏴</span> Català</a>
+
+                <a href="/cs/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇿</span> Čeština</a>
+
+                <a href="/el/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇬🇷</span> Ελληνικά</a>
+
+                <a href="/fr-ca/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇨🇦</span> Français (Canada)</a>
+
+                <a href="/he/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇮🇱</span> עברית</a>
+
+                <a href="/hr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇭🇷</span> Hrvatski</a>
+
+                <a href="/hu/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇭🇺</span> Magyar</a>
+
+                <a href="/nl/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇳🇱</span> Nederlands</a>
+
+                <a href="/pl/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇵🇱</span> Polski</a>
+
+                <a href="/pt/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇵🇹</span> Português (Portugal)</a>
+
+                <a href="/ro/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇷🇴</span> Română</a>
+
+                <a href="/sk/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇸🇰</span> Slovenčina</a>
+
+                <a href="/th/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇭</span> ไทย</a>
+
+                <a href="/tr/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇹🇷</span> Türkçe</a>
+
+                <a href="/uk/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇺🇦</span> Українська</a>
+
+                <a href="/vi/mood-journal/mood-chart/" data-lang-choose><span class="flag">🇻🇳</span> Tiếng Việt</a>
+
+                <a href="/zh-Hant/mood-journal/mood-chart/" class="active" data-lang-choose><span class="flag">🇹🇼</span> 繁體中文</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+<article class="guide-article">
+    <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/zh-Hant/">首頁</a>
+        <span aria-hidden="true">›</span>
+        <a href="/zh-Hant/mood-journal/">心情日記</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">心情圖表</span>
+    </nav>
+
+    <header class="guide-article-header">
+        <h1>解讀你的心情圖表</h1>
+
+        <p class="guide-updated">最後更新：2026年8月</p>
+
+    </header>
+
+    <div class="guide-lead">
+        <p>心情圖表就是把你每天的評分依時間畫出來。第一眼看到的東西幾乎總是誤導人的：目光會直接落在最低的那一點，心裡想著「原來那天最糟」，然後就停在那裡。若能好好解讀，它其實回答的是更好的問題：我的心情平常落在哪裡？擺盪的幅度有多大？它是不是按著某種節奏在走？又有什麼總是和它一起出現？</p><p>本篇會帶你走過四種解讀方式——基準線、起伏範圍、週期、因素——並附上一個完整範例。還沒開始記錄嗎？先從<a href="/zh-Hant/mood-journal/how-to-track-your-mood/">如何追蹤心情</a>開始，兩週後再回來。</p>
+    </div>
+
+
+    <section class="guide-section">
+        <h2>開始解讀前：你需要多少資料？</h2>
+        <div class="guide-content">
+            <p>五天的圖表呈現的是一種心情，而不是一種規律。大致來說：</p><ul><li><strong>1–2 週：</strong>看得出你的基準線和變動幅度——但看不出任何成因。</li><li><strong>3–6 週：</strong>每週的節奏，以及影響力強的單一因素——通常睡眠會最先浮現。</li><li><strong>2–3 個月：</strong>月週期與荷爾蒙週期，以及緩慢的漂移。</li><li><strong>6–12 個月：</strong>季節性的整體形狀，以及對「我比去年好嗎？」這個問題的誠實回答。</li></ul><p>有空白沒關係——空白的一週是誠實的。但一週憑記憶重建的紀錄，會把圖表改寫成你原本就相信的那個故事。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>1. 找出你的基準線</h2>
+        <div class="guide-content">
+            <p>基準線就是你在平常日子裡心情所在的位置——那條線一再回歸的區帶。在五點量表上，大多數人生活在 3 和 4 之間。</p><p>這是這裡最有用的一個數字：對一個平常在 4 的人來說，3 分的意義和平常在 2 的人並不相同；而且它變動得很慢，所以一段漂移比某個難熬的星期二更有意義。基準線在兩個月內從 4 滑到 3，比任何單一的低點都更重要——而這正是身在其中最看不見的變化。</p><p>用大拇指把最極端的部分遮住，看看線條的主體落在哪裡，再把這個月和上個月做比較。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>2. 判斷起伏範圍</h2>
+        <div class="guide-content">
+            <p>起伏範圍指的是你的心情在基準線上下走動的幅度。兩個人同樣有 3.5 的基準線：一個人在 3 到 4 之間移動，另一個人卻在 1 到 5 之間彈跳。有三個問題可以問：</p><ul><li><strong>典型的一週幅度有多寬？</strong>一分是很平常的；反覆出現三、四分的落差，就值得留意。</li><li><strong>轉換有多快？</strong>為期兩週的緩慢下滑，和同一天內從 5 掉到 1，是兩種不同的現象。</li><li><strong>低潮持續多久？</strong>只有一天的低落，和連續兩週停在谷底並不相同。</li></ul><p>如果劇烈的擺盪才是主角，<a href="/zh-Hant/mood-journal/mood-swings/">情緒起伏指南</a>談了背後的成因，以及什麼時候該尋求專業協助。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>3. 尋找週期</h2>
+        <div class="guide-content">
+            <p>週期能把「有時候莫名其妙就很糟」變成你可以事先安排因應的東西。有四種值得檢查：</p><ul><li><strong>每日。</strong>需要一天記錄多次——例如早上比較沉重，或深夜出現低潮。</li><li><strong>每週。</strong>最常見的發現：星期天晚上、星期三的谷底、實實在在的星期五提振。</li><li><strong>每月。</strong>荷爾蒙週期是心情資料中最清晰的規律之一；請給它兩到三個月。</li><li><strong>季節。</strong>變化緩慢，而且很容易被歸因到當時剛好發生的其他事情上——參見<a href="/zh-Hant/mood-journal/seasonal-mood-changes/">季節性情緒變化</a>。</li></ul><p>任何夠長的紀錄裡都會冒出週期，不管是真是假——請只相信那些重複出現三次、而且有合理機制可以解釋的週期。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>4. 因素：一個完整範例</h2>
+        <div class="guide-content">
+            <p>到了這一步，圖表不再只是描述，而是開始解釋——同時也很容易騙過自己。以下是兩週的紀錄：</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>日期</th><th>心情 (1–5)</th><th>睡眠</th><th>備註</th></tr></thead><tbody><tr><td>週一</td><td>3</td><td>6 小時</td><td>忙碌的開場</td></tr><tr><td>週二</td><td>2</td><td>5 小時</td><td>前一晚熬夜</td></tr><tr><td>週三</td><td>2</td><td>5.5 小時</td><td>提不起勁，沒特別原因</td></tr><tr><td>週四</td><td>4</td><td>8 小時</td><td>睡到自然醒</td></tr><tr><td>週五</td><td>4</td><td>7.5 小時</td><td>散步、和朋友見面</td></tr><tr><td>週六</td><td>5</td><td>9 小時</td><td>—</td></tr><tr><td>週日</td><td>3</td><td>8 小時</td><td>對新的一週感到抗拒</td></tr><tr><td>週一</td><td>2</td><td>6 小時</td><td>截止期限</td></tr><tr><td>週二</td><td>2</td><td>5 小時</td><td>截止期限，沒去散步</td></tr><tr><td>週三</td><td>3</td><td>7 小時</td><td>截止期限結束</td></tr><tr><td>週四</td><td>4</td><td>8 小時</td><td>健身房</td></tr><tr><td>週五</td><td>4</td><td>7 小時</td><td>—</td></tr><tr><td>週六</td><td>4</td><td>8.5 小時</td><td>安靜的一天</td></tr><tr><td>週日</td><td>3</td><td>8 小時</td><td>又是那種星期天的感覺</td></tr></tbody></table></div><p><strong>這些資料支持的結論：</strong>基準線大約在 3、起伏範圍是 2 到 5、星期天反覆出現低潮，以及睡不到六小時的夜晚和心情落在 2 之間有強烈關聯。</p><p><strong>它無法證明的：</strong>睡眠不足<em>造成</em>了低落心情。這兩週都有截止期限，而截止期限本身就會壓縮睡眠、也會獨立地讓心情變平；而且低落的心情同樣會干擾睡眠，所以因果箭頭可能是反過來的。至於星期天的低潮，那和睡眠無關——這兩個星期天的睡眠都很好。</p><p>要相信一個相關性，可以這樣做：數一數例外（一個只有一半時間成立的因素，只是包裝得很好的巧合）、檢查時間差（睡眠和酒精的影響會在隔天出現）、找找看是不是有第三個東西同時驅動兩者——截止期限、生病、旅行——並且一次只改變一個變因來測試。</p>
+        </div>
+    </section>
+
+    <section class="guide-section">
+        <h2>紙本圖表 vs 應用程式：誠實的比較</h2>
+        <div class="guide-content">
+            <p>方格紙是可行的，試算表也能依星期幾排序。但兩者共同的代價是難以持續——沒有人每個月都會重新依因素把試算表排一次序。這筆交易中，應用程式帶來的是：</p><ul><li><strong>邊記錄邊畫出圖表</strong>，任何時間範圍都行——趨勢永遠是最新的。</li><li><strong>依因素拆解心情</strong>——上面那些比較，不必自己動手算。</li><li><strong>每個資料點都連著它的備註或照片</strong>——一個低潮，點一下就能看到原因。</li><li><strong>Apple Health 同步</strong>——睡眠資料會自己進來。</li><li><strong>可匯出成 PDF、XLSX、CSV 或 JSON</strong>——供看診使用，或做你自己的分析。</li><li><strong>針對你自己的歷史紀錄提供 AI 洞察</strong>，免費使用並可選購進階功能——那是第二種解讀，不是建議。</li></ul><p>不論是誰畫出這張圖表，詮釋權都在你手上——這是一項自我追蹤工具，不是診斷工具。如果有什麼讓你擔心，把圖表帶去給醫生或心理師看——那遠比憑記憶描述具體得多。</p>
+        </div>
+    </section>
+
+
+
+    <aside class="guide-app-cta">
+        <img src="/images/FT_1024.png" alt="心情日記應用程式圖示" class="guide-app-cta-icon" width="88" height="88" loading="lazy" decoding="async">
+        <div class="guide-app-cta-body">
+            <h2>你的圖表，隨記隨畫</h2>
+            <p>Feeltracker 心情日記能把你的評分繪製在任何時間範圍上，依你標註的因素拆解心情，並讓每一則備註和照片都緊貼著它的資料點。一鍵就能把整幅圖像匯出成 PDF。免費、隱私，不需要帳號。</p>
+            <div class="guide-app-cta-actions">
+                <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" rel="noopener">
+                    <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hant-white.svg"><img class="store_button" src="/images/appstore/zh-Hant-black.svg" alt="在 App Store 下載心情日記" width="120" height="40" loading="lazy" decoding="async"></picture>
+                </a>
+                <a href="/zh-Hant/mood-journal/" class="guide-app-cta-learn">了解更多應用程式資訊 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <section class="guide-section guide-faq">
+        <h2>常見問題</h2>
+
+        <div class="guide-faq-item">
+            <h3>要累積幾週的資料，圖表才會有用？</h3>
+            <p><strong>三到四週</strong>可以看出每週節奏和像睡眠這類影響力強的單一因素；<strong>兩到三個月</strong>能看出月週期；<strong>大半年</strong>才會浮現季節性的整體形狀。一兩週能顯示你的基準線和變動幅度——這本身就已經很值得了。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>我的圖表看起來完全雜亂無章。是我做錯了嗎？</h3>
+            <p>應該不是。有些圖表確實就是很雜亂，而一片散落的分布仍然說明了某件真實的事：沒有單一因素在主導你的心情。試著把紀錄依星期幾排序，並檢查「隔天」而不是「當天」的影響——有時間差的規律往往就藏在眼前。兩個月後還是很隨機？那也是一個答案。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>圖表上的一個低點，是不是代表哪裡出了問題？</h3>
+            <p>不是。每個人的圖表上都有低點，而糟糕的一天並不是診斷。真正值得留意的是持續時間和方向：低落幾乎佔據一天的大部分時間並持續超過兩週，或是基準線在幾個月間持續往下漂移。這些都值得和醫生或心理師討論——記得把圖表帶上。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>我應該把心情評分平均起來嗎？</h3>
+            <p>每月平均是對基準線相當公允的摘要，但取平均會丟掉起伏範圍——而那往往是故事中比較有意思的那一半。請同時看平均值和分布幅度，就像<a href="/zh-Hant/mood-journal/mood-swings/" target="_blank" rel="noopener">情緒起伏指南</a>裡說明的那樣。</p>
+        </div>
+
+        <div class="guide-faq-item">
+            <h3>我可以把心情圖表拿給心理師看嗎？</h3>
+            <p>可以，而且大多數人都會很歡迎。一張標好日期、帶有因素標籤的圖表，能把含糊的描述變成可以具體著手的內容。匯出 PDF 得到乾淨的版本，或匯出 CSV／XLSX 取得背後的數據。</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="guide-section guide-related">
+        <h2>延伸閱讀</h2>
+        <div class="guide-related-grid">
+
+            <a href="/zh-Hant/mood-journal/how-to-track-your-mood/" class="guide-related-card">
+                <h3>如何追蹤心情</h3>
+                <p>該記錄什麼、多久記一次，以及有哪些因素值得標註。</p>
+            </a>
+
+            <a href="/zh-Hant/mood-journal/mood-swings/" class="guide-related-card">
+                <h3>情緒起伏：成因與規律</h3>
+                <p>什麼容易造成大幅度的起伏，以及何時該提出來談。</p>
+            </a>
+
+            <a href="/zh-Hant/mood-journal/seasonal-mood-changes/" class="guide-related-card">
+                <h3>季節性情緒變化</h3>
+                <p>你圖表中最緩慢的週期，以及如何看出它。</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <aside class="guide-disclaimer">
+        <h2>關於身心健康的提醒</h2>
+        <p>本文僅供一般資訊參考，不構成醫療建議、診斷或治療。心情圖表是一項自我追蹤工具，不是診斷工具——其中的規律很適合作為你與醫生或心理師談話的起點，但絕不能取代這樣的談話。如果低落的心情幾乎佔據一天的大部分時間並持續超過兩週，或你注意到睡眠、食慾或日常應對能力出現長期改變，請與專業醫療人員談談。如果你出現傷害自己的念頭，請立即聯絡當地的緊急服務或你所在國家的危機專線（在台灣：1925 安心專線，24 小時免付費）——現在就有人可以支持你。</p>
+    </aside>
+</article>
+
+    <!-- CTA Section -->
+    <section class="cta-section center-text">
+        <h2>看見屬於你的規律</h2>
+        <p>下載免費的心情日記應用程式——幾秒鐘完成記錄，讓圖表自己畫出來</p>
+        <a target="_blank" href="https://apps.apple.com/us/app/mood-bpd-dbt-feeltracker-ft/id687448999" class="cta-button" rel="noopener">
+            <picture><source media="(prefers-color-scheme: dark)" srcset="/images/appstore/zh-Hant-white.svg"><img class="store_button store_button--lg" src="/images/appstore/zh-Hant-black.svg" alt="在 App Store 下載心情日記" width="120" height="40" loading="lazy" decoding="async"></picture>
+        </a>
+        <p class="hero-platform-info">免費應用程式，附選用進階功能
+iPhone、iPad 及 Mac • iOS 16.0+</p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/zh-Hant/mood-journal/mood-chart/">首頁</a>
+            <a href="/zh-Hant/about/">關於</a>
+            <a href="mailto:support@feeltracker.com">電子郵件支援</a>
+            <a href="/zh-Hant/support/">支援</a>
+            <a href="/zh-Hant/faq/">常見問題</a>
+            <a href="https://x.com/feeltracker">在X上關注</a>
+            <a href="/zh-Hant/privacy/">隱私政策</a>
+            <a href="/zh-Hant/terms/">使用條款</a>
+        </div>
+        <p class="footer-copyright">© 2026 Custom Arts. 保留所有權利。</p>
+        <p class="footer-tagline">Feeltracker 健康追蹤應用程式系列</p>
+        <p class="footer-disclaimer">您的健康資料儲存在您的裝置和iCloud中——我們絕不會存取或出售您的資料。Feeltracker應用程式不是醫療設備。僅供參考，不能替代專業的醫療建議、診斷或治療。</p>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p><strong>我們重視您的隱私</strong></p>
+                <p>我們使用分析Cookie來改善我們的網站和應用程式。不使用廣告Cookie。請查閱我們的 <a href="/zh-Hant/privacy/">隱私政策</a> 了解詳情。</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-reject" onclick="handleCookieConsent('rejected')">拒絕</button>
+                <button class="cookie-btn cookie-btn-accept" onclick="handleCookieConsent('accepted')">接受</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleCookieConsent(choice) {
+        localStorage.setItem('cookie_consent', choice);
+        document.getElementById('cookieConsent').classList.remove('show');
+        if (choice === 'accepted' && typeof window.loadGTM === 'function') {
+            window.loadGTM();
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookieConsent').classList.add('show');
+        }
+    });
+    </script>
+
+
+</body>
+</html>
