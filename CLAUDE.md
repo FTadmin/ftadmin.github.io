@@ -627,22 +627,35 @@ Group 6: sk, th, tr, uk, vi, zh-Hant
 - **Template changes** — one agent only
 - **EN source file edits** — edit first, then fan out translations
 
-### App product names are not finalized (owner decision, 2026-08-04)
+### App product names — canonical form (owner decision, 2026-08-04)
 
-Locale app names are **deliberately inconsistent for now** and that is fine.
-Several locales' hero titles still render an older name (weight: "Gewicht &
-Ernährung", "Vikt & Mat", "体重与饮食"; sleep: "Schlaf & Träume", "Sonno e
-Sogni"), while the same files and some guide overlays carry the current
-English name ("Weight & BMI", "Sleep & CPAP"). Mood Journal is uniformly
-localized; Blood Pressure and Daily Journal vary in whether the product
-name is localized inside alt text and FAQ answers.
+Refer to each app by its simplest name. These are the canonical English
+forms:
 
-**Do not run a normalization sweep and do not flag this as a defect.** The
-names are still being decided. When translating, keep following the
-locale's own established usage (its `<app>.app.json` hero title and
-existing overlays) so each locale stays internally coherent; cross-locale
-consistency comes later, once the names are settled, as one mechanical
-find-and-replace pass.
+| Slug | Name |
+|---|---|
+| `daily-journal` | Daily Journal |
+| `mood-journal` | Mood Journal |
+| `blood-pressure` | Blood Pressure Journal |
+| `sleep` | Sleep Journal |
+| `weight` | Weight Journal |
+
+No suffixes or feature tags — not "Weight & BMI", "Sleep & CPAP",
+"Mood & BPD", "Weight & Diet", "Sleep & Dreams". In non-EN locales use the
+natural translation of the same simple form (e.g. de "Blutdruck-Tagebuch",
+es "Diario de Presión Arterial"), following that locale's existing
+conventions for the noun it already uses for journal/diary.
+
+**Current state does not match this yet.** Locale hero titles, alt text,
+`languages.json` nav names and many guide overlays still carry older names
+in a mix of English and localized forms — the rename predates this
+decision and was never propagated. Aligning them is **one mechanical
+find-and-replace sweep**, not a translation job, and should be done in a
+single pass across `languages.json`, every `<app>.app.json`, `.tips.json`
+and `.guide.json`, so all locales move together. Until that sweep runs,
+translation agents should keep following each locale's own established
+usage so individual locales stay internally coherent — do not switch names
+mid-fan-out.
 
 ### Crisis-line numbers in guide content (owner decision, 2026-08-04)
 
