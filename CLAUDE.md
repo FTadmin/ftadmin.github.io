@@ -668,6 +668,71 @@ none), always labeled with the country, and the generic "emergency services
 or a crisis line in your country" sentence stays as the base. Never strip
 an existing labeled number on consistency grounds.
 
+### Blood-pressure guideline framing — kept in sync with the app (2026-08-07)
+
+The site states **ACC/AHA 2017** as the default: below 120/80 normal,
+120–129 elevated, 130/80+ hypertension, below 90/60 low, above 180/120 with
+symptoms an emergency. This is not an editorial preference — it is what the
+Blood Pressure app actually ships (`BPT/BPTUtils.swift`, applied to
+never-customized installs by `migrateRangeDefaultsToGuidelineV2()` in
+2.74.3). **The app repo carries a comment pointing back at this site, so the
+dependency runs both ways: if either side's guideline copy changes, the
+other needs a matching review.**
+
+Deliberately kept alongside it, do not "harmonize" away:
+- The labeled ESC/NICE contrast ("US guidelines define hypertension from
+  130/80, European from 140/90") in `chart-by-age` and `normal-range`. A
+  European reader whose doctor works to 140/90 needs to know why the app
+  says 130.
+- The home-vs-clinic correspondence (a home average at/above 135/85 ≈ a
+  clinic reading of 140/90) in `how-to-measure`, `log-template` and
+  `white-coat-hypertension`. True under either guideline.
+- The NICE citation in `blood-pressure.tips` — it is about **measurement
+  technique** (2–3 readings a minute apart, averaged), not thresholds.
+
+An FAQ answer once said "normally between 90-140 systolic and 60-90
+diastolic", which told a reader that 138/88 was fine while the app
+colour-coded it High. If you find any page implying the old 90/120/140/160
+defaults, it predates 2.74.3 and is wrong.
+
+### Address register — per locale, matches the shipped apps (2026-08-07)
+
+The apps completed their register transition; the website was normalized to
+match on 2026-08-07 (~1,600 strings). **Both properties now use the same
+form per locale, so a change on one side needs the other reviewed.**
+
+| Form | Locales |
+|---|---|
+| Informal | de (du), nl (je), sv/da/nb (du), fi (sinä), es (tú), it (tu), ca (tu), pt-br (você), ro (tu), hu (te), pl (Ty, capitalized), zh-Hans/zh-Hant (你, **never** 您) |
+| Polite | fr/fr-ca (vous), ru (вы), uk (ви), tr (siz), el (σας), cs/sk (vykání), ja (です/ます), ko (polite ‑요/‑세요) |
+
+No policy set for: en, ar, he, hr, pt, th, vi — follow each locale's own
+existing usage.
+
+Three things that make this **not** a find-and-replace, all learned by
+getting them wrong first:
+
+1. **Counting the pronoun undercounts wildly.** In Romance and Hungarian the
+   register lives in verb conjugation and imperatives. A pronoun-only census
+   reported es as 7 strings when it was 429, and hu as 9 when it was ~266.
+2. **Look-alikes are everywhere.** German `Sie` is also "they" (the medical
+   disclaimer's "Sie sollten nicht verwendet werden" refers to the *apps*);
+   Danish/Norwegian `De` is "those"; Dutch `u` is also "uur" (14 clock cells
+   in `mood-chart`); Italian `lei` is "her" (Julia Cameron, in
+   `morning-pages`). Read the sentence before replacing.
+3. **Some strings address *us*, not the reader.** "Do you show ads or track
+   me?" is the reader asking a question. Those take the plural form — sv
+   `ni`, nl `jullie`, de `ihr` — not the formal singular, and not the
+   informal singular either.
+
+Never change register inside `reviews.*`, quoted third-party speech (a
+clinician's or therapist's question in the guides), or the GQ headline on
+the index page.
+
+`data/languages.json` holds the footer disclaimer and cookie banner that
+render on **every page** and cannot be patched by `apply-translation.js`.
+It has been missed twice. Check it by hand after any register work.
+
 ### Durability rules for large fan-outs (learned the hard way)
 
 A guide-translation fan-out (10 guides × 31 locales per app) ran through a
